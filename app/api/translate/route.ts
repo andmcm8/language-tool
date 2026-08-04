@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
       try {
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({
-          model: "gemini-2.5-flash",
+          model: "gemini-2.0-flash",
           systemInstruction:
             "You are a professional English to Spanish translator. Translate the user's English text into accurate, natural Spanish. Output ONLY the translated Spanish text. Do not add quotes, explanations, or introductory text.",
         });

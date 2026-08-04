@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getMerchantById } from "@/lib/merchants";
 
 const DISCLAIMER_ES =
-  "\n\n⚠️ Si tiene alergias o dudas de salud, confirme con el personal antes of consumir.";
+  "\n\n⚠️ Si tiene alergias o dudas de salud, confirme con el personal antes de consumir.";
 const DISCLAIMER_EN =
   "\n\n⚠️ If you have food allergies or health concerns, please verify with store staff before consuming.";
 
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     // Language Detection: Check if user typed/spoke in English
     const isEnglish =
       lang === "en" ||
-      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty)\b/i.test(
+      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty|pay|payment|card|apple|credit|call|number)\b/i.test(
         lowerMsg
       );
 
@@ -105,43 +105,71 @@ ${JSON.stringify(merchant, null, 2)}`,
         ? `Guest WiFi: Network "${p?.wifiName || "Guest_WiFi"}" | Password: "${p?.wifiPassword || "free"}"`
         : `WiFi Clientes: Red "${p?.wifiName || "Guest_WiFi"}" | Contraseña: "${p?.wifiPassword || "free"}"`;
     }
-    // 3. EBT / SNAP Query
+    // 3. Payment Methods / Apple Pay Query
+    else if (
+      lowerMsg.includes("apple pay") ||
+      lowerMsg.includes("google pay") ||
+      lowerMsg.includes("credit") ||
+      lowerMsg.includes("card") ||
+      lowerMsg.includes("tarjeta") ||
+      lowerMsg.includes("zelle") ||
+      lowerMsg.includes("metodos de pago") ||
+      lowerMsg.includes("payment")
+    ) {
+      reply = isEnglish
+        ? `Accepted Payments: ${info.paymentMethods.join(", ")}.`
+        : `Métodos de Pago Aceptados: ${info.paymentMethods.join(", ")}.`;
+    }
+    // 4. Phone Number / Contact Query
+    else if (
+      lowerMsg.includes("phone number") ||
+      lowerMsg.includes("telefono") ||
+      lowerMsg.includes("llamar") ||
+      lowerMsg.includes("call store") ||
+      lowerMsg.includes("call in") ||
+      lowerMsg.includes("contact number")
+    ) {
+      reply = isEnglish
+        ? `Phone Number: ${info.phone}.`
+        : `Número de Teléfono: ${info.phone}.`;
+    }
+    // 5. EBT / SNAP Query
     else if (lowerMsg.includes("ebt") || lowerMsg.includes("snap")) {
       reply = isEnglish
         ? (p?.ebtPolicyEn || "EBT/SNAP is accepted for groceries and bakery items.")
         : (p?.ebtPolicyEs || "Aceptamos EBT/SNAP para abarrotes y panadería.");
     }
-    // 4. Hours / Open Query
+    // 6. Hours / Open Query
     else if (lowerMsg.includes("hora") || lowerMsg.includes("hours") || lowerMsg.includes("open") || lowerMsg.includes("abierto")) {
       reply = isEnglish
         ? `Hours: Mon-Fri ${info.hours.monday_friday}, Sat ${info.hours.saturday}, Sun ${info.hours.sunday}.`
         : `Horarios: Lun-Vie ${info.hours.monday_friday}, Sáb ${info.hours.saturday}, Dom ${info.hours.sunday}.`;
     }
-    // 5. Address / Location Query
+    // 7. Address / Location Query
     else if (lowerMsg.includes("direccion") || lowerMsg.includes("address") || lowerMsg.includes("where is the store")) {
       reply = isEnglish
         ? `Address: ${info.address}. Phone: ${info.phone}.`
         : `Dirección: ${info.address}. Teléfono: ${info.phone}.`;
     }
-    // 6. Parking Query
+    // 8. Parking Query
     else if (lowerMsg.includes("park") || lowerMsg.includes("parqueo") || lowerMsg.includes("estacionamiento")) {
       reply = isEnglish
         ? (p?.parkingPolicyEn || "Free customer parking is available.")
         : (p?.parkingPolicyEs || "Estacionamiento gratuito disponible para clientes.");
     }
-    // 7. Delivery Query
+    // 9. Delivery Query
     else if (lowerMsg.includes("deliver") || lowerMsg.includes("delivery") || lowerMsg.includes("envio") || lowerMsg.includes("domicilio")) {
       reply = isEnglish
         ? (p?.deliveryPolicyEn || "Home delivery is available for orders in Stamford.")
         : (p?.deliveryPolicyEs || "Entregas a domicilio disponibles para Stamford.");
     }
-    // 8. Warranty / Return Query
+    // 10. Warranty / Return Query
     else if (lowerMsg.includes("warranty") || lowerMsg.includes("garantia") || lowerMsg.includes("return") || lowerMsg.includes("refund")) {
       reply = isEnglish
         ? (p?.returnPolicyEn || "All products and services include store warranty.")
         : (p?.returnPolicyEs || "Todos los productos y servicios incluyen garantía.");
     }
-    // 9. Menu / Item List Query ("What are three items on the menu?", "What items do you sell?")
+    // 11. Menu / Item List Query ("What are three items on the menu?", "What items do you sell?")
     else if (
       lowerMsg.includes("items") ||
       lowerMsg.includes("menu") ||
@@ -158,7 +186,7 @@ ${JSON.stringify(merchant, null, 2)}`,
         reply = `Los productos principales incluyen: ${itemNames}.`;
       }
     }
-    // 10. Specific Product Query
+    // 12. Specific Product Query
     else {
       // Find matching product with exact score priority
       const matchedProduct = merchant.products.find((prod) => {
@@ -171,7 +199,9 @@ ${JSON.stringify(merchant, null, 2)}`,
           (lowerMsg.includes("empanada") && nameEn.includes("empanada")) ||
           (lowerMsg.includes("paisa") && nameEn.includes("paisa")) ||
           (lowerMsg.includes("bateria") && nameEn.includes("battery")) ||
-          (lowerMsg.includes("pantalla") && nameEn.includes("screen"))
+          (lowerMsg.includes("pantalla") && nameEn.includes("screen")) ||
+          (lowerMsg.includes("receta") && nameEn.includes("prescription")) ||
+          (lowerMsg.includes("vacuna") && nameEn.includes("vaccine"))
         );
       }) || merchant.products.find((prod) => {
         const nameEn = prod.nameEn.toLowerCase();
