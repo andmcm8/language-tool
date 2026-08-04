@@ -1,288 +1,543 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { createWorker } from "tesseract.js";
-import { Camera, RefreshCw, Sparkles, Upload, Volume2, AlertCircle, Image as ImageIcon } from "lucide-react";
+import {
+  Camera,
+  RefreshCw,
+  Upload,
+  AlertCircle,
+  RotateCcw,
+  Image as ImageIcon,
+} from "lucide-react";
 
 interface CameraOcrTabProps {
   lang: "es" | "en";
 }
 
-interface TextOverlayBox {
-  id: string;
+interface TextRegion {
   original: string;
   translated: string;
-  box: {
-    x0: number; // percentage (0-100)
-    y0: number; // percentage (0-100)
-    width: number;
-    height: number;
-  };
+  bbox: { x0: number; y0: number; x1: number; y1: number };
 }
 
-interface SampleSign {
-  id: string;
-  nameEs: string;
-  nameEn: string;
-  image: string;
-  overlays: TextOverlayBox[];
-}
-
-const SAMPLE_SIGNS: SampleSign[] = [
+/* ================================================================
+   SAMPLE SIGNS — demo data so users can test without a camera
+   ================================================================ */
+const SAMPLE_SIGNS = [
   {
     id: "sign-1",
-    nameEs: "Menú de Ofertas",
-    nameEn: "Deli Specials",
-    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800&auto=format&fit=crop&q=80",
-    overlays: [
+    label: "Deli Specials",
+    lines: [
+      { original: "DAILY SPECIAL", translated: "ESPECIAL DEL DÍA" },
       {
-        id: "o1",
-        original: "DAILY SPECIAL",
-        translated: "ESPECIAL DEL DÍA",
-        box: { x0: 22, y0: 18, width: 56, height: 14 }
-      },
-      {
-        id: "o2",
         original: "Hot Roast Beef Sandwich $10.99",
         translated: "Sándwich de Carne Asada Caliente $10.99",
-        box: { x0: 10, y0: 42, width: 80, height: 16 }
       },
       {
-        id: "o3",
-        original: "Melted Swiss Cheese",
-        translated: "Con Queso Suizo Fundido",
-        box: { x0: 18, y0: 66, width: 64, height: 14 }
-      }
-    ]
+        original: "Melted Swiss Cheese & Pickles",
+        translated: "Queso Suizo Fundido y Pepinillos",
+      },
+    ],
   },
   {
     id: "sign-2",
-    nameEs: "Aviso de Pagos",
-    nameEn: "Payment Notice",
-    image: "https://images.unsplash.com/photo-1556742049-0a67daf4005a?w=800&auto=format&fit=crop&q=80",
-    overlays: [
+    label: "Payment Notice",
+    lines: [
+      { original: "NOTICE", translated: "AVISO" },
       {
-        id: "o1",
-        original: "NOTICE",
-        translated: "AVISO IMPORTANTE",
-        box: { x0: 28, y0: 18, width: 44, height: 14 }
+        original: "EBT Accepted For Groceries",
+        translated: "Se Acepta EBT para Abarrotes",
       },
       {
-        id: "o2",
-        original: "EBT Accepted For Groceries & Bakery",
-        translated: "Se Acepta EBT para Abarrotes y Panadería",
-        box: { x0: 8, y0: 45, width: 84, height: 16 }
-      },
-      {
-        id: "o3",
-        original: "Hot Deli Food Requires Cash or Card",
+        original: "Hot Food Requires Cash or Card",
         translated: "Comida Caliente Requiere Efectivo o Tarjeta",
-        box: { x0: 10, y0: 70, width: 80, height: 14 }
-      }
-    ]
+      },
+    ],
   },
   {
     id: "sign-3",
-    nameEs: "Horario Panadería",
-    nameEn: "Bakery Hours",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&auto=format&fit=crop&q=80",
-    overlays: [
+    label: "Bakery Hours",
+    lines: [
       {
-        id: "o1",
-        original: "FRESH WARM BREAD BAKED DAILY",
-        translated: "PAN FRESCO CALIENTE HORNEADO DIARIAMENTE",
-        box: { x0: 6, y0: 30, width: 88, height: 18 }
+        original: "FRESH BREAD BAKED DAILY",
+        translated: "PAN FRESCO HORNEADO DIARIAMENTE",
       },
       {
-        id: "o2",
-        original: "6:30 AM AND 4:00 PM",
-        translated: "A LAS 6:30 AM Y 4:00 PM",
-        box: { x0: 18, y0: 58, width: 64, height: 14 }
-      }
-    ]
-  }
+        original: "First Batch 6:30 AM",
+        translated: "Primera Hornada 6:30 AM",
+      },
+      {
+        original: "Second Batch 4:00 PM",
+        translated: "Segunda Hornada 4:00 PM",
+      },
+    ],
+  },
 ];
 
+/* ================================================================
+   COMPONENT
+   ================================================================ */
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const srcCanvasRef = useRef<HTMLCanvasElement | null>(null);
+  const resultCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const [cameraActive, setCameraActive] = useState(false);
   const [cameraBlocked, setCameraBlocked] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [capturedImage, setCapturedImage] = useState<string | null>(SAMPLE_SIGNS[0].image);
-  const [overlays, setOverlays] = useState<TextOverlayBox[]>(SAMPLE_SIGNS[0].overlays);
-  const [selectedOverlay, setSelectedOverlay] = useState<TextOverlayBox | null>(null);
+  const [hasResult, setHasResult] = useState(false);
+  const [statusText, setStatusText] = useState("");
 
-  // Camera Access
-  const startCamera = async () => {
+  /* ---------- Camera helpers ---------- */
+  const startCamera = useCallback(async () => {
     setCameraBlocked(false);
+    setHasResult(false);
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: "environment", width: { ideal: 1280 }, height: { ideal: 720 } }
+        video: {
+          facingMode: "environment",
+          width: { ideal: 1920 },
+          height: { ideal: 1080 },
+        },
       });
       if (videoRef.current) {
         videoRef.current.srcObject = stream;
         videoRef.current.play();
         setCameraActive(true);
-        setCapturedImage(null);
-        setOverlays([]);
       }
-    } catch (err: any) {
-      console.warn("Camera blocked or unavailable over HTTP connection:", err);
+    } catch {
       setCameraBlocked(true);
       setCameraActive(false);
     }
-  };
+  }, []);
 
-  const stopCamera = () => {
-    if (videoRef.current && videoRef.current.srcObject) {
-      const stream = videoRef.current.srcObject as MediaStream;
-      stream.getTracks().forEach((t) => t.stop());
+  const stopCamera = useCallback(() => {
+    if (videoRef.current?.srcObject) {
+      (videoRef.current.srcObject as MediaStream)
+        .getTracks()
+        .forEach((t) => t.stop());
       videoRef.current.srcObject = null;
       setCameraActive(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     startCamera();
     return () => stopCamera();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Translate call via /api/translate
-  const translateWithAi = async (text: string): Promise<string> => {
+  /* ---------- Gemini Vision OCR + Translation ---------- */
+  const visionTranslate = async (
+    base64: string
+  ): Promise<{ original: string; translated: string }[]> => {
+    try {
+      const res = await fetch("/api/vision-translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ imageBase64: base64 }),
+      });
+      const data = await res.json();
+      return data.lines || [];
+    } catch {
+      return [];
+    }
+  };
+
+  /* ---------- Fallback line-by-line translation ---------- */
+  const translateLine = async (text: string): Promise<string> => {
     try {
       const res = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text })
+        body: JSON.stringify({ text }),
       });
       const data = await res.json();
       return data.translation || text;
-    } catch (err) {
-      console.error("Translation API error:", err);
+    } catch {
       return text;
     }
   };
 
-  // Run OCR & generate Google Translate style bounding box overlays over the photo
-  const processImageScan = async (presetOverlays?: TextOverlayBox[], sourceImage?: string) => {
-    setIsProcessing(true);
-    setSelectedOverlay(null);
+  /* ---------- Canvas colour helpers ---------- */
+  const sampleBgColor = (
+    ctx: CanvasRenderingContext2D,
+    bbox: { x0: number; y0: number; x1: number; y1: number },
+    w: number,
+    h: number
+  ): [number, number, number] => {
+    // Sample a ring of pixels just outside the bounding box
+    const pad = 4;
+    const pts: [number, number][] = [
+      [Math.max(0, bbox.x0 - pad), bbox.y0],
+      [Math.min(w - 1, bbox.x1 + pad), bbox.y0],
+      [bbox.x0, Math.max(0, bbox.y0 - pad)],
+      [bbox.x0, Math.min(h - 1, bbox.y1 + pad)],
+      [Math.max(0, bbox.x0 - pad), Math.min(h - 1, bbox.y1 + pad)],
+      [Math.min(w - 1, bbox.x1 + pad), Math.max(0, bbox.y0 - pad)],
+      // also sample the midpoints of each edge
+      [Math.max(0, bbox.x0 - pad), (bbox.y0 + bbox.y1) / 2],
+      [Math.min(w - 1, bbox.x1 + pad), (bbox.y0 + bbox.y1) / 2],
+    ];
 
-    if (presetOverlays && presetOverlays.length > 0) {
-      setOverlays(presetOverlays);
-      setIsProcessing(false);
-      return;
+    let rSum = 0,
+      gSum = 0,
+      bSum = 0,
+      count = 0;
+    for (const [px, py] of pts) {
+      try {
+        const d = ctx.getImageData(
+          Math.round(px),
+          Math.round(py),
+          1,
+          1
+        ).data;
+        rSum += d[0];
+        gSum += d[1];
+        bSum += d[2];
+        count++;
+      } catch {
+        /* out of bounds */
+      }
     }
 
+    if (count === 0) return [255, 255, 255];
+    return [
+      Math.round(rSum / count),
+      Math.round(gSum / count),
+      Math.round(bSum / count),
+    ];
+  };
+
+  const luminance = (r: number, g: number, b: number) =>
+    (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+  /* ---------- Fuzzy string matching ---------- */
+  const similarity = (a: string, b: string): number => {
+    const wa = new Set(a.toLowerCase().split(/\s+/).filter(Boolean));
+    const wb = new Set(b.toLowerCase().split(/\s+/).filter(Boolean));
+    let inter = 0;
+    wa.forEach((w) => {
+      if (wb.has(w)) inter++;
+    });
+    const union = wa.size + wb.size - inter;
+    return union === 0 ? 0 : inter / union;
+  };
+
+  /* ---------- CORE: paint-over translation on canvas ---------- */
+  const paintTranslation = (
+    srcCanvas: HTMLCanvasElement,
+    regions: TextRegion[]
+  ) => {
+    const resCanvas = resultCanvasRef.current!;
+    const w = srcCanvas.width;
+    const h = srcCanvas.height;
+    resCanvas.width = w;
+    resCanvas.height = h;
+    const ctx = resCanvas.getContext("2d")!;
+
+    // Draw original image
+    ctx.drawImage(srcCanvas, 0, 0);
+
+    for (const region of regions) {
+      const { bbox } = region;
+      const pad = 3;
+
+      // 1) Sample background colour
+      const [r, g, b] = sampleBgColor(ctx, bbox, w, h);
+      const bgStr = `rgb(${r},${g},${b})`;
+      const textColor = luminance(r, g, b) > 0.5 ? "#111111" : "#f5f5f5";
+
+      // 2) Paint over the original text with bg colour
+      ctx.fillStyle = bgStr;
+      ctx.fillRect(
+        bbox.x0 - pad,
+        bbox.y0 - pad,
+        bbox.x1 - bbox.x0 + pad * 2,
+        bbox.y1 - bbox.y0 + pad * 2
+      );
+
+      // 3) Size the translated text to fit the bounding box
+      const boxW = bbox.x1 - bbox.x0 + pad * 2;
+      const boxH = bbox.y1 - bbox.y0;
+      let fontSize = Math.max(10, Math.min(boxH * 0.78, 56));
+      ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
+
+      // Shrink until text fits the width
+      while (
+        ctx.measureText(region.translated).width > boxW &&
+        fontSize > 8
+      ) {
+        fontSize -= 0.5;
+        ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
+      }
+
+      // 4) Draw the translated text
+      ctx.fillStyle = textColor;
+      ctx.textBaseline = "middle";
+      const cy = (bbox.y0 + bbox.y1) / 2;
+      ctx.fillText(region.translated, bbox.x0, cy, boxW);
+    }
+  };
+
+  /* ================================================================
+     MAIN PROCESSING PIPELINE
+     ================================================================ */
+  const processPhoto = async (imageSource?: string) => {
+    setIsProcessing(true);
+    setHasResult(false);
+    setStatusText(
+      lang === "es" ? "Capturando imagen…" : "Capturing image…"
+    );
+
     try {
-      let imageToProcess: string | HTMLCanvasElement;
-      let imgWidth = 800;
-      let imgHeight = 600;
+      const srcCanvas = srcCanvasRef.current!;
+      const srcCtx = srcCanvas.getContext("2d")!;
+      let imgW: number, imgH: number;
 
-      if (cameraActive && videoRef.current && canvasRef.current) {
-        const video = videoRef.current;
-        const canvas = canvasRef.current;
-        canvas.width = video.videoWidth || 640;
-        canvas.height = video.videoHeight || 480;
-        imgWidth = canvas.width;
-        imgHeight = canvas.height;
-        const ctx = canvas.getContext("2d");
-        if (ctx) ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        imageToProcess = canvas;
-      } else if (sourceImage) {
-        imageToProcess = sourceImage;
-      } else if (capturedImage) {
-        imageToProcess = capturedImage;
+      /* ---- Load image onto source canvas ---- */
+      if (imageSource) {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        await new Promise<void>((resolve, reject) => {
+          img.onload = () => resolve();
+          img.onerror = reject;
+          img.src = imageSource;
+        });
+        const scale = Math.min(1, 1280 / img.naturalWidth);
+        imgW = Math.round(img.naturalWidth * scale);
+        imgH = Math.round(img.naturalHeight * scale);
+        srcCanvas.width = imgW;
+        srcCanvas.height = imgH;
+        srcCtx.drawImage(img, 0, 0, imgW, imgH);
+      } else if (cameraActive && videoRef.current) {
+        const v = videoRef.current;
+        imgW = v.videoWidth || 640;
+        imgH = v.videoHeight || 480;
+        srcCanvas.width = imgW;
+        srcCanvas.height = imgH;
+        srcCtx.drawImage(v, 0, 0, imgW, imgH);
+        stopCamera();
       } else {
-        throw new Error("No image source");
+        throw new Error("No image source available");
       }
 
-      // Run Tesseract OCR
-      const worker = await createWorker("eng");
-      const ret = await worker.recognize(imageToProcess);
-      await worker.terminate();
+      /* ---- Step 1: Tesseract for bounding boxes (runs in parallel) ---- */
+      setStatusText(
+        lang === "es" ? "Detectando texto…" : "Detecting text…"
+      );
 
-      const lines = ret.data.lines || [];
-      const newOverlays: TextOverlayBox[] = [];
-
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-        const cleanEng = line.text.trim();
-        if (cleanEng.length > 2 && line.bbox) {
-          const { x0, y0, x1, y1 } = line.bbox;
-          const leftPercent = Math.max(5, Math.min(85, (x0 / imgWidth) * 100));
-          const topPercent = Math.max(10, Math.min(80, (y0 / imgHeight) * 100));
-          const widthPercent = Math.max(25, Math.min(90, ((x1 - x0) / imgWidth) * 100));
-          const heightPercent = Math.max(8, Math.min(25, ((y1 - y0) / imgHeight) * 100));
-
-          const translated = await translateWithAi(cleanEng);
-          newOverlays.push({
-            id: `line-${i}-${Date.now()}`,
-            original: cleanEng,
-            translated,
-            box: {
-              x0: leftPercent,
-              y0: topPercent,
-              width: widthPercent,
-              height: heightPercent
-            }
-          });
+      const tesseractPromise = (async () => {
+        try {
+          const worker = await createWorker("eng");
+          const ret = await worker.recognize(srcCanvas);
+          await worker.terminate();
+          return ret.data.lines
+            .filter((l) => l.text.trim().length > 1 && l.bbox)
+            .map((l) => ({ text: l.text.trim(), bbox: l.bbox }));
+        } catch {
+          return [];
         }
-      }
+      })();
 
-      if (newOverlays.length === 0) {
-        // Fallback default overlay box if tight bbox
-        const fallbackText = ret.data.text.trim() || "SPECIAL OFFER";
-        const translated = await translateWithAi(fallbackText);
-        newOverlays.push({
-          id: "fb-1",
-          original: fallbackText,
-          translated,
-          box: { x0: 15, y0: 40, width: 70, height: 18 }
+      /* ---- Step 2: Gemini Vision for accurate OCR + translation ---- */
+      setStatusText(
+        lang === "es" ? "Traduciendo con AI…" : "AI translating…"
+      );
+      const base64 = srcCanvas.toDataURL("image/jpeg", 0.85);
+      const [visionResults, tesseractLines] = await Promise.all([
+        visionTranslate(base64),
+        tesseractPromise,
+      ]);
+
+      /* ---- Step 3: Match & merge into TextRegion[] ---- */
+      let regions: TextRegion[] = [];
+
+      if (tesseractLines.length > 0) {
+        if (visionResults.length > 0) {
+          // Match Gemini translations to Tesseract bounding boxes
+          const used = new Set<number>();
+
+          for (const vr of visionResults) {
+            let bestIdx = -1;
+            let bestScore = 0;
+
+            for (let i = 0; i < tesseractLines.length; i++) {
+              if (used.has(i)) continue;
+              const score = similarity(vr.original, tesseractLines[i].text);
+              if (score > bestScore) {
+                bestScore = score;
+                bestIdx = i;
+              }
+            }
+
+            if (bestIdx >= 0 && bestScore > 0.25) {
+              used.add(bestIdx);
+              regions.push({
+                original: vr.original,
+                translated: vr.translated,
+                bbox: tesseractLines[bestIdx].bbox,
+              });
+            }
+          }
+
+          // Any remaining Tesseract lines → translate individually
+          for (let i = 0; i < tesseractLines.length; i++) {
+            if (!used.has(i) && tesseractLines[i].text.length > 2) {
+              const tr = await translateLine(tesseractLines[i].text);
+              regions.push({
+                original: tesseractLines[i].text,
+                translated: tr,
+                bbox: tesseractLines[i].bbox,
+              });
+            }
+          }
+        } else {
+          // Tesseract only (Gemini failed or returned empty)
+          for (const line of tesseractLines) {
+            if (line.text.length > 2) {
+              const tr = await translateLine(line.text);
+              regions.push({
+                original: line.text,
+                translated: tr,
+                bbox: line.bbox,
+              });
+            }
+          }
+        }
+      } else if (visionResults.length > 0) {
+        // Vision only — no bounding boxes; distribute evenly over image
+        const lineH = imgH / (visionResults.length + 1);
+        visionResults.forEach((vr, i) => {
+          regions.push({
+            original: vr.original,
+            translated: vr.translated,
+            bbox: {
+              x0: Math.round(imgW * 0.05),
+              y0: Math.round(lineH * (i + 0.5)),
+              x1: Math.round(imgW * 0.95),
+              y1: Math.round(lineH * (i + 0.5) + lineH * 0.55),
+            },
+          });
         });
       }
 
-      setOverlays(newOverlays);
+      /* ---- Step 4: Paint the Google-Translate effect ---- */
+      if (regions.length > 0) {
+        setStatusText(
+          lang === "es" ? "Renderizando…" : "Rendering…"
+        );
+        paintTranslation(srcCanvas, regions);
+      } else {
+        // No text found — just show the original photo
+        const resCanvas = resultCanvasRef.current!;
+        resCanvas.width = imgW;
+        resCanvas.height = imgH;
+        resCanvas.getContext("2d")!.drawImage(srcCanvas, 0, 0);
+      }
+
+      setHasResult(true);
       setIsProcessing(false);
+      setStatusText("");
     } catch (err) {
-      console.error("OCR Scan error:", err);
-      setOverlays(SAMPLE_SIGNS[0].overlays);
+      console.error("processPhoto error:", err);
       setIsProcessing(false);
+      setStatusText(
+        lang === "es" ? "Error procesando imagen" : "Error processing image"
+      );
     }
   };
 
-  // Handle Native Camera / Photo Pick
+  /* ---------- Demo sample sign (renders on canvas without real image) ---------- */
+  const processSampleSign = (
+    signLines: { original: string; translated: string }[]
+  ) => {
+    setIsProcessing(true);
+    setHasResult(false);
+
+    // Generate a fake "sign" image on the source canvas
+    const srcCanvas = srcCanvasRef.current!;
+    const w = 640;
+    const h = 400;
+    srcCanvas.width = w;
+    srcCanvas.height = h;
+    const ctx = srcCanvas.getContext("2d")!;
+
+    // Draw a sign-like background
+    ctx.fillStyle = "#faf8f0";
+    ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = "#c8b888";
+    ctx.lineWidth = 6;
+    ctx.strokeRect(12, 12, w - 24, h - 24);
+
+    // Draw each English text line
+    const lineH = h / (signLines.length + 1);
+    const regions: TextRegion[] = [];
+
+    signLines.forEach((line, i) => {
+      const isTitle = i === 0;
+      const fontSize = isTitle ? 32 : 22;
+      ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, sans-serif`;
+      ctx.fillStyle = "#1a1a1a";
+      ctx.textBaseline = "middle";
+      const cy = lineH * (i + 1);
+
+      const measured = ctx.measureText(line.original);
+      const textW = measured.width;
+      const x = (w - textW) / 2;
+
+      ctx.fillText(line.original, x, cy);
+
+      regions.push({
+        original: line.original,
+        translated: line.translated,
+        bbox: {
+          x0: Math.round(x - 6),
+          y0: Math.round(cy - fontSize * 0.6),
+          x1: Math.round(x + textW + 6),
+          y1: Math.round(cy + fontSize * 0.6),
+        },
+      });
+    });
+
+    // Now paint the translation over it
+    paintTranslation(srcCanvas, regions);
+    setHasResult(true);
+    setIsProcessing(false);
+  };
+
+  /* ---------- File / camera upload ---------- */
   const handlePhotoCapture = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const result = event.target?.result as string;
-        if (result) {
-          if (cameraActive) stopCamera();
-          setCapturedImage(result);
-          processImageScan(undefined, result);
-        }
-      };
-      reader.readAsDataURL(file);
-    }
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const result = ev.target?.result as string;
+      if (result) {
+        if (cameraActive) stopCamera();
+        processPhoto(result);
+      }
+    };
+    reader.readAsDataURL(file);
+    // Reset so user can re-select same file
+    e.target.value = "";
   };
 
-  const speakText = (text: string) => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "es-ES";
-    utterance.rate = 0.95;
-    window.speechSynthesis.speak(utterance);
+  /* ---------- Reset ---------- */
+  const resetView = () => {
+    setHasResult(false);
+    setStatusText("");
+    startCamera();
   };
 
+  /* ================================================================
+     RENDER
+     ================================================================ */
   return (
-    <div className="w-full max-w-md mx-auto p-3 pb-24 space-y-2.5 flex flex-col justify-between min-h-[calc(100vh-140px)]">
-      {/* Hidden Native Camera Input */}
+    <div className="w-full max-w-md mx-auto p-3 pb-24 flex flex-col gap-2.5">
+      {/* Hidden file input */}
       <input
         type="file"
         ref={fileInputRef}
@@ -291,124 +546,131 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         capture="environment"
         className="hidden"
       />
+      {/* Hidden source canvas */}
+      <canvas ref={srcCanvasRef} className="hidden" />
 
-      {/* GOOGLE TRANSLATE PHOTO VIEWER & LIVE CAMERA CANVAS */}
-      <div className="relative w-full aspect-16/10 rounded-3xl overflow-hidden bg-black shadow-lg border-2 border-secondary-fixed shrink-0">
+      {/* ---- MAIN VIEWPORT ---- */}
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10">
+        {/* Live camera */}
         <video
           ref={videoRef}
           playsInline
           muted
-          className={`w-full h-full object-cover ${cameraActive ? "opacity-100" : "opacity-0 absolute"}`}
+          className={`w-full h-full object-cover ${
+            cameraActive && !hasResult ? "" : "hidden"
+          }`}
         />
-        <canvas ref={canvasRef} className="hidden" />
 
-        {/* Captured / Selected Photo Background */}
-        {!cameraActive && (
-          <div className="w-full h-full relative">
-            {capturedImage ? (
-              <img src={capturedImage} alt="Captured Sign" className="w-full h-full object-cover brightness-90" />
-            ) : cameraBlocked ? (
-              <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center text-white bg-slate-900">
-                <AlertCircle className="w-8 h-8 text-amber-400 mb-1" />
-                <p className="text-xs font-bold">Cámara en vivo requiere HTTPS</p>
-                <p className="text-[10px] text-slate-400 mt-1">Toque 'Tomar/Subir Foto' para abrir la cámara del teléfono</p>
-              </div>
+        {/* Result canvas — the Google-Translate-style output */}
+        <canvas
+          ref={resultCanvasRef}
+          className={`w-full h-full object-contain bg-slate-900 ${
+            hasResult ? "" : "hidden"
+          }`}
+        />
+
+        {/* Camera blocked / loading states */}
+        {!cameraActive && !hasResult && !isProcessing && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-slate-900 p-4">
+            {cameraBlocked ? (
+              <>
+                <AlertCircle className="w-8 h-8 text-amber-400 mb-2" />
+                <p className="text-xs font-bold text-center">
+                  {lang === "es"
+                    ? "Cámara requiere HTTPS. Use el botón para subir foto."
+                    : "Live camera requires HTTPS. Use the button to upload a photo."}
+                </p>
+              </>
             ) : (
-              <div className="w-full h-full flex flex-col items-center justify-center text-center text-white bg-slate-900">
+              <>
                 <Camera className="w-8 h-8 text-primary animate-pulse mb-1" />
-                <p className="text-xs font-bold">Iniciando Cámara...</p>
-              </div>
+                <p className="text-xs font-bold">
+                  {lang === "es"
+                    ? "Iniciando cámara…"
+                    : "Starting camera…"}
+                </p>
+              </>
             )}
           </div>
         )}
 
-        {/* GOOGLE TRANSLATE AR TEXT OVERLAYS DIRECTLY ON TOP OF THE PHOTO */}
-        <div className="absolute inset-0 pointer-events-auto">
-          {overlays.map((overlay) => {
-            const isSelected = selectedOverlay?.id === overlay.id;
+        {/* Viewfinder reticle */}
+        {cameraActive && !hasResult && !isProcessing && (
+          <div className="absolute inset-3 border-2 border-dashed border-white/50 rounded-xl pointer-events-none flex items-end justify-center pb-2">
+            <span className="px-3 py-1 rounded-full bg-black/60 text-white text-[10px] font-semibold backdrop-blur-sm">
+              {lang === "es"
+                ? "Apunte al letrero → Toque Traducir"
+                : "Point at sign → Tap Translate"}
+            </span>
+          </div>
+        )}
 
-            return (
-              <div
-                key={overlay.id}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedOverlay(overlay);
-                  speakText(overlay.translated);
-                }}
-                style={{
-                  left: `${overlay.box.x0}%`,
-                  top: `${overlay.box.y0}%`,
-                  width: `${overlay.box.width}%`,
-                  minHeight: `${overlay.box.height}%`,
-                }}
-                className={`absolute p-1 rounded-xl backdrop-blur-md flex items-center justify-center text-center cursor-pointer transition-all duration-200 shadow-md ${
-                  isSelected
-                    ? "bg-primary text-white ring-2 ring-white scale-105 z-30"
-                    : "bg-white/95 text-on-surface hover:bg-white border border-primary/40 z-20"
-                }`}
-              >
-                <span className="font-extrabold text-[11px] leading-tight tracking-tight drop-shadow-2xs">
-                  {overlay.translated}
-                </span>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Loading Spinner */}
+        {/* Processing overlay */}
         {isProcessing && (
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-xs flex flex-col items-center justify-center text-white z-40">
-            <RefreshCw className="w-7 h-7 text-primary animate-spin mb-1.5" />
-            <span className="text-xs font-bold">Traduciendo en foto con AI...</span>
+          <div className="absolute inset-0 bg-black/75 backdrop-blur-sm flex flex-col items-center justify-center text-white z-30">
+            <RefreshCw className="w-8 h-8 text-primary animate-spin mb-2" />
+            <span className="text-xs font-bold">{statusText}</span>
           </div>
         )}
       </div>
 
-      {/* Selected Word Detail Pill (Shown on Tap) */}
-      {selectedOverlay && (
-        <div className="bg-surface-container-lowest p-2.5 rounded-2xl border border-primary/40 shadow-xs flex items-center justify-between gap-2 shrink-0 animate-in slide-in-from-bottom duration-150">
-          <div className="min-w-0 flex-1">
-            <div className="text-[10px] text-on-surface-variant line-through truncate font-medium">
-              {selectedOverlay.original}
-            </div>
-            <div className="text-xs font-extrabold text-primary truncate">
-              {selectedOverlay.translated}
-            </div>
-          </div>
-          <button
-            onClick={() => speakText(selectedOverlay.translated)}
-            className="p-1.5 rounded-xl bg-secondary-fixed text-primary hover:scale-105 transition-transform shrink-0"
-          >
-            <Volume2 className="w-4 h-4" />
-          </button>
-        </div>
-      )}
-
-      {/* Both Action Buttons Fitted In Frame */}
-      <div className="grid grid-cols-2 gap-2 shrink-0">
-        <button
-          onClick={() => fileInputRef.current?.click()}
-          className="py-3 bg-surface border border-secondary-fixed text-on-surface font-bold text-xs rounded-2xl shadow-2xs hover:bg-surface-container transition-all flex items-center justify-center gap-1.5"
-        >
-          <Upload className="w-4 h-4 text-primary" />
-          <span>{lang === "es" ? "Tomar/Subir Foto" : "Take/Upload Photo"}</span>
-        </button>
-
-        <button
-          onClick={() => processImageScan()}
-          disabled={isProcessing}
-          className="py-3 bg-primary text-white font-extrabold text-xs rounded-2xl shadow-md hover:bg-primary-container disabled:opacity-50 transition-all flex items-center justify-center gap-1.5"
-        >
-          <Sparkles className="w-4 h-4" />
-          <span>{lang === "es" ? "Traducir Foto" : "Translate Photo"}</span>
-        </button>
+      {/* ---- ACTION BUTTONS ---- */}
+      <div className="grid grid-cols-2 gap-2">
+        {hasResult ? (
+          <>
+            <button
+              onClick={resetView}
+              className="py-3 bg-surface border border-secondary-fixed text-on-surface font-bold text-xs rounded-2xl flex items-center justify-center gap-1.5 transition-all hover:bg-surface-container"
+            >
+              <RotateCcw className="w-4 h-4 text-primary" />
+              <span>
+                {lang === "es" ? "Nueva Foto" : "New Photo"}
+              </span>
+            </button>
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="py-3 bg-primary text-white font-extrabold text-xs rounded-2xl flex items-center justify-center gap-1.5 shadow-md transition-all hover:brightness-110"
+            >
+              <Upload className="w-4 h-4" />
+              <span>
+                {lang === "es" ? "Subir Otra" : "Upload Another"}
+              </span>
+            </button>
+          </>
+        ) : (
+          <>
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="py-3 bg-surface border border-secondary-fixed text-on-surface font-bold text-xs rounded-2xl flex items-center justify-center gap-1.5 transition-all hover:bg-surface-container"
+            >
+              <Upload className="w-4 h-4 text-primary" />
+              <span>
+                {lang === "es" ? "Subir Foto" : "Upload Photo"}
+              </span>
+            </button>
+            <button
+              onClick={() => processPhoto()}
+              disabled={isProcessing || (!cameraActive && !cameraBlocked)}
+              className="py-3 bg-primary text-white font-extrabold text-xs rounded-2xl disabled:opacity-50 flex items-center justify-center gap-1.5 shadow-md transition-all hover:brightness-110"
+            >
+              <Camera className="w-4 h-4" />
+              <span>
+                {lang === "es" ? "Traducir" : "Translate"}
+              </span>
+            </button>
+          </>
+        )}
       </div>
 
-      {/* Sample Sign Presets */}
-      <div className="space-y-1 shrink-0 pt-0.5">
+      {/* ---- SAMPLE SIGN PRESETS ---- */}
+      <div className="space-y-1 pt-0.5">
         <div className="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider px-1 flex items-center gap-1">
           <ImageIcon className="w-3 h-3 text-primary" />
-          <span>{lang === "es" ? "Probar letreros de muestra:" : "Test sample signs:"}</span>
+          <span>
+            {lang === "es"
+              ? "Probar letreros de ejemplo:"
+              : "Try sample signs:"}
+          </span>
         </div>
         <div className="grid grid-cols-3 gap-1.5">
           {SAMPLE_SIGNS.map((sign) => (
@@ -416,13 +678,12 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
               key={sign.id}
               onClick={() => {
                 if (cameraActive) stopCamera();
-                setCapturedImage(sign.image);
-                processImageScan(sign.overlays, sign.image);
+                processSampleSign(sign.lines);
               }}
               className="p-2 bg-surface border border-secondary-fixed hover:bg-surface-container rounded-xl text-center transition-all"
             >
               <div className="text-[10px] font-extrabold text-primary truncate">
-                {lang === "es" ? sign.nameEs : sign.nameEn}
+                {sign.label}
               </div>
             </button>
           ))}
