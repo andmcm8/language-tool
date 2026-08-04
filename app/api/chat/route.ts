@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getMerchantById } from "@/lib/merchants";
 
 const DISCLAIMER_ES =
-  "\n\n⚠️ Si tiene alergias o dudas de salud, confirme con el personal antes de consumir.";
+  "\n\n⚠️ Si tiene alergias o dudas de salud, confirme con el personal antes of consumir.";
 const DISCLAIMER_EN =
   "\n\n⚠️ If you have food allergies or health concerns, please verify with store staff before consuming.";
 
@@ -20,10 +20,10 @@ export async function POST(req: NextRequest) {
     const lastMessage = (rawLast?.text || rawLast?.content || "").trim();
     const lowerMsg = lastMessage.toLowerCase();
 
-    // 100% Precise Language Detection (Check English words/phrases)
+    // Language Detection: Check if user typed/spoke in English
     const isEnglish =
       lang === "en" ||
-      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|sell|buy|store|parking|return|deliver|fresh|made|baked|items|list|top|cost|allergies|gluten)\b/i.test(
+      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty)\b/i.test(
         lowerMsg
       );
 
@@ -96,14 +96,14 @@ ${JSON.stringify(merchant, null, 2)}`,
     // 1. Restroom / Bathroom Query
     if (lowerMsg.includes("baño") || lowerMsg.includes("restroom") || lowerMsg.includes("bathroom")) {
       reply = isEnglish
-        ? `Restroom: ${p?.restroomLocationEn || "Located at the back center aisle."} ${p?.restroomCodeEn ? `(${p.restroomCodeEn})` : ""}`
-        : `Baño: ${p?.restroomLocationEs || "Al fondo del pasillo central."} ${p?.restroomCodeEs ? `(${p.restroomCodeEs})` : ""}`;
+        ? `Restroom: ${p?.restroomLocationEn || "Located at the back of the store."} ${p?.restroomCodeEn ? `(${p.restroomCodeEn})` : ""}`
+        : `Baño: ${p?.restroomLocationEs || "Al fondo de la tienda."} ${p?.restroomCodeEs ? `(${p.restroomCodeEs})` : ""}`;
     }
     // 2. WiFi Query
     else if (lowerMsg.includes("wifi") || lowerMsg.includes("internet")) {
       reply = isEnglish
-        ? `Guest WiFi: Network "${p?.wifiName || "ElSol_Guest_WiFi"}" | Password: "${p?.wifiPassword || "elsolstamford"}"`
-        : `WiFi Clientes: Red "${p?.wifiName || "ElSol_Guest_WiFi"}" | Contraseña: "${p?.wifiPassword || "elsolstamford"}"`;
+        ? `Guest WiFi: Network "${p?.wifiName || "Guest_WiFi"}" | Password: "${p?.wifiPassword || "free"}"`
+        : `WiFi Clientes: Red "${p?.wifiName || "Guest_WiFi"}" | Contraseña: "${p?.wifiPassword || "free"}"`;
     }
     // 3. EBT / SNAP Query
     else if (lowerMsg.includes("ebt") || lowerMsg.includes("snap")) {
@@ -123,14 +123,31 @@ ${JSON.stringify(merchant, null, 2)}`,
         ? `Address: ${info.address}. Phone: ${info.phone}.`
         : `Dirección: ${info.address}. Teléfono: ${info.phone}.`;
     }
-    // 6. Menu / Item List Query ("What are 3 items on the menu?", "What do you sell?")
+    // 6. Parking Query
+    else if (lowerMsg.includes("park") || lowerMsg.includes("parqueo") || lowerMsg.includes("estacionamiento")) {
+      reply = isEnglish
+        ? (p?.parkingPolicyEn || "Free customer parking is available.")
+        : (p?.parkingPolicyEs || "Estacionamiento gratuito disponible para clientes.");
+    }
+    // 7. Delivery Query
+    else if (lowerMsg.includes("deliver") || lowerMsg.includes("delivery") || lowerMsg.includes("envio") || lowerMsg.includes("domicilio")) {
+      reply = isEnglish
+        ? (p?.deliveryPolicyEn || "Home delivery is available for orders in Stamford.")
+        : (p?.deliveryPolicyEs || "Entregas a domicilio disponibles para Stamford.");
+    }
+    // 8. Warranty / Return Query
+    else if (lowerMsg.includes("warranty") || lowerMsg.includes("garantia") || lowerMsg.includes("return") || lowerMsg.includes("refund")) {
+      reply = isEnglish
+        ? (p?.returnPolicyEn || "All products and services include store warranty.")
+        : (p?.returnPolicyEs || "Todos los productos y servicios incluyen garantía.");
+    }
+    // 9. Menu / Item List Query ("What are three items on the menu?", "What items do you sell?")
     else if (
-      lowerMsg.includes("menu") ||
       lowerMsg.includes("items") ||
-      lowerMsg.includes("list") ||
-      lowerMsg.includes("sell") ||
+      lowerMsg.includes("menu") ||
       lowerMsg.includes("catalog") ||
-      lowerMsg.includes("products")
+      lowerMsg.includes("list") ||
+      (lowerMsg.includes("sell") && !lowerMsg.includes("ps5") && !lowerMsg.includes("playstation"))
     ) {
       const topProducts = merchant.products.slice(0, 3);
       if (isEnglish) {
@@ -141,22 +158,25 @@ ${JSON.stringify(merchant, null, 2)}`,
         reply = `Los productos principales incluyen: ${itemNames}.`;
       }
     }
-    // 7. Specific Product Intent Query (Freshness vs Price vs Ingredients)
+    // 10. Specific Product Query
     else {
+      // Find matching product with exact score priority
       const matchedProduct = merchant.products.find((prod) => {
         const nameEn = prod.nameEn.toLowerCase();
         const nameEs = prod.nameEs.toLowerCase();
         return (
           lowerMsg.includes(nameEn) ||
           lowerMsg.includes(nameEs) ||
-          lowerMsg.includes("empanada") ||
-          lowerMsg.includes("paisa") ||
-          lowerMsg.includes("bread") ||
-          lowerMsg.includes("pan") ||
-          lowerMsg.includes("cheese") ||
-          lowerMsg.includes("beef") ||
-          lowerMsg.includes("chicken")
+          (lowerMsg.includes("bono") && nameEn.includes("bono")) ||
+          (lowerMsg.includes("empanada") && nameEn.includes("empanada")) ||
+          (lowerMsg.includes("paisa") && nameEn.includes("paisa")) ||
+          (lowerMsg.includes("bateria") && nameEn.includes("battery")) ||
+          (lowerMsg.includes("pantalla") && nameEn.includes("screen"))
         );
+      }) || merchant.products.find((prod) => {
+        const nameEn = prod.nameEn.toLowerCase();
+        const nameEs = prod.nameEs.toLowerCase();
+        return lowerMsg.split(/\s+/).some((w: string) => w.length > 3 && (nameEn.includes(w) || nameEs.includes(w)));
       });
 
       if (matchedProduct) {
