@@ -78,6 +78,148 @@ const SAMPLE_SIGNS = [
 /* ================================================================
    COMPONENT
    ================================================================ */
+/* ================================================================
+   IMAGE PREPROCESSING — dramatically improves Tesseract accuracy
+   ================================================================ */
+function preprocessForOcr(
+  srcCanvas: HTMLCanvasElement
+): HTMLCanvasElement {
+  const w = srcCanvas.width;
+  const h = srcCanvas.height;
+  const ocrCanvas = document.createElement("canvas");
+  ocrCanvas.width = w;
+  ocrCanvas.height = h;
+  const ctx = ocrCanvas.getContext("2d")!;
+  ctx.drawImage(srcCanvas, 0, 0);
+
+  const imageData = ctx.getImageData(0, 0, w, h);
+  const d = imageData.data;
+
+  // Step 1: Grayscale
+  for (let i = 0; i < d.length; i += 4) {
+    const gray = Math.round(0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]);
+    d[i] = d[i + 1] = d[i + 2] = gray;
+  }
+
+  // Step 2: Contrast stretch (histogram stretch to 0–255)
+  let min = 255,
+    max = 0;
+  for (let i = 0; i < d.length; i += 4) {
+    if (d[i] < min) min = d[i];
+    if (d[i] > max) max = d[i];
+  }
+  const range = max - min || 1;
+  for (let i = 0; i < d.length; i += 4) {
+    const stretched = Math.round(((d[i] - min) / range) * 255);
+    d[i] = d[i + 1] = d[i + 2] = stretched;
+  }
+
+  // Step 3: Otsu threshold for binarisation
+  const histogram = new Array(256).fill(0);
+  const total = w * h;
+  for (let i = 0; i < d.length; i += 4) histogram[d[i]]++;
+  let sumAll = 0;
+  for (let i = 0; i < 256; i++) sumAll += i * histogram[i];
+  let sumB = 0,
+    wB = 0,
+    bestVariance = 0,
+    threshold = 128;
+  for (let t = 0; t < 256; t++) {
+    wB += histogram[t];
+    if (wB === 0) continue;
+    const wF = total - wB;
+    if (wF === 0) break;
+    sumB += t * histogram[t];
+    const mB = sumB / wB;
+    const mF = (sumAll - sumB) / wF;
+    const variance = wB * wF * (mB - mF) * (mB - mF);
+    if (variance > bestVariance) {
+      bestVariance = variance;
+      threshold = t;
+    }
+  }
+  for (let i = 0; i < d.length; i += 4) {
+    const val = d[i] > threshold ? 255 : 0;
+    d[i] = d[i + 1] = d[i + 2] = val;
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+  return ocrCanvas;
+}
+
+/* ================================================================
+   OCR WORD CORRECTION — fixes common Tesseract misreads using
+   context clues (dictionary look-up with letter substitution)
+   ================================================================ */
+const KNOWN_WORDS = new Set([
+  "daily","special","specials","fresh","hot","cold","warm","baked","fried",
+  "grilled","roasted","roast","melted","steamed","homemade","handmade",
+  "open","closed","hours","notice","warning","caution","welcome",
+  "please","thank","parking","restroom","bathroom","employees","only",
+  "push","pull","exit","entrance","sale","discount","price","free",
+  "cash","card","credit","debit","accepted","required","payment",
+  "delivery","pickup","order","menu","combo","meal","plate","serving",
+  "bread","meat","chicken","beef","pork","fish","cheese","rice",
+  "beans","eggs","milk","butter","cream","sugar","salt","sauce",
+  "salad","soup","sandwich","burger","tacos","water","juice","coffee",
+  "soda","beer","wine","drink","drinks","bakery","deli","grocery",
+  "produce","dairy","frozen","snacks","candy","chips","cookies",
+  "small","medium","large","extra","regular","double","half",
+  "pound","dozen","each","per","included","includes","available",
+  "limited","while","supplies","last","first","second","batch",
+  "today","now","new","best","store","market","service","customer",
+  "phone","call","information","help","floor","aisle",
+  "organic","natural","gluten","spicy","sweet","delicious",
+  "breakfast","lunch","dinner","appetizer","dessert","side",
+  "monday","tuesday","wednesday","thursday","friday","saturday","sunday",
+  "pharmacy","prescription","repair","warranty","screen","battery",
+  "empanada","empanadas","arepa","plantain","plantains","tortilla",
+  "avocado","tomato","onion","lettuce","pepper","corn","banana",
+  "orange","lemon","lime","apple","mango","coconut","pineapple",
+  "with","without","and","the","for","all","our","your","this","that",
+]);
+
+// Common OCR character confusions
+const OCR_SUBS: Record<string, string[]> = {
+  "0": ["O","o"], "O": ["0"], "o": ["0"],
+  "1": ["I","l","i"], "I": ["1","l"], "l": ["1","I","i"],
+  "5": ["S","s"], "S": ["5"], "s": ["5"],
+  "8": ["B"], "B": ["8"],
+  "6": ["G","b"], "G": ["6"],
+  "2": ["Z","z"], "Z": ["2"], "z": ["2"],
+  "|": ["I","l","1"],
+  "]": ["I","l"],
+  "[": ["I","l"],
+  "{": ["("], "}": [")"],
+};
+
+function correctOcrWord(word: string): string {
+  const lower = word.toLowerCase().replace(/[^a-z]/g, "");
+  if (lower.length < 2) return word;
+  if (KNOWN_WORDS.has(lower)) return word; // Already correct
+
+  // Try single-character substitutions
+  for (let pos = 0; pos < word.length; pos++) {
+    const ch = word[pos];
+    const subs = OCR_SUBS[ch];
+    if (!subs) continue;
+    for (const sub of subs) {
+      const candidate = word.slice(0, pos) + sub + word.slice(pos + 1);
+      const candidateLower = candidate.toLowerCase().replace(/[^a-z]/g, "");
+      if (KNOWN_WORDS.has(candidateLower)) return candidate;
+    }
+  }
+
+  return word; // No correction found, return as-is
+}
+
+function correctOcrLine(line: string): string {
+  return line
+    .split(/\s+/)
+    .map((w) => correctOcrWord(w))
+    .join(" ");
+}
+
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const srcCanvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -324,19 +466,25 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         throw new Error("No image source available");
       }
 
-      /* ---- Step 1: Tesseract for bounding boxes (runs in parallel) ---- */
+      /* ---- Step 1: Preprocess image + Tesseract OCR ---- */
       setStatusText(
         lang === "es" ? "Detectando texto…" : "Detecting text…"
       );
 
+      // Create a preprocessed canvas (grayscale → contrast → binarise)
+      const ocrCanvas = preprocessForOcr(srcCanvas);
+
       const tesseractPromise = (async () => {
         try {
           const worker = await createWorker("eng");
-          const ret = await worker.recognize(srcCanvas);
+          const ret = await worker.recognize(ocrCanvas);
           await worker.terminate();
           return ret.data.lines
             .filter((l) => l.text.trim().length > 1 && l.bbox)
-            .map((l) => ({ text: l.text.trim(), bbox: l.bbox }));
+            .map((l) => ({
+              text: correctOcrLine(l.text.trim()),
+              bbox: l.bbox,
+            }));
         } catch {
           return [];
         }
