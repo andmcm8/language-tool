@@ -30,7 +30,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   const [inputQuery, setInputQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  const [autoSpeak, setAutoSpeak] = useState(true);
+  // Default for voice speech is MUTED per user instruction
+  const [autoSpeak, setAutoSpeak] = useState(false);
   const recognitionRef = useRef<any>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
@@ -74,14 +75,22 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     }
   };
 
-  // Adaptive Speech Synthesis (English or Spanish)
+  // Toggle voice mute & instantly stop any active speech mid-sentence
+  const toggleAutoSpeak = () => {
+    const nextState = !autoSpeak;
+    setAutoSpeak(nextState);
+    if (!nextState && typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+  };
+
+  // Adaptive Speech Synthesis
   const speakText = (text: string) => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    if (!autoSpeak || typeof window === "undefined" || !("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
 
-    // Detect if output text is in English or Spanish
-    const isEnglishText = /\b(the|is|are|you|have|where|when|what|hours|restroom|bathroom|wifi|welcome|safety|note|disclaimer)\b/i.test(
+    const isEnglishText = /\b(the|is|are|you|have|where|when|what|hours|restroom|bathroom|wifi|welcome|safety|note|disclaimer|for|that|specific)\b/i.test(
       text
     );
     utterance.lang = isEnglishText ? "en-US" : "es-ES";
@@ -163,13 +172,13 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           {lang === "es" ? `Asistente AI (${merchant.storeInfo.name})` : `AI Assistant (${merchant.storeInfo.name})`}
         </span>
         <button
-          onClick={() => setAutoSpeak(!autoSpeak)}
+          onClick={toggleAutoSpeak}
           className={`px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 transition-all ${
-            autoSpeak ? "bg-emerald-100 text-emerald-800" : "bg-surface-container text-on-surface-variant"
+            autoSpeak ? "bg-emerald-100 text-emerald-800" : "bg-surface-container text-on-surface-variant opacity-80"
           }`}
         >
           {autoSpeak ? <Volume2 className="w-3 h-3" /> : <VolumeX className="w-3 h-3" />}
-          <span>{autoSpeak ? "Voz" : "Muted"}</span>
+          <span>{autoSpeak ? "Voz Activa" : "Muted"}</span>
         </button>
       </div>
 
