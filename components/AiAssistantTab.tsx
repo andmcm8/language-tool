@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { MerchantConfig } from "@/types/merchant";
-import { Mic, MicOff, Send, Volume2, VolumeX, RefreshCw, ShieldAlert } from "lucide-react";
+import { Mic, MicOff, Send, Volume2, VolumeX, RefreshCw, ShieldAlert, Trash2 } from "lucide-react";
 
 interface AiAssistantTabProps {
   merchant: MerchantConfig;
@@ -16,24 +16,50 @@ interface Message {
 }
 
 export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "msg-0",
-      sender: "ai",
-      text:
-        lang === "es"
-          ? `¡Hola! Soy el Asistente AI de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
-          : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
-    },
-  ]);
+  const storageKey = `chat_history_${merchant.storeInfo.id}`;
+
+  const defaultInitialMessage: Message = {
+    id: "msg-0",
+    sender: "ai",
+    text:
+      lang === "es"
+        ? `¡Hola! Soy el Asistente AI de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
+        : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
+  };
+
+  // Persistent chat history across tab switches & page refreshes
+  const [messages, setMessages] = useState<Message[]>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch (e) {
+        console.warn("Failed to load chat history:", e);
+      }
+    }
+    return [defaultInitialMessage];
+  });
 
   const [inputQuery, setInputQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  // Default for voice speech is MUTED per user instruction
   const [autoSpeak, setAutoSpeak] = useState(false);
   const recognitionRef = useRef<any>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
+
+  // Sync chat history to localStorage whenever messages change
+  useEffect(() => {
+    if (typeof window !== "undefined" && messages.length > 0) {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(messages));
+      } catch (e) {
+        console.warn("Failed to save chat history:", e);
+      }
+    }
+  }, [messages, storageKey]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -75,7 +101,6 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     }
   };
 
-  // Toggle voice mute & instantly stop any active speech mid-sentence
   const toggleAutoSpeak = () => {
     const nextState = !autoSpeak;
     setAutoSpeak(nextState);
@@ -84,7 +109,15 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     }
   };
 
-  // Adaptive Speech Synthesis
+  const clearChatHistory = () => {
+    setMessages([defaultInitialMessage]);
+    if (typeof window !== "undefined") {
+      try {
+        localStorage.removeItem(storageKey);
+      } catch (e) {}
+    }
+  };
+
   const speakText = (text: string) => {
     if (!autoSpeak || typeof window === "undefined" || !("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
@@ -168,18 +201,28 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     <div className="w-full max-w-md mx-auto flex flex-col h-[calc(100vh-130px)] p-4 pb-24 space-y-2">
       {/* Controls Bar */}
       <div className="flex items-center justify-between bg-surface p-2.5 rounded-2xl border border-secondary-fixed/50">
-        <span className="text-xs font-bold text-on-surface">
+        <span className="text-xs font-bold text-on-surface truncate pr-1">
           {lang === "es" ? `Asistente AI (${merchant.storeInfo.name})` : `AI Assistant (${merchant.storeInfo.name})`}
         </span>
-        <button
-          onClick={toggleAutoSpeak}
-          className={`px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 transition-all ${
-            autoSpeak ? "bg-emerald-100 text-emerald-800" : "bg-surface-container text-on-surface-variant opacity-80"
-          }`}
-        >
-          {autoSpeak ? <Volume2 className="w-3 h-3" /> : <VolumeX className="w-3 h-3" />}
-          <span>{autoSpeak ? "Voz Activa" : "Muted"}</span>
-        </button>
+        
+        <div className="flex items-center gap-1.5 shrink-0">
+          <button
+            onClick={clearChatHistory}
+            className="p-1 rounded-lg text-on-surface-variant hover:text-rose-500 transition-colors"
+            title="Clear Chat History"
+          >
+            <Trash2 className="w-3.5 h-3.5" />
+          </button>
+          <button
+            onClick={toggleAutoSpeak}
+            className={`px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 transition-all ${
+              autoSpeak ? "bg-emerald-100 text-emerald-800" : "bg-surface-container text-on-surface-variant opacity-80"
+            }`}
+          >
+            {autoSpeak ? <Volume2 className="w-3 h-3" /> : <VolumeX className="w-3 h-3" />}
+            <span>{autoSpeak ? "Voz Activa" : "Muted"}</span>
+          </button>
+        </div>
       </div>
 
       {/* Quick Suggestion Chips */}
