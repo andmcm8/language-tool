@@ -5,14 +5,20 @@ export interface StoreHours {
 }
 
 export interface StorePolicies {
-  restroomLocation?: string;
-  restroomCode?: string;
+  restroomLocationEs?: string;
+  restroomLocationEn?: string;
+  restroomCodeEs?: string;
+  restroomCodeEn?: string;
   wifiName?: string;
   wifiPassword?: string;
-  parkingPolicy?: string;
-  ebtPolicy?: string;
-  returnPolicy?: string;
-  deliveryPolicy?: string;
+  parkingPolicyEs?: string;
+  parkingPolicyEn?: string;
+  ebtPolicyEs?: string;
+  ebtPolicyEn?: string;
+  returnPolicyEs?: string;
+  returnPolicyEn?: string;
+  deliveryPolicyEs?: string;
+  deliveryPolicyEn?: string;
 }
 
 export interface StoreInfo {
