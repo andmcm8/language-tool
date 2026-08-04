@@ -22,8 +22,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       sender: "ai",
       text:
         lang === "es"
-          ? `¡Hola! Soy el Asistente Informativo AI de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
-          : `Hello! I am the Informational AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
+          ? `¡Hola! Soy el Asistente AI de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
+          : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
     },
   ]);
 
@@ -74,11 +74,17 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     }
   };
 
+  // Adaptive Speech Synthesis (English or Spanish)
   const speakText = (text: string) => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = lang === "es" ? "es-ES" : "en-US";
+
+    // Detect if output text is in English or Spanish
+    const isEnglishText = /\b(the|is|are|you|have|where|when|what|hours|restroom|bathroom|wifi|welcome|safety|note|disclaimer)\b/i.test(
+      text
+    );
+    utterance.lang = isEnglishText ? "en-US" : "es-ES";
     utterance.rate = 0.95;
     window.speechSynthesis.speak(utterance);
   };
@@ -93,7 +99,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       text: textToSend,
     };
 
-    setMessages((prev) => [...prev, userMsg]);
+    const updatedMessages = [...messages, userMsg];
+    setMessages(updatedMessages);
     setInputQuery("");
     setLoading(true);
 
@@ -102,7 +109,11 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: [...messages, userMsg],
+          messages: updatedMessages.map((m) => ({
+            sender: m.sender,
+            text: m.text,
+            content: m.text,
+          })),
           lang,
           merchantId: merchant.storeInfo.id,
         }),
@@ -122,12 +133,13 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
       if (autoSpeak) speakText(aiReplyText);
     } catch (err) {
+      console.error("Chat API error:", err);
       const fallbackMsg: Message = {
         id: `msg-${Date.now() + 1}`,
         sender: "ai",
         text:
           lang === "es"
-            ? `Horarios de ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}. Estamos a su servicio.`
+            ? `Horarios de ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}.`
             : `Hours for ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}.`,
       };
       setMessages((prev) => [...prev, fallbackMsg]);
@@ -137,9 +149,9 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   };
 
   const quickPrompts = [
-    { es: "¿Tiene gluten o alérgenos?", en: "Gluten & allergy info?" },
     { es: "¿Dónde está el baño?", en: "Where is the restroom?" },
     { es: "¿Cuál es la clave del WiFi?", en: "What is the WiFi password?" },
+    { es: "¿Tienen opciones sin gluten?", en: "Are there gluten free items?" },
     { es: "¿Aceptan EBT / SNAP?", en: "Do you accept EBT?" },
   ];
 
@@ -148,7 +160,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       {/* Controls Bar */}
       <div className="flex items-center justify-between bg-surface p-2.5 rounded-2xl border border-secondary-fixed/50">
         <span className="text-xs font-bold text-on-surface">
-          {lang === "es" ? `Asistente AI (${merchant.storeInfo.name})` : `AI Assistant`}
+          {lang === "es" ? `Asistente AI (${merchant.storeInfo.name})` : `AI Assistant (${merchant.storeInfo.name})`}
         </span>
         <button
           onClick={() => setAutoSpeak(!autoSpeak)}
@@ -199,7 +211,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Permanent Legal & Health Liability Disclaimer Bar */}
+      {/* Permanent Legal Disclaimer Bar */}
       <div className="flex items-center justify-center gap-1 px-2 py-1 bg-amber-500/10 rounded-xl text-[9px] font-semibold text-amber-800 dark:text-amber-300 text-center">
         <ShieldAlert className="w-3 h-3 text-amber-600 shrink-0" />
         <span>
