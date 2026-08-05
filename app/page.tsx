@@ -14,7 +14,6 @@ import {
   Phone,
   ArrowRight,
   Globe,
-  Sparkles,
   Store,
   ChevronRight,
 } from "lucide-react";
@@ -25,23 +24,62 @@ const MERCHANT_ICONS: Record<string, any> = {
   "stamford-repairs": Wrench,
 };
 
-const MERCHANT_BADGES: Record<string, string> = {
-  elsol: "Supermarket & Deli",
-  "clover-pharmacy": "Pharmacy & Wellness",
-  "stamford-repairs": "Tech & Phone Repair",
+const MERCHANT_BADGES: Record<string, { en: string; es: string }> = {
+  elsol: { en: "Supermarket & Deli", es: "Supermercado y Deli" },
+  "clover-pharmacy": { en: "Pharmacy & Wellness", es: "Farmacia y Bienestar" },
+  "stamford-repairs": { en: "Tech & Phone Repair", es: "Reparación Celular y Tech" },
 };
 
 const CATEGORIES = [
-  { id: "all", label: "All Places" },
-  { id: "supermarket", label: "Supermarket & Deli" },
-  { id: "pharmacy", label: "Pharmacy" },
-  { id: "repair", label: "Tech Repair" },
+  { id: "all", labelEn: "All Places", labelEs: "Todos los Negocios" },
+  { id: "supermarket", labelEn: "Supermarket & Deli", labelEs: "Supermercado y Deli" },
+  { id: "pharmacy", labelEn: "Pharmacy", labelEs: "Farmacia" },
+  { id: "repair", labelEn: "Tech Repair", labelEs: "Reparación Técnica" },
 ];
+
+/* ================================================================
+   BILINGUAL DICTIONARY FOR HOMEPAGE PORTAL
+   ================================================================ */
+const DICT = {
+  en: {
+    portalBadge: "MERCHANT ASSISTANT PORTAL",
+    portalTitle: "Language Tool Portal",
+    subtitle:
+      "Select a merchant below to launch their bilingual AI assistant, camera translation tool, and store directory.",
+    searchPlaceholder: "Search places by name, city, service...",
+    foundSuffix: "Merchants Found",
+    launchBtn: "Launch Merchant Tool",
+    noResultsTitle: "No Merchants Match Your Search",
+    noResultsDesc:
+      'Try searching for "El Sol", "Pharmacy", "Stamford", or click "All Places" above.',
+    clearBtn: "Clear Search & Show All",
+    monFri: "Mon-Fri",
+    footerText: "Language Tool • Multi-Merchant Bilingual Assistant",
+  },
+  es: {
+    portalBadge: "PORTAL DE ASISTENTES COMERCIALES",
+    portalTitle: "Portal Language Tool",
+    subtitle:
+      "Seleccione un negocio a continuación para abrir su asistente de IA bilingüe, herramienta de cámara y directorio.",
+    searchPlaceholder: "Buscar negocios por nombre, ciudad, servicio...",
+    foundSuffix: "Negocios Encontrados",
+    launchBtn: "Abrir Herramienta del Comercio",
+    noResultsTitle: "No se encontraron negocios para su búsqueda",
+    noResultsDesc:
+      'Intente buscar "El Sol", "Farmacia", "Stamford", o presione "Todos los Negocios" arriba.',
+    clearBtn: "Borrar Búsqueda y Mostrar Todos",
+    monFri: "Lun-Vie",
+    footerText: "Language Tool • Portal de Asistentes Comercial Bilingüe",
+  },
+};
 
 export default function HomePage() {
   const allMerchants = useMemo(() => getAllMerchants(), []);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [lang, setLang] = useState<"en" | "es">("es"); // Default to bilingual Spanish friendly
+
+  const t = DICT[lang];
 
   /* ---------- Real-Time Filtering Logic ---------- */
   const filteredMerchants = useMemo(() => {
@@ -50,7 +88,8 @@ export default function HomePage() {
       const name = m.storeInfo.name.toLowerCase();
       const tagline = m.storeInfo.tagline.toLowerCase();
       const address = m.storeInfo.address.toLowerCase();
-      const badge = (MERCHANT_BADGES[id] || "").toLowerCase();
+      const badgeEn = (MERCHANT_BADGES[id]?.en || "").toLowerCase();
+      const badgeEs = (MERCHANT_BADGES[id]?.es || "").toLowerCase();
       const amenities = (m.storeInfo.amenities || []).join(" ").toLowerCase();
 
       const q = searchQuery.toLowerCase().trim();
@@ -59,16 +98,17 @@ export default function HomePage() {
         name.includes(q) ||
         tagline.includes(q) ||
         address.includes(q) ||
-        badge.includes(q) ||
+        badgeEn.includes(q) ||
+        badgeEs.includes(q) ||
         amenities.includes(q);
 
       let matchesCategory = true;
       if (selectedCategory === "supermarket") {
-        matchesCategory = id === "elsol" || badge.includes("supermarket");
+        matchesCategory = id === "elsol" || badgeEn.includes("supermarket");
       } else if (selectedCategory === "pharmacy") {
-        matchesCategory = id === "clover-pharmacy" || badge.includes("pharmacy");
+        matchesCategory = id === "clover-pharmacy" || badgeEn.includes("pharmacy");
       } else if (selectedCategory === "repair") {
-        matchesCategory = id === "stamford-repairs" || badge.includes("repair");
+        matchesCategory = id === "stamford-repairs" || badgeEn.includes("repair");
       }
 
       return matchesSearch && matchesCategory;
@@ -80,7 +120,7 @@ export default function HomePage() {
       {/* ROYAL BLUE MOBILE-FIRST HEADER */}
       <header className="bg-[#003ec7] text-white shadow-md">
         <div className="max-w-md md:max-w-4xl mx-auto px-4 py-4 space-y-3">
-          {/* Top Title & Language Badge */}
+          {/* Top Title & WORKING Interactive EN / ES Language Swapper Toggle */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-xl bg-white text-[#003ec7] flex items-center justify-center shadow-sm font-black text-xl">
@@ -88,23 +128,28 @@ export default function HomePage() {
               </div>
               <div>
                 <h1 className="font-extrabold text-lg leading-tight text-white tracking-tight">
-                  Language Tool
+                  {t.portalTitle}
                 </h1>
                 <p className="text-[10px] text-blue-100 font-semibold tracking-wide">
-                  MERCHANT ASSISTANT PORTAL
+                  {t.portalBadge}
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-1.5 bg-white/15 text-white border border-white/20 px-2.5 py-1 rounded-full text-xs font-bold shadow-xs">
-              <Globe className="w-3.5 h-3.5 text-amber-300" />
-              <span>EN / ES</span>
-            </div>
+            {/* FULLY FUNCTIONAL 1-TAP LANGUAGE TOGGLE BUTTON */}
+            <button
+              onClick={() => setLang(lang === "es" ? "en" : "es")}
+              className="flex items-center gap-1.5 bg-white text-[#003ec7] hover:bg-blue-50 px-3 py-1.5 rounded-full text-xs font-black shadow-md transition-all active:scale-95"
+              title="Switch Language / Cambiar Idioma"
+            >
+              <Globe className="w-3.5 h-3.5 text-[#003ec7]" />
+              <span>{lang === "es" ? "🇲🇽 Español" : "🇺🇸 English"}</span>
+            </button>
           </div>
 
           {/* Subtitle Message */}
           <p className="text-xs text-blue-100 font-medium leading-relaxed">
-            Select a merchant below to launch their bilingual AI assistant, camera translation tool, and store directory.
+            {t.subtitle}
           </p>
 
           {/* FUNCTIONAL SEARCH INPUT BAR */}
@@ -115,7 +160,7 @@ export default function HomePage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search places by name, city, service..."
+                placeholder={t.searchPlaceholder}
                 className="w-full pl-10 pr-9 py-2.5 bg-white text-slate-900 rounded-xl text-xs font-medium placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 shadow-md"
               />
               {searchQuery && (
@@ -144,7 +189,7 @@ export default function HomePage() {
                   : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
               }`}
             >
-              {cat.label}
+              {lang === "es" ? cat.labelEs : cat.labelEn}
             </button>
           ))}
         </div>
@@ -156,8 +201,7 @@ export default function HomePage() {
           <div className="flex items-center gap-1.5">
             <Store className="w-3.5 h-3.5 text-[#003ec7]" />
             <span>
-              {filteredMerchants.length}{" "}
-              {filteredMerchants.length === 1 ? "Merchant" : "Merchants"} Found
+              {filteredMerchants.length} {t.foundSuffix}
             </span>
           </div>
           {searchQuery && (
@@ -167,13 +211,14 @@ export default function HomePage() {
           )}
         </div>
 
-        {/* NEAT MOBILE-FIRST GRID (1-col mobile, 2-col tablet/desktop) */}
+        {/* NEAT MOBILE-FIRST GRID */}
         {filteredMerchants.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             {filteredMerchants.map((merchant) => {
               const id = merchant.storeInfo.id;
               const Icon = MERCHANT_ICONS[id] || ShoppingBag;
-              const badgeText = MERCHANT_BADGES[id] || "Local Business";
+              const badgeObj = MERCHANT_BADGES[id] || { en: "Local Business", es: "Negocio Local" };
+              const badgeText = lang === "es" ? badgeObj.es : badgeObj.en;
 
               return (
                 <Link
@@ -234,7 +279,7 @@ export default function HomePage() {
 
                   {/* Launch Action Bar */}
                   <div className="pt-2 pl-1.5 flex items-center justify-between text-xs font-extrabold text-[#003ec7] group-hover:translate-x-0.5 transition-transform">
-                    <span>Abrir Herramienta / Launch Tool</span>
+                    <span>{t.launchBtn}</span>
                     <ChevronRight className="w-4 h-4 text-[#003ec7]" />
                   </div>
                 </Link>
@@ -245,10 +290,10 @@ export default function HomePage() {
           <div className="bg-white rounded-2xl p-8 text-center space-y-3 border border-slate-200 my-4 shadow-xs">
             <Store className="w-10 h-10 text-slate-300 mx-auto" />
             <h3 className="font-extrabold text-slate-800 text-sm">
-              No Merchants Match Your Search
+              {t.noResultsTitle}
             </h3>
             <p className="text-xs text-slate-500 max-w-xs mx-auto">
-              Try searching for "El Sol", "Pharmacy", "Stamford", or click "All Places" above.
+              {t.noResultsDesc}
             </p>
             <button
               onClick={() => {
@@ -257,7 +302,7 @@ export default function HomePage() {
               }}
               className="px-4 py-2 rounded-xl bg-[#003ec7] text-white font-extrabold text-xs shadow-sm hover:brightness-110 transition-all"
             >
-              Clear Search & Show All
+              {t.clearBtn}
             </button>
           </div>
         )}
@@ -265,7 +310,7 @@ export default function HomePage() {
 
       {/* FOOTER */}
       <footer className="max-w-md md:max-w-4xl mx-auto px-4 pt-10 text-center text-xs text-slate-400">
-        <p>© {new Date().getFullYear()} Language Tool • Multi-Merchant Bilingual Assistant</p>
+        <p>© {new Date().getFullYear()} {t.footerText}</p>
       </footer>
     </main>
   );
