@@ -18,6 +18,10 @@ export function getMerchantById(id: string): MerchantConfig {
   return elsolConfig as unknown as MerchantConfig;
 }
 
+export function getAllMerchants(): MerchantConfig[] {
+  return Object.values(MERCHANTS_MAP);
+}
+
 export function listMerchants(): { id: string; name: string; tagline: string }[] {
   return Object.values(MERCHANTS_MAP).map((m) => ({
     id: m.storeInfo.id,
