@@ -1,27 +1,23 @@
-import React from "react";
+"use client";
+
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { getAllMerchants } from "@/lib/merchants";
 import {
   ShoppingBag,
   Pill,
   Wrench,
-  Camera,
-  MessageSquare,
-  Sparkles,
+  Search,
+  X,
   MapPin,
   Clock,
   Phone,
   ArrowRight,
-  ShieldCheck,
   Globe,
-  Zap,
+  Sparkles,
+  Store,
+  ChevronRight,
 } from "lucide-react";
-
-export const metadata = {
-  title: "Language Tool - Merchant Assistant & Translation Portal",
-  description:
-    "Select your local business to launch their bilingual AI assistant, Google Translate camera mode, and interactive product directory.",
-};
 
 const MERCHANT_ICONS: Record<string, any> = {
   elsol: ShoppingBag,
@@ -29,199 +25,247 @@ const MERCHANT_ICONS: Record<string, any> = {
   "stamford-repairs": Wrench,
 };
 
-const MERCHANT_GRADIENTS: Record<string, string> = {
-  elsol: "from-amber-500 to-orange-600",
-  "clover-pharmacy": "from-emerald-500 to-teal-600",
-  "stamford-repairs": "from-blue-600 to-indigo-600",
-};
-
 const MERCHANT_BADGES: Record<string, string> = {
   elsol: "Supermarket & Deli",
-  "clover-pharmacy": "Bilingual Pharmacy",
-  "stamford-repairs": "Device & Phone Repair",
+  "clover-pharmacy": "Pharmacy & Wellness",
+  "stamford-repairs": "Tech & Phone Repair",
 };
 
+const CATEGORIES = [
+  { id: "all", label: "All Places" },
+  { id: "supermarket", label: "Supermarket & Deli" },
+  { id: "pharmacy", label: "Pharmacy" },
+  { id: "repair", label: "Tech Repair" },
+];
+
 export default function HomePage() {
-  const merchants = getAllMerchants();
+  const allMerchants = useMemo(() => getAllMerchants(), []);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  /* ---------- Real-Time Filtering Logic ---------- */
+  const filteredMerchants = useMemo(() => {
+    return allMerchants.filter((m) => {
+      const id = m.storeInfo.id.toLowerCase();
+      const name = m.storeInfo.name.toLowerCase();
+      const tagline = m.storeInfo.tagline.toLowerCase();
+      const address = m.storeInfo.address.toLowerCase();
+      const badge = (MERCHANT_BADGES[id] || "").toLowerCase();
+      const amenities = (m.storeInfo.amenities || []).join(" ").toLowerCase();
+
+      const q = searchQuery.toLowerCase().trim();
+      const matchesSearch =
+        !q ||
+        name.includes(q) ||
+        tagline.includes(q) ||
+        address.includes(q) ||
+        badge.includes(q) ||
+        amenities.includes(q);
+
+      let matchesCategory = true;
+      if (selectedCategory === "supermarket") {
+        matchesCategory = id === "elsol" || badge.includes("supermarket");
+      } else if (selectedCategory === "pharmacy") {
+        matchesCategory = id === "clover-pharmacy" || badge.includes("pharmacy");
+      } else if (selectedCategory === "repair") {
+        matchesCategory = id === "stamford-repairs" || badge.includes("repair");
+      }
+
+      return matchesSearch && matchesCategory;
+    });
+  }, [allMerchants, searchQuery, selectedCategory]);
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-primary selection:text-white">
-      {/* BACKGROUND GRADIENT DECORATION */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -right-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 left-1/3 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl" />
-      </div>
-
-      {/* HEADER BAR */}
-      <header className="relative z-10 border-b border-white/10 bg-slate-900/60 backdrop-blur-md sticky top-0">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary to-amber-400 flex items-center justify-center text-white shadow-md font-black text-lg">
-              L
+    <main className="min-h-screen bg-[#f7f9fb] text-slate-800 font-sans selection:bg-primary selection:text-white pb-20">
+      {/* ROYAL BLUE MOBILE-FIRST HEADER */}
+      <header className="bg-[#003ec7] text-white shadow-md">
+        <div className="max-w-md md:max-w-4xl mx-auto px-4 py-4 space-y-3">
+          {/* Top Title & Language Badge */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-white text-[#003ec7] flex items-center justify-center shadow-sm font-black text-xl">
+                L
+              </div>
+              <div>
+                <h1 className="font-extrabold text-lg leading-tight text-white tracking-tight">
+                  Language Tool
+                </h1>
+                <p className="text-[10px] text-blue-100 font-semibold tracking-wide">
+                  MERCHANT ASSISTANT PORTAL
+                </p>
+              </div>
             </div>
-            <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-              Language Tool Portal
-            </span>
+
+            <div className="flex items-center gap-1.5 bg-white/15 text-white border border-white/20 px-2.5 py-1 rounded-full text-xs font-bold shadow-xs">
+              <Globe className="w-3.5 h-3.5 text-amber-300" />
+              <span>EN / ES</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-bold text-slate-400 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-            <Globe className="w-3.5 h-3.5 text-primary" />
-            <span>Bilingual EN / ES</span>
+          {/* Subtitle Message */}
+          <p className="text-xs text-blue-100 font-medium leading-relaxed">
+            Select a merchant below to launch their bilingual AI assistant, camera translation tool, and store directory.
+          </p>
+
+          {/* FUNCTIONAL SEARCH INPUT BAR */}
+          <div className="relative pt-1">
+            <div className="relative flex items-center">
+              <Search className="absolute left-3.5 w-4 h-4 text-slate-400 pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search places by name, city, service..."
+                className="w-full pl-10 pr-9 py-2.5 bg-white text-slate-900 rounded-xl text-xs font-medium placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 shadow-md"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-3 p-1 rounded-full text-slate-400 hover:text-slate-600"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </header>
 
-      {/* HERO SECTION */}
-      <section className="relative z-10 max-w-4xl mx-auto px-4 pt-12 pb-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-extrabold shadow-xs">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>AI-Powered Merchant & Camera Assistant</span>
+      {/* CATEGORY FILTER PILLS */}
+      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-3.5 pb-2">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setSelectedCategory(cat.id)}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all shadow-2xs ${
+                selectedCategory === cat.id
+                  ? "bg-[#003ec7] text-white shadow-sm"
+                  : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
         </div>
-
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
-          Select Your Local Business Below
-        </h1>
-
-        <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-          Access instant bilingual AI customer service, real-time Google Translate camera mode for signs & menus, and interactive store directories.
-        </p>
       </section>
 
-      {/* MERCHANT STORE CARDS GRID */}
-      <section className="relative z-10 max-w-6xl mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {merchants.map((merchant) => {
-            const id = merchant.storeInfo.id;
-            const Icon = MERCHANT_ICONS[id] || ShoppingBag;
-            const gradient = MERCHANT_GRADIENTS[id] || "from-primary to-blue-600";
-            const categoryBadge = MERCHANT_BADGES[id] || "Local Business";
+      {/* MERCHANT RESULTS COUNT & GRID */}
+      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-2">
+        <div className="flex items-center justify-between text-xs font-bold text-slate-500 mb-3 px-1">
+          <div className="flex items-center gap-1.5">
+            <Store className="w-3.5 h-3.5 text-[#003ec7]" />
+            <span>
+              {filteredMerchants.length}{" "}
+              {filteredMerchants.length === 1 ? "Merchant" : "Merchants"} Found
+            </span>
+          </div>
+          {searchQuery && (
+            <span className="text-slate-400 font-medium truncate max-w-[140px]">
+              "{searchQuery}"
+            </span>
+          )}
+        </div>
 
-            return (
-              <div
-                key={id}
-                className="group relative bg-slate-900/80 border border-white/10 hover:border-white/25 rounded-3xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl overflow-hidden backdrop-blur-sm"
-              >
-                {/* Top Ambient Glow */}
-                <div
-                  className={`absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r ${gradient}`}
-                />
+        {/* NEAT MOBILE-FIRST GRID (1-col mobile, 2-col tablet/desktop) */}
+        {filteredMerchants.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            {filteredMerchants.map((merchant) => {
+              const id = merchant.storeInfo.id;
+              const Icon = MERCHANT_ICONS[id] || ShoppingBag;
+              const badgeText = MERCHANT_BADGES[id] || "Local Business";
 
-                <div className="space-y-4">
-                  {/* Category & Icon */}
-                  <div className="flex items-center justify-between">
-                    <div
-                      className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform`}
-                    >
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
-                      {categoryBadge}
-                    </span>
-                  </div>
+              return (
+                <Link
+                  key={id}
+                  href={`/${id}`}
+                  className="group bg-white rounded-2xl p-4 border border-slate-200 hover:border-[#003ec7]/40 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-3 relative overflow-hidden"
+                >
+                  {/* Left Accent Stripe */}
+                  <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#003ec7]" />
 
-                  {/* Name & Tagline */}
-                  <div>
-                    <h2 className="text-xl font-black text-white group-hover:text-amber-400 transition-colors">
-                      {merchant.storeInfo.name}
-                    </h2>
-                    <p className="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
-                      {merchant.storeInfo.tagline}
-                    </p>
-                  </div>
+                  <div className="space-y-2.5 pl-1.5">
+                    {/* Header: Icon + Badge */}
+                    <div className="flex items-center justify-between">
+                      <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#003ec7] flex items-center justify-center shadow-2xs group-hover:bg-[#003ec7] group-hover:text-white transition-colors">
+                        <Icon className="w-5 h-5" />
+                      </div>
 
-                  {/* Store Details */}
-                  <div className="space-y-2 pt-2 text-xs text-slate-300 border-t border-white/5">
-                    <div className="flex items-start gap-2">
-                      <MapPin className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                      <span className="truncate">{merchant.storeInfo.address}</span>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                      <span>{merchant.storeInfo.phone}</span>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                      <span>Mon-Fri: {merchant.storeInfo.hours.monday_friday}</span>
-                    </div>
-                  </div>
-
-                  {/* Amenities Badges */}
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {merchant.storeInfo.amenities?.map((item, idx) => (
-                      <span
-                        key={idx}
-                        className="text-[10px] font-bold text-slate-300 bg-white/5 px-2 py-0.5 rounded-md border border-white/5"
-                      >
-                        {item}
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#003ec7] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100">
+                        {badgeText}
                       </span>
-                    ))}
+                    </div>
+
+                    {/* Merchant Name & Tagline */}
+                    <div>
+                      <h2 className="text-base font-extrabold text-slate-900 group-hover:text-[#003ec7] transition-colors leading-tight">
+                        {merchant.storeInfo.name}
+                      </h2>
+                      <p className="text-xs text-slate-500 mt-0.5 line-clamp-2 leading-relaxed">
+                        {merchant.storeInfo.tagline}
+                      </p>
+                    </div>
+
+                    {/* Address & Phone Details */}
+                    <div className="space-y-1 text-xs text-slate-600 pt-1 border-t border-slate-100">
+                      <div className="flex items-center gap-1.5 truncate">
+                        <MapPin className="w-3.5 h-3.5 text-[#003ec7] shrink-0" />
+                        <span className="truncate">{merchant.storeInfo.address}</span>
+                      </div>
+
+                      <div className="flex items-center gap-1.5">
+                        <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <span>{merchant.storeInfo.phone}</span>
+                      </div>
+                    </div>
+
+                    {/* Amenities Tags */}
+                    <div className="flex flex-wrap gap-1 pt-1">
+                      {merchant.storeInfo.amenities?.slice(0, 3).map((item, idx) => (
+                        <span
+                          key={idx}
+                          className="text-[10px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                {/* Launch Button Link */}
-                <div className="pt-6">
-                  <Link
-                    href={`/${id}`}
-                    className={`w-full py-3 px-4 rounded-2xl bg-gradient-to-r ${gradient} text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg hover:brightness-110 transition-all group-hover:gap-3`}
-                  >
-                    <span>Launch Merchant Assistant</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* PORTAL FEATURES HIGHLIGHT */}
-      <section className="relative z-10 max-w-5xl mx-auto px-4 py-12 border-t border-white/10 mt-8">
-        <div className="text-center space-y-2 mb-10">
-          <h2 className="text-2xl font-black text-white">Included Features</h2>
-          <p className="text-slate-400 text-xs md:text-sm">
-            Everything designed for fast, seamless bilingual commerce & communication.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-slate-900/50 border border-white/10 rounded-2xl p-5 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
-              <Camera className="w-5 h-5" />
-            </div>
-            <h3 className="font-extrabold text-sm text-white">Google Translate Camera</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Real-time paint-over OCR translation for store signs, menus, handwritten notes, and receipts.
-            </p>
+                  {/* Launch Action Bar */}
+                  <div className="pt-2 pl-1.5 flex items-center justify-between text-xs font-extrabold text-[#003ec7] group-hover:translate-x-0.5 transition-transform">
+                    <span>Abrir Herramienta / Launch Tool</span>
+                    <ChevronRight className="w-4 h-4 text-[#003ec7]" />
+                  </div>
+                </Link>
+              );
+            })}
           </div>
-
-          <div className="bg-slate-900/50 border border-white/10 rounded-2xl p-5 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
-              <MessageSquare className="w-5 h-5" />
-            </div>
-            <h3 className="font-extrabold text-sm text-white">Bilingual AI Assistant</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Instant answers about store specials, payment methods (EBT/Cash), return policies, and hours.
+        ) : (
+          <div className="bg-white rounded-2xl p-8 text-center space-y-3 border border-slate-200 my-4 shadow-xs">
+            <Store className="w-10 h-10 text-slate-300 mx-auto" />
+            <h3 className="font-extrabold text-slate-800 text-sm">
+              No Merchants Match Your Search
+            </h3>
+            <p className="text-xs text-slate-500 max-w-xs mx-auto">
+              Try searching for "El Sol", "Pharmacy", "Stamford", or click "All Places" above.
             </p>
+            <button
+              onClick={() => {
+                setSearchQuery("");
+                setSelectedCategory("all");
+              }}
+              className="px-4 py-2 rounded-xl bg-[#003ec7] text-white font-extrabold text-xs shadow-sm hover:brightness-110 transition-all"
+            >
+              Clear Search & Show All
+            </button>
           </div>
-
-          <div className="bg-slate-900/50 border border-white/10 rounded-2xl p-5 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
-              <Zap className="w-5 h-5" />
-            </div>
-            <h3 className="font-extrabold text-sm text-white">Interactive Directory</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Browse products, prices, and services with 1-tap translation and search filters.
-            </p>
-          </div>
-        </div>
+        )}
       </section>
 
       {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10 py-6 text-center text-xs text-slate-500">
-        <p>© {new Date().getFullYear()} Language Tool • Multi-Merchant Bilingual Assistant Portal</p>
+      <footer className="max-w-md md:max-w-4xl mx-auto px-4 pt-10 text-center text-xs text-slate-400">
+        <p>© {new Date().getFullYear()} Language Tool • Multi-Merchant Bilingual Assistant</p>
       </footer>
     </main>
   );
