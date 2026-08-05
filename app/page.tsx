@@ -31,6 +31,33 @@ const MERCHANT_BADGES: Record<string, { en: string; es: string }> = {
   "stamford-repairs": { en: "Tech & Phone Repair", es: "Reparación Celular y Tech" },
 };
 
+const MERCHANT_TAGLINES: Record<string, { en: string; es: string }> = {
+  elsol: {
+    es: "Supermercado, Deli, Envíos de Dinero y Comida Fresca",
+    en: "Supermarket, Deli, Money Transfers & Fresh Hot Food",
+  },
+  "clover-pharmacy": {
+    es: "Su Farmacia de Confianza y Atención Bilingüe",
+    en: "Your Trusted Local Pharmacy with Bilingual Care",
+  },
+  "stamford-repairs": {
+    es: "Reparación de Celulares, Laptops y Tablets en 30 Minutos",
+    en: "Fast 30-Minute Phone, Tablet & Laptop Repairs",
+  },
+};
+
+const AMENITIES_MAP: Record<string, { en: string; es: string }> = {
+  "Free WiFi": { en: "Free WiFi", es: "WiFi Gratis" },
+  "Money Transfers": { en: "Money Transfers", es: "Envíos de Dinero" },
+  "Mobile Refills": { en: "Mobile Refills", es: "Recargas Móviles" },
+  "Bilingual Pharmacists": { en: "Bilingual Pharmacists", es: "Farmacéuticos Bilingües" },
+  "Drive-Thru Window": { en: "Drive-Thru Window", es: "Ventanilla Auto-Servicio" },
+  "Free Prescription Delivery": { en: "Free Prescription Delivery", es: "Entrega Gratis de Recetas" },
+  "Same-Day Repair": { en: "Same-Day Repair", es: "Reparación el Mismo Día" },
+  "90-Day Warranty": { en: "90-Day Warranty", es: "Garantía de 90 Días" },
+  "Free Diagnostics": { en: "Free Diagnostics", es: "Diagnóstico Gratis" },
+};
+
 const CATEGORIES = [
   { id: "all", labelEn: "All Places", labelEs: "Todos los Negocios" },
   { id: "supermarket", labelEn: "Supermarket & Deli", labelEs: "Supermercado y Deli" },
@@ -274,7 +301,7 @@ export default function HomePage() {
                         {merchant.storeInfo.name}
                       </h2>
                       <p className="text-xs text-slate-500 mt-0.5 line-clamp-2 leading-relaxed">
-                        {merchant.storeInfo.tagline}
+                        {MERCHANT_TAGLINES[id]?.[lang] || merchant.storeInfo.tagline}
                       </p>
                     </div>
 
@@ -291,16 +318,19 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {/* Amenities Tags */}
+                    {/* Amenities Tags (Fully Translated EN <-> ES) */}
                     <div className="flex flex-wrap gap-1 pt-1">
-                      {merchant.storeInfo.amenities?.slice(0, 3).map((item, idx) => (
-                        <span
-                          key={idx}
-                          className="text-[10px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md"
-                        >
-                          {item}
-                        </span>
-                      ))}
+                      {merchant.storeInfo.amenities?.slice(0, 3).map((item, idx) => {
+                        const translatedTag = AMENITIES_MAP[item]?.[lang] || item;
+                        return (
+                          <span
+                            key={idx}
+                            className="text-[10px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md"
+                          >
+                            {translatedTag}
+                          </span>
+                        );
+                      })}
                     </div>
                   </div>
 
