@@ -75,6 +75,10 @@ const W: Record<string, string> = {
   today:"hoy",daily:"diariamente",monday:"lunes",tuesday:"martes",
   wednesday:"miércoles",thursday:"jueves",friday:"viernes",
   saturday:"sábado",sunday:"domingo",until:"hasta",from:"desde",
+  spaghetti: "espaguetis", meatballs: "albóndigas", meatball: "albóndiga",
+  lasagna: "lasaña", ravioli: "ravioles", fettuccine: "fettuccine",
+  penne: "penne", macaroni: "macarrones", noodle: "fideo", noodles: "fideos",
+  marinara: "marinara", alfredo: "alfredo", parmesan: "parmesano",
   food:"comida",menu:"menú",meal:"comida",plate:"plato",
   bread:"pan",meat:"carne",beef:"res",steak:"bistec",pork:"cerdo",
   chicken:"pollo",ham:"jamón",fish:"pescado",cheese:"queso",
@@ -112,6 +116,11 @@ const W: Record<string, string> = {
 };
 
 const PHRASES: [RegExp, string][] = [
+  [/\bSPAGHETTI AND MEATBALLS\b/gi, "ESPAGUETIS CON ALBÓNDIGAS"],
+  [/\bSPAGHETTI WITH MEATBALLS\b/gi, "ESPAGUETIS CON ALBÓNDIGAS"],
+  [/\bSPAGHETTI\b/gi, "ESPAGUETIS"],
+  [/\bMEATBALLS?\b/gi, "ALBÓNDIGAS"],
+  [/\bGARLIC BREAD\b/gi, "PAN DE AJO"],
   [/\bDAILY SPECIALS?\b/gi,"ESPECIAL DEL DÍA"],
   [/\bHOT ROAST BEEF SANDWICH\b/gi,"SÁNDWICH DE CARNE ASADA CALIENTE"],
   [/\bROAST BEEF\b/gi,"CARNE ASADA"],

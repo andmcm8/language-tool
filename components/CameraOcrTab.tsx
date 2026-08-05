@@ -81,7 +81,7 @@ const SAMPLE_SIGNS = [
 ];
 
 /* ================================================================
-   IMAGE PREPROCESSING WITH ADAPTIVE THRESHOLDING
+   IMAGE PREPROCESSING WITH ADAPTIVE LOCAL THRESHOLDING
    ================================================================ */
 function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   const w = srcCanvas.width;
@@ -135,7 +135,73 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   return ocrCanvas;
 }
 
+/* ================================================================
+   LEVENSHTEIN EDIT DISTANCE ENGINE
+   ================================================================ */
+function levenshteinDistance(a: string, b: string): number {
+  if (a === b) return 0;
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+
+  const matrix: number[][] = [];
+  for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+  for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j - 1] + 1, // substitution
+          matrix[i][j - 1] + 1,     // insertion
+          matrix[i - 1][j] + 1      // deletion
+        );
+      }
+    }
+  }
+  return matrix[b.length][a.length];
+}
+
+/* ================================================================
+   CONTEXT CO-OCCURRENCE PAIR DICTIONARY (Context Clues Engine)
+   ================================================================ */
+const CONTEXT_PAIRS: [string, string][] = [
+  ["spaghetti", "meatballs"],
+  ["spaghetti", "meatball"],
+  ["macaroni", "cheese"],
+  ["fish", "chips"],
+  ["rice", "beans"],
+  ["ham", "cheese"],
+  ["bread", "butter"],
+  ["bacon", "eggs"],
+  ["peanut", "butter"],
+  ["burger", "fries"],
+  ["chicken", "wings"],
+  ["chicken", "waffles"],
+  ["pork", "chops"],
+  ["empanadas", "beef"],
+  ["empanadas", "chicken"],
+  ["bandeja", "paisa"],
+  ["pan", "bono"],
+  ["hot", "dog"],
+  ["hot", "dogs"],
+  ["ice", "cream"],
+  ["roast", "beef"],
+  ["garlic", "bread"],
+];
+
+/* ================================================================
+   500+ MASTER MENU & STORE DICTIONARY
+   ================================================================ */
 const KNOWN_WORDS = new Set([
+  // Pasta & Italian
+  "spaghetti","meatballs","meatball","lasagna","ravioli","fettuccine","penne",
+  "macaroni","noodle","noodles","marinara","alfredo","parmesan","mozzarella",
+  "linguine","ziti","bolognese","carbonara","tortellini","gnocchi","pesto",
+  "ricotta","provolone","calzone","pizza","pasta","garlic",
+
+  // Food & Ingredients
   "daily","special","specials","fresh","hot","cold","warm","baked","fried",
   "grilled","roasted","roast","melted","steamed","homemade","handmade",
   "open","closed","hours","notice","warning","caution","welcome",
@@ -170,37 +236,87 @@ const OCR_SUBS: Record<string, string[]> = {
   "8": ["B"], "B": ["8"],
   "6": ["G","b"], "G": ["6"],
   "2": ["Z","z"], "Z": ["2"], "z": ["2"],
+  "3": ["E","e"], "E": ["3"], "e": ["3"],
   "|": ["I","l","1"],
   "]": ["I","l"],
   "[": ["I","l"],
 };
 
-function correctOcrWord(word: string): string {
-  const lower = word.toLowerCase().replace(/[^a-z]/g, "");
+/* ================================================================
+   FUZZY DICTIONARY ENGINE WITH EDIT DISTANCE & CONTEXT CLUES
+   ================================================================ */
+function correctOcrWord(word: string, lineContextText: string = ""): string {
+  const cleanWord = word.trim();
+  const lower = cleanWord.toLowerCase().replace(/[^a-z0-9]/g, "");
   if (lower.length < 2) return word;
   if (KNOWN_WORDS.has(lower)) return word;
 
-  for (let pos = 0; pos < word.length; pos++) {
-    const ch = word[pos];
+  const lowerLine = lineContextText.toLowerCase();
+
+  // STEP 1: CONTEXT CO-OCCURRENCE CLUES MATCHING
+  for (const [wordA, wordB] of CONTEXT_PAIRS) {
+    if (lowerLine.includes(wordA) || lowerLine.includes(wordB)) {
+      const targetPartner = lowerLine.includes(wordA) ? wordB : wordA;
+      // If current word is close in edit distance (<= 3) to the context partner, lock it in!
+      const dist = levenshteinDistance(lower, targetPartner);
+      if (dist <= 3 && lower.length >= 4) {
+        // Match casing of original word
+        if (cleanWord === cleanWord.toUpperCase()) return targetPartner.toUpperCase();
+        if (cleanWord[0] === cleanWord[0].toUpperCase()) {
+          return targetPartner.charAt(0).toUpperCase() + targetPartner.slice(1);
+        }
+        return targetPartner;
+      }
+    }
+  }
+
+  // STEP 2: OCR CHARACTER SUBSTITUTION TABLE
+  for (let pos = 0; pos < cleanWord.length; pos++) {
+    const ch = cleanWord[pos];
     const subs = OCR_SUBS[ch];
     if (!subs) continue;
     for (const sub of subs) {
-      const candidate = word.slice(0, pos) + sub + word.slice(pos + 1);
-      const candidateLower = candidate.toLowerCase().replace(/[^a-z]/g, "");
+      const candidate = cleanWord.slice(0, pos) + sub + cleanWord.slice(pos + 1);
+      const candidateLower = candidate.toLowerCase().replace(/[^a-z0-9]/g, "");
       if (KNOWN_WORDS.has(candidateLower)) return candidate;
     }
+  }
+
+  // STEP 3: LEVENSHTEIN FUZZY MATCHING (MAX DISTANCE <= 2)
+  let bestMatch = "";
+  let minDistance = 3; // Only match if edit distance <= 2
+
+  KNOWN_WORDS.forEach((dictWord) => {
+    if (Math.abs(dictWord.length - lower.length) <= 2) {
+      const dist = levenshteinDistance(lower, dictWord);
+      if (dist < minDistance && dist <= 2) {
+        minDistance = dist;
+        bestMatch = dictWord;
+      }
+    }
+  });
+
+  if (bestMatch && minDistance <= 2) {
+    if (cleanWord === cleanWord.toUpperCase()) return bestMatch.toUpperCase();
+    if (cleanWord[0] === cleanWord[0].toUpperCase()) {
+      return bestMatch.charAt(0).toUpperCase() + bestMatch.slice(1);
+    }
+    return bestMatch;
   }
 
   return word;
 }
 
 function correctOcrLine(line: string): string {
-  return line
-    .split(/\s+/)
-    .map((w) => correctOcrWord(w))
+  const words = line.split(/\s+/);
+  return words
+    .map((w) => correctOcrWord(w, line))
     .join(" ");
 }
 
+/* ================================================================
+   COMPONENT
+   ================================================================ */
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const srcCanvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -213,7 +329,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const [hasResult, setHasResult] = useState(false);
   const [statusText, setStatusText] = useState("");
 
-  // New Features State
   const [showOriginal, setShowOriginal] = useState(false);
   const [copied, setCopied] = useState(false);
   const [torchActive, setTorchActive] = useState(false);
@@ -826,8 +941,8 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
               <ZoomIn className="w-3.5 h-3.5 text-primary" />
               <span>
                 {lang === "es"
-                  ? "Enfoque el letrero → Toque Traducir"
-                  : "Point at sign → Tap Translate"}
+                  ? "Enfoque el letrero o texto → Toque Traducir"
+                  : "Point at sign or text → Tap Translate"}
               </span>
             </span>
           </div>
