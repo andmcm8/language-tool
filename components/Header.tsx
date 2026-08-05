@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { MerchantConfig } from "@/types/merchant";
 import { listMerchants } from "@/lib/merchants";
 import { useRouter } from "next/navigation";
@@ -48,62 +49,27 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
     <>
       <header className="sticky top-0 z-30 bg-surface/85 backdrop-blur-xl border-b border-surface-container-high px-4 py-2.5 shadow-2xs transition-all">
         <div className="max-w-md mx-auto flex items-center justify-between">
-          {/* Left: Dynamic Brand Identity with Merchant Switcher Trigger */}
-          <div className="relative">
-            <button
-              onClick={() => setShowMerchantMenu(!showMerchantMenu)}
-              className="flex items-center gap-2.5 text-left group"
+          {/* Left: Dynamic Brand Identity (Clean & Focused on Current Merchant) */}
+          <div className="flex items-center gap-2.5 text-left">
+            <Link
+              href="/"
+              className="w-9 h-9 rounded-2xl text-white flex items-center justify-center shadow-xs hover:scale-105 transition-transform"
+              style={{ backgroundColor: storeInfo.themeColor || "#003ec7" }}
+              title="Back to All Merchants / Volver al Inicio"
             >
-              <div
-                className="w-9 h-9 rounded-2xl text-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform"
-                style={{ backgroundColor: storeInfo.themeColor || "#003ec7" }}
-              >
-                {getLogoIcon(storeInfo.logoIcon)}
+              {getLogoIcon(storeInfo.logoIcon)}
+            </Link>
+            <div>
+              <h1 className="font-bold text-on-surface text-sm tracking-tight leading-none truncate max-w-[170px]">
+                {storeInfo.name}
+              </h1>
+              <div className="flex items-center gap-1 mt-0.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <p className="text-[11px] text-on-surface-variant font-medium truncate max-w-[150px]">
+                  {storeInfo.address.split(",")[1] || "Stamford, CT"}
+                </p>
               </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  <h1 className="font-bold text-on-surface text-sm tracking-tight leading-none truncate max-w-[140px]">
-                    {storeInfo.name}
-                  </h1>
-                  <ChevronDown className="w-3.5 h-3.5 text-on-surface-variant group-hover:text-primary transition-transform" />
-                </div>
-                <div className="flex items-center gap-1 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <p className="text-[11px] text-on-surface-variant font-medium truncate max-w-[130px]">
-                    {storeInfo.address.split(",")[1] || "Stamford, CT"}
-                  </p>
-                </div>
-              </div>
-            </button>
-
-            {/* Merchant Switcher Dropdown Menu */}
-            {showMerchantMenu && (
-              <div className="absolute top-12 left-0 z-50 bg-surface-container-lowest border border-secondary-fixed shadow-2xl rounded-2xl p-2 w-64 animate-in fade-in zoom-in-95 duration-150">
-                <div className="text-[10px] font-bold text-on-surface-variant uppercase px-2 py-1 tracking-wider border-b border-surface-container mb-1">
-                  {lang === "es" ? "Demostración de Negocios:" : "Demo Merchant Storefronts:"}
-                </div>
-                {allMerchants.map((m) => (
-                  <button
-                    key={m.id}
-                    onClick={() => {
-                      setShowMerchantMenu(false);
-                      router.push(`/${m.id}`);
-                    }}
-                    className={`w-full flex items-center justify-between p-2 rounded-xl text-left text-xs font-semibold transition-all ${
-                      m.id === storeInfo.id
-                        ? "bg-secondary-fixed text-primary font-bold"
-                        : "hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
-                    }`}
-                  >
-                    <div>
-                      <div>{m.name}</div>
-                      <div className="text-[10px] text-on-surface-variant font-normal">{m.tagline}</div>
-                    </div>
-                    {m.id === storeInfo.id && <Check className="w-3.5 h-3.5 text-primary" />}
-                  </button>
-                ))}
-              </div>
-            )}
+            </div>
           </div>
 
           {/* Right: Condensed Unified Controls (ES/EN + Info) */}
