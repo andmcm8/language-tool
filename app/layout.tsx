@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portal Language Tool — Asistentes Comerciales Bilingües",
-  description: "Plataforma inteligente de asistentes comerciales bilingües con catálogo interactivo, traductor de letreros por cámara y asistente de voz IA.",
+  title: "DuoTaps — Portal de Asistentes Comerciales Bilingües",
+  description: "Plataforma inteligente DuoTaps de asistentes comerciales bilingües con catálogo interactivo, traductor de letreros por cámara y asistente de voz IA.",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",

@@ -63,7 +63,7 @@ const CATEGORIES = [
 const DICT = {
   en: {
     portalBadge: "MERCHANT ASSISTANT PORTAL",
-    portalTitle: "Language Tool Portal",
+    portalTitle: "DuoTaps Portal",
     subtitle:
       "Select a merchant below to launch their bilingual AI assistant, camera translation tool, and store directory.",
     searchPlaceholder: "Search places by name, city, service...",
@@ -71,14 +71,14 @@ const DICT = {
     launchBtn: "Launch Merchant Tool",
     noResultsTitle: "No Merchants Match Your Search",
     noResultsDesc:
-      'Try searching for "El Sol", "Deli", "Stamford", or click "All Places" above.',
+      'Try searching for "Demo Market", "Deli", "Stamford", or click "All Places" above.',
     clearBtn: "Clear Search & Show All",
     monFri: "Mon-Fri",
-    footerText: "Language Tool • Multi-Merchant Bilingual Assistant",
+    footerText: "DuoTaps • Multi-Merchant Bilingual Assistant",
   },
   es: {
     portalBadge: "PORTAL DE ASISTENTES COMERCIALES",
-    portalTitle: "Portal Language Tool",
+    portalTitle: "Portal DuoTaps",
     subtitle:
       "Seleccione un negocio a continuación para abrir su asistente de IA bilingüe, herramienta de cámara y directorio.",
     searchPlaceholder: "Buscar negocios por nombre, ciudad, servicio...",
@@ -86,10 +86,10 @@ const DICT = {
     launchBtn: "Abrir Herramienta del Comercio",
     noResultsTitle: "No se encontraron negocios para su búsqueda",
     noResultsDesc:
-      'Intente buscar "El Sol", "Farmacia", "Stamford", o presione "Todos los Negocios" arriba.',
+      'Intente buscar "Demo Market", "Farmacia", "Stamford", o presione "Todos los Negocios" arriba.',
     clearBtn: "Borrar Búsqueda y Mostrar Todos",
     monFri: "Lun-Vie",
-    footerText: "Language Tool • Portal de Asistentes Comercial Bilingüe",
+    footerText: "DuoTaps • Portal de Asistentes Comerciales Bilingües",
   },
 };
 
@@ -144,11 +144,11 @@ export default function HomePage() {
           {/* Top Title & WORKING Interactive EN / ES Language Swapper Toggle */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm p-1 overflow-hidden shrink-0">
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm overflow-hidden shrink-0">
                 <img
                   src="/logo.jpg"
-                  alt="Language Tool Logo"
-                  className="w-full h-full object-contain"
+                  alt="DuoTaps Logo"
+                  className="w-full h-full object-cover scale-110"
                 />
               </div>
               <div>
