@@ -332,27 +332,24 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             </span>
           </div>
 
-          {/* Dynamic Spoken Conversation Display */}
-          <div className="space-y-3 flex-1 flex flex-col justify-center max-w-xs mx-auto">
+          {/* Dynamic Spoken Conversation Display (Streamlined & Compact) */}
+          <div className="space-y-2 flex-1 flex flex-col justify-center max-w-xs mx-auto my-auto">
             {lastUserMessage && (
-              <div className="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-semibold text-slate-600 animate-in fade-in duration-200">
-                <span className="text-[10px] uppercase font-bold text-slate-400 block mb-0.5">
-                  {lang === "es" ? "Usted Dijo:" : "You Said:"}
+              <div className="p-2 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-medium text-slate-600 animate-in fade-in duration-200">
+                <span className="text-[9px] uppercase font-bold text-slate-400 block">
+                  {lang === "es" ? "Usted dijo:" : "You said:"}
                 </span>
                 "{lastUserMessage}"
               </div>
             )}
 
-            <div className="p-4 bg-blue-50/60 rounded-3xl border border-blue-100 text-xs font-extrabold text-slate-800 leading-relaxed max-h-40 overflow-y-auto shadow-2xs">
-              <span className="text-[10px] uppercase font-black text-[#003ec7] block mb-1">
-                {merchant.storeInfo.name} AI:
-              </span>
+            <div className="p-3 bg-blue-50/70 rounded-2xl border border-blue-100 text-xs font-bold text-slate-800 leading-snug shadow-2xs">
               {lastAiMessage}
             </div>
           </div>
 
           {/* CENTRAL INTERACTIVE ANIMATED MICROPHONE SPHERE & AUDIO SOUNDWAVES */}
-          <div className="flex flex-col items-center justify-center py-2 relative">
+          <div className="flex flex-col items-center justify-center py-2 relative my-auto">
             {/* Outer Glowing Pulsating Audio Rings when Listening */}
             {isListening && (
               <>
@@ -430,22 +427,9 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
               {isListening
                 ? lang === "es" ? "Escuchando... Hable ahora" : "Listening... Speak now"
                 : isSpeaking
-                ? lang === "es" ? "Tocando respuesta de audio" : "Playing audio answer"
-                : lang === "es" ? "Presione el micrófono para hablar" : "Tap microphone & ask your question"}
+                ? lang === "es" ? "Reproduciendo respuesta" : "Playing audio answer"
+                : lang === "es" ? "Presione el micrófono para hablar" : "Tap microphone to speak"}
             </p>
-          </div>
-
-          {/* Quick Voice Suggestion Chips */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pt-1 no-scrollbar justify-center">
-            {quickPrompts.slice(0, 3).map((prompt, i) => (
-              <button
-                key={i}
-                onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
-                className="px-3 py-1 bg-slate-100 hover:bg-blue-50 text-[#003ec7] border border-slate-200 rounded-full text-[10px] font-extrabold whitespace-nowrap transition-all"
-              >
-                {lang === "es" ? prompt.es : prompt.en}
-              </button>
-            ))}
           </div>
         </div>
       ) : (
