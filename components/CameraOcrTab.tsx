@@ -18,6 +18,7 @@ import {
   ZoomIn,
   ArrowRightLeft,
   SunMedium,
+  Scan,
 } from "lucide-react";
 
 interface CameraOcrTabProps {
@@ -166,9 +167,6 @@ function levenshteinDistance(a: string, b: string): number {
   return matrix[b.length][a.length];
 }
 
-/* ================================================================
-   CONTEXT CO-OCCURRENCE PAIR DICTIONARY (Context Clues Engine)
-   ================================================================ */
 const CONTEXT_PAIRS: [string, string][] = [
   ["spaghetti", "meatballs"],
   ["spaghetti", "meatball"],
@@ -366,7 +364,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const [hasResult, setHasResult] = useState(false);
   const [statusText, setStatusText] = useState("");
 
-  // New Features State
   const [showOriginal, setShowOriginal] = useState(false);
   const [copied, setCopied] = useState(false);
   const [torchActive, setTorchActive] = useState(false);
@@ -375,7 +372,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const [zoomLevel, setZoomLevel] = useState<number>(1);
   const [detectedRegions, setDetectedRegions] = useState<TextRegion[]>([]);
 
-  // Focus Ring Target Position
   const [focusPoint, setFocusPoint] = useState<{ x: number; y: number } | null>(null);
 
   /* ---------- Camera helpers ---------- */
@@ -418,7 +414,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Torch / Flash Toggle
   const toggleTorch = async () => {
     if (!videoRef.current?.srcObject) return;
     const stream = videoRef.current.srcObject as MediaStream;
@@ -437,7 +432,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     }
   };
 
-  // Viewport Tap Focus Trigger
   const handleViewportTap = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!cameraActive || hasResult) return;
     const rect = e.currentTarget.getBoundingClientRect();
@@ -625,7 +619,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       const y0 = Math.max(0, bbox.y0 - padY);
 
       const [r, g, b] = sampleBgColor(ctx, bbox, w, h);
-      const bgStr = `rgba(${r},${g},${b}, 0.95)`;
+      const bgStr = `rgba(${r},${g},${b}, 0.96)`;
       const textColor = luminance(r, g, b) > 0.5 ? "#000000" : "#ffffff";
 
       ctx.fillStyle = bgStr;
@@ -922,7 +916,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       {/* PORTRAIT CAMERA & RESULT CANVAS VIEWPORT */}
       <div
         onClick={handleViewportTap}
-        className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10 cursor-pointer"
+        className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10 cursor-pointer group"
       >
         {/* Live Camera Stream */}
         <video
@@ -934,6 +928,11 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             cameraActive && !hasResult ? "" : "hidden"
           }`}
         />
+
+        {/* Real-Time Laser Scan Line Beam Animation */}
+        {cameraActive && !hasResult && !isProcessing && (
+          <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 shadow-md animate-bounce pointer-events-none z-10" />
+        )}
 
         {/* Tap-to-Focus Reticle Visual Animation */}
         {focusPoint && (
@@ -1016,11 +1015,11 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         {cameraActive && !hasResult && !isProcessing && (
           <div className="absolute inset-4 border-2 border-dashed border-white/50 rounded-xl pointer-events-none flex items-end justify-center pb-3">
             <span className="px-3.5 py-1.5 rounded-full bg-black/65 text-white text-xs font-semibold backdrop-blur-sm shadow-sm flex items-center gap-1.5">
-              <ZoomIn className="w-3.5 h-3.5 text-primary" />
+              <Scan className="w-3.5 h-3.5 text-primary animate-pulse" />
               <span>
                 {targetLang === "es"
-                  ? "Enfoque el letrero o texto → Toque Traducir"
-                  : "Focus text → Tap Translate"}
+                  ? "Escaneando en vivo → Toque Traducir"
+                  : "Scanning live → Tap Translate"}
               </span>
             </span>
           </div>
