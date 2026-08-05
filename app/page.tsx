@@ -20,29 +20,23 @@ import {
 } from "lucide-react";
 
 const MERCHANT_ICONS: Record<string, any> = {
+  demo: ShoppingBag,
   elsol: ShoppingBag,
-  "clover-pharmacy": Pill,
-  "stamford-repairs": Wrench,
 };
 
 const MERCHANT_BADGES: Record<string, { en: string; es: string }> = {
+  demo: { en: "Supermarket & Deli", es: "Supermercado y Deli" },
   elsol: { en: "Supermarket & Deli", es: "Supermercado y Deli" },
-  "clover-pharmacy": { en: "Pharmacy & Wellness", es: "Farmacia y Bienestar" },
-  "stamford-repairs": { en: "Tech & Phone Repair", es: "Reparación Celular y Tech" },
 };
 
 const MERCHANT_TAGLINES: Record<string, { en: string; es: string }> = {
+  demo: {
+    es: "Tu Tienda Hispana Local en Stamford — Asistente Demo",
+    en: "Your Local Hispanic Store in Stamford — Demo Assistant",
+  },
   elsol: {
-    es: "Supermercado, Deli, Envíos de Dinero y Comida Fresca",
-    en: "Supermarket, Deli, Money Transfers & Fresh Hot Food",
-  },
-  "clover-pharmacy": {
-    es: "Su Farmacia de Confianza y Atención Bilingüe",
-    en: "Your Trusted Local Pharmacy with Bilingual Care",
-  },
-  "stamford-repairs": {
-    es: "Reparación de Celulares, Laptops y Tablets en 30 Minutos",
-    en: "Fast 30-Minute Phone, Tablet & Laptop Repairs",
+    es: "Tu Tienda Hispana Local en Stamford — Asistente Demo",
+    en: "Your Local Hispanic Store in Stamford — Demo Assistant",
   },
 };
 
@@ -61,8 +55,6 @@ const AMENITIES_MAP: Record<string, { en: string; es: string }> = {
 const CATEGORIES = [
   { id: "all", labelEn: "All Places", labelEs: "Todos los Negocios" },
   { id: "supermarket", labelEn: "Supermarket & Deli", labelEs: "Supermercado y Deli" },
-  { id: "pharmacy", labelEn: "Pharmacy", labelEs: "Farmacia" },
-  { id: "repair", labelEn: "Tech Repair", labelEs: "Reparación Técnica" },
 ];
 
 /* ================================================================
@@ -79,7 +71,7 @@ const DICT = {
     launchBtn: "Launch Merchant Tool",
     noResultsTitle: "No Merchants Match Your Search",
     noResultsDesc:
-      'Try searching for "El Sol", "Pharmacy", "Stamford", or click "All Places" above.',
+      'Try searching for "El Sol", "Deli", "Stamford", or click "All Places" above.',
     clearBtn: "Clear Search & Show All",
     monFri: "Mon-Fri",
     footerText: "Language Tool • Multi-Merchant Bilingual Assistant",

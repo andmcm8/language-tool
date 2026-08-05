@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
     }
 
-    const merchant = getMerchantById(merchantId || "elsol");
+    const merchant = getMerchantById(merchantId || "demo");
     const rawLast = messages[messages.length - 1];
     const lastMessage = (rawLast?.text || rawLast?.content || "").trim();
     const lowerMsg = lastMessage.toLowerCase();
