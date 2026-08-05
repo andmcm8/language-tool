@@ -368,10 +368,88 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     return union === 0 ? 0 : inter / union;
   };
 
+  /* ---------- De-overlap & Clean Bounding Boxes ---------- */
+  const deoverlapAndCleanRegions = (
+    regions: TextRegion[],
+    imgW: number,
+    imgH: number
+  ): TextRegion[] => {
+    if (regions.length === 0) return [];
+
+    // 1. Filter out junk OCR noise, footers, page numbers, and garbled snippets
+    const clean = regions.filter((r) => {
+      const orig = r.original.trim();
+      const trans = r.translated.trim();
+      if (!orig || !trans) return false;
+
+      // Filter footer noise like "Page 19", "Revised: 8/21/2025", or tiny symbols
+      if (/^page\s+\d+$/i.test(orig) || /^revised:?\s*[\d\/]+$/i.test(orig)) return false;
+      if (/^[\d\s\.\/\-\,\!\?\#]+$/.test(orig) && !orig.includes("$")) return false; // Ignore pure non-price numbers/symbols
+      if (orig.length < 3 && !orig.includes("$") && !["no", "si", "in", "on"].includes(orig.toLowerCase())) return false;
+
+      // Filter gibberish letter sequences (e.g. "ede Baap tbe eve 2s")
+      const words = orig.split(/\s+/);
+      const invalidWords = words.filter((w) => /^[^\w]+$/.test(w) || (w.length > 5 && !/[aeiouy]/i.test(w)));
+      if (invalidWords.length > words.length / 2) return false;
+
+      return true;
+    });
+
+    // 2. Sort regions top-to-bottom by y0 coordinate
+    clean.sort((a, b) => a.bbox.y0 - b.bbox.y0);
+
+    const result: TextRegion[] = [];
+
+    for (const item of clean) {
+      const b = { ...item.bbox };
+      // Ensure box stays within canvas boundaries
+      b.x0 = Math.max(0, b.x0);
+      b.y0 = Math.max(0, b.y0);
+      b.x1 = Math.min(imgW, b.x1);
+      b.y1 = Math.min(imgH, b.y1);
+
+      // Check overlap against already accepted boxes in result
+      let isDuplicate = false;
+      for (const existing of result) {
+        const eb = existing.bbox;
+
+        // Calculate overlap area
+        const overlapX = Math.max(0, Math.min(b.x1, eb.x1) - Math.max(b.x0, eb.x0));
+        const overlapY = Math.max(0, Math.min(b.y1, eb.y1) - Math.max(b.y0, eb.y0));
+        const overlapArea = overlapX * overlapY;
+        const areaB = (b.x1 - b.x0) * (b.y1 - b.y0);
+
+        // If >40% area overlap, consider it duplicate line
+        if (areaB > 0 && overlapArea / areaB > 0.4) {
+          isDuplicate = true;
+          break;
+        }
+
+        // Vertical collision prevention: adjust y0 if overlapping vertically
+        if (
+          b.x0 < eb.x1 &&
+          b.x1 > eb.x0 &&
+          b.y0 >= eb.y0 &&
+          b.y0 < eb.y1 + 4
+        ) {
+          const height = b.y1 - b.y0;
+          b.y0 = eb.y1 + 4; // Shift down below existing box with 4px gap
+          b.y1 = b.y0 + height;
+        }
+      }
+
+      if (!isDuplicate && b.y1 <= imgH + 20) {
+        result.push({ ...item, bbox: b });
+      }
+    }
+
+    return result;
+  };
+
   /* ---------- CORE: paint-over translation on canvas ---------- */
   const paintTranslation = (
     srcCanvas: HTMLCanvasElement,
-    regions: TextRegion[]
+    rawRegions: TextRegion[]
   ) => {
     const resCanvas = resultCanvasRef.current!;
     const w = srcCanvas.width;
@@ -380,47 +458,59 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     resCanvas.height = h;
     const ctx = resCanvas.getContext("2d")!;
 
-    // Draw original image
+    // Draw original background image
     ctx.drawImage(srcCanvas, 0, 0);
+
+    // De-overlap and clean regions first
+    const regions = deoverlapAndCleanRegions(rawRegions, w, h);
 
     for (const region of regions) {
       const { bbox } = region;
-      const pad = 3;
+      const padX = 4;
+      const padY = 2;
+
+      const boxW = Math.max(20, bbox.x1 - bbox.x0 + padX * 2);
+      const boxH = Math.max(14, bbox.y1 - bbox.y0 + padY * 2);
+      const x0 = Math.max(0, bbox.x0 - padX);
+      const y0 = Math.max(0, bbox.y0 - padY);
 
       // 1) Sample background colour
       const [r, g, b] = sampleBgColor(ctx, bbox, w, h);
-      const bgStr = `rgb(${r},${g},${b})`;
-      const textColor = luminance(r, g, b) > 0.5 ? "#111111" : "#f5f5f5";
+      const bgStr = `rgba(${r},${g},${b}, 0.95)`;
+      const textColor = luminance(r, g, b) > 0.5 ? "#000000" : "#ffffff";
 
-      // 2) Paint over the original text with bg colour
+      // 2) Draw clean rounded pill background box
       ctx.fillStyle = bgStr;
-      ctx.fillRect(
-        bbox.x0 - pad,
-        bbox.y0 - pad,
-        bbox.x1 - bbox.x0 + pad * 2,
-        bbox.y1 - bbox.y0 + pad * 2
-      );
+      ctx.beginPath();
+      if (typeof ctx.roundRect === "function") {
+        ctx.roundRect(x0, y0, boxW, boxH, 4);
+      } else {
+        ctx.rect(x0, y0, boxW, boxH);
+      }
+      ctx.fill();
 
-      // 3) Size the translated text to fit the bounding box
-      const boxW = bbox.x1 - bbox.x0 + pad * 2;
-      const boxH = bbox.y1 - bbox.y0;
-      let fontSize = Math.max(10, Math.min(boxH * 0.78, 56));
+      // 3) Size text accurately to fit inside box without spilling
+      let fontSize = Math.max(9, Math.min(boxH * 0.75, 48));
       ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
 
-      // Shrink until text fits the width
-      while (
-        ctx.measureText(region.translated).width > boxW &&
-        fontSize > 8
-      ) {
+      // Shrink font until string fits width
+      while (ctx.measureText(region.translated).width > boxW - 4 && fontSize > 8) {
         fontSize -= 0.5;
         ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
       }
 
-      // 4) Draw the translated text
+      // 4) Draw the translated text cleanly centered vertically
       ctx.fillStyle = textColor;
       ctx.textBaseline = "middle";
-      const cy = (bbox.y0 + bbox.y1) / 2;
-      ctx.fillText(region.translated, bbox.x0, cy, boxW);
+      ctx.textAlign = "left";
+      const cy = y0 + boxH / 2;
+
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(x0, y0, boxW, boxH);
+      ctx.clip(); // Ensure no text spills outside box
+      ctx.fillText(region.translated, x0 + 2, cy, boxW - 4);
+      ctx.restore();
     }
   };
 
