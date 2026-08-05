@@ -2,7 +2,19 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { MerchantConfig } from "@/types/merchant";
-import { Mic, MicOff, Send, Volume2, VolumeX, RefreshCw, ShieldAlert, Trash2 } from "lucide-react";
+import {
+  Mic,
+  MicOff,
+  Send,
+  Volume2,
+  VolumeX,
+  RefreshCw,
+  ShieldAlert,
+  Trash2,
+  MessageSquare,
+  Sparkles,
+  Radio
+} from "lucide-react";
 
 interface AiAssistantTabProps {
   merchant: MerchantConfig;
@@ -27,7 +39,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
   };
 
-  // Persistent chat history across tab switches & page refreshes (with string sanitization)
+  const [activeMode, setActiveMode] = useState<"voice" | "chat">("voice");
   const [messages, setMessages] = useState<Message[]>(() => {
     if (typeof window !== "undefined") {
       try {
@@ -35,7 +47,6 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         if (saved) {
           const parsed = JSON.parse(saved);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            // Replace any old cached store names with current store name (Demo Market)
             return parsed.map((m: Message) => ({
               ...m,
               text: m.text
@@ -58,7 +69,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   const [inputQuery, setInputQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  const [autoSpeak, setAutoSpeak] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [autoSpeak, setAutoSpeak] = useState(true);
   const recognitionRef = useRef<any>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
@@ -75,8 +87,9 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, loading]);
+  }, [messages, loading, activeMode]);
 
+  // Setup Web Speech Recognition API
   useEffect(() => {
     if (typeof window !== "undefined") {
       const SpeechRecognition =
@@ -95,21 +108,46 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           }
           setIsListening(false);
         };
-        rec.onend = () => setIsListening(false);
+
+        rec.onerror = () => {
+          setIsListening(false);
+        };
+
+        rec.onend = () => {
+          setIsListening(false);
+        };
+
         recognitionRef.current = rec;
       }
     }
   }, [lang]);
 
   const toggleListening = () => {
-    if (!recognitionRef.current) return;
+    if (!recognitionRef.current) {
+      alert(
+        lang === "es"
+          ? "El reconocimiento de voz no está disponible en este navegador. Use la entrada de texto."
+          : "Voice recognition is not supported in this browser. Please use text input."
+      );
+      return;
+    }
+
     if (isListening) {
       recognitionRef.current.stop();
       setIsListening(false);
     } else {
+      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+        setIsSpeaking(false);
+      }
       recognitionRef.current.lang = lang === "es" ? "es-US" : "en-US";
-      recognitionRef.current.start();
-      setIsListening(true);
+      try {
+        recognitionRef.current.start();
+        setIsListening(true);
+      } catch (e) {
+        console.warn("Recognition start error:", e);
+        setIsListening(false);
+      }
     }
   };
 
@@ -118,6 +156,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     setAutoSpeak(nextState);
     if (!nextState && typeof window !== "undefined" && "speechSynthesis" in window) {
       window.speechSynthesis.cancel();
+      setIsSpeaking(false);
     }
   };
 
@@ -126,20 +165,29 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     if (typeof window !== "undefined") {
       try {
         localStorage.removeItem(storageKey);
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          setIsSpeaking(false);
+        }
       } catch (e) {}
     }
   };
 
   const speakText = (text: string) => {
-    if (!autoSpeak || typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
 
+    const utterance = new SpeechSynthesisUtterance(text);
     const isEnglishText = /\b(the|is|are|you|have|where|when|what|hours|restroom|bathroom|wifi|welcome|safety|note|disclaimer|for|that|specific)\b/i.test(
       text
     );
     utterance.lang = isEnglishText ? "en-US" : "es-ES";
     utterance.rate = 0.95;
+
+    utterance.onstart = () => setIsSpeaking(true);
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+
     window.speechSynthesis.speak(utterance);
   };
 
@@ -185,7 +233,9 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       setMessages((prev) => [...prev, aiMsg]);
       setLoading(false);
 
-      if (autoSpeak) speakText(aiReplyText);
+      if (autoSpeak || activeMode === "voice") {
+        speakText(aiReplyText);
+      }
     } catch (err) {
       console.error("Chat API error:", err);
       const fallbackMsg: Message = {
@@ -198,7 +248,9 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       };
       setMessages((prev) => [...prev, fallbackMsg]);
       setLoading(false);
-      if (autoSpeak) speakText(fallbackMsg.text);
+      if (autoSpeak || activeMode === "voice") {
+        speakText(fallbackMsg.text);
+      }
     }
   };
 
@@ -209,107 +261,274 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     { es: "¿Aceptan EBT / SNAP?", en: "Do you accept EBT?" },
   ];
 
+  const lastAiMessage = messages.filter((m) => m.sender === "ai").slice(-1)[0]?.text || defaultInitialMessage.text;
+  const lastUserMessage = messages.filter((m) => m.sender === "user").slice(-1)[0]?.text;
+
   return (
     <div className="w-full max-w-md mx-auto flex-1 flex flex-col h-[calc(100dvh-125px)] p-3 pb-20 space-y-2.5">
-      {/* Controls Bar */}
-      <div className="flex items-center justify-between bg-surface p-2.5 rounded-2xl border border-secondary-fixed/50">
-        <span className="text-xs font-bold text-on-surface truncate pr-1">
-          {lang === "es" ? `Asistente AI (${merchant.storeInfo.name})` : `AI Assistant (${merchant.storeInfo.name})`}
-        </span>
-        
-        <div className="flex items-center gap-1.5 shrink-0">
+      {/* Top Bar: Mode Switcher (Voice Mode vs Chat Mode) */}
+      <div className="flex items-center justify-between bg-white p-1.5 rounded-2xl border border-slate-200 shadow-xs">
+        <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl">
           <button
-            onClick={clearChatHistory}
-            className="p-1 rounded-lg text-on-surface-variant hover:text-rose-500 transition-colors"
-            title="Clear Chat History"
-          >
-            <Trash2 className="w-3.5 h-3.5" />
-          </button>
-          <button
-            onClick={toggleAutoSpeak}
-            className={`px-2.5 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 transition-all ${
-              autoSpeak ? "bg-emerald-100 text-emerald-800" : "bg-surface-container text-on-surface-variant opacity-80"
+            onClick={() => setActiveMode("voice")}
+            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
+              activeMode === "voice"
+                ? "bg-[#003ec7] text-white shadow-2xs"
+                : "text-slate-600 hover:text-slate-900"
             }`}
           >
-            {autoSpeak ? <Volume2 className="w-3 h-3" /> : <VolumeX className="w-3 h-3" />}
-            <span>{autoSpeak ? "Voz Activa" : "Muted"}</span>
+            <Radio className="w-3.5 h-3.5" />
+            <span>{lang === "es" ? "Voz AI" : "Voice AI"}</span>
+          </button>
+
+          <button
+            onClick={() => setActiveMode("chat")}
+            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
+              activeMode === "chat"
+                ? "bg-[#003ec7] text-white shadow-2xs"
+                : "text-slate-600 hover:text-slate-900"
+            }`}
+          >
+            <MessageSquare className="w-3.5 h-3.5" />
+            <span>{lang === "es" ? "Chat" : "Text Chat"}</span>
+          </button>
+        </div>
+
+        <div className="flex items-center gap-1">
+          <button
+            onClick={clearChatHistory}
+            className="p-1.5 rounded-xl text-slate-400 hover:text-rose-500 hover:bg-slate-100 transition-colors"
+            title="Clear Chat History"
+          >
+            <Trash2 className="w-4 h-4" />
+          </button>
+
+          <button
+            onClick={toggleAutoSpeak}
+            className={`p-1.5 rounded-xl transition-all ${
+              autoSpeak ? "text-[#003ec7] bg-blue-50" : "text-slate-400 hover:bg-slate-100"
+            }`}
+            title={autoSpeak ? "Mute Voice Output" : "Enable Voice Output"}
+          >
+            {autoSpeak ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
           </button>
         </div>
       </div>
 
-      {/* Quick Suggestion Chips */}
-      <div className="flex items-center gap-1 overflow-x-auto pb-0.5 no-scrollbar">
-        {quickPrompts.map((prompt, i) => (
-          <button
-            key={i}
-            onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
-            className="px-2.5 py-1 bg-surface border border-secondary-fixed text-primary text-[10px] font-bold rounded-full shrink-0"
-          >
-            {lang === "es" ? prompt.es : prompt.en}
-          </button>
-        ))}
-      </div>
-
-      {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto space-y-2 pr-0.5">
-        {messages.map((msg) => {
-          const isAi = msg.sender === "ai";
-          return (
-            <div key={msg.id} className={`flex flex-col ${isAi ? "items-start" : "items-end"}`}>
-              <div
-                className={`max-w-[88%] p-3 rounded-2xl text-xs font-medium ${
-                  isAi ? "bg-surface border border-secondary-fixed text-on-surface" : "bg-primary text-white"
-                }`}
-              >
-                <span className="whitespace-pre-wrap">{msg.text}</span>
-              </div>
-            </div>
-          );
-        })}
-        {loading && (
-          <div className="flex items-center gap-1.5 text-xs text-on-surface-variant p-2">
-            <RefreshCw className="w-3.5 h-3.5 text-primary animate-spin" />
-            <span>Consultando datos...</span>
+      {/* VIEW MODE 1: VOICE-FIRST INTERACTIVE ASSISTANT (MICROPHONE SPHERE & SOUNDWAVES) */}
+      {activeMode === "voice" ? (
+        <div className="flex-1 flex flex-col justify-between bg-white rounded-3xl p-5 border border-slate-200 shadow-sm relative overflow-hidden text-center space-y-4">
+          {/* Header Status Badge */}
+          <div className="flex items-center justify-center gap-2">
+            <span className="flex items-center gap-1.5 text-xs font-black text-[#003ec7] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+              <Sparkles className="w-3.5 h-3.5 text-[#003ec7]" />
+              {isListening
+                ? lang === "es" ? "Escuchando voz..." : "Listening to voice..."
+                : loading
+                ? lang === "es" ? "Procesando respuesta..." : "Generating answer..."
+                : isSpeaking
+                ? lang === "es" ? "Hablando respuesta..." : "Speaking response..."
+                : lang === "es" ? "Asistente de Voz Listo" : "Voice Assistant Ready"}
+            </span>
           </div>
-        )}
-        <div ref={messagesEndRef} />
-      </div>
+
+          {/* Dynamic Spoken Conversation Display */}
+          <div className="space-y-3 flex-1 flex flex-col justify-center max-w-xs mx-auto">
+            {lastUserMessage && (
+              <div className="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-semibold text-slate-600 animate-in fade-in duration-200">
+                <span className="text-[10px] uppercase font-bold text-slate-400 block mb-0.5">
+                  {lang === "es" ? "Usted Dijo:" : "You Said:"}
+                </span>
+                "{lastUserMessage}"
+              </div>
+            )}
+
+            <div className="p-4 bg-blue-50/60 rounded-3xl border border-blue-100 text-xs font-extrabold text-slate-800 leading-relaxed max-h-40 overflow-y-auto shadow-2xs">
+              <span className="text-[10px] uppercase font-black text-[#003ec7] block mb-1">
+                {merchant.storeInfo.name} AI:
+              </span>
+              {lastAiMessage}
+            </div>
+          </div>
+
+          {/* CENTRAL INTERACTIVE ANIMATED MICROPHONE SPHERE & AUDIO SOUNDWAVES */}
+          <div className="flex flex-col items-center justify-center py-2 relative">
+            {/* Outer Glowing Pulsating Audio Rings when Listening */}
+            {isListening && (
+              <>
+                <div className="absolute w-36 h-36 rounded-full bg-rose-500/20 animate-ping pointer-events-none" />
+                <div className="absolute w-44 h-44 rounded-full bg-blue-500/10 animate-pulse pointer-events-none" />
+              </>
+            )}
+
+            {/* Glowing Ring when Speaking */}
+            {isSpeaking && (
+              <div className="absolute w-36 h-36 rounded-full bg-emerald-500/20 animate-pulse pointer-events-none" />
+            )}
+
+            {/* Glowing Ring when Thinking */}
+            {loading && (
+              <div className="absolute w-36 h-36 rounded-full border-4 border-dashed border-[#003ec7] animate-spin pointer-events-none" />
+            )}
+
+            {/* Main Central Microphone Button Sphere */}
+            <button
+              onClick={toggleListening}
+              className={`relative z-10 w-28 h-28 rounded-full flex flex-col items-center justify-center shadow-xl transition-all active:scale-95 ${
+                isListening
+                  ? "bg-rose-600 text-white shadow-rose-200 scale-105"
+                  : loading
+                  ? "bg-blue-600 text-white shadow-blue-200"
+                  : isSpeaking
+                  ? "bg-emerald-600 text-white shadow-emerald-200"
+                  : "bg-[#003ec7] text-white hover:bg-blue-700 shadow-blue-200 hover:scale-105"
+              }`}
+            >
+              {loading ? (
+                <RefreshCw className="w-10 h-10 animate-spin" />
+              ) : isListening ? (
+                <MicOff className="w-10 h-10 animate-pulse" />
+              ) : (
+                <Mic className="w-10 h-10" />
+              )}
+
+              <span className="text-[10px] font-black uppercase tracking-wider mt-1">
+                {isListening
+                  ? lang === "es" ? "Detener" : "Stop"
+                  : loading
+                  ? lang === "es" ? "Pensando" : "Thinking"
+                  : isSpeaking
+                  ? lang === "es" ? "Hablando" : "Speaking"
+                  : lang === "es" ? "Hablar" : "Speak"}
+              </span>
+            </button>
+
+            {/* Animated Equalizer Sound Bars */}
+            <div className="flex items-center gap-1 mt-4 h-6">
+              {[0, 1, 2, 3, 4, 5, 6].map((idx) => {
+                const isActive = isListening || isSpeaking;
+                return (
+                  <div
+                    key={idx}
+                    className={`w-1 rounded-full transition-all duration-300 ${
+                      isListening
+                        ? "bg-rose-500 animate-bounce"
+                        : isSpeaking
+                        ? "bg-emerald-500 animate-pulse"
+                        : "bg-slate-300 h-2"
+                    }`}
+                    style={{
+                      height: isActive ? `${Math.floor(Math.random() * 18) + 8}px` : "6px",
+                      animationDelay: `${idx * 120}ms`,
+                    }}
+                  />
+                );
+              })}
+            </div>
+
+            <p className="text-[11px] font-bold text-slate-500 mt-2">
+              {isListening
+                ? lang === "es" ? "Escuchando... Hable ahora" : "Listening... Speak now"
+                : isSpeaking
+                ? lang === "es" ? "Tocando respuesta de audio" : "Playing audio answer"
+                : lang === "es" ? "Presione el micrófono para hablar" : "Tap microphone & ask your question"}
+            </p>
+          </div>
+
+          {/* Quick Voice Suggestion Chips */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pt-1 no-scrollbar justify-center">
+            {quickPrompts.slice(0, 3).map((prompt, i) => (
+              <button
+                key={i}
+                onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
+                className="px-3 py-1 bg-slate-100 hover:bg-blue-50 text-[#003ec7] border border-slate-200 rounded-full text-[10px] font-extrabold whitespace-nowrap transition-all"
+              >
+                {lang === "es" ? prompt.es : prompt.en}
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : (
+        /* VIEW MODE 2: TRADITIONAL CHAT THREAD WITH TEXT INPUT */
+        <div className="flex-1 flex flex-col justify-between space-y-2 overflow-hidden">
+          {/* Quick Suggestion Chips */}
+          <div className="flex items-center gap-1 overflow-x-auto pb-0.5 no-scrollbar">
+            {quickPrompts.map((prompt, i) => (
+              <button
+                key={i}
+                onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
+                className="px-2.5 py-1 bg-white border border-slate-200 hover:bg-blue-50 text-[#003ec7] text-[10px] font-extrabold rounded-full shrink-0 shadow-2xs"
+              >
+                {lang === "es" ? prompt.es : prompt.en}
+              </button>
+            ))}
+          </div>
+
+          {/* Chat Messages Thread */}
+          <div className="flex-1 overflow-y-auto space-y-2 pr-0.5">
+            {messages.map((msg) => {
+              const isAi = msg.sender === "ai";
+              return (
+                <div key={msg.id} className={`flex flex-col ${isAi ? "items-start" : "items-end"}`}>
+                  <div
+                    className={`max-w-[88%] p-3 rounded-2xl text-xs font-medium leading-relaxed ${
+                      isAi
+                        ? "bg-white border border-slate-200 text-slate-800 shadow-2xs"
+                        : "bg-[#003ec7] text-white shadow-xs"
+                    }`}
+                  >
+                    <span className="whitespace-pre-wrap">{msg.text}</span>
+                  </div>
+                </div>
+              );
+            })}
+            {loading && (
+              <div className="flex items-center gap-1.5 text-xs text-slate-500 p-2">
+                <RefreshCw className="w-3.5 h-3.5 text-[#003ec7] animate-spin" />
+                <span>{lang === "es" ? "Consultando información..." : "Searching store details..."}</span>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
+
+          {/* Input Row */}
+          <div className="bg-white p-2 rounded-2xl border border-slate-200 flex items-center gap-1.5 shadow-md">
+            <button
+              onClick={toggleListening}
+              className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
+                isListening ? "bg-rose-600 text-white animate-pulse" : "bg-blue-50 text-[#003ec7]"
+              }`}
+              title="Voice Input / Hablar"
+            >
+              {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
+            </button>
+            <input
+              type="text"
+              value={inputQuery}
+              onChange={(e) => setInputQuery(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+              placeholder={lang === "es" ? "Pregunte sobre alérgenos, baño, WiFi..." : "Ask about allergens, WiFi, restroom..."}
+              className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-[#003ec7]"
+            />
+            <button
+              onClick={() => sendMessage()}
+              disabled={!inputQuery.trim() || loading}
+              className="w-9 h-9 rounded-xl bg-[#003ec7] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all"
+            >
+              <Send className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Permanent Legal Disclaimer Bar */}
-      <div className="flex items-center justify-center gap-1 px-2 py-1 bg-amber-500/10 rounded-xl text-[9px] font-semibold text-amber-800 dark:text-amber-300 text-center">
+      <div className="flex items-center justify-center gap-1 px-2 py-1 bg-amber-50 rounded-xl border border-amber-100 text-[9px] font-semibold text-amber-800 text-center shrink-0">
         <ShieldAlert className="w-3 h-3 text-amber-600 shrink-0" />
         <span>
           {lang === "es"
             ? "Respuestas informativas. Verifique alergias o salud con el personal de la tienda."
             : "Informational only. Always verify allergies or health details with store staff."}
         </span>
-      </div>
-
-      {/* Input Row */}
-      <div className="bg-surface p-2 rounded-2xl border border-secondary-fixed/50 flex items-center gap-1.5 shadow-md">
-        <button
-          onClick={toggleListening}
-          className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
-            isListening ? "bg-rose-500 text-white animate-pulse" : "bg-secondary-fixed text-primary"
-          }`}
-        >
-          {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
-        </button>
-        <input
-          type="text"
-          value={inputQuery}
-          onChange={(e) => setInputQuery(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          placeholder={lang === "es" ? "Pregunte sobre alérgenos, baño, WiFi..." : "Ask about allergens, WiFi, restroom..."}
-          className="flex-1 bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-3 py-2 text-xs text-on-surface focus:outline-hidden"
-        />
-        <button
-          onClick={() => sendMessage()}
-          disabled={!inputQuery.trim() || loading}
-          className="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center disabled:opacity-40"
-        >
-          <Send className="w-3.5 h-3.5" />
-        </button>
       </div>
     </div>
   );
