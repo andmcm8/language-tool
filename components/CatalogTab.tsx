@@ -169,13 +169,13 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               <div
                 key={item.id}
                 onClick={() => setSelectedItem(item)}
-                className={`group p-3 rounded-2xl border shadow-2xs hover:shadow-xs transition-all duration-200 cursor-pointer flex gap-3 items-center ${
+                className={`group p-3.5 rounded-2xl border shadow-2xs hover:shadow-xs transition-all duration-200 cursor-pointer flex gap-3 items-center ${
                   hasPhoto
                     ? "bg-surface border-secondary-fixed/50"
-                    : "bg-gradient-to-r from-surface to-surface-container-lowest border-secondary-fixed/70 hover:border-primary/40"
+                    : "bg-surface border-secondary-fixed/70 hover:border-primary/40"
                 }`}
               >
-                {hasPhoto ? (
+                {hasPhoto && (
                   <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
                     <img
                       src={item.image}
@@ -187,10 +187,6 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                         {item.badge}
                       </span>
                     )}
-                  </div>
-                ) : (
-                  <div className="w-13 h-13 rounded-2xl bg-secondary-fixed/80 border border-outline-variant/30 shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform">
-                    {getCategoryIcon(item.categoryId, item.badge)}
                   </div>
                 )}
 
@@ -244,7 +240,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                 className={`group p-3 rounded-2xl border shadow-2xs hover:shadow-xs transition-all duration-200 cursor-pointer flex flex-col justify-between ${
                   hasPhoto
                     ? "bg-surface border-secondary-fixed/50"
-                    : "bg-gradient-to-b from-surface to-surface-container-lowest border-secondary-fixed/70 hover:border-primary/40 min-h-[140px]"
+                    : "bg-surface border-secondary-fixed/70 hover:border-primary/40 min-h-[120px]"
                 }`}
               >
                 <div>
@@ -262,16 +258,13 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                       )}
                     </div>
                   ) : (
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="w-9 h-9 rounded-xl bg-secondary-fixed flex items-center justify-center">
-                        {getCategoryIcon(item.categoryId, item.badge)}
-                      </div>
-                      {item.badge && (
+                    item.badge && (
+                      <div className="mb-1.5">
                         <span className="px-1.5 py-0.5 bg-primary/10 text-primary text-[9px] font-bold rounded-md">
                           {item.badge}
                         </span>
-                      )}
-                    </div>
+                      </div>
+                    )
                   )}
 
                   <h3 className="font-bold text-xs text-on-surface leading-tight line-clamp-2">
@@ -325,20 +318,15 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               </div>
             ) : (
               <div className="pt-2 mb-3 border-b border-outline-variant/20 pb-3">
-                <div className="flex items-center gap-2.5 mb-2">
-                  <div className="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center shrink-0">
-                    {getCategoryIcon(selectedItem.categoryId, selectedItem.badge)}
-                  </div>
-                  <div>
-                    {selectedItem.badge && (
-                      <span className="px-1.5 py-0.5 bg-primary/10 text-primary text-[9px] font-bold rounded-md uppercase">
-                        {selectedItem.badge}
-                      </span>
-                    )}
-                    <h3 className="text-sm font-extrabold text-on-surface leading-tight mt-0.5">
-                      {lang === "es" ? selectedItem.nameEs : selectedItem.nameEn}
-                    </h3>
-                  </div>
+                <div className="mb-2">
+                  {selectedItem.badge && (
+                    <span className="px-1.5 py-0.5 bg-primary/10 text-primary text-[9px] font-bold rounded-md uppercase">
+                      {selectedItem.badge}
+                    </span>
+                  )}
+                  <h3 className="text-sm font-extrabold text-on-surface leading-tight mt-1">
+                    {lang === "es" ? selectedItem.nameEs : selectedItem.nameEn}
+                  </h3>
                 </div>
                 <div className="inline-block text-xs font-black text-primary bg-secondary-fixed px-2.5 py-1 rounded-xl">
                   {selectedItem.price}
