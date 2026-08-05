@@ -128,7 +128,11 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
               </div>
               <div>
                 <h2 className="font-bold text-base text-on-surface leading-tight">{storeInfo.name}</h2>
-                <p className="text-xs text-primary font-medium">{storeInfo.tagline}</p>
+                <p className="text-xs text-primary font-medium">
+                  {lang === "es"
+                    ? "Tu Tienda Comercial Bilingüe — Asistente Demo"
+                    : "Your Local Bilingual Store — Demo Assistant"}
+                </p>
               </div>
             </div>
 
@@ -146,19 +150,39 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
               <div className="flex items-start gap-2">
                 <Clock className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p>Lun-Vie: {storeInfo.hours.monday_friday}</p>
-                  <p>Sáb: {storeInfo.hours.saturday} | Dom: {storeInfo.hours.sunday}</p>
+                  <p>
+                    {lang === "es" ? "Lun-Vie: " : "Mon-Fri: "}
+                    {storeInfo.hours.monday_friday}
+                  </p>
+                  <p>
+                    {lang === "es" ? "Sáb: " : "Sat: "}
+                    {storeInfo.hours.saturday}
+                    {" | "}
+                    {lang === "es" ? "Dom: " : "Sun: "}
+                    {storeInfo.hours.sunday}
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-2">
                 <CreditCard className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-wrap gap-1">
-                  {storeInfo.paymentMethods.map((pm, i) => (
-                    <span key={i} className="px-2 py-0.5 bg-surface-container rounded-md text-[10px] text-on-surface">
-                      {pm}
-                    </span>
-                  ))}
+                  {storeInfo.paymentMethods.map((pm, i) => {
+                    let translatedPm = pm;
+                    if (lang === "es") {
+                      if (pm.toLowerCase().includes("cash")) translatedPm = "Efectivo";
+                      else if (pm.toLowerCase().includes("credit")) translatedPm = "Tarjetas de Crédito / Débito";
+                    } else {
+                      if (pm.toLowerCase().includes("efectivo")) translatedPm = "Cash";
+                      else if (pm.toLowerCase().includes("tarjeta")) translatedPm = "Credit / Debit Cards";
+                    }
+
+                    return (
+                      <span key={i} className="px-2 py-0.5 bg-surface-container rounded-md text-[10px] font-semibold text-on-surface">
+                        {translatedPm}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -167,7 +191,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
               onClick={() => setShowInfoModal(false)}
               className="mt-5 w-full py-2 bg-primary text-white font-bold text-xs rounded-xl shadow-xs hover:bg-primary-container transition-all"
             >
-              OK
+              {lang === "es" ? "Entendido" : "OK"}
             </button>
           </div>
         </div>
