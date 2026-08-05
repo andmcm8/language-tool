@@ -2,8 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "El Sol Market & Deli - Stamford Bilingual Assistant",
-  description: "Mobile smart storefront app for El Sol Market & Deli in Stamford, CT with live catalog, camera translator, and voice AI assistant.",
+  title: "Portal Language Tool — Asistentes Comerciales Bilingües",
+  description: "Plataforma inteligente de asistentes comerciales bilingües con catálogo interactivo, traductor de letreros por cámara y asistente de voz IA.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export const viewport: Viewport = {

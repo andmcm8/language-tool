@@ -144,8 +144,12 @@ export default function HomePage() {
           {/* Top Title & WORKING Interactive EN / ES Language Swapper Toggle */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-white text-[#003ec7] flex items-center justify-center shadow-sm font-black text-xl">
-                L
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm p-1 overflow-hidden shrink-0">
+                <img
+                  src="/logo.jpg"
+                  alt="Language Tool Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="font-extrabold text-lg leading-tight text-white tracking-tight">
