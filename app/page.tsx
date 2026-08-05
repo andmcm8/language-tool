@@ -16,6 +16,7 @@ import {
   Globe,
   Store,
   ChevronRight,
+  Info,
 } from "lucide-react";
 
 const MERCHANT_ICONS: Record<string, any> = {
@@ -78,6 +79,7 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [lang, setLang] = useState<"en" | "es">("es"); // Default to bilingual Spanish friendly
+  const [showInfoModal, setShowInfoModal] = useState(false);
 
   const t = DICT[lang];
 
@@ -136,15 +138,40 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* FULLY FUNCTIONAL 1-TAP LANGUAGE TOGGLE BUTTON */}
-            <button
-              onClick={() => setLang(lang === "es" ? "en" : "es")}
-              className="flex items-center gap-1.5 bg-white text-[#003ec7] hover:bg-blue-50 px-3 py-1.5 rounded-full text-xs font-black shadow-md transition-all active:scale-95"
-              title="Switch Language / Cambiar Idioma"
-            >
-              <Globe className="w-3.5 h-3.5 text-[#003ec7]" />
-              <span>{lang === "es" ? "🇲🇽 Español" : "🇺🇸 English"}</span>
-            </button>
+            {/* EXACT MATCH: Segmented Pill Toggle Switch (ES / EN | Info) */}
+            <div className="flex items-center gap-0.5 bg-white text-slate-800 p-1 rounded-full border border-white/30 shadow-md">
+              <button
+                onClick={() => setLang("es")}
+                className={`px-3 py-1 rounded-full text-xs font-black transition-all ${
+                  lang === "es"
+                    ? "bg-[#003ec7] text-white shadow-xs"
+                    : "text-slate-700 hover:text-slate-900"
+                }`}
+              >
+                ES
+              </button>
+              <button
+                onClick={() => setLang("en")}
+                className={`px-3 py-1 rounded-full text-xs font-black transition-all ${
+                  lang === "en"
+                    ? "bg-[#003ec7] text-white shadow-xs"
+                    : "text-slate-700 hover:text-slate-900"
+                }`}
+              >
+                EN
+              </button>
+
+              <div className="w-px h-3.5 bg-slate-300 mx-0.5" />
+
+              <button
+                onClick={() => setShowInfoModal(true)}
+                className="p-1 rounded-full text-slate-600 hover:text-[#003ec7] transition-colors"
+                title="Portal Info / Información"
+                aria-label="Portal Info"
+              >
+                <Info className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           {/* Subtitle Message */}
@@ -312,6 +339,54 @@ export default function HomePage() {
       <footer className="max-w-md md:max-w-4xl mx-auto px-4 pt-10 text-center text-xs text-slate-400">
         <p>© {new Date().getFullYear()} {t.footerText}</p>
       </footer>
+
+      {/* PORTAL INFO MODAL DIALOG */}
+      {showInfoModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
+          <div className="bg-white rounded-3xl p-6 max-w-sm w-full space-y-4 shadow-2xl border border-slate-100 relative">
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="absolute top-4 right-4 p-1.5 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#003ec7] flex items-center justify-center font-black text-xl shadow-2xs">
+                L
+              </div>
+              <div>
+                <h3 className="font-extrabold text-base text-slate-900 leading-tight">
+                  {lang === "es" ? "Acerca de Language Tool" : "About Language Tool"}
+                </h3>
+                <p className="text-xs text-[#003ec7] font-bold">
+                  {lang === "es" ? "Asistente Comercial Bilingüe" : "Bilingual Merchant Assistant"}
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-2.5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+              <p>
+                {lang === "es"
+                  ? "Language Tool es una plataforma bilingüe diseñada para conectar comercios locales con sus clientes mediante IA, traducción en cámara en tiempo real y directorios interactivos."
+                  : "Language Tool is a bilingual multi-merchant platform designed to connect local businesses with their customers using AI, real-time camera translation, and interactive product catalogs."}
+              </p>
+              <p className="font-semibold text-slate-800">
+                {lang === "es"
+                  ? "Soporta supermercados, farmacias, tiendas de reparación y comercios locales."
+                  : "Supports local supermarkets, pharmacies, tech repair shops, and retail stores."}
+              </p>
+            </div>
+
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="w-full py-2.5 bg-[#003ec7] text-white font-extrabold text-xs rounded-xl shadow-sm hover:brightness-110 transition-all"
+            >
+              {lang === "es" ? "Entendido" : "Got It"}
+            </button>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
