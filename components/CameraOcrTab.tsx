@@ -9,6 +9,13 @@ import {
   AlertCircle,
   RotateCcw,
   Image as ImageIcon,
+  Copy,
+  Check,
+  Volume2,
+  Eye,
+  EyeOff,
+  Zap,
+  ZoomIn,
 } from "lucide-react";
 
 interface CameraOcrTabProps {
@@ -22,9 +29,6 @@ interface TextRegion {
   confidence?: number;
 }
 
-/* ================================================================
-   SAMPLE SIGNS — demo data so users can test without a camera
-   ================================================================ */
 const SAMPLE_SIGNS = [
   {
     id: "sign-1",
@@ -78,7 +82,6 @@ const SAMPLE_SIGNS = [
 
 /* ================================================================
    IMAGE PREPROCESSING WITH ADAPTIVE THRESHOLDING
-   Dramatically improves handwriting & pen stroke recognition
    ================================================================ */
 function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   const w = srcCanvas.width;
@@ -92,7 +95,6 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   const imageData = ctx.getImageData(0, 0, w, h);
   const d = imageData.data;
 
-  // Step 1: Grayscale & Contrast boost
   let min = 255, max = 0;
   const grayBuf = new Uint8Array(w * h);
 
@@ -104,8 +106,6 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   }
 
   const range = max - min || 1;
-
-  // Step 2: Adaptive Local Thresholding (ideal for handwriting & shadow gradients)
   const windowSize = Math.max(15, Math.floor(Math.min(w, h) / 32));
   const halfWin = Math.floor(windowSize / 2);
 
@@ -114,10 +114,8 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
       const idx = y * w + x;
       const pixelIdx = idx * 4;
 
-      // Stretch contrast
       const val = Math.round(((grayBuf[idx] - min) / range) * 255);
 
-      // Simple local adaptive threshold
       let sum = 0;
       let count = 0;
       for (let wy = Math.max(0, y - halfWin); wy <= Math.min(h - 1, y + halfWin); wy += 4) {
@@ -137,9 +135,6 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   return ocrCanvas;
 }
 
-/* ================================================================
-   OCR WORD CORRECTION WITH CONTEXT CLUES
-   ================================================================ */
 const KNOWN_WORDS = new Set([
   "daily","special","specials","fresh","hot","cold","warm","baked","fried",
   "grilled","roasted","roast","melted","steamed","homemade","handmade",
@@ -206,9 +201,6 @@ function correctOcrLine(line: string): string {
     .join(" ");
 }
 
-/* ================================================================
-   COMPONENT
-   ================================================================ */
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const srcCanvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -221,10 +213,18 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const [hasResult, setHasResult] = useState(false);
   const [statusText, setStatusText] = useState("");
 
+  // New Features State
+  const [showOriginal, setShowOriginal] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [torchActive, setTorchActive] = useState(false);
+  const [zoomLevel, setZoomLevel] = useState<number>(1);
+  const [detectedRegions, setDetectedRegions] = useState<TextRegion[]>([]);
+
   /* ---------- Camera helpers ---------- */
   const startCamera = useCallback(async () => {
     setCameraBlocked(false);
     setHasResult(false);
+    setShowOriginal(false);
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
         video: {
@@ -259,6 +259,25 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     return () => stopCamera();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Torch / Flash Toggle
+  const toggleTorch = async () => {
+    if (!videoRef.current?.srcObject) return;
+    const stream = videoRef.current.srcObject as MediaStream;
+    const track = stream.getVideoTracks()[0];
+    if (track && "applyConstraints" in track) {
+      try {
+        const nextState = !torchActive;
+        await track.applyConstraints({
+          // @ts-ignore - advanced torch constraint
+          advanced: [{ torch: nextState }],
+        });
+        setTorchActive(nextState);
+      } catch (err) {
+        console.warn("Torch not supported on this device/browser:", err);
+      }
+    }
+  };
 
   /* ---------- Gemini Vision OCR + Translation ---------- */
   const visionTranslate = async (
@@ -326,7 +345,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const luminance = (r: number, g: number, b: number) =>
     (0.299 * r + 0.587 * g + 0.114 * b) / 255;
 
-  /* ---------- Fuzzy string matching ---------- */
   const similarity = (a: string, b: string): number => {
     const wa = new Set(a.toLowerCase().split(/\s+/).filter(Boolean));
     const wb = new Set(b.toLowerCase().split(/\s+/).filter(Boolean));
@@ -344,24 +362,19 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   ): TextRegion[] => {
     if (regions.length === 0) return [];
 
-    // 1. Filter out junk OCR noise, footers, phantom blank paper textboxes
     const clean = regions.filter((r) => {
       const orig = r.original.trim();
       const trans = r.translated.trim();
       if (!orig || !trans) return false;
 
-      // Filter phantom tiny noise boxes (e.g. 1-2 character random symbols on blank paper)
       const boxW = r.bbox.x1 - r.bbox.x0;
       const boxH = r.bbox.y1 - r.bbox.y0;
 
-      // Drop extremely small random noise blobs
       if (boxW < 18 || boxH < 10) return false;
 
-      // Ignore page numbers / footers
       if (/^page\s+\d+$/i.test(orig) || /^revised:?\s*[\d\/]+$/i.test(orig)) return false;
-      if (/^[\d\s\.\/\-\,\!\?\#\%\*\@]+$/.test(orig) && !orig.includes("$")) return false; // Ignore pure non-price numbers/symbols
+      if (/^[\d\s\.\/\-\,\!\?\#\%\*\@]+$/.test(orig) && !orig.includes("$")) return false;
 
-      // Filter isolated 1 or 2 letter noise fragments unless it's a known valid word
       if (orig.length <= 2 && !orig.includes("$")) {
         const lower = orig.toLowerCase();
         if (!["no", "si", "in", "on", "at", "to", "or", "el", "la", "un"].includes(lower)) {
@@ -369,7 +382,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         }
       }
 
-      // Filter gibberish letter sequences
       const words = orig.split(/\s+/);
       const invalidWords = words.filter((w) => /^[^\w]+$/.test(w) || (w.length > 5 && !/[aeiouy]/i.test(w)));
       if (invalidWords.length > words.length / 2) return false;
@@ -377,7 +389,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       return true;
     });
 
-    // 2. Sort regions top-to-bottom by y0 coordinate
     clean.sort((a, b) => a.bbox.y0 - b.bbox.y0);
 
     const result: TextRegion[] = [];
@@ -433,6 +444,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     ctx.drawImage(srcCanvas, 0, 0);
 
     const regions = deoverlapAndCleanRegions(rawRegions, w, h);
+    setDetectedRegions(regions);
 
     for (const region of regions) {
       const { bbox } = region;
@@ -704,7 +716,29 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const resetView = () => {
     setHasResult(false);
     setStatusText("");
+    setShowOriginal(false);
+    setDetectedRegions([]);
     startCamera();
+  };
+
+  // Copy All Translated Text Action
+  const copyAllText = () => {
+    if (detectedRegions.length === 0) return;
+    const fullText = detectedRegions.map((r) => r.translated).join("\n");
+    navigator.clipboard.writeText(fullText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  // Listen Full Document Speech Action
+  const speakFullDocument = () => {
+    if (detectedRegions.length === 0 || typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    const fullText = detectedRegions.map((r) => r.translated).join(". ");
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(fullText);
+    utterance.lang = "es-ES";
+    utterance.rate = 0.95;
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -717,26 +751,97 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         capture="environment"
         className="hidden"
       />
+      {/* Hidden source canvas */}
       <canvas ref={srcCanvasRef} className="hidden" />
 
-      {/* TALLER VIEWPORT MATCHING PORTRAIT PHONES PERFECTLY */}
+      {/* PORTRAIT CAMERA & RESULT CANVAS VIEWPORT */}
       <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10">
+        {/* Live Camera Stream */}
         <video
           ref={videoRef}
           playsInline
           muted
-          className={`w-full h-full object-cover ${
+          style={{ transform: `scale(${zoomLevel})`, transformOrigin: "center" }}
+          className={`w-full h-full object-cover transition-transform duration-200 ${
             cameraActive && !hasResult ? "" : "hidden"
           }`}
         />
 
+        {/* Original Image View (When Toggle is Active) */}
+        {hasResult && showOriginal && srcCanvasRef.current && (
+          <img
+            src={srcCanvasRef.current.toDataURL()}
+            alt="Original Untouched"
+            className="w-full h-full object-cover bg-slate-900"
+          />
+        )}
+
+        {/* Translated Canvas View */}
         <canvas
           ref={resultCanvasRef}
           className={`w-full h-full object-cover bg-slate-900 ${
-            hasResult ? "" : "hidden"
+            hasResult && !showOriginal ? "" : "hidden"
           }`}
         />
 
+        {/* Top Control Bar Overlay (Torch + Zoom) */}
+        {cameraActive && !hasResult && !isProcessing && (
+          <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-auto">
+            {/* Flash / Torch Toggle */}
+            <button
+              onClick={toggleTorch}
+              className={`p-2.5 rounded-full backdrop-blur-md transition-all shadow-md ${
+                torchActive
+                  ? "bg-amber-400 text-slate-900 ring-2 ring-white"
+                  : "bg-black/60 text-white hover:bg-black/80"
+              }`}
+              title="Toggle Flashlight"
+            >
+              <Zap className="w-4 h-4" />
+            </button>
+
+            {/* Quick Digital Zoom Selector */}
+            <div className="flex items-center gap-1 bg-black/60 backdrop-blur-md p-1 rounded-full border border-white/20">
+              {[1, 1.5, 2].map((z) => (
+                <button
+                  key={z}
+                  onClick={() => setZoomLevel(z)}
+                  className={`px-2.5 py-1 rounded-full text-[10px] font-extrabold transition-all ${
+                    zoomLevel === z
+                      ? "bg-primary text-white shadow-xs"
+                      : "text-white/80 hover:text-white"
+                  }`}
+                >
+                  {z}x
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Viewfinder Guideline Reticle */}
+        {cameraActive && !hasResult && !isProcessing && (
+          <div className="absolute inset-4 border-2 border-dashed border-white/50 rounded-xl pointer-events-none flex items-end justify-center pb-3">
+            <span className="px-3.5 py-1.5 rounded-full bg-black/65 text-white text-xs font-semibold backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+              <ZoomIn className="w-3.5 h-3.5 text-primary" />
+              <span>
+                {lang === "es"
+                  ? "Enfoque el letrero → Toque Traducir"
+                  : "Point at sign → Tap Translate"}
+              </span>
+            </span>
+          </div>
+        )}
+
+        {/* Processing Spinner Overlay */}
+        {isProcessing && (
+          <div className="absolute inset-0 bg-black/75 backdrop-blur-sm flex flex-col items-center justify-center text-white z-30">
+            <RefreshCw className="w-8 h-8 text-primary animate-spin mb-2" />
+            <span className="text-xs font-bold">{statusText}</span>
+          </div>
+        )}
+
+        {/* Camera Permission Blocked Warning */}
         {!cameraActive && !hasResult && !isProcessing && (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-slate-900 p-4">
             {cameraBlocked ? (
@@ -758,26 +863,42 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             )}
           </div>
         )}
-
-        {cameraActive && !hasResult && !isProcessing && (
-          <div className="absolute inset-4 border-2 border-dashed border-white/50 rounded-xl pointer-events-none flex items-end justify-center pb-3">
-            <span className="px-3.5 py-1.5 rounded-full bg-black/65 text-white text-xs font-semibold backdrop-blur-sm shadow-sm">
-              {lang === "es"
-                ? "Apunte al letrero o texto → Toque Traducir"
-                : "Point at sign or text → Tap Translate"}
-            </span>
-          </div>
-        )}
-
-        {isProcessing && (
-          <div className="absolute inset-0 bg-black/75 backdrop-blur-sm flex flex-col items-center justify-center text-white z-30">
-            <RefreshCw className="w-8 h-8 text-primary animate-spin mb-2" />
-            <span className="text-xs font-bold">{statusText}</span>
-          </div>
-        )}
       </div>
 
-      {/* ACTION BUTTONS */}
+      {/* RESULT CONTROL TOOLBAR (Original Toggle + Copy + Listen) */}
+      {hasResult && detectedRegions.length > 0 && (
+        <div className="bg-surface border border-secondary-fixed p-2 rounded-2xl flex items-center justify-between gap-2 shadow-2xs">
+          <button
+            onClick={() => setShowOriginal(!showOriginal)}
+            className={`flex-1 py-2 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all ${
+              showOriginal
+                ? "bg-amber-500/10 text-amber-600 border border-amber-500/30"
+                : "bg-primary/10 text-primary border border-primary/30"
+            }`}
+          >
+            {showOriginal ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+            <span>{showOriginal ? "Ver Traducción" : "Ver Original"}</span>
+          </button>
+
+          <button
+            onClick={copyAllText}
+            className="p-2.5 rounded-xl bg-surface-container border border-secondary-fixed text-on-surface hover:text-primary transition-colors flex items-center gap-1"
+            title="Copiar texto traducido"
+          >
+            {copied ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
+          </button>
+
+          <button
+            onClick={speakFullDocument}
+            className="p-2.5 rounded-xl bg-secondary-fixed text-primary hover:scale-105 transition-transform"
+            title="Escuchar pronunciación"
+          >
+            <Volume2 className="w-4 h-4" />
+          </button>
+        </div>
+      )}
+
+      {/* MAIN ACTION BUTTONS */}
       <div className="grid grid-cols-2 gap-2">
         {hasResult ? (
           <>
