@@ -167,9 +167,26 @@ function levenshteinDistance(a: string, b: string): number {
    CONTEXT CO-OCCURRENCE PAIR DICTIONARY (Context Clues Engine)
    ================================================================ */
 const CONTEXT_PAIRS: [string, string][] = [
+  // Italian & Pasta
   ["spaghetti", "meatballs"],
   ["spaghetti", "meatball"],
   ["macaroni", "cheese"],
+  ["garlic", "bread"],
+  ["garlic", "knots"],
+
+  // Mexican & Latin American
+  ["chips", "salsa"],
+  ["chips", "guacamole"],
+  ["tacos", "salsa"],
+  ["tacos", "guacamole"],
+  ["empanadas", "beef"],
+  ["empanadas", "chicken"],
+  ["bandeja", "paisa"],
+  ["pan", "bono"],
+  ["tres", "leches"],
+  ["flan", "leche"],
+
+  // American & Diner / Fast Food
   ["fish", "chips"],
   ["rice", "beans"],
   ["ham", "cheese"],
@@ -178,17 +195,43 @@ const CONTEXT_PAIRS: [string, string][] = [
   ["peanut", "butter"],
   ["burger", "fries"],
   ["chicken", "wings"],
+  ["chicken", "tenders"],
+  ["chicken", "nuggets"],
   ["chicken", "waffles"],
+  ["chicken", "soup"],
   ["pork", "chops"],
-  ["empanadas", "beef"],
-  ["empanadas", "chicken"],
-  ["bandeja", "paisa"],
-  ["pan", "bono"],
-  ["hot", "dog"],
-  ["hot", "dogs"],
+  ["pork", "belly"],
+  ["sweet", "plantains"],
+  ["green", "plantains"],
+  ["mashed", "potatoes"],
+  ["potato", "salad"],
+  ["macaroni", "salad"],
+  ["caesar", "salad"],
+  ["greek", "salad"],
+  ["clam", "chowder"],
+  ["lobster", "roll"],
+  ["crab", "cakes"],
+  ["shrimp", "cocktail"],
+  ["apple", "pie"],
+  ["chocolate", "cake"],
   ["ice", "cream"],
-  ["roast", "beef"],
-  ["garlic", "bread"],
+  ["iced", "tea"],
+  ["iced", "coffee"],
+
+  // Services & Store Terms
+  ["prescription", "refill"],
+  ["prescription", "transfer"],
+  ["screen", "repair"],
+  ["screen", "replacement"],
+  ["battery", "replacement"],
+  ["oil", "change"],
+  ["car", "wash"],
+  ["dry", "cleaning"],
+  ["express", "checkout"],
+  ["customer", "service"],
+  ["fitting", "room"],
+  ["gift", "card"],
+  ["wheelchair", "accessible"],
 ];
 
 /* ================================================================
@@ -199,9 +242,28 @@ const KNOWN_WORDS = new Set([
   "spaghetti","meatballs","meatball","lasagna","ravioli","fettuccine","penne",
   "macaroni","noodle","noodles","marinara","alfredo","parmesan","mozzarella",
   "linguine","ziti","bolognese","carbonara","tortellini","gnocchi","pesto",
-  "ricotta","provolone","calzone","pizza","pasta","garlic",
+  "ricotta","provolone","calzone","pizza","pasta","garlic","knots","knot",
 
-  // Food & Ingredients
+  // Latin American & Mexican Foods
+  "taco","tacos","burrito","burritos","quesadilla","quesadillas","empanada",
+  "empanadas","arepa","arepas","tamal","tamales","tortilla","tortillas",
+  "guacamole","salsa","totopos","nachos","ceviche","paella","sancocho",
+  "pupusa","pupusas","churros","flan","tostones","maduros","chicharron",
+  "chorizo","carnitas","barbacoa","birria","pastor","asada","mofongo",
+  "horchata","jamaica","tamarindo",
+
+  // Diner, Seafood & American Foods
+  "burger","cheeseburger","fries","tenders","nuggets","wings","sauce",
+  "bbq","buffalo","ribs","chops","tenderloin","sirloin","brisket",
+  "lobster","crab","shrimp","calamari","clam","chowder","salmon","tuna",
+  "cod","catfish","oysters","mussels","cocktail",
+
+  // Breakfast & Bakery
+  "pancakes","waffles","toast","bagel","croissant","donut","muffin",
+  "cookies","pastry","cake","pie","brownie","cupcake","bacon","sausage",
+  "ham","omelet","omelette","syrup",
+
+  // General Store, Food & Ingredients
   "daily","special","specials","fresh","hot","cold","warm","baked","fried",
   "grilled","roasted","roast","melted","steamed","homemade","handmade",
   "open","closed","hours","notice","warning","caution","welcome",
@@ -210,11 +272,11 @@ const KNOWN_WORDS = new Set([
   "cash","card","credit","debit","accepted","required","payment",
   "delivery","pickup","order","menu","combo","meal","plate","serving",
   "bread","meat","chicken","beef","pork","fish","cheese","rice",
-  "beans","eggs","milk","butter","cream","sugar","salt","sauce",
-  "salad","soup","sandwich","burger","tacos","water","juice","coffee",
-  "soda","beer","wine","drink","drinks","bakery","deli","grocery",
-  "produce","dairy","frozen","canned","dry","snacks","candy","chips",
-  "cookies","small","medium","large","extra","regular","double","half",
+  "beans","eggs","milk","butter","cream","sugar","salt",
+  "salad","soup","sandwich","water","juice","coffee","espresso",
+  "latte","cappuccino","soda","beer","wine","drink","drinks","bakery","deli",
+  "grocery","produce","dairy","frozen","canned","dry","snacks","candy","chips",
+  "small","medium","large","extra","regular","double","half",
   "pound","dozen","each","per","included","includes","available",
   "limited","while","supplies","last","first","second","batch",
   "today","now","new","best","store","market","service","customer",
@@ -223,10 +285,14 @@ const KNOWN_WORDS = new Set([
   "breakfast","lunch","dinner","appetizer","dessert","side",
   "monday","tuesday","wednesday","thursday","friday","saturday","sunday",
   "pharmacy","prescription","repair","warranty","screen","battery",
-  "empanada","empanadas","arepa","plantain","plantains","tortilla",
-  "avocado","tomato","onion","lettuce","pepper","corn","banana",
+  "plantain","plantains","avocado","tomato","onion","lettuce","pepper","corn","banana",
   "orange","lemon","lime","apple","mango","coconut","pineapple",
   "with","without","and","the","for","all","our","your","this","that",
+
+  // Services & Store Facilities
+  "refill","transfer","replacement","oil","change","wash","cleaning",
+  "express","checkout","fitting","room","rooms","gift","cards","accessible",
+  "wheelchair","restrooms","elevator","stairs","upstairs","downstairs",
 ]);
 
 const OCR_SUBS: Record<string, string[]> = {
