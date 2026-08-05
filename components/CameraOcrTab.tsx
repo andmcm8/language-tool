@@ -16,6 +16,8 @@ import {
   EyeOff,
   Zap,
   ZoomIn,
+  ArrowRightLeft,
+  SunMedium,
 } from "lucide-react";
 
 interface CameraOcrTabProps {
@@ -83,7 +85,7 @@ const SAMPLE_SIGNS = [
 /* ================================================================
    IMAGE PREPROCESSING WITH ADAPTIVE LOCAL THRESHOLDING
    ================================================================ */
-function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
+function preprocessForOcr(srcCanvas: HTMLCanvasElement, contrastBoost: boolean = false): HTMLCanvasElement {
   const w = srcCanvas.width;
   const h = srcCanvas.height;
   const ocrCanvas = document.createElement("canvas");
@@ -108,6 +110,7 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
   const range = max - min || 1;
   const windowSize = Math.max(15, Math.floor(Math.min(w, h) / 32));
   const halfWin = Math.floor(windowSize / 2);
+  const thresholdDelta = contrastBoost ? 14 : 8;
 
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
@@ -125,7 +128,7 @@ function preprocessForOcr(srcCanvas: HTMLCanvasElement): HTMLCanvasElement {
         }
       }
       const localAvg = count > 0 ? sum / count : 128;
-      const binarized = val < localAvg - 8 ? 0 : 255;
+      const binarized = val < localAvg - thresholdDelta ? 0 : 255;
 
       d[pixelIdx] = d[pixelIdx + 1] = d[pixelIdx + 2] = binarized;
     }
@@ -153,9 +156,9 @@ function levenshteinDistance(a: string, b: string): number {
         matrix[i][j] = matrix[i - 1][j - 1];
       } else {
         matrix[i][j] = Math.min(
-          matrix[i - 1][j - 1] + 1, // substitution
-          matrix[i][j - 1] + 1,     // insertion
-          matrix[i - 1][j] + 1      // deletion
+          matrix[i - 1][j - 1] + 1,
+          matrix[i][j - 1] + 1,
+          matrix[i - 1][j] + 1
         );
       }
     }
@@ -167,14 +170,11 @@ function levenshteinDistance(a: string, b: string): number {
    CONTEXT CO-OCCURRENCE PAIR DICTIONARY (Context Clues Engine)
    ================================================================ */
 const CONTEXT_PAIRS: [string, string][] = [
-  // Italian & Pasta
   ["spaghetti", "meatballs"],
   ["spaghetti", "meatball"],
   ["macaroni", "cheese"],
   ["garlic", "bread"],
   ["garlic", "knots"],
-
-  // Mexican & Latin American
   ["chips", "salsa"],
   ["chips", "guacamole"],
   ["tacos", "salsa"],
@@ -185,8 +185,6 @@ const CONTEXT_PAIRS: [string, string][] = [
   ["pan", "bono"],
   ["tres", "leches"],
   ["flan", "leche"],
-
-  // American & Diner / Fast Food
   ["fish", "chips"],
   ["rice", "beans"],
   ["ham", "cheese"],
@@ -217,8 +215,6 @@ const CONTEXT_PAIRS: [string, string][] = [
   ["ice", "cream"],
   ["iced", "tea"],
   ["iced", "coffee"],
-
-  // Services & Store Terms
   ["prescription", "refill"],
   ["prescription", "transfer"],
   ["screen", "repair"],
@@ -234,36 +230,24 @@ const CONTEXT_PAIRS: [string, string][] = [
   ["wheelchair", "accessible"],
 ];
 
-/* ================================================================
-   500+ MASTER MENU & STORE DICTIONARY
-   ================================================================ */
 const KNOWN_WORDS = new Set([
-  // Pasta & Italian
   "spaghetti","meatballs","meatball","lasagna","ravioli","fettuccine","penne",
   "macaroni","noodle","noodles","marinara","alfredo","parmesan","mozzarella",
   "linguine","ziti","bolognese","carbonara","tortellini","gnocchi","pesto",
   "ricotta","provolone","calzone","pizza","pasta","garlic","knots","knot",
-
-  // Latin American & Mexican Foods
   "taco","tacos","burrito","burritos","quesadilla","quesadillas","empanada",
   "empanadas","arepa","arepas","tamal","tamales","tortilla","tortillas",
   "guacamole","salsa","totopos","nachos","ceviche","paella","sancocho",
   "pupusa","pupusas","churros","flan","tostones","maduros","chicharron",
   "chorizo","carnitas","barbacoa","birria","pastor","asada","mofongo",
   "horchata","jamaica","tamarindo",
-
-  // Diner, Seafood & American Foods
   "burger","cheeseburger","fries","tenders","nuggets","wings","sauce",
   "bbq","buffalo","ribs","chops","tenderloin","sirloin","brisket",
   "lobster","crab","shrimp","calamari","clam","chowder","salmon","tuna",
   "cod","catfish","oysters","mussels","cocktail",
-
-  // Breakfast & Bakery
   "pancakes","waffles","toast","bagel","croissant","donut","muffin",
   "cookies","pastry","cake","pie","brownie","cupcake","bacon","sausage",
   "ham","omelet","omelette","syrup",
-
-  // General Store, Food & Ingredients
   "daily","special","specials","fresh","hot","cold","warm","baked","fried",
   "grilled","roasted","roast","melted","steamed","homemade","handmade",
   "open","closed","hours","notice","warning","caution","welcome",
@@ -288,8 +272,6 @@ const KNOWN_WORDS = new Set([
   "plantain","plantains","avocado","tomato","onion","lettuce","pepper","corn","banana",
   "orange","lemon","lime","apple","mango","coconut","pineapple",
   "with","without","and","the","for","all","our","your","this","that",
-
-  // Services & Store Facilities
   "refill","transfer","replacement","oil","change","wash","cleaning",
   "express","checkout","fitting","room","rooms","gift","cards","accessible",
   "wheelchair","restrooms","elevator","stairs","upstairs","downstairs",
@@ -308,9 +290,6 @@ const OCR_SUBS: Record<string, string[]> = {
   "[": ["I","l"],
 };
 
-/* ================================================================
-   FUZZY DICTIONARY ENGINE WITH EDIT DISTANCE & CONTEXT CLUES
-   ================================================================ */
 function correctOcrWord(word: string, lineContextText: string = ""): string {
   const cleanWord = word.trim();
   const lower = cleanWord.toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -319,14 +298,11 @@ function correctOcrWord(word: string, lineContextText: string = ""): string {
 
   const lowerLine = lineContextText.toLowerCase();
 
-  // STEP 1: CONTEXT CO-OCCURRENCE CLUES MATCHING
   for (const [wordA, wordB] of CONTEXT_PAIRS) {
     if (lowerLine.includes(wordA) || lowerLine.includes(wordB)) {
       const targetPartner = lowerLine.includes(wordA) ? wordB : wordA;
-      // If current word is close in edit distance (<= 3) to the context partner, lock it in!
       const dist = levenshteinDistance(lower, targetPartner);
       if (dist <= 3 && lower.length >= 4) {
-        // Match casing of original word
         if (cleanWord === cleanWord.toUpperCase()) return targetPartner.toUpperCase();
         if (cleanWord[0] === cleanWord[0].toUpperCase()) {
           return targetPartner.charAt(0).toUpperCase() + targetPartner.slice(1);
@@ -336,7 +312,6 @@ function correctOcrWord(word: string, lineContextText: string = ""): string {
     }
   }
 
-  // STEP 2: OCR CHARACTER SUBSTITUTION TABLE
   for (let pos = 0; pos < cleanWord.length; pos++) {
     const ch = cleanWord[pos];
     const subs = OCR_SUBS[ch];
@@ -348,9 +323,8 @@ function correctOcrWord(word: string, lineContextText: string = ""): string {
     }
   }
 
-  // STEP 3: LEVENSHTEIN FUZZY MATCHING (MAX DISTANCE <= 2)
   let bestMatch = "";
-  let minDistance = 3; // Only match if edit distance <= 2
+  let minDistance = 3;
 
   KNOWN_WORDS.forEach((dictWord) => {
     if (Math.abs(dictWord.length - lower.length) <= 2) {
@@ -380,9 +354,6 @@ function correctOcrLine(line: string): string {
     .join(" ");
 }
 
-/* ================================================================
-   COMPONENT
-   ================================================================ */
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const srcCanvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -395,11 +366,17 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
   const [hasResult, setHasResult] = useState(false);
   const [statusText, setStatusText] = useState("");
 
+  // New Features State
   const [showOriginal, setShowOriginal] = useState(false);
   const [copied, setCopied] = useState(false);
   const [torchActive, setTorchActive] = useState(false);
+  const [contrastBoost, setContrastBoost] = useState(false);
+  const [targetLang, setTargetLang] = useState<"es" | "en">("es");
   const [zoomLevel, setZoomLevel] = useState<number>(1);
   const [detectedRegions, setDetectedRegions] = useState<TextRegion[]>([]);
+
+  // Focus Ring Target Position
+  const [focusPoint, setFocusPoint] = useState<{ x: number; y: number } | null>(null);
 
   /* ---------- Camera helpers ---------- */
   const startCamera = useCallback(async () => {
@@ -460,6 +437,16 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     }
   };
 
+  // Viewport Tap Focus Trigger
+  const handleViewportTap = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cameraActive || hasResult) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    setFocusPoint({ x, y });
+    setTimeout(() => setFocusPoint(null), 1000);
+  };
+
   /* ---------- Gemini Vision OCR + Translation ---------- */
   const visionTranslate = async (
     base64: string
@@ -468,7 +455,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       const res = await fetch("/api/vision-translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ imageBase64: base64 }),
+        body: JSON.stringify({ imageBase64: base64, targetLang }),
       });
       const data = await res.json();
       return data.lines || [];
@@ -483,7 +470,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       const res = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, targetLang }),
       });
       const data = await res.json();
       return data.translation || text;
@@ -713,7 +700,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
 
       setStatusText(lang === "es" ? "Detectando texto…" : "Detecting text…");
 
-      const ocrCanvas = preprocessForOcr(srcCanvas);
+      const ocrCanvas = preprocessForOcr(srcCanvas, contrastBoost);
 
       const tesseractPromise = (async () => {
         try {
@@ -902,7 +889,6 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     startCamera();
   };
 
-  // Copy All Translated Text Action
   const copyAllText = () => {
     if (detectedRegions.length === 0) return;
     const fullText = detectedRegions.map((r) => r.translated).join("\n");
@@ -911,13 +897,12 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  // Listen Full Document Speech Action
   const speakFullDocument = () => {
     if (detectedRegions.length === 0 || typeof window === "undefined" || !("speechSynthesis" in window)) return;
     const fullText = detectedRegions.map((r) => r.translated).join(". ");
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(fullText);
-    utterance.lang = "es-ES";
+    utterance.lang = targetLang === "es" ? "es-ES" : "en-US";
     utterance.rate = 0.95;
     window.speechSynthesis.speak(utterance);
   };
@@ -932,11 +917,13 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         capture="environment"
         className="hidden"
       />
-      {/* Hidden source canvas */}
       <canvas ref={srcCanvasRef} className="hidden" />
 
       {/* PORTRAIT CAMERA & RESULT CANVAS VIEWPORT */}
-      <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10">
+      <div
+        onClick={handleViewportTap}
+        className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-black shadow-lg border border-white/10 cursor-pointer"
+      >
         {/* Live Camera Stream */}
         <video
           ref={videoRef}
@@ -947,6 +934,14 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             cameraActive && !hasResult ? "" : "hidden"
           }`}
         />
+
+        {/* Tap-to-Focus Reticle Visual Animation */}
+        {focusPoint && (
+          <div
+            style={{ left: focusPoint.x - 24, top: focusPoint.y - 24 }}
+            className="absolute w-12 h-12 border-2 border-amber-400 rounded-full animate-ping pointer-events-none z-30"
+          />
+        )}
 
         {/* Original Image View (When Toggle is Active) */}
         {hasResult && showOriginal && srcCanvasRef.current && (
@@ -965,37 +960,54 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
           }`}
         />
 
-        {/* Top Control Bar Overlay (Torch + Zoom) */}
+        {/* Top Control Bar Overlay (Language Switcher + Torch + Boost + Zoom) */}
         {cameraActive && !hasResult && !isProcessing && (
-          <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-auto">
-            {/* Flash / Torch Toggle */}
+          <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-auto gap-1">
+            {/* Language Direction Switcher */}
             <button
-              onClick={toggleTorch}
-              className={`p-2.5 rounded-full backdrop-blur-md transition-all shadow-md ${
-                torchActive
-                  ? "bg-amber-400 text-slate-900 ring-2 ring-white"
-                  : "bg-black/60 text-white hover:bg-black/80"
-              }`}
-              title="Toggle Flashlight"
+              onClick={(e) => {
+                e.stopPropagation();
+                setTargetLang(targetLang === "es" ? "en" : "es");
+              }}
+              className="px-3 py-1.5 rounded-full bg-black/65 backdrop-blur-md text-white text-[11px] font-extrabold border border-white/20 flex items-center gap-1.5 hover:bg-black/80 transition-all shadow-sm"
             >
-              <Zap className="w-4 h-4" />
+              <span>{targetLang === "es" ? "🇺🇸 English" : "🇲🇽 Español"}</span>
+              <ArrowRightLeft className="w-3 h-3 text-primary" />
+              <span>{targetLang === "es" ? "🇲🇽 Español" : "🇺🇸 English"}</span>
             </button>
 
-            {/* Quick Digital Zoom Selector */}
-            <div className="flex items-center gap-1 bg-black/60 backdrop-blur-md p-1 rounded-full border border-white/20">
-              {[1, 1.5, 2].map((z) => (
-                <button
-                  key={z}
-                  onClick={() => setZoomLevel(z)}
-                  className={`px-2.5 py-1 rounded-full text-[10px] font-extrabold transition-all ${
-                    zoomLevel === z
-                      ? "bg-primary text-white shadow-xs"
-                      : "text-white/80 hover:text-white"
-                  }`}
-                >
-                  {z}x
-                </button>
-              ))}
+            <div className="flex items-center gap-1">
+              {/* Contrast Boost Toggle */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setContrastBoost(!contrastBoost);
+                }}
+                className={`p-2 rounded-full backdrop-blur-md transition-all shadow-md ${
+                  contrastBoost
+                    ? "bg-primary text-white ring-2 ring-white"
+                    : "bg-black/60 text-white hover:bg-black/80"
+                }`}
+                title="Boost Contrast for Dim Text"
+              >
+                <SunMedium className="w-4 h-4" />
+              </button>
+
+              {/* Flash / Torch Toggle */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleTorch();
+                }}
+                className={`p-2 rounded-full backdrop-blur-md transition-all shadow-md ${
+                  torchActive
+                    ? "bg-amber-400 text-slate-900 ring-2 ring-white"
+                    : "bg-black/60 text-white hover:bg-black/80"
+                }`}
+                title="Toggle Flashlight"
+              >
+                <Zap className="w-4 h-4" />
+              </button>
             </div>
           </div>
         )}
@@ -1006,9 +1018,9 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             <span className="px-3.5 py-1.5 rounded-full bg-black/65 text-white text-xs font-semibold backdrop-blur-sm shadow-sm flex items-center gap-1.5">
               <ZoomIn className="w-3.5 h-3.5 text-primary" />
               <span>
-                {lang === "es"
+                {targetLang === "es"
                   ? "Enfoque el letrero o texto → Toque Traducir"
-                  : "Point at sign or text → Tap Translate"}
+                  : "Focus text → Tap Translate"}
               </span>
             </span>
           </div>
