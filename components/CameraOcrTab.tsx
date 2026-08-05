@@ -1130,31 +1130,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         )}
       </div>
 
-      {/* SAMPLE SIGN PRESETS */}
-      <div className="space-y-1 pt-0.5">
-        <div className="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider px-1 flex items-center gap-1">
-          <ImageIcon className="w-3 h-3 text-primary" />
-          <span>
-            {lang === "es" ? "Probar letreros de ejemplo:" : "Try sample signs:"}
-          </span>
-        </div>
-        <div className="grid grid-cols-3 gap-1.5">
-          {SAMPLE_SIGNS.map((sign) => (
-            <button
-              key={sign.id}
-              onClick={() => {
-                if (cameraActive) stopCamera();
-                processSampleSign(sign.lines);
-              }}
-              className="p-2 bg-surface border border-secondary-fixed hover:bg-surface-container rounded-xl text-center transition-all"
-            >
-              <div className="text-[10px] font-extrabold text-primary truncate">
-                {sign.label}
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
+
     </div>
   );
 }

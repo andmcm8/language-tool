@@ -27,14 +27,26 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
   };
 
-  // Persistent chat history across tab switches & page refreshes
+  // Persistent chat history across tab switches & page refreshes (with string sanitization)
   const [messages, setMessages] = useState<Message[]>(() => {
     if (typeof window !== "undefined") {
       try {
         const saved = localStorage.getItem(storageKey);
         if (saved) {
           const parsed = JSON.parse(saved);
-          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            // Replace any old cached store names with current store name (Demo Market)
+            return parsed.map((m: Message) => ({
+              ...m,
+              text: m.text
+                ? m.text
+                    .replace(/El Sol Market & Deli/gi, merchant.storeInfo.name)
+                    .replace(/El Sol Market/gi, merchant.storeInfo.name)
+                    .replace(/El Sol/gi, merchant.storeInfo.name)
+                    .replace(/Demo Store/gi, merchant.storeInfo.name)
+                : m.text,
+            }));
+          }
         }
       } catch (e) {
         console.warn("Failed to load chat history:", e);
@@ -198,7 +210,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   ];
 
   return (
-    <div className="w-full max-w-md mx-auto flex flex-col h-[calc(100vh-130px)] p-4 pb-24 space-y-2">
+    <div className="w-full max-w-md mx-auto flex-1 flex flex-col h-[calc(100dvh-125px)] p-3 pb-20 space-y-2.5">
       {/* Controls Bar */}
       <div className="flex items-center justify-between bg-surface p-2.5 rounded-2xl border border-secondary-fixed/50">
         <span className="text-xs font-bold text-on-surface truncate pr-1">
