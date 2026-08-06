@@ -148,8 +148,11 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     }
   };
 
+  const isSwappingRef = useRef(false);
+
   /* ISSUE #1: TRANSLATE AUTOMATICALLY AS YOU TYPE (LIKE GOOGLE TRANSLATE) */
   useEffect(() => {
+    if (isSwappingRef.current) return;
     const text = inputText.trim();
     if (!text) {
       setTranslatedText("");
@@ -165,6 +168,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
 
   /* ---------- Language Direction Switcher ---------- */
   const swapLanguages = () => {
+    isSwappingRef.current = true;
     const newSource = sourceLang === "en" ? "es" : "en";
     setSourceLang(newSource);
 
@@ -172,6 +176,10 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     const currentTrans = translatedText;
     setInputText(currentTrans);
     setTranslatedText(currentInput);
+
+    setTimeout(() => {
+      isSwappingRef.current = false;
+    }, 350);
   };
 
   /* ---------- Speech-to-Text (Voice Dictation) ---------- */
