@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { LayoutGrid, BookOpen, Camera, MessageSquareText } from "lucide-react";
+import { LayoutGrid, BookOpen, Languages, MessageSquareText } from "lucide-react";
 
 export type TabType = "home" | "catalog" | "camera" | "assistant";
 
@@ -27,9 +27,9 @@ export default function BottomNav({ activeTab, setActiveTab, lang }: BottomNavPr
     },
     {
       id: "camera" as TabType,
-      labelEs: "Cámara OCR",
-      labelEn: "Camera OCR",
-      icon: Camera,
+      labelEs: "Traductor",
+      labelEn: "Translator",
+      icon: Languages,
     },
     {
       id: "assistant" as TabType,

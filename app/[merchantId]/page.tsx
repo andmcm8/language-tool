@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import BottomNav, { TabType } from "@/components/BottomNav";
 import LandingView from "@/components/LandingView";
 import CatalogTab from "@/components/CatalogTab";
-import CameraOcrTab from "@/components/CameraOcrTab";
+import TranslatorTab from "@/components/TranslatorTab";
 import AiAssistantTab from "@/components/AiAssistantTab";
 
 interface PageProps {
@@ -33,7 +33,7 @@ export default function MerchantStorefront({ params }: PageProps) {
         {activeTab === "catalog" && (
           <CatalogTab merchant={merchant} lang={lang} />
         )}
-        {activeTab === "camera" && <CameraOcrTab lang={lang} />}
+        {activeTab === "camera" && <TranslatorTab lang={lang} />}
         {activeTab === "assistant" && <AiAssistantTab merchant={merchant} lang={lang} />}
       </main>
 
