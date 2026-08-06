@@ -35,6 +35,7 @@ CRITICAL TRANSLATION & LAYOUT INSTRUCTIONS:
 3. For multi-column menus, process Column 1 top-to-bottom first, then process Column 2 top-to-bottom.
 4. Do NOT merge separate menu items or separate paragraphs together.
 5. Provide the exact original English text and its accurate Spanish translation for every line or section.
+6. Preserve time designations like "12 pm - 4 pm" as "12 pm - 4 pm" (or "12:00 PM - 4:00 PM"). NEVER translate "pm" into "pie", "pastel", or "tarta".
 
 Return ONLY a raw JSON array (no markdown code blocks, no explanation text):
 [

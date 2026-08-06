@@ -346,10 +346,7 @@ function correctOcrWord(word: string, lineContextText: string = ""): string {
 }
 
 function correctOcrLine(line: string): string {
-  const words = line.split(/\s+/);
-  return words
-    .map((w) => correctOcrWord(w, line))
-    .join(" ");
+  return line.trim();
 }
 
 export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
