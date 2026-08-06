@@ -182,6 +182,8 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     }, 350);
   };
 
+  const latestTranscriptRef = useRef<string>("");
+
   /* ---------- Speech-to-Text (Voice Dictation) ---------- */
   const toggleListening = () => {
     if (typeof window === "undefined") return;
@@ -205,17 +207,22 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     }
 
     try {
+      latestTranscriptRef.current = "";
       const recognition = new SpeechRecognition();
       recognition.lang = sourceLang === "en" ? "en-US" : "es-ES";
       recognition.interimResults = true;
       recognition.continuous = false;
 
-      recognition.onstart = () => setIsListening(true);
+      recognition.onstart = () => {
+        setIsListening(true);
+        latestTranscriptRef.current = "";
+      };
 
       recognition.onresult = (event: any) => {
         const transcript = Array.from(event.results)
           .map((result: any) => result[0].transcript)
           .join("");
+        latestTranscriptRef.current = transcript;
         setInputText(transcript);
       };
 
@@ -223,8 +230,9 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
 
       recognition.onend = () => {
         setIsListening(false);
-        if (inputText.trim()) {
-          handleTranslate();
+        const voiceText = latestTranscriptRef.current.trim();
+        if (voiceText) {
+          handleTranslate(voiceText);
         }
       };
 
