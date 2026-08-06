@@ -290,7 +290,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             }`}
           >
             <Radio className="w-3.5 h-3.5" />
-            <span>{lang === "es" ? "Voz AI" : "Voice AI"}</span>
+            <span>{lang === "es" ? "Voz IA" : "Voice AI"}</span>
           </button>
         </div>
 
