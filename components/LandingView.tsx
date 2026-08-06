@@ -3,7 +3,7 @@
 import React from "react";
 import { TabType } from "./BottomNav";
 import { MerchantConfig } from "@/types/merchant";
-import { ShoppingBag, ScanLine, MessageSquare, Mic, ChevronRight } from "lucide-react";
+import { ShoppingBag, Languages, MessageSquare, Mic, ChevronRight } from "lucide-react";
 
 interface LandingViewProps {
   merchant: MerchantConfig;
@@ -26,11 +26,11 @@ export default function LandingView({ merchant, setActiveTab, lang }: LandingVie
     },
     {
       id: "camera" as TabType,
-      titleEs: "Traductor de Cámara OCR",
-      titleEn: "Camera Sign Translator",
-      descEs: "Escanee letreros físicos o menús con traducción en vivo",
-      descEn: "Instant live scanning of physical signs & paper menus",
-      icon: ScanLine,
+      titleEs: "Traductor Bilingüe",
+      titleEn: "Bilingual Translator",
+      descEs: "Traducción de texto y voz en tiempo real con frases rápidas",
+      descEn: "Real-time text & voice translation with quick store phrases",
+      icon: Languages,
       gradient: "from-emerald-500/10 to-teal-500/5",
       border: "hover:border-emerald-500/30",
       accentBg: "bg-emerald-500/10 text-emerald-600",
