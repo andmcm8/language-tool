@@ -9,16 +9,19 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
    ================================================================ */
 
 /* ---------- ENGINE 1: Gemini AI ---------- */
-async function tryGemini(text: string): Promise<string | null> {
+async function tryGemini(text: string, targetLang: string = "es"): Promise<string | null> {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return null;
+
+  const isEs = targetLang === "es";
+  const sourceLangName = isEs ? "English" : "Spanish";
+  const targetLangName = isEs ? "Spanish" : "English";
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({
       model: "gemini-2.0-flash",
-      systemInstruction:
-        "You are a professional English→Spanish translator. Output ONLY the translated Spanish text. No quotes, no explanations.",
+      systemInstruction: `You are a professional ${sourceLangName}→${targetLangName} translator. Output ONLY the translated ${targetLangName} text. No quotes, no explanations.`,
     });
     const result = await model.generateContent(text);
     const translation = result.response.text().trim();
@@ -29,11 +32,12 @@ async function tryGemini(text: string): Promise<string | null> {
 }
 
 /* ---------- ENGINE 2: MyMemory Translation API (free, no key) ---------- */
-async function tryMyMemory(text: string): Promise<string | null> {
+async function tryMyMemory(text: string, targetLang: string = "es"): Promise<string | null> {
   try {
+    const langpair = targetLang === "en" ? "es|en" : "en|es";
     const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(
       text
-    )}&langpair=en|es`;
+    )}&langpair=${langpair}`;
     const res = await fetch(url, { signal: AbortSignal.timeout(6000) });
     const data = await res.json();
     const translated = data?.responseData?.translatedText;
@@ -232,11 +236,11 @@ export async function POST(req: NextRequest) {
     if (!text) return NextResponse.json({ translation: "", translated: "" });
 
     // 1) Try Gemini
-    const gemini = await tryGemini(text);
+    const gemini = await tryGemini(text, targetLang);
     if (gemini) return NextResponse.json({ translation: gemini, translated: gemini });
 
     // 2) Try MyMemory (free real MT engine, no key needed)
-    const myMemory = await tryMyMemory(text);
+    const myMemory = await tryMyMemory(text, targetLang);
     if (myMemory) return NextResponse.json({ translation: myMemory, translated: myMemory });
 
     // 3) Local dictionary fallback
