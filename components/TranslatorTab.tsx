@@ -337,13 +337,13 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
             )}
           </div>
 
-          {/* Phonetic Pronunciation Guide */}
+          {/* Phonetic Pronunciation Guide (Full Text Wrapping & No Emojis) */}
           {translatedText && phoneticHint && (
-            <div className="pt-1.5 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300/90 font-medium">
-              <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/80 shrink-0">
-                🗣️ Pronunciación:
+            <div className="pt-2 border-t border-white/10 flex items-start gap-2 text-xs text-amber-300/90 font-medium">
+              <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/90 shrink-0 pt-0.5">
+                Pronunciación:
               </span>
-              <span className="italic truncate">{phoneticHint}</span>
+              <span className="italic whitespace-normal break-words leading-snug">{phoneticHint}</span>
             </div>
           )}
         </div>
