@@ -653,6 +653,87 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     }
   };
 
+  /* ---------- Column & Line Break Aware OCR Word Segmentation ---------- */
+  const groupWordsIntoColumnLines = (words: any[]): { text: string; bbox: { x0: number; y0: number; x1: number; y1: number }; confidence?: number }[] => {
+    if (!words || words.length === 0) return [];
+
+    const validWords = words.filter(
+      (w) => w.text && w.text.trim().length > 0 && w.bbox && (w.bbox.x1 - w.bbox.x0) > 2
+    );
+
+    if (validWords.length === 0) return [];
+
+    validWords.sort((a, b) => a.bbox.y0 - b.bbox.y0);
+
+    const rows: any[][] = [];
+    for (const w of validWords) {
+      let placed = false;
+      for (const row of rows) {
+        const avgY0 = row.reduce((sum, item) => sum + item.bbox.y0, 0) / row.length;
+        const avgH = row.reduce((sum, item) => sum + (item.bbox.y1 - item.bbox.y0), 0) / row.length;
+        if (Math.abs(w.bbox.y0 - avgY0) < Math.max(7, avgH * 0.5)) {
+          row.push(w);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) {
+        rows.push([w]);
+      }
+    }
+
+    const lineBlocks: { text: string; bbox: { x0: number; y0: number; x1: number; y1: number }; confidence?: number }[] = [];
+
+    for (const row of rows) {
+      row.sort((a, b) => a.bbox.x0 - b.bbox.x0);
+      let currentBlockWords: any[] = [];
+
+      for (let i = 0; i < row.length; i++) {
+        const w = row[i];
+        if (currentBlockWords.length === 0) {
+          currentBlockWords.push(w);
+        } else {
+          const prevW = currentBlockWords[currentBlockWords.length - 1];
+          const gap = w.bbox.x0 - prevW.bbox.x1;
+          const avgCharWidth = (prevW.bbox.x1 - prevW.bbox.x0) / Math.max(1, prevW.text.length);
+          const columnGapThreshold = Math.max(40, avgCharWidth * 3.2);
+
+          if (gap > columnGapThreshold) {
+            const blockText = currentBlockWords.map((item) => item.text.trim()).join(" ");
+            const minX0 = Math.min(...currentBlockWords.map((item) => item.bbox.x0));
+            const minY0 = Math.min(...currentBlockWords.map((item) => item.bbox.y0));
+            const maxX1 = Math.max(...currentBlockWords.map((item) => item.bbox.x1));
+            const maxY1 = Math.max(...currentBlockWords.map((item) => item.bbox.y1));
+
+            lineBlocks.push({
+              text: correctOcrLine(blockText),
+              bbox: { x0: minX0, y0: minY0, x1: maxX1, y1: maxY1 },
+            });
+
+            currentBlockWords = [w];
+          } else {
+            currentBlockWords.push(w);
+          }
+        }
+      }
+
+      if (currentBlockWords.length > 0) {
+        const blockText = currentBlockWords.map((item) => item.text.trim()).join(" ");
+        const minX0 = Math.min(...currentBlockWords.map((item) => item.bbox.x0));
+        const minY0 = Math.min(...currentBlockWords.map((item) => item.bbox.y0));
+        const maxX1 = Math.max(...currentBlockWords.map((item) => item.bbox.x1));
+        const maxY1 = Math.max(...currentBlockWords.map((item) => item.bbox.y1));
+
+        lineBlocks.push({
+          text: correctOcrLine(blockText),
+          bbox: { x0: minX0, y0: minY0, x1: maxX1, y1: maxY1 },
+        });
+      }
+    }
+
+    return lineBlocks.filter((b) => b.text.trim().length > 1);
+  };
+
   /* ================================================================
      MAIN PROCESSING PIPELINE
      ================================================================ */
@@ -701,6 +782,13 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
           const worker = await createWorker("eng");
           const ret = await worker.recognize(ocrCanvas);
           await worker.terminate();
+
+          // Use column-aware word segmentation to prevent line merging across menu columns
+          const words = (ret.data as any).words || [];
+          if (words.length > 0) {
+            return groupWordsIntoColumnLines(words);
+          }
+
           return ret.data.lines
             .filter((l) => l.text.trim().length > 1 && l.bbox)
             .map((l) => ({
@@ -970,9 +1058,9 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
               }}
               className="px-3 py-1.5 rounded-full bg-black/65 backdrop-blur-md text-white text-[11px] font-extrabold border border-white/20 flex items-center gap-1.5 hover:bg-black/80 transition-all shadow-sm"
             >
-              <span>{targetLang === "es" ? "🇺🇸 English" : "🇲🇽 Español"}</span>
+              <span>{targetLang === "es" ? "English" : "Español"}</span>
               <ArrowRightLeft className="w-3 h-3 text-primary" />
-              <span>{targetLang === "es" ? "🇲🇽 Español" : "🇺🇸 English"}</span>
+              <span>{targetLang === "es" ? "Español" : "English"}</span>
             </button>
 
             <div className="flex items-center gap-1">

@@ -25,10 +25,17 @@ async function tryGeminiVision(
         },
       },
       {
-        text: `Extract ALL visible text from this image. For each text block, provide the original English text and its Spanish translation.
+        text: `You are an expert OCR and translation assistant specialized in restaurant menus and store signs.
+CRITICAL LAYOUT & LINE BREAK RULES:
+1. Respect visual layout, multi-column menus, section headings, and line breaks EXACTLY.
+2. NEVER combine text horizontally across separate menu columns or different menu items (e.g. do NOT merge item ingredients from Column 1 with items from Column 2).
+3. Process multi-column menus column-by-column: finish Column 1 top-to-bottom first, then process Column 2 top-to-bottom.
+4. Separate item titles, prices, descriptions, and line breaks into individual, distinct entries.
+5. Provide the original English text and its accurate Spanish translation for each line/block.
+
 Return ONLY a raw JSON array (no markdown, no code fences):
 [{"original":"English text","translated":"Texto en español"}]
-If no text found, return: []`,
+If no text is found, return: []`,
       },
     ]);
 
