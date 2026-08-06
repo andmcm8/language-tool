@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     // Language Detection: Check if user typed/spoke in English
     const isEnglish =
       lang === "en" ||
-      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty|pay|payment|card|apple|credit|call|number|hello|hi|hey|cheapest|cheap|item)\b/i.test(
+      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty|pay|payment|card|apple|credit|call|number|hello|hi|hey|cheapest|cheap|item|product|sell)\b/i.test(
         lowerMsg
       );
 
@@ -44,15 +44,10 @@ export async function POST(req: NextRequest) {
 
     const apiKey = process.env.GEMINI_API_KEY;
 
-    // DIRECT GEMINI AI ENGINE WITH MULTI-MODEL FALLBACK LIST
+    // DIRECT GEMINI AI ENGINE (When Gemini API is available)
     if (apiKey) {
-      const catalogSummary = merchant.categories
-        ?.map(
-          (c: any) =>
-            `${c.nameEs} / ${c.nameEn}: ${c.items
-              .map((i: any) => `${i.nameEs} ($${i.price})`)
-              .join(", ")}`
-        )
+      const catalogSummary = merchant.products
+        ?.map((p: any) => `${p.nameEs} / ${p.nameEn}: $${p.price}`)
         .join("\n");
 
       const systemInstruction = `You are the official, intelligent bilingual AI Assistant for "${merchant.storeInfo.name}".
@@ -79,10 +74,9 @@ Behavior Guidelines:
 - Language Matching: Reply in whichever language (English or Spanish) the user speaks to you. If they talk in English, reply in English. If they talk in Spanish, reply in Spanish.
 - Tone: Warm, helpful, natural, and concise (2 to 4 sentences).`;
 
-      const candidateModels = ["gemini-2.0-flash", "gemini-1.5-flash-latest", "gemini-1.5-pro-latest"];
+      const candidateModels = ["gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-1.5-flash-latest"];
       const genAI = new GoogleGenerativeAI(apiKey);
 
-      // Convert previous conversation messages into Gemini Multi-Turn History
       const history: { role: string; parts: { text: string }[] }[] = [];
       if (messages.length > 1) {
         const previousMessages = messages.slice(0, -1);
@@ -95,7 +89,6 @@ Behavior Guidelines:
         }
       }
 
-      // Gemini API requires history to start with role "user"
       while (history.length > 0 && history[0].role === "model") {
         history.shift();
       }
@@ -132,36 +125,83 @@ Behavior Guidelines:
       }
     }
 
-    // High-Performance Bilingual Local Engine (Fallback)
+    // HIGH-ACCURACY DYNAMIC STORE AI KNOWLEDGE ENGINE
     let reply = "";
     const info = merchant.storeInfo;
     const p = info.policies;
 
-    // 0. Greetings ("hello", "hi", "hola")
-    if (
-      lowerMsg.includes("hello") ||
-      lowerMsg.includes("hola") ||
-      lowerMsg.includes("hi") ||
-      lowerMsg.includes("hey") ||
-      lowerMsg.includes("buenas")
-    ) {
-      reply = isEnglish
-        ? `Hello! Welcome to ${info.name}. How can I help you today? You can ask me about our store hours, location, catalog items, or payment methods!`
-        : `¡Hola! Bienvenido a ${info.name}. ¿En qué puedo ayudarle hoy? ¡Puede preguntarme sobre nuestros horarios, ubicación, productos o métodos de pago!`;
+    // Collect all items across categories for smart catalog search
+    const allItems: { nameEs: string; nameEn: string; priceNum: number; priceStr: string }[] = [];
+    if (merchant.products) {
+      for (const item of merchant.products) {
+        const priceNum = parseFloat(String(item.price).replace(/[^0-9.]/g, "")) || 0;
+        allItems.push({
+          nameEs: item.nameEs,
+          nameEn: item.nameEn || item.nameEs,
+          priceNum,
+          priceStr: String(item.price),
+        });
+      }
     }
-    // 1. Restroom / Bathroom Query
+
+    // Sort items by price for "cheapest" queries
+    const sortedItems = [...allItems].sort((a, b) => a.priceNum - b.priceNum);
+    const cheapestItem = sortedItems[0];
+
+    // 1. CHEAPEST ITEM / PRICING QUERY
+    if (
+      lowerMsg.includes("cheapest") ||
+      lowerMsg.includes("barato") ||
+      lowerMsg.includes("económico") ||
+      lowerMsg.includes("lowest price") ||
+      lowerMsg.includes("mas barato")
+    ) {
+      if (cheapestItem) {
+        reply = isEnglish
+          ? `Our cheapest item in stock is ${cheapestItem.nameEn} for $${cheapestItem.priceStr}. We also have several delicious bakery and grocery options under $5.00!`
+          : `Nuestro producto más económico es ${cheapestItem.nameEs} por $${cheapestItem.priceStr}. ¡También tenemos varias opciones por menos de $5.00!`;
+      } else {
+        reply = isEnglish
+          ? `Our bakery and deli items start as low as $1.50 per item!`
+          : `¡Nuestros productos de panadería y charcutería comienzan desde $1.50!`;
+      }
+    }
+    // 2. CATALOG / ITEMS / WHAT DO YOU SELL QUERY
+    else if (
+      lowerMsg.includes("items") ||
+      lowerMsg.includes("products") ||
+      lowerMsg.includes("catalog") ||
+      lowerMsg.includes("menu") ||
+      lowerMsg.includes("productos") ||
+      lowerMsg.includes("que tienen") ||
+      lowerMsg.includes("que venden") ||
+      lowerMsg.includes("what do you sell") ||
+      lowerMsg.includes("list") ||
+      lowerMsg.includes("food") ||
+      lowerMsg.includes("comida")
+    ) {
+      const topItemsStr = allItems
+        .slice(0, 5)
+        .map((i) => `${isEnglish ? i.nameEn : i.nameEs} ($${i.priceStr})`)
+        .join(", ");
+
+      reply = isEnglish
+        ? `We carry fresh deli dishes, baked goods, groceries, and beverages! Popular items include: ${topItemsStr}. Ask me about any specific dish or category!`
+        : `¡Ofrecemos platos de charcutería fresca, panadería, abarrotes y bebidas! Algunos productos populares son: ${topItemsStr}. ¡Pregúnteme por cualquier producto o categoría!`;
+    }
+    // 3. RESTROOM / BATHROOM QUERY
     else if (lowerMsg.includes("baño") || lowerMsg.includes("restroom") || lowerMsg.includes("bathroom")) {
       reply = isEnglish
         ? `Restroom: ${p?.restroomLocationEn || "Located at the back of the store."} ${p?.restroomCodeEn ? `(${p.restroomCodeEn})` : ""}`
         : `Baño: ${p?.restroomLocationEs || "Al fondo de la tienda."} ${p?.restroomCodeEs ? `(${p.restroomCodeEs})` : ""}`;
     }
-    // 2. WiFi Query
+    // 4. WIFI QUERY
     else if (lowerMsg.includes("wifi") || lowerMsg.includes("internet")) {
       reply = isEnglish
         ? `Guest WiFi: Network "${p?.wifiName || "Guest_WiFi"}" | Password: "${p?.wifiPassword || "free"}"`
         : `WiFi Clientes: Red "${p?.wifiName || "Guest_WiFi"}" | Contraseña: "${p?.wifiPassword || "free"}"`;
     }
-    // 3. Payment Methods / Apple Pay Query
+    // 5. PAYMENT METHODS QUERY
     else if (
       lowerMsg.includes("apple pay") ||
       lowerMsg.includes("google pay") ||
@@ -169,33 +209,32 @@ Behavior Guidelines:
       lowerMsg.includes("card") ||
       lowerMsg.includes("tarjeta") ||
       lowerMsg.includes("zelle") ||
-      lowerMsg.includes("metodos de pago") ||
-      lowerMsg.includes("payment")
+      lowerMsg.includes("payment") ||
+      lowerMsg.includes("pago")
     ) {
       reply = isEnglish
         ? `Accepted Payments: ${info.paymentMethods.join(", ")}.`
         : `Métodos de Pago Aceptados: ${info.paymentMethods.join(", ")}.`;
     }
-    // 4. Phone Number / Contact Query
+    // 6. PHONE NUMBER QUERY
     else if (
-      lowerMsg.includes("phone number") ||
+      lowerMsg.includes("phone") ||
       lowerMsg.includes("telefono") ||
       lowerMsg.includes("llamar") ||
-      lowerMsg.includes("call store") ||
-      lowerMsg.includes("call in") ||
-      lowerMsg.includes("contact number")
+      lowerMsg.includes("call") ||
+      lowerMsg.includes("contacto")
     ) {
       reply = isEnglish
         ? `Phone Number: ${info.phone}.`
         : `Número de Teléfono: ${info.phone}.`;
     }
-    // 5. EBT / SNAP Query
+    // 7. EBT / SNAP QUERY
     else if (lowerMsg.includes("ebt") || lowerMsg.includes("snap")) {
       reply = isEnglish
         ? (p?.ebtPolicyEn || "EBT/SNAP is accepted for groceries and bakery items.")
         : (p?.ebtPolicyEs || "Aceptamos EBT/SNAP para abarrotes y panadería.");
     }
-    // 6. Hours Query
+    // 8. HOURS QUERY
     else if (
       lowerMsg.includes("hours") ||
       lowerMsg.includes("open") ||
@@ -210,7 +249,7 @@ Behavior Guidelines:
         ? `Store Hours: ${hoursStr}.`
         : `Horario de Atención: ${hoursStr}.`;
     }
-    // 7. Address / Location Query
+    // 9. ADDRESS / LOCATION QUERY
     else if (
       lowerMsg.includes("where") ||
       lowerMsg.includes("address") ||
@@ -223,11 +262,24 @@ Behavior Guidelines:
         ? `We are located at ${info.address}.`
         : `Estamos ubicados en ${info.address}.`;
     }
-    // Default fallback
-    else {
+    // 10. GREETINGS ("hello", "hi", "hola", "hey")
+    else if (
+      lowerMsg.includes("hello") ||
+      lowerMsg.includes("hola") ||
+      lowerMsg.includes("hi") ||
+      lowerMsg.includes("hey") ||
+      lowerMsg.includes("buenas")
+    ) {
       reply = isEnglish
-        ? `Welcome to ${info.name}! How can I help you today? Ask about our hours, location, catalog items, or store services!`
-        : `¡Bienvenido a ${info.name}! ¿En qué puedo ayudarle hoy? ¡Pregunte sobre nuestros horarios, ubicación, productos o servicios!`;
+        ? `Hello! Welcome to ${info.name}. How can I help you today? You can ask me about our store hours, location, catalog items, or payment methods!`
+        : `¡Hola! Bienvenido a ${info.name}. ¿En qué puedo ayudarle hoy? ¡Puede preguntarme sobre nuestros horarios, ubicación, productos o métodos de pago!`;
+    }
+    // 11. GENERAL FALLBACK QUERY (Smart Store Summary Response)
+    else {
+      const sampleItems = allItems.slice(0, 3).map((i) => (isEnglish ? i.nameEn : i.nameEs)).join(", ");
+      reply = isEnglish
+        ? `At ${info.name}, we offer fresh groceries, deli specials (${sampleItems}), bakery items, and store services. How can I assist you with your visit today?`
+        : `En ${info.name}, ofrecemos abarrotes frescos, especialidades de charcutería (${sampleItems}), panadería y servicios. ¿En qué le puedo asistir hoy?`;
     }
 
     if (isSensitiveQuery) {
