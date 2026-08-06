@@ -610,31 +610,38 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
 
     for (const region of regions) {
       const { bbox } = region;
-      const padX = 4;
-      const padY = 2;
+      const padX = 6;
+      const padY = 3;
 
-      const boxW = Math.max(20, bbox.x1 - bbox.x0 + padX * 2);
-      const boxH = Math.max(14, bbox.y1 - bbox.y0 + padY * 2);
+      const boxW = Math.max(24, bbox.x1 - bbox.x0 + padX * 2);
+      const boxH = Math.max(16, bbox.y1 - bbox.y0 + padY * 2);
       const x0 = Math.max(0, bbox.x0 - padX);
       const y0 = Math.max(0, bbox.y0 - padY);
 
+      // Clean, modern translucent card overlay for maximum readability
       const [r, g, b] = sampleBgColor(ctx, bbox, w, h);
-      const bgStr = `rgba(${r},${g},${b}, 0.96)`;
-      const textColor = luminance(r, g, b) > 0.5 ? "#000000" : "#ffffff";
+      const isDarkBg = luminance(r, g, b) < 0.5;
+      const bgStr = isDarkBg ? "rgba(15, 23, 42, 0.92)" : "rgba(255, 255, 255, 0.94)";
+      const textColor = isDarkBg ? "#ffffff" : "#0f172a";
+      const borderColor = isDarkBg ? "rgba(255, 255, 255, 0.2)" : "rgba(0, 62, 199, 0.3)";
 
       ctx.fillStyle = bgStr;
+      ctx.strokeStyle = borderColor;
+      ctx.lineWidth = 1;
+
       ctx.beginPath();
       if (typeof ctx.roundRect === "function") {
-        ctx.roundRect(x0, y0, boxW, boxH, 4);
+        ctx.roundRect(x0, y0, boxW, boxH, 6);
       } else {
         ctx.rect(x0, y0, boxW, boxH);
       }
       ctx.fill();
+      ctx.stroke();
 
-      let fontSize = Math.max(9, Math.min(boxH * 0.75, 48));
+      let fontSize = Math.max(10, Math.min(boxH * 0.7, 42));
       ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
 
-      while (ctx.measureText(region.translated).width > boxW - 4 && fontSize > 8) {
+      while (ctx.measureText(region.translated).width > boxW - 6 && fontSize > 8) {
         fontSize -= 0.5;
         ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
       }
@@ -648,7 +655,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
       ctx.beginPath();
       ctx.rect(x0, y0, boxW, boxH);
       ctx.clip();
-      ctx.fillText(region.translated, x0 + 2, cy, boxW - 4);
+      ctx.fillText(region.translated, x0 + 3, cy, boxW - 6);
       ctx.restore();
     }
   };
@@ -1218,7 +1225,53 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         )}
       </div>
 
+      {/* CLEAN STRUCTURED TRANSLATION BREAKDOWN LIST (100% Readable & Organized) */}
+      {hasResult && detectedRegions.length > 0 && (
+        <div className="space-y-2 pt-1 animate-in fade-in slide-in-from-bottom-2 duration-300">
+          <div className="flex items-center justify-between px-1">
+            <span className="text-xs font-black text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+              <Scan className="w-3.5 h-3.5 text-[#003ec7]" />
+              <span>{lang === "es" ? "Traducción Estructurada" : "Structured Translation"}</span>
+            </span>
+            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+              {detectedRegions.length} {lang === "es" ? "elementos" : "items"}
+            </span>
+          </div>
 
+          <div className="space-y-2 max-h-72 overflow-y-auto pr-0.5">
+            {detectedRegions.map((region, idx) => (
+              <div
+                key={idx}
+                className="p-3 bg-white rounded-2xl border border-slate-200 shadow-2xs hover:border-[#003ec7]/40 transition-all space-y-1 text-left"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div className="font-extrabold text-xs text-slate-900 leading-snug">
+                    {region.translated}
+                  </div>
+                  <button
+                    onClick={() => {
+                      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+                        window.speechSynthesis.cancel();
+                        const utterance = new SpeechSynthesisUtterance(region.translated);
+                        utterance.lang = targetLang === "es" ? "es-ES" : "en-US";
+                        window.speechSynthesis.speak(utterance);
+                      }
+                    }}
+                    className="p-1 rounded-lg text-slate-400 hover:text-[#003ec7] hover:bg-blue-50 transition-colors shrink-0"
+                    title="Pronounce / Pronunciar"
+                  >
+                    <Volume2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                <div className="text-[11px] font-medium text-slate-500 italic border-t border-slate-100 pt-1">
+                  "{region.original}"
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
