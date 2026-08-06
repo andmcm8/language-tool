@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     // Language Detection: Check if user typed/spoke in English
     const isEnglish =
       lang === "en" ||
-      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty|pay|payment|card|apple|credit|call|number|hello|hi|hey)\b/i.test(
+      /\b(what|where|when|how|is|are|the|do|you|have|restroom|bathroom|wifi|hours|open|closed|price|menu|beef|chicken|food|bread|ebt|snap|address|phone|who|can|i|get|buy|store|parking|park|return|deliver|delivery|fresh|made|baked|items|list|top|cost|allergies|warranty|pay|payment|card|apple|credit|call|number|hello|hi|hey|cheapest|cheap|item)\b/i.test(
         lowerMsg
       );
 
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
 
     const apiKey = process.env.GEMINI_API_KEY;
 
-    // DIRECT GEMINI AI ENGINE WITH MULTI-TURN CHAT HISTORY
+    // DIRECT GEMINI AI ENGINE WITH SANITIZED MULTI-TURN CHAT HISTORY
     if (apiKey) {
       try {
         const catalogSummary = merchant.categories
@@ -99,9 +99,20 @@ Behavior Guidelines:
           }
         }
 
-        const chat = model.startChat({ history });
-        const result = await chat.sendMessage(lastMessage);
-        let text = result.response.text().trim();
+        // CRITICAL FIX: Gemini API requires history to start with role "user"
+        while (history.length > 0 && history[0].role === "model") {
+          history.shift();
+        }
+
+        let text = "";
+        if (history.length > 0) {
+          const chat = model.startChat({ history });
+          const result = await chat.sendMessage(lastMessage);
+          text = result.response.text().trim();
+        } else {
+          const result = await model.generateContent(lastMessage);
+          text = result.response.text().trim();
+        }
 
         if (isSensitiveQuery) {
           const disclaimer = isEnglish ? DISCLAIMER_EN : DISCLAIMER_ES;
@@ -112,7 +123,7 @@ Behavior Guidelines:
 
         return NextResponse.json({ reply: text });
       } catch (err: any) {
-        console.warn("Gemini API call skipped, using local smart engine:", err?.message);
+        console.warn("Gemini API call failed, falling back to local engine:", err?.message);
       }
     }
 
