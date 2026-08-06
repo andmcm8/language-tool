@@ -228,22 +228,26 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     text = (body.text || "").trim();
-    if (!text) return NextResponse.json({ translation: "" });
+    const targetLang = body.targetLang || "es";
+    if (!text) return NextResponse.json({ translation: "", translated: "" });
 
     // 1) Try Gemini
     const gemini = await tryGemini(text);
-    if (gemini) return NextResponse.json({ translation: gemini });
+    if (gemini) return NextResponse.json({ translation: gemini, translated: gemini });
 
     // 2) Try MyMemory (free real MT engine, no key needed)
     const myMemory = await tryMyMemory(text);
-    if (myMemory) return NextResponse.json({ translation: myMemory });
+    if (myMemory) return NextResponse.json({ translation: myMemory, translated: myMemory });
 
     // 3) Local dictionary fallback
-    return NextResponse.json({ translation: localTranslate(text) });
+    const local = localTranslate(text);
+    return NextResponse.json({ translation: local, translated: local });
   } catch (error: any) {
     console.error("Translate error:", error?.message);
+    const fallback = text ? localTranslate(text) : text;
     return NextResponse.json({
-      translation: text ? localTranslate(text) : text,
+      translation: fallback,
+      translated: fallback,
     });
   }
 }

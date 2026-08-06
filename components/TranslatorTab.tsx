@@ -2,7 +2,6 @@
 
 import React, { useState, useRef } from "react";
 import {
-  Languages,
   ArrowRightLeft,
   Mic,
   MicOff,
@@ -15,11 +14,10 @@ import {
   Loader2,
   Tv,
   Star,
-  RotateCw,
   CreditCard,
   Utensils,
   Clock,
-  HelpCircle,
+  VolumeX,
 } from "lucide-react";
 
 interface TranslatorTabProps {
@@ -36,50 +34,78 @@ const PHRASE_CATEGORIES = [
 const CATEGORIZED_PHRASES = [
   {
     cat: "payments",
-    en: "Do you accept EBT / SNAP cards for food?",
-    es: "¿Aceptan tarjetas EBT / SNAP para comida?",
+    en: "Do you accept EBT / SNAP cards for groceries?",
+    es: "¿Aceptan tarjetas EBT / SNAP para abarrotes?",
+    phonetic: "Ah-SEHP-tahn tahr-HEH-tahs E-B-T para ah-bah-ROH-tehs?",
   },
   {
     cat: "payments",
     en: "Is there a minimum purchase for credit cards?",
-    es: "¿Hay una compra mínima para tarjetas de crédito?",
+    es: "¿Hay una compra mínima para tarjeta de crédito?",
+    phonetic: "Eye OO-nah KOHM-prah MEE-nee-mah para tahr-HEH-tah?",
   },
   {
     cat: "payments",
     en: "Can I pay with cash or debit?",
     es: "¿Puedo pagar con efectivo o tarjeta de débito?",
+    phonetic: "PWEH-doh pah-GAHR kohn eh-fehk-TEE-voh?",
   },
   {
     cat: "deli",
     en: "I would like 1 pound of ham, sliced thin.",
     es: "Quisiera 1 libra de jamón, cortado fino.",
+    phonetic: "Kee-SYEH-rah OO-nah LEE-brah deh hah-MOHN, kohr-TAH-doh FEE-noh.",
   },
   {
     cat: "deli",
     en: "Where is the deli counter?",
     es: "¿Dónde está el mostrador del deli?",
+    phonetic: "DOHN-deh ehs-TAH ehl mohs-trah-DOHR dehl DEH-lee?",
   },
   {
     cat: "deli",
     en: "Is this food hot and fresh?",
     es: "¿Esta comida está caliente y fresca?",
+    phonetic: "EHS-tah koh-MEE-dah ehs-TAH kah-LYEHN-teh ee FREHS-kah?",
   },
   {
     cat: "hours",
     en: "What are your store hours today?",
     es: "¿Cuáles son sus horarios de atención hoy?",
+    phonetic: "KWAH-lehs sohn soos oh-RAH-ryohs deh ah-tehn-SYOHN oy?",
   },
   {
     cat: "hours",
     en: "Are you open on Sundays and holidays?",
     es: "¿Abren los domingos y días festivos?",
+    phonetic: "AH-brehn lohs doh-MEEN-gohs ee DEE-ahs fehs-TEE-vohs?",
   },
   {
     cat: "hours",
-    en: "When do you restock fresh bakery items?",
-    es: "¿Cuándo reponen los productos de panadería fresca?",
+    en: "When do you restock fresh bakery bread?",
+    es: "¿Cuándo reponen el pan fresco de panadería?",
+    phonetic: "KWAHN-doh reh-POH-nehn ehl pahn FREHS-koh?",
   },
 ];
+
+/* Helper to generate readable phonetic hint */
+function getPhoneticHint(text: string, isSpanish: boolean): string {
+  if (!text) return "";
+  if (!isSpanish) return text;
+
+  return text
+    .replace(/¿|\?/g, "")
+    .replace(/ce|ci/gi, "seh")
+    .replace(/ca|co|cu/gi, "kah")
+    .replace(/ll/gi, "y")
+    .replace(/j/gi, "h")
+    .replace(/gui|gue/gi, "gee")
+    .replace(/que|qui/gi, "keh")
+    .replace(/ch/gi, "ch")
+    .replace(/ñ/gi, "ny")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 export default function TranslatorTab({ lang }: TranslatorTabProps) {
   const [sourceLang, setSourceLang] = useState<"en" | "es">("en");
@@ -91,7 +117,6 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [starredPhrases, setStarredPhrases] = useState<string[]>([]);
   const [showCounterDisplay, setShowCounterDisplay] = useState(false);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const recognitionRef = useRef<any>(null);
   const targetLang = sourceLang === "en" ? "es" : "en";
@@ -116,11 +141,8 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
       });
 
       const data = await res.json();
-      if (data.translated) {
-        setTranslatedText(data.translated);
-      } else {
-        setTranslatedText(text);
-      }
+      const resultText = data.translation || data.translated || text;
+      setTranslatedText(resultText);
     } catch {
       setTranslatedText(text);
     } finally {
@@ -223,6 +245,10 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     (p) => selectedCategory === "all" || p.cat === selectedCategory
   );
 
+  const phoneticHint = translatedText
+    ? getPhoneticHint(translatedText, targetLang === "es")
+    : "";
+
   return (
     <div className="w-full max-w-md mx-auto p-4 pb-24 flex flex-col gap-4">
       {/* LANGUAGE DIRECTION BAR */}
@@ -319,7 +345,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
       </div>
 
-      {/* OUTPUT TRANSLATION CARD WITH FULL-SCREEN COUNTER DISPLAY BUTTON */}
+      {/* OUTPUT TRANSLATION CARD WITH PHONETIC PRONUNCIATION & SHOW COUNTER BUTTON */}
       <div className="bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md p-4 space-y-3 relative">
         <div className="flex items-center justify-between text-xs font-black tracking-wider text-blue-400 uppercase">
           <span className="flex items-center gap-1.5">
@@ -336,7 +362,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                 title="Show giant text on counter display"
               >
                 <Tv className="w-3.5 h-3.5 text-blue-400" />
-                <span>{lang === "es" ? "Mostrar en Mostrador" : "Show Counter"}</span>
+                <span>{lang === "es" ? "Ver Grande" : "Show Counter"}</span>
               </button>
 
               <button
@@ -358,20 +384,32 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
           )}
         </div>
 
-        <div className="min-h-[70px] text-base font-bold leading-relaxed text-slate-100">
-          {translatedText ? (
-            translatedText
-          ) : (
-            <span className="text-slate-500 font-normal italic text-sm">
-              {lang === "es"
-                ? "La traducción aparecerá aquí…"
-                : "Translation will appear here…"}
-            </span>
+        <div className="space-y-1.5">
+          <div className="min-h-[50px] text-base font-bold leading-relaxed text-slate-100">
+            {translatedText ? (
+              translatedText
+            ) : (
+              <span className="text-slate-500 font-normal italic text-sm">
+                {lang === "es"
+                  ? "La traducción aparecerá aquí…"
+                  : "Translation will appear here…"}
+              </span>
+            )}
+          </div>
+
+          {/* ITEM 4: PHONETIC PRONUNCIATION GUIDE ("How to say it out loud") */}
+          {translatedText && phoneticHint && (
+            <div className="pt-2 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300/90 font-medium">
+              <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/80 shrink-0">
+                🗣️ Pronunciación:
+              </span>
+              <span className="italic truncate">{phoneticHint}</span>
+            </div>
           )}
         </div>
       </div>
 
-      {/* CATEGORIZED STORE PHRASES WITH STAR FAVORITES */}
+      {/* ITEM 3: CATEGORIZED STORE PHRASES WITH STAR FAVORITES */}
       <div className="space-y-2.5 pt-1">
         <div className="flex items-center justify-between">
           <span className="text-xs font-black text-slate-800 uppercase tracking-wider">
@@ -454,7 +492,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
       </div>
 
-      {/* FULL-SCREEN COUNTER DISPLAY MODAL (GIANT TEXT FOR CASHIER/CUSTOMER) */}
+      {/* ITEM 1: FULL-SCREEN COUNTER DISPLAY MODAL (GIANT TEXT FOR CASHIER/CUSTOMER) */}
       {showCounterDisplay && (
         <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl flex flex-col justify-between p-6 animate-in fade-in zoom-in-95 duration-200">
           {/* Top Bar */}
@@ -466,38 +504,18 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
               </span>
             </div>
 
-            <div className="flex items-center gap-2">
-              {/* Flip Orientation 180° */}
-              <button
-                onClick={() => setIsFlipped(!isFlipped)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all ${
-                  isFlipped
-                    ? "bg-amber-400 text-slate-900 ring-2 ring-white"
-                    : "bg-white/10 text-white hover:bg-white/20"
-                }`}
-                title="Flip text 180° for person across counter"
-              >
-                <RotateCw className="w-3.5 h-3.5" />
-                <span>{lang === "es" ? "Girar 180°" : "Flip 180°"}</span>
-              </button>
-
-              <button
-                onClick={() => setShowCounterDisplay(false)}
-                className="p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
+            <button
+              onClick={() => setShowCounterDisplay(false)}
+              className="p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
 
           {/* Main Giant Text Display */}
-          <div
-            className={`flex-1 flex flex-col items-center justify-center text-center px-4 transition-transform duration-300 ${
-              isFlipped ? "rotate-180" : ""
-            }`}
-          >
+          <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
             <span className="text-xs font-extrabold text-blue-400 uppercase tracking-widest mb-3">
-              {targetLang === "es" ? "Traducción para el Cliente / Cajero:" : "Translation for Customer / Cashier:"}
+              {targetLang === "es" ? "Traducción para Mostrador:" : "Counter Translation:"}
             </span>
 
             <div className="text-3xl md:text-5xl font-black text-white leading-tight tracking-wide drop-shadow-md">
