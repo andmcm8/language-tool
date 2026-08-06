@@ -44,19 +44,18 @@ export async function POST(req: NextRequest) {
 
     const apiKey = process.env.GEMINI_API_KEY;
 
-    // DIRECT GEMINI AI ENGINE WITH SANITIZED MULTI-TURN CHAT HISTORY
+    // DIRECT GEMINI AI ENGINE WITH MULTI-MODEL FALLBACK LIST
     if (apiKey) {
-      try {
-        const catalogSummary = merchant.categories
-          ?.map(
-            (c: any) =>
-              `${c.nameEs} / ${c.nameEn}: ${c.items
-                .map((i: any) => `${i.nameEs} ($${i.price})`)
-                .join(", ")}`
-          )
-          .join("\n");
+      const catalogSummary = merchant.categories
+        ?.map(
+          (c: any) =>
+            `${c.nameEs} / ${c.nameEn}: ${c.items
+              .map((i: any) => `${i.nameEs} ($${i.price})`)
+              .join(", ")}`
+        )
+        .join("\n");
 
-        const systemInstruction = `You are the official, intelligent bilingual AI Assistant for "${merchant.storeInfo.name}".
+      const systemInstruction = `You are the official, intelligent bilingual AI Assistant for "${merchant.storeInfo.name}".
 
 Store Knowledge Base:
 - Store Name: ${merchant.storeInfo.name}
@@ -80,50 +79,56 @@ Behavior Guidelines:
 - Language Matching: Reply in whichever language (English or Spanish) the user speaks to you. If they talk in English, reply in English. If they talk in Spanish, reply in Spanish.
 - Tone: Warm, helpful, natural, and concise (2 to 4 sentences).`;
 
-        const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({
-          model: "gemini-2.0-flash",
-          systemInstruction,
-        });
+      const candidateModels = ["gemini-2.0-flash", "gemini-1.5-flash-latest", "gemini-1.5-pro-latest"];
+      const genAI = new GoogleGenerativeAI(apiKey);
 
-        // Convert previous conversation messages into Gemini Multi-Turn History
-        const history: { role: string; parts: { text: string }[] }[] = [];
-        if (messages.length > 1) {
-          const previousMessages = messages.slice(0, -1);
-          for (const m of previousMessages) {
-            const role = m.sender === "user" || m.role === "user" ? "user" : "model";
-            const text = (m.text || m.content || "").trim();
-            if (text) {
-              history.push({ role, parts: [{ text }] });
+      // Convert previous conversation messages into Gemini Multi-Turn History
+      const history: { role: string; parts: { text: string }[] }[] = [];
+      if (messages.length > 1) {
+        const previousMessages = messages.slice(0, -1);
+        for (const m of previousMessages) {
+          const role = m.sender === "user" || m.role === "user" ? "user" : "model";
+          const text = (m.text || m.content || "").trim();
+          if (text) {
+            history.push({ role, parts: [{ text }] });
+          }
+        }
+      }
+
+      // Gemini API requires history to start with role "user"
+      while (history.length > 0 && history[0].role === "model") {
+        history.shift();
+      }
+
+      for (const modelName of candidateModels) {
+        try {
+          const model = genAI.getGenerativeModel({
+            model: modelName,
+            systemInstruction,
+          });
+
+          let text = "";
+          if (history.length > 0) {
+            const chat = model.startChat({ history });
+            const result = await chat.sendMessage(lastMessage);
+            text = result.response.text().trim();
+          } else {
+            const result = await model.generateContent(lastMessage);
+            text = result.response.text().trim();
+          }
+
+          if (text) {
+            if (isSensitiveQuery) {
+              const disclaimer = isEnglish ? DISCLAIMER_EN : DISCLAIMER_ES;
+              if (!text.includes("alergias") && !text.includes("allergies")) {
+                text += disclaimer;
+              }
             }
+            return NextResponse.json({ reply: text });
           }
+        } catch (err: any) {
+          console.warn(`Gemini model ${modelName} call failed:`, err?.message);
         }
-
-        // CRITICAL FIX: Gemini API requires history to start with role "user"
-        while (history.length > 0 && history[0].role === "model") {
-          history.shift();
-        }
-
-        let text = "";
-        if (history.length > 0) {
-          const chat = model.startChat({ history });
-          const result = await chat.sendMessage(lastMessage);
-          text = result.response.text().trim();
-        } else {
-          const result = await model.generateContent(lastMessage);
-          text = result.response.text().trim();
-        }
-
-        if (isSensitiveQuery) {
-          const disclaimer = isEnglish ? DISCLAIMER_EN : DISCLAIMER_ES;
-          if (!text.includes("alergias") && !text.includes("allergies")) {
-            text += disclaimer;
-          }
-        }
-
-        return NextResponse.json({ reply: text });
-      } catch (err: any) {
-        console.warn("Gemini API call failed, falling back to local engine:", err?.message);
       }
     }
 
