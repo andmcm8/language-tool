@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   ArrowRightLeft,
   Mic,
@@ -10,14 +10,12 @@ import {
   Check,
   X,
   Sparkles,
-  ArrowRight,
   Loader2,
   Tv,
   Star,
   CreditCard,
   Utensils,
   Clock,
-  VolumeX,
 } from "lucide-react";
 
 interface TranslatorTabProps {
@@ -150,6 +148,21 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     }
   };
 
+  /* ISSUE #1: TRANSLATE AUTOMATICALLY AS YOU TYPE (LIKE GOOGLE TRANSLATE) */
+  useEffect(() => {
+    const text = inputText.trim();
+    if (!text) {
+      setTranslatedText("");
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      handleTranslate(text);
+    }, 150); // 150ms instant debounce for live translation
+
+    return () => clearTimeout(timer);
+  }, [inputText, sourceLang]);
+
   /* ---------- Language Direction Switcher ---------- */
   const swapLanguages = () => {
     const newSource = sourceLang === "en" ? "es" : "en";
@@ -250,7 +263,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     : "";
 
   return (
-    <div className="w-full max-w-md mx-auto p-4 pb-24 flex flex-col gap-4">
+    <div className="w-full max-w-md mx-auto p-4 pb-24 flex flex-col gap-3">
       {/* LANGUAGE DIRECTION BAR */}
       <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-2 flex items-center justify-between">
         <div className="flex-1 text-center font-extrabold text-xs text-slate-800 uppercase tracking-wide">
@@ -270,8 +283,74 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
       </div>
 
-      {/* INPUT CARD (Text + Voice Input) */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-3.5 space-y-3 relative">
+      {/* ISSUE #2 LAYOUT FIX: OUTPUT TRANSLATION CARD PLACED FIRST (VISIBLE ABOVE MOBILE KEYBOARD) */}
+      <div className="bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md p-3.5 space-y-2 relative">
+        <div className="flex items-center justify-between text-xs font-black tracking-wider text-blue-400 uppercase">
+          <span className="flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-blue-400" />
+            <span>{targetLang === "es" ? "Traducción (Español)" : "Translation (English)"}</span>
+          </span>
+
+          {isLoading && <Loader2 className="w-3.5 h-3.5 text-blue-400 animate-spin" />}
+
+          {translatedText && !isLoading && (
+            <div className="flex items-center gap-1.5">
+              {/* Full-Screen Show Counter Display Button */}
+              <button
+                onClick={() => setShowCounterDisplay(true)}
+                className="px-2 py-0.5 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-extrabold flex items-center gap-1 hover:bg-blue-500/30 transition-all"
+                title="Show giant text on counter display"
+              >
+                <Tv className="w-3 h-3 text-blue-400" />
+                <span>{lang === "es" ? "Ver Grande" : "Show Counter"}</span>
+              </button>
+
+              <button
+                onClick={copyTranslation}
+                className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 transition-colors"
+                title="Copy / Copiar"
+              >
+                {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              </button>
+
+              <button
+                onClick={() => speakText(translatedText, targetLang)}
+                className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-blue-400 transition-colors"
+                title="Listen / Escuchar"
+              >
+                <Volume2 className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          )}
+        </div>
+
+        <div className="space-y-1">
+          <div className="min-h-[46px] text-base font-bold leading-relaxed text-slate-100">
+            {translatedText ? (
+              translatedText
+            ) : (
+              <span className="text-slate-500 font-normal italic text-sm">
+                {lang === "es"
+                  ? "Traduce automáticamente al escribir…"
+                  : "Translates automatically as you type…"}
+              </span>
+            )}
+          </div>
+
+          {/* Phonetic Pronunciation Guide */}
+          {translatedText && phoneticHint && (
+            <div className="pt-1.5 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300/90 font-medium">
+              <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/80 shrink-0">
+                🗣️ Pronunciación:
+              </span>
+              <span className="italic truncate">{phoneticHint}</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* INPUT CARD (Text Area + Voice Dictation + Clear) */}
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-3 space-y-2 relative">
         <div className="flex items-center justify-between text-xs font-bold text-slate-500">
           <span>{sourceLang === "en" ? "Source Text" : "Texto de Origen"}</span>
           {inputText && (
@@ -293,19 +372,19 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
           onChange={(e) => setInputText(e.target.value)}
           placeholder={
             sourceLang === "en"
-              ? "Type or speak text to translate..."
-              : "Escriba o hable para traducir..."
+              ? "Type or speak text..."
+              : "Escriba o hable..."
           }
           rows={3}
           className="w-full text-base font-medium text-slate-900 placeholder:text-slate-400 bg-transparent border-0 focus:outline-none focus:ring-0 resize-none"
         />
 
-        <div className="flex items-center justify-between pt-2 border-t border-slate-100">
+        <div className="flex items-center justify-between pt-1.5 border-t border-slate-100">
           <div className="flex items-center gap-2">
             {/* Voice Dictation Button */}
             <button
               onClick={toggleListening}
-              className={`p-2.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+              className={`p-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
                 isListening
                   ? "bg-rose-500 text-white animate-pulse"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
@@ -319,98 +398,18 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
             {inputText && (
               <button
                 onClick={() => speakText(inputText, sourceLang)}
-                className="p-2.5 rounded-xl bg-slate-100 text-slate-600 hover:text-[#003ec7] transition-colors"
+                className="p-2 rounded-xl bg-slate-100 text-slate-600 hover:text-[#003ec7] transition-colors"
                 title="Listen / Escuchar"
               >
                 <Volume2 className="w-4 h-4" />
               </button>
             )}
           </div>
-
-          {/* Action Translate Button */}
-          <button
-            onClick={() => handleTranslate()}
-            disabled={isLoading || !inputText.trim()}
-            className="px-4 py-2.5 rounded-xl bg-[#003ec7] text-white text-xs font-black flex items-center gap-1.5 shadow-md disabled:opacity-40 hover:brightness-110 transition-all"
-          >
-            {isLoading ? (
-              <Loader2 className="w-4 h-4 animate-spin" />
-            ) : (
-              <>
-                <span>{lang === "es" ? "Traducir" : "Translate"}</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </>
-            )}
-          </button>
         </div>
       </div>
 
-      {/* OUTPUT TRANSLATION CARD WITH PHONETIC PRONUNCIATION & SHOW COUNTER BUTTON */}
-      <div className="bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md p-4 space-y-3 relative">
-        <div className="flex items-center justify-between text-xs font-black tracking-wider text-blue-400 uppercase">
-          <span className="flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-            <span>{targetLang === "es" ? "Traducción (Español)" : "Translation (English)"}</span>
-          </span>
-
-          {translatedText && (
-            <div className="flex items-center gap-1.5">
-              {/* Full-Screen Show Counter Display Button */}
-              <button
-                onClick={() => setShowCounterDisplay(true)}
-                className="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[11px] font-extrabold flex items-center gap-1 hover:bg-blue-500/30 transition-all"
-                title="Show giant text on counter display"
-              >
-                <Tv className="w-3.5 h-3.5 text-blue-400" />
-                <span>{lang === "es" ? "Ver Grande" : "Show Counter"}</span>
-              </button>
-
-              <button
-                onClick={copyTranslation}
-                className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 transition-colors"
-                title="Copy / Copiar"
-              >
-                {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-              </button>
-
-              <button
-                onClick={() => speakText(translatedText, targetLang)}
-                className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-blue-400 transition-colors"
-                title="Listen / Escuchar"
-              >
-                <Volume2 className="w-4 h-4" />
-              </button>
-            </div>
-          )}
-        </div>
-
-        <div className="space-y-1.5">
-          <div className="min-h-[50px] text-base font-bold leading-relaxed text-slate-100">
-            {translatedText ? (
-              translatedText
-            ) : (
-              <span className="text-slate-500 font-normal italic text-sm">
-                {lang === "es"
-                  ? "La traducción aparecerá aquí…"
-                  : "Translation will appear here…"}
-              </span>
-            )}
-          </div>
-
-          {/* ITEM 4: PHONETIC PRONUNCIATION GUIDE ("How to say it out loud") */}
-          {translatedText && phoneticHint && (
-            <div className="pt-2 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300/90 font-medium">
-              <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/80 shrink-0">
-                🗣️ Pronunciación:
-              </span>
-              <span className="italic truncate">{phoneticHint}</span>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* ITEM 3: CATEGORIZED STORE PHRASES WITH STAR FAVORITES */}
-      <div className="space-y-2.5 pt-1">
+      {/* CATEGORIZED STORE PHRASES WITH STAR FAVORITES */}
+      <div className="space-y-2 pt-1">
         <div className="flex items-center justify-between">
           <span className="text-xs font-black text-slate-800 uppercase tracking-wider">
             {lang === "es" ? "Frases Útiles de Comercio" : "Useful Store Phrases"}
@@ -440,7 +439,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
 
         {/* Preset Phrase Cards */}
-        <div className="space-y-1.5 max-h-56 overflow-y-auto pr-0.5">
+        <div className="space-y-1.5 max-h-48 overflow-y-auto pr-0.5">
           {filteredPhrases.map((phrase, idx) => {
             const displayPhrase = sourceLang === "en" ? phrase.en : phrase.es;
             const targetPhrase = sourceLang === "en" ? phrase.es : phrase.en;
@@ -492,7 +491,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
       </div>
 
-      {/* ITEM 1: FULL-SCREEN COUNTER DISPLAY MODAL (GIANT TEXT FOR CASHIER/CUSTOMER) */}
+      {/* FULL-SCREEN COUNTER DISPLAY MODAL (GIANT TEXT FOR CASHIER/CUSTOMER) */}
       {showCounterDisplay && (
         <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl flex flex-col justify-between p-6 animate-in fade-in zoom-in-95 duration-200">
           {/* Top Bar */}
