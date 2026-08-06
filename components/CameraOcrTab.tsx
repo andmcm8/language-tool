@@ -591,7 +591,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     return result;
   };
 
-  /* ---------- CORE: paint-over translation on canvas ---------- */
+  /* ---------- CORE: paint-over translation on canvas with Merged Unified Cards ---------- */
   const paintTranslation = (
     srcCanvas: HTMLCanvasElement,
     rawRegions: TextRegion[]
@@ -608,54 +608,92 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
     const regions = deoverlapAndCleanRegions(rawRegions, w, h);
     setDetectedRegions(regions);
 
-    for (const region of regions) {
-      const { bbox } = region;
-      const padX = 6;
-      const padY = 3;
+    if (regions.length === 0) return;
 
-      const boxW = Math.max(24, bbox.x1 - bbox.x0 + padX * 2);
-      const boxH = Math.max(16, bbox.y1 - bbox.y0 + padY * 2);
+    // Merge adjacent text regions into Unified Paragraph/Section Cards (Eliminates jumbled floating boxes)
+    const sorted = [...regions].sort((a, b) => a.bbox.y0 - b.bbox.y0);
+    interface MergedBlock {
+      bbox: { x0: number; y0: number; x1: number; y1: number };
+      lines: string[];
+    }
+    const blocks: MergedBlock[] = [];
+
+    for (const r of sorted) {
+      let merged = false;
+      for (const b of blocks) {
+        const horizOverlap = Math.max(0, Math.min(r.bbox.x1, b.bbox.x1) - Math.max(r.bbox.x0, b.bbox.x0));
+        const vertGap = r.bbox.y0 - b.bbox.y1;
+
+        if (vertGap < 40 && horizOverlap > 25) {
+          b.bbox.x0 = Math.min(b.bbox.x0, r.bbox.x0);
+          b.bbox.y0 = Math.min(b.bbox.y0, r.bbox.y0);
+          b.bbox.x1 = Math.max(b.bbox.x1, r.bbox.x1);
+          b.bbox.y1 = Math.max(b.bbox.y1, r.bbox.y1);
+          b.lines.push(r.translated);
+          merged = true;
+          break;
+        }
+      }
+
+      if (!merged) {
+        blocks.push({
+          bbox: { ...r.bbox },
+          lines: [r.translated],
+        });
+      }
+    }
+
+    // Paint clean unified paragraph cards
+    for (const block of blocks) {
+      const { bbox, lines } = block;
+      const padX = 10;
+      const padY = 8;
+
+      const boxW = Math.max(40, bbox.x1 - bbox.x0 + padX * 2);
+      const boxH = Math.max(24, bbox.y1 - bbox.y0 + padY * 2);
       const x0 = Math.max(0, bbox.x0 - padX);
       const y0 = Math.max(0, bbox.y0 - padY);
 
-      // Clean, modern translucent card overlay for maximum readability
+      // Unified translucent card background with crisp contrast border
       const [r, g, b] = sampleBgColor(ctx, bbox, w, h);
       const isDarkBg = luminance(r, g, b) < 0.5;
-      const bgStr = isDarkBg ? "rgba(15, 23, 42, 0.92)" : "rgba(255, 255, 255, 0.94)";
+      const bgStr = isDarkBg ? "rgba(15, 23, 42, 0.94)" : "rgba(255, 255, 255, 0.96)";
       const textColor = isDarkBg ? "#ffffff" : "#0f172a";
-      const borderColor = isDarkBg ? "rgba(255, 255, 255, 0.2)" : "rgba(0, 62, 199, 0.3)";
+      const borderColor = isDarkBg ? "rgba(255, 255, 255, 0.25)" : "rgba(0, 62, 199, 0.4)";
 
       ctx.fillStyle = bgStr;
       ctx.strokeStyle = borderColor;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 1.5;
 
       ctx.beginPath();
       if (typeof ctx.roundRect === "function") {
-        ctx.roundRect(x0, y0, boxW, boxH, 6);
+        ctx.roundRect(x0, y0, boxW, boxH, 10);
       } else {
         ctx.rect(x0, y0, boxW, boxH);
       }
       ctx.fill();
       ctx.stroke();
 
-      let fontSize = Math.max(10, Math.min(boxH * 0.7, 42));
+      // Multi-line clean text wrapping inside unified card
+      const lineGap = Math.max(14, Math.min(boxH / (lines.length + 0.5), 28));
+      let fontSize = Math.max(10, Math.min(lineGap * 0.75, 24));
       ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
-
-      while (ctx.measureText(region.translated).width > boxW - 6 && fontSize > 8) {
-        fontSize -= 0.5;
-        ctx.font = `bold ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
-      }
-
       ctx.fillStyle = textColor;
-      ctx.textBaseline = "middle";
+      ctx.textBaseline = "top";
       ctx.textAlign = "left";
-      const cy = y0 + boxH / 2;
 
       ctx.save();
       ctx.beginPath();
       ctx.rect(x0, y0, boxW, boxH);
       ctx.clip();
-      ctx.fillText(region.translated, x0 + 3, cy, boxW - 6);
+
+      lines.forEach((lineText, idx) => {
+        const lineY = y0 + padY + idx * (fontSize + 4);
+        if (lineY + fontSize <= y0 + boxH + 4) {
+          ctx.fillText(lineText, x0 + padX, lineY, boxW - padX * 2);
+        }
+      });
+
       ctx.restore();
     }
   };
