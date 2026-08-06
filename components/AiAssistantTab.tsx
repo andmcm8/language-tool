@@ -39,7 +39,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
   };
 
-  const [activeMode, setActiveMode] = useState<"voice" | "chat">("voice");
+  const [activeMode, setActiveMode] = useState<"chat" | "voice">("chat");
   const [messages, setMessages] = useState<Message[]>(() => {
     if (typeof window !== "undefined") {
       try {
@@ -270,18 +270,6 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       <div className="flex items-center justify-between bg-white p-1.5 rounded-2xl border border-slate-200 shadow-xs">
         <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl">
           <button
-            onClick={() => setActiveMode("voice")}
-            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
-              activeMode === "voice"
-                ? "bg-[#003ec7] text-white shadow-2xs"
-                : "text-slate-600 hover:text-slate-900"
-            }`}
-          >
-            <Radio className="w-3.5 h-3.5" />
-            <span>{lang === "es" ? "Voz AI" : "Voice AI"}</span>
-          </button>
-
-          <button
             onClick={() => setActiveMode("chat")}
             className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
               activeMode === "chat"
@@ -291,6 +279,18 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           >
             <MessageSquare className="w-3.5 h-3.5" />
             <span>{lang === "es" ? "Chat" : "Text Chat"}</span>
+          </button>
+
+          <button
+            onClick={() => setActiveMode("voice")}
+            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
+              activeMode === "voice"
+                ? "bg-[#003ec7] text-white shadow-2xs"
+                : "text-slate-600 hover:text-slate-900"
+            }`}
+          >
+            <Radio className="w-3.5 h-3.5" />
+            <span>{lang === "es" ? "Voz AI" : "Voice AI"}</span>
           </button>
         </div>
 
