@@ -33,7 +33,7 @@ export default function BottomNav({ activeTab, setActiveTab, lang }: BottomNavPr
     },
     {
       id: "assistant" as TabType,
-      labelEs: "Asistente AI",
+      labelEs: "Asistente IA",
       labelEn: "AI Assistant",
       icon: MessageSquareText,
     },

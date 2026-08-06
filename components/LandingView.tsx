@@ -37,7 +37,7 @@ export default function LandingView({ merchant, setActiveTab, lang }: LandingVie
     },
     {
       id: "assistant" as TabType,
-      titleEs: "Asistente AI de la Tienda",
+      titleEs: "Asistente IA de la Tienda",
       titleEn: "Store AI Assistant",
       descEs: "Respuestas inmediatas sobre horarios, ubicación y preguntas",
       descEn: "Instant grounded answers for hours, location & policies",

@@ -35,7 +35,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     sender: "ai",
     text:
       lang === "es"
-        ? `¡Hola! Soy el Asistente AI de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
+        ? `¡Hola! Soy el Asistente IA de ${merchant.storeInfo.name}. ¿En qué puedo ayudarle hoy?`
         : `Hello! I am the AI Assistant for ${merchant.storeInfo.name}. How can I help you today?`,
   };
 
