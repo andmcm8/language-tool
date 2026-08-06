@@ -190,7 +190,7 @@ Behavior Guidelines:
         : `¡Ofrecemos platos de charcutería fresca, panadería, abarrotes y bebidas! Algunos productos populares son: ${topItemsStr}. ¡Pregúnteme por cualquier producto o categoría!`;
     }
     // 3. RESTROOM / BATHROOM QUERY
-    else if (lowerMsg.includes("baño") || lowerMsg.includes("restroom") || lowerMsg.includes("bathroom")) {
+    else if (lowerMsg.includes("baño") || lowerMsg.includes("bano") || lowerMsg.includes("restroom") || lowerMsg.includes("bathroom")) {
       reply = isEnglish
         ? `Restroom: ${p?.restroomLocationEn || "Located at the back of the store."} ${p?.restroomCodeEn ? `(${p.restroomCodeEn})` : ""}`
         : `Baño: ${p?.restroomLocationEs || "Al fondo de la tienda."} ${p?.restroomCodeEs ? `(${p.restroomCodeEs})` : ""}`;
