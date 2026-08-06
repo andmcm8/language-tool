@@ -74,7 +74,7 @@ Behavior Guidelines:
 - Language Matching: Reply in whichever language (English or Spanish) the user speaks to you. If they talk in English, reply in English. If they talk in Spanish, reply in Spanish.
 - Tone: Warm, helpful, natural, and concise (2 to 4 sentences).`;
 
-      const candidateModels = ["gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-1.5-flash-latest"];
+      const candidateModels = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
       const genAI = new GoogleGenerativeAI(apiKey);
 
       const history: { role: string; parts: { text: string }[] }[] = [];
