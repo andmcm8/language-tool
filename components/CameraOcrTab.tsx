@@ -846,7 +846,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         }
       })();
 
-      setStatusText(lang === "es" ? "Traduciendo…" : "Translating…");
+      setStatusText(lang === "es" ? "Traduciendo con IA…" : "Translating with AI…");
       const base64 = srcCanvas.toDataURL("image/jpeg", 0.85);
       const [visionResults, tesseractLines] = await Promise.all([
         visionTranslate(base64),
@@ -855,69 +855,50 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
 
       let regions: TextRegion[] = [];
 
-      if (tesseractLines.length > 0) {
-        if (visionResults.length > 0) {
-          const used = new Set<number>();
-
-          for (const vr of visionResults) {
-            let bestIdx = -1;
-            let bestScore = 0;
-
-            for (let i = 0; i < tesseractLines.length; i++) {
-              if (used.has(i)) continue;
-              const score = similarity(vr.original, tesseractLines[i].text);
-              if (score > bestScore) {
-                bestScore = score;
-                bestIdx = i;
-              }
-            }
-
-            if (bestIdx >= 0 && bestScore > 0.25) {
-              used.add(bestIdx);
-              regions.push({
-                original: vr.original,
-                translated: vr.translated,
-                bbox: tesseractLines[bestIdx].bbox,
-              });
-            }
-          }
-
-          for (let i = 0; i < tesseractLines.length; i++) {
-            if (!used.has(i) && tesseractLines[i].text.length > 2) {
-              const tr = await translateLine(tesseractLines[i].text);
-              regions.push({
-                original: tesseractLines[i].text,
-                translated: tr,
-                bbox: tesseractLines[i].bbox,
-              });
-            }
-          }
-        } else {
-          for (const line of tesseractLines) {
-            if (line.text.length > 2) {
-              const tr = await translateLine(line.text);
-              regions.push({
-                original: line.text,
-                translated: tr,
-                bbox: line.bbox,
-              });
-            }
-          }
-        }
-      } else if (visionResults.length > 0) {
+      // Prioritize 99% Accurate Gemini 2.0 Flash Vision AI Results
+      if (visionResults.length > 0) {
         const lineH = imgH / (visionResults.length + 1);
         visionResults.forEach((vr, i) => {
+          // Find matching tesseract bbox if available for spatial alignment
+          let matchedBbox = {
+            x0: Math.round(imgW * 0.05),
+            y0: Math.round(lineH * (i + 0.3)),
+            x1: Math.round(imgW * 0.95),
+            y1: Math.round(lineH * (i + 0.3) + Math.max(24, lineH * 0.5)),
+          };
+
+          if (tesseractLines.length > 0) {
+            let bestIdx = -1;
+            let bestScore = 0;
+            for (let j = 0; j < tesseractLines.length; j++) {
+              const score = similarity(vr.original, tesseractLines[j].text);
+              if (score > bestScore) {
+                bestScore = score;
+                bestIdx = j;
+              }
+            }
+            if (bestIdx >= 0 && bestScore > 0.2) {
+              matchedBbox = tesseractLines[bestIdx].bbox;
+            }
+          }
+
           regions.push({
             original: vr.original,
             translated: vr.translated,
-            bbox: {
-              x0: Math.round(imgW * 0.05),
-              y0: Math.round(lineH * (i + 0.5)),
-              x1: Math.round(imgW * 0.95),
-              y1: Math.round(lineH * (i + 0.5) + lineH * 0.55),
-            },
+            bbox: matchedBbox,
           });
         });
+      } else if (tesseractLines.length > 0) {
+        for (const line of tesseractLines) {
+          if (line.text.length > 2) {
+            const tr = await translateLine(line.text);
+            regions.push({
+              original: line.text,
+              translated: tr,
+              bbox: line.bbox,
+            });
+          }
+        }
       }
 
       if (regions.length > 0) {
@@ -1091,6 +1072,37 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             hasResult && !showOriginal ? "" : "hidden"
           }`}
         />
+
+        {/* Live Document Translation Overlay (Google Lens Glassmorphism Panel) */}
+        {hasResult && !showOriginal && detectedRegions.length > 0 && (
+          <div className="absolute inset-x-3 bottom-3 max-h-[55%] bg-slate-900/90 backdrop-blur-md rounded-2xl p-3 border border-white/20 text-white shadow-2xl overflow-y-auto z-20 pointer-events-auto flex flex-col gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300">
+            <div className="flex items-center justify-between border-b border-white/10 pb-2 shrink-0">
+              <span className="text-[11px] font-black tracking-wider text-blue-400 uppercase flex items-center gap-1.5">
+                <Scan className="w-3.5 h-3.5 text-blue-400" />
+                <span>{lang === "es" ? "Traducción IA (Gemini 2.0)" : "AI Translation (Gemini 2.0)"}</span>
+              </span>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowOriginal(true);
+                }}
+                className="px-2 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-[10px] font-extrabold text-slate-200 flex items-center gap-1 transition-all"
+              >
+                <Eye className="w-3 h-3 text-amber-400" />
+                <span>{lang === "es" ? "Ver Original" : "View Original"}</span>
+              </button>
+            </div>
+
+            <div className="space-y-2 text-left text-xs font-semibold leading-relaxed text-slate-100 divide-y divide-white/5">
+              {detectedRegions.map((r, i) => (
+                <div key={i} className={i > 0 ? "pt-2" : ""}>
+                  <p className="font-extrabold text-white text-xs">{r.translated}</p>
+                  <p className="text-[10px] text-slate-400 italic">"{r.original}"</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Top Control Bar Overlay (Language Switcher + Torch + Boost + Zoom) */}
         {cameraActive && !hasResult && !isProcessing && (
