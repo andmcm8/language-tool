@@ -44,28 +44,63 @@ export async function POST(req: NextRequest) {
 
     const apiKey = process.env.GEMINI_API_KEY;
 
-    // Direct Gemini AI Engine Call if API key is present
+    // DIRECT GEMINI AI ENGINE WITH MULTI-TURN CHAT HISTORY
     if (apiKey) {
       try {
+        const catalogSummary = merchant.categories
+          ?.map(
+            (c: any) =>
+              `${c.nameEs} / ${c.nameEn}: ${c.items
+                .map((i: any) => `${i.nameEs} ($${i.price})`)
+                .join(", ")}`
+          )
+          .join("\n");
+
+        const systemInstruction = `You are the official, intelligent bilingual AI Assistant for "${merchant.storeInfo.name}".
+
+Store Knowledge Base:
+- Store Name: ${merchant.storeInfo.name}
+- Slogan: ${merchant.storeInfo.tagline}
+- Address: ${merchant.storeInfo.address}
+- Phone: ${merchant.storeInfo.phone}
+- Hours: Mon-Fri: ${merchant.storeInfo.hours.monday_friday}, Sat: ${merchant.storeInfo.hours.saturday}, Sun: ${merchant.storeInfo.hours.sunday}
+- Payment Methods Accepted: ${merchant.storeInfo.paymentMethods.join(", ")}
+- EBT / SNAP Policy: ${merchant.storeInfo.policies?.ebtPolicyEn || "Accepted for groceries & bakery. Cash/card required for hot prepared food."}
+- Restroom Access: ${merchant.storeInfo.policies?.restroomLocationEn || "Back center aisle."} ${merchant.storeInfo.policies?.restroomCodeEn ? `(Code: ${merchant.storeInfo.policies.restroomCodeEn})` : ""}
+- Guest WiFi: ${merchant.storeInfo.policies?.wifiName || "ElSol_Guest_WiFi"} (Password: ${merchant.storeInfo.policies?.wifiPassword || "elsolstamford"})
+- Parking: ${merchant.storeInfo.policies?.parkingPolicyEn || "Free customer parking in rear lot"}
+- Return Policy: ${merchant.storeInfo.policies?.returnPolicyEn || "7-day receipt return for sealed grocery items."}
+
+Store Catalog & Menu Summary:
+${catalogSummary || "Groceries, Deli, Bakery, Fresh Produce, Beverages"}
+
+Behavior Guidelines:
+- Primary Role: Answer customer questions accurately about store details, hours, address, phone, payment methods, EBT rules, restroom access, WiFi, and catalog products/prices.
+- Open Conversational Intelligence: You are a smart, helpful AI. If the user asks general questions, greetings, recipe advice, product recommendations, or anything outside specific store data, respond naturally, warmly, and intelligently. Never refuse to answer or choke just because a question is general chat.
+- Language Matching: Reply in whichever language (English or Spanish) the user speaks to you. If they talk in English, reply in English. If they talk in Spanish, reply in Spanish.
+- Tone: Warm, helpful, natural, and concise (2 to 4 sentences).`;
+
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({
           model: "gemini-2.0-flash",
-          systemInstruction: `You are the friendly, helpful bilingual AI Assistant for "${merchant.storeInfo.name}".
-
-Language Rules:
-- If user speaks/writes English, reply ONLY in 100% natural, clear English.
-- If user speaks/writes Spanish, reply ONLY in 100% natural, clear Spanish.
-
-Store Data Context:
-${JSON.stringify(merchant, null, 2)}
-
-Instructions:
-- Be polite, warm, and helpful. If the user greets you ("hello", "hola", "hi"), greet them back warmly and offer assistance with store hours, products, services, address, or policies.
-- Answer questions accurately using the store context when available.
-- Keep answers clear, helpful, and natural (2 to 3 sentences max). No rigid robotic scripts.`,
+          systemInstruction,
         });
 
-        const result = await model.generateContent(lastMessage);
+        // Convert previous conversation messages into Gemini Multi-Turn History
+        const history: { role: string; parts: { text: string }[] }[] = [];
+        if (messages.length > 1) {
+          const previousMessages = messages.slice(0, -1);
+          for (const m of previousMessages) {
+            const role = m.sender === "user" || m.role === "user" ? "user" : "model";
+            const text = (m.text || m.content || "").trim();
+            if (text) {
+              history.push({ role, parts: [{ text }] });
+            }
+          }
+        }
+
+        const chat = model.startChat({ history });
+        const result = await chat.sendMessage(lastMessage);
         let text = result.response.text().trim();
 
         if (isSensitiveQuery) {
