@@ -11,7 +11,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 /* ---------- ENGINE 1: Gemini AI ---------- */
 async function tryGemini(text: string): Promise<string | null> {
   const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey || !apiKey.startsWith("AIza")) return null;
+  if (!apiKey) return null;
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
