@@ -1,14 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 
+const SERVICE_ACCOUNT_CREDENTIALS = {
+  type: "service_account",
+  project_id: "alconio",
+  private_key_id: "REMOVED_SECRET",
+  private_key: "REMOVED_SECRET",
+  client_email: "duotaps@alconio.iam.gserviceaccount.com",
+  client_id: "106794621529861444597",
+};
+
 async function logClickToSheet(email: string, biz: string) {
   try {
-    const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-    if (!serviceAccountJson) return;
-
-    const credentials = JSON.parse(serviceAccountJson);
     const auth = new google.auth.GoogleAuth({
-      credentials,
+      credentials: SERVICE_ACCOUNT_CREDENTIALS,
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 

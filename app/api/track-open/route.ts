@@ -7,21 +7,25 @@ const TRANSPARENT_GIF = Buffer.from(
   "base64"
 );
 
+const SERVICE_ACCOUNT_CREDENTIALS = {
+  type: "service_account",
+  project_id: "alconio",
+  private_key_id: "REMOVED_SECRET",
+  private_key: "REMOVED_SECRET",
+  client_email: "duotaps@alconio.iam.gserviceaccount.com",
+  client_id: "106794621529861444597",
+};
+
 async function logOpenToSheet(email: string, biz: string) {
   try {
-    const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-    if (!serviceAccountJson) return;
-
-    const credentials = JSON.parse(serviceAccountJson);
     const auth = new google.auth.GoogleAuth({
-      credentials,
+      credentials: SERVICE_ACCOUNT_CREDENTIALS,
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = "1twWEsJ6jpAUEDd0zpF8lWOgkNoFWPjpRrlZV34gqkn4";
 
-    // Fetch spreadsheet data
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: "Sheet1!A:I",
@@ -29,12 +33,12 @@ async function logOpenToSheet(email: string, biz: string) {
 
     const rows = res.data.values || [];
     const normEmail = email.toLowerCase().trim();
-    
+
     let targetRowIndex = -1;
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
       if (row && row[1] && row[1].toLowerCase().trim() === normEmail) {
-        targetRowIndex = i + 1; // 1-indexed for Sheets
+        targetRowIndex = i + 1;
         break;
       }
     }
@@ -43,7 +47,7 @@ async function logOpenToSheet(email: string, biz: string) {
     const openValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      // Update Column H (Opened Email - Col 8)
+      // Update Column H (Email Opened - Col 8)
       await sheets.spreadsheets.values.update({
         spreadsheetId,
         range: `Sheet1!H${targetRowIndex}`,
@@ -63,7 +67,6 @@ export async function GET(req: NextRequest) {
   const biz = searchParams.get("biz") || "";
 
   if (email) {
-    // Log asynchronously to Google Sheet
     logOpenToSheet(email, biz).catch(() => {});
   }
 
