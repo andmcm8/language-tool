@@ -32,13 +32,13 @@ async function logOpenToSheet(email: string, biz: string) {
     });
 
     const rows = res.data.values || [];
-    const normEmail = email.toLowerCase().trim();
+    const normEmail = decodeURIComponent(email).toLowerCase().trim();
 
     let targetRowIndex = -1;
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
       if (row && row[1] && row[1].toLowerCase().trim() === normEmail) {
-        targetRowIndex = i + 1;
+        targetRowIndex = i + 1; // 1-indexed for Sheets
         break;
       }
     }
