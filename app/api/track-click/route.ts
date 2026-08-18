@@ -26,7 +26,7 @@ async function logClickToSheet(email: string, biz: string) {
     });
 
     const rows = res.data.values || [];
-    const normEmail = email.toLowerCase().trim();
+    const normEmail = decodeURIComponent(email).toLowerCase().trim();
 
     let targetRowIndex = -1;
     for (let i = 1; i < rows.length; i++) {
