@@ -20,10 +20,15 @@ async function logClickToSheet(email: string, biz: string) {
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = "1twWEsJ6jpAUEDd0zpF8lWOgkNoFWPjpRrlZV34gqkn4";
 
-    const res = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: "Sheet1!A:I",
-    });
+    const res = await Promise.race([
+      sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range: "Sheet1!A:I",
+      }),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("Sheets API Timeout")), 3000)
+      ),
+    ]);
 
     const rows = res.data.values || [];
     const normEmail = decodeURIComponent(email).toLowerCase().trim();
@@ -41,17 +46,22 @@ async function logClickToSheet(email: string, biz: string) {
     const clickValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      // Update Column I (Clicked Link - Col 9)
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: `Sheet1!I${targetRowIndex}`,
-        valueInputOption: "USER_ENTERED",
-        requestBody: { values: [[clickValue]] },
-      });
+      // Update Column I (Clicked Link - Col 9) with timeout protection
+      await Promise.race([
+        sheets.spreadsheets.values.update({
+          spreadsheetId,
+          range: `Sheet1!I${targetRowIndex}`,
+          valueInputOption: "USER_ENTERED",
+          requestBody: { values: [[clickValue]] },
+        }),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error("Sheets Update Timeout")), 3000)
+        ),
+      ]);
       console.log(`✅ Logged demo link click for ${email} on row ${targetRowIndex}`);
     }
-  } catch (err) {
-    console.error("⚠️ Click tracking logging error:", err);
+  } catch (err: any) {
+    console.warn("Click tracking background notice:", err?.message || err);
   }
 }
 
@@ -62,6 +72,7 @@ export async function GET(req: NextRequest) {
   const to = searchParams.get("to") || "/demo";
 
   if (email) {
+    // Non-blocking execution
     logClickToSheet(email, biz).catch(() => {});
   }
 
