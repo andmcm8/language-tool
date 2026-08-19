@@ -1,11 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import { google } from "googleapis";
 
-// 1x1 Transparent GIF Buffer (43 bytes)
-const TRANSPARENT_GIF = Buffer.from(
-  "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-  "base64"
-);
+// 1x1 Transparent GIF Uint8Array (43 bytes)
+const GIF_BYTES = new Uint8Array([
+  0x47, 0x49, 0x46, 0x38, 0x39, 0x61, 0x01, 0x00, 0x01, 0x00, 0x80, 0x00,
+  0x00, 0xff, 0xff, 0xff, 0x00, 0x00, 0x00, 0x21, 0xf9, 0x04, 0x01, 0x00,
+  0x00, 0x00, 0x00, 0x2c, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00,
+  0x00, 0x02, 0x02, 0x44, 0x01, 0x00, 0x3b
+]);
 
 const SERVICE_ACCOUNT_CREDENTIALS = {
   type: "service_account",
@@ -32,7 +34,7 @@ async function logOpenToSheet(email: string, biz: string) {
         range: "Sheet1!A:I",
       }),
       new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error("Sheets API Timeout")), 3000)
+        setTimeout(() => reject(new Error("Sheets API Timeout")), 2500)
       ),
     ]);
 
@@ -43,7 +45,7 @@ async function logOpenToSheet(email: string, biz: string) {
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
       if (row && row[1] && row[1].toLowerCase().trim() === normEmail) {
-        targetRowIndex = i + 1; // 1-indexed for Sheets
+        targetRowIndex = i + 1;
         break;
       }
     }
@@ -52,7 +54,6 @@ async function logOpenToSheet(email: string, biz: string) {
     const openValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      // Update Column H (Email Opened - Col 8) with timeout protection
       await Promise.race([
         sheets.spreadsheets.values.update({
           spreadsheetId,
@@ -61,7 +62,7 @@ async function logOpenToSheet(email: string, biz: string) {
           requestBody: { values: [[openValue]] },
         }),
         new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error("Sheets Update Timeout")), 3000)
+          setTimeout(() => reject(new Error("Sheets Update Timeout")), 2500)
         ),
       ]);
       console.log(`✅ Logged email open for ${email} on row ${targetRowIndex}`);
@@ -77,11 +78,10 @@ export async function GET(req: NextRequest) {
   const biz = searchParams.get("biz") || "";
 
   if (email) {
-    // Non-blocking execution
     logOpenToSheet(email, biz).catch(() => {});
   }
 
-  return new NextResponse(TRANSPARENT_GIF, {
+  return new Response(GIF_BYTES, {
     status: 200,
     headers: {
       "Content-Type": "image/gif",
