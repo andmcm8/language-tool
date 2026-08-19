@@ -12,23 +12,19 @@ const SERVICE_ACCOUNT_CREDENTIALS = {
 
 async function logClickToSheet(email: string, biz: string) {
   try {
-    const auth = new google.auth.GoogleAuth({
-      credentials: SERVICE_ACCOUNT_CREDENTIALS,
+    const auth = new google.auth.JWT({
+      email: SERVICE_ACCOUNT_CREDENTIALS.client_email,
+      key: SERVICE_ACCOUNT_CREDENTIALS.private_key,
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = "1twWEsJ6jpAUEDd0zpF8lWOgkNoFWPjpRrlZV34gqkn4";
 
-    const res = await Promise.race([
-      sheets.spreadsheets.values.get({
-        spreadsheetId,
-        range: "Sheet1!A:I",
-      }),
-      new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error("Sheets API Timeout")), 3000)
-      ),
-    ]);
+    const res = await sheets.spreadsheets.values.get({
+      spreadsheetId,
+      range: "Sheet1!A:I",
+    });
 
     const rows = res.data.values || [];
     const normEmail = decodeURIComponent(email).toLowerCase().trim();
@@ -46,18 +42,12 @@ async function logClickToSheet(email: string, biz: string) {
     const clickValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      // Update Column I (Clicked Link - Col 9) with timeout protection
-      await Promise.race([
-        sheets.spreadsheets.values.update({
-          spreadsheetId,
-          range: `Sheet1!I${targetRowIndex}`,
-          valueInputOption: "USER_ENTERED",
-          requestBody: { values: [[clickValue]] },
-        }),
-        new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error("Sheets Update Timeout")), 3000)
-        ),
-      ]);
+      await sheets.spreadsheets.values.update({
+        spreadsheetId,
+        range: `Sheet1!I${targetRowIndex}`,
+        valueInputOption: "USER_ENTERED",
+        requestBody: { values: [[clickValue]] },
+      });
       console.log(`✅ Logged demo link click for ${email} on row ${targetRowIndex}`);
     }
   } catch (err: any) {
@@ -72,8 +62,7 @@ export async function GET(req: NextRequest) {
   const to = searchParams.get("to") || "/demo";
 
   if (email) {
-    // Non-blocking execution
-    logClickToSheet(email, biz).catch(() => {});
+    await logClickToSheet(email, biz);
   }
 
   const destination = to.startsWith("http")

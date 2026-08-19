@@ -20,23 +20,19 @@ const SERVICE_ACCOUNT_CREDENTIALS = {
 
 async function logOpenToSheet(email: string, biz: string) {
   try {
-    const auth = new google.auth.GoogleAuth({
-      credentials: SERVICE_ACCOUNT_CREDENTIALS,
+    const auth = new google.auth.JWT({
+      email: SERVICE_ACCOUNT_CREDENTIALS.client_email,
+      key: SERVICE_ACCOUNT_CREDENTIALS.private_key,
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = "1twWEsJ6jpAUEDd0zpF8lWOgkNoFWPjpRrlZV34gqkn4";
 
-    const res = await Promise.race([
-      sheets.spreadsheets.values.get({
-        spreadsheetId,
-        range: "Sheet1!A:I",
-      }),
-      new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error("Sheets API Timeout")), 2500)
-      ),
-    ]);
+    const res = await sheets.spreadsheets.values.get({
+      spreadsheetId,
+      range: "Sheet1!A:I",
+    });
 
     const rows = res.data.values || [];
     const normEmail = decodeURIComponent(email).toLowerCase().trim();
@@ -54,17 +50,12 @@ async function logOpenToSheet(email: string, biz: string) {
     const openValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      await Promise.race([
-        sheets.spreadsheets.values.update({
-          spreadsheetId,
-          range: `Sheet1!H${targetRowIndex}`,
-          valueInputOption: "USER_ENTERED",
-          requestBody: { values: [[openValue]] },
-        }),
-        new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error("Sheets Update Timeout")), 2500)
-        ),
-      ]);
+      await sheets.spreadsheets.values.update({
+        spreadsheetId,
+        range: `Sheet1!H${targetRowIndex}`,
+        valueInputOption: "USER_ENTERED",
+        requestBody: { values: [[openValue]] },
+      });
       console.log(`✅ Logged email open for ${email} on row ${targetRowIndex}`);
     }
   } catch (err: any) {
@@ -78,14 +69,13 @@ export async function GET(req: NextRequest) {
   const biz = searchParams.get("biz") || "";
 
   if (email) {
-    logOpenToSheet(email, biz).catch(() => {});
+    await logOpenToSheet(email, biz);
   }
 
   return new Response(GIF_BYTES, {
     status: 200,
     headers: {
       "Content-Type": "image/gif",
-      "Content-Length": "43",
       "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "Pragma": "no-cache",
       "Expires": "0",
