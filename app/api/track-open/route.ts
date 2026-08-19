@@ -26,10 +26,15 @@ async function logOpenToSheet(email: string, biz: string) {
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = "1twWEsJ6jpAUEDd0zpF8lWOgkNoFWPjpRrlZV34gqkn4";
 
-    const res = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: "Sheet1!A:I",
-    });
+    const res = await Promise.race([
+      sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range: "Sheet1!A:I",
+      }),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("Sheets API Timeout")), 3000)
+      ),
+    ]);
 
     const rows = res.data.values || [];
     const normEmail = decodeURIComponent(email).toLowerCase().trim();
@@ -47,17 +52,22 @@ async function logOpenToSheet(email: string, biz: string) {
     const openValue = `YES (${timestamp})`;
 
     if (targetRowIndex > 0) {
-      // Update Column H (Email Opened - Col 8)
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: `Sheet1!H${targetRowIndex}`,
-        valueInputOption: "USER_ENTERED",
-        requestBody: { values: [[openValue]] },
-      });
+      // Update Column H (Email Opened - Col 8) with timeout protection
+      await Promise.race([
+        sheets.spreadsheets.values.update({
+          spreadsheetId,
+          range: `Sheet1!H${targetRowIndex}`,
+          valueInputOption: "USER_ENTERED",
+          requestBody: { values: [[openValue]] },
+        }),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error("Sheets Update Timeout")), 3000)
+        ),
+      ]);
       console.log(`✅ Logged email open for ${email} on row ${targetRowIndex}`);
     }
-  } catch (err) {
-    console.error("⚠️ Open tracking logging error:", err);
+  } catch (err: any) {
+    console.warn("Open tracking background notice:", err?.message || err);
   }
 }
 
@@ -67,6 +77,7 @@ export async function GET(req: NextRequest) {
   const biz = searchParams.get("biz") || "";
 
   if (email) {
+    // Non-blocking execution
     logOpenToSheet(email, biz).catch(() => {});
   }
 
