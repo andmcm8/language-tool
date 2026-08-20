@@ -97,7 +97,7 @@ export default function HomePage() {
   const allMerchants = useMemo(() => getAllMerchants(), []);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [lang, setLang] = useState<"en" | "es">("es"); // Default to bilingual Spanish friendly
+  const [lang, setLang] = useState<"en" | "es">("en");
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   const t = DICT[lang];
