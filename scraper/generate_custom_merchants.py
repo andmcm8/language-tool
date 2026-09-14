@@ -102,7 +102,7 @@ def generate_merchant_config_with_gemini(
 ) -> Dict[str, Any]:
     """Uses Gemini 3.8 Flash to generate a production-ready MerchantConfig JSON."""
     api_key = get_gemini_api_key()
-    candidate_models = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
+    candidate_models = ["gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.7-flash", "gemini-3.8-flash"]
 
     prompt = f"""
 You are an expert culinary bilingual translator and digital menu engineer for local Connecticut restaurants.
@@ -114,7 +114,10 @@ Website: {website}
 Slug / ID: {slug}
 
 SCRAPED WEBSITE / MENU DATA:
-{scraped_content if scraped_content else "No scraped content available. Research and generate accurate, typical signature items for this specific style of restaurant."}
+{scraped_content[:6000] if scraped_content else "No scraped content available. Research and generate accurate, typical signature items for this specific style of restaurant."}
+
+Extract 12 to 25 representative menu items across all relevant categories (appetizers, mains, specialties, beverages, etc.).
+Ensure descriptions are mouthwatering and accurately translated into Spanish. Include realistic prices, popular tags, and common allergen flags.
 
 Strict JSON Schema Output Requirements:
 {{
@@ -274,6 +277,10 @@ def process_uncontacted_leads(batch_size: int = 5):
 
         # Skip if already contacted or empty name
         if not biz_name or status in ["contacted", "sent", "yes"]:
+            continue
+
+        # Exclude New Canaan leads per user preference
+        if "new canaan" in location.lower():
             continue
 
         slug = slugify(biz_name)
