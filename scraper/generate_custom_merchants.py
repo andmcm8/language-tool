@@ -233,6 +233,8 @@ def update_registry_file():
     for f in sorted(json_files):
         slug = f[:-5] # remove .json
         var_name = re.sub(r"[^a-zA-Z0-9]", "_", slug)
+        if var_name and (var_name[0].isdigit() or var_name[0] == "_"):
+            var_name = f"m_{var_name}"
         imports.append(f"import {var_name} from './{f}';")
         entries.append(f"  '{slug}': {var_name} as unknown as MerchantConfig,")
 
