@@ -118,6 +118,7 @@ SCRAPED WEBSITE / MENU DATA:
 
 Extract 12 to 25 representative menu items across all relevant categories (appetizers, mains, specialties, beverages, etc.).
 Ensure descriptions are mouthwatering and accurately translated into Spanish. Include realistic prices, popular tags, and common allergen flags.
+Note: If the scraped website content is empty or appears completely unrelated to food/dining (e.g. a national sports team or corporate portal), ignore it and generate an authentic, appetizing menu fitting a local restaurant/cafe/grill of this name in this CT town.
 
 Strict JSON Schema Output Requirements:
 {{
