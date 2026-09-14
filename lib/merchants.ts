@@ -1,27 +1,22 @@
 import { MerchantConfig } from "@/types/merchant";
-import demoConfig from "@/data/merchants/demo.json";
-
-const MERCHANTS_MAP: Record<string, MerchantConfig> = {
-  demo: demoConfig as unknown as MerchantConfig,
-  elsol: demoConfig as unknown as MerchantConfig,
-};
+import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
 
 export function getMerchantById(id: string): MerchantConfig {
   const normalizedId = id.toLowerCase().trim();
-  if (MERCHANTS_MAP[normalizedId]) {
-    return MERCHANTS_MAP[normalizedId];
+  if (MERCHANTS_REGISTRY[normalizedId]) {
+    return MERCHANTS_REGISTRY[normalizedId];
   }
-  return demoConfig as unknown as MerchantConfig;
+  return MERCHANTS_REGISTRY["demo"];
 }
 
 export function getAllMerchants(): MerchantConfig[] {
-  return [demoConfig as unknown as MerchantConfig];
+  return Object.values(MERCHANTS_REGISTRY);
 }
 
 export function listMerchants(): { id: string; name: string; tagline: string }[] {
-  return [{
-    id: demoConfig.storeInfo.id,
-    name: demoConfig.storeInfo.name,
-    tagline: demoConfig.storeInfo.tagline,
-  }];
+  return Object.values(MERCHANTS_REGISTRY).map((m) => ({
+    id: m.storeInfo.id,
+    name: m.storeInfo.name,
+    tagline: m.storeInfo.tagline,
+  }));
 }
