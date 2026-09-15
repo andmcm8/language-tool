@@ -40,7 +40,9 @@ def get_gemini_api_key() -> str:
     raise ValueError("GEMINI_API_KEY not found in environment or .env.local")
 
 def slugify(text: str) -> str:
-    """Converts business name to a clean URL-friendly slug."""
+    """Converts business name to a clean URL-friendly ASCII slug."""
+    import unicodedata
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
     text = text.lower().strip()
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"[\s_]+", "-", text)
