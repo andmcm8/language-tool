@@ -59,7 +59,7 @@ def scrape_website_content(url: str) -> str:
     extracted_text = []
 
     try:
-        r = requests.get(url, headers=headers, timeout=8, verify=False)
+        r = requests.get(url, headers=headers, timeout=(4, 6), verify=False)
         if r.status_code == 200:
             soup = BeautifulSoup(r.text, "html.parser")
             # Remove scripts & styles
@@ -76,12 +76,15 @@ def scrape_website_content(url: str) -> str:
                 if any(k in href or k in link_text for k in ["menu", "food", "dinner", "lunch"]):
                     full_link = urllib.parse.urljoin(url, a["href"])
                     if full_link not in menu_links and full_link != url:
+                        # Skip binary / non-html assets
+                        if any(ext in full_link.lower() for ext in [".pdf", ".png", ".jpg", ".jpeg", ".webp", ".mp4", ".zip", ".doc"]):
+                            continue
                         menu_links.append(full_link)
 
             # Scrape first 2 menu subpages if found
             for m_link in menu_links[:2]:
                 try:
-                    mr = requests.get(m_link, headers=headers, timeout=8, verify=False)
+                    mr = requests.get(m_link, headers=headers, timeout=(4, 6), verify=False)
                     if mr.status_code == 200:
                         msoup = BeautifulSoup(mr.text, "html.parser")
                         for elem in msoup(["script", "style"]):
@@ -215,7 +218,17 @@ Output ONLY the raw JSON object. Do not include markdown code blocks, backticks,
                     raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
                     raw_text = re.sub(r"^```(?:json)?\s*", "", raw_text)
                     raw_text = re.sub(r"\s*```$", "", raw_text)
-                    return json.loads(raw_text)
+                    parsed = json.loads(raw_text)
+                    if "storeInfo" not in parsed:
+                        parsed["storeInfo"] = {}
+                    si = parsed["storeInfo"]
+                    si["id"] = slug
+                    si["name"] = biz_name
+                    if not si.get("tagline"):
+                        si["tagline"] = f"Authentic dining in {location} | Sabores auténticos en {location}"
+                    if not si.get("address"):
+                        si["address"] = f"{location}"
+                    return parsed
                 else:
                     last_err = f"Model {model} returned {resp.status_code}: {resp.text[:150]}"
                     time.sleep(2)
