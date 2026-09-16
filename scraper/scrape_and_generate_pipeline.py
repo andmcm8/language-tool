@@ -72,7 +72,13 @@ ALL_TARGET_TOWNS = [
     "Branford",
     "Cheshire",
     "East Haven",
-    "Naugatuck"
+    "Naugatuck",
+    "Waterbury",
+    "Meriden",
+    "Southington",
+    "Middletown",
+    "New Haven",
+    "North Haven"
 ]
 
 def run_pipeline(target_count: int = 20):
