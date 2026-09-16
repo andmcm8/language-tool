@@ -101,7 +101,22 @@ ALL_TARGET_TOWNS = [
     "Southbury",
     "Woodbury",
     "Brookfield",
-    "New Fairfield"
+    "New Fairfield",
+    "Westport",
+    "Darien",
+    "Wilton",
+    "Ridgefield",
+    "Enfield",
+    "Groton",
+    "Norwich",
+    "East Hartford",
+    "Vernon",
+    "Windsor",
+    "Mansfield",
+    "South Windsor",
+    "Guilford",
+    "Bloomfield",
+    "Waterford"
 ]
 
 def run_pipeline(target_count: int = 20):
@@ -160,7 +175,8 @@ def run_pipeline(target_count: int = 20):
         "restaurant", "cafe", "pizzeria", "deli", "bakery",
         "tacos", "diner", "coffee", "bagels", "grill", "bistro",
         "mexican", "seafood", "bbq", "burgers", "sushi",
-        "italian", "thai", "pub", "steakhouse"
+        "italian", "thai", "pub", "steakhouse",
+        "ramen", "cantina", "brewery", "creperie"
     ]
 
     # Prioritize towns with lowest representations first

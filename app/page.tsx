@@ -105,13 +105,13 @@ export default function HomePage() {
   /* ---------- Real-Time Filtering Logic ---------- */
   const filteredMerchants = useMemo(() => {
     return allMerchants.filter((m) => {
-      const id = m.storeInfo.id.toLowerCase();
-      const name = m.storeInfo.name.toLowerCase();
-      const tagline = m.storeInfo.tagline.toLowerCase();
-      const address = m.storeInfo.address.toLowerCase();
+      const id = (m.storeInfo?.id || "").toLowerCase();
+      const name = (m.storeInfo?.name || (m.storeInfo as any)?.Name || "").toLowerCase();
+      const tagline = (m.storeInfo?.tagline || "").toLowerCase();
+      const address = (m.storeInfo?.address || "").toLowerCase();
       const badgeEn = (MERCHANT_BADGES[id]?.en || "").toLowerCase();
       const badgeEs = (MERCHANT_BADGES[id]?.es || "").toLowerCase();
-      const amenities = (m.storeInfo.amenities || []).join(" ").toLowerCase();
+      const amenities = (m.storeInfo?.amenities || []).join(" ").toLowerCase();
 
       const q = searchQuery.toLowerCase().trim();
       const matchesSearch =
