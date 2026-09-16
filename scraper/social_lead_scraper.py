@@ -149,7 +149,7 @@ def normalize_biz_name(name: str) -> str:
     clean = name.lower()
     clean = re.sub(r"\(.*?\)", "", clean)
     clean = re.sub(r"[^\w\s]", "", clean)
-    clean = re.sub(r"\b(norwalk|wilton|darien|westport|fairfield|stamford|ridgefield|greenwich|bridgeport|trumbull|milford|stratford|shelton|bethel|danbury|ct|connecticut)\b", "", clean)
+    clean = re.sub(r"\b(norwalk|wilton|darien|westport|fairfield|stamford|ridgefield|greenwich|bridgeport|trumbull|milford|stratford|shelton|bethel|danbury|waterbury|meriden|southington|middletown|cheshire|wallingford|branford|naugatuck|new haven|derby|ansonia|ct|connecticut)\b", "", clean)
     return " ".join(clean.split())
 
 class SocialLeadScraper:
