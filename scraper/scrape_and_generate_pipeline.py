@@ -78,7 +78,30 @@ ALL_TARGET_TOWNS = [
     "Southington",
     "Middletown",
     "New Haven",
-    "North Haven"
+    "North Haven",
+    "Hartford",
+    "West Hartford",
+    "Manchester",
+    "Glastonbury",
+    "Newington",
+    "Wethersfield",
+    "Rocky Hill",
+    "Cromwell",
+    "Berlin",
+    "Bristol",
+    "Plainville",
+    "Farmington",
+    "Avon",
+    "Simsbury",
+    "Torrington",
+    "Watertown",
+    "Prospect",
+    "Seymour",
+    "Oxford",
+    "Southbury",
+    "Woodbury",
+    "Brookfield",
+    "New Fairfield"
 ]
 
 def run_pipeline(target_count: int = 20):
@@ -136,7 +159,8 @@ def run_pipeline(target_count: int = 20):
     categories = [
         "restaurant", "cafe", "pizzeria", "deli", "bakery",
         "tacos", "diner", "coffee", "bagels", "grill", "bistro",
-        "mexican", "seafood", "bbq", "burgers", "sushi"
+        "mexican", "seafood", "bbq", "burgers", "sushi",
+        "italian", "thai", "pub", "steakhouse"
     ]
 
     # Prioritize towns with lowest representations first
