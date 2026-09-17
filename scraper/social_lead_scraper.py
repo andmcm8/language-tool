@@ -175,7 +175,7 @@ class SocialLeadScraper:
             return []
 
         query = f"{category} in {town}, CT"
-        url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&limit={limit}"
+        url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
         
         results = []
         try:
