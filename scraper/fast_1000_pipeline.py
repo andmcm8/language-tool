@@ -109,7 +109,7 @@ def checkpoint_deploy(current_count: int, total_target: int):
         update_registry_file()
         cwd = os.path.join(SCRAPER_DIR, "..")
         subprocess.run(
-            ["git", "add", "data/merchants/", "app/page.tsx", "scraper/"],
+            ["git", "add", "data/merchants/", "app/page.tsx"],
             cwd=cwd, check=True, capture_output=True
         )
         commit_msg = f"feat(merchants): 1000-run checkpoint ({current_count}/{total_target} places)"
