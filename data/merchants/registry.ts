@@ -564,6 +564,7 @@ import silk_city_coffee from './silk-city-coffee.json';
 import silver_sands_pizza from './silver-sands-pizza.json';
 import sip_wine_bar from './sip-wine-bar.json';
 import skeleton_key_brewery from './skeleton-key-brewery.json';
+import skyline_restaurant from './skyline-restaurant.json';
 import sliceworks from './sliceworks.json';
 import sliders_cafe from './sliders-cafe.json';
 import sliders_sports_bar_grill from './sliders-sports-bar-grill.json';
@@ -1324,6 +1325,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'silver-sands-pizza': silver_sands_pizza as unknown as MerchantConfig,
   'sip-wine-bar': sip_wine_bar as unknown as MerchantConfig,
   'skeleton-key-brewery': skeleton_key_brewery as unknown as MerchantConfig,
+  'skyline-restaurant': skyline_restaurant as unknown as MerchantConfig,
   'sliceworks': sliceworks as unknown as MerchantConfig,
   'sliders-cafe': sliders_cafe as unknown as MerchantConfig,
   'sliders-sports-bar-grill': sliders_sports_bar_grill as unknown as MerchantConfig,
