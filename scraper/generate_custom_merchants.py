@@ -62,8 +62,30 @@ def scrape_website_content(url: str) -> str:
         r = requests.get(url, headers=headers, timeout=(4, 6), verify=False)
         if r.status_code == 200:
             soup = BeautifulSoup(r.text, "html.parser")
+            
+            # Extract real business phone number from tel: links or raw page
+            verified_phone = ""
+            for a in soup.find_all("a", href=True):
+                if a["href"].startswith("tel:"):
+                    digits = re.sub(r"\D", "", a["href"])
+                    if len(digits) == 10 and digits[3:6] != "555":
+                        verified_phone = f"({digits[:3]}) {digits[3:6]}-{digits[6:]}"
+                        break
+                    elif len(digits) == 11 and digits[0] == "1" and digits[4:7] != "555":
+                        verified_phone = f"({digits[1:4]}) {digits[4:7]}-{digits[7:]}"
+                        break
+            if not verified_phone:
+                phone_matches = re.findall(r"(?:\+?1[-.\s]?)?\(?([2-9][0-9]{2})\)?[-.\s]?([2-9][0-9]{2})[-.\s]?([0-9]{4})", r.text)
+                for m in phone_matches:
+                    if m[1] != "555" and m[0] in ["203", "860", "475", "959", "914", "212", "718", "516", "413", "401", "800", "888", "877"]:
+                        verified_phone = f"({m[0]}) {m[1]}-{m[2]}"
+                        break
+
+            if verified_phone:
+                extracted_text.append(f"VERIFIED BUSINESS PHONE ON WEBSITE: {verified_phone}")
+
             # Remove scripts & styles
-            for elem in soup(["script", "style", "nav", "footer"]):
+            for elem in soup(["script", "style"]):
                 elem.extract()
             text = soup.get_text(separator=" ", strip=True)
             extracted_text.append(f"HOMEPAGE CONTENT:\n{text[:3000]}")
@@ -132,7 +154,7 @@ Strict JSON Schema Output Requirements:
     "name": "{biz_name}",
     "tagline": "Authentic bilingual tagline (English & Spanish friendly)",
     "address": "Accurate street address or realistic CT address in {location}",
-    "phone": "Phone number if found or realistic 203 area code",
+    "phone": "Verified business phone number if found in the scraped content (e.g. (203) 123-4567), or empty string \"\" if not found. NEVER invent fictional 555-XXXX numbers.",
     "hours": {{
       "monday_friday": "Realistic hours e.g. 11:00 AM - 9:30 PM",
       "saturday": "Realistic hours e.g. 11:30 AM - 10:00 PM",
@@ -228,6 +250,9 @@ Output ONLY the raw JSON object. Do not include markdown code blocks, backticks,
                         si["tagline"] = f"Authentic dining in {location} | Sabores auténticos en {location}"
                     if not si.get("address"):
                         si["address"] = f"{location}"
+                    raw_p = si.get("phone", "")
+                    if not raw_p or "555" in raw_p:
+                        si["phone"] = ""
                     return parsed
                 else:
                     last_err = f"Model {model} returned {resp.status_code}: {resp.text[:150]}"

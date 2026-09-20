@@ -142,10 +142,12 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
                 <span>{storeInfo.address}</span>
               </div>
 
-              <div className="flex items-start gap-2">
-                <Phone className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                <span>{storeInfo.phone}</span>
-              </div>
+              {storeInfo.phone && !storeInfo.phone.includes("555") && (
+                <div className="flex items-start gap-2">
+                  <Phone className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                  <span>{storeInfo.phone}</span>
+                </div>
+              )}
 
               <div className="flex items-start gap-2">
                 <Clock className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
