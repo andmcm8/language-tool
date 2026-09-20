@@ -199,6 +199,7 @@ import devils_advocate from './devils-advocate.json';
 import dew_drop_inn from './dew-drop-inn.json';
 import difrancos from './difrancos.json';
 import dirt_20 from './dirt-20.json';
+import dish_n_dat from './dish-n-dat.json';
 import dishoom from './dishoom.json';
 import dive_bar_restaurant from './dive-bar-restaurant.json';
 import dog_lane_cafe from './dog-lane-cafe.json';
@@ -376,6 +377,7 @@ import jesses_ice_cream from './jesses-ice-cream.json';
 import jewett_city_pizza_palace from './jewett-city-pizza-palace.json';
 import jg_ross from './jg-ross.json';
 import jjstacks from './jjstacks.json';
+import joe_pizza from './joe-pizza.json';
 import joeys_pizza_pie from './joeys-pizza-pie.json';
 import john_marias_pizzeria_restaurant from './john-marias-pizzeria-restaurant.json';
 import johnny_rockets from './johnny-rockets.json';
@@ -1079,6 +1081,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'dew-drop-inn': dew_drop_inn as unknown as MerchantConfig,
   'difrancos': difrancos as unknown as MerchantConfig,
   'dirt-20': dirt_20 as unknown as MerchantConfig,
+  'dish-n-dat': dish_n_dat as unknown as MerchantConfig,
   'dishoom': dishoom as unknown as MerchantConfig,
   'dive-bar-restaurant': dive_bar_restaurant as unknown as MerchantConfig,
   'dog-lane-cafe': dog_lane_cafe as unknown as MerchantConfig,
@@ -1256,6 +1259,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'jewett-city-pizza-palace': jewett_city_pizza_palace as unknown as MerchantConfig,
   'jg-ross': jg_ross as unknown as MerchantConfig,
   'jjstacks': jjstacks as unknown as MerchantConfig,
+  'joe-pizza': joe_pizza as unknown as MerchantConfig,
   'joeys-pizza-pie': joeys_pizza_pie as unknown as MerchantConfig,
   'john-marias-pizzeria-restaurant': john_marias_pizzeria_restaurant as unknown as MerchantConfig,
   'johnny-rockets': johnny_rockets as unknown as MerchantConfig,
