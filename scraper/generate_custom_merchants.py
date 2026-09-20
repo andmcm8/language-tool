@@ -59,7 +59,7 @@ def scrape_website_content(url: str) -> str:
     extracted_text = []
 
     try:
-        r = requests.get(url, headers=headers, timeout=(4, 6), verify=False)
+        r = requests.get(url, headers=headers, timeout=(2.5, 4), verify=False)
         if r.status_code == 200:
             soup = BeautifulSoup(r.text, "html.parser")
             
@@ -106,7 +106,7 @@ def scrape_website_content(url: str) -> str:
             # Scrape first 2 menu subpages if found
             for m_link in menu_links[:2]:
                 try:
-                    mr = requests.get(m_link, headers=headers, timeout=(4, 6), verify=False)
+                    mr = requests.get(m_link, headers=headers, timeout=(2.5, 4), verify=False)
                     if mr.status_code == 200:
                         msoup = BeautifulSoup(mr.text, "html.parser")
                         for elem in msoup(["script", "style"]):
@@ -162,7 +162,7 @@ def generate_merchant_config_with_gemini(
 ) -> Dict[str, Any]:
     """Uses Gemini 3.8 Flash to generate a production-ready MerchantConfig JSON."""
     api_key = get_gemini_api_key()
-    candidate_models = ["gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.7-flash", "gemini-3.8-flash"]
+    candidate_models = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.6-flash", "gemini-3.8-flash"]
 
     if not verified_phone and website:
         verified_phone = extract_verified_phone_from_site(website)
