@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { MerchantConfig, Product } from "@/types/merchant";
+import { isValidPhone } from "@/lib/merchants";
 import {
   Search,
   AlertTriangle,
@@ -356,7 +357,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
             )}
 
             <div className="mt-4 pt-3 border-t border-outline-variant/30 flex gap-2">
-              {selectedItem.ctaType === "phone" && (
+              {selectedItem.ctaType === "phone" && isValidPhone(merchant.storeInfo.phone) ? (
                 <button
                   onClick={() => handleAction(selectedItem)}
                   className="flex-1 py-2 bg-primary text-white font-bold text-xs rounded-xl shadow-xs hover:bg-primary-container transition-all flex items-center justify-center gap-1.5"
@@ -364,8 +365,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                   <Phone className="w-4 h-4" />
                   <span>{lang === "es" ? "Llamar Tienda" : "Call Store"}</span>
                 </button>
-              )}
-              {(!selectedItem.ctaType || selectedItem.ctaType === "in_store") && (
+              ) : (
                 <button
                   onClick={() => setSelectedItem(null)}
                   className="flex-1 py-2 bg-primary text-white font-bold text-xs rounded-xl shadow-xs hover:bg-primary-container transition-all"
