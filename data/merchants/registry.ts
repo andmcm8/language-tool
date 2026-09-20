@@ -218,6 +218,7 @@ import crown_super_market from './crown-super-market.json';
 import crumbles_bakery from './crumbles-bakery.json';
 import cuginos_pizzeria from './cuginos-pizzeria.json';
 import dads_restaurant from './dads-restaurant.json';
+import dal_mare_pizzeria from './dal-mare-pizzeria.json';
 import deborah_anns_sweet_shoppe from './deborah-anns-sweet-shoppe.json';
 import dees_one_smart_cookie from './dees-one-smart-cookie.json';
 import demo from './demo.json';
@@ -971,6 +972,7 @@ import when_pigs_fly from './when-pigs-fly.json';
 import whiplash_beer from './whiplash-beer.json';
 import white_horse from './white-horse.json';
 import white_lotus_thai_restaurant_pho from './white-lotus-thai-restaurant-pho.json';
+import whole_deli from './whole-deli.json';
 import wicked_slice_pizza from './wicked-slice-pizza.json';
 import wicked_slice from './wicked-slice.json';
 import wicked_sweets_by_alyssa from './wicked-sweets-by-alyssa.json';
@@ -1215,6 +1217,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'crumbles-bakery': crumbles_bakery as unknown as MerchantConfig,
   'cuginos-pizzeria': cuginos_pizzeria as unknown as MerchantConfig,
   'dads-restaurant': dads_restaurant as unknown as MerchantConfig,
+  'dal-mare-pizzeria': dal_mare_pizzeria as unknown as MerchantConfig,
   'deborah-anns-sweet-shoppe': deborah_anns_sweet_shoppe as unknown as MerchantConfig,
   'dees-one-smart-cookie': dees_one_smart_cookie as unknown as MerchantConfig,
   'demo': demo as unknown as MerchantConfig,
@@ -1968,6 +1971,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'whiplash-beer': whiplash_beer as unknown as MerchantConfig,
   'white-horse': white_horse as unknown as MerchantConfig,
   'white-lotus-thai-restaurant-pho': white_lotus_thai_restaurant_pho as unknown as MerchantConfig,
+  'whole-deli': whole_deli as unknown as MerchantConfig,
   'wicked-slice-pizza': wicked_slice_pizza as unknown as MerchantConfig,
   'wicked-slice': wicked_slice as unknown as MerchantConfig,
   'wicked-sweets-by-alyssa': wicked_sweets_by_alyssa as unknown as MerchantConfig,
