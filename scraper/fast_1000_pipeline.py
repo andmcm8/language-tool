@@ -87,9 +87,18 @@ ALL_CT_TOWNS = [
 ]
 
 HIGH_YIELD_CATEGORIES = [
-    "restaurants", "cafes", "pizzerias", "bakeries", "deli",
-    "tacos", "diner", "grill", "seafood", "bbq", "sushi",
-    "pub", "brewery", "italian", "thai"
+    "amenity=restaurant",
+    "amenity=cafe",
+    "amenity=pub",
+    "amenity=bar",
+    "amenity=ice_cream",
+    "shop=bakery",
+    "shop=deli",
+    "pizzerias",
+    "bakeries",
+    "diner",
+    "seafood",
+    "brewery"
 ]
 
 def log(msg: str):

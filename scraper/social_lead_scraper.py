@@ -174,8 +174,12 @@ class SocialLeadScraper:
         if any(ex in town.lower() for ex in EXCLUDED_TOWNS):
             return []
 
-        query = f"{category} in {town}, CT"
-        url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
+        if "=" in category:
+            key, val = category.split("=", 1)
+            url = f"https://nominatim.openstreetmap.org/search?{key}={quote(val)}&city={quote(town)}&state=Connecticut&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
+        else:
+            query = f"{category} in {town}, CT"
+            url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
         
         results = []
         try:
@@ -186,6 +190,10 @@ class SocialLeadScraper:
                 for item in data:
                     name = item.get("display_name", "").split(",")[0].strip()
                     if not name or any(chain.lower() in name.lower() for chain in CHAIN_EXCLUSIONS):
+                        continue
+
+                    # Strictly exclude building/street numbers misidentified as names
+                    if re.match(r"^\d+[\w\s-]*$", name.strip()) and not re.search(r"\b(Cafe|Café|Bistro|Pizzeria|Kitchen|Grill|Bakery|Deli|Tavern|Bar|Diner|Restaurant|House|Shop|Bagel|Pizza|Coffee|Roasters|Brewing|Ale|Steakhouse|BBQ|Tapas|Seafood|Cantina|Pub|Brewers|Brews|Tea|Noodle|Ramen|Tacos|Burgers|Market|Donuts|Winery)\b", name, re.I):
                         continue
 
                     osm_class = item.get("class", "")
