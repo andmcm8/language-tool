@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { getMerchantById } from "@/lib/merchants";
 import Header from "@/components/Header";
 import BottomNav, { TabType } from "@/components/BottomNav";
@@ -15,19 +16,28 @@ interface PageProps {
   };
 }
 
-export default function MerchantStorefront({ params }: PageProps) {
+function MerchantStorefrontContent({ params }: PageProps) {
   const merchant = getMerchantById(params.merchantId);
-  const [activeTab, setActiveTab] = useState<TabType>("home");
-  // Default to English on initial landing so restaurant owners immediately understand the hub
-  const [lang, setLang] = useState<"es" | "en">("en");
-  const [hasSwitchedToSpanish, setHasSwitchedToSpanish] = useState(false);
+  const searchParams = useSearchParams();
 
-  // When user clicks a card or switches tabs, auto-switch to Spanish demonstration
+  // Allow URL to specify tab (e.g. ?tab=catalog or ?view=catalog)
+  // Default directly to "catalog" so sending /demo sends users straight to the menu!
+  const requestedTab = searchParams.get("tab") || searchParams.get("view");
+  const initialTab: TabType = (
+    requestedTab === "home" ? "home" :
+    requestedTab === "camera" || requestedTab === "translator" ? "camera" :
+    requestedTab === "assistant" ? "assistant" :
+    "catalog"
+  );
+
+  const [activeTab, setActiveTab] = useState<TabType>(initialTab);
+
+  // Allow URL to specify language (?lang=es or ?lang=en, defaults to en)
+  const requestedLang = searchParams.get("lang");
+  const initialLang: "es" | "en" = requestedLang === "es" ? "es" : "en";
+  const [lang, setLang] = useState<"es" | "en">(initialLang);
+
   const handleTabChange = (newTab: TabType) => {
-    if (newTab !== "home" && !hasSwitchedToSpanish) {
-      setLang("es");
-      setHasSwitchedToSpanish(true);
-    }
     setActiveTab(newTab);
   };
 
@@ -53,3 +63,12 @@ export default function MerchantStorefront({ params }: PageProps) {
     </div>
   );
 }
+
+export default function MerchantStorefront({ params }: PageProps) {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-surface" />}>
+      <MerchantStorefrontContent params={params} />
+    </Suspense>
+  );
+}
+
