@@ -65,7 +65,8 @@ IGNORED_FB_PAGES = {
 IGNORED_DOMAINS = [
     "yellowpages.com", "chamberofcommerce.com", "restaurantji.com", "findglocal.com",
     "wixpress.com", "sentry.io", "wordpress.org", "example.com", "domain.com",
-    "schema.org", "yahoo.com", "bing.com", "duckduckgo.com", ".png", ".jpg", ".jpeg"
+    "schema.org", "yahoo.com", "bing.com", "duckduckgo.com", ".png", ".jpg", ".jpeg",
+    "here.com", "openstreetmap.org", "legal.", "terms.", "privacy."
 ]
 
 def is_profile_live(platform: str, handle: str, link: str) -> bool:
@@ -175,11 +176,11 @@ class SocialLeadScraper:
             return []
 
         if "=" in category:
-            key, val = category.split("=", 1)
-            url = f"https://nominatim.openstreetmap.org/search?{key}={quote(val)}&city={quote(town)}&state=Connecticut&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
+            _, val = category.split("=", 1)
+            query = f"{val} in {town}, CT"
         else:
             query = f"{category} in {town}, CT"
-            url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
+        url = f"https://nominatim.openstreetmap.org/search?q={quote(query)}&format=json&addressdetails=1&extratags=1&countrycodes=us&limit={limit}"
         
         results = []
         try:
@@ -249,6 +250,32 @@ class SocialLeadScraper:
         except Exception:
             pass
         return sites
+
+    def discover_social_search(self, biz_name: str, town: str, platform: str = "Instagram") -> Optional[Tuple[str, str]]:
+        """Searches for official Instagram or Facebook profile via Yahoo search."""
+        query_str = f'"{biz_name}" {town} CT {platform.lower()}'
+        search_url = f"https://search.yahoo.com/search?p={quote(query_str)}"
+        try:
+            self._polite_delay()
+            resp = self.session.get(search_url, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 200:
+                soup = BeautifulSoup(resp.text, "html.parser")
+                for a in soup.find_all("a", href=True):
+                    href = a["href"]
+                    if "/RU=" in href:
+                        raw = href.split("/RU=")[1].split("/RK=")[0]
+                        decoded = unquote(raw)
+                        if platform.lower() == "instagram" and "instagram.com" in decoded:
+                            res = clean_ig_handle(decoded)
+                            if res:
+                                return res
+                        elif platform.lower() == "facebook" and "facebook.com" in decoded:
+                            res = clean_fb_page(decoded)
+                            if res:
+                                return res
+        except Exception:
+            pass
+        return None
 
     def crawl_site_for_socials(self, website_url: str) -> Tuple[Optional[Tuple[str, str]], Optional[Tuple[str, str]]]:
         """
