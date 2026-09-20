@@ -24,10 +24,12 @@ HEADERS = [
     "Platform",
     "Handle",
     "Profile Link",
+    "Followers",
     "Website",
     "Outreach Status",
     "Date Contacted",
-    "Notes"
+    "Notes",
+    "Custom Demo Link"
 ]
 
 def sync_social_leads_to_gsheet(leads: List[Dict[str, str]], spreadsheet_title: str = SPREADSHEET_TITLE) -> int:
@@ -90,10 +92,12 @@ def sync_social_leads_to_gsheet(leads: List[Dict[str, str]], spreadsheet_title: 
             lead.get("platform", ""),
             lead.get("handle", ""),
             lead.get("profile_link", ""),
+            str(lead.get("followers", "")),
             lead.get("website", ""),
             lead.get("status", "Not Contacted"),
             lead.get("date_contacted", ""),
-            lead.get("notes", "")
+            lead.get("notes", ""),
+            lead.get("custom_demo_link", "")
         ]
         new_rows.append(row)
 

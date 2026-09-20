@@ -340,24 +340,26 @@ def process_uncontacted_leads(batch_size: int = 5):
     sheet = sh.sheet1
     rows = sheet.get_all_values()
 
-    headers = rows[0]
-    
-    # Ensure 'Custom Demo Link' column exists (Column 10 / index 9)
-    custom_link_col_idx = 9
-    if len(headers) <= custom_link_col_idx:
-        sheet.update_cell(1, custom_link_col_idx + 1, "Custom Demo Link")
-        print("📝 Added 'Custom Demo Link' column header to Google Sheet.")
+    raw_headers = rows[0]
+    headers_lower = [h.lower().strip() for h in raw_headers]
+    col_map = {name: idx for idx, name in enumerate(headers_lower)}
+
+    custom_link_col_idx = col_map.get("custom demo link", len(raw_headers) - 1)
+    name_col = col_map.get("business name", 0)
+    loc_col = col_map.get("location", 1)
+    web_col = col_map.get("website", 6)
+    status_col = col_map.get("outreach status", 7)
 
     processed = 0
     for row_idx, row in enumerate(rows[1:], start=2):
         if processed >= batch_size:
             break
 
-        biz_name = row[0].strip() if len(row) > 0 else ""
-        location = row[1].strip() if len(row) > 1 else "CT"
-        website = row[5].strip() if len(row) > 5 else ""
-        status = row[6].strip().lower() if len(row) > 6 else ""
-        existing_custom_link = row[9].strip() if len(row) > 9 else ""
+        biz_name = row[name_col].strip() if len(row) > name_col else ""
+        location = row[loc_col].strip() if len(row) > loc_col else "CT"
+        website = row[web_col].strip() if len(row) > web_col else ""
+        status = row[status_col].strip().lower() if len(row) > status_col else ""
+        existing_custom_link = row[custom_link_col_idx].strip() if len(row) > custom_link_col_idx else ""
 
         # Skip if already contacted or empty name
         if not biz_name or status in ["contacted", "sent", "yes"]:

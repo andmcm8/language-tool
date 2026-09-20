@@ -345,6 +345,7 @@ def run_fast_1000(target_count: int = 1000):
                         chosen_platform,
                         chosen_handle,
                         chosen_link,
+                        "",
                         target_site or "N/A",
                         "Not Contacted",
                         "",
