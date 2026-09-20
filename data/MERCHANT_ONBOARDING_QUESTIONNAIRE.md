@@ -10,7 +10,7 @@
 Business Legal Name: El Sol Market & Deli LLC
 Tagline / Slogan: Tu Tienda Hispana Local en Stamford — High-Quality Groceries & Deli
 Physical Address: 482 Main Street, Stamford, CT 06901
-Store Phone Number: (203) 555-0198
+Store Phone Number: (203) 324-4949 (or your verified business direct line)
 Primary Languages Spoken: [X] Spanish   [X] English   [X] Both
 Brand Accent Color Preference: #003EC7 (Royal Blue)
 

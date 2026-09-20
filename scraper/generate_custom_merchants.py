@@ -120,16 +120,52 @@ def scrape_website_content(url: str) -> str:
 
     return "\n\n".join(extracted_text)
 
+def extract_verified_phone_from_site(url: str) -> str:
+    """Deterministically extracts verified Connecticut business phone number directly from HTML."""
+    if not url or not url.startswith("http"):
+        return ""
+    try:
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}, timeout=4, verify=False)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, "html.parser")
+            valid_ct_codes = {"203", "860", "475", "959"}
+            invalid_exch = {"555", "000", "123", "666"}
+            invalid_last = {"0000", "1111", "2222", "3333", "4444", "5555", "6666", "7777", "8888", "9999", "1234", "4321", "7890", "6667"}
+
+            for a in soup.find_all("a", href=True):
+                if a["href"].startswith("tel:"):
+                    raw = a["href"].replace("tel:", "").strip()
+                    digits = re.sub(r"\D", "", raw)
+                    if len(digits) == 11 and digits.startswith("1"):
+                        digits = digits[1:]
+                    if len(digits) == 10:
+                        ac, exch, last = digits[:3], digits[3:6], digits[6:]
+                        if ac in valid_ct_codes and exch not in invalid_exch and last not in invalid_last:
+                            return f"({ac}) {exch}-{last}"
+
+            phone_regex = re.compile(r"(?:\+?1[-.\s]?)?\(?([2-9][0-9]{2})\)?[-.\s]?([2-9][0-9]{2})[-.\s]?([0-9]{4})")
+            for m in phone_regex.findall(r.text):
+                ac, exch, last = m[0], m[1], m[2]
+                if ac in valid_ct_codes and exch not in invalid_exch and last not in invalid_last:
+                    return f"({ac}) {exch}-{last}"
+    except Exception:
+        pass
+    return ""
+
 def generate_merchant_config_with_gemini(
     biz_name: str,
     location: str,
     website: str,
     scraped_content: str,
-    slug: str
+    slug: str,
+    verified_phone: str = ""
 ) -> Dict[str, Any]:
     """Uses Gemini 3.8 Flash to generate a production-ready MerchantConfig JSON."""
     api_key = get_gemini_api_key()
     candidate_models = ["gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.7-flash", "gemini-3.8-flash"]
+
+    if not verified_phone and website:
+        verified_phone = extract_verified_phone_from_site(website)
 
     prompt = f"""
 You are an expert culinary bilingual translator and digital menu engineer for local Connecticut restaurants.
@@ -147,14 +183,13 @@ Extract 12 to 25 representative menu items across all relevant categories (appet
 Ensure descriptions are mouthwatering and accurately translated into Spanish. Include realistic prices, popular tags, and common allergen flags.
 Note: If the scraped website content is empty or appears completely unrelated to food/dining (e.g. a national sports team or corporate portal), ignore it and generate an authentic, appetizing menu fitting a local restaurant/cafe/grill of this name in this CT town.
 
-Strict JSON Schema Output Requirements:
+Strict JSON Schema Output Requirements (Do NOT include a phone field, phone is handled deterministically outside AI):
 {{
   "storeInfo": {{
     "id": "{slug}",
     "name": "{biz_name}",
     "tagline": "Authentic bilingual tagline (English & Spanish friendly)",
     "address": "Accurate street address or realistic CT address in {location}",
-    "phone": "Verified business phone number if found in the scraped content (e.g. (203) 123-4567), or empty string \"\" if not found. NEVER invent fictional 555-XXXX numbers.",
     "hours": {{
       "monday_friday": "Realistic hours e.g. 11:00 AM - 9:30 PM",
       "saturday": "Realistic hours e.g. 11:30 AM - 10:00 PM",
@@ -250,9 +285,15 @@ Output ONLY the raw JSON object. Do not include markdown code blocks, backticks,
                         si["tagline"] = f"Authentic dining in {location} | Sabores auténticos en {location}"
                     if not si.get("address"):
                         si["address"] = f"{location}"
-                    raw_p = si.get("phone", "")
-                    if not raw_p or "555" in raw_p:
-                        si["phone"] = ""
+                    si["phone"] = verified_phone
+                    for faq in parsed.get("faqs", []):
+                        for k in ["aEs", "aEn"]:
+                            txt = faq.get(k, "")
+                            if re.search(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}", txt):
+                                if k == "aEs":
+                                    faq[k] = re.sub(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}", "nuestra tienda", txt)
+                                else:
+                                    faq[k] = re.sub(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}", "our store directly", txt)
                     return parsed
                 else:
                     last_err = f"Model {model} returned {resp.status_code}: {resp.text[:150]}"

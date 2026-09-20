@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { MerchantConfig } from "@/types/merchant";
-import { listMerchants } from "@/lib/merchants";
+import { listMerchants, isValidPhone } from "@/lib/merchants";
 import { useRouter } from "next/navigation";
 import {
   Store,
@@ -142,7 +142,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
                 <span>{storeInfo.address}</span>
               </div>
 
-              {storeInfo.phone && !storeInfo.phone.includes("555") && (
+              {isValidPhone(storeInfo.phone) && (
                 <div className="flex items-start gap-2">
                   <Phone className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
                   <span>{storeInfo.phone}</span>

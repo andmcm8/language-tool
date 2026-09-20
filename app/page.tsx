@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { getAllMerchants } from "@/lib/merchants";
+import { getAllMerchants, isValidPhone } from "@/lib/merchants";
 import {
   ShoppingBag,
   Pill,
@@ -92,6 +92,7 @@ const DICT = {
     footerText: "DuoTaps • Portal de Asistentes Comerciales Bilingües",
   },
 };
+
 
 export default function HomePage() {
   const allMerchants = useMemo(() => getAllMerchants(), []);
@@ -308,7 +309,7 @@ export default function HomePage() {
                         <span className="truncate">{merchant.storeInfo.address}</span>
                       </div>
 
-                      {merchant.storeInfo.phone && !merchant.storeInfo.phone.includes("555") ? (
+                      {isValidPhone(merchant.storeInfo.phone) ? (
                         <div className="flex items-center gap-1.5">
                           <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                           <span>{merchant.storeInfo.phone}</span>
