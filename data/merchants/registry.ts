@@ -29,7 +29,9 @@ import aroma_joes from './aroma-joes.json';
 import aroma from './aroma.json';
 import aroom from './aroom.json';
 import artisan_roast from './artisan-roast.json';
+import artisan from './artisan.json';
 import ashleys_ice_cream from './ashleys-ice-cream.json';
+import astin_js from './astin-js.json';
 import asylum_street_pizza from './asylum-street-pizza.json';
 import athena_diner from './athena-diner.json';
 import atwater_brewery from './atwater-brewery.json';
@@ -52,6 +54,7 @@ import bamboo_leaf from './bamboo-leaf.json';
 import bar_louie from './bar-louie.json';
 import bar_max from './bar-max.json';
 import bar_new_haven from './bar-new-haven.json';
+import barbary_coast from './barbary-coast.json';
 import barcelona from './barcelona.json';
 import bare_burger from './bare-burger.json';
 import barnaan from './barnaan.json';
@@ -69,6 +72,7 @@ import bella_napoli from './bella-napoli.json';
 import bella_sicily from './bella-sicily.json';
 import belle_vie_cafe from './belle-vie-cafe.json';
 import berkins_blend_cafe from './berkins-blend-cafe.json';
+import bess_eaton from './bess-eaton.json';
 import best_video_coffee_bar from './best-video-coffee-bar.json';
 import between_rounds from './between-rounds.json';
 import bf_clydes_cider_mill from './bf-clydes-cider-mill.json';
@@ -136,6 +140,7 @@ import caffe_strega from './caffe-strega.json';
 import caio_cafe from './caio-cafe.json';
 import cairngorm_coffee_shop from './cairngorm-coffee-shop.json';
 import caius_farm_brewery from './caius-farm-brewery.json';
+import cajun_cafe from './cajun-cafe.json';
 import calabria_coffee from './calabria-coffee.json';
 import camilles_wood_fired_pizza from './camilles-wood-fired-pizza.json';
 import candlewood_inn from './candlewood-inn.json';
@@ -168,6 +173,7 @@ import chiangmai_thai from './chiangmai-thai.json';
 import chicken_pizza_point from './chicken-pizza-point.json';
 import chilis from './chilis.json';
 import china_one from './china-one.json';
+import chinese_gourmet_kitchen from './chinese-gourmet-kitchen.json';
 import choupette_creperie from './choupette-creperie.json';
 import christys_restaurant from './christys-restaurant.json';
 import chucks_steak_house_and_margarita_grill_mexican_cantina from './chucks-steak-house-and-margarita-grill-mexican-cantina.json';
@@ -613,6 +619,8 @@ import oronoque_farms_gift_bakery from './oronoque-farms-gift-bakery.json';
 import osa_restaurant_bar from './osa-restaurant-bar.json';
 import otto from './otto.json';
 import outback_steakhouse from './outback-steakhouse.json';
+import oxford_baking_company from './oxford-baking-company.json';
+import oyster_club from './oyster-club.json';
 import paci_restaurant from './paci-restaurant.json';
 import palma from './palma.json';
 import papa_zs_restaurant_and_pizza from './papa-zs-restaurant-and-pizza.json';
@@ -640,6 +648,7 @@ import pine_lodge from './pine-lodge.json';
 import pinkberry from './pinkberry.json';
 import pitaziki from './pitaziki.json';
 import pixel_bakery_flat from './pixel-bakery-flat.json';
+import pizza_express from './pizza-express.json';
 import pizza_pilgrims from './pizza-pilgrims.json';
 import pizza_station from './pizza-station.json';
 import pizza_works from './pizza-works.json';
@@ -809,6 +818,7 @@ import the_beehive from './the-beehive.json';
 import the_benjamin from './the-benjamin.json';
 import the_big_dipper_ice_cream_parlour from './the-big-dipper-ice-cream-parlour.json';
 import the_billiards_cafe from './the-billiards-cafe.json';
+import the_black_duck from './the-black-duck.json';
 import the_black_horse from './the-black-horse.json';
 import the_boca_oyster_bar from './the-boca-oyster-bar.json';
 import the_boot from './the-boot.json';
@@ -825,6 +835,7 @@ import the_dome_bar_and_grill from './the-dome-bar-and-grill.json';
 import the_doric from './the-doric.json';
 import the_dragon from './the-dragon.json';
 import the_farm_italy_at_ballo_italian from './the-farm-italy-at-ballo-italian.json';
+import the_farm_kitchen_ct from './the-farm-kitchen-ct.json';
 import the_farmers_cow_calfe from './the-farmers-cow-calfe.json';
 import the_flour_girl_bakery from './the-flour-girl-bakery.json';
 import the_flour_girl_cafe from './the-flour-girl-cafe.json';
@@ -864,6 +875,7 @@ import the_parkway_inn from './the-parkway-inn.json';
 import the_pho_bar from './the-pho-bar.json';
 import the_place_2_be from './the-place-2-be.json';
 import the_plum_tomato from './the-plum-tomato.json';
+import the_port_of_call from './the-port-of-call.json';
 import the_quarterback_club from './the-quarterback-club.json';
 import the_red_hill_baker from './the-red-hill-baker.json';
 import the_red_lion from './the-red-lion.json';
@@ -975,6 +987,7 @@ import yannis_pizza_restaurant from './yannis-pizza-restaurant.json';
 import yorkside_pizza_restaurant from './yorkside-pizza-restaurant.json';
 import your_pie from './your-pie.json';
 import zarraffas_coffee from './zarraffas-coffee.json';
+import zaytoon_mediterranean_cuisine from './zaytoon-mediterranean-cuisine.json';
 import zaza from './zaza.json';
 import zinas_cucina from './zinas-cucina.json';
 import zinc_new_haven from './zinc-new-haven.json';
@@ -1013,7 +1026,9 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'aroma': aroma as unknown as MerchantConfig,
   'aroom': aroom as unknown as MerchantConfig,
   'artisan-roast': artisan_roast as unknown as MerchantConfig,
+  'artisan': artisan as unknown as MerchantConfig,
   'ashleys-ice-cream': ashleys_ice_cream as unknown as MerchantConfig,
+  'astin-js': astin_js as unknown as MerchantConfig,
   'asylum-street-pizza': asylum_street_pizza as unknown as MerchantConfig,
   'athena-diner': athena_diner as unknown as MerchantConfig,
   'atwater-brewery': atwater_brewery as unknown as MerchantConfig,
@@ -1036,6 +1051,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'bar-louie': bar_louie as unknown as MerchantConfig,
   'bar-max': bar_max as unknown as MerchantConfig,
   'bar-new-haven': bar_new_haven as unknown as MerchantConfig,
+  'barbary-coast': barbary_coast as unknown as MerchantConfig,
   'barcelona': barcelona as unknown as MerchantConfig,
   'bare-burger': bare_burger as unknown as MerchantConfig,
   'barnaan': barnaan as unknown as MerchantConfig,
@@ -1053,6 +1069,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'bella-sicily': bella_sicily as unknown as MerchantConfig,
   'belle-vie-cafe': belle_vie_cafe as unknown as MerchantConfig,
   'berkins-blend-cafe': berkins_blend_cafe as unknown as MerchantConfig,
+  'bess-eaton': bess_eaton as unknown as MerchantConfig,
   'best-video-coffee-bar': best_video_coffee_bar as unknown as MerchantConfig,
   'between-rounds': between_rounds as unknown as MerchantConfig,
   'bf-clydes-cider-mill': bf_clydes_cider_mill as unknown as MerchantConfig,
@@ -1120,6 +1137,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'caio-cafe': caio_cafe as unknown as MerchantConfig,
   'cairngorm-coffee-shop': cairngorm_coffee_shop as unknown as MerchantConfig,
   'caius-farm-brewery': caius_farm_brewery as unknown as MerchantConfig,
+  'cajun-cafe': cajun_cafe as unknown as MerchantConfig,
   'calabria-coffee': calabria_coffee as unknown as MerchantConfig,
   'camilles-wood-fired-pizza': camilles_wood_fired_pizza as unknown as MerchantConfig,
   'candlewood-inn': candlewood_inn as unknown as MerchantConfig,
@@ -1152,6 +1170,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'chicken-pizza-point': chicken_pizza_point as unknown as MerchantConfig,
   'chilis': chilis as unknown as MerchantConfig,
   'china-one': china_one as unknown as MerchantConfig,
+  'chinese-gourmet-kitchen': chinese_gourmet_kitchen as unknown as MerchantConfig,
   'choupette-creperie': choupette_creperie as unknown as MerchantConfig,
   'christys-restaurant': christys_restaurant as unknown as MerchantConfig,
   'chucks-steak-house-and-margarita-grill-mexican-cantina': chucks_steak_house_and_margarita_grill_mexican_cantina as unknown as MerchantConfig,
@@ -1597,6 +1616,8 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'osa-restaurant-bar': osa_restaurant_bar as unknown as MerchantConfig,
   'otto': otto as unknown as MerchantConfig,
   'outback-steakhouse': outback_steakhouse as unknown as MerchantConfig,
+  'oxford-baking-company': oxford_baking_company as unknown as MerchantConfig,
+  'oyster-club': oyster_club as unknown as MerchantConfig,
   'paci-restaurant': paci_restaurant as unknown as MerchantConfig,
   'palma': palma as unknown as MerchantConfig,
   'papa-zs-restaurant-and-pizza': papa_zs_restaurant_and_pizza as unknown as MerchantConfig,
@@ -1624,6 +1645,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'pinkberry': pinkberry as unknown as MerchantConfig,
   'pitaziki': pitaziki as unknown as MerchantConfig,
   'pixel-bakery-flat': pixel_bakery_flat as unknown as MerchantConfig,
+  'pizza-express': pizza_express as unknown as MerchantConfig,
   'pizza-pilgrims': pizza_pilgrims as unknown as MerchantConfig,
   'pizza-station': pizza_station as unknown as MerchantConfig,
   'pizza-works': pizza_works as unknown as MerchantConfig,
@@ -1793,6 +1815,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'the-benjamin': the_benjamin as unknown as MerchantConfig,
   'the-big-dipper-ice-cream-parlour': the_big_dipper_ice_cream_parlour as unknown as MerchantConfig,
   'the-billiards-cafe': the_billiards_cafe as unknown as MerchantConfig,
+  'the-black-duck': the_black_duck as unknown as MerchantConfig,
   'the-black-horse': the_black_horse as unknown as MerchantConfig,
   'the-boca-oyster-bar': the_boca_oyster_bar as unknown as MerchantConfig,
   'the-boot': the_boot as unknown as MerchantConfig,
@@ -1809,6 +1832,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'the-doric': the_doric as unknown as MerchantConfig,
   'the-dragon': the_dragon as unknown as MerchantConfig,
   'the-farm-italy-at-ballo-italian': the_farm_italy_at_ballo_italian as unknown as MerchantConfig,
+  'the-farm-kitchen-ct': the_farm_kitchen_ct as unknown as MerchantConfig,
   'the-farmers-cow-calfe': the_farmers_cow_calfe as unknown as MerchantConfig,
   'the-flour-girl-bakery': the_flour_girl_bakery as unknown as MerchantConfig,
   'the-flour-girl-cafe': the_flour_girl_cafe as unknown as MerchantConfig,
@@ -1848,6 +1872,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'the-pho-bar': the_pho_bar as unknown as MerchantConfig,
   'the-place-2-be': the_place_2_be as unknown as MerchantConfig,
   'the-plum-tomato': the_plum_tomato as unknown as MerchantConfig,
+  'the-port-of-call': the_port_of_call as unknown as MerchantConfig,
   'the-quarterback-club': the_quarterback_club as unknown as MerchantConfig,
   'the-red-hill-baker': the_red_hill_baker as unknown as MerchantConfig,
   'the-red-lion': the_red_lion as unknown as MerchantConfig,
@@ -1959,6 +1984,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'yorkside-pizza-restaurant': yorkside_pizza_restaurant as unknown as MerchantConfig,
   'your-pie': your_pie as unknown as MerchantConfig,
   'zarraffas-coffee': zarraffas_coffee as unknown as MerchantConfig,
+  'zaytoon-mediterranean-cuisine': zaytoon_mediterranean_cuisine as unknown as MerchantConfig,
   'zaza': zaza as unknown as MerchantConfig,
   'zinas-cucina': zinas_cucina as unknown as MerchantConfig,
   'zinc-new-haven': zinc_new_haven as unknown as MerchantConfig,
