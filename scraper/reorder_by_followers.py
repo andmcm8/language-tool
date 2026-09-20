@@ -114,10 +114,7 @@ def fetch_followers_yahoo(platform: str, name: str, handle: str) -> Optional[int
 
     return None
 
-def get_fallback_follower_count(name: str, platform: str) -> int:
-    """Generates an authentic low-tier follower count for unindexed small local venues (between 45 and 380)."""
-    h = int(hashlib.md5(f"{name}_{platform}".encode()).hexdigest(), 16)
-    return 45 + (h % 335)
+    return None
 
 def main():
     print("=" * 70)
@@ -227,8 +224,6 @@ def main():
         def worker(entry_tuple):
             key, it = entry_tuple
             cnt = fetch_followers_yahoo(it["platform"], it["name"], it["handle"])
-            if cnt is None:
-                cnt = get_fallback_follower_count(it["name"], it["platform"])
             return key, it, cnt
 
         completed = 0
@@ -237,17 +232,18 @@ def main():
             for future in as_completed(future_to_item):
                 try:
                     key, it, count = future.result()
-                    cache[key] = count
-                    it["followers"] = count
+                    if count:
+                        cache[key] = count
+                        it["followers"] = count
+                    else:
+                        it["followers"] = None
                     completed += 1
                     if completed % 50 == 0 or completed == len(to_fetch):
-                        print(f"   Progress: {completed}/{len(to_fetch)} resolved (sample: {it['name']} -> {count:,} followers)")
+                        print(f"   Progress: {completed}/{len(to_fetch)} processed")
                         save_cache(cache)
                 except Exception as e:
                     key, it = future_to_item[future]
-                    fallback = get_fallback_follower_count(it["name"], it["platform"])
-                    cache[key] = fallback
-                    it["followers"] = fallback
+                    it["followers"] = None
         save_cache(cache)
 
     # Sort Facebook ascending by followers
@@ -283,7 +279,7 @@ def main():
     # Contacted rows at the bottom
     for c in contacted_rows:
         cache_key = f"{c['platform'].lower()}_{c['handle'].lower().strip()}"
-        c["followers"] = cache.get(cache_key, get_fallback_follower_count(c["name"], c["platform"]))
+        c["followers"] = cache.get(cache_key, None)
 
     final_records = interleaved_leads + contacted_rows
 
@@ -316,7 +312,7 @@ def main():
             r["platform"],
             r["handle"],
             r["link"],
-            f"{r['followers']:,}",
+            f"{r['followers']:,}" if r.get("followers") is not None else "",
             r["website"],
             r["status"],
             r["date_contacted"],
