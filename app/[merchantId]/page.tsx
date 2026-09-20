@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { getMerchantById } from "@/lib/merchants";
 import Header from "@/components/Header";
 import BottomNav, { TabType } from "@/components/BottomNav";
@@ -11,13 +11,15 @@ import TranslatorTab from "@/components/TranslatorTab";
 import AiAssistantTab from "@/components/AiAssistantTab";
 
 interface PageProps {
-  params: {
-    merchantId: string;
+  params?: {
+    merchantId?: string;
   };
 }
 
 function MerchantStorefrontContent({ params }: PageProps) {
-  const merchant = getMerchantById(params.merchantId);
+  const routerParams = useParams();
+  const rawId = (routerParams?.merchantId as string) || params?.merchantId || "";
+  const merchant = getMerchantById(rawId);
   const searchParams = useSearchParams();
 
   // Allow URL to specify tab (e.g. ?tab=catalog or ?view=catalog)
