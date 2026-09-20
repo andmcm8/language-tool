@@ -2,10 +2,38 @@ import { MerchantConfig } from "@/types/merchant";
 import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
 
 export function getMerchantById(id: string): MerchantConfig {
+  if (!id) return MERCHANTS_REGISTRY["demo"];
   const normalizedId = id.toLowerCase().trim();
   if (MERCHANTS_REGISTRY[normalizedId]) {
     return MERCHANTS_REGISTRY[normalizedId];
   }
+
+  // 1. Match ignoring hyphens/underscores/spaces (e.g. "thefarmkitchenct" -> "the-farm-kitchen-ct")
+  const strippedId = normalizedId.replace(/[-_\s]/g, "");
+  const keys = Object.keys(MERCHANTS_REGISTRY);
+  const matchedKey = keys.find((k) => k.replace(/[-_\s]/g, "") === strippedId);
+  if (matchedKey && MERCHANTS_REGISTRY[matchedKey]) {
+    return MERCHANTS_REGISTRY[matchedKey];
+  }
+
+  // 2. Match by normalized business name
+  const matchedByName = keys.find((k) => {
+    const name = MERCHANTS_REGISTRY[k]?.storeInfo?.name || "";
+    return name.toLowerCase().replace(/[^a-z0-9]/g, "") === strippedId;
+  });
+  if (matchedByName && MERCHANTS_REGISTRY[matchedByName]) {
+    return MERCHANTS_REGISTRY[matchedByName];
+  }
+
+  // 3. Match prefix / contains (e.g. "thefarmkitchen" -> "the-farm-kitchen-ct")
+  const partialMatch = keys.find((k) => {
+    const cleanK = k.replace(/[-_\s]/g, "");
+    return cleanK.startsWith(strippedId) || strippedId.startsWith(cleanK);
+  });
+  if (partialMatch && MERCHANTS_REGISTRY[partialMatch]) {
+    return MERCHANTS_REGISTRY[partialMatch];
+  }
+
   return MERCHANTS_REGISTRY["demo"];
 }
 
