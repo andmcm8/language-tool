@@ -678,6 +678,7 @@ import project_canele from './project-canele.json';
 import proof_coffe_roasters from './proof-coffe-roasters.json';
 import puente_american_latino_pub from './puente-american-latino-pub.json';
 import puerto_vallarta from './puerto-vallarta.json';
+import puritan_tavern from './puritan-tavern.json';
 import quarry_coffee_co from './quarry-coffee-co.json';
 import queen_b_coffee_company from './queen-b-coffee-company.json';
 import rascals_brewing_company from './rascals-brewing-company.json';
@@ -1677,6 +1678,7 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'proof-coffe-roasters': proof_coffe_roasters as unknown as MerchantConfig,
   'puente-american-latino-pub': puente_american_latino_pub as unknown as MerchantConfig,
   'puerto-vallarta': puerto_vallarta as unknown as MerchantConfig,
+  'puritan-tavern': puritan_tavern as unknown as MerchantConfig,
   'quarry-coffee-co': quarry_coffee_co as unknown as MerchantConfig,
   'queen-b-coffee-company': queen_b_coffee_company as unknown as MerchantConfig,
   'rascals-brewing-company': rascals_brewing_company as unknown as MerchantConfig,
