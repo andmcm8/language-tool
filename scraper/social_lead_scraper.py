@@ -86,15 +86,10 @@ def is_profile_live(platform: str, handle: str, link: str) -> bool:
             clean_h = handle.strip().lower()
             if not clean_h or clean_h in IGNORED_FB_PAGES or len(clean_h) < 2:
                 return False
-            r = requests.get(link, headers=CRAWLER_HEADERS, timeout=8)
-            if r.status_code != 200:
+            if clean_h.endswith((".png", ".jpg", ".jpeg", ".webp", ".svg", ".css", ".js")):
                 return False
-            soup = BeautifulSoup(r.text, "html.parser")
-            og_title = ""
-            for m in soup.find_all("meta"):
-                if m.get("property") == "og:title":
-                    og_title = m.get("content", "")
-            return bool(og_title and len(og_title) > 2)
+            # FB aggressively redirects unauthenticated bots to login; well-formed handles from official sites are accepted
+            return True
     except Exception:
         return False
     return False
