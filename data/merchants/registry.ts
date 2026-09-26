@@ -568,7 +568,6 @@ import harp_dragon_pub from './harp-dragon-pub.json';
 import harpoon_brewery from './harpoon-brewery.json';
 import harpoon_tap_room from './harpoon-tap-room.json';
 import harpos_bakery_and_cafe from './harpos-bakery-and-cafe.json';
-import harriet_beecher_stowe_center_little_free_library_charter_175887 from './harriet-beecher-stowe-center-little-free-library-charter-175887.json';
 import harrys_pizzeria_tavern from './harrys-pizzeria-tavern.json';
 import hartford_baking_co from './hartford-baking-co.json';
 import hartford_road_cafe from './hartford-road-cafe.json';
@@ -673,7 +672,6 @@ import kennedy_fried_chicken from './kennedy-fried-chicken.json';
 import kens_corner_breakfast_and_lunch from './kens-corner-breakfast-and-lunch.json';
 import kent_falls_brewing_company from './kent-falls-brewing-company.json';
 import kent_pizza_garden from './kent-pizza-garden.json';
-import kenyon_st_little_free_library_charter_27991 from './kenyon-st-little-free-library-charter-27991.json';
 import kg_corner_deli from './kg-corner-deli.json';
 import kickback_lunch_lounge from './kickback-lunch-lounge.json';
 import kimberlys_diner from './kimberlys-diner.json';
@@ -736,7 +734,6 @@ import lime_rock_cafe from './lime-rock-cafe.json';
 import linden_lounge from './linden-lounge.json';
 import little_aladdin_mediterranean_grill from './little-aladdin-mediterranean-grill.json';
 import little_barn from './little-barn.json';
-import little_free_library from './little-free-library.json';
 import little_house_brewing_co from './little-house-brewing-co.json';
 import little_india from './little-india.json';
 import little_mazen_pizza from './little-mazen-pizza.json';
@@ -990,7 +987,6 @@ import perfect_poundcakes from './perfect-poundcakes.json';
 import perfusion_espresso_and_cocktail_bar from './perfusion-espresso-and-cocktail-bar.json';
 import perk_on_main from './perk-on-main.json';
 import perks_corks from './perks-corks.json';
-import perrot_memorial_library from './perrot-memorial-library.json';
 import phantasia_at_sunrise_square from './phantasia-at-sunrise-square.json';
 import pho_170 from './pho-170.json';
 import pho_501 from './pho-501.json';
@@ -1176,13 +1172,11 @@ import sophias_breakfast_and_lunch from './sophias-breakfast-and-lunch.json';
 import sophies from './sophies.json';
 import sorrento_importing from './sorrento-importing.json';
 import sound_coffee from './sound-coffee.json';
-import south_highland_street_little_library_charter_32424 from './south-highland-street-little-library-charter-32424.json';
 import southwest_cafe from './southwest-cafe.json';
 import spice_venue from './spice-venue.json';
 import spicy_green_bean from './spicy-green-bean.json';
 import spring_garden_bakery_cafe from './spring-garden-bakery-cafe.json';
 import spruce_coffee from './spruce-coffee.json';
-import spruce_street_little_free_library_charter_150603 from './spruce-street-little-free-library-charter-150603.json';
 import square_peg from './square-peg.json';
 import stamford_pizza from './stamford-pizza.json';
 import stamford_repairs from './stamford-repairs.json';
@@ -1320,7 +1314,6 @@ import the_hub_pizza_bar from './the-hub-pizza-bar.json';
 import the_hungry_crab from './the-hungry-crab.json';
 import the_ivory_restaurant_pub from './the-ivory-restaurant-pub.json';
 import the_ivy from './the-ivy.json';
-import the_juniper_library_charter_171197 from './the-juniper-library-charter-171197.json';
 import the_kakery from './the-kakery.json';
 import the_lake_tavern from './the-lake-tavern.json';
 import the_landing from './the-landing.json';
@@ -1493,7 +1486,6 @@ import when_pigs_fly from './when-pigs-fly.json';
 import whiplash_beer from './whiplash-beer.json';
 import white_horse from './white-horse.json';
 import white_lotus_thai_restaurant_pho from './white-lotus-thai-restaurant-pho.json';
-import whiting_lane_little_free_library_charter_43300 from './whiting-lane-little-free-library-charter-43300.json';
 import whole_deli from './whole-deli.json';
 import wicked_slice_pizza from './wicked-slice-pizza.json';
 import wicked_slice from './wicked-slice.json';
@@ -2095,7 +2087,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'harpoon-brewery': harpoon_brewery as unknown as MerchantConfig,
   'harpoon-tap-room': harpoon_tap_room as unknown as MerchantConfig,
   'harpos-bakery-and-cafe': harpos_bakery_and_cafe as unknown as MerchantConfig,
-  'harriet-beecher-stowe-center-little-free-library-charter-175887': harriet_beecher_stowe_center_little_free_library_charter_175887 as unknown as MerchantConfig,
   'harrys-pizzeria-tavern': harrys_pizzeria_tavern as unknown as MerchantConfig,
   'hartford-baking-co': hartford_baking_co as unknown as MerchantConfig,
   'hartford-road-cafe': hartford_road_cafe as unknown as MerchantConfig,
@@ -2200,7 +2191,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'kens-corner-breakfast-and-lunch': kens_corner_breakfast_and_lunch as unknown as MerchantConfig,
   'kent-falls-brewing-company': kent_falls_brewing_company as unknown as MerchantConfig,
   'kent-pizza-garden': kent_pizza_garden as unknown as MerchantConfig,
-  'kenyon-st-little-free-library-charter-27991': kenyon_st_little_free_library_charter_27991 as unknown as MerchantConfig,
   'kg-corner-deli': kg_corner_deli as unknown as MerchantConfig,
   'kickback-lunch-lounge': kickback_lunch_lounge as unknown as MerchantConfig,
   'kimberlys-diner': kimberlys_diner as unknown as MerchantConfig,
@@ -2263,7 +2253,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'linden-lounge': linden_lounge as unknown as MerchantConfig,
   'little-aladdin-mediterranean-grill': little_aladdin_mediterranean_grill as unknown as MerchantConfig,
   'little-barn': little_barn as unknown as MerchantConfig,
-  'little-free-library': little_free_library as unknown as MerchantConfig,
   'little-house-brewing-co': little_house_brewing_co as unknown as MerchantConfig,
   'little-india': little_india as unknown as MerchantConfig,
   'little-mazen-pizza': little_mazen_pizza as unknown as MerchantConfig,
@@ -2517,7 +2506,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'perfusion-espresso-and-cocktail-bar': perfusion_espresso_and_cocktail_bar as unknown as MerchantConfig,
   'perk-on-main': perk_on_main as unknown as MerchantConfig,
   'perks-corks': perks_corks as unknown as MerchantConfig,
-  'perrot-memorial-library': perrot_memorial_library as unknown as MerchantConfig,
   'phantasia-at-sunrise-square': phantasia_at_sunrise_square as unknown as MerchantConfig,
   'pho-170': pho_170 as unknown as MerchantConfig,
   'pho-501': pho_501 as unknown as MerchantConfig,
@@ -2703,13 +2691,11 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'sophies': sophies as unknown as MerchantConfig,
   'sorrento-importing': sorrento_importing as unknown as MerchantConfig,
   'sound-coffee': sound_coffee as unknown as MerchantConfig,
-  'south-highland-street-little-library-charter-32424': south_highland_street_little_library_charter_32424 as unknown as MerchantConfig,
   'southwest-cafe': southwest_cafe as unknown as MerchantConfig,
   'spice-venue': spice_venue as unknown as MerchantConfig,
   'spicy-green-bean': spicy_green_bean as unknown as MerchantConfig,
   'spring-garden-bakery-cafe': spring_garden_bakery_cafe as unknown as MerchantConfig,
   'spruce-coffee': spruce_coffee as unknown as MerchantConfig,
-  'spruce-street-little-free-library-charter-150603': spruce_street_little_free_library_charter_150603 as unknown as MerchantConfig,
   'square-peg': square_peg as unknown as MerchantConfig,
   'stamford-pizza': stamford_pizza as unknown as MerchantConfig,
   'stamford-repairs': stamford_repairs as unknown as MerchantConfig,
@@ -2847,7 +2833,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'the-hungry-crab': the_hungry_crab as unknown as MerchantConfig,
   'the-ivory-restaurant-pub': the_ivory_restaurant_pub as unknown as MerchantConfig,
   'the-ivy': the_ivy as unknown as MerchantConfig,
-  'the-juniper-library-charter-171197': the_juniper_library_charter_171197 as unknown as MerchantConfig,
   'the-kakery': the_kakery as unknown as MerchantConfig,
   'the-lake-tavern': the_lake_tavern as unknown as MerchantConfig,
   'the-landing': the_landing as unknown as MerchantConfig,
@@ -3020,7 +3005,6 @@ export const MERCHANTS_REGISTRY: Record<string, MerchantConfig> = {
   'whiplash-beer': whiplash_beer as unknown as MerchantConfig,
   'white-horse': white_horse as unknown as MerchantConfig,
   'white-lotus-thai-restaurant-pho': white_lotus_thai_restaurant_pho as unknown as MerchantConfig,
-  'whiting-lane-little-free-library-charter-43300': whiting_lane_little_free_library_charter_43300 as unknown as MerchantConfig,
   'whole-deli': whole_deli as unknown as MerchantConfig,
   'wicked-slice-pizza': wicked_slice_pizza as unknown as MerchantConfig,
   'wicked-slice': wicked_slice as unknown as MerchantConfig,
