@@ -4,6 +4,12 @@ import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
 export function getMerchantById(id: string): MerchantConfig {
   if (!id) return MERCHANTS_REGISTRY["demo"];
   const normalizedId = id.toLowerCase().trim();
+
+  // Direct access for /demo or /demo-market
+  if (normalizedId === "demo" || normalizedId === "demo-market" || normalizedId === "demomarket" || normalizedId === "elsol") {
+    return MERCHANTS_REGISTRY["demo"] || MERCHANTS_REGISTRY["elsol"];
+  }
+
   if (MERCHANTS_REGISTRY[normalizedId]) {
     return MERCHANTS_REGISTRY[normalizedId];
   }
@@ -38,11 +44,19 @@ export function getMerchantById(id: string): MerchantConfig {
 }
 
 export function getAllMerchants(): MerchantConfig[] {
-  return Object.values(MERCHANTS_REGISTRY);
+  return Object.values(MERCHANTS_REGISTRY).filter((m) => {
+    const id = (m.storeInfo?.id || "").toLowerCase();
+    const name = (m.storeInfo?.name || "").toLowerCase();
+    // Exclude internal demo test markets from public directory
+    if (id === "demo" || id === "elsol" || name.includes("demo market")) {
+      return false;
+    }
+    return true;
+  });
 }
 
 export function listMerchants(): { id: string; name: string; tagline: string }[] {
-  return Object.values(MERCHANTS_REGISTRY).map((m) => ({
+  return getAllMerchants().map((m) => ({
     id: m.storeInfo.id,
     name: m.storeInfo.name,
     tagline: m.storeInfo.tagline,

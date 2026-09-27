@@ -77,7 +77,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
               href="/"
               className="w-9 h-9 rounded-2xl text-white flex items-center justify-center shadow-xs hover:scale-105 transition-transform"
               style={{ backgroundColor: storeInfo.themeColor || "#003ec7" }}
-              title="Back to All Merchants / Volver al Inicio"
+              title="Back to All Places / Volver al Inicio"
             >
               {getLogoIcon(storeInfo.logoIcon)}
             </Link>
