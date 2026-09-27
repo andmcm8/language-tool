@@ -62,34 +62,34 @@ const CATEGORIES = [
    ================================================================ */
 const DICT = {
   en: {
-    portalBadge: "MERCHANT ASSISTANT PORTAL",
-    portalTitle: "DuoTaps Portal",
+    portalBadge: "CONNECTICUT DINING DIRECTORY",
+    portalTitle: "DuoTaps Directory",
     subtitle:
-      "Select a merchant below to launch their bilingual AI assistant, camera translation tool, and store directory.",
-    searchPlaceholder: "Search places by name, city, service...",
-    foundSuffix: "Merchants Found",
-    launchBtn: "Launch Merchant Tool",
-    noResultsTitle: "No Merchants Match Your Search",
+      "Explore Connecticut restaurants, delis, and cafes with interactive bilingual Spanish menus and customer assistance.",
+    searchPlaceholder: "Search places by name, city, cuisine...",
+    foundSuffix: "Restaurants Found",
+    launchBtn: "View Bilingual Menu",
+    noResultsTitle: "No Restaurants Match Your Search",
     noResultsDesc:
-      'Try searching for "Demo Market", "Deli", "Stamford", or click "All Places" above.',
+      'Try searching for "Pizza", "Tacos", "Stamford", or click "All Places" above.',
     clearBtn: "Clear Search & Show All",
     monFri: "Mon-Fri",
-    footerText: "DuoTaps • Multi-Merchant Bilingual Assistant",
+    footerText: "DuoTaps • Connecticut Bilingual Dining Directory",
   },
   es: {
-    portalBadge: "PORTAL DE ASISTENTES COMERCIALES",
-    portalTitle: "Portal DuoTaps",
+    portalBadge: "DIRECTORIO GASTRONÓMICO DE CT",
+    portalTitle: "Directorio DuoTaps",
     subtitle:
-      "Seleccione un negocio a continuación para abrir su asistente de IA bilingüe, herramienta de cámara y directorio.",
-    searchPlaceholder: "Buscar negocios por nombre, ciudad, servicio...",
-    foundSuffix: "Negocios Encontrados",
-    launchBtn: "Abrir Herramienta del Comercio",
-    noResultsTitle: "No se encontraron negocios para su búsqueda",
+      "Explore restaurantes, delis y cafeterías de Connecticut con menús interactivos en español y asistencia al cliente.",
+    searchPlaceholder: "Buscar lugares por nombre, ciudad, tipo de comida...",
+    foundSuffix: "Restaurantes Encontrados",
+    launchBtn: "Ver Menú Bilingüe",
+    noResultsTitle: "No se encontraron restaurantes para su búsqueda",
     noResultsDesc:
-      'Intente buscar "Demo Market", "Farmacia", "Stamford", o presione "Todos los Negocios" arriba.',
+      'Intente buscar "Pizza", "Tacos", "Stamford", o presione "Todos los Negocios" arriba.',
     clearBtn: "Borrar Búsqueda y Mostrar Todos",
     monFri: "Lun-Vie",
-    footerText: "DuoTaps • Portal de Asistentes Comerciales Bilingües",
+    footerText: "DuoTaps • Directorio Gastronómico Bilingüe de Connecticut",
   },
 };
 
@@ -268,8 +268,6 @@ export default function HomePage() {
             {filteredMerchants.map((merchant) => {
               const id = merchant.storeInfo.id;
               const Icon = MERCHANT_ICONS[id] || ShoppingBag;
-              const badgeObj = MERCHANT_BADGES[id] || { en: "Local Business", es: "Negocio Local" };
-              const badgeText = lang === "es" ? badgeObj.es : badgeObj.en;
 
               return (
                 <Link
@@ -281,15 +279,11 @@ export default function HomePage() {
                   <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#003ec7]" />
 
                   <div className="space-y-2.5 pl-1.5">
-                    {/* Header: Icon + Badge */}
+                    {/* Header: Icon */}
                     <div className="flex items-center justify-between">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#003ec7] flex items-center justify-center shadow-2xs group-hover:bg-[#003ec7] group-hover:text-white transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
-
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#003ec7] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100">
-                        {badgeText}
-                      </span>
                     </div>
 
                     {/* Merchant Name & Tagline */}
@@ -320,21 +314,6 @@ export default function HomePage() {
                           <span>{merchant.storeInfo.hours.monday_friday}</span>
                         </div>
                       ) : null}
-                    </div>
-
-                    {/* Amenities Tags (Fully Translated EN <-> ES) */}
-                    <div className="flex flex-wrap gap-1 pt-1">
-                      {merchant.storeInfo.amenities?.slice(0, 3).map((item, idx) => {
-                        const translatedTag = AMENITIES_MAP[item]?.[lang] || item;
-                        return (
-                          <span
-                            key={idx}
-                            className="text-[10px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md"
-                          >
-                            {translatedTag}
-                          </span>
-                        );
-                      })}
                     </div>
                   </div>
 
@@ -387,14 +366,14 @@ export default function HomePage() {
 
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#003ec7] flex items-center justify-center font-black text-xl shadow-2xs">
-                L
+                D
               </div>
               <div>
                 <h3 className="font-extrabold text-base text-slate-900 leading-tight">
-                  {lang === "es" ? "Acerca de Language Tool" : "About Language Tool"}
+                  {lang === "es" ? "Acerca de DuoTaps" : "About DuoTaps"}
                 </h3>
                 <p className="text-xs text-[#003ec7] font-bold">
-                  {lang === "es" ? "Asistente Comercial Bilingüe" : "Bilingual Merchant Assistant"}
+                  {lang === "es" ? "Menús Bilingües y Asistentes IA" : "Bilingual Menus & AI Assistants"}
                 </p>
               </div>
             </div>
@@ -402,13 +381,13 @@ export default function HomePage() {
             <div className="space-y-2.5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
               <p>
                 {lang === "es"
-                  ? "Language Tool es una plataforma bilingüe diseñada para conectar comercios locales con sus clientes mediante IA, traducción en cámara en tiempo real y directorios interactivos."
-                  : "Language Tool is a bilingual multi-merchant platform designed to connect local businesses with their customers using AI, real-time camera translation, and interactive product catalogs."}
+                  ? "DuoTaps ayuda a restaurantes, cafeterías y delis de Connecticut a comunicarse con clientes hispanohablantes mediante menús traducidos al español y asistencia al comensal."
+                  : "DuoTaps helps Connecticut restaurants, cafes, and delis serve Spanish-speaking guests with instant bilingual translated menus and AI customer assistance."}
               </p>
               <p className="font-semibold text-slate-800">
                 {lang === "es"
-                  ? "Soporta supermercados, farmacias, tiendas de reparación y comercios locales."
-                  : "Supports local supermarkets, pharmacies, tech repair shops, and retail stores."}
+                  ? "¿Es dueño de un restaurante? Contáctenos para reclamar o personalizar su menú oficial de forma gratuita."
+                  : "Are you a restaurant owner? Contact us to claim or customize your official menu for free."}
               </p>
             </div>
 
