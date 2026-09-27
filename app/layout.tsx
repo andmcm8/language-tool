@@ -3,8 +3,8 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DuoTaps — Portal de Asistentes Comerciales Bilingües",
-  description: "Plataforma inteligente DuoTaps de asistentes comerciales bilingües con catálogo interactivo, traductor de letreros por cámara y asistente de voz IA.",
+  title: "DuoTaps — Language Assistance Tool",
+  description: "DuoTaps provides Connecticut restaurants and places with interactive bilingual Spanish menus and customer assistance.",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",

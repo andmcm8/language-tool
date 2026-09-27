@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { getAllMerchants, isValidPhone } from "@/lib/merchants";
+import { getAllMerchants as getAllPlaces, isValidPhone } from "@/lib/merchants";
 import {
   ShoppingBag,
   Pill,
@@ -19,17 +19,12 @@ import {
   Info,
 } from "lucide-react";
 
-const MERCHANT_ICONS: Record<string, any> = {
+const PLACE_ICONS: Record<string, any> = {
   demo: ShoppingBag,
   elsol: ShoppingBag,
 };
 
-const MERCHANT_BADGES: Record<string, { en: string; es: string }> = {
-  demo: { en: "Supermarket & Deli", es: "Supermercado y Deli" },
-  elsol: { en: "Supermarket & Deli", es: "Supermercado y Deli" },
-};
-
-const MERCHANT_TAGLINES: Record<string, { en: string; es: string }> = {
+const PLACE_TAGLINES: Record<string, { en: string; es: string }> = {
   demo: {
     es: "Tu Tienda Hispana Local en Stamford — Asistente Demo",
     en: "Your Local Hispanic Store in Stamford — Demo Assistant",
@@ -40,102 +35,72 @@ const MERCHANT_TAGLINES: Record<string, { en: string; es: string }> = {
   },
 };
 
-const AMENITIES_MAP: Record<string, { en: string; es: string }> = {
-  "Free WiFi": { en: "Free WiFi", es: "WiFi Gratis" },
-  "Money Transfers": { en: "Money Transfers", es: "Envíos de Dinero" },
-  "Mobile Refills": { en: "Mobile Refills", es: "Recargas Móviles" },
-  "Bilingual Pharmacists": { en: "Bilingual Pharmacists", es: "Farmacéuticos Bilingües" },
-  "Drive-Thru Window": { en: "Drive-Thru Window", es: "Ventanilla Auto-Servicio" },
-  "Free Prescription Delivery": { en: "Free Prescription Delivery", es: "Entrega Gratis de Recetas" },
-  "Same-Day Repair": { en: "Same-Day Repair", es: "Reparación el Mismo Día" },
-  "90-Day Warranty": { en: "90-Day Warranty", es: "Garantía de 90 Días" },
-  "Free Diagnostics": { en: "Free Diagnostics", es: "Diagnóstico Gratis" },
-};
-
-const CATEGORIES = [
-  { id: "all", labelEn: "All Places", labelEs: "Todos los Negocios" },
-  { id: "supermarket", labelEn: "Supermarket & Deli", labelEs: "Supermercado y Deli" },
-];
-
-/* ================================================================
-   BILINGUAL DICTIONARY FOR HOMEPAGE PORTAL
-   ================================================================ */
 const DICT = {
   en: {
-    portalBadge: "CONNECTICUT DINING DIRECTORY",
-    portalTitle: "DuoTaps Directory",
+    portalBadge: "Language Assistance Tool",
+    portalTitle: "DuoTaps",
     subtitle:
       "Explore Connecticut restaurants, delis, and cafes with interactive bilingual Spanish menus and customer assistance.",
     searchPlaceholder: "Search places by name, city, cuisine...",
-    foundSuffix: "Restaurants Found",
+    foundSuffix: "Places Found",
     launchBtn: "View Bilingual Menu",
-    noResultsTitle: "No Restaurants Match Your Search",
+    noResultsTitle: "No Places Match Your Search",
     noResultsDesc:
-      'Try searching for "Pizza", "Tacos", "Stamford", or click "All Places" above.',
+      'Try searching for "Pizza", "Tacos", "Stamford", or click "Clear Search" above.',
     clearBtn: "Clear Search & Show All",
     monFri: "Mon-Fri",
-    footerText: "DuoTaps • Connecticut Bilingual Dining Directory",
+    footerText: "DuoTaps • Language Assistance Tool",
   },
   es: {
-    portalBadge: "DIRECTORIO GASTRONÓMICO DE CT",
-    portalTitle: "Directorio DuoTaps",
+    portalBadge: "Herramienta de Asistencia Lingüística",
+    portalTitle: "DuoTaps",
     subtitle:
       "Explore restaurantes, delis y cafeterías de Connecticut con menús interactivos en español y asistencia al cliente.",
     searchPlaceholder: "Buscar lugares por nombre, ciudad, tipo de comida...",
-    foundSuffix: "Restaurantes Encontrados",
+    foundSuffix: "Lugares Encontrados",
     launchBtn: "Ver Menú Bilingüe",
-    noResultsTitle: "No se encontraron restaurantes para su búsqueda",
+    noResultsTitle: "No se encontraron lugares para su búsqueda",
     noResultsDesc:
-      'Intente buscar "Pizza", "Tacos", "Stamford", o presione "Todos los Negocios" arriba.',
+      'Intente buscar "Pizza", "Tacos", "Stamford", o presione "Borrar Búsqueda" arriba.',
     clearBtn: "Borrar Búsqueda y Mostrar Todos",
     monFri: "Lun-Vie",
-    footerText: "DuoTaps • Directorio Gastronómico Bilingüe de Connecticut",
+    footerText: "DuoTaps • Herramienta de Asistencia Lingüística",
   },
 };
 
 
 export default function HomePage() {
-  const allMerchants = useMemo(() => getAllMerchants(), []);
+  const allPlaces = useMemo(() => {
+    return getAllPlaces().filter((m) => {
+      const id = (m.storeInfo?.id || "").toLowerCase();
+      const name = (m.storeInfo?.name || "").toLowerCase();
+      return id !== "demo" && id !== "elsol" && !name.includes("demo market");
+    });
+  }, []);
+
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
   const [lang, setLang] = useState<"en" | "es">("en");
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   const t = DICT[lang];
 
   /* ---------- Real-Time Filtering Logic ---------- */
-  const filteredMerchants = useMemo(() => {
-    return allMerchants.filter((m) => {
-      const id = (m.storeInfo?.id || "").toLowerCase();
+  const filteredPlaces = useMemo(() => {
+    const q = searchQuery.toLowerCase().trim();
+    if (!q) return allPlaces;
+
+    return allPlaces.filter((m) => {
       const name = (m.storeInfo?.name || (m.storeInfo as any)?.Name || "").toLowerCase();
       const tagline = (m.storeInfo?.tagline || "").toLowerCase();
       const address = (m.storeInfo?.address || "").toLowerCase();
-      const badgeEn = (MERCHANT_BADGES[id]?.en || "").toLowerCase();
-      const badgeEs = (MERCHANT_BADGES[id]?.es || "").toLowerCase();
-      const amenities = (m.storeInfo?.amenities || []).join(" ").toLowerCase();
 
-      const q = searchQuery.toLowerCase().trim();
-      const matchesSearch =
-        !q ||
+      return (
         name.includes(q) ||
         tagline.includes(q) ||
-        address.includes(q) ||
-        badgeEn.includes(q) ||
-        badgeEs.includes(q) ||
-        amenities.includes(q);
-
-      let matchesCategory = true;
-      if (selectedCategory === "supermarket") {
-        matchesCategory = id === "elsol" || badgeEn.includes("supermarket");
-      } else if (selectedCategory === "pharmacy") {
-        matchesCategory = id === "clover-pharmacy" || badgeEn.includes("pharmacy");
-      } else if (selectedCategory === "repair") {
-        matchesCategory = id === "stamford-repairs" || badgeEn.includes("repair");
-      }
-
-      return matchesSearch && matchesCategory;
+        address.includes(q)
+      );
     });
-  }, [allMerchants, searchQuery, selectedCategory]);
+  }, [allPlaces, searchQuery]);
 
   return (
     <main className="min-h-screen bg-[#f7f9fb] text-slate-800 font-sans selection:bg-primary selection:text-white pb-20">
@@ -227,32 +192,13 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* CATEGORY FILTER PILLS */}
-      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-3.5 pb-2">
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
-          {CATEGORIES.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all shadow-2xs ${
-                selectedCategory === cat.id
-                  ? "bg-[#003ec7] text-white shadow-sm"
-                  : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
-              }`}
-            >
-              {lang === "es" ? cat.labelEs : cat.labelEn}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* MERCHANT RESULTS COUNT & GRID */}
-      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-2">
+      {/* RESULTS COUNT & GRID */}
+      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-4">
         <div className="flex items-center justify-between text-xs font-bold text-slate-500 mb-3 px-1">
           <div className="flex items-center gap-1.5">
             <Store className="w-3.5 h-3.5 text-[#003ec7]" />
             <span>
-              {filteredMerchants.length} {t.foundSuffix}
+              {filteredPlaces.length} {t.foundSuffix}
             </span>
           </div>
           {searchQuery && (
@@ -263,11 +209,11 @@ export default function HomePage() {
         </div>
 
         {/* NEAT MOBILE-FIRST GRID */}
-        {filteredMerchants.length > 0 ? (
+        {filteredPlaces.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            {filteredMerchants.map((merchant) => {
-              const id = merchant.storeInfo.id;
-              const Icon = MERCHANT_ICONS[id] || ShoppingBag;
+            {filteredPlaces.map((place) => {
+              const id = place.storeInfo.id;
+              const Icon = PLACE_ICONS[id] || ShoppingBag;
 
               return (
                 <Link
@@ -286,13 +232,13 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {/* Merchant Name & Tagline */}
+                    {/* Place Name & Tagline */}
                     <div>
                       <h2 className="text-base font-extrabold text-slate-900 group-hover:text-[#003ec7] transition-colors leading-tight">
-                        {merchant.storeInfo.name}
+                        {place.storeInfo.name}
                       </h2>
                       <p className="text-xs text-slate-500 mt-0.5 line-clamp-2 leading-relaxed">
-                        {MERCHANT_TAGLINES[id]?.[lang] || merchant.storeInfo.tagline}
+                        {PLACE_TAGLINES[id]?.[lang] || place.storeInfo.tagline}
                       </p>
                     </div>
 
@@ -300,24 +246,24 @@ export default function HomePage() {
                     <div className="space-y-1 text-xs text-slate-600 pt-1 border-t border-slate-100">
                       <div className="flex items-center gap-1.5 truncate">
                         <MapPin className="w-3.5 h-3.5 text-[#003ec7] shrink-0" />
-                        <span className="truncate">{merchant.storeInfo.address}</span>
+                        <span className="truncate">{place.storeInfo.address}</span>
                       </div>
 
-                      {isValidPhone(merchant.storeInfo.phone) ? (
+                      {isValidPhone(place.storeInfo.phone) ? (
                         <div className="flex items-center gap-1.5">
                           <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                          <span>{merchant.storeInfo.phone}</span>
+                          <span>{place.storeInfo.phone}</span>
                         </div>
-                      ) : merchant.storeInfo.hours?.monday_friday ? (
+                      ) : place.storeInfo.hours?.monday_friday ? (
                         <div className="flex items-center gap-1.5">
                           <Clock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                          <span>{merchant.storeInfo.hours.monday_friday}</span>
+                          <span>{place.storeInfo.hours.monday_friday}</span>
                         </div>
                       ) : null}
                     </div>
                   </div>
 
-                  {/* Launch Action Bar */}
+                  {/* Action Bar */}
                   <div className="pt-2 pl-1.5 flex items-center justify-between text-xs font-extrabold text-[#003ec7] group-hover:translate-x-0.5 transition-transform">
                     <span>{t.launchBtn}</span>
                     <ChevronRight className="w-4 h-4 text-[#003ec7]" />
@@ -338,7 +284,6 @@ export default function HomePage() {
             <button
               onClick={() => {
                 setSearchQuery("");
-                setSelectedCategory("all");
               }}
               className="px-4 py-2 rounded-xl bg-[#003ec7] text-white font-extrabold text-xs shadow-sm hover:brightness-110 transition-all"
             >
