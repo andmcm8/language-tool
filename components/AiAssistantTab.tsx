@@ -218,6 +218,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           })),
           lang,
           merchantId: merchant.storeInfo.id,
+          merchantConfig: merchant,
         }),
       });
 
@@ -243,8 +244,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         sender: "ai",
         text:
           lang === "es"
-            ? `Horarios de ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}.`
-            : `Hours for ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}.`,
+            ? `Horarios de ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}. Estamos ubicados en ${merchant.storeInfo.address}.`
+            : `Hours for ${merchant.storeInfo.name}: ${merchant.storeInfo.hours.monday_friday}. Located at ${merchant.storeInfo.address}.`,
       };
       setMessages((prev) => [...prev, fallbackMsg]);
       setLoading(false);
@@ -254,11 +255,23 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
     }
   };
 
+  const hasGlutenOrVegan = (merchant.products || []).some((p) => {
+    const tags = (p.tags || []).join(" ").toLowerCase();
+    const desc = `${p.descriptionEn} ${p.descriptionEs}`.toLowerCase();
+    return tags.includes("gluten") || tags.includes("vegan") || desc.includes("gluten") || desc.includes("vegan");
+  });
+
   const quickPrompts = [
-    { es: "¿Dónde está el baño?", en: "Where is the restroom?" },
-    { es: "¿Cuál es la clave del WiFi?", en: "What is the WiFi password?" },
-    { es: "¿Tienen opciones sin gluten?", en: "Are there gluten free items?" },
-    { es: "¿Aceptan EBT / SNAP?", en: "Do you accept EBT?" },
+    { es: "¿Cuáles son sus horarios?", en: "What are your hours?" },
+    { es: "¿Dónde están ubicados?", en: "Where are you located?" },
+    {
+      es: merchant.storeInfo.phone ? "¿Cuál es su teléfono?" : "¿Cómo contactarlos?",
+      en: merchant.storeInfo.phone ? "What is your phone number?" : "How to contact you?",
+    },
+    { es: "¿Qué recomiendan del menú?", en: "What do you recommend?" },
+    hasGlutenOrVegan
+      ? { es: "¿Tienen opciones sin gluten o veganas?", en: "Are there vegan or gluten-free options?" }
+      : { es: "¿Qué métodos de pago aceptan?", en: "What payment methods do you take?" },
   ];
 
   const lastAiMessage = messages.filter((m) => m.sender === "ai").slice(-1)[0]?.text || defaultInitialMessage.text;
