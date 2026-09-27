@@ -34,65 +34,224 @@ const CATEGORIZED_PHRASES = [
     cat: "payments",
     en: "Do you accept EBT / SNAP cards for groceries?",
     es: "¿Aceptan tarjetas EBT / SNAP para abarrotes?",
-    phonetic: "Ah-SEHP-tahn tahr-HEH-tahs E-B-T para ah-bah-ROH-tehs?",
+    phoneticEs: "Ah-SEHP-tahn tahr-HEH-tahs E-B-T para ah-bah-ROH-tehs?",
+    phoneticEn: "Du iu ak-sept I-BI-TI / SNAP kards for gro-se-ris?",
   },
   {
     cat: "payments",
     en: "Is there a minimum purchase for credit cards?",
     es: "¿Hay una compra mínima para tarjeta de crédito?",
-    phonetic: "Eye OO-nah KOHM-prah MEE-nee-mah para tahr-HEH-tah?",
+    phoneticEs: "Eye OO-nah KOHM-prah MEE-nee-mah para tahr-HEH-tah?",
+    phoneticEn: "Is der e mi-ni-mum per-ches for kre-dit kards?",
   },
   {
     cat: "payments",
     en: "Can I pay with cash or debit?",
     es: "¿Puedo pagar con efectivo o tarjeta de débito?",
-    phonetic: "PWEH-doh pah-GAHR kohn eh-fehk-TEE-voh?",
+    phoneticEs: "PWEH-doh pah-GAHR kohn eh-fehk-TEE-voh?",
+    phoneticEn: "Kan ai pei wid kash or de-bit?",
   },
   {
     cat: "deli",
     en: "I would like 1 pound of ham, sliced thin.",
     es: "Quisiera 1 libra de jamón, cortado fino.",
-    phonetic: "Kee-SYEH-rah OO-nah LEE-brah deh hah-MOHN, kohr-TAH-doh FEE-noh.",
+    phoneticEs: "Kee-SYEH-rah OO-nah LEE-brah deh hah-MOHN, kohr-TAH-doh FEE-noh.",
+    phoneticEn: "Ai wud laik uan paund ov jam, slaisd dzin.",
   },
   {
     cat: "deli",
     en: "Where is the deli counter?",
     es: "¿Dónde está el mostrador del deli?",
-    phonetic: "DOHN-deh ehs-TAH ehl mohs-trah-DOHR dehl DEH-lee?",
+    phoneticEs: "DOHN-deh ehs-TAH ehl mohs-trah-DOHR dehl DEH-lee?",
+    phoneticEn: "Uer is de de-li kaun-ter?",
   },
   {
     cat: "deli",
     en: "Is this food hot and fresh?",
     es: "¿Esta comida está caliente y fresca?",
-    phonetic: "EHS-tah koh-MEE-dah ehs-TAH kah-LYEHN-teh ee FREHS-kah?",
+    phoneticEs: "EHS-tah koh-MEE-dah ehs-TAH kah-LYEHN-teh ee FREHS-kah?",
+    phoneticEn: "Is dis fud jot and fresh?",
   },
   {
     cat: "hours",
     en: "What are your store hours today?",
     es: "¿Cuáles son sus horarios de atención hoy?",
-    phonetic: "KWAH-lehs sohn soos oh-RAH-ryohs deh ah-tehn-SYOHN oy?",
+    phoneticEs: "KWAH-lehs sohn soos oh-RAH-ryohs deh ah-tehn-SYOHN oy?",
+    phoneticEn: "Uat ar iur stor au-ers tu-dei?",
   },
   {
     cat: "hours",
     en: "Are you open on Sundays and holidays?",
     es: "¿Abren los domingos y días festivos?",
-    phonetic: "AH-brehn lohs doh-MEEN-gohs ee DEE-ahs fehs-TEE-vohs?",
+    phoneticEs: "AH-brehn lohs doh-MEEN-gohs ee DEE-ahs fehs-TEE-vohs?",
+    phoneticEn: "Ar iu ou-pen on san-deis and jo-li-deis?",
   },
   {
     cat: "hours",
     en: "When do you restock fresh bakery bread?",
     es: "¿Cuándo reponen el pan fresco de panadería?",
-    phonetic: "KWAHN-doh reh-POH-nehn ehl pahn FREHS-koh?",
+    phoneticEs: "KWAHN-doh reh-POH-nehn ehl pahn FREHS-koh?",
+    phoneticEn: "Uen du iu ri-stok fresh bei-ke-ri bred?",
   },
 ];
 
-/* Helper to generate readable phonetic hint */
-function getPhoneticHint(text: string, isSpanish: boolean): string {
-  if (!text) return "";
-  if (!isSpanish) return text;
+/* Curated dictionary for English -> Spanish phonetic respelling */
+const EN_TO_ES_PHONETICS: Record<string, string> = {
+  // Pronouns & Contractions
+  i: "ai", im: "aim", "i'm": "aim", me: "mi", my: "mai",
+  you: "iu", your: "iur", youre: "iur", "you're": "iur",
+  he: "ji", his: "jis", him: "jim", she: "shi", her: "jer",
+  it: "it", its: "its", "it's": "its", we: "ui", our: "auer",
+  us: "as", they: "dei", their: "der", them: "dem",
 
+  // Numbers & Quantities
+  "1": "uan", "2": "tu", "3": "zri", "4": "for", "5": "faiv",
+  "6": "siks", "7": "se-ven", "8": "eit", "9": "nain", "10": "ten",
+  "11": "i-le-ven", "12": "tuelv", "15": "fif-tiin", "20": "tuen-ti",
+  "25": "tuen-ti faiv", "50": "fif-ti", "100": "uan jan-dred",
+  one: "uan", two: "tu", three: "zri", four: "for", five: "faiv",
+  six: "siks", seven: "se-ven", eight: "eit", nine: "nain", ten: "ten",
+  half: "jaf", quarter: "kuor-ter", pound: "paund", pounds: "paunds",
+  lb: "paund", lbs: "paunds", oz: "auns", ounce: "auns", ounces: "aun-ses",
+  slice: "slais", slices: "slai-ses", piece: "piis", pieces: "pii-ses", dozen: "da-zen",
+
+  // Common Verbs & Auxiliaries
+  would: "wud", could: "kud", should: "shud", like: "laik", want: "uont",
+  need: "niid", have: "jav", has: "jas", had: "jad", do: "du", does: "das",
+  did: "did", dont: "dount", "don't": "dount", is: "is", are: "ar", was: "uas",
+  were: "uer", be: "bi", been: "bin", can: "kan", cant: "kant", "can't": "kant",
+  will: "uil", wont: "uount", "won't": "uount", give: "giv", take: "teik",
+  make: "meik", get: "get", put: "put", see: "sii", look: "luk", come: "kam",
+  go: "gou", cut: "kat", sliced: "slaisd", shaved: "sheivd", chopped: "chopt",
+  cooked: "kukt", baked: "beikt", fried: "fraid", grilled: "grild", pay: "pei",
+  buy: "bai", sell: "sel", cost: "kost", accept: "ak-sept", open: "ou-pen",
+  close: "klous", closed: "klousd", restock: "ri-stok", bring: "bring",
+  show: "shou", help: "jelp", ask: "ask", call: "kol", know: "nou", think: "zink",
+
+  // Food, Deli & Grocery
+  ham: "jam", turkey: "ter-ki", beef: "biif", pork: "pork", chicken: "chi-ken",
+  meat: "miit", bacon: "bei-kon", sausage: "so-sedzh", cheese: "chiis",
+  cheddar: "che-dar", swiss: "suis", provolone: "pro-vo-loun", american: "a-me-ri-kan",
+  bread: "bred", white: "uait", wheat: "uiit", rye: "rai", roll: "roul", rolls: "rouls",
+  sandwich: "san-duich", sub: "sab", wrap: "rap", salad: "sa-lad", soup: "suup",
+  egg: "eg", eggs: "egs", butter: "ba-ter", milk: "milk", water: "ua-ter",
+  coffee: "ko-fi", tea: "tii", soda: "sou-da", juice: "yus", beer: "biir", wine: "uain",
+  fruit: "frut", apple: "a-pl", banana: "ba-na-na", orange: "o-randzh",
+  vegetables: "vedzh-te-bls", tomato: "to-mei-to", tomatoes: "to-mei-tos",
+  onion: "o-nion", onions: "o-nions", lettuce: "le-tis", pickle: "pi-kl", pickles: "pi-kls",
+  mayo: "mei-o", mustard: "mas-tard", ketchup: "ke-chap", sauce: "sos",
+  oil: "oil", vinegar: "vi-ne-gar", salt: "solt", pepper: "pe-per", sugar: "shu-gar",
+
+  // Adjectives
+  thin: "dzin", thick: "dzik", hot: "jot", cold: "kold", warm: "uorm",
+  fresh: "fresh", good: "gud", bad: "bad", sweet: "suiit", spicy: "spai-si",
+  mild: "maild", small: "smol", medium: "mi-diom", large: "lary", extra: "eks-tra",
+  little: "li-tl", more: "mor", less: "les", big: "big", new: "niu",
+
+  // Prepositions, Conjunctions & Articles
+  the: "de", a: "e", an: "an", and: "and", or: "or", of: "ov", to: "tu",
+  in: "in", on: "on", at: "at", for: "for", with: "wid", without: "wid-aut",
+  from: "from", by: "bai", about: "a-baut", as: "as", if: "if", than: "dan",
+  then: "den", but: "bat", so: "sou",
+
+  // Interrogatives & Adverbs
+  where: "uer", what: "uat", when: "uen", why: "uai", who: "ju", how: "jau",
+  much: "mach", many: "me-ni", here: "jiir", there: "der", now: "nau",
+  today: "tu-dei", tonight: "tu-nait", tomorrow: "tu-mo-rou", yesterday: "ies-ter-dei",
+  always: "ol-ueis", never: "ne-ver", please: "pliis", thank: "zenk", thanks: "zenks",
+  yes: "ies", no: "nou", not: "not", very: "ve-ri", too: "tu", also: "ol-sou",
+
+  // Store & Shopping Terms
+  store: "stor", shop: "shop", market: "mar-ket", bakery: "bei-ke-ri",
+  deli: "de-li", counter: "kaun-ter", aisle: "ail", cash: "kash", card: "kard",
+  cards: "kards", credit: "kre-dit", debit: "de-bit", ebt: "i-bi-ti", snap: "snap",
+  change: "cheindzh", receipt: "ri-siit", bag: "bag", box: "boks", total: "tou-tal",
+  bill: "bil", check: "chek", price: "prais", dollar: "do-lar", dollars: "do-lars",
+  cent: "sent", cents: "sents", hours: "au-ers", sunday: "san-dei", sundays: "san-deis",
+  monday: "man-dei", mondays: "man-deis", tuesday: "tius-dei", wednesday: "uens-dei",
+  thursday: "zers-dei", friday: "frai-dei", saturday: "sa-ter-dei", holiday: "jo-li-dei",
+  holidays: "jo-li-deis", bathroom: "baz-rum", restroom: "rest-rum",
+  groceries: "gro-se-ris", minimum: "mi-ni-mum", purchase: "per-ches",
+};
+
+function getRuleBasedPhonetic(rawWord: string): string {
+  let w = rawWord.toLowerCase();
+  w = w
+    .replace(/tion\b/g, "shon")
+    .replace(/sion\b/g, "shon")
+    .replace(/ture\b/g, "cher")
+    .replace(/ight\b/g, "ait")
+    .replace(/igh/g, "ai")
+    .replace(/eigh/g, "ei")
+    .replace(/augh/g, "af")
+    .replace(/ough/g, "of")
+    .replace(/\bkn/g, "n")
+    .replace(/\bwr/g, "r")
+    .replace(/\bwh/g, "u")
+    .replace(/ph/g, "f")
+    .replace(/th/g, "d")
+    .replace(/sh/g, "sh")
+    .replace(/ch/g, "ch")
+    .replace(/ck/g, "k")
+    .replace(/qu/g, "ku")
+    .replace(/ee/g, "i")
+    .replace(/ea/g, "i")
+    .replace(/oo/g, "u")
+    .replace(/ou/g, "au")
+    .replace(/ow\b/g, "ou")
+    .replace(/ow/g, "au")
+    .replace(/oa/g, "ou")
+    .replace(/ai/g, "ei")
+    .replace(/ay/g, "ei")
+    .replace(/oy/g, "oi")
+    .replace(/oi/g, "oi")
+    .replace(/aw/g, "o")
+    .replace(/au/g, "o")
+    .replace(/ew/g, "iu")
+    .replace(/\bh([aeiou])/g, "j$1")
+    .replace(/\bw/g, "u")
+    .replace(/w\b/g, "u")
+    .replace(/c([eiy])/g, "s$1")
+    .replace(/c([aou])/g, "k$1")
+    .replace(/c\b/g, "k")
+    .replace(/g([ei])/g, "y$1")
+    .replace(/j/g, "y")
+    .replace(/a([bcdfghjklmnpqrstvwxz])e\b/g, "ei$1")
+    .replace(/i([bcdfghjklmnpqrstvwxz])e\b/g, "ai$1")
+    .replace(/o([bcdfghjklmnpqrstvwxz])e\b/g, "ou$1")
+    .replace(/u([bcdfghjklmnpqrstvwxz])e\b/g, "iu$1")
+    .replace(/y\b/g, "i");
+  return w;
+}
+
+function getEnglishPhoneticForSpanish(text: string): string {
+  if (!text) return "";
+  return text.replace(/([A-Za-z0-9']+)|([^A-Za-z0-9'\s]+)/g, (match, word, punct) => {
+    if (punct) return punct;
+    if (!word) return match;
+
+    const lower = word.toLowerCase();
+    let phoneticWord = EN_TO_ES_PHONETICS[lower];
+    if (!phoneticWord) {
+      phoneticWord = getRuleBasedPhonetic(word);
+    }
+
+    if (/^\d+$/.test(word)) {
+      return phoneticWord;
+    }
+    if (word === word.toUpperCase() && word.length > 1) {
+      return phoneticWord.toUpperCase();
+    } else if (word[0] === word[0].toUpperCase()) {
+      return phoneticWord.charAt(0).toUpperCase() + phoneticWord.slice(1);
+    }
+    return phoneticWord;
+  });
+}
+
+function getSpanishPhoneticForEnglish(text: string): string {
+  if (!text) return "";
   return text
-    .replace(/¿|\?/g, "")
+    .replace(/¿/g, "")
     .replace(/ce|ci/gi, "seh")
     .replace(/ca|co|cu/gi, "kah")
     .replace(/ll/gi, "y")
@@ -103,6 +262,30 @@ function getPhoneticHint(text: string, isSpanish: boolean): string {
     .replace(/ñ/gi, "ny")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/* Helper to generate readable phonetic hint */
+function getPhoneticHint(text: string, isSpanish: boolean): string {
+  if (!text) return "";
+
+  // Check preset phrases first for curated high-fidelity phonetics
+  const clean = text.trim().toLowerCase();
+  for (const p of CATEGORIZED_PHRASES) {
+    if (isSpanish && p.es.toLowerCase().trim() === clean) {
+      return p.phoneticEs;
+    }
+    if (!isSpanish && p.en.toLowerCase().trim() === clean) {
+      return p.phoneticEn;
+    }
+  }
+
+  // Target is Spanish -> provide English speaker phonetics
+  if (isSpanish) {
+    return getSpanishPhoneticForEnglish(text);
+  }
+
+  // Target is English -> provide Spanish speaker phonetics
+  return getEnglishPhoneticForSpanish(text);
 }
 
 export default function TranslatorTab({ lang }: TranslatorTabProps) {
@@ -357,7 +540,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
           {translatedText && phoneticHint && (
             <div className="pt-2 border-t border-white/10 flex items-start gap-2 text-xs text-amber-300/90 font-medium">
               <span className="font-bold text-[10px] uppercase tracking-wider text-amber-400/90 shrink-0 pt-0.5">
-                Pronunciación:
+                {targetLang === "es" ? "Pronunciation:" : "Pronunciación:"}
               </span>
               <span className="italic whitespace-normal break-words leading-snug">{phoneticHint}</span>
             </div>
