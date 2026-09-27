@@ -50,23 +50,23 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
   return (
     <>
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur-xl border-b border-surface-container-high shadow-2xs transition-all">
-        {/* Concept Demo / Claim Notice Banner */}
-        <div className="bg-slate-900 text-slate-100 px-3.5 py-1.5 text-xs flex items-center justify-between border-b border-slate-800">
+        {/* Bilingual Menu & Listing Service Bar */}
+        <div className="bg-blue-50/90 border-b border-blue-100/80 px-3.5 py-1.5 text-xs flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0 mr-2">
-            <span className="bg-amber-400/20 text-amber-300 font-bold text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded shrink-0 border border-amber-400/30">
-              {lang === "es" ? "Demostración" : "Concept Demo"}
+            <span className="bg-[#003ec7]/10 text-[#003ec7] font-extrabold text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-blue-200/60 shrink-0">
+              {lang === "es" ? "Menú Bilingüe" : "Bilingual Menu"}
             </span>
-            <p className="text-[11px] leading-tight truncate text-slate-300">
+            <p className="text-[11px] leading-tight truncate text-slate-600 font-medium">
               {lang === "es"
-                ? `Vista previa de menú bilingüe para ${storeInfo.name}`
-                : `Interactive bilingual preview for ${storeInfo.name}`}
+                ? `Menú digital en español para ${storeInfo.name}`
+                : `Digital Spanish menu & assistant for ${storeInfo.name}`}
             </p>
           </div>
           <button
             onClick={() => setShowClaimModal(true)}
-            className="shrink-0 text-[11px] font-bold text-amber-300 hover:text-amber-200 underline whitespace-nowrap cursor-pointer"
+            className="shrink-0 text-[11px] font-bold text-[#003ec7] hover:text-blue-800 hover:underline whitespace-nowrap cursor-pointer flex items-center gap-1"
           >
-            {lang === "es" ? "¿Eres el dueño? Personalizar →" : "Owner? Claim menu →"}
+            {lang === "es" ? "Administrar menú →" : "Manage menu →"}
           </button>
         </div>
 
@@ -233,12 +233,12 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
             </button>
 
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-10 h-10 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold">
-                <Store className="w-5 h-5 text-amber-600" />
+              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#003ec7] flex items-center justify-center font-bold">
+                <Store className="w-5 h-5 text-[#003ec7]" />
               </div>
               <div>
                 <h3 className="font-extrabold text-base leading-tight">
-                  {lang === "es" ? "¿Es el dueño del negocio?" : "Are you the owner?"}
+                  {lang === "es" ? "¿Es el dueño o administrador?" : "Are you the owner or manager?"}
                 </h3>
                 <p className="text-xs text-[#003ec7] font-semibold">
                   {storeInfo.name}
@@ -249,19 +249,19 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
             <div className="space-y-3 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
               <p>
                 {lang === "es"
-                  ? `DuoTaps preparó esta demostración interactiva con menú en español y asistente por IA para ilustrar cómo su negocio puede recibir y atender comensales hispanohablantes.`
-                  : `DuoTaps created this interactive preview with Spanish translations and AI assistance to show how your restaurant can easily welcome Spanish-speaking guests.`}
+                  ? `DuoTaps proporciona este menú digital en español y asistente para ayudar a su establecimiento a atender cómodamente a clientes hispanohablantes.`
+                  : `DuoTaps provides this digital Spanish menu and guest assistant to help your establishment welcome Spanish-speaking diners.`}
               </p>
               <p>
                 {lang === "es"
-                  ? `Para actualizar platillos y precios con su menú oficial, o solicitar soportes físicos de código QR gratuitos para sus mesas, contáctenos:`
-                  : `To update items and prices with your official menu, or to request free tabletop QR code displays, reach out directly:`}
+                  ? `Si desea verificar este perfil, actualizar platillos y precios con su menú oficial, o solicitar soportes físicos de código QR gratuitos para sus mesas, contáctenos directamente:`
+                  : `To verify this listing, update items and prices with your official menu, or request complimentary tabletop QR code stands for your restaurant, reach out directly:`}
               </p>
             </div>
 
             <div className="pt-4 space-y-2">
               <a
-                href={`mailto:contact@duotaps.com?subject=Update%20Menu%20for%20${encodeURIComponent(storeInfo.name)}`}
+                href={`mailto:contact@duotaps.com?subject=Manage%20Menu%20for%20${encodeURIComponent(storeInfo.name)}`}
                 className="w-full py-2.5 bg-[#003ec7] text-white font-extrabold text-xs rounded-xl shadow-sm hover:brightness-110 transition-all flex items-center justify-center gap-1.5"
               >
                 <Mail className="w-4 h-4" />
@@ -273,7 +273,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
                 rel="noopener noreferrer"
                 className="w-full py-2.5 bg-slate-100 text-slate-800 font-bold text-xs rounded-xl hover:bg-slate-200 transition-all flex items-center justify-center gap-1.5"
               >
-                <span>{lang === "es" ? "Enviar DM por Instagram" : "DM us on Instagram (@duotaps)"}</span>
+                <span>{lang === "es" ? "Contactar por Instagram" : "DM on Instagram (@duotaps)"}</span>
               </a>
             </div>
           </div>
