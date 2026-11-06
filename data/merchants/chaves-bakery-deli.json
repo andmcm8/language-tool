@@ -43,77 +43,66 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Antojitos y Sopas",
-      "nameEn": "Appetizers & Soups",
-      "icon": "Utensils"
+      "id": "breakfast",
+      "nameEs": "Desayunos y Sandwiches",
+      "nameEn": "Breakfast & Rolls",
+      "icon": "Coffee"
     },
     {
-      "id": "mains",
-      "nameEs": "Sandwiches y Platos Principales",
-      "nameEn": "Sandwiches & Main Entrees",
-      "icon": "Utensils"
-    },
-    {
-      "id": "specialties",
-      "nameEs": "Especialidades Portuguesas",
-      "nameEn": "Portuguese Specialties",
-      "icon": "Utensils"
+      "id": "deli",
+      "nameEs": "Sandwiches Boar's Head y Ensaladas",
+      "nameEn": "Boar's Head Deli & Subs",
+      "icon": "Sandwich"
     },
     {
       "id": "bakery",
-      "nameEs": "Panadería y Postres",
-      "nameEn": "Bakery & Desserts",
-      "icon": "Coffee"
+      "nameEs": "Pastelería y Pan Portugués",
+      "nameEn": "Portuguese Bakery & Pastries",
+      "icon": "Sparkles"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "cakes",
+      "nameEs": "Pasteles Artesanales",
+      "nameEn": "Specialty Bakery Cakes",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
       "id": "chaves-bakery-deli-01",
-      "categoryId": "bakery",
-      "nameEs": "Pastel de Nata (Tarta de Hojaldre Portuguesa)",
-      "nameEn": "Pastel de Nata (Portuguese Custard Tart)",
-      "descriptionEs": "Tradicional tarta de huevo portuguesa con una corteza crujiente de hojaldre y un centro cremoso ligeramente caramelizado.",
-      "descriptionEn": "Traditional Portuguese egg tart featuring a crispy, flaky crust and a rich, creamy, lightly caramelized custard center.",
-      "price": "$2.50",
-      "popular": true,
-      "badge": "Best Seller",
+      "categoryId": "breakfast",
+      "nameEs": "Rollo de Huevo y Queso",
+      "nameEn": "Egg & Cheese Roll",
+      "descriptionEs": "Dos huevos fritos y queso americano derretido en su elección de pan portugués fresco, pan duro o pan con semillas de amapola",
+      "descriptionEn": "Two fried eggs and melted American cheese on choice of fresh Portuguese roll, hard roll, or poppyseed roll",
+      "price": "$4.50",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Fresco",
-        "Tradicional",
-        "Postre"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-02",
-      "categoryId": "bakery",
-      "nameEs": "Pan Casero Portugués (Papo Seco)",
-      "nameEn": "Portuguese Roll (Papo Seco)",
-      "descriptionEs": "Pan blanco tradicional recién horneado diariamente, con una corteza crujiente y una miga suave y ligera.",
-      "descriptionEn": "Traditional white bread roll freshly baked daily, featuring a crispy crust and a soft, airy crumb.",
-      "price": "$0.95",
+      "categoryId": "breakfast",
+      "nameEs": "Tocino, Huevo y Queso",
+      "nameEn": "Bacon, Egg & Cheese",
+      "descriptionEs": "Tocino crujiente, dos huevos fritos y queso americano derretido en un pan portugués recién tostado",
+      "descriptionEn": "Crispy bacon, two fried eggs, and melted American cheese on fresh toasted Portuguese roll",
+      "price": "$5.95",
       "popular": true,
-      "badge": "Freshly Baked",
+      "badge": "Bakery Favorite",
       "tags": [
-        "Panadería",
-        "Artesanal"
+        "Fresh Daily"
       ],
       "allergens": [
         "Gluten"
@@ -122,17 +111,16 @@
     },
     {
       "id": "chaves-bakery-deli-03",
-      "categoryId": "mains",
-      "nameEs": "Sandwich de Bifana (Cerdo Marinado)",
-      "nameEn": "Bifana Pork Sandwich",
-      "descriptionEs": "Finos filetes de cerdo marinados en una salsa especial de ajo, vino blanco y especias, servidos calientes en un pan papo seco.",
-      "descriptionEn": "Thin slices of pork marinated in a special garlic, white wine, and spice sauce, served warm in a fresh papo seco roll.",
-      "price": "$8.50",
-      "popular": true,
-      "badge": "Popular",
+      "categoryId": "breakfast",
+      "nameEs": "Jamón, Huevo y Queso",
+      "nameEn": "Ham, Egg & Cheese",
+      "descriptionEs": "Jamón a la plancha, dos huevos fritos y queso derretido en su elección de pan portugués o pan duro",
+      "descriptionEn": "Grilled ham, two fried eggs, and melted cheese on choice of Portuguese roll or hard roll",
+      "price": "$5.95",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Especialidad",
-        "Almuerzo"
+        "Fresh Daily"
       ],
       "allergens": [
         "Gluten"
@@ -141,17 +129,16 @@
     },
     {
       "id": "chaves-bakery-deli-04",
-      "categoryId": "mains",
-      "nameEs": "Sandwich de Prego no Pão (Ternera)",
-      "nameEn": "Prego no Pão (Beef Steak Sandwich)",
-      "descriptionEs": "Tierno filete de ternera sazonado con ajo y laurel, a la plancha y servido en pan crujiente con un toque de mostaza opcional.",
-      "descriptionEn": "Tender beef steak seasoned with garlic and bay leaf, pan-seared and served on crusty bread with a touch of mustard.",
-      "price": "$9.75",
+      "categoryId": "breakfast",
+      "nameEs": "Salchicha, Huevo y Queso",
+      "nameEn": "Sausage, Egg & Cheese",
+      "descriptionEs": "Sabrosa hamburguesa de salchicha de desayuno, dos huevos fritos y queso derretido en pan portugués fresco",
+      "descriptionEn": "Savory breakfast sausage patty, two fried eggs, and melted cheese on fresh Portuguese roll",
+      "price": "$5.95",
       "popular": false,
-      "badge": "Chef Choice",
+      "badge": null,
       "tags": [
-        "Carne",
-        "Clásico"
+        "Fresh Daily"
       ],
       "allergens": [
         "Gluten"
@@ -160,158 +147,797 @@
     },
     {
       "id": "chaves-bakery-deli-05",
-      "categoryId": "specialties",
-      "nameEs": "Croquete de Carne (Croqueta de Res)",
-      "nameEn": "Beef Croquette",
-      "descriptionEs": "Croqueta crujiente por fuera y suave por dentro, rellena de carne de res sazonada al estilo tradicional portugués.",
-      "descriptionEn": "Crispy on the outside and smooth on the inside, filled with seasoned ground beef prepared in traditional Portuguese style.",
-      "price": "$2.75",
-      "popular": true,
-      "badge": "Favorite",
+      "categoryId": "breakfast",
+      "nameEs": "Pavo, Huevo y Queso",
+      "nameEn": "Turkey, Egg & Cheese",
+      "descriptionEs": "Pavo Boar's Head en rodajas, huevos fritos y queso derretido en pan tostado",
+      "descriptionEn": "Sliced Boar's Head turkey, fried eggs, and melted cheese on toasted roll",
+      "price": "$6.25",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Entrada",
-        "Frito"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-06",
-      "categoryId": "specialties",
-      "nameEs": "Bolinho de Bacalhau (Pastel de Bacalao)",
-      "nameEn": "Salt Cod Cake (Bolinho de Bacalhau)",
-      "descriptionEs": "Deliciosa croqueta dorada elaborada con bacalao desmenuzado, patata, cebolla y perejil fresco.",
-      "descriptionEn": "Golden fried savory fritter crafted with flaky salt cod, mashed potato, onion, and fresh parsley.",
-      "price": "$2.95",
-      "popular": true,
-      "badge": "Authentic",
+      "categoryId": "breakfast",
+      "nameEs": "Bistec, Huevo y Queso",
+      "nameEn": "Steak, Egg & Cheese",
+      "descriptionEs": "Bistec de desayuno sazonado, huevos fritos y queso americano derretido en pan portugués",
+      "descriptionEn": "Seasoned breakfast steak, fried eggs, and melted American cheese on Portuguese roll",
+      "price": "$7.50",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Mariscos",
-        "Tradicional"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Pescado",
-        "Huevos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-07",
-      "categoryId": "appetizers",
-      "nameEs": "Caldo Verde (Sopa Tradicional)",
-      "nameEn": "Caldo Verde (Traditional Portuguese Soup)",
-      "descriptionEs": "Sopa reconfortante de patata triturada, finas tiras de berza y rodajas de chorizo portugués auténtico.",
-      "descriptionEn": "Hearty and comforting soup made with pureed potatoes, finely shredded collard greens, and slices of authentic Portuguese chouriço.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Warm & Cozy",
+      "categoryId": "breakfast",
+      "nameEs": "Sándwich de Desayuno 'The Hungry Man'",
+      "nameEn": "The Hungry Man Breakfast Grinder",
+      "descriptionEs": "3 huevos fritos, salchicha, tocino crujiente y queso americano derretido en un pan tipo grinder tostado",
+      "descriptionEn": "3 fried eggs, sausage, crispy bacon, and melted American cheese on a toasted grinder sub roll",
+      "price": "$9.95",
+      "popular": true,
+      "badge": "Bakery Favorite",
       "tags": [
-        "Sopa",
-        "Casero"
+        "Fresh Daily"
       ],
-      "allergens": [],
+      "allergens": [
+        "Gluten"
+      ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-08",
-      "categoryId": "mains",
-      "nameEs": "Desayuno Completo Chaves",
-      "nameEn": "Chaves Full Breakfast",
-      "descriptionEs": "Dos huevos al gusto, tocino crujiente, papas doradas caseras y pan tostado con mantequilla, acompañado de café recién hecho.",
-      "descriptionEn": "Two eggs any style, crispy bacon, home fries, buttered toast, served with a cup of freshly brewed coffee.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Breakfast",
+      "categoryId": "breakfast",
+      "nameEs": "Wrap Saludable 'The Sassy Lady'",
+      "nameEn": "The Sassy Lady Healthy Wrap",
+      "descriptionEs": "Wrap de trigo integral con omelet de 3 claras de huevo, pollo al chipotle Boar's Head, tomate, pimientos asados y queso pepper jack",
+      "descriptionEn": "Whole wheat wrap with 3 egg white omelet, Boar's Head chipotle chicken, tomato, roasted peppers, pepper jack",
+      "price": "$8.95",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Desayuno",
-        "Matutino"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Huevos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-09",
-      "categoryId": "bakery",
-      "nameEs": "Bola de Berlim con Crema",
-      "nameEn": "Berlin Bola with Custard Filling",
-      "descriptionEs": "Esponjosa bola de fraile rellena de rica crema pastelera casera y espolvoreada con azúcar fina.",
-      "descriptionEn": "Soft and fluffy fried dough pastry generously filled with rich homemade pastry cream and dusted with fine sugar.",
-      "price": "$3.50",
-      "popular": true,
-      "badge": "Sweet",
+      "categoryId": "breakfast",
+      "nameEs": "Wrap de Desayuno Signature Chaves",
+      "nameEn": "Chaves Signature Breakfast Wrap",
+      "descriptionEs": "Wrap de harina caliente con omelet de 3 huevos, tocino crujiente, cebollas, queso cheddar y salsa picante",
+      "descriptionEn": "Warm flour wrap with 3 egg omelet, crispy bacon, onions, cheddar cheese, and spicy hot sauce",
+      "price": "$8.50",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Postre",
-        "Dulce"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-10",
-      "categoryId": "beverages",
-      "nameEs": "Galão (Café con Leche Portugués)",
-      "nameEn": "Galão (Portuguese Café Latte)",
-      "descriptionEs": "Bebida tradicional de café expreso mezclado con abundante leche caliente espumosa en un vaso alto.",
-      "descriptionEn": "Traditional warm beverage made with espresso coffee and a generous amount of foamy steamed milk served in a tall glass.",
-      "price": "$3.25",
+      "categoryId": "breakfast",
+      "nameEs": "Pan Portugués Tostado con Mantequilla",
+      "nameEn": "Toasted Portuguese Roll with Butter",
+      "descriptionEs": "Auténtico pan portugués crujiente recién horneado, tostado con mantequilla o queso crema",
+      "descriptionEn": "Freshly baked authentic Portuguese crusty roll toasted with butter or cream cheese",
+      "price": "$2.50",
       "popular": true,
-      "badge": "Coffee",
+      "badge": null,
       "tags": [
-        "Bebida",
-        "Café"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Lácteos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-11",
-      "categoryId": "beverages",
-      "nameEs": "Sumol de Ananás (Refresco Portugués)",
-      "nameEn": "Sumol Pineapple Soda",
-      "descriptionEs": "Refrescante bebida gaseosa importada de Portugal con auténtico sabor a piña.",
-      "descriptionEn": "Refreshing carbonated fruit soda imported directly from Portugal with authentic pineapple flavor.",
-      "price": "$2.50",
+      "categoryId": "breakfast",
+      "nameEs": "Bagel Estilo Nueva York Tostado con Queso Crema",
+      "nameEn": "Toasted New York Bagel with Cream Cheese",
+      "descriptionEs": "Elección de bagel natural, 'everything', pasas con canela, sésamo o ajo, tostado con queso crema",
+      "descriptionEn": "Choice of plain, everything, cinnamon raisin, sesame, or garlic bagel toasted with cream cheese",
+      "price": "$3.25",
       "popular": false,
-      "badge": "Imported",
+      "badge": null,
       "tags": [
-        "Refresco",
-        "Frío"
+        "Fresh Daily"
       ],
-      "allergens": [],
+      "allergens": [
+        "Gluten"
+      ],
       "ctaType": "in_store"
     },
     {
       "id": "chaves-bakery-deli-12",
-      "categoryId": "bakery",
-      "nameEs": "Tarta de Almendra Portuguesa",
-      "nameEn": "Portuguese Almond Tart (Tarte de Amêndoa)",
-      "descriptionEs": "Exquisita tarta horneada con una capa crujiente de almendras caramelizadas sobre una base de pastel dulce.",
-      "descriptionEn": "Exquisite baked tart featuring a crunchy layer of caramelized sliced almonds atop a rich, buttery pastry crust.",
-      "price": "$4.25",
+      "categoryId": "breakfast",
+      "nameEs": "Café Recién Hecho Chaves",
+      "nameEn": "Fresh Brewed Chaves Coffee",
+      "descriptionEs": "Café caliente recién hecho: Morning Blend, Dark Roast, Cinnamon Hazelnut o French Vanilla",
+      "descriptionEn": "Hot brewed coffee: Morning Blend, Dark Roast, Cinnamon Hazelnut, or French Vanilla",
+      "price": "$2.50",
       "popular": false,
-      "badge": "Bakery",
+      "badge": null,
       "tags": [
-        "Postre",
-        "Frutos Secos"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos",
-        "Huevos"
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-13",
+      "categoryId": "deli",
+      "nameEs": "Sub Italiano Deluxe Signature #1",
+      "nameEn": "Signature #1 Italian Deluxe Sub",
+      "descriptionEs": "Jamón Deluxe Boar's Head, salami Génova, pepperoni, provolone, pimientos asados, lechuga, tomate y aderezo deli",
+      "descriptionEn": "Boar's Head Deluxe Ham, Genoa Salami, Pepperoni, Provolone, roasted peppers, lettuce, tomato, deli dressing",
+      "price": "$11.50",
+      "popular": true,
+      "badge": "Bakery Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-14",
+      "categoryId": "deli",
+      "nameEs": "Club de Pavo y Jamón Signature #2",
+      "nameEn": "Signature #2 Turkey & Ham Club",
+      "descriptionEs": "Pavo Ovengold, jamón Deluxe, queso americano, tocino crujiente, lechuga, tomate y mayonesa",
+      "descriptionEn": "Ovengold Turkey, Deluxe Ham, American cheese, crispy bacon, lettuce, tomato, mayonnaise",
+      "price": "$11.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-15",
+      "categoryId": "deli",
+      "nameEs": "Sub de Pollo César Dorado Signature #3",
+      "nameEn": "Signature #3 Golden Chicken Caesar Sub",
+      "descriptionEs": "Pechuga de pollo Golden Classic, Monterey Jack, tocino, lechuga crujiente y aderezo César cremoso",
+      "descriptionEn": "Golden Classic Chicken breast, Monterey Jack, bacon, crisp lettuce, creamy Caesar dressing",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-16",
+      "categoryId": "deli",
+      "nameEs": "Roast Beef Deluxe y Cheddar Signature #4",
+      "nameEn": "Signature #4 Deluxe Roast Beef & Cheddar",
+      "descriptionEs": "Roast Beef Deluxe Boar's Head, queso cheddar de Vermont, lechuga, tomate y salsa de rábano picante",
+      "descriptionEn": "Boar's Head Deluxe Roast Beef, Vermont Cheddar, lettuce, tomato, zesty horseradish sauce",
+      "price": "$11.95",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-17",
+      "categoryId": "deli",
+      "nameEs": "Jamón de Arce y Miel con Muenster Signature #5",
+      "nameEn": "Signature #5 Maple Honey Ham & Muenster",
+      "descriptionEs": "Jamón de arce y miel, queso Muenster, pimientos dulces asados, lechuga, tomate y mostaza con miel",
+      "descriptionEn": "Maple Honey Ham, Muenster cheese, sweet roasted peppers, lettuce, tomato, honey mustard",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-18",
+      "categoryId": "deli",
+      "nameEs": "Pavo de Arce y Miel con Tocino Signature #6",
+      "nameEn": "Signature #6 Maple Honey Turkey & Bacon",
+      "descriptionEs": "Pavo de arce y miel, queso americano, tocino crujiente, lechuga fresca, tomate y mayonesa",
+      "descriptionEn": "Maple Honey Turkey, American cheese, crispy bacon, crisp lettuce, tomato, mayonnaise",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-19",
+      "categoryId": "deli",
+      "nameEs": "Sub de Pollo Buffalo Blazing Signature #7",
+      "nameEn": "Signature #7 Blazing Buffalo Chicken Sub",
+      "descriptionEs": "Pollo Blazing Buffalo, queso Pepper Jack, lechuga, tomate, cebollas, aderezo de queso azul y salsa picante",
+      "descriptionEn": "Blazing Buffalo Chicken, Pepper Jack cheese, lettuce, tomato, onions, blue cheese dressing, hot sauce",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-20",
+      "categoryId": "deli",
+      "nameEs": "Reuben de Pastrami Caliente y Suizo Signature #8",
+      "nameEn": "Signature #8 Hot Pastrami & Swiss Reuben",
+      "descriptionEs": "Pastrami Boar's Head magro servido caliente con queso suizo derretido, chucrut y aderezo ruso",
+      "descriptionEn": "Lean Boar's Head pastrami served hot with melted Swiss cheese, sauerkraut, and Russian dressing",
+      "price": "$11.95",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-21",
+      "categoryId": "deli",
+      "nameEs": "Jamón Selva Negra y Suizo Signature #9",
+      "nameEn": "Signature #9 Black Forest Ham & Swiss",
+      "descriptionEs": "Jamón Selva Negra, queso suizo, lechuga crujiente, tomate maduro y mostaza deli picante",
+      "descriptionEn": "Black Forest Ham, Swiss cheese, crisp lettuce, ripe tomato, and deli spicy mustard",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-22",
+      "categoryId": "deli",
+      "nameEs": "Pavo Ahumado al Mesquite y Mozzarella Signature #10",
+      "nameEn": "Signature #10 Mesquite Smoked Turkey & Mozzarella",
+      "descriptionEs": "Pavo ahumado al mesquite, mozzarella fresca, tocino, lechuga, tomate y mostaza picante",
+      "descriptionEn": "Mesquite Smoked Turkey, fresh mozzarella, bacon, lettuce, tomato, spicy mustard",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-23",
+      "categoryId": "deli",
+      "nameEs": "Sub de Pavo Cracked PepperMill Signature #11",
+      "nameEn": "Signature #11 Cracked PepperMill Turkey Sub",
+      "descriptionEs": "Pavo Cracked PepperMill, queso cheddar fuerte, lechuga, cebolla roja y mayonesa",
+      "descriptionEn": "Cracked PepperMill Turkey, sharp cheddar cheese, lettuce, red onions, mayonnaise",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-24",
+      "categoryId": "deli",
+      "nameEs": "Sándwich de Ensalada de Pollo Casera",
+      "nameEn": "Homemade Chicken Salad Sandwich",
+      "descriptionEs": "Pollo asado en casa, apio picado, cebollas y mayonesa en pan portugués o wrap",
+      "descriptionEn": "House-roasted chicken, diced celery, onions, and mayonnaise on Portuguese roll or wrap",
+      "price": "$9.95",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-25",
+      "categoryId": "deli",
+      "nameEs": "Sándwich de Ensalada de Pollo con Arándanos y Nueces",
+      "nameEn": "Cranberry Walnut Chicken Salad Sandwich",
+      "descriptionEs": "Ensalada de pollo asado con arándanos dulces, nueces tostadas, apio y mayonesa cremosa",
+      "descriptionEn": "Roasted chicken salad with sweet cranberries, toasted walnuts, celery, and creamy mayo",
+      "price": "$10.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-26",
+      "categoryId": "deli",
+      "nameEs": "Sándwich de Ensalada de Atún Albacora Casera",
+      "nameEn": "Homemade Albacore Tuna Salad Sandwich",
+      "descriptionEs": "Ensalada de atún blanco sólido con apio, cebolla y mayonesa en pan fresco",
+      "descriptionEn": "Solid white albacore tuna salad with celery, onion, and mayonnaise on fresh roll",
+      "price": "$9.95",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-27",
+      "categoryId": "deli",
+      "nameEs": "Ensalada de Papa Deli Casera (1/2 lb)",
+      "nameEn": "Homemade Deli Potato Salad (1/2 lb)",
+      "descriptionEs": "Ensalada de papa tradicional con huevos duros, apio, cebolla y aderezo cremoso de mayonesa",
+      "descriptionEn": "Traditional deli potato salad with hard boiled eggs, celery, onion, and creamy mayonnaise dressing",
+      "price": "$4.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-28",
+      "categoryId": "deli",
+      "nameEs": "Ensalada de Macarrones Deli Casera (1/2 lb)",
+      "nameEn": "Homemade Deli Macaroni Salad (1/2 lb)",
+      "descriptionEs": "Ensalada clásica de macarrones con zanahorias picadas, apio, pimientos y aderezo dulce de mayonesa",
+      "descriptionEn": "Classic elbow macaroni salad with diced carrots, celery, peppers, and sweet mayo dressing",
+      "price": "$4.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-29",
+      "categoryId": "bakery",
+      "nameEs": "Pastel de Nata (Tarta de Crema Portuguesa)",
+      "nameEn": "Pastel de Nata (Portuguese Custard Tart)",
+      "descriptionEs": "Icónica tartaleta de hojaldre rellena de rica crema de huevo caramelizada",
+      "descriptionEn": "Iconic flaky puff pastry cup filled with rich caramelized egg custard",
+      "price": "$2.50",
+      "popular": true,
+      "badge": "Bakery Favorite",
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-30",
+      "categoryId": "bakery",
+      "nameEs": "Surtido de Donas Frescas Glaseadas y Escarchadas",
+      "nameEn": "Assorted Fresh Glazed & Frosted Donuts",
+      "descriptionEs": "Donas artesanales: glaseadas, chocolate, crema Boston, azúcar en polvo con mermelada, canela y azúcar, coco",
+      "descriptionEn": "Handmade donuts: glazed, chocolate frosted, Boston cream, powdered jelly, cinnamon sugar, coconut",
+      "price": "$2.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-31",
+      "categoryId": "bakery",
+      "nameEs": "Dona de Fritura de Manzana",
+      "nameEn": "Apple Fritter Donut",
+      "descriptionEs": "Fritura de masa frita glaseada cargada con tiernas manzanas especiadas y canela",
+      "descriptionEn": "Glazed fried dough fritter loaded with tender spiced apples and cinnamon",
+      "price": "$2.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-32",
+      "categoryId": "bakery",
+      "nameEs": "Rollo de Canela y Azúcar",
+      "nameEn": "Cinnamon Sugar Coffee Roll",
+      "descriptionEs": "Gran rollo de masa de levadura en espiral cubierto con azúcar y canela o glaseado dulce de vainilla",
+      "descriptionEn": "Large spiral yeast dough coffee roll tossed in cinnamon sugar or sweet vanilla glaze",
+      "price": "$2.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-33",
+      "categoryId": "bakery",
+      "nameEs": "Danesa de Frutas Artesanal",
+      "nameEn": "Artisanal Fruit Danish",
+      "descriptionEs": "Pastel de hojaldre relleno de manzana, albaricoque, arándano, cereza, limón o frambuesa",
+      "descriptionEn": "Flaky layered pastry filled with apple, apricot, blueberry, cherry, lemon, or raspberry",
+      "price": "$3.25",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-34",
+      "categoryId": "bakery",
+      "nameEs": "Danesa de Especialidad (Garra de Oso / Queso)",
+      "nameEn": "Specialty Bakery Danish (Bear Claw / Cheese)",
+      "descriptionEs": "Elección de garra de oso de almendras, danesa de queso dulce, pastel de migas o danesa de nueces tostadas",
+      "descriptionEn": "Choice of almond bear claw, sweet cheese danish, crumb cake, or toasted walnut danish",
+      "price": "$3.50",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-35",
+      "categoryId": "bakery",
+      "nameEs": "Croissant de Mantequilla Recién Horneado",
+      "nameEn": "Fresh Baked Butter Croissant",
+      "descriptionEs": "Croissant de mantequilla estilo europeo, hojaldrado y dorado",
+      "descriptionEn": "Flaky, golden layered European-style butter croissant",
+      "price": "$3.25",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-36",
+      "categoryId": "bakery",
+      "nameEs": "Croissant de Chocolate Decadente",
+      "nameEn": "Decadent Chocolate Croissant",
+      "descriptionEs": "Croissant dorado y hojaldrado relleno de bastones de chocolate semiamargo importado",
+      "descriptionEn": "Flaky golden croissant filled with imported bittersweet chocolate batons",
+      "price": "$3.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-37",
+      "categoryId": "bakery",
+      "nameEs": "Cannoli Italiano Tradicional",
+      "nameEn": "Traditional Italian Cannoli",
+      "descriptionEs": "Cáscara de hojaldre frita y crujiente rellena de crema dulce de ricotta de leche entera y chispas de chocolate",
+      "descriptionEn": "Crispy fried pastry shell filled with sweet whole milk ricotta cream and chocolate chips",
+      "price": "$3.50",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-38",
+      "categoryId": "bakery",
+      "nameEs": "Eclair de Crema de Chocolate",
+      "nameEn": "Chocolate Custard Eclair",
+      "descriptionEs": "Masa choux rellena de crema bávara de vainilla, cubierta con un rico ganache de chocolate",
+      "descriptionEn": "Choux pastry filled with vanilla Bavarian cream, topped with rich chocolate ganache",
+      "price": "$3.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-39",
+      "categoryId": "bakery",
+      "nameEs": "Cuadritos de Pastel de Panadería Portuguesa",
+      "nameEn": "Portuguese Bakery Cake Squares",
+      "descriptionEs": "Delicados cuadritos de pastel esponjoso en capas con surtido de rellenos de frutas y crema",
+      "descriptionEn": "Individual delicate layered sponge cake squares with assorted fruit and cream fillings",
+      "price": "$3.50",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-40",
+      "categoryId": "bakery",
+      "nameEs": "Brownie de Chocolate Fudge",
+      "nameEn": "Fudge Chocolate Brownie",
+      "descriptionEs": "Brownie de chocolate oscuro denso y masticable con trozos de chocolate",
+      "descriptionEn": "Dense, chewy dark chocolate fudge brownie with chocolate chunks",
+      "price": "$3.25",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-41",
+      "categoryId": "bakery",
+      "nameEs": "Rebanada de Cheesecake Estilo Nueva York",
+      "nameEn": "New York Cheesecake Slice",
+      "descriptionEs": "Rebanada de cheesecake casero rico y cremoso con base de galleta graham",
+      "descriptionEn": "Slice of rich, creamy homemade bakery cheesecake with graham cracker crust",
+      "price": "$4.95",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-42",
+      "categoryId": "bakery",
+      "nameEs": "Surtido de Galletas de Mantequilla Italianas (1/2 lb)",
+      "nameEn": "Assorted Italian Butter Cookies (1/2 lb)",
+      "descriptionEs": "Caja de media libra de galletas de mantequilla artesanales, galletas arcoíris y biscotti bañados en chocolate",
+      "descriptionEn": "Half-pound box of handmade bakery butter cookies, rainbow cookies, and chocolate dipped biscotti",
+      "price": "$8.95",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-43",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Cannoli Signature Chaves",
+      "nameEn": "Chaves Signature Cannoli Cake",
+      "descriptionEs": "Esponja de vainilla remojada en jugo de cereza dulce, rellena de crema de cannoli, cobertura de crema batida y chispas de chocolate",
+      "descriptionEn": "Vanilla sponge soaked with sweet cherry juice, filled with cannoli cream, whipped cream frosting, chocolate chips",
+      "price": "$28.00",
+      "popular": true,
+      "badge": "Bakery Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-44",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Fresas con Crema Fresco",
+      "nameEn": "Fresh Strawberry Shortcake",
+      "descriptionEs": "Capas de pastel de vainilla, relleno de fresas dulces, crema batida fresca y fresas maduras",
+      "descriptionEn": "Layers of vanilla cake, sweet strawberry filling, fresh whipped cream, and ripe strawberries",
+      "price": "$28.00",
+      "popular": true,
+      "badge": "Bakery Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-45",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Mousse de Vainilla y Chocolate",
+      "nameEn": "Vanilla Chocolate Mousse Cake",
+      "descriptionEs": "Esponjoso pastel de vainilla en capas con rico mousse de chocolate belga y crema de mantequilla de vainilla",
+      "descriptionEn": "Fluffy vanilla sponge cake layered with rich Belgian chocolate mousse and vanilla buttercream",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-46",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Vainilla con Oreo y Crema",
+      "nameEn": "Vanilla Oreo Cookies & Cream Cake",
+      "descriptionEs": "Pastel de vainilla con relleno de crema batida de galleta Oreo triturada y cobertura de vainilla",
+      "descriptionEn": "Vanilla cake with crushed Oreo cookie whipped cream filling and vanilla frosting",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-47",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Triple Chocolate Fudge",
+      "nameEn": "Triple Threat Chocolate Fudge Cake",
+      "descriptionEs": "Decadente pastel de chocolate, capa de mousse de chocolate oscuro, capa de fudge de chocolate y cobertura de crema de mantequilla",
+      "descriptionEn": "Decadent chocolate cake, layer of dark chocolate mousse, layer of chocolate fudge, buttercream frosting",
+      "price": "$30.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-48",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Cannoli de Chocolate",
+      "nameEn": "Chocolate Cannoli Cake",
+      "descriptionEs": "Rico pastel de chocolate con relleno dulce de ricotta de cannoli, crema de mantequilla de chocolate y mini cannolis encima",
+      "descriptionEn": "Rich chocolate cake with sweet ricotta cannoli filling, chocolate buttercream, mini cannolis on top",
+      "price": "$30.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-49",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de Zanahoria Clásico de Panadería",
+      "nameEn": "Classic Bakery Carrot Cake",
+      "descriptionEs": "Pastel de zanahoria especiado en capas con cobertura de queso crema, cubierto con nueces picadas tostadas",
+      "descriptionEn": "Spiced carrot cake layered with cream cheese frosting, topped with toasted chopped walnuts",
+      "price": "$30.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-50",
+      "categoryId": "cakes",
+      "nameEs": "Pastel Red Velvet con Queso Crema",
+      "nameEn": "Red Velvet Cream Cheese Cake",
+      "descriptionEs": "Tradicional pastel red velvet sureño con cremosa cobertura de queso crema y nueces",
+      "descriptionEn": "Traditional southern red velvet cake with creamy cream cheese frosting and walnuts",
+      "price": "$30.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaves-bakery-deli-51",
+      "categoryId": "cakes",
+      "nameEs": "Pastel Tropical Bungalow",
+      "nameEn": "Bungalow Tropical Cake",
+      "descriptionEs": "Esponja de mármol en capas con fresas frescas, plátanos maduros, natilla, crema batida y un toque de chocolate",
+      "descriptionEn": "Marble sponge layered with fresh strawberries, ripe bananas, custard, whipped cream, and chocolate drizzle",
+      "price": "$32.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
       ],
       "ctaType": "in_store"
     }
