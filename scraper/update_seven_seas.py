@@ -1,0 +1,494 @@
+#!/usr/bin/env python3
+import json
+import os
+import sys
+
+def build_seven_seas():
+    dest = "data/merchants/seven-seas-restaurant.json"
+    with open(dest, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    data["storeInfo"]["name"] = "Seven Seas Restaurant"
+    data["storeInfo"]["address"] = "167 Bridgeport Ave, Milford, CT 06460"
+    data["storeInfo"]["tagline"] = "Milford's Waterfront Seafood Pub & Famous Lobster Rolls / Mariscos Frescos, Fish & Chips y Rollos de Langosta"
+    data["storeInfo"]["phone"] = "(203) 877-7327"
+
+    categories = [
+        {"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"},
+        {"id": "fresh-seafood", "nameEs": "Mariscos Frescos y Platones Fritos", "nameEn": "Fresh Ocean Seafood", "icon": "Fish"},
+        {"id": "lobster-rolls", "nameEs": "Famosos Rollos de Langosta", "nameEn": "Famous Lobster Rolls", "icon": "Fish"},
+        {"id": "dinner-entrees", "nameEs": "Platos Fuertes y Pastas", "nameEn": "Dinner Entrees & Pastas", "icon": "Beef"},
+        {"id": "burgers", "nameEs": "Hamburguesas Molidas en Casa", "nameEn": "Fresh-Ground Burgers", "icon": "Beef"},
+        {"id": "sandwiches-chicken", "nameEs": "Sándwiches y Pollo Charbroiled", "nameEn": "Sandwiches & Chicken", "icon": "Sandwich"},
+        {"id": "appetizers-wings", "nameEs": "Entrantes y Alitas de la Casa", "nameEn": "Appetizers & Wings", "icon": "Utensils"},
+        {"id": "soups-salads", "nameEs": "Sopas, Clam Chowder y Ensaladas", "nameEn": "Chowders, Soups & Salads", "icon": "Soup"},
+        {"id": "sides", "nameEs": "Acompañamientos", "nameEn": "Sides", "icon": "Utensils"}
+    ]
+
+    items = [
+        # --- FRESH SEAFOOD PLATTERS ---
+        {
+            "id": "fish-and-chips",
+            "nameEs": "Fish & Chips Famoso de Bacalao Crujiente",
+            "nameEn": "Famous World-Class Fish & Chips",
+            "descriptionEs": "El plato insignia y más aclamado de Seven Seas: filetes de bacalao dulce frescos empanizados al momento y dorados a la perfección, servidos con papas fritas y ensalada coleslaw casera.",
+            "descriptionEn": "Seven Seas' all-time favorite dish: tender and sweet fresh cod fillets breaded to order and fried golden, served with french fries and house coleslaw.",
+            "price": 21.95,
+            "category": "fresh-seafood",
+            "allergens": ["Gluten", "Pescado", "Huevos"],
+            "popular": True
+        },
+        {
+            "id": "fried-sea-scallops",
+            "nameEs": "Platón de Vieiras de Mar Fritas Crujientes",
+            "nameEn": "Crispy Fried Sea Scallops Platter",
+            "descriptionEs": "Vieiras de mar frescas tiernas ligeramente empanizadas y fritas doraditas, con papas fritas, salsa tártara y ensalada coleslaw.",
+            "descriptionEn": "Plump fresh sea scallops lightly breaded and deep fried golden brown, served with fries, tartar sauce, and coleslaw.",
+            "price": 25.95,
+            "category": "fresh-seafood",
+            "allergens": ["Gluten", "Mariscos"],
+            "popular": True
+        },
+        {
+            "id": "fried-shrimp-platter",
+            "nameEs": "Platón de Camarones Jumbo Fritos",
+            "nameEn": "Fried Jumbo Shrimp Platter",
+            "descriptionEs": "Una porción abundante de camarones frescos empanizados y fritos dorados, servidos con papas fritas, limón y salsa tártara casera.",
+            "descriptionEn": "An outrageous amount of fresh plump shrimp deep fried to crispy perfection, served with fries and coleslaw.",
+            "price": 23.95,
+            "category": "fresh-seafood",
+            "allergens": ["Gluten", "Mariscos"],
+            "popular": True
+        },
+        {
+            "id": "fried-clam-strips-platter",
+            "nameEs": "Platón de Tiras de Almeja Fritas de Maryland",
+            "nameEn": "Fried Maryland Clam Strips Platter",
+            "descriptionEs": "Tiras de almeja fresca traídas de Maryland, rebozadas ligeramente y fritas crujientes, servidas con papas y salsa tártara.",
+            "descriptionEn": "Fresh clam strips straight from Maryland breaded and fried golden, served with fries and homemade coleslaw.",
+            "price": 24.95,
+            "category": "fresh-seafood",
+            "allergens": ["Gluten", "Mariscos"]
+        },
+        {
+            "id": "seafood-combination-platter",
+            "nameEs": "Platón Combinación Suprema de Mariscos Fritos",
+            "nameEn": "Seven Seas Seafood Combination Feast",
+            "descriptionEs": "Para los indecisos: generosa combinación de bacalao empanizado, vieiras de mar, camarones jumbo y tiras de almeja con papas y coleslaw.",
+            "descriptionEn": "The ultimate ocean feast: generous combination of fresh fried cod, tender sea scallops, jumbo shrimp, and Maryland clam strips.",
+            "price": 29.95,
+            "category": "fresh-seafood",
+            "allergens": ["Gluten", "Pescado", "Mariscos"],
+            "popular": True
+        },
+
+        # --- FAMOUS LOBSTER ROLLS ---
+        {
+            "id": "hot-buttered-lobster-roll-single",
+            "nameEs": "Famoso Rollo de Langosta Caliente a la Mantequilla (Sencillo)",
+            "nameEn": "Famous Warm Buttered Lobster Roll (Single)",
+            "descriptionEs": "Carne tierna y jugosa de langosta fresca salteada en abundante mantequilla tibia derretida, servida en pan brioche tostado y dorado.",
+            "descriptionEn": "Seven Seas' legendary Connecticut-style warm lobster roll with succulent lobster meat sautéed in pure melted butter on a toasted buttery roll.",
+            "price": 28.00,
+            "category": "lobster-rolls",
+            "allergens": ["Gluten", "Mariscos", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "hot-buttered-lobster-roll-double",
+            "nameEs": "Rollo de Langosta Doble con Extra Carne de Langosta",
+            "nameEn": "Famous Warm Buttered Lobster Roll (Double Meat)",
+            "descriptionEs": "Doble porción colosal de carne de langosta fresca bañada en mantequilla caliente sobre pan artesanal tostado con papas fritas.",
+            "descriptionEn": "Colossal double portion of sweet warm lobster meat overflowing in a toasted buttery bun, served with fries and coleslaw.",
+            "price": 48.00,
+            "category": "lobster-rolls",
+            "allergens": ["Gluten", "Mariscos", "Lácteos"],
+            "popular": True
+        },
+
+        # --- DINNER ENTREES & PASTAS (Disponibles a partir de las 5pm) ---
+        {
+            "id": "fresh-swordfish-entree",
+            "nameEs": "Pez Espada Fresco a la Parrilla (Charbroiled, Cajún o Eneldo)",
+            "nameEn": "Fresh Atlantic Swordfish Entrée",
+            "descriptionEs": "Filete grueso de pez espada fresco cocinado a su elección: a la brasa, estilo cajún especiado, o a la mantequilla con vino blanco y eneldo.",
+            "descriptionEn": "Thick fresh Atlantic swordfish steak prepared to order: charbroiled, spicy cajun style, or in a rich butter wine dill reduction.",
+            "price": 24.95,
+            "category": "dinner-entrees",
+            "allergens": ["Pescado", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "broiled-scrod-crabmeat",
+            "nameEs": "Bacalao Scrod Gratinado con Carne de Cangrejo",
+            "nameEn": "Broiled Scrod Topped with Crabmeat Stuffing",
+            "descriptionEs": "Filete de bacalao scrod asado al horno cubierto con relleno de carne de cangrejo dulce, pan molido sazonado y queso romano rallado.",
+            "descriptionEn": "Fresh scrod broiled with butter and wine, smothered in sweet lump crabmeat, herb bread crumbs, and grated Romano cheese.",
+            "price": 24.95,
+            "category": "dinner-entrees",
+            "allergens": ["Gluten", "Pescado", "Mariscos", "Lácteos"]
+        },
+        {
+            "id": "broiled-fresh-scrod",
+            "nameEs": "Bacalao Scrod Asado a la Mantequilla y Vino Blanco",
+            "nameEn": "Broiled Fresh Scrod in Butter Wine Sauce",
+            "descriptionEs": "Tierno filete de bacalao scrod horneado en salsa de mantequilla y vino blanco delicadamente cubierto de migas doradas.",
+            "descriptionEn": "Fresh tender scrod broiled in a buttery wine sauce and delicately topped with toasted herb bread crumbs.",
+            "price": 19.95,
+            "category": "dinner-entrees",
+            "allergens": ["Gluten", "Pescado", "Lácteos"]
+        },
+        {
+            "id": "charbroiled-salmon",
+            "nameEs": "Salmón Fresco a la Brasa",
+            "nameEn": "Charbroiled Fresh Atlantic Salmon",
+            "descriptionEs": "Filete de salmón fresco cocinado a la perfección a la parrilla con mantequilla y hierbas.",
+            "descriptionEn": "Fresh Atlantic salmon charbroiled to juicy perfection, served with seasonal sides.",
+            "price": 23.95,
+            "category": "dinner-entrees",
+            "allergens": ["Pescado", "Lácteos"]
+        },
+        {
+            "id": "ribeye-steak-14oz",
+            "nameEs": "Filete Rib Eye a la Brasa (14oz)",
+            "nameEn": "14oz Charbroiled Rib Eye Steak",
+            "descriptionEs": "Generoso corte de ribeye de 14 onzas cocinado a las brasas al término de su preferencia con papas y vegetales.",
+            "descriptionEn": "Juicy 14oz USDA choice rib eye steak charbroiled to your liking with potatoes and vegetables.",
+            "price": 29.95,
+            "category": "dinner-entrees",
+            "popular": True
+        },
+        {
+            "id": "shrimp-seven-seas-linguini",
+            "nameEs": "Camarones Seven Seas sobre Pasta Linguini",
+            "nameEn": "Shrimp Seven Seas over Linguini",
+            "descriptionEs": "Camarones tiernos salteados con jitomates maduros frescos en salsa casera de ajo y mantequilla servidos sobre pasta linguini.",
+            "descriptionEn": "Plump tender shrimp sautéed with fresh vine tomatoes in house butter garlic sauce served over linguini.",
+            "price": 24.95,
+            "category": "dinner-entrees",
+            "allergens": ["Gluten", "Mariscos", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "chicken-seven-seas-linguini",
+            "nameEs": "Pollo Seven Seas con Brócoli y Champiñones sobre Linguini",
+            "nameEn": "Chicken Seven Seas over Linguini",
+            "descriptionEs": "Tiras de pechuga de pollo salteadas con jitomates, champiñones frescos y brócoli en salsa de vino blanco y ajo con mantequilla sobre linguini.",
+            "descriptionEn": "Tender chicken breast sautéed with fresh tomatoes, mushrooms, and broccoli in garlic wine butter sauce over linguini.",
+            "price": 21.95,
+            "category": "dinner-entrees",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+        {
+            "id": "chicken-marsala",
+            "nameEs": "Pollo al Vino Marsala con Champiñones",
+            "nameEn": "Classic Chicken Marsala with Mushrooms",
+            "descriptionEs": "Pechuga de pollo tierna salteada en rica reducción de vino dulce Marsala con champiñones frescos en rebanadas.",
+            "descriptionEn": "Tender chicken cutlets sautéed in a rich Marsala wine reduction with sliced button mushrooms.",
+            "price": 23.95,
+            "category": "dinner-entrees",
+            "allergens": ["Lácteos"]
+        },
+        {
+            "id": "chicken-parmesan",
+            "nameEs": "Pollo a la Parmesana Gratinado con Pasta",
+            "nameEn": "Baked Chicken Parmesan over Pasta",
+            "descriptionEs": "Pechuga de pollo empanizada y dorada, cubierta de salsa marinara casera y queso mozzarella derretido con pasta y queso parmesano.",
+            "descriptionEn": "Fresh breaded chicken breast baked with marinara and melted mozzarella, served with pasta and parmesan.",
+            "price": 23.95,
+            "category": "dinner-entrees",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+        {
+            "id": "peachtree-chicken",
+            "nameEs": "Pollo Peachtree con Duraznos, Nueces y Schnapps",
+            "nameEn": "Peachtree Schnapps Glazed Chicken with Walnuts",
+            "descriptionEs": "Especialidad única de la casa: pechuga de pollo salteada con duraznos dulces, nueces crujientes y glaseado aromático de licor Peachtree Schnapps.",
+            "descriptionEn": "House specialty: chicken breast sautéed with sweet peaches, toasted walnuts, and glazed in aromatic Peachtree schnapps.",
+            "price": 23.95,
+            "category": "dinner-entrees",
+            "allergens": ["Frutos secos"],
+            "popular": True
+        },
+        {
+            "id": "chicken-piccata",
+            "nameEs": "Pollo Piccata al Limón, Vino Blanco y Alcaparras",
+            "nameEn": "Chicken Piccata with Capers & White Wine",
+            "descriptionEs": "Pechuga de pollo tierna salteada con alcaparras en salsa cítrica de limón fresco, mantequilla y vino blanco.",
+            "descriptionEn": "Fresh chicken breast sautéed with tangy capers in a delicate lemon white wine butter sauce.",
+            "price": 23.95,
+            "category": "dinner-entrees",
+            "allergens": ["Lácteos"]
+        },
+
+        # --- BURGERS (Molidas frescas en casa con papas y ensalada coleslaw) ---
+        {
+            "id": "mushroom-bacon-cheese-burger",
+            "nameEs": "Hamburguesa con Champiñones, Tocino y Queso Fundido",
+            "nameEn": "Mushroom Bacon Cheeseburger",
+            "descriptionEs": "Carne fresca molida en la casa a las brasas, champiñones salteados a la mantequilla, tocino crujiente y queso derretido con papas y coleslaw.",
+            "descriptionEn": "House-ground fresh beef charbroiled to order, buttery sautéed mushrooms, crisp bacon, and melted cheese with fries and coleslaw.",
+            "price": 16.95,
+            "category": "burgers",
+            "allergens": ["Gluten", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "bacon-cheese-burger",
+            "nameEs": "Hamburguesa con Tocino y Queso a Elección",
+            "nameEn": "Classic Bacon Cheeseburger",
+            "descriptionEs": "Carne molida artesanalmente a las brasas con abundante tocino ahumado crujiente y queso fundido.",
+            "descriptionEn": "Charbroiled house-ground beef burger with crispy bacon and melted cheese of your choice, fries, and coleslaw.",
+            "price": 15.95,
+            "category": "burgers",
+            "allergens": ["Gluten", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "the-original-cheeseburger",
+            "nameEs": "Hamburguesa Clásica con Queso Charbroiled",
+            "nameEn": "The Original Seven Seas Cheeseburger",
+            "descriptionEs": "Carne de res fresca molida en casa cocinada al carbón al término deseado con queso derretido, lechuga, jitomate, cebolla y papas.",
+            "descriptionEn": "Fresh house-ground charbroiled beef patty topped with melted cheese, lettuce, tomato, onion, fries, and slaw.",
+            "price": 14.95,
+            "category": "burgers",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+        {
+            "id": "chili-cheddar-burger",
+            "nameEs": "Hamburguesa con Chili Casero y Queso Jack",
+            "nameEn": "Chili & Melted Jack Cheddar Burger",
+            "descriptionEs": "Hamburguesa a las brasas coronada con chili picante recién preparado y quesos cheddar y monterey jack fundidos.",
+            "descriptionEn": "Charbroiled burger smothered in house chili and bubbly melted cheddar and jack cheeses.",
+            "price": 16.95,
+            "category": "burgers",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+
+        # --- SANDWICHES & POLLO CHARBROILED ---
+        {
+            "id": "steak-and-cheese-grinder",
+            "nameEs": "Sándwich Grinder de Rib Eye Shaved con Queso (10oz)",
+            "nameEn": "10oz Shaved Rib Eye Steak & Cheese Grinder",
+            "descriptionEs": "10 onzas de filete rib eye finamente rasurado a la plancha con champiñones, pimientos y cebollas salteadas, con queso americano derretido en pan grinder caliente.",
+            "descriptionEn": "10oz shaved rib eye steak with sautéed mushrooms, bell peppers, and onions topped with melted American cheese on a toasted grinder roll.",
+            "price": 15.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "fried-cod-sandwich",
+            "nameEs": "Sándwich de Bacalao Frito Crujiente",
+            "nameEn": "Lightly Breaded Fresh Cod Sandwich",
+            "descriptionEs": "Filete de bacalao fresco empanizado dorado con lechuga fresca, jitomate y salsa tártara casera en panecillo tostado con papas.",
+            "descriptionEn": "Lightly breaded fresh cod fillet with lettuce, tomato, and house tartar sauce, served with fries and slaw.",
+            "price": 14.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten", "Pescado", "Huevos"],
+            "popular": True
+        },
+        {
+            "id": "turkey-club-double-decker",
+            "nameEs": "Club Sándwich Doble Piso de Pavo Horneado",
+            "nameEn": "Double Decker Roast Turkey Club",
+            "descriptionEs": "Pavo asado jugoso en horno propio, lechuga, jitomate, tocino crujiente y mayonesa en tres pisos de pan tostado con papas.",
+            "descriptionEn": "All-time favorite triple-decker sandwich with oven-roasted turkey breast, lettuce, tomato, bacon, and mayo.",
+            "price": 15.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten", "Huevos"],
+            "popular": True
+        },
+        {
+            "id": "hickory-chicken-sandwich",
+            "nameEs": "Sándwich de Pollo Hickory BBQ con Pimientos Asados",
+            "nameEn": "Hickory BBQ Grilled Chicken Sandwich",
+            "descriptionEs": "Pechuga de pollo a la brasa con salsa barbacoa hickory, pimientos rojos asados, tocino crujiente, cebolla y jitomate en panecillo tostado.",
+            "descriptionEn": "Charbroiled chicken glazed in hickory BBQ sauce, roasted red peppers, bacon, lettuce, tomato, and onion on a toasted roll.",
+            "price": 14.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten"]
+        },
+        {
+            "id": "charbroiled-chicken-blt",
+            "nameEs": "Sándwich de Pollo a la Brasa con Tocino B.L.T.",
+            "nameEn": "Charbroiled Chicken BLT Sandwich",
+            "descriptionEs": "Pechuga de pollo fresca a la parrilla con tocino crujiente, lechuga fresca, jitomate y mayonesa con papas fritas.",
+            "descriptionEn": "Fresh juicy charbroiled chicken breast served with crisp bacon, lettuce, tomato, and mayo with fries and slaw.",
+            "price": 14.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten", "Huevos"]
+        },
+        {
+            "id": "hot-chili-dog",
+            "nameEs": "Hot Dog Gigante con Chili Casero y Queso",
+            "nameEn": "Loaded Chili Cheese Dog",
+            "descriptionEs": "Salchicha asada en pan caliente cubierta con chili de carne casero, cebolla picada y queso cheddar y jack fundido.",
+            "descriptionEn": "Grilled hot dog smothered in homemade beef chili, chopped onions, and melted cheddar and jack cheeses.",
+            "price": 13.95,
+            "category": "sandwiches-chicken",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+
+        # --- ENTRANTES Y ALITAS ---
+        {
+            "id": "seven-seas-stuffed-clams",
+            "nameEs": "Almejas Rellenas Estilo Casino (4 piezas)",
+            "nameEn": "Casino Style Stuffed Clams (4 pcs)",
+            "descriptionEs": "Almejas frescas horneadas estilo Casino rellenas de queso parmesano, tocino ahumado, pimientos dulces y ajo aromático.",
+            "descriptionEn": "Four large fresh clams baked Casino style with grated Parmesan cheese, bacon bits, sweet peppers, and garlic.",
+            "price": 17.95,
+            "category": "appetizers-wings",
+            "allergens": ["Gluten", "Mariscos", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "seven-seas-crabcakes",
+            "nameEs": "Pasteles de Cangrejo Artesanales con Remoulade",
+            "nameEn": "Seven Seas Signature Crabcakes",
+            "descriptionEs": "Pasteles de cangrejo dorados a la plancha servidos sobre hojas verdes de huerta con salsa remoulade casera sabrosa.",
+            "descriptionEn": "Handmade golden lump crabcakes served over mixed greens with house savory remoulade dipping sauce.",
+            "price": 17.95,
+            "category": "appetizers-wings",
+            "allergens": ["Gluten", "Mariscos", "Huevos"],
+            "popular": True
+        },
+        {
+            "id": "seven-seas-wings-7",
+            "nameEs": "Alitas de Pollo Seven Seas (7 piezas)",
+            "nameEn": "Seven Seas Wings (7 pcs)",
+            "descriptionEs": "Siete alitas crujientes bañadas en su salsa favorita: Buffalo, Mostaza Miel, Ajo Parmesano, Mango Habanero o Barbacoa BBQ con apio y aderezo.",
+            "descriptionEn": "Seven crispy wings tossed in sauce of choice: Buffalo, Honey Mustard, Garlic Parmesan, Mango Habanero, or BBQ with celery and dip.",
+            "price": 10.95,
+            "category": "appetizers-wings",
+            "allergens": ["Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "seven-seas-wings-14",
+            "nameEs": "Alitas de Pollo Seven Seas (14 piezas)",
+            "nameEn": "Seven Seas Wings (14 pcs)",
+            "descriptionEs": "Catorce alitas jumbo jugosas doraditas con su elección de salsas de la casa.",
+            "descriptionEn": "Fourteen crispy jumbo wings with choice of house-made sauces, celery, and bleu cheese or ranch.",
+            "price": 21.50,
+            "category": "appetizers-wings",
+            "allergens": ["Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "ultimate-nachos",
+            "nameEs": "Nachos Supremos con Queso, Jalapeños y Chili",
+            "nameEn": "Ultimate Seven Seas Nachos",
+            "descriptionEs": "Totopos de maíz con jitomates, cebollas, jalapeños, aceitunas negras, queso cheddar y jack fundido, crema, salsa y chili casero.",
+            "descriptionEn": "Crispy tortilla chips loaded with tomatoes, onions, jalapeños, black olives, melted cheddar-jack, sour cream, salsa, and beef chili.",
+            "price": 14.95,
+            "category": "appetizers-wings",
+            "allergens": ["Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "potato-skins",
+            "nameEs": "Cáscaras de Papa Doradas con Queso y Tocino",
+            "nameEn": "Loaded Cheddar Bacon Potato Skins",
+            "descriptionEs": "Papas doradas crujientes rellenas de abundante queso cheddar y jack derretido con trozos de tocino real y crema agria.",
+            "descriptionEn": "Crispy potato skins loaded with melted cheddar and jack cheeses, real bacon bits, and sour cream.",
+            "price": 10.95,
+            "category": "appetizers-wings",
+            "allergens": ["Lácteos"]
+        },
+        {
+            "id": "hot-buffalo-fingers",
+            "nameEs": "Tiras de Pollo Crujientes Bañadas en Salsa Buffalo",
+            "nameEn": "Zesty Buffalo Chicken Fingers",
+            "descriptionEs": "Tiras de pechuga de pollo empanizadas bañadas en salsa picante Buffalo con aderezo cremoso de queso azul.",
+            "descriptionEn": "Deep fried chicken tenderloins dipped in zesty buffalo sauce, served with celery and bleu cheese dressing.",
+            "price": 12.95,
+            "category": "appetizers-wings",
+            "allergens": ["Gluten", "Lácteos"]
+        },
+
+        # --- SOPAS, CHOWDER Y ENSALADAS ---
+        {
+            "id": "seven-seas-clam-chowder-lg",
+            "nameEs": "Clam Chowder de Almejas de Nueva Inglaterra (Tazón Grande)",
+            "nameEn": "New England Clam Chowder (Large Bowl)",
+            "descriptionEs": "El famoso clam chowder tradicional de Seven Seas elaborado a fuego lento con abundantes almejas dulces, papas y crema fresca.",
+            "descriptionEn": "Seven Seas' famous rich and creamy New England clam chowder loaded with sweet clams, potatoes, and cream.",
+            "price": 8.95,
+            "category": "soups-salads",
+            "allergens": ["Gluten", "Mariscos", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "lobster-bisque-bowl",
+            "nameEs": "Bisque de Langosta Cremoso al Jerez",
+            "nameEn": "Rich Lobster Bisque with Sherry",
+            "descriptionEs": "Sopa cremosa y aterciopelada de langosta cocida con jerez y crema fresca con trozos de langosta.",
+            "descriptionEn": "Velvety smooth lobster bisque slowly simmered with sherry wine and cream with tender lobster morsels.",
+            "price": 8.95,
+            "category": "soups-salads",
+            "allergens": ["Mariscos", "Lácteos"],
+            "popular": True
+        },
+        {
+            "id": "seven-seas-chili-bowl",
+            "nameEs": "Tazón de Chili Casero con Queso Cheddar y Totopos",
+            "nameEn": "Seven Seas House Beef Chili with Chips",
+            "descriptionEs": "Chili casero de carne de res especiado servido bien caliente con quesos cheddar y monterey jack fundidos y totopos.",
+            "descriptionEn": "Fresh homemade beef chili topped with melted cheddar and jack cheeses, served with crispy tortilla chips.",
+            "price": 9.95,
+            "category": "soups-salads",
+            "allergens": ["Lácteos"]
+        },
+        {
+            "id": "seven-seas-garden-salad",
+            "nameEs": "Ensalada del Huerto Gigante Seven Seas",
+            "nameEn": "Seven Seas Giant Garden Salad",
+            "descriptionEs": "Ensalada grande con jitomates, cebolla, zanahoria rallada, pimientos verdes, pepinos crujientes, aceitunas y crutones dorados.",
+            "descriptionEn": "Crisp salad loaded with ripe tomatoes, onions, shredded carrots, green peppers, cucumbers, olives, and croutons.",
+            "price": 10.95,
+            "category": "soups-salads",
+            "allergens": ["Gluten"]
+        },
+
+        # --- ACOMPAÑAMIENTOS ---
+        {
+            "id": "wedge-fries",
+            "nameEs": "Papas Fritas en Gajos (Wedge Fries)",
+            "nameEn": "Ultimate Seasoned Wedge Fries",
+            "descriptionEs": "Papas en gajos gruesos doraditas y crujientes por fuera y suaves por dentro.",
+            "descriptionEn": "Hot and crispy seasoned potato wedges.",
+            "price": 4.95,
+            "category": "sides"
+        },
+        {
+            "id": "sweet-potato-fries",
+            "nameEs": "Papas Fritas de Camote Dulce",
+            "nameEn": "Crispy Sweet Potato Fries",
+            "descriptionEs": "Bastones de camote dulce fritos crujientes.",
+            "descriptionEn": "Golden crisp sweet potato fries lightly salted.",
+            "price": 5.95,
+            "category": "sides"
+        },
+        {
+            "id": "fried-onion-rings",
+            "nameEs": "Aros de Cebolla Fritos Dorados",
+            "nameEn": "Golden Fried Onion Rings",
+            "descriptionEs": "Aros de cebolla gruesos rebozados y fritos crujientes.",
+            "descriptionEn": "Thick-cut sweet onion rings fried crispy golden brown.",
+            "price": 7.95,
+            "category": "sides",
+            "allergens": ["Gluten"]
+        }
+    ]
+
+    data["categories"] = categories
+    data["items"] = items
+
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"✅ Successfully written {len(items)} verified items to {dest}!")
+
+if __name__ == "__main__":
+    build_seven_seas()
