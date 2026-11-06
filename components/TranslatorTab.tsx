@@ -26,7 +26,7 @@ const PHRASE_CATEGORIES = [
   { id: "all", labelEs: "Todas", labelEn: "All", icon: Sparkles },
   { id: "payments", labelEs: "Pagos y EBT", labelEn: "Payments & EBT", icon: CreditCard },
   { id: "deli", labelEs: "Deli y Comida", labelEn: "Deli & Food", icon: Utensils },
-  { id: "hours", labelEs: "Horarios", labelEn: "Store Hours", icon: Clock },
+  { id: "hours", labelEs: "Horarios y Tienda", labelEn: "Store & Hours", icon: Clock },
 ];
 
 const CATEGORIZED_PHRASES = [
@@ -52,6 +52,20 @@ const CATEGORIZED_PHRASES = [
     phoneticEn: "Kan ai pei wid kash or de-bit?",
   },
   {
+    cat: "payments",
+    en: "Could I please get a receipt?",
+    es: "¿Me puede dar un recibo, por favor?",
+    phoneticEs: "Meh PWEH-deh dahr oon reh-SEE-boh, pohr fah-VOHR?",
+    phoneticEn: "Kud ai pliis get e ri-siit?",
+  },
+  {
+    cat: "payments",
+    en: "Do you offer cash back with debit?",
+    es: "¿Tienen retiro de efectivo con débito?",
+    phoneticEs: "TYEH-nehn reh-TEE-roh deh eh-fehk-TEE-voh kohn DEH-bee-toh?",
+    phoneticEn: "Du iu o-fer kash bak wid de-bit?",
+  },
+  {
     cat: "deli",
     en: "I would like 1 pound of ham, sliced thin.",
     es: "Quisiera 1 libra de jamón, cortado fino.",
@@ -73,6 +87,20 @@ const CATEGORIZED_PHRASES = [
     phoneticEn: "Is dis fud jot and fresh?",
   },
   {
+    cat: "deli",
+    en: "Does this contain dairy, gluten, or nuts?",
+    es: "¿Esto contiene lácteos, gluten o nueces?",
+    phoneticEs: "EHS-toh kohn-TYEH-neh LAHK-teh-ohs, GLOO-tehn oh NWEH-sehs?",
+    phoneticEn: "Das dis kon-tein de-ri, glu-ten, or nats?",
+  },
+  {
+    cat: "deli",
+    en: "What do you recommend that is popular here?",
+    es: "¿Qué me recomienda que sea popular aquí?",
+    phoneticEs: "Keh meh reh-koh-MYEHN-dah keh SEH-ah poh-poo-LAHR ah-KEE?",
+    phoneticEn: "Uat du iu re-ko-mend dat is pop-iu-lar jiir?",
+  },
+  {
     cat: "hours",
     en: "What are your store hours today?",
     es: "¿Cuáles son sus horarios de atención hoy?",
@@ -92,6 +120,13 @@ const CATEGORIZED_PHRASES = [
     es: "¿Cuándo reponen el pan fresco de panadería?",
     phoneticEs: "KWAHN-doh reh-POH-nehn ehl pahn FREHS-koh?",
     phoneticEn: "Uen du iu ri-stok fresh bei-ke-ri bred?",
+  },
+  {
+    cat: "hours",
+    en: "Where can I find customer parking or restrooms?",
+    es: "¿Dónde encuentro el estacionamiento o los baños?",
+    phoneticEs: "DOHN-deh ehn-KWEHN-troh ehl ehs-tah-syoh-nah-MYEHN-toh?",
+    phoneticEn: "Uer kan ai faind kas-to-mer par-king or rest-rums?",
   },
 ];
 
@@ -462,7 +497,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     : "";
 
   return (
-    <div className="w-full max-w-md mx-auto p-4 pb-24 flex flex-col gap-3">
+    <div className="w-full max-w-md mx-auto p-4 pb-32 flex flex-col gap-3">
       {/* LANGUAGE DIRECTION BAR */}
       <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-2 flex items-center justify-between">
         <div className="flex-1 text-center font-extrabold text-xs text-slate-800 uppercase tracking-wide">
@@ -637,8 +672,8 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
           })}
         </div>
 
-        {/* Preset Phrase Cards */}
-        <div className="space-y-1.5 max-h-48 overflow-y-auto pr-0.5">
+        {/* Preset Phrase Cards - Full length of page without truncation */}
+        <div className="space-y-2 pb-6">
           {filteredPhrases.map((phrase, idx) => {
             const displayPhrase = sourceLang === "en" ? phrase.en : phrase.es;
             const targetPhrase = sourceLang === "en" ? phrase.es : phrase.en;
