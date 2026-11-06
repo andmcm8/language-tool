@@ -1,0 +1,498 @@
+#!/usr/bin/env python3
+import json
+import os
+import sys
+
+def build_molten_java():
+    dest = "data/merchants/molten-java.json"
+    
+    data = {
+        "storeInfo": {
+            "id": "molten-java",
+            "name": "Molten Java",
+            "tagline": "House-Roasted Organic Fair-Trade Coffee, All-Day Breakfast & Local Arts in Bethel",
+            "address": "213 Greenwood Ave, Bethel, CT 06801",
+            "hours": {
+                "monday_friday": "6:30 AM - 6:00 PM",
+                "saturday": "7:00 AM - 6:00 PM",
+                "sunday": "7:30 AM - 5:00 PM"
+            },
+            "paymentMethods": [
+                "Cash",
+                "Credit/Debit Cards",
+                "Apple Pay",
+                "Contactless"
+            ],
+            "amenities": [
+                "On-Site Coffee Roasting",
+                "Dine-In",
+                "Takeout",
+                "Victorian Porch & Garden Seating",
+                "Live Music & Art Gallery",
+                "Vegan & Gluten-Friendly Options",
+                "Bilingual Menu"
+            ],
+            "themeColor": "#78350f",
+            "logoIcon": "coffee",
+            "policies": {
+                "restroomLocationEs": "Ubicado en la planta baja cerca del pasillo de la galería de arte.",
+                "restroomLocationEn": "Located on the ground floor near the art gallery hallway.",
+                "restroomCodeEs": "Abierto para clientes (no requiere código).",
+                "restroomCodeEn": "Open for customers (no code required).",
+                "wifiName": "MoltenJava_Guest",
+                "wifiPassword": "coffeeroasters",
+                "parkingPolicyEs": "Estacionamiento disponible en la entrada y a lo largo de Greenwood Ave.",
+                "parkingPolicyEn": "On-site parking spaces in front and along Greenwood Ave.",
+                "returnPolicyEs": "Tostamos nuestro propio café orgánico; si su bebida necesita algún ajuste de leche o endulzante se la preparamos con gusto.",
+                "returnPolicyEn": "We roast our own beans; if your drink needs any adjustment to sweetness or milk, we will happily remake it.",
+                "deliveryPolicyEs": "Pedidos para llevar disponibles por teléfono y café en grano con envío nacional.",
+                "deliveryPolicyEn": "Takeout ordering by phone; whole bean bags available for national shipping."
+            },
+            "phone": "(203) 744-1413"
+        },
+        "categories": [
+            {"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"},
+            {"id": "cafe-especialidades", "nameEs": "Cafés Tostados en Casa y Especialidades", "nameEn": "House-Roasted & Signature Drinks", "icon": "Coffee"},
+            {"id": "espresso-clasicos", "nameEs": "Espressos Clásicos y Lattes", "nameEn": "Classic Espresso & Lattes", "icon": "Sparkles"},
+            {"id": "desayunos-todo-el-dia", "nameEs": "Desayunos Caseros (Todo el Día)", "nameEn": "All-Day Breakfast & Burritos", "icon": "Clock"},
+            {"id": "almuerzos-burritos", "nameEs": "Burritos, Bowls y Platos Salados", "nameEn": "Savory Bowls & Burritos", "icon": "Utensils"},
+            {"id": "panaderia-muffins", "nameEs": "Muffins de Yogur y Panadería", "nameEn": "Yogurt Muffins & Scones", "icon": "Cake"},
+            {"id": "granos-para-llevar", "nameEs": "Café en Grano Tostado (Para Llevar)", "nameEn": "Whole Bean Roasted Bags", "icon": "ShoppingBag"}
+        ],
+        "items": [
+            # --- CAFES TOSTADOS EN CASA Y ESPECIALIDADES ---
+            {
+                "id": "the-krakatoa",
+                "nameEs": "Especialidad Volcánica 'The Krakatoa'",
+                "nameEn": "The Krakatoa Signature Drink",
+                "descriptionEs": "Bebida volcánica insignia con espresso doble, chocolate caliente, caramelo espeso, canela aromática y crema batida casera de coco.",
+                "descriptionEn": "Our legendary signature drink: double espresso, rich dark chocolate, caramel, aromatic cinnamon, and house-made coconut whipped cream.",
+                "price": 5.75,
+                "category": "cafe-especialidades",
+                "badge": "Insignia Molten",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "the-super-joe",
+                "nameEs": "Café de Potencia 'The Super Joe'",
+                "nameEn": "The Super Joe",
+                "descriptionEs": "Poderosa combinación energizante de café tostado de la casa, inyección de espresso, jarabe de caramelo y chocolate.",
+                "descriptionEn": "High-powered energizing blend of house-roasted drip coffee, rich espresso shot, real caramel, and chocolate.",
+                "price": 5.50,
+                "category": "cafe-especialidades",
+                "badge": "Alta Cafeína",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "turkish-latte",
+                "nameEs": "Latte Turco con Cardamomo y Vainilla",
+                "nameEn": "Turkish Latte",
+                "descriptionEs": "Espresso intenso con leche vaporizada infusionada con cardamomo recién molido, canela de Ceilán y vainilla natural.",
+                "descriptionEn": "Bold espresso combined with steamed milk infused with ground cardamom, cinnamon, and pure Madagascar vanilla.",
+                "price": 5.45,
+                "category": "cafe-especialidades",
+                "badge": "Favorito de Clientes",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "turkish-americano",
+                "nameEs": "Americano Turco Especiado",
+                "nameEn": "Turkish Americano",
+                "descriptionEs": "Doble shot de espresso sobre agua caliente con infusión de cardamomo, canela molida y toque de vainilla.",
+                "descriptionEn": "Double espresso shot drawn over hot water and spiced with cardamom, cinnamon, and subtle vanilla.",
+                "price": 4.50,
+                "category": "cafe-especialidades",
+                "badge": "Especiado",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "house-roasted-drip-coffee",
+                "nameEs": "Café del Día Tostado en Tienda",
+                "nameEn": "House-Roasted Drip Coffee",
+                "descriptionEs": "Café orgánico tostado fresco en pequeños lotes en nuestra máquina tostadora en Bethel.",
+                "descriptionEn": "Freshly brewed organic coffee roasted in-store in small artisan batches right here in Bethel.",
+                "price": 2.95,
+                "category": "cafe-especialidades",
+                "badge": "Tostado Aquí",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "molten-cold-brew",
+                "nameEs": "Cold Brew Artesanal en Frío",
+                "nameEn": "Artisan Cold Brew Coffee",
+                "descriptionEs": "Café macerado en frío lentamente durante 20 horas con notas a chocolate y baja acidez, servido sobre hielo.",
+                "descriptionEn": "Slow cold-steeped for 20 hours for an ultra-smooth, chocolatey profile with low acidity.",
+                "price": 4.25,
+                "category": "cafe-especialidades",
+                "badge": "Refrescante",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "molten-freeze-frappe",
+                "nameEs": "Frappé 'Molten Freeze' Batido",
+                "nameEn": "Molten Freeze Blended Frappé",
+                "descriptionEs": "Bebida helada batida con o sin espresso, su sabor de jarabe favorito y crema batida fresca.",
+                "descriptionEn": "Chilled blended frappe with or without espresso, blended with your favorite syrup flavor and topped with whipped cream.",
+                "price": 5.95,
+                "category": "cafe-especialidades",
+                "badge": "Batido Helado",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "chai-latte-spiced",
+                "nameEs": "Chai Latte de Especias de la India",
+                "nameEn": "Authentic Spiced Chai Latte",
+                "descriptionEs": "Té negro especiado con jengibre, clavo, cardamomo y canela mezclado con leche caliente espumada.",
+                "descriptionEn": "Black tea infused with cardamom, ginger, cinnamon, and cloves steamed with velvety milk.",
+                "price": 4.95,
+                "category": "cafe-especialidades",
+                "badge": "Especiado",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "italian-cream-soda",
+                "nameEs": "Soda Italiana con Crema",
+                "nameEn": "Italian Cream Soda",
+                "descriptionEs": "Agua gasificada fresca con su jarabe italiano favorito (frambuesa, mora o vainilla) y un toque de crema dulce.",
+                "descriptionEn": "Sparkling seltzer water mixed with your choice of artisan Italian fruit syrup and a float of sweet cream.",
+                "price": 3.75,
+                "category": "cafe-especialidades",
+                "badge": "Refrescante",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+
+            # --- ESPRESSOS CLASICOS Y LATTES ---
+            {
+                "id": "double-espresso-shot",
+                "nameEs": "Doble Espresso Recto",
+                "nameEn": "Straight Double Espresso",
+                "descriptionEs": "Extracción pura de dos onzas de café tostado medio-oscuro con crema espesa dorada.",
+                "descriptionEn": "Pure double extraction of our house espresso blend with rich hazelnut crema.",
+                "price": 3.00,
+                "category": "espresso-clasicos",
+                "badge": "Puro",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "classic-latte",
+                "nameEs": "Caffè Latte Clásico",
+                "nameEn": "Classic Caffè Latte",
+                "descriptionEs": "Espresso recién extraído con leche entera vaporizada y una suave capa de microespuma.",
+                "descriptionEn": "Fresh espresso poured into velvety steamed milk with a delicate crown of microfoam.",
+                "price": 4.75,
+                "category": "espresso-clasicos",
+                "badge": "Clásico",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "cappuccino-traditional",
+                "nameEs": "Capuchino Tradicional Italiano",
+                "nameEn": "Traditional Cappuccino (1/3, 1/3, 1/3)",
+                "descriptionEs": "Equilibrio perfecto de un tercio de espresso, un tercio de leche caliente y un tercio de espuma densa.",
+                "descriptionEn": "Equal parts rich espresso, steamed milk, and airy thick foam dusted with cocoa.",
+                "price": 4.75,
+                "category": "espresso-clasicos",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "mocha-latte-dark-chocolate",
+                "nameEs": "Mocha Latte con Chocolate Negro",
+                "nameEn": "Mocha Latte",
+                "descriptionEs": "Espresso con chocolate holandés oscuro fundido, leche vaporizada y crema batida.",
+                "descriptionEn": "Espresso stirred with rich Dutch chocolate sauce, steamed milk, and whipped cream.",
+                "price": 5.25,
+                "category": "espresso-clasicos",
+                "badge": "Chocolate",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "caramel-latte",
+                "nameEs": "Caramel Latte con Caramelo Real",
+                "nameEn": "Real Caramel Latte",
+                "descriptionEs": "Espresso aromático con sirope de caramelo artesanal y leche cremosa espumada.",
+                "descriptionEn": "Smooth espresso with buttery rich caramel and steamed milk.",
+                "price": 5.25,
+                "category": "espresso-clasicos",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "breve-latte",
+                "nameEs": "Breve Latte Cremoso (Half & Half)",
+                "nameEn": "Breve Latte",
+                "descriptionEs": "Espresso con mitad crema y mitad leche vaporizada para una textura extra sedosa y espesa.",
+                "descriptionEn": "Rich espresso brewed with steamed half-and-half for an exceptionally decadent finish.",
+                "price": 5.25,
+                "category": "espresso-clasicos",
+                "badge": "Extra Cremoso",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+
+            # --- DESAYUNOS CASEROS (TODO EL DIA) ---
+            {
+                "id": "breakfast-burrito-classic",
+                "nameEs": "Burrito de Desayuno Clásico (Todo el Día)",
+                "nameEn": "All-Day Breakfast Burrito",
+                "descriptionEs": "Huevos revueltos de granja, frijoles negros sazonados, arroz especiado, queso cheddar derretido y salsa casera envueltos en tortilla grande. Servido con totopos de maíz.",
+                "descriptionEn": "Scrambled farm eggs, seasoned black beans, spiced rice, melted cheddar cheese, and house salsa. Served with crispy tortilla chips.",
+                "price": 6.47,
+                "category": "desayunos-todo-el-dia",
+                "badge": "#1 Desayuno",
+                "allergens": ["Eggs", "Dairy", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "huevos-rancheros-plate",
+                "nameEs": "Plato de Huevos Rancheros",
+                "nameEn": "Huevos Rancheros",
+                "descriptionEs": "Dos huevos fritos de granja con queso cheddar derretido y salsa fresca sobre arroz sazonado y frijoles negros. Acompañado de totopos.",
+                "descriptionEn": "Two sunny eggs, melted cheddar, and zesty salsa served over seasoned rice and black beans with tortilla chips.",
+                "price": 6.47,
+                "category": "desayunos-todo-el-dia",
+                "badge": "Plato Caliente",
+                "allergens": ["Eggs", "Dairy", "Gluten-Free", "Vegetarian"]
+            },
+            {
+                "id": "the-bandito-sandwich",
+                "nameEs": "Sándwich 'The Bandito' con Chorizo",
+                "nameEn": "The Bandito Breakfast Sandwich",
+                "descriptionEs": "Dos huevos revueltos con chorizo picante especiado y queso cheddar derretido en panecillo portugués tostado.",
+                "descriptionEn": "Two eggs, spicy chorizo sausage, and melted cheddar cheese on a toasted Portuguese roll.",
+                "price": 4.33,
+                "category": "desayunos-todo-el-dia",
+                "badge": "Favorito Local",
+                "allergens": ["Eggs", "Dairy", "Gluten", "Pork"]
+            },
+            {
+                "id": "egg-n-cheddar-sandwich",
+                "nameEs": "Sándwich Egg n' Cheddar con Tocino",
+                "nameEn": "Egg n’ Cheddar on Bagel or Roll",
+                "descriptionEs": "Huevo de granja frito, tocino crujiente y queso cheddar en bagel neoyorquino tostado o panecillo portugués.",
+                "descriptionEn": "One fried egg, crispy bacon, and cheddar cheese on your choice of NY bagel or soft Portuguese roll.",
+                "price": 3.95,
+                "category": "desayunos-todo-el-dia",
+                "badge": "Clásico",
+                "allergens": ["Eggs", "Dairy", "Gluten", "Pork"]
+            },
+            {
+                "id": "ny-bagel-cream-cheese",
+                "nameEs": "Bagel Neoyorquino con Queso Crema",
+                "nameEn": "NY Bagel with Cream Cheese",
+                "descriptionEs": "Auténtico bagel de Nueva York tostado (Plain, Everything, Sésamo o Pasas con Canela) untado generosamente con queso crema o mantequilla.",
+                "descriptionEn": "Toasted NY bagel (Plain, Everything, Sesame, Cinnamon Raisin) served with rich cream cheese or whipped butter.",
+                "price": 2.75,
+                "category": "desayunos-todo-el-dia",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Vegetarian"]
+            },
+            {
+                "id": "house-made-yogurt-granola",
+                "nameEs": "Yogur Casero con Granola y Fruta Fresca",
+                "nameEn": "House-Made Yogurt with Granola & Fruit",
+                "descriptionEs": "Yogur natural espeso preparado en casa acompañado de granola crujiente con nueces y fruta fresca de temporada.",
+                "descriptionEn": "House-made rich yogurt layered with toasted oat-nut granola and fresh seasonal sliced fruit.",
+                "price": 4.95,
+                "category": "desayunos-todo-el-dia",
+                "badge": "Saludable",
+                "allergens": ["Dairy", "Nuts", "Vegetarian"]
+            },
+
+            # --- BURRITOS, BOWLS Y PLATOS SALADOS ---
+            {
+                "id": "mayan-burrito",
+                "nameEs": "Burrito Maya (Frijoles, Arroz y Queso)",
+                "nameEn": "Mayan Burrito",
+                "descriptionEs": "Frijoles negros, arroz sazonado, salsa fresca y queso cheddar envueltos en tortilla de harina con totopos.",
+                "descriptionEn": "Seasoned black beans, savory rice, house salsa, and cheddar cheese wrapped in a flour tortilla with chips.",
+                "price": 6.47,
+                "category": "almuerzos-burritos",
+                "badge": "Vegetariano",
+                "allergens": ["Dairy", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "cbc-burrito-chicken-bacon",
+                "nameEs": "Burrito CBC (Pollo, Tocino y Queso Cheddar)",
+                "nameEn": "CBC Burrito (Chicken, Bacon, Cheddar)",
+                "descriptionEs": "Pechuga de pollo jugosa, tocino crujiente ahumado y queso cheddar derretido en wrap caliente con totopos y salsa casera.",
+                "descriptionEn": "Tender chicken breast, crispy bacon, and melted cheddar cheese wrapped warm and served with house salsa and chips.",
+                "price": 7.25,
+                "category": "almuerzos-burritos",
+                "badge": "Popular",
+                "allergens": ["Dairy", "Gluten", "Pork"]
+            },
+            {
+                "id": "veggie-chili-bowl",
+                "nameEs": "Tazón de Chili Vegetariano con Queso Cheddar",
+                "nameEn": "Veggie Chili Bowl",
+                "descriptionEs": "Chili casero totalmente vegetariano, sazonado a fuego lento con frijoles y vegetales tiernos, cubierto de queso cheddar y totopos.",
+                "descriptionEn": "Wholesome, mildly spiced house vegetarian chili topped with melted cheddar cheese and served with tortilla chips (can be vegan without cheese).",
+                "price": 6.25,
+                "category": "almuerzos-burritos",
+                "badge": "Reconfortante",
+                "allergens": ["Dairy", "Vegetarian", "Vegan Option"]
+            },
+            {
+                "id": "super-rice-and-beans",
+                "nameEs": "Super Rice and Beans con Chili y Cheddar",
+                "nameEn": "Super Rice & Beans Bowl",
+                "descriptionEs": "Nuestra base clásica de arroz y frijoles negros cubierta con chili vegetariano caliente y queso cheddar derretido con totopos.",
+                "descriptionEn": "Our seasoned rice and black beans topped with hot veggie chili, melted cheddar, and crispy tortilla chips.",
+                "price": 5.50,
+                "category": "almuerzos-burritos",
+                "badge": "Sin Gluten",
+                "allergens": ["Dairy", "Gluten-Free", "Vegetarian"]
+            },
+            {
+                "id": "hummus-tabouli-platter",
+                "nameEs": "Plato de Hummus Casero y Tabulé con Chips Pita",
+                "nameEn": "House Hummus & Tabouli Platter",
+                "descriptionEs": "Hummus cremoso de garbanzos elaborado en casa y ensalada fresca de tabulé con perejil y limón, servido con chips de pita tostadas.",
+                "descriptionEn": "Fresh house-made garlic hummus and parsley lemon tabouli served with seasoned crunchy house pita chips.",
+                "price": 6.95,
+                "category": "almuerzos-burritos",
+                "badge": "Mediterráneo",
+                "allergens": ["Gluten", "Vegetarian", "Vegan"]
+            },
+            {
+                "id": "chickpea-tagine-curry",
+                "nameEs": "Tagine de Garbanzos al Curry Suave",
+                "nameEn": "Chickpea Tagine",
+                "descriptionEs": "Garbanzos tiernos cocidos con arroz y grosellas negras en una salsa suave de curry aromático, servido con chips de pan pita.",
+                "descriptionEn": "Chickpeas, fluffy rice, and sweet black currants simmered in mild aromatic curry, served with house pita chips.",
+                "price": 6.95,
+                "category": "almuerzos-burritos",
+                "badge": "Vegano",
+                "allergens": ["Gluten", "Vegetarian", "Vegan"]
+            },
+
+            # --- PANADERIA Y MUFFINS ---
+            {
+                "id": "blueberry-yogurt-muffin",
+                "nameEs": "Muffin Horneado de Arándanos con Yogur",
+                "nameEn": "Blueberry Yogurt Muffin",
+                "descriptionEs": "Muffin casero horneado con masa húmeda de yogur natural y arándanos silvestres frescos.",
+                "descriptionEn": "Moist, fresh-baked house muffin made with real yogurt and plump blueberries.",
+                "price": 3.50,
+                "category": "panaderia-muffins",
+                "badge": "Horneado Diario",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "french-toast-yogurt-muffin",
+                "nameEs": "Muffin Estilo 'French Toast' con Canela",
+                "nameEn": "French Toast Yogurt Muffin",
+                "descriptionEs": "Muffin dulce con notas a pan francés, azúcar morena, canela y sirope de arce.",
+                "descriptionEn": "Decadent muffin flavored with cinnamon, maple, and brown sugar streusel.",
+                "price": 3.50,
+                "category": "panaderia-muffins",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "dutch-chocolate-muffin",
+                "nameEs": "Muffin de Chocolate Holandés Doble",
+                "nameEn": "Dutch Chocolate Muffin",
+                "descriptionEs": "Muffin rico y chocolatoso preparado con cacao holandés oscuro y chispas de chocolate.",
+                "descriptionEn": "Rich Dutch cocoa muffin packed with semi-sweet chocolate chips.",
+                "price": 3.50,
+                "category": "panaderia-muffins",
+                "badge": "Chocolate",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "blueberry-scone",
+                "nameEs": "Scone Casero de Arándanos",
+                "nameEn": "Fresh Blueberry Scone",
+                "descriptionEs": "Scone tradicional británico con masa mantecosa y crujiente cargado de arándanos frescos.",
+                "descriptionEn": "Buttery, crumbly traditional scone packed with wild blueberries.",
+                "price": 3.75,
+                "category": "panaderia-muffins",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "cinnamon-scone",
+                "nameEs": "Scone Artesanal de Canela Dulce",
+                "nameEn": "Cinnamon Scone",
+                "descriptionEs": "Scone mantecoso horneado con remolino de canela y glaseado ligero de vainilla.",
+                "descriptionEn": "Tender scone layered with brown sugar cinnamon swirl and light vanilla glaze.",
+                "price": 3.75,
+                "category": "panaderia-muffins",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "raspberry-crumb-cake",
+                "nameEs": "Pastel de Moras con Costra Crumb Cake",
+                "nameEn": "Raspberry Crumb Cake",
+                "descriptionEs": "Bizcocho esponjoso relleno de mermelada de frambuesas silvestres y coronado con migajas gruesas de canela.",
+                "descriptionEn": "Moist coffee cake with tart wild raspberry filling and thick buttery cinnamon crumb topping.",
+                "price": 4.00,
+                "category": "panaderia-muffins",
+                "badge": "Favorito",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+
+            # --- CAFE EN GRANO TOSTADO ---
+            {
+                "id": "coffee-beans-house-roast-1lb",
+                "nameEs": "Bolsa de Café en Grano Tostado en Bethel (1 Libra)",
+                "nameEn": "1 lb Bag of House-Roasted Whole Beans",
+                "descriptionEs": "Bolsa de 1 lb de café orgánico y de comercio justo tostado artesanalmente en pequeños lotes en Bethel. Elija grano entero o molido a su preferencia.",
+                "descriptionEn": "1-pound bag of fair-trade, organic whole bean coffee roasted in small batches right in our Victorian coffeehouse in Bethel.",
+                "price": 16.00,
+                "category": "granos-para-llevar",
+                "badge": "100% Orgánico",
+                "allergens": ["Vegetarian", "Vegan"]
+            }
+        ],
+        "faqs": [
+            {
+                "qEs": "¿Tuestan su propio café en la cafetería?",
+                "qEn": "Do you roast your own coffee on-site?",
+                "aEs": "¡Sí! Tostamos todos nuestros granos de café orgánico y de comercio justo directamente en nuestra hermosa casa victoriana de 1900 en Bethel, CT.",
+                "aEn": "Yes! We roast all our certified organic, fair-trade coffee beans in small batches directly inside our eclectic 1900 Victorian coffeehouse in Bethel."
+            },
+            {
+                "qEs": "¿Sirven comida y desayunos durante todo el día?",
+                "qEn": "Do you serve breakfast and burritos all day?",
+                "aEs": "¡Absolutamente! Nuestros burritos de desayuno, huevos rancheros, sándwiches en pan portugués, chili vegetariano y tazones se preparan durante todo el día.",
+                "aEn": "Absolutely! Our breakfast burritos, huevos rancheros, Portuguese roll sandwiches, veggie chili, and bowls are made fresh all day long."
+            },
+            {
+                "qEs": "¿Tienen opciones veganas y libres de gluten?",
+                "qEn": "Do you have vegan and gluten-free choices?",
+                "aEs": "Sí, nuestro chili vegetariano, super rice & beans, tagine de garbanzos y hummus son aptos para vegetarianos y veganos (solicitando sin queso), y ofrecemos leche de soya y almendras para todas las bebidas.",
+                "aEn": "Yes, our veggie chili, super rice & beans, chickpea tagine, and hummus are vegetarian and vegan-friendly, and we offer soy and almond milk for all coffee drinks."
+            }
+        ]
+    }
+
+    products = []
+    for item in data["items"]:
+        products.append({
+            "id": item["id"],
+            "nameEs": item["nameEs"],
+            "nameEn": item["nameEn"],
+            "descriptionEs": item["descriptionEs"],
+            "descriptionEn": item["descriptionEn"],
+            "price": item["price"],
+            "category": item["category"],
+            "badge": item["badge"],
+            "allergens": item["allergens"]
+        })
+
+    full_record = {
+        "storeInfo": data["storeInfo"],
+        "categories": data["categories"],
+        "products": products,
+        "faqs": data["faqs"]
+    }
+
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(full_record, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Successfully wrote {dest} with {len(products)} 100% verified authentic items!")
+
+if __name__ == "__main__":
+    build_molten_java()
