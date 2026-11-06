@@ -1,0 +1,484 @@
+#!/usr/bin/env python3
+import json
+import os
+import sys
+
+def build_prime_burger():
+    dest = "data/merchants/prime-burger.json"
+    
+    data = {
+        "storeInfo": {
+            "id": "prime-burger",
+            "name": "Prime Burger",
+            "tagline": "Custom Butcher-Blend Burgers, Hand-Cut Fries & Shakes in Ridgefield",
+            "address": "449 Main St, Ridgefield, CT 06877",
+            "hours": {
+                "monday_sunday": "11:00 AM - 9:00 PM"
+            },
+            "paymentMethods": [
+                "Cash",
+                "Credit/Debit Cards",
+                "Apple Pay",
+                "Contactless"
+            ],
+            "amenities": [
+                "Dine-In",
+                "Takeout",
+                "Delivery",
+                "Bilingual Menu",
+                "Outdoor Seating",
+                "Hand-Spun Milkshakes"
+            ],
+            "themeColor": "#dc2626",
+            "logoIcon": "utensils",
+            "policies": {
+                "restroomLocationEs": "Ubicado al fondo del salón a la izquierda.",
+                "restroomLocationEn": "Located at the back of the dining room on the left.",
+                "restroomCodeEs": "Abierto para clientes (no requiere código).",
+                "restroomCodeEn": "Open for customers (no code required).",
+                "wifiName": "PrimeBurger_Guest",
+                "wifiPassword": "primeburgers",
+                "parkingPolicyEs": "Estacionamiento disponible en Main St y en el lote detrás del restaurante.",
+                "parkingPolicyEn": "Street parking on Main St and parking lot directly behind the building.",
+                "returnPolicyEs": "Molido fresco todos los días; infórmenos de inmediato si desea que ajustemos su término o preparación.",
+                "returnPolicyEn": "Ground fresh daily; please let us know immediately if you need any adjustments to your order.",
+                "deliveryPolicyEs": "Servicio a domicilio y pedidos para llevar disponibles en línea a través de SpotOn.",
+                "deliveryPolicyEn": "Delivery and online pickup ordering available via SpotOn."
+            },
+            "phone": "(203) 431-7734"
+        },
+        "categories": [
+            {"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"},
+            {"id": "hamburguesas", "nameEs": "Hamburguesas Artesanales Prime", "nameEn": "Prime Burgers", "icon": "Beef"},
+            {"id": "especiales-philly", "nameEs": "Especiales, Wraps y Philly Cheese", "nameEn": "Specials, Wraps & Philly", "icon": "Sparkles"},
+            {"id": "pollo-otros", "nameEs": "Pollo, Tenders y Favoritos", "nameEn": "Chicken, Tenders & Favorites", "icon": "Utensils"},
+            {"id": "papas-sides", "nameEs": "Papas Fritas y Acompañamientos", "nameEn": "Fries & Sides", "icon": "Flame"},
+            {"id": "batidos-shakes", "nameEs": "Malteadas Batidas a Mano", "nameEn": "Hand-Spun Shakes", "icon": "Cake"},
+            {"id": "bebidas", "nameEs": "Bebidas Refrescantes", "nameEn": "Cold Drinks", "icon": "Coffee"}
+        ],
+        "items": [
+            # --- HAMBURGUESAS ARTESANALES PRIME ---
+            {
+                "id": "prime-burger-single",
+                "nameEs": "Hamburguesa Prime Individual",
+                "nameEn": "Prime Burger",
+                "descriptionEs": "Carne molida fresca todos los días en la casa con nuestra mezcla exclusiva de brisket Prime, chuck y sirloin. Jugosa a la parrilla sobre pan tostado.",
+                "descriptionEn": "Ground fresh daily in-house with our custom butcher blend of prime brisket, chuck, and sirloin on a toasted bun.",
+                "price": 8.99,
+                "category": "hamburguesas",
+                "badge": "Signature",
+                "allergens": ["Beef", "Gluten"]
+            },
+            {
+                "id": "double-prime-burger",
+                "nameEs": "Hamburguesa Doble Prime",
+                "nameEn": "Double Prime Burger",
+                "descriptionEs": "Dos hamburguesas Prime jugosas molidas frescas diariamente (brisket, chuck y sirloin) con queso fundido en pan tostado.",
+                "descriptionEn": "Two juicy Prime burger patties ground fresh daily (prime brisket, chuck, and sirloin) with melted cheese on a toasted bun.",
+                "price": 11.99,
+                "category": "hamburguesas",
+                "badge": "Top Seller",
+                "allergens": ["Beef", "Dairy", "Gluten"]
+            },
+            {
+                "id": "super-smash-burger",
+                "nameEs": "Super Smash Burger Especial",
+                "nameEn": "Super Smash Burger",
+                "descriptionEs": "Dos hamburguesas Prime aplastadas de 4 oz con costra crujiente, cebollas dulces a la plancha, queso americano derretido, pepinillos, salsa especial Prime y kétchup en pan de papa con mantequilla.",
+                "descriptionEn": "Two 4oz smashed prime burgers with crispy lace edges, sliced grilled onions, American cheese, pickles, house Prime sauce, and ketchup on a buttered potato roll.",
+                "price": 11.99,
+                "category": "hamburguesas",
+                "badge": "House Special",
+                "allergens": ["Beef", "Dairy", "Gluten", "Eggs"]
+            },
+            {
+                "id": "steakhouse-burger",
+                "nameEs": "Hamburguesa Estilo Steakhouse",
+                "nameEn": "Steakhouse Burger",
+                "descriptionEs": "Hamburguesa de mezcla Prime bañada en la auténtica salsa para carnes Peter Luger Steak Sauce con cebollines verdes picados.",
+                "descriptionEn": "Signature Prime Burger glazed with legendary Peter Luger Steak Sauce and chopped scallions.",
+                "price": 8.99,
+                "category": "hamburguesas",
+                "badge": "Steakhouse",
+                "allergens": ["Beef", "Gluten"]
+            },
+            {
+                "id": "turkey-burger",
+                "nameEs": "Hamburguesa Jugosa de Pavo",
+                "nameEn": "Turkey Burger",
+                "descriptionEs": "Pechuga de pavo molida magra y sazonada con hierbas, cocinada a la plancha a la perfección en pan brioche.",
+                "descriptionEn": "Lean, seasoned ground turkey breast grilled juicy on a fresh bun with your choice of toppings.",
+                "price": 8.99,
+                "category": "hamburguesas",
+                "badge": "Saludable",
+                "allergens": ["Gluten"]
+            },
+            {
+                "id": "veggie-burger",
+                "nameEs": "Hamburguesa Vegetariana Artesanal",
+                "nameEn": "Veggie Burger",
+                "descriptionEs": "Medallón vegetariano nutritivo elaborado con granos enteros, vegetales frescos y legumbres, asado dorado.",
+                "descriptionEn": "Wholesome veggie patty crafted with grains, fresh vegetables, and beans, griddled golden on a toasted bun.",
+                "price": 8.99,
+                "category": "hamburguesas",
+                "badge": "Vegetariano",
+                "allergens": ["Vegetarian", "Gluten"]
+            },
+            {
+                "id": "salmon-burger",
+                "nameEs": "Hamburguesa de Salmón Salvaje",
+                "nameEn": "Salmon Burger",
+                "descriptionEs": "Filete de salmón fresco sazonado a las finas hierbas y limón, sellado a la parrilla sobre pan suave.",
+                "descriptionEn": "Wild-caught salmon patty seasoned with garden herbs and fresh lemon, seared to order.",
+                "price": 8.99,
+                "category": "hamburguesas",
+                "badge": "Pescado",
+                "allergens": ["Fish", "Gluten"]
+            },
+
+            # --- ESPECIALES, WRAPS Y PHILLY CHEESE ---
+            {
+                "id": "philly-cheese-steak",
+                "nameEs": "Philly Cheesesteak Clásico en Pan Wedge",
+                "nameEn": "Philly Cheese Wedge",
+                "descriptionEs": "Bistec de res rebanado muy fino, cebollas caramelizadas, pimientos rojos y verdes salteados, abundante queso americano derretido y mayonesa en pan wedge crujiente.",
+                "descriptionEn": "Thinly sliced steak, grilled onions, red & green bell peppers, melted American cheese, and mayo on a toasted sub wedge.",
+                "price": 10.99,
+                "category": "especiales-philly",
+                "badge": "Favorito",
+                "allergens": ["Beef", "Dairy", "Gluten", "Eggs"]
+            },
+            {
+                "id": "prime-wrap",
+                "nameEs": "Wrap Personalizado (Harina o Espinaca)",
+                "nameEn": "Signature Wrap",
+                "descriptionEs": "Wrap fresco enrollado en tortilla de harina suave o de espinaca con su elección de proteína, lechuga fresca, tomate y aderezo.",
+                "descriptionEn": "Choice of warm flour or spinach wrap loaded with your choice of protein, crisp greens, tomatoes, and dressing.",
+                "price": 7.99,
+                "category": "especiales-philly",
+                "badge": None,
+                "allergens": ["Gluten"]
+            },
+            {
+                "id": "garden-salad",
+                "nameEs": "Ensalada del Huerto Orgánica",
+                "nameEn": "Garden Salad",
+                "descriptionEs": "Mezcla de hojas verdes orgánicas, pepinos frescos, tomates en cubos, zanahorias ralladas y crutones crocantes con su aderezo preferido.",
+                "descriptionEn": "Organic salad greens, crisp cucumbers, diced ripe tomatoes, shredded carrots, and crunchy croutons with choice of dressing.",
+                "price": 7.49,
+                "category": "especiales-philly",
+                "badge": "Fresco",
+                "allergens": ["Gluten", "Vegetarian", "Vegan"]
+            },
+
+            # --- POLLO, TENDERS Y OTROS ---
+            {
+                "id": "chicken-sandwich-natural",
+                "nameEs": "Sándwich de Pechuga de Pollo 100% Natural",
+                "nameEn": "Chicken Sandwich",
+                "descriptionEs": "Pechuga de pollo 100% totalmente natural asada o crujiente sobre pan tostado con lechuga y tomate.",
+                "descriptionEn": "100% all-natural chicken breast grilled or crispy on a toasted bun with crisp lettuce and tomato.",
+                "price": 7.99,
+                "category": "pollo-otros",
+                "badge": "100% Natural",
+                "allergens": ["Gluten"]
+            },
+            {
+                "id": "chicken-tenders-fresh",
+                "nameEs": "Tiras de Pollo Crujientes (Pechuga Blanca)",
+                "nameEn": "Chicken Tenders",
+                "descriptionEs": "Tiras de pechuga de pollo 100% carne blanca fresca, empanizadas y doradas a la perfección con salsa de su elección.",
+                "descriptionEn": "Fresh all-white-meat chicken tenders fried golden and crispy, served with choice of dipping sauce.",
+                "price": 7.99,
+                "category": "pollo-otros",
+                "badge": "Popular",
+                "allergens": ["Gluten"]
+            },
+            {
+                "id": "grilled-cheese",
+                "nameEs": "Sándwich de Queso a la Plancha",
+                "nameEn": "Grilled Cheese",
+                "descriptionEs": "Pan campestre dorado a la mantequilla con capas de queso americano fundido y cremoso.",
+                "descriptionEn": "Melted American cheese griddled golden on buttery country white toast.",
+                "price": 4.29,
+                "category": "pollo-otros",
+                "badge": None,
+                "allergens": ["Dairy", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "prime-hot-dog",
+                "nameEs": "Hot Dog Clásico a la Plancha",
+                "nameEn": "Hot Dog",
+                "descriptionEs": "Salchicha de res a la parrilla servida en pan suave con mostaza, kétchup o relish al gusto.",
+                "descriptionEn": "All-beef frank griddled to perfection in a soft warm bun.",
+                "price": 3.99,
+                "category": "pollo-otros",
+                "badge": None,
+                "allergens": ["Beef", "Gluten"]
+            },
+            {
+                "id": "cup-of-chili",
+                "nameEs": "Taza de Chili con Carne Casero",
+                "nameEn": "Cup of Chili",
+                "descriptionEs": "Chili casero espeso y reconfortante preparado con carne de res molida Prime, frijoles y chiles aromáticos.",
+                "descriptionEn": "Hearty house-made chili simmered with prime ground beef, beans, and rich chili spices.",
+                "price": 5.99,
+                "category": "pollo-otros",
+                "badge": "Casero",
+                "allergens": ["Beef"]
+            },
+            {
+                "id": "cheese-sauce-side",
+                "nameEs": "Salsa de Queso Cheddar Caliente",
+                "nameEn": "Warm Cheese Sauce",
+                "descriptionEs": "Porción de salsa de queso cheddar tibia y sedosa ideal para bañar hamburguesas y papas fritas.",
+                "descriptionEn": "Warm, velvety melted cheddar cheese dipping sauce.",
+                "price": 1.50,
+                "category": "pollo-otros",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+
+            # --- PAPAS FRITAS Y ACOMPAÑAMIENTOS ---
+            {
+                "id": "parmesan-truffle-fries",
+                "nameEs": "Papas Fritas con Trufa y Queso Parmesano",
+                "nameEn": "Parmesan Truffle Fries",
+                "descriptionEs": "Papas fritas crujientes bañadas en aceite de trufa aromático, queso parmesano rallado y perejil fresco.",
+                "descriptionEn": "Crispy golden french fries tossed with rich truffle oil, grated Parmesan cheese, and fresh herbs.",
+                "price": 5.49,
+                "category": "papas-sides",
+                "badge": "Gourmet",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "french-fries-classic",
+                "nameEs": "Papas a la Francesa Clásicas",
+                "nameEn": "French Fries",
+                "descriptionEs": "Papas doradas cortadas finas, fritas crocantes y sazonadas con sal marina.",
+                "descriptionEn": "Classic golden thin-cut french fries seasoned with sea salt.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": "Clásico",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "onion-rings-crispy",
+                "nameEs": "Aros de Cebolla Rebozados",
+                "nameEn": "Onion Rings",
+                "descriptionEs": "Aros de cebolla dulce gruesos rebozados y fritos extra crujientes.",
+                "descriptionEn": "Thick-cut sweet onion rings fried in a crisp golden batter.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": None,
+                "allergens": ["Gluten", "Vegetarian"]
+            },
+            {
+                "id": "sweet-potato-fries",
+                "nameEs": "Papas Fritas de Camote Dulce",
+                "nameEn": "Sweet Potato Fries",
+                "descriptionEs": "Camote dulce frito crujiente con toque de sal marina, balance perfecto entre dulce y salado.",
+                "descriptionEn": "Crispy fried sweet potato fries lightly salted.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": "Saludable",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "waffle-fries",
+                "nameEs": "Papas Fritas Waffle",
+                "nameEn": "Waffle Fries",
+                "descriptionEs": "Papas fritas cortadas en celosía waffle, crujientes por fuera y suaves por dentro.",
+                "descriptionEn": "Seasoned lattice-cut waffle fries fried to golden perfection.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": "Favorito",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "tater-tots-golden",
+                "nameEs": "Tater Tots Crujientes",
+                "nameEn": "Tater Tots",
+                "descriptionEs": "Cilindros de papa rallada frita extra dorada y crujiente.",
+                "descriptionEn": "Crispy golden bite-sized grated potato tots.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": None,
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+
+            # --- BATIDOS Y SHAKES ---
+            {
+                "id": "oreo-shake",
+                "nameEs": "Malteada de Galleta Oreo",
+                "nameEn": "Oreo Shake",
+                "descriptionEs": "Helado de vainilla batido a mano con galletas Oreo trituradas y crema batida encima.",
+                "descriptionEn": "Hand-spun rich vanilla ice cream blended with crushed real Oreo cookies and whipped cream.",
+                "price": 6.99,
+                "category": "batidos-shakes",
+                "badge": "#1 Shake",
+                "allergens": ["Dairy", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "black-and-white-shake",
+                "nameEs": "Malteada Black & White",
+                "nameEn": "Black & White Shake",
+                "descriptionEs": "Clásica combinación de helado cremoso de vainilla con sirope rico de chocolate fudge batido al momento.",
+                "descriptionEn": "Classic New York-style shake made with vanilla ice cream and rich chocolate fudge syrup.",
+                "price": 6.99,
+                "category": "batidos-shakes",
+                "badge": "Clásico",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "chocolate-shake",
+                "nameEs": "Malteada de Chocolate Holandés",
+                "nameEn": "Chocolate Shake",
+                "descriptionEs": "Helado rico de chocolate batido con leche fresca entera y crema batida.",
+                "descriptionEn": "Decadent chocolate ice cream blended creamy with fresh milk and whipped cream.",
+                "price": 6.99,
+                "category": "batidos-shakes",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "strawberry-shake",
+                "nameEs": "Malteada de Fresa Real",
+                "nameEn": "Strawberry Shake",
+                "descriptionEs": "Helado batido a mano con puré de fresas dulces y crema batida fresca.",
+                "descriptionEn": "Hand-spun ice cream blended with sweet ripe strawberries and whipped cream.",
+                "price": 6.99,
+                "category": "batidos-shakes",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "vanilla-shake",
+                "nameEs": "Malteada de Vainilla Francesa",
+                "nameEn": "Vanilla Shake",
+                "descriptionEs": "Helado artesanal de vainilla batido cremoso a mano con crema chantilly y cereza.",
+                "descriptionEn": "Hand-spun creamy vanilla bean ice cream finished with whipped cream.",
+                "price": 6.99,
+                "category": "batidos-shakes",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+
+            # --- BEBIDAS ---
+            {
+                "id": "sweet-tea-fresh",
+                "nameEs": "Té Dulce Helado Estilo Sureño",
+                "nameEn": "Sweet Tea",
+                "descriptionEs": "Té negro recién infusionado endulzado con azúcar de caña pura y servido sobre hielo.",
+                "descriptionEn": "Freshly brewed southern-style sweet iced tea sweetened with pure cane sugar.",
+                "price": 3.49,
+                "category": "bebidas",
+                "badge": "Refrescante",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "unsweetened-ice-tea",
+                "nameEs": "Té Negro Helado Sin Azúcar",
+                "nameEn": "Unsweetened Ice Tea",
+                "descriptionEs": "Té negro puro recién preparado servido frío con rodajas de limón fresco.",
+                "descriptionEn": "Freshly brewed pure unsweetened black iced tea with lemon wedge.",
+                "price": 3.49,
+                "category": "bebidas",
+                "badge": None,
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "delivery-fountain-drink",
+                "nameEs": "Refresco de Fuente de Soda",
+                "nameEn": "Delivery Fountain Drink",
+                "descriptionEs": "Vaso frío de su refresco favorito (Coca-Cola, Diet Coke, Sprite, Fanta, Ginger Ale).",
+                "descriptionEn": "Chilled fountain soda cup (Coca-Cola, Diet Coke, Sprite, Ginger Ale).",
+                "price": 2.59,
+                "category": "bebidas",
+                "badge": None,
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "bottled-water",
+                "nameEs": "Agua de Manantial Embotellada",
+                "nameEn": "Bottled Water",
+                "descriptionEs": "Botella de agua purificada de manantial fría.",
+                "descriptionEn": "Chilled natural spring water bottle.",
+                "price": 1.99,
+                "category": "bebidas",
+                "badge": None,
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "kids-juice-box",
+                "nameEs": "Juguito Infantil en Caja",
+                "nameEn": "Juice Box",
+                "descriptionEs": "Cajita de jugo 100% de fruta para niños (manzana o ponche de frutas).",
+                "descriptionEn": "100% fruit juice box for kids (apple or fruit punch).",
+                "price": 1.25,
+                "category": "bebidas",
+                "badge": "Niños",
+                "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "cold-milk-bottle",
+                "nameEs": "Botellita de Leche Fría",
+                "nameEn": "Cold Milk",
+                "descriptionEs": "Botella fría de leche entera fresca.",
+                "descriptionEn": "Cold bottle of fresh whole milk.",
+                "price": 1.99,
+                "category": "bebidas",
+                "badge": None,
+                "allergens": ["Dairy", "Vegetarian"]
+            }
+        ],
+        "faqs": [
+            {
+                "qEs": "¿De qué está hecha la carne de sus hamburguesas?",
+                "qEn": "What is in your custom burger blend?",
+                "aEs": "Nuestra carne se muele fresca todos los días en la casa usando una mezcla selecta de brisket Prime, corte chuck y sirloin para lograr la máxima jugosidad y sabor auténtico.",
+                "aEn": "Our burgers are ground fresh daily in-house using a custom butcher blend of prime brisket, chuck, and sirloin for the juiciest, most flavorful burger."
+            },
+            {
+                "qEs": "¿Tienen opciones vegetarianas o alternativas a la res?",
+                "qEn": "Do you offer vegetarian or non-beef alternatives?",
+                "aEs": "¡Sí! Contamos con una deliciosa hamburguesa vegetariana, hamburguesa de salmón salvaje, hamburguesa de pavo y sándwiches de pechuga de pollo 100% natural, además de wraps y ensaladas orgánicas.",
+                "aEn": "Yes! We offer a house-made veggie burger, wild-caught salmon burger, lean turkey burger, and 100% all-natural chicken breast sandwiches, wraps, and salads."
+            },
+            {
+                "qEs": "¿Tienen servicio a domicilio o pedidos para llevar?",
+                "qEn": "Do you offer delivery and takeout?",
+                "aEs": "Sí, puede ordenar en línea directamente a través de nuestro sitio web con SpotOn para recoger en tienda o con entrega a domicilio.",
+                "aEn": "Yes, you can order directly through our website via SpotOn for convenient pickup or delivery right to your door."
+            }
+        ]
+    }
+
+    products = []
+    for item in data["items"]:
+        products.append({
+            "id": item["id"],
+            "nameEs": item["nameEs"],
+            "nameEn": item["nameEn"],
+            "descriptionEs": item["descriptionEs"],
+            "descriptionEn": item["descriptionEn"],
+            "price": item["price"],
+            "category": item["category"],
+            "badge": item["badge"],
+            "allergens": item["allergens"]
+        })
+
+    full_record = {
+        "storeInfo": data["storeInfo"],
+        "categories": data["categories"],
+        "products": products,
+        "faqs": data["faqs"]
+    }
+
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(full_record, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Successfully wrote {dest} with {len(products)} 100% verified authentic items!")
+
+if __name__ == "__main__":
+    build_prime_burger()

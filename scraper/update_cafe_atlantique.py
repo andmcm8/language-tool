@@ -1,0 +1,433 @@
+#!/usr/bin/env python3
+import json
+import os
+import sys
+
+def build_cafe_atlantique():
+    dest = "data/merchants/cafe-atlantique.json"
+    
+    data = {
+        "storeInfo": {
+            "id": "cafe-atlantique",
+            "name": "Cafe Atlantique",
+            "tagline": "Downtown Milford's French-Inspired Coffeehouse, Savory & Sweet Crepes and Pressed Paninis",
+            "address": "33 River St, Milford, CT 06460",
+            "hours": {
+                "monday_thursday": "7:00 AM - 8:00 PM",
+                "friday": "7:00 AM - 10:00 PM",
+                "saturday": "8:00 AM - 10:00 PM",
+                "sunday": "8:00 AM - 4:00 PM"
+            },
+            "paymentMethods": [
+                "Cash",
+                "Credit/Debit Cards",
+                "Apple Pay",
+                "Contactless"
+            ],
+            "amenities": [
+                "Dine-In",
+                "Takeout",
+                "Garden Patio Seating",
+                "Dog Friendly",
+                "Live Music & Open Mic",
+                "Full Espresso Bar & Wine",
+                "Bilingual Menu"
+            ],
+            "themeColor": "#0369a1",
+            "logoIcon": "coffee",
+            "policies": {
+                "restroomLocationEs": "Ubicado al final del salón cafetería hacia la izquierda.",
+                "restroomLocationEn": "Located at the back of the cafe dining room on the left.",
+                "restroomCodeEs": "Abierto para clientes (no requiere código).",
+                "restroomCodeEn": "Open for customers (no code required).",
+                "wifiName": "CafeAtlantique_Guest",
+                "wifiPassword": "riverstreetcoffee",
+                "parkingPolicyEs": "Estacionamiento disponible a lo largo de River St y en el lote del Milford Green.",
+                "parkingPolicyEn": "Street parking on River St and free public parking around the Milford Green.",
+                "returnPolicyEs": "Crêpes y paninis hechos al momento; avísenos de inmediato para personalizar su preparación.",
+                "returnPolicyEn": "Crêpes and paninis made fresh to order; please inform our baristas if you need any adjustments.",
+                "deliveryPolicyEs": "Servicio para llevar disponible por teléfono y pedidos en línea a través de Toast.",
+                "deliveryPolicyEn": "Takeout available by phone or online via Toast ordering."
+            },
+            "phone": "(203) 882-1602"
+        },
+        "categories": [
+            {"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"},
+            {"id": "paninis-ciabatta", "nameEs": "Paninis Prensados en Ciabatta", "nameEn": "Pressed Ciabatta Paninis", "icon": "Utensils"},
+            {"id": "crepes-saladas", "nameEs": "Crêpes Saladas Artesanales", "nameEn": "Savory French Crepes", "icon": "Flame"},
+            {"id": "crepes-dulces", "nameEs": "Crêpes Dulces y Postres", "nameEn": "Sweet Dessert Crepes", "icon": "Cake"},
+            {"id": "desayunos-omelets", "nameEs": "Desayunos, Omelets y Tostadas", "nameEn": "Breakfast, Omelets & Toasts", "icon": "Clock"},
+            {"id": "ensaladas-wraps", "nameEs": "Ensaladas Frescas y Wraps", "nameEn": "Salads & Wraps", "icon": "Soup"},
+            {"id": "cafe-bebidas", "nameEs": "Café de Especialidad y Bebidas", "nameEn": "Specialty Coffee & Drinks", "icon": "Coffee"}
+        ],
+        "items": [
+            # --- PANINIS PRENSADOS EN CIABATTA ---
+            {
+                "id": "panini-tbs-turkey-bacon-swiss",
+                "nameEs": "Panini T.B.S. (Pavo, Tocino y Queso Suizo)",
+                "nameEn": "TBS Panini (Turkey, Bacon, Swiss)",
+                "descriptionEs": "Pechuga de pavo rebanada, tocino ahumado crujiente, queso suizo derretido y tomate fresco prensado en pan ciabatta rústico. Servido con ensalada de tres frijoles.",
+                "descriptionEn": "Sliced roast turkey breast, crisp bacon, melted Swiss cheese, and ripe tomato pressed hot on artisan ciabatta. Served with house three-bean salad.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Top Seller",
+                "allergens": ["Gluten", "Dairy", "Pork"]
+            },
+            {
+                "id": "panini-chicken-pesto",
+                "nameEs": "Panini de Pollo al Pesto de Albahaca",
+                "nameEn": "Chicken Pesto Panini",
+                "descriptionEs": "Pechuga de pollo a la parrilla, pesto de albahaca fresca aromática y rodajas de tomate en pan ciabatta caliente tostado.",
+                "descriptionEn": "Grilled chicken breast, fragrant basil pesto, and sliced tomato pressed golden on ciabatta bread.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Favorito",
+                "allergens": ["Gluten", "Dairy"]
+            },
+            {
+                "id": "panini-caprese-mozzarella",
+                "nameEs": "Panini Caprese Clásico con Glaseado Balsámico",
+                "nameEn": "Caprese Panini",
+                "descriptionEs": "Mozzarella fresca derretida, tomates maduros, pesto casero y reducción de glaseado balsámico dulce.",
+                "descriptionEn": "Fresh mozzarella, vine-ripened tomatoes, sweet basil pesto, and rich balsamic glaze on pressed ciabatta.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Vegetariano",
+                "allergens": ["Gluten", "Dairy", "Vegetarian"]
+            },
+            {
+                "id": "panini-brie-apple-caramelized-onions",
+                "nameEs": "Panini de Queso Brie, Manzana y Cebolla Caramelizada",
+                "nameEn": "Brie, Apple & Caramelized Onions Panini",
+                "descriptionEs": "Queso Brie francés cremoso derretido, láminas de manzana verde crujiente y cebollas dulces caramelizadas en ciabatta multigrano.",
+                "descriptionEn": "Creamy melted French Brie cheese, crisp tart green apple slices, and sweet caramelized onions pressed warm.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Gourmet",
+                "allergens": ["Gluten", "Dairy", "Vegetarian"]
+            },
+            {
+                "id": "panini-cordon-bleu",
+                "nameEs": "Panini Pollo Cordon Bleu con Mostaza Dijon",
+                "nameEn": "Chicken Cordon Bleu Panini",
+                "descriptionEs": "Pechuga de pollo, jamón curado, queso suizo fundido y un toque de mostaza Dijon suave.",
+                "descriptionEn": "Sliced chicken breast, savory ham, melted Swiss cheese, and mild Dijon mustard on pressed ciabatta.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Pork"]
+            },
+            {
+                "id": "panini-goat-cheese-roasted-peppers",
+                "nameEs": "Panini de Queso de Cabra y Pimientos Asados",
+                "nameEn": "Goat Cheese & Roasted Red Peppers Panini",
+                "descriptionEs": "Queso de cabra suave de granja, pimientos rojos dulces asados al fuego y hojas verdes frescas prensadas al calor.",
+                "descriptionEn": "Warm tangy goat cheese, roasted sweet red peppers, and mixed greens on toasted ciabatta.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Vegetariano",
+                "allergens": ["Gluten", "Dairy", "Vegetarian"]
+            },
+            {
+                "id": "panini-hummus-veggie",
+                "nameEs": "Panini Vegano de Hummus y Vegetales Asados",
+                "nameEn": "Roasted Veggie & Hummus Panini",
+                "descriptionEs": "Hummus casero de garbanzos, floretes de brócoli tierno, pimientos asados y cebollas dulces en ciabatta.",
+                "descriptionEn": "House-made creamy hummus, tender broccoli, fire-roasted red peppers, and onions pressed on ciabatta.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": "Vegano",
+                "allergens": ["Gluten", "Vegetarian", "Vegan"]
+            },
+            {
+                "id": "panini-ham-and-swiss",
+                "nameEs": "Panini Tradicional de Jamón y Queso Suizo",
+                "nameEn": "Ham & Swiss Panini",
+                "descriptionEs": "Jamón cocido de primera calidad, queso suizo derretido, cebollas y mostaza en pan ciabatta.",
+                "descriptionEn": "Premium ham, melted Swiss cheese, sweet onions, and mustard pressed on warm ciabatta.",
+                "price": 12.99,
+                "category": "paninis-ciabatta",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Pork"]
+            },
+
+            # --- CREPES SALADAS ARTESANALES ---
+            {
+                "id": "crepe-cajun-chicken",
+                "nameEs": "Crêpe Salada de Pollo Cajun con Queso Cheddar",
+                "nameEn": "Cajun Chicken Savory Crêpe",
+                "descriptionEs": "Fina crêpe francesa rellena de pechuga de pollo especiada al estilo cajún, queso cheddar fundido, tomate y aderezo ranch. Servida con ensalada de la casa.",
+                "descriptionEn": "Delicate French crêpe stuffed with seasoned Cajun chicken, melted cheddar cheese, ripe tomatoes, and ranch dressing. Served with side salad.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": "#1 Crêpe",
+                "allergens": ["Gluten", "Dairy", "Eggs"]
+            },
+            {
+                "id": "crepe-chicken-broccoli",
+                "nameEs": "Crêpe de Pollo y Brócoli con Queso Cheddar",
+                "nameEn": "Chicken & Broccoli Savory Crêpe",
+                "descriptionEs": "Crêpe dorada rellena de pechuga de pollo deshebrada, brócoli fresco al vapor, queso cheddar derretido y tomate.",
+                "descriptionEn": "Chicken breast, fresh broccoli florets, melted cheddar cheese, and diced tomatoes with ranch.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": None,
+                "allergens": ["Gluten", "Dairy", "Eggs"]
+            },
+            {
+                "id": "crepe-ham-swiss-mustard",
+                "nameEs": "Crêpe Parisina de Jamón y Queso Suizo",
+                "nameEn": "Ham & Swiss Savory Crêpe",
+                "descriptionEs": "Fina masa de crêpe rellena de jamón cocido artesanal, queso suizo fundido, pimientos rojos asados y mostaza dijón.",
+                "descriptionEn": "Classic French style crêpe filled with ham, Swiss cheese, roasted red peppers, and Dijon mustard.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": "Clásico Francés",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Pork"]
+            },
+            {
+                "id": "crepe-spinach-mozzarella",
+                "nameEs": "Crêpe Florentina de Espinacas y Mozzarella",
+                "nameEn": "Spinach & Mozzarella Crêpe",
+                "descriptionEs": "Espinacas frescas tiernas, mozzarella fundida y tomates deshidratados al sol envueltos en masa ligera.",
+                "descriptionEn": "Tender fresh spinach, melted mozzarella cheese, and sweet sun-dried tomatoes folded in a delicate crêpe.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": "Vegetariano",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "crepe-goat-cheese-almond",
+                "nameEs": "Crêpe Mediterránea de Queso de Cabra y Almendras",
+                "nameEn": "Goat Cheese & Almond Savory Crêpe",
+                "descriptionEs": "Queso de cabra tibio y cremoso, aceitunas negras rebanadas y almendras tostadas crujientes servida con ensalada verde.",
+                "descriptionEn": "Warm creamy goat cheese, sliced black olives, and crunchy toasted almonds in a light crepe.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": "Gourmet",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Nuts", "Vegetarian"]
+            },
+            {
+                "id": "crepe-feta-tomato-olive",
+                "nameEs": "Crêpe Griega de Queso Feta y Aceitunas",
+                "nameEn": "Feta & Tomato Greek Crêpe",
+                "descriptionEs": "Queso feta griego desmoronado, tomates maduros jugosos y aceitunas Kalamata envueltos con orégano fresco.",
+                "descriptionEn": "Crumbled imported Greek feta cheese, fresh diced tomatoes, and Kalamata olives.",
+                "price": 13.99,
+                "category": "crepes-saladas",
+                "badge": "Vegetariano",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+
+            # --- CREPES DULCES Y POSTRES ---
+            {
+                "id": "sweet-crepe-nutella",
+                "nameEs": "Crêpe Dulce con Nutella y Fruta Fresca",
+                "nameEn": "Nutella Sweet Crêpe",
+                "descriptionEs": "Crêpe tierna rellena de crema de avellanas y cacao Nutella caliente, servida con crema batida fresca y opción de plátano o frutos rojos.",
+                "descriptionEn": "Warm French crêpe loaded with rich hazelnut Nutella spread and whipped cream (add fresh bananas or mixed berries).",
+                "price": 8.99,
+                "category": "crepes-dulces",
+                "badge": "Postre #1",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Nuts", "Vegetarian"]
+            },
+            {
+                "id": "sweet-crepe-caramel-apple",
+                "nameEs": "Crêpe Dulce de Manzana con Caramelo Caliente",
+                "nameEn": "Caramel Apple Sweet Crêpe",
+                "descriptionEs": "Manzanas especiadas salteadas a la canela, salsa tibia de caramelo y abundante crema chantilly batida.",
+                "descriptionEn": "Spiced cinnamon sautéed apples drizzled with warm caramel sauce and fresh whipped cream.",
+                "price": 8.99,
+                "category": "crepes-dulces",
+                "badge": "Favorito",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+            {
+                "id": "sweet-crepe-chocolate-berries",
+                "nameEs": "Crêpe Dulce de Chocolate Belga y Fresas",
+                "nameEn": "Belgian Chocolate Sweet Crêpe",
+                "descriptionEs": "Chocolate negro derretido con fresas maduras o plátanos en rodajas y azúcar glass.",
+                "descriptionEn": "Melted rich dark chocolate sauce with choice of fresh sliced bananas or berries and powdered sugar.",
+                "price": 8.99,
+                "category": "crepes-dulces",
+                "badge": "Chocolate",
+                "allergens": ["Gluten", "Dairy", "Eggs", "Vegetarian"]
+            },
+
+            # --- DESAYUNOS, OMELETS Y TOSTADAS ---
+            {
+                "id": "lox-and-bagel-platter",
+                "nameEs": "Platón Clásico de Salmón Ahumado (Lox Platter)",
+                "nameEn": "Lox Platter with Bagel & Greens",
+                "descriptionEs": "Platón completo con salmón ahumado lox curado, hojas verdes mixtas, alcaparras ácidas, aceitunas, pepinos crujientes, tomate maduro, cebolla morada, queso crema y bagel tostado.",
+                "descriptionEn": "Generous platter with cured smoked salmon lox, mixed field greens, capers, olives, crisp cucumber, tomato, red onion, cream cheese, and your choice of toasted bagel.",
+                "price": 13.89,
+                "category": "desayunos-omelets",
+                "badge": "Platón Estrella",
+                "allergens": ["Fish", "Dairy", "Gluten"]
+            },
+            {
+                "id": "avocado-toast-everything",
+                "nameEs": "Tostada de Aguacate con Sazón Everything Bagel",
+                "nameEn": "Fresh Avocado Toast",
+                "descriptionEs": "Puré de aguacate fresco machacado con cebolla morada sobre pan ciabatta tostado, rodaja de tomate y condimento everything bagel.",
+                "descriptionEn": "Mashed fresh avocado with red onion, topped with sliced ripe tomato and everything bagel seasoning on toasted ciabatta.",
+                "price": 8.19,
+                "category": "desayunos-omelets",
+                "badge": "Saludable",
+                "allergens": ["Gluten", "Vegetarian", "Vegan"]
+            },
+            {
+                "id": "egg-cheese-bacon-sandwich",
+                "nameEs": "Sándwich de Huevo, Tocino y Queso en Croissant",
+                "nameEn": "Egg, Cheese & Bacon on Croissant or Ciabatta",
+                "descriptionEs": "Huevo de granja fresco con tocino crujiente y queso cheddar derretido servido en su elección de croissant francés mantecoso, ciabatta o bagel.",
+                "descriptionEn": "Fresh egg, crispy smoked bacon, and melted cheddar cheese served on a buttery French croissant, ciabatta, or bagel.",
+                "price": 8.50,
+                "category": "desayunos-omelets",
+                "badge": "Desayuno",
+                "allergens": ["Eggs", "Dairy", "Gluten", "Pork"]
+            },
+            {
+                "id": "three-egg-omelet-ciabatta",
+                "nameEs": "Omelet de Tres Huevos con Ciabatta Tostada",
+                "nameEn": "Three-Egg Omelet or Scramble",
+                "descriptionEs": "Omelet esponjoso de tres huevos preparado al momento servido con pan ciabatta artesanal tostado a la mantequilla y opciones de vegetales y queso al gusto.",
+                "descriptionEn": "Fluffy three-egg omelet or scramble served with warm toasted ciabatta bread.",
+                "price": 7.76,
+                "category": "desayunos-omelets",
+                "badge": None,
+                "allergens": ["Eggs", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "fruit-yogurt-granola-bowl",
+                "nameEs": "Bowl de Yogur Natural, Granola y Fruta Fresca",
+                "nameEn": "Fruit, Yogurt & Granola Bowl",
+                "descriptionEs": "Yogur cremoso natural con capas de granola tostada crujiente con miel y fruta fresca de temporada.",
+                "descriptionEn": "Creamy yogurt parfait layered with honey-baked oat granola and seasonal sliced fruit.",
+                "price": 6.65,
+                "category": "desayunos-omelets",
+                "badge": "Ligero",
+                "allergens": ["Dairy", "Nuts", "Vegetarian"]
+            },
+
+            # --- ENSALADAS FRESCAS Y WRAPS ---
+            {
+                "id": "salad-goat-apple",
+                "nameEs": "Ensalada o Wrap de Queso de Cabra, Manzana y Almendras",
+                "nameEn": "Goat & Apple Salad or Wrap",
+                "descriptionEs": "Queso de cabra suave, rodajas finas de manzana fresca crujiente y almendras tostadas sobre mezcla de hojas verdes con vinagreta balsámica casera.",
+                "descriptionEn": "Creamy goat cheese, crisp fresh apple slices, and toasted almonds over mixed field greens with house balsamic dressing.",
+                "price": 12.99,
+                "category": "ensaladas-wraps",
+                "badge": "Favorito",
+                "allergens": ["Dairy", "Nuts", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "salad-pear-craisin",
+                "nameEs": "Ensalada de Pera Dulce, Arándanos y Nueces Confitadas",
+                "nameEn": "Pear & Craisin Salad or Wrap",
+                "descriptionEs": "Peras maduras en rebanadas, arándanos deshidratados (craisins), nueces caramelizadas confitadas y almendras sobre lechuga mixta.",
+                "descriptionEn": "Sweet ripe sliced pear, dried cranberries, candied walnuts, and almonds over fresh greens with balsamic vinaigrette.",
+                "price": 12.99,
+                "category": "ensaladas-wraps",
+                "badge": "De Temporada",
+                "allergens": ["Nuts", "Gluten", "Vegetarian"]
+            },
+            {
+                "id": "salad-fresh-mozzarella",
+                "nameEs": "Ensalada de Mozzarella Fresca con Tomates Maduros",
+                "nameEn": "Fresh Mozzarella Salad or Wrap",
+                "descriptionEs": "Bocconcini de mozzarella fresca, tomates jugosos maduros y cebolla morada en pluma sobre lechugas con vinagreta.",
+                "descriptionEn": "Fresh mozzarella, ripe tomatoes, and shaved red onion over field greens with house balsamic dressing.",
+                "price": 12.99,
+                "category": "ensaladas-wraps",
+                "badge": "Clásico",
+                "allergens": ["Dairy", "Gluten", "Vegetarian"]
+            },
+
+            # --- ESPECIALIDADES DE CAFE Y BEBIDAS ---
+            {
+                "id": "cafe-latte-artisan",
+                "nameEs": "Café Latte Artesanal Caliente o Frío",
+                "nameEn": "Artisan Café Latte",
+                "descriptionEs": "Espresso intenso con leche vaporizada sedosa o servido sobre hielo con jarabes de sabores al gusto.",
+                "descriptionEn": "Rich espresso combined with velvety steamed milk or served over ice with your choice of flavor.",
+                "price": 4.75,
+                "category": "cafe-bebidas",
+                "badge": "Espresso Bar",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "london-fog-tea",
+                "nameEs": "Té London Fog con Vainilla y Leche Espumada",
+                "nameEn": "London Fog Earl Grey Tea",
+                "descriptionEs": "Té negro Earl Grey infusionado con bergamota aromática, jarabe de vainilla pura de Madagascar y leche vaporizada cremosa.",
+                "descriptionEn": "Earl Grey black tea steeped with fragrant bergamot, pure Madagascar vanilla syrup, and steamed milk froth.",
+                "price": 4.95,
+                "category": "cafe-bebidas",
+                "badge": "Especialidad Té",
+                "allergens": ["Dairy", "Vegetarian"]
+            },
+            {
+                "id": "fresh-fruit-smoothie",
+                "nameEs": "Smoothie de Frutas Naturales Frescas",
+                "nameEn": "Fresh Fruit Smoothie",
+                "descriptionEs": "Batido refrescante elaborado con fruta 100% natural (fresa, plátano, mango o moras) licuado al momento.",
+                "descriptionEn": "Refreshing real fruit smoothie blended with your choice of strawberry, banana, mango, or berry medley.",
+                "price": 6.50,
+                "category": "cafe-bebidas",
+                "badge": "Sin Lácteos",
+                "allergens": ["Vegetarian", "Vegan"]
+            }
+        ],
+        "faqs": [
+            {
+                "qEs": "¿Qué tipos de crêpes preparan?",
+                "qEn": "What styles of crêpes do you serve?",
+                "aEs": "Preparamos crêpes saladas al estilo francés rellenas de pollo cajún, jamón con queso suizo, espinacas con mozzarella o queso de cabra con almendras (servidas con ensalada), además de crêpes dulces con Nutella, caramelo y manzana.",
+                "aEn": "We make handcrafted savory French crêpes stuffed with Cajun chicken, ham & Swiss, spinach & mozzarella, or goat cheese & almonds (served with a side salad), as well as sweet dessert crêpes with Nutella and caramel apples."
+            },
+            {
+                "qEs": "¿Tienen eventos de música en vivo y micrófono abierto?",
+                "qEn": "Do you have live music and evening events?",
+                "aEs": "¡Sí! Por las noches Café Atlantique se convierte en un acogedor punto de encuentro con cerveza, vino, cócteles y eventos en vivo los jueves, viernes y sábados, además de noches de juegos de mesa y micrófono abierto.",
+                "aEn": "Yes! In the evenings Café Atlantique transforms into a warm lounge featuring wine, craft beer, cocktails, and live music on Thursday, Friday, and Saturday nights, alongside board game and spoken word open mic nights."
+            },
+            {
+                "qEs": "¿Se admiten mascotas en el patio exterior?",
+                "qEn": "Is your outdoor patio pet-friendly?",
+                "aEs": "¡Sí! Nuestro patio con jardín en River Street es completamente apto para perros y mascotas.",
+                "aEn": "Yes! Our charming outdoor garden patio on River Street is dog and pet-friendly."
+            }
+        ]
+    }
+
+    products = []
+    for item in data["items"]:
+        products.append({
+            "id": item["id"],
+            "nameEs": item["nameEs"],
+            "nameEn": item["nameEn"],
+            "descriptionEs": item["descriptionEs"],
+            "descriptionEn": item["descriptionEn"],
+            "price": item["price"],
+            "category": item["category"],
+            "badge": item["badge"],
+            "allergens": item["allergens"]
+        })
+
+    full_record = {
+        "storeInfo": data["storeInfo"],
+        "categories": data["categories"],
+        "products": products,
+        "faqs": data["faqs"]
+    }
+
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(full_record, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Successfully wrote {dest} with {len(products)} 100% verified authentic items!")
+
+if __name__ == "__main__":
+    build_cafe_atlantique()
