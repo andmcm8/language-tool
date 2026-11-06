@@ -41,320 +41,557 @@
   },
   "categories": [
     {
-      "id": "all",
-      "nameEs": "Todos los Platos",
-      "nameEn": "All Items",
-      "icon": "Utensils"
+      "id": "cat-01",
+      "nameEs": "Aperitivos y Acompañamientos",
+      "nameEn": "Appetizers & Sides"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
-      "icon": "Utensils"
+      "id": "cat-02",
+      "nameEs": "Pizzas Especiales",
+      "nameEn": "Specialty Pizzas"
     },
     {
-      "id": "mains",
-      "nameEs": "Pizzas Clásicas y Especiales",
-      "nameEn": "Pizzas & Specialties",
-      "icon": "Utensils"
+      "id": "cat-03",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones"
     },
     {
-      "id": "beverages",
+      "id": "cat-04",
+      "nameEs": "Pastas y Platos Italianos",
+      "nameEn": "Pasta & Italian Entrees"
+    },
+    {
+      "id": "cat-05",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages"
     }
   ],
   "products": [
     {
       "id": "bella-napoli-01",
-      "categoryId": "appetizers",
-      "nameEs": "Dedos de Mozzarella",
+      "categoryId": "cat-01",
+      "nameEs": "Palitos de Mozzarella",
       "nameEn": "Mozzarella Sticks",
-      "descriptionEs": "Queso mozzarella empanizado y frito, servido con salsa marinara casera.",
-      "descriptionEn": "Breaded and deep-fried mozzarella cheese served with homemade marinara sauce.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "Vegetariano",
-        "Frito"
-      ],
+      "descriptionEs": "Palitos de mozzarella empanizados servidos con nuestra salsa marinara casera.",
+      "descriptionEn": "Breaded mozzarella sticks served with our homemade marinara sauce.",
+      "price": 8.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "dairy",
+        "gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-02",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Buffalo",
-      "nameEn": "Buffalo Wings",
-      "descriptionEs": "Alitas de pollo crujientes bañadas en nuestra salsa picante estilo Buffalo.",
-      "descriptionEn": "Crispy chicken wings tossed in our signature spicy buffalo sauce.",
-      "price": "$9.95",
+      "categoryId": "cat-01",
+      "nameEs": "Alitas de Pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Alitas de pollo crujientes bañadas en salsa BBQ, media o picante, servidas con zanahorias, apio y queso azul.",
+      "descriptionEn": "Crispy chicken wings tossed in BBQ, Medium, or Hot sauce, served with carrots, celery, and blue cheese.",
+      "price": 10.95,
       "popular": false,
-      "badge": "Picante",
-      "tags": [
-        "Picante"
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "dairy"
       ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-03",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo BBQ",
-      "nameEn": "BBQ Wings",
-      "descriptionEs": "Alitas de pollo doradas y cubiertas con salsa barbacoa dulce y ahumada.",
-      "descriptionEn": "Golden chicken wings coated in a sweet and smoky barbecue sauce.",
-      "price": "$9.95",
+      "categoryId": "cat-01",
+      "nameEs": "Bocaditos de Ajo",
+      "nameEn": "Garlic Bites",
+      "descriptionEs": "Masa estirada, cubierta con ajo fresco, mantequilla y especias italianas, servida con marinara.",
+      "descriptionEn": "Dough stretched, smothered with fresh garlic, butter, and Italian spices, served with marinara.",
+      "price": 8.5,
       "popular": false,
-      "badge": "Popular",
-      "tags": [
-        "Dulce",
-        "Ahumado"
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten"
       ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-04",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Queso Mozzarella Clásica",
-      "nameEn": "Mozzarella Cheese Pizza",
-      "descriptionEs": "Masa hecha a diario en el local con salsa de tomate clásica y abundante queso mozzarella.",
-      "descriptionEn": "Classic cheese pizza with dough made fresh daily on premises, red or white.",
-      "price": "$8.00",
-      "popular": true,
-      "badge": "Mejor Opción",
-      "tags": [
-        "Clásico",
-        "Vegetariano"
-      ],
+      "categoryId": "cat-01",
+      "nameEs": "Bocaditos de Ajo con Queso",
+      "nameEn": "Garlic Bites with Cheese",
+      "descriptionEs": "Masa recién horneada cubierta con mantequilla de ajo y queso mozzarella derretido.",
+      "descriptionEn": "Fresh baked dough smothered in garlic butter, topped with melted mozzarella cheese.",
+      "price": 9.5,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza Original de Bella (Olde World)",
-      "nameEn": "Bella's Original Pizza (Olde World)",
-      "descriptionEs": "Pizza fina y crujiente con orégano, queso pecorino romano y 100% aceite de oliva virgen extra.",
-      "descriptionEn": "Thin and crispy pizza with oregano, pecorino Romano cheese & 100% EVOO.",
-      "price": "$8.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Fino",
-        "Artesanal"
-      ],
+      "categoryId": "cat-01",
+      "nameEs": "Pan de Ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "Pan italiano tostado sazonado con ajo, mantequilla y hierbas.",
+      "descriptionEn": "Toasted Italian bread seasoned with garlic, butter, and herbs.",
+      "price": 4.5,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-06",
-      "categoryId": "mains",
-      "nameEs": "Pizza con Aceite Picante",
-      "nameEn": "Hot Oil Pizza",
-      "descriptionEs": "Pizza de masa fina cubierta con salsa, queso mozzarella y aceite picante especial.",
-      "descriptionEn": "Thin crust pizza topped with sauce, mozzarella cheese, and spicy hot oil.",
-      "price": "$10.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Fino"
-      ],
+      "categoryId": "cat-01",
+      "nameEs": "Pan de Ajo con Mozzarella",
+      "nameEn": "Garlic Bread with Mozzarella",
+      "descriptionEs": "Pan de ajo tostado cubierto con queso mozzarella derretido.",
+      "descriptionEn": "Toasted garlic bread topped with melted whole-milk mozzarella.",
+      "price": 5.75,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-07",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Puré de Papa",
-      "nameEn": "Mashed Potato Pizza",
-      "descriptionEs": "Deliciosa combinación blanca con puré de papa cremoso, tocino crujiente y queso cheddar.",
-      "descriptionEn": "White pizza topped with mashed potato, bacon & cheddar cheese.",
-      "price": "$10.00",
+      "categoryId": "cat-01",
+      "nameEs": "Albóndigas Italianas",
+      "nameEn": "Side of Italian Meatballs",
+      "descriptionEs": "Albóndigas caseras de carne de res y cerdo sazonadas, cocinadas a fuego lento en salsa marinara tradicional.",
+      "descriptionEn": "Homemade seasoned beef and pork meatballs simmered in traditional marinara sauce.",
+      "price": 7.95,
       "popular": false,
-      "badge": "Único",
-      "tags": [
-        "Blanca",
-        "Tocino"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "badge": null,
+      "tags": [],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-08",
-      "categoryId": "mains",
-      "nameEs": "Pizza Especial de Camarones",
-      "nameEn": "Shrimp Special Pizza",
-      "descriptionEs": "Pizza blanca con jugosos camarones, ajo fresco y queso mozzarella derretido.",
-      "descriptionEn": "White pizza with shrimp, fresh garlic, and mozzarella cheese.",
-      "price": "$10.00",
+      "categoryId": "cat-01",
+      "nameEs": "Salchicha Italiana",
+      "nameEn": "Side of Italian Sausage",
+      "descriptionEs": "Salchichas italianas dulces cocinadas a fuego lento en salsa marinara.",
+      "descriptionEn": "Sweet Italian sausage links simmered in marinara sauce.",
+      "price": 7.95,
       "popular": false,
-      "badge": "Mariscos",
-      "tags": [
-        "Mariscos",
-        "Ajo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "badge": null,
+      "tags": [],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-09",
-      "categoryId": "mains",
-      "nameEs": "Pizza Clams Casino",
-      "nameEn": "Clams Casino Pizza",
-      "descriptionEs": "Pizza blanca de almejas frescas al horno con trozos de tocino y un toque de ajo.",
-      "descriptionEn": "White pizza topped with clams, bacon & garlic.",
-      "price": "$10.00",
-      "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Tocino"
-      ],
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Clásica de Mozzarella",
+      "nameEn": "Classic Mozzarella Cheese Pizza",
+      "descriptionEs": "Pizza tradicional hecha a mano con salsa de tomate de Bella y mozzarella derretida.",
+      "descriptionEn": "Traditional hand-tossed pizza with Bella's tomato sauce and melted mozzarella.",
+      "price": 8.0,
+      "popular": true,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-10",
-      "categoryId": "mains",
-      "nameEs": "Pizza Napolitana",
-      "nameEn": "Napolitano Pizza",
-      "descriptionEs": "Pizza blanca con tiernos filetes de pollo empanizado y floretes de brócoli fresco.",
-      "descriptionEn": "White pizza with chicken cutlets & broccoli florets.",
-      "price": "$10.00",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Original de Bella (Olde World)",
+      "nameEn": "Bella's Original Pizza (Olde World)",
+      "descriptionEs": "Corteza fina y crujiente con orégano, queso pecorino romano y aceite de oliva virgen extra.",
+      "descriptionEn": "Thin and crispy crust with oregano, pecorino romano cheese, and extra virgin olive oil.",
+      "price": 8.5,
       "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Pollo",
-        "Brócoli"
-      ],
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-11",
-      "categoryId": "mains",
-      "nameEs": "Pizza Amantes de la Carne",
-      "nameEn": "Meat Lovers Pizza",
-      "descriptionEs": "Cargada de albóndigas caseras, pepperoni, tocino crujiente y salchicha italiana.",
-      "descriptionEn": "Loaded with meatballs, pepperoni, bacon, and sausage.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Abundante"
-      ],
+      "categoryId": "cat-02",
+      "nameEs": "Pizza de Aceite Picante",
+      "nameEn": "Hot Oil Pizza",
+      "descriptionEs": "Pizza de corteza fina con salsa de tomate, queso mozzarella y nuestro aceite de pimiento picante exclusivo.",
+      "descriptionEn": "Thin crust pizza with tomato sauce, mozzarella cheese, and our signature spicy hot pepper oil.",
+      "price": 10.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-12",
-      "categoryId": "mains",
-      "nameEs": "Pizza Hawaiana",
-      "nameEn": "Hawaiian Pizza",
-      "descriptionEs": "La clásica combinación dulce y salada con jamón tierno y piña jugosa.",
-      "descriptionEn": "Classic combination topped with savory ham and sweet pineapple.",
-      "price": "$10.00",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza de Puré de Patatas",
+      "nameEn": "Mashed Potato Pizza",
+      "descriptionEs": "Pizza blanca cubierta con puré de patatas sazonado, tocino crujiente y queso cheddar.",
+      "descriptionEn": "White pizza topped with seasoned mashed potatoes, crispy bacon, and cheddar cheese.",
+      "price": 10.0,
       "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Dulce",
-        "Fruta"
-      ],
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-13",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Tomate y Albahaca",
-      "nameEn": "Tomato & Basil Pizza",
-      "descriptionEs": "Pizza blanca con rodajas de tomate fresco, albahaca aromática y queso mozzarella.",
-      "descriptionEn": "White pizza with sliced tomato, fresh basil & mozzarella cheese.",
-      "price": "$10.00",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Especial de Camarones",
+      "nameEn": "Shrimp Special Pizza",
+      "descriptionEs": "Pizza blanca con camarones pequeños, ajo fresco picado, aceite de oliva y mozzarella.",
+      "descriptionEn": "White pizza with baby shrimp, fresh minced garlic, olive oil, and mozzarella.",
+      "price": 12.0,
       "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy",
+        "shellfish"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-14",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Pollo Buffalo",
-      "nameEn": "Buffalo Chicken Pizza",
-      "descriptionEs": "Trocitos de pollo empanizado cubiertos en salsa picante Buffalo con queso mozzarella.",
-      "descriptionEn": "Chicken cutlets covered in hot buffalo sauce with mozzarella cheese.",
-      "price": "$10.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Pollo",
-        "Picante"
-      ],
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Clams Casino",
+      "nameEn": "Clams Casino Pizza",
+      "descriptionEs": "Almejas pequeñas, tocino crujiente, pimientos dulces asados, ajo, aceite de oliva y mozzarella.",
+      "descriptionEn": "Baby clams, crispy bacon, sweet roasted peppers, garlic, olive oil, and mozzarella.",
+      "price": 12.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "gluten",
+        "dairy",
+        "shellfish"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "bella-napoli-15",
-      "categoryId": "beverages",
-      "nameEs": "Refresco de Lata",
-      "nameEn": "Can Soda",
-      "descriptionEs": "Elija entre una variedad de refrescos fríos en lata.",
-      "descriptionEn": "Choose from a variety of cold canned sodas.",
-      "price": "$2.00",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Meat Lovers",
+      "nameEn": "Meat Lovers Pizza",
+      "descriptionEs": "Pepperoni, salchicha, tocino, albóndigas y jamón con mozzarella.",
+      "descriptionEn": "Pepperoni, sausage, bacon, meatballs, and ham with mozzarella.",
+      "price": 12.0,
       "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Frío",
-        "Refresco"
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
       ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-16",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Hawaiana",
+      "nameEn": "Hawaiian Pizza",
+      "descriptionEs": "Jamón, trozos de piña dulce, salsa de tomate y mozzarella.",
+      "descriptionEn": "Ham, sweet pineapple chunks, tomato sauce, and mozzarella.",
+      "price": 10.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-17",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Napolitana",
+      "nameEn": "Napolitano Pizza",
+      "descriptionEs": "Tomates frescos en rodajas, ajo, albahaca, aceite de oliva y mozzarella.",
+      "descriptionEn": "Sliced fresh tomatoes, garlic, basil, olive oil, and mozzarella.",
+      "price": 10.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-18",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza de Tomate y Albahaca",
+      "nameEn": "Tomato & Basil Pizza",
+      "descriptionEs": "Rodajas de tomate ciruela fresco, albahaca fresca, ajo y mozzarella.",
+      "descriptionEn": "Fresh plum tomato slices, fresh basil, garlic, and mozzarella.",
+      "price": 10.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-19",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza de Pollo Buffalo",
+      "nameEn": "Buffalo Chicken Pizza",
+      "descriptionEs": "Pechuga de pollo buffalo crujiente, chorrito de salsa picante y mozzarella.",
+      "descriptionEn": "Crispy buffalo chicken breast, hot sauce drizzle, and mozzarella.",
+      "price": 11.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-20",
+      "categoryId": "cat-02",
+      "nameEs": "Pizza Sin Gluten",
+      "nameEn": "Gluten-Free Pizza",
+      "descriptionEs": "Corteza sin gluten de 12 pulgadas con salsa de tomate y mozzarella.",
+      "descriptionEn": "12-inch gluten-free crust with tomato sauce and mozzarella.",
+      "price": 17.7,
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "gluten-free"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-21",
+      "categoryId": "cat-03",
+      "nameEs": "Calzone de Queso",
+      "nameEn": "Cheese Calzone",
+      "descriptionEs": "Ricotta y mozzarella horneados en masa de pizza dorada, servido con salsa marinara al lado.",
+      "descriptionEn": "Ricotta and mozzarella baked in golden pizza dough, served with side marinara.",
+      "price": 9.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-22",
+      "categoryId": "cat-03",
+      "nameEs": "Calzone de Philly Cheese Steak",
+      "nameEn": "Philly Cheese Steak Calzone",
+      "descriptionEs": "Filete en rodajas finas, pimientos salteados, cebollas, mozzarella y queso cheddar.",
+      "descriptionEn": "Thinly sliced steak, sautéed peppers, onions, mozzarella, and cheddar cheese.",
+      "price": 11.5,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-23",
+      "categoryId": "cat-04",
+      "nameEs": "Pasta con Salsa de Almejas",
+      "nameEn": "Clam Sauce Pasta",
+      "descriptionEs": "Almejas pequeñas salteadas con ajo fresco, vino blanco y hierbas italianas.",
+      "descriptionEn": "Baby clams sautéed with fresh garlic, white wine, and Italian herbs.",
+      "price": 16.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "shellfish"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-24",
+      "categoryId": "cat-04",
+      "nameEs": "Pasta con Albóndigas",
+      "nameEn": "Pasta con Polpette (Meatballs)",
+      "descriptionEs": "Penne o espagueti cubiertos con nuestras albóndigas caseras y marinara cocinada a fuego lento.",
+      "descriptionEn": "Penne or spaghetti topped with our homemade meatballs and slow-simmered marinara.",
+      "price": 16.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-25",
+      "categoryId": "cat-04",
+      "nameEs": "Conchas Rellenas al Horno",
+      "nameEn": "Baked Stuffed Shells",
+      "descriptionEs": "Conchas de pasta jumbo rellenas de ricotta sazonada, cubiertas con marinara y mozzarella derretida.",
+      "descriptionEn": "Jumbo pasta shells stuffed with seasoned ricotta, topped with marinara and melted mozzarella.",
+      "price": 18.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-26",
+      "categoryId": "cat-04",
+      "nameEs": "Lasaña al Horno",
+      "nameEn": "Baked Lasagna",
+      "descriptionEs": "Pasta en capas con carne molida, ricotta, mozzarella y salsa marinara.",
+      "descriptionEn": "Layered pasta with ground beef, ricotta, mozzarella, and marinara sauce.",
+      "price": 18.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-27",
+      "categoryId": "cat-04",
+      "nameEs": "Pollo a la Parmigiana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "Filete de pollo empanizado cubierto con salsa marinara y mozzarella derretida, servido con pasta.",
+      "descriptionEn": "Breaded chicken cutlet topped with marinara sauce and melted mozzarella, served with pasta.",
+      "price": 25.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-28",
+      "categoryId": "cat-04",
+      "nameEs": "Ternera a la Parmigiana",
+      "nameEn": "Veal Parmigiana",
+      "descriptionEs": "Tierno filete de ternera empanizado horneado con marinara y mozzarella, servido con pasta.",
+      "descriptionEn": "Tender breaded veal cutlet baked with marinara and mozzarella, served with pasta.",
+      "price": 26.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-29",
+      "categoryId": "cat-04",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "Pechuga de pollo salteada con champiñones frescos en una rica reducción de vino Marsala.",
+      "descriptionEn": "Sautéed chicken breast with fresh mushrooms in a rich Marsala wine reduction.",
+      "price": 25.95,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-30",
+      "categoryId": "cat-05",
+      "nameEs": "Refresco en Lata",
+      "nameEn": "Canned Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": 2.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-31",
+      "categoryId": "cat-05",
+      "nameEs": "Refresco de 2 Litros",
+      "nameEn": "2-Liter Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": 4.25,
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-napoli-32",
+      "categoryId": "cat-05",
+      "nameEs": "Agua Embotellada",
+      "nameEn": "Bottled Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": 2.0,
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [],
       "ctaType": "in_store"
     }
