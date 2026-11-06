@@ -42,49 +42,66 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todos los Productos",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "fresh_pasta",
+      "nameEs": "Pastas Frescas",
+      "nameEn": "Fresh Pastas",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "stuffed_pasta",
+      "nameEs": "Pastas Rellenas",
+      "nameEn": "Stuffed Pastas",
       "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos Preparados",
+      "nameEn": "Prepared Trays & Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sauces",
+      "nameEs": "Salsas Caseras",
+      "nameEn": "Fresh Sauces",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "stuffed_breads",
+      "nameEs": "Panes Rellenos",
+      "nameEn": "Stuffed Breads",
+      "icon": "Sandwich"
     },
     {
       "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "nameEs": "Especialidades y Quesos",
+      "nameEn": "Specialties & Cheeses",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "catering",
+      "nameEs": "Bandejas para Eventos",
+      "nameEn": "Catering Trays",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
       "id": "pasta-heaven-01",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta al Pomodoro",
-      "nameEn": "Tomato Basil Bruschetta",
-      "descriptionEs": "Pan artesanal tostado al horno con ajo, tomates frescos de la huerta, albahaca y un chorrito de aceite de oliva virgen extra.",
-      "descriptionEn": "Oven-toasted artisanal bread topped with garlic, fresh garden tomatoes, basil, and a drizzle of extra virgin olive oil.",
-      "price": "$9.95",
-      "popular": false,
-      "badge": "Fresh",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Espaguetis Frescos",
+      "nameEn": "Fresh Spaghetti",
+      "descriptionEs": "Espaguetis tradicionales italianos elaborados artesanalmente a diario",
+      "descriptionEn": "Handmade fresh traditional Italian spaghetti made daily",
+      "price": "$5.50 / lb",
+      "popular": true,
+      "badge": "Shop Favorite",
       "tags": [
-        "Vegetariano",
-        "Artesanal"
+        "Fresh Daily"
       ],
       "allergens": [
         "Gluten"
@@ -93,276 +110,773 @@
     },
     {
       "id": "pasta-heaven-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos Crujientes",
-      "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Calamares tiernos empanizados y fritos a la perfección, servidos con nuestra salsa marinara casera y rodajas de limón fresco.",
-      "descriptionEn": "Tender squid lightly breaded and fried to golden perfection, served with our house-made marinara sauce and fresh lemon wedges.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Popular",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Linguini Frescos",
+      "nameEn": "Fresh Linguini",
+      "descriptionEs": "Pasta linguini fresca hecha a mano en forma de cintas planas",
+      "descriptionEn": "Handmade fresh flat linguini pasta ribbons",
+      "price": "$5.50 / lb",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Mariscos",
-        "Crujiente"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Seafood",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-03",
-      "categoryId": "appetizers",
-      "nameEs": "Mozzarella en Carrozza",
-      "nameEn": "Fried Mozzarella Carrozza",
-      "descriptionEs": "Queso mozzarella fresco empanizado en pan rallado italiano, frito hasta quedar dorado y acompañado de marinara tibia.",
-      "descriptionEn": "Fresh mozzarella cheese breaded in Italian breadcrumbs, fried golden brown, and served with warm house marinara.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Classic",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Fettuccine Frescos",
+      "nameEn": "Fresh Fettuccine",
+      "descriptionEs": "Fettuccine de huevo al huevo cortados a mano en cintas anchas",
+      "descriptionEn": "Freshly cut wide ribbon egg fettuccine",
+      "price": "$5.50 / lb",
+      "popular": true,
+      "badge": null,
       "tags": [
-        "Vegetariano",
-        "Queso"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-04",
-      "categoryId": "mains",
-      "nameEs": "Fettuccine Alfredo Clásico",
-      "nameEn": "Classic Fettuccine Alfredo",
-      "descriptionEs": "Pasta fettuccine fresca hecha a mano cubierta en nuestra cremosa y rica salsa de mantequilla y queso Parmigiano-Reggiano.",
-      "descriptionEn": "Handmade fresh fettuccine pasta tossed in our rich, velvety butter and freshly grated Parmigiano-Reggiano cream sauce.",
-      "price": "$17.95",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Cabello de Ángel Fresco",
+      "nameEn": "Fresh Angel Hair",
+      "descriptionEs": "Delicada pasta capellini artesanal de corte fino",
+      "descriptionEn": "Delicate handmade thin capellini angel hair pasta",
+      "price": "$5.50 / lb",
       "popular": false,
-      "badge": "Signature",
+      "badge": null,
       "tags": [
-        "Casero",
-        "Cremoso"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-05",
-      "categoryId": "mains",
-      "nameEs": "Espagueti con Albóndigas de la Nonna",
-      "nameEn": "Spaghetti with Nonna's Meatballs",
-      "descriptionEs": "Espagueti al dente cubierto con nuestra famosa salsa de tomate a fuego lento y grandes albóndigas caseras de carne de res y cerdo.",
-      "descriptionEn": "Al dente spaghetti topped with our famous slow-simmered tomato sauce and giant handmade beef and pork meatballs.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Bestseller",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Ziti Frescos",
+      "nameEn": "Fresh Ziti",
+      "descriptionEs": "Pasta ziti artesanal fresca en forma de tubo hueco",
+      "descriptionEn": "Fresh artisanal hollow tubular ziti pasta",
+      "price": "$5.50 / lb",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Tradicional",
-        "Carne"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Gluten",
-        "Dairy"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-06",
-      "categoryId": "mains",
-      "nameEs": "Lasaña Horneada Rústica",
-      "nameEn": "Rustic Baked Lasagna",
-      "descriptionEs": "Capas de pasta fresca, rica salsa de carne boloñesa, requesón cremoso y una generosa capa de mozzarella derretida.",
-      "descriptionEn": "Layers of fresh pasta sheets, rich Bolognese meat sauce, creamy ricotta cheese, and a generous topping of melted mozzarella.",
-      "price": "$19.95",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Cavatelli Frescos",
+      "nameEn": "Fresh Cavatelli",
+      "descriptionEs": "Tradicionales dumplings de pasta cavatelli hechos a mano",
+      "descriptionEn": "Traditional handmade riched cavatelli pasta dumplings",
+      "price": "$5.50 / lb",
       "popular": true,
-      "badge": "Must Try",
+      "badge": null,
       "tags": [
-        "Horneado",
-        "Confort"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-07",
-      "categoryId": "mains",
-      "nameEs": "Penne alla Vodka",
-      "nameEn": "Penne alla Vodka",
-      "descriptionEs": "Nuestra galardonada y cremosa salsa de vodka con un toque de tomate y jamón prosciutto sobre pasta penne perfectamente cocinada.",
-      "descriptionEn": "Our legendary, velvety vodka sauce with a touch of crushed tomatoes and prosciutto tossed over perfectly cooked penne pasta.",
-      "price": "$18.95",
-      "popular": true,
-      "badge": "Fan Favorite",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Bucatini Frescos",
+      "nameEn": "Fresh Bucatini",
+      "descriptionEs": "Pasta fresca gruesa y hueca al estilo espagueti",
+      "descriptionEn": "Thick hollow spaghetti-style fresh pasta",
+      "price": "$5.50 / lb",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Especial",
-        "Cremoso"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-08",
-      "categoryId": "specialties",
-      "nameEs": "Raviolis de Queso Caseros",
-      "nameEn": "Homemade Cheese Ravioli",
-      "descriptionEs": "Ligeras y esponjosas almohadas de pasta rellenas de una mezcla de quesos finos, servidas con nuestra marinara casera de la casa.",
-      "descriptionEn": "Light, fluffy pillows of cheesy goodness stuffed with a rich blend of fine cheeses, served with our signature house marinara.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Chef Choice",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Láminas de Pasta Fresca",
+      "nameEn": "Fresh Pasta Sheets",
+      "descriptionEs": "Láminas de masa fresca estiradas a mano, ideales para lasaña o canelones",
+      "descriptionEn": "Fresh hand-rolled pasta dough sheets perfect for lasagna or cannelloni",
+      "price": "$5.50 / lb",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Hecho a Mano",
-        "Vegetariano"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-09",
-      "categoryId": "specialties",
-      "nameEs": "Pollo a la Parmigiana",
-      "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Pechuga de pollo empanizada y frita, coronada con marinara y abundante mozzarella, gratinada al horno y servida con espagueti.",
-      "descriptionEn": "Crispy breaded chicken cutlet topped with marinara and melted mozzarella, baked to golden perfection and served with side spaghetti.",
-      "price": "$21.50",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Ñoquis de Patata Frescos",
+      "nameEn": "Fresh Potato Gnocchi",
+      "descriptionEs": "Tiernos ñoquis de patata italianos elaborados artesanalmente",
+      "descriptionEn": "Tender Italian potato gnocchi dumplings made fresh",
+      "price": "$6.00 / lb",
       "popular": true,
-      "badge": "Popular",
+      "badge": null,
       "tags": [
-        "Pollo",
-        "Horneado"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-10",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Especialidad Margherita",
-      "nameEn": "Margherita Specialty Pizza",
-      "descriptionEs": "Masa artesanal estirada a mano, salsa de tomate fresco, mozzarella fior di latte, albahaca fresca y aceite de oliva.",
-      "descriptionEn": "Hand-stretched artisanal crust topped with fresh tomato sauce, fior di latte mozzarella, fresh basil leaves, and olive oil.",
-      "price": "$20.00",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Saccottini Frescos",
+      "nameEn": "Fresh Saccottini",
+      "descriptionEs": "Delicados saquitos de pasta rellenos, cerrados a mano",
+      "descriptionEn": "Delicate hand-pinched pasta beggar's purse pouches",
+      "price": "$7.50 / lb",
       "popular": false,
-      "badge": "Specialty",
+      "badge": null,
       "tags": [
-        "Pizza",
-        "Vegetariano"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-11",
-      "categoryId": "specialties",
-      "nameEs": "Linguine con Frutti di Mare",
-      "nameEn": "Linguine Frutti di Mare",
-      "descriptionEs": "Linguine fresco con camarones, mejillones y almejas salteados en vino blanco, ajo y salsa de tomate ligera o marinara picante.",
-      "descriptionEn": "Fresh linguine tossed with shrimp, mussels, and clams sautéed in white wine, garlic, and a light tomato or spicy marinara sauce.",
-      "price": "$25.95",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Tortellini de Carne Frescos",
+      "nameEn": "Fresh Meat Tortellini",
+      "descriptionEs": "Pasta artesanal en forma de anillo rellena de carne sazonada",
+      "descriptionEn": "Handmade ring-shaped pasta filled with savory seasoned meat",
+      "price": "$7.00 / lb",
       "popular": false,
-      "badge": "Gourmet",
+      "badge": null,
       "tags": [
-        "Mariscos",
-        "Picante"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Seafood",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-12",
-      "categoryId": "beverages",
-      "nameEs": "Cannoli Siciliano",
-      "nameEn": "Sicilian Cannoli",
-      "descriptionEs": "Crocante tubo de masa frita relleno de crema de ricotta dulce con trocitos de chocolate amargo.",
-      "descriptionEn": "Crispy pastry shell filled with sweet, creamy ricotta filling and studded with mini dark chocolate chips.",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Dessert",
+      "categoryId": "fresh_pasta",
+      "nameEs": "Tortellini de Queso Frescos",
+      "nameEn": "Fresh Cheese Tortellini",
+      "descriptionEs": "Delicados anillos de pasta artesanal rellenos de ricos quesos italianos",
+      "descriptionEn": "Handmade delicate pasta rings filled with rich Italian cheeses",
+      "price": "$6.50 / lb",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Dulce",
-        "Postre"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
         "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-13",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "House-Made Tiramisu",
-      "descriptionEs": "Delicados bizcochos empapados en espresso y licor de café, capas de crema de mascarpone y cacao en polvo.",
-      "descriptionEn": "Delicate ladyfingers soaked in espresso and coffee liqueur, layered with rich mascarpone cream and dusted with cocoa.",
-      "price": "$7.50",
+      "categoryId": "stuffed_pasta",
+      "nameEs": "Raviolis de Queso Artesanales",
+      "nameEn": "Handmade Cheese Ravioli",
+      "descriptionEs": "Tradicionales almohadillas de pasta rellenas de queso ricotta de leche entera y hierbas",
+      "descriptionEn": "Traditional pasta pillows filled with whole milk ricotta and herbs",
+      "price": "$5.50 / dozen",
       "popular": true,
-      "badge": "Sweet",
+      "badge": "Shop Favorite",
       "tags": [
-        "Postre",
-        "Café"
+        "Fresh Daily"
       ],
       "allergens": [
-        "Dairy",
-        "Gluten",
-        "Eggs"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
       "id": "pasta-heaven-14",
-      "categoryId": "beverages",
-      "nameEs": "San Pellegrino (Lata / Botella)",
-      "nameEn": "San Pellegrino Sparkling Water",
-      "descriptionEs": "Agua mineral gasificada natural de Italia.",
-      "descriptionEn": "Refreshing Italian sparkling mineral water.",
-      "price": "$3.50",
+      "categoryId": "stuffed_pasta",
+      "nameEs": "Conchas Gigantes Rellenas",
+      "nameEn": "Jumbo Stuffed Shells",
+      "descriptionEs": "Conchas de pasta grandes rellenas a mano con ricotta sazonada y hierbas",
+      "descriptionEn": "Large pasta shells hand-stuffed with seasoned ricotta and herbs",
+      "price": "$2.25 each",
       "popular": false,
-      "badge": "Drink",
+      "badge": null,
       "tags": [
-        "Sin Alcohol",
-        "Refrescante"
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-15",
+      "categoryId": "stuffed_pasta",
+      "nameEs": "Manicotti Gigantes",
+      "nameEn": "Jumbo Manicotti",
+      "descriptionEs": "Tubos de pasta tiernos enrollados a mano y rellenos de cremosa ricotta y mozzarella",
+      "descriptionEn": "Hand-rolled tender pasta tubes filled with creamy ricotta and mozzarella",
+      "price": "$2.50 each",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-16",
+      "categoryId": "entrees",
+      "nameEs": "Lasaña de Carne Casera",
+      "nameEn": "Homemade Meat Lasagna",
+      "descriptionEs": "Bandeja de 6x9 pulgadas con capas de pasta, carne picada, ricotta y mozzarella fundida",
+      "descriptionEn": "6x9 inch tray of layered pasta sheets, ground meat, ricotta, and melted mozzarella",
+      "price": "$5.99 / lb",
+      "popular": true,
+      "badge": "Shop Favorite",
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-17",
+      "categoryId": "entrees",
+      "nameEs": "Lasaña de Queso Casera",
+      "nameEn": "Homemade Cheese Lasagna",
+      "descriptionEs": "Bandeja de 6x9 pulgadas con capas de pasta, rica ricotta, mozzarella y salsa marinara",
+      "descriptionEn": "6x9 inch tray of layered pasta with rich ricotta, mozzarella, and marinara",
+      "price": "$5.99 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-18",
+      "categoryId": "entrees",
+      "nameEs": "Lasaña de Verduras Casera",
+      "nameEn": "Homemade Vegetable Lasagna",
+      "descriptionEs": "Bandeja de 6x9 pulgadas con verduras frescas de temporada, pasta y quesos",
+      "descriptionEn": "6x9 inch tray of fresh seasonal vegetables layered with pasta and cheeses",
+      "price": "$5.99 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-19",
+      "categoryId": "entrees",
+      "nameEs": "Berenjena a la Parmesana Horneada",
+      "nameEn": "Baked Eggplant Parmesan",
+      "descriptionEs": "Bandeja de 6x9 pulgadas con filetes de berenjena empanados, marinara y mozzarella fundida",
+      "descriptionEn": "6x9 inch tray of breaded eggplant cutlets layered with marinara and melted mozzarella",
+      "price": "$6.99 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-20",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Boloñesa Casera (Pinta)",
+      "nameEn": "Homemade Bolognese Sauce (Pint)",
+      "descriptionEs": "Rica salsa de carne cocinada a fuego lento con ternera, hierbas y tomates San Marzano",
+      "descriptionEn": "Slow-simmered rich meat sauce with beef, herbs, and San Marzano tomatoes",
+      "price": "$6.75",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
       ],
       "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "pasta-heaven-15",
-      "categoryId": "beverages",
-      "nameEs": "Espresso Italiano",
-      "nameEn": "Italian Espresso",
-      "descriptionEs": "Café espresso oscuro, fuerte y aromático preparado al momento.",
-      "descriptionEn": "Rich, bold, and aromatic traditionally brewed Italian espresso shot.",
-      "price": "$3.00",
+      "id": "pasta-heaven-21",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Picante Fra Diavolo (Pinta)",
+      "nameEn": "Fra Diavolo Spicy Sauce (Pint)",
+      "descriptionEs": "Salsa marinara vibrante y picante con pimienta roja triturada y ajo",
+      "descriptionEn": "Zesty spicy marinara infused with red crushed pepper and garlic",
+      "price": "$6.75",
       "popular": false,
-      "badge": "Coffee",
+      "badge": null,
       "tags": [
-        "Café",
-        "Caliente"
+        "Fresh Daily"
       ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-22",
+      "categoryId": "sauces",
+      "nameEs": "Salsa de Almejas Roja (Pinta)",
+      "nameEn": "Red Clam Sauce (Pint)",
+      "descriptionEs": "Clásica salsa italiana de almejas con tomate, ajo y hierbas",
+      "descriptionEn": "Classic Italian red clam sauce with tender clams, garlic, and herbs",
+      "price": "$6.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-23",
+      "categoryId": "sauces",
+      "nameEs": "Salsa de Almejas Blanca (Pinta)",
+      "nameEn": "White Clam Sauce (Pint)",
+      "descriptionEs": "Sabrosa salsa de vino blanco y ajo cargada de tiernas almejas del océano",
+      "descriptionEn": "Savory white wine and garlic sauce loaded with tender ocean clams",
+      "price": "$6.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-24",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Cremosa de Vodka (Pinta)",
+      "nameEn": "Creamy Vodka Sauce (Pint)",
+      "descriptionEs": "Aterciopelada salsa rosada terminada con vodka, ajo y parmesano",
+      "descriptionEn": "Velvety pink cream sauce finished with vodka, garlic, and parmesan",
+      "price": "$7.75",
+      "popular": true,
+      "badge": "Shop Favorite",
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-25",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Cremosa de Vodka (Cuarto)",
+      "nameEn": "Creamy Vodka Sauce (Quart)",
+      "descriptionEs": "Un cuarto completo de aterciopelada salsa rosada al vodka",
+      "descriptionEn": "Full quart of velvety pink cream vodka sauce",
+      "price": "$15.50",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-26",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Marinara Tradicional (Pinta)",
+      "nameEn": "Traditional Marinara Sauce (Pint)",
+      "descriptionEs": "Clásica salsa de tomate cocinada a fuego lento con ajo, albahaca y aceite de oliva",
+      "descriptionEn": "Classic slow-cooked tomato sauce with garlic, basil, and olive oil",
+      "price": "$6.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-27",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Marinara Tradicional (Cuarto)",
+      "nameEn": "Traditional Marinara Sauce (Quart)",
+      "descriptionEs": "Un cuarto completo de nuestra clásica salsa marinara casera",
+      "descriptionEn": "Full quart of classic house marinara sauce",
+      "price": "$10.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-28",
+      "categoryId": "sauces",
+      "nameEs": "Salsa de Langosta Newburg (Pinta)",
+      "nameEn": "Lobster Newburg Sauce (Pint)",
+      "descriptionEs": "Decadente y rica salsa de crema infusionada con reducción de langosta y jerez",
+      "descriptionEn": "Decadent rich cream sauce infused with sweet lobster reduction and sherry",
+      "price": "$7.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-29",
+      "categoryId": "sauces",
+      "nameEs": "Pesto de Albahaca Fresca (Media Pinta)",
+      "nameEn": "Fresh Basil Pesto (Half Pint)",
+      "descriptionEs": "Fragante mezcla de albahaca fresca, aceite de oliva, piñones, ajo y parmesano",
+      "descriptionEn": "Fragrant crushed fresh basil, olive oil, pine nuts, garlic, and parmesan",
+      "price": "$7.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-30",
+      "categoryId": "sauces",
+      "nameEs": "Salsa Alfredo Cremosa (Pinta)",
+      "nameEn": "Creamy Alfredo Sauce (Pint)",
+      "descriptionEs": "Auténtica y rica salsa alfredo de parmesano y nata (requiere reserva con 24h)",
+      "descriptionEn": "Rich authentic parmesan and heavy cream alfredo sauce (24hr pre-order)",
+      "price": "$7.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Fresh Daily"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-31",
+      "categoryId": "stuffed_breads",
+      "nameEs": "Pan Relleno de Pepperoni y Queso",
+      "nameEn": "Pepperoni & Cheese Stuffed Bread",
+      "descriptionEs": "Pan dorado recién horneado relleno de sabroso pepperoni y mozzarella fundida",
+      "descriptionEn": "Fresh baked golden bread rolled with savory pepperoni and melted mozzarella",
+      "price": "$10.25",
+      "popular": true,
+      "badge": "Shop Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-32",
+      "categoryId": "stuffed_breads",
+      "nameEs": "Pan Relleno de Brócoli y Salchicha",
+      "nameEn": "Broccoli & Sausage Stuffed Bread",
+      "descriptionEs": "Pan italiano recién horneado relleno de brócoli salteado y salchicha italiana",
+      "descriptionEn": "Fresh baked Italian loaf stuffed with sautéed broccoli and Italian sausage",
+      "price": "$10.25",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-33",
+      "categoryId": "stuffed_breads",
+      "nameEs": "Pan Relleno de Brócoli y Queso",
+      "nameEn": "Broccoli & Cheese Stuffed Bread",
+      "descriptionEs": "Pan recién horneado relleno de tierno brócoli al ajo y quesos",
+      "descriptionEn": "Fresh baked bread rolled with tender garlic broccoli and cheeses",
+      "price": "$10.25",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-34",
+      "categoryId": "stuffed_breads",
+      "nameEs": "Pan Relleno de Berenjena a la Parmesana",
+      "nameEn": "Eggplant Parmesan Stuffed Bread",
+      "descriptionEs": "Pan recién horneado relleno de berenjena empanada sazonada y mozzarella fundida",
+      "descriptionEn": "Fresh baked loaf filled with seasoned breaded eggplant and melted mozzarella",
+      "price": "$10.25",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-35",
+      "categoryId": "specialties",
+      "nameEs": "Barra de Pan de Ajo",
+      "nameEn": "Garlic Bread Loaf",
+      "descriptionEs": "Crujiente pan italiano tostado con mantequilla de ajo y hierbas",
+      "descriptionEn": "Crisp Italian bread toasted with garlic butter and herbs",
+      "price": "$5.25",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-36",
+      "categoryId": "specialties",
+      "nameEs": "Albóndiga Casera",
+      "nameEn": "Homemade Meatball",
+      "descriptionEs": "Tierna albóndiga italiana cocinada a fuego lento en salsa marinara",
+      "descriptionEn": "Tender Italian meatball simmered in marinara sauce",
+      "price": "$1.75 each",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-37",
+      "categoryId": "specialties",
+      "nameEs": "Salchicha Italiana Dulce",
+      "nameEn": "Sweet Italian Sausage Link",
+      "descriptionEs": "Sabrosa salchicha de cerdo italiana cocinada en salsa marinara",
+      "descriptionEn": "Savory Italian pork sausage link simmered in marinara",
+      "price": "$1.75 each",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-38",
+      "categoryId": "specialties",
+      "nameEs": "Champiñones Rellenos",
+      "nameEn": "Stuffed Mushrooms",
+      "descriptionEs": "Cabezas de champiñón rellenas con un sabroso preparado de pan rallado y hierbas",
+      "descriptionEn": "Plump mushroom caps stuffed with savory herb breadcrumb filling",
+      "price": "$6.99 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-39",
+      "categoryId": "specialties",
+      "nameEs": "Bola de Masa de Pizza Fresca",
+      "nameEn": "Fresh Pizza Dough Ball",
+      "descriptionEs": "Masa de pizza tradicional fermentada diariamente",
+      "descriptionEn": "Fresh daily fermented traditional pizza dough",
+      "price": "$3.50 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-40",
+      "categoryId": "specialties",
+      "nameEs": "Sopa Pasta Fagioli (Pinta)",
+      "nameEn": "Pasta Fagioli Soup (Pint)",
+      "descriptionEs": "Clásica y reconfortante sopa italiana de alubias blancas, pasta ditalini y verduras",
+      "descriptionEn": "Classic hearty Italian white bean, ditalini pasta, and vegetable soup",
+      "price": "$4.75",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-41",
+      "categoryId": "specialties",
+      "nameEs": "Queso Mozzarella Fresco Entero",
+      "nameEn": "Fresh Whole Mozzarella Cheese",
+      "descriptionEs": "Queso mozzarella artesanal, fresco y cremoso",
+      "descriptionEn": "Fresh creamy artisanal whole mozzarella cheese",
+      "price": "$6.00 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-42",
+      "categoryId": "specialties",
+      "nameEs": "Queso Ricotta de Leche Entera",
+      "nameEn": "Whole Milk Ricotta Cheese",
+      "descriptionEs": "Queso ricotta italiano ultra cremoso de leche entera",
+      "descriptionEn": "Ultra-creamy whole milk Italian ricotta cheese",
+      "price": "$6.50 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-43",
+      "categoryId": "specialties",
+      "nameEs": "Queso Pecorino / Parmesano Rallado",
+      "nameEn": "Grated Pecorino / Parmesan Cheese",
+      "descriptionEs": "Queso italiano importado, curado y recién rallado",
+      "descriptionEn": "Aged sharp imported Italian cheese freshly grated",
+      "price": "$9.99 / lb",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-44",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Raviolis de Queso",
+      "nameEn": "Baked Cheese Ravioli Catering Tray",
+      "descriptionEs": "Media bandeja de raviolis de queso horneados en marinara con mozzarella fundida (10-12 personas)",
+      "descriptionEn": "Half sheet pan of cheese ravioli baked in marinara with melted mozzarella (serves 10-12)",
+      "price": "$85.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-45",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Cavatelli y Brócoli",
+      "nameEn": "Cavatelli & Broccoli Catering Tray",
+      "descriptionEs": "Media bandeja de cavatelli frescos salteados con ajo, aceite de oliva y tiernos floretes de brócoli",
+      "descriptionEn": "Half sheet pan of fresh cavatelli tossed with garlic, olive oil, and tender broccoli florets",
+      "price": "$55.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-46",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Rollitos de Berenjena",
+      "nameEn": "Eggplant Rollatine Catering Tray",
+      "descriptionEs": "Tiernas láminas de berenjena enrolladas con ricotta sazonada y horneadas en marinara",
+      "descriptionEn": "Tender eggplant slices rolled with seasoned ricotta and baked in marinara",
+      "price": "$75.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-47",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Salchicha y Pimientos",
+      "nameEn": "Sausage & Peppers Catering Tray",
+      "descriptionEs": "Dulce salchicha italiana salteada con pimientos y cebollas",
+      "descriptionEn": "Sweet Italian sausage sautéed with bell peppers and onions",
+      "price": "$70.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-48",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Pollo Marsala",
+      "nameEn": "Chicken Marsala Catering Tray",
+      "descriptionEs": "Filetes de pollo sellados en una rica salsa de champiñones y vino Marsala",
+      "descriptionEn": "Pan-seared chicken cutlets in a rich mushroom and Marsala wine sauce",
+      "price": "$75.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-49",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Pollo Francaise",
+      "nameEn": "Chicken Francaise Catering Tray",
+      "descriptionEs": "Filetes de pollo tiernos rebozados en huevo con una brillante salsa de limón, mantequilla y vino blanco",
+      "descriptionEn": "Egg-battered tender chicken cutlets in a bright lemon-butter white wine sauce",
+      "price": "$75.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-heaven-50",
+      "categoryId": "catering",
+      "nameEs": "Bandeja de Catering de Pollo a la Parmesana",
+      "nameEn": "Chicken Parmesan Catering Tray",
+      "descriptionEs": "Filetes de pollo empanados y crujientes cubiertos con marinara y mozzarella fundida",
+      "descriptionEn": "Crispy breaded chicken cutlets topped with marinara and melted mozzarella",
+      "price": "$75.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [],
       "ctaType": "in_store"
     }
