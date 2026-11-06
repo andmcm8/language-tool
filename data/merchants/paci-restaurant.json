@@ -44,296 +44,946 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "starters",
+      "nameEs": "Antipasti y Entradas",
+      "nameEn": "Starters & Antipasti",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Insalate",
+      "nameEn": "Salads",
+      "icon": "Salad"
+    },
+    {
+      "id": "pastas",
+      "nameEs": "Primi Piatti (Pastas)",
+      "nameEn": "Pastas",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "entrees",
+      "nameEs": "Secondi Piatti (Platos Fuertes)",
+      "nameEn": "Entrees",
+      "icon": "Beef"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Contorni (Guarniciones)",
+      "nameEn": "Sides",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
+      "id": "brunch",
+      "nameEs": "Brunch de Fin de Semana",
+      "nameEn": "Brunch Specialties",
       "icon": "Coffee"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Dolci (Postres)",
+      "nameEn": "Desserts",
+      "icon": "Sparkles"
     }
   ],
   "products": [
     {
       "id": "paci-restaurant-01",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finas rodajas de lomo de res con alcaparras, rúcula fresca, aceite de oliva virgen extra y virutas de queso parmesano.",
-      "descriptionEn": "Thinly sliced beef tenderloin served with capers, fresh arugula, extra virgin olive oil, and shaved parmesan cheese.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-02",
-      "categoryId": "appetizers",
-      "nameEs": "Pulpo a la Plancha",
-      "nameEn": "Grilled Octopus",
-      "descriptionEs": "Tierno pulpo mediterráneo a la plancha servido con puré de papas ahumadas, alcaparras crujientes y aceite de pimentón.",
-      "descriptionEn": "Tender grilled Mediterranean octopus served with smoked potato purée, crispy capers, and pimentón oil.",
-      "price": "$21.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-03",
-      "categoryId": "appetizers",
-      "nameEs": "Burrata Fresca con Prosciutto",
-      "nameEn": "Fresh Burrata with Prosciutto",
-      "descriptionEs": "Burrata cremosa acompañada de prosciutto di Parma añejo, higos caramelizados y reducción de balsámico.",
-      "descriptionEn": "Creamy burrata accompanied by aged prosciutto di Parma, caramelized figs, and balsamic reduction.",
-      "price": "$19.00",
+      "categoryId": "starters",
+      "nameEs": "Crema de Calabaza Butternut",
+      "nameEn": "Butternut Squash Bisque",
+      "descriptionEs": "Elaborada con cebollas dulces, zanahorias, apio, caldo de verduras, menta fresca, un toque de miel y crema agria a la miel.",
+      "descriptionEn": "Made with sweet onions, carrots, celery, vegetable stock, fresh mint, touch of honey, and honey sour cream",
+      "price": "$15.00",
       "popular": false,
-      "badge": "",
+      "badge": null,
       "tags": [
-        "Vegetariano",
-        "Clásico"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-04",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones al Vino Blanco",
-      "nameEn": "Mussels in White Wine",
-      "descriptionEs": "Mejillones frescos de la costa salteados en vino blanco, ajo, tomates cherry y un toque de hierbas frescas.",
-      "descriptionEn": "Fresh coastal mussels sautéed in white wine, garlic, cherry tomatoes, and a touch of fresh herbs.",
-      "price": "$17.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Sulfitos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-05",
-      "categoryId": "mains",
-      "nameEs": "Tagliolini Caseros con Langosta",
-      "nameEn": "Homemade Tagliolini with Lobster",
-      "descriptionEs": "Pasta fresca tagliolini hecha en casa con trozos tiernos de langosta de Maine, tomates cherry y salsa ligera de azafrán.",
-      "descriptionEn": "Fresh homemade tagliolini pasta with tender chunks of Maine lobster, cherry tomatoes, and a light saffron sauce.",
-      "price": "$38.00",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Hecho en Casa",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos",
-        "Mariscos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Risotto de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz Arborio cremoso cocinado a fuego lento con una mezcla de hongos silvestres salteados, aceite de trufa y queso parmesano.",
-      "descriptionEn": "Slow-cooked creamy Arborio rice tossed with a blend of sautéed wild mushrooms, truffle oil, and parmesan cheese.",
-      "price": "$29.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-07",
-      "categoryId": "mains",
-      "nameEs": "Pechuga de Pollo Saltimbocca",
-      "nameEn": "Chicken Saltimbocca",
-      "descriptionEs": "Pechuga de pollo salteada cubierta con prosciutto, salvia fresca y vino marsala, acompañada de polenta cremosa.",
-      "descriptionEn": "Sautéed chicken breast topped with prosciutto, fresh sage, and marsala wine sauce, served with creamy polenta.",
-      "price": "$31.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Clásico"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Sulfitos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-08",
-      "categoryId": "mains",
-      "nameEs": "Raviolis de Ternera Caseros",
-      "nameEn": "Homemade Veal Ravioli",
-      "descriptionEs": "Raviolis rellenos de ternera estofada servidos en una rica salsa de mantequilla y salvia con reducción de vino tinto.",
-      "descriptionEn": "Ravioli filled with braised veal served in a rich butter and sage sauce with red wine reduction.",
-      "price": "$32.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Hecho en Casa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-09",
-      "categoryId": "specialties",
-      "nameEs": "Costillar de Cordero al Horno",
-      "nameEn": "Roasted Rack of Lamb",
-      "descriptionEs": "Costillar de cordero en crust de hierbas aromáticas, servido con puré de papas al romero y reducción de balsámico de oporto.",
-      "descriptionEn": "Herb-crusted rack of lamb served with rosemary mashed potatoes and port wine balsamic reduction.",
-      "price": "$46.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Especialidad",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-10",
-      "categoryId": "specialties",
-      "nameEs": "Branzino Mediterráneo a la Parrilla",
-      "nameEn": "Grilled Mediterranean Branzino",
-      "descriptionEs": "Lubina mediterránea entera a la parrilla con hierbas, limón y aceite de oliva virgen extra, acompañada de verduras de temporada.",
-      "descriptionEn": "Whole grilled Mediterranean sea bass with herbs, lemon, and extra virgin olive oil, served with seasonal vegetables.",
-      "price": "$42.00",
-      "popular": true,
-      "badge": "Fresh Catch",
-      "tags": [
-        "Pescado Fresco",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-11",
-      "categoryId": "specialties",
-      "nameEs": "Filete de Res al Barolo",
-      "nameEn": "Barolo Braised Beef Short Ribs",
-      "descriptionEs": "Costillas de res estofadas lentamente en vino Barolo durante 12 horas, sobre polenta cremosa al mascarpone.",
-      "descriptionEn": "Beef short ribs slow-braised in Barolo wine for 12 hours, served over creamy mascarpone polenta.",
-      "price": "$39.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Sulfitos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "paci-restaurant-12",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Negroni Paci",
-      "nameEn": "Paci Signature Negroni",
-      "descriptionEs": "Ginebra premium, vermut dulce Campari y un toque de naranja sanguina ahumada con romero.",
-      "descriptionEn": "Premium gin, sweet vermouth, Campari, and a hint of smoked blood orange with fresh rosemary.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Signature Cocktail",
-      "tags": [
-        "Bebida con Alcohol",
-        "Artesanal"
+        "Gluten-Free"
       ],
       "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "paci-restaurant-13",
-      "categoryId": "beverages",
-      "nameEs": "Limoncello Spritz",
-      "nameEn": "Limoncello Spritz",
-      "descriptionEs": "Limoncello artesanal, prosecco fresco, agua con gas y hojas de menta fresca.",
-      "descriptionEn": "Artisanal limoncello, crisp prosecco, sparkling water, and fresh mint leaves.",
-      "price": "$15.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Bebida con Alcohol"
-      ],
+      "id": "paci-restaurant-02",
+      "categoryId": "starters",
+      "nameEs": "Berenjena Crujiente",
+      "nameEn": "Crispy Eggplant",
+      "descriptionEs": "Berenjena empanada y salteada en aceite de oliva virgen extra, servida sobre salsa marinara, queso stracciatella fresco y reducción de balsámico.",
+      "descriptionEn": "Breaded pan-fried eggplant in e.v.o.o. served over marinara, fresh stracciatella cheese, and balsamic glaze",
+      "price": "$16.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Sulfitos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "paci-restaurant-14",
-      "categoryId": "beverages",
-      "nameEs": "San Pellegrino Sparkling Water (750ml)",
-      "nameEn": "San Pellegrino Sparkling Water (750ml)",
-      "descriptionEs": "Agua mineral con gas natural de Italia.",
-      "descriptionEn": "Natural sparkling mineral water from Italy.",
-      "price": "$7.50",
+      "id": "paci-restaurant-03",
+      "categoryId": "starters",
+      "nameEs": "Corazones de Alcachofa",
+      "nameEn": "Artichoke Hearts",
+      "descriptionEs": "Corazones de alcachofa salteados a la sartén con vino blanco, ajo, mantequilla, brotes tiernos y lascas de Parmigiano Reggiano.",
+      "descriptionEn": "Pan-seared artichoke hearts simmered with white wine, garlic, butter, petite greens, and shaved Parmigiano Reggiano",
+      "price": "$16.00",
       "popular": false,
-      "badge": "",
+      "badge": null,
       "tags": [
-        "Sin Alcohol"
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-04",
+      "categoryId": "starters",
+      "nameEs": "Pimientos Asados y Mozzarella de Búfala",
+      "nameEn": "Roasted Pepper and Buffalo Mozzarella",
+      "descriptionEs": "Pimientos holandeses rojos, amarillos y naranjas marinados con ajo, perejil, aceite de oliva virgen extra y mozzarella de búfala de importación.",
+      "descriptionEn": "Holland red, yellow, and orange peppers marinated with garlic, parsley, e.v.o.o., and imported buffalo mozzarella",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-05",
+      "categoryId": "starters",
+      "nameEs": "Ensalada de Tomates Heirloom",
+      "nameEn": "Heirloom Tomato Salad",
+      "descriptionEs": "Tomates heirloom y mozzarella di bufala, coronados con cebolla roja, aceite de oliva virgen extra, albahaca fresca y reducción de balsámico.",
+      "descriptionEn": "Heirloom tomatoes and mozzarella di bufala topped with red onion, e.v.o.o., fresh basil, and balsamic reduction",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-06",
+      "categoryId": "starters",
+      "nameEs": "Pimientos Italianos Largos (Picantes)",
+      "nameEn": "Italian Long Hot Peppers (Spicy)",
+      "descriptionEs": "Pimientos largos picantes a la parrilla con aceite de oliva virgen extra, anchoas, pan rallado sazonado, ajo, aceitunas negras curadas y provolone.",
+      "descriptionEn": "Grilled hot long peppers with e.v.o.o., anchovy, seasoned breadcrumbs, garlic, cured black olives, and provolone",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-07",
+      "categoryId": "starters",
+      "nameEs": "Albóndigas de Rosie",
+      "nameEn": "Rosie’s Meatballs",
+      "descriptionEs": "Tres albóndigas artesanales de ternera, buey y cerdo, con piñones, pasas, parmesano, cebollas dulces y salsa marinara.",
+      "descriptionEn": "Three handmade meatballs crafted from veal, beef, pork, pine nuts, raisins, parmigiano, sweet onions, and marinara",
+      "price": "$16.00",
+      "popular": true,
+      "badge": "Chef Mauri Special",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-08",
+      "categoryId": "starters",
+      "nameEs": "Tartar de Atún Ahi",
+      "nameEn": "Yellowtail Ahi Tuna Tartare",
+      "descriptionEs": "Atún Ahi, cebollino, limón en conserva, alcaparras, chile, almendras tostadas, grosellas, aguacate, alioli de naranja picante y crostini.",
+      "descriptionEn": "Ahi tuna, scallions, preserved lemon, capers, chili, toasted almonds, currants, avocado, spicy orange aioli, crostini",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-09",
+      "categoryId": "starters",
+      "nameEs": "Pasteles de Cangrejo de Maryland",
+      "nameEn": "Maryland Crab Cakes",
+      "descriptionEs": "Cangrejo jumbo lump salteado con cebollas, pimientos holandeses dulces, pan rallado y salsa remoulade.",
+      "descriptionEn": "Pan-seared jumbo lump crab meat with onions, sweet holland peppers, breadcrumbs, and remoulade sauce",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-10",
+      "categoryId": "starters",
+      "nameEs": "Gambas a la Parrilla con Alubias Cannellini",
+      "nameEn": "Grilled Shrimp with Cannellini Beans",
+      "descriptionEs": "Tiernas gambas a la parrilla servidas sobre rúcula baby aliñada con una ensalada templada de alubias cannellini.",
+      "descriptionEn": "Tender grilled shrimp served over dressed baby arugula with warm cannellini bean salad",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-11",
+      "categoryId": "starters",
+      "nameEs": "Carpaccio de Solomillo Prime",
+      "nameEn": "Prime Beef Carpaccio",
+      "descriptionEs": "Finas láminas de solomillo crudo, brotes tiernos, alcaparras, lascas de Parmigiano Reggiano y alioli de wasabi.",
+      "descriptionEn": "Thinly sliced raw filet mignon, petite greens, capers, shaved parmigiano reggiano, and wasabi aioli",
+      "price": "$26.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-12",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César Clásica",
+      "nameEn": "Classic Caesar Salad",
+      "descriptionEs": "Lechuga romana crujiente, aderezo César tradicional de la casa, picatostes a las finas hierbas y lascas de Parmigiano.",
+      "descriptionEn": "Crisp chopped romaine, in-house traditional Caesar dressing, herbed croutons, and shaved Parmigiano",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-13",
+      "categoryId": "salads",
+      "nameEs": "Insalata Mista",
+      "nameEn": "Insalata Mista",
+      "descriptionEs": "Mezcla de brotes tiernos, pepinos, tomates cherry, zanahorias, cebolla roja, parmesano rallado y vinagreta balsámica.",
+      "descriptionEn": "Mixed petite greens, cucumbers, cherry tomatoes, carrots, red onion, shaved parmesan, and balsamic vinaigrette",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-14",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Remolacha Asada",
+      "nameEn": "Roasted Beet Salad",
+      "descriptionEs": "Remolachas rojas y amarillas asadas, queso de cabra cremoso, rúcula aliñada, piñones tostados y vinagreta de piquillo de la casa.",
+      "descriptionEn": "Red and yellow roasted beets, creamy goat cheese, dressed arugula, toasted pine nuts, and house piquillo vinaigrette",
+      "price": "$14.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-15",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Wedge de Iceberg",
+      "nameEn": "Iceberg Wedge Salad",
+      "descriptionEs": "Cuña de lechuga iceberg, aderezo de queso azul de la casa, crujiente de bacon ahumado y tomates cherry dulces.",
+      "descriptionEn": "Baby iceberg wedge, house blue cheese dressing, crispy applewood smoked bacon, and sweet cherry tomatoes",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-16",
+      "categoryId": "pastas",
+      "nameEs": "Linguine con Gambas Fra Diavolo",
+      "nameEn": "Linguine & Shrimp Fra Diavolo",
+      "descriptionEs": "Linguine fresco de la casa, gambas salteadas, ajo, vino blanco, perejil, marinara y copos de chile rojo.",
+      "descriptionEn": "In-house fresh linguine, sautéed shrimp, garlic, white wine, parsley, marinara, and red pepper flakes",
+      "price": "$36.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-17",
+      "categoryId": "pastas",
+      "nameEs": "Strozzapreti a la Boloñesa",
+      "nameEn": "Strozzapreti Bolognese",
+      "descriptionEs": "Pasta strozzapreti fresca con ragú de buey, ternera y cerdo cocinado a fuego lento, un toque de crema y stracciatella desmenuzada.",
+      "descriptionEn": "Fresh strozzapreti pasta with slow-braised beef, veal, and pork ragù, touch of cream, and torn stracciatella",
+      "price": "$36.00",
+      "popular": true,
+      "badge": "Chef Mauri Special",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-18",
+      "categoryId": "pastas",
+      "nameEs": "Pappardelle con Grelos y Salchicha",
+      "nameEn": "Broccoli Rabe and Sausage Pappardelle",
+      "descriptionEs": "Pappardelle fresco, aceite de oliva virgen extra, grelos, salchicha de hinojo artesanal, ajo caramelizado y chile.",
+      "descriptionEn": "Fresh ribbon pappardelle, e.v.o.o., broccoli rabe, housemade fennel sausage, caramelized garlic, and chili",
+      "price": "$36.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-19",
+      "categoryId": "pastas",
+      "nameEs": "Fettuccini a la Carbonara",
+      "nameEn": "Fettuccini Carbonara",
+      "descriptionEs": "Fettuccini artesanal con cebollas caramelizadas, panceta ahumada, crema, Pecorino Romano añejo y guisantes dulces.",
+      "descriptionEn": "Handcrafted fettuccini with caramelized onions, smoked pancetta, cream, aged Pecorino Romano, and sweet peas",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-20",
+      "categoryId": "pastas",
+      "nameEs": "Ravioli de Calabaza Butternut",
+      "nameEn": "Butternut Squash Ravioli",
+      "descriptionEs": "Delicados raviolis en una salsa de mantequilla tostada y salvia, cubiertos con galletas amaretti dulces desmenuzadas.",
+      "descriptionEn": "Delicate ravioli in a nutty brown butter sage sauce topped with crumbled sweet amaretto cookies",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-21",
+      "categoryId": "pastas",
+      "nameEs": "Linguine Scampi con Langosta",
+      "nameEn": "Lobster Linguine Scampi",
+      "descriptionEs": "Linguine fresco de la casa servido con dulce carne de langosta fresca en una rica salsa scampi de ajo y vino blanco.",
+      "descriptionEn": "In-house fresh linguine served with sweet fresh lobster meat in a rich garlic white wine scampi sauce",
+      "price": "$35.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-22",
+      "categoryId": "pastas",
+      "nameEs": "Linguine con Gambas al Pesto",
+      "nameEn": "Pesto Shrimp Linguine",
+      "descriptionEs": "Linguine artesanal salteado con suculentas gambas, tomates cherry, pesto de albahaca fresca, piñones y parmesano.",
+      "descriptionEn": "Housemade linguine sautéed with succulent shrimp, cherry tomatoes, fresh basil pesto, pine nuts, and parmesan",
+      "price": "$35.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-23",
+      "categoryId": "entrees",
+      "nameEs": "Salmón Orgánico de las Islas Feroe",
+      "nameEn": "Organic Faroe Island Salmon",
+      "descriptionEs": "Filete de salmón a la plancha, reducción de crema de naranja, ensalada templada de alubias cannellini, rúcula baby, ajo y aceite de oliva virgen extra.",
+      "descriptionEn": "Pan-seared salmon fillet, orange cream reduction, warm cannellini bean salad, baby arugula, garlic, and e.v.o.o.",
+      "price": "$38.00",
+      "popular": true,
+      "badge": "Chef Mauri Special",
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-24",
+      "categoryId": "entrees",
+      "nameEs": "Paillard de Pollo",
+      "nameEn": "Chicken Paillard",
+      "descriptionEs": "Pechuga de pollo a la parrilla, marinada en ajo y aceite de oliva, servida con ensalada de rúcula y tomate.",
+      "descriptionEn": "Grilled thin-pounded chicken breast marinated in garlic and olive oil, served with arugula and tomato salad",
+      "price": "$32.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-25",
+      "categoryId": "entrees",
+      "nameEs": "Pollo a la Parmigiana",
+      "nameEn": "Chicken Parmigiano",
+      "descriptionEs": "Filete de pollo empanado y frito en aceite de oliva virgen extra, marinara de la casa, mozzarella fundida y espinacas al ajo.",
+      "descriptionEn": "Breaded pan-fried chicken cutlet in e.v.o.o., house marinara, melted mozzarella, sautéed garlic spinach",
+      "price": "$32.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-26",
+      "categoryId": "entrees",
+      "nameEs": "Pollo Scarpariello estilo Amish",
+      "nameEn": "Amish Chicken Scarpariello",
+      "descriptionEs": "Medio pollo Amish salteado, pimientos holandeses dulces, cebollas, ajo, vino blanco, balsámico añejo y puré de cebollino.",
+      "descriptionEn": "Pan-seared half Amish chicken, sweet Holland peppers, onions, garlic white wine, aged balsamic, scallion mash",
+      "price": "$40.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-27",
+      "categoryId": "entrees",
+      "nameEs": "Milanesa de Ternera",
+      "nameEn": "Veal Milanese",
+      "descriptionEs": "Filete de ternera 'Plume de Veau' empanado en migas de ciabatta, cubierto con rúcula baby, tomates cherry y cebolla roja.",
+      "descriptionEn": "Pan-seared 'Plume de Veau' cutlet in ciabatta crumbs, topped with baby arugula, cherry tomatoes, and red onions",
+      "price": "$42.00",
+      "popular": true,
+      "badge": "Chef Mauri Special",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-28",
+      "categoryId": "entrees",
+      "nameEs": "Pato Asado del Chef Mauri",
+      "nameEn": "Chef Mauri’s Roasted Duck",
+      "descriptionEs": "Medio pato asado al horno, demi-glace de oporto y naranja, judías verdes salteadas y puré de batata.",
+      "descriptionEn": "Oven-roasted half duck, orange port wine demi-glace, sautéed green beans, and sweet potato purée",
+      "price": "$41.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-29",
+      "categoryId": "entrees",
+      "nameEs": "Solomillo Prime a la Parrilla (8 oz)",
+      "nameEn": "Grilled Prime Filet Mignon (8 oz)",
+      "descriptionEs": "Solomillo prime de 8 oz, salsa de pimienta y coñac, puré de patatas al cebollino y coles de Bruselas salteadas.",
+      "descriptionEn": "8 oz center-cut prime filet mignon, peppercorn cognac sauce, scallion mashed potatoes, sautéed brussels sprouts",
+      "price": "$54.00",
+      "popular": true,
+      "badge": "Chef Mauri Special",
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-30",
+      "categoryId": "entrees",
+      "nameEs": "Branzino Mediterráneo a la Parrilla",
+      "nameEn": "Grilled Mediterranean Branzino",
+      "descriptionEs": "Filete de lubina mediterránea a la parrilla, tapenade de aceitunas y alcaparras, cuscús de verduras al azafrán y brócoli.",
+      "descriptionEn": "Whole grilled Mediterranean sea bass fillet, olive caper tapenade, saffron vegetable couscous, and broccoli",
+      "price": "$40.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-31",
+      "categoryId": "entrees",
+      "nameEs": "Costilla de Ternera Braseada al Vino Tinto",
+      "nameEn": "Red Wine Braised Beef Short Rib",
+      "descriptionEs": "Costilla tierna braseada a fuego lento, risotto cremoso de setas silvestres, zanahorias caramelizadas y jugo natural de la carne.",
+      "descriptionEn": "Slow-braised tender short rib, creamy wild mushroom risotto, caramelized carrots, and natural pan jus",
+      "price": "$42.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-32",
+      "categoryId": "entrees",
+      "nameEs": "Rib Eye Prime de Snake River Farms (16 oz)",
+      "nameEn": "Snake River Farms Prime Rib Eye (16 oz)",
+      "descriptionEs": "Rib eye prime de 16 oz a la parrilla, marinado en ajo y hierbas, puré de patatas al cebollino y coles de Bruselas salteadas.",
+      "descriptionEn": "16 oz grilled prime rib eye, garlic herb marinade, scallion mashed potatoes, and sautéed brussels sprouts",
+      "price": "$63.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-33",
+      "categoryId": "entrees",
+      "nameEs": "Hamburguesa The Paci",
+      "nameEn": "The Paci Burger",
+      "descriptionEs": "Hamburguesa de buey prime madurado, queso Gruyère fundido, cebollas caramelizadas, mermelada de tomate, rúcula y patatas kettle.",
+      "descriptionEn": "Prime dry-aged beef burger, melted Gruyère cheese, caramelized onions, tomato jam, arugula, kettle chips",
+      "price": "$25.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-34",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas Salteadas",
+      "nameEn": "Sautéed Brussels Sprouts",
+      "descriptionEs": "Coles de Bruselas salteadas en aceite de oliva virgen extra y ajo asado.",
+      "descriptionEn": "Brussels sprouts sautéed in extra virgin olive oil and roasted garlic",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-35",
+      "categoryId": "sides",
+      "nameEs": "Judías Verdes Salteadas",
+      "nameEn": "Sautéed Green Beans",
+      "descriptionEs": "Tiernas judías verdes francesas salteadas con ajo y aceite de oliva virgen extra.",
+      "descriptionEn": "Tender French green beans sautéed with garlic and e.v.o.o.",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-36",
+      "categoryId": "sides",
+      "nameEs": "Puré de Patatas al Cebollino",
+      "nameEn": "Scallion Mashed Potatoes",
+      "descriptionEs": "Puré de patatas aterciopelado infusionado con cebollino fresco y mantequilla.",
+      "descriptionEn": "Velvety whipped potatoes infused with fresh green scallions and butter",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-37",
+      "categoryId": "sides",
+      "nameEs": "Brócoli Salteado",
+      "nameEn": "Sautéed Broccoli",
+      "descriptionEs": "Ramilletes de brócoli fresco salteados con láminas de ajo y aceite de oliva.",
+      "descriptionEn": "Fresh broccoli crowns sautéed with sliced garlic and olive oil",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-38",
+      "categoryId": "brunch",
+      "nameEs": "Cesta de Bollería",
+      "nameEn": "Pastry Basket",
+      "descriptionEs": "Surtido de danesas de queso, croissants hojaldrados, muffins, mantequilla dulce y mermelada de frutas.",
+      "descriptionEn": "Assortment of fresh cheese danishes, flaky croissants, muffins, sweet butter, and fruit jam",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-39",
+      "categoryId": "brunch",
+      "nameEs": "Bol de Granola de la Casa",
+      "nameEn": "House Granola Bowl",
+      "descriptionEs": "Granola de avena tostada de la casa, yogur griego espeso, miel local de Connecticut y frutos rojos frescos.",
+      "descriptionEn": "In-house toasted oat granola, thick Greek yogurt, local Connecticut honey, and fresh berries",
+      "price": "$14.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-40",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Benedictinos con Langosta",
+      "nameEn": "Lobster Eggs Benedict",
+      "descriptionEs": "Muffin inglés tostado, carne de langosta fresca, espinacas salteadas, tomate asado, hash de patata y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin, fresh lobster meat, sautéed spinach, roasted tomato, potato hash, hollandaise",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-41",
+      "categoryId": "brunch",
+      "nameEs": "Tostada Francesa de Brioche",
+      "nameEn": "Brioche French Toast",
+      "descriptionEs": "Pan brioche Pullman grueso bañado en huevo, mantequilla de canela batida, sirope de arce local y guarnición.",
+      "descriptionEn": "Egg-battered thick Pullman brioche loaf, whipped cinnamon butter, local maple syrup, and side",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-42",
+      "categoryId": "brunch",
+      "nameEs": "Desayuno Southport Sunrise",
+      "nameEn": "Southport Sunrise Breakfast",
+      "descriptionEs": "Dos huevos de granja al gusto, hash de patata sazonado y elección de salchicha de pollo y manzana o bacon.",
+      "descriptionEn": "Two farm eggs any style, seasoned potato hash, and choice of chicken apple sausage or bacon",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-43",
+      "categoryId": "brunch",
+      "nameEs": "Tortilla de Verduras de Primavera",
+      "nameEn": "Spring Vegetable Omelet",
+      "descriptionEs": "Tortilla de tres huevos con espárragos, setas asadas, cebollas caramelizadas, queso de cabra y salchicha de pollo y manzana.",
+      "descriptionEn": "Three-egg omelet with asparagus, roasted mushrooms, caramelized onions, goat cheese, chicken apple sausage",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-44",
+      "categoryId": "brunch",
+      "nameEs": "Tortitas de Ricotta y Limón",
+      "nameEn": "Lemon Ricotta Pancakes",
+      "descriptionEs": "Esponjosas tortitas de ricotta con arándanos macerados, mantequilla de canela, sirope de arce local y elección de guarnición.",
+      "descriptionEn": "Fluffy ricotta hotcakes with macerated blueberries, cinnamon butter, local maple syrup, choice of side",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-45",
+      "categoryId": "brunch",
+      "nameEs": "Tortilla Capri con Panceta",
+      "nameEn": "Capri Pancetta Omelet",
+      "descriptionEs": "Huevos, pimientos dulces, cebollas, espinacas, panceta ahumada, queso provolone rallado y hash de patata.",
+      "descriptionEn": "Eggs, sweet peppers, onions, spinach, smoked pancetta, shredded provolone cheese, potato hash",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-46",
+      "categoryId": "brunch",
+      "nameEs": "Solomillo con Huevos",
+      "nameEn": "Filet Mignon Steak & Eggs",
+      "descriptionEs": "Solomillo tierno a la plancha, dos huevos al gusto, cebollas caramelizadas y hash de patata crujiente.",
+      "descriptionEn": "Pan-seared tender filet mignon, two eggs any style, caramelized onions, and crispy potato hash",
+      "price": "$31.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-47",
+      "categoryId": "desserts",
+      "nameEs": "Tarta de Lima (Key Lime)",
+      "nameEn": "Key Lime Tart",
+      "descriptionEs": "Base de galleta graham artesanal, crema de leche condensada y lima, nata montada fresca y coulis de frutos rojos.",
+      "descriptionEn": "Homemade graham cracker crust, sweet condensed milk and key lime custard, fresh whipped cream, berry coulis",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-48",
+      "categoryId": "desserts",
+      "nameEs": "Crujiente de Manzana Templado",
+      "nameEn": "Warm Apple Crisp",
+      "descriptionEs": "Manzanas Granny Smith horneadas, avena, azúcar moreno, canela, gelato de vainilla y caramelo salado.",
+      "descriptionEn": "Baked Granny Smith apples, oats, brown sugar, cinnamon, vanilla gelato, and salted caramel drizzle",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-49",
+      "categoryId": "desserts",
+      "nameEs": "Tarta de Queso Vasca de Ricotta y Limón",
+      "nameEn": "Basque Ricotta Lemon Cheesecake",
+      "descriptionEs": "Cremosa tarta de queso ricotta sin base, perfumada con ralladura de limón y decorada con menta fresca.",
+      "descriptionEn": "Creamy crustless ricotta cheesecake perfumed with lemon zest and garnished with fresh mint",
+      "price": "$12.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-50",
+      "categoryId": "desserts",
+      "nameEs": "Coulant de Chocolate",
+      "nameEn": "Chocolate Molten Cake",
+      "descriptionEs": "Pastel de chocolate con corazón fundido, crema inglesa, gelato de vainilla, frutos rojos frescos y nata montada.",
+      "descriptionEn": "Warm molten center chocolate cake, crème anglaise, vanilla gelato, fresh berries, whipped cream",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-51",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de Coco y Almendras",
+      "nameEn": "Coconut Almond Cake",
+      "descriptionEs": "Esponjoso pastel de almendras con coco fresco rallado, cubierto con un hilo de chocolate negro al espresso.",
+      "descriptionEn": "Moist almond cake with fresh shaved coconut topped with bittersweet chocolate espresso drizzle",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-52",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de Almendras y Amaretto",
+      "nameEn": "Toasted Almond Amaretto Cake",
+      "descriptionEs": "Bizcochos de soletilla empapados en sirope de Amaretto, crema de mascarpone dulce, galletas amaretti y almendras tostadas.",
+      "descriptionEn": "Ladyfingers steeped in Amaretto syrup, sweet mascarpone cream, amaretti cookies, roasted almonds",
+      "price": "$12.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-53",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisú Clásico",
+      "nameEn": "Classic Tiramisu",
+      "descriptionEs": "Bizcochos de soletilla al espresso, capas de crema de mascarpone dulce de importación y espolvoreado con cacao puro.",
+      "descriptionEn": "Espresso-soaked ladyfingers layered with sweet imported mascarpone cream and dusted with dark cocoa",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-54",
+      "categoryId": "desserts",
+      "nameEs": "Frutos Rojos de Temporada",
+      "nameEn": "Fresh Seasonal Berries",
+      "descriptionEs": "Selección de frutos rojos frescos de mercado servidos con nata montada a la vainilla de la casa.",
+      "descriptionEn": "Hand-selected market fresh berries served with house whipped vanilla cream",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-55",
+      "categoryId": "desserts",
+      "nameEs": "Tartufo de Gelato",
+      "nameEn": "Tartufo Gelato Ball",
+      "descriptionEs": "Elección de gelato de Manhattan, caramelo salado o capuchino, recubierto con una capa de chocolate.",
+      "descriptionEn": "Choice of Manhattan, Salted Caramel, or Cappuccino gelato encased in chocolate shell",
+      "price": "$12.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paci-restaurant-56",
+      "categoryId": "desserts",
+      "nameEs": "Gelato y Sorbete Artesanal",
+      "nameEn": "Artisanal Gelato & Sorbet",
+      "descriptionEs": "Bola de fresa, stracciatella, vainilla, chocolate, coco, limón o sorbete de frambuesa.",
+      "descriptionEn": "Small scoop of Strawberry, Stracciatella, Vanilla, Chocolate, Coconut, Lemon, or Raspberry sorbet",
+      "price": "$8.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
       ],
       "allergens": [],
       "ctaType": "in_store"

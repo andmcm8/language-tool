@@ -42,32 +42,56 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEs": "Entradas y Alitas",
+      "nameEn": "Appetizers & Wings",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas y Sopas",
+      "nameEn": "Salads & Soups",
+      "icon": "Salad"
+    },
+    {
+      "id": "pizza",
+      "nameEs": "Pizzas, Calzones y Strombolis",
+      "nameEn": "Pizza, Calzones & Stromboli",
+      "icon": "Pizza"
+    },
+    {
+      "id": "subs",
+      "nameEs": "Subs y Cheesesteaks",
+      "nameEn": "Hot Subs & Cheesesteaks",
+      "icon": "Sandwich"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pastas y Especialidades Italianas",
+      "nameEn": "Pasta & Baked Specialties",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
-      "icon": "Utensils"
+      "id": "kids",
+      "nameEs": "Menú Infantil",
+      "nameEn": "Kid's Menu",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Sparkles"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
+      "nameEn": "Beverages",
       "icon": "Coffee"
     }
   ],
@@ -75,56 +99,44 @@
     {
       "id": "lubranos-pizza-01",
       "categoryId": "appetizers",
-      "nameEs": "Queso Frito Empanizado",
-      "nameEn": "Fried Cheese",
-      "descriptionEs": "Bastones de mozzarella empanizados y crujientes, servidos con nuestra famosa salsa marinara casera.",
-      "descriptionEn": "Breaded mozzarella sticks served with our famous homemade marinara sauce.",
+      "nameEs": "Bastones de Mozzarella Fritos",
+      "nameEn": "Fried Mozzarella Sticks",
+      "descriptionEs": "Crujientes bastones de queso mozzarella empanizados, servidos con salsa marinara casera",
+      "descriptionEn": "Crispy breaded mozzarella cheese sticks served with homemade marinara sauce",
       "price": "$10.00",
       "popular": true,
-      "badge": "Vegetariano",
+      "badge": "House Favorite",
       "tags": [
-        "Vegetariano",
         "Popular"
       ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "lubranos-pizza-02",
       "categoryId": "appetizers",
-      "nameEs": "Nudos de Ajo",
-      "nameEn": "Garlic Knots",
-      "descriptionEs": "Nudos de masa de pan horneados, mezclados con ajo fresco, queso parmesano y hierbas finas.",
-      "descriptionEn": "Baked dough knots mixed with garlic, parmesan and herbs.",
-      "price": "$9.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "nameEs": "Alitas de Pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Alitas de pollo crujientes bañadas en su elección de salsa: suave, picante, barbacoa o chile dulce",
+      "descriptionEn": "Crispy chicken wings tossed in your choice of Mild, Hot, BBQ, or Sweet Red Chili",
+      "price": "$16.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
       "id": "lubranos-pizza-03",
       "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo",
-      "nameEn": "Chicken Wings",
-      "descriptionEs": "Alitas de pollo jugosas a tu elección: Mild, Hot, BBQ, Sweet Red Chili o naturales.",
-      "descriptionEn": "Your choice of Mild, Hot, BBQ, Sweet Red Chili flavor or simply plain wings.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Picante",
-        "Popular"
-      ],
+      "nameEs": "Tiras de Pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "Tiernas tiras de pollo de primera calidad, ligeramente empanizadas y fritas, servidas con salsa marinara",
+      "descriptionEn": "Tender prime chicken battered and lightly fried, served with marinara sauce",
+      "price": "$9.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [],
       "ctaType": "in_store"
     },
@@ -133,13 +145,167 @@
       "categoryId": "appetizers",
       "nameEs": "Calabacín Frito",
       "nameEn": "Fried Zucchini",
-      "descriptionEs": "Calabacín fresco ligeramente empanizado y frito a la perfección, servido con salsa marinara.",
-      "descriptionEn": "Fresh zucchini lightly breaded, served with our famous marinara sauce.",
+      "descriptionEs": "Calabacín fresco ligeramente empanizado y frito hasta quedar dorado, servido con salsa marinara",
+      "descriptionEn": "Fresh zucchini lightly breaded and fried golden, served with marinara sauce",
       "price": "$9.00",
       "popular": false,
-      "badge": "Vegetariano",
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-05",
+      "categoryId": "appetizers",
+      "nameEs": "Papas Fritas Calientes",
+      "nameEn": "Hot Potato Chips",
+      "descriptionEs": "Papas fritas recién hechas servidas calientes con aderezo ranchero sazonado",
+      "descriptionEn": "Freshly fried hot potato chips served with seasoned ranch dressing",
+      "price": "$6.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-06",
+      "categoryId": "appetizers",
+      "nameEs": "Nudos de Ajo",
+      "nameEn": "Garlic Knots",
+      "descriptionEs": "Nudos de masa recién horneados, bañados en mantequilla de ajo, queso parmesano y hierbas italianas",
+      "descriptionEn": "Fresh baked dough knots tossed with garlic butter, parmesan cheese, and Italian herbs",
+      "price": "$9.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-07",
+      "categoryId": "appetizers",
+      "nameEs": "Papas Fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "Crujientes papas fritas doradas servidas con cátsup",
+      "descriptionEn": "Crispy golden french fries served with ketchup",
+      "price": "$3.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-08",
+      "categoryId": "salads",
+      "nameEs": "Sopa Minestrone",
+      "nameEn": "Minestrone Soup",
+      "descriptionEs": "Clásica sopa italiana de verduras cocinada a fuego lento con frijoles, vegetales y pasta",
+      "descriptionEn": "Classic Italian vegetable soup simmered with beans, vegetables, and pasta",
+      "price": "$7.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-09",
+      "categoryId": "salads",
+      "nameEs": "Sopa Pasta Fagioli",
+      "nameEn": "Pasta Fagioli Soup",
+      "descriptionEs": "Mezcla casera de frijoles cannellini blancos y pasta ditalini en un rico caldo sazonado",
+      "descriptionEn": "Homemade blend of white cannellini beans and ditalini pasta in rich seasoned broth",
+      "price": "$7.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-10",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del Chef",
+      "nameEn": "Chef Salad",
+      "descriptionEs": "Ensalada fresca con variedad de carnes frías, queso, huevo duro, lechuga, tomate y pepinos",
+      "descriptionEn": "Garden salad loaded with sliced deli meats, cheese, boiled egg, lettuce, tomato, and cucumbers",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-11",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga crujiente, aceitunas kalamata, queso feta, tomates, cebollas y chiles pepperoncini",
+      "descriptionEn": "Crisp lettuce, kalamata olives, feta cheese, tomatoes, onions, and pepperoncini",
+      "price": "$14.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-12",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César con Pollo",
+      "nameEn": "Chicken Caesar Salad",
+      "descriptionEs": "Pechuga de pollo sazonada a la parrilla sobre lechuga romana, crutones, parmesano y aderezo césar cremoso",
+      "descriptionEn": "Grilled seasoned chicken breast over romaine lettuce, croutons, parmesan, and creamy caesar",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-13",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la Casa",
+      "nameEn": "House Tossed Salad",
+      "descriptionEs": "Mezcla fresca y crujiente de lechuga, tomates maduros y zanahorias ralladas",
+      "descriptionEn": "Fresh crisp garden mix of lettuce, ripe tomatoes, and shredded carrots",
+      "price": "$5.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-14",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César Clásica",
+      "nameEn": "Classic Caesar Salad",
+      "descriptionEs": "Lechuga romana crujiente con aderezo césar cremoso, queso parmesano y crutones de ajo",
+      "descriptionEn": "Crisp romaine lettuce tossed with creamy caesar dressing, parmesan, and garlic croutons",
+      "price": "$5.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-15",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Queso Clásica (Grande)",
+      "nameEn": "Classic Cheese Pizza (Large)",
+      "descriptionEs": "Masa de pizza tradicional estirada a mano con salsa de tomate casera y mozzarella",
+      "descriptionEn": "Traditional hand-stretched pizza dough with homemade tomato sauce and mozzarella",
+      "price": "$14.00",
+      "popular": true,
+      "badge": "House Favorite",
       "tags": [
-        "Vegetariano"
+        "Popular"
       ],
       "allergens": [
         "Gluten"
@@ -147,150 +313,703 @@
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Queso Clásica",
-      "nameEn": "Cheese Pizza",
-      "descriptionEs": "Nuestra pizza clásica con salsa de tomate de la casa y 100% queso mozzarella real. O personalízala con tus ingredientes favoritos.",
-      "descriptionEn": "Classic cheese pizza with homemade tomato sauce and real mozzarella, or create your own.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "Vegetariano",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "lubranos-pizza-06",
-      "categoryId": "mains",
-      "nameEs": "Pizza Amantes de la Carne",
+      "id": "lubranos-pizza-16",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Meat Lovers",
       "nameEn": "Meat Lovers Pizza",
-      "descriptionEs": "Cargada con pepperoni, salchicha italiana, carne de res sazonada y tocino crujiente.",
-      "descriptionEn": "Served with pepperoni, sausage, hamburger and bacon.",
+      "descriptionEs": "Cargada con pepperoni, salchicha italiana, carne molida sazonada y tocino crujiente",
+      "descriptionEn": "Loaded with pepperoni, Italian sausage, seasoned hamburger, and crispy bacon",
       "price": "$19.00",
       "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "lubranos-pizza-07",
-      "categoryId": "mains",
-      "nameEs": "Pizza Suprema",
-      "nameEn": "Supreme Pizza",
-      "descriptionEs": "Combinación perfecta de pepperoni, salchicha, champiñones, pimiento verde, cebollas y aceitunas negras.",
-      "descriptionEn": "Served with pepperoni, sausage, mushroom, green pepper, onions, and black olives.",
-      "price": "$22.00",
-      "popular": false,
-      "badge": "Completa",
+      "badge": null,
       "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-08",
-      "categoryId": "specialties",
-      "nameEs": "Lasaña Tradicional",
-      "nameEn": "Lasagna",
-      "descriptionEs": "Pasta fresca en capas con carne sazonada, ricotta, mozzarella, queso romano y salsa casera. Incluye ensalada y pan.",
-      "descriptionEn": "Fresh layered pasta, seasoned beef, ricotta, mozzarella, romano cheese and homemade sauce. Served with salad and bread.",
-      "price": "$17.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Horneado",
-        "Casero"
-      ],
+      "id": "lubranos-pizza-17",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Suprema",
+      "nameEn": "Supreme Pizza",
+      "descriptionEs": "Pepperoni, salchicha italiana, champiñones, pimientos, cebollas y aceitunas negras",
+      "descriptionEn": "Pepperoni, Italian sausage, mushrooms, bell peppers, onions, and black olives",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-09",
-      "categoryId": "specialties",
-      "nameEs": "Stromboli de la Casa",
-      "nameEn": "Stromboli",
-      "descriptionEs": "Masa de pizza enrollada y horneada, rellena de jamón, salami, queso provolone, pepperoni y mozzarella. Servido con marinara.",
-      "descriptionEn": "Baked rolled pizza dough filled with ham, salami, provolone cheese, pepperoni, and mozzarella cheese. Served with marinara.",
+      "id": "lubranos-pizza-18",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Vegetariana",
+      "nameEn": "Garden Veggie Pizza",
+      "descriptionEs": "Champiñones frescos, cebollas, pimientos, aceitunas negras y tomates con mozzarella",
+      "descriptionEn": "Fresh mushrooms, onions, bell peppers, black olives, and tomatoes with mozzarella",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-19",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Pollo Alfredo",
+      "nameEn": "Chicken Alfredo Pizza",
+      "descriptionEs": "Base de salsa alfredo cremosa cubierta con pollo a la parrilla y mozzarella derretida",
+      "descriptionEn": "Creamy alfredo sauce base topped with grilled chicken and melted mozzarella",
+      "price": "$23.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-20",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Pollo BBQ",
+      "nameEn": "BBQ Chicken Pizza",
+      "descriptionEs": "Base de salsa barbacoa agridulce con tiernos trozos de pollo a la parrilla y quesos derretidos",
+      "descriptionEn": "Tangy barbecue sauce base with grilled tender chicken and melted cheeses",
+      "price": "$23.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-21",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Pollo Buffalo",
+      "nameEn": "Buffalo Chicken Pizza",
+      "descriptionEs": "Base de salsa buffalo picante con pollo estilo buffalo y queso mozzarella",
+      "descriptionEn": "Spicy buffalo sauce base with buffalo chicken and mozzarella cheese",
+      "price": "$23.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-22",
+      "categoryId": "pizza",
+      "nameEs": "Calzone de Queso Tradicional",
+      "nameEn": "Traditional Cheese Calzone",
+      "descriptionEs": "Masa doblada horneada rellena de queso ricotta cremoso y mozzarella, servida con marinara",
+      "descriptionEn": "Baked folded dough pocket filled with creamy ricotta and mozzarella cheese, served with marinara",
       "price": "$16.00",
       "popular": true,
-      "badge": "Popular",
+      "badge": "House Favorite",
       "tags": [
-        "Horneado"
+        "Popular"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-10",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich Cheesesteak Especial",
-      "nameEn": "Cheesesteak Special",
-      "descriptionEs": "Jugoso bistec picado servido con champiñones, pimientos, cebollas salteadas y queso fundido en pan hoagie tostado.",
-      "descriptionEn": "Served with mushrooms, peppers, onions and melted cheese on a fresh hoagie roll.",
+      "id": "lubranos-pizza-23",
+      "categoryId": "pizza",
+      "nameEs": "Stromboli de Carnes Italianas",
+      "nameEn": "Italian Meat Stromboli",
+      "descriptionEs": "Masa de pizza enrollada y horneada rellena de jamón, salami, pepperoni, provolone y mozzarella",
+      "descriptionEn": "Baked rolled pizza dough filled with ham, salami, pepperoni, provolone, and mozzarella",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-24",
+      "categoryId": "pizza",
+      "nameEs": "Stromboli de Pollo",
+      "nameEn": "Chicken Stromboli",
+      "descriptionEs": "Masa de pizza enrollada y horneada rellena de tierno pollo sazonado y mozzarella derretida",
+      "descriptionEn": "Rolled baked pizza dough filled with seasoned tender chicken and melted mozzarella",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-25",
+      "categoryId": "pizza",
+      "nameEs": "Stromboli de Philly Steak",
+      "nameEn": "Philly Steak Stromboli",
+      "descriptionEs": "Masa de pizza enrollada y horneada rellena de jugosa carne de res fileteada y queso derretido",
+      "descriptionEn": "Rolled baked pizza crust stuffed with savory shaved steak and melted cheese",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-26",
+      "categoryId": "subs",
+      "nameEs": "Submarino de Cheesesteak Clásico",
+      "nameEn": "Classic Cheesesteak Sub",
+      "descriptionEs": "Carne de res finamente fileteada y salteada con queso derretido en un pan italiano tostado",
+      "descriptionEn": "Thinly shaved steak grilled with melted cheese on a toasted Italian sub roll",
+      "price": "$13.00",
+      "popular": true,
+      "badge": "House Favorite",
+      "tags": [
+        "Popular"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-27",
+      "categoryId": "subs",
+      "nameEs": "Submarino de Cheesesteak Especial",
+      "nameEn": "Cheesesteak Special Sub",
+      "descriptionEs": "Carne fileteada salteada con champiñones, pimientos dulces, cebollas y queso derretido",
+      "descriptionEn": "Shaved steak sautéed with mushrooms, sweet bell peppers, onions, and melted cheese",
       "price": "$13.00",
       "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Sándwich"
-      ],
+      "badge": null,
+      "tags": [],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-11",
-      "categoryId": "specialties",
-      "nameEs": "Especial Familiar: Pizza Grande y Alitas",
-      "nameEn": "One Large 2-Topping Pizza & 10 Wings Special",
-      "descriptionEs": "Pizza grande de 2 ingredientes a elegir, acompañada de 10 alitas con tu sabor favorito. ¡Disponible todos los días!",
-      "descriptionEn": "Create your own 2 topping large pizza paired with 10 wings in your favorite flavor. Available everyday.",
-      "price": "$32.00",
+      "id": "lubranos-pizza-28",
+      "categoryId": "subs",
+      "nameEs": "Cheesesteak Hoagie",
+      "nameEn": "Cheesesteak Hoagie",
+      "descriptionEs": "Carne a la parrilla con queso derretido, lechuga crujiente, rodajas de tomate y cebolla",
+      "descriptionEn": "Grilled steak with melted cheese, crisp shredded lettuce, sliced tomatoes, and onions",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-29",
+      "categoryId": "subs",
+      "nameEs": "Submarino de Pollo a la Parmigiana",
+      "nameEn": "Chicken Parmigiana Sub",
+      "descriptionEs": "Filete de pollo empanizado cubierto con salsa marinara y queso mozzarella derretido",
+      "descriptionEn": "Breaded chicken cutlet topped with marinara sauce and melted mozzarella cheese",
+      "price": "$14.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-30",
+      "categoryId": "subs",
+      "nameEs": "Submarino de Albóndigas a la Parmigiana",
+      "nameEn": "Meatball Parmigiana Sub",
+      "descriptionEs": "Albóndigas caseras bañadas en salsa de tomate y horneadas con queso mozzarella derretido",
+      "descriptionEn": "Homemade meatballs smothered in tomato sauce and baked with melted mozzarella",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-31",
+      "categoryId": "subs",
+      "nameEs": "Submarino Italiano de Carnes Frías",
+      "nameEn": "Italian Cold Cut Sub",
+      "descriptionEs": "Salami Génova, jamón, queso provolone, lechuga, tomate, cebolla y vinagreta",
+      "descriptionEn": "Genoa salami, ham, provolone cheese, lettuce, tomato, onion, and vinaigrette",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-32",
+      "categoryId": "subs",
+      "nameEs": "Submarino de Pavo y Provolone",
+      "nameEn": "Turkey & Provolone Sub",
+      "descriptionEs": "Pechuga de pavo asada en rodajas con queso provolone, lechuga, tomate y cebolla",
+      "descriptionEn": "Sliced roasted turkey breast with provolone cheese, lettuce, tomato, and onion",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-33",
+      "categoryId": "subs",
+      "nameEs": "Sándwich de Pollo Frito",
+      "nameEn": "Fried Chicken Sandwich",
+      "descriptionEs": "Pechuga de pollo fresca, ligeramente empanizada y frita, servida en un pan tostado",
+      "descriptionEn": "Fresh tender chicken breast lightly breaded and fried, served on a toasted roll",
+      "price": "$14.00",
       "popular": true,
-      "badge": "Oferta",
+      "badge": "House Favorite",
       "tags": [
-        "Especial",
-        "Para Compartir"
+        "Popular"
       ],
       "allergens": [
-        "Gluten",
-        "Lácteos"
+        "Gluten"
       ],
       "ctaType": "in_store"
     },
     {
-      "id": "lubranos-pizza-12",
+      "id": "lubranos-pizza-34",
+      "categoryId": "pasta",
+      "nameEs": "Lasaña Horneada Casera",
+      "nameEn": "Homemade Baked Lasagna",
+      "descriptionEs": "Capas de pasta ancha con carne molida sazonada, ricotta, mozzarella y marinara",
+      "descriptionEn": "Layered wide pasta with seasoned ground beef, ricotta, mozzarella, and marinara",
+      "price": "$17.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-35",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine Alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "Pasta fettuccine bañada en salsa alfredo cremosa de parmesano hecha en casa",
+      "descriptionEn": "Fettuccine pasta tossed in homemade creamy parmesan alfredo sauce",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-36",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine Alfredo con Pollo",
+      "nameEn": "Fettuccine Alfredo with Chicken",
+      "descriptionEs": "Fettuccine alfredo cremoso cubierto con pechuga de pollo sazonada a la parrilla",
+      "descriptionEn": "Creamy fettuccine alfredo topped with grilled seasoned chicken breast",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-37",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine Alfredo con Camarones",
+      "nameEn": "Fettuccine Alfredo with Shrimp",
+      "descriptionEs": "Salsa alfredo cremosa con suculentos camarones salteados sobre fettuccine",
+      "descriptionEn": "Creamy alfredo sauce with succulent sautéed shrimp over fettuccine",
+      "price": "$19.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-38",
+      "categoryId": "pasta",
+      "nameEs": "Pasta con Salsa de Carne Casera",
+      "nameEn": "Pasta with Homemade Meat Sauce",
+      "descriptionEs": "Elección de spaghetti, fettuccine o penne con una abundante salsa de carne cocinada a fuego lento",
+      "descriptionEn": "Choice of spaghetti, fettuccine or penne tossed with hearty simmered meat sauce",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-39",
+      "categoryId": "pasta",
+      "nameEs": "Pasta con Albóndigas",
+      "nameEn": "Pasta with Meatballs",
+      "descriptionEs": "Spaghetti o penne servidos con dos grandes albóndigas italianas caseras en salsa marinara",
+      "descriptionEn": "Spaghetti or penne served with two large homemade Italian meatballs in marinara",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-40",
+      "categoryId": "pasta",
+      "nameEs": "Penne Rustica",
+      "nameEn": "Penne Rustica",
+      "descriptionEs": "Pasta penne importada con camarones salteados, pollo a la parrilla y una sabrosa salsa de ajo",
+      "descriptionEn": "Imported penne pasta with sautéed shrimp, grilled chicken, and savory garlic sauce",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-41",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de Queso con Marinara",
+      "nameEn": "Cheese Ravioli Marinara",
+      "descriptionEs": "Tiernos ravioles rellenos de queso, bañados en salsa de tomate casera",
+      "descriptionEn": "Tender cheese-stuffed ravioli pillows smothered in homemade tomato sauce",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-42",
+      "categoryId": "pasta",
+      "nameEs": "Ziti Horneado Al Forno",
+      "nameEn": "Baked Ziti Al Forno",
+      "descriptionEs": "Pasta penne mezclada con ricotta, marinara y hierbas, horneada con queso mozzarella derretido",
+      "descriptionEn": "Penne pasta tossed with ricotta, marinara, and herbs, baked with melted mozzarella",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-43",
+      "categoryId": "pasta",
+      "nameEs": "Berenjena a la Parmigiana",
+      "nameEn": "Eggplant Parmigiana",
+      "descriptionEs": "Filetes de berenjena fresca empanizada, horneados con salsa de tomate y mozzarella sobre pasta",
+      "descriptionEn": "Fresh breaded eggplant cutlets baked with tomato sauce and mozzarella over pasta",
+      "price": "$18.00",
+      "popular": true,
+      "badge": "House Favorite",
+      "tags": [
+        "Popular"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-44",
+      "categoryId": "pasta",
+      "nameEs": "Manicotti Horneado",
+      "nameEn": "Baked Manicotti",
+      "descriptionEs": "Tubos de pasta artesanal rellenos de queso ricotta y horneados en salsa de tomate",
+      "descriptionEn": "Large handmade pasta tubes filled with ricotta cheese and baked in tomato sauce",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-45",
+      "categoryId": "pasta",
+      "nameEs": "Plato de Pollo a la Parmigiana",
+      "nameEn": "Chicken Parmigiana Entree",
+      "descriptionEs": "Filete de pollo crujiente empanizado, horneado con marinara y mozzarella derretida sobre pasta",
+      "descriptionEn": "Crispy breaded chicken cutlet baked with marinara and melted mozzarella over pasta",
+      "price": "$20.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-46",
+      "categoryId": "pasta",
+      "nameEs": "Pollo Bella Donna",
+      "nameEn": "Chicken Bella Donna",
+      "descriptionEs": "Pechuga de pollo salteada en una salsa cremosa rosada de tomate y alfredo con champiñones frescos",
+      "descriptionEn": "Sautéed chicken breast in a pink tomato-alfredo cream sauce with fresh mushrooms",
+      "price": "$19.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-47",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de Langosta en Salsa Rosada",
+      "nameEn": "Lobster Ravioli in Pink Sauce",
+      "descriptionEs": "Exquisitos ravioles rellenos de langosta salteados con camarones en salsa cremosa rosada",
+      "descriptionEn": "Decadent lobster-filled ravioli sautéed with shrimp in pink cream sauce",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-48",
+      "categoryId": "pasta",
+      "nameEs": "Camarones a la Pisano",
+      "nameEn": "Shrimp a Pisano",
+      "descriptionEs": "Grandes camarones del océano salteados con ajo en salsa cremosa rosada alfredo casera sobre pasta",
+      "descriptionEn": "Large ocean shrimp sautéed with garlic in homemade pink alfredo cream sauce over pasta",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-49",
+      "categoryId": "pasta",
+      "nameEs": "Orden de Albóndigas Caseras",
+      "nameEn": "Side of Homemade Meatballs",
+      "descriptionEs": "Dos grandes albóndigas caseras servidas con salsa marinara caliente",
+      "descriptionEn": "Two large homemade meatballs served with warm marinara sauce",
+      "price": "$5.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-50",
+      "categoryId": "kids",
+      "nameEs": "Tiras de Pollo y Papas para Niños",
+      "nameEn": "Kid's Chicken Fingers & Fries",
+      "descriptionEs": "Tiras de pollo crujientes servidas con papas fritas doradas",
+      "descriptionEn": "Crispy fried chicken tenders served with golden french fries",
+      "price": "$9.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-51",
+      "categoryId": "kids",
+      "nameEs": "Fettuccine Alfredo para Niños",
+      "nameEn": "Kid's Fettuccine Alfredo",
+      "descriptionEs": "Porción infantil de fettuccine en salsa alfredo cremosa",
+      "descriptionEn": "Kid-sized portion of fettuccine in creamy alfredo sauce",
+      "price": "$9.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-52",
+      "categoryId": "kids",
+      "nameEs": "Lasaña Horneada para Niños",
+      "nameEn": "Kid's Baked Lasagna",
+      "descriptionEs": "Porción individual de lasaña de carne y queso horneada",
+      "descriptionEn": "Individual portion of baked beef and cheese lasagna",
+      "price": "$9.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-53",
+      "categoryId": "kids",
+      "nameEs": "Spaghetti con Salsa de Carne para Niños",
+      "nameEn": "Kid's Spaghetti with Meat Sauce",
+      "descriptionEs": "Pasta spaghetti cubierta con salsa de carne sazonada casera",
+      "descriptionEn": "Spaghetti pasta topped with homemade seasoned meat sauce",
+      "price": "$9.99",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-54",
+      "categoryId": "desserts",
+      "nameEs": "Cannoli Casero",
+      "nameEn": "Homemade Cannoli",
+      "descriptionEs": "Cáscara de hojaldre crujiente rellena de crema de ricotta dulce y chispas de chocolate",
+      "descriptionEn": "Crispy pastry shell filled with sweet sweetened ricotta cream and chocolate chips",
+      "price": "$6.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-55",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake estilo Nueva York",
+      "nameEn": "New York Cheesecake",
+      "descriptionEs": "Clásico cheesecake estilo Nueva York, denso, rico y cremoso",
+      "descriptionEn": "Classic dense, rich, and creamy New York style cheesecake",
+      "price": "$6.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-56",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de Limoncello",
+      "nameEn": "Limoncello Cake",
+      "descriptionEs": "Esponjoso pastel de bizcocho con capas de crema de mascarpone al limoncello",
+      "descriptionEn": "Fluffy sponge cake layered with limoncello mascarpone cream",
+      "price": "$6.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-57",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisú Clásico",
+      "nameEn": "Classic Tiramisu",
+      "descriptionEs": "Bizcochos remojados en espresso, con capas de mascarpone batido y espolvoreados con cacao",
+      "descriptionEn": "Ladyfingers dipped in espresso, layered with whipped mascarpone and dusted with cocoa",
+      "price": "$6.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-58",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake Frito con Fresas",
+      "nameEn": "Fried Cheesecake with Strawberries",
+      "descriptionEs": "Cheesecake frito, crujiente y dorado, servido con cobertura dulce de fresas",
+      "descriptionEn": "Golden crispy fried cheesecake served with sweet strawberry topping",
+      "price": "$8.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lubranos-pizza-59",
       "categoryId": "beverages",
-      "nameEs": "Refrescos de Fuente",
-      "nameEn": "Fountain Drinks",
-      "descriptionEs": "Variedad de refrescos Coca-Cola bien fríos y refrescantes.",
-      "descriptionEn": "Selection of cold, refreshing fountain sodas.",
+      "nameEs": "Refresco en Botella (20 oz)",
+      "nameEn": "Bottled Soda (20 oz)",
+      "descriptionEs": "Botella de 20 oz de Coca-Cola, Diet Coke, Sprite o Ginger Ale",
+      "descriptionEn": "20 oz bottle of Coca-Cola, Diet Coke, Sprite, or Ginger Ale",
       "price": "$3.00",
       "popular": false,
-      "badge": "Bebida",
+      "badge": null,
       "tags": [],
       "allergens": [],
       "ctaType": "in_store"

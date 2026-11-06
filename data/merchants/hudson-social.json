@@ -44,255 +44,1274 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "small-plates",
-      "nameEs": "Tapas y Platillos",
-      "nameEn": "Small Plates & Tapas",
+      "id": "small_plates",
+      "nameEs": "Platillos para Compartir",
+      "nameEn": "Small Plates",
       "icon": "Utensils"
     },
     {
-      "id": "brick-oven",
-      "nameEs": "Horno de Ladrillo",
-      "nameEn": "Brick Oven Pizzas",
+      "id": "raw_bar",
+      "nameEs": "Barra de Mariscos Crudos",
+      "nameEn": "Raw Bar",
       "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas y Sopas",
+      "nameEn": "Soups & Salads",
+      "icon": "Salad"
     },
     {
       "id": "mains",
-      "nameEs": "Platos Fuertes",
-      "nameEn": "Mains & Large Plates",
-      "icon": "Utensils"
+      "nameEs": "Platos Fuertes y Pastas",
+      "nameEn": "Large Plates & Pastas",
+      "icon": "Beef"
+    },
+    {
+      "id": "pizza",
+      "nameEs": "Pizzas al Horno de Ladrillo",
+      "nameEn": "Brick Oven Pizzas",
+      "icon": "Pizza"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas y Sándwiches",
+      "nameEn": "Burgers & Sandwiches",
+      "icon": "Sandwich"
+    },
+    {
+      "id": "brunch",
+      "nameEs": "Brunch de Fin de Semana",
+      "nameEn": "Weekend Brunch",
+      "icon": "Coffee"
     },
     {
       "id": "cocktails",
       "nameEs": "Cócteles de Autor",
-      "nameEn": "Craft Cocktails",
-      "icon": "Wine"
-    },
-    {
-      "id": "desserts",
-      "nameEs": "Postres",
-      "nameEn": "Desserts",
-      "icon": "Coffee"
+      "nameEn": "Signature Cocktails",
+      "icon": "Sparkles"
     }
   ],
   "products": [
     {
-      "id": "hs-tuna-tartar",
-      "categoryId": "small-plates",
-      "nameEs": "Tartar de Atún Ahi",
-      "nameEn": "Ahi Tuna Tartar",
-      "descriptionEs": "Atún fresco de calidad sushi, mousse de aguacate, aderezo de soya y jengibre, servido con tostadas de wonton crujientes.",
-      "descriptionEn": "Fresh sushi-grade tuna, whipped avocado mousse, soy-ginger reduction, served with crisp wonton crisps.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Mariscos Frescos",
-        "Favorito"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten",
-        "Soya"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-carciofo-dip",
-      "categoryId": "small-plates",
-      "nameEs": "Dip Tibio de Alcachofa (Carciofo)",
-      "nameEn": "Warm Carciofo Artichoke Dip",
-      "descriptionEs": "Corazones de alcachofa asados, queso pecorino romano gratinado, espinacas y finas hierbas, servido con focaccia crujiente.",
-      "descriptionEn": "Wood-fired roasted artichoke hearts, melted pecorino romano, tender spinach, and herbs, served with toasted house focaccia.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Horno de Ladrillo"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-shrimp-ajillo",
-      "categoryId": "small-plates",
-      "nameEs": "Camarones al Ajillo",
-      "nameEn": "Shrimp al Ajillo",
-      "descriptionEs": "Camarones jumbo salteados al sartén con ajo laminado, hojuelas de chile seco, vino blanco y aceite de oliva virgen extra con pan rústico.",
-      "descriptionEn": "Pan-seared jumbo shrimp, slivered garlic, chili flakes, white wine, and extra virgin olive oil served with rustic dipping bread.",
-      "price": "$17.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Tapas Clásicas",
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-pizza-margherita",
-      "categoryId": "brick-oven",
-      "nameEs": "Pizza Margherita a la Leña",
-      "nameEn": "Brick Oven Margherita Pizza",
-      "descriptionEs": "Masa artesanal horneada a la piedra, salsa de tomate San Marzano, mozzarella fior di latte, albahaca fresca y toque de aceite de oliva virgen.",
-      "descriptionEn": "Artisanal charred crust from the brick oven, San Marzano tomato sauce, fresh fior di latte mozzarella, basil, and extra virgin olive oil.",
-      "price": "$18.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Horno de Ladrillo",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-pizza-prosciutto-fig",
-      "categoryId": "brick-oven",
-      "nameEs": "Pizza de Prosciutto di Parma e Higo",
-      "nameEn": "Prosciutto & Fig Brick Oven Pizza",
-      "descriptionEs": "Prosciutto di Parma estacionado, mermelada de higos negros, queso gorgonzola suave, rúcula fresca y glaseado balsámico envejecido.",
-      "descriptionEn": "Aged Prosciutto di Parma, mission fig spread, creamy gorgonzola, fresh baby arugula, and an aged balsamic reduction glaze.",
-      "price": "$21.00",
-      "popular": true,
-      "badge": "House Favorite",
-      "tags": [
-        "Gourmet",
-        "Horno de Ladrillo"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-brick-chicken",
-      "categoryId": "mains",
-      "nameEs": "Pollo al Ladrillo (Brick Chicken)",
-      "nameEn": "Crispy Brick Chicken",
-      "descriptionEs": "Medio pollo de campo prensado y asado con piel ultra crocante, puré de papas con ajo confitado, espárragos y reducción de limón y romero.",
-      "descriptionEn": "Cast-iron pressed half chicken with ultra-crisp skin, garlic-confit whipped potatoes, charred asparagus, and rosemary-lemon pan jus.",
-      "price": "$27.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Especialidad",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-seafood-platter",
-      "categoryId": "mains",
-      "nameEs": "Parrillada de Mariscos Hudson",
-      "nameEn": "Hudson Seafood Platter",
-      "descriptionEs": "Selección del día con vieiras selladas, camarones jumbo, calamares y mejillones en salsa de mantequilla blanca, ajo y vino.",
-      "descriptionEn": "Chef’s fresh morning catch featuring seared diver scallops, jumbo shrimp, calamari, and mussels in a garlic-white wine beurre blanc.",
-      "price": "$38.00",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Mariscos Frescos",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Pescado",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-ny-strip",
-      "categoryId": "mains",
-      "nameEs": "Bife de Chorizo Prime (NY Strip)",
-      "nameEn": "Prime NY Strip Steak",
-      "descriptionEs": "Corte New York Strip de 12 oz a la parrilla, mantequilla de hierbas y trufa negra, papas fritas rústicas al parmesano y chimichurri.",
-      "descriptionEn": "12oz grilled USDA Prime New York Strip, black truffle herb butter, parmesan hand-cut fries, and house chimichurri.",
-      "price": "$42.00",
-      "popular": false,
-      "badge": "Premium",
-      "tags": [
-        "Carnes",
-        "Parrilla"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-smoked-old-fashioned",
-      "categoryId": "cocktails",
-      "nameEs": "Old Fashioned Ahumado Hudson",
-      "nameEn": "Hudson Smoked Old Fashioned",
-      "descriptionEs": "Bourbon añejo macerado con cáscara de naranja amarga y cereza Luxardo, terminado con humo de madera de roble servido sobre esfera de hielo.",
-      "descriptionEn": "Aged bourbon, Angostura & orange bitters, demerara syrup, Luxardo cherry, served smoked with charred oak wood over a crystal king cube.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Cocktail Especial",
-      "tags": [
-        "Cóctel de Autor",
-        "21+"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-bedford-paloma",
-      "categoryId": "cocktails",
-      "nameEs": "Paloma Bedford Street",
-      "nameEn": "Bedford Street Paloma",
-      "descriptionEs": "Tequila blanco 100% agave, jugo de toronja fresca exprimida, jugo de lima, licor de flor de saúco, soda y borde con sal de chile ahumado.",
-      "descriptionEn": "100% blue agave blanco tequila, fresh squeezed ruby red grapefruit, lime, elderflower liqueur, soda splash, smoked chili sea salt rim.",
-      "price": "$15.00",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Cóctel de Autor",
-        "21+"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hs-molten-lava-cake",
-      "categoryId": "desserts",
-      "nameEs": "Volcán de Chocolate Caliente",
-      "nameEn": "Warm Molten Chocolate Lava Cake",
-      "descriptionEs": "Pastel de chocolate negro horneado al momento con centro líquido de fudge, helado artesanal de vainilla Bourbon y coulis de frutos rojos.",
-      "descriptionEn": "Baked-to-order dark chocolate cake with a molten fudge core, artisanal Madagascar vanilla bean ice cream, and fresh raspberry coulis.",
+      "id": "hudson-social-01",
+      "categoryId": "small_plates",
+      "nameEs": "Croquetas de Ricotta",
+      "nameEn": "Ricotta Croquettes",
+      "descriptionEs": "Crujientes croquetas de ricotta fritas, terminadas con miel local, romero fresco y sal marina.",
+      "descriptionEn": "Crispy fried ricotta croquettes finished with local honey, fresh rosemary, and sea salt",
       "price": "$12.00",
       "popular": true,
-      "badge": "Dulce Tentación",
+      "badge": "Hudson Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-02",
+      "categoryId": "small_plates",
+      "nameEs": "Coles de Bruselas Crujientes",
+      "nameEn": "Crispy Brussels Sprouts",
+      "descriptionEs": "Coles de Bruselas fritas al momento, salteadas con láminas de parmesano y aderezo César casero.",
+      "descriptionEn": "Flash-fried brussels sprouts tossed with shaved parmesan and homemade Caesar dressing",
+      "price": "$13.00",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Postre Casero",
-        "Horneado"
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-03",
+      "categoryId": "small_plates",
+      "nameEs": "Hummus Clásico con Za'atar",
+      "nameEn": "Classic Za'atar Hummus",
+      "descriptionEs": "Hummus artesanal con aceite de oliva, especias za'atar, pistachos triturados, aceitunas Kalamata y pan pita caliente.",
+      "descriptionEn": "Housemade hummus with olive oil, za'atar spices, crushed pistachios, Kalamata olives, warm pita",
+      "price": "$14.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-04",
+      "categoryId": "small_plates",
+      "nameEs": "Albóndigas Italianas",
+      "nameEn": "Italian Meatballs",
+      "descriptionEs": "Albóndigas hechas a mano cocinadas a fuego lento en salsa romesco, con ricotta fresca y parmesano añejo.",
+      "descriptionEn": "Handmade meatballs simmered in romesco sauce, fresh ricotta, and aged parmesan",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-05",
+      "categoryId": "small_plates",
+      "nameEs": "Burrata con Caponata",
+      "nameEn": "Burrata con Caponata",
+      "descriptionEs": "Burrata fresca sobre caponata siciliana agridulce tibia, alcaparras, albahaca fresca, tomates, aceitunas y pan a la parrilla.",
+      "descriptionEn": "Fresh burrata over warm Sicilian eggplant agrodolce, capers, fresh basil, tomatoes, olives, grilled bread",
+      "price": "$16.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-06",
+      "categoryId": "small_plates",
+      "nameEs": "Dip de Espinacas y Alcachofas",
+      "nameEn": "Spinaci e Carciofi Dip",
+      "descriptionEs": "Dip cremoso de espinacas y alcachofas con ajo asado, romero fresco, chips de tortilla y crostini.",
+      "descriptionEn": "Creamy spinach and artichoke dip with roasted garlic, fresh rosemary, tortilla chips, and crostini",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-07",
+      "categoryId": "small_plates",
+      "nameEs": "Mejillones al Vapor P.E.I.",
+      "nameEn": "P.E.I. Steamed Mussels",
+      "descriptionEs": "Mejillones de la Isla del Príncipe Eduardo preparados a elegir en salsa fra diavolo picante o salsa de vino blanco, mantequilla y ajo.",
+      "descriptionEn": "Prince Edward Island mussels prepared in choice of spicy fra diavolo or white wine butter garlic sauce",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
       ],
       "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Huevos"
+        "Gluten"
       ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-08",
+      "categoryId": "small_plates",
+      "nameEs": "Alitas de Pollo Crujientes",
+      "nameEn": "Crispy Chicken Wings",
+      "descriptionEs": "Alitas crujientes con opción de salsa BBQ de miel, chile con piña, parmesano con ajo, buffalo o Jamaican jerk.",
+      "descriptionEn": "Crispy wings with choice of honey BBQ, pineapple chili, garlic parmesan, buffalo, or Jamaican jerk",
+      "price": "$17.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-09",
+      "categoryId": "small_plates",
+      "nameEs": "Bocaditos de Pollo Crujientes",
+      "nameEn": "Crispy Chicken Bites",
+      "descriptionEs": "Bocaditos de pechuga de pollo rebozados en suero de leche y fritos, servidos con salsa BBQ blanca de Alabama.",
+      "descriptionEn": "Buttermilk-battered crispy fried chicken breast bites served with Alabama white BBQ sauce",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-10",
+      "categoryId": "small_plates",
+      "nameEs": "Gambas al Ajillo Estilo Español",
+      "nameEn": "Spanish Garlic Shrimp",
+      "descriptionEs": "Gambas salteadas con pimentón ahumado, chile de árbol, chalotas, ajo y un sabroso caldo de almejas.",
+      "descriptionEn": "Sautéed shrimp with smoked paprika, chile de árbol, shallots, garlic, and savory clam broth",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-11",
+      "categoryId": "small_plates",
+      "nameEs": "Tostadas de Gambas Frías",
+      "nameEn": "Chilled Shrimp Tostadas",
+      "descriptionEs": "Tostadas de maíz crujientes cubiertas con gambas picadas, mayonesa de cilantro y limón, tomate, apio y cebolla.",
+      "descriptionEn": "Crispy corn tostadas topped with diced shrimp, cilantro-lemon mayo, tomato, celery, and onion",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-12",
+      "categoryId": "small_plates",
+      "nameEs": "Calamar Crujiente Point Judith",
+      "nameEn": "Crispy Point Judith Calamari",
+      "descriptionEs": "Calamar ligeramente enharinado y frito, servido con alioli de ajo asado y chile, y salsa marinara de la casa.",
+      "descriptionEn": "Lightly dusted flash-fried calamari served with roasted garlic chili aioli and house marinara",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-13",
+      "categoryId": "small_plates",
+      "nameEs": "Quesadilla de Birria",
+      "nameEn": "Birria Quesadilla",
+      "descriptionEs": "Birria de res cocinada a fuego lento, mozzarella fundida, cilantro, cebolla, aguacate, servida con un rico consomé para mojar.",
+      "descriptionEn": "Slow-cooked beef birria, melted mozzarella, cilantro, onion, avocado, served with rich consomé for dipping",
+      "price": "$20.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-14",
+      "categoryId": "small_plates",
+      "nameEs": "Tartar de Atún Ahi",
+      "nameEn": "Ahi Tuna Tartare",
+      "descriptionEs": "Atún de aleta amarilla picado, guacamole de la casa, rábano sandía, jalapeño, glaseado de soja, semillas de sésamo y chips de wonton.",
+      "descriptionEn": "Diced yellowfin tuna, house guacamole, watermelon radish, jalapeño, soy glaze, sesame seeds, wonton chips",
+      "price": "$22.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-15",
+      "categoryId": "small_plates",
+      "nameEs": "Plato de Costilla Estofada",
+      "nameEn": "Braised Short Rib Small Plate",
+      "descriptionEs": "Costilla de res tierna cocinada a fuego lento sobre puré de patatas cremoso con un rico jugo de vino tinto.",
+      "descriptionEn": "Slow-cooked tender beef short rib over creamy mashed potatoes with rich red wine au jus",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-16",
+      "categoryId": "small_plates",
+      "nameEs": "Pulpo Español a la Parrilla",
+      "nameEn": "Charred Grilled Spanish Octopus",
+      "descriptionEs": "Pulpo a la parrilla sobre hummus clásico, chimichurri de hierbas, garbanzos, tomate seco y pepperoncini.",
+      "descriptionEn": "Grilled octopus over classic hummus, herb chimichurri, chickpeas, sundried tomato, and pepperoncini",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-17",
+      "categoryId": "small_plates",
+      "nameEs": "Mini Rollos de Langosta de Maine (2)",
+      "nameEn": "Mini Maine Lobster Rolls (2)",
+      "descriptionEs": "Tierna y dulce langosta en pan brioche tostado con lechuga, tomate, apio y remoulade de la casa.",
+      "descriptionEn": "Tender sweet lobster on toasted brioche rolls with lettuce, tomato, celery, and house remoulade",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-18",
+      "categoryId": "small_plates",
+      "nameEs": "Mac & Cheese con Trufa Negra",
+      "nameEn": "Black Truffle Mac & Cheese",
+      "descriptionEs": "Pasta cavatappi horneada en crema de fontina y parmesano, trufa negra, chalotas crujientes y costra de pan rallado.",
+      "descriptionEn": "Cavatappi pasta baked in fontina and parmesan cream, black truffle, crispy shallots, breadcrumb crust",
+      "price": "$19.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-19",
+      "categoryId": "small_plates",
+      "nameEs": "Tabla de Charcutería Social",
+      "nameEn": "The Social Charcuterie Board",
+      "descriptionEs": "Manchego, Camembert, Gorgonzola Dolce, Prosciutto di Parma, Soppressata, Capicola, panal de miel, frutos secos y pan de masa madre.",
+      "descriptionEn": "Manchego, Camembert, Gorgonzola Dolce, Prosciutto di Parma, Soppressata, Capicola, honeycomb, nuts, sourdough",
+      "price": "$24.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-20",
+      "categoryId": "raw_bar",
+      "nameEs": "Ostras Blue Point Frescas (Media Docena)",
+      "nameEn": "Fresh Blue Point Oysters (Half Dozen)",
+      "descriptionEs": "Seis ostras Blue Point de Long Island Sound recién abiertas con mignonette de la casa y salsa cóctel.",
+      "descriptionEn": "Six freshly shucked Long Island Sound Blue Point oysters with house mignonette and cocktail sauce",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-21",
+      "categoryId": "raw_bar",
+      "nameEs": "Cóctel de Gambas Jumbo Frías",
+      "nameEn": "Jumbo Chilled Shrimp Cocktail",
+      "descriptionEs": "Cuatro gambas jumbo del Golfo escalfadas, servidas frías con salsa cóctel picante de la casa y limón.",
+      "descriptionEn": "Four jumbo poached gulf shrimp served chilled with spicy house cocktail sauce and lemon",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-22",
+      "categoryId": "salads",
+      "nameEs": "Sopa del Día del Chef",
+      "nameEn": "Chef's Soup of the Day",
+      "descriptionEs": "Sopa de temporada preparada diariamente por el chef.",
+      "descriptionEn": "Daily freshly prepared seasonal chef's soup",
+      "price": "$9.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-23",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César Hudson",
+      "nameEn": "Hudson Caesar Salad",
+      "descriptionEs": "Lechuga little gem, láminas de parmesano, picatostes de focaccia a las hierbas, ralladura de limón y aderezo César cremoso de tahini y limón.",
+      "descriptionEn": "Little gem lettuce, shaved parmesan, herbed focaccia croutons, lemon zest, creamy lemon tahini Caesar",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-24",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Pera Bosc Asada",
+      "nameEn": "Roasted Bosc Pear Salad",
+      "descriptionEs": "Queso de cabra horneado tibio, rúcula baby, endivias belgas, nueces tostadas, arándanos secos y balsámico blanco.",
+      "descriptionEn": "Warm baked goat cheese, baby arugula, Belgian endive, toasted pecans, dried cranberries, white balsamic",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-25",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Fresas y Queso de Cabra",
+      "nameEn": "Strawberry & Goat Cheese Salad",
+      "descriptionEs": "Espinacas baby y rúcula, fresas frescas, queso de cabra desmenuzado, nueces caramelizadas y vinagreta de frambuesa.",
+      "descriptionEn": "Baby spinach and arugula, fresh strawberries, crumbled goat cheese, candied walnuts, raspberry vinaigrette",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-26",
+      "categoryId": "salads",
+      "nameEs": "Bowl de Mercado Mediterráneo",
+      "nameEn": "The Mediterranean Market Bowl",
+      "descriptionEs": "Coliflor asada con especias, farro, quinoa, rúcula, pepino, tomate cherry, aceitunas Kalamata y feta batido.",
+      "descriptionEn": "Roasted spiced cauliflower, farro, quinoa, arugula, cucumber, cherry tomato, Kalamata olives, whipped feta",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-27",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Filete a la Parrilla",
+      "nameEn": "Grilled Steak Salad",
+      "descriptionEs": "Filete de solomillo a la parrilla sobre rúcula baby, cebollas fritas, láminas de parmesano y aderezo de rábano picante y Dijon.",
+      "descriptionEn": "Grilled sliced sirloin steak over baby arugula, frizzled onions, shaved parmesan, horseradish Dijon dressing",
+      "price": "$26.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-28",
+      "categoryId": "mains",
+      "nameEs": "Bowl de Arroz y Granos Hudson",
+      "nameEn": "Hudson Grain & Rice Bowl",
+      "descriptionEs": "Bowl de arroz sazonado con glaseado de soja, jengibre encurtido, aguacate fresco, alioli de sriracha, zanahorias y calabaza asada.",
+      "descriptionEn": "Seasoned rice bowl with soy glaze, pickled ginger, fresh avocado, sriracha aioli, carrots, and roasted squash",
+      "price": "$18.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-29",
+      "categoryId": "mains",
+      "nameEs": "Rigatoni Picante a la Burrata",
+      "nameEn": "Spicy Rigatoni alla Burrata",
+      "descriptionEs": "Pasta rigatoni artesanal salteada en crema de tomate y chile calabrés picante, cubierta con burrata fresca y parmesano.",
+      "descriptionEn": "Housemade rigatoni pasta tossed in spicy calabrian chili tomato cream, topped with fresh burrata and parmesan",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-30",
+      "categoryId": "mains",
+      "nameEs": "Fettuccine Alfredo con Pollo",
+      "nameEn": "Fettuccine Alfredo e Pollo",
+      "descriptionEs": "Fettuccine hecho a mano salteado en crema de parmesano y ajo con pechuga de pollo a la parrilla y pimienta negra.",
+      "descriptionEn": "Handmade fettuccine tossed in parmesan-garlic cream with herb-grilled chicken breast and cracked pepper",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-31",
+      "categoryId": "mains",
+      "nameEs": "Medio Pollo Asado al Horno",
+      "nameEn": "Hearthstone Roasted Half Chicken",
+      "descriptionEs": "Medio pollo sellado en sartén con una salsa ácida de pimientos cherry, patatas al perejil y parmesano, y hierbas.",
+      "descriptionEn": "Pan-seared half chicken with tangy cherry pepper pan sauce, parsley-parmesan potatoes, and herbs",
+      "price": "$23.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-32",
+      "categoryId": "mains",
+      "nameEs": "Fish & Chips en Cerveza Artesanal",
+      "nameEn": "Craft Beer Battered Fish & Chips",
+      "descriptionEs": "Filete de lubina australiana crujiente, salsa tártara de jalapeño de la casa, patatas fritas y vinagre de malta.",
+      "descriptionEn": "Crispy Australian sea bass fillet, house jalapeño tartar sauce, crispy chips, and malt vinegar",
+      "price": "$25.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-33",
+      "categoryId": "mains",
+      "nameEs": "Salmón Crujiente a la Plancha",
+      "nameEn": "Crispy Pan-Seared Salmon",
+      "descriptionEs": "Filete de salmón de piel crujiente a la plancha, beurre blanc de limón, brócoli carbonizado y puré de coliflor aterciopelado.",
+      "descriptionEn": "Pan-seared crispy skin salmon fillet, lemon beurre blanc, charred broccoli, velvety cauliflower purée",
+      "price": "$27.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-34",
+      "categoryId": "mains",
+      "nameEs": "Linguine de Mariscos de la Costa",
+      "nameEn": "Coastal Catch Seafood Linguine",
+      "descriptionEs": "Barramundi a la plancha, mejillones, calamares tiernos y almejas picadas en brodetto de ajo y vino blanco con pan filone.",
+      "descriptionEn": "Pan-seared barramundi, PEI mussels, tender calamari, chopped clams in garlic white wine brodetto with filone",
+      "price": "$29.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-35",
+      "categoryId": "mains",
+      "nameEs": "Ribeye Steak Frites (10 oz)",
+      "nameEn": "Ribeye Steak Frites (10 oz)",
+      "descriptionEs": "Filete de ribeye de 10 oz a la parrilla con chimichurri argentino y patatas fritas con parmesano y trufa.",
+      "descriptionEn": "10 oz grilled center-cut ribeye steak with Argentine chimichurri and parmesan truffle fries",
+      "price": "$40.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-36",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Margherita Clásica",
+      "nameEn": "Classic Margherita Pizza",
+      "descriptionEs": "Salsa de tomate San Marzano, mozzarella fresca, parmesano añejo, albahaca fresca y aceite de oliva virgen extra.",
+      "descriptionEn": "San Marzano tomato sauce, fresh mozzarella, aged parmesan, fresh basil, extra virgin olive oil",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-37",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Higo, Prosciutto y Rúcula",
+      "nameEn": "Fig & Prosciutto Arugula Pizza",
+      "descriptionEs": "Higos negros dulces, ajo asado, bacon crujiente, queso de cabra cremoso, rúcula y un toque de mermelada de higos.",
+      "descriptionEn": "Sweet black mission figs, roasted garlic, crispy bacon, creamy goat cheese, arugula, fig jam drizzle",
+      "price": "$18.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-38",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Jardín Blanco",
+      "nameEn": "The White Garden Pizza",
+      "descriptionEs": "Crema de ajo asado, cebollas caramelizadas, mozzarella, stracciatella, tomates cherry dulces y albahaca fresca.",
+      "descriptionEn": "Roasted garlic cream, caramelized onions, mozzarella, stracciatella, sweet cherry tomatoes, fresh basil",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-39",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Pepperoni Picante",
+      "nameEn": "Spicy Pepperoni Pizza",
+      "descriptionEs": "Pepperoni clásico, rodajas de jalapeño encurtido, salsa de tomate fresca y mozzarella cremosa.",
+      "descriptionEn": "Old-school cupping pepperoni, pickled jalapeño slices, fresh tomato sauce, creamy mozzarella",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-40",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Pollo Nashville Hot",
+      "nameEn": "Nashville Hot Chicken Pizza",
+      "descriptionEs": "Pollo crujiente al estilo Nashville, mozzarella, pepinillos, aderezo ranch y cebollino.",
+      "descriptionEn": "Crispy buttermilk chicken tossed in Nashville hot oil, mozzarella, dill pickles, ranch drizzle, scallions",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-41",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Bee Sting",
+      "nameEn": "Bee Sting Pizza",
+      "descriptionEs": "Soppressata calabresa, miel picante infusionada con chile, alioli de albahaca, mozzarella cremosa y orégano seco.",
+      "descriptionEn": "Calabrese soppressata, chili-infused hot honey, basil aioli, creamy mozzarella, dried oregano",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-42",
+      "categoryId": "pizza",
+      "nameEs": "Pizza de Carnes Italianas Picantes",
+      "nameEn": "Spicy Italian Meat Medley Pizza",
+      "descriptionEs": "Salsa San Marzano, bacon, soppressata, pepperoni, pimientos cherry picantes y mozzarella.",
+      "descriptionEn": "San Marzano sauce, bacon, soppressata, pepperoni, spicy hot cherry peppers, mozzarella",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-43",
+      "categoryId": "pizza",
+      "nameEs": "Pizza Paraíso de Prosciutto",
+      "nameEn": "Prosciutto Paradise Pizza",
+      "descriptionEs": "Prosciutto di Parma, mozzarella fresca, rúcula baby, aceite de oliva virgen extra, glaseado balsámico y láminas de parmesano.",
+      "descriptionEn": "Prosciutto di Parma, fresh mozzarella, baby arugula, extra virgin olive oil, balsamic glaze, shaved parmesan",
+      "price": "$19.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-44",
+      "categoryId": "burgers",
+      "nameEs": "La Hamburguesa Hudson",
+      "nameEn": "The Hudson Burger",
+      "descriptionEs": "Hamburguesa de mezcla exclusiva, cebollas caramelizadas, champiñones salteados, cheddar fuerte, salsa de carne de la casa y patatas fritas.",
+      "descriptionEn": "Signature custom blend beef patty, caramelized onions, sautéed mushrooms, sharp cheddar, house steak sauce, fries",
+      "price": "$20.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-45",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de Birria",
+      "nameEn": "Birria Burger",
+      "descriptionEs": "Hamburguesa de carne con birria de res estofada, mozzarella fundida, cilantro, cebollas, patatas fritas y consomé.",
+      "descriptionEn": "Custom beef patty topped with braised beef birria, melted mozzarella, cilantro, onions, steak fries, consommé",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-46",
+      "categoryId": "burgers",
+      "nameEs": "Submarino Italiano The Godfather",
+      "nameEn": "The Godfather Italian Sub",
+      "descriptionEs": "Prosciutto, soppressata, capicola, mozzarella fresca, pesto de albahaca, alioli de ajo y rúcula en pan tostado.",
+      "descriptionEn": "Prosciutto, soppressata, capicola, fresh mozzarella, basil pesto, garlic aioli, arugula on toasted sub",
+      "price": "$20.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-47",
+      "categoryId": "burgers",
+      "nameEs": "Sándwich de Queso Fundido con Costilla",
+      "nameEn": "Braised Short Rib Grilled Cheese",
+      "descriptionEs": "Costilla estofada, demi-glace de vino tinto, cheddar fuerte, cebollas caramelizadas y rúcula en pan de masa madre con chips.",
+      "descriptionEn": "Slow-cooked short rib, red wine demi-glace, sharp cheddar, caramelized onions, arugula on sourdough, chips",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-48",
+      "categoryId": "burgers",
+      "nameEs": "Sándwich de Pollo Crujiente con Miel Picante",
+      "nameEn": "Crispy Hot Honey Chicken Sandwich",
+      "descriptionEs": "Pechuga de pollo frita, ensalada de col morada, ranch de miel picante, pan brioche y patatas dulces fritas.",
+      "descriptionEn": "Buttermilk-fried chicken breast, red cabbage slaw, hot honey ranch, brioche bun, sweet potato fries",
+      "price": "$20.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-49",
+      "categoryId": "burgers",
+      "nameEs": "Sándwich Banh Mi de Atún Ahi",
+      "nameEn": "Ahi Tuna Banh Mi Sandwich",
+      "descriptionEs": "Filete de atún sellado, aguacate, ensalada de pepino y zanahoria encurtida, alioli de sriracha y patatas fritas.",
+      "descriptionEn": "Blackened sushi-grade tuna steak, avocado, spicy cucumber-carrot pickled slaw, sriracha aioli, fries",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-50",
+      "categoryId": "burgers",
+      "nameEs": "Sándwich Club de Pavo Asado",
+      "nameEn": "Roasted Turkey Club Sandwich",
+      "descriptionEs": "Pavo asado al horno, bacon ahumado, lechuga crujiente, tomate maduro, alioli de bacon y patatas dulces fritas.",
+      "descriptionEn": "Oven-roasted carved turkey, smoked bacon, crisp lettuce, ripe tomato, bacon aioli, sweet potato fries",
+      "price": "$17.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-51",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa Vegetariana Artesanal",
+      "nameEn": "Artisanal Veggie Burger",
+      "descriptionEs": "Hamburguesa vegetal casera, cebollas caramelizadas, champiñones salteados, queso fundido, salsa de carne de la casa y patatas fritas.",
+      "descriptionEn": "Housemade plant patty, caramelized onions, sautéed mushrooms, melted cheese, house steak sauce, fries",
+      "price": "$18.00",
+      "popular": true,
+      "badge": "Hudson Favorite",
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-52",
+      "categoryId": "brunch",
+      "nameEs": "Tostadas Francesas de Tiramisú",
+      "nameEn": "Double Cut Tiramisu French Toast",
+      "descriptionEs": "Pan brioche grueso con crema de mascarpone de tiramisú, cacao y canela, frutos rojos y jarabe de arce.",
+      "descriptionEn": "Thick-cut brioche French toast topped with tiramisu mascarpone cream, cinnamon cocoa, berries, maple syrup",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-53",
+      "categoryId": "brunch",
+      "nameEs": "Hamburguesa de Brunch Hudson Ranch",
+      "nameEn": "Hudson Ranch Brunch Burger",
+      "descriptionEs": "Hamburguesa con huevo frito, bacon, cheddar, lechuga, tomate, pepinillos, cebolla caramelizada y mayonesa picante.",
+      "descriptionEn": "Beef burger with sunny fried egg, bacon, cheddar, lettuce, tomato, pickles, caramelized onion, spicy mayo",
+      "price": "$22.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-54",
+      "categoryId": "brunch",
+      "nameEs": "Tortitas Esponjosas de Suero de Leche",
+      "nameEn": "Fluffy Buttermilk Pancakes",
+      "descriptionEs": "Torre de tortitas doradas con opción de arándanos frescos, plátano flambeado con nueces caramelizadas o trozos de chocolate.",
+      "descriptionEn": "Stack of golden pancakes with choice of fresh blueberries, banana flambé with candied walnuts, or chocolate chunk",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-55",
+      "categoryId": "brunch",
+      "nameEs": "Gofres Belgas a la Malta",
+      "nameEn": "Belgian Malted Waffles",
+      "descriptionEs": "Gofre belga crujiente cubierto con helado de vainilla, mantequilla batida, frutos rojos y jarabe de arce.",
+      "descriptionEn": "Crispy Belgian waffle topped with vanilla ice cream, whipped butter, berries, and maple syrup",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-56",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Benedictinos Canadienses Clásicos",
+      "nameEn": "Classic Canadian Eggs Benedict",
+      "descriptionEs": "Muffin inglés tostado, bacon canadiense, dos huevos escalfados, aguacate, salsa holandesa y ensalada de la casa.",
+      "descriptionEn": "Toasted English muffin, thick Canadian bacon, two poached eggs, sliced avocado, hollandaise, house salad",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-57",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Royale con Salmón Ahumado",
+      "nameEn": "Eggs Royale with Smoked Salmon",
+      "descriptionEs": "Huevos de granja escalfados y salmón ahumado sobre muffins ingleses tostados con aguacate y salsa holandesa.",
+      "descriptionEn": "Poached farm eggs and smoked Atlantic salmon over toasted English muffins with avocado and hollandaise",
+      "price": "$21.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-58",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Florentinos",
+      "nameEn": "Eggs Florentine",
+      "descriptionEs": "Huevos escalfados y espinacas al ajo sobre muffins ingleses con aguacate, salsa holandesa cremosa y ensalada de la casa.",
+      "descriptionEn": "Poached eggs and sautéed garlic spinach over English muffins with avocado, creamy hollandaise, house salad",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-59",
+      "categoryId": "brunch",
+      "nameEs": "Tostada de Aguacate y Huevos",
+      "nameEn": "Avocado Toast & Sunny Eggs",
+      "descriptionEs": "Pan filone tostado, aguacate Haas, tomate maduro, bacon crujiente, aceite de chile picante y dos huevos fritos.",
+      "descriptionEn": "Toasted filone bread, crushed Haas avocado, ripe tomato, crispy bacon, spicy chili oil, two sunny eggs",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Spicy"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-60",
+      "categoryId": "brunch",
+      "nameEs": "Hash de Corned Beef y Huevos",
+      "nameEn": "Skillet Corned Beef Hash & Eggs",
+      "descriptionEs": "Corned beef casero y patatas crujientes con jalapeño, cilantro, tomate, aguacate y huevo frito.",
+      "descriptionEn": "Housemade corned beef and crispy hash browns with jalapeño, cilantro, tomato, avocado, and fried egg",
+      "price": "$20.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-61",
+      "categoryId": "brunch",
+      "nameEs": "Desayuno Clásico Hudson",
+      "nameEn": "Hudson Morning Classic Breakfast",
+      "descriptionEs": "Tres huevos revueltos, salchicha de desayuno, bacon ahumado, patatas crujientes caseras y pan tostado con mantequilla.",
+      "descriptionEn": "Three scrambled farm eggs, breakfast sausage, smoked bacon, crispy homemade hash browns, buttered toast",
+      "price": "$18.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-62",
+      "categoryId": "brunch",
+      "nameEs": "Burrito de Desayuno con Chorizo",
+      "nameEn": "Chorizo Breakfast Burrito",
+      "descriptionEs": "Huevos revueltos, chorizo mexicano, queso pepper jack, patatas, pimientos, cebollas y patatas fritas.",
+      "descriptionEn": "Scrambled eggs, spiced Mexican chorizo, pepper jack cheese, potatoes, peppers, onions, fries",
+      "price": "$18.00",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-63",
+      "categoryId": "brunch",
+      "nameEs": "Chilaquiles Verdes con Huevos",
+      "nameEn": "Chilaquiles Verdes con Huevos",
+      "descriptionEs": "Tortillas de maíz crujientes en salsa verde, crema, queso fresco, cebolla morada, aguacate y dos huevos.",
+      "descriptionEn": "Crispy corn tortillas simmered in tangy salsa verde, crema, queso fresco, red onion, avocado, two eggs",
+      "price": "$19.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-64",
+      "categoryId": "brunch",
+      "nameEs": "Revuelto de Langosta de Maine",
+      "nameEn": "Maine Lobster Soft Scramble",
+      "descriptionEs": "Huevos revueltos suaves con carne de langosta fresca escalfada en mantequilla y cebollino sobre brioche tostado.",
+      "descriptionEn": "Soft farm scrambled eggs folded with butter-poached fresh lobster meat and chives on toasted brioche",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [
+        "Gluten"
+      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-65",
+      "categoryId": "brunch",
+      "nameEs": "Plato de Brunch de Filete y Huevos",
+      "nameEn": "Steak & Eggs Brunch Plate",
+      "descriptionEs": "Filete de solomillo Angus, huevos de granja fritos y patatas salteadas sazonadas.",
+      "descriptionEn": "Certified Angus Beef sirloin steak, sunny-side-up farm eggs, seasoned skillet hash potatoes",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-66",
+      "categoryId": "cocktails",
+      "nameEs": "Mule de Naranja Sanguina",
+      "nameEn": "Blood Orange Mule",
+      "descriptionEs": "Vodka Tito's, Red Bull, zumo de lima fresco, puré de naranja sanguina y cerveza de jengibre picante.",
+      "descriptionEn": "Tito's Handmade Vodka, Red Bull, fresh lime juice, blood orange puree, spicy ginger beer",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-67",
+      "categoryId": "cocktails",
+      "nameEs": "Spritz de Manzana y Aperol",
+      "nameEn": "Autumn Apple-rol Spritz",
+      "descriptionEs": "Aperol, prosecco italiano, sidra de manzana local, un toque de cerveza de jengibre y borde de azúcar y canela.",
+      "descriptionEn": "Aperol, sparkling Italian prosecco, local apple cider, ginger beer splash, cinnamon sugar rim",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-68",
+      "categoryId": "cocktails",
+      "nameEs": "Spritz Hugo de Manzana",
+      "nameEn": "Apple Hugo Spritz",
+      "descriptionEs": "Licor de flor de saúco St. Germain, zumo de arándano, jarabe de canela, prosecco y soda.",
+      "descriptionEn": "St. Germain elderflower liqueur, tart cranberry juice, spiced cinnamon syrup, prosecco, club soda",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-69",
+      "categoryId": "cocktails",
+      "nameEs": "Bourbon Midnight Harvest",
+      "nameEn": "Midnight Harvest Bourbon",
+      "descriptionEs": "Bourbon Woodford Reserve, jarabe de arce y canela, esencia de naranja fresca y amargo de mole.",
+      "descriptionEn": "Woodford Reserve Bourbon, toasted maple-cinnamon syrup, fresh orange zest expression, mole bitters",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-70",
+      "categoryId": "cocktails",
+      "nameEs": "Negroni Twilight Fig",
+      "nameEn": "Twilight Fig Negroni",
+      "descriptionEs": "Ginebra Hendrick's, Campari, vermut dulce, jarabe de higo y clavo, y una ramita de romero quemado.",
+      "descriptionEn": "Hendrick's Gin, Campari, sweet vermouth, spiced clove-fig syrup, charred rosemary sprig",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-71",
+      "categoryId": "cocktails",
+      "nameEs": "Paloma de Mezcal Picante",
+      "nameEn": "Spicy Mezcal Paloma",
+      "descriptionEs": "Mezcal artesanal ahumado, jarabe de jalapeño picante, zumo de lima fresco y refresco de pomelo rosa.",
+      "descriptionEn": "Artisanal smoky Mezcal, spicy jalapeño syrup, fresh lime juice, pink grapefruit soda",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-72",
+      "categoryId": "cocktails",
+      "nameEs": "Cóctel Velvet Bee",
+      "nameEn": "Velvet Bee Cocktail",
+      "descriptionEs": "Vodka, licor de flor de saúco St. Germain, zumo de lima fresco y jarabe de miel infusionado con lavanda.",
+      "descriptionEn": "Vodka, St. Germain elderflower liqueur, fresh lime juice, lavender infused honey syrup",
+      "price": "$15.00",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-73",
+      "categoryId": "cocktails",
+      "nameEs": "Martini de Lichi Hudson",
+      "nameEn": "Hudson Lychee Martini",
+      "descriptionEs": "Vodka Ketel One Citroen, puré de lichi dulce, Lillet Blanc y licor de lichi francés.",
+      "descriptionEn": "Ketel One Citroen Vodka, sweet lychee puree, Lillet Blanc, French lychee liqueur",
+      "price": "$15.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-74",
+      "categoryId": "cocktails",
+      "nameEs": "Martini de Espresso Nitro con Miel",
+      "nameEn": "Honey & Harvest Nitro Espresso Martini",
+      "descriptionEs": "Vodka Ketel One, espresso fresco, cold brew nitro, Kahlúa, jarabe de miel especiado y especias de calabaza.",
+      "descriptionEn": "Ketel One Vodka, fresh espresso, nitro cold brew, Kahlúa, spiced honey syrup, pumpkin spice",
+      "price": "$16.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-social-75",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría Roja Hudson Casera",
+      "nameEn": "Housemade Hudson Red Sangria",
+      "descriptionEs": "Frutas frescas de temporada maceradas con vino tinto, brandy, St. Germain y zumos cítricos.",
+      "descriptionEn": "Seasonal fresh fruits macerated with red wine, brandy, St. Germain, and citrus juices",
+      "price": "$14.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "Gluten-Free"
+      ],
+      "allergens": [],
       "ctaType": "in_store"
     }
   ],

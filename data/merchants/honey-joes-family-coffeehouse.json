@@ -45,277 +45,586 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Productos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "draft-coffee",
-      "nameEs": "Café de Grifo y Especialidad",
-      "nameEn": "Draft & Specialty Coffee",
+      "id": "specials",
+      "nameEs": "Especialidades y Cold Brew",
+      "nameEn": "Specials & Cold Brew",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "coffee",
+      "nameEs": "Café y Espresso La Colombe",
+      "nameEn": "Espresso & Coffee",
       "icon": "Coffee"
     },
     {
-      "id": "tea-beverages",
-      "nameEs": "Tés y Otras Bebidas",
-      "nameEn": "Teas & Refreshers",
+      "id": "tea_drinks",
+      "nameEs": "Tés Rishi y Otras Bebidas",
+      "nameEn": "Teas & Drinks",
       "icon": "Coffee"
     },
     {
-      "id": "sandwiches-bites",
-      "nameEs": "Sándwiches y Bocados Salados",
-      "nameEn": "Sandwiches & Savory Bites",
+      "id": "smoothies",
+      "nameEs": "Batidos, Smoothies y Helados",
+      "nameEn": "Smoothies & Shakes",
       "icon": "Utensils"
     },
     {
-      "id": "pastries-sweets",
-      "nameEs": "Repostería y Panadería",
-      "nameEn": "Fresh Pastries & Sweets",
-      "icon": "Utensils"
-    },
-    {
-      "id": "kids-corner",
-      "nameEs": "Menú Infantil",
-      "nameEn": "Kids Corner",
-      "icon": "Smile"
+      "id": "food",
+      "nameEs": "Comida, Sandwiches y Flatbreads",
+      "nameEn": "Food, Sandwiches & Flatbreads",
+      "icon": "Sandwich"
     }
   ],
   "products": [
     {
-      "id": "honey-joes-01",
-      "categoryId": "draft-coffee",
-      "nameEs": "Latte de Grifo La Colombe (Draft Latte)",
-      "nameEn": "La Colombe Draft Latte",
-      "descriptionEs": "Famoso café con leche sedoso tirado de grifo con nitrógeno para una textura suave, dulce y cremosa sin azúcares añadidos.",
-      "descriptionEn": "Signature nitro-infused cold pressed espresso and milk served on tap, offering a naturally sweet, micro-froth texture.",
-      "price": "$5.75",
+      "id": "honey-joes-family-coffeehouse-01",
+      "categoryId": "specials",
+      "nameEs": "Latte Firma Honey Joe's",
+      "nameEn": "Honey Joe's Signature Latte",
+      "descriptionEs": "El latte favorito de la casa, elaborado con un doble shot de espresso La Colombe, jarabe de miel orgánica y canela.",
+      "descriptionEn": "House favorite latte crafted with double shot of La Colombe espresso, organic honey syrup, and cinnamon",
+      "price": "$6.25",
       "popular": true,
       "badge": "Signature",
       "tags": [
-        "La Colombe",
-        "Nitro",
-        "Bebida Fría"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-02",
-      "categoryId": "draft-coffee",
-      "nameEs": "Cold Brew Clásico de Grifo",
-      "nameEn": "Draft Cold Brew Coffee",
-      "descriptionEs": "Café infusionado en frío durante 16 horas con granos premium La Colombe. Suave, achocolatado y refrescante.",
-      "descriptionEn": "16-hour slow-steeped La Colombe specialty cold brew served chilled on tap. Bold, rich, and smooth finish.",
-      "price": "$4.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegano",
-        "Sin Azúcar",
-        "Refrescante"
+        "La Colombe"
       ],
       "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "honey-joes-03",
-      "categoryId": "draft-coffee",
-      "nameEs": "Espresso Artesanal Doble",
-      "nameEn": "Handcrafted Double Espresso",
-      "descriptionEs": "Extracción doble de espresso con crema dorada y notas ricas a caramelo y cacao tostado.",
-      "descriptionEn": "Double shot of rich espresso with golden crema, featuring notes of roasted cocoa and sweet caramel.",
+      "id": "honey-joes-family-coffeehouse-02",
+      "categoryId": "specials",
+      "nameEs": "La Colombe Draft Latte de Grifo",
+      "nameEn": "La Colombe Draft Latte on Tap",
+      "descriptionEs": "El latte de leche de avena insignia de La Colombe, infusionado con óxido nitroso para una textura de microespuma sedosa.",
+      "descriptionEn": "La Colombe's signature oat milk latte on tap infused with nitrous oxide for silky microfoam texture",
+      "price": "$6.50",
+      "popular": true,
+      "badge": "Signature",
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-03",
+      "categoryId": "specials",
+      "nameEs": "Pure Black Cold Brew de Grifo",
+      "nameEn": "Pure Black Cold Brew on Tap",
+      "descriptionEs": "Café cold brew de La Colombe, infusionado en frío y servido fresco y refrescante directamente del grifo.",
+      "descriptionEn": "Steeped La Colombe cold brew served crisp and refreshing on draft",
+      "price": "$5.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-04",
+      "categoryId": "specials",
+      "nameEs": "Black & Tan de Grifo",
+      "nameEn": "Black & Tan Draft",
+      "descriptionEs": "Una combinación en capas de nuestro Pure Black Cold Brew y el sedoso Draft Latte.",
+      "descriptionEn": "Layered draft pour combining Pure Black Cold Brew and silky Draft Latte",
+      "price": "$6.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-05",
+      "categoryId": "specials",
+      "nameEs": "Affogato Clásico",
+      "nameEn": "Classic Affogato",
+      "descriptionEs": "Una cremosa bola de helado de vainilla ahogada en un doble shot caliente de espresso La Colombe.",
+      "descriptionEn": "A creamy scoop of vanilla ice cream drowned in a hot double shot of La Colombe espresso",
+      "price": "$5.75",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-06",
+      "categoryId": "coffee",
+      "nameEs": "Doble Shot de Espresso La Colombe",
+      "nameEn": "La Colombe Espresso Double Shot",
+      "descriptionEs": "Doble shot de nuestro rico y artesanal espresso La Colombe.",
+      "descriptionEn": "Double shot of rich, artisanal La Colombe espresso",
+      "price": "$3.50",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-07",
+      "categoryId": "coffee",
+      "nameEs": "Caffè Americano",
+      "nameEn": "Caffe Americano",
+      "descriptionEs": "Doble shot de espresso La Colombe diluido con agua caliente.",
+      "descriptionEn": "Double shot of La Colombe espresso diluted with hot water",
+      "price": "$4.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-08",
+      "categoryId": "coffee",
+      "nameEs": "Café de Filtro (Mezcla La Colombe)",
+      "nameEn": "Drip Coffee (La Colombe Blend)",
+      "descriptionEs": "Café de especialidad de la casa, recién preparado con la mezcla exclusiva de La Colombe.",
+      "descriptionEn": "Freshly brewed La Colombe specialty house blend coffee",
       "price": "$3.50",
       "popular": false,
       "badge": null,
       "tags": [
-        "Clásico",
-        "Intenso"
+        "La Colombe"
       ],
       "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "honey-joes-04",
-      "categoryId": "draft-coffee",
-      "nameEs": "Latte con Miel de la Casa (Honey Joe's Latte)",
-      "nameEn": "Honey Joe’s House Honey Latte",
-      "descriptionEs": "Espresso doble combinado con leche vaporizada, miel pura artesanal y un toque aromático de canela.",
-      "descriptionEn": "Double espresso blended with silky steamed milk, pure artisanal honey, and a hint of warm cinnamon.",
-      "price": "$5.95",
-      "popular": true,
-      "badge": "House Favorite",
-      "tags": [
-        "Artesanal",
-        "Dulce",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-05",
-      "categoryId": "tea-beverages",
-      "nameEs": "Matcha Latte Ceremonial",
-      "nameEn": "Ceremonial Matcha Green Tea Latte",
-      "descriptionEs": "Té verde matcha japonés de grado ceremonial emulsionado con su elección de leche vaporizada o con hielo.",
-      "descriptionEn": "Premium Japanese ceremonial grade matcha whisked to perfection with your choice of steamed or iced milk.",
-      "price": "$5.85",
-      "popular": true,
-      "badge": "Antioxidante",
-      "tags": [
-        "Té Verde",
-        "Saludable",
-        "Personalizable"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-06",
-      "categoryId": "tea-beverages",
-      "nameEs": "Chai Latte Especiado",
-      "nameEn": "Spiced Chai Tea Latte",
-      "descriptionEs": "Té negro infusionado con cardamomo, canela, jengibre, clavo y leche vaporizada aterciopelada.",
-      "descriptionEn": "Robust black tea brewed with crushed cardamom, cinnamon, ginger, cloves, and steamed velvety milk.",
+      "id": "honey-joes-family-coffeehouse-09",
+      "categoryId": "coffee",
+      "nameEs": "Caffè Latte",
+      "nameEn": "Caffe Latte",
+      "descriptionEs": "Doble shot de espresso combinado con leche vaporizada aterciopelada y una fina capa de espuma.",
+      "descriptionEn": "Double shot of espresso combined with velvety steamed milk and a thin layer of foam",
       "price": "$5.50",
+      "popular": true,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-10",
+      "categoryId": "coffee",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "Partes iguales de espresso, leche vaporizada y microespuma ligera.",
+      "descriptionEn": "Equal parts espresso, steamed milk, and airy microfoam",
+      "price": "$5.00",
       "popular": false,
       "badge": null,
       "tags": [
-        "Especiado",
-        "Reconfortante"
+        "La Colombe"
       ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "honey-joes-07",
-      "categoryId": "sandwiches-bites",
-      "nameEs": "Tostada de Aguacate con Microbrotes",
-      "nameEn": "Artisanal Avocado Toast",
-      "descriptionEs": "Pan de masa madre tostado cubierto con puré de aguacate fresco, limón, hojuelas de chile rojo y microbrotes locales.",
-      "descriptionEn": "Thick-sliced toasted artisan sourdough topped with crushed avocado, fresh lemon juice, chili flakes, and microgreens.",
-      "price": "$9.75",
-      "popular": true,
-      "badge": "Healthy Choice",
-      "tags": [
-        "Vegetariano",
-        "Fresco",
-        "Desayuno"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-08",
-      "categoryId": "sandwiches-bites",
-      "nameEs": "Sándwich de Desayuno en Pan Brioche",
-      "nameEn": "Brioche Breakfast Sandwich",
-      "descriptionEs": "Huevo esponjoso al estilo soufflé, queso cheddar añejo y tocino crujiente servido en un suave pan brioche tostado.",
-      "descriptionEn": "Fluffy baked egg soufflé, aged cheddar cheese, and crispy applewood bacon served on a warm toasted brioche bun.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Proteína",
-        "Desayuno Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-09",
-      "categoryId": "sandwiches-bites",
-      "nameEs": "Panini de Pavo, Pesto y Havarti",
-      "nameEn": "Turkey, Havarti & Pesto Panini",
-      "descriptionEs": "Pechuga de pavo asada, queso Havarti fundido, espinacas tiernas y pesto de albahaca en pan ciabatta prensado al grill.",
-      "descriptionEn": "Oven-roasted turkey breast, melted creamy Havarti, fresh spinach, and nut-free basil pesto pressed on artisan ciabatta.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Almuerzo",
-        "Prensado Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-10",
-      "categoryId": "pastries-sweets",
-      "nameEs": "Croissant Francés de Mantequilla",
-      "nameEn": "Classic French Butter Croissant",
-      "descriptionEs": "Hojaldre tradicional horneado fresco todas las mañanas con mantequilla europea de alta calidad, ligero y crujiente.",
-      "descriptionEn": "Traditional flaky, golden-baked all-butter croissant prepared fresh daily with authentic European butter.",
-      "price": "$4.25",
-      "popular": true,
-      "badge": "Horneado Diario",
-      "tags": [
-        "Panadería",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "honey-joes-11",
-      "categoryId": "pastries-sweets",
-      "nameEs": "Scone de Arándanos y Limón",
-      "nameEn": "Blueberry Lemon Glazed Scone",
-      "descriptionEs": "Scone tierno relleno de arándanos silvestres y bañado con un glaseado ligero de limón fresco.",
-      "descriptionEn": "Tender bakery scone loaded with wild blueberries and finished with a zesty fresh lemon sugar drizzle.",
+      "id": "honey-joes-family-coffeehouse-11",
+      "categoryId": "coffee",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "Doble shot de espresso cortado con un volumen igual de leche tibia vaporizada.",
+      "descriptionEn": "Double shot of espresso cut with an equal volume of warm steamed milk",
       "price": "$4.50",
       "popular": false,
       "badge": null,
       "tags": [
-        "Dulce",
-        "Frutal"
+        "La Colombe"
       ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "honey-joes-12",
-      "categoryId": "kids-corner",
-      "nameEs": "Grilled Cheese Infantil con Fruta",
-      "nameEn": "Kids Classic Grilled Cheese & Fresh Fruit",
-      "descriptionEs": "Sándwich de queso derretido en pan blanco suave cortado en triángulos, acompañado de gajos de manzana fresca.",
-      "descriptionEn": "Melted American & mild cheddar on soft toast cut into kid-friendly triangles, served with sliced fresh apples.",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Kids Favorite",
+      "id": "honey-joes-family-coffeehouse-12",
+      "categoryId": "coffee",
+      "nameEs": "Caffè Macchiato",
+      "nameEn": "Caffe Macchiato",
+      "descriptionEs": "Doble shot de espresso marcado con una pequeña nube de espuma de leche vaporizada.",
+      "descriptionEn": "Double shot of espresso marked with a small dollop of steamed milk foam",
+      "price": "$4.25",
+      "popular": false,
+      "badge": null,
       "tags": [
-        "Para Niños",
-        "Reconfortante"
+        "La Colombe"
       ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-13",
+      "categoryId": "coffee",
+      "nameEs": "Caffè Mocha",
+      "nameEn": "Caffe Mocha",
+      "descriptionEs": "Rico espresso y leche vaporizada mezclados con un decadente jarabe de chocolate oscuro.",
+      "descriptionEn": "Rich espresso and steamed milk swirled with decadent dark chocolate syrup",
+      "price": "$6.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
       ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-14",
+      "categoryId": "coffee",
+      "nameEs": "Caja de Café para Llevar (96 oz)",
+      "nameEn": "Box of Coffee to Go (96 oz)",
+      "descriptionEs": "Contenedor de 96 oz con café La Colombe recién hecho; rinde para 8-10 personas, incluye vasos y condimentos.",
+      "descriptionEn": "Bulk 96 oz tote of fresh brewed La Colombe coffee, serves 8-10 with cups and condiments",
+      "price": "$28.00",
+      "popular": false,
+      "badge": null,
+      "tags": [
+        "La Colombe"
+      ],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-15",
+      "categoryId": "tea_drinks",
+      "nameEs": "Latte de Chai Masala Rishi",
+      "nameEn": "Rishi Masala Chai Tea Latte",
+      "descriptionEs": "Especias de chai Masala orgánico de Rishi infusionadas lentamente y combinadas con leche vaporizada.",
+      "descriptionEn": "Slow-brewed organic Rishi Masala chai spices combined with steamed milk",
+      "price": "$5.75",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-16",
+      "categoryId": "tea_drinks",
+      "nameEs": "Latte de Matcha Rishi",
+      "nameEn": "Rishi Matcha Latte",
+      "descriptionEs": "Té verde matcha japonés orgánico sin azúcar, batido con leche vaporizada aterciopelada.",
+      "descriptionEn": "Whisked organic unsweetened Japanese Rishi matcha green tea with velvety steamed milk",
+      "price": "$6.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-17",
+      "categoryId": "tea_drinks",
+      "nameEs": "Té Caliente Artesanal Rishi",
+      "nameEn": "Rishi Artisan Hot Tea",
+      "descriptionEs": "Selección de sobres de té orgánico premium de Rishi.",
+      "descriptionEn": "Selection of premium organic Rishi hot tea sachets",
+      "price": "$3.75",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-18",
+      "categoryId": "tea_drinks",
+      "nameEs": "Té Helado Fresco Rishi",
+      "nameEn": "Rishi Fresh Iced Tea",
+      "descriptionEs": "A elegir entre té verde cítrico, té negro de melocotón o hibisco con frutos del bosque (sin cafeína).",
+      "descriptionEn": "Choice of Green Tea Citrus, Peach Black, or caffeine-free Wildberry Hibiscus",
+      "price": "$4.25",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-19",
+      "categoryId": "tea_drinks",
+      "nameEs": "Chocolate Caliente Intenso",
+      "nameEn": "Rich Hot Chocolate",
+      "descriptionEs": "Decadente jarabe de chocolate derretido al vapor con leche y cubierto con crema batida.",
+      "descriptionEn": "Decadent melted chocolate syrup steamed with milk and topped with whipped cream",
+      "price": "$4.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-20",
+      "categoryId": "tea_drinks",
+      "nameEs": "Leche Vaporizada con Sabor",
+      "nameEn": "Steamed Flavored Milk Steamer",
+      "descriptionEs": "Confortante leche tibia vaporizada con su elección de jarabe de vainilla, caramelo, canela o avellana.",
+      "descriptionEn": "Comforting warm steamed milk with choice of vanilla, caramel, cinnamon, or hazelnut syrup",
+      "price": "$3.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-21",
+      "categoryId": "smoothies",
+      "nameEs": "Batido Peachy Green",
+      "nameEn": "Peachy Green Smoothie",
+      "descriptionEs": "Espinacas frescas, melocotones jugosos, plátano maduro, agua de coco y zumo de naranja.",
+      "descriptionEn": "Fresh baby spinach, juicy peaches, ripe banana, coconut water, and orange juice",
+      "price": "$8.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-22",
+      "categoryId": "smoothies",
+      "nameEs": "Batido Beary Good Berry",
+      "nameEn": "Beary Good Berry Smoothie",
+      "descriptionEs": "Mezcla de frutos rojos ricos en antioxidantes, plátano, leche de almendras y zumo de naranja.",
+      "descriptionEn": "Antioxidant-rich mixed berries, banana, almond milk, and orange juice",
+      "price": "$8.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-23",
+      "categoryId": "smoothies",
+      "nameEs": "Batido Bowtie de Plátano y Canela",
+      "nameEn": "Bowtie Banana Cinnamon Smoothie",
+      "descriptionEs": "Plátano fresco, leche, jarabe de miel orgánica y canela molida.",
+      "descriptionEn": "Fresh banana, milk, organic honey syrup, and ground cinnamon",
+      "price": "$8.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-24",
+      "categoryId": "smoothies",
+      "nameEs": "Batido de Café Cold Brew",
+      "nameEn": "Cold Brew Coffee Milkshake",
+      "descriptionEs": "Rico helado de vainilla mezclado con concentrado de café Pure Black cold brew.",
+      "descriptionEn": "Rich vanilla ice cream blended with concentrated Pure Black cold brew",
+      "price": "$8.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-25",
+      "categoryId": "smoothies",
+      "nameEs": "Batido de Té Chai",
+      "nameEn": "Chai Tea Milkshake",
+      "descriptionEs": "Helado de vainilla batido con las especias del té Rishi Masala chai.",
+      "descriptionEn": "Vanilla ice cream spun with Rishi Masala chai tea spices",
+      "price": "$8.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-26",
+      "categoryId": "smoothies",
+      "nameEs": "Batido de Caramelo y Plátano",
+      "nameEn": "Caramel Banana Milkshake",
+      "descriptionEs": "Cremoso helado de vainilla mezclado con plátano maduro y un rico chorrito de caramelo.",
+      "descriptionEn": "Creamy vanilla ice cream blended with ripe banana and rich caramel drizzle",
+      "price": "$8.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-27",
+      "categoryId": "smoothies",
+      "nameEs": "Batido de Helado Clásico",
+      "nameEn": "Classic Ice Cream Milkshake",
+      "descriptionEs": "Batido artesanal a elegir entre vainilla, chocolate o caramelo.",
+      "descriptionEn": "Hand-spun milkshake in your choice of vanilla, chocolate, or caramel",
+      "price": "$7.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-28",
+      "categoryId": "smoothies",
+      "nameEs": "Sundae de Helado de Dos Bolas",
+      "nameEn": "Double Scoop Ice Cream Sundae",
+      "descriptionEs": "Dos bolas de helado de vainilla cubiertas con salsa de chocolate o caramelo y crema batida.",
+      "descriptionEn": "Two scoops of vanilla ice cream topped with chocolate or caramel sauce and whipped cream",
+      "price": "$6.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-29",
+      "categoryId": "food",
+      "nameEs": "Bollería Artesanal Wave Hill Breads",
+      "nameEn": "Wave Hill Breads Artisanal Pastry",
+      "descriptionEs": "Selección diaria de bollería artesanal recién hecha de Wave Hill Breads de Norwalk.",
+      "descriptionEn": "Daily selection of fresh handmade artisanal pastries from Norwalk's Wave Hill Breads",
+      "price": "$4.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-30",
+      "categoryId": "food",
+      "nameEs": "Croissant de Salchicha, Huevo y Queso",
+      "nameEn": "Sausage, Egg & Cheese Croissant",
+      "descriptionEs": "Sabrosa salchicha, huevo esponjoso y queso americano fundido en un croissant de mantequilla tostado.",
+      "descriptionEn": "Savory sausage patty, fluffy egg, and melted American cheese on a toasted butter croissant",
+      "price": "$7.50",
+      "popular": true,
+      "badge": "Signature",
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-31",
+      "categoryId": "food",
+      "nameEs": "Sándwich de Pavo, Bacon y Aguacate",
+      "nameEn": "Turkey Bacon Avocado Sandwich",
+      "descriptionEs": "Pavo asado en lonchas, bacon crujiente, tomate maduro y crema de aguacate de la casa en pan multigrano tostado.",
+      "descriptionEn": "Sliced roasted turkey, crispy bacon, ripe tomato, and house avocado spread on toasted multigrain bread",
+      "price": "$11.50",
+      "popular": true,
+      "badge": "Signature",
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-32",
+      "categoryId": "food",
+      "nameEs": "Club Melt de Pavo y Sriracha",
+      "nameEn": "Sriracha Turkey Club Melt",
+      "descriptionEs": "Sándwich multigrano fundido al horno con pavo asado, bacon, queso cheddar, espinacas, cebolla roja y mayonesa de sriracha.",
+      "descriptionEn": "Warm oven-melted multigrain sandwich with roasted turkey, bacon, cheddar, spinach, red onion, and zesty sriracha mayo",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-33",
+      "categoryId": "food",
+      "nameEs": "Sándwich Caprese Fresco",
+      "nameEn": "Fresh Caprese Sandwich",
+      "descriptionEs": "Mozzarella fresca, pesto de albahaca, rodajas de tomate maduro y espinacas prensadas en pan multigrano.",
+      "descriptionEn": "Fresh mozzarella, basil pesto, ripe sliced tomatoes, and baby spinach pressed on multigrain bread",
+      "price": "$10.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-34",
+      "categoryId": "food",
+      "nameEs": "Flatbread de Pizza Clásica",
+      "nameEn": "Classic Pizza Flatbread",
+      "descriptionEs": "Base de pan plano crujiente con salsa marinara sabrosa y mozzarella fundida (opcional con pepperoni).",
+      "descriptionEn": "Crispy flatbread crust topped with savory marinara sauce and melted mozzarella (pepperoni optional)",
+      "price": "$10.00",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-35",
+      "categoryId": "food",
+      "nameEs": "Flatbread de Tomate, Albahaca y Balsámico",
+      "nameEn": "Tomato Basil Balsamic Flatbread",
+      "descriptionEs": "Base de aceite de oliva y ajo con quesos fundidos, tomates uva dulces, albahaca fresca y reducción de balsámico.",
+      "descriptionEn": "Garlic olive oil base with melted cheeses, sweet grape tomatoes, fresh basil, and balsamic reduction drizzle",
+      "price": "$10.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-36",
+      "categoryId": "food",
+      "nameEs": "Flatbread de Pollo BBQ",
+      "nameEn": "BBQ Chicken Flatbread",
+      "descriptionEs": "Salsa BBQ intensa, mezcla de quesos fundidos, pechuga de pollo sazonada, cebolla roja y ajo.",
+      "descriptionEn": "Tangy BBQ sauce, melted cheese blend, seasoned diced chicken breast, red onion, and garlic",
+      "price": "$11.50",
+      "popular": false,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-joes-family-coffeehouse-37",
+      "categoryId": "food",
+      "nameEs": "Tostada de Aguacate con Mozzarella",
+      "nameEn": "Avocado Toast with Mozzarella",
+      "descriptionEs": "Aguacate triturado, semillas de girasol tostadas y mozzarella fresca sobre pan artesanal.",
+      "descriptionEn": "Crushed avocado mash, toasted sunflower seeds, and fresh mozzarella on artisan toast",
+      "price": "$9.50",
+      "popular": true,
+      "badge": null,
+      "tags": [],
+      "allergens": [],
       "ctaType": "in_store"
     }
   ],
