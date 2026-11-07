@@ -66,7 +66,7 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
     });
   }
 
-  const hoursStr = `Monday – Friday: ${storeInfo.hours?.monday_friday || "Open"}\nSaturday: ${storeInfo.hours?.saturday || "Open"}\nSunday: ${storeInfo.hours?.sunday || "Open"}`;
+  const hoursStr = `Monday – Friday: ${storeInfo.hours?.monday_friday || "not listed (please call)"}\nSaturday: ${storeInfo.hours?.saturday || "not listed (please call)"}\nSunday: ${storeInfo.hours?.sunday || "not listed (please call)"}`;
 
   return `You are the official, intelligent bilingual AI Concierge & Assistant for "${storeInfo.name}".
 Your role is to assist guests and answer questions using EXCLUSIVELY the verified knowledge base and official menu of ${storeInfo.name} provided below.
@@ -189,15 +189,15 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
   ) {
     if (lowerMsg.includes("sunday") || lowerMsg.includes("domingo")) {
       return isEnglish
-        ? `On Sundays, ${info.name} is open: ${info.hours?.sunday || "Open"}.`
+        ? `On Sundays, ${info.name} is open: ${info.hours?.sunday || "not listed (please call)"}.`
         : `Los domingos, ${info.name} atiende en el horario de: ${info.hours?.sunday || "Abierto"}.`;
     }
     if (lowerMsg.includes("saturday") || lowerMsg.includes("sabado") || lowerMsg.includes("sábado")) {
       return isEnglish
-        ? `On Saturdays, ${info.name} is open: ${info.hours?.saturday || "Open"}.`
+        ? `On Saturdays, ${info.name} is open: ${info.hours?.saturday || "not listed (please call)"}.`
         : `Los sábados, ${info.name} atiende en el horario de: ${info.hours?.saturday || "Abierto"}.`;
     }
-    const fullHours = `Mon-Fri: ${info.hours?.monday_friday || "Open"}, Sat: ${info.hours?.saturday || "Open"}, Sun: ${info.hours?.sunday || "Open"}`;
+    const fullHours = `Mon-Fri: ${info.hours?.monday_friday || "not listed (please call)"}, Sat: ${info.hours?.saturday || "not listed (please call)"}, Sun: ${info.hours?.sunday || "not listed (please call)"}`;
     return isEnglish
       ? `Operating Hours for ${info.name}: ${fullHours}.`
       : `Horario de atención para ${info.name}: ${fullHours}.`;
@@ -349,7 +349,7 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
   // 10. DEFAULT SUMMARY
   const topDishes = products.slice(0, 3).map((i) => (isEnglish ? i.nameEn : i.nameEs)).join(", ");
   return isEnglish
-    ? `Welcome to ${info.name}! We are located at ${info.address}. Feel free to ask about our hours (${info.hours?.monday_friday || "Open"}), recommendations like ${topDishes}, or any item on our menu!`
+    ? `Welcome to ${info.name}! We are located at ${info.address}. Feel free to ask about our hours (${info.hours?.monday_friday || "not listed (please call)"}), recommendations like ${topDishes}, or any item on our menu!`
     : `¡Bienvenido a ${info.name}! Estamos ubicados en ${info.address}. Pregúnteme por nuestros horarios (${info.hours?.monday_friday || "Abierto"}), recomendaciones como ${topDishes}, o cualquier plato del menú.`;
 }
 
