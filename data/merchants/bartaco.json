@@ -2,27 +2,21 @@
   "storeInfo": {
     "id": "bartaco",
     "name": "Bartaco",
-    "tagline": "fresh, upscale street food inspired by beach culture / comida callejera fresca y elegante inspirada en la cultura de playa",
-    "address": "20 Wilton Road, Westport, CT 06880",
+    "tagline": "Street-food tacos and rice bowls in Westport | Tacos estilo callejero y bowls de arroz en Westport",
+    "address": "20 Wilton Rd, Westport, CT 06880",
     "phone": "(203) 222-8226",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:00 AM - 11:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "monday_friday": "11:00 AM - late (call for closing time)",
+      "saturday": "11:00 AM - late (call for closing time)",
+      "sunday": "11:00 AM - late (call for closing time)"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
       "Delivery",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "High Tide Happy Hour"
+      "Bar",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -34,314 +28,1240 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Botanas",
-      "nameEn": "Appetizers & Starters",
+      "id": "not-tacos",
+      "nameEs": "No son tacos",
+      "nameEn": "Not Tacos",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Tacos Destacados",
-      "nameEn": "Featured Tacos",
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "tacos-each-pick-up-only",
+      "nameEs": "Tacos (cada uno, solo para llevar)",
+      "nameEn": "Tacos (each, pick-up only)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "taco-packs-4-or-8-tacos",
+      "nameEs": "Paquetes de tacos (4 u 8 tacos)",
+      "nameEn": "Taco Packs (4 or 8 tacos)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rice-bowls",
+      "nameEs": "Platos de Arroz",
+      "nameEn": "Rice Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú Infantil",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "family-packs",
+      "nameEs": "Paquetes Familiares",
+      "nameEn": "Family Packs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-sauces",
+      "nameEs": "Salsas Picantes",
+      "nameEn": "Hot Sauces",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails-take-home",
+      "nameEs": "Cócteles (para llevar)",
+      "nameEn": "Cocktails (take home)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-bottle",
+      "nameEs": "Vino (por botella)",
+      "nameEn": "Wine (by the bottle)",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "icon": "Coffee",
-      "nameEn": "Drinks & Beverages"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "bartaco-01",
-      "categoryId": "appetizers",
-      "nameEs": "Guacamole y Chips",
-      "nameEn": "Guac + Chips",
-      "descriptionEs": "Aguacate machacado a mano con jugo de lima fresco, chiles serranos, cebolla y cilantro, servido con totopos crujientes.",
-      "descriptionEn": "Hand-mashed avocado with fresh lime juice, serrano chiles, onions, and cilantro, served with crispy corn tortilla chips.",
+      "id": "trio",
+      "categoryId": "not-tacos",
+      "nameEs": "trío",
+      "nameEn": "trio",
+      "descriptionEs": "Una porción de guacamole majado a mano con salsa roja picante + salsa verde picante con vegetales carbonizados y tomatillos, servido con totopos de maíz",
+      "descriptionEn": "A portion of hand-mashed guacamole with spicy red salsa + spicy green salsa w/ charred veggies + tomatillos, served w/ tortilla chips",
+      "price": "small $11.90 / large $14.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guacamole-chips",
+      "categoryId": "not-tacos",
+      "nameEs": "guacamole + totopos",
+      "nameEn": "guacamole + chips",
+      "descriptionEs": "Aguacate majado a mano, jugo de limón, chiles serranos, cebollas y cilantro",
+      "descriptionEn": "Hand-mashed avocado, lime juice, serrano chiles, onions and cilantro",
+      "price": "small $6.95 / large $10.80 / family style $38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salsa-roja-chips",
+      "categoryId": "not-tacos",
+      "nameEs": "salsa roja + totopos",
+      "nameEn": "salsa roja + chips",
+      "descriptionEs": "Una salsa roja picante con vegetales carbonizados y tomatillos",
+      "descriptionEn": "A spicy red salsa w/ charred veggies + tomatillos",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salsa-verde-chips",
+      "categoryId": "not-tacos",
+      "nameEs": "salsa verde + totopos",
+      "nameEn": "salsa verde + chips",
+      "descriptionEs": "Una salsa verde picante con vegetales carbonizados y tomatillos",
+      "descriptionEn": "A spicy green salsa w/ charred veggies + tomatillos",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotija-corn-dip",
+      "categoryId": "not-tacos",
+      "nameEs": "dip de maíz con cotija",
+      "nameEn": "cotija corn dip",
+      "descriptionEs": "Dip cremoso inspirado en el elote con queso cotija, jalapeño asado y maíz dulce",
+      "descriptionEn": "Creamy elote-inspired dip with cotija cheese, roasted jalapeño and sweet corn",
       "price": "$7.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-02",
-      "categoryId": "appetizers",
-      "nameEs": "Dip de Maíz Cotija",
-      "nameEn": "Cotija Corn Dip",
-      "descriptionEs": "Dip cremoso inspirado en el elote tradicional con queso cotija, jalapeño asado y maíz dulce.",
-      "descriptionEn": "Creamy elote-inspired dip with cotija cheese, roasted jalapeño, and sweet corn.",
-      "price": "$6.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "plantains",
+      "categoryId": "not-tacos",
+      "nameEs": "plátanos",
+      "nameEn": "plantains",
+      "descriptionEs": "Plátanos fritos sazonados con sal y pimienta de cayena",
+      "descriptionEn": "Fried plantains tossed in salt and cayenne pepper",
+      "price": "$5.55",
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-03",
-      "categoryId": "appetizers",
-      "nameEs": "Salsa Roja y Chips",
-      "nameEn": "Salsa Roja + Chips",
-      "descriptionEs": "Salsa roja artesanal de la casa acompañada de totopos de maíz recién hechos.",
-      "descriptionEn": "House-made artisanal red salsa served with freshly made corn tortilla chips.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "cucumber-salad",
+      "categoryId": "not-tacos",
+      "nameEs": "ensalada de pepino",
+      "nameEn": "cucumber salad",
+      "descriptionEs": "Pepinos marinados en ajo, hojuelas de chile rojo, cilantro y vinagre de arroz",
+      "descriptionEn": "Cucumbers tossed in garlic, red pepper flakes, cilantro and rice wine vinegar",
+      "price": "small $3.75 / large $7.30 / family style $25.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-04",
-      "categoryId": "mains",
-      "nameEs": "Taco de Pollo Tinga",
-      "nameEn": "Chicken Tinga Taco",
-      "descriptionEs": "Pollo oscuro desmenuzado en salsa ahumada y picante de chile morita, cubierto con cebolla morada encurtida y cilantro.",
-      "descriptionEn": "Pulled dark meat chicken in a smoky + spicy morita chile tinga sauce w/ pickled red onion + cilantro.",
-      "price": "$4.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "duck-birria-quesadilla",
+      "categoryId": "not-tacos",
+      "nameEs": "quesadilla de birria de pato",
+      "nameEn": "duck birria quesadilla",
+      "descriptionEs": "Pato tierno desmenuzado con quesos oaxaca y cotija en una tortilla de maíz crujiente, servido con un caldo de pato estilo birria para dipear",
+      "descriptionEn": "Tender shredded duck with oaxaca and cotija cheeses in a crispy corn tortilla shell, served with a birria-style duck broth for dipping",
+      "price": "$8.55",
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-05",
-      "categoryId": "mains",
-      "nameEs": "Taco de Carnitas de Puerco Mojo",
-      "nameEn": "Mojo Pork Carnitas Taco",
-      "descriptionEs": "Cerdo desmenuzado crujiente y jugoso, sellado con salsa mojo picante, dulce y picante, cubierto con salsa de tomatillo, cebolla y cilantro.",
-      "descriptionEn": "Crispy + juicy shredded pork, seared w/ tangy, sweet, spicy mojo sauce, topped w/ tomatillo sauce, onion, + cilantro.",
+      "id": "red-chorizo-arayes",
+      "categoryId": "not-tacos",
+      "nameEs": "arayes de chorizo rojo",
+      "nameEn": "red chorizo arayes",
+      "descriptionEs": "Tortilla de harina crujiente rellena de chorizo rojo con inspiración libanesa, acompañada de labneh y salsa de ají verde",
+      "descriptionEn": "Lebanese-inspired crispy, red chorizo-stuffed flour tortilla with labneh and aji verde sauce",
+      "price": "$8.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ceviche",
+      "categoryId": "not-tacos",
+      "nameEs": "ceviche",
+      "nameEn": "ceviche",
+      "descriptionEs": "Ceviche de bacalao y camarón con un toque picante de chiles serranos y cayena, sobre aguacate cremoso con cebolla y tomate roma",
+      "descriptionEn": "Cod + shrimp ceviche with a slight heat from serrano peppers and cayenne, on creamy avocado with onion + roma tomato",
+      "price": "$9.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macha-tuna-crudo",
+      "categoryId": "not-tacos",
+      "nameEs": "crudo de atún macha",
+      "nameEn": "macha tuna crudo",
+      "descriptionEs": "Atún aleta amarilla en cubos, aguacate, salsa macha, adobo de cítricos y soya + chalotes crujientes",
+      "descriptionEn": "Diced ahi tuna, avocado, salsa macha, citrus-soy marinade + crispy shallots",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-half-chicken",
+      "categoryId": "not-tacos",
+      "nameEs": "medio pollo asado",
+      "nameEn": "roasted half chicken",
+      "descriptionEs": "Frotado con sal y pimienta; ajo y romero",
+      "descriptionEn": "Salt and pepper rub; garlic and rosemary",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-salad",
+      "categoryId": "not-tacos",
+      "nameEs": "ensalada picada",
+      "nameEn": "chopped salad",
+      "descriptionEs": "Lechuga romana picada, zanahorias encurtidas, totopos triturados, queso fresco, cilantro, aguacate, vinagreta de cilantro y limón",
+      "descriptionEn": "Chopped romaine, pickled carrots, crushed tortilla chips, queso fresco, cilantro, avocado, cilantro-lime vinaigrette",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-kale-caesar",
+      "categoryId": "not-tacos",
+      "nameEs": "caesar pequeña de col rizada",
+      "nameEn": "small kale caesar",
+      "descriptionEs": "Ensalada mediana de col rizada con aderezo caesar al limón, queso cotija y migas de pan tostadas sin gluten",
+      "descriptionEn": "Kale side salad with a lemony caesar dressing, cotija cheese and toasted gluten-free breadcrumbs",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-kale-caesar",
+      "categoryId": "not-tacos",
+      "nameEs": "caesar grande de col rizada",
+      "nameEn": "large kale caesar",
+      "descriptionEs": "Ensalada de col rizada con aderezo caesar al limón, queso cotija y migas de pan tostadas sin gluten",
+      "descriptionEn": "Kale salad with a lemony caesar dressing, cotija cheese and toasted gluten-free breadcrumbs",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tortilla-soup",
+      "categoryId": "not-tacos",
+      "nameEs": "sopa de tortilla con pollo",
+      "nameEn": "chicken tortilla soup",
+      "descriptionEs": "Con maíz, poblano asado, cubierta con queso oaxaca, totopos y cilantro",
+      "descriptionEn": "With corn, roasted poblano, topped with oaxaca cheese, tortilla chips and cilantro",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-tortillas",
+      "categoryId": "not-tacos",
+      "nameEs": "tortillas suaves",
+      "nameEn": "soft tortillas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brown-rice",
+      "categoryId": "sides",
+      "nameEs": "arroz integral",
+      "nameEn": "brown rice",
+      "descriptionEs": "Al vapor y salado",
+      "descriptionEn": "Steamed and salted",
+      "price": "small $3.75 / large $7.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-beans-w-sofrito",
+      "categoryId": "sides",
+      "nameEs": "frijoles negros con sofrito",
+      "nameEn": "black beans w/ sofrito",
+      "descriptionEs": "Frijoles negros guisados en un sofrito de tomate, ajo y cebolla",
+      "descriptionEn": "Black beans stewed in a tomato, garlic, onion sofrito",
+      "price": "small $3.75 / large $7.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kimchi",
+      "categoryId": "sides",
+      "nameEs": "kimchi",
+      "nameEn": "kimchi",
+      "descriptionEs": "Condimento picante de estilo coreano con col napa, zanahoria y cebollino",
+      "descriptionEn": "Spicy Korean-style condiment with napa cabbage, carrot and green onion",
+      "price": "small $3.75 / large $7.30 / family style $25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-fruit-tajin",
+      "categoryId": "sides",
+      "nameEs": "fruta de temporada + tajín",
+      "nameEn": "seasonal fruit + tajin",
+      "descriptionEs": "Selección fresca y rotativa de la mejor fruta de la temporada",
+      "descriptionEn": "Fresh, rotating selection of the season's best fruit",
+      "price": "small $3.75 / large $7.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "esquites",
+      "categoryId": "sides",
+      "nameEs": "esquites",
+      "nameEn": "esquites",
+      "descriptionEs": "Granos de maíz dulce mezclados con queso cotija en una salsa de mayonesa cremosa y acidulita, cubiertos con cayena",
+      "descriptionEn": "Sweet corn kernels tossed with cotija cheese in a creamy, tangy mayonnaise sauce, topped with cayenne",
+      "price": "small $5.95 / large $11.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn",
+      "categoryId": "sides",
+      "nameEs": "maíz callejero",
+      "nameEn": "street corn",
+      "descriptionEs": "Maíz a la parrilla untado con mayonesa de elote, cubierto con queso cotija rallado y pimienta de cayena",
+      "descriptionEn": "Grilled corn brushed with elote mayonnaise, topped with grated cotija cheese and cayenne pepper",
+      "price": "small $3.95 / large $7.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tinga-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de tinga de pollo",
+      "nameEn": "chicken tinga taco",
+      "descriptionEs": "Pollo oscuro desmenuzado en una salsa tinga de chile morita ahumada y picante, cubierto con cebolla morada encurtida y cilantro",
+      "descriptionEn": "Pulled dark meat chicken in a smoky, spicy morita chile tinga sauce, topped with pickled red onion and cilantro",
+      "price": "$2.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de carne asada",
+      "nameEn": "carne asada taco",
+      "descriptionEs": "Trocitos de bistec sellados marinados en cítricos, cubiertos con una salsa de aguacate viva y acidulita, cebolla y cilantro",
+      "descriptionEn": "Citrus-marinated seared steak tips topped with a bright, tangy avocado salsa, onion and cilantro",
       "price": "$4.25",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-06",
-      "categoryId": "mains",
-      "nameEs": "Taco de Ribeye con Sésamo",
-      "nameEn": "Sesame Ribeye Taco",
-      "descriptionEs": "Finas tiras de carne marinadas en glaseado dulce de sésamo y soya con kimchi picante.",
-      "descriptionEn": "Sweet sesame-soy glaze marinade w/ spicy kimchi.",
-      "price": "$4.95",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Sésamo",
-        "Soya"
-      ],
-      "allergens": [
-        "Soya",
-        "Sésamo",
-        "Gluten"
-      ],
+      "id": "grilled-shrimp-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de camarón a la parrilla",
+      "nameEn": "grilled shrimp taco",
+      "descriptionEs": "Camarones a la parrilla, glaseado de chile morita y guayaba + ensalada de col morada",
+      "descriptionEn": "Grilled shrimp, morita chile and guava glaze + red cabbage slaw",
+      "price": "$4.25",
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-07",
-      "categoryId": "mains",
-      "nameEs": "Taco de Pescado Baja",
-      "nameEn": "Baja Fish Taco",
-      "descriptionEs": "Bacalao rebozado en tempura picante con ensalada de col al chipotle.",
-      "descriptionEn": "Spicy tempura-battered cod w/ chipotle slaw.",
+      "id": "crispy-oyster-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de ostiones crujientes",
+      "nameEn": "crispy oyster taco",
+      "descriptionEs": "Ostiones crujientes, salsa remoulade + ensalada de col al limón y perejil",
+      "descriptionEn": "Crispy oysters, remoulade sauce + lemon parsley slaw",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojo-pork-carnitas-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de carnitas de cerdo al mojo",
+      "nameEn": "mojo pork carnitas taco",
+      "descriptionEs": "Cerdo desmenuzado crujiente y jugoso sellado con una salsa mojo agridulce y picante, cubierto con salsa de tomatillo, cebolla y cilantro",
+      "descriptionEn": "Crispy, juicy shredded pork seared with a tangy, sweet and spicy mojo sauce, topped with tomatillo sauce, onion and cilantro",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-fish-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de pescado estilo baja",
+      "nameEn": "baja fish taco",
+      "descriptionEs": "Bacalao picante rebozado en tempura sobre ensalada de col al chipotle, cubierto con cilantro y cebolla",
+      "descriptionEn": "Spicy tempura-battered cod over chipotle slaw, topped with cilantro and onion",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "glazed-pork-belly-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de panceta de cerdo glaseada",
+      "nameEn": "glazed pork belly taco",
+      "descriptionEs": "Panceta de cerdo braseada caramelizada en un glaseado dulce de chile de árbol, cubierto con cilantro y cebollas moradas encurtidas",
+      "descriptionEn": "Braised pork belly caramelized in a sweet arbol chile glaze, topped with cilantro and pickled red onions",
+      "price": "$4.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sesame-ribeye-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de chuletón al ajonjolí",
+      "nameEn": "sesame ribeye taco",
+      "descriptionEs": "Chuletón laminado marinado en una salsa dulce de ajonjolí y soya, cubierto con kimchi picante y cilantro",
+      "descriptionEn": "Shaved ribeye marinated in a sweet sesame-soy sauce, topped with spicy kimchi and cilantro",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de hongos",
+      "nameEn": "mushroom taco",
+      "descriptionEs": "Hongo ostra sellado al chile, salsa macha de café, cebolla laminada + queso cotija",
+      "descriptionEn": "Chile-seared oyster mushroom, coffee salsa macha, shaved onion + queso cotija",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-cauliflower-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de coliflor asada",
+      "nameEn": "roasted cauliflower taco",
+      "descriptionEs": "Coliflor asada, yogur de habanero + pasas doradas encurtidas + cebollas moradas encurtidas",
+      "descriptionEn": "Roasted cauliflower, habanero yogurt + pickled golden raisins + pickled red onions",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spiced-chicken-verde-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de pollo especiado verde",
+      "nameEn": "spiced chicken verde taco",
+      "descriptionEs": "Pollo en adobo de chiles y hierbas cubierto con salsa de aguacate",
+      "descriptionEn": "Chicken in chile and herb marinade topped with aguacate salsa",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-duck-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de pato asado",
+      "nameEn": "roasted duck taco",
+      "descriptionEs": "Muslos de pato frotados en seco, asados a fuego lento, desmenuzados y cubiertos con un glaseado de tamarindo, cebollas caramelizadas y cilantro",
+      "descriptionEn": "Duck thighs dry-rubbed, slow roasted, shredded and topped with a tamarind glaze, caramelized onions and cilantro",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-chorizo-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de chorizo rojo",
+      "nameEn": "red chorizo taco",
+      "descriptionEs": "Chorizo de cerdo rojo al estilo mexicano, salsa picante de tomate y chile seco",
+      "descriptionEn": "Mexican-style red pork chorizo, spicy tomato + dried chile salsa",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-tatako",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "atún tatako",
+      "nameEn": "tuna tatako",
+      "descriptionEs": "Atún con costra de ancho, ensalada de col asiática, vinagreta de albahaca tailandesa, glaseado de soya, semillas de ajonjolí tostadas, hoja de lechuga (servido frío)",
+      "descriptionEn": "Ancho-crusted tuna, Asian slaw, Thai basil vinaigrette, soy glaze, toasted sesame seeds, lettuce shell (served chilled)",
       "price": "$4.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Marisco",
-        "Picante"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-08",
-      "categoryId": "mains",
-      "nameEs": "Taco de Camarón Crujiente",
-      "nameEn": "Crispy Shrimp Taco",
-      "descriptionEs": "Camarones empanizados y marinados en suero de leche sobre salsa remoulade picante con ensalada de col al limón.",
-      "descriptionEn": "Crispy breaded + buttermilk-marinated shrimp over tangy remoulade sauce w/ lemony cabbage slaw.",
+      "id": "falafel-taco",
+      "categoryId": "tacos-each-pick-up-only",
+      "nameEs": "taco de falafel",
+      "nameEn": "falafel taco",
+      "descriptionEs": "Croqueta de garbanzos con hierbas sobre tzatziki al estilo griego con sriracha",
+      "descriptionEn": "Herbed chickpea fritter over a Greek-style tzatziki w/ sriracha",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tinga-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de tinga de pollo",
+      "nameEn": "chicken tinga taco pack",
+      "descriptionEs": "Pollo deshechado de carne oscura en salsa tinga de chile morita, cebolla morada encurtida, cilantro",
+      "descriptionEn": "Pulled dark meat chicken in morita chile tinga sauce, pickled red onion, cilantro",
+      "price": "4 pack $11.00 / 8 pack $22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de carne asada",
+      "nameEn": "carne asada taco pack",
+      "descriptionEs": "Puntas de bistec selladas, salsa de aguacate, cebolla, cilantro",
+      "descriptionEn": "Seared steak tips, avocado salsa, onion, cilantro",
+      "price": "4 pack $15.80 / 8 pack $31.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-shrimp-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de camarón a la parrilla",
+      "nameEn": "grilled shrimp taco pack",
+      "descriptionEs": "Camarones a la parrilla, glaseado de chile morita y guayaba + ensalada de repollo morado",
+      "descriptionEn": "Grilled shrimp, morita chile and guava glaze + red cabbage slaw",
+      "price": "4 pack $17.00 / 8 pack $34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-oyster-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de ostras crujientes",
+      "nameEn": "crispy oyster taco pack",
+      "descriptionEs": "Ostras crujientes, salsa rémoulade + ensalada de limón y perejil",
+      "descriptionEn": "Crispy oysters, remoulade sauce + lemon parsley slaw",
+      "price": "4 pack $23.80 / 8 pack $47.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojo-pork-carnitas-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de carnitas de cerdo al mojo",
+      "nameEn": "mojo pork carnitas taco pack",
+      "descriptionEs": "Cerdo desmenuzado con salsa de mojo, salsa de tomatillo, cebolla, cilantro",
+      "descriptionEn": "Shredded pork with mojo sauce, tomatillo sauce, onion, cilantro",
+      "price": "4 pack $11.75 / 8 pack $23.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-fish-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de pescado estilo baja",
+      "nameEn": "baja fish taco pack",
+      "descriptionEs": "Bacalao picante empanizado en tempura sobre ensalada de col con chipotle",
+      "descriptionEn": "Spicy tempura-battered cod over chipotle slaw",
+      "price": "4 pack $15.00 / 8 pack $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-belly-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de panceta de cerdo",
+      "nameEn": "pork belly taco pack",
+      "descriptionEs": "Panceta de cerdo braseada en glaseado dulce de chile de árbol, cilantro, cebolla morada encurtida",
+      "descriptionEn": "Braised pork belly in sweet arbol chile glaze, cilantro, pickled red onions",
+      "price": "4 pack $16.35 / 8 pack $32.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sesame-ribeye-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de chuletón con sésamo",
+      "nameEn": "sesame ribeye taco pack",
+      "descriptionEs": "Chuletón laminado en salsa dulce de sésamo y soya, kimchi picante, cilantro",
+      "descriptionEn": "Shaved ribeye in sweet sesame-soy sauce, spicy kimchi, cilantro",
+      "price": "4 pack $15.00 / 8 pack $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de hongos",
+      "nameEn": "mushroom taco pack",
+      "descriptionEs": "Hongo ostra sellado con chile, salsa macha de café, cebolla laminada + queso cotija",
+      "descriptionEn": "Chile-seared oyster mushroom, coffee salsa macha, shaved onion + queso cotija",
+      "price": "4 pack $17.00 / 8 pack $34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-cauliflower-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de coliflor asada",
+      "nameEn": "roasted cauliflower taco pack",
+      "descriptionEs": "Coliflor asada, yogur de habanero, pasas doradas encurtidas, cebollas moradas encurtidas",
+      "descriptionEn": "Roasted cauliflower, habanero yogurt, pickled golden raisins, pickled red onions",
+      "price": "4 pack $14.00 / 8 pack $28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-verde-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de pollo verde",
+      "nameEn": "chicken verde taco pack",
+      "descriptionEs": "Pollo en cubitos en adobo de chile y hierbas con salsa de aguacate fresco",
+      "descriptionEn": "Diced chicken in chile and herb marinade with fresh avocado salsa",
+      "price": "4 pack $14.25 / 8 pack $28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de pato",
+      "nameEn": "duck taco pack",
+      "descriptionEs": "Pato desmenuzado cocinado a fuego lento, glaseado de tamarindo, cebollas caramelizadas, cilantro",
+      "descriptionEn": "Slow-roasted shredded duck, tamarind glaze, caramelized onions, cilantro",
+      "price": "4 pack $15.00 / 8 pack $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-chorizo-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de chorizo rojo",
+      "nameEn": "red chorizo taco pack",
+      "descriptionEs": "Chorizo de cerdo rojo al estilo mexicano, salsa picante de tomate y chile seco",
+      "descriptionEn": "Mexican-style red pork chorizo, spicy tomato + dried chile salsa",
+      "price": "4 pack $11.80 / 8 pack $23.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-tatako-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de atún ahi tataki",
+      "nameEn": "ahi tuna tatako taco pack",
+      "descriptionEs": "Atún con costra de ancho, ensalada asiática, vinagreta de albahaca tailandesa, glaseado de soya, envoltura de lechuga (servido frío)",
+      "descriptionEn": "Ancho-crusted tuna, Asian slaw, Thai basil vinaigrette, soy glaze, lettuce shell (served chilled)",
+      "price": "4 pack $17.10 / 8 pack $34.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-taco-pack",
+      "categoryId": "taco-packs-4-or-8-tacos",
+      "nameEs": "paquete de tacos de falafel",
+      "nameEn": "falafel taco pack",
+      "descriptionEs": "Croqueta de garbanzos con hierbas sobre tzatziki al estilo griego con sriracha",
+      "descriptionEn": "Herbed chickpea fritter over Greek-style tzatziki w/ sriracha",
+      "price": "4 pack $12.40 / 8 pack $22.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-belly-rice-bowl",
+      "categoryId": "rice-bowls",
+      "nameEs": "plato de arroz con panceta de cerdo",
+      "nameEn": "pork belly rice bowl",
+      "descriptionEs": "Ensalada de brotes de soya con sésamo + cebollas moradas encurtidas",
+      "descriptionEn": "Sesame bean sprout salad + pickled red onions",
+      "price": "$13.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-black-bean-rice-bowl",
+      "categoryId": "rice-bowls",
+      "nameEs": "plato de arroz con pollo y frijoles negros",
+      "nameEn": "chicken + black bean rice bowl",
+      "descriptionEs": "Pollo deshechado en adobo de chile verde y hierbas sobre arroz integral, cubierto con ensalada de frijoles negros y maíz y salsa de aguacate",
+      "descriptionEn": "Pulled chicken in green chile-herb marinade over brown rice, topped with black bean and corn salad and avocado salsa",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-crispy-rice-bowl",
+      "categoryId": "rice-bowls",
+      "nameEs": "plato de arroz con atún ahi y arroz crujiente",
+      "nameEn": "ahi tuna + crispy rice bowl",
+      "descriptionEs": "Atún con costra de ancho, ensalada asiática, vinagreta de albahaca tailandesa, glaseado de soya y semillas de sésamo tostadas sobre arroz crujiente",
+      "descriptionEn": "Ancho-crusted tuna, Asian slaw, Thai basil vinaigrette, soy glaze and toasted sesame seeds over crispy rice",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "korean-bbq-ribeye-rice-bowl",
+      "categoryId": "rice-bowls",
+      "nameEs": "plato de arroz con chuletón estilo barbacoa coreana",
+      "nameEn": "korean bbq ribeye rice bowl",
+      "descriptionEs": "Chuletón laminado en salsa dulce de sésamo y soya, kimchi picante, espinacas al estilo coreano y chalotas crujientes",
+      "descriptionEn": "Shaved ribeye in sweet sesame-soy sauce, spicy kimchi, Korean-style spinach and crispy shallots",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-cauliflower-rice-bowl",
+      "categoryId": "rice-bowls",
+      "nameEs": "plato de arroz con coliflor asada",
+      "nameEn": "roasted cauliflower rice bowl",
+      "descriptionEs": "Coliflor asada sobre arroz integral con yogur de habanero, zanahorias glaseadas con miel y harissa + pasas doradas encurtidas",
+      "descriptionEn": "Roasted cauliflower over brown rice with habanero yogurt, honey-harissa glazed carrots + pickled golden raisins",
+      "price": "$12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guacamole-chips-not-spicy",
+      "categoryId": "kids-menu",
+      "nameEs": "guacamole + totopos (no picante)",
+      "nameEn": "guacamole + chips (not spicy)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-chicken-taco-w-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "taco de pollo para niños (con queso)",
+      "nameEn": "kids chicken taco (w/ cheese)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-steak-taco-w-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "taco de bistec para niños (con queso)",
+      "nameEn": "kids steak taco (w/ cheese)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-fish-taco",
+      "categoryId": "kids-menu",
+      "nameEs": "taco de pescado para niños",
+      "nameEn": "kids fish taco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-quesadilla",
+      "categoryId": "kids-menu",
+      "nameEs": "quesadilla para niños",
+      "nameEn": "kids quesadilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-tray",
+      "categoryId": "kids-menu",
+      "nameEs": "charola para niños",
+      "nameEn": "kids tray",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-roasted-chicken",
+      "categoryId": "kids-menu",
+      "nameEs": "pollo asado para niños",
+      "nameEn": "kids roasted chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-corn",
+      "categoryId": "kids-menu",
+      "nameEs": "elote para niños",
+      "nameEn": "kids corn",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oaxaca-cheese-snack",
+      "categoryId": "kids-menu",
+      "nameEs": "snack de queso oaxaca",
+      "nameEn": "oaxaca cheese snack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumbers",
+      "categoryId": "kids-menu",
+      "nameEs": "pepinos",
+      "nameEn": "cucumbers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-broccoli",
+      "categoryId": "kids-menu",
+      "nameEs": "brócoli al vapor",
+      "nameEn": "steamed broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-bowl",
+      "categoryId": "kids-menu",
+      "nameEs": "plato de fruta",
+      "nameEn": "fruit bowl",
+      "descriptionEs": "Piña + pera asiática",
+      "descriptionEn": "Pineapple + Asian pear",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado",
+      "categoryId": "kids-menu",
+      "nameEs": "aguacate",
+      "nameEn": "avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-drink",
+      "categoryId": "kids-menu",
+      "nameEs": "bebida para niños",
+      "nameEn": "kids drink",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-family-pack",
+      "categoryId": "family-packs",
+      "nameEs": "paquete familiar grande",
+      "nameEn": "large family pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-family-pack",
+      "categoryId": "family-packs",
+      "nameEs": "paquete familiar pequeño",
+      "nameEn": "small family pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-dinner",
+      "categoryId": "family-packs",
+      "nameEs": "cena de pollo",
+      "nameEn": "chicken dinner",
+      "descriptionEs": "Pollo entero incluido",
+      "descriptionEn": "Whole chicken included",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churros",
+      "categoryId": "dessert",
+      "nameEs": "churros",
+      "nameEn": "churros",
+      "descriptionEs": "Masa frita rebozada con azúcar y canela, servida con salsas de chocolate y vainilla",
+      "descriptionEn": "Fried dough tossed with sugar and cinnamon, served with chocolate and vanilla sauces",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "key-lime-pie",
+      "categoryId": "dessert",
+      "nameEs": "pay de lima key",
+      "nameEn": "key lime pie",
+      "descriptionEs": "Crema natilla de lima key, base de galleta graham, crema batida de vainilla hecha en casa y ralladura de lima, servido en un frasco",
+      "descriptionEn": "Key lime custard, graham cracker crust, house-made vanilla whipped cream and lime zest, served in a jar",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches",
+      "categoryId": "dessert",
+      "nameEs": "tres leches",
+      "nameEn": "tres leches",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapeno-hot-sauce-bottle",
+      "categoryId": "hot-sauces",
+      "nameEs": "botella de salsa picante de jalapeño",
+      "nameEn": "jalapeno hot sauce bottle",
+      "descriptionEs": "Jalapeño avivado realzado con ajo y laurel",
+      "descriptionEn": "Spirited jalapeno enhanced with garlic and bay",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roja-hot-sauce-bottle",
+      "categoryId": "hot-sauces",
+      "nameEs": "botella de salsa picante roja",
+      "nameEn": "roja hot sauce bottle",
+      "descriptionEs": "Pimientos piquillo rústicos con un toque picante de comino y clavo",
+      "descriptionEn": "Rustic piquillo peppers with spicy warmth from cumin and clove",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-habanero-hot-sauce-bottle",
+      "categoryId": "hot-sauces",
+      "nameEs": "botella de salsa picante de piña y habanero",
+      "nameEn": "pineapple habanero hot sauce bottle",
+      "descriptionEs": "Picante clásico de habanero con un toque de piña dulce",
+      "descriptionEn": "Classic habanero heat with a touch of sweet pineapple",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-margarita-take-home-serves-1",
+      "categoryId": "cocktails-take-home",
+      "nameEs": "margarita bartaco para llevar (rinde 1)",
+      "nameEn": "bartaco margarita take home (serves 1)",
+      "descriptionEs": "Tequila joven Libélula + combier",
+      "descriptionEn": "Libélula joven tequila + combier",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-margarita-take-home-serves-2",
+      "categoryId": "cocktails-take-home",
+      "nameEs": "margarita bartaco para llevar (rinde 2)",
+      "nameEn": "bartaco margarita take home (serves 2)",
+      "descriptionEs": "Tequila joven Libélula + combier",
+      "descriptionEn": "Libélula joven tequila + combier",
+      "price": "$27.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-margarita-take-home-serves-6",
+      "categoryId": "cocktails-take-home",
+      "nameEs": "margarita bartaco para llevar (rinde 6)",
+      "nameEn": "bartaco margarita take home (serves 6)",
+      "descriptionEs": "Libélula joven tequila + combier",
+      "descriptionEn": "Libélula joven tequila + combier",
+      "price": "$81.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paloma-fresca-for-two",
+      "categoryId": "cocktails-take-home",
+      "nameEs": "paloma fresca para dos",
+      "nameEn": "paloma fresca for two",
+      "descriptionEs": "Libélula joven tequila + toronja + lima + amargo de angostura + agua con gas",
+      "descriptionEn": "Libélula joven tequila + grapefruit + lime + bitters + sparkling water",
+      "price": "$25.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cocktail-shaker",
+      "categoryId": "cocktails-take-home",
+      "nameEs": "coctelera",
+      "nameEn": "cocktail shaker",
+      "descriptionEs": "Coctelera de tamaño estándar con ilustración de libélula",
+      "descriptionEn": "Standard-size shaker with dragonfly illustration",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing-run-wild-non-alc-ipa-ct",
+      "categoryId": "beer",
+      "nameEs": "athletic brewing run wild non-alc ipa (ct)",
+      "nameEn": "athletic brewing run wild non-alc ipa (ct)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bohemia-pilsner-mexico",
+      "categoryId": "beer",
+      "nameEs": "bohemia pilsner (mexico)",
+      "nameEn": "bohemia pilsner (mexico)",
+      "descriptionEs": "11.2 oz, 4.9% abv",
+      "descriptionEn": "11.2 oz, 4.9% abv",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "downeast-cider-original-ma",
+      "categoryId": "beer",
+      "nameEs": "downeast cider original (ma)",
+      "nameEn": "downeast cider original (ma)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo-especial-lager-mexico",
+      "categoryId": "beer",
+      "nameEs": "modelo especial lager (mexico)",
+      "nameEn": "modelo especial lager (mexico)",
+      "descriptionEs": "12 oz, 4.4% abv",
+      "descriptionEn": "12 oz, 4.4% abv",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "narragansett-light-lager-ri",
+      "categoryId": "beer",
+      "nameEs": "narragansett light lager (ri)",
+      "nameEn": "narragansett light lager (ri)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-brewing-sea-hag-ipa-ct",
+      "categoryId": "beer",
+      "nameEs": "new england brewing sea hag ipa (ct)",
+      "nameEn": "new england brewing sea hag ipa (ct)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tecate-lager-mexico",
+      "categoryId": "beer",
+      "nameEs": "tecate lager (mexico)",
+      "nameEn": "tecate lager (mexico)",
+      "descriptionEs": "12 oz, 4.5% abv",
+      "descriptionEn": "12 oz, 4.5% abv",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barcava-cava",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "barcava cava",
+      "nameEn": "barcava cava",
+      "descriptionEs": "Penedès, España; vino espumoso de 750 ml",
+      "descriptionEn": "Penedès, Spain; 750 ml sparkling wine",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lopez-de-haro-rose-rioja-spain",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "lopez de haro rosé, rioja, spain",
+      "nameEn": "lopez de haro rosé, rioja, spain",
+      "descriptionEs": "Viura/garnacha; delicado, fresco, brillante",
+      "descriptionEn": "Viura/garnacha; delicate, crisp, bright",
+      "price": "$44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lopez-de-haro-blanco-rioja-spain",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "lopez de haro blanco, rioja, spain",
+      "nameEn": "lopez de haro blanco, rioja, spain",
+      "descriptionEs": "Viura; fresco, elegante, versátil",
+      "descriptionEn": "Viura; fresh, elegant, versatile",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "glup-glup-garnacha-carinena-spain",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "glup glup garnacha, cariñena, spain",
+      "nameEn": "glup glup garnacha, cariñena, spain",
+      "descriptionEs": "Tinto jugoso, equilibrado y vivo",
+      "descriptionEn": "Juicy, balanced, lively red",
+      "price": "$44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lopez-de-haro-crianza-tempranillo-rioja-spain",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "lopez de haro crianza tempranillo, rioja, spain",
+      "nameEn": "lopez de haro crianza tempranillo, rioja, spain",
+      "descriptionEs": "Suave, equilibrado; envejecido 18 meses en barrica",
+      "descriptionEn": "Smooth, balanced; aged 18 months in barrel",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bardos-verdejo-rueda-spain",
+      "categoryId": "wine-by-the-bottle",
+      "nameEs": "bardos verdejo, rueda, spain",
+      "nameEn": "bardos verdejo, rueda, spain",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grapefruit-ginger-agua-fresca",
+      "categoryId": "beverages",
+      "nameEs": "agua fresca de toronja y jengibre",
+      "nameEn": "grapefruit ginger agua fresca",
+      "descriptionEs": "Toronja + jengibre + lima",
+      "descriptionEn": "Grapefruit + ginger + lime",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomegranate-limonada",
+      "categoryId": "beverages",
+      "nameEs": "limonada de granada",
+      "nameEn": "pomegranate limonada",
+      "descriptionEs": "Granada + limón",
+      "descriptionEn": "Pomegranate + lemon",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nojito",
+      "categoryId": "beverages",
+      "nameEs": "nojito",
+      "nameEn": "nojito",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-squeezed-lemonade",
+      "categoryId": "beverages",
+      "nameEs": "limonada recién exprimida",
+      "nameEn": "fresh squeezed lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "limeade",
+      "categoryId": "beverages",
+      "nameEs": "limada",
+      "nameEn": "limeade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-tea",
+      "categoryId": "beverages",
+      "nameEs": "té dulce",
+      "nameEn": "sweet tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.75",
-      "popular": false,
-      "badge": "Delicioso",
-      "tags": [
-        "Marisco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-09",
-      "categoryId": "mains",
-      "nameEs": "Taco de Coliflor (Contiene Pistacho)",
-      "nameEn": "Cauliflower Taco",
-      "descriptionEs": "Coliflor asada colocada sobre hummus de garbanzo, cubierta con chimichurri de pistacho y semillas de granada fresca.",
-      "descriptionEn": "Roasted cauliflower placed on a chickpea hummus topped w/ pistachio chimichurri + fresh pomegranate seeds.",
-      "price": "$4.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Frutos Secos"
-      ],
-      "allergens": [
-        "Frutos Secos (Pistacho)",
-        "Sésamo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bartaco-10",
-      "categoryId": "specialties",
-      "nameEs": "Birria de Pato",
-      "nameEn": "Duck Birria",
-      "descriptionEs": "Pato desmenuzado con quesos Oaxaca y cotija en una tortilla de maíz crujiente, servido con caldo de pato estilo birria.",
-      "descriptionEn": "Shredded duck + oaxaca + cotija cheeses in a crispy corn tortilla w/ birria-style duck broth.",
-      "price": "$12.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Queso",
-        "Caldo"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bartaco-11",
-      "categoryId": "specialties",
-      "nameEs": "Medio Pollo Asado",
-      "nameEn": "Roasted Half Chicken",
-      "descriptionEs": "Medio pollo marinado con hierbas y ajo, acompañado de salsa verde estilo peruano.",
-      "descriptionEn": "Garlic-herb half chicken w/ peruvian-style green chile sauce.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Sin Gluten",
-        "Saludable"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bartaco-12",
-      "categoryId": "specialties",
-      "nameEs": "Ceviche de la Casa",
-      "nameEn": "Ceviche",
-      "descriptionEs": "Bacalao y camarón marinados con aguacate, cebolla, tomate, serrano fresco y pimienta de cayena.",
-      "descriptionEn": "Cod + shrimp w/ avocado, onion, tomato, fresh serrano + cayenne.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Marisco",
-        "Sin Gluten",
-        "Picante"
-      ],
-      "allergens": [
-        "Pescado",
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bartaco-13",
+      "id": "unsweetened-tea",
       "categoryId": "beverages",
-      "nameEs": "Margarita Clásica Bartaco",
-      "nameEn": "Classic Bartaco Margarita",
-      "descriptionEs": "Tequila 100% de agave, jugo de lima fresco y agave natural, sacudido a la perfección.",
-      "descriptionEn": "100% agave tequila, fresh lime juice, and natural agave, shaken to perfection.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Bar Favorito",
-      "tags": [
-        "Cóctel",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "nameEs": "té sin azúcar",
+      "nameEn": "unsweetened tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
       "ctaType": "in_store"
     },
     {
-      "id": "bartaco-14",
+      "id": "arnold-palmer",
       "categoryId": "beverages",
-      "nameEs": "Agua Fresca del Día",
-      "nameEn": "Daily Agua Fresca",
-      "descriptionEs": "Bebida refrescante hecha en casa con fruta de temporada natural.",
-      "descriptionEn": "Refreshing house-made beverage crafted with natural seasonal fruit.",
+      "nameEs": "arnold palmer",
+      "nameEn": "arnold palmer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coca-cola-mexico",
+      "categoryId": "beverages",
+      "nameEs": "coca cola (mexico)",
+      "nameEn": "coca cola (mexico)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diet-coke",
+      "categoryId": "beverages",
+      "nameEs": "diet coke",
+      "nameEn": "diet coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sprite-mexico",
+      "categoryId": "beverages",
+      "nameEs": "sprite (mexico)",
+      "nameEn": "sprite (mexico)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fanta-orange-mexico",
+      "categoryId": "beverages",
+      "nameEs": "fanta orange (mexico)",
+      "nameEn": "fanta orange (mexico)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-sparkling-pineapple-passionfruit",
+      "categoryId": "beverages",
+      "nameEs": "bartaco sparkling pineapple passionfruit",
+      "nameEn": "bartaco sparkling pineapple passionfruit",
+      "descriptionEs": "Lata de agua con gas",
+      "descriptionEn": "Can of sparkling water",
       "price": "$4.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-sparkling-toasted-coconut",
+      "categoryId": "beverages",
+      "nameEs": "bartaco sparkling toasted coconut",
+      "nameEn": "bartaco sparkling toasted coconut",
+      "descriptionEs": "Lata de agua con gas",
+      "descriptionEn": "Can of sparkling water",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bartaco-sparkling-watermelon-mint",
+      "categoryId": "beverages",
+      "nameEs": "bartaco sparkling watermelon mint",
+      "nameEn": "bartaco sparkling watermelon mint",
+      "descriptionEs": "Lata de agua con gas",
+      "descriptionEn": "Can of sparkling water",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "open-water",
+      "categoryId": "beverages",
+      "nameEs": "open water",
+      "nameEn": "open water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, ofrecemos una amplia variedad de tacos con opciones vegetarianas como el de coliflor y muchos tacos en tortilla de maíz natural libres de gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer various vegetarian options like our cauliflower taco and many naturally gluten-free corn tortilla tacos. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o lista de espera en línea?",
-      "qEn": "Do you accept reservations or online waitlists?",
-      "aEs": "Operamos principalmente sin reservación para mantener un ambiente relajado, pero puede unirse a nuestra lista de espera en línea a través de nuestra app o llamándonos directamente.",
-      "aEn": "We primarily operate on a walk-in basis to maintain a relaxed vibe, but you can join our waitlist online via our app or by calling us directly."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos?",
-      "qEn": "Do you offer catering services for events?",
-      "aEs": "¡Sí! Ofrecemos barras de tacos para armar junto con guacamole, esquites y favoritos para hacer de su evento una fiesta inolvidable.",
-      "aEn": "Yes! We offer build-your-own taco bars paired with faves like our guac and street corn to make your event a party."
-    }
-  ]
+  "faqs": []
 }

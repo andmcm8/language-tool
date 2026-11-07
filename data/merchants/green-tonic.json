@@ -2,26 +2,19 @@
   "storeInfo": {
     "id": "green-tonic",
     "name": "Green & Tonic",
-    "tagline": "Don’t compromise on your cravings / No te comprometas con tus antojos",
-    "address": "180 Post Road East, Westport, CT 06880",
-    "phone": "",
+    "tagline": "Plant-forward, gluten-free cafe and juice bar in Westport | Café y bar de jugos saludable y sin gluten en Westport",
+    "address": "17 Jesup Rd, Westport, CT 06880",
+    "phone": "(203) 557-6392",
     "hours": {
-      "monday_friday": "7:00 AM - 7:00 PM",
+      "monday_friday": "8:00 AM - 6:00 PM",
       "saturday": "8:00 AM - 6:00 PM",
-      "sunday": "8:00 AM - 5:00 PM"
+      "sunday": "8:00 AM - 4:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Delivery"
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,7 +26,7 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
@@ -44,262 +37,1345 @@
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Ensaladas",
-      "nameEn": "Mains & Salads",
+      "id": "hot-lunch",
+      "nameEs": "Almuerzo Caliente",
+      "nameEn": "Hot Lunch",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades Calientes",
-      "nameEn": "Hot Specialties",
+      "id": "build-your-own-salad-bar",
+      "nameEs": "Barra de Ensaladas Armá Tu Propia Ensalada",
+      "nameEn": "Build Your Own Salad Bar",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Batidos",
-      "nameEn": "Drinks & Smoothies",
-      "icon": "Coffee"
+      "id": "wraps",
+      "nameEs": "Wraps",
+      "nameEn": "Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Ensaladas de Hojas Verdes y Comidas Listas para Llevar",
+      "nameEn": "Leafy Green Salads & Grab-N-Go Meals",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-beverages",
+      "nameEs": "Bebidas Calientes",
+      "nameEn": "Hot Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "iced-beverages",
+      "nameEs": "Bebidas Heladas",
+      "nameEn": "Iced Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Jugos Prensados en Frío y Bebidas Envasadas",
+      "nameEn": "Cold-Pressed Juices & Bottled Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "superfood-smoothies",
+      "nameEs": "Batidos Superalimentos",
+      "nameEn": "Superfood Smoothies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "smoothie-bowls",
+      "nameEs": "Bowls de Batidos",
+      "nameEn": "Smoothie Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides-snacks",
+      "nameEs": "Acompañamientos y Snacks",
+      "nameEn": "Sides & Snacks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pots-puddings",
+      "nameEs": "Potes y Pudines",
+      "nameEn": "Pots & Puddings",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gluten-free-treats-power-snacks",
+      "nameEs": "Antojos sin Gluten y Snacks Energéticos",
+      "nameEn": "Gluten-Free Treats & Power Snacks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "retail",
+      "nameEs": "Venta al por menor",
+      "nameEn": "Retail",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "green-tonic-01",
+      "id": "vegan-sausage-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Salchicha Vegana, Huevo y Queso",
+      "nameEn": "Vegan Sausage Egg & Cheese",
+      "descriptionEs": "Salchicha Beyond, Just Egg, queso cheddar vegano, pan ciabatta sin gluten",
+      "descriptionEn": "Beyond sausage, Just Egg, vegan cheddar, gf ciabatta roll",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "everything-bagel-with-cream-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Bagel Everything con Queso Crema",
+      "nameEn": "Everything Bagel with Cream Cheese",
+      "descriptionEs": "Bagel everything sin gluten, queso crema real",
+      "descriptionEn": "GF everything bagel, real cream cheese",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "granola-bowl",
+      "categoryId": "breakfast",
+      "nameEs": "Tazón de Granola",
+      "nameEn": "Granola Bowl",
+      "descriptionEs": "Tu elección de granola sin gluten, leche vegetal y 3 ingredientes, servido caliente o frío",
+      "descriptionEn": "Your choice of gluten-free granola, plant-based milk and 3 toppings, served hot or cold",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "breakfast",
+      "nameEs": "Tostada de Aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "Aguacate, tomate asado, sazonador everything, tostada de masa madre sin gluten",
+      "descriptionEn": "Avocado, roasted tomato, everything seasoning, gluten-free sourdough toast",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sausage-egg-and-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Salchicha de Pavo, Huevo y Queso",
+      "nameEn": "Turkey Sausage Egg and Cheese",
+      "descriptionEs": "Salchicha de pavo libre de antibióticos, huevo de pastoreo, cheddar blanco, panecillo sin gluten",
+      "descriptionEn": "Antibiotic-free turkey sausage, pasture-raised egg, white cheddar, gluten-free roll",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Huevo y Queso",
+      "nameEn": "Egg & Cheese",
+      "descriptionEs": "Huevo de pastoreo, cheddar blanco, pan ciabatta sin gluten",
+      "descriptionEn": "Pasture-raised egg, white cheddar, gluten-free ciabatta roll",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Huevo y Queso Vegano",
+      "nameEn": "Vegan Egg & Cheese",
+      "descriptionEs": "Huevo vegano, cheddar vegano, pan ciabatta sin gluten",
+      "descriptionEn": "Vegan egg, vegan cheddar, gluten-free ciabatta roll",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wagyu-beef-bacon-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Tocino de Res Wagyu, Huevo y Queso",
+      "nameEn": "Wagyu Beef Bacon Egg & Cheese",
+      "descriptionEs": "Tocino de res Wagyu, huevo de pastoreo, queso americano, panecillo sin gluten",
+      "descriptionEn": "Wagyu beef bacon, pasture-raised egg, American cheese, gf roll",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-of-wagyu-beef-bacon",
+      "categoryId": "breakfast",
+      "nameEs": "Porción de Tocino de Res Wagyu",
+      "nameEn": "Side of Wagyu Beef Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-egg-cheese-wrap",
       "categoryId": "breakfast",
       "nameEs": "Wrap de Pollo, Huevo y Queso",
-      "nameEn": "Chicken, Egg & Cheese Wrap",
-      "descriptionEs": "Pollo a la parrilla, huevo de pastoreo, queso americano, en una tortilla alta en proteínas y baja en calorías (390 kcal, 43g proteína).",
-      "descriptionEn": "Grilled chicken, pasture-raised egg, American cheese, in a GF high-protein calorie-smart wrap (390 calories, 43g protein).",
-      "price": "$9.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Alto en Proteína",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Huevos",
-        "Lácteos"
-      ],
+      "nameEn": "Chicken Egg & Cheese Wrap",
+      "descriptionEs": "Pollo a la parrilla, huevo de pastoreo, queso americano, wrap sin gluten",
+      "descriptionEn": "Grilled chicken, pasture-raised egg, American cheese, gf wrap",
+      "price": "$8.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-02",
+      "id": "square-tater-tots",
       "categoryId": "breakfast",
-      "nameEs": "Pan Tostado con Aguacate",
-      "nameEn": "Avocado Toast",
-      "descriptionEs": "Aguacate fresco, tomate asado, brotes y sazonador de 'todo' sobre pan de masa madre crujiente (250 kcal).",
-      "descriptionEn": "Avocado, roasted tomato, sprouts, everything seasoning, served on artisanal sourdough (250 calories).",
-      "price": "$8.75",
-      "popular": true,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "nameEs": "Croquetas de Papa Cuadradas",
+      "nameEn": "Square Tater Tots",
+      "descriptionEs": "Papa, aceite de aguacate, harina de maíz, ajo en polvo, cebolla en polvo, harina de arroz, sal",
+      "descriptionEn": "Potato, avocado oil, corn flour, garlic powder, onion powder, rice flour, salt",
+      "price": "$2.50",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-03",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Salchicha de Pavo, Huevo y Queso",
-      "nameEn": "Turkey Sausage, Egg & Cheese",
-      "descriptionEs": "Salchicha de pavo ABF, huevo de pastoreo, cheddar blanco en un suave rollo de ciabatta (350 kcal).",
-      "descriptionEn": "ABF turkey sausage, pasture-raised egg, white cheddar, served on a fresh ciabatta roll (350 calories).",
-      "price": "$9.25",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Desayuno"
-      ],
-      "allergens": [
-        "Huevos",
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "sourdough-grilled-cheese",
+      "categoryId": "hot-lunch",
+      "nameEs": "Sándwich de Queso Fundido en Pan de Masa Madre",
+      "nameEn": "Sourdough Grilled Cheese",
+      "descriptionEs": "Pan de masa madre sin gluten, cheddar blanco, aceite de oliva, sal de ajo",
+      "descriptionEn": "GF sourdough, white cheddar, olive oil, garlic salt",
+      "price": "$8.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-04",
-      "categoryId": "breakfast",
-      "nameEs": "Tazón de Avena y Quinoa",
-      "nameEn": "Quinoa Oatmeal Bowl",
-      "descriptionEs": "Nuestra mezcla nutritiva de avena y quinoa, servida con tu elección de leche y 3 deliciosos complementos.",
-      "descriptionEn": "Warm quinoa oatmeal blend, served with your choice of milk and 3 wholesome toppings.",
-      "price": "$7.95",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Fibra"
-      ],
-      "allergens": [],
+      "id": "6-ct-chicken-nuggets",
+      "categoryId": "hot-lunch",
+      "nameEs": "6 pzas de Nuggets de Pollo",
+      "nameEn": "6 ct Chicken Nuggets",
+      "descriptionEs": "Pollo molido, panko sin gluten, harina de avena, ajo y cebolla en polvo; incluye una salsa",
+      "descriptionEn": "Ground chicken, gf panko, oat flour, garlic and onion powder; includes one sauce",
+      "price": "$6.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-05",
-      "categoryId": "mains",
-      "nameEs": "Ensalada de Pollo Shawarma",
-      "nameEn": "Chicken Shawarma Salad",
-      "descriptionEs": "Pollo al estilo aleppo, lechuga romana, tomate, pepinos, aceitunas, queso feta real y aderezo de tahini con limón (460 kcal).",
-      "descriptionEn": "Aleppo chicken, romaine, tomato, cucumbers, olives, real feta, lemon tahini dressing (460 calories, 30g protein).",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten",
-        "Alto en Proteína"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Sésamo"
-      ],
+      "id": "12-ct-chicken-nuggets",
+      "categoryId": "hot-lunch",
+      "nameEs": "12 pzas de Nuggets de Pollo",
+      "nameEn": "12 ct Chicken Nuggets",
+      "descriptionEs": "Pollo molido, panko sin gluten, harina de avena, ajo y cebolla en polvo; incluye dos salsas",
+      "descriptionEn": "Ground chicken, gf panko, oat flour, garlic and onion powder; includes two sauces",
+      "price": "$11.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-06",
-      "categoryId": "mains",
-      "nameEs": "Ensalada César con Pollo",
-      "nameEn": "Chicken Caesar Salad",
-      "descriptionEs": "Lechuga romana, col rizada, tomates uva, queso parmesano rallado, picatostes de pan de maíz sin gluten, pollo a la parrilla y aderezo césar limpio.",
-      "descriptionEn": "Romaine, kale, grape tomatoes, shredded parmesan cheese, GF cornbread croutons, grilled chicken, clean caesar dressing.",
-      "price": "$13.95",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Pescado"
-      ],
+      "id": "chicken-shawarma-wrap",
+      "categoryId": "hot-lunch",
+      "nameEs": "Wrap de Pollo Shawarma",
+      "nameEn": "Chicken Shawarma Wrap",
+      "descriptionEs": "Pollo al estilo Alepo, lechuga romana, pepino, tomate, wrap sin gluten",
+      "descriptionEn": "Aleppo chicken, romaine, cucumber, tomato, gf wrap",
+      "price": "$9.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-07",
-      "categoryId": "mains",
-      "nameEs": "Ensalada Harvest",
-      "nameEn": "Harvest Salad",
-      "descriptionEs": "Col rizada, arándanos secos, nueces, camote asado, cebolla morada y vinagreta balsámica (490 kcal).",
-      "descriptionEn": "Kale, cranberry, walnut, sweet potato, red onion, tossed in house balsamic vinaigrette (490 calories).",
-      "price": "$12.95",
-      "popular": false,
-      "badge": "Vegano",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Frutos Secos"
-      ],
+      "id": "chicken-bacon-ranch-wrap",
+      "categoryId": "hot-lunch",
+      "nameEs": "Wrap de Pollo, Tocino y Aderezo Ranch",
+      "nameEn": "Chicken Bacon Ranch Wrap",
+      "descriptionEs": "Pollo a la parrilla, tocino de res wagyu, cheddar blanco, lechuga romana, aderezo ranch limpio, wrap sin gluten",
+      "descriptionEn": "Grilled chicken, wagyu beef bacon, white cheddar, romaine, clean ranch, gf wrap",
+      "price": "$9.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-08",
-      "categoryId": "mains",
-      "nameEs": "Ensalada Garden Cobb",
-      "nameEn": "Garden Cobb Salad",
-      "descriptionEs": "Lechuga romana, pepino, tomate, garbanzos, pimiento rojo y vinagreta balsámica (170 kcal, ligera y refrescante).",
-      "descriptionEn": "Romaine, cucumber, tomato, chickpea, red pepper, balsamic vinaigrette (170 calories, light and refreshing).",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Ligero",
-      "tags": [
-        "Vegano",
-        "Bajo en Calorías"
-      ],
-      "allergens": [],
+      "id": "chicken-caesar-wrap",
+      "categoryId": "hot-lunch",
+      "nameEs": "Wrap de Pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "Pollo a la parrilla, aderezo césar limpio, parmesano rallado, lechuga romana, col rizada, tomates uva, wrap sin gluten",
+      "descriptionEn": "Grilled chicken, clean caesar dressing, shredded parmesan, romaine, kale, grape tomatoes, gf wrap",
+      "price": "$9.95",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-09",
-      "categoryId": "specialties",
-      "nameEs": "Hamburguesa The Better Arch",
+      "id": "the-superior-veggie-burger",
+      "categoryId": "hot-lunch",
+      "nameEs": "La Hamburguesa Vegetariana Superior",
+      "nameEn": "The Superior Veggie Burger",
+      "descriptionEs": "Hamburguesa vegetariana de garbanzo, nuez y quinua",
+      "descriptionEn": "Chickpea, walnut and quinoa veggie burger",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-better-arch-jr-turkey-burger",
+      "categoryId": "hot-lunch",
+      "nameEs": "La Hamburguesa de Pavo Better Arch Jr.",
+      "nameEn": "The Better Arch Jr. Turkey Burger",
+      "descriptionEs": "Hamburguesa de pavo, queso americano, lechuga, cebolla, pepinillo, salsa distintiva",
+      "descriptionEn": "Turkey burger, American cheese, lettuce, onion, pickle, signature sauce",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-better-arch-burger",
+      "categoryId": "hot-lunch",
+      "nameEs": "La Hamburguesa Better Arch",
       "nameEn": "The Better Arch Burger",
-      "descriptionEs": "Dos hamburguesas de pavo de 1/4 lb, doble queso, salsa especial de la casa, lechuga, pepinillo y cebolla en pan orgánico de chía y mijo (650 kcal, 60g proteína).",
-      "descriptionEn": "Two 1/4 lb turkey patties, double cheese, signature sauce, lettuce, pickle, onion, on an organic chia millet bun.",
+      "descriptionEs": "Hamburguesa de pavo doble, 2 rebanadas de queso americano, lechuga, cebolla, pepinillo, salsa distintiva",
+      "descriptionEn": "Double turkey burger, 2 slices American cheese, lettuce, onion, pickle, signature sauce",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lean-tasty-burger",
+      "categoryId": "hot-lunch",
+      "nameEs": "Hamburguesa Ligera y Sabrosa",
+      "nameEn": "Lean & Tasty Burger",
+      "descriptionEs": "Hamburguesa de pavo, queso americano, lechuga, tomate, cebolla, pepinillo, kétchup, mayonesa casera",
+      "descriptionEn": "Turkey burger, American cheese, lettuce, tomato, onion, pickle, ketchup, house-made mayo",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rodeo-burger",
+      "categoryId": "hot-lunch",
+      "nameEs": "Hamburguesa Rodeo",
+      "nameEn": "Rodeo Burger",
+      "descriptionEs": "Hamburguesa de pavo, queso americano, tocino de res wagyu, pepinillos, cebollas, salsa G&T",
+      "descriptionEn": "Turkey burger, American cheese, wagyu beef bacon, pickles, onions, G&T sauce",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-of-grilled-chicken",
+      "categoryId": "build-your-own-salad-bar",
+      "nameEs": "Porción de Pollo a la Parrilla",
+      "nameEn": "Side of Grilled Chicken",
+      "descriptionEs": "Pechuga de pollo a la parrilla de crianza libre",
+      "descriptionEn": "Free-range grilled chicken breast",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-of-aleppo-chicken",
+      "categoryId": "build-your-own-salad-bar",
+      "nameEs": "Porción de Pollo Alepo",
+      "nameEn": "Side of Aleppo Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-avocado-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de Aguacate Picante",
+      "nameEn": "Spicy Avocado Wrap",
+      "descriptionEs": "Hojas de berza, crema de anacardos (anacardos, quinua, agua de coco, ajo, sriracha), aguacate, zanahoria, repollo morado, albahaca",
+      "descriptionEn": "Collard green, cashew spread (cashews, quinoa, coconut water, garlic, sriracha), avocado, carrot, purple cabbage, basil",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry-chickpea-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de Garbanzos al Curry",
+      "nameEn": "Curry Chickpea Wrap",
+      "descriptionEs": "Hojas de berza, espinaca, zanahorias, repollo morado, crema de garbanzos al curry",
+      "descriptionEn": "Collard green, spinach, carrots, purple cabbage, curry chickpea spread",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-thai-salad",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Ensalada Pad Thai",
+      "nameEn": "Pad Thai Salad",
+      "descriptionEs": "Fideos de arroz, col rizada, repollo napa, pimientos rojos, zanahoria, edamame, cebollinos, semillas de sésamo, aderezo de mantequilla de almendras",
+      "descriptionEn": "Rice noodles, kale, napa cabbage, red peppers, carrot, edamame, scallions, sesame seeds, almond butter dressing",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rainbow-rice-bowl",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Tazón de Arroz Arcoíris",
+      "nameEn": "Rainbow Rice Bowl",
+      "descriptionEs": "Arroz basmati, verduras con sésamo, brócoli, repollo, tirabeques, tofu, semillas tostadas",
+      "descriptionEn": "Basmati rice, sesame greens, broccoli, cabbage, snow peas, tofu, toasted seeds",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-pesto-rotini-salad",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Ensalada de Rotini con Pesto de Col Rizada",
+      "nameEn": "Kale Pesto Rotini Salad",
+      "descriptionEs": "Rotini de garbanzo, tomates asados, col rizada, aceite de oliva, salsa pesto",
+      "descriptionEn": "Chickpea rotini, roasted tomatoes, kale, olive oil, pesto sauce",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buddha-bowl",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Tazón Buda",
+      "nameEn": "Buddha Bowl",
+      "descriptionEs": "Verduras salteadas (col rizada, espinaca, hojas de berza), cebollas carbonizadas, coliflor, quinua, camote, garbanzo",
+      "descriptionEn": "Sauteed greens (kale, spinach, collard greens), charred onions, cauliflower, quinoa, sweet potato, chickpea",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waldorf-chicken-salad",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Ensalada de Pollo Waldorf",
+      "nameEn": "Waldorf Chicken Salad",
+      "descriptionEs": "Pechuga de pollo de crianza libre, manzana, apio, repollo, cebolla, brotes de guisante, perejil, almendras",
+      "descriptionEn": "Free-range chicken breast, apple, celery, cabbage, onion, pea shoots, parsley, almonds",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aleppo-chicken-broccoli-bowl",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Tazón de Pollo Alepo y Brócoli",
+      "nameEn": "Aleppo Chicken & Broccoli Bowl",
+      "descriptionEs": "Pollo de crianza libre, yogur, aceite de oliva, pimienta alepo, pimentón, comino, quinua, brócoli, jugo de limón",
+      "descriptionEn": "Free-range chicken, yogurt, olive oil, aleppo pepper, paprika, cumin, quinoa, broccoli, lemon juice",
       "price": "$15.95",
-      "popular": true,
-      "badge": "Estrella",
-      "tags": [
-        "Alto en Proteína"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-10",
-      "categoryId": "specialties",
-      "nameEs": "Better Arch Jr.",
-      "nameEn": "Better Arch Jr.",
-      "descriptionEs": "Hamburguesa de pavo jugosa, queso americano, lechuga, cebolla y pepinillo en un pan tierno.",
-      "descriptionEn": "Turkey burger, American cheese, crisp lettuce, onion, and pickles on a toasted bun.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": "Familiar",
-      "tags": [
-        "Popular"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "keto-chicken-parmesan",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Pollo a la Parmesana Cetogénico",
+      "nameEn": "Keto Chicken Parmesan",
+      "descriptionEs": "Pollo con hierbas y balsámico",
+      "descriptionEn": "Balsamic herb chicken",
+      "price": "$14.25",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-11",
-      "categoryId": "beverages",
-      "nameEs": "Batido Superfood Power",
-      "nameEn": "Superfood Power Smoothie",
-      "descriptionEs": "Mezcla revitalizante de frutos rojos orgánicos, proteína vegetal, mantequilla de almendras y leche de almendras sin azúcar.",
-      "descriptionEn": "Revitalizing blend of organic berries, plant protein, almond butter, and unsweetened almond milk.",
-      "price": "$9.50",
-      "popular": true,
-      "badge": "Superfood",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Frutos Secos"
-      ],
+      "id": "wagyu-beef-korean-bowl",
+      "categoryId": "leafy-green-salads-grab-n-go-meals",
+      "nameEs": "Tazón Coreano de Res Wagyu",
+      "nameEn": "Wagyu Beef Korean Bowl",
+      "descriptionEs": "Carne de res Wagyu molida",
+      "descriptionEn": "Wagyu ground beef",
+      "price": "$15.25",
       "ctaType": "in_store"
     },
     {
-      "id": "green-tonic-12",
-      "categoryId": "beverages",
-      "nameEs": "Supr Brew Cold Brew",
-      "nameEn": "Supr Brew Cold Brew™",
-      "descriptionEs": "Café frío artesanal de extracción lenta, suave, energizante y con notas de chocolate oscuro.",
-      "descriptionEn": "Slow-steeped artisanal cold brew coffee, smooth, energizing with dark chocolate notes.",
-      "price": "$5.25",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Energético"
-      ],
-      "allergens": [],
+      "id": "hot-pumpkin-spice-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Latte Caliente de Especias de Calabaza",
+      "nameEn": "Hot Pumpkin Spice Latte",
+      "descriptionEs": "Leche a elección, espresso, especias de calabaza, canela",
+      "descriptionEn": "Milk of choice, espresso, pumpkin spice, cinnamon",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-immunitea",
+      "categoryId": "hot-beverages",
+      "nameEs": "Immunitea Caliente",
+      "nameEn": "Hot Immunitea",
+      "descriptionEs": "Té de limón y jengibre, equinácea, limón, sidra de manzana",
+      "descriptionEn": "Lemon ginger tea, echinacea, lemon, apple cider",
+      "price": "$4.95 - $5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-organic-coffee",
+      "categoryId": "hot-beverages",
+      "nameEs": "Café Orgánico Caliente",
+      "nameEn": "Hot Organic Coffee",
+      "descriptionEs": "Café alto en polifenoles",
+      "descriptionEn": "High polyphenol coffee",
+      "price": "$2.95 - $3.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Latte Caliente",
+      "nameEn": "Hot Latte",
+      "descriptionEs": "Granos de café orgánico de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$4.45 - $5.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "hot-beverages",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "Granos de café orgánicos de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$4.45 - $5.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "americano",
+      "categoryId": "hot-beverages",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "Espresso, agua caliente",
+      "descriptionEn": "Espresso, hot water",
+      "price": "$3.95 - $4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-vanilla-bean-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Vanilla Bean Latte",
+      "nameEn": "Hot Vanilla Bean Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a vainilla",
+      "descriptionEn": "Milk of choice, espresso, vanilla bean flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-hazelnut-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Hazelnut Latte",
+      "nameEn": "Hot Hazelnut Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a avellana",
+      "descriptionEn": "Milk of choice, espresso, hazelnut flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-salted-caramel-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Salted Caramel Latte",
+      "nameEn": "Hot Salted Caramel Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a caramelo salado",
+      "descriptionEn": "Milk of choice, espresso, salted caramel flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-no-tella-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot No-Tella Latte",
+      "nameEn": "Hot No-Tella Latte",
+      "descriptionEs": "Leche a elegir, espresso, no-tella, sabor a avellana",
+      "descriptionEn": "Milk of choice, espresso, no-tella, hazelnut flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tiramisu-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Tiramisu Latte",
+      "nameEn": "Hot Tiramisu Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a vainilla, cacao",
+      "descriptionEn": "Milk of choice, espresso, vanilla bean flavor, cacao",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-matcha-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Matcha Latte",
+      "nameEn": "Hot Matcha Latte",
+      "descriptionEs": "Matcha, agua filtrada, jarabe de arce, leche a elegir",
+      "descriptionEn": "Matcha, filtered water, maple syrup, choice of milk",
+      "price": "$5.55 - $6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-shroom-boost-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot 'Shroom Boost Latte",
+      "nameEn": "Hot 'Shroom Boost Latte",
+      "descriptionEs": "Cacao, azúcar de coco, chispas de chocolate vegano, chaga, cordyceps, maitake, king trumpet, sal rosada del Himalaya",
+      "descriptionEn": "Cacao, coconut sugar, vegan chocolate chips, chaga, cordyceps, maitake, king trumpet, Himalayan pink salt",
+      "price": "$4.95 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate-cacao-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Chocolate (Cacao Latte)",
+      "nameEn": "Hot Chocolate (Cacao Latte)",
+      "descriptionEs": "Cacao, azúcar de coco, chispas de chocolate vegano, sal rosada del Himalaya",
+      "descriptionEn": "Cacao, coconut sugar, vegan chocolate chips, Himalayan pink salt",
+      "price": "$4.25 - $5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chai-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Chai Latte",
+      "nameEn": "Hot Chai Latte",
+      "descriptionEs": "Concentrado de chai, leche a elegir, canela",
+      "descriptionEn": "Chai concentrate, choice of milk, cinnamon",
+      "price": "$4.95 - $5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-pumpkin-chai-latte",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Pumpkin Chai Latte",
+      "nameEn": "Hot Pumpkin Chai Latte",
+      "descriptionEs": "Concentrado de chai, leche a elegir, sabor a calabaza sin azúcar",
+      "descriptionEn": "Chai concentrate, choice of milk, sugar-free pumpkin flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "hot-beverages",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "Granos de café orgánicos de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$3.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-macchiato",
+      "categoryId": "hot-beverages",
+      "nameEs": "Espresso Macchiato",
+      "nameEn": "Espresso Macchiato",
+      "descriptionEs": "Doble tiro de espresso con espuma de leche",
+      "descriptionEn": "Double shot of espresso with milk foam",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cortado",
+      "categoryId": "hot-beverages",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "Granos de café orgánicos de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-green-tea",
+      "categoryId": "hot-beverages",
+      "nameEs": "Hot Green Tea",
+      "nameEn": "Hot Green Tea",
+      "descriptionEs": "Té verde sencha japonés",
+      "descriptionEn": "Japanese sencha green tea",
+      "price": "$2.95 - $3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-ginger-tea",
+      "categoryId": "hot-beverages",
+      "nameEs": "Lemon Ginger Tea",
+      "nameEn": "Lemon Ginger Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.95 - $3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chamomile-tea",
+      "categoryId": "hot-beverages",
+      "nameEs": "Chamomile Tea",
+      "nameEn": "Chamomile Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.95 - $3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-immunitea",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Immunitea",
+      "nameEn": "Iced Immunitea",
+      "descriptionEs": "Té de limón y jengibre, equinácea, limón, sidra de manzana",
+      "descriptionEn": "Lemon ginger tea, echinacea, lemon, apple cider",
+      "price": "$4.95 - $5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-coffee",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Coffee",
+      "nameEn": "Iced Coffee",
+      "descriptionEs": "Café alto en polifenoles",
+      "descriptionEn": "High polyphenol coffee",
+      "price": "$3.95 - $4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Latte",
+      "nameEn": "Iced Latte",
+      "descriptionEs": "Granos de café orgánicos de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$4.45 - $5.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-vanilla-bean-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Vanilla Bean Latte",
+      "nameEn": "Iced Vanilla Bean Latte",
+      "descriptionEs": "Leche a elegir, espresso, vainilla, espuma fría de vainilla",
+      "descriptionEn": "Milk of choice, espresso, vanilla bean, vanilla cold foam",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-hazelnut-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Hazelnut Latte",
+      "nameEn": "Iced Hazelnut Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a avellana, espuma fría de avellana",
+      "descriptionEn": "Milk of choice, espresso, hazelnut flavor, hazelnut cold foam",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-salted-caramel-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Salted Caramel Latte",
+      "nameEn": "Iced Salted Caramel Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a caramelo salado, espuma fría de caramelo salado",
+      "descriptionEn": "Milk of choice, espresso, salted caramel flavor, salted caramel cold foam",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-no-tella-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced No-Tella Latte",
+      "nameEn": "Iced No-Tella Latte",
+      "descriptionEs": "Leche a elegir, espresso, no-tella, sabor a avellana, espuma fría de avellana",
+      "descriptionEn": "Milk of choice, espresso, no-tella, hazelnut flavor, hazelnut cold foam",
+      "price": "$4.75 - $5.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-americano",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Americano",
+      "nameEn": "Iced Americano",
+      "descriptionEs": "Granos de café orgánicos de comercio justo",
+      "descriptionEn": "Organic fair-trade coffee beans",
+      "price": "$3.95 - $4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nitro-cold-brew-coffee",
+      "categoryId": "iced-beverages",
+      "nameEs": "Nitro Cold Brew Coffee",
+      "nameEn": "Nitro Cold Brew Coffee",
+      "descriptionEs": "Café cold brew nitro RISE",
+      "descriptionEn": "RISE nitro cold brew",
+      "price": "$5.55 - $6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Matcha Latte",
+      "nameEn": "Iced Matcha Latte",
+      "descriptionEs": "Matcha, jarabe de arce, agua filtrada, leche a elegir",
+      "descriptionEn": "Matcha, maple syrup, filtered water, choice of milk",
+      "price": "$5.55 - $6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Chai Latte",
+      "nameEn": "Iced Chai Latte",
+      "descriptionEs": "Concentrado de chai, leche a elegir, canela",
+      "descriptionEn": "Chai concentrate, choice of milk, cinnamon",
+      "price": "$4.95 - $5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-pumpkin-chai-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Pumpkin Chai Latte",
+      "nameEn": "Iced Pumpkin Chai Latte",
+      "descriptionEs": "Concentrado de chai, leche a elegir, sabor a calabaza sin azúcar",
+      "descriptionEn": "Chai concentrate, choice of milk, sugar-free pumpkin flavor",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-pumpkin-spice-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Pumpkin Spice Latte",
+      "nameEn": "Iced Pumpkin Spice Latte",
+      "descriptionEs": "Leche a elegir, espresso, sabor a calabaza, canela, espuma fría de calabaza",
+      "descriptionEn": "Milk of choice, espresso, pumpkin flavor, cinnamon, pumpkin cold foam",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-salted-caramel-matcha-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Salted Caramel Matcha Latte",
+      "nameEn": "Iced Salted Caramel Matcha Latte",
+      "descriptionEs": "Leche a elegir, matcha, sabor a caramelo salado, espuma fría de caramelo salado",
+      "descriptionEn": "Milk of choice, matcha, salted caramel flavor, salted caramel cold foam",
+      "price": "$4.95 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "irish-cream-cold-brew-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Irish Cream Cold Brew Latte",
+      "nameEn": "Irish Cream Cold Brew Latte",
+      "descriptionEs": "Cold brew, jarabe de crema irlandesa, leche a elegir, espuma fría de crema irlandesa",
+      "descriptionEn": "Cold brew, Irish cream syrup, choice of milk, Irish cream cold foam",
+      "price": "$6.15 - $6.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Espresso Martini Latte",
+      "nameEn": "Espresso Martini Latte",
+      "descriptionEs": "Espresso, leche entera, jarabe de crema irlandesa, espuma fría de crema irlandesa",
+      "descriptionEn": "Espresso, whole milk, Irish cream syrup, Irish cream cold foam",
+      "price": "$5.25 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-hot-chocolate-cacao-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Hot Chocolate (Cacao Latte)",
+      "nameEn": "Iced Hot Chocolate (Cacao Latte)",
+      "descriptionEs": "Cacao, azúcar de coco, chispas de chocolate vegano, sal rosada del Himalaya",
+      "descriptionEn": "Cacao, coconut sugar, vegan chocolate chips, Himalayan pink salt",
+      "price": "$4.25 - $5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-shroom-boost-latte",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced 'Shroom Boost Latte",
+      "nameEn": "Iced 'Shroom Boost Latte",
+      "descriptionEs": "Cacao, azúcar de coco, chispas de chocolate vegano, chaga, cordyceps, maitake, king trumpet, sal rosada del Himalaya",
+      "descriptionEn": "Cacao, coconut sugar, vegan chocolate chips, chaga, cordyceps, maitake, king trumpet, Himalayan pink salt",
+      "price": "$4.95 - $5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-green-tea",
+      "categoryId": "iced-beverages",
+      "nameEs": "Iced Green Tea",
+      "nameEn": "Iced Green Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.55 - $3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-iced-tea",
+      "categoryId": "iced-beverages",
+      "nameEs": "Black Iced Tea",
+      "nameEn": "Black Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.55 - $3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-iced-tea",
+      "categoryId": "iced-beverages",
+      "nameEs": "Mango Iced Tea",
+      "nameEn": "Mango Iced Tea",
+      "descriptionEs": "Elección de té negro o verde con jarabe de mango sin azúcar",
+      "descriptionEn": "Choice of black or green tea with sugar-free mango syrup",
+      "price": "$3.75 - $4.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sun-raven",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Sun Raven",
+      "nameEn": "Sun Raven",
+      "descriptionEs": "Jugo verde totalmente de verduras (sin fruta)",
+      "descriptionEn": "All-vegetable (no fruit) green juice",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-monster",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Green Monster",
+      "nameEn": "Green Monster",
+      "descriptionEs": "Más de 2 libras de verduras más espirulina, 6g de proteína",
+      "descriptionEn": "Over 2 lbs of greens plus spirulina, 6g protein",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turmeric-tonic",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Tónico de Cúrcuma",
+      "nameEn": "Turmeric Tonic",
+      "descriptionEs": "Zanahoria, pera, piña, jengibre, cúrcuma, limón",
+      "descriptionEn": "Carrot, pear, pineapple, ginger, turmeric, lemon",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "daily-detox",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Detox Diario",
+      "nameEn": "Daily Detox",
+      "descriptionEs": "Naranja, pera, piña, jengibre",
+      "descriptionEn": "Orange, pear, pineapple, ginger",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turmeric-boost-shot",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Shot Energizante de Cúrcuma",
+      "nameEn": "Turmeric Boost Shot",
+      "descriptionEs": "Shot de 3 oz: limón, manzana, jengibre, pimienta negra, cúrcuma",
+      "descriptionEn": "3 oz shot: lemon, apple, ginger, black pepper, turmeric",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cayenne-cleanse-shot",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Shot Depurativo de Cayena",
+      "nameEn": "Cayenne Cleanse Shot",
+      "descriptionEs": "Manzana, jengibre, limón, pimienta de cayena",
+      "descriptionEn": "Apple, ginger, lemon, cayenne pepper",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "g-t-bottled-water",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Agua Embotellada G&T",
+      "nameEn": "G&T Bottled Water",
+      "descriptionEs": "Agua de manantial en botella de aluminio",
+      "descriptionEn": "Spring water in an aluminum bottle",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-half-iced-tea-lemonade",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Té Helado con Lemonade Half & Half",
+      "nameEn": "Half & Half Iced Tea Lemonade",
+      "descriptionEs": "Agua filtrada, té negro, limón orgánico, agave orgánico, estevia orgánica; prensado en frío",
+      "descriptionEn": "Filtered water, black tea, organic lemon, organic agave, organic stevia; cold-pressed",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherry-lemonade",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Limonada de Cereza",
+      "nameEn": "Cherry Lemonade",
+      "descriptionEs": "Agua filtrada, cereza ácida, limón orgánico, agave orgánico, estevia orgánica; prensado en frío",
+      "descriptionEn": "Filtered water, tart cherry, organic lemon, organic agave, organic stevia; cold-pressed",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Limonada",
+      "nameEn": "Lemonade",
+      "descriptionEs": "Agua filtrada, limón orgánico, agave orgánico, estevia orgánica; prensado en frío",
+      "descriptionEn": "Filtered water, organic lemon, organic agave, organic stevia; cold-pressed",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-lemonade",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Limonada de Fresa",
+      "nameEn": "Strawberry Lemonade",
+      "descriptionEs": "Agua filtrada, fresa orgánica, limón orgánico, agave orgánico, estevia orgánica; prensado en frío",
+      "descriptionEn": "Filtered water, organic strawberry, organic lemon, organic agave, organic stevia; cold-pressed",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "detox-tea",
+      "categoryId": "cold-pressed-juices-bottled-beverages",
+      "nameEs": "Té Detox",
+      "nameEn": "Detox Tea",
+      "descriptionEs": "Agua filtrada, limón orgánico, miel, té negro, jengibre orgánico, cayena; prensado en frío",
+      "descriptionEn": "Filtered water, organic lemon, honey, black tea, organic ginger, cayenne; cold-pressed",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-a-smoothie",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Batido PB&A",
+      "nameEn": "PB&A Smoothie",
+      "descriptionEs": "Sidra de manzana, arándanos, plátanos, asaí, mantequilla de maní",
+      "descriptionEn": "Apple cider, blueberries, bananas, acai, peanut butter",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-guru",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Gurú Verde",
+      "nameEn": "Green Guru",
+      "descriptionEs": "Té verde, manzana verde, plátano, espinaca, limón, jengibre, menta",
+      "descriptionEn": "Green tea, green apple, banana, spinach, lemon, ginger, mint",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-dragon-fruit",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Fruta del Dragón Tropical",
+      "nameEn": "Tropical Dragon Fruit",
+      "descriptionEs": "Fruta del dragón, fresa, mango, plátano, anacardo, jugo de naranja",
+      "descriptionEn": "Dragon fruit, strawberry, mango, banana, cashew, orange juice",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "up-at-em",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Up & At 'Em",
+      "nameEn": "Up & At 'Em",
+      "descriptionEs": "Café infusionado en frío (cold brew), leche de almendras, plátano, mantequilla de almendras, cacao",
+      "descriptionEn": "Cold brew, almond milk, banana, almond butter, cacao",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ab-j",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "AB&J",
+      "nameEn": "AB&J",
+      "descriptionEs": "Sidra de manzana, fresas, plátano, mantequilla de almendras",
+      "descriptionEn": "Apple cider, strawberries, banana, almond butter",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultimate-warrior",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Guerrero Definitivo",
+      "nameEn": "Ultimate Warrior",
+      "descriptionEs": "Agua de coco, plátano, col rizada (kale), espinaca, semillas de chía",
+      "descriptionEn": "Coconut water, banana, kale, spinach, chia seeds",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "berry-garcia",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Berry Garcia",
+      "nameEn": "Berry Garcia",
+      "descriptionEs": "Agua de coco, asaí, fresa, arándano, plátano, semillas de cáñamo",
+      "descriptionEn": "Coconut water, acai, strawberry, blueberry, banana, hemp seeds",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zenergy",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Zenergy",
+      "nameEn": "Zenergy",
+      "descriptionEs": "Leche de coco, plátano, espinaca, mantequilla de almendras, matcha, canela",
+      "descriptionEn": "Coconut milk, banana, spinach, almond butter, matcha, cinnamon",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milky-way",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Vía Láctea",
+      "nameEn": "Milky Way",
+      "descriptionEs": "Leche de almendras, plátano, cacao, mantequilla de almendras, canela",
+      "descriptionEn": "Almond milk, banana, cacao, almond butter, cinnamon",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-tango",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Mango-Tango",
+      "nameEn": "Mango-Tango",
+      "descriptionEs": "Leche de coco, jugo de naranja, mango, plátano",
+      "descriptionEn": "Coconut milk, orange juice, mango, banana",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-moves-smoothie",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Batido Blue Moves",
+      "nameEn": "Blue Moves Smoothie",
+      "descriptionEs": "Plátano congelado, piña congelada, leche de coco, mantequilla de anacardo, proteína de vainilla, espirulina, remolino de coco",
+      "descriptionEn": "Frozen banana, frozen pineapple, coconut milk, cashew butter, vanilla protein, spirulina, coconut swirl",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultimate-recovery-smoothie",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Batido de Recuperación Definitiva",
+      "nameEn": "Ultimate Recovery Smoothie",
+      "descriptionEs": "Jugo de cereza ácida, agua de coco, plátano congelado, arándanos congelados, proteína de vainilla",
+      "descriptionEn": "Tart cherry juice, coconut water, frozen banana, frozen blueberries, vanilla protein",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "build-your-own-smoothie",
+      "categoryId": "superfood-smoothies",
+      "nameEs": "Arma Tu Propio Batido",
+      "nameEn": "Build Your Own Smoothie",
+      "descriptionEs": "Elección de 3",
+      "descriptionEn": "Choice of 3",
+      "price": "$9.95 - $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "build-your-own-acai-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Arma Tu Propio Bowl de Asaí",
+      "nameEn": "Build Your Own Acai Bowl",
+      "descriptionEs": "Base de asaí (asaí, plátano, leche de almendras) con tu elección de 3 ingredientes",
+      "descriptionEn": "Acai base (acai, banana, almond milk) with your choice of 3 toppings",
+      "price": "$11.95 - $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "choco-crunch-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Bowl Choco Crunch",
+      "nameEn": "Choco Crunch Bowl",
+      "descriptionEs": "Base de asaí; cubierto con granola energética, plátano, fresa, no-tella",
+      "descriptionEn": "Acai base; topped with energy granola, banana, strawberry, no-tella",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "essential-energy-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Bowl Essential Energy",
+      "nameEn": "Essential Energy Bowl",
+      "descriptionEs": "Base de asaí; cubierto con granola esencial, plátano, fresa, arándano, mantequilla de almendras",
+      "descriptionEn": "Acai base; topped with essential granola, banana, strawberry, blueberry, almond butter",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coco-berry-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Bowl Coco Berry",
+      "nameEn": "Coco Berry Bowl",
+      "descriptionEs": "Base de asaí; cubierto con coco, plátano, fresa, arándano, miel",
+      "descriptionEn": "Acai base; topped with coconut, banana, strawberry, blueberry, honey",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-power-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Bowl PB Power",
+      "nameEn": "PB Power Bowl",
+      "descriptionEs": "Base de asaí; cubierto con granola esencial, plátano, arándano, mantequilla de maní",
+      "descriptionEn": "Acai base; topped with essential granola, banana, blueberry, peanut butter",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-chicken-salad",
+      "categoryId": "sides-snacks",
+      "nameEs": "Ensalada de Pollo Orgánica",
+      "nameEn": "Organic Chicken Salad",
+      "descriptionEs": "Pechuga de pollo, cebolla morada encurtida, mayonesa de aquafaba",
+      "descriptionEn": "Chicken breast, pickled red onion, aquafaba mayonnaise",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-snack-pack",
+      "categoryId": "sides-snacks",
+      "nameEs": "Paquete de Snack de Huevos",
+      "nameEn": "Egg Snack Pack",
+      "descriptionEs": "Huevos duros de gallinas camperas, espinaca",
+      "descriptionEn": "Pasture-raised hardboiled eggs, spinach",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-berries-parfait",
+      "categoryId": "pots-puddings",
+      "nameEs": "Parfait de Plátano y Frutos Rojos",
+      "nameEn": "Banana & Berries Parfait",
+      "descriptionEs": "Leche de coco, plátano, semillas de chía, coco, arándanos, frambuesas",
+      "descriptionEn": "Coconut milk, banana, chia seeds, coconut, blueberries, raspberries",
+      "price": "$7.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamy-coconut-oats",
+      "categoryId": "pots-puddings",
+      "nameEs": "Avena Cremosa de Coco",
+      "nameEn": "Creamy Coconut Oats",
+      "descriptionEs": "Leche de coco, avena, ralladura de lima, agave, mango, frambuesas",
+      "descriptionEn": "Coconut milk, oats, lime zest, agave, mango, raspberries",
+      "price": "$7.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chia-pudding",
+      "categoryId": "pots-puddings",
+      "nameEs": "Pudín de Chía y Chocolate",
+      "nameEn": "Chocolate Chia Pudding",
+      "descriptionEs": "Leche de coco, cacao en polvo, semillas de chía, agave, fresa, almendra",
+      "descriptionEn": "Coconut milk, cacao powder, chia seeds, agave, strawberry, almond",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-vanilla-chia-pudding",
+      "categoryId": "pots-puddings",
+      "nameEs": "Pudín de Chía con Mango y Vainilla",
+      "nameEn": "Mango Vanilla Chia Pudding",
+      "descriptionEs": "Leche de coco, mango, semillas de chía, agave, extracto de vainilla, hojuelas de coco",
+      "descriptionEn": "Coconut milk, mango, chia seeds, agave, vanilla extract, coconut flakes",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-banana-bread",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Pan de Plátano Asado",
+      "nameEn": "Roasted Banana Bread",
+      "descriptionEs": "Plátanos asados, mezcla de harina sin gluten",
+      "descriptionEn": "Roasted bananas, gluten-free flour blend",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-coffee-cake",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Pastel de Café con Calabaza",
+      "nameEn": "Pumpkin Coffee Cake",
+      "descriptionEs": "Mezcla de harina sin gluten",
+      "descriptionEn": "Gluten-free flour blend",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-chocolate-energy-bites",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Bocaditos Energéticos de Chocolate y Mantequilla de Maní",
+      "nameEn": "Peanut Butter Chocolate Energy Bites",
+      "descriptionEs": "Avena sin gluten, miel pura, mantequilla de maní, maní, chispas de chocolate veganas",
+      "descriptionEn": "Gluten-free oats, raw honey, peanut butter, peanuts, vegan chocolate chips",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maca-cookie-dough-bites",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Bocaditos de Masa de Galleta con Maca",
+      "nameEn": "Maca Cookie Dough Bites",
+      "descriptionEs": "Maca, mantequilla de anacardo, harina de avena, harina de almendras, jarabe de arce, sal marina, vainilla, chispas de chocolate vegano",
+      "descriptionEn": "Maca, cashew butter, oat flour, almond flour, maple syrup, sea salt, vanilla, vegan chocolate chips",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anytime-cookie",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Anytime Cookie",
+      "nameEn": "Anytime Cookie",
+      "descriptionEs": "Harina de arroz integral, azúcar de Demerara, chía, semillas de calabaza y girasol, linaza, almendras, aceite de coco",
+      "descriptionEn": "Brown rice flour, demerara sugar, chia, pumpkin and sunflower seeds, flaxseed, almonds, coconut oil",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-cookie",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Chocolate Chip Cookie",
+      "nameEn": "Chocolate Chip Cookie",
+      "descriptionEs": "Mezcla de harina sin gluten",
+      "descriptionEn": "Gluten-free flour blend",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "almond-cranberry-collagen-bar",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Almond Cranberry Collagen Bar",
+      "nameEn": "Almond Cranberry Collagen Bar",
+      "descriptionEs": "Avena enrollada sin gluten, mantequilla de almendras, dátiles, arándanos secos, jarabe de arce, almendras, colágeno de hongos",
+      "descriptionEn": "Gluten-free rolled oats, almond butter, dates, dried cranberry, maple syrup, almonds, mushroom collagen",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-protein-bar",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Peanut Butter Protein Bar",
+      "nameEn": "Peanut Butter Protein Bar",
+      "descriptionEs": "Mantequilla de maní, proteína de lúcuma con vainilla",
+      "descriptionEn": "Peanut butter, vanilla lucuma protein",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-energy-bites",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Coconut Energy Bites",
+      "nameEn": "Coconut Energy Bites",
+      "descriptionEs": "Avena sin gluten, mantequilla de almendras, ágave, semillas de girasol, semillas de calabaza, hojuelas de coco",
+      "descriptionEn": "Gluten-free oats, almond butter, agave, sunflower seeds, pumpkin seeds, coconut flakes",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-cookie",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "Peanut Butter Cookie",
+      "nameEn": "Peanut Butter Cookie",
+      "descriptionEs": "Mantequilla de maní, chispas de mantequilla de maní, harina de almendras, jarabe de arce, huevo",
+      "descriptionEn": "Peanut butter, peanut butter chips, almond flour, maple syrup, egg",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-chocolate-coconut-cake",
+      "categoryId": "gluten-free-treats-power-snacks",
+      "nameEs": "White Chocolate Coconut Cake",
+      "nameEn": "White Chocolate Coconut Cake",
+      "descriptionEs": "Leche de coco, azúcar de Demerara, mezcla de harina sin gluten, harina de almendras, coco rallado, huevos",
+      "descriptionEn": "Coconut milk, demerara sugar, gluten-free flour blend, almond flour, shredded coconut, eggs",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "energy-granola",
+      "categoryId": "retail",
+      "nameEs": "Energy Granola",
+      "nameEn": "Energy Granola",
+      "descriptionEs": "Avena enrollada sin gluten, avellanas, semillas de calabaza, chispas de chocolate vegano",
+      "descriptionEn": "Gluten-free rolled oats, hazelnuts, pumpkin seeds, vegan chocolate chips",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "essential-granola",
+      "categoryId": "retail",
+      "nameEs": "Essential Granola",
+      "nameEn": "Essential Granola",
+      "descriptionEs": "Avena enrollada sin gluten, nueces, semillas de girasol, hojuelas de coco, harina de linaza, semillas de sésamo, canela, clavo",
+      "descriptionEn": "Gluten-free rolled oats, walnuts, sunflower seeds, coconut flakes, flaxmeal, sesame seeds, cinnamon, clove",
+      "price": "$10.95",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "¡Sí! Ofrecemos una amplia variedad de opciones marcadas claramente en nuestro menú para adaptarnos a tus necesidades nutricionales.",
-      "aEn": "Yes! We offer a wide variety of items clearly marked on our menu to accommodate your dietary preferences and needs."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos y reuniones?",
-      "qEn": "Do you offer catering services for events and meetings?",
-      "aEs": "Por supuesto, cubrimos todo tipo de fiestas, eventos corporativos y reuniones. Puedes ordenar directamente en línea o llamarnos.",
-      "aEn": "Absolutely! We cover all your catering needs for parties, corporate events, and meetings. Order online or call us directly."
-    }
-  ]
+  "faqs": []
 }
