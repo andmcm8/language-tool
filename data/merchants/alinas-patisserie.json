@@ -1,25 +1,19 @@
 {
   "storeInfo": {
     "id": "alinas-patisserie",
-    "name": "Alina's Patisserie",
-    "tagline": "European Elegance in the Heart of Fairfield | Elegancia Europea en el Corazón de Fairfield",
-    "address": "1525 Black Rock Turnpike, Fairfield, CT",
+    "name": "Alina's Cakes & Cookies",
+    "tagline": "Custom cakes, cupcakes and European pastries in Fairfield | Pasteles personalizados, cupcakes y repostería europea en Fairfield",
+    "address": "2480 Black Rock Turnpike (White Birch Plaza), Fairfield, CT 06825",
     "hours": {
-      "monday_friday": "7:00 AM - 6:00 PM",
-      "saturday": "8:00 AM - 7:00 PM",
-      "sunday": "8:00 AM - 4:00 PM"
+      "monday_friday": "Mon-Thu 10:00 AM - 6:00 PM; Fri 9:00 AM - 6:00 PM",
+      "saturday": "9:00 AM - 6:00 PM",
+      "sunday": "9:00 AM - 1:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Custom Orders",
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -27,135 +21,533 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(203) 576-1455"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Repostería Salada",
-      "nameEn": "Savory Pastries",
+      "id": "specialty-cakes",
+      "nameEs": "Pasteles Especiales",
+      "nameEn": "Specialty Cakes",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "custom-cake-options",
+      "nameEs": "Opciones de Pasteles Personalizados",
+      "nameEn": "Custom Cake Options",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalenas Saborizadas (sin gluten y regulares)",
+      "nameEn": "Flavored Cupcakes (gluten-free and regular)",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "cookies",
+      "nameEs": "Galletas",
+      "nameEn": "Cookies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pastries",
+      "nameEs": "Pastelitos",
+      "nameEn": "Pastries",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pies",
+      "nameEs": "Pies",
+      "nameEn": "Pies",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "alinas-01",
-      "categoryId": "appetizers",
-      "nameEs": "Croissant de Almendras",
-      "nameEn": "Almond Croissant",
-      "descriptionEs": "Hojaldre crujiente relleno de crema de almendras y cubierto con láminas tostadas.",
-      "descriptionEn": "Buttery, flaky pastry filled with almond cream and topped with toasted slivers.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Nueces",
-        "Lácteos"
-      ],
+      "id": "carrot-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Zanahoria",
+      "nameEn": "Carrot Cake",
+      "descriptionEs": "Capas de pastel de zanahoria y glaseado de queso crema, cubierto con nueces (contiene pasas, piña, nuez y especias)",
+      "descriptionEn": "Layers of carrot cake and cream cheese frosting, covered in walnuts (contains raisins, pineapple, walnut and spices)",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "alinas-02",
-      "categoryId": "mains",
-      "nameEs": "Quiche Lorraine Artesanal",
-      "nameEn": "Artisanal Quiche Lorraine",
-      "descriptionEs": "Tarta salada clásica con tocino ahumado, queso gruyère y una base de masa quebrada.",
-      "descriptionEn": "Classic savory tart with smoked bacon, gruyère cheese, and a buttery crust.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Casero",
-        "Almuerzo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "mousse-cakes",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pasteles de Mousse",
+      "nameEn": "Mousse Cakes",
+      "descriptionEs": "Capas de pastel de vainilla o chocolate y tu elección de mousse: chocolate blanco, con leche o amargo, fresa, frambuesa, mango, limón, café",
+      "descriptionEn": "Layers of vanilla or chocolate cake and your choice of mousse: white, milk or dark chocolate, strawberry, raspberry, mango, lemon, coffee",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "alinas-03",
-      "categoryId": "specialties",
-      "nameEs": "Ópera de Chocolate",
-      "nameEn": "Chocolate Opera Cake",
-      "descriptionEs": "Capas de bizcocho de almendras, ganache de chocolate y crema de café.",
-      "descriptionEn": "Layers of almond sponge, rich chocolate ganache, and coffee buttercream.",
-      "price": "$8.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Postre",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Gluten",
-        "Nueces",
-        "Lácteos"
-      ],
+      "id": "strawberry-shortcake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Fresa con Crema (Strawberry Shortcake)",
+      "nameEn": "Strawberry Shortcake",
+      "descriptionEs": "Capas de pastel de vainilla y crema chantilly envueltas con fresas frescas, cubierto con crema chantilly y decorado con fresas frescas",
+      "descriptionEn": "Layers of vanilla cake and chantilly cream folded with fresh strawberries, frosted in fresh chantilly cream and topped with fresh strawberries",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "alinas-04",
-      "categoryId": "beverages",
-      "nameEs": "Café Latte de Vainilla",
-      "nameEn": "Vanilla Bean Latte",
-      "descriptionEs": "Espresso intenso con leche vaporizada y un toque de vainilla natural.",
-      "descriptionEn": "Rich espresso with steamed milk and a hint of natural vanilla bean.",
-      "price": "$5.75",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Bebida Caliente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "black-forest-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel Selva Negra",
+      "nameEn": "Black Forest Cake",
+      "descriptionEs": "Capas de pastel de chocolate, crema chantilly de chocolate y vainilla y relleno de cereza negra, cubierto con crema chantilly, almendras en hojuelas y chocolate rallado",
+      "descriptionEn": "Layers of chocolate cake, chocolate and vanilla chantilly cream and black cherry filling, frosted in chantilly cream, covered in slivered almonds and shaved chocolate",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diplomat-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel Diplomático",
+      "nameEn": "Diplomat Cake",
+      "descriptionEs": "Capas de pastel de vainilla y mousse de vainilla y naranja relleno de mandarinas y piña, cubierto con crema chantilly fresca",
+      "descriptionEn": "Layers of vanilla cake and vanilla and orange mousse filled with mandarins and pineapple, covered in fresh chantilly cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-coconut-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Limón y Coco",
+      "nameEn": "Lemon Coconut Cake",
+      "descriptionEs": "Capas de pastel de vainilla y relleno de limón, glaseado con crema de mantequilla y cubierto con coco en hojuelas",
+      "descriptionEn": "Layers of vanilla cake and lemon filling frosted in butter cream and covered in flaked coconut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Coco",
+      "nameEn": "Coconut Cake",
+      "descriptionEs": "Capas de pastel de vainilla y crema de mantequilla de coco, cubierto con coco en hojuelas",
+      "descriptionEn": "Layers of vanilla cake and coconut butter cream, covered in flaked coconut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Tiramisu",
+      "nameEn": "Tiramisu Cake",
+      "descriptionEs": "Capas de pastel de vainilla, bizcochos de soletilla y crema de mascarpone",
+      "descriptionEn": "Layers of vanilla cake, ladyfingers and mascarpone cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Cannoli",
+      "nameEn": "Cannoli Cake",
+      "descriptionEs": "Capas de pastel de vainilla y relleno de cannoli cubierto con crema chantilly y decorado con cannolis",
+      "descriptionEn": "Layers of vanilla cake and cannoli filling covered in chantilly cream and topped with cannolis",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-rhum-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel Italiano de Ron",
+      "nameEn": "Italian Rhum Cake",
+      "descriptionEs": "Capas de pastel de vainilla empapado en jarabe de ron y crema pastelera de vainilla y chocolate, glaseado con crema chantilly y cubierto con almendras fileteadas",
+      "descriptionEn": "Layers of vanilla cake soaked with rhum syrup and vanilla and chocolate custard, frosted in chantilly cream and covered in slivered almonds",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-velvet-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel Red Velvet",
+      "nameEn": "Red Velvet Cake",
+      "descriptionEs": "Capas de pastel red velvet y glaseado de queso crema",
+      "descriptionEn": "Layers of red velvet cake and cream cheese frosting",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-cream-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Cookies and Cream",
+      "nameEn": "Cookies and Cream Cake",
+      "descriptionEs": "Capas de pastel de chocolate y crema de mantequilla de galleta Oreo",
+      "descriptionEn": "Layers of chocolate cake and Oreo cookie butter cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel de Tres Leches",
+      "nameEn": "Tres Leches Cake",
+      "descriptionEs": "Capas de pastel de vainilla empapado en leche condensada, evaporada y entera, cubierto con crema chantilly fresca",
+      "descriptionEn": "Layers of vanilla cake soaked in condensed, evaporated and regular milk, covered in fresh chantilly cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bungalow-cake",
+      "categoryId": "specialty-cakes",
+      "nameEs": "Pastel Bungalow",
+      "nameEn": "Bungalow Cake",
+      "descriptionEs": "Capas de pastel marmoleado y crema pastelera con fresas y plátanos frescos, cubierto con crema chantilly fresca",
+      "descriptionEn": "Layers of marble cake and custard with fresh strawberries and bananas, covered in fresh chantilly cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cake-flavors",
+      "categoryId": "custom-cake-options",
+      "nameEs": "Sabores de Pastel",
+      "nameEn": "Cake Flavors",
+      "descriptionEs": "Marmoleado, limón, zanahoria, red velvet, chocolate, vainilla",
+      "descriptionEn": "Marble, lemon, carrot, red velvet, chocolate, vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fillings",
+      "categoryId": "custom-cake-options",
+      "nameEs": "Rellenos",
+      "nameEn": "Fillings",
+      "descriptionEs": "Fudge, cannoli, crema batida y fresas, crema pastelera y fruta fresca (frutos rojos, plátanos, naranja o piña), mermelada de fresa, mermelada de frambuesa, cereza, limón, queso crema, mousse de limón, mousse de mango, mousse de fresa, mousse de frambuesa, mousse de chocolate blanco/con leche/amargo, ganache de chocolate, crema pastelera de vainilla o chocolate, crema de mantequilla de cookies and cream, crema de mantequilla de café, crema de mantequilla de chocolate, crema de mantequilla de vainilla",
+      "descriptionEn": "Fudge, cannoli, whipped cream and strawberries, custard and fresh fruit (berries, bananas, orange or pineapple), strawberry jam, raspberry jam, cherry, lemon, cream cheese, lemon mousse, mango mousse, strawberry mousse, raspberry mousse, white/milk/dark chocolate mousse, chocolate ganache, vanilla or chocolate custard, cookies and cream butter cream, coffee butter cream, chocolate butter cream, vanilla butter cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frostings",
+      "categoryId": "custom-cake-options",
+      "nameEs": "Glaseados",
+      "nameEn": "Frostings",
+      "descriptionEs": "Crema de mantequilla de frambuesa, crema de mantequilla de fresa, queso crema, crema de mantequilla de Nutella, crema de mantequilla de coco, fudge, ganache, crema batida, crema de mantequilla de cookies and cream, crema de mantequilla de mantequilla de maní, crema de mantequilla de chocolate, crema de mantequilla de vainilla",
+      "descriptionEn": "Raspberry butter cream, strawberry butter cream, cream cheese, Nutella butter cream, coconut butter cream, fudge, ganache, whipped cream, cookies and cream butter cream, peanut butter butter cream, chocolate butter cream, vanilla butter cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-velvet-cupcake-with-cream-cheese-frosting",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena Red Velvet con Glaseado de Queso Crema",
+      "nameEn": "Red Velvet Cupcake with Cream Cheese Frosting",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Nutella",
+      "nameEn": "Nutella Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ganache-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Ganache",
+      "nameEn": "Ganache Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "confetti-cupcake-with-sprinkles",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Confeti con Chispas de Colores",
+      "nameEn": "Confetti Cupcake with Sprinkles",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cake-cupcake-with-cream-cheese-frosting",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Pastel de Zanahoria con Glaseado de Queso Crema",
+      "nameEn": "Carrot Cake Cupcake with Cream Cheese Frosting",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Fresa",
+      "nameEn": "Strawberry Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Frambuesa",
+      "nameEn": "Raspberry Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dulce-de-leche-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Dulce de Leche",
+      "nameEn": "Dulce de Leche Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-and-coconut-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Limón y Coco",
+      "nameEn": "Lemon and Coconut Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-and-jelly-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Mantequilla de Maní y Mermelada",
+      "nameEn": "Peanut Butter and Jelly Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-cream-cupcake",
+      "categoryId": "flavored-cupcakes-gluten-free-and-regular",
+      "nameEs": "Magdalena de Cookies and Cream",
+      "nameEn": "Cookies and Cream Cupcake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sugar-cookies",
+      "categoryId": "cookies",
+      "nameEs": "Galletas de Azúcar",
+      "nameEn": "Sugar Cookies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-cookies",
+      "categoryId": "cookies",
+      "nameEs": "Galletas Surtidas",
+      "nameEn": "Mixed Cookies",
+      "descriptionEs": "Galletas spritz, mini galletas con chispas de M&M y de chocolate, galletas linzer, galletas craqueladas de chocolate",
+      "descriptionEn": "Spritz cookies, mini M&M and chocolate chip cookies, linzer cookies, chocolate crackle",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hungarian-cookies",
+      "categoryId": "cookies",
+      "nameEs": "Galletas Húngaras",
+      "nameEn": "Hungarian Cookies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "opera-cake",
+      "categoryId": "pastries",
+      "nameEs": "Pastel Opera",
+      "nameEn": "Opera Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "napoleon",
+      "categoryId": "pastries",
+      "nameEs": "Napoleón",
+      "nameEn": "Napoleon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "pastries",
+      "nameEs": "Tiramisu",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eclair",
+      "categoryId": "pastries",
+      "nameEs": "Eclair",
+      "nameEn": "Eclair",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dobos-cake",
+      "categoryId": "pastries",
+      "nameEs": "Pastel Dobos",
+      "nameEn": "Dobos Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-mousse",
+      "categoryId": "pastries",
+      "nameEs": "Mousse de Chocolate",
+      "nameEn": "Chocolate Mousse",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-mousses",
+      "categoryId": "pastries",
+      "nameEs": "Mousses de Fruta",
+      "nameEn": "Fruit Mousses",
+      "descriptionEs": "Frambuesa, fresa, limón, mango",
+      "descriptionEn": "Raspberry, strawberry, lemon, mango",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rum-cake",
+      "categoryId": "pastries",
+      "nameEs": "Pastel de Ron",
+      "nameEn": "Rum Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-cream-pastry",
+      "categoryId": "pastries",
+      "nameEs": "Pastelito de Cookies and Cream",
+      "nameEn": "Cookies and Cream Pastry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-velvet-pastry",
+      "categoryId": "pastries",
+      "nameEs": "Pastelito Red Velvet",
+      "nameEn": "Red Velvet Pastry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cake-pastry",
+      "categoryId": "pastries",
+      "nameEs": "Pastelito de Pastel de Zanahoria",
+      "nameEn": "Carrot Cake Pastry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli",
+      "categoryId": "pastries",
+      "nameEs": "Cannoli",
+      "nameEn": "Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cream-puffs",
+      "categoryId": "pastries",
+      "nameEs": "Repollitos de Crema",
+      "nameEn": "Cream Puffs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-pie",
+      "categoryId": "pies",
+      "nameEs": "Pie de Manzana",
+      "nameEn": "Apple Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-pie",
+      "categoryId": "pies",
+      "nameEs": "Pie de Arándano Azul",
+      "nameEn": "Blueberry Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-custard-pie",
+      "categoryId": "pies",
+      "nameEs": "Pie de Crema de Coco",
+      "nameEn": "Coconut Custard Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-custard-pie",
+      "categoryId": "pies",
+      "nameEs": "Pie de Crema de Huevo",
+      "nameEn": "Egg Custard Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú.",
-      "aEn": "Yes, please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono.",
-      "aEn": "We welcome walk-ins and phone reservations."
-    }
-  ]
+  "faqs": []
 }
