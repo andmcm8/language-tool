@@ -135,6 +135,29 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
         </div>
       </div>
 
+      {/* Unverified-menu notice (menu was not taken from the place's real menu yet) */}
+      {merchant.menuVerified === false && (
+        <div
+          role="note"
+          className="flex items-start gap-2.5 p-3 rounded-2xl border border-amber-300 bg-amber-50 text-amber-900"
+        >
+          <AlertTriangle className="w-4 h-4 mt-0.5 shrink-0 text-amber-600" aria-hidden="true" />
+          <p className="text-xs leading-relaxed">
+            {lang === "es" ? (
+              <>
+                <span className="font-semibold">Menú no verificado.</span> Todavía no hemos confirmado este menú con{" "}
+                {merchant.storeInfo.name}. Los platos y precios pueden no ser exactos; confírmelos con el personal.
+              </>
+            ) : (
+              <>
+                <span className="font-semibold">Unverified menu.</span> We haven&apos;t confirmed this menu with{" "}
+                {merchant.storeInfo.name} yet. Items and prices may not be accurate; please check with staff.
+              </>
+            )}
+          </p>
+        </div>
+      )}
+
       {/* Dynamic Category Selector Pills */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
         {merchant.categories.map((cat) => {
