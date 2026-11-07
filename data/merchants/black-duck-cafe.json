@@ -2,25 +2,23 @@
   "storeInfo": {
     "id": "black-duck-cafe",
     "name": "Black Duck Cafe",
-    "tagline": "Classic Waterfront Tavern & Grill in Westport, CT | Taberna y Parrilla Junto al Río",
-    "address": "605 Riverside Ave, Westport, CT",
+    "tagline": "Burgers, down-home seafood and live music on a barge on the Saugatuck River | Hamburguesas, mariscos caseros y música en vivo en una barcaza sobre el río Saugatuck",
+    "address": "605 Riverside Ave, Westport, CT 06880",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Hours not posted on website; happy hour Mon-Fri 4:00-6:00 PM (half-price appetizers)",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Waterfront View"
+      "Full Bar",
+      "Happy Hour",
+      "Live Music",
+      "Boat Dock",
+      "Kids Menu",
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,288 +31,1600 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEs": "Aperitivos",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
+      "id": "soups-salads",
+      "nameEs": "Sopas y Ensaladas",
+      "nameEn": "Soups & Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wings",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
       "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "nameEn": "Entrees",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "kids",
+      "nameEs": "Infantiles",
+      "nameEn": "Kids",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postres",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "draft-beer",
+      "nameEs": "Cerveza de Barril",
+      "nameEn": "Draft Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bottled-canned-beer",
+      "nameEs": "Cervezas en botella y lata",
+      "nameEn": "Bottled & Canned Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-glass",
+      "nameEs": "Vinos por copa",
+      "nameEn": "Wine by the Glass",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "black-duck-cafe-01",
+      "id": "clams-casino-1-2-dozen",
       "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Estilo Buffalo",
-      "nameEn": "Buffalo Chicken Wings",
-      "descriptionEs": "Alitas crujientes bañadas en nuestra salsa picante casera de la casa, servidas con bastones de apio y aderezo de queso azul.",
-      "descriptionEn": "Crispy wings tossed in our signature tangy hot sauce, served with crisp celery sticks and homemade blue cheese dressing.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Clams Casino (1/2 Docena)",
+      "nameEn": "Clams Casino (1/2 Dozen)",
+      "descriptionEs": "tocino, parmesano y mantequilla de ajo",
+      "descriptionEn": "bacon, parmesan & garlic butter",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-02",
+      "id": "clams-casino-dozen",
       "categoryId": "appetizers",
-      "nameEs": "Calamares Crujientes",
-      "nameEn": "Crispy Calamari",
-      "descriptionEs": "Calamares fritos a la perfección dorada, acompañados de rodajas de chiles cherry y nuestra salsa marinara casera.",
-      "descriptionEn": "Lightly battered and golden-fried calamari tossed with cherry pepper rings and served with a side of house-made marinara.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "nameEs": "Clams Casino (Docena)",
+      "nameEn": "Clams Casino (Dozen)",
+      "descriptionEs": "tocino, parmesano y mantequilla de ajo",
+      "descriptionEn": "bacon, parmesan & garlic butter",
+      "price": "$19.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-03",
+      "id": "crab-cakes",
       "categoryId": "appetizers",
-      "nameEs": "Pieles de Papa Rellenas",
-      "nameEn": "Loaded Potato Skins",
-      "descriptionEs": "Papas horneadas y crujientes cargadas con queso cheddar fundido, tocino ahumado crujiente y cebollín fresco, servidas con crema agria.",
-      "descriptionEn": "Crispy baked potato skins loaded with melted cheddar cheese, smoky bacon bits, and fresh chives, served with sour cream.",
-      "price": "$12.95",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Clásico",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Crab Cakes",
+      "nameEn": "Crab Cakes",
+      "descriptionEs": "dos pasteles grandes al estilo Maryland con salsa tártara y limón",
+      "descriptionEn": "two large Maryland style cakes with tartar sauce & lemon",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Clásica Black Duck",
-      "nameEn": "The Classic Black Duck Burger",
-      "descriptionEs": "Jugosa carne de res a la parrilla con queso cheddar, lechuga crujiente, tomate y cebolla roja en un pan brioche tostado, con papas fritas.",
-      "descriptionEn": "Juicy grilled beef patty topped with cheddar cheese, crisp lettuce, tomato, and red onion on a toasted brioche bun with French fries.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Favorite",
-      "tags": [
-        "Carne",
-        "A La Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "stuffed-clams",
+      "categoryId": "appetizers",
+      "nameEs": "Stuffed Clams",
+      "nameEn": "Stuffed Clams",
+      "descriptionEs": "dos almejas quahog con relleno casero y mantequilla derretida",
+      "descriptionEn": "two quahogs with house made stuffing & melted butter",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-05",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pescado Rebozado",
-      "nameEn": "Crispy Fish Sandwich",
-      "descriptionEs": "Filete de pescado fresco empanizado y frito, servido en un pan rústico con ensalada de col cremosa y salsa tártara de la casa.",
-      "descriptionEn": "Freshly battered and fried fish fillet served on a rustic roll with creamy coleslaw and house-made tartar sauce.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Pescado",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Huevo"
-      ],
+      "id": "chili-nachos-small",
+      "categoryId": "appetizers",
+      "nameEs": "Chili Nachos (Pequeños)",
+      "nameEn": "Chili Nachos (Small)",
+      "descriptionEs": "totopos caseros, chili, crema agria, jalapeños, aceitunas, tomate, salsa y cebollas",
+      "descriptionEn": "house made chips, chili, sour cream, jalapeños, olives, tomato, salsa & onions",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-06",
-      "categoryId": "mains",
-      "nameEs": "Sándwich Club de Pollo a la Parrilla",
-      "nameEn": "Grilled Chicken Club Sandwich",
-      "descriptionEs": "Pechuga de pollo jugosa a la parrilla, tocino crujiente, aguacate fresco, lechuga y tomate en pan de masa madre tostado.",
-      "descriptionEn": "Juicy grilled chicken breast, crispy bacon, fresh avocado, lettuce, and tomato stacked on toasted sourdough bread.",
-      "price": "$16.95",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Saludable",
-        "Aves"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "chili-nachos-medium",
+      "categoryId": "appetizers",
+      "nameEs": "Chili Nachos (Medianos)",
+      "nameEn": "Chili Nachos (Medium)",
+      "descriptionEs": "totopos caseros, chili, crema agria, jalapeños, aceitunas, tomate, salsa y cebollas",
+      "descriptionEn": "house made chips, chili, sour cream, jalapeños, olives, tomato, salsa & onions",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-07",
-      "categoryId": "specialties",
-      "nameEs": "Rollitos de Langosta Estilo Connecticut",
-      "nameEn": "Connecticut-Style Lobster Roll",
-      "descriptionEs": "Trocitos tiernos de carne de langosta fresca de Maine bañados en mantequilla tibia y hierbas finas, servidos en un pan tostado tipo brioche.",
-      "descriptionEn": "Tender chunks of fresh Maine lobster meat tossed in warm drawn butter and fresh herbs, served in a toasted split-top brioche bun.",
-      "price": "$28.95",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Especialidad",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "chili-nachos-large",
+      "categoryId": "appetizers",
+      "nameEs": "Chili Nachos (Grandes)",
+      "nameEn": "Chili Nachos (Large)",
+      "descriptionEs": "totopos caseros, chili, crema agria, jalapeños, aceitunas, tomate, salsa y cebollas",
+      "descriptionEn": "house made chips, chili, sour cream, jalapeños, olives, tomato, salsa & onions",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-08",
-      "categoryId": "specialties",
-      "nameEs": "Pescado con Papas Fritas (Fish & Chips)",
-      "nameEn": "Traditional Fish & Chips",
-      "descriptionEs": "Filete de abadejo fresco rebozado en cerveza artesanal, frito hasta quedar dorado, acompañado de papas fritas cortadas a mano y salsa tártara.",
-      "descriptionEn": "Fresh haddock fillet dipped in craft beer batter, fried golden brown, served with hand-cut french fries and tartar sauce.",
-      "price": "$21.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Tradicional",
-        "Pescado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "black-duck-cafe-09",
-      "categoryId": "specialties",
-      "nameEs": "Sopa Cremosa de Almejas (New England Clam Chowder)",
-      "nameEn": "New England Clam Chowder",
-      "descriptionEs": "Sopa tradicional espesa y reconfortante preparada con almejas frescas, papas tiernas, cebolla y tocino ahumado.",
-      "descriptionEn": "Thick, comforting traditional chowder made with fresh clams, tender potatoes, onions, and smoky bacon.",
-      "price": "$9.50",
-      "popular": false,
-      "badge": "Soup",
-      "tags": [
-        "Caliente",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Mariscos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "black-duck-cafe-10",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera de Frambuesa",
-      "nameEn": "House-Made Raspberry Lemonade",
-      "descriptionEs": "Limonada fresca hecha en casa con un toque de puré de frambuesas naturales y menta fresca.",
-      "descriptionEn": "Freshly squeezed lemonade infused with natural raspberry puree and fresh mint.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Sin Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "black-duck-cafe-11",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza IPA Local de CT",
-      "nameEn": "Connecticut Local Craft IPA",
-      "descriptionEs": "Cerveza IPA artesanal de barril elaborada en el estado de Connecticut, con notas cítricas y florales.",
-      "descriptionEn": "Draft craft IPA brewed right here in Connecticut, featuring crisp citrus and floral hop notes.",
+      "id": "pretzel",
+      "categoryId": "appetizers",
+      "nameEs": "Pretzel",
+      "nameEn": "Pretzel",
+      "descriptionEs": "pretzel suave gigante servido con mostaza dulce de Dijon",
+      "descriptionEn": "giant soft pretzel served with honey dijon",
       "price": "$8.00",
-      "popular": true,
-      "badge": "Craft",
-      "tags": [
-        "Alcohol",
-        "Cerveza"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "black-duck-cafe-12",
-      "categoryId": "beverages",
-      "nameEs": "Café Helado Cold Brew",
-      "nameEn": "Cold Brew Iced Coffee",
-      "descriptionEs": "Café de grano seleccionado infusionado en frío durante 24 horas, suave y con cafeína vigorizante.",
-      "descriptionEn": "Slow-steeped cold brew coffee for 24 hours, exceptionally smooth and invigorating.",
-      "price": "$4.25",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Cafeína",
-        "Frío"
-      ],
-      "allergens": [],
+      "id": "cheese-quesadilla",
+      "categoryId": "appetizers",
+      "nameEs": "Cheese Quesadilla",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "agrega pollo $6 o bistec $8",
+      "descriptionEn": "add chicken $6 or steak $8",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-nacho",
+      "categoryId": "appetizers",
+      "nameEs": "Happy Hour Nacho",
+      "nameEn": "Happy Hour Nacho",
+      "descriptionEs": "totopos caseros frescos, queso derretido y chili picante con crema agria, jalapeños, aceitunas, tomate, salsa y cebollas",
+      "descriptionEn": "fresh housemade chips, melted cheese and spicy chili with sour cream, jalapeños, olives, tomato, salsa and onions",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Mozzarella Sticks",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "servido con salsa marinara casera",
+      "descriptionEn": "served with house made marinara sauce",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder-cup",
+      "categoryId": "soups-salads",
+      "nameEs": "New England Clam Chowder (Taza)",
+      "nameEn": "New England Clam Chowder (Cup)",
+      "descriptionEs": "espesa, cremosa y servida con galletas de ostión",
+      "descriptionEn": "rich, creamy & served with oyster crackers",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder-bowl",
+      "categoryId": "soups-salads",
+      "nameEs": "New England Clam Chowder (Tazón)",
+      "nameEn": "New England Clam Chowder (Bowl)",
+      "descriptionEs": "espesa, cremosa y servida con galletas de ostión",
+      "descriptionEn": "rich, creamy & served with oyster crackers",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "French Onion Soup",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "cubierta con pan y queso suizo",
+      "descriptionEn": "topped with bread & Swiss cheese",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "House Salad",
+      "nameEn": "House Salad",
+      "descriptionEs": "lechuga mixta con pepino, tomate, cebolla y aceitunas",
+      "descriptionEn": "greens with cucumber, tomato, onion & olives",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crock-of-chili",
+      "categoryId": "soups-salads",
+      "nameEs": "Crock of Chili",
+      "nameEn": "Crock of Chili",
+      "descriptionEs": "cúbrelo con tu elección de cheddar, jalapeño, crema agria y cebolla",
+      "descriptionEn": "top with your choice of cheddar, jalapeño, sour cream and onion",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Caesar Salad",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "lechuga romana crujiente y picatostes, se sirve mezclada",
+      "descriptionEn": "crisp romaine & croutons, comes tossed",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Cobb Salad",
+      "nameEn": "Cobb Salad",
+      "descriptionEs": "lechuga mixta con pollo a la parrilla, tocino, cebolla, tomate, huevo, aguacate y queso azul desmenuzado",
+      "descriptionEn": "greens topped with grilled chicken, bacon, onion, tomato, egg, avocado & crumbled bleu cheese",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iceberg-wedge",
+      "categoryId": "soups-salads",
+      "nameEs": "Iceberg Wedge",
+      "nameEn": "Iceberg Wedge",
+      "descriptionEs": "cubierto con aderezo de queso azul, tocino, aguacate y trocitos de queso azul",
+      "descriptionEn": "covered in bleu cheese dressing, topped with bacon, avocado & bleu cheese crumbles",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Organic Salad",
+      "nameEn": "Organic Salad",
+      "descriptionEs": "hojas verdes 100% orgánicas, tomate y pepinos",
+      "descriptionEn": "all organic leafy greens, tomato & cucumbers",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Side Salad",
+      "nameEn": "Side Salad",
+      "descriptionEs": "una porción pequeña de la ensalada de la casa",
+      "descriptionEn": "a small version of the house salad",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-6",
+      "categoryId": "wings",
+      "nameEs": "Wings (6)",
+      "nameEn": "Wings (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-12",
+      "categoryId": "wings",
+      "nameEs": "Wings (12)",
+      "nameEn": "Wings (12)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-18",
+      "categoryId": "wings",
+      "nameEs": "Wings (18)",
+      "nameEn": "Wings (18)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-24",
+      "categoryId": "wings",
+      "nameEs": "Wings (24)",
+      "nameEn": "Wings (24)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-50",
+      "categoryId": "wings",
+      "nameEs": "Wings (50)",
+      "nameEn": "Wings (50)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$74.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-75",
+      "categoryId": "wings",
+      "nameEs": "Wings (75)",
+      "nameEn": "Wings (75)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-100",
+      "categoryId": "wings",
+      "nameEs": "Wings (100)",
+      "nameEn": "Wings (100)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$129.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boneless-wings",
+      "categoryId": "wings",
+      "nameEs": "Boneless Wings",
+      "nameEn": "Boneless Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-burger",
+      "categoryId": "burgers",
+      "nameEs": "Cheese Burger",
+      "nameEn": "Cheese Burger",
+      "descriptionEs": "elección de americano, cheddar o suizo",
+      "descriptionEn": "choice of American, cheddar or Swiss",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-duck-burger",
+      "categoryId": "burgers",
+      "nameEs": "Black Duck Burger",
+      "nameEn": "Black Duck Burger",
+      "descriptionEs": "bañada en pimientos, cebollas y champiñones salteados",
+      "descriptionEn": "smothered in sautéed peppers, onions and mushrooms",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-burger",
+      "categoryId": "burgers",
+      "nameEs": "Stuffed Burger",
+      "nameEn": "Stuffed Burger",
+      "descriptionEs": "rellena de queso brie, azul desmenuzado o cheddar añejo",
+      "descriptionEn": "stuffed with brie cheese, crumbled blue or sharp cheddar",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crest-burger",
+      "categoryId": "burgers",
+      "nameEs": "Crest Burger",
+      "nameEn": "Crest Burger",
+      "descriptionEs": "receta de un antiguo lugar de reunión de Westport",
+      "descriptionEn": "recipe from a former Westport hangout",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "big-top-burger",
+      "categoryId": "burgers",
+      "nameEs": "Big Top Burger",
+      "nameEn": "Big Top Burger",
+      "descriptionEs": "cubierta con cebollas fritas, tocino y salsa de barbacoa",
+      "descriptionEn": "topped with fried onions, bacon and barbecue sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-dog",
+      "categoryId": "burgers",
+      "nameEs": "Hot Dog",
+      "nameEn": "Hot Dog",
+      "descriptionEs": "salchicha de un cuarto de libra con de todo: chucrut, relish, cebollas",
+      "descriptionEn": "quarter pound dog with the works: sauerkraut, relish, onions",
+      "price": "$11.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "davey-jones-burger",
+      "categoryId": "burgers",
+      "nameEs": "Davey Jones Burger",
+      "nameEn": "Davey Jones Burger",
+      "descriptionEs": "cubierta con carne de langosta caliente con mantequilla",
+      "descriptionEn": "topped with hot buttered lobster meat",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheese-burger",
+      "categoryId": "burgers",
+      "nameEs": "Bacon Cheese Burger",
+      "nameEn": "Bacon Cheese Burger",
+      "descriptionEs": "tocino y elección de queso",
+      "descriptionEn": "bacon and choice of cheese",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bean-burger",
+      "categoryId": "burgers",
+      "nameEs": "Bean Burger",
+      "nameEn": "Bean Burger",
+      "descriptionEs": "hecha en casa, opción vegetariana",
+      "descriptionEn": "house made, vegetarian option",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-burger",
+      "categoryId": "burgers",
+      "nameEs": "Turkey Burger",
+      "nameEn": "Turkey Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "north-fork-bison",
+      "categoryId": "burgers",
+      "nameEs": "North Fork Bison",
+      "nameEn": "North Fork Bison",
+      "descriptionEs": "rica en proteínas; libre de gluten, hormonas, antibióticos y esteroides",
+      "descriptionEn": "rich in protein; gluten, hormone, antibiotic & steroid free",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben",
+      "categoryId": "sandwiches",
+      "nameEs": "Reuben",
+      "nameEn": "Reuben",
+      "descriptionEs": "corned beef clásico, queso suizo, aderezo ruso y chucrut en pan de centeno",
+      "descriptionEn": "classic corned beef, Swiss cheese, Russian dressing & sauerkraut on rye",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "triple-decker-club",
+      "categoryId": "sandwiches",
+      "nameEs": "Triple Decker Club",
+      "nameEn": "Triple Decker Club",
+      "descriptionEs": "pechuga de pavo, tocino, lechuga, tomate y mayonesa en pan blanco, de trigo o de centeno",
+      "descriptionEn": "turkey breast, bacon, lettuce, tomato & mayo on white, wheat or rye",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "BLT Clásico",
+      "nameEn": "Classic BLT",
+      "descriptionEs": "abundante tocino con lechuga, tomate y mayonesa en pan blanco, integral o de centeno",
+      "descriptionEn": "plenty of bacon with lettuce, tomato & mayo on white, wheat or rye",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de Pollo a la Parrilla",
+      "nameEn": "Grilled Chicken Sandwich",
+      "descriptionEs": "pechuga de pollo a la parrilla, lechuga y tomate en pan brioche",
+      "descriptionEn": "grilled chicken breast, lettuce & tomato on a brioche roll",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de Queso Fundido",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "pan blanco, integral o de centeno",
+      "descriptionEn": "white, wheat or rye",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-chicken-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "BLT de Pollo Ennegrecido",
+      "nameEn": "Blackened Chicken BLT",
+      "descriptionEs": "sazón ennegrecida de la casa, BLT, aguacate y mayonesa al chipotle en pan grinder",
+      "descriptionEn": "house made blackening, BLT, avocado & chipotle mayo on a grinder",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheese-steak",
+      "categoryId": "sandwiches",
+      "nameEs": "Philly Cheese Steak",
+      "nameEn": "Philly Cheese Steak",
+      "descriptionEs": "filete cortado en finas tiras, queso fundido, cebollas a la parrilla",
+      "descriptionEn": "thin sliced steak, melted cheese, grilled onions",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-pulled-pork-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de Cerdo Desmenuzado BBQ",
+      "nameEn": "BBQ Pulled Pork Sandwich",
+      "descriptionEs": "cubierto con queso cheddar fundido y ensalada de repollo de la casa en pan brioche",
+      "descriptionEn": "topped with melted cheddar & house made slaw on a brioche roll",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben-burger-sliders",
+      "categoryId": "sandwiches",
+      "nameEs": "Mini Hamburguesas Estilo Reuben",
+      "nameEn": "Reuben Burger Sliders",
+      "descriptionEs": "3 mini hamburguesas con queso cubiertas con todos los ingredientes del estilo Reuben",
+      "descriptionEn": "3 cheeseburger sliders topped with all the Reuben fixings",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll",
+      "categoryId": "seafood",
+      "nameEs": "Rollo de Langosta",
+      "nameEn": "Lobster Roll",
+      "descriptionEs": "caliente y con mantequilla, al estilo de Connecticut",
+      "descriptionEn": "hot & buttered, the Connecticut way",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "seafood",
+      "nameEs": "Pescado con Papas Fritas",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "dos filetes grandes frescos empanizados y papas fritas",
+      "descriptionEn": "two fresh large battered fillets & fries",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-basket",
+      "categoryId": "seafood",
+      "nameEs": "Canasta de Camarones",
+      "nameEn": "Shrimp Basket",
+      "descriptionEs": "5 camarones frescos, empanizados a mano y fritos",
+      "descriptionEn": "5 fresh shrimp, hand-battered & fried",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-clam-strips",
+      "categoryId": "seafood",
+      "nameEs": "Tiras de Almeja Frita",
+      "nameEn": "Fried Clam Strips",
+      "descriptionEs": "empanizadas y crujientes con salsa tártara o cóctel",
+      "descriptionEn": "crispy battered with tartar or cocktail sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "king-lobster-roll",
+      "categoryId": "seafood",
+      "nameEs": "Rollo de Langosta King",
+      "nameEn": "King Lobster Roll",
+      "descriptionEs": "una porción doble de langosta, caliente y con mantequilla",
+      "descriptionEn": "a double lobster portion, hot & buttered",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-reuben",
+      "categoryId": "seafood",
+      "nameEs": "Reuben de Langosta",
+      "nameEn": "Lobster Reuben",
+      "descriptionEs": "queso suizo, aderezo ruso y chucrut cubierto con carne de langosta",
+      "descriptionEn": "Swiss cheese, Russian dressing & sauerkraut topped with lobster meat",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-po-boy",
+      "categoryId": "seafood",
+      "nameEs": "Po'Boy de Camarones",
+      "nameEn": "Shrimp Po'Boy",
+      "descriptionEs": "camarones ennegrecidos, lechuga, tomate y rémoulade cajún en pan grinder",
+      "descriptionEn": "blackened shrimp, lettuce, tomato & Cajun remoulade on a grinder",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broiled-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón a la Plancha",
+      "nameEn": "Broiled Salmon",
+      "descriptionEs": "vino blanco y mantequilla",
+      "descriptionEn": "white wine & butter",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "faroe-island-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón de las Islas Feroe",
+      "nameEn": "Faroe Island Salmon",
+      "descriptionEs": "sellado con salsa de mantequilla, cítricos y eneldo",
+      "descriptionEn": "seared with citrus dill butter sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón Ennegrecido",
+      "nameEn": "Blackened Salmon",
+      "descriptionEs": "sazón de la casa",
+      "descriptionEn": "house made rub",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-branzino-filet",
+      "categoryId": "entrees",
+      "nameEs": "Filete de Branzino Salteado",
+      "nameEn": "Sautéed Branzino Filet",
+      "descriptionEs": "servido con una salsa de la casa, hierbas y un toque de ajo",
+      "descriptionEn": "served with a house made salsa, herbs & a hint of garlic",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-sliced-hanger-steak",
+      "categoryId": "entrees",
+      "nameEs": "Filete Hanger a la Parrilla y en Tiras",
+      "nameEn": "Grilled & Sliced Hanger Steak",
+      "descriptionEs": "filete hanger a la parrilla, sazonado y sellado",
+      "descriptionEn": "grilled hanger steak, seasoned & seared",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curly-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Fritas en Espiral",
+      "nameEn": "Curly Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de Cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "sides",
+      "nameEs": "Ensalada de Repollo",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "sides",
+      "nameEs": "Papa al Horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Fritas",
+      "nameEn": "Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-burger",
+      "categoryId": "kids",
+      "nameEs": "Hamburguesa Infantil",
+      "nameEn": "Kids Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-chicken-fingers",
+      "categoryId": "kids",
+      "nameEs": "Dedos de Pollo Infantiles",
+      "nameEn": "Kids Chicken Fingers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-grilled-cheese",
+      "categoryId": "kids",
+      "nameEs": "Sándwich de Queso Fundido Infantil",
+      "nameEn": "Kids Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-dog",
+      "categoryId": "kids",
+      "nameEs": "Hot Dog Infantil",
+      "nameEn": "Kids Dog",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-cheeseburger",
+      "categoryId": "kids",
+      "nameEs": "Hamburguesa con Queso Infantil",
+      "nameEn": "Kids Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de Chocolate",
+      "nameEn": "Chocolate Cake",
+      "descriptionEs": "el estilo cambia regularmente",
+      "descriptionEn": "style changes regularly",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-fudge-brownie-sundae",
+      "categoryId": "dessert",
+      "nameEs": "Sundae de Brownie Casero",
+      "nameEn": "House-Made Fudge Brownie Sundae",
+      "descriptionEs": "sundae de brownie con helado de chocolate o vainilla, cubierto con fudge caliente o salsa de caramelo",
+      "descriptionEn": "brownie sundae with chocolate or vanilla ice cream, topped with hot fudge or caramel sauce",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-style-cheesecake",
+      "categoryId": "dessert",
+      "nameEs": "Cheesecake Estilo Nueva York",
+      "nameEn": "New York Style Cheesecake",
+      "descriptionEs": "una porción pequeña a un precio bajo",
+      "descriptionEn": "a small piece at a small price",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de Zanahoria",
+      "nameEn": "Carrot Cake",
+      "descriptionEs": "pastel de zanahoria especiado con un rico glaseado de queso crema",
+      "descriptionEn": "spiced carrot cake with rich cream cheese frosting",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-cheesecake",
+      "categoryId": "dessert",
+      "nameEs": "Cheesecake de Calabaza",
+      "nameEn": "Pumpkin Cheesecake",
+      "descriptionEs": "de temporada: una capa de calabaza sobre el cheesecake",
+      "descriptionEn": "seasonal: a layer of pumpkin on top of the cheesecake",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creme-brulee",
+      "categoryId": "dessert",
+      "nameEs": "Crème Brûlée",
+      "nameEn": "Crème Brûlée",
+      "descriptionEs": "suave crema de vainilla cubierta con una costra crujiente de azúcar caramelizada",
+      "descriptionEn": "silky vanilla custard topped with a crisp caramelized sugar crust",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barn-brew-farmers-lager",
+      "categoryId": "draft-beer",
+      "nameEs": "Barn Brew Farmers Lager",
+      "nameEn": "Barn Brew Farmers Lager",
+      "descriptionEs": "4.1% ABV Cerveza Lager Ligera",
+      "descriptionEn": "4.1% ABV Light Lager",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barn-brew-pa-s-pilsner",
+      "categoryId": "draft-beer",
+      "nameEs": "Barn Brew Pa's Pilsner",
+      "nameEn": "Barn Brew Pa's Pilsner",
+      "descriptionEs": "5.2% ABV Cerveza Pilsner",
+      "descriptionEn": "5.2% ABV Pilsner",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-moon",
+      "categoryId": "draft-beer",
+      "nameEs": "Blue Moon",
+      "nameEn": "Blue Moon",
+      "descriptionEs": "5.4% ABV Cerveza de Trigo",
+      "descriptionEn": "5.4% ABV Wheat Ale",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "draft-beer",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "4.2% ABV Cerveza Lager",
+      "descriptionEn": "4.2% ABV Lager",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capt-zig-midnight-stout",
+      "categoryId": "draft-beer",
+      "nameEs": "Capt Zig Midnight Stout",
+      "nameEn": "Capt Zig Midnight Stout",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-headway",
+      "categoryId": "draft-beer",
+      "nameEs": "Counter Weight Headway",
+      "nameEn": "Counter Weight Headway",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-stout",
+      "categoryId": "draft-beer",
+      "nameEs": "Double Stout",
+      "nameEn": "Double Stout",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fuzzy-baby-ducks",
+      "categoryId": "draft-beer",
+      "nameEs": "Fuzzy Baby Ducks",
+      "nameEn": "Fuzzy Baby Ducks",
+      "descriptionEs": "Hazy IPA 6.2%",
+      "descriptionEn": "Hazy IPA 6.2%",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guinness",
+      "categoryId": "draft-beer",
+      "nameEs": "Guinness",
+      "nameEn": "Guinness",
+      "descriptionEs": "Stout irlandesa de 4.2% ABV",
+      "descriptionEn": "4.2% ABV Irish Stout",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lawson-s-lil-sip",
+      "categoryId": "draft-beer",
+      "nameEs": "Lawson's - Lil' Sip",
+      "nameEn": "Lawson's - Lil' Sip",
+      "descriptionEs": "IPA americana de 6.2% ABV",
+      "descriptionEn": "6.2% ABV American IPA",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maine-lunch",
+      "categoryId": "draft-beer",
+      "nameEs": "Maine Lunch",
+      "nameEn": "Maine Lunch",
+      "descriptionEs": "IPA americana de 7% ABV",
+      "descriptionEn": "7% ABV American IPA",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miller-lite",
+      "categoryId": "draft-beer",
+      "nameEs": "Miller Lite",
+      "nameEn": "Miller Lite",
+      "descriptionEs": "Pilsner de 4.2% ABV",
+      "descriptionEn": "4.2% ABV Pilsner",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo",
+      "categoryId": "draft-beer",
+      "nameEs": "Modelo",
+      "nameEn": "Modelo",
+      "descriptionEs": "Lager de 4.5% ABV",
+      "descriptionEn": "4.5% ABV Lager",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-ghost-pigeon",
+      "categoryId": "draft-beer",
+      "nameEs": "New England Ghost Pigeon",
+      "nameEn": "New England Ghost Pigeon",
+      "descriptionEs": "Ghost Pigeon Porter",
+      "descriptionEn": "Ghost Pigeon Porter",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sam-adams-winter-ale",
+      "categoryId": "draft-beer",
+      "nameEs": "SAM ADAMS Winter Ale",
+      "nameEn": "SAM ADAMS Winter Ale",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stowes-cider",
+      "categoryId": "draft-beer",
+      "nameEs": "Stowes Cider",
+      "nameEn": "Stowes Cider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-no-limits",
+      "categoryId": "draft-beer",
+      "nameEs": "Two Roads No Limits",
+      "nameEn": "Two Roads No Limits",
+      "descriptionEs": "Hefeweizen de 5% ABV",
+      "descriptionEn": "5% ABV Hefeweizen",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuengling",
+      "categoryId": "draft-beer",
+      "nameEs": "Yuengling",
+      "nameEn": "Yuengling",
+      "descriptionEs": "Red Lager de 4.5% ABV",
+      "descriptionEn": "4.5% ABV Red Lager",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "amstel-or-amstel-light",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Amstel o Amstel Light",
+      "nameEn": "Amstel or Amstel Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-run-wild-ipa",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Athletic Run Wild IPA",
+      "nameEn": "Athletic Run Wild IPA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-upside-dawn-golden",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Athletic Upside Dawn Golden",
+      "nameEn": "Athletic Upside Dawn Golden",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barn-brew-farmer-larger",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Barn Brew Farmer Larger",
+      "nameEn": "Barn Brew Farmer Larger",
+      "descriptionEs": "La favorita de Duck en latas de 16 oz.",
+      "descriptionEn": "Duck Favorite in 16 oz cans.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barn-brew-haze-for-horses",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Barn Brew Haze For Horses",
+      "nameEn": "Barn Brew Haze For Horses",
+      "descriptionEs": "Hazy IPA de 6.4% ABV",
+      "descriptionEn": "6.4% ABV Hazy IPA",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barn-brew-oktoberfest",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Barn Brew Oktoberfest",
+      "nameEn": "Barn Brew Oktoberfest",
+      "descriptionEs": "Oktoberfest de 6% ABV",
+      "descriptionEn": "6% ABV Oktoberfest",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light-2",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "budweiser",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Budweiser",
+      "nameEn": "Budweiser",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capt-zig-sidekick-pils",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Capt. Zig Sidekick Pils",
+      "nameEn": "Capt. Zig Sidekick Pils",
+      "descriptionEs": "Captain Zig Sidekick Pilsner",
+      "descriptionEn": "Captain Zig Sidekick Pilsner",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coors-light",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Coors Light",
+      "nameEn": "Coors Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Corona",
+      "nameEn": "Corona",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-bright-wave-ipa",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Counter Weight Bright Wave IPA",
+      "nameEn": "Counter Weight Bright Wave IPA",
+      "descriptionEs": "West Coast IPA de 7% ABV",
+      "descriptionEn": "7% ABV West Coast IPA",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-headway-2",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Counter Weight Headway",
+      "nameEn": "Counter Weight Headway",
+      "descriptionEs": "IPA americana de 6.5% ABV",
+      "descriptionEn": "6.5% ABV American IPA",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-high-note-lager",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Counter Weight High Note Lager",
+      "nameEn": "Counter Weight High Note Lager",
+      "descriptionEs": "Lager con lúpulo de 5.4% ABV",
+      "descriptionEn": "5.4% ABV Hoppy Lager",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-workhorse-pils",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Counter Weight Workhorse Pils",
+      "nameEn": "Counter Weight Workhorse Pils",
+      "descriptionEs": "Pilsner estilo alemán de 5% ABV",
+      "descriptionEn": "5%ABV German Style Pilsner",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "doc-s-pumpkin-cider",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Doc's Pumpkin Cider",
+      "nameEn": "Doc's Pumpkin Cider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-equis",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Dos Equis",
+      "nameEn": "Dos Equis",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-xx-amber",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Dos XX Amber",
+      "nameEn": "Dos XX Amber",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "focal-banger",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Focal Banger",
+      "nameEn": "Focal Banger",
+      "descriptionEs": "IPA Alchemist de 7% ABV",
+      "descriptionEn": "7% ABV Alchemist IPA",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guinness-0",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Guinness 0",
+      "nameEn": "Guinness 0",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heady-topper",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Heady Topper",
+      "nameEn": "Heady Topper",
+      "descriptionEs": "Imperial IPA de 8% ABV",
+      "descriptionEn": "8% ABV Imperial IPA",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heineken",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Heineken",
+      "nameEn": "Heineken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heineken-0-0",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Heineken 0.0",
+      "nameEn": "Heineken 0.0",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "i-have-a-small-weiner",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "I Have A Small Weiner",
+      "nameEn": "I Have A Small Weiner",
+      "descriptionEs": "Helles Lager",
+      "descriptionEn": "Helles Lager",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kent-falls-the-hollow-pilsner",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Kent Falls The Hollow Pilsner",
+      "nameEn": "Kent Falls The Hollow Pilsner",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "Light Lager de 4.2% ABV",
+      "descriptionEn": "4.2% ABV Light Lager",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miller-lite-2",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Miller Lite",
+      "nameEn": "Miller Lite",
+      "descriptionEs": "Pilsner de 4.2% ABV",
+      "descriptionEn": "4.2% ABV Pilsner",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "narragansett",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Narragansett",
+      "nameEn": "Narragansett",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naughty-nurse",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Naughty Nurse",
+      "nameEn": "Naughty Nurse",
+      "descriptionEs": "Naughty Nurse ABV 5.0% Intensa y cremosa, 100% inglesa",
+      "descriptionEn": "Naughty Nurse ABV 5.0% Sharp & Creamy English to the Core",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oskar-blues-death-by-coconut",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Oskar Blues Death By Coconut",
+      "nameEn": "Oskar Blues Death By Coconut",
+      "descriptionEs": "Porter con coco y chocolate de 6.5% ABV",
+      "descriptionEn": "6.5% ABV Coconut/Chocolate Porter",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oskar-blues-ten-fiddy",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Oskar Blues Ten Fiddy",
+      "nameEn": "Oskar Blues Ten Fiddy",
+      "descriptionEs": "Imperial Stout de 10.5% ABV",
+      "descriptionEn": "10.5% ABV Imperial Stout",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pbr",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "PBR",
+      "nameEn": "PBR",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rolling-rock",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Rolling Rock",
+      "nameEn": "Rolling Rock",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stella",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Stella",
+      "nameEn": "Stella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thomas-hooker-nofilter",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Thomas Hooker Nofilter",
+      "nameEn": "Thomas Hooker Nofilter",
+      "descriptionEs": "IPA cítrica y Mosaic de 7.0% ABV",
+      "descriptionEn": "7.0% ABV Citric And Mosaic IPA",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "troegs-sunshine-salt-lime",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Troegs Sunshine Salt + Lime",
+      "nameEn": "Troegs Sunshine Salt + Lime",
+      "descriptionEs": "Lager americana de 4.3% ABV",
+      "descriptionEn": "4.3% ABV American Lager",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twelve-percent-snappy-lager-12oz",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Twelve Percent Snappy Lager 12oz",
+      "nameEn": "Twelve Percent Snappy Lager 12oz",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-honeyspot",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Two Roads Honeyspot",
+      "nameEn": "Two Roads Honeyspot",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-lil-heaven",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Two Roads Lil' Heaven",
+      "nameEn": "Two Roads Lil' Heaven",
+      "descriptionEs": "Session IPA de 4.8% ABV",
+      "descriptionEn": "4.8% ABV Session IPA",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-road-to-ruin",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Two Roads Road To Ruin",
+      "nameEn": "Two Roads Road To Ruin",
+      "descriptionEs": "Imperial IPA de 8% ABV",
+      "descriptionEn": "8%ABV Imperial IPA",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-two-veza",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Two Roads Two Veza",
+      "nameEn": "Two Roads Two Veza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zero-gravity-conehead",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Zero Gravity Conehead",
+      "nameEn": "Zero Gravity Conehead",
+      "descriptionEs": "IPA estadounidense de 5.7% ABV",
+      "descriptionEn": "5.7% ABV American IPA",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zero-gravity-duck-duck-juice",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Zero Gravity Duck Duck Juice",
+      "nameEn": "Zero Gravity Duck Duck Juice",
+      "descriptionEs": "Hazy IPA de 7% ABV",
+      "descriptionEn": "7% ABV Hazy IPA",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Cabernet",
+      "nameEn": "Cabernet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "candoni-spritz",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Candoni Spritz",
+      "nameEn": "Candoni Spritz",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "centine-banfi-toscana",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Centine Banfi Toscana",
+      "nameEn": "Centine Banfi Toscana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Chardonnay",
+      "nameEn": "Chardonnay",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "franco-amoroso-gavi",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Franco Amoroso Gavi",
+      "nameEn": "Franco Amoroso Gavi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-mesma-gavi",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "La Mesma Gavi",
+      "nameEn": "La Mesma Gavi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Malbec",
+      "nameEn": "Malbec",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "merlot",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Merlot",
+      "nameEn": "Merlot",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Pinot Grigio",
+      "nameEn": "Pinot Grigio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Pinot Noir",
+      "nameEn": "Pinot Noir",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-187ml",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "PROSECCO-187ml",
+      "nameEn": "PROSECCO-187ml",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Rosé",
+      "nameEn": "Rose",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Sauvignon Blanc",
+      "nameEn": "Sauvignon Blanc",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones seleccionadas. Por favor pregunte a su mesero por los ingredientes actuales.",
-      "aEn": "Yes, we offer select options. Please ask your server about our current ingredients and modifications."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos de cualquier tamaño.",
-      "aEn": "We welcome walk-ins and also accept phone reservations for parties of all sizes."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Sí, tenemos estacionamiento en el lote contiguo y también hay estacionamiento gratuito en la calle Riverside Ave.",
-      "aEn": "Yes, parking is available in the adjacent lot as well as complimentary street parking along Riverside Ave."
-    }
-  ]
+  "faqs": []
 }

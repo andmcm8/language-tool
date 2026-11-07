@@ -1,26 +1,23 @@
 {
   "storeInfo": {
     "id": "martel-bistro-bar",
-    "name": "Martel Bistro & Bar",
-    "tagline": "Fine French-American Bistro & Bar in Fairfield, CT | Bistró Francés-Americano",
+    "name": "Martel",
+    "tagline": "American bistro with French flair on the Fairfield-Southport line | Bistró estadounidense con toque francés entre Fairfield y Southport",
     "address": "2316 Post Road, Fairfield, CT 06824",
-    "phone": "",
+    "phone": "(203) 292-6916",
     "hours": {
       "monday_friday": "11:30 AM - 10:00 PM",
       "saturday": "11:30 AM - 10:00 PM",
       "sunday": "11:30 AM - 10:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Curbside Pickup"
+      "Curbside Pickup",
+      "Full Bar",
+      "Raw Bar",
+      "Bilingual Menu"
     ],
     "themeColor": "#8b263e",
     "logoIcon": "utensils",
@@ -32,302 +29,1228 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
+      "id": "salade",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salade",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
       "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "nameEn": "Entrées",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-salade",
+      "nameEs": "Almuerzo — Ensalada",
+      "nameEn": "Lunch — Salade",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-prix-fixe",
+      "nameEs": "Almuerzo — Menú de Precio Fijo",
+      "nameEn": "Lunch — Prix Fixe",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-entrees",
+      "nameEs": "Almuerzo — Platos Principales",
+      "nameEn": "Lunch — Entrées",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Almuerzo — Sándwiches (con papas fritas o ensalada verde)",
+      "nameEn": "Lunch — Sandwiches (with frites or salade verte)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "digestif",
+      "nameEs": "Bajativo",
+      "nameEn": "Digestif",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "martel-bistro-bar-01",
+      "id": "coquilles-st-jacques",
       "categoryId": "appetizers",
-      "nameEs": "Sopa de Cebolla Francesa Gratinada",
-      "nameEn": "French Onion Soup Gratinée",
-      "descriptionEs": "Caldo de cebolla caramelizada a fuego lento, coronado con pan rústico tostado y abundante queso gruyère fundido.",
-      "descriptionEn": "Slow-simmered caramelized onion broth topped with toasted rustic bread and bubbling melted gruyère cheese.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Lácteos",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "martel-bistro-bar-02",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones al Vino Blanco",
-      "nameEn": "Mussels Marinière",
-      "descriptionEs": "Mejillones frescos de la costa salteados en una delicada salsa de vino blanco, echalotes, ajo, mantequilla y finas hierbas.",
-      "descriptionEn": "Fresh coastal mussels sautéed in a delicate white wine broth with shallots, garlic, butter, and fresh herbs.",
-      "price": "$17.00",
-      "popular": false,
-      "badge": "Del Mar",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "martel-bistro-bar-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada César Bistro",
-      "nameEn": "Bistro Caesar Salad",
-      "descriptionEs": "Lechuga romana crujiente, crutones de masa madre caseros, queso parmesano añejo y nuestro aderezo César artesanal.",
-      "descriptionEn": "Crisp romaine lettuce, house-made sourdough croutons, aged parmesan cheese, and our artisanal Caesar dressing.",
-      "price": "$13.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "martel-bistro-bar-04",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finísimas láminas de lomo de res crudo con alcaparras, albahaca, aceite de oliva virgen extra y lascas de parmesano.",
-      "descriptionEn": "Thinly sliced raw beef tenderloin garnished with capers, fresh basil, extra virgin olive oil, and shaved parmesan.",
+      "nameEs": "Coquilles St. Jacques",
+      "nameEn": "Coquilles St. Jacques",
+      "descriptionEs": "vieiras horneadas, gruyère, champiñones, velouté de vino blanco",
+      "descriptionEn": "baked scallops, gruyère, mushrooms, white wine velouté",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Gourmet",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-05",
-      "categoryId": "mains",
-      "nameEs": "Bistec con Papas Fritas (Steak Frites)",
-      "nameEn": "Steak Frites",
-      "descriptionEs": "Jugoso bistec a la parrilla servido con papas fritas cortadas a mano y mantequilla de hierbas artesanales.",
-      "descriptionEn": "Juicy grilled skirt steak served with hand-cut french fries and compound herb butter.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "Popular"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "charcuterie-board",
+      "categoryId": "appetizers",
+      "nameEs": "Tabla de Charcutería",
+      "nameEn": "Charcuterie Board",
+      "descriptionEs": "prosciutto, jamón speck, salchicha seca, paté, quesos",
+      "descriptionEn": "prosciutto, speck ham, dry sausage, pâté, cheeses",
+      "price": "$21.00",
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-06",
-      "categoryId": "mains",
-      "nameEs": "Pollo Rústico al Horno",
-      "nameEn": "Roast Half Chicken",
-      "descriptionEs": "Medio pollo jugoso asado al horno con hierbas provenzales, acompañado de puré de papas cremoso y jugos de cocción.",
-      "descriptionEn": "Juicy oven-roasted half chicken seasoned with herbes de provence, served with creamy mashed potatoes and natural jus.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Aves",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "martel-bistro-bar-07",
-      "categoryId": "mains",
-      "nameEs": "Salmón Atlántico a la Parrilla",
-      "nameEn": "Pan-Seared Atlantic Salmon",
-      "descriptionEs": "Filete de salmón fresco con piel crujiente, acompañado de espárragos salteados y salsa ligera de limón y alcaparras.",
-      "descriptionEn": "Crispy-skinned fresh Atlantic salmon fillet served with sautéed asparagus and a light lemon-capers sauce.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "martel-bistro-bar-08",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Bistro con Queso Brie",
-      "nameEn": "Bistro Brie Burger",
-      "descriptionEs": "Carne de res angus jugosa, queso brie fundido, cebollas caramelizadas y tocino crujiente en un pan brioche tostado.",
-      "descriptionEn": "Juicy angus beef patty, melted brie cheese, caramelized onions, and crisp bacon on a toasted brioche bun.",
+      "id": "cheese-board",
+      "categoryId": "appetizers",
+      "nameEs": "Tabla de Quesos",
+      "nameEn": "Cheese Board",
+      "descriptionEs": "cuatro quesos, baguette, pasta de higo",
+      "descriptionEn": "four cheeses, baguette, fig spread",
       "price": "$22.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-09",
-      "categoryId": "specialties",
-      "nameEs": "Boeuf Bourguignon",
-      "nameEn": "Boeuf Bourguignon",
-      "descriptionEs": "Trocitos de res estofados lentamente en vino tinto de Borgoña con champiñones, zanahorias y tocino sobre puré de papas.",
-      "descriptionEn": "Tender beef chunks slowly braised in Burgundy red wine with mushrooms, carrots, and bacon over buttery mashed potatoes.",
+      "id": "onion-soup-gratinee",
+      "categoryId": "appetizers",
+      "nameEs": "Sopa de Cebolla Gratinada",
+      "nameEn": "Onion Soup Gratinée",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "escargot",
+      "categoryId": "appetizers",
+      "nameEs": "Escargot",
+      "nameEn": "Escargot",
+      "descriptionEs": "pan de campo, champiñón cremini, tomate, crema al madeira",
+      "descriptionEn": "country bread, cremini mushroom, tomato, madeira cream",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrata",
+      "categoryId": "appetizers",
+      "nameEs": "Burrata",
+      "nameEn": "Burrata",
+      "descriptionEs": "calabaza butternut asada, arándano rojo caramelizado, nueces pecanas garapiñadas",
+      "descriptionEn": "roasted butternut squash, caramelized cranberry, candied pecans",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-gravlax",
+      "categoryId": "appetizers",
+      "nameEs": "Salmón Gravlax",
+      "nameEn": "Salmon Gravlax",
+      "descriptionEs": "pastel de papa tibio, rémoulade de apio nabo",
+      "descriptionEn": "warm potato cake, celeriac rémoulade",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-clams",
+      "categoryId": "appetizers",
+      "nameEs": "Almejas al Vapor",
+      "nameEn": "Steamed Clams",
+      "descriptionEs": "vino blanco, pimiento rojo, aceitunas",
+      "descriptionEn": "white wine, red pepper, olives",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamar a la Parrilla",
+      "nameEn": "Grilled Calamari",
+      "descriptionEs": "jarabe balsámico sobre rúcula",
+      "descriptionEn": "balsamic syrup over arugula",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-soup",
+      "categoryId": "appetizers",
+      "nameEs": "Sopa de Mariscos",
+      "nameEn": "Seafood Soup",
+      "descriptionEs": "vieiras, mejillones, bacalao, almejas, caldo de langosta, crema ligera, azafrán, cebollino",
+      "descriptionEn": "scallops, mussels, cod, clams, lobster broth, light cream, saffron, chives",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pane-cotto",
+      "categoryId": "appetizers",
+      "nameEs": "Pane Cotto",
+      "nameEn": "Pane Cotto",
+      "descriptionEs": "caserola horneada de escarola, frijoles blancos, pancetta, asiago",
+      "descriptionEn": "baked casserole of escarole, white beans, pancetta, asiago",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mussels-au-gratin",
+      "categoryId": "appetizers",
+      "nameEs": "Mejillones Gratinados",
+      "nameEn": "Mussels au Gratin",
+      "descriptionEs": "mantequilla de ajo, pan rallado, asiago",
+      "descriptionEn": "garlic butter, breadcrumbs, asiago",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-seafood-plate",
+      "categoryId": "appetizers",
+      "nameEs": "Plato de Mariscos Fríos",
+      "nameEn": "Iced Seafood Plate",
+      "descriptionEs": "langosta, camarones, ostras, almejas, mejillones (crudos)",
+      "descriptionEn": "lobster, shrimp, oysters, clams, mussels (raw)",
       "price": "$36.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Clásico Francés",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-10",
-      "categoryId": "specialties",
-      "nameEs": "Pato Confitado",
-      "nameEn": "Duck Confit",
-      "descriptionEs": "Muslo de pato confitado crujiente por fuera y tierno por dentro, servido con papas salteadas en grasa de pato y salsa de cerezas.",
-      "descriptionEn": "Crisp-skinned slow-cooked duck leg, served with duck-fat roasted potatoes and a rich cherry reduction.",
-      "price": "$38.00",
-      "popular": true,
-      "badge": "Gourmet",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "charles-island-oysters-1-2-dozen",
+      "categoryId": "appetizers",
+      "nameEs": "Ostras Charles Island (1/2 Docena)",
+      "nameEn": "Charles Island Oysters (1/2 Dozen)",
+      "descriptionEs": "(crudas)",
+      "descriptionEn": "(raw)",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-11",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz arborio cremoso cocinado con una mezcla de hongos silvestres, vino blanco, mantequilla y queso parmesano rallado.",
-      "descriptionEn": "Creamy arborio rice simmered with an assortment of wild mushrooms, white wine, butter, and grated parmesan cheese.",
-      "price": "$26.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "charles-island-oysters-dozen",
+      "categoryId": "appetizers",
+      "nameEs": "Ostras Charles Island (Docena)",
+      "nameEn": "Charles Island Oysters (Dozen)",
+      "descriptionEs": "(crudas)",
+      "descriptionEn": "(raw)",
+      "price": "$32.00",
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada de Lavanda Artesanal",
-      "nameEn": "Artisanal Lavender Lemonade",
-      "descriptionEs": "Refrescante limonada natural infusionada con un toque delicado de jarabe de lavanda orgánica.",
-      "descriptionEn": "Refreshing house-made lemonade infused with a delicate hint of organic lavender syrup.",
-      "price": "$6.00",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Refresco",
-        "Casero"
-      ],
-      "allergens": [],
+      "id": "cheese-fondue-for-two",
+      "categoryId": "appetizers",
+      "nameEs": "Fondue de Queso para Dos",
+      "nameEn": "Cheese Fondue for Two",
+      "descriptionEs": "manzanas, ciabatta",
+      "descriptionEn": "apples, ciabatta",
+      "price": "$21.00",
       "ctaType": "in_store"
     },
     {
-      "id": "martel-bistro-bar-13",
-      "categoryId": "beverages",
-      "nameEs": "Copa de Vino Tinto de la Casa",
-      "nameEn": "House Red Wine Glass",
-      "descriptionEs": "Selección especial del sommelier de vino tinto francés de Burdeos, equilibrado y con notas a frutos rojos.",
-      "descriptionEn": "Sommelier's special selection of French Bordeaux red wine, well-balanced with red fruit notes.",
+      "id": "gorgonzola-garlic-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de Ajo con Gorgonzola",
+      "nameEn": "Gorgonzola Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frisee",
+      "categoryId": "salade",
+      "nameEs": "Frisée",
+      "nameEn": "Frisée",
+      "descriptionEs": "huevo pochado, vinagreta tibia de tocino",
+      "descriptionEn": "poached egg, warm bacon vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "romaine",
+      "categoryId": "salade",
+      "nameEs": "Romana",
+      "nameEn": "Romaine",
+      "descriptionEs": "mozzarella de búfala, papas tibias, pancetta, aderezo cremoso de rábano picante",
+      "descriptionEn": "bufala mozzarella, warm potatoes, pancetta, creamy horseradish dressing",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar",
+      "categoryId": "salade",
+      "nameEs": "César Clásica",
+      "nameEn": "Classic Caesar",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$12.00",
-      "popular": true,
-      "badge": "Vino",
-      "tags": [
-        "Alcohol"
-      ],
-      "allergens": [
-        "Sulfitos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "salade",
+      "nameEs": "Ensalada de la Casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "mesclun, radichio, vinagreta de dijon",
+      "descriptionEn": "mesclun, radicchio, dijon vinaigrette",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad-with-danish-blue-cheese",
+      "categoryId": "salade",
+      "nameEs": "Ensalada de la Casa con Queso Azul Danés",
+      "nameEn": "House Salad with Danish Blue Cheese",
+      "descriptionEs": "mesclun, radichio, vinagreta de dijon, queso azul danés",
+      "descriptionEn": "mesclun, radicchio, dijon vinaigrette, Danish blue cheese",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beet-goat-cheese",
+      "categoryId": "salade",
+      "nameEs": "Remolacha y Queso de Cabra",
+      "nameEn": "Beet & Goat Cheese",
+      "descriptionEs": "hojas verdes mixtas, peras pochadas, vinagreta de nueces",
+      "descriptionEn": "mixed greens, poached pears, walnut vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martel-salad",
+      "categoryId": "salade",
+      "nameEs": "Ensalada Martel",
+      "nameEn": "Martel Salad",
+      "descriptionEs": "pepino, tomates madurados en la vid, cebolla morada, menta, feta, aceite de oliva virgen extra, vinagreta de balsámico blanco",
+      "descriptionEn": "cucumber, vine ripe tomatoes, red onion, mint, feta, EVOO, white balsamic vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panzanella",
+      "categoryId": "salade",
+      "nameEs": "Panzanella",
+      "nameEn": "Panzanella",
+      "descriptionEs": "rúcula, frijoles blancos, cebolla morada, picatostes, tomate, pimiento rojo asado",
+      "descriptionEn": "arugula, white beans, red onion, croutons, tomato, roasted red pepper",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffled-macaroni-cheese",
+      "categoryId": "entrees",
+      "nameEs": "Macarrones con Queso Trufados",
+      "nameEn": "Truffled Macaroni & Cheese",
+      "descriptionEs": "gruyère, fontina, cheddar, jamón speck",
+      "descriptionEn": "gruyère, fontina, cheddar, speck ham",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-steak-frites",
+      "categoryId": "entrees",
+      "nameEs": "Bistec con Fritas de Bistró",
+      "nameEn": "Bistro Steak Frites",
+      "descriptionEs": "a la pimienta o mantequilla de cebollino",
+      "descriptionEn": "au poivre or chive butter",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-pot-pie",
+      "categoryId": "entrees",
+      "nameEs": "Pastel de Pollo Estilo Pot Pie",
+      "nameEn": "Chicken Pot Pie",
+      "descriptionEs": "papas, zanahorias, guisantes, cebollitas perlitas, champiñones",
+      "descriptionEn": "potatoes, carrots, green peas, pearl onions, mushrooms",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-roast-baby-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Pollo Entero Asado",
+      "nameEn": "Whole Roast Baby Chicken",
+      "descriptionEs": "espinacas a la crema",
+      "descriptionEn": "creamed spinach",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-mussels",
+      "categoryId": "entrees",
+      "nameEs": "Mejillones al Vapor",
+      "nameEn": "Steamed Mussels",
+      "descriptionEs": "puerros, fumet de pescado, tomillo, crema, papas fritas",
+      "descriptionEn": "leeks, fish fumé, thyme, cream, frites",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón a la Parrilla",
+      "nameEn": "Grilled Salmon",
+      "descriptionEs": "risotto de guisantes dulces y aceite de limón",
+      "descriptionEn": "sweet pea risotto & lemon oil",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trout-amandine",
+      "categoryId": "entrees",
+      "nameEs": "Trucha Amandine",
+      "nameEn": "Trout Amandine",
+      "descriptionEs": "puré de coliflor, zucchini, espinacas, tomate, limón, alcaparras",
+      "descriptionEn": "cauliflower purée, zucchini, spinach, tomato, lemon, capers",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-risotto",
+      "categoryId": "entrees",
+      "nameEs": "Risotto de Langosta",
+      "nameEn": "Lobster Risotto",
+      "descriptionEs": "champiñones ostra y shiitake, calabacín espagueti, mascarpone, albahaca",
+      "descriptionEn": "oyster and shiitake mushrooms, spaghetti squash, mascarpone, basil",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-bolognese",
+      "categoryId": "entrees",
+      "nameEs": "Fettuccine Boloñesa",
+      "nameEn": "Fettuccine Bolognese",
+      "descriptionEs": "parmesano rallado en láminas",
+      "descriptionEn": "shaved parmesan",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-confit",
+      "categoryId": "entrees",
+      "nameEs": "Confit de Pato",
+      "nameEn": "Duck Confit",
+      "descriptionEs": "papas crujientes y champiñones mixtos, jugo de carne al ajo",
+      "descriptionEn": "crispy potatoes and mixed mushrooms, garlic jus",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martel-meatloaf",
+      "categoryId": "entrees",
+      "nameEs": "Pastel de Carne Martel",
+      "nameEn": "Martel Meatloaf",
+      "descriptionEs": "puré de papas, zanahorias baby",
+      "descriptionEn": "mashed potatoes, baby carrots",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-lamb-chops",
+      "categoryId": "entrees",
+      "nameEs": "Chuletas de Cordero a la Parrilla",
+      "nameEn": "Grilled Lamb Chops",
+      "descriptionEs": "pimientos peppadew, zanahorias baby, frijoles cannellini, vinagreta de tomate y menta",
+      "descriptionEn": "peppadew peppers, baby carrots, cannellini beans, tomato mint vinaigrette",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-short-ribs",
+      "categoryId": "entrees",
+      "nameEs": "Costillas Cortas Braseadas",
+      "nameEn": "Braised Short Ribs",
+      "descriptionEs": "vegetales de raíz asados",
+      "descriptionEn": "roasted root vegetables",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-milanese",
+      "categoryId": "entrees",
+      "nameEs": "Milanesa de Cerdo",
+      "nameEn": "Pork Milanese",
+      "descriptionEs": "hojas verdes mixtas con confit de cebolla morada, vinagreta de dijon",
+      "descriptionEn": "mixed greens with red onion confit, dijon vinaigrette",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-branzino",
+      "categoryId": "entrees",
+      "nameEs": "Branzino Sellado a la Sartén",
+      "nameEn": "Pan Seared Branzino",
+      "descriptionEs": "puré de calabaza butternut, escarola, papas cambray, aceitunas marroquíes, beurre rouge",
+      "descriptionEn": "butternut squash purée, escarole, fingerling potatoes, Moroccan olives, beurre rouge",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll",
+      "categoryId": "sandwiches",
+      "nameEs": "Rollo de langosta",
+      "nameEn": "Lobster Roll",
+      "descriptionEs": "mayonesa, hojas de apio, cebollín, crème fraîche, ensalada de col",
+      "descriptionEn": "mayo, celery leaves, chives, crème fraîche, cole slaw",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "con gorgonzola, gruyère o cheddar",
+      "descriptionEn": "with gorgonzola, gruyère or cheddar",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa Bistro",
+      "nameEn": "Bistro Burger",
+      "descriptionEs": "compota de tocino y cebolla caramelizada, queso azul y gruyère, arúgula",
+      "descriptionEn": "caramelized bacon & onion compote, bleu & gruyère cheese, arugula",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-french-dip",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de cordero French Dip",
+      "nameEn": "Lamb French Dip",
+      "descriptionEs": "cebolla morada asada, parmesano, jugo de cordero, en baguette tostada",
+      "descriptionEn": "grilled red onion, parmesan, lamb jus, on toasted baguette",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa de atún",
+      "nameEn": "Tuna Burger",
+      "descriptionEs": "cebollines, mayonesa de wasabi",
+      "descriptionEn": "scallions, wasabi mayonnaise",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "croque-monsieur",
+      "categoryId": "sandwiches",
+      "nameEs": "Croque Monsieur",
+      "nameEn": "Croque Monsieur",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-cubano",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich Cubano de cerdo",
+      "nameEn": "Pork Cubano",
+      "descriptionEs": "lomo de cerdo, mostaza dijon, pepinillo agrio, cebolla caramelizada, gruyère, tomate",
+      "descriptionEn": "pork tenderloin, dijon mustard, cornichon, caramelized onion, gruyère, tomato",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plt",
+      "categoryId": "sandwiches",
+      "nameEs": "PLT",
+      "nameEn": "PLT",
+      "descriptionEs": "panceta, arúgula, tomate, mozzarella",
+      "descriptionEn": "pancetta, arugula, tomato, mozzarella",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-beef-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de carne de res estofada",
+      "nameEn": "Braised Beef Sandwich",
+      "descriptionEs": "pimiento rojo asado, salsa picante de rábano picante, fontina",
+      "descriptionEn": "roasted red pepper, spicy horseradish sauce, fontina",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamed-spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinacas a la crema",
+      "nameEn": "Creamed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Puré de papas",
+      "nameEn": "Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-roasted-brussels-sprouts",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas asadas con tocino",
+      "nameEn": "Bacon Roasted Brussels Sprouts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola-garlic-bread-side",
+      "categoryId": "sides",
+      "nameEs": "Pan de ajo con gorgonzola (guarnición)",
+      "nameEn": "Gorgonzola Garlic Bread (side)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-broccoli-rabe",
+      "categoryId": "sides",
+      "nameEs": "Grelos salteados",
+      "nameEn": "Sautéed Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "haricots-verts-amandine",
+      "categoryId": "sides",
+      "nameEs": "Haricots Verts Amandine",
+      "nameEn": "Haricots Verts Amandine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "balsamic-marinated-tomatoes",
+      "categoryId": "sides",
+      "nameEs": "Tomates marinados al balsámico",
+      "nameEn": "Balsamic Marinated Tomatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frites-with-truffle-aioli-small",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas con alioli de trufa (Pequeñas)",
+      "nameEn": "Frites with Truffle Aioli (Small)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frites-with-truffle-aioli-large",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas con alioli de trufa (Grandes)",
+      "nameEn": "Frites with Truffle Aioli (Large)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frisee-salad-lunch",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada Frisée (Almuerzo)",
+      "nameEn": "Frisée Salad (Lunch)",
+      "descriptionEs": "crotones de ajo, huevo pochado, vinagreta tibia de tocino",
+      "descriptionEn": "garlic croutons, poached egg, warm bacon vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-salad",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada de langosta",
+      "nameEn": "Lobster Salad",
+      "descriptionEs": "palmitos, aguacate, tomates cherry, pimiento, haricots verts, hojas verdes mixtas, mayonesa de langosta",
+      "descriptionEn": "hearts of palm, avocado, cherry tomatoes, bell pepper, haricots verts, mixed greens, lobster mayo",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martel-salad-lunch",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada Martel (Almuerzo)",
+      "nameEn": "Martel Salad (Lunch)",
+      "descriptionEs": "pepino, tomates madurados en la vid, aceite de oliva virgen extra, cebolla morada, queso feta, menta, vinagreta de balsámico blanco",
+      "descriptionEn": "cucumber, vine ripe tomatoes, extra virgin olive oil, red onion, feta cheese, mint, white balsamic vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fig-goat-cheese-salad",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada de higos y queso de cabra",
+      "nameEn": "Fig & Goat Cheese Salad",
+      "descriptionEs": "manzanas golden delicious, pacanas azucaradas, vinagreta de nueces, crotones de pan rústico",
+      "descriptionEn": "golden delicious apples, candied pecans, walnut vinaigrette, rustic bread croutons",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-salad",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Salad",
+      "descriptionEs": "lardons, aguacate, gruyère, arúgula, frisée, vinagreta dijon",
+      "descriptionEn": "lardons, avocado, gruyère, arugula, frisée, dijon vinaigrette",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-brook-trout",
+      "categoryId": "lunch-salade",
+      "nameEs": "Trucha de arroyo a la parrilla",
+      "nameEn": "Grilled Brook Trout",
+      "descriptionEs": "sobre ensalada tibia de espinacas, nueces y lentejas",
+      "descriptionEn": "over warm spinach, walnut and lentil salad",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "romaine-salad-lunch",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada Romana (Almuerzo)",
+      "nameEn": "Romaine Salad (Lunch)",
+      "descriptionEs": "mozzarella de búfala, papas tibias, panceta, aderezo cremoso de rábano picante",
+      "descriptionEn": "bufala mozzarella, warm potatoes, pancetta, creamy horseradish dressing",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panzanella-lunch",
+      "categoryId": "lunch-salade",
+      "nameEs": "Panzanella (Almuerzo)",
+      "nameEn": "Panzanella (Lunch)",
+      "descriptionEs": "arúgula, alubias blancas, cebolla morada, crotones, tomate, pimiento rojo asado",
+      "descriptionEn": "arugula, white beans, red onion, croutons, tomato, roasted red pepper",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad-lunch",
+      "categoryId": "lunch-salade",
+      "nameEs": "Ensalada de la casa (Almuerzo)",
+      "nameEn": "House Salad (Lunch)",
+      "descriptionEs": "mesclun, arúgula, radicchio, pepinos, rábanos, tomates marinados, vinagreta dijon, queso azul Maytag",
+      "descriptionEn": "mesclun, arugula, radicchio, cucumbers, radishes, marinated tomatoes, dijon vinaigrette, Maytag blue cheese",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lunch-prix-fixe",
+      "categoryId": "lunch-prix-fixe",
+      "nameEs": "Almuerzo de Precio Fijo",
+      "nameEn": "Lunch Prix Fixe",
+      "descriptionEs": "opciones enumeradas: ensalada verde o ensalada César, media docena de ostras Charles Island, sopa del día, sopa de cebolla gratinada, calamares a la parrilla, mejillones al gratín, pane cotto, macarrones con queso trufados, sopa de mariscos, caracoles, gravlax de salmón, coquilles St. Jacques",
+      "descriptionEn": "choices listed: salade verte or Caesar salad, half dozen Charles Island oysters, soup du jour, onion soup gratinée, grilled calamari, mussels au gratin, pane cotto, truffled macaroni & cheese, seafood soup, escargot, salmon gravlax, coquilles St. Jacques",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-steak-frites-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Bistec con papas fritas Bistro (Almuerzo)",
+      "nameEn": "Bistro Steak Frites (Lunch)",
+      "descriptionEs": "a la pimienta o mantequilla de cebollín y ajo",
+      "descriptionEn": "au poivre or garlic chive butter",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-milanese-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Cerdo a la Milanesa (Almuerzo)",
+      "nameEn": "Pork Milanese (Lunch)",
+      "descriptionEs": "hojas verdes mixtas, confit de cebolla morada, vinagreta dijon",
+      "descriptionEn": "mixed greens, red onion confit, dijon vinaigrette",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-mussels-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Mejillones al vapor (Almuerzo)",
+      "nameEn": "Steamed Mussels (Lunch)",
+      "descriptionEs": "puerros, fumet de pescado, tomillo, crema, papas fritas",
+      "descriptionEn": "leeks, fish fumé, thyme, cream, frites",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-salmon-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Salmón a la parrilla (Almuerzo)",
+      "nameEn": "Grilled Salmon (Lunch)",
+      "descriptionEs": "risotto de chícharos dulces, aceite de limón",
+      "descriptionEn": "sweet pea risotto, lemon oil",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-loaf-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Pastel de carne (Almuerzo)",
+      "nameEn": "Meat Loaf (Lunch)",
+      "descriptionEs": "puré de papas, zanahorias baby, aros de cebolla",
+      "descriptionEn": "mashed potatoes, baby carrots, onion rings",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trout-amandine-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Trucha Amandine (Almuerzo)",
+      "nameEn": "Trout Amandine (Lunch)",
+      "descriptionEs": "puré de coliflor, calabacín, espinacas, tomate, limón, alcaparras",
+      "descriptionEn": "cauliflower purée, zucchini, spinach, tomato, lemon, capers",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-clams-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Almejas al vapor (Almuerzo)",
+      "nameEn": "Steamed Clams (Lunch)",
+      "descriptionEs": "vino blanco, pimiento rojo, aceitunas",
+      "descriptionEn": "white wine, red pepper, olives",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "speck-ham-sandwich",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Sándwich de jamón Speck",
+      "nameEn": "Speck Ham Sandwich",
+      "descriptionEs": "brie, tomates, en baguette francesa crujiente",
+      "descriptionEn": "brie, tomatoes, on crusty French baguette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Rollo de langosta (Almuerzo)",
+      "nameEn": "Lobster Roll (Lunch)",
+      "descriptionEs": "mayonesa, hojas de apio, cebollín, crème fraîche, ensalada de col",
+      "descriptionEn": "mayo, celery leaves, chives, crème fraîche, coleslaw",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Hamburguesa (Almuerzo)",
+      "nameEn": "Hamburger (Lunch)",
+      "descriptionEs": "con gorgonzola, gruyère o cheddar",
+      "descriptionEn": "with gorgonzola, gruyère or cheddar",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-burger-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Hamburguesa Bistro (Almuerzo)",
+      "nameEn": "Bistro Burger (Lunch)",
+      "descriptionEs": "compota de tocino y cebolla caramelizada, queso azul y gruyère, arúgula",
+      "descriptionEn": "caramelized bacon and onion compote, bleu and gruyère cheese, arugula",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-burger-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Hamburguesa de atún (Almuerzo)",
+      "nameEn": "Tuna Burger (Lunch)",
+      "descriptionEs": "cebollines, aceite de sésamo, mayonesa de wasabi",
+      "descriptionEn": "scallions, sesame oil, wasabi mayonnaise",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "croque-monsieur-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Croque Monsieur (Almuerzo)",
+      "nameEn": "Croque Monsieur (Lunch)",
+      "descriptionEs": "sándwich de jamón y queso",
+      "descriptionEn": "ham and cheese sandwich",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-french-dip-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Sándwich de cordero French Dip (Almuerzo)",
+      "nameEn": "Lamb French Dip (Lunch)",
+      "descriptionEs": "cebolla morada asada, parmesano, jugo de cordero, en baguette tostada",
+      "descriptionEn": "grilled red onion, parmesan, lamb jus, on toasted baguette",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-beef-sandwich-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Sándwich de Carne Estofada (Almuerzo)",
+      "nameEn": "Braised Beef Sandwich (Lunch)",
+      "descriptionEs": "pimiento rojo asado, salsa picante de rábano picante, fontina",
+      "descriptionEn": "roasted red pepper, spicy horseradish sauce, fontina",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-vegetable-sandwich",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Sándwich de Verduras Asadas",
+      "nameEn": "Grilled Vegetable Sandwich",
+      "descriptionEs": "calabacín, cebollas, calabaza, portobello, mayonesa de pesto",
+      "descriptionEn": "zucchini, onions, squash, portobello, pesto mayonnaise",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plt-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "PLT (Almuerzo)",
+      "nameEn": "PLT (Lunch)",
+      "descriptionEs": "pancetta, arúgula, tomate, mozzarella",
+      "descriptionEn": "pancetta, arugula, tomato, mozzarella",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-cubano-lunch",
+      "categoryId": "lunch-sandwiches-with-frites-or-salade-verte",
+      "nameEs": "Puerco Cubano (Almuerzo)",
+      "nameEn": "Pork Cubano (Lunch)",
+      "descriptionEs": "porchetta, mostaza dijon, pepinillo francés, cebolla caramelizada, gruyère, tomate",
+      "descriptionEn": "porchetta, dijon mustard, cornichon, caramelized onion, gruyère, tomato",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-sundae",
+      "categoryId": "dessert",
+      "nameEs": "Copa Helada de Helado",
+      "nameEn": "Ice Cream Sundae",
+      "descriptionEs": "salsa de chocolate, Kahlúa, almendras tostadas",
+      "descriptionEn": "chocolate sauce, Kahlúa, toasted almonds",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-maple-creme-brulee",
+      "categoryId": "dessert",
+      "nameEs": "Crème Brûlée de Plátano y Sábila",
+      "nameEn": "Banana Maple Crème Brûlée",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-apple-tarte-fine",
+      "categoryId": "dessert",
+      "nameEs": "Tarta Fina de Manzana Tibia",
+      "nameEn": "Warm Apple Tarte Fine",
+      "descriptionEs": "helado de vainilla",
+      "descriptionEn": "vanilla ice cream",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pots-de-creme-trio",
+      "categoryId": "dessert",
+      "nameEs": "Trío de Pots de Crème",
+      "nameEn": "Pots de Crème Trio",
+      "descriptionEs": "chocolate blanco, oscuro y con leche",
+      "descriptionEn": "white, dark & milk chocolate",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-and-butter-pudding",
+      "categoryId": "dessert",
+      "nameEs": "Pudin de Pan con Mantequilla",
+      "nameEn": "Bread and Butter Pudding",
+      "descriptionEs": "nueces pecanas, salsa de bourbon",
+      "descriptionEn": "pecans, bourbon sauce",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-berry-shortcake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel Corto de Bayas Mixtas",
+      "nameEn": "Mixed Berry Shortcake",
+      "descriptionEs": "Grand Marnier, crema batida",
+      "descriptionEn": "Grand Marnier, whipped cream",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-layer-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de Capas de Coco",
+      "nameEn": "Coconut Layer Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-creams",
+      "categoryId": "dessert",
+      "nameEs": "Helados",
+      "nameEn": "Ice Creams",
+      "descriptionEs": "chocolate, vainilla, café, sorbete de mango",
+      "descriptionEn": "chocolate, vanilla, coffee, mango sorbet",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscotti-plate",
+      "categoryId": "dessert",
+      "nameEs": "Plato de Biscotti",
+      "nameEn": "Biscotti Plate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-fondue-for-two",
+      "categoryId": "dessert",
+      "nameEs": "Fondue de Chocolate para Dos",
+      "nameEn": "Chocolate Fondue for Two",
+      "descriptionEs": "fresas, plátanos, galletas",
+      "descriptionEn": "strawberries, bananas, cookies",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beignets-for-two",
+      "categoryId": "dessert",
+      "nameEs": "Beignets para Dos",
+      "nameEn": "Beignets for Two",
+      "descriptionEs": "azúcar con canela, salsa de chocolate",
+      "descriptionEn": "cinnamon sugar, chocolate sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandeman-founders-reserve-port",
+      "categoryId": "digestif",
+      "nameEs": "Sandeman Founders Reserve Port",
+      "nameEn": "Sandeman Founders Reserve Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warre-s-otima-10-year-tawny-port",
+      "categoryId": "digestif",
+      "nameEs": "Warre's Otima 10 Year Tawny Port",
+      "nameEn": "Warre's Otima 10 Year Tawny Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "graham-s-six-grapes-reserve-port",
+      "categoryId": "digestif",
+      "nameEs": "Graham's Six Grapes Reserve Port",
+      "nameEn": "Graham's Six Grapes Reserve Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dow-s-lbv-2009-port",
+      "categoryId": "digestif",
+      "nameEs": "Dow's LBV 2009 Port",
+      "nameEn": "Dow's LBV 2009 Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "limoncello-di-capri",
+      "categoryId": "digestif",
+      "nameEs": "Limoncello di Capri",
+      "nameEn": "Limoncello di Capri",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grappa-di-barbera",
+      "categoryId": "digestif",
+      "nameEs": "Grappa di Barbera",
+      "nameEn": "Grappa di Barbera",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateau-de-laubade-armagnac",
+      "categoryId": "digestif",
+      "nameEs": "Château de Laubade Armagnac",
+      "nameEn": "Château de Laubade Armagnac",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martell-vsop",
+      "categoryId": "digestif",
+      "nameEs": "Martell VSOP",
+      "nameEn": "Martell VSOP",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hennessy-vs",
+      "categoryId": "digestif",
+      "nameEs": "Hennessy VS",
+      "nameEn": "Hennessy VS",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "remy-martin-1738",
+      "categoryId": "digestif",
+      "nameEs": "Rémy Martin 1738",
+      "nameEn": "Rémy Martin 1738",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "courvoisier-vsop",
+      "categoryId": "digestif",
+      "nameEs": "Courvoisier VSOP",
+      "nameEn": "Courvoisier VSOP",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateau-de-montifaud-vsop",
+      "categoryId": "digestif",
+      "nameEs": "Château de Montifaud VSOP",
+      "nameEn": "Château de Montifaud VSOP",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tesseron-xo-tradition-1976",
+      "categoryId": "digestif",
+      "nameEs": "Tesseron XO Tradition 1976",
+      "nameEn": "Tesseron XO Tradition 1976",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tesseron-xo-perfection-1953",
+      "categoryId": "digestif",
+      "nameEs": "Tesseron XO Perfection 1953",
+      "nameEn": "Tesseron XO Perfection 1953",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "domaine-dupont-calvados-vsop",
+      "categoryId": "digestif",
+      "nameEs": "Domaine Dupont Calvados VSOP",
+      "nameEn": "Domaine Dupont Calvados VSOP",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "petit-guiraud-sauternes",
+      "categoryId": "digestif",
+      "nameEs": "Petit Guiraud Sauternes",
+      "nameEn": "Petit Guiraud Sauternes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muscat-de-beaumes-de-venise",
+      "categoryId": "digestif",
+      "nameEs": "Muscat de Beaumes de Venise",
+      "nameEn": "Muscat de Beaumes de Venise",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Por lo general no aceptamos reservaciones, excepto para San Valentín, Día de la Madre, Nochebuena y Año Nuevo.",
-      "aEn": "We generally do not take reservations, except for Valentine's Day, Mother's Day, Christmas Eve, and New Year's Eve."
-    },
-    {
-      "qEs": "¿Tienen servicio de comida para llevar?",
-      "qEn": "Do you offer takeout service?",
-      "aEs": "Sí, ofrecemos servicio de comida para llevar con recogida en la acera (curbside takeout) todos los días.",
-      "aEn": "Yes, we offer curbside takeout service 7 days a week."
-    },
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y sin gluten en nuestro menú. Pregunte a su mesero por los detalles.",
-      "aEn": "Yes, we feature several vegetarian and gluten-free items on our menu. Please ask your server for details."
-    }
-  ]
+  "faqs": []
 }

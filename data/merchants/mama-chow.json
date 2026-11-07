@@ -2,24 +2,20 @@
   "storeInfo": {
     "id": "mama-chow",
     "name": "Mama Chow",
-    "tagline": "Inspired by Asian hawker fare in Southport, CT",
-    "address": "3381 Post Road, Fairfield, CT",
+    "tagline": "Asian hawker-style street food: laksa, pho, ramen and bao in Southport | Comida callejera asiática estilo hawker: laksa, pho, ramen y bao en Southport",
+    "address": "3381 Post Rd, Southport (Fairfield), CT 06890",
     "hours": {
-      "monday_friday": "11:30 AM - 8:30 PM (Fri till 9:00 PM)",
+      "monday_friday": "Mon closed; Tue-Thu 11:30 AM - 8:30 PM; Fri 11:30 AM - 9:00 PM",
       "saturday": "11:30 AM - 9:00 PM",
       "sunday": "11:30 AM - 8:30 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Full Bar",
+      "Vegetarian Options",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,324 +28,658 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "small-plates",
+      "nameEs": "Platos Pequeños",
+      "nameEn": "Small Plates",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "brothless-noodles-rice",
+      "nameEs": "Fideos Secos y Arroz",
+      "nameEn": "Brothless Noodles & Rice",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "pho",
+      "nameEs": "Pho",
+      "nameEn": "Pho",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "laksa",
+      "nameEs": "Laksa",
+      "nameEn": "Laksa",
+      "icon": "Utensils"
+    },
+    {
+      "id": "ramen",
+      "nameEs": "Ramen",
+      "nameEn": "Ramen",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "non-alcoholic",
+      "nameEs": "Bebidas Sin Alcohol",
+      "nameEn": "Non-Alcoholic",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine",
+      "nameEs": "Vino",
+      "nameEn": "Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cocteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-sake",
+      "nameEs": "Cerveza y Sake",
+      "nameEn": "Beer & Sake",
+      "icon": "Utensils"
+    },
+    {
+      "id": "spirits",
+      "nameEs": "Licores",
+      "nameEn": "Spirits",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "mama-chow-01",
-      "categoryId": "appetizers",
-      "nameEs": "Bao de Pollo KFC",
-      "nameEn": "KFC Bao (2 pcs)",
-      "descriptionEs": "Pollo frito crujiente, pepinillo encurtido, zanahoria, daikon, salsa gochujang y mayonesa picante en un pan bao suave.",
-      "descriptionEn": "Crispy fried chicken, pickled cucumber, carrot daikon, gochujang, and spicy mayo served in soft steamed buns.",
-      "price": "$10.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soja"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mama-chow-02",
-      "categoryId": "appetizers",
-      "nameEs": "Bao de Panceta de Cerdo",
-      "nameEn": "Pork Belly Bao (2 pcs)",
-      "descriptionEs": "Trocitos de panceta de cerdo tierna con cebolla encurtida, hoja de mostaza y salsa hoisin picante.",
-      "descriptionEn": "Tender pork belly with pickled onion, mustard green leaf, and spicy hoisin sauce.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Tierno",
-        "Cerdo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soja"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mama-chow-03",
-      "categoryId": "appetizers",
-      "nameEs": "Rollitos Crujientes Vietnamitas",
-      "nameEn": "Vietnamese Crispy Roll (4 pcs)",
-      "descriptionEs": "Rollitos fritos rellenos de cerdo, acompañados de hoja verde, menta fresca y salsa nuoc mam.",
-      "descriptionEn": "Crispy fried rolls stuffed with pork, served with green leaf lettuce, fresh mint, and nuoc mam dipping sauce.",
-      "price": "$11.00",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Crujiente",
-        "Cerdo"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mama-chow-04",
-      "categoryId": "appetizers",
-      "nameEs": "Dumplings en Aceite Picante",
-      "nameEn": "Hot Oil Dumplings (4 pcs)",
-      "descriptionEs": "Dumplings rellenos de cerdo bañados en aceite de chile aromático y vinagre.",
-      "descriptionEn": "Pork-filled dumplings tossed in signature aromatic chili oil and vinegar.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Dumplings"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soja"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mama-chow-05",
-      "categoryId": "appetizers",
-      "nameEs": "Edamame Sazonado",
+      "id": "seasoned-edamame",
+      "categoryId": "small-plates",
+      "nameEs": "Edamame Aderezado",
       "nameEn": "Seasoned Edamame",
-      "descriptionEs": "Edamame salteado con ajo, romero, salvia, sal marina y chalotes crujientes.",
-      "descriptionEn": "Edamame tossed with garlic, rosemary, sage, sea salt, and crispy shallots.",
-      "price": "$9.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Saludable",
-        "Ajo"
-      ],
-      "allergens": [
-        "Soja"
-      ],
+      "descriptionEs": "vegano, sin gluten: aceite de oliva, ajo, cebolla, salvia, romero",
+      "descriptionEn": "vegan, gluten-free: olive oil, garlic, onion, sage, rosemary",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-06",
-      "categoryId": "mains",
-      "nameEs": "Ramen Paitan",
-      "nameEn": "Paitan Ramen",
-      "descriptionEs": "Caldo de pollo cremoso y rico, servido con pollo tierno, kamaboko, huevo y shiitake.",
-      "descriptionEn": "Creamy and rich chicken-based broth served with chicken, kamaboko fish cake, soft egg, and shiitake mushrooms.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sopa",
-        "Caldo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Pescado"
-      ],
+      "id": "spicy-garlic-cucumbers",
+      "categoryId": "small-plates",
+      "nameEs": "Pepinos Picantes con Ajo",
+      "nameEn": "Spicy Garlic Cucumbers",
+      "descriptionEs": "vegano: aceite de chile, salsa de soya, ajo, pepino",
+      "descriptionEn": "vegan: chili oil, soy sauce, garlic, cucumber",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-07",
-      "categoryId": "mains",
-      "nameEs": "Ramen Miso Picante",
-      "nameEn": "Spicy Miso Ramen",
-      "descriptionEs": "Caldo intenso con panceta de cerdo, huevo tierno y hoja de mostaza encurtida.",
-      "descriptionEn": "Rich spicy miso broth loaded with pork belly, soft egg, and pickled mustard greens.",
-      "price": "$16.00",
-      "popular": false,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Cerdo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Soja"
-      ],
+      "id": "kale-salad",
+      "categoryId": "small-plates",
+      "nameEs": "Ensalada de Col Rizada",
+      "nameEn": "Kale Salad",
+      "descriptionEs": "vegano: col rizada, col rizada en tempura, papadum, arándanos rojos, aguacate, vinagreta de miso",
+      "descriptionEn": "vegan: kale, tempura kale, papadum, cranberries, avocado, miso vinaigrette",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-08",
-      "categoryId": "mains",
-      "nameEs": "Pho de Res Estilo King",
-      "nameEn": "Pho King",
-      "descriptionEs": "Caldo aromático a base de pollo y res con costilla corta de res y huevo.",
-      "descriptionEn": "Chicken and beef-based aromatic broth topped with tender short rib, egg, cilantro, scallion, and onion.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Res",
-        "Sopa"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "kfc-bao",
+      "categoryId": "small-plates",
+      "nameEs": "KFC Bao",
+      "nameEn": "KFC Bao",
+      "descriptionEs": "(2) pollo frito, pepino encurtido, zanahoria y daikon, kétchup de gochujang, mayonesa kewpie",
+      "descriptionEn": "(2) fried chicken, pickled cucumber, carrot & daikon, gochujang ketchup, kewpie mayo",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-09",
-      "categoryId": "mains",
-      "nameEs": "Pho de Pollo",
-      "nameEn": "Pho Ga",
-      "descriptionEs": "Sopa tradicional vietnamita con tierno pollo, cilantro, cebollina y cebolla en un caldo reconfortante.",
-      "descriptionEn": "Traditional Vietnamese noodle soup with tender chicken, cilantro, scallions, and onion in a clear spiced broth.",
-      "price": "$14.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Pollo",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "pork-belly-bao",
+      "categoryId": "small-plates",
+      "nameEs": "Pork Belly Bao",
+      "nameEn": "Pork Belly Bao",
+      "descriptionEs": "(2) cebolla encurtida, hoja de mostaza verde, hoisin picante",
+      "descriptionEn": "(2) pickled onion, mustard green leaf, spicy hoisin",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-10",
-      "categoryId": "specialties",
-      "nameEs": "Laksa de Mariscos",
-      "nameEn": "Seafood Laksa",
-      "descriptionEs": "Caldo picante a base de curry y coco con vieiras, camarones, calamares y almejas.",
-      "descriptionEn": "Spicy curry coconut-based broth loaded with scallops, shrimp, calamari, clams, tofu puffs, and bean sprouts.",
-      "price": "$28.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Mariscos",
-        "Curry"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Pescado",
-        "Soja"
-      ],
+      "id": "shrimp-butter-yolk",
+      "categoryId": "small-plates",
+      "nameEs": "Shrimp Butter Yolk",
+      "nameEn": "Shrimp Butter Yolk",
+      "descriptionEs": "yema de huevo salada, mantequilla, hojas de curry, chile, ajo, ensalada de repollo con ajonjolí",
+      "descriptionEn": "salted egg yolk, butter, curry leaves, chili, garlic, sesame slaw",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-11",
-      "categoryId": "specialties",
+      "id": "tamarind-wings",
+      "categoryId": "small-plates",
+      "nameEs": "Alitas al Tamarindo",
+      "nameEn": "Tamarind Wings",
+      "descriptionEs": "(4) alitas de pollo fritas, salsa de tamarindo",
+      "descriptionEn": "(4) fried chicken wings, tamarind sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-vietnamese-rolls",
+      "categoryId": "small-plates",
+      "nameEs": "Rollitos Vietnamitas Crujientes",
+      "nameEn": "Crispy Vietnamese Rolls",
+      "descriptionEs": "(4) cerdo, hoja verde, menta, salsa nuoc mam",
+      "descriptionEn": "(4) pork, green leaf, mint, nuoc mam sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-oil-dumplings",
+      "categoryId": "small-plates",
+      "nameEs": "Dumplings en Aceite Picante",
+      "nameEn": "Hot Oil Dumplings",
+      "descriptionEs": "(4) cerdo, aceite de chile, vinagre",
+      "descriptionEn": "(4) pork, chili oil, vinegar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-dumplings",
+      "categoryId": "small-plates",
+      "nameEs": "Dumplings de Hongos",
+      "nameEn": "Mushroom Dumplings",
+      "descriptionEs": "vegetariano (4): asados, parmesano, arúgula, salsa crema de miso",
+      "descriptionEn": "vegetarian (4): roasted, parmesan, arugula, miso cream sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mala-beef-or-tofu",
+      "categoryId": "small-plates",
+      "nameEs": "\"Mala\" de Res o Tofu",
+      "nameEn": "\"Mala\" Beef or Tofu",
+      "descriptionEs": "pecho de res o tofu frito, salsa de pimienta de Sichuan, cilantro, cebolla, cebollín, maní",
+      "descriptionEn": "brisket or fried tofu, Sichuan peppercorn sauce, cilantro, onion, scallion, peanuts",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-pork-with-sticky-rice",
+      "categoryId": "small-plates",
+      "nameEs": "Cerdo Asado a la Parrilla con Arroz Glutinoso",
+      "nameEn": "Grilled Pork with Sticky Rice",
+      "descriptionEs": "cerdo a la parrilla con hierba limón, arroz glutinoso envuelto en hoja de plátano",
+      "descriptionEn": "lemongrass grilled pork, sticky rice wrapped in banana leaf",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "king-do-pork-ribs",
+      "categoryId": "small-plates",
+      "nameEs": "Costillas de Cerdo \"King Do\"",
+      "nameEn": "\"King Do\" Pork Ribs",
+      "descriptionEs": "salsa dulce y agridulce",
+      "descriptionEn": "sweet and tangy sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "k-l-m-kon-loh-mee",
+      "categoryId": "brothless-noodles-rice",
+      "nameEs": "K.L.M. (Kon Loh Mee)",
+      "nameEn": "K.L.M. (Kon Loh Mee)",
+      "descriptionEs": "cerdo asado estilo BBQ, wontons de cerdo, bok choy tierno, chile serrano encurtido",
+      "descriptionEn": "BBQ roasted pork, pork wontons, baby bok choy, pickled serrano chili",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yaki-udon-supreme",
+      "categoryId": "brothless-noodles-rice",
+      "nameEs": "Yaki Udon Supreme",
+      "nameEn": "Yaki Udon Supreme",
+      "descriptionEs": "gochujang cremoso sin caldo, callo de hacha, camarones, calamar",
+      "descriptionEn": "brothless creamy gochujang, scallop, shrimp, calamari",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "c-k-t-char-kway-teow",
+      "categoryId": "brothless-noodles-rice",
+      "nameEs": "C.K.T. (Char Kway Teow)",
+      "nameEn": "C.K.T. (Char Kway Teow)",
+      "descriptionEs": "salchicha china, pastel de pescado, brotes de soya, huevo, choy sum",
+      "descriptionEn": "Chinese sausage, fish cake, bean sprouts, egg, choy sum",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nasi-goreng",
+      "categoryId": "brothless-noodles-rice",
       "nameEs": "Nasi Goreng",
       "nameEn": "Nasi Goreng",
-      "descriptionEs": "Arroz frito aromático con sambal, pollo, tofu, pastel de pescado, brotes de soya, choy sum, huevo y anchoas.",
-      "descriptionEn": "Stir-fried hawker rice with sambal, chicken, tofu, fishcake, bean sprouts, choy sum, egg, and anchovy.",
-      "price": "$19.00",
-      "popular": false,
-      "badge": "Hawker Style",
-      "tags": [
-        "Arroz",
-        "Picante"
-      ],
-      "allergens": [
-        "Pescado",
-        "Huevo",
-        "Soja"
-      ],
+      "descriptionEs": "sambal, pollo, tofu, pastel de pescado, brotes de soya, huevo, choy sum, anchoa",
+      "descriptionEn": "sambal, chicken, tofu, fishcake, bean sprouts, egg, choy sum, anchovy",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-12",
-      "categoryId": "specialties",
-      "nameEs": "Kon Loh Mee (KLM)",
-      "nameEn": "KLM - Kon Loh Mee",
-      "descriptionEs": "Fideos sin caldo con salsa oscura a base de soya, cerdo asado BBQ, wontons de cerdo, bok choy y chile serrano encurtido.",
-      "descriptionEn": "Broth-less dark soy-based noodles tossed with BBQ roasted pork, pork wonton, baby bok choy, and pickled serrano chili.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Cerdo",
-        "Sin Caldo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soja",
-        "Huevo"
-      ],
+      "id": "pho-ga",
+      "categoryId": "pho",
+      "nameEs": "Pho Ga",
+      "nameEn": "Pho Ga",
+      "descriptionEs": "sin gluten: pollo",
+      "descriptionEn": "gluten-free: chicken",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-13",
-      "categoryId": "beverages",
-      "nameEs": "Té con Leche y Perlas (Bubble Tea)",
+      "id": "pho-tai",
+      "categoryId": "pho",
+      "nameEs": "Pho Tai",
+      "nameEn": "Pho Tai",
+      "descriptionEs": "sin gluten: carne de res poco cocida (puede servirse cruda)",
+      "descriptionEn": "gluten-free: rare beef (may be served undercooked)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pho-grill",
+      "categoryId": "pho",
+      "nameEs": "Pho Grill",
+      "nameEn": "Pho Grill",
+      "descriptionEs": "carne de res sazonada a la parrilla (cocinada al gusto)",
+      "descriptionEn": "grilled seasoned beef (cooked to order)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pho-seafood",
+      "categoryId": "pho",
+      "nameEs": "Pho Seafood",
+      "nameEn": "Pho Seafood",
+      "descriptionEs": "callos de hacha, camarones, calamar",
+      "descriptionEn": "scallops, shrimp, calamari",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pho-king",
+      "categoryId": "pho",
+      "nameEs": "Pho King",
+      "nameEn": "Pho King",
+      "descriptionEs": "costilla corta, huevo shoyu",
+      "descriptionEn": "short rib, shoyu egg",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "laksa",
+      "categoryId": "laksa",
+      "nameEs": "Laksa",
+      "nameEn": "Laksa",
+      "descriptionEs": "pollo, cerdo asado, brotes de soya, huevo shoyu, tofu inflado, requesón de soya crujiente en un caldo de curry con coco",
+      "descriptionEn": "chicken, roasted pork, bean sprouts, shoyu egg, tofu puff, crispy bean curd in a coconut curry broth",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-laksa",
+      "categoryId": "laksa",
+      "nameEs": "Seafood Laksa",
+      "nameEn": "Seafood Laksa",
+      "descriptionEs": "callo de hacha, camarones, calamar, almejas, tofu inflado, requesón de soya crujiente en un caldo de curry con coco",
+      "descriptionEn": "scallop, shrimp, squid, clams, tofu puff, crispy bean curd in a coconut curry broth",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-laksa",
+      "categoryId": "laksa",
+      "nameEs": "Vegetarian Laksa",
+      "nameEn": "Vegetarian Laksa",
+      "descriptionEs": "berenjena, frijol serpentina, okra, tofu inflado, requesón de soya crujiente, brotes de soya, huevo shoyu en un caldo de curry con coco",
+      "descriptionEn": "eggplant, snake bean, okra, tofu puff, crispy bean curd, bean sprouts, shoyu egg in a coconut curry broth",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paitan-ramen",
+      "categoryId": "ramen",
+      "nameEs": "Paitan Ramen",
+      "nameEn": "Paitan Ramen",
+      "descriptionEs": "pollo, kamaboko, huevo shoyu,shiitake",
+      "descriptionEn": "chicken, kamaboko, shoyu egg, shiitake",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-miso-ramen",
+      "categoryId": "ramen",
+      "nameEs": "Spicy Miso Ramen",
+      "nameEn": "Spicy Miso Ramen",
+      "descriptionEs": "panceta de cerdo, huevo shoyu, mostaza verde encurtida",
+      "descriptionEn": "pork belly, shoyu egg, pickled mustard green",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "dessert",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "descriptionEs": "té verde, ajonjolí negro, frijol rojo o vainilla",
+      "descriptionEn": "green tea, black sesame, red bean or vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bubble-waffle",
+      "categoryId": "dessert",
+      "nameEs": "Waffle de Burbuja",
+      "nameEn": "Bubble Waffle",
+      "descriptionEs": "con una bola de helado",
+      "descriptionEn": "with a scoop of ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-banana",
+      "categoryId": "dessert",
+      "nameEs": "Plátano Frito",
+      "nameEn": "Fried Banana",
+      "descriptionEs": "con una bola de helado",
+      "descriptionEn": "with a scoop of ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pandan-cotta",
+      "categoryId": "dessert",
+      "nameEs": "Pandan Cotta",
+      "nameEn": "Pandan Cotta",
+      "descriptionEs": "gelatina, leche de coco, pandan, jarabe de azúcar de palma",
+      "descriptionEn": "gelatin, coconut milk, pandan, palm sugar syrup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Refresco",
+      "nameEn": "Soda",
+      "descriptionEs": "Coke, Diet Coke, refresco de jengibre",
+      "descriptionEn": "Coke, Diet Coke, ginger ale",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-iced-tea",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Té Helado Casero",
+      "nameEn": "Homemade Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-limeade",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Limonada Casera",
+      "nameEn": "Homemade Limeade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "san-pellegrino-500ml",
+      "categoryId": "non-alcoholic",
+      "nameEs": "San Pellegrino (500ml)",
+      "nameEn": "San Pellegrino (500ml)",
+      "descriptionEs": "agua con gas",
+      "descriptionEn": "sparkling water",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vietnamese-coffee",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Café Vietnamita",
+      "nameEn": "Vietnamese Coffee",
+      "descriptionEs": "caliente o frío",
+      "descriptionEn": "hot or cold",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bubble-tea",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Bubble Tea",
       "nameEn": "Bubble Tea",
-      "descriptionEs": "Delicioso té con leche disponible en sabores: Té con Leche, Taro o Té Thai.",
-      "descriptionEn": "Refreshing boba tea choice of Milk Tea, Taro, or Thai Tea.",
-      "price": "$6.00",
-      "popular": true,
-      "badge": "Dulce",
-      "tags": [
-        "Bebida",
-        "Té"
-      ],
-      "allergens": [],
+      "descriptionEs": "té con leche, té tailandés o taro",
+      "descriptionEn": "milk tea, Thai tea or taro",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "mama-chow-14",
-      "categoryId": "beverages",
-      "nameEs": "Café Vietnamita Helado",
-      "nameEn": "Iced Vietnamese Coffee",
-      "descriptionEs": "Café fuerte filtrado gota a gota con leche condensada sobre hielo.",
-      "descriptionEn": "Strong drip-filtered dark roast coffee blended with sweet condensed milk served over ice.",
-      "price": "$6.00",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Cafeína",
-        "Dulce"
-      ],
-      "allergens": [],
+      "id": "chardonnay",
+      "categoryId": "wine",
+      "nameEs": "Chardonnay",
+      "nameEn": "Chardonnay",
+      "descriptionEs": "The Atom, California",
+      "descriptionEn": "The Atom, California",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "verdejo",
+      "categoryId": "wine",
+      "nameEs": "Verdejo",
+      "nameEn": "Verdejo",
+      "descriptionEs": "Naia, España",
+      "descriptionEn": "Naia, Spain",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "categoryId": "wine",
+      "nameEs": "Sauvignon Blanc",
+      "nameEn": "Sauvignon Blanc",
+      "descriptionEs": "Paul Buisse Touraine, Francia",
+      "descriptionEn": "Paul Buisse Touraine, France",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose",
+      "categoryId": "wine",
+      "nameEs": "Rosé",
+      "nameEn": "Rosé",
+      "descriptionEs": "Chateau Ste. Michelle, Washington",
+      "descriptionEn": "Chateau Ste. Michelle, Washington",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir",
+      "categoryId": "wine",
+      "nameEs": "Pinot Noir",
+      "nameEn": "Pinot Noir",
+      "descriptionEs": "Sea Sun, California",
+      "descriptionEn": "Sea Sun, California",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rioja",
+      "categoryId": "wine",
+      "nameEs": "Rioja",
+      "nameEn": "Rioja",
+      "descriptionEs": "Sierra Cantabria, España",
+      "descriptionEn": "Sierra Cantabria, Spain",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon",
+      "categoryId": "wine",
+      "nameEs": "Cabernet Sauvignon",
+      "nameEn": "Cabernet Sauvignon",
+      "descriptionEs": "Bonanza, Washington",
+      "descriptionEn": "Bonanza, Washington",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lychee-mojito",
+      "categoryId": "cocktails",
+      "nameEs": "Lychee Mojito",
+      "nameEn": "Lychee Mojito",
+      "descriptionEs": "ron, lichi, menta",
+      "descriptionEn": "rum, lychee, mint",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spiked-yuzu",
+      "categoryId": "cocktails",
+      "nameEs": "Spiked Yuzu",
+      "nameEn": "Spiked Yuzu",
+      "descriptionEs": "vodka, yuzu",
+      "descriptionEn": "vodka, yuzu",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passion-fruit-cachaca",
+      "categoryId": "cocktails",
+      "nameEs": "Passion Fruit Cachaça",
+      "nameEn": "Passion Fruit Cachaça",
+      "descriptionEs": "cachaça, maracuyá",
+      "descriptionEn": "cachaça, passion fruit",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roku-tonic",
+      "categoryId": "cocktails",
+      "nameEs": "Roku & Tonic",
+      "nameEn": "Roku & Tonic",
+      "descriptionEs": "ginebra japonesa, agua tónica",
+      "descriptionEn": "Japanese gin, tonic water",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asahi-12oz",
+      "categoryId": "beer-sake",
+      "nameEs": "Asahi (12oz)",
+      "nameEn": "Asahi (12oz)",
+      "descriptionEs": "pilsner, Japón",
+      "descriptionEn": "pilsner, Japan",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sapporo-22oz",
+      "categoryId": "beer-sake",
+      "nameEs": "Sapporo (22oz)",
+      "nameEn": "Sapporo (22oz)",
+      "descriptionEs": "pilsner, Japón",
+      "descriptionEn": "pilsner, Japan",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-road-2-ruin-12oz",
+      "categoryId": "beer-sake",
+      "nameEs": "Two Roads Road 2 Ruin (12oz)",
+      "nameEn": "Two Roads Road 2 Ruin (12oz)",
+      "descriptionEs": "double IPA, Connecticut",
+      "descriptionEn": "double IPA, Connecticut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-sea-hag-12oz",
+      "categoryId": "beer-sake",
+      "nameEs": "New England Sea Hag (12oz)",
+      "nameEn": "New England Sea Hag (12oz)",
+      "descriptionEs": "IPA, Connecticut",
+      "descriptionEn": "IPA, Connecticut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shirayuki",
+      "categoryId": "beer-sake",
+      "nameEs": "Shirayuki",
+      "nameEn": "Shirayuki",
+      "descriptionEs": "sake extra seco de la casa, tibio o frío",
+      "descriptionEn": "extra dry house sake, warm or chilled",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "joto-sake-one-cup-200ml",
+      "categoryId": "beer-sake",
+      "nameEs": "Joto Sake One Cup (200ml)",
+      "nameEn": "Joto Sake One Cup (200ml)",
+      "descriptionEs": "sake frío",
+      "descriptionEn": "chilled sake",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "joto-junmai-nigori",
+      "categoryId": "beer-sake",
+      "nameEs": "Joto Junmai Nigori",
+      "nameEn": "Joto Junmai Nigori",
+      "descriptionEs": "sake frío",
+      "descriptionEn": "chilled sake",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "junmai-ginjo-wandering-poet",
+      "categoryId": "beer-sake",
+      "nameEs": "Junmai Ginjo Wandering Poet",
+      "nameEn": "Junmai Ginjo Wandering Poet",
+      "descriptionEs": "sake frío",
+      "descriptionEn": "chilled sake",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dark-spirits",
+      "categoryId": "spirits",
+      "nameEs": "Licores Añejos",
+      "nameEn": "Dark Spirits",
+      "descriptionEs": "1800 Añejo, Bulleit Bourbon, Hibiki Suntory Whisky, Jameson, Jack Daniel's, Johnnie Walker Black, Knob Creek Small Batch Bourbon, Myers's Rum, Suntory Toki, Yamazaki 12 Year",
+      "descriptionEn": "1800 Añejo, Bulleit Bourbon, Hibiki Suntory Whisky, Jameson, Jack Daniel's, Johnnie Walker Black, Knob Creek Small Batch Bourbon, Myers's Rum, Suntory Toki, Yamazaki 12 Year",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "light-spirits",
+      "categoryId": "spirits",
+      "nameEs": "Licores Claros",
+      "nameEn": "Light Spirits",
+      "descriptionEs": "Cachaça Amburana, Cachaça Prata, Cruzan Rum, Deep Eddy Vodka, Grey Goose Vodka, Lunazul Tequila, Roku Gin, Tanqueray Gin",
+      "descriptionEn": "Cachaça Amburana, Cachaça Prata, Cruzan Rum, Deep Eddy Vodka, Grey Goose Vodka, Lunazul Tequila, Roku Gin, Tanqueray Gin",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varios platos vegetarianos como el Edamame y el Tofu Mala, además de opciones libres de gluten. Consulte a su mesero.",
-      "aEn": "Yes, we offer vegetarian items like Edamame and Mala Tofu, alongside select gluten-free options. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o pedidos para llevar?",
-      "qEn": "Do you accept reservations or takeout orders?",
-      "aEs": "Aceptamos clientes sin reservación y pedidos para llevar llamando al restaurante.",
-      "aEn": "We welcome walk-ins and phone orders for takeout."
-    }
-  ]
+  "faqs": []
 }

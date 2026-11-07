@@ -2,26 +2,21 @@
   "storeInfo": {
     "id": "oko",
     "name": "OKO",
-    "tagline": "Japanese-Inspired Cuisine by Chef Brian Lewis | Cocina Japonesa de Autor por el Chef Brian Lewis",
-    "address": "6 Main St, Westport, CT 06880",
-    "phone": "",
+    "tagline": "Japanese sushi, robata and izakaya plates by chef Brian Lewis in downtown Westport | Sushi, robata y platos de izakaya japoneses del chef Brian Lewis en el centro de Westport",
+    "address": "6 Wilton Rd, Westport, CT 06880",
+    "phone": "(203) 557-8404",
     "hours": {
-      "monday_friday": "5:00 PM - 9:30 PM",
-      "saturday": "12:00 PM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon closed; Tue-Fri 5:00 PM - close",
+      "saturday": "5:00 PM - close",
+      "sunday": "5:00 PM - close"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
       "Full Bar",
-      "Chef Table"
+      "Sake",
+      "Bilingual Menu"
     ],
     "themeColor": "#1e293b",
     "logoIcon": "utensils",
@@ -33,355 +28,1646 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Entremeses",
-      "nameEn": "Appetizers & Starters",
+      "id": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Sushi — Cerca y Lejos (nigiri, por pieza)",
+      "nameEn": "Sushi — Near & Far (nigiri, per piece)",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Sushi — De Japón (nigiri, por pieza)",
+      "nameEn": "Sushi — From Japan (nigiri, per piece)",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sushi-crispies",
+      "nameEs": "Sushi — Crujientes",
+      "nameEn": "Sushi — Crispies",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Sake",
-      "nameEn": "Drinks & Sake",
-      "icon": "Coffee"
+      "id": "chef-s-selection-nigiri",
+      "nameEs": "Selección del Chef Nigiri",
+      "nameEn": "Chef's Selection Nigiri",
+      "icon": "Utensils"
+    },
+    {
+      "id": "temaki-hand-rolls",
+      "nameEs": "Temaki / Rollos de Mano",
+      "nameEn": "Temaki / Hand Rolls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "boujee-temaki-hand-rolls",
+      "nameEs": "Boujee Temaki / Rollos de Mano",
+      "nameEn": "Boujee Temaki / Hand Rolls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "snacks-bites",
+      "nameEs": "Bocados y Antojitos",
+      "nameEn": "Snacks & Bites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sashimi",
+      "nameEs": "Sashimi",
+      "nameEn": "Sashimi",
+      "icon": "Utensils"
+    },
+    {
+      "id": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Robata (con arroz koshihikari y umeboshi)",
+      "nameEn": "Robata (with koshihikari rice & umeboshi)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura (con tentsuyu y aioli de miso de Kioto)",
+      "nameEn": "Tempura (with tentsuyu & kyoto miso aioli)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "oko-poke",
+      "nameEs": "OKO-Poke",
+      "nameEn": "OKO-Poke",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot",
+      "nameEs": "Calientes",
+      "nameEn": "Hot",
+      "icon": "Utensils"
+    },
+    {
+      "id": "makimono-box-set-cut-rolls",
+      "nameEs": "Makimono Box Set (rollos cortados)",
+      "nameEn": "Makimono Box Set (cut rolls)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postres",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "house-specialty-cocktails",
+      "nameEs": "Cocteles de la Casa Especiales",
+      "nameEn": "House Specialty Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "highballs",
+      "nameEs": "Highballs",
+      "nameEn": "Highballs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sake",
+      "nameEs": "Sake",
+      "nameEn": "Sake",
+      "icon": "Utensils"
+    },
+    {
+      "id": "no-alcohol",
+      "nameEs": "Sin Alcohol",
+      "nameEn": "No Alcohol",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-glass",
+      "nameEs": "Vino por Copa",
+      "nameEn": "Wine by the Glass",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "japanese-whisky-by-the-ounce",
+      "nameEs": "Whisky Japonés por Onza",
+      "nameEn": "Japanese Whisky by the Ounce",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tea-coffee",
+      "nameEs": "Té y Café",
+      "nameEn": "Tea & Coffee",
+      "icon": "Utensils"
+    },
+    {
+      "id": "liquor",
+      "nameEs": "Licores",
+      "nameEn": "Liquor",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-sake-by-the-bottle",
+      "nameEs": "Vino y Sake por Botella",
+      "nameEn": "Wine & Sake by the Bottle",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "oko-01",
-      "categoryId": "appetizers",
-      "nameEs": "Edamame al Vapor con Sal de Mar y Togarashi",
-      "nameEn": "Steamed Edamame with Sea Salt & Togarashi",
-      "descriptionEs": "Vainas de edamame al vapor sazonadas con sal marina fina y un toque de especias japonesas togarashi.",
-      "descriptionEn": "Steamed edamame pods tossed with fine sea salt and a subtle dusting of Japanese togarashi spice.",
-      "price": "$9.00",
-      "popular": false,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Saludable"
-      ],
-      "allergens": [
-        "Soy"
-      ],
+      "id": "avocado-kabayaki",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Avocado Kabayaki",
+      "nameEn": "Avocado Kabayaki",
+      "descriptionEs": "furikake de ajonjolí y ajo",
+      "descriptionEn": "sesame-garlic furikake",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "oko-02",
-      "categoryId": "appetizers",
-      "nameEs": "Crujiente de Arroz con Atún Picante",
-      "nameEn": "Spicy Tuna Crispy Rice",
-      "descriptionEs": "Bloques de arroz para sushi dorados y crujientes cubiertos con tartares de atún picante, aguacate y cebollín.",
-      "descriptionEn": "Pan-seared crispy sushi rice cakes topped with spicy tuna tartare, avocado, and scallions.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Plato Estrella",
-      "tags": [
-        "Picante",
-        "Pescado Fresco",
-        "Favorito"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy",
-        "Sesame"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-03",
-      "categoryId": "appetizers",
-      "nameEs": "Gyoza de Cerdo y Cebollín Casero",
-      "nameEn": "Pan-Fried Pork & Chive Gyoza",
-      "descriptionEs": "Empanadillas japonesas hechas a mano rellenas de cerdo sazonado y cebollín, servidas con salsa ponzu de sésamo.",
-      "descriptionEn": "Handmade Japanese dumplings stuffed with seasoned pork and garlic chives, served with sesame ponzu dip.",
-      "price": "$15.00",
-      "popular": false,
-      "badge": "Casero",
-      "tags": [
-        "Artesanal",
-        "Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soy",
-        "Sesame"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-04",
-      "categoryId": "appetizers",
-      "nameEs": "Pimientos Shishito Asados con Miso y Mantequilla",
-      "nameEn": "Blistered Shishito Peppers with Miso Butter",
-      "descriptionEs": "Pimientos shishito asados al fuego barnizados con mantequilla dulce de miso y copos de bonito ahumado.",
-      "descriptionEn": "Fire-blistered shishito peppers glazed with sweet miso butter and topped with smoky bonito flakes.",
-      "price": "$14.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Asado"
-      ],
-      "allergens": [
-        "Dairy",
-        "Soy",
-        "Fish"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-05",
-      "categoryId": "mains",
-      "nameEs": "Bacalao Negro Glaseado con Miso Dulce",
-      "nameEn": "Miso Glazed Black Cod",
-      "descriptionEs": "Bacalao negro de captura silvestre marinado en saikyo miso dulce, horneado a la perfección con bok choy al vapor.",
-      "descriptionEn": "Wild-caught black cod marinated in sweet saikyo miso, broiled to perfection and served with steamed bok choy.",
-      "price": "$38.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Marisco",
-        " Gourmet"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-06",
-      "categoryId": "mains",
-      "nameEs": "Ramen Tonkotsu Artesanal",
-      "nameEn": "House Tonkotsu Ramen",
-      "descriptionEs": "Ricas fideos de ramen en caldo concentrado de hueso de cerdo, panceta de cerdo chashu, huevo marinado y brotes de bambú.",
-      "descriptionEn": "Rich pork bone broth served with ramen noodles, tender chashu pork belly, soft-boiled marinated egg, and bamboo shoots.",
-      "price": "$24.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Caliente",
-        "Tradiocional"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs",
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-07",
-      "categoryId": "mains",
-      "nameEs": "Donburi de Pollo Teriyaki Local",
-      "nameEn": "Local Farm Chicken Teriyaki Donburi",
-      "descriptionEs": "Pollo de granjas locales glaseado con teriyaki casero, servido sobre arroz al vapor con vegetales de estación.",
-      "descriptionEn": "Local farm chicken glazed with housemade teriyaki sauce, served over steamed rice with seasonal farm vegetables.",
-      "price": "$26.00",
-      "popular": false,
-      "badge": "Granja Local",
-      "tags": [
-        "Orgánico",
-        "Casero"
-      ],
-      "allergens": [
-        "Soy",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-08",
-      "categoryId": "mains",
-      "nameEs": "Brochetas Kushiyaki de Carne Wagyu",
-      "nameEn": "Wagyu Beef Kushiyaki Skewers",
-      "descriptionEs": "Brochetas de carne Wagyu a la parrilla de carbón, sazonadas con salsa tare ahumada y cebollín fino.",
-      "descriptionEn": "Charcoal-grilled Japanese Wagyu beef skewers brushed with smoky tare sauce and topped with micro-chives.",
-      "price": "$32.00",
-      "popular": false,
-      "badge": "Premium",
-      "tags": [
-        "Wagyu",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Soy",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-09",
-      "categoryId": "specialties",
-      "nameEs": "Selección de Nigiri Omakase del Chef",
-      "nameEn": "Chef's Nigiri Omakase Selection",
-      "descriptionEs": "Siete piezas de nigiri seleccionado minuciosamente del mercado de Tsukiji y aguas locales de Connecticut.",
-      "descriptionEn": "Seven pieces of chef-curated nigiri featuring fresh catches from Tokyo's Tsukiji market and local CT waters.",
-      "price": "$45.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Frescura Total",
-        "Chef Selection"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-10",
-      "categoryId": "specialties",
-      "nameEs": "Crudo de Jurel Hamachi con Ponzu y Jalapeño",
-      "nameEn": "Hamachi Yellowtail Crudo with Ponzu",
-      "descriptionEs": "Láminas finas de pez limón fresco con rodajas de jalapeño, cilantro y un aderezo cítrico de ponzu y trufa.",
-      "descriptionEn": "Thinly sliced fresh yellowtail served with crisp jalapeño rounds, cilantro, and truffle ponzu dressing.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sin Gluten",
-        "Cítrico",
-        "Fresco"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-11",
-      "categoryId": "specialties",
-      "nameEs": "Rollo Especial OKO Dragón",
-      "nameEn": "OKO Specialty Dragon Roll",
-      "descriptionEs": "Langostino crujiente en tempura y pepino cubierto con láminas de aguacate, anguila ahumada y salsa unagi dulce.",
-      "descriptionEn": "Crispy shrimp tempura and cucumber wrapped with avocado slices, smoked eel, and drizzled with sweet unagi sauce.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Rollos Especiales",
-        "Marisco"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Fish",
-        "Gluten",
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-12",
-      "categoryId": "specialties",
-      "nameEs": "Sashimi de Salmón Real con Aceite de Trufa",
-      "nameEn": "King Salmon Sashimi with Truffle Oil",
-      "descriptionEs": "Sashimi suave de salmón real aromatizado con aceite de trufa blanca, sal marina de Maldon y microverduras.",
-      "descriptionEn": "Melt-in-your-mouth King Salmon sashimi drizzled with white truffle oil, Maldon sea salt, and microgreens.",
-      "price": "$24.00",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Sin Gluten",
-        "Trufa"
-      ],
-      "allergens": [
-        "Fish"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-13",
-      "categoryId": "beverages",
-      "nameEs": "Sake Junmai Ginjo Artesanal (Botella 300ml)",
-      "nameEn": "Craft Junmai Ginjo Sake (300ml Bottle)",
-      "descriptionEs": "Sake premium con notas aromáticas melosas, florales y una terminación limpia y refrescante.",
-      "descriptionEn": "Premium Japanese craft sake featuring aromatic notes of melon, gentle florals, and a crisp, clean finish.",
-      "price": "$28.00",
-      "popular": true,
-      "badge": "Alcohol",
-      "tags": [
-        "Sake Premium",
-        "Bebida Japonesa"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "oko-14",
-      "categoryId": "beverages",
-      "nameEs": "Refresco Artesanal Japonés de Yuzu",
-      "nameEn": "Japanese Yuzu Craft Soda",
-      "descriptionEs": "Bebida refrescante y efervescente hecha con jugo natural de cítrico yuzu japonés importado.",
-      "descriptionEn": "Refreshing sparkling soda crafted with natural citrus juice from imported Japanese yuzu.",
+      "id": "local-maitake",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Local Maitake",
+      "nameEn": "Local Maitake",
+      "descriptionEs": "miso rojo, umeboshi",
+      "descriptionEn": "red miso, umeboshi",
       "price": "$7.00",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Refrescante",
-        "Cítrico"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "oko-15",
-      "categoryId": "beverages",
-      "nameEs": "Té Verde Matcha Helado con Leche de Almendras",
-      "nameEn": "Iced Matcha Green Tea Latte",
-      "descriptionEs": "Té matcha orgánico de Kioto batido con leche de almendras y un toque sutil de jarabe de caña.",
-      "descriptionEn": "Organic Ceremonial Kyoto matcha whisked over ice with almond milk and a hint of cane sugar.",
+      "id": "maine-bluefin-tuna-akami",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Maine Bluefin Tuna Akami",
+      "nameEn": "Maine Bluefin Tuna Akami",
+      "descriptionEs": "jengibre, cebollín, ajonjolí (crudo)",
+      "descriptionEn": "ginger, scallion, sesame (raw)",
       "price": "$8.00",
-      "popular": false,
-      "badge": "Orgánico",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Tree Nuts"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marinated-bluefin-tuna-akami-zuke",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Marinated Bluefin Tuna Akami Zuke",
+      "nameEn": "Marinated Bluefin Tuna Akami Zuke",
+      "descriptionEs": "cebolla encurtida (crudo)",
+      "descriptionEn": "pickled onion (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cedar-smoked-black-cod",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Cedar Smoked Black Cod",
+      "nameEn": "Cedar Smoked Black Cod",
+      "descriptionEs": "remolachas crujientes, rábano picante",
+      "descriptionEn": "crispy beets, horseradish",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ora-king-salmon",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Ora King Salmon",
+      "nameEn": "Ora King Salmon",
+      "descriptionEs": "yuzu kosho, lima dedo, shiso (crudo)",
+      "descriptionEn": "yuzu kosho, finger lime, shiso (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-otoro",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Salmon Otoro",
+      "nameEn": "Salmon Otoro",
+      "descriptionEs": "perlas de arroz, aguacate con yuzu (crudo)",
+      "descriptionEn": "rice pearls, yuzu avocado (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Branzino",
+      "nameEn": "Branzino",
+      "descriptionEs": "chimichurri de ajo silvestre (crudo)",
+      "descriptionEn": "wild ramp chimichurri (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaskan-king-crab",
+      "categoryId": "sushi-near-far-nigiri-per-piece",
+      "nameEs": "Alaskan King Crab",
+      "nameEn": "Alaskan King Crab",
+      "descriptionEs": "mantequilla de chile, miso rojo",
+      "descriptionEn": "chili butter, red miso",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "madai-sea-bream",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Madai Sea Bream",
+      "nameEn": "Madai Sea Bream",
+      "descriptionEs": "yuzu kosho verde, cebollín, jengibre (crudo)",
+      "descriptionEn": "green yuzu kosho, scallion, ginger (raw)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kin-medai-golden-eye-snapper",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Kin Medai Golden Eye Snapper",
+      "nameEn": "Kin Medai Golden Eye Snapper",
+      "descriptionEs": "kosho de jalapeño rojo (crudo)",
+      "descriptionEn": "red jalapeño kosho (raw)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hirame-wild-fluke",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Hirame Wild Fluke",
+      "nameEn": "Hirame Wild Fluke",
+      "descriptionEs": "soya blanca, hojas de wasabi (crudo)",
+      "descriptionEn": "white soy, wasabi greens (raw)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shima-aji-striped-jack",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Shima Aji Striped Jack",
+      "nameEn": "Shima Aji Striped Jack",
+      "descriptionEs": "fresno encurtido (crudo)",
+      "descriptionEn": "pickled fresno (raw)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kanpachi-amberjack",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Kanpachi Amberjack",
+      "nameEn": "Kanpachi Amberjack",
+      "descriptionEs": "sumi shio (crudo)",
+      "descriptionEn": "sumi shio (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tsuri-aji-horse-mackerel",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Tsuri Aji Horse Mackerel",
+      "nameEn": "Tsuri Aji Horse Mackerel",
+      "descriptionEs": "alioli de kumquat, sal cítrica (crudo)",
+      "descriptionEn": "kumquat aioli, citrus salt (raw)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamachi-yellowtail",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Hamachi Yellowtail",
+      "nameEn": "Hamachi Yellowtail",
+      "descriptionEs": "alioli de cebollín, gomashio de ajonjolí (crudo)",
+      "descriptionEn": "scallion aioli, sesame gomashio (raw)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-fujisan-salmon",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "White Fujisan Salmon",
+      "nameEn": "White Fujisan Salmon",
+      "descriptionEs": "umeboshi de fresa (crudo)",
+      "descriptionEn": "strawberry umeboshi (raw)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "botan-ebi-sweet-shrimp",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Botan Ebi Sweet Shrimp",
+      "nameEn": "Botan Ebi Sweet Shrimp",
+      "descriptionEs": "mantequilla de ajo, togarashi (crudo)",
+      "descriptionEn": "garlic butter, togarashi (raw)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hokkaido-hotate-sea-scallop",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Hokkaido Hotate Sea Scallop",
+      "nameEn": "Hokkaido Hotate Sea Scallop",
+      "descriptionEs": "miso con yuzu (crudo)",
+      "descriptionEn": "yuzu miso (raw)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anago-sea-eel",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Anago Sea Eel",
+      "nameEn": "Anago Sea Eel",
+      "descriptionEs": "glaseado kabayaki, sansho de Kioto",
+      "descriptionEn": "kabayaki glaze, kyoto sansho",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chutoro-medium-fatty-tuna",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Chutoro Medium Fatty Tuna",
+      "nameEn": "Chutoro Medium Fatty Tuna",
+      "descriptionEs": "dashi de cebolla dulce (crudo)",
+      "descriptionEn": "sweet onion dashi (raw)",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "otoro-super-fatty-tuna",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Otoro Super Fatty Tuna",
+      "nameEn": "Otoro Super Fatty Tuna",
+      "descriptionEs": "ponzu, caviar osetra (crudo)",
+      "descriptionEn": "ponzu, osetra caviar (raw)",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hokkaido-uni-sea-urchin",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "Hokkaido Uni Sea Urchin",
+      "nameEn": "Hokkaido Uni Sea Urchin",
+      "descriptionEs": "ponzu, pimienta rosada (crudo)",
+      "descriptionEn": "ponzu, pink peppercorn (raw)",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "a5-miyazaki-beef",
+      "categoryId": "sushi-from-japan-nigiri-per-piece",
+      "nameEs": "A5 Miyazaki Beef",
+      "nameEn": "A5 Miyazaki Beef",
+      "descriptionEs": "alioli de trufa, puerros crujientes",
+      "descriptionEn": "truffle aioli, crispy leeks",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-wagyu-beef",
+      "categoryId": "sushi-crispies",
+      "nameEs": "Spicy Wagyu Beef",
+      "nameEn": "Spicy Wagyu Beef",
+      "descriptionEs": "trufa, huevo de codorniz (crudo)",
+      "descriptionEn": "truffle, quail egg (raw)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-tuna",
+      "categoryId": "sushi-crispies",
+      "nameEs": "Spicy Tuna",
+      "nameEn": "Spicy Tuna",
+      "descriptionEs": "alioli de gochujang, furikake de ajonjolí (crudo)",
+      "descriptionEn": "gochujang aioli, sesame furikake (raw)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-salmon",
+      "categoryId": "sushi-crispies",
+      "nameEs": "Spicy Salmon",
+      "nameEn": "Spicy Salmon",
+      "descriptionEs": "alioli de ponzu, furikake de nori (crudo)",
+      "descriptionEn": "ponzu aioli, nori furikake (raw)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-hamachi",
+      "categoryId": "sushi-crispies",
+      "nameEs": "Spicy Hamachi",
+      "nameEn": "Spicy Hamachi",
+      "descriptionEs": "alioli de cebollino, ponzu, ajonjolí (crudo)",
+      "descriptionEn": "chive aioli, ponzu, sesame (raw)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-selection-five-piece",
+      "categoryId": "chef-s-selection-nigiri",
+      "nameEs": "Selección del Chef — Cinco Piezas",
+      "nameEn": "Chef's Selection — Five Piece",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-selection-ten-piece",
+      "categoryId": "chef-s-selection-nigiri",
+      "nameEs": "Selección del Chef — Diez Piezas",
+      "nameEn": "Chef's Selection — Ten Piece",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-avocado-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Pepino y Aguacate",
+      "nameEn": "Cucumber & Avocado Hand Roll",
+      "descriptionEs": "furikake, cebollín",
+      "descriptionEn": "furikake, scallion",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pickled-mushroom-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Champiñones Encurtidos",
+      "nameEn": "Pickled Mushroom Hand Roll",
+      "descriptionEs": "papa crujiente, alioli de trufa",
+      "descriptionEn": "crunchy potato, truffle aioli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-ora-king-salmon-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Spicy Ora King Salmon",
+      "nameEn": "Spicy Ora King Salmon Hand Roll",
+      "descriptionEs": "cebollín, arroz inflado",
+      "descriptionEn": "scallion, puffed rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bluefin-tuna-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Bluefin Tuna",
+      "nameEn": "Bluefin Tuna Hand Roll",
+      "descriptionEs": "alioli picante, cebollín",
+      "descriptionEn": "spicy aioli, scallion",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamachi-scallion-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Hamachi y Cebollín",
+      "nameEn": "Hamachi & Scallion Hand Roll",
+      "descriptionEs": "alioli picante, furikake",
+      "descriptionEn": "spicy aioli, furikake",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maine-sea-scallop-hand-roll",
+      "categoryId": "temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Maine Sea Scallop",
+      "nameEn": "Maine Sea Scallop Hand Roll",
+      "descriptionEs": "furikake de nori, alioli picante",
+      "descriptionEn": "nori furikake, spicy aioli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-avocado-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Eel & Avocado",
+      "nameEn": "Eel & Avocado Hand Roll",
+      "descriptionEs": "glaseado kabayaki, sansho",
+      "descriptionEn": "kabayaki glaze, sansho",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaskan-king-crab-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Rollo de Mano de Alaskan King Crab",
+      "nameEn": "Alaskan King Crab Hand Roll",
+      "descriptionEs": "pepino, aguacate",
+      "descriptionEn": "cucumber, avocado",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maine-lobster-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Hand Roll de Langosta de Maine",
+      "nameEn": "Maine Lobster Hand Roll",
+      "descriptionEs": "aioli de togarashi, apio, limón",
+      "descriptionEn": "togarashi aioli, celery, lemon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chutoro-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Hand Roll de Chutoro",
+      "nameEn": "Chutoro Hand Roll",
+      "descriptionEs": "cebollín",
+      "descriptionEn": "scallion",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hokkaido-uni-ikura-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Hand Roll de Uni de Hokkaido e Ikura",
+      "nameEn": "Hokkaido Uni & Ikura Hand Roll",
+      "descriptionEs": "shiso, umeboshi",
+      "descriptionEn": "shiso, umeboshi",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "a5-miyazaki-beef-hand-roll",
+      "categoryId": "boujee-temaki-hand-rolls",
+      "nameEs": "Hand Roll de Res A5 Miyazaki",
+      "nameEn": "A5 Miyazaki Beef Hand Roll",
+      "descriptionEs": "aioli de trufa, puerro crujiente",
+      "descriptionEn": "truffle aioli, crispy leek",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miso-soup",
+      "categoryId": "snacks-bites",
+      "nameEs": "Sopa de Miso",
+      "nameEn": "Miso Soup",
+      "descriptionEs": "shiitake, tofu, wakame",
+      "descriptionEn": "shiitake, tofu, wakame",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salted-cucumbers",
+      "categoryId": "snacks-bites",
+      "nameEs": "Pepinos Salados",
+      "nameEn": "Salted Cucumbers",
+      "descriptionEs": "shiso, umeboshi",
+      "descriptionEn": "shiso, umeboshi",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-edamame",
+      "categoryId": "snacks-bites",
+      "nameEs": "Edamame Orgánico",
+      "nameEn": "Organic Edamame",
+      "descriptionEs": "mantequilla de ajo y soya, gomashio, shio kombu",
+      "descriptionEn": "garlic-soy butter, gomashio, shio kombu",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shaved-cabbage-pear-salad",
+      "categoryId": "snacks-bites",
+      "nameEs": "Ensalada de Repollo Cortado y Pera",
+      "nameEn": "Shaved Cabbage & Pear Salad",
+      "descriptionEs": "aderezo de miso con nuez",
+      "descriptionEn": "walnut miso dressing",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-shishitos",
+      "categoryId": "snacks-bites",
+      "nameEs": "Shishitos a la Parrilla",
+      "nameEn": "Grilled Shishitos",
+      "descriptionEs": "aioli de miso y lima, guanciale, shoyu koji",
+      "descriptionEn": "miso lime aioli, guanciale, shoyu koji",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "uni-toast",
+      "categoryId": "snacks-bites",
+      "nameEs": "Tostada de Uni",
+      "nameEn": "Uni Toast",
+      "descriptionEs": "pan de leche, umeboshi, mantequilla de leche de cabra (cruda)",
+      "descriptionEn": "milk bread, umeboshi, goat's milk butter (raw)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gohan-rice",
+      "categoryId": "snacks-bites",
+      "nameEs": "Arroz Gohan",
+      "nameEn": "Gohan Rice",
+      "descriptionEs": "guarnición de arroz blanco (menú para llevar)",
+      "descriptionEn": "side of white rice (to-go menu)",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kombujime-wild-fluke-sashimi",
+      "categoryId": "sashimi",
+      "nameEs": "Sashimi de Lenguado Silvestre Kombujime",
+      "nameEn": "Kombujime Wild Fluke Sashimi",
+      "descriptionEs": "chimichurri de shiso, yuzu kosho rojo, soya blanca (crudo)",
+      "descriptionEn": "shiso chimichurri, red yuzu kosho, white soy (raw)",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamachi-sashimi",
+      "categoryId": "sashimi",
+      "nameEs": "Sashimi de Hamachi",
+      "nameEn": "Hamachi Sashimi",
+      "descriptionEs": "puré de aguacate al yuzu, ponzu picante, gomashio, cilantro, jalapeño (crudo)",
+      "descriptionEn": "yuzu avocado purée, spicy ponzu, gomashio, cilantro, jalapeño (raw)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-moriawase-half-order",
+      "categoryId": "sashimi",
+      "nameEs": "Sashimi Moriawase (Media Orden)",
+      "nameEn": "Sashimi Moriawase (Half Order)",
+      "descriptionEs": "selección del chef de 5 variedades de sashimi (crudo)",
+      "descriptionEn": "chef's selection of 5 varieties of sashimi (raw)",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-moriawase-full-order",
+      "categoryId": "sashimi",
+      "nameEs": "Sashimi Moriawase (Orden Completa)",
+      "nameEn": "Sashimi Moriawase (Full Order)",
+      "descriptionEs": "selección del chef de 5 variedades de sashimi (crudo)",
+      "descriptionEn": "chef's selection of 5 varieties of sashimi (raw)",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-asian-pear",
+      "categoryId": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Salmón y Pera Asiática",
+      "nameEn": "Salmon & Asian Pear",
+      "descriptionEs": "mostaza de miso; una brocheta",
+      "descriptionEn": "miso mustard; one skewer",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hanger-steak",
+      "categoryId": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Hanger Steak",
+      "nameEn": "Hanger Steak",
+      "descriptionEs": "hanger steak de wagyu, aioli de ajo negro; una brocheta",
+      "descriptionEn": "wagyu hanger steak, black garlic aioli; one skewer",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teriyaki-chicken",
+      "categoryId": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Pollo Teriyaki",
+      "nameEn": "Teriyaki Chicken",
+      "descriptionEs": "aioli de miso blanco; una brocheta",
+      "descriptionEn": "white miso aioli; one skewer",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-eggplant-trumpet-mushroom",
+      "categoryId": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Berenjena Japonesa y Champiñón Trumpet",
+      "nameEn": "Japanese Eggplant & Trumpet Mushroom",
+      "descriptionEs": "umeboshi; una brocheta",
+      "descriptionEn": "umeboshi; one skewer",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-selection-robata",
+      "categoryId": "robata-with-koshihikari-rice-umeboshi",
+      "nameEs": "Robata Selección del Chef",
+      "nameEn": "Chef's Selection Robata",
+      "descriptionEs": "3 brochetas: salmón y pera asiática, pollo y vegetal (menú para llevar)",
+      "descriptionEn": "3 skewers: salmon & asian pear, chicken and vegetable (to-go menu)",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-eggplant-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Berenjena Japonesa",
+      "nameEn": "Japanese Eggplant Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maitake-mushroom-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Champiñón Maitake",
+      "nameEn": "Maitake Mushroom Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Brócoli",
+      "nameEn": "Broccoli Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallion-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Cebollín",
+      "nameEn": "Scallion Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kabocha-squash-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Calabaza Kabocha",
+      "nameEn": "Kabocha Squash Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "okinawan-sweet-potato-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Tempura de Boniato Okinawan",
+      "nameEn": "Okinawan Sweet Potato Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-selection-of-5-tempura",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Selección del Chef de 5 Tempuras",
+      "nameEn": "Chef's Selection of 5 Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken-caviar",
+      "categoryId": "tempura-with-tentsuyu-kyoto-miso-aioli",
+      "nameEs": "Pollo Frito y Caviar",
+      "nameEn": "Fried Chicken & Caviar",
+      "descriptionEs": "miel picante, aioli de yuzu, sal sansho",
+      "descriptionEn": "hot honey, yuzu aioli, sansho salt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bigeye-tuna-poke",
+      "categoryId": "oko-poke",
+      "nameEs": "Poke de Atún Bigeye",
+      "nameEn": "Bigeye Tuna Poke",
+      "descriptionEs": "yuzu ponzu, aioli de togarashi, crujiente de quinua con sésamo, cebollín, nori (crudo)",
+      "descriptionEn": "yuzu ponzu, togarashi aioli, sesame quinoa crunch, scallion, nori (raw)",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marinated-king-salmon-poke",
+      "categoryId": "oko-poke",
+      "nameEs": "Poke de Salmón King Marinado",
+      "nameEn": "Marinated King Salmon Poke",
+      "descriptionEs": "soya ahumada, aioli de miso blanco, arúgula, nori (crudo)",
+      "descriptionEn": "smoked soy, white miso aioli, arugula, nori (raw)",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "st-canut-pork-belly-bao",
+      "categoryId": "hot",
+      "nameEs": "Bao de Panceta de Cerdo St. Canut",
+      "nameEn": "St. Canut Pork Belly Bao",
+      "descriptionEs": "caramelo de kimchi, zanahoria encurtida, micro cilantro",
+      "descriptionEn": "kimchi caramel, pickled carrot, micro cilantro",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-mazamen",
+      "categoryId": "hot",
+      "nameEs": "Mazamen de Langosta",
+      "nameEn": "Lobster Mazamen",
+      "descriptionEs": "ramen con mantequilla, salsa XO, cebollín, yema de huevo curada",
+      "descriptionEn": "buttered ramen, XO sauce, scallion, cured egg yolk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sticky-ribs",
+      "categoryId": "hot",
+      "nameEs": "Costillas Glaseadas",
+      "nameEn": "Sticky Ribs",
+      "descriptionEs": "salsa barbacoa de gochujang, cebollín",
+      "descriptionEn": "gochujang barbecue sauce, scallion",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-fried-rice",
+      "categoryId": "hot",
+      "nameEs": "Arroz Frito con Jaiba",
+      "nameEn": "Crab Fried Rice",
+      "descriptionEs": "chorizo, cebollín, kimchi, brócoli chino, huevos de codorniz",
+      "descriptionEn": "chorizo, scallion, kimchi, chinese broccoli, quail eggs",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "madeira-miso-black-cod",
+      "categoryId": "hot",
+      "nameEs": "Bacalao Negro al Miso con Madeira",
+      "nameEn": "Madeira Miso Black Cod",
+      "descriptionEs": "maitake, gomashio de piñones, sabayón de miso",
+      "descriptionEn": "maitake, pine nut gomashio, miso sabayon",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "makimono-box-set",
+      "categoryId": "makimono-box-set-cut-rolls",
+      "nameEs": "Makimono Box Set",
+      "nameEn": "Makimono Box Set",
+      "descriptionEs": "Rollo de bacalao negro al miso blanco (mermelada de shiitake, caramelo de soya) y rollo de atún aleta azul picante y crujiente con aguacate (aioli de togarashi, arroz inflado), servido con edamame, tempura de vegetales y tsukemono",
+      "descriptionEn": "White miso black cod roll (shiitake marmalade, soy caramel) and spicy crunchy bluefin tuna & avocado roll (togarashi aioli, puffed rice), served with edamame, vegetable tempura and tsukemono",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha-kit-kat",
+      "categoryId": "dessert",
+      "nameEs": "Kit-Kat de Matcha",
+      "nameEn": "Matcha Kit-Kat",
+      "descriptionEs": "mantequilla de maní, avellana, chocolate blanco con matcha",
+      "descriptionEn": "peanut butter, hazelnut, matcha white chocolate",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-cookie",
+      "categoryId": "dessert",
+      "nameEs": "Galleta con Chispas de Chocolate",
+      "nameEn": "Chocolate Chip Cookie",
+      "descriptionEs": "malvavisco y hojuelas de maíz",
+      "descriptionEn": "marshmallow & cornflakes",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ooey-gooey-chocolate-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de Chocolate Ooey Gooey",
+      "nameEn": "Ooey Gooey Chocolate Cake",
+      "descriptionEs": "helado suave de vainilla",
+      "descriptionEn": "vanilla soft serve",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-serve-waffle-cone-or-sundae",
+      "categoryId": "dessert",
+      "nameEs": "Helado Suave en Cono de Waffle o Sundae",
+      "nameEn": "Soft Serve Waffle Cone or Sundae",
+      "descriptionEs": "vainilla, chocolate o twist; complementos: salsa de chocolate, salsa de caramelo de mantequilla, crujientes de mocha, almendras de mantequilla tostada, crujiente OKO (precio del sundae del menú para llevar)",
+      "descriptionEn": "vanilla, chocolate or twist; toppings: chocolate sauce, butterscotch sauce, mocha crunchies, brown butter almonds, OKO crunch (sundae price from to-go menu)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gingered-ninja",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Gingered Ninja",
+      "nameEn": "Gingered Ninja",
+      "descriptionEs": "tequila, jugo de jengibre, agave, maldon ahumado",
+      "descriptionEn": "tequila, ginger juice, agave, smoked maldon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beets-heat",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Beets & Heat",
+      "nameEn": "Beets & Heat",
+      "descriptionEs": "bourbon, jengibre, remolachas, fresno",
+      "descriptionEn": "bourbon, ginger, beets, fresno",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-old-fashioned",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Japanese Old Fashioned",
+      "nameEn": "Japanese Old Fashioned",
+      "descriptionEs": "bourbon iwai, azúcar mascabado, amargos",
+      "descriptionEn": "iwai bourbon, brown sugar, bitters",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "one-knight-only",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "One Knight Only",
+      "nameEn": "One Knight Only",
+      "descriptionEs": "ginebra, lichi, sake de yuzu, shochu de limoncillo",
+      "descriptionEn": "gin, lychee, yuzu sake, lemongrass shochu",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plum-paper-plane",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Plum Paper Plane",
+      "nameEn": "Plum Paper Plane",
+      "descriptionEs": "sake de ciruela, nonino, aperol, limón, ajenjo",
+      "descriptionEn": "plum sake, nonino, aperol, lemon, wormwood",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "up-in-smoke",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Up In Smoke",
+      "nameEn": "Up In Smoke",
+      "descriptionEs": "mezcal, nonino, chartreuse verde, clara de huevo",
+      "descriptionEn": "mezcal, nonino, green chartreuse, egg white",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heat-of-passion",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Heat of Passion",
+      "nameEn": "Heat of Passion",
+      "descriptionEs": "tequila, strega, maracuyá, togarashi",
+      "descriptionEn": "tequila, strega, passionfruit, togarashi",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loud-clear",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Loud & Clear",
+      "nameEn": "Loud & Clear",
+      "descriptionEs": "bourbon, almendra, té tailandés, clarificado",
+      "descriptionEn": "bourbon, almond, thai tea, clarified",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clementina",
+      "categoryId": "house-specialty-cocktails",
+      "nameEs": "Clementina",
+      "nameEn": "Clementina",
+      "descriptionEs": "vodka, shochu, st. germain, clementina",
+      "descriptionEn": "vodka, shochu, st. germain, clementine",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuzu-highball",
+      "categoryId": "highballs",
+      "nameEs": "Yuzu Highball",
+      "nameEn": "Yuzu Highball",
+      "descriptionEs": "whisky japonés, agave, yuzu, amargos, soda",
+      "descriptionEn": "japanese whisky, agave, yuzu, bitters, soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kyoto-tom-collins",
+      "categoryId": "highballs",
+      "nameEs": "Kyoto Tom Collins",
+      "nameEn": "Kyoto Tom Collins",
+      "descriptionEs": "ginebra japonesa ki no bi, limón, soda",
+      "descriptionEn": "ki no bi japanese gin, lemon, soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "junmai",
+      "categoryId": "sake",
+      "nameEs": "Junmai",
+      "nameEn": "Junmai",
+      "descriptionEs": "Shichi Hon Yari \"7 Spearsmen\"",
+      "descriptionEn": "Shichi Hon Yari \"7 Spearsmen\"",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "junmai-ginjo",
+      "categoryId": "sake",
+      "nameEs": "Junmai Ginjo",
+      "nameEn": "Junmai Ginjo",
+      "descriptionEs": "Maboroshi \"Nakao's Secret\"",
+      "descriptionEn": "Maboroshi \"Nakao's Secret\"",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "junmai-daiginjo",
+      "categoryId": "sake",
+      "nameEs": "Junmai Daiginjo",
+      "nameEn": "Junmai Daiginjo",
+      "descriptionEs": "Soto",
+      "descriptionEn": "Soto",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nigori",
+      "categoryId": "sake",
+      "nameEs": "Nigori",
+      "nameEn": "Nigori",
+      "descriptionEs": "Tozai \"Snow Maiden\"",
+      "descriptionEn": "Tozai \"Snow Maiden\"",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "futsu-shu-for-two",
+      "categoryId": "sake",
+      "nameEs": "Futsu-Shu (para dos)",
+      "nameEn": "Futsu-Shu (for two)",
+      "descriptionEs": "sake servido tibio",
+      "descriptionEn": "sake served warm",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "berry-flirty",
+      "categoryId": "no-alcohol",
+      "nameEs": "Berry Flirty",
+      "nameEn": "Berry Flirty",
+      "descriptionEs": "fresa, jugo de jengibre, lima, agua con gas",
+      "descriptionEn": "strawberry, ginger juice, lime, club soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pucker-up",
+      "categoryId": "no-alcohol",
+      "nameEs": "Pucker Up",
+      "nameEn": "Pucker Up",
+      "descriptionEs": "maracuyá, cítricos, tónica",
+      "descriptionEn": "passionfruit, citrus, tonic",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bubbles",
+      "categoryId": "no-alcohol",
+      "nameEs": "Bubbles",
+      "nameEn": "Bubbles",
+      "descriptionEs": "lichi, toronja, agua de azahar",
+      "descriptionEn": "lychee, grapefruit, orange blossom water",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cava",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Cava",
+      "nameEn": "Cava",
+      "descriptionEs": "Conquilla, Brut NV, Penedès",
+      "descriptionEn": "Conquilla, Brut NV, Penedès",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Champán",
+      "nameEn": "Champagne",
+      "descriptionEs": "Charles de Cazanove, Brut NV",
+      "descriptionEn": "Charles de Cazanove, Brut NV",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Rosado",
+      "nameEn": "Rosé",
+      "descriptionEs": "Château Vignelaure 2024, Coteaux d'Aix-en-Provence",
+      "descriptionEn": "Château Vignelaure 2024, Coteaux d'Aix-en-Provence",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Sauvignon Blanc",
+      "nameEn": "Sauvignon Blanc",
+      "descriptionEs": "Domaine du Chapitre, Touraine 2024, Loira",
+      "descriptionEn": "Domaine du Chapitre, Touraine 2024, Loire",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Chardonnay",
+      "nameEn": "Chardonnay",
+      "descriptionEs": "Domaine Larochette, Mâcon-Fuissé 2023, Borgoña",
+      "descriptionEn": "Domaine Larochette, Mâcon-Fuissé 2023, Burgundy",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Pinot Noir",
+      "nameEn": "Pinot Noir",
+      "descriptionEs": "Planet Oregon 2023, Willamette Valley, Oregón",
+      "descriptionEn": "Planet Oregon 2023, Willamette Valley, Oregon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebbiolo",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Nebbiolo",
+      "nameEn": "Nebbiolo",
+      "descriptionEs": "Langhe 'Alessandro Rivetto' 2023, Piamonte, Italia",
+      "descriptionEn": "Langhe 'Alessandro Rivetto' 2023, Piedmont, Italy",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Cabernet Sauvignon",
+      "nameEn": "Cabernet Sauvignon",
+      "descriptionEs": "Fitch Mountain 2021, Condado de Sonoma",
+      "descriptionEn": "Fitch Mountain 2021, Sonoma County",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hitachino-nest",
+      "categoryId": "beer",
+      "nameEs": "Hitachino Nest",
+      "nameEn": "Hitachino Nest",
+      "descriptionEs": "lager de yuzu, Japón",
+      "descriptionEn": "yuzu lager, Japan",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asahi-super-dry",
+      "categoryId": "beer",
+      "nameEs": "Asahi Super Dry",
+      "nameEn": "Asahi Super Dry",
+      "descriptionEs": "lager, Japón",
+      "descriptionEn": "lager, Japan",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sapporo",
+      "categoryId": "beer",
+      "nameEs": "Sapporo",
+      "nameEn": "Sapporo",
+      "descriptionEs": "lager, Japón",
+      "descriptionEn": "lager, Japan",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nod-hill-brewery-geobunny",
+      "categoryId": "beer",
+      "nameEs": "Nod Hill Brewery Geobunny",
+      "nameEn": "Nod Hill Brewery Geobunny",
+      "descriptionEs": "IPA, Connecticut",
+      "descriptionEn": "IPA, Connecticut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing-co-non-alcoholic",
+      "categoryId": "beer",
+      "nameEs": "Athletic Brewing Co. (sin alcohol)",
+      "nameEn": "Athletic Brewing Co. (non-alcoholic)",
+      "descriptionEs": "golden ale, Connecticut",
+      "descriptionEn": "golden ale, Connecticut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibiki-harmony",
+      "categoryId": "japanese-whisky-by-the-ounce",
+      "nameEs": "Hibiki Harmony",
+      "nameEn": "Hibiki Harmony",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ichiro-s-malt-grain-world-whisky",
+      "categoryId": "japanese-whisky-by-the-ounce",
+      "nameEs": "Ichiro's Malt & Grain World Whisky",
+      "nameEn": "Ichiro's Malt & Grain World Whisky",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nikka-coffey-malt-whisky",
+      "categoryId": "japanese-whisky-by-the-ounce",
+      "nameEs": "Nikka Coffey Malt Whisky",
+      "nameEn": "Nikka Coffey Malt Whisky",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood-orange-pear-iced-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té Helado de Pera y Naranja Sanguina",
+      "nameEn": "Blood Orange Pear Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-ginger-white-iced-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té Helado Blanco de Jengibre Tropical",
+      "nameEn": "Tropical Ginger White Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-orgeat-iced-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té Helado Tailandés y Orgeat",
+      "nameEn": "Thai & Orgeat Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ceremonial-grade-matcha",
+      "categoryId": "tea-coffee",
+      "nameEs": "Matcha Grado Ceremonial",
+      "nameEn": "Ceremonial Grade Matcha",
+      "descriptionEs": "té verde",
+      "descriptionEn": "green tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moroccan-mint-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té de Menta Marroquí",
+      "nameEn": "Moroccan Mint Tea",
+      "descriptionEs": "té verde",
+      "descriptionEn": "green tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jasmine-pearl-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té de Perlas de Jazmín",
+      "nameEn": "Jasmine Pearl Tea",
+      "descriptionEs": "té verde",
+      "descriptionEn": "green tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sencha",
+      "categoryId": "tea-coffee",
+      "nameEs": "Sencha",
+      "nameEn": "Sencha",
+      "descriptionEs": "té verde",
+      "descriptionEn": "green tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chamomile-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té de Manzanilla",
+      "nameEn": "Chamomile Tea",
+      "descriptionEs": "té de hierbas",
+      "descriptionEn": "herbal tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-ginger-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té de Limón y Jengibre",
+      "nameEn": "Lemon Ginger Tea",
+      "descriptionEs": "té de hierbas",
+      "descriptionEn": "herbal tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nettles-tea",
+      "categoryId": "tea-coffee",
+      "nameEs": "Té de Ortiga",
+      "nameEn": "Nettles Tea",
+      "descriptionEs": "té de hierbas",
+      "descriptionEn": "herbal tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assam",
+      "categoryId": "tea-coffee",
+      "nameEs": "Assam",
+      "nameEn": "Assam",
+      "descriptionEs": "té negro",
+      "descriptionEn": "black tea",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-press-coffee-16-oz",
+      "categoryId": "tea-coffee",
+      "nameEs": "Café de Prensa Francesa 16 oz",
+      "nameEn": "French Press Coffee 16 oz",
+      "descriptionEs": "regular o descafeinado",
+      "descriptionEn": "regular or decaf",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-press-coffee-32-oz",
+      "categoryId": "tea-coffee",
+      "nameEs": "Café de Prensa Francesa 32 oz",
+      "nameEn": "French Press Coffee 32 oz",
+      "descriptionEs": "regular o descafeinado",
+      "descriptionEn": "regular or decaf",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gin",
+      "categoryId": "liquor",
+      "nameEs": "Ginebra",
+      "nameEn": "Gin",
+      "descriptionEs": "Etsu, Fords, Greenhook, Hendricks, Ki No Bi, Roku, Tanqueray",
+      "descriptionEn": "Etsu, Fords, Greenhook, Hendricks, Ki No Bi, Roku, Tanqueray",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vodka",
+      "categoryId": "liquor",
+      "nameEs": "Vodka",
+      "nameEn": "Vodka",
+      "descriptionEs": "Belvedere, Chopin, Haku, Ketel One, Titos",
+      "descriptionEn": "Belvedere, Chopin, Haku, Ketel One, Titos",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "agave",
+      "categoryId": "liquor",
+      "nameEs": "Agave",
+      "nameEn": "Agave",
+      "descriptionEs": "Casamigos Añejo, Blanco y Reposado; Danos Añejo; Don Vincente Blanco y Reposado; El Tesoro Blanco y Reposado; Banhez Mezcal",
+      "descriptionEn": "Casamigos Añejo, Blanco and Reposado; Danos Añejo; Don Vincente Blanco and Reposado; El Tesoro Blanco and Reposado; Banhez Mezcal",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-whisky",
+      "categoryId": "liquor",
+      "nameEs": "Whisky Japonés",
+      "nameEn": "Japanese Whisky",
+      "descriptionEs": "Hibiki Harmony, Ichiro's Malt & Grain, Iwai Blue, Iwai Tradition, Iwai 45, Nikka Coffey Malt, Nikka From the Barrel, Nikka Yoichi Single Malt 10yr, Oishi Sherry Cask, Oishi Tokubetsu Reserve, Suntory Toki, Yamazaki 12",
+      "descriptionEn": "Hibiki Harmony, Ichiro's Malt & Grain, Iwai Blue, Iwai Tradition, Iwai 45, Nikka Coffey Malt, Nikka From the Barrel, Nikka Yoichi Single Malt 10yr, Oishi Sherry Cask, Oishi Tokubetsu Reserve, Suntory Toki, Yamazaki 12",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "single-malt-scotch",
+      "categoryId": "liquor",
+      "nameEs": "Scotch de Malta Individual",
+      "nameEn": "Single Malt Scotch",
+      "descriptionEs": "Macallan 12, Oban 14",
+      "descriptionEn": "Macallan 12, Oban 14",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scotch",
+      "categoryId": "liquor",
+      "nameEs": "Scotch",
+      "nameEn": "Scotch",
+      "descriptionEs": "Johnnie Walker Black, Monkey Shoulder",
+      "descriptionEn": "Johnnie Walker Black, Monkey Shoulder",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bourbon",
+      "categoryId": "liquor",
+      "nameEs": "Bourbon",
+      "nameEn": "Bourbon",
+      "descriptionEs": "Blanton's, Bulleit, Michter's Small Batch",
+      "descriptionEn": "Blanton's, Bulleit, Michter's Small Batch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rye",
+      "categoryId": "liquor",
+      "nameEs": "Rye",
+      "nameEn": "Rye",
+      "descriptionEs": "Bulleit, Michter's Single Barrel, Rittenhouse",
+      "descriptionEn": "Bulleit, Michter's Single Barrel, Rittenhouse",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brandy",
+      "categoryId": "liquor",
+      "nameEs": "Brandy",
+      "nameEn": "Brandy",
+      "descriptionEs": "Laird's Applejack, Pierre Ferrand Cognac 1er Cru, Pisco Caravedo Quebranta",
+      "descriptionEn": "Laird's Applejack, Pierre Ferrand Cognac 1er Cru, Pisco Caravedo Quebranta",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shochu",
+      "categoryId": "liquor",
+      "nameEs": "Shochu",
+      "nameEn": "Shochu",
+      "descriptionEs": "Mizu Lemongrass, Mizu Barley, Mura Mugi",
+      "descriptionEn": "Mizu Lemongrass, Mizu Barley, Mura Mugi",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rum",
+      "categoryId": "liquor",
+      "nameEs": "Ron",
+      "nameEn": "Rum",
+      "descriptionEs": "Diplomático Reserva Exclusiva, Planteray Three Stars",
+      "descriptionEn": "Diplomático Reserva Exclusiva, Planteray Three Stars",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "liqueurs-vermouth",
+      "categoryId": "liquor",
+      "nameEs": "Licores y Vermú",
+      "nameEn": "Liqueurs & Vermouth",
+      "descriptionEs": "Carpano Antica Vermouth, Pierre Ferrand Dry Curaçao, Grand Marnier, Italicus, Lazzaroni Sambuca",
+      "descriptionEn": "Carpano Antica Vermouth, Pierre Ferrand Dry Curaçao, Grand Marnier, Italicus, Lazzaroni Sambuca",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bitter-amaro-aperitivo",
+      "categoryId": "liquor",
+      "nameEs": "Bitter, Amaro y Aperitivo",
+      "nameEn": "Bitter, Amaro & Aperitivo",
+      "descriptionEs": "Amaro Montenegro, Aperol, Campari, Cappelletti 'Il Specialino', Lillet Blanc, Nonino Quintessentia",
+      "descriptionEn": "Amaro Montenegro, Aperol, Campari, Cappelletti 'Il Specialino', Lillet Blanc, Nonino Quintessentia",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-macon-villages-domaine-des-crets-2023",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Chardonnay, Mâcon-Villages, Domaine des Crets 2023",
+      "nameEn": "Chardonnay, Mâcon-Villages, Domaine des Crets 2023",
+      "descriptionEs": "Borgoña, Francia",
+      "descriptionEn": "Burgundy, France",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chablis-william-fevre-champs-royaux-2024",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Chablis, William Fèvre, Champs Royaux 2024",
+      "nameEn": "Chablis, William Fèvre, Champs Royaux 2024",
+      "descriptionEs": "Borgoña, Francia",
+      "descriptionEn": "Burgundy, France",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-domaine-jean-paul-balland-sancerre-2025",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Sauvignon Blanc, Domaine Jean-Paul Balland, Sancerre 2025",
+      "nameEn": "Sauvignon Blanc, Domaine Jean-Paul Balland, Sancerre 2025",
+      "descriptionEs": "Loira, Francia",
+      "descriptionEn": "Loire, France",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-scott-family-estate",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Pinot Noir, Scott Family Estate",
+      "nameEn": "Pinot Noir, Scott Family Estate",
+      "descriptionEs": "Monterey, California",
+      "descriptionEn": "Monterey, California",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebbiolo-langhe-alessandro-rivetto-2023",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Nebbiolo, Langhe 'Alessandro Rivetto' 2023",
+      "nameEn": "Nebbiolo, Langhe 'Alessandro Rivetto' 2023",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-fitch-mountain-2021",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Cabernet Sauvignon, Fitch Mountain 2021",
+      "nameEn": "Cabernet Sauvignon, Fitch Mountain 2021",
+      "descriptionEs": "Condado de Sonoma, California",
+      "descriptionEn": "Sonoma County, California",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shichi-hon-yari-seven-spearsmen-shizuku-silent-samurai",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Shichi Hon Yari 'Seven Spearsmen' Shizuku Silent Samurai",
+      "nameEn": "Shichi Hon Yari 'Seven Spearsmen' Shizuku Silent Samurai",
+      "descriptionEs": "junmai daiginjo sake, Shiga",
+      "descriptionEn": "junmai daiginjo sake, Shiga",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maboroshi-nakao-s-secret",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Maboroshi 'Nakao's Secret'",
+      "nameEn": "Maboroshi 'Nakao's Secret'",
+      "descriptionEs": "junmai ginjo sake, Hiroshima",
+      "descriptionEn": "junmai ginjo sake, Hiroshima",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kikuhime-b-y",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Kikuhime 'B.Y.'",
+      "nameEn": "Kikuhime 'B.Y.'",
+      "descriptionEs": "daiginjo sake, Ishikawa",
+      "descriptionEn": "daiginjo sake, Ishikawa",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tozai-snow-maiden",
+      "categoryId": "wine-sake-by-the-bottle",
+      "nameEs": "Tozai 'Snow Maiden'",
+      "nameEn": "Tozai 'Snow Maiden'",
+      "descriptionEs": "nigori sake, Kioto",
+      "descriptionEn": "nigori sake, Kyoto",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetariana, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con variedad de opciones sin gluten y vegetarianas identificadas en nuestro menú. Notifique a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we feature several gluten-free and vegetarian items clearly marked on our menu. Please notify your server of any dietary allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o atienden a personas sin cita?",
-      "qEn": "Do you accept reservations or walk-ins?",
-      "aEs": "Aceptamos reservaciones mediante nuestro sitio web o por teléfono, y siempre guardamos espacio para clientes sin reservación.",
-      "aEn": "We accept reservations via our website or phone, and always save seating for walk-in guests."
-    },
-    {
-      "qEs": "¿De dónde provienen los mariscos e ingredientes?",
-      "qEn": "Where do your seafood and ingredients come from?",
-      "aEs": "Utilizamos ingredientes frescos de granjas y aguas locales de Connecticut y Nueva York, combinados con mariscos importados del mercado Tsukiji en Japón.",
-      "aEn": "We source fresh ingredients from local farms and waters in CT and NY, paired with specialty fish imported directly from Japan's Tsukiji market."
-    }
-  ]
+  "faqs": []
 }
