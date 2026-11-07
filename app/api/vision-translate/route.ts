@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { generateWithFallback } from "@/lib/gemini";
 
 /* ================================================================
    VISION TRANSLATE — extracts text from image + translates to Spanish
@@ -8,22 +8,24 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
    ================================================================ */
 
 async function tryGeminiVision(
-  base64Data: string
+  base64Data: string,
+  mimeType: string,
+  targetLang: "es" | "en"
 ): Promise<{ original: string; translated: string }[]> {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.warn("No GEMINI_API_KEY found in environment");
-    return [];
-  }
+  const source = targetLang === "en" ? "Spanish (or any non-English language)" : "English (or any non-Spanish language)";
+  const target = targetLang === "en" ? "English" : "Spanish";
+  const example =
+    targetLang === "en"
+      ? '{ "original": "Línea o plato original", "translated": "English translation" }'
+      : '{ "original": "English line or menu item", "translated": "Traducción al español" }';
 
   try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-
-    const result = await model.generateContent([
+    const raw = await generateWithFallback({
+      timeoutMs: 30000,
+      contents: [
       {
         inlineData: {
-          mimeType: "image/jpeg",
+          mimeType,
           data: base64Data,
         },
       },
@@ -34,18 +36,19 @@ CRITICAL TRANSLATION & LAYOUT INSTRUCTIONS:
 2. Respect multi-column layouts, section headings, menu item names, ingredients, prices, and line breaks.
 3. For multi-column menus, process Column 1 top-to-bottom first, then process Column 2 top-to-bottom.
 4. Do NOT merge separate menu items or separate paragraphs together.
-5. Provide the exact original English text and its accurate Spanish translation for every line or section.
+5. Provide the exact original ${source} text and its accurate ${target} translation for every line or section.
 6. Preserve time designations like "12 pm - 4 pm" as "12 pm - 4 pm" (or "12:00 PM - 4:00 PM"). NEVER translate "pm" into "pie", "pastel", or "tarta".
 
 Return ONLY a raw JSON array (no markdown code blocks, no explanation text):
 [
-  { "original": "English line or menu item", "translated": "Traducción al español" }
+  ${example}
 ]
 If no readable text is found in the image, return: []`,
       },
-    ]);
+      ],
+    });
 
-    const raw = result.response.text().trim();
+    if (!raw) return [];
     const match = raw.match(/\[[\s\S]*\]/);
     if (match) {
       const parsed = JSON.parse(match[0]);
@@ -62,11 +65,13 @@ If no readable text is found in the image, return: []`,
 
 export async function POST(req: NextRequest) {
   try {
-    const { imageBase64 } = await req.json();
+    const { imageBase64, targetLang } = await req.json();
     if (!imageBase64) return NextResponse.json({ lines: [] });
 
-    const base64Data = imageBase64.replace(/^data:image\/\w+;base64,/, "");
-    const lines = await tryGeminiVision(base64Data);
+    const mimeMatch = imageBase64.match(/^data:(image\/[\w.+-]+);base64,/);
+    const mimeType = mimeMatch ? mimeMatch[1] : "image/jpeg";
+    const base64Data = imageBase64.replace(/^data:image\/[\w.+-]+;base64,/, "");
+    const lines = await tryGeminiVision(base64Data, mimeType, targetLang === "en" ? "en" : "es");
 
     return NextResponse.json({ lines });
   } catch (error: any) {

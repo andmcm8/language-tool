@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import { getMerchantById } from "@/lib/merchants";
+import { Content } from "@google/generative-ai";
+import { getMerchantById, hasMerchant } from "@/lib/merchants";
+import { generateWithFallback } from "@/lib/gemini";
 import { MerchantConfig } from "@/types/merchant";
 
 const DISCLAIMER_ES =
@@ -77,14 +78,14 @@ Your role is to assist guests and answer questions using EXCLUSIVELY the verifie
 - Phone Number: ${storeInfo.phone ? storeInfo.phone : "No public phone listed; guests can visit us at our address or inquire with staff."}
 - Operating Hours:
 ${hoursStr}
-- Accepted Payment Methods: ${storeInfo.paymentMethods?.join(", ") || "Cash, Credit/Debit"}
+- Accepted Payment Methods: ${storeInfo.paymentMethods?.join(", ") || "Not provided — tell the guest to ask a staff member."}
 - Amenities: ${storeInfo.amenities?.join(", ") || "Dine-in, Takeout, Bilingual Menu"}
 - Facilities & Policies:
-  • Restroom: ${p.restroomLocationEn || "Available inside for guests."} ${p.restroomCodeEn ? `(Access code: ${p.restroomCodeEn})` : ""}
-  • Guest WiFi: ${p.wifiName ? `Network "${p.wifiName}", Password "${p.wifiPassword || "welcome"}"` : `Network "${storeInfo.name}_Guest", Password "welcome"`}
-  • Parking: ${p.parkingPolicyEn || "Customer parking available on site or nearby."}
-  • Takeout & Delivery: ${p.deliveryPolicyEn || "Takeout available for orders placed in-store or by phone."}
-  • Return / Satisfaction Policy: ${p.returnPolicyEn || "We prioritize guest satisfaction; please notify staff immediately if you have any questions."}
+  • Restroom: ${p.restroomLocationEn || "Not provided — tell the guest to ask a staff member."} ${p.restroomCodeEn ? `(Access code: ${p.restroomCodeEn})` : ""}
+  • Guest WiFi: ${p.wifiName ? `Network "${p.wifiName}"${p.wifiPassword ? `, Password "${p.wifiPassword}"` : ""}` : "Not provided — tell the guest to ask a staff member."}
+  • Parking: ${p.parkingPolicyEn || "Not provided — tell the guest to ask a staff member."}
+  • Takeout & Delivery: ${p.deliveryPolicyEn || "Not provided — tell the guest to ask a staff member."}
+  • Return / Satisfaction Policy: ${p.returnPolicyEn || "Not provided — tell the guest to ask a staff member."}
 
 === 2. COMPLETE OFFICIAL MENU & CATALOG (${products.length} ITEMS) ===
 ${menuLines.length > 0 ? menuLines.join("\n") : "Full menu available in-store."}
@@ -106,7 +107,11 @@ ${faqLines.length > 0 ? faqLines.join("\n") : "None specified."}
    - Keep answers clear, direct, and conversational (1 to 3 friendly sentences, or a clean bulleted list for menu items).
    - Avoid generic preamble or unnecessary fluff.
 4. BILINGUAL RESPONSE:
-   - Match the user's language: If the user speaks or writes in Spanish, reply fluently and warmly in Spanish. If they write in English, reply in English.`;
+   - Match the user's language: If the user speaks or writes in Spanish, reply fluently and warmly in Spanish. If they write in English, reply in English.
+5. ACCURACY:
+   - Never invent menu items, prices, ingredients, hours, WiFi details, or policies. If something is not in the information above, say you don't have that information and suggest asking a staff member or calling.
+6. FORMATTING:
+   - Reply in plain text only (the chat window does not render Markdown). No asterisks, no # headings. For lists, put each item on its own line starting with "• ".`;
 }
 
 /* ================================================================
@@ -303,20 +308,24 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
     lowerMsg.includes("apple pay")
   ) {
     return isEnglish
-      ? `${info.name} accepts: ${info.paymentMethods.join(", ")}.`
-      : `${info.name} acepta los siguientes métodos de pago: ${info.paymentMethods.join(", ")}.`;
+      ? `${info.name} accepts: ${(info.paymentMethods || []).join(", ") || "please ask staff"}.`
+      : `${info.name} acepta los siguientes métodos de pago: ${(info.paymentMethods || []).join(", ") || "please ask staff"}.`;
   }
 
   if (lowerMsg.includes("wifi") || lowerMsg.includes("internet")) {
     return isEnglish
-      ? `Guest WiFi: Network "${p.wifiName || info.name + "_Guest"}", Password: "${p.wifiPassword || "welcome"}"`
-      : `WiFi para clientes: Red "${p.wifiName || info.name + "_Guest"}", Contraseña: "${p.wifiPassword || "welcome"}"`;
+      ? p.wifiName
+        ? `Guest WiFi: Network "${p.wifiName}"${p.wifiPassword ? `, Password: "${p.wifiPassword}"` : ""}`
+        : `We don't have WiFi details on file for ${info.name}. Please ask a staff member.`
+      : p.wifiName
+        ? `WiFi para clientes: Red "${p.wifiName}"${p.wifiPassword ? `, Contraseña: "${p.wifiPassword}"` : ""}`
+        : `No tenemos información de WiFi para ${info.name}. Por favor pregunte al personal.`;
   }
 
   if (lowerMsg.includes("restroom") || lowerMsg.includes("bathroom") || lowerMsg.includes("baño") || lowerMsg.includes("bano")) {
     return isEnglish
-      ? `Restroom: ${p.restroomLocationEn || "Available inside for guests."} ${p.restroomCodeEn ? `(Code: ${p.restroomCodeEn})` : ""}`
-      : `Baño: ${p.restroomLocationEs || "Disponible en el establecimiento para clientes."} ${p.restroomCodeEs ? `(Código: ${p.restroomCodeEs})` : ""}`;
+      ? `Restroom: ${p.restroomLocationEn || "Please ask a staff member."} ${p.restroomCodeEn ? `(Code: ${p.restroomCodeEn})` : ""}`
+      : `Baño: ${p.restroomLocationEs || "Por favor pregunte al personal."} ${p.restroomCodeEs ? `(Código: ${p.restroomCodeEs})` : ""}`;
   }
 
   // 9. GREETING
@@ -340,6 +349,16 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
     : `¡Bienvenido a ${info.name}! Estamos ubicados en ${info.address}. Pregúnteme por nuestros horarios (${info.hours?.monday_friday || "Abierto"}), recomendaciones como ${topDishes}, o cualquier plato del menú.`;
 }
 
+/** The chat bubble renders plain text, so remove Markdown emphasis/headings. */
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/__(.+?)__/g, "$1")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^\s*[*-]\s+/gm, "• ")
+    .replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, "$1$2");
+}
+
 /* ================================================================
    POST ROUTE HANDLER
    ================================================================ */
@@ -351,11 +370,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
     }
 
-    // Resolve merchant: prioritize full client-passed config, fallback to registry
+    // Resolve merchant from the server registry so the AI always answers from
+    // the real menu; only fall back to a client-sent config for unknown IDs.
     const merchant: MerchantConfig =
-      merchantConfig && merchantConfig.storeInfo
-        ? merchantConfig
-        : getMerchantById(merchantId || "demo");
+      merchantId && hasMerchant(merchantId)
+        ? getMerchantById(merchantId)
+        : merchantConfig && merchantConfig.storeInfo
+          ? merchantConfig
+          : getMerchantById(merchantId || "demo");
 
     const rawLast = messages[messages.length - 1];
     const lastMessage = (rawLast?.text || rawLast?.content || "").trim();
@@ -385,60 +407,29 @@ export async function POST(req: NextRequest) {
       lowerMsg.includes("cerdo") ||
       lowerMsg.includes("pork");
 
-    const apiKey = process.env.GEMINI_API_KEY;
+    // GEMINI AI ENGINE (configured with the place's complete menu & details)
+    const history: Content[] = [];
+    for (const m of messages.slice(0, -1)) {
+      const role = m.sender === "user" || m.role === "user" ? "user" : "model";
+      const text = (m.text || m.content || "").trim();
+      if (text) history.push({ role, parts: [{ text }] });
+    }
+    // Gemini requires the conversation to start with a user turn (drop the greeting).
+    while (history.length > 0 && history[0].role === "model") history.shift();
 
-    // DIRECT GEMINI AI ENGINE (Configured with complete place menu & details)
-    if (apiKey) {
-      const systemInstruction = buildStoreKnowledgePrompt(merchant);
-      const candidateModels = ["gemini-3.8-flash", "gemini-flash-latest"];
-      const genAI = new GoogleGenerativeAI(apiKey);
+    let aiText = lastMessage
+      ? await generateWithFallback({
+          systemInstruction: buildStoreKnowledgePrompt(merchant),
+          contents: [...history, { role: "user", parts: [{ text: lastMessage }] }],
+        })
+      : null;
 
-      const history: { role: string; parts: { text: string }[] }[] = [];
-      if (messages.length > 1) {
-        const previousMessages = messages.slice(0, -1);
-        for (const m of previousMessages) {
-          const role = m.sender === "user" || m.role === "user" ? "user" : "model";
-          const text = (m.text || m.content || "").trim();
-          if (text) {
-            history.push({ role, parts: [{ text }] });
-          }
-        }
+    if (aiText) {
+      aiText = stripMarkdown(aiText);
+      if (isSensitiveQuery && !aiText.includes("alergias") && !aiText.includes("allergies")) {
+        aiText += isEnglish ? DISCLAIMER_EN : DISCLAIMER_ES;
       }
-
-      while (history.length > 0 && history[0].role === "model") {
-        history.shift();
-      }
-
-      for (const modelName of candidateModels) {
-        try {
-          const model = genAI.getGenerativeModel({
-            model: modelName,
-            systemInstruction,
-          });
-
-          let text = "";
-          if (history.length > 0) {
-            const chat = model.startChat({ history });
-            const result = await chat.sendMessage(lastMessage);
-            text = result.response.text().trim();
-          } else {
-            const result = await model.generateContent(lastMessage);
-            text = result.response.text().trim();
-          }
-
-          if (text) {
-            if (isSensitiveQuery) {
-              const disclaimer = isEnglish ? DISCLAIMER_EN : DISCLAIMER_ES;
-              if (!text.includes("alergias") && !text.includes("allergies")) {
-                text += disclaimer;
-              }
-            }
-            return NextResponse.json({ reply: text });
-          }
-        } catch (err: any) {
-          console.warn(`Gemini model ${modelName} call failed:`, err?.message);
-        }
-      }
+      return NextResponse.json({ reply: aiText });
     }
 
     // HIGH-ACCURACY DYNAMIC STORE FALLBACK ENGINE
