@@ -30,18 +30,8 @@ def build_pombal():
             "themeColor": "#b45309",
             "logoIcon": "cake",
             "policies": {
-                "restroomLocationEs": "Ubicado hacia la parte trasera del mostrador principal.",
-                "restroomLocationEn": "Located towards the back of the main counter area.",
-                "restroomCodeEs": "Abierto para clientes.",
-                "restroomCodeEn": "Open for customers.",
-                "wifiName": "Pombal_Guest",
-                "wifiPassword": "pasteisdenata",
-                "parkingPolicyEs": "Estacionamiento disponible en la calle Grand St y en el lote adyacente.",
-                "parkingPolicyEn": "Street parking on Grand St and adjacent store parking area.",
                 "returnPolicyEs": "Panes y pasteles horneados cada madrugada desde 1988; garantizamos frescura diaria.",
                 "returnPolicyEn": "Breads and pastries baked fresh every morning since 1988; satisfaction guaranteed.",
-                "deliveryPolicyEs": "Pedidos de pan al por mayor y pasteles especiales por teléfono o WhatsApp.",
-                "deliveryPolicyEn": "Wholesale bread and celebration cakes available by phone or WhatsApp."
             },
             "phone": "(203) 333-6622"
         },
@@ -278,3 +268,4 @@ def build_pombal():
 
 if __name__ == "__main__":
     build_pombal()
+

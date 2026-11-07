@@ -43,18 +43,8 @@ def build_cake_box():
             "themeColor": "#ec4899",
             "logoIcon": "cake",
             "policies": {
-                "restroomLocationEs": "Ubicado a través del pasillo lateral exclusivo para clientes.",
-                "restroomLocationEn": "Located through the side hallway for bakery patrons.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for customers (no code required).",
-                "wifiName": "CakeBox_Guest",
-                "wifiPassword": "glutenfreecakes",
-                "parkingPolicyEs": "Estacionamiento disponible directamente frente a la pastelería en 1 Grove St.",
-                "parkingPolicyEn": "Convenient street and plaza parking directly in front of the bakery at 1 Grove St.",
                 "returnPolicyEs": "Todos nuestros productos son 100% libres de gluten horneados desde cero con ingredientes de la más alta calidad.",
                 "returnPolicyEn": "All products are 100% gluten-free and baked from scratch daily with premium allergen-safe ingredients.",
-                "deliveryPolicyEs": "Pedidos anticipados y cajas personalizadas disponibles para recoger en tienda a través de ctcakebox.com.",
-                "deliveryPolicyEn": "Advance ordering and custom dozens available for easy in-store pickup via ctcakebox.com."
             }
         },
         "categories": [
@@ -428,3 +418,4 @@ def build_cake_box():
 
 if __name__ == "__main__":
     build_cake_box()
+

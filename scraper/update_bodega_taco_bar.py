@@ -34,18 +34,8 @@ def build_bodega():
             "themeColor": "#ea580c",
             "logoIcon": "utensils",
             "policies": {
-                "restroomLocationEs": "Los baños se encuentran en el pasillo lateral derecho del restaurante.",
-                "restroomLocationEn": "Restrooms are located down the right hallway of the restaurant.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for dining guests (no code required).",
-                "wifiName": "Bodega_Guest",
-                "wifiPassword": "tacosandtequila",
-                "parkingPolicyEs": "Estacionamiento disponible en la plaza comercial y en la calle Post Rd.",
-                "parkingPolicyEn": "Parking available in the shopping center lot and along Post Rd.",
                 "returnPolicyEs": "Nos enorgullecemos de la calidad de nuestra comida; notifique al gerente si algo no está a su gusto.",
                 "returnPolicyEn": "We pride ourselves on fresh quality; please inform a manager immediately if not fully satisfied.",
-                "deliveryPolicyEs": "Pedidos para llevar y entrega disponibles a través de Toast Online y plataformas asociadas.",
-                "deliveryPolicyEn": "Takeout and delivery available directly via Toast Online ordering."
             },
             "phone": "(203) 292-9590"
         },
@@ -711,3 +701,4 @@ def build_bodega():
 
 if __name__ == "__main__":
     build_bodega()
+

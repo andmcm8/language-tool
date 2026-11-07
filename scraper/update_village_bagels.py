@@ -42,18 +42,8 @@ def build_village_bagels():
             "themeColor": "#b45309",
             "logoIcon": "circle-dot",
             "policies": {
-                "restroomLocationEs": "Ubicado al pasar el mostrador de pedidos hacia el pasillo trasero.",
-                "restroomLocationEn": "Located past the ordering counter down the rear hallway.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for customers (no code required).",
-                "wifiName": "VillageBagels_Guest",
-                "wifiPassword": "fairfieldbagels",
-                "parkingPolicyEs": "Estacionamiento disponible directamente en el lote de la tienda sobre Post Rd.",
-                "parkingPolicyEn": "Storefront parking available in the private customer lot on Post Rd.",
                 "returnPolicyEs": "Garantizamos bagels frescos horneados a diario; avise a nuestro equipo si requiere cualquier cambio.",
                 "returnPolicyEn": "We guarantee scratch-baked bagels boiled daily; please notify staff immediately with any request.",
-                "deliveryPolicyEs": "Pedidos para llevar y entrega a domicilio disponibles a través de SpotOn y plataformas locales.",
-                "deliveryPolicyEn": "Takeout pickup and local delivery available via SpotOn and partner delivery services."
             }
         },
         "categories": [
@@ -597,3 +587,4 @@ def build_village_bagels():
 
 if __name__ == "__main__":
     build_village_bagels()
+

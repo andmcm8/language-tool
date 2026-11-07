@@ -55,3 +55,4 @@ for s, n, p, d in items:
 print(f"Unique items: {len(unique_items)}")
 for it in unique_items[:25]:
     print(f"[{it[0]}] {it[1]} | {it[2]} | {it[3][:50]}")
+

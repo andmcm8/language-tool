@@ -35,18 +35,8 @@ def build_mama_teresas():
             "themeColor": "#991b1b",
             "logoIcon": "pizza",
             "policies": {
-                "restroomLocationEs": "Ubicado al pasar el arco del salón hacia el pasillo trasero.",
-                "restroomLocationEn": "Located through the dining room archway toward the back hallway.",
-                "restroomCodeEs": "Abierto para comensales (no requiere código).",
-                "restroomCodeEn": "Open for dining guests (no code required).",
-                "wifiName": "MamaTeresas_Guest",
-                "wifiPassword": "italiancomfort",
-                "parkingPolicyEs": "Estacionamiento privado gratuito disponible en el lote delantero y lateral del restaurante.",
-                "parkingPolicyEn": "Free private parking lot available directly in front and alongside the restaurant.",
                 "returnPolicyEs": "Recetas tradicionales de la familia preparadas con esmero; notifíquenos cualquier petición especial con gusto.",
                 "returnPolicyEn": "Traditional family recipes cooked with care; please inform your server immediately of any requests.",
-                "deliveryPolicyEs": "Entrega a domicilio y pedidos para llevar disponibles en línea a través de nuestro sitio web mamateresa.com.",
-                "deliveryPolicyEn": "Takeout and local delivery available online via mamateresa.com."
             },
             "phone": "(203) 877-5108"
         },
@@ -518,3 +508,4 @@ def build_mama_teresas():
 
 if __name__ == "__main__":
     build_mama_teresas()
+

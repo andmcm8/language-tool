@@ -35,18 +35,8 @@ def build_baileys():
             "themeColor": "#15803d",
             "logoIcon": "utensils",
             "policies": {
-                "restroomLocationEs": "Ubicado al final del comedor principal pasando el bar.",
-                "restroomLocationEn": "Located at the end of the main dining room past the bar area.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for dining guests (no code required).",
-                "wifiName": "Baileys_Guest",
-                "wifiPassword": "farmtotablect",
-                "parkingPolicyEs": "Estacionamiento disponible en el lote municipal de Bailey Ave y a lo largo de la calle.",
-                "parkingPolicyEn": "Municipal parking lot available on Bailey Ave as well as street parking.",
                 "returnPolicyEs": "Trabajamos con granjas locales para asegurar la frescura; notifique a su mesero de inmediato si algo no cumple con sus expectativas.",
                 "returnPolicyEn": "We partner with local farms to ensure peak freshness; please notify your server immediately with any concerns.",
-                "deliveryPolicyEs": "Pedidos para llevar disponibles directamente por teléfono o en línea a través de nuestro sitio web.",
-                "deliveryPolicyEn": "Takeout ordering available directly by phone or online through our website."
             },
             "phone": "(203) 431-0796"
         },
@@ -532,3 +522,4 @@ def build_baileys():
 
 if __name__ == "__main__":
     build_baileys()
+
