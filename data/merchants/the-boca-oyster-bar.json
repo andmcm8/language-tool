@@ -1,26 +1,21 @@
 {
   "storeInfo": {
     "id": "the-boca-oyster-bar",
-    "name": "The Boca Oyster Bar",
-    "tagline": "Fresh coastal seafood and harbor views / Mariscos frescos de la costa y vistas al puerto",
-    "address": "10 Steele Point Rd, Bridgeport, CT 06608",
+    "name": "Boca Oyster Bar",
+    "tagline": "Waterfront seafood, raw bar and steaks at Steelpointe Harbor | Mariscos, barra cruda y carnes frente al mar en Steelpointe Harbor",
+    "address": "10 E Main St, Bridgeport, CT 06608",
     "hours": {
       "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:00 AM - 11:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "saturday": "11:30 AM - 10:00 PM",
+      "sunday": "11:30 AM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Waterfront View"
+      "Waterfront",
+      "Full Bar",
+      "Reservations",
+      "Bilingual Menu"
     ],
     "themeColor": "#0284c7",
     "logoIcon": "utensils",
@@ -28,315 +23,1163 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(203) 612-4848"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
+      "icon": "Utensils"
+    },
+    {
+      "id": "raw-bar",
+      "nameEs": "Raw Bar",
+      "nameEn": "Raw Bar",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soups",
+      "nameEs": "Sopas",
+      "nameEn": "Soups",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "flatbreads",
+      "nameEs": "Flatbreads",
+      "nameEn": "Flatbreads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "entrees",
+      "nameEs": "Platos principales",
+      "nameEn": "Entrées",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salad-add-ons",
+      "nameEs": "Adiciones para Ensalada",
+      "nameEn": "Salad Add-Ons",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-orders",
+      "nameEs": "Guarniciones",
+      "nameEn": "Side Orders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "professional-lunch",
+      "nameEs": "Almuerzo Ejecutivo",
+      "nameEn": "Professional Lunch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "weekend-brunch",
+      "nameEs": "Brunch de Fin de Semana",
+      "nameEn": "Weekend Brunch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cocteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wines",
+      "nameEs": "Vinos Blancos",
+      "nameEn": "White Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rose-wines",
+      "nameEs": "Vinos Rosados",
+      "nameEn": "Rosé Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wines",
+      "nameEs": "Vinos Tintos",
+      "nameEn": "Red Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sparkling-wines",
+      "nameEs": "Vinos Espumosos",
+      "nameEn": "Sparkling Wines",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "the-boca-oyster-bar-01",
-      "categoryId": "appetizers",
-      "nameEs": "Ostras Frescas del Día (Media Docena)",
-      "nameEn": "Daily Fresh Oysters (Half Dozen)",
-      "descriptionEs": "Ostras locales de la costa en su concha con mignonette de chalote y limón.",
-      "descriptionEn": "Locally harvested coastal oysters served on the half shell with shallot mignonette and fresh lemon.",
-      "price": "$21.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco",
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
+      "id": "oysters-atlantic-pacific",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostras: Atlántico y Pacífico",
+      "nameEn": "Oysters: Atlantic & Pacific",
+      "descriptionEs": "Mignonette, cóctel, rábano picante. Precio de mercado.",
+      "descriptionEn": "Mignonette, cocktail, horseradish. Market price.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-02",
+      "id": "clams-each",
+      "categoryId": "raw-bar",
+      "nameEs": "Almejas (cada una)",
+      "nameEn": "Clams (each)",
+      "descriptionEs": "Almejas littleneck, en media concha con salsa cóctel",
+      "descriptionEn": "Littlenecks, half-shelled with cocktail sauce",
+      "price": "$2",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chilled-maine-lobster-tail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cola de langosta de Maine fría",
+      "nameEn": "Chilled Maine Lobster Tail",
+      "descriptionEs": "10 oz. Precio de mercado.",
+      "descriptionEn": "10 oz. Market price.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "big-seafood-tower-1-2-people",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos grande (1-2 personas)",
+      "nameEn": "Big Seafood Tower (1-2 people)",
+      "descriptionEs": "6 almejas, 6 ostras, 3 camarones",
+      "descriptionEn": "6 clams, 6 oysters, 3 shrimp",
+      "price": "$47",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bigger-seafood-tower-2-4-people",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos más grande (2-4 personas)",
+      "nameEn": "Bigger Seafood Tower (2-4 people)",
+      "descriptionEs": "12 almejas, 12 ostras, 6 camarones, cola de langosta fría de 10 oz",
+      "descriptionEn": "12 clams, 12 oysters, 6 shrimp, 10 oz chilled lobster tail",
+      "price": "$125",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biggest-seafood-tower-3-6-people",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos gigantesca (3-6 personas)",
+      "nameEn": "Biggest Seafood Tower (3-6 people)",
+      "descriptionEs": "10 almejas, 18 ostras, 10 camarones, ceviche Boca, cola de langosta de 10 oz",
+      "descriptionEn": "10 clams, 18 oysters, 10 shrimp, Boca ceviche, 10 oz lobster tail",
+      "price": "$193",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baller-seafood-tower",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos Baller",
+      "nameEn": "Baller Seafood Tower",
+      "descriptionEs": "16 almejas, 24 ostras, 16 camarones, ceviche Boca, (2) colas de langosta de 10 oz",
+      "descriptionEn": "16 clams, 24 oysters, 16 shrimp, Boca ceviche, (2) 10 oz lobster tails",
+      "price": "$291",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oyster-shooter",
+      "categoryId": "raw-bar",
+      "nameEs": "Shot de ostra",
+      "nameEn": "Oyster Shooter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "soups",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Pan tostado con ajo, queso Gruyere",
+      "descriptionEn": "Garlic toast, Gruyere cheese",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder",
+      "categoryId": "soups",
+      "nameEs": "Clam Chowder de Nueva Inglaterra",
+      "nameEn": "New England Clam Chowder",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque",
+      "categoryId": "soups",
+      "nameEs": "Bisque de langosta",
+      "nameEn": "Lobster Bisque",
+      "descriptionEs": "Según disponibilidad",
+      "descriptionEn": "When available",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
+      "descriptionEs": "Tradicionales, glaseado de chile dulce y picante, o teriyaki",
+      "descriptionEn": "Traditional, sweet and spicy chili glaze, or teriyaki",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smokin-bacon",
+      "categoryId": "appetizers",
+      "nameEs": "Tocino ahumado",
+      "nameEn": "Smokin Bacon",
+      "descriptionEs": "Glaseado de sirope de arce Jack Daniels y pimienta negra",
+      "descriptionEn": "Jack Daniels maple syrup glaze and black pepper",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares",
+      "nameEn": "Calamari",
+      "descriptionEs": "Fritos rápidamente con salsa pomodoro",
+      "descriptionEn": "Flash fried with pomodoro sauce",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tempura-roll",
+      "categoryId": "appetizers",
+      "nameEs": "Rollo de tempura de camarón",
+      "nameEn": "Shrimp Tempura Roll",
+      "descriptionEs": "Envoltura de nori, camarón rebozado en tempura, arroz para sushi, aguacate, mayonesa picante, salsa de soya y jengibre, cebollines, semillas de sésamo",
+      "descriptionEn": "Nori wrap, tempura battered shrimp, sushi rice, avocado, spicy mayo, soy ginger sauce, scallions, sesame seeds",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-casino",
       "categoryId": "appetizers",
       "nameEs": "Almejas Casino",
       "nameEn": "Clams Casino",
-      "descriptionEs": "Almejas de cuello duro horneadas con tocino ahumado, pimientos y mantequilla de hierbas.",
-      "descriptionEn": "Baked little neck clams topped with crispy smoked bacon, bell peppers, and herb butter.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Classic",
-      "tags": [
-        "Horneado",
-        "Tocino"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
+      "descriptionEs": "Mantequilla de ajo, hierbas frescas, vino, parmesano rallado, tocino de madera de manzano",
+      "descriptionEn": "Garlic butter, fresh herbs, wine, grated parm, applewood bacon",
+      "price": "$18",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-03",
+      "id": "filet-tips",
       "categoryId": "appetizers",
-      "nameEs": "Calamari frito a la Marinara",
-      "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Calamar tierno ligeramente empanizado y frito, servido con salsa marinara picante y rodajas de limón.",
-      "descriptionEn": "Lightly breaded and flash-fried tender calamari, served with spicy marinara sauce and fresh lemon wedges.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Frito",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish"
-      ],
+      "nameEs": "Tiritas de filete",
+      "nameEn": "Filet Tips",
+      "descriptionEs": "Filete corte Angus, puré de papas con ajo, salsa asiática para bistec",
+      "descriptionEn": "Angus cut filet, garlic whipped potato, Asian steak sauce",
+      "price": "$20",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-04",
+      "id": "nachos",
       "categoryId": "appetizers",
-      "nameEs": "Sopa de almejas estilo Nueva Inglaterra",
-      "nameEn": "New England Clam Chowder",
-      "descriptionEs": "Sopa cremosa y reconfortante con almejas frescas, papas y tocino crujiente.",
-      "descriptionEn": "Rich and comforting creamy chowder packed with fresh sea clams, diced potatoes, and crispy bacon.",
-      "price": "$10.00",
-      "popular": false,
-      "badge": "Warm",
-      "tags": [
-        "Sopa",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Dairy",
-        "Shellfish"
-      ],
+      "nameEs": "Nachos",
+      "nameEn": "Nachos",
+      "descriptionEs": "Cebollas, tomates, frijoles negros, aceitunas negras, jalapeños, pico de gallo, salsa casera, queso jack rallado; adicionales disponibles",
+      "descriptionEn": "Onions, tomatoes, black beans, black olives, jalapeños, pico de gallo, house made salsa, shredded jack cheese; add-ons available",
+      "price": "$16",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-05",
-      "categoryId": "mains",
-      "nameEs": "Rollo de Langosta Estilo Connecticut",
-      "nameEn": "Connecticut Lobster Roll",
-      "descriptionEs": "Generosa porción de carne de langosta fresca bañada en mantequilla tibia clarificada sobre pan brioche tostado.",
-      "descriptionEn": "Generous portion of fresh warm lobster meat tossed in drawn butter, served on a toasted buttery brioche roll.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Langosta",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Shellfish"
-      ],
+      "id": "salmon-crispy-rice",
+      "categoryId": "appetizers",
+      "nameEs": "Arroz crujiente con salmón",
+      "nameEn": "Salmon Crispy Rice",
+      "descriptionEs": "Salmón en trocitos, cebollines sobre arroz para sushi crujiente con salsa de miso y semillas de sésamo",
+      "descriptionEn": "Diced salmon, scallions on crispy sushi rice with miso sauce and sesame seeds",
+      "price": "$21",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-06",
-      "categoryId": "mains",
-      "nameEs": "Pescado del Día con Papas Fritas",
-      "nameEn": "Fish and Chips",
-      "descriptionEs": "Filete de pescado fresco rebozado en cerveza, frito hasta estar dorado, servido con papas fritas y tártara casera.",
-      "descriptionEn": "Beer-battered fresh fish fillet fried golden brown, served with hand-cut fries and house-made tartar sauce.",
-      "price": "$24.00",
-      "popular": false,
-      "badge": "Classic",
-      "tags": [
-        "Frito",
-        "Pescado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Fish"
-      ],
+      "id": "seared-ahi-tuna",
+      "categoryId": "appetizers",
+      "nameEs": "Atún Ahi sellado",
+      "nameEn": "Seared Ahi Tuna",
+      "descriptionEs": "Ensalada de pepino y aguacate",
+      "descriptionEn": "Cucumber & avocado salad",
+      "price": "$20",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-07",
-      "categoryId": "mains",
-      "nameEs": "Linguine con Almejas a la Diabla",
-      "nameEn": "Linguine con Vongole",
-      "descriptionEs": "Pasta linguine fresca con almejas frescas de cuello duro, ajo, vino blanco, hojuelas de chile y aceite de oliva virgen.",
-      "descriptionEn": "Fresh linguine pasta tossed with fresh littleneck clams, garlic, white wine, chili flakes, and extra virgin olive oil.",
-      "price": "$26.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pasta",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish"
-      ],
+      "id": "chicken-avocado-flatbread",
+      "categoryId": "flatbreads",
+      "nameEs": "Flatbread de pollo y aguacate",
+      "nameEn": "Chicken Avocado Flatbread",
+      "descriptionEs": "Pollo a la parrilla, aguacate, cebolla morada, tomate picado, mozzarella fresca, chipotle",
+      "descriptionEn": "Grilled chicken, avocado, red onion, chopped tomato, fresh mozzarella, chipotle",
+      "price": "$18",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-08",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Boca Burger",
-      "nameEn": "The Boca Burger",
-      "descriptionEs": "Carne de res angus jugosa con queso cheddar añejo, tocino, lechuga, tomate y salsa especial en pan brioche.",
-      "descriptionEn": "Juicy angus beef patty topped with aged cheddar, bacon, crisp lettuce, tomato, and signature sauce on a brioche bun.",
-      "price": "$19.00",
-      "popular": false,
-      "badge": "Hearty",
-      "tags": [
-        "Carne",
-        "Hamburguesa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "cheese-flatbread",
+      "categoryId": "flatbreads",
+      "nameEs": "Flatbread de queso",
+      "nameEn": "Cheese Flatbread",
+      "descriptionEs": "Tomates plum, mozzarella rallada",
+      "descriptionEn": "Plum tomatoes, shredded mozzarella",
+      "price": "$14",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-09",
-      "categoryId": "specialties",
-      "nameEs": "Caserola de Mariscos Estilo Boca",
-      "nameEn": "Boca Seafood Paella",
-      "descriptionEs": "Arroz con azafrán, camarones, mejillones, almejas, calamar y chorizo en un caldo aromático de mariscos.",
-      "descriptionEn": "Saffron-infused rice simmered with shrimp, mussels, clams, calamari, and Spanish chorizo in a rich seafood broth.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Arroz",
-        "Mariscos",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Fish"
-      ],
+      "id": "lobster-ravioli",
+      "categoryId": "entrees",
+      "nameEs": "Ravioles de langosta",
+      "nameEn": "Lobster Ravioli",
+      "descriptionEs": "Langosta de Maine, camarones, callos de hacha, chícharos, pimientos rojos asados, salsa cremosa rosada",
+      "descriptionEn": "Maine lobster, shrimp, scallops, peas, red roasted peppers, pink cream sauce",
+      "price": "$40",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-10",
-      "categoryId": "specialties",
-      "nameEs": "Salmón Atlántico a la Parrilla",
-      "nameEn": "Grilled Atlantic Salmon",
-      "descriptionEs": "Filete de salmón fresco glaseado con miel y mostaza, servido con espárragos y puré de papas trufado.",
-      "descriptionEn": "Fresh Atlantic salmon fillet with a honey-mustard glaze, served alongside grilled asparagus and truffle mashed potatoes.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Healthy",
-      "tags": [
-        "Pescado",
-        "Saludable"
-      ],
-      "allergens": [
-        "Fish",
-        "Dairy"
-      ],
+      "id": "roasted-organic-half-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Medio pollo orgánico asado",
+      "nameEn": "Roasted Organic Half Chicken",
+      "descriptionEs": "Asado a la sartén, puré de papas con ajo, brócoli",
+      "descriptionEn": "Pan roasted, garlic whipped potatoes, broccoli",
+      "price": "$28",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-11",
-      "categoryId": "specialties",
-      "nameEs": "Vieiras Gigantes Pan-Seared",
-      "nameEn": "Pan-Seared Sea Scallops",
-      "descriptionEs": "Vieiras marinas doradas a la sartén sobre risotto cremoso de parmesano y reducción de balsámico.",
-      "descriptionEn": "Pan-seared jumbo sea scallops served over creamy parmesan risotto with a balsamic reduction drizzle.",
-      "price": "$36.00",
-      "popular": true,
-      "badge": "Gourmet",
-      "tags": [
-        "Vieiras",
-        "Risotto"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Dairy"
-      ],
+      "id": "fried-shrimp",
+      "categoryId": "entrees",
+      "nameEs": "Camarones fritos",
+      "nameEn": "Fried Shrimp",
+      "descriptionEs": "Camarones empanizados a mano fritos hasta estar dorados, ensalada de col, papas fritas",
+      "descriptionEn": "Hand battered shrimp fried golden brown, coleslaw, french fried potatoes",
+      "price": "$27",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera de Lavanda",
-      "nameEn": "Lavender Lemonade",
-      "descriptionEs": "Limonada fresca hecha en casa infusionada con un toque delicado de jarabe de lavanda.",
-      "descriptionEn": "Refreshing house-made lemonade infused with a delicate hint of organic lavender syrup.",
-      "price": "$5.00",
-      "popular": false,
-      "badge": "Refreshment",
-      "tags": [
-        "Sin Alcohol",
-        "Artesanal"
-      ],
-      "allergens": [],
+      "id": "chicken-milanese-stack",
+      "categoryId": "entrees",
+      "nameEs": "Torre de pollo Milanesa",
+      "nameEn": "Chicken Milanese Stack",
+      "descriptionEs": "Pechuga de pollo orgánica con costra de panko, mozzarella fresca, arúgula, tomate, reducción de balsámico añejo, AOVE",
+      "descriptionEn": "Panko crusted organic chicken breast, fresh mozzarella, arugula, tomato, aged balsamic drizzle, EVOO",
+      "price": "$27",
       "ctaType": "in_store"
     },
     {
-      "id": "the-boca-oyster-bar-13",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Boca Sunset (Margarita de Maracuyá)",
-      "nameEn": "Boca Sunset Cocktail (Passion Fruit Margarita)",
-      "descriptionEs": "Tequila reposado, puré fresco de maracuyá, Cointreau y borde de sal marina con tajín.",
-      "descriptionEn": "Reposado tequila, fresh passion fruit puree, Cointreau, and a tajin sea salt rim.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Cocktail",
-      "tags": [
-        "Alcohol",
-        "Tropical"
-      ],
-      "allergens": [],
+      "id": "penne-alla-vodka",
+      "categoryId": "entrees",
+      "nameEs": "Penne alla Vodka",
+      "nameEn": "Penne alla Vodka",
+      "descriptionEs": "Prosciutto, pancetta, cebolla picada, vodka, brandy, salsa cremosa de tomate plum",
+      "descriptionEn": "Prosciutto, pancetta, diced onions, vodka, brandy, plum tomato cream sauce",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cioppino",
+      "categoryId": "entrees",
+      "nameEs": "Cioppino",
+      "nameEn": "Cioppino",
+      "descriptionEs": "Langosta de Maine, camarones, callos de hacha, calamares, almejas, salsa de mariscos con tomate plum sobre linguine",
+      "descriptionEn": "Maine lobster, shrimp, scallops, calamari, clams, plum tomato seafood sauce over linguine",
+      "price": "$43",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fisherman-s-platter",
+      "categoryId": "entrees",
+      "nameEs": "Plato del pescador",
+      "nameEn": "Fisherman's Platter",
+      "descriptionEs": "Bacalao del Atlántico rebozado en cerveza, camarones fritos, calamares fritos, ensalada de col, salsa tártara, papas fritas",
+      "descriptionEn": "Beer battered Atlantic cod, fried shrimp, fried calamari, coleslaw, tartar sauce, french fries",
+      "price": "$34",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-frites",
+      "categoryId": "entrees",
+      "nameEs": "Steak Frites",
+      "nameEn": "Steak Frites",
+      "descriptionEs": "NY strip de 10 oz, pastel de papa (pave), chimichurri",
+      "descriptionEn": "10 oz NY strip, potato pave, chimichurri",
+      "price": "$38",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "make-it-surf-n-turf",
+      "categoryId": "entrees",
+      "nameEs": "Hazlo Surf n' Turf",
+      "nameEn": "Make it Surf n' Turf",
+      "descriptionEs": "Agrega una cola de langosta de Maine de 5 oz a un plato principal (precio no incluido)",
+      "descriptionEn": "Add a 5 oz Maine lobster tail to an entrée (price not listed)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tacos",
+      "categoryId": "sandwiches",
+      "nameEs": "Tacos de pollo",
+      "nameEn": "Chicken Tacos",
+      "descriptionEs": "Pollo cocinado a fuego lento, salsa de piña asada, ensalada de col con sidra, tortilla de maíz",
+      "descriptionEn": "Slow roasted chicken, roasted pineapple salsa, cider slaw, corn tortilla",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-taco",
+      "categoryId": "sandwiches",
+      "nameEs": "Taco de atún",
+      "nameEn": "Tuna Taco",
+      "descriptionEs": "Atún ahi sellado, lechuga picada, crema de wasabi, salsa, tortilla de maíz amarillo",
+      "descriptionEn": "Seared ahi tuna, shredded lettuce, wasabi cream, salsa, yellow corn tortilla",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boca-lobster-roll",
+      "categoryId": "sandwiches",
+      "nameEs": "Rollo de langosta Boca",
+      "nameEn": "Boca Lobster Roll",
+      "descriptionEs": "Langosta de Maine fresca desmenuzada, jerez tibio, salsa de mantequilla con Old Bay, pan brioche, papas fritas cortadas a mano. Precio de mercado.",
+      "descriptionEn": "Fresh picked Maine lobster, warm sherry, Old Bay butter sauce, brioche roll, hand cut fried potatoes. Market price.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boca-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa Boca",
+      "nameEn": "Boca Burger",
+      "descriptionEs": "3 mezclas: chuck, falda (brisket) y costilla corta (short rib), lechuga, tomate, cebolla morada, pan brioche, papas fritas. Agrega tocino $2, agrega queso $1. Pan sin gluten $3.",
+      "descriptionEn": "3 blends: chuck, brisket & short rib, lettuce, tomato, red onion, brioche roll, french fries. Add bacon $2, add cheese $1. Gluten-free bun $3.",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de bistec",
+      "nameEn": "Steak Sandwich",
+      "descriptionEs": "Sirloin de 8 oz, queso, cebollas moradas, tomates heirloom, mayonesa de chipotle, baguette tostado con ajo, papas fritas cortadas a mano",
+      "descriptionEn": "8 oz sirloin, cheese, red onions, heirloom tomatoes, chipotle mayo, garlic toasted baguette, hand cut french fried potatoes",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de pollo BLT",
+      "nameEn": "Chicken BLT",
+      "descriptionEs": "Pollo orgánico a la parrilla, tocino de madera de manzano, lechuga y tomate, alioli de pimiento rojo asado, pan blanco tostado, papas fritas cortadas a mano",
+      "descriptionEn": "Grilled organic chicken, applewood bacon, lettuce & tomato, roasted red pepper aioli, toasted white bread, hand cut french fried potatoes",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beyond-meat-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa Beyond Meat",
+      "nameEn": "Beyond Meat Burger",
+      "descriptionEs": "Hamburguesa vegana de 4 oz a la parrilla, lechuga, tomate, cebolla morada, pan vegano",
+      "descriptionEn": "Grilled 4 oz vegan patty, lettuce, tomato, red onion, vegan roll",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-cobb",
+      "categoryId": "salads",
+      "nameEs": "Lobster Cobb",
+      "nameEn": "Lobster Cobb",
+      "descriptionEs": "Langosta fresca de Maine seleccionada, corazones de lechuga romana, tomates uva heirloom, huevo duro, tocino crujiente en tiras, aguacate, queso Gorgonzola desmenuzado, vinagreta de champán. Precio de mercado.",
+      "descriptionEn": "Fresh picked Maine lobster, romaine hearts, heirloom grape tomatoes, hard boiled egg, crispy slab bacon, avocado, crumbled Gorgonzola, champagne vinaigrette. Market price.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wedge-salad",
+      "categoryId": "salads",
+      "nameEs": "Wedge Salad",
+      "nameEn": "Wedge Salad",
+      "descriptionEs": "Lechuga iceberg en trozos, tocino en tiras, tomates uva heirloom, cebollas crujientes, queso azul de suero de leche",
+      "descriptionEn": "Baby iceberg, slab bacon, heirloom grape tomatoes, frizzled onions, buttermilk bleu cheese",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Caesar Salad",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana picada, picatostes recién hechos, aderezo casero, parmesano rallado",
+      "descriptionEn": "Chopped romaine, freshly made croutons, house made dressing, shaved Parmesan",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-goat-cheese-salad",
+      "categoryId": "salads",
+      "nameEs": "Fried Goat Cheese Salad",
+      "nameEn": "Fried Goat Cheese Salad",
+      "descriptionEs": "Espinaca crujiente, queso de cabra ligeramente frito, nueces azucaradas, arándanos rojos, tomates uva heirloom, vinagreta de miel y mostaza",
+      "descriptionEn": "Crispy spinach, lightly fried goat cheese, candied walnuts, cranberries, heirloom grape tomatoes, honey mustard vinaigrette",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-tuna-salad",
+      "categoryId": "salads",
+      "nameEs": "Sashimi Tuna Salad",
+      "nameEn": "Sashimi Tuna Salad",
+      "descriptionEs": "Atún ahi sellado a la sartén apto para sushi, mango, aguacate, mezcla de hojas verdes, vinagreta de cilantro y jengibre",
+      "descriptionEn": "Pan-seared sushi grade ahi tuna, mango, avocado, mixed greens, cilantro ginger vinaigrette",
+      "price": "$25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poke-bowl",
+      "categoryId": "salads",
+      "nameEs": "Poke Bowl",
+      "nameEn": "Poke Bowl",
+      "descriptionEs": "Atún ahi sellado, verduras ralladas, farro, arúgula, aguacate, cebollas moradas encurtidas, cilantro, semillas de sésamo, glaseado de jengibre y miso",
+      "descriptionEn": "Seared ahi tuna, shredded vegetables, farro, arugula, avocado, pickled red onions, cilantro, sesame seeds, ginger miso glaze",
+      "price": "$27",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-salad",
+      "categoryId": "salads",
+      "nameEs": "Caprese Salad",
+      "nameEn": "Caprese Salad",
+      "descriptionEs": "Queso mozzarella fresco, tomate, pimientos rojos asados, crostini, aceite de oliva virgen extra, hilo de balsámico añejo, albahaca fresca",
+      "descriptionEn": "Fresh mozzarella, tomato, red roasted peppers, crostini, EVOO, aged balsamic drizzle, fresh basil",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-grilled-chicken",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Pollo a la Parrilla",
+      "nameEn": "Add Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-8-oz-prime-sirloin",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Solomillo Prime de 8 oz",
+      "nameEn": "Add 8 oz Prime Sirloin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-jumbo-gulf-shrimp-3",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Camarones Gigantes del Golfo (3)",
+      "nameEn": "Add Jumbo Gulf Shrimp (3)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-filet-tips",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Trozos de Filete",
+      "nameEn": "Add Filet Tips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-organic-salmon-1-2-size",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Salmón Orgánico (1/2 porción)",
+      "nameEn": "Add Organic Salmon (1/2 size)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-chilled-or-grilled-maine-lobster",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Agregar Langosta de Maine Fría o a la Parrilla",
+      "nameEn": "Add Chilled or Grilled Maine Lobster",
+      "descriptionEs": "Precio de mercado",
+      "descriptionEn": "Market price",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-caesar-salad",
+      "categoryId": "side-orders",
+      "nameEs": "Ensalada Caesar de Guarnición",
+      "nameEn": "Side Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-house-salad",
+      "categoryId": "side-orders",
+      "nameEs": "Ensalada de la Casa de Guarnición",
+      "nameEn": "Side House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hand-cut-french-fried-potatoes",
+      "categoryId": "side-orders",
+      "nameEs": "Papas Fritas Cortadas a Mano",
+      "nameEn": "Hand-Cut French Fried Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "side-orders",
+      "nameEs": "Papa al Horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-broccoli",
+      "categoryId": "side-orders",
+      "nameEs": "Brócoli Salteado",
+      "nameEn": "Sautéed Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-asparagus",
+      "categoryId": "side-orders",
+      "nameEs": "Espárragos a la Parrilla",
+      "nameEn": "Grilled Asparagus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-garlic-whipped-potatoes",
+      "categoryId": "side-orders",
+      "nameEs": "Papas Majadas con Ajo Asado",
+      "nameEn": "Roasted Garlic Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "professional-lunch-2-courses",
+      "categoryId": "professional-lunch",
+      "nameEs": "Almuerzo Ejecutivo (2 tiempos)",
+      "nameEn": "Professional Lunch (2 courses)",
+      "descriptionEs": "Lunes a viernes de 11:30 AM a 2 PM. 1er plato: sopa del día, sopa de almejas al estilo de Nueva Inglaterra, sopa de cebolla a la francesa, o ensalada Caesar o de la casa. 2do plato: hamburguesa Boca (8 oz), pan plano (de queso o pollo con aguacate), rollo de langosta Boca (con cargo extra por precio de mercado), sándwich BLT de pollo, bistec de solomillo prime de 8 oz con papas majadas al ajo y brócoli salteado (cargo extra de $12), tacos de pollo (2), ensalada de queso de cabra frito, poke bowl (cargo extra de $10), tacos de atún (2), o penne alla vodka. Pan sin gluten $3.",
+      "descriptionEn": "Monday-Friday 11:30 AM-2 PM. 1st course: soup du jour, New England clam chowder, French onion, or Caesar or house salad. 2nd course: Boca burger (8 oz), flatbread (cheese or chicken avocado), Boca lobster roll (market price up-charge), chicken BLT, 8 oz prime sirloin steak with garlic whipped potatoes and sautéed broccoli ($12 up-charge), chicken tacos (2), fried goat cheese salad, poke bowl ($10 up-charge), tuna tacos (2), or penne alla vodka. Gluten-free bun $3.",
+      "price": "$21",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-eggs-benedict",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Classic Eggs Benedict",
+      "nameEn": "Classic Eggs Benedict",
+      "descriptionEs": "Sábado y domingo de 11:30 AM a 2 PM. 2 huevos pochados, tocino canadiense, panecillo inglés, salsa holandesa",
+      "descriptionEn": "Saturday & Sunday 11:30 AM-2 PM. 2 poached eggs, Canadian bacon, English muffin, hollandaise sauce",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-benedict",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Lobster Benedict",
+      "nameEn": "Lobster Benedict",
+      "descriptionEs": "2 huevos pochados, langosta fresca de Maine, espinaca, panecillo inglés, salsa holandesa Old Bay",
+      "descriptionEn": "2 poached eggs, fresh Maine lobster, spinach, English muffin, Old Bay hollandaise",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8-oz-prime-usda-sirloin-eggs",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Solomillo Prime USDA de 8 oz y Huevos",
+      "nameEn": "8 oz Prime USDA Sirloin & Eggs",
+      "descriptionEs": "2 huevos al gusto, papas doradas ralladas (hash browns), pan tostado (integral, blanco, multigrano)",
+      "descriptionEn": "2 eggs any style, hash browns, toast (wheat, white, multigrain)",
+      "price": "$27",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttermilk-pancakes",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Buttermilk Pancakes",
+      "nameEn": "Buttermilk Pancakes",
+      "descriptionEs": "Bayas frescas, crema batida",
+      "descriptionEn": "Fresh berries, whipped cream",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-waffles",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Chicken & Waffles",
+      "nameEn": "Chicken & Waffles",
+      "descriptionEs": "Pollo sin hueso frito crujiente, gofres belgas rociados con miel picante",
+      "descriptionEn": "Crispy fried boneless chicken, Belgian waffles drizzled with hot honey",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-french-toast",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Stuffed French Toast",
+      "nameEn": "Stuffed French Toast",
+      "descriptionEs": "Pan francés rebozado con huevo y un toque de espresso, relleno de crema pastelera de vainilla, rociado con chocolate y cubierto con crema batida de espresso",
+      "descriptionEn": "Egg battered with a hint of espresso, filled with vanilla custard, drizzled with chocolate and topped with espresso whipped cream",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boca-toast",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Boca Toast",
+      "nameEn": "Boca Toast",
+      "descriptionEs": "Pan tostado multigrano, aguacate machacado, queso mozzarella fresco, arúgula, tomates asados al balsámico, 2 huevos estrellados, pesto de albahaca",
+      "descriptionEn": "Multigrain toast, smashed avocado, fresh mozzarella, arugula, balsamic roasted tomatoes, 2 over easy eggs, basil pesto",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-egg-cheeseburger",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Bacon Egg Cheeseburger",
+      "nameEn": "Bacon Egg Cheeseburger",
+      "descriptionEs": "Nuestra hamburguesa de 3 mezclas, tocino, queso americano, huevo estrellado, servida con papas estilo rústico",
+      "descriptionEn": "Our 3 blend burger, bacon, American cheese, over easy egg, served with home fries",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-honey-chicken-sandwich",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Hot Honey Chicken Sandwich",
+      "nameEn": "Hot Honey Chicken Sandwich",
+      "descriptionEs": "Pollo frito crujiente, ensalada de repollo con coco, pepinillos, miel picante en pan brioche, servido con papas fritas",
+      "descriptionEn": "Crispy fried chicken, coconut slaw, pickles, hot honey on a brioche roll, served with french fries",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brulee-banana-parfait",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Brûlée Banana Parfait",
+      "nameEn": "Brûlée Banana Parfait",
+      "descriptionEs": "Plátanos caramelizados, yogur, granola cubierta con fruta fresca, rociada con miel local y espolvoreada con azúcar glass",
+      "descriptionEn": "Caramelized bananas, yogurt, granola topped with fresh fruit, drizzled with local honey and dusted with powdered sugar",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skinny-b",
+      "categoryId": "cocktails",
+      "nameEs": "Skinny B",
+      "nameEn": "Skinny B",
+      "descriptionEs": "Vodka artesanal Tito's, limón machacado, jugo de limón fresco, agua filtrada",
+      "descriptionEn": "Tito's Handmade Vodka, muddled lemon, fresh lemon juice, filtered water",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-75",
+      "categoryId": "cocktails",
+      "nameEs": "French 75",
+      "nameEn": "French 75",
+      "descriptionEs": "Ginebra Gray Whale, jugo de limón fresco, jarabe simple, cubierto con prosecco",
+      "descriptionEn": "Gray Whale Gin, fresh lemon juice, simple syrup, topped with prosecco",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sarti-spritz",
+      "categoryId": "cocktails",
+      "nameEs": "Sarti Spritz",
+      "nameEn": "Sarti Spritz",
+      "descriptionEs": "Sarti Rosa, prosecco, agua con gas",
+      "descriptionEn": "Sarti Rosa, prosecco, club soda",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "descriptionEs": "Blanca o roja, receta de la casa",
+      "descriptionEn": "White or red, house recipe",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lychee-martini",
+      "categoryId": "cocktails",
+      "nameEs": "Lychee Martini",
+      "nameEn": "Lychee Martini",
+      "descriptionEs": "Vodka Grey Goose, puré de lichi real, jugo de limón fresco",
+      "descriptionEn": "Grey Goose Vodka, real lychee puree, fresh lemon juice",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomegranate-martini",
+      "categoryId": "cocktails",
+      "nameEs": "Pomegranate Martini",
+      "nameEn": "Pomegranate Martini",
+      "descriptionEs": "Licor Pama, vodka Tito's, un toque de triple sec",
+      "descriptionEn": "Pama Liqueur, Tito's Vodka, splash of triple sec",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guava-margarita",
+      "categoryId": "cocktails",
+      "nameEs": "Guava Margarita",
+      "nameEn": "Guava Margarita",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pear-martini",
+      "categoryId": "cocktails",
+      "nameEs": "Pear Martini",
+      "nameEn": "Pear Martini",
+      "descriptionEs": "Vodka Grey Goose La Poire, puré de pera, jugo de limón fresco, St. Germain",
+      "descriptionEn": "Grey Goose La Poire Vodka, pear puree, fresh lemon juice, St. Germain",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackberry-smash",
+      "categoryId": "cocktails",
+      "nameEs": "Blackberry Smash",
+      "nameEn": "Blackberry Smash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-old-fashioned",
+      "categoryId": "cocktails",
+      "nameEs": "Maple Old Fashioned",
+      "nameEn": "Maple Old Fashioned",
+      "descriptionEs": "Bourbon Maker's Mark, jarabe de maple, azúcar, naranja y cereza, un toque de amargo de angostura",
+      "descriptionEn": "Makers Mark Bourbon, maple syrup, sugar, orange and cherry, dash of bitters",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "cocktails",
+      "nameEs": "Espresso Martini",
+      "nameEn": "Espresso Martini",
+      "descriptionEs": "Vodka Absolut Vanilla, Kahlúa y espresso",
+      "descriptionEn": "Absolut Vanilla Vodka, Kahlua and espresso",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio-anterra-glass",
+      "categoryId": "white-wines",
+      "nameEs": "Pinot Grigio, Anterra (copa)",
+      "nameEn": "Pinot Grigio, Anterra (glass)",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio-santa-margherita-bottle",
+      "categoryId": "white-wines",
+      "nameEs": "Pinot Grigio, Santa Margherita (botella)",
+      "nameEn": "Pinot Grigio, Santa Margherita (bottle)",
+      "descriptionEs": "Alto Adige, Italia",
+      "descriptionEn": "Alto Adige, Italy",
+      "price": "$64",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albarino-martin-codax-glass",
+      "categoryId": "white-wines",
+      "nameEs": "Albariño, Martin Codax (copa)",
+      "nameEn": "Albariño, Martin Codax (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-whitehaven-glass",
+      "categoryId": "white-wines",
+      "nameEs": "Sauvignon Blanc, Whitehaven (copa)",
+      "nameEn": "Sauvignon Blanc, Whitehaven (glass)",
+      "descriptionEs": "Nueva Zelanda",
+      "descriptionEn": "New Zealand",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-kendall-jackson-vintner-s-reserve-glass",
+      "categoryId": "white-wines",
+      "nameEs": "Chardonnay, Kendall Jackson Vintner's Reserve (copa)",
+      "nameEn": "Chardonnay, Kendall Jackson Vintner's Reserve (glass)",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-talbott-kali-hart-glass",
+      "categoryId": "white-wines",
+      "nameEs": "Chardonnay, Talbott Kali Hart (copa)",
+      "nameEn": "Chardonnay, Talbott Kali Hart (glass)",
+      "descriptionEs": "Santa Lucía, California",
+      "descriptionEn": "Santa Lucia, California",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diamarine-rose-glass",
+      "categoryId": "rose-wines",
+      "nameEs": "Diamarine Rosé (copa)",
+      "nameEn": "Diamarine Rosé (glass)",
+      "descriptionEs": "Provenza, Francia",
+      "descriptionEn": "Provence, France",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fleur-de-mer-st-tropez-glass",
+      "categoryId": "rose-wines",
+      "nameEs": "Fleur de Mer St Tropez (copa)",
+      "nameEn": "Fleur de Mer St Tropez (glass)",
+      "descriptionEs": "Côtes de Provence, Francia",
+      "descriptionEn": "Côtes de Provence, France",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whispering-angel-bottle",
+      "categoryId": "rose-wines",
+      "nameEs": "Whispering Angel (botella)",
+      "nameEn": "Whispering Angel (bottle)",
+      "descriptionEs": "Côtes de Provence, Francia",
+      "descriptionEn": "Côtes de Provence, France",
+      "price": "$65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-la-crema-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Pinot Noir, La Crema (copa)",
+      "nameEn": "Pinot Noir, La Crema (glass)",
+      "descriptionEs": "Monterey, California",
+      "descriptionEn": "Monterey, California",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-angeline-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Pinot Noir, Angeline (copa)",
+      "nameEn": "Pinot Noir, Angeline (glass)",
+      "descriptionEs": "Condado de Sonoma, California",
+      "descriptionEn": "Sonoma County, California",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "montepulciano-fantini-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Montepulciano, Fantini (copa)",
+      "nameEn": "Montepulciano, Fantini (glass)",
+      "descriptionEs": "Abruzos, Italia",
+      "descriptionEn": "Abruzzo, Italy",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-blend-remole-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Red Blend, Rémole (copa)",
+      "nameEn": "Red Blend, Rémole (glass)",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-josh-cellars-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Cabernet, Josh Cellars (copa)",
+      "nameEn": "Cabernet, Josh Cellars (glass)",
+      "descriptionEs": "Condado de Sonoma, California",
+      "descriptionEn": "Sonoma County, California",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-francis-ford-coppola-glass",
+      "categoryId": "red-wines",
+      "nameEs": "Cabernet, Francis Ford Coppola (copa)",
+      "nameEn": "Cabernet, Francis Ford Coppola (glass)",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-charles-krug-bottle",
+      "categoryId": "red-wines",
+      "nameEs": "Cabernet, Charles Krug (botella)",
+      "nameEn": "Cabernet, Charles Krug (bottle)",
+      "descriptionEs": "Valle de Napa, California",
+      "descriptionEn": "Napa Valley, California",
+      "price": "$80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-blend-orin-swift-abstract-bottle",
+      "categoryId": "red-wines",
+      "nameEs": "Red Blend, Orin Swift Abstract (botella)",
+      "nameEn": "Red Blend, Orin Swift Abstract (bottle)",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-stag-s-leap-artemis-bottle",
+      "categoryId": "red-wines",
+      "nameEs": "Cabernet, Stag's Leap Artemis (botella)",
+      "nameEn": "Cabernet, Stag's Leap Artemis (bottle)",
+      "descriptionEs": "Valle de Napa, California",
+      "descriptionEn": "Napa Valley, California",
+      "price": "$125",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-caymus-bottle",
+      "categoryId": "red-wines",
+      "nameEs": "Cabernet, Caymus (botella)",
+      "nameEn": "Cabernet, Caymus (bottle)",
+      "descriptionEs": "Valle de Napa, California",
+      "descriptionEn": "Napa Valley, California",
+      "price": "$145",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "opus-one-bottle",
+      "categoryId": "red-wines",
+      "nameEs": "Opus One (botella)",
+      "nameEn": "Opus One (bottle)",
+      "descriptionEs": "Valle de Napa, California",
+      "descriptionEn": "Napa Valley, California",
+      "price": "$420",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-la-marca-187-ml",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Prosecco, La Marca (187 ml)",
+      "nameEn": "Prosecco, La Marca (187 ml)",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-diamond-collection-by-coppola-bottle",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Prosecco, Diamond Collection by Coppola (botella)",
+      "nameEn": "Prosecco, Diamond Collection by Coppola (bottle)",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne-lucien-albrecht-brut-rose-bottle",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Champagne, Lucien Albrecht Brut Rosé (botella)",
+      "nameEn": "Champagne, Lucien Albrecht Brut Rosé (bottle)",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$56",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne-veuve-clicquot-bottle",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Champagne, Veuve Clicquot (botella)",
+      "nameEn": "Champagne, Veuve Clicquot (bottle)",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$100",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne-dom-perignon-bottle",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Champagne, Dom Pérignon (botella)",
+      "nameEn": "Champagne, Dom Pérignon (bottle)",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$420",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones sin gluten y platos vegetarianos disponibles. Por favor, informe a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we offer several gluten-free alternatives and vegetarian dishes. Please inform your server of any food allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Sí, aceptamos reservaciones por teléfono y también damos la bienvenida a clientes sin reservación según la disponibilidad.",
-      "aEn": "Yes, we accept phone reservations and also warmly welcome walk-ins based on table availability."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Do you have parking available?",
-      "aEs": "Sí, contamos con estacionamiento gratuito y conveniente ubicado junto al restaurante en el puerto.",
-      "aEn": "Yes, we provide complimentary and convenient parking located right next to the restaurant on the harbor front."
-    }
-  ]
+  "faqs": []
 }
