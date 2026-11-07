@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { MerchantConfig, Product } from "@/types/merchant";
-import { isValidPhone } from "@/lib/merchants";
+import { isValidPhone } from "@/lib/phone";
 import {
   Search,
   AlertTriangle,

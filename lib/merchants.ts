@@ -1,49 +1,72 @@
 import { MerchantConfig } from "@/types/merchant";
 import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
 
-export function getMerchantById(id: string): MerchantConfig {
-  if (!id) return MERCHANTS_REGISTRY["demo"];
-  const normalizedId = id.toLowerCase().trim();
+/*
+ * SERVER-ONLY: this module imports every merchant JSON (~27 MB). Import it
+ * from server components and API routes only. Client components should
+ * receive a merchant as a prop, and use "@/lib/phone" for isValidPhone.
+ */
+export { isValidPhone } from "./phone";
+
+/** Returns the registry key for an ID/slug/name, or null if nothing matches. */
+function resolveMerchantKey(id: string): string | null {
+  if (!id) return null;
+  let decoded = id;
+  try {
+    decoded = decodeURIComponent(id);
+  } catch {
+    // malformed %-escape → use the raw id
+  }
+  const normalizedId = decoded.toLowerCase().trim();
 
   // Direct access for /demo or /demo-market
   if (normalizedId === "demo" || normalizedId === "demo-market" || normalizedId === "demomarket" || normalizedId === "elsol") {
-    return MERCHANTS_REGISTRY["demo"] || MERCHANTS_REGISTRY["elsol"];
+    return MERCHANTS_REGISTRY["demo"] ? "demo" : MERCHANTS_REGISTRY["elsol"] ? "elsol" : null;
   }
 
   if (MERCHANTS_REGISTRY[normalizedId]) {
-    return MERCHANTS_REGISTRY[normalizedId];
+    return normalizedId;
   }
 
   // 1. Match ignoring hyphens/underscores/spaces (e.g. "thefarmkitchenct" -> "the-farm-kitchen-ct")
   const strippedId = normalizedId.replace(/[-_\s]/g, "");
   const keys = Object.keys(MERCHANTS_REGISTRY);
   const matchedKey = keys.find((k) => k.replace(/[-_\s]/g, "") === strippedId);
-  if (matchedKey && MERCHANTS_REGISTRY[matchedKey]) {
-    return MERCHANTS_REGISTRY[matchedKey];
-  }
+  if (matchedKey) return matchedKey;
 
   // 2. Match by normalized business name
   const matchedByName = keys.find((k) => {
     const name = MERCHANTS_REGISTRY[k]?.storeInfo?.name || "";
     return name.toLowerCase().replace(/[^a-z0-9]/g, "") === strippedId;
   });
-  if (matchedByName && MERCHANTS_REGISTRY[matchedByName]) {
-    return MERCHANTS_REGISTRY[matchedByName];
-  }
+  if (matchedByName) return matchedByName;
 
   // 3. Match prefix / contains (e.g. "thefarmkitchen" -> "the-farm-kitchen-ct")
-  const partialMatch = keys.find((k) => {
-    const cleanK = k.replace(/[-_\s]/g, "");
-    return cleanK.startsWith(strippedId) || strippedId.startsWith(cleanK);
-  });
-  if (partialMatch && MERCHANTS_REGISTRY[partialMatch]) {
-    return MERCHANTS_REGISTRY[partialMatch];
+  // (require 4+ chars so short junk like "/a" doesn't match a random place)
+  if (strippedId.length >= 4) {
+    const partialMatch = keys.find((k) => {
+      const cleanK = k.replace(/[-_\s]/g, "");
+      return cleanK.startsWith(strippedId) || strippedId.startsWith(cleanK);
+    });
+    if (partialMatch) return partialMatch;
   }
 
-  return MERCHANTS_REGISTRY["demo"];
+  return null;
+}
+
+export function hasMerchant(id: string): boolean {
+  return resolveMerchantKey(id) !== null;
+}
+
+export function getMerchantById(id: string): MerchantConfig {
+  const key = resolveMerchantKey(id);
+  return (key && MERCHANTS_REGISTRY[key]) || MERCHANTS_REGISTRY["demo"];
 }
 
 export function getAllMerchants(): MerchantConfig[] {
+  // Some places are saved under two URL slugs (e.g. cake-box + the-cake-box) so
+  // both links work; list each place only once in the directory.
+  const seen = new Set<string>();
   return Object.values(MERCHANTS_REGISTRY).filter((m) => {
     const id = (m.storeInfo?.id || "").toLowerCase();
     const name = (m.storeInfo?.name || "").toLowerCase();
@@ -51,6 +74,10 @@ export function getAllMerchants(): MerchantConfig[] {
     if (id === "demo" || id === "elsol" || name.includes("demo market")) {
       return false;
     }
+    const placeKey = `${name.trim()}|${(m.storeInfo?.address || "").toLowerCase().trim()}`;
+    if (seen.has(id) || seen.has(placeKey)) return false;
+    seen.add(id);
+    seen.add(placeKey);
     return true;
   });
 }
@@ -61,21 +88,5 @@ export function listMerchants(): { id: string; name: string; tagline: string }[]
     name: m.storeInfo.name,
     tagline: m.storeInfo.tagline,
   }));
-}
-
-export function isValidPhone(phone?: string): boolean {
-  if (!phone) return false;
-  const digits = phone.replace(/\D/g, "");
-  const clean = digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits;
-  if (clean.length !== 10) return false;
-  const areaCode = clean.slice(0, 3);
-  // Connecticut area codes (203, 860, 475, 959) or legitimate US toll-free
-  const validAreaCodes = ["203", "860", "475", "959", "800", "888", "877", "866", "855"];
-  if (!validAreaCodes.includes(areaCode)) return false;
-  const exch = clean.slice(3, 6);
-  const last = clean.slice(6);
-  if (["555", "000", "123", "666"].includes(exch)) return false;
-  if (["0000", "1111", "2222", "3333", "4444", "5555", "6666", "7777", "8888", "9999", "1234", "4321", "7890", "6667"].includes(last)) return false;
-  return true;
 }
 
