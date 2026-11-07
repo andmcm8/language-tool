@@ -1,28 +1,23 @@
 {
   "storeInfo": {
     "id": "posa-ristorante-vineria",
-    "name": "Posa Ristorante & Vineria",
-    "tagline": "Traditional Neapolitan Cuisine & Fine Italian Dining in Ridgefield, CT",
-    "address": "416 Main St, Ridgefield, CT 06877",
+    "name": "Posa Ristorante e Vineria",
+    "tagline": "Amalfi Coast Italian cooking, Neapolitan pizza and housemade pasta in Ridgefield | Cocina italiana de la Costa Amalfitana, pizza napolitana y pasta casera en Ridgefield",
+    "address": "90 Danbury Rd, Ridgefield, CT 06877",
     "phone": "(203) 894-5355",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon-Thu 4:00 PM - close; Fri 12:00 PM - close",
+      "saturday": "12:00 PM - close",
+      "sunday": "12:00 PM - close"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Pizza Bar",
-      "Full Bar"
+      "Full Bar",
+      "Catering",
+      "Kids Menu",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -34,284 +29,1026 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "antipasti",
+      "nameEs": "Antipasti",
+      "nameEn": "Antipasti",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "insalate",
+      "nameEs": "Insalate",
+      "nameEn": "Insalate",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "paste",
+      "nameEs": "Paste",
+      "nameEn": "Paste",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "mare",
+      "nameEs": "Mare",
+      "nameEn": "Mare",
+      "icon": "Utensils"
+    },
+    {
+      "id": "terra",
+      "nameEs": "Terra",
+      "nameEn": "Terra",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pizze",
+      "nameEs": "Pizze",
+      "nameEn": "Pizze",
+      "icon": "Utensils"
+    },
+    {
+      "id": "panuozzo-e-saltimbocca",
+      "nameEs": "Panuozzo e Saltimbocca",
+      "nameEn": "Panuozzo e Saltimbocca",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dolci",
+      "nameEs": "Dolci",
+      "nameEn": "Dolci",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "posa-ristorante-vineria-01",
-      "categoryId": "appetizers",
-      "nameEs": "Frituras de Bacalao Napolitano",
-      "nameEn": "Neapolitan 'Baccala' Fritters",
-      "descriptionEs": "Deliciosos buñuelos de bacalao al estilo napolitano con un toque de hierbas frescas y limón.",
-      "descriptionEn": "Delicate Neapolitan-style salt cod fritters served with fresh herbs and a hint of lemon.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Tradicional"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado"
-      ],
+      "id": "tagliere-di-salumi-e-formaggi",
+      "categoryId": "antipasti",
+      "nameEs": "Tagliere di Salumi e Formaggi",
+      "nameEn": "Tagliere di Salumi e Formaggi",
+      "descriptionEs": "surtido de embutidos y quesos italianos importados (para 2 personas)",
+      "descriptionEn": "mixed imported Italian meats & cheese (for 2 people)",
+      "price": "$60.00",
       "ctaType": "in_store"
     },
     {
-      "id": "posa-ristorante-vineria-02",
-      "categoryId": "appetizers",
-      "nameEs": "Tabla de Charcutería Fina",
-      "nameEn": "Artisan Charcuterie Board",
-      "descriptionEs": "Selección curada de embutidos italianos importados, quesos artesanales, aceitunas y mermelada casera.",
-      "descriptionEn": "Curated selection of imported Italian cured meats, artisanal cheeses, olives, and house jam.",
-      "price": "$24.00",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Para Compartir",
-        "Quesos"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "affettato-misto-di-salumi-e-formaggi",
+      "categoryId": "antipasti",
+      "nameEs": "Affettato Misto di Salumi e Formaggi",
+      "nameEn": "Affettato Misto di Salumi e Formaggi",
+      "descriptionEs": "queso y embutidos italianos, bruschetta",
+      "descriptionEn": "Italian cheese & cold cut meat, bruschetta",
+      "price": "$35.00",
       "ctaType": "in_store"
     },
     {
-      "id": "posa-ristorante-vineria-03",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finas láminas de solomillo de res con alcaparras, rúcula fresca, aceite de oliva virgen extra y queso parmesano.",
-      "descriptionEn": "Thinly sliced raw beef tenderloin with capers, fresh arugula, extra virgin olive oil, and shaved parmesan.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Nuevo",
-      "tags": [
-        "Fresco",
-        "Italiano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-04",
-      "categoryId": "mains",
-      "nameEs": "Pasta Hecha a Mano con Salsa de Tomate San Marzano",
-      "nameEn": "Handmade Pasta with San Marzano Tomato Sauce",
-      "descriptionEs": "Pasta fresca elaborada diariamente a mano desde las 7 AM, servida con nuestra salsa de tomates San Marzano y albahaca.",
-      "descriptionEn": "Fresh pasta crafted daily in-house since 7 AM, tossed in our authentic San Marzano tomato and basil sauce.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Hecho en Casa",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza Margherita Napolitana",
-      "nameEn": "Neapolitan Margherita Pizza",
-      "descriptionEs": "Masa de fermentación lenta estirada a mano, salsa de tomate San Marzano, mozzarella fresca y albahaca.",
-      "descriptionEn": "Hand-stretched slow-fermented dough topped with San Marzano tomato sauce, fresh mozzarella, and basil.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pizza Bar",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-06",
-      "categoryId": "mains",
-      "nameEs": "Pizza Diavola",
-      "nameEn": "Diavola Pizza",
-      "descriptionEs": "Nuestra base clásica con mozzarella fresca, salame picante italiano y un toque de aceite de peperoncino.",
-      "descriptionEn": "Classic crust topped with fresh mozzarella, spicy Italian salami, and a drizzle of chili oil.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "Picante",
-      "tags": [
-        "Pizza Bar"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-07",
-      "categoryId": "specialties",
-      "nameEs": "Branzino en Costra de Sal",
-      "nameEn": "Salt-Crusted Branzino",
-      "descriptionEs": "Lubina entera mediterránea horneada en costra de sal marina, desglasada y fileteada en su mesa. Para compartir.",
-      "descriptionEn": "Whole Mediterranean sea bass baked in a sea salt crust, de-panned and filleted tableside. Serves two.",
-      "price": "$48.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Chef Signature"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-08",
-      "categoryId": "specialties",
-      "nameEs": "Tomahawk Steak de 32 oz",
-      "nameEn": "32 oz Tomahawk Ribeye Steak",
-      "descriptionEs": "Imponente corte de carne madurada a la parrilla, servido con papas al romero y vegetales de temporada.",
-      "descriptionEn": "Massive dry-aged bone-in ribeye grilled to perfection, served with rosemary roasted potatoes and seasonal vegetables.",
-      "price": "$95.00",
-      "popular": true,
-      "badge": "Limitado",
-      "tags": [
-        "Carnes",
-        "Para Compartir"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "posa-ristorante-vineria-09",
-      "categoryId": "specialties",
-      "nameEs": "Raviolis Caseros rellenos de Langosta",
-      "nameEn": "House-Made Lobster Ravioli",
-      "descriptionEs": "Pasta rellena de tierna langosta en una sutil salsa cremosa de azafrán y tomates cherry confitados.",
-      "descriptionEn": "Handcrafted pasta stuffed with tender lobster in a delicate saffron cream sauce with confit cherry tomatoes.",
+      "id": "carpaccio-di-filetto",
+      "categoryId": "antipasti",
+      "nameEs": "Carpaccio di Filetto",
+      "nameEn": "Carpaccio di Filetto",
+      "descriptionEs": "filete mignon Allen Bros. en rodajas finas, Parmigiano Reggiano de 36 meses enlascas, confit de tomate cherry, alcaparras y aceite de oliva virgen extra",
+      "descriptionEn": "thin sliced Allen Bros. filet mignon, shaved Parmigiano Reggiano 36 months, cherry tomato confit, caper berries & EVOO",
       "price": "$32.00",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Hecho en Casa",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos",
-        "Crustáceos",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "posa-ristorante-vineria-10",
-      "categoryId": "beverages",
-      "nameEs": "Vino Tinto Chianti Classico DOCG",
-      "nameEn": "Chianti Classico DOCG Red Wine",
-      "descriptionEs": "Vino tinto toscano de cuerpo medio, notas de cereza madura y especias sutiles. Copa o botella.",
-      "descriptionEn": "Medium-bodied Tuscan red with notes of ripe cherry and subtle spices. Available by glass or bottle.",
+      "id": "polipo-grigliato-su-crema-di-porro",
+      "categoryId": "antipasti",
+      "nameEs": "Polipo Grigliato su Crema di Porro",
+      "nameEn": "Polipo Grigliato su Crema di Porro",
+      "descriptionEs": "pulpo español sellado a la sartén, puré de puerro y confit de tomate cherry",
+      "descriptionEn": "pan seared Spanish octopus, leek purée & cherry tomato confit",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cuoppo-di-calamari-e-gamberi",
+      "categoryId": "antipasti",
+      "nameEs": "Cuoppo di Calamari e Gamberi",
+      "nameEn": "Cuoppo di Calamari e Gamberi",
+      "descriptionEs": "calamar, camarones y calabacín fritos",
+      "descriptionEn": "fried calamari, shrimp & zucchini",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmigiana-di-melanzane",
+      "categoryId": "antipasti",
+      "nameEs": "Parmigiana di Melanzane",
+      "nameEn": "Parmigiana di Melanzane",
+      "descriptionEs": "berenjena a la parmesana al estilo Positano",
+      "descriptionEn": "Positano style eggplant parmigiana",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saute-di-cozze-e-vongole",
+      "categoryId": "antipasti",
+      "nameEs": "Sauté di Cozze e Vongole",
+      "nameEn": "Sauté di Cozze e Vongole",
+      "descriptionEs": "salteado de almejas y mejillones, pan cafone tostado",
+      "descriptionEn": "sauté of clams & mussels, toasted pane cafone",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saute-di-vongole",
+      "categoryId": "antipasti",
+      "nameEs": "Sauté di Vongole",
+      "nameEn": "Sauté di Vongole",
+      "descriptionEs": "salteado de almejas",
+      "descriptionEn": "sauté of clams",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saute-di-cozze",
+      "categoryId": "antipasti",
+      "nameEs": "Sauté di Cozze",
+      "nameEn": "Sauté di Cozze",
+      "descriptionEs": "salteado de mejillones",
+      "descriptionEn": "sauté of mussels",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polpette-con-pure",
+      "categoryId": "antipasti",
+      "nameEs": "Polpette con Purè",
+      "nameEn": "Polpette con Purè",
+      "descriptionEs": "albóndigas de res, ternera y cerdo, salsa San Marzano y puré de patatas",
+      "descriptionEn": "beef, veal & pork meatballs, San Marzano sauce & mashed potato",
       "price": "$15.00",
-      "popular": true,
-      "badge": "Vinería",
-      "tags": [
-        "Vino",
-        "Italiano"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "posa-ristorante-vineria-11",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Negroni Clásico",
-      "nameEn": "Classic Negroni Cocktail",
-      "descriptionEs": "Ginebra premium, vermut rojo dulce y Campari, garnished con piel de naranja fresca.",
-      "descriptionEn": "Premium gin, sweet red vermouth, and Campari, stirred and garnished with fresh orange peel.",
+      "id": "trevisana-grigliata",
+      "categoryId": "insalate",
+      "nameEs": "Trevisana Grigliata",
+      "nameEn": "Trevisana Grigliata",
+      "descriptionEs": "radicchio treviso italiano a la parrilla, pera, gorgonzola y vinagre balsámico añejo de Módena",
+      "descriptionEn": "grilled Italian treviso radicchio, pear, gorgonzola & aged Modena balsamic vinegar",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "millefoglie-prosciutto-e-burrata",
+      "categoryId": "insalate",
+      "nameEs": "Millefoglie Prosciutto e Burrata",
+      "nameEn": "Millefoglie Prosciutto e Burrata",
+      "descriptionEs": "milhojas de Parmigiano Reggiano de 36 meses, rúcula, Prosciutto di Parma, tomate heirloom y queso de búfala italiano",
+      "descriptionEn": "Parmigiano Reggiano 36 months millefoglie, arugula, Prosciutto di Parma, heirloom tomato & Italian buffalo cheese",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbabietola-e-ricotta-di-capra",
+      "categoryId": "insalate",
+      "nameEs": "Barbabietola e Ricotta di Capra",
+      "nameEn": "Barbabietola e Ricotta di Capra",
+      "descriptionEs": "remolachas rojas y doradas, ricotta de cabra italiana, lechuga mantecosa, aceite de oliva virgen extra y balsámico añejo de Módena",
+      "descriptionEn": "red & golden beets, Italian goat cheese ricotta, butter lettuce, EVOO & aged Modena balsamic",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mela-e-finocchio",
+      "categoryId": "insalate",
+      "nameEs": "Mela e Finocchio",
+      "nameEn": "Mela e Finocchio",
+      "descriptionEs": "manzana de Connecticut, hinojo, rúcula, apio, nueces tostadas, Parmigiano Reggiano de 36 meses en lascas, limón y aceite de oliva virgen extra",
+      "descriptionEn": "Connecticut apple, fennel, arugula, celery, toasted walnuts, shaved Parmigiano Reggiano 36 months, lemon & EVOO",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-posa",
+      "categoryId": "insalate",
+      "nameEs": "Insalata POSA",
+      "nameEn": "Insalata POSA",
+      "descriptionEs": "ensalada verde mixta, vegetales, aderezo de aguacate",
+      "descriptionEn": "mixed greens, vegetables, avocado dressing",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-quattro-pomodori-con-astice",
+      "categoryId": "paste",
+      "nameEs": "Risotto Quattro Pomodori con Astice",
+      "nameEn": "Risotto Quattro Pomodori con Astice",
+      "descriptionEs": "risotto Arborio, bogavante al tomillo y 4 tomates cherry diferentes",
+      "descriptionEn": "Arborio risotto, thyme lobster & 4 different cherry tomatoes",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-al-profumo-della-costiera-amalfitana",
+      "categoryId": "paste",
+      "nameEs": "Risotto al Profumo della Costiera Amalfitana",
+      "nameEn": "Risotto al Profumo della Costiera Amalfitana",
+      "descriptionEs": "risotto Arborio, camarones argentinos y limón orgánico de Amalfi",
+      "descriptionEn": "Arborio risotto, Argentinian shrimp & organic Amalfi lemon",
+      "price": "$44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paccheri-con-scampi",
+      "categoryId": "paste",
+      "nameEs": "Paccheri con Scampi",
+      "nameEn": "Paccheri con Scampi",
+      "descriptionEs": "paccheri, tomate cherry y cigala de Nueva Zelanda",
+      "descriptionEn": "paccheri, cherry tomato & New Zealand langoustine",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paccheri-gamberetti-pomodorini",
+      "categoryId": "paste",
+      "nameEs": "Paccheri Gamberetti & Pomodorini",
+      "nameEn": "Paccheri Gamberetti & Pomodorini",
+      "descriptionEs": "pasta paccheri, camarones, tomate cherry y rúcula",
+      "descriptionEn": "paccheri pasta, shrimp, cherry tomato & arugula",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paccheri-li-galli",
+      "categoryId": "paste",
+      "nameEs": "Paccheri Li Galli",
+      "nameEn": "Paccheri Li Galli",
+      "descriptionEs": "paccheri, almejas, mejillones, camarones, calamar y langostino español",
+      "descriptionEn": "paccheri, clams, mussels, shrimp, calamari & Spanish prawn",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortellone-ripieno-di-zucca",
+      "categoryId": "paste",
+      "nameEs": "Tortellone Ripieno di Zucca",
+      "nameEn": "Tortellone Ripieno di Zucca",
+      "descriptionEs": "tortello de calabaza hecho en casa, crumble de amaretto con mantequilla irlandesa y salvia",
+      "descriptionEn": "housemade pumpkin squash tortello, amaretto crumble with Irish butter & sage",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tagliatelle-porcini-tartufo",
+      "categoryId": "paste",
+      "nameEs": "Tagliatelle Porcini & Tartufo",
+      "nameEn": "Tagliatelle Porcini & Tartufo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scialatielli-li-galli",
+      "categoryId": "paste",
+      "nameEs": "Scialatielli Li Galli",
+      "nameEn": "Scialatielli Li Galli",
+      "descriptionEs": "scialatielli hecho en casa, almejas, mejillones, camarones, calamar y langostino español",
+      "descriptionEn": "housemade scialatielli, clams, mussels, shrimp, calamari & Spanish prawn",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scialatielli-con-melanzane-e-mozzarella",
+      "categoryId": "paste",
+      "nameEs": "Scialatielli con Melanzane e Mozzarella",
+      "nameEn": "Scialatielli con Melanzane e Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-alle-vongole",
+      "categoryId": "paste",
+      "nameEs": "Linguine alle Vongole",
+      "nameEn": "Linguine alle Vongole",
+      "descriptionEs": "linguine, almejas y tomate cherry",
+      "descriptionEn": "linguine, clams & cherry tomato",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna",
+      "categoryId": "paste",
+      "nameEs": "Lasagna",
+      "nameEn": "Lasagna",
+      "descriptionEs": "lasaña de carne a la napolitana",
+      "descriptionEn": "Neapolitan meat lasagna",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-alla-positanese",
+      "categoryId": "paste",
+      "nameEs": "Cavatelli alla Positanese",
+      "nameEn": "Cavatelli alla Positanese",
+      "descriptionEs": "cavatelli hecho en casa, crema de tomate, salchicha italiana de hinojo y burrata",
+      "descriptionEn": "housemade cavatelli, tomato cream, Italian fennel sausage & burrata",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-broccoli-e-salsiccia",
+      "categoryId": "paste",
+      "nameEs": "Cavatelli Broccoli e Salsiccia",
+      "nameEn": "Cavatelli Broccoli e Salsiccia",
+      "descriptionEs": "cavatelli, salchicha italiana de hinojo, grelos y caciocavallo DOP en lascas",
+      "descriptionEn": "cavatelli, Italian fennel sausage, broccoli rabe & shaved DOP caciocavallo",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-bolognese",
+      "categoryId": "paste",
+      "nameEs": "Pappardelle Bolognese",
+      "nameEn": "Pappardelle Bolognese",
+      "descriptionEs": "pappardelle hecho en casa y salsa de carne a la boloñesa",
+      "descriptionEn": "housemade pappardelle & Bolognese meat sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-alla-nerano",
+      "categoryId": "paste",
+      "nameEs": "Spaghetti alla Nerano",
+      "nameEn": "Spaghetti alla Nerano",
+      "descriptionEs": "espaguetis, calabacín y Caciocavallo Campano",
+      "descriptionEn": "spaghetti, zucchini & Caciocavallo Campano",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-pomodorini-e-basilico",
+      "categoryId": "paste",
+      "nameEs": "Spaghetti Pomodorini e Basilico",
+      "nameEn": "Spaghetti Pomodorini e Basilico",
+      "descriptionEs": "espaguetis, tomates cherry y albahaca",
+      "descriptionEn": "spaghetti, cherry tomatoes & basil",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-al-ragu",
+      "categoryId": "paste",
+      "nameEs": "Rigatoni al Ragù",
+      "nameEn": "Rigatoni al Ragù",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese",
+      "categoryId": "paste",
+      "nameEs": "Rigatoni Bolognese",
+      "nameEn": "Rigatoni Bolognese",
+      "descriptionEs": "rigatoni con salsa boloñesa",
+      "descriptionEn": "rigatoni with Bolognese sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli-max",
+      "categoryId": "paste",
+      "nameEs": "Ravioli Max",
+      "nameEn": "Ravioli Max",
+      "descriptionEs": "pasta sin huevo, raviolis de espinacas y ricotta, salsa de tomate, albahaca y Parmigiano Reggiano de 24 meses",
+      "descriptionEn": "eggless pasta, spinach & ricotta ravioli, tomato sauce, basil & Parmigiano Reggiano 24 months",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-al-sugo",
+      "categoryId": "paste",
+      "nameEs": "Spaghetti al Sugo",
+      "nameEn": "Spaghetti al Sugo",
+      "descriptionEs": "espaguetis, salsa de tomate San Marzano y albahaca",
+      "descriptionEn": "spaghetti, San Marzano tomato sauce & basil",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-al-forno",
+      "categoryId": "paste",
+      "nameEs": "Gnocchi al Forno",
+      "nameEn": "Gnocchi al Forno",
+      "descriptionEs": "ñoquis al horno, mozzarella fior di latte y salsa de tomate",
+      "descriptionEn": "oven baked gnocchi, fior di latte mozzarella & tomato sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-pomodoro",
+      "categoryId": "paste",
+      "nameEs": "Gnocchi Pomodoro",
+      "nameEn": "Gnocchi Pomodoro",
+      "descriptionEs": "ñoquis y salsa de tomate San Marzano",
+      "descriptionEn": "gnocchi & San Marzano tomato sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli-ripieno-di-bufala-campana",
+      "categoryId": "paste",
+      "nameEs": "Ravioli Ripieno di Bufala Campana",
+      "nameEn": "Ravioli Ripieno di Bufala Campana",
+      "descriptionEs": "raviolis de mozzarella de búfala sin huevo hechos en casa y tomate cherry",
+      "descriptionEn": "housemade eggless buffalo mozzarella ravioli & cherry tomato",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-penne-with-butter",
+      "categoryId": "paste",
+      "nameEs": "Kids Penne with Butter",
+      "nameEn": "Kids Penne with Butter",
+      "descriptionEs": "penne infantil con mantequilla",
+      "descriptionEn": "penne with butter",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-penne-with-sauce",
+      "categoryId": "paste",
+      "nameEs": "Kids Penne with Sauce",
+      "nameEn": "Kids Penne with Sauce",
+      "descriptionEs": "penne infantil con salsa de tomate San Marzano",
+      "descriptionEn": "kids penne with San Marzano tomato sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-spaghetti-with-butter",
+      "categoryId": "paste",
+      "nameEs": "Spaghetti infantiles con mantequilla",
+      "nameEn": "Kids Spaghetti with Butter",
+      "descriptionEs": "spaghetti infantiles con mantequilla",
+      "descriptionEn": "kids spaghetti with butter",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-spaghetti-with-sauce",
+      "categoryId": "paste",
+      "nameEs": "Spaghetti infantiles con salsa",
+      "nameEn": "Kids Spaghetti with Sauce",
+      "descriptionEs": "spaghetti infantiles con salsa de tomate San Marzano",
+      "descriptionEn": "kids spaghetti with San Marzano tomato sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zuppetta-di-pesce",
+      "categoryId": "mare",
+      "nameEs": "Zuppetta di Pesce",
+      "nameEn": "Zuppetta di Pesce",
+      "descriptionEs": "halibut, langostinos, camarones, almejas, mejillones y calamares",
+      "descriptionEn": "halibut, langoustines, shrimp, clams, mussels & calamari",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino-all-acqua-pazza",
+      "categoryId": "mare",
+      "nameEs": "Branzino all'Acqua Pazza",
+      "nameEn": "Branzino all'Acqua Pazza",
+      "descriptionEs": "branzino salteado, papa y tomate cherry",
+      "descriptionEn": "sautéed branzino, potato & cherry tomato",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino-alla-griglia",
+      "categoryId": "mare",
+      "nameEs": "Branzino alla Griglia",
+      "nameEn": "Branzino alla Griglia",
+      "descriptionEs": "branzino a la parrilla y espinacas salteadas",
+      "descriptionEn": "grilled branzino & sautéed spinach",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesce-spada",
+      "categoryId": "mare",
+      "nameEs": "Pesce Spada",
+      "nameEn": "Pesce Spada",
+      "descriptionEs": "pez espada a la parrilla y espinacas",
+      "descriptionEn": "grilled swordfish & spinach",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spigola-cilena-alla-mediterranea",
+      "categoryId": "mare",
+      "nameEs": "Spigola Cilena alla Mediterranea",
+      "nameEn": "Spigola Cilena alla Mediterranea",
+      "descriptionEs": "róbalo chileno, aceitunas, tomates cherry y alcaparras",
+      "descriptionEn": "Chilean sea bass, olives, cherry tomatoes & capers",
+      "price": "$52.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spigola-cilena-al-profumo-di-limone",
+      "categoryId": "mare",
+      "nameEs": "Spigola Cilena al Profumo di Limone",
+      "nameEn": "Spigola Cilena al Profumo di Limone",
+      "descriptionEs": "róbalo chileno, limón, papas y alcaparras italianas",
+      "descriptionEn": "Chilean sea bass, lemon, potatoes & Italian capers",
+      "price": "$49.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spigola-cilena-vongole-piselli-e-patate",
+      "categoryId": "mare",
+      "nameEs": "Spigola Cilena, Vongole, Piselli e Patate",
+      "nameEn": "Spigola Cilena, Vongole, Piselli e Patate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "halibut-in-guazzetto-con-pomodorini",
+      "categoryId": "mare",
+      "nameEs": "Halibut in Guazzetto con Pomodorini",
+      "nameEn": "Halibut in Guazzetto con Pomodorini",
+      "descriptionEs": "halibut sellado a la sartén, tomate cherry, aceitunas y alcaparras",
+      "descriptionEn": "pan-seared halibut, cherry tomato, olives & capers",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "halibut-al-forno-con-olive-e-patate",
+      "categoryId": "mare",
+      "nameEs": "Halibut al Forno con Olive e Patate",
+      "nameEn": "Halibut al Forno con Olive e Patate",
+      "descriptionEs": "halibut al horno, aceituna verde, papa, alcaparras y chile picante",
+      "descriptionEn": "baked halibut, green olive, potato, capers & chili pepper",
+      "price": "$43.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "halibut-vongole-piselli-e-patate",
+      "categoryId": "mare",
+      "nameEs": "Halibut, Vongole, Piselli e Patate",
+      "nameEn": "Halibut, Vongole, Piselli e Patate",
+      "descriptionEs": "halibut, almejas, guisantes, papa y pane cafone",
+      "descriptionEn": "halibut, clams, peas, potato & pane cafone",
+      "price": "$43.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "costolette-di-agnello-alle-erbe-aromatiche",
+      "categoryId": "terra",
+      "nameEs": "Costolette di Agnello alle Erbe Aromatiche",
+      "nameEn": "Costolette di Agnello alle Erbe Aromatiche",
+      "descriptionEs": "chuleta de cordero Allen Bros., papa asada y vegetales a la parrilla",
+      "descriptionEn": "Allen Bros. lamb chop, roasted potato & grilled vegetables",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filetto-di-manzo-alla-griglia",
+      "categoryId": "terra",
+      "nameEs": "Filetto di Manzo alla Griglia",
+      "nameEn": "Filetto di Manzo alla Griglia",
+      "descriptionEs": "filete mignon Allen Bros. a la parrilla, puré de papa y vegetales",
+      "descriptionEn": "Allen Bros. grilled filet mignon, mashed potato & vegetables",
+      "price": "$58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lombatello-con-porcini",
+      "categoryId": "terra",
+      "nameEs": "Lombatello con Porcini",
+      "nameEn": "Lombatello con Porcini",
+      "descriptionEs": "bife de entraña Allen Bros. con hongos porcini y papa asada",
+      "descriptionEn": "Allen Bros. hanger steak with porcini mushrooms & roasted potato",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotoletta-di-maiale",
+      "categoryId": "terra",
+      "nameEs": "Cotoletta di Maiale",
+      "nameEn": "Cotoletta di Maiale",
+      "descriptionEs": "milanesa de cerdo Berkshire, ensalada verde mixta y papas fritas Posa",
+      "descriptionEn": "Milanese-style Berkshire pork cutlet, mixed green salad & Posa potato chips",
+      "price": "$43.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "agerolina-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Agerolina Pizza",
+      "nameEn": "Agerolina Pizza",
+      "descriptionEs": "pizza blanca con mozzarella fior di latte, salchicha y brócoli",
+      "descriptionEn": "white fior di latte mozzarella pizza, sausage & broccoli",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arrabbiata-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Arrabbiata Pizza",
+      "nameEn": "Arrabbiata Pizza",
+      "descriptionEs": "pizza Margherita, salami picante, albóndigas y tomate cherry",
+      "descriptionEn": "Margherita pizza, spicy salami, meatballs & cherry tomato",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bianca-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Bianca Pizza",
+      "nameEn": "Bianca Pizza",
+      "descriptionEs": "pizza blanca, fior di latte y Parmigiano Reggiano 36 meses",
+      "descriptionEn": "white pizza, fior di latte & Parmigiano Reggiano 36 months",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calzone-classico",
+      "categoryId": "pizze",
+      "nameEs": "Calzone Classico",
+      "nameEn": "Calzone Classico",
+      "descriptionEs": "ricotta, mozzarella fior di latte, salsa San Marzano y albahaca",
+      "descriptionEn": "ricotta, fior di latte mozzarella, San Marzano sauce & basil",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calzone-napoletano",
+      "categoryId": "pizze",
+      "nameEs": "Calzone Napoletano",
+      "nameEn": "Calzone Napoletano",
+      "descriptionEs": "ricotta, mozzarella, prosciutto cotto italiano y hongos",
+      "descriptionEn": "ricotta, mozzarella, Italian prosciutto cotto & mushrooms",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capricciosa-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Capricciosa Pizza",
+      "nameEn": "Capricciosa Pizza",
+      "descriptionEs": "pizza Margherita, salami picante, aceitunas, prosciutto cotto y hongos",
+      "descriptionEn": "Margherita pizza, spicy salami, olives, prosciutto cotto & mushrooms",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diavola-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Diavola Pizza",
+      "nameEn": "Diavola Pizza",
+      "descriptionEs": "Margherita, salami italiano picante y aceite de oliva virgen extra",
+      "descriptionEn": "Margherita, spicy Italian salami & EVOO",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "focaccia-plain",
+      "categoryId": "pizze",
+      "nameEs": "Focaccia Plain",
+      "nameEn": "Focaccia Plain",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "focaccia-pomodorini",
+      "categoryId": "pizze",
+      "nameEs": "Focaccia Pomodorini",
+      "nameEn": "Focaccia Pomodorini",
+      "descriptionEs": "pizza focaccia, tomate cherry, arúgula, Parmigiano Reggiano en láminas de 36 meses y aceite de oliva virgen extra",
+      "descriptionEn": "pizza focaccia, cherry tomato, arugula, shaved Parmigiano Reggiano 36 months & EVOO",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "focaccia-positano",
+      "categoryId": "pizze",
+      "nameEs": "Focaccia Positano",
+      "nameEn": "Focaccia Positano",
+      "descriptionEs": "focaccia, mozzarella fior di latte, prosciutto de Parma y tomate cherry",
+      "descriptionEn": "focaccia, fior di latte mozzarella, Parma prosciutto & cherry tomato",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Lasagna Pizza",
+      "nameEn": "Lasagna Pizza",
+      "descriptionEs": "salsa boloñesa, ricotta, albóndiga, salchicha y mozzarella",
+      "descriptionEn": "Bolognese sauce, ricotta, meatball, sausage & mozzarella",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margherita-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Margherita Pizza",
+      "nameEn": "Margherita Pizza",
+      "descriptionEs": "mozzarella fior di latte, salsa de tomate San Marzano, aceite de oliva virgen extra y albahaca",
+      "descriptionEn": "fior di latte mozzarella, San Marzano tomato sauce, EVOO & basil",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marinara-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Marinara Pizza",
+      "nameEn": "Marinara Pizza",
+      "descriptionEs": "salsa de tomate San Marzano, ajo y orégano",
+      "descriptionEn": "San Marzano tomato sauce, garlic & oregano",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Bar",
-      "tags": [
-        "Coctelería"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "posa-ristorante-vineria-12",
-      "categoryId": "beverages",
-      "nameEs": "Gelato Artesanal Sedoso",
-      "nameEn": "Silky Artisanal Gelato",
-      "descriptionEs": "Gelato italiano de textura perfectamente suave, elaborado con ingredientes auténticos. Pregunte por los sabores del día.",
-      "descriptionEn": "Perfectly textured silky smooth Italian gelato made with authentic ingredients. Ask your server for daily flavors.",
-      "price": "$10.00",
-      "popular": true,
-      "badge": "Postre",
-      "tags": [
-        "Dulce",
-        "Hecho en Casa"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "monte-faito-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Monte Faito Pizza",
+      "nameEn": "Monte Faito Pizza",
+      "descriptionEs": "salami picante, aceitunas y hongos",
+      "descriptionEn": "spicy salami, olives & mushrooms",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mortadella-e-pistacchio-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Mortadella e Pistacchio Pizza",
+      "nameEn": "Mortadella e Pistacchio Pizza",
+      "descriptionEs": "pizza blanca, mortadela italiana, pistacho y burrata",
+      "descriptionEn": "white pizza, Italian mortadella, pistachio & burrata",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "napoletana-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Napoletana Pizza",
+      "nameEn": "Napoletana Pizza",
+      "descriptionEs": "Margherita, ajo, tomate cherry, orégano y albóndigas pequeñas",
+      "descriptionEn": "Margherita, garlic, cherry tomato, oregano & little meatballs",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porcini-e-salsiccia-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Porcini e Salsiccia Pizza",
+      "nameEn": "Porcini e Salsiccia Pizza",
+      "descriptionEs": "pizza blanca, hongos porcini y salchicha",
+      "descriptionEn": "white pizza, porcini mushrooms & sausage",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "positano-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Positano Pizza",
+      "nameEn": "Positano Pizza",
+      "descriptionEs": "pizza blanca, arúgula, tomate cherry y Parmigiano Reggiano en láminas de 36 meses",
+      "descriptionEn": "white pizza, arugula, cherry tomato & shaved Parmigiano Reggiano 36 months",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "praiano-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Praiano Pizza",
+      "nameEn": "Praiano Pizza",
+      "descriptionEs": "pizza blanca, panceta italiana curada y cebolla caramelizada",
+      "descriptionEn": "white pizza, cured Italian pancetta & caramelized onion",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tris-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Tris Pizza",
+      "nameEn": "Tris Pizza",
+      "descriptionEs": "pizza Margherita, salami picante, albóndigas y salchicha italiana de hinojo",
+      "descriptionEn": "Margherita pizza, spicy salami, meatballs & Italian fennel sausage",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "verdure-pizza",
+      "categoryId": "pizze",
+      "nameEs": "Verdure Pizza",
+      "nameEn": "Verdure Pizza",
+      "descriptionEs": "pizza blanca, fior di latte, hongos, rapini y cebolla caramelizada",
+      "descriptionEn": "white pizza, fior di latte, mushroom, broccoli rabe & caramelized onion",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panuozzo-positano",
+      "categoryId": "panuozzo-e-saltimbocca",
+      "nameEs": "Panuozzo Positano",
+      "nameEn": "Panuozzo Positano",
+      "descriptionEs": "pan de pizza, fior di latte, arúgula y tomate cherry",
+      "descriptionEn": "pizza bread, fior di latte, arugula & cherry tomato",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panuozzo-amalfitana",
+      "categoryId": "panuozzo-e-saltimbocca",
+      "nameEs": "Panuozzo Amalfitana",
+      "nameEn": "Panuozzo Amalfitana",
+      "descriptionEs": "pan de pizza fresco de horno, mozzarella fior di latte, Prosciutto di Parma, tomate cherry y arúgula",
+      "descriptionEn": "oven fresh pizza bread, fior di latte mozzarella, Prosciutto di Parma, cherry tomato & arugula",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saltimbocca-bikini",
+      "categoryId": "panuozzo-e-saltimbocca",
+      "nameEs": "Saltimbocca Bikini",
+      "nameEn": "Saltimbocca Bikini",
+      "descriptionEs": "pan de pizza fresco y crujiente, Prosciutto di Parma y mozzarella fior di latte",
+      "descriptionEn": "crispy fresh pizza bread, Prosciutto di Parma & fior di latte mozzarella",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saltimbocca-vico",
+      "categoryId": "panuozzo-e-saltimbocca",
+      "nameEs": "Saltimbocca Vico",
+      "nameEn": "Saltimbocca Vico",
+      "descriptionEs": "pan de pizza fresco y crujiente, queso Taleggio, prosciutto cotto (jamón cocido italiano), pesto de albahaca orgánica y tomate heirloom",
+      "descriptionEn": "crispy fresh pizza bread, Taleggio cheese, prosciutto cotto (Italian cooked ham), organic basil pesto & heirloom tomato",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "delizia-al-limone",
+      "categoryId": "dolci",
+      "nameEs": "Delizia al Limone",
+      "nameEn": "Delizia al Limone",
+      "descriptionEs": "pastel de limón de Amalfi",
+      "descriptionEn": "Amalfi lemon cake",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "profiteroles-al-cioccolato",
+      "categoryId": "dolci",
+      "nameEs": "Profiteroles al Cioccolato",
+      "nameEn": "Profiteroles al Cioccolato",
+      "descriptionEs": "profiteroles con crema batida fresca casera, salsa de chocolate Valrhona",
+      "descriptionEn": "housemade fresh whipped cream profiteroles, Valrhona chocolate sauce",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "semifreddo-al-torroncino",
+      "categoryId": "dolci",
+      "nameEs": "Semifreddo al Torroncino",
+      "nameEn": "Semifreddo al Torroncino",
+      "descriptionEs": "semifreddo italiano de almendras con miel local de Ridgefield",
+      "descriptionEn": "Italian almond semifreddo with local Ridgefield honey",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "dolci",
+      "nameEs": "Tiramisù",
+      "nameEn": "Tiramisù",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortino-di-mele",
+      "categoryId": "dolci",
+      "nameEs": "Tortino di Mele",
+      "nameEn": "Tortino di Mele",
+      "descriptionEs": "tarta de manzana de CT",
+      "descriptionEn": "CT apple tart",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coppetta-di-frutta",
+      "categoryId": "dolci",
+      "nameEs": "Coppetta di Frutta",
+      "nameEn": "Coppetta di Frutta",
+      "descriptionEs": "fruta fresca de temporada, crema batida de la casa",
+      "descriptionEn": "fresh seasonal fruit, house whipped cream",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrots",
+      "categoryId": "sides",
+      "nameEs": "Zanahorias",
+      "nameEn": "Carrots",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gamberi-alla-griglia",
+      "categoryId": "sides",
+      "nameEs": "Gamberi alla Griglia",
+      "nameEn": "Gamberi alla Griglia",
+      "descriptionEs": "porción de camarones a la parrilla",
+      "descriptionEn": "side portion of grilled shrimp",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potato",
+      "categoryId": "sides",
+      "nameEs": "Puré de Papa",
+      "nameEn": "Mashed Potato",
+      "descriptionEs": "porción de puré de papa",
+      "descriptionEn": "side of mashed potato",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grilled-vegetables",
+      "categoryId": "sides",
+      "nameEs": "Verduras Mixtas a la Parrilla",
+      "nameEn": "Mixed Grilled Vegetables",
+      "descriptionEs": "verduras de temporada a la parrilla",
+      "descriptionEn": "grilled seasonal vegetables",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parma-prosciutto",
+      "categoryId": "sides",
+      "nameEs": "Prosciutto de Parma",
+      "nameEn": "Parma Prosciutto",
+      "descriptionEs": "porción de prosciutto de Parma en rebanadas",
+      "descriptionEn": "side of sliced Parma prosciutto",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peas",
+      "categoryId": "sides",
+      "nameEs": "Chícharos",
+      "nameEn": "Peas",
+      "descriptionEs": "chícharos dulces salteados",
+      "descriptionEn": "sautéed sweet peas",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-croquette",
+      "categoryId": "sides",
+      "nameEs": "Croqueta de Papa",
+      "nameEn": "Potato Croquette",
+      "descriptionEs": "1 croqueta de papa grande (papa, fior di latte, Parmigiano Reggiano, salami italiano y pan molido)",
+      "descriptionEn": "1 large potato croquette (potato, fior di latte, Parmigiano Reggiano, Italian salami & bread crumbs)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-potato",
+      "categoryId": "sides",
+      "nameEs": "Papa Asada",
+      "nameEn": "Roasted Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-di-rapa",
+      "categoryId": "sides",
+      "nameEs": "Broccoli di Rapa",
+      "nameEn": "Broccoli di Rapa",
+      "descriptionEs": "brócoli rabe salteado, chile y ajo",
+      "descriptionEn": "sautéed broccoli rabe, chili & garlic",
+      "price": "$12.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, elaboramos pasta fresca y contamos con varias opciones adaptables. Pregunte a nuestro personal por los platos marcados en el menú.",
-      "aEn": "Yes, we craft fresh pasta and offer various adaptable options. Please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para el comedor o la terraza?",
-      "qEn": "Do you accept reservations for the dining room or patio?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono. Recomendamos reservar con anticipación para fines de semana.",
-      "aEn": "我们欢迎 walk-ins and phone reservations. We recommend booking in advance for weekend dining."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Sí, contamos con estacionamiento disponible en el lote contiguo y opciones de estacionamiento en la calle principal de Ridgefield.",
-      "aEn": "Yes, parking is available in the adjacent lot as well as street parking along Main Street in Ridgefield."
-    }
-  ]
+  "faqs": []
 }
