@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { MerchantConfig } from "@/types/merchant";
-import { listMerchants, isValidPhone } from "@/lib/merchants";
+import { isValidPhone } from "@/lib/phone";
 import { useRouter } from "next/navigation";
 import {
   Store,
@@ -74,8 +74,6 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
       setIsSubmittingContact(false);
     }
   };
-
-  const allMerchants = listMerchants();
 
   const getLogoIcon = (iconName?: string) => {
     switch (iconName) {

@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { getAllMerchants as getAllPlaces, isValidPhone } from "@/lib/merchants";
+import { isValidPhone } from "@/lib/phone";
 import {
   ShoppingBag,
   Pill,
@@ -69,14 +69,19 @@ const DICT = {
 };
 
 
-export default function HomePage() {
-  const allPlaces = useMemo(() => {
-    return getAllPlaces().filter((m) => {
-      const id = (m.storeInfo?.id || "").toLowerCase();
-      const name = (m.storeInfo?.name || "").toLowerCase();
-      return id !== "demo" && id !== "elsol" && !name.includes("demo market");
-    });
-  }, []);
+/** Slim per-place data sent to the browser (not the full menus). */
+export interface PlaceSummary {
+  storeInfo: {
+    id: string;
+    name: string;
+    tagline: string;
+    address: string;
+    phone: string;
+    hours?: { monday_friday?: string };
+  };
+}
+
+export default function HomeDirectory({ places: allPlaces }: { places: PlaceSummary[] }) {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [lang, setLang] = useState<"en" | "es">("en");
@@ -90,7 +95,7 @@ export default function HomePage() {
     if (!q) return allPlaces;
 
     return allPlaces.filter((m) => {
-      const name = (m.storeInfo?.name || (m.storeInfo as any)?.Name || "").toLowerCase();
+      const name = (m.storeInfo?.name || "").toLowerCase();
       const tagline = (m.storeInfo?.tagline || "").toLowerCase();
       const address = (m.storeInfo?.address || "").toLowerCase();
 

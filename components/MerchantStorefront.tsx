@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, Suspense } from "react";
-import { useParams, useSearchParams } from "next/navigation";
-import { getMerchantById } from "@/lib/merchants";
+import { useSearchParams } from "next/navigation";
+import { MerchantConfig } from "@/types/merchant";
 import Header from "@/components/Header";
 import BottomNav, { TabType } from "@/components/BottomNav";
 import LandingView from "@/components/LandingView";
@@ -10,16 +10,11 @@ import CatalogTab from "@/components/CatalogTab";
 import TranslatorTab from "@/components/TranslatorTab";
 import AiAssistantTab from "@/components/AiAssistantTab";
 
-interface PageProps {
-  params?: {
-    merchantId?: string;
-  };
+interface StorefrontProps {
+  merchant: MerchantConfig;
 }
 
-function MerchantStorefrontContent({ params }: PageProps) {
-  const routerParams = useParams();
-  const rawId = (routerParams?.merchantId as string) || params?.merchantId || "";
-  const merchant = getMerchantById(rawId);
+function MerchantStorefrontContent({ merchant }: StorefrontProps) {
   const searchParams = useSearchParams();
 
   // Allow URL to specify tab (e.g. ?tab=catalog or ?view=catalog)
@@ -66,10 +61,10 @@ function MerchantStorefrontContent({ params }: PageProps) {
   );
 }
 
-export default function MerchantStorefront({ params }: PageProps) {
+export default function MerchantStorefront({ merchant }: StorefrontProps) {
   return (
     <Suspense fallback={<div className="min-h-screen bg-surface" />}>
-      <MerchantStorefrontContent params={params} />
+      <MerchantStorefrontContent merchant={merchant} />
     </Suspense>
   );
 }
