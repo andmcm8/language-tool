@@ -2,26 +2,20 @@
   "storeInfo": {
     "id": "southwest-cafe",
     "name": "Southwest Cafe",
-    "tagline": "Authentic New Mexican Cuisine & Fresh Margaritas in Ridgefield, CT",
+    "tagline": "New Mexican cooking in Ridgefield since 1987 | Cocina de Nuevo México en Ridgefield desde 1987",
     "address": "109 Danbury Rd, Ridgefield, CT 06877",
-    "phone": "",
+    "phone": "(203) 431-3398",
     "hours": {
       "monday_friday": "11:00 AM - 9:00 PM",
       "saturday": "11:00 AM - 9:00 PM",
       "sunday": "11:00 AM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
       "Outdoor Seating",
-      "Seasonal Patio"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,268 +27,620 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "to-start",
+      "nameEs": "Para empezar",
+      "nameEn": "To Start",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
       "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "nameEs": "Especialidades",
+      "nameEn": "Specialties",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "specialty-tacos",
+      "nameEs": "Tacos Especiales",
+      "nameEn": "Specialty Tacos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "new-mexican-favorites",
+      "nameEs": "Favoritos de Nuevo México",
+      "nameEn": "New Mexican Favorites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "quesadillas",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids",
+      "nameEs": "Infantil",
+      "nameEn": "Kids",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "southwest-cafe-01",
-      "categoryId": "appetizers",
-      "nameEs": "Guacamole y totopos frescos",
-      "nameEn": "Fresh Guacamole & Chips",
-      "descriptionEs": "Aguacates Hass frescos machacados con cilantro, tomate, cebolla y un toque de chile serrano. Servido con totopos de maíz crujientes recién hechos.",
-      "descriptionEn": "Freshly mashed Hass avocados with cilantro, tomatoes, onions, and a hint of serrano chili. Served with crisp, freshly made corn tortilla chips.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "guacamole",
+      "categoryId": "to-start",
+      "nameEs": "Guacamole",
+      "nameEn": "Guacamole",
+      "descriptionEs": "Para compartir / individual",
+      "descriptionEn": "To share / individual",
+      "price": "$14 / $3.50",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-02",
-      "categoryId": "appetizers",
-      "nameEs": "Queso Fundido con Chorizo",
-      "nameEn": "Queso Fundido with Chorizo",
-      "descriptionEs": "Quesos fundidos al horno con auténtico chorizo mexicano, cebollas caramelizadas y chiles hatch verdes. Acompañado de tortillas de maíz calientes.",
-      "descriptionEn": "Melted cheeses baked with authentic Mexican chorizo, caramelized onions, and hatch green chilis. Served with warm corn tortillas.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten",
-        "Picante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "nachos-grande",
+      "categoryId": "to-start",
+      "nameEs": "Nachos Grande",
+      "nameEn": "Nachos Grande",
+      "descriptionEs": "Tortillas de maíz crujientes, queso, frijoles pintos, crema agria, guacamole, pico de gallo, jalapeños. Agrega pollo, res, cerdo, chorizo o Beyond Meat $5",
+      "descriptionEn": "Crispy corn tortillas, cheese, pinto beans, sour cream, guacamole, pico de gallo, jalapeños. Add chicken, beef, pork, chorizo or Beyond Meat $5",
+      "price": "$23",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-03",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas Picantes al Estilo Nuevo México",
-      "nameEn": "New Mexico Style Spicy Wings",
-      "descriptionEs": "Alitas de pollo crujientes bañadas en nuestra salsa secreta de chile rojo y ahumado. Servidas con aderezo de cilantro y ranch.",
-      "descriptionEn": "Crispy chicken wings tossed in our signature smoky red chili glaze. Served with cilantro ranch dressing.",
-      "price": "$14.25",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Picante"
-      ],
-      "allergens": [],
+      "id": "queso-fundido",
+      "categoryId": "to-start",
+      "nameEs": "Queso Fundido",
+      "nameEn": "Queso Fundido",
+      "descriptionEs": "Poblanos asados a la leña, ajo asado, 4 quesos, tortillas de maíz. Agrega chorizo $2",
+      "descriptionEn": "Fire-roasted poblanos, roasted garlic, 4 cheeses, corn tortillas. Add chorizo $2",
+      "price": "$15",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-04",
-      "categoryId": "mains",
-      "nameEs": "Tacos Mixtos de Taco Tuesday",
-      "nameEn": "Taco Tuesday Mix & Match Tacos",
-      "descriptionEs": "Tres tacos en tortilla de maíz suave con su elección de carnitas, pollo asado o pescado, cubiertos con repollo crujiente, salsa de la casa y crema.",
-      "descriptionEn": "Three soft corn tortilla tacos with your choice of carnitas, grilled chicken, or fish, topped with crisp cabbage, house salsa, and crema.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Especial del Día",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "chicken-tinga-empanadas",
+      "categoryId": "to-start",
+      "nameEs": "Chicken Tinga Empanadas",
+      "nameEn": "Chicken Tinga Empanadas",
+      "descriptionEs": "Empanada frita, pollo estofado al chipotle, cebolla, tomate, salsa dulce de chile",
+      "descriptionEn": "Fried turnover, chipotle-braised chicken, onion, tomato, sweet chili sauce",
+      "price": "$13",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-05",
-      "categoryId": "mains",
-      "nameEs": "Enchiladas de Nuevo México",
-      "nameEn": "New Mexico Hatch Enchiladas",
-      "descriptionEs": "Tres enchiladas enrolladas con pollo desmenuzado o queso, bañadas en auténtica salsa de chile verde Hatch y cubiertas con queso fundido.",
-      "descriptionEn": "Three rolled enchiladas stuffed with shredded chicken or cheese, smothered in authentic Hatch green chili sauce and melted cheese.",
-      "price": "$18.75",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Picante",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "beef-brisket-chili",
+      "categoryId": "to-start",
+      "nameEs": "Beef Brisket Chili",
+      "nameEn": "Beef Brisket Chili",
+      "descriptionEs": "Pico de gallo, queso fresco, crema agria, tortilla de harina",
+      "descriptionEn": "Pico de gallo, queso fresco, sour cream, flour tortilla",
+      "price": "$14 / $19",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-06",
-      "categoryId": "mains",
-      "nameEs": "Burrito Chimichanga de Res",
-      "nameEn": "Beef Chimichanga Burrito",
-      "descriptionEs": "Tortilla de harina grande rellena de carne deshebrada tierna, frijoles negros y arroz, frita hasta obtener un dorado perfecto. Servida con guacamole y crema agria.",
-      "descriptionEn": "Large flour tortilla stuffed with tender shredded beef, black beans, and rice, fried to golden perfection. Served with guacamole and sour cream.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Crujiente",
-      "tags": [
-        "Frito"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "bowl-of-green",
+      "categoryId": "to-start",
+      "nameEs": "'Bowl of Green'",
+      "nameEn": "'Bowl of Green'",
+      "descriptionEs": "Chile verde, mezcla de 3 quesos, tortilla de harina",
+      "descriptionEn": "Green chile, 3-cheese blend, flour tortilla",
+      "price": "$13 / $16",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-07",
+      "id": "fried-sweet-plantains",
+      "categoryId": "to-start",
+      "nameEs": "Fried Sweet Plantains",
+      "nameEn": "Fried Sweet Plantains",
+      "descriptionEs": "Crema, queso fresco",
+      "descriptionEn": "Crema, queso fresco",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-chile-cornbread",
+      "categoryId": "to-start",
+      "nameEs": "Green Chile Cornbread",
+      "nameEn": "Green Chile Cornbread",
+      "descriptionEs": "Mantequilla de agave",
+      "descriptionEn": "Agave butter",
+      "price": "$11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chips-cheese",
+      "categoryId": "to-start",
+      "nameEs": "Chips & Cheese",
+      "nameEn": "Chips & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest-salad",
+      "categoryId": "salads",
+      "nameEs": "Southwest Salad",
+      "nameEn": "Southwest Salad",
+      "descriptionEs": "Mix de lechugas, maíz, frijoles negros, tomate, queso fresco, vinagreta de limón. Agrega pollo a la parrilla $10, bistec $15, salmón $13, camarones $13",
+      "descriptionEn": "Mesclun greens, corn, black beans, tomato, queso fresco, lime citronette. Add grilled chicken $10, steak $15, salmon $13, shrimp $13",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula-salad",
+      "categoryId": "salads",
+      "nameEs": "Arugula Salad",
+      "nameEn": "Arugula Salad",
+      "descriptionEs": "Jícama, mango, queso de cabra, pepitas, rábano, aguacate, vinagreta de tequila. Agrega pollo a la parrilla $10, bistec $15, salmón $13, camarones $13",
+      "descriptionEn": "Jicama, mango, goat cheese, pepitas, radish, avocado, tequila vinaigrette. Add grilled chicken $10, steak $15, salmon $13, shrimp $13",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chop-salad",
+      "categoryId": "salads",
+      "nameEs": "Chop Salad",
+      "nameEn": "Chop Salad",
+      "descriptionEs": "Lechuga romana, repollo, pepino, pico de gallo, quinua, mezcla de tres quesos, vegetales de temporada, pepitas tostadas, aderezo de Dijon y agave. Agrega pollo a la parrilla $10, bistec $15, salmón $13, camarones $13",
+      "descriptionEn": "Romaine, cabbage, cucumber, pico de gallo, quinoa, three-cheese blend, seasonal vegetables, toasted pepitas, Dijon agave dressing. Add grilled chicken $10, steak $15, salmon $13, shrimp $13",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Caesar Salad",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Corazones de lechuga romana, manchego, tomate, aguacate, picatostes de pan de maíz, aderezo de suero de leche con poblano. Agrega pollo a la parrilla $10, bistec $15, salmón $13, camarones $13",
+      "descriptionEn": "Romaine hearts, manchego, tomato, avocado, cornbread croutons, poblano buttermilk dressing. Add grilled chicken $10, steak $15, salmon $13, shrimp $13",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-tostada",
+      "categoryId": "salads",
+      "nameEs": "Avocado Tostada",
+      "nameEn": "Avocado Tostada",
+      "descriptionEs": "Tortilla de maíz crujiente, frijoles negros, pico de gallo, lechuga romana picada, crema de cilantro, queso fresco. Agrega pollo a la parrilla $10, bistec $15, salmón $13, camarones $13",
+      "descriptionEn": "Crispy corn tortilla, black beans, pico de gallo, shredded romaine, cilantro crema, queso fresco. Add grilled chicken $10, steak $15, salmon $13, shrimp $13",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-colorado",
       "categoryId": "specialties",
-      "nameEs": "Costillas Famosas de la Primera Miércoles",
-      "nameEn": "First Wednesday Famous SWC Ribs",
-      "descriptionEs": "Nuestras costillas de cerdo tiernas cocinadas a fuego lento, glaseadas con salsa barbacoa de chipotle y especias del suroeste. Acompañadas de papas rústicas.",
-      "descriptionEn": "Our legendary slow-cooked tender pork ribs glazed with chipotle BBQ sauce and Southwest spices. Served with rustic potato wedges.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Especial Mensual",
-      "tags": [
-        "Ahumado",
-        "Especialidad"
-      ],
-      "allergens": [],
+      "nameEs": "Carne Colorado",
+      "nameEn": "Carne Colorado",
+      "descriptionEs": "Sobre arroz o como burrito: bistec, chile rojo, cebollas, jalapeño",
+      "descriptionEn": "Over rice or as a burrito: steak, red chile, onions, jalapeño",
+      "price": "$29",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-08",
+      "id": "fajitas",
       "categoryId": "specialties",
-      "nameEs": "Fajitas Sizzling al Carbón",
-      "nameEn": "Sizzling Charcoal Fajitas",
-      "descriptionEs": "Tiras de bistec o pollo marinadas a la parrilla con pimientos y cebollas salteados. Servidas en sartén caliente con tortillas frescas, guacamole y frijoles de la olla.",
-      "descriptionEn": "Grilled marinated steak or chicken strips with sautéed bell peppers and onions. Served on a sizzling skillet with fresh tortillas, guacamole, and pinto beans.",
-      "price": "$22.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "A la Parrilla"
-      ],
-      "allergens": [],
+      "nameEs": "Fajitas",
+      "nameEn": "Fajitas",
+      "descriptionEs": "Pimientos y cebollas, calabacita, brócoli chino, jalapeño, guacamole, lechuga, pico de gallo, tortillas de harina. Pollo $27, bistec $33, camarones $30, salmón $30, vegetales mixtos $26",
+      "descriptionEn": "Peppers & onions, squash, broccolini, jalapeño, guacamole, lettuce, pico de gallo, flour tortillas. Chicken $27, steak $33, shrimp $30, salmon $30, mixed vegetable $26",
+      "price": "$26 - $33",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-09",
+      "id": "carne-asada-with-rajas",
       "categoryId": "specialties",
-      "nameEs": "Carne Asada al Suroeste",
-      "nameEn": "Southwest Style Carne Asada",
-      "descriptionEs": "Fina arrachera asada a la parrilla al punto exacto, servida con una enchilada de queso, arroz mexicano, guacamole y cebollitas asadas.",
-      "descriptionEn": "Prime skirt steak grilled to perfection, served with a cheese enchilada, Mexican rice, guacamole, and grilled green onions.",
-      "price": "$25.00",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "nameEs": "Carne Asada with Rajas",
+      "nameEn": "Carne Asada with Rajas",
+      "descriptionEs": "Cebollas caramelizadas y chiles verdes, papas cambray, queso azul Cabrales, champiñones shiitake",
+      "descriptionEn": "Caramelized onions & green chiles, fingerling potatoes, Cabrales blue cheese, shiitake mushrooms",
+      "price": "$33",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-10",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Tradicional de la Casa",
-      "nameEn": "Signature House Margarita",
-      "descriptionEs": "Tequila 100% de agave, licor de naranja fresco y jugo de limón recién exprimido, servido en las rocas con borde de sal.",
-      "descriptionEn": "100% agave tequila, fresh orange liqueur, and freshly squeezed lime juice, served on the rocks with a salted rim.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Bestseller",
-      "tags": [
-        "Cóctel",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "shrimp-and-posole",
+      "categoryId": "specialties",
+      "nameEs": "Shrimp and Posole",
+      "nameEn": "Shrimp and Posole",
+      "descriptionEs": "Camarones jumbo, pozole y calabacita de verano, caldo de tomatillo y chile de árbol, salsa de tomate heirlooom y aguacate",
+      "descriptionEn": "Jumbo shrimp, posole and summer squash, tomatillo chile de árbol broth, heirloom tomato-avocado salsa",
+      "price": "$32",
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-11",
-      "categoryId": "beverages",
-      "nameEs": "Agua Fresca de Horchata Casera",
-      "nameEn": "Homemade Horchata Agua Fresca",
-      "descriptionEs": "Bebida refrescante tradicional a base de arroz, leche, vainilla y un toque de canela. Dulce y reconfortante.",
-      "descriptionEn": "Traditional refreshing beverage made from rice, milk, vanilla, and a hint of cinnamon. Sweet and comforting.",
+      "id": "grilled-salmon",
+      "categoryId": "specialties",
+      "nameEs": "Grilled Salmon",
+      "nameEn": "Grilled Salmon",
+      "descriptionEs": "Vegetales, arroz con jengibre y lima, glaseado de chile dulce",
+      "descriptionEn": "Vegetables, ginger lime rice, sweet chili glaze",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-chile-stew",
+      "categoryId": "specialties",
+      "nameEs": "Green Chile Stew",
+      "nameEn": "Green Chile Stew",
+      "descriptionEs": "Pollo, res, cerdo, Beyond o vegetales; zanahorias, apio, papas, queso, tortilla de harina",
+      "descriptionEn": "Chicken, beef, pork, Beyond or vegetable; carrots, celery, potatoes, cheese, flour tortilla",
+      "price": "$27",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest-rice-bowl",
+      "categoryId": "specialties",
+      "nameEs": "Southwest Rice Bowl",
+      "nameEn": "Southwest Rice Bowl",
+      "descriptionEs": "Arroz, frijoles negros, vegetales, pico de gallo, aguacate, salsa de chile rojo o verde, crema. Pollo $27, bistec $32, camarones o salmón $30, vegetales $25, Beyond Meat $26",
+      "descriptionEn": "Rice, black beans, vegetables, pico de gallo, avocado, red or green chile sauce, crema. Chicken $27, steak $32, shrimp or salmon $30, vegetable $25, Beyond Meat $26",
+      "price": "$25 - $32",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "n-m-stacked-beef-enchiladas",
+      "categoryId": "specialties",
+      "nameEs": "N.M. Stacked Beef Enchiladas",
+      "nameEn": "N.M. Stacked Beef Enchiladas",
+      "descriptionEs": "En capas con mezcla de 3 quesos, bañadas en chile rojo, cubiertas con un huevo frito",
+      "descriptionEn": "Layered with 3-cheese blend, smothered in red chile, topped with a fried egg",
+      "price": "$25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tacos",
+      "categoryId": "specialty-tacos",
+      "nameEs": "Shrimp Tacos",
+      "nameEn": "Shrimp Tacos",
+      "descriptionEs": "Tortillas de maíz con jícama, mango, salsa de jalapeño, guacamole; servidos con arroz y frijoles",
+      "descriptionEn": "Corn tortillas with jicama, mango, jalapeño salsa, guacamole; served with rice & beans",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-tacos",
+      "categoryId": "specialty-tacos",
+      "nameEs": "Grilled Chicken Tacos",
+      "nameEn": "Grilled Chicken Tacos",
+      "descriptionEs": "Lechuga romana, pico de gallo, guacamole, aderezo de suero de leche con poblano, manchego; con arroz y frijoles",
+      "descriptionEn": "Romaine, pico de gallo, guacamole, poblano buttermilk dressing, manchego; with rice & beans",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churrasco-steak-tacos",
+      "categoryId": "specialty-tacos",
+      "nameEs": "Churrasco Steak Tacos",
+      "nameEn": "Churrasco Steak Tacos",
+      "descriptionEs": "Chimichurri, guacamole, queso fresco; con arroz y frijoles",
+      "descriptionEn": "Chimichurri, guacamole, queso fresco; with rice & beans",
+      "price": "$25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Tacos",
+      "nameEn": "Tacos",
+      "descriptionEs": "Tortilla de maíz, guacamole, pico de gallo, lechuga, queso fresco. Opción de pollo, res, cerdo, vegetales o Beyond Meat, con arroz y frijoles",
+      "descriptionEn": "Corn tortilla, guacamole, pico de gallo, lettuce, queso fresco. Choice of chicken, beef, pork, vegetable or Beyond Meat, with rice & beans",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Enchiladas",
+      "nameEn": "Enchiladas",
+      "descriptionEs": "Tortilla de maíz, mezcla de 3 quesos, salsa roja, verde o navideña. Opción de pollo, res, cerdo, vegetales o Beyond Meat, con arroz y frijoles",
+      "descriptionEn": "Corn tortilla, 3-cheese blend, red, green or Christmas sauce. Choice of chicken, beef, pork, vegetable or Beyond Meat, with rice & beans",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Burrito",
+      "nameEn": "Burrito",
+      "descriptionEs": "Tortilla de harina, frijoles, queso, salsa roja, verde o navideña. Opción de pollo, res, cerdo, vegetales o Beyond Meat, con arroz y frijoles",
+      "descriptionEn": "Flour tortilla, beans, cheese, red, green or Christmas sauce. Choice of chicken, beef, pork, vegetable or Beyond Meat, with rice & beans",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chimichanga",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Chimichanga",
+      "nameEn": "Chimichanga",
+      "descriptionEs": "Tortilla de harina crujiente, queso con chile verde, crema agria, salsa, guacamole. Opción de pollo, res, cerdo, vegetales o Beyond Meat, con arroz y frijoles",
+      "descriptionEn": "Crispy flour tortilla, green chile cheese, sour cream, salsa, guacamole. Choice of chicken, beef, pork, vegetable or Beyond Meat, with rice & beans",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chalupa",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Chalupa",
+      "nameEn": "Chalupa",
+      "descriptionEs": "Barquita de tortilla de maíz crujiente, frijoles, queso, crema agria, guacamole, salsa. Opción de pollo, res, cerdo, vegetales o Beyond Meat, con arroz y frijoles",
+      "descriptionEn": "Crispy corn tortilla boat, beans, cheese, sour cream, guacamole, salsa. Choice of chicken, beef, pork, vegetable or Beyond Meat, with rice & beans",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-rellenos",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Chile Rellenos",
+      "nameEn": "Chile Rellenos",
+      "descriptionEs": "Chile Anaheim rebozado relleno de queso Jack, salsa roja, verde o navideña",
+      "descriptionEn": "Batter-dipped Anaheim chile stuffed with Jack cheese, red, green or Christmas sauce",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-flautas",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Chicken Flautas",
+      "nameEn": "Chicken Flautas",
+      "descriptionEs": "Flautas de tortilla de maíz crujientes rellenas de pollo y queso, crema agria, guacamole",
+      "descriptionEn": "Crispy corn tortilla flutes filled with chicken & cheese, sour cream, guacamole",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combination-plate",
+      "categoryId": "new-mexican-favorites",
+      "nameEs": "Combination Plate",
+      "nameEn": "Combination Plate",
+      "descriptionEs": "Cualquier par de favoritos $23, cualquiera de tres $29",
+      "descriptionEn": "Any two favorites $23, any three $29",
+      "price": "$23 / $29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Cheese Quesadilla",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Chicken Quesadilla",
+      "nameEn": "Chicken Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-pesto-mango-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Chicken, Pesto & Mango Quesadilla",
+      "nameEn": "Chicken, Pesto & Mango Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chorizo-green-chile-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Chorizo & Green Chile Quesadilla",
+      "nameEn": "Chorizo & Green Chile Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-pulled-pork-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "BBQ Pulled Pork Quesadilla",
+      "nameEn": "BBQ Pulled Pork Quesadilla",
+      "descriptionEs": "Salsa BBQ de bourbon",
+      "descriptionEn": "Bourbon BBQ sauce",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-goat-cheese-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de verduras y queso de cabra",
+      "nameEn": "Vegetable & Goat Cheese Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beyond-meat-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla Beyond Meat",
+      "nameEn": "Beyond Meat Quesadilla",
+      "descriptionEs": "Tortillas de harina, 3 quesos, guacamole, pico de gallo, crema agria",
+      "descriptionEn": "Flour tortillas, 3 cheeses, guacamole, pico de gallo, sour cream",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-or-green-chile-sauce",
+      "categoryId": "sides",
+      "nameEs": "Salsa de chile rojo o verde",
+      "nameEn": "Red or Green Chile Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-vegetables",
+      "categoryId": "sides",
+      "nameEs": "Verduras salteadas",
+      "nameEn": "Sautéed Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese",
+      "categoryId": "sides",
+      "nameEs": "Queso",
+      "nameEn": "Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-beans-or-combo",
+      "categoryId": "sides",
+      "nameEs": "Arroz, frijoles o combinación",
+      "nameEn": "Rice, Beans or Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortillas",
+      "categoryId": "sides",
+      "nameEs": "Tortillas",
+      "nameEn": "Tortillas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sour-cream",
+      "categoryId": "sides",
+      "nameEs": "Crema agria",
+      "nameEn": "Sour Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sliced-avocado",
+      "categoryId": "sides",
+      "nameEs": "Aguacate en rodajas",
+      "nameEn": "Sliced Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.50",
-      "popular": false,
-      "badge": "Artesanal",
-      "tags": [
-        "Sin Alcohol",
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "southwest-cafe-12",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Mexicana Importada",
-      "nameEn": "Imported Mexican Beer",
-      "descriptionEs": "Selección de cervezas mexicanas bien frías servidas con una rodaja de limón fresco.",
-      "descriptionEn": "Selection of ice-cold imported Mexican beers served with a fresh lime wedge.",
-      "price": "$6.00",
-      "popular": true,
-      "badge": "Bebida",
-      "tags": [
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "fried-egg",
+      "categoryId": "sides",
+      "nameEs": "Huevo frito",
+      "nameEn": "Fried Egg",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-fries",
+      "categoryId": "kids",
+      "nameEs": "Tiras de pollo con papas fritas",
+      "nameEn": "Chicken Fingers & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-or-cheese-quesadilla",
+      "categoryId": "kids",
+      "nameEs": "Quesadilla de pollo o queso",
+      "nameEn": "Chicken or Cheese Quesadilla",
+      "descriptionEs": "Con arroz",
+      "descriptionEn": "With rice",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-fajita",
+      "categoryId": "kids",
+      "nameEs": "Fajita de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Fajita",
+      "descriptionEs": "Con papas fritas",
+      "descriptionEn": "With fries",
+      "price": "$13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-fajita",
+      "categoryId": "kids",
+      "nameEs": "Fajita de bistec",
+      "nameEn": "Steak Fajita",
+      "descriptionEs": "Con papas fritas",
+      "descriptionEn": "With fries",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bean-cheese-burrito",
+      "categoryId": "kids",
+      "nameEs": "Burrito de frijoles y queso",
+      "nameEn": "Bean & Cheese Burrito",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flautas",
+      "categoryId": "kids",
+      "nameEs": "Flautas",
+      "nameEn": "Flautas",
+      "descriptionEs": "Con arroz",
+      "descriptionEn": "With rice",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-or-beef-taco",
+      "categoryId": "kids",
+      "nameEs": "Taco de pollo o res",
+      "nameEn": "Chicken or Beef Taco",
+      "descriptionEs": "Con arroz",
+      "descriptionEn": "With rice",
+      "price": "$11",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con una gran variedad de platos vegetarianos y opciones sin gluten. Por favor pregunte a nuestro personal por los detalles.",
-      "aEn": "Yes, we offer a wide variety of vegetarian dishes and gluten-free options. Please ask our staff for details."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono. ¡Recomendamos reservar para grupos grandes!",
-      "aEn": "We welcome walk-ins and phone reservations. Reservations are recommended for large parties!"
-    },
-    {
-      "qEs": "¿Tienen área para comer al aire libre?",
-      "qEn": "Do you have outdoor seating?",
-      "aEs": "Sí, contamos con un acogedor patio exterior estacional disponible para almuerzos y cenas al aire libre.",
-      "aEn": "Yes, we feature a cozy seasonal outdoor patio available for open-air dining."
-    }
-  ]
+  "faqs": []
 }

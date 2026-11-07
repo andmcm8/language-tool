@@ -14,7 +14,7 @@ date it was checked. This script:
      (prices and items are never generated).
   4. Records the slug in data/verified-menus.json.
 """
-import json, os, re, sys, unicodedata, urllib.request, urllib.error
+import json, os, re, sys, time, unicodedata, urllib.request, urllib.error
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 MODELS = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]
@@ -40,18 +40,21 @@ def gemini_json(prompt):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }).encode()
     last = None
-    for m in MODELS:
-        req = urllib.request.Request(
-            f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
-            data=body, headers={"Content-Type": "application/json", "x-goog-api-key": api_key()})
-        try:
-            with urllib.request.urlopen(req, timeout=180) as r:
-                data = json.load(r)
-            text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
-            return json.loads(text)
-        except (urllib.error.HTTPError, urllib.error.URLError, KeyError, json.JSONDecodeError, TimeoutError) as e:
-            last = e
-            print(f"  {m} failed: {e}", file=sys.stderr)
+    for rnd in range(5):  # rate limits (429) and overload (503) are usually temporary: back off and retry
+        if rnd:
+            time.sleep(30 * rnd)
+        for m in MODELS:
+            req = urllib.request.Request(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
+                data=body, headers={"Content-Type": "application/json", "x-goog-api-key": api_key()})
+            try:
+                with urllib.request.urlopen(req, timeout=180) as r:
+                    data = json.load(r)
+                text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
+                return json.loads(text)
+            except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError, OSError) as e:  # OSError covers socket timeouts on py3.9
+                last = e
+                print(f"  {m} failed: {e}", file=sys.stderr)
     raise SystemExit(f"All Gemini models failed: {last}")
 
 

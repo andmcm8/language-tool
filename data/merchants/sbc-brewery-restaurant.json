@@ -1,26 +1,21 @@
 {
   "storeInfo": {
     "id": "sbc-brewery-restaurant",
-    "name": "SBC Brewery & Restaurant",
-    "tagline": "Craft beer & gourmet American fare in Milford, CT | Cerveza artesanal y comida americana gourmet",
-    "address": "33 Edison Road, Milford, CT 06460",
+    "name": "SBC Restaurant & Beer Bar",
+    "tagline": "Farm-fresh American food & local craft beer on the Milford harbor since 1997 | Comida americana fresca y cerveza artesanal local junto al puerto de Milford desde 1997",
+    "address": "33 New Haven Ave, Milford, CT 06460",
     "hours": {
       "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
+      "saturday": "11:30 AM - 10:00 PM",
       "sunday": "11:30 AM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Craft Brewery"
+      "Bar",
+      "Water View",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -28,293 +23,689 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(203) 874-2337"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "small-plates",
+      "nameEs": "Platos pequeños",
+      "nameEn": "Small Plates",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades y Hamburguesas",
-      "nameEn": "Specialties & Burgers",
+      "id": "entrees-pastas",
+      "nameEs": "Entrées & Pastas",
+      "nameEn": "Entrées & Pastas",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Cervezas y Bebidas",
-      "nameEn": "Craft Beers & Beverages",
-      "icon": "Coffee"
+      "id": "sandwiches-burgers",
+      "nameEs": "Sándwiches y hamburguesas",
+      "nameEn": "Sandwiches & Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú para niños",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "sbc-brewery-restaurant-01",
-      "categoryId": "appetizers",
-      "nameEs": "Pretzel Gigante con Queso de Cerveza",
-      "nameEn": "Jumbo Soft Pretzel",
-      "descriptionEs": "Pretzel suave recién horneado servido con nuestra salsa secreta de queso cheddar infundida con cerveza artesanal y mostaza especiada.",
-      "descriptionEn": "Warm, freshly baked jumbo soft pretzel served with our house signature craft beer-infused cheddar dip and spicy brown mustard.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "bang-bang",
+      "categoryId": "small-plates",
+      "nameEs": "Bang Bang",
+      "nameEn": "Bang Bang",
+      "descriptionEs": "Camarones dorados o bocaditos de pollo crujiente bañados en nuestra salsa bang bang dulce y picante",
+      "descriptionEn": "Golden shrimp or crispy chicken bites tossed with our sweet and spicy bang bang sauce",
+      "price": "$14",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-02",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Estilo SBC",
-      "nameEn": "SBC Signature Wings",
-      "descriptionEs": "Alitas crujientes bañadas en tu elección de salsa BBQ de la casa, Buffalo picante o glaze de bourbon y ajonjolí.",
-      "descriptionEn": "Crispy jumbo chicken wings tossed in your choice of house BBQ, tangy Buffalo, or sweet bourbon sesame glaze.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Soja"
-      ],
+      "id": "bavarian-soft-pretzels",
+      "categoryId": "small-plates",
+      "nameEs": "Bavarian Soft Pretzels",
+      "nameEn": "Bavarian Soft Pretzels",
+      "descriptionEs": "Pretzels suaves y saladitos recién horneados, servidos con mostaza infusionada con cerveza ale.",
+      "descriptionEn": "Warm soft and salty pretzels, served with ale spiked mustard.",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-03",
-      "categoryId": "appetizers",
-      "nameEs": "Dip de Espinacas y Alcachofas",
-      "nameEn": "Spinach & Artichoke Dip",
-      "descriptionEs": "Espinacas tiernas y corazones de alcachofa en una mezcla cremosa de quesos derretidos, servido con totopos de tortilla de maíz crujientes.",
-      "descriptionEn": "Tender spinach and artichoke hearts in a rich, creamy melted cheese blend, served piping hot with crispy corn tortilla chips.",
-      "price": "$13.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "classic-mac-cheese-bowl",
+      "categoryId": "small-plates",
+      "nameEs": "Classic Mac & Cheese Bowl",
+      "nameEn": "Classic Mac & Cheese Bowl",
+      "descriptionEs": "Cremosa mezcla de cuatro quesos, tocino ahumado, chícharos y cubierta de migas crujientes",
+      "descriptionEn": "Creamy four cheese, smoked bacon, peas, crumb topping",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-04",
-      "categoryId": "specialties",
-      "nameEs": "Hamburguesa Craft Bacon & Cheddar",
-      "nameEn": "Craft Bacon & Cheddar Burger",
-      "descriptionEs": "Jugosa carne de res Angus con tocino ahumado crujiente, queso cheddar añejo, lechuga, tomate y cebolla caramelizada en brioche tostado.",
-      "descriptionEn": "Juicy prime Angus beef patty topped with thick-cut smoked bacon, aged sharp cheddar, crisp lettuce, tomato, and caramelized onions on a brioche bun.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne Angus",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "french-onion-soup",
+      "categoryId": "small-plates",
+      "nameEs": "French Onion Soup",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Abundante cebolla caramelizada, crostini y queso derretido",
+      "descriptionEn": "Loaded caramelized onions, crostini, melted cheese",
+      "price": "$10",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-05",
-      "categoryId": "specialties",
-      "nameEs": "Hamburguesa Vegetariana de Portobello",
-      "nameEn": "Portobello Mushroom Burger",
-      "descriptionEs": "Hongo portobello a la parrilla con pimiento asado, queso provolone, arúgula fresca y mayonesa de pesto albahaca en pan brioche.",
-      "descriptionEn": "Grilled portobello mushroom cap topped with roasted red pepper, melted provolone, fresh arugula, and basil pesto mayo on a toasted bun.",
-      "price": "$16.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "classic-pierogies",
+      "categoryId": "small-plates",
+      "nameEs": "Classic Pierogies",
+      "nameEn": "Classic Pierogies",
+      "descriptionEs": "Pierogies rellenos de papa y cheddar. Salteados a la sartén con cebolla caramelizada, tocino, mantequilla dorada y crema agria de cebollino y rábano picante",
+      "descriptionEn": "Potato and cheddar filled pierogie. Pan fried with caramelized onion, bacon, brown butter, horseradish chive sour cream",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Fish & Chips Estilo Cervecería",
-      "nameEn": "Brewery Fish & Chips",
-      "descriptionEs": "Filete de pescado fresco rebozado en nuestra masa de cerveza artesanal SBC, frito hasta quedar dorado. Servido con papas fritas y salsa tártara.",
-      "descriptionEn": "Fresh white fish fillet dipped in our signature SBC craft beer batter and fried golden brown. Served with crispy french fries and house tartar sauce.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Huevos"
-      ],
+      "id": "crispy-brussels",
+      "categoryId": "small-plates",
+      "nameEs": "Crispy Brussels",
+      "nameEn": "Crispy Brussels",
+      "descriptionEs": "Coles de Bruselas fritas crujientes con tocino ahumado y gastrique de sidra local y maple",
+      "descriptionEn": "Crispy fried sprouts tossed with smoked bacon, a local cider maple gastrique",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-07",
-      "categoryId": "mains",
-      "nameEs": "Costillas BBQ a la Cerveza",
-      "nameEn": "Beer-Braised BBQ Ribs",
-      "nameEnEs": "Costillas de cerdo tiernas cocinadas a fuego lento con nuestra salsa BBQ casera a base de cerveza obscura. Servidas con ensalada de col y papas fritas.",
-      "descriptionEn": "Fall-off-the-bone tender pork ribs braised in dark craft beer and glazed with house BBQ. Served with coleslaw and french fries.",
-      "price": "$24.95",
-      "popular": true,
-      "badge": "Especial del Chef",
-      "tags": [
-        "Sin Gluten",
-        "Ahumado"
-      ],
-      "allergens": [
-        "Soja"
-      ],
+      "id": "downtown-nachos",
+      "categoryId": "small-plates",
+      "nameEs": "Downtown Nachos",
+      "nameEn": "Downtown Nachos",
+      "descriptionEs": "Totopos crujientes cubiertos con elote asado, frijoles negros, queso estilo southwest, pico de gallo, cebollín y un toque de crema picante",
+      "descriptionEn": "Crispy tortilla chips, topped with roasted corn, black beans, southwest queso, pico de gallo, scallion, kickn' crema drizzle",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-08",
-      "categoryId": "mains",
-      "nameEs": "Pollo al Sartén con Hierbas y Limón",
-      "nameEn": "Herb-Roasted Chicken Breast",
-      "nameEnEs": "Pechuga de pollo jugosa marinada en hierbas finas y limón, servida con puré de papas al ajillo y vegetales de temporada.",
-      "descriptionEn": "Juicy pan-seared chicken breast marinated in fresh herbs and citrus, served with garlic mashed potatoes and seasonal roasted vegetables.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Aves",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "eggplant-fries",
+      "categoryId": "small-plates",
+      "nameEs": "Eggplant Fries",
+      "nameEn": "Eggplant Fries",
+      "descriptionEs": "Tiras crujientes y tiernas de berenjena, cubiertas con una lluvia de queso parmesano y acompañadas de salsa marinara de la casa",
+      "descriptionEn": "Crispy tender strips of eggplant, topped with a blizzard of parmesan cheese, side of house marinara",
+      "price": "$14",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-09",
-      "categoryId": "mains",
-      "nameEs": "Pasta con Camarones al Ajillo",
-      "nameEn": "Garlic Shrimp Pasta",
-      "nameEnEs": "Camarones salteados con ajo, vino blanco, tomates cherry y albahaca fresca sobre pasta linguine con queso parmesano rallado.",
-      "descriptionEn": "Sautéed shrimp tossed with garlic, white wine, cherry tomatoes, and fresh basil over linguine pasta, topped with grated parmesan cheese.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Mariscos",
-        "Pasta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Lácteos"
-      ],
+      "id": "korean-beef-dumplings",
+      "categoryId": "small-plates",
+      "nameEs": "Korean Beef Dumplings",
+      "nameEn": "Korean Beef Dumplings",
+      "descriptionEs": "Dumplings coreanos crujientes de carne de res y vegetales, terminados con un glaseado de chile dulce y picante y cebollín fresco",
+      "descriptionEn": "Crispy Korean beef and vegetable dumplings, finished with a sweet and spicy chili glaze and fresh scallion",
+      "price": "$13",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-10",
-      "categoryId": "beverages",
-      "nameEs": "IPA Artesanal SBC Milford",
-      "nameEn": "SBC Milford IPA",
-      "descriptionEs": "Nuestra cerveza IPA insignia elaborada localmente en Milford, con notas cítricas y un amargor perfectamente equilibrado.",
-      "descriptionEn": "Our flagship India Pale Ale brewed right here in Milford, featuring vibrant citrus hop notes and a clean, balanced finish.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Hecho en Casa",
-      "tags": [
-        "Cerveza Artesanal",
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "sbc-wings",
+      "categoryId": "small-plates",
+      "nameEs": "SBC Wings",
+      "nameEn": "SBC Wings",
+      "descriptionEs": "Servidas tradicionales con hueso (GF) o deshuesadas",
+      "descriptionEn": "Served traditional bone-in (GF) or boneless",
+      "price": "$14",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-11",
-      "categoryId": "beverages",
-      "nameEs": "Stout de Chocolate y Vainilla",
-      "nameEn": "Vanilla Chocolate Stout",
-      "descriptionEs": "Cerveza negra robusta con notas profundas de chocolate amargo y vainilla natural de Madagascar.",
-      "descriptionEn": "Rich and dark robust stout brewed with dark cacao nibs and whole Madagascar vanilla beans.",
-      "price": "$8.00",
-      "popular": false,
-      "badge": "Edición Limitada",
-      "tags": [
-        "Cerveza Artesanal",
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "sbc-wings-double",
+      "categoryId": "small-plates",
+      "nameEs": "SBC Wings (Double)",
+      "nameEn": "SBC Wings (Double)",
+      "descriptionEs": "Servidas tradicionales con hueso (GF) o deshuesadas",
+      "descriptionEn": "Served traditional bone-in (GF) or boneless",
+      "price": "$26",
       "ctaType": "in_store"
     },
     {
-      "id": "sbc-brewery-restaurant-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Casera de Frambuesa",
-      "nameEn": "House Raspberry Lemonade",
-      "descriptionEs": "Limonada fresca hecha en casa con un toque de puré de frambuesas naturales. Refrescante y sin alcohol.",
-      "descriptionEn": "Refreshing homemade lemonade infused with real raspberry puree. Cool and revitalizing.",
+      "id": "tomato-bisque",
+      "categoryId": "small-plates",
+      "nameEs": "Tomato Bisque",
+      "nameEn": "Tomato Bisque",
+      "descriptionEs": "Una crema suave de tomates maduros cocinados a fuego lento",
+      "descriptionEn": "A smooth blend of slow braised ripe tomatoes",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-fries",
+      "categoryId": "small-plates",
+      "nameEs": "Truffle Fries",
+      "nameEn": "Truffle Fries",
+      "descriptionEs": "Aceite de trufa y lluvia de queso parmesano",
+      "descriptionEn": "Truffle oil and parmesan dust",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simple-salad-sm",
+      "categoryId": "salads",
+      "nameEs": "Simple Salad (Sm)",
+      "nameEn": "Simple Salad (Sm)",
+      "descriptionEs": "Mezcla de hojas verdes crujientes, guarnición sencilla y aderezo de la casa",
+      "descriptionEn": "Mixed crispy greens, simple garnish, house dressing",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simple-salad-lg",
+      "categoryId": "salads",
+      "nameEs": "Simple Salad (Lg)",
+      "nameEn": "Simple Salad (Lg)",
+      "descriptionEs": "Mezcla de hojas verdes crujientes, guarnición sencilla y aderezo de la casa",
+      "descriptionEn": "Mixed crispy greens, simple garnish, house dressing",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-goat-cheese-salad",
+      "categoryId": "salads",
+      "nameEs": "Warm Goat Cheese Salad",
+      "nameEn": "Warm Goat Cheese Salad",
+      "descriptionEs": "Queso de cabra tibio con costra de panko sobre hojas verdes con pepino, tomate, nueces garrapiñadas y vinagreta de miel y balsámico blanco",
+      "descriptionEn": "Warm panko crusted goat cheese over greens with cucumber, tomato, candied walnuts, honey white balsamic vinaigrette",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwestern-ranch-salad",
+      "categoryId": "salads",
+      "nameEs": "Southwestern Ranch Salad",
+      "nameEn": "Southwestern Ranch Salad",
+      "descriptionEs": "Mezcla de hojas verdes crujientes, pollo a la parrilla, elote asado, frijoles negros, pico de gallo, mezcla de quesos cheddar, aderezo ranch de chipotle y tiras de tortilla crujiente",
+      "descriptionEn": "Mixed crispy greens, grilled chicken, roasted corn, black bean, pico de gallo, cheddar blend, chipotle ranch, crispy tortilla strips",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-caesar",
+      "categoryId": "salads",
+      "nameEs": "Tavern Caesar",
+      "nameEn": "Tavern Caesar",
+      "descriptionEs": "Lechuga baby gem, aderezo Caesar cremoso, crutones de ajo y parmesano",
+      "descriptionEn": "Baby gem lettuce, creamy Caesar, garlic croutons, parmesan",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "founders-cobb",
+      "categoryId": "salads",
+      "nameEs": "Founders Cobb",
+      "nameEn": "Founders Cobb",
+      "descriptionEs": "Hojas verdes crujientes, pollo, tocino, tomate, cebolla morada, queso azul desmoronado, huevo de granja y puré de aguacate",
+      "descriptionEn": "Crispy greens, chicken, bacon, tomato, red onion, crumbled blue cheese, farm egg, avocado mash",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-tip-dinner",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Beef Tip Dinner",
+      "nameEn": "Beef Tip Dinner",
+      "descriptionEs": "Una porción para la cena de nuestras puntas de solomillo de res marinadas por 48 horas, asadas al fuego y servidas con puré de papa o papas fritas de la taberna",
+      "descriptionEn": "A dinner portion of our own 48 hour marinated sirloin beef tips, fire grilled served with mashed or tavern fries",
+      "price": "$26",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito-bowl-chicken",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Burrito Bowl (Chicken)",
+      "nameEn": "Burrito Bowl (Chicken)",
+      "descriptionEs": "Un tazón de arroz español con frijoles negros, pico de gallo, elote asado, lechuga rallada, mezcla de cuatro quesos, puré de aguacate y crema agria",
+      "descriptionEn": "A bowl of Spanish rice with black beans, pico de gallo, roasted corn, shredded lettuce, four cheese blend, avocado mash and sour cream",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito-bowl-beef-tips",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Burrito Bowl (Beef Tips)",
+      "nameEn": "Burrito Bowl (Beef Tips)",
+      "descriptionEs": "Un tazón de arroz español con frijoles negros, pico de gallo, elote asado, lechuga rallada, mezcla de cuatro quesos, puré de aguacate y crema agria",
+      "descriptionEn": "A bowl of Spanish rice with black beans, pico de gallo, roasted corn, shredded lettuce, four cheese blend, avocado mash and sour cream",
+      "price": "$23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sbc-fish-chips",
+      "categoryId": "entrees-pastas",
+      "nameEs": "SBC Fish & Chips",
+      "nameEn": "SBC Fish & Chips",
+      "descriptionEs": "Eglefino rebozado en cerveza, servido con ensalada de col, salsa tártara o de cóctel y su elección de papas fritas o ensalada",
+      "descriptionEn": "Beer battered haddock, served with coleslaw, tartar or cocktail sauce and your choice of fries or salad",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-piccata",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Salmon Piccata",
+      "nameEn": "Salmon Piccata",
+      "descriptionEs": "Salmón del Atlántico sellado a la sartén, salsa de limón y alcaparras, espinacas salteadas y papas Yukon machacadas",
+      "descriptionEn": "Pan seared Atlantic salmon, lemon caper pan sauce, sautéed spinach, smashed Yukon",
+      "price": "$26",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip-steak",
+      "categoryId": "entrees-pastas",
+      "nameEs": "NY Strip Steak",
+      "nameEn": "NY Strip Steak",
+      "descriptionEs": "Corte de centro de NY strip a la parrilla, papas Yukon machacadas y espinacas salteadas",
+      "descriptionEn": "Grilled center cut NY strip, smashed Yukon potatoes, sautéed spinach",
+      "price": "$36",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-alfredo",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Chicken Alfredo",
+      "nameEn": "Chicken Alfredo",
+      "descriptionEs": "Salsa cremosa de parmesano, pollo a la parrilla o estilo blackened, brócoli asado y tocino, salteado con pasta rigatoni",
+      "descriptionEn": "Parmesan cream sauce, grilled or blackened chicken, roasted broccoli, bacon, tossed with rigatoni pasta",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm-rosa",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Chicken Parm Rosa",
+      "nameEn": "Chicken Parm Rosa",
+      "descriptionEs": "Milanesa de pollo crujiente cubierta con mozzarella y nuestra exclusiva salsa rosa con vodka, servida sobre penne",
+      "descriptionEn": "Crispy chicken cutlet topped with mozzarella and our signature vodka-pink sauce, served over penne",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatloaf",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Meatloaf",
+      "nameEn": "Meatloaf",
+      "descriptionEs": "Pastel de carne de pavo, puré de papas Yukon y salsa de sartén con tomillo",
+      "descriptionEn": "Turkey meatloaf, Yukon mashed, thyme pan sauce",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-pork-cutlet",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Crispy Pork Cutlet",
+      "nameEn": "Crispy Pork Cutlet",
+      "descriptionEs": "Sobre rúcula aderezada, tomates asados, prosciutto crujiente, limón, mantequilla de ajo y puré de papas",
+      "descriptionEn": "On dressed arugula, roasted tomatoes, crispy prosciutto, lemon, garlic butter, mashed potatoes",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesto-shrimp-rigatoni",
+      "categoryId": "entrees-pastas",
+      "nameEs": "Pesto Shrimp Rigatoni",
+      "nameEn": "Pesto Shrimp Rigatoni",
+      "descriptionEs": "Camarones, espinaca, tomates asados, pesto cremoso de albahaca, ajo, parmesano y limón",
+      "descriptionEn": "Shrimp, spinach, roasted tomatoes, creamy basil pesto, garlic, parmesan, lemon",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-bomb",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Buffalo Bomb",
+      "nameEn": "Buffalo Bomb",
+      "descriptionEs": "Pollo crujiente bañado en salsa buffalo, lechuga, cebolla, aderezo ranch de chipotle y quesos de granja en un wrap de tortilla",
+      "descriptionEn": "Buffalo soaked crispy chicken, lettuce, onion, chipotle ranch, farm cheeses, tortilla wrap",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "figgy-chicken",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Figgy Chicken",
+      "nameEn": "Figgy Chicken",
+      "descriptionEs": "Pollo a la parrilla totalmente natural, queso de cabra cremoso, mermelada de higo, cebolla salteada y rúcula trufada en pan ciabatta tostado",
+      "descriptionEn": "Grilled all natural chicken, creamy goat cheese, fig jam, sautéed onion, truffled arugula on a toasted ciabatta roll",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-birdhouse",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "The Birdhouse",
+      "nameEn": "The Birdhouse",
+      "descriptionEs": "Pollo crujiente al suero de leche, miel picante, tocino de manzana, queso pepper jack, pepinillos y alioli",
+      "descriptionEn": "Crispy buttermilk chicken, hot honey, apple bacon, pepper jack cheese, pickles, aioli",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twin-philly-cheesesteaks",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Twin Philly Cheesesteaks",
+      "nameEn": "Twin Philly Cheesesteaks",
+      "descriptionEs": "Carne en tiras finas, pimientos, cebollas y queso, en dos panes abiertos arriba",
+      "descriptionEn": "Shaved steak, peppers, onions, cheese, two split-top buns",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sbc-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "SBC Burger",
+      "nameEn": "SBC Burger",
+      "descriptionEs": "Nuestra hamburguesa clásica de carne totalmente natural de Pineland Farms, lechuga, tomate, con o sin queso",
+      "descriptionEn": "Our classic burger, all natural Pineland Farms beef, lettuce, tomato with or without cheese",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cadillac-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Cadillac Burger",
+      "nameEn": "Cadillac Burger",
+      "descriptionEs": "Hamburguesa totalmente natural con salsa BBQ, cheddar, tocino, aderezo ranch de chipotle y cebollas caramelizadas",
+      "descriptionEn": "All natural burger with BBQ, cheddar, bacon, chipotle ranch, caramelized onions",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steakhouse-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Steakhouse Burger",
+      "nameEn": "Steakhouse Burger",
+      "descriptionEs": "Hamburguesa de Pineland Farms sazonada al estilo steakhouse, queso gouda ahumado derretido, tomates roma, aro de cebolla, salsa para carne hecha en casa y crema de rábano picante",
+      "descriptionEn": "Steakhouse seasoned Pineland Farms burger, melted smoked gouda, roma tomatoes, onion ring, house made steak sauce, horseradish crema",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pretzel-smash-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Pretzel Smash Burger",
+      "nameEn": "Pretzel Smash Burger",
+      "descriptionEs": "Carne estilo smash patty de 1/4 de libra, tocino crujiente, cebolla caramelizada, lechuga, alioli y mezcla de queso cheddar en un pan suave y saladito de pretzel",
+      "descriptionEn": "1/4 pound smash patty, crispy bacon, caramelized onion, lettuce, aioli, cheddar cheese blend on a soft, salted pretzel bun",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger-bowl",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Burger Bowl",
+      "nameEn": "Burger Bowl",
+      "descriptionEs": "Carne de hamburguesa, lechuga baby gem picada, tomate, pepinillos, cebolla, mezcla de queso cheddar, salsa de hamburguesa de la casa",
+      "descriptionEn": "Burger patty, shredded baby gem, tomato, pickles, onion, cheddar blend, house burger sauce",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "connecticut-lobster-roll",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Connecticut Lobster Roll",
+      "nameEn": "Connecticut Lobster Roll",
+      "descriptionEs": "Langosta tibia a la mantequilla, panecillo split-top tostado",
+      "descriptionEn": "Warm buttered lobster, toasted split-top roll",
+      "price": "$36",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-burger",
+      "categoryId": "kids-menu",
+      "nameEs": "Hamburguesa para niños",
+      "nameEn": "Kid's Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simple-salmon",
+      "categoryId": "kids-menu",
+      "nameEs": "Salmón simple",
+      "nameEn": "Simple Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-grilled-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Grilled Cheese para niños",
+      "nameEn": "Kid's Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-perfect",
+      "categoryId": "kids-menu",
+      "nameEs": "Pasta Perfect",
+      "nameEn": "Pasta Perfect",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-mac-and-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Mac and Cheese para niños",
+      "nameEn": "Kids Mac and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bites",
+      "categoryId": "kids-menu",
+      "nameEs": "Bocaditos de pollo",
+      "nameEn": "Chicken Bites",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-quesadilla",
+      "categoryId": "kids-menu",
+      "nameEs": "Quesadilla para niños",
+      "nameEn": "Kids Quesadilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-grilled-chicken",
+      "categoryId": "kids-menu",
+      "nameEs": "Pollo a la parrilla para niños",
+      "nameEn": "Kids Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-beef-tips",
+      "categoryId": "sides",
+      "nameEs": "Porción de puntas de res",
+      "nameEn": "Side Beef Tips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-burger",
+      "categoryId": "sides",
+      "nameEs": "Porción de carne de hamburguesa",
+      "nameEn": "Side Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-chicken",
+      "categoryId": "sides",
+      "nameEs": "Porción de pollo",
+      "nameEn": "Side Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-broccoli-roasted",
+      "categoryId": "sides",
+      "nameEs": "Porción de brócoli - Asado",
+      "nameEn": "Side Broccoli - Roasted",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Sin Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-broccoli-steamed",
+      "categoryId": "sides",
+      "nameEs": "Porción de brócoli - Al vapor",
+      "nameEn": "Side Broccoli - Steamed",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-fries",
+      "categoryId": "sides",
+      "nameEs": "Porción de papas fritas",
+      "nameEn": "Side Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-mashed-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Porción de puré de papas",
+      "nameEn": "Side Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-rice",
+      "categoryId": "sides",
+      "nameEs": "Porción de arroz",
+      "nameEn": "Side Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-slaw",
+      "categoryId": "sides",
+      "nameEs": "Porción de ensalada de col",
+      "nameEn": "Side Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-sweet-fries",
+      "categoryId": "sides",
+      "nameEs": "Porción de papas dulces fritas",
+      "nameEn": "Side Sweet Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-crisp",
+      "categoryId": "desserts",
+      "nameEs": "Apple Crisp",
+      "nameEn": "Apple Crisp",
+      "descriptionEs": "Manzanas horneadas tibias con una cubierta crujiente de mantequilla",
+      "descriptionEn": "Warm baked apples with a buttery crumb topping",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "NY Cheesecake",
+      "nameEn": "NY Cheesecake",
+      "descriptionEs": "Cheesecake clásico y cremoso estilo New York",
+      "descriptionEn": "Classic, creamy New York-style cheesecake",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lava-cake",
+      "categoryId": "desserts",
+      "nameEs": "Lava Cake",
+      "nameEn": "Lava Cake",
+      "descriptionEs": "Un rico y tibio pastel de chocolate con centro fundido, helado de vainilla, cubierto con crema batida y salsa de chocolate",
+      "descriptionEn": "A rich, warm chocolate cake with a molten center, vanilla ice cream, topped with whipped cream & chocolate sauce",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "magic-bar",
+      "categoryId": "desserts",
+      "nameEs": "Magic Bar",
+      "nameEn": "Magic Bar",
+      "descriptionEs": "Corteza de galleta graham con mantequilla en capas con brownie tibio de chocolate fudge y cubierta con trocitos crocantes de Heath bar",
+      "descriptionEn": "Buttery graham cracker crust layered with warm fudge brownie and topped with Heath bar crunch",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-pie",
+      "categoryId": "desserts",
+      "nameEs": "PB Pie",
+      "nameEn": "PB Pie",
+      "descriptionEs": "Un relleno ligero y cremoso de mantequilla de maní con trozos de Reese's peanut butter cups, un toque de chocolate y crema batida",
+      "descriptionEn": "A light and creamy peanut butter filling with Reese's peanut butter cup chunks, drizzled chocolate & whipped cream",
+      "price": "$8",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones claramente marcadas en nuestro menú para ambos estilos de alimentación.",
-      "aEn": "Yes, we feature several clearly marked items on our menu catering to both vegetarian and gluten-conscious guests."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también reservaciones por teléfono para grupos pequeños y grandes.",
-      "aEn": "We gladly accept walk-ins and phone reservations for both intimate tables and large parties."
-    },
-    {
-      "qEs": "¿Fabrican su propia cerveza en el local?",
-      "qEn": "Do you brew your own beer on-site?",
-      "aEs": "¡Así es! Somos una cervecería y restaurante local en Milford, CT, con cervezas artesanales frescas de barril.",
-      "aEn": "That's right! We are a local brewpub and restaurant in Milford, CT, serving fresh craft beers straight from our taps."
-    }
-  ]
+  "faqs": []
 }
