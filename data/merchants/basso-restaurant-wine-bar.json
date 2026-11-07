@@ -2,25 +2,22 @@
   "storeInfo": {
     "id": "basso-restaurant-wine-bar",
     "name": "Basso Restaurant & Wine Bar",
-    "tagline": "Fine Wines & Exceptional Dining / Vinos Finos y Cocina Excepcional",
-    "address": "337 Riverside Ave, Westport, CT",
+    "tagline": "Mediterranean tapas, paella, pasta and Neapolitan pizza near the Westport Library | Tapas mediterráneas, paella, pasta y pizza napolitana cerca de la biblioteca de Westport",
+    "address": "33 Jesup Rd, Westport, CT 06880",
     "hours": {
-      "monday_friday": "4:00 PM - 10:00 PM",
-      "saturday": "12:00 PM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Wine Bar"
+      "Catering",
+      "Full Bar",
+      "Gluten-Free Options",
+      "Vegan Options",
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -28,272 +25,523 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": "(203) 557-6970"
+    "phone": "(203) 354-6566"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "lunch-special-bite-of-the-day-thursday-sunday",
+      "nameEs": "Especial de Almuerzo \"Bocado del Día\" (Jueves a Domingo)",
+      "nameEn": "Lunch Special \"Bite of the Day\" (Thursday-Sunday)",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "tapas-small-plates",
+      "nameEs": "Tapas y Platos Pequeños",
+      "nameEn": "Tapas & Small Plates",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades del Chef",
-      "nameEn": "Chef Specialties",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Vinos y Bebidas",
-      "nameEn": "Wines & Beverages",
-      "icon": "Coffee"
+      "id": "neapolitan-pizza-14",
+      "nameEs": "Pizza Napolitana (14\")",
+      "nameEn": "Neapolitan Pizza (14\")",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pastas-specialties",
+      "nameEs": "Pastas y Especialidades",
+      "nameEn": "Pastas & Specialties",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postres",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "basso-restaurant-wine-bar-01",
-      "categoryId": "appetizers",
-      "nameEs": "Pulpo a la Plancha",
-      "nameEn": "Grilled Octopus",
-      "descriptionEs": "Pulpo tierno a la parrilla servido con papas confitadas, puré de garbanzos al azafrán y emulsión de pimentón ahumado.",
-      "descriptionEn": "Tender grilled octopus served with confit potatoes, saffron chickpea purée, and smoked paprika emulsion.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "bite-of-the-day-2-courses",
+      "categoryId": "lunch-special-bite-of-the-day-thursday-sunday",
+      "nameEs": "Bocado del Día — 2 tiempos",
+      "nameEn": "Bite of the Day — 2 Courses",
+      "descriptionEs": "una tapa o plato pequeño más una pasta o pizza",
+      "descriptionEn": "one tapa/small plate plus a pasta or pizza",
+      "price": "$29.00",
       "ctaType": "in_store"
     },
     {
-      "id": "basso-restaurant-wine-bar-02",
-      "categoryId": "appetizers",
-      "nameEs": "Burrata Artesanal",
-      "nameEn": "Artisanal Burrata",
-      "descriptionEs": "Burrata cremosa acompañada de higos frescos marinados, prosciutto di Parma, reducción de balsámico añejo y crostini de masa madre.",
-      "descriptionEn": "Creamy burrata paired with fresh marinated figs, prosciutto di Parma, aged balsamic reduction, and sourdough crostini.",
-      "price": "$17.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "bite-of-the-day-3-courses",
+      "categoryId": "lunch-special-bite-of-the-day-thursday-sunday",
+      "nameEs": "Bocado del Día — 3 tiempos",
+      "nameEn": "Bite of the Day — 3 Courses",
+      "descriptionEs": "una tapa o plato pequeño, una pasta o pizza, y un postre",
+      "descriptionEn": "one tapa/small plate, a pasta or pizza, and a dessert",
+      "price": "$37.00",
       "ctaType": "in_store"
     },
     {
-      "id": "basso-restaurant-wine-bar-03",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finas láminas de lomo de res con alcaparras, albahaca fresca, queso parmesano reggiano de 24 meses y aceite de trufa blanca.",
-      "descriptionEn": "Thinly sliced beef tenderloin with capers, fresh basil, 24-month Parmigiano Reggiano, and white truffle oil.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Fino",
-      "tags": [
-        "Clásico",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "baby-carrots-with-smoked-romesco",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Zanahorias Baby con Romesco Ahumado",
+      "nameEn": "Baby Carrots with Smoked Romesco",
+      "descriptionEs": "sin gluten, vegano, contiene frutos secos: zanahorias baby asadas y peladas a mano con almendras y salsa romesco",
+      "descriptionEn": "gluten-free, vegan, contains nuts: roasted hand-peeled baby carrots with almonds and romesco sauce",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "basso-restaurant-wine-bar-04",
-      "categoryId": "mains",
-      "nameEs": "Risotto de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz arborio cremoso cocinado con una mezcla de hongos silvestres salteados, mantequilla trufada y queso parmesano.",
-      "descriptionEn": "Creamy Arborio rice simmered with a medley of sautéed wild mushrooms, truffle butter, and parmesan cheese.",
-      "price": "$26.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "brussels-sprouts",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Bruselas",
+      "nameEn": "Brussels Sprouts",
+      "descriptionEs": "sin gluten, vegano: salteadas a la plancha con sal marina y aceite de oliva virgen extra (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free, vegan: pan seared with sea salt and extra virgin olive oil (starting price; larger sizes available)",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "basso-restaurant-wine-bar-05",
-      "categoryId": "mains",
-      "nameEs": "Filete Mignon con Salsa de Vino Tinto",
-      "nameEn": "Filet Mignon with Red Wine Reduction",
-      "descriptionEs": "Corte prime de filete mignon a la parrilla, acompañado de puré de papa trufado y espárragos salteados en mantequilla de hierbas.",
-      "descriptionEn": "Prime cut grilled filet mignon served with truffled potato purée and asparagus sautéed in herb butter.",
-      "price": "$44.00",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Carne",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-06",
-      "categoryId": "mains",
-      "nameEs": "Pescado del Día a la Provenzal",
-      "nameEn": "Catch of the Day Provençal",
-      "descriptionEs": "Pescado fresco del día al horno con tomates cherry, aceitunas kalamata, alcaparras, vino blanco y hierbas provenzales.",
-      "descriptionEn": "Fresh daily catch baked with cherry tomatoes, kalamata olives, capers, white wine, and Provençal herbs.",
-      "price": "$34.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Saludable"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-07",
-      "categoryId": "specialties",
-      "nameEs": "Costillas de Cordero Braseadas",
-      "nameEn": "Braised Lamb Chops",
-      "descriptionEs": "Costillas de cordero marinadas en hierbas mediterráneas, braseadas lentamente y servidas sobre polenta cremosa con reducción de Oporto.",
-      "descriptionEn": "Mediterranean herb-marinated lamb chops, slow-braised and served over creamy polenta with a Port wine reduction.",
-      "price": "$38.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Especialidad",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-08",
-      "categoryId": "specialties",
-      "nameEs": "Ravioles de Langosta Caseros",
-      "nameEn": "House-Made Lobster Ravioli",
-      "descriptionEs": "Pasta fresca rellena de langosta de Maine en una suave salsa de tomate cherry, estragón y un toque de crema de brandy.",
-      "descriptionEn": "Fresh pasta stuffed with Maine lobster in a delicate cherry tomato, tarragon, and brandy cream sauce.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Pasta",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-09",
-      "categoryId": "beverages",
-      "nameEs": "Copa de Chianti Classico Riserva",
-      "nameEn": "Glass of Chianti Classico Riserva",
-      "descriptionEs": "Vino tinto italiano robusto con notas de cereza madura, cuero y especias. Ideal para acompañar carnes rojas y pastas.",
-      "descriptionEn": "Robust Italian red wine with notes of ripe cherry, leather, and spices. Ideal with red meats and pastas.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Vino",
-      "tags": [
-        "Alcohol",
-        "Italiano"
-      ],
-      "allergens": [
-        "Sulfitos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-10",
-      "categoryId": "beverages",
-      "nameEs": "Copa de Sauvignon Blanc de Nueva Zelanda",
-      "nameEn": "Glass of New Zealand Sauvignon Blanc",
-      "descriptionEs": "Vino blanco fresco y vibrante con notas cítricas de maracuyá y pomelo, perfecto para mariscos y entradas.",
-      "descriptionEn": "Crisp and vibrant white wine featuring citrus notes of passionfruit and grapefruit, perfect for seafood and starters.",
-      "price": "$14.00",
-      "popular": false,
-      "badge": "Vino",
-      "tags": [
-        "Alcohol",
-        "Fresco"
-      ],
-      "allergens": [
-        "Sulfitos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "basso-restaurant-wine-bar-11",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Basso Espresso Martini",
-      "nameEn": "Basso Espresso Martini",
-      "descriptionEs": "Vodka premium, licor de café Kahlúa, espresso recién extraído y un toque de Baileys, agitado a la perfección.",
-      "descriptionEn": "Premium vodka, Kahlúa coffee liqueur, freshly pulled espresso, and a touch of Baileys, shaken to perfection.",
+      "id": "calamares-a-la-plancha",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Calamares a la Plancha",
+      "nameEn": "Calamares a la Plancha",
+      "descriptionEs": "sin gluten: calamares salteados a la plancha con aceite de oliva, ajo y un toque de pimienta machacada",
+      "descriptionEn": "gluten-free: calamari sautéed on the griddle with olive oil, garlic and light crushed pepper",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Cóctel",
-      "tags": [
-        "Cocktail",
-        "Popular"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-al-ajillo",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Camarones al Ajillo",
+      "nameEn": "Camarones al Ajillo",
+      "descriptionEs": "camarones salteados a la plancha con aceite de oliva virgen extra, ajo cortado fino y vino de Jerez",
+      "descriptionEn": "pan seared shrimp with extra virgin olive oil, shaved garlic and sherry wine",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "charcuterie-board",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Tabla de Embutidos y Quesos",
+      "nameEn": "Charcuterie Board",
+      "descriptionEs": "tres quesos artesanales seleccionados por el chef, sobrasada ibérica, prosciutto di Parma, burrata importada, aceitunas asadas y pan artesanal",
+      "descriptionEn": "three chef's selection artisanal cheeses, sobrasada Ibérica, prosciutto di Parma, imported burrata, roasted olives and artisanal bread",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "choripan",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Choripán",
+      "nameEn": "Choripán",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chorizo-casserole",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Caserola de Chorizo",
+      "nameEn": "Chorizo Casserole",
+      "descriptionEs": "sin gluten: chorizo ibérico ahumado con garbanzos, cebollas caramelizadas y pimientos asados",
+      "descriptionEn": "gluten-free: smoked Ibérico chorizo with chickpeas, caramelized onions and roasted peppers",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coliflor-al-pimenton",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Coliflor al Pimentón",
+      "nameEn": "Coliflor al Pimentón",
+      "descriptionEs": "sin gluten, vegano: coliflor salteada con aceite de oliva virgen extra, pimentón, sal y pimienta",
+      "descriptionEn": "gluten-free, vegan: sautéed cauliflower with extra virgin olive oil, paprika, salt and pepper",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "empanadas",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Empanadas",
+      "nameEn": "Empanadas",
+      "descriptionEs": "empanadas de pollo desmenuzado con sofrito, o de carne de res molida Certified Angus con una salsa de tomate ligeramente picante (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "pulled chicken and sofrito, or Certified Angus ground beef turnovers with a lightly spicy tomato sauce (starting price; larger sizes available)",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Gnocchi",
+      "nameEn": "Gnocchi",
+      "descriptionEs": "gnocchi caseros con salsa cremosa de setas shiitake, aceite de trufa blanca y Parmigiano Reggiano (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "homemade gnocchi with creamy shiitake mushroom sauce, white truffle oil and Parmigiano Reggiano (starting price; larger sizes available)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hanger-steak",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Hanger Steak",
+      "nameEn": "Hanger Steak",
+      "descriptionEs": "sin gluten: bistec de corte hanger a la parrilla, de animales alimentados con pasto y criado en libertad, con chimichurri (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free: grilled free-range, grass-fed hanger steak with chimichurri (starting price; larger sizes available)",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Albóndigas",
+      "nameEn": "Meatballs",
+      "descriptionEs": "albóndigas tradicionales napolitanas con salsa de tomate Basso",
+      "descriptionEn": "traditional Neapolitan meatballs with Basso tomato sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-fries",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Papas Estilo Mediterráneo",
+      "nameEn": "Mediterranean Fries",
+      "descriptionEs": "papas cortadas a mano con pecorino Romano, hierbas y aceite de trufa",
+      "descriptionEn": "hand cut fries with pecorino Romano, herbs and truffle oil",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mussels-alla-diavola",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Mejillones alla Diavola",
+      "nameEn": "Mussels alla Diavola",
+      "descriptionEs": "mejillones de la Isla del Príncipe Eduardo en vino blanco y salsa de tomate con hojuelas de pimienta roja, con dos piezas de Pan Med",
+      "descriptionEn": "PEI mussels in white wine and tomato sauce with red pepper flakes, with two pieces of Pan Med",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-med",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Pan Med",
+      "nameEn": "Pan Med",
+      "descriptionEs": "ciabatta sazonada y a la parrilla al estilo mediterráneo",
+      "descriptionEn": "Mediterranean-style seasoned and grilled ciabatta",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "piquillo-peppers",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Pimientos del Piquillo",
+      "nameEn": "Piquillo Peppers",
+      "descriptionEs": "rellenos de risotto de camarones al azafrán sobre salsa verde",
+      "descriptionEn": "stuffed with saffron shrimp risotto over salsa verde",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potatoes-brava",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Papas Bravas",
+      "nameEn": "Potatoes Brava",
+      "descriptionEs": "vegetariano: papas fritas con alioli de parmesano ligeramente picante (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "vegetarian: fried potatoes with lightly spicy parmesan aioli (starting price; larger sizes available)",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulpo-a-la-gallega",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Pulpo a la Gallega",
+      "nameEn": "Pulpo a la Gallega",
+      "descriptionEs": "sin gluten: pulpo al estilo gallego con papas, pimentón, sal marina y aceite de oliva (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free: Galician-style octopus with potatoes, paprika, sea salt and olive oil (starting price; larger sizes available)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-spanish-olives",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Aceitunas Españolas Asadas",
+      "nameEn": "Roasted Spanish Olives",
+      "descriptionEs": "sin gluten, vegano: aceitunas importadas asadas al horno con laurel y aceite de oliva virgen extra",
+      "descriptionEn": "gluten-free, vegan: oven roasted imported olives with laurel and extra virgin olive oil",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-and-chickpeas",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Espinacas y Garbanzos",
+      "nameEn": "Spinach and Chickpeas",
+      "descriptionEs": "sin gluten, vegano: espinacas orgánicas salteadas, ajo cortado fino y aceite de oliva virgen extra (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free, vegan: sautéed organic spinach, shaved garlic and extra virgin olive oil (starting price; larger sizes available)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortilla-espanola",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Tortilla Española",
+      "nameEn": "Tortilla Española",
+      "descriptionEs": "tortilla española con huevos, cebollas y papas, servida a temperatura ambiente con alioli caliente de sofrito y pimiento de Jerez",
+      "descriptionEn": "Spanish omelette with eggs, onions and potatoes, served at room temperature with hot sherry pepper sofrito aioli",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-mushroom-soup",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Sopa de Setas Silvestres",
+      "nameEn": "Wild Mushroom Soup",
+      "descriptionEs": "sin gluten, vegano: sopa puré de setas silvestres con aceite de trufa negra",
+      "descriptionEn": "gluten-free, vegan: wild mushroom purée soup with black truffle oil",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zucchini-involtini",
+      "categoryId": "tapas-small-plates",
+      "nameEs": "Zucchini Involtini",
+      "nameEn": "Zucchini Involtini",
+      "descriptionEs": "sin gluten: rollitos de zucchini rellenos de ricotta y espinacas con marinara Basso",
+      "descriptionEn": "gluten-free: zucchini wraps stuffed with ricotta and spinach with Basso marinara",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basso-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Basso",
+      "nameEn": "Basso Salad",
+      "descriptionEs": "sin gluten, contiene frutos secos: lechuga Boston, uvas sin semilla, nueces azucaradas, queso de cabra, vinagreta de limón y soya (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free, contains nuts: Boston lettuce, seedless grapes, candied walnuts, goat cheese, lemon-soy vinaigrette (starting price; larger sizes available)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "med-quinoa-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Med de Quinoa",
+      "nameEn": "Med Quinoa Salad",
+      "descriptionEs": "sin gluten: arúgula, quinoa, arándanos rojos, aceitunas Kalamata, tomates uva, pepino, cebolla morada, queso feta y aguacate con vinagreta de sidra de manzana",
+      "descriptionEn": "gluten-free: arugula, quinoa, cranberries, Kalamata olives, grape tomatoes, cucumber, red onion, feta and avocado with apple cider vinaigrette",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-casablanca",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza Casablanca",
+      "nameEn": "Pizza Casablanca",
+      "descriptionEs": "tomates San Marzano, mozzarella, tomates uva y deshidratados al sol, mezcla de aceitunas y chiles cherry picantes",
+      "descriptionEn": "San Marzano tomatoes, mozzarella, grape and sun dried tomatoes, olive mix and hot cherry peppers",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-funghi",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza Funghi",
+      "nameEn": "Pizza Funghi",
+      "descriptionEs": "setas silvestres, cebollas caramelizadas, queso de cabra y aceite de trufa negra",
+      "descriptionEn": "wild mushrooms, caramelized onions, goat cheese and black truffle oil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-margherita",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza Margherita",
+      "nameEn": "Pizza Margherita",
+      "descriptionEs": "tomates San Marzano, mozzarella di bufala, pecorino Romano, aceite de oliva virgen extra y albahaca fresca",
+      "descriptionEn": "San Marzano tomatoes, mozzarella di bufala, pecorino Romano, extra virgin olive oil and fresh basil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-meatball",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza de Albóndigas",
+      "nameEn": "Pizza Meatball",
+      "descriptionEs": "tomates San Marzano, albóndigas de la abuela, mozzarella y albahaca",
+      "descriptionEn": "San Marzano tomatoes, grandma's meatballs, mozzarella and basil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-the-stallion",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza The Stallion",
+      "nameEn": "Pizza The Stallion",
+      "descriptionEs": "tomates San Marzano, chorizo español, sofrito picante, mozzarella y albahaca fresca",
+      "descriptionEn": "San Marzano tomatoes, Spanish chorizo, spicy sofrito, mozzarella and fresh basil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-italian-sausage-and-peppers",
+      "categoryId": "neapolitan-pizza-14",
+      "nameEs": "Pizza de Salchicha Italiana y Pimientos",
+      "nameEn": "Pizza Italian Sausage and Peppers",
+      "descriptionEs": "salchicha italiana, pimientos morrones, cebollas y mozzarella sobre salsa de tomate San Marzano",
+      "descriptionEn": "Italian sausage, bell peppers, onions and mozzarella over San Marzano tomato sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-chicken-scarpariello",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Cavatelli con Pollo Scarpariello",
+      "nameEn": "Cavatelli Chicken Scarpariello",
+      "descriptionEs": "cavatelli con pollo deshuesado, chiles cherry picantes, vino blanco y salsa de limón, cubierto con Parmigiano Reggiano (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "cavatelli with boneless chicken, hot cherry peppers, white wine and lemon sauce, topped with Parmigiano Reggiano (starting price; larger sizes available)",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaskan-halibut",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Halibut de Alaska",
+      "nameEn": "Alaskan Halibut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-entree",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Plato Principal de Gnocchi",
+      "nameEn": "Gnocchi Entrée",
+      "descriptionEs": "gnocchi caseros con salsa cremosa de setas shiitake, aceite de trufa blanca y Parmigiano Reggiano",
+      "descriptionEn": "homemade gnocchi with creamy shiitake mushroom sauce, white truffle oil and Parmigiano Reggiano",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hanger-steak-entree",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Plato Principal de Hanger Steak",
+      "nameEn": "Hanger Steak Entrée",
+      "descriptionEs": "sin gluten: bistec de corte hanger de animales alimentados con pasto, con chimichurri, puré de papas y espinacas salteadas",
+      "descriptionEn": "gluten-free: grass-fed hanger steak with chimichurri, mashed potatoes and sautéed spinach",
+      "price": "$41.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paella-mixta-for-two",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Paella Mixta para Dos",
+      "nameEn": "Paella Mixta for Two",
+      "descriptionEs": "sin gluten: paella valenciana con arroz arborio, pollo, calamares, chorizo, almejas, mejillones, camarones y azafrán (precio inicial; hay tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free: Valencian paella with arborio rice, chicken, calamari, chorizo, clams, mussels, shrimp and saffron (starting price; larger sizes available)",
+      "price": "$64.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parrillada-martin-fierro",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Parrillada Martín Fierro",
+      "nameEn": "Parrillada Martín Fierro",
+      "descriptionEs": "hanger steak, pollo, chorizo español, torre de verduras, papas fritas crujientes y chimichurri del chef Renato, guasacaca y alioli de limón",
+      "descriptionEn": "hanger steak, chicken, Spanish chorizo, veggie stack, crispy fries and chef Renato's chimichurri, guasacaca and lemon aioli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuscan-grilled-chicken",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Tuscan Grilled Chicken",
+      "nameEn": "Tuscan Grilled Chicken",
+      "descriptionEs": "sin gluten: pollo francés marinado de crianza libre con salsa de limón y romero sobre puré de papas con ajo asado, zanahorias baby y espinacas (precio inicial; tamaños más grandes disponibles)",
+      "descriptionEn": "gluten-free: marinated French-cut free-range chicken with lemon rosemary sauce over roasted garlic mashed potatoes, baby carrots and spinach (starting price; larger sizes available)",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-paella-for-two",
+      "categoryId": "pastas-specialties",
+      "nameEs": "Vegetarian Paella for Two",
+      "nameEn": "Vegetarian Paella for Two",
+      "descriptionEs": "sin gluten, vegano: arroz bomba, verduras de temporada, chiles cherry picantes y azafrán",
+      "descriptionEn": "gluten-free, vegan: bomba rice, seasonal vegetables, hot cherry peppers and saffron",
+      "price": "$52.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "almond-orange-cake",
+      "categoryId": "dessert",
+      "nameEs": "Almond Orange Cake",
+      "nameEn": "Almond Orange Cake",
+      "descriptionEs": "pastel de harina de almendras sin gluten con gelato de stracciatella y tiras de naranja cubiertas de chocolate",
+      "descriptionEn": "gluten-free almond flour cake with stracciatella gelato and chocolate-covered orange twists",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "artisanal-cheeses",
+      "categoryId": "dessert",
+      "nameEs": "Artisanal Cheeses",
+      "nameEn": "Artisanal Cheeses",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churros",
+      "categoryId": "dessert",
+      "nameEs": "Churros",
+      "nameEn": "Churros",
+      "descriptionEs": "bastones de masa crujiente con azúcar y canela con dip de chocolate belga",
+      "descriptionEn": "crispy dough sticks in sugar and cinnamon with Belgian chocolate dip",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lava-cake",
+      "categoryId": "dessert",
+      "nameEs": "Lava Cake",
+      "nameEn": "Lava Cake",
+      "descriptionEs": "pastel de lava volcánica sin gluten con gelato de vainilla",
+      "descriptionEn": "gluten-free molten lava cake with vanilla gelato",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-biscotti",
+      "categoryId": "dessert",
+      "nameEs": "Mini Biscotti",
+      "nameEn": "Mini Biscotti",
+      "descriptionEs": "biscotti italianos clásicos caseros (cada uno)",
+      "descriptionEn": "homemade classic Italian biscotti (each)",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches",
+      "categoryId": "dessert",
+      "nameEs": "Tres Leches",
+      "nameEn": "Tres Leches",
+      "descriptionEs": "pastel de vainilla remojado en tres tipos de leche",
+      "descriptionEn": "vanilla cake soaked in three kinds of milk",
+      "price": "$15.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varios platos adaptados para vegetarianos y opciones sin gluten. Por favor, informe a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we feature several vegetarian-friendly dishes and gluten-free options. Please inform your server of any allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Sí, aceptamos reservaciones por teléfono y en línea. También reservamos espacio para clientes sin cita previa según disponibilidad.",
-      "aEn": "Yes, we accept reservations by phone and online. We also hold space for walk-in guests based on availability."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Contamos con estacionamiento en el lote contiguo y opciones de estacionamiento en la calle Riverside Ave.",
-      "aEn": "Parking is available in the adjacent lot as well as street parking along Riverside Ave."
-    }
-  ]
+  "faqs": []
 }

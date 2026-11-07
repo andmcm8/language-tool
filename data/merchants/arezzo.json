@@ -1,27 +1,25 @@
 {
   "storeInfo": {
     "id": "arezzo",
-    "name": "Arezzo",
-    "tagline": "Experiencia Auténtica de Toscana en Westport | Authentic Tuscan Experience in Westport",
+    "name": "Arezzo Ristorante",
+    "tagline": "Italian ristorante with house-made pasta and wood-fired pizza on the Saugatuck River | Restaurante italiano con pasta casera y pizza al horno de leña junto al río Saugatuck",
     "address": "5 Riverside Ave, Westport, CT 06880",
     "phone": "(203) 557-9375",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 10:30 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
       "Outdoor Seating",
-      "Riverfront Dining"
+      "Waterfront",
+      "Full Bar",
+      "Gluten-Free Options",
+      "Private Events",
+      "Bilingual Menu"
     ],
     "themeColor": "#800020",
     "logoIcon": "utensils",
@@ -33,281 +31,1426 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "antipasti",
+      "nameEs": "Antipasti",
+      "nameEn": "Antipasti",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "insalata",
+      "nameEs": "Insalata",
+      "nameEn": "Insalata",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Pasta & Risotto (gluten-free pasta available)",
+      "nameEn": "Pasta & Risotto (gluten-free pasta available)",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "secondi",
+      "nameEs": "Secondi",
+      "nameEn": "Secondi",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wood-fired-pizza",
+      "nameEs": "Pizza al Horno de Leña",
+      "nameEn": "Wood-Fired Pizza",
+      "icon": "Utensils"
+    },
+    {
+      "id": "simple-pastas-half-portions",
+      "nameEs": "Pastas Sencillas y Medias Porciones",
+      "nameEn": "Simple Pastas & Half Portions",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "after-dinner-drinks",
+      "nameEs": "Bebidas después de cenar",
+      "nameEn": "After Dinner Drinks",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "arezzo-01",
-      "categoryId": "appetizers",
+      "id": "calamari-e-zucchini-fritti",
+      "categoryId": "antipasti",
       "nameEs": "Calamari e Zucchini Fritti",
-      "nameEn": "Fried Calamari and Zucchini",
-      "descriptionEs": "Calamares y calabacines crujientes servidos con salsa de tomate picante.",
-      "descriptionEn": "Crispy fried calamari and zucchini served with spicy tomato sauce.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Seafood"
-      ],
+      "nameEn": "Calamari e Zucchini Fritti",
+      "descriptionEs": "calamares y calabacitas fritos servidos con salsa de tomate picante",
+      "descriptionEn": "fried calamari and zucchini served with spicy tomato sauce",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-02",
-      "categoryId": "appetizers",
+      "id": "capesante",
+      "categoryId": "antipasti",
+      "nameEs": "Capesante",
+      "nameEn": "Capesante",
+      "descriptionEs": "vieira de buzo sellada en sartén con maíz dulce, espárragos y reducción de balsámico añejo",
+      "descriptionEn": "pan-seared diver scallop with sweet corn, asparagus and aged balsamic drizzle",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-tiepida",
+      "categoryId": "antipasti",
       "nameEs": "Mozzarella Tiepida",
-      "nameEn": "Warm Buffalo Mozzarella",
-      "descriptionEs": "Mozzarella de búfala tibia sobre alcachofas estofadas con tomate Roma asado y prosciutto di Parma.",
-      "descriptionEn": "Warm buffalo mozzarella over braised artichokes with roasted Roma tomato and prosciutto di Parma.",
-      "price": "$20.00",
-      "popular": true,
-      "badge": "Chef's Pick",
-      "tags": [
-        "Queso",
-        "Fresco"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "nameEn": "Mozzarella Tiepida",
+      "descriptionEs": "mozzarella de búfala tibia sobre alcachofas estofadas con tomate Roma rostizado y prosciutto di Parma",
+      "descriptionEn": "warm buffalo mozzarella over braised artichokes with roasted Roma tomato and prosciutto di Parma",
+      "price": "$22.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-03",
-      "categoryId": "appetizers",
+      "id": "cozze-e-vongole-al-vino-bianco-o-al-pomodoro",
+      "categoryId": "antipasti",
+      "nameEs": "Cozze e Vongole al Vino Bianco o al Pomodoro",
+      "nameEn": "Cozze e Vongole al Vino Bianco o al Pomodoro",
+      "descriptionEs": "mejillones y almejas a su elección en vino blanco o con un toque de tomate",
+      "descriptionEn": "mussels and clams with your choice of white wine or a touch of tomato",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polpettine",
+      "categoryId": "antipasti",
+      "nameEs": "Polpettine",
+      "nameEn": "Polpettine",
+      "descriptionEs": "albóndigas caseras en salsa de tomate con ricotta salata rallada",
+      "descriptionEn": "homemade meatballs in tomato sauce with shaved ricotta salata",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carpaccio-di-manzo",
+      "categoryId": "antipasti",
       "nameEs": "Carpaccio di Manzo",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Filete miñón sellado en rodajas finas, cubierto con rúcula tierna y parmesano rallado.",
-      "descriptionEn": "Thinly sliced seared filet mignon topped with baby arugula and shaved Parmesan.",
-      "price": "$22.00",
-      "popular": false,
-      "badge": "Classic",
-      "tags": [
-        "Carne",
-        "Fino"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "nameEn": "Carpaccio di Manzo",
+      "descriptionEs": "filete miñón sellado en rodajas finas cubierto con rúcula tierna y parmesano rallado",
+      "descriptionEn": "thinly sliced seared filet mignon topped with baby arugula and shaved parmesan",
+      "price": "$21.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-04",
-      "categoryId": "appetizers",
+      "id": "burrata-caprese",
+      "categoryId": "antipasti",
       "nameEs": "Burrata Caprese",
       "nameEn": "Burrata Caprese",
-      "descriptionEs": "Tomates heirloom y burrata fresca con aceite de oliva virgen extra y hojas de albahaca.",
-      "descriptionEn": "Heirloom tomatoes and burrata with extra virgin olive oil and basilico leaves.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Vegetarian",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "descriptionEs": "tomates heirloom y burrata con aceite de oliva virgen extra y albahaca",
+      "descriptionEn": "heirloom tomatoes and burrata with extra virgin olive oil and basil",
+      "price": "$22.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-05",
-      "categoryId": "mains",
-      "nameEs": "Ravioli alla Aragosta",
-      "nameEn": "Lobster and Burrata Ravioli",
-      "descriptionEs": "Ravioles caseros rellenos de langosta y queso burrata con salsa de tomates cherry.",
-      "descriptionEn": "Homemade lobster and burrata cheese ravioli with cherry tomato sauce.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Bestseller",
-      "tags": [
-        "Casero",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Shellfish"
-      ],
+      "id": "antipasto-misto-for-2",
+      "categoryId": "antipasti",
+      "nameEs": "Antipasto Misto (for 2)",
+      "nameEn": "Antipasto Misto (for 2)",
+      "descriptionEs": "prosciutto di Parma en rodajas, mortadela, sopressata y quesos importados con aceitunas marinadas",
+      "descriptionEn": "sliced prosciutto di Parma, mortadella, sopressata and imported cheeses with marinated olives",
+      "price": "$26.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-06",
-      "categoryId": "mains",
-      "nameEs": "Lasagna Bolognese",
-      "nameEn": "Lasagna Bolognese",
-      "descriptionEs": "Lasaña casera en capas con ragú tradicional de cerdo y ternera.",
-      "descriptionEn": "Homemade lasagne layered with a pork and veal ragou.",
+      "id": "fritto-misto-for-2",
+      "categoryId": "antipasti",
+      "nameEs": "Fritto Misto (for 2)",
+      "nameEn": "Fritto Misto (for 2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$28.00",
-      "popular": true,
-      "badge": "Comfort Food",
-      "tags": [
-        "Horneado",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-07",
-      "categoryId": "mains",
+      "id": "fritto-misto-for-4",
+      "categoryId": "antipasti",
+      "nameEs": "Fritto Misto (for 4)",
+      "nameEn": "Fritto Misto (for 4)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-clams",
+      "categoryId": "antipasti",
+      "nameEs": "Baked Clams",
+      "nameEn": "Baked Clams",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zuppa-del-giorno",
+      "categoryId": "antipasti",
+      "nameEs": "Zuppa del Giorno",
+      "nameEn": "Zuppa del Giorno",
+      "descriptionEs": "sopa casera del día; precio de mercado",
+      "descriptionEn": "homemade soup of the day; market price",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-del-giorno",
+      "categoryId": "antipasti",
+      "nameEs": "Risotto del Giorno",
+      "nameEn": "Risotto del Giorno",
+      "descriptionEs": "risotto que cambia diariamente; precio de mercado",
+      "descriptionEn": "risotto that changes daily; market price",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lattuga-cicorie-e-pomodori",
+      "categoryId": "insalata",
+      "nameEs": "Lattuga Cicorie e Pomodori",
+      "nameEn": "Lattuga Cicorie e Pomodori",
+      "descriptionEs": "verduras orgánicas con achicoria y tomate fresco, vinagreta de vino tinto",
+      "descriptionEn": "organic greens with chicory and fresh tomato, red wine vinaigrette",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carpaccio-di-barbabietole",
+      "categoryId": "insalata",
+      "nameEs": "Carpaccio di Barbabietole",
+      "nameEn": "Carpaccio di Barbabietole",
+      "descriptionEs": "remolachas rostizadas con verduras tiernas, pistachos, queso de cabra y vinagreta balsámica",
+      "descriptionEn": "roasted beets with baby greens, pistachios, goat cheese and balsamic vinaigrette",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arentina-d-autunno",
+      "categoryId": "insalata",
+      "nameEs": "Arentina d'Autunno",
+      "nameEn": "Arentina d'Autunno",
+      "descriptionEs": "rúcula tierna, endibias y peras Bartlett con uvas rojas y queso cacio di fossa rallado",
+      "descriptionEn": "baby arugula, endive and Bartlett pears with red grapes and shaved cacio di fossa cheese",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-cesare",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Cesare",
+      "nameEn": "Insalata di Cesare",
+      "descriptionEs": "corazones de lechuga romana con aderezo de anchoas y picatostes de focaccia",
+      "descriptionEn": "hearts of romaine with anchovy dressing and focaccia croutons",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-pera",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Pera",
+      "nameEn": "Insalata di Pera",
+      "descriptionEs": "berros y peras con almendras y gorgonzola",
+      "descriptionEn": "watercress and pears with almonds and gorgonzola",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-carciofi",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Carciofi",
+      "nameEn": "Insalata di Carciofi",
+      "descriptionEs": "alcachofas laminadas, queso parmesano y vinagreta de trufa",
+      "descriptionEn": "shaved artichokes, parmesan cheese and truffle vinaigrette",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-arezzo",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Arezzo",
+      "nameEn": "Insalata di Arezzo",
+      "descriptionEs": "vegetales orgánicos picados con mozzarella de búfala y pollo orgánico a la parrilla (vegetariano a pedido)",
+      "descriptionEn": "chopped organic vegetables with buffalo mozzarella and organic grilled chicken (vegetarian on request)",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-polpo-alla-griglia",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Polpo alla Griglia",
+      "nameEn": "Insalata di Polpo alla Griglia",
+      "descriptionEs": "pulpo a la parrilla con papas cambray, cebollas rojas, alcaparras, ejotes, limón y aceite de oliva virgen extra",
+      "descriptionEn": "grilled octopus with marble potatoes, red onions, capers, green beans, lemon and extra virgin olive oil",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-nizzarda",
+      "categoryId": "insalata",
+      "nameEs": "Insalata Nizzarda",
+      "nameEn": "Insalata Nizzarda",
+      "descriptionEs": "atún italiano, papas hervidas, ejotes y huevos hervidos",
+      "descriptionEn": "Italian tuna, boiled potatoes, green beans and boiled eggs",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "insalata-di-mare",
+      "categoryId": "insalata",
+      "nameEs": "Insalata di Mare",
+      "nameEn": "Insalata di Mare",
+      "descriptionEs": "mezcla de mariscos cocinada suavemente y marinada con jugo de limón, hierbas y aceite de oliva virgen extra",
+      "descriptionEn": "seafood mix gently cooked and marinated with lemon juice, herbs and extra virgin olive oil",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-salad",
+      "categoryId": "insalata",
+      "nameEs": "Kale Salad",
+      "nameEn": "Kale Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-shell-appetizer",
+      "categoryId": "insalata",
+      "nameEs": "Soft Shell Appetizer",
+      "nameEn": "Soft Shell Appetizer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-con-funghi",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Fettuccine con Funghi",
+      "nameEn": "Fettuccine con Funghi",
+      "descriptionEs": "fideos planos caseros con hongos silvestres y un toque de aceite de trufa",
+      "descriptionEn": "homemade flat noodles with wild mushrooms and a touch of truffle oil",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli-all-aragosta",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Ravioli all'Aragosta",
+      "nameEn": "Ravioli all'Aragosta",
+      "descriptionEs": "ravioles caseros de langosta y burrata con salsa de tomatescherry",
+      "descriptionEn": "homemade lobster and burrata ravioli with cherry tomato sauce",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-alla-siciliana",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Penne alla Siciliana",
+      "nameEn": "Penne alla Siciliana",
+      "descriptionEs": "tomates, berenjena y mozzarella fresca",
+      "descriptionEn": "tomatoes, eggplant and fresh mozzarella",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-alla-chitarra",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
       "nameEs": "Spaghetti alla Chitarra",
       "nameEn": "Spaghetti alla Chitarra",
-      "descriptionEs": "Espagueti casero con albóndigas en salsa de tomate y albahaca, con ricota salada rallada.",
-      "descriptionEn": "Homemade spaghetti with meatballs in a tomato basilica sauce with shaved ricotta salata.",
-      "price": "$26.00",
-      "popular": false,
-      "badge": "Traditional",
-      "tags": [
-        "Pasta Fresca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "descriptionEs": "espagueti casero con albóndigas en salsa de tomate y albahaca con ricotta salata rallada",
+      "descriptionEn": "homemade spaghetti with meatballs in tomato basil sauce with shaved ricotta salata",
+      "price": "$23.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-08",
-      "categoryId": "mains",
+      "id": "lasagna-bolognese",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Lasagna Bolognese",
+      "nameEn": "Lasagna Bolognese",
+      "descriptionEs": "lasaña casera en capas con ragú de cerdo y ternera",
+      "descriptionEn": "homemade lasagna layered with pork and veal ragù",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trofie-al-pesto",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Trofie al Pesto",
+      "nameEn": "Trofie al Pesto",
+      "descriptionEs": "pasta fresca casera con camarones y pesto de albahaca",
+      "descriptionEn": "homemade fresh pasta with shrimp and basil pesto",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-all-amatriciana",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Rigatoni all'Amatriciana",
+      "nameEn": "Rigatoni all'Amatriciana",
+      "descriptionEs": "salsa de tomate, panceta, queso pecorino",
+      "descriptionEn": "tomato sauce, pancetta, pecorino cheese",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-ai-piselli",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Cavatelli ai Piselli",
+      "nameEn": "Cavatelli ai Piselli",
+      "descriptionEs": "cavatelli de ricotta caseros con sabor a chícharo con ragú de salchicha picante y dulce",
+      "descriptionEn": "homemade pea-flavored ricotta cavatelli with hot and sweet sausage ragout",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-bolognese",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Gnocchi Bolognese",
+      "nameEn": "Gnocchi Bolognese",
+      "descriptionEs": "ñoquis de papa artesanales con ragú de res cocinado a fuego lento",
+      "descriptionEn": "handmade potato dumplings with slow-cooked beef ragout",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-alle-vongole",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Linguine alle Vongole",
+      "nameEn": "Linguine alle Vongole",
+      "descriptionEs": "linguiine importado con almejas Manila y rúcula silvestre",
+      "descriptionEn": "imported linguine with Manila clams and wild arugula",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-with-braised-lamb-shank-ragout",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Pappardelle with Braised Lamb Shank Ragout",
+      "nameEn": "Pappardelle with Braised Lamb Shank Ragout",
+      "descriptionEs": "pappardelle casero infusionado con menta con ragú de cordero y pecorino",
+      "descriptionEn": "homemade mint-infused pappardelle with lamb ragout and pecorino",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tagliolini-nero-frutti-di-mare",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
       "nameEs": "Tagliolini Nero Frutti di Mare",
-      "nameEn": "Squid Ink Pasta Seafood",
-      "descriptionEs": "Pasta negra de calamar casera con camarones, vieiras, calamares, mejillones y almejas en salsa de tomate cherry.",
-      "descriptionEn": "Homemade squid ink pasta with shrimp, scallops, calamari, mussels, and clams in a cherry tomato sauce.",
-      "price": "$36.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Mariscos",
-        "Pasta Fresca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish"
-      ],
+      "nameEn": "Tagliolini Nero Frutti di Mare",
+      "descriptionEs": "pasta casera al tinta de calamar con camarones, vieiras, calamares, mejillones y almejas en salsa de tomate cherry",
+      "descriptionEn": "homemade squid ink pasta with shrimp, scallops, calamari, mussels and clams in cherry tomato sauce",
+      "price": "$30.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-09",
-      "categoryId": "specialties",
+      "id": "orecchiette-con-salsiccia-e-broccoli-rabe",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Orecchiette con Salsiccia e Broccoli Rabe",
+      "nameEn": "Orecchiette con Salsiccia e Broccoli Rabe",
+      "descriptionEs": "pasta fresca con salchicha italiana picante y dulce y brócoli rabe",
+      "descriptionEn": "fresh pasta with hot and sweet Italian sausage and broccoli rabe",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tagliolini-con-aragosta",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Tagliolini con Aragosta",
+      "nameEn": "Tagliolini con Aragosta",
+      "descriptionEs": "pasta casera con langosta de Maine, espárragos, tomates secos, cebollinos y salsa cremosa rosada",
+      "descriptionEn": "homemade pasta with Maine lobster, asparagus, sundried tomatoes, scallions and pink cream sauce",
+      "price": "$35.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quattro-formaggi-ravioli",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Quattro Formaggi Ravioli",
+      "nameEn": "Quattro Formaggi Ravioli",
+      "descriptionEs": "ravioles caseros con pecorino, parmesano, ricotta y queso de cabra, salsa de tomate San Marzano",
+      "descriptionEn": "homemade ravioli with pecorino, parmesan, ricotta and goat cheese, San Marzano tomato sauce",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-vodka",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Penne Vodka",
+      "nameEn": "Penne Vodka",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-vodka-with-shrimp",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Penne Vodka with Shrimp",
+      "nameEn": "Penne Vodka with Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Spaghetti Carbonara",
+      "nameEn": "Spaghetti Carbonara",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-primavera",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Penne Primavera",
+      "nameEn": "Penne Primavera",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-garlic-oil-with-shrimp",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Linguine con Ajo y Aceite con Camarones",
+      "nameEn": "Linguine Garlic & Oil with Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Fettuccine Alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-alfredo-with-shrimp",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Linguine Alfredo con Camarones",
+      "nameEn": "Linguine Alfredo with Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-risotto",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto de Mariscos",
+      "nameEn": "Seafood Risotto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$33.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-with-filet",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto con Filete",
+      "nameEn": "Risotto with Filet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-with-asparagus-salmon",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto con Espárragos y Salmón",
+      "nameEn": "Risotto with Asparagus & Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$33.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-parmigiano",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto Parmigiano",
+      "nameEn": "Risotto Parmigiano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-primavera",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto Primavera",
+      "nameEn": "Risotto Primavera",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-salsiccia-e-broccoli",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto Salsiccia e Broccoli",
+      "nameEn": "Risotto Salsiccia e Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-di-aragosta",
+      "categoryId": "pasta-risotto-gluten-free-pasta-available",
+      "nameEs": "Risotto di Aragosta",
+      "nameEn": "Risotto di Aragosta",
+      "descriptionEs": "risotto de langosta",
+      "descriptionEn": "lobster risotto",
+      "price": "$36.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polletto-al-forno-a-legna",
+      "categoryId": "secondi",
       "nameEs": "Polletto al Forno a Legna",
-      "nameEn": "Wood-Fired Organic Chicken",
-      "descriptionEs": "Pollo orgánico tierno asado en horno de leña, servido con coles de Bruselas y papas cambray.",
-      "descriptionEn": "Baby organic chicken roasted in our wood-burning oven served with Brussels sprouts and fingerling potatoes.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Sin Gluten",
-        "A La Leña"
-      ],
-      "allergens": [],
+      "nameEn": "Polletto al Forno a Legna",
+      "descriptionEs": "pollo orgánico tierno asado en horno de leña con coles de Bruselas y papas cambray",
+      "descriptionEn": "baby organic chicken roasted in the wood-burning oven with Brussels sprouts and fingerling potatoes",
+      "price": "$29.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-10",
-      "categoryId": "specialties",
+      "id": "cacciucco-alla-livornese",
+      "categoryId": "secondi",
       "nameEs": "Cacciucco alla Livornese",
-      "nameEn": "Livornese Fisherman’s Stew",
-      "descriptionEs": "Estofado de pescadores con camarones, vieiras y calamares en caldo de tomate con mejillones y almejas.",
-      "descriptionEn": "Fisherman’s stew with shrimp, scallops and calamari in a tomato broth with mussels and clams.",
-      "price": "$38.00",
-      "popular": false,
-      "badge": "Seafood Lover",
-      "tags": [
-        "Mariscos",
-        "Estofado"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
+      "nameEn": "Cacciucco alla Livornese",
+      "descriptionEs": "estofado de pescador con camarones, callos de hacha y calamar en caldo de tomate con mejillones y almejas",
+      "descriptionEn": "fisherman's stew with shrimp, scallops and calamari in tomato broth with mussels and clams",
+      "price": "$38.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-11",
-      "categoryId": "specialties",
-      "nameEs": "Pappardelle al Ragù di Agnello",
-      "nameEn": "Braised Lamb Shank Pappardelle",
-      "descriptionEs": "Pappardelle casero infundido con menta con ragú de cordero estofado y queso pecorino.",
-      "descriptionEn": "Homemade mint-infused pappardelle with lamb ragout and pecorino cheese.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Pasta Fresca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "grilled-filet-mignon",
+      "categoryId": "secondi",
+      "nameEs": "Filet Mignon a la Parrilla",
+      "nameEn": "Grilled Filet Mignon",
+      "descriptionEs": "con puré de papas trufado, espárragos y salsa bordalesa",
+      "descriptionEn": "with truffle mashed potatoes, asparagus and bordelaise sauce",
+      "price": "$41.95",
       "ctaType": "in_store"
     },
     {
-      "id": "arezzo-12",
-      "categoryId": "beverages",
-      "nameEs": "Chianti Classico Riserva",
-      "nameEn": "Chianti Classico Riserva Wine",
-      "descriptionEs": "Vino tinto toscano elegante con notas de frutos rojos maduros y especias.",
-      "descriptionEn": "Elegant Tuscan red wine featuring notes of ripe red berries and warm spices.",
+      "id": "saltimbocca-alla-romana",
+      "categoryId": "secondi",
+      "nameEs": "Saltimbocca alla Romana",
+      "nameEn": "Saltimbocca alla Romana",
+      "descriptionEs": "milanesa de ternera cubiertas con prosciutto di Parma y salvia, con puré de papas y ejotes",
+      "descriptionEn": "veal cutlet topped with prosciutto di Parma and sage, with mashed potatoes and green beans",
+      "price": "$34.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotoletta-di-vitello-alla-milanese",
+      "categoryId": "secondi",
+      "nameEs": "Cotoletta di Vitello alla Milanese",
+      "nameEn": "Cotoletta di Vitello alla Milanese",
+      "descriptionEs": "chuleta de ternera machacada y empanizada, frita en sartén, con ensalada de arúgula, jitomates cherry y mozzarella casera",
+      "descriptionEn": "pounded and breaded veal chop, pan fried, with arugula salad, cherry tomatoes and homemade mozzarella",
+      "price": "$41.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmone-alla-griglia",
+      "categoryId": "secondi",
+      "nameEs": "Salmone alla Griglia",
+      "nameEn": "Salmone alla Griglia",
+      "descriptionEs": "salmón del Atlántico con brotes de brócoli salteados, frijoles y jitomates uva",
+      "descriptionEn": "Atlantic salmon with sautéed broccoli rabe, beans and grape tomatoes",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "agnello-al-forno-a-legna",
+      "categoryId": "secondi",
+      "nameEs": "Agnello al Forno a Legna",
+      "nameEn": "Agnello al Forno a Legna",
+      "descriptionEs": "chuletas de cordero de Nueva Zelanda marinadas a la parrilla con papas asadas, ensalada de arúgula tierna y queso de cabra",
+      "descriptionEn": "grilled marinated New Zealand lamb chops with roasted potatoes, baby arugula salad and goat cheese",
+      "price": "$42.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino-al-forno",
+      "categoryId": "secondi",
+      "nameEs": "Branzino al Forno",
+      "nameEn": "Branzino al Forno",
+      "descriptionEs": "róbalo mediterráneo entero asado en horno de leña con espinacas salteadas y papas asadas",
+      "descriptionEn": "wood oven roasted whole Mediterranean sea bass with sautéed spinach and roasted potatoes",
+      "price": "$39.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistecca",
+      "categoryId": "secondi",
+      "nameEs": "Bistecca",
+      "nameEn": "Bistecca",
+      "descriptionEs": "corte estilo Nueva York de primera a la parrilla con papas fritas a la toscana, ensalada de arúgula y queso azul",
+      "descriptionEn": "grilled prime New York steak with Tuscan fries, arugula salad and bleu cheese",
+      "price": "$42.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-scarpariello",
+      "categoryId": "secondi",
+      "nameEs": "Pollo Scarpariello",
+      "nameEn": "Pollo Scarpariello",
+      "descriptionEs": "pollo salteado, salchicha de cerdo, papas y chiles cherry picantes",
+      "descriptionEn": "sautéed chicken, pork sausage, potatoes and hot cherry peppers",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "melanzane-al-forno",
+      "categoryId": "secondi",
+      "nameEs": "Melanzane al Forno",
+      "nameEn": "Melanzane al Forno",
+      "descriptionEs": "berenjena asada con ricotta de búfala, parmesano y salsa de tomate San Marzano, guarnición de pasta",
+      "descriptionEn": "roasted eggplant with buffalo ricotta, parmesan and San Marzano tomato sauce, side of pasta",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana-with-pasta",
+      "categoryId": "secondi",
+      "nameEs": "Pechuga a la Parmigiana con Pasta",
+      "nameEn": "Chicken Parmigiana with Pasta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$31.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-chop-parmigiana-with-pasta",
+      "categoryId": "secondi",
+      "nameEs": "Chuleta de Ternera a la Parmigiana con Pasta",
+      "nameEn": "Veal Chop Parmigiana with Pasta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$43.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-milanese",
+      "categoryId": "secondi",
+      "nameEs": "Pollo a la Milanesa",
+      "nameEn": "Chicken Milanese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-short-ribs",
+      "categoryId": "secondi",
+      "nameEs": "Costillas Cortas Braseadas",
+      "nameEn": "Braised Short Ribs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$39.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "halibut",
+      "categoryId": "secondi",
+      "nameEs": "Fletán",
+      "nameEn": "Halibut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$39.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ipoglosso-mediterraneo",
+      "categoryId": "secondi",
+      "nameEs": "Ipoglosso Mediterraneo",
+      "nameEn": "Ipoglosso Mediterraneo",
+      "descriptionEs": "fletán al estilo mediterráneo",
+      "descriptionEn": "Mediterranean-style halibut",
+      "price": "$39.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-snapper",
+      "categoryId": "secondi",
+      "nameEs": "Pargo Rojo",
+      "nameEn": "Red Snapper",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$37.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-marsala",
+      "categoryId": "secondi",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Pollo Marsala",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-francese",
+      "categoryId": "secondi",
+      "nameEs": "Pollo Francese",
+      "nameEn": "Pollo Francese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-saltimbocca",
+      "categoryId": "secondi",
+      "nameEs": "Pollo Saltimbocca",
+      "nameEn": "Pollo Saltimbocca",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$31.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-piccata",
+      "categoryId": "secondi",
+      "nameEs": "Pollo Piccata",
+      "nameEn": "Pollo Piccata",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotoletta-di-vitello-arrosto",
+      "categoryId": "secondi",
+      "nameEs": "Cotoletta di Vitello Arrosto",
+      "nameEn": "Cotoletta di Vitello Arrosto",
+      "descriptionEs": "chuleta de ternera asada",
+      "descriptionEn": "roasted veal chop",
+      "price": "$43.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-with-fries",
+      "categoryId": "secondi",
+      "nameEs": "Dedos de Pollo con Papas Fritas",
+      "nameEn": "Chicken Fingers with Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margherita-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza Margherita",
+      "nameEn": "Margherita Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza de Queso",
+      "nameEn": "Cheese Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "figs-prosciutto-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza de Higos y Prosciutto",
+      "nameEn": "Figs & Prosciutto Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-al-parma",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza al Parma",
+      "nameEn": "Pizza al Parma",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-contadina",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza Contadina",
+      "nameEn": "Pizza Contadina",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrata-caprese-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza Burrata Caprese",
+      "nameEn": "Burrata Caprese Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "focaccia-robiola-di-arezzo",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Focaccia Robiola di Arezzo",
+      "nameEn": "Focaccia Robiola di Arezzo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "four-seasons-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza Cuatro Estaciones",
+      "nameEn": "Four Seasons Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-al-pesto-e-gamberetti",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Pizza al Pesto e Gamberetti",
+      "nameEn": "Pizza al Pesto e Gamberetti",
+      "descriptionEs": "pesto y camarones",
+      "descriptionEn": "pesto and shrimp",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salsiccia-e-cipolla-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Salsiccia e Cipolla Pizza",
+      "nameEn": "Salsiccia e Cipolla Pizza",
+      "descriptionEs": "salchicha y cebolla",
+      "descriptionEn": "sausage and onion",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "funghi-pizza",
+      "categoryId": "wood-fired-pizza",
+      "nameEs": "Funghi Pizza",
+      "nameEn": "Funghi Pizza",
+      "descriptionEs": "hongos",
+      "descriptionEn": "mushroom",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-butter-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Penne con Mantequilla (Media)",
+      "nameEn": "Penne with Butter (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-butter",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Penne con Mantequilla",
+      "nameEn": "Penne with Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-tomato-sauce",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Penne con Salsa de Tomate",
+      "nameEn": "Penne with Tomato Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Wine",
-      "tags": [
-        "Alcohol",
-        "Italiano"
-      ],
-      "allergens": [
-        "Sulfites"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-meatballs",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Penne con Albóndigas",
+      "nameEn": "Penne with Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-vodka-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Penne Vodka (Media)",
+      "nameEn": "Penne Vodka (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-meatballs",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Spaghetti con Albóndigas",
+      "nameEn": "Spaghetti with Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-meatballs-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Spaghetti con Albóndigas (Media)",
+      "nameEn": "Spaghetti with Meatballs (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-tomato-sauce",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Spaghetti con Salsa de Tomate",
+      "nameEn": "Spaghetti with Tomato Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-butter-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Spaghetti con Mantequilla (Media)",
+      "nameEn": "Spaghetti with Butter (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-garlic-oil",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Linguine con Ajo y Aceite",
+      "nameEn": "Linguine Garlic & Oil",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-butter",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Linguine con Mantequilla",
+      "nameEn": "Linguine with Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-bolognese-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Linguine Bolognese (Media)",
+      "nameEn": "Linguine Bolognese (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-red-sauce-half",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Linguine con Salsa Roja (Media)",
+      "nameEn": "Linguine with Red Sauce (Half)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers",
+      "categoryId": "simple-pastas-half-portions",
+      "nameEs": "Dedos de pollo",
+      "nameEn": "Chicken Fingers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-asparagus",
+      "categoryId": "sides",
+      "nameEs": "Espárragos de acompañamiento",
+      "nameEn": "Side Asparagus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-broccoli-rabe",
+      "categoryId": "sides",
+      "nameEs": "Broccoli Rabe de acompañamiento",
+      "nameEn": "Side Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-brussels-sprouts",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas de acompañamiento",
+      "nameEn": "Side Brussels Sprouts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas de acompañamiento",
+      "nameEn": "Side Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-green-beans",
+      "categoryId": "sides",
+      "nameEs": "Ejotes de acompañamiento",
+      "nameEn": "Side Green Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-mashed-potato",
+      "categoryId": "sides",
+      "nameEs": "Puré de papa de acompañamiento",
+      "nameEn": "Side Mashed Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-mushrooms",
+      "categoryId": "sides",
+      "nameEs": "Hongos de acompañamiento",
+      "nameEn": "Side Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-roasted-potato",
+      "categoryId": "sides",
+      "nameEs": "Papas asadas de acompañamiento",
+      "nameEn": "Side Roasted Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinacas de acompañamiento",
+      "nameEn": "Side Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-bread",
+      "categoryId": "sides",
+      "nameEs": "Pan de acompañamiento",
+      "nameEn": "Side Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-tomato-sauce",
+      "categoryId": "sides",
+      "nameEs": "Salsa de tomate de acompañamiento",
+      "nameEn": "Side Tomato Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panna-cotta",
+      "categoryId": "desserts",
+      "nameEs": "Panna Cotta",
+      "nameEn": "Panna Cotta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisù",
+      "nameEn": "Tiramisù",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-pudding",
+      "categoryId": "desserts",
+      "nameEs": "Budín de pan",
+      "nameEn": "Bread Pudding",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creme-brulee",
+      "categoryId": "desserts",
+      "nameEs": "Crème Brûlée",
+      "nameEn": "Crème Brûlée",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gelato",
+      "categoryId": "desserts",
+      "nameEs": "Gelato",
+      "nameEn": "Gelato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sorbet",
+      "categoryId": "desserts",
+      "nameEs": "Sorbete",
+      "nameEn": "Sorbet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-cannoli",
+      "categoryId": "desserts",
+      "nameEs": "Mini Cannoli",
+      "nameEn": "Mini Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli",
+      "categoryId": "desserts",
+      "nameEs": "Cannoli",
+      "nameEn": "Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate",
+      "nameEn": "Chocolate Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscotti",
+      "categoryId": "desserts",
+      "nameEs": "Biscotti",
+      "nameEn": "Biscotti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "limoncello",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Limoncello",
+      "nameEn": "Limoncello",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandeman-20-year-port",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Sandeman 20 Year Port",
+      "nameEn": "Sandeman 20 Year Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandeman-12-year-port",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Sandeman 12 Year Port",
+      "nameEn": "Sandeman 12 Year Port",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sambuca-romana",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Sambuca Romana",
+      "nameEn": "Sambuca Romana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-sambuca-romana",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Black Sambuca Romana",
+      "nameEn": "Black Sambuca Romana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frangelico",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Frangelico",
+      "nameEn": "Frangelico",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kahlua",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Kahlúa",
+      "nameEn": "Kahlúa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grand-marnier",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Grand Marnier",
+      "nameEn": "Grand Marnier",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caffo-grappa",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Caffo Grappa",
+      "nameEn": "Caffo Grappa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baileys",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Baileys",
+      "nameEn": "Baileys",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "godiva-liqueur",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Godiva Liqueur",
+      "nameEn": "Godiva Liqueur",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "campari",
+      "categoryId": "after-dinner-drinks",
+      "nameEs": "Campari",
+      "nameEn": "Campari",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, ofrecemos opciones sin gluten para pastas seleccionadas y una variedad de platos vegetarianos. Por favor, avise a su servidor sobre cualquier alergia.",
-      "aEn": "Yes, we offer gluten-free pasta options and a variety of vegetarian dishes. Please inform your server of any allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones y fiestas privadas?",
-      "qEn": "Do you accept reservations and private parties?",
-      "aEs": "¡Sí! Aceptamos reservaciones en línea y por teléfono, y contamos con espacios especiales para eventos y fiestas privadas.",
-      "aEn": "Yes! We accept online and phone reservations, and we offer dedicated spaces for private parties and events."
-    }
-  ]
+  "faqs": []
 }
