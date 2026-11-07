@@ -35,7 +35,7 @@ def build_prime_burger():
                 "returnPolicyEs": "Molido fresco todos los días; infórmenos de inmediato si desea que ajustemos su término o preparación.",
                 "returnPolicyEn": "Ground fresh daily; please let us know immediately if you need any adjustments to your order.",
             },
-            "phone": "(203) 431-7734"
+            "phone": "(203) 431-3000"
         },
         "categories": [
             {"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"},
@@ -295,6 +295,17 @@ def build_prime_burger():
                 "category": "papas-sides",
                 "badge": None,
                 "allergens": ["Vegetarian", "Vegan"]
+            },
+            {
+                "id": "fried-pickles",
+                "nameEs": "Pepinillos Fritos",
+                "nameEn": "Fried Pickles",
+                "descriptionEs": "Servidos con salsa Prime.",
+                "descriptionEn": "Served w/ Prime Sauce.",
+                "price": 4.49,
+                "category": "papas-sides",
+                "badge": None,
+                "allergens": []
             },
 
             # --- BATIDOS Y SHAKES ---
