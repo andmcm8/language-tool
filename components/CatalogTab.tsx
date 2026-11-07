@@ -31,6 +31,11 @@ interface CatalogTabProps {
   lang: "es" | "en";
 }
 
+/** Some official menus publish no prices; say so instead of rendering an empty badge. */
+function priceLabel(price: string | undefined, lang: "es" | "en"): string {
+  return price?.trim() ? price : lang === "es" ? "Consultar precio" : "Ask for price";
+}
+
 export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -220,7 +225,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                       {lang === "es" ? item.nameEs : item.nameEn}
                     </h3>
                     <span className="font-extrabold text-xs text-primary shrink-0">
-                      {item.price}
+                      {priceLabel(item.price, lang)}
                     </span>
                   </div>
                   <p className="text-[11px] text-on-surface-variant line-clamp-1 mt-0.5">
@@ -303,7 +308,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                 </div>
 
                 <div className="mt-2.5 flex items-center justify-between pt-1 border-t border-outline-variant/20">
-                  <span className="font-extrabold text-xs text-primary">{item.price}</span>
+                  <span className="font-extrabold text-xs text-primary">{priceLabel(item.price, lang)}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-on-surface-variant" />
                 </div>
               </div>
@@ -336,7 +341,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                     {lang === "es" ? selectedItem.nameEs : selectedItem.nameEn}
                   </h3>
                   <span className="text-xs font-black text-white bg-primary px-2 py-0.5 rounded-md">
-                    {selectedItem.price}
+                    {priceLabel(selectedItem.price, lang)}
                   </span>
                 </div>
               </div>
@@ -353,7 +358,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                   </h3>
                 </div>
                 <div className="inline-block text-xs font-black text-primary bg-secondary-fixed px-2.5 py-1 rounded-xl">
-                  {selectedItem.price}
+                  {priceLabel(selectedItem.price, lang)}
                 </div>
               </div>
             )}

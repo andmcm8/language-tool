@@ -1,27 +1,21 @@
 {
   "storeInfo": {
     "id": "catch-a-healthy-habit-cafe",
-    "name": "Catch A Healthy Habit Cafe",
-    "tagline": "Clean, gluten-free, seed oil-free food and drinks / Comida y bebidas limpias, sin gluten y sin aceites de semillas",
+    "name": "Clean Slate (formerly Catch A Healthy Habit)",
+    "tagline": "Clean, gluten-free cafe: coffee, juices, smoothies, bowls & toasts | Café limpio y sin gluten: café, jugos, batidos, bowls y tostadas",
     "address": "116 Sherman Street, Fairfield, CT 06824",
-    "phone": "",
+    "phone": "(203) 292-8190",
     "hours": {
       "monday_friday": "8:00 AM - 4:00 PM",
       "saturday": "9:00 AM - 3:00 PM",
       "sunday": "9:00 AM - 3:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Plant-Based Options",
-      "Gluten-Free"
+      "Gluten-Free",
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,299 +27,778 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "coffee_bar",
-      "nameEs": "Bar de Café",
+      "id": "coffee-bar",
+      "nameEs": "Barra de Café",
       "nameEn": "Coffee Bar",
-      "icon": "Coffee"
+      "icon": "Utensils"
+    },
+    {
+      "id": "matcha-hot-elixirs",
+      "nameEs": "Matcha y Elíxires Calientes",
+      "nameEn": "Matcha & Hot Elixirs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "juices",
+      "nameEs": "Jugos",
+      "nameEn": "Juices",
+      "icon": "Utensils"
+    },
+    {
+      "id": "shots",
+      "nameEs": "Shots",
+      "nameEn": "Shots",
+      "icon": "Utensils"
     },
     {
       "id": "smoothies",
-      "nameEs": "Batidos",
-      "icon": "Coffee",
-      "nameEn": "Smoothies"
+      "nameEs": "Smoothies",
+      "nameEn": "Smoothies",
+      "icon": "Utensils"
     },
     {
-      "id": "smoothie_bowls",
-      "nameEs": "Bowls de Batidos",
+      "id": "smoothie-bowls",
+      "nameEs": "Smoothie Bowls",
       "nameEn": "Smoothie Bowls",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Toasts y Paninis",
-      "nameEn": "Toasts & Wraps",
+      "id": "toasts",
+      "nameEs": "Tostadas",
+      "nameEn": "Toasts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "flatbreads",
+      "nameEs": "Flatbreads",
+      "nameEn": "Flatbreads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches-wraps",
+      "nameEs": "Sándwiches y wraps",
+      "nameEn": "Sandwiches & Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "drinks-snacks",
+      "nameEs": "Bebidas y snacks",
+      "nameEn": "Drinks & Snacks",
       "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "catch-a-healthy-habit-cafe-01",
-      "categoryId": "coffee_bar",
-      "nameEs": "Latte con Jarabe de Vainilla Casero",
-      "nameEn": "Latte with Housemade Vanilla Syrup",
-      "descriptionEs": "Espresso rico con leche de su elección y nuestro jarabe de vainilla hecho en casa.",
-      "descriptionEn": "Rich espresso combined with your choice of milk and our signature house-made vanilla syrup.",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Café",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Dairy Optional"
-      ],
+      "id": "drip-coffee",
+      "categoryId": "coffee-bar",
+      "nameEs": "Café Filtrado",
+      "nameEn": "Drip Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-02",
-      "categoryId": "coffee_bar",
-      "nameEs": "Matcha Elixir",
-      "nameEn": "Matcha Elixir",
-      "descriptionEs": "Vibrante té matcha ceremonial preparado con ingredientes limpios y espumosos.",
-      "descriptionEn": "Vibrant ceremonial grade matcha whisked to perfection with clean ingredients and frothy plant milk.",
-      "price": "$7.00",
-      "popular": true,
-      "badge": "Energy",
-      "tags": [
-        "Superfood",
-        "Plant-Based"
-      ],
-      "allergens": [],
+      "id": "espresso",
+      "categoryId": "coffee-bar",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "Sencillo o doble",
+      "descriptionEn": "Single or double",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-03",
-      "categoryId": "coffee_bar",
-      "nameEs": "Café Cold Brew con Butterscotch",
-      "nameEn": "Butterscotch Cold Brew",
-      "descriptionEs": "Café frío preparado lentamente, servido con hielo y nuestro toque dulce de butterscotch casero.",
-      "descriptionEn": "Slow-steeped cold brew coffee served over ice with our decadent house-made butterscotch sweetness.",
-      "price": "$6.75",
-      "popular": false,
-      "badge": "New",
-      "tags": [
-        "Cold Brew",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "cappuccino",
+      "categoryId": "coffee-bar",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-04",
+      "id": "americano",
+      "categoryId": "coffee-bar",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "latte",
+      "categoryId": "coffee-bar",
+      "nameEs": "Latte",
+      "nameEn": "Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mocha",
+      "categoryId": "coffee-bar",
+      "nameEs": "Mocha",
+      "nameEn": "Mocha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cortado",
+      "categoryId": "coffee-bar",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flat-white",
+      "categoryId": "coffee-bar",
+      "nameEs": "Flat White",
+      "nameEn": "Flat White",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macchiato",
+      "categoryId": "coffee-bar",
+      "nameEs": "Macchiato",
+      "nameEn": "Macchiato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dirty-chai-latte",
+      "categoryId": "coffee-bar",
+      "nameEs": "Dirty Chai Latte",
+      "nameEn": "Dirty Chai Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elevated",
+      "categoryId": "coffee-bar",
+      "nameEs": "Elevado",
+      "nameEn": "Elevated",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-brew",
+      "categoryId": "coffee-bar",
+      "nameEs": "Cold Brew",
+      "nameEn": "Cold Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butterscotch",
+      "categoryId": "coffee-bar",
+      "nameEs": "Butterscotch",
+      "nameEn": "Butterscotch",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "housemade-syrups-purees",
+      "categoryId": "coffee-bar",
+      "nameEs": "Jarabes y Purés Caseros",
+      "nameEn": "Housemade Syrups & Purees",
+      "descriptionEs": "Vainilla, chocolate, especias de calabaza, arándano azul, fresa, mango y manzana con cardamomo",
+      "descriptionEn": "Vanilla, chocolate, pumpkin spice, blueberry, strawberry, mango & apple cardamom",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-maple-syrup",
+      "categoryId": "coffee-bar",
+      "nameEs": "Miel y Jarabe de Arce",
+      "nameEn": "Honey & Maple Syrup",
+      "descriptionEs": "¡Pruébalo salado!",
+      "descriptionEn": "Try it salted!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Matcha",
+      "nameEn": "Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "magic-mushroom",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Magic Mushroom",
+      "nameEn": "Magic Mushroom",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "golden",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Golden",
+      "nameEn": "Golden",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Chocolate Caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Té Caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chai-latte",
+      "categoryId": "matcha-hot-elixirs",
+      "nameEs": "Chai Latte",
+      "nameEn": "Chai Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-tara",
+      "categoryId": "juices",
+      "nameEs": "The Tara",
+      "nameEn": "The Tara",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood",
+      "categoryId": "juices",
+      "nameEs": "Blood",
+      "nameEn": "Blood",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popeye",
+      "categoryId": "juices",
+      "nameEs": "Popeye",
+      "nameEn": "Popeye",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "celery",
+      "categoryId": "juices",
+      "nameEs": "Apio",
+      "nameEn": "Celery",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito",
+      "categoryId": "juices",
+      "nameEs": "Mojito",
+      "nameEn": "Mojito",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange",
+      "categoryId": "juices",
+      "nameEs": "Naranja",
+      "nameEn": "Orange",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pucker-up",
+      "categoryId": "juices",
+      "nameEs": "Pucker Up",
+      "nameEn": "Pucker Up",
+      "descriptionEs": "Botella de 12 oz, o vaso de 16 oz / 20 oz",
+      "descriptionEn": "12 oz bottle, or 16 oz / 20 oz cup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-shot",
+      "categoryId": "shots",
+      "nameEs": "Shot de Jengibre",
+      "nameEn": "Ginger Shot",
+      "descriptionEs": "Botella de 3 oz",
+      "descriptionEn": "3 oz bottle",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-shot",
+      "categoryId": "shots",
+      "nameEs": "Shot Cargado",
+      "nameEn": "Loaded Shot",
+      "descriptionEs": "Botella de 3 oz",
+      "descriptionEn": "3 oz bottle",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheatgrass-shot",
+      "categoryId": "shots",
+      "nameEs": "Shot de Pasto de Trigo",
+      "nameEn": "Wheatgrass Shot",
+      "descriptionEs": "1 oz o 2 oz",
+      "descriptionEn": "1 oz or 2 oz",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "minty-chip",
       "categoryId": "smoothies",
-      "nameEs": "Batido Minty Chip",
-      "nameEn": "Minty Chip Smoothie",
-      "descriptionEs": "Menta fresca, nibs de cacao, ingredientes vegetales limpios y base frutal revitalizante.",
-      "descriptionEn": "Refreshing fresh mint, cacao nibs, clean plant-based ingredients, and a revitalizing fruit base.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Favorite",
-      "tags": [
-        "Plant-Based",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Nuts"
-      ],
+      "nameEs": "Minty Chip",
+      "nameEn": "Minty Chip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-05",
+      "id": "key-lime-pie",
       "categoryId": "smoothies",
-      "nameEs": "Batido Key Lime Pie",
-      "nameEn": "Key Lime Pie Smoothie",
-      "descriptionEs": "Deliciosa combinación inspirada en el clásico pay de limón, elaborada con ingredientes 100% limpios.",
-      "descriptionEn": "A delectable pie-inspired blend crafted with real citrus, greens, and wholesome plant ingredients.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Refreshing",
-      "tags": [
-        "Vegan",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "nameEs": "Key Lime Pie",
+      "nameEn": "Key Lime Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-06",
+      "id": "holy-cacao",
       "categoryId": "smoothies",
-      "nameEs": "Batido Holy Cacao",
-      "nameEn": "Holy Cacao Smoothie",
-      "descriptionEs": "Cacao puro cargado de antioxidantes, plátano y súper alimentos para calmar tus antojos de chocolate.",
-      "descriptionEn": "Antioxidant-rich pure cacao blended with banana and superfood add-ins to satisfy your chocolate cravings.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Superfood",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "nameEs": "Holy Cacao",
+      "nameEn": "Holy Cacao",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-07",
+      "id": "nutnog",
       "categoryId": "smoothies",
-      "nameEs": "Batido Grateful Green",
-      "nameEn": "Grateful Green Smoothie",
-      "descriptionEs": "Verdes frescos de granja, frutas seleccionadas y aditivos saludables para recargar tu energía.",
-      "descriptionEn": "Farm-fresh greens, select fruits, and clean wellness boosters to fuel your day naturally.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Healthy",
-      "tags": [
-        "Green",
-        "Detox"
-      ],
-      "allergens": [],
+      "nameEs": "Nutnog",
+      "nameEn": "Nutnog",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-08",
-      "categoryId": "smoothie_bowls",
-      "nameEs": "Bowl Ahh-Cai",
-      "nameEn": "Ahh-Cai Smoothie Bowl",
-      "descriptionEs": "Base espesa de açaí coronada con fruta fresca crujiente, semillas de chía, cáñamo y granola casera.",
-      "descriptionEn": "Thick organic açaí base topped with fresh fruit crunch, chia seeds, hemp seeds, and clean granola.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Best Seller",
-      "tags": [
-        "Superfood",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Tree Nuts"
-      ],
+      "id": "pina-colada",
+      "categoryId": "smoothies",
+      "nameEs": "Piña Colada",
+      "nameEn": "Piña Colada",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-09",
-      "categoryId": "smoothie_bowls",
-      "nameEs": "Bowl Chocolate Monkey",
-      "nameEn": "Chocolate Monkey Bowl",
-      "descriptionEs": "Base cremosa de chocolate y plátano cubierta con mantequilla de almendra, nibs de cacao y plátano caramelizado.",
-      "descriptionEn": "Creamy chocolate banana base topped with almond butter, cacao nibs, and caramelized banana slices.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Indulgent",
-      "tags": [
-        "Plant-Based",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Tree Nuts"
-      ],
+      "id": "tropical-trip",
+      "categoryId": "smoothies",
+      "nameEs": "Tropical Trip",
+      "nameEn": "Tropical Trip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-10",
-      "categoryId": "mains",
-      "nameEs": "Toast de Aguacate",
+      "id": "the-express",
+      "categoryId": "smoothies",
+      "nameEs": "The Express",
+      "nameEn": "The Express",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "funky-monkey",
+      "categoryId": "smoothies",
+      "nameEs": "Funky Monkey",
+      "nameEn": "Funky Monkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grateful-green",
+      "categoryId": "smoothies",
+      "nameEs": "Grateful Green",
+      "nameEn": "Grateful Green",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-dream",
+      "categoryId": "smoothies",
+      "nameEs": "Blueberry Dream",
+      "nameEn": "Blueberry Dream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "superfood-hero",
+      "categoryId": "smoothies",
+      "nameEs": "Superfood Hero",
+      "nameEn": "Superfood Hero",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peruvian-passion",
+      "categoryId": "smoothies",
+      "nameEs": "Peruvian Passion",
+      "nameEn": "Peruvian Passion",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-chocolate",
+      "categoryId": "smoothies",
+      "nameEs": "Chocolate Mexicano",
+      "nameEn": "Mexican Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-boat",
+      "categoryId": "smoothies",
+      "nameEs": "Banana Boat",
+      "nameEn": "Banana Boat",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-boat-with-strawberry",
+      "categoryId": "smoothies",
+      "nameEs": "Banana Boat con Fresa",
+      "nameEn": "Banana Boat with Strawberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-covered-strawberry",
+      "categoryId": "smoothies",
+      "nameEs": "Fresa Cubierta de Chocolate",
+      "nameEn": "Chocolate Covered Strawberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconilla",
+      "categoryId": "smoothies",
+      "nameEs": "Coconilla",
+      "nameEn": "Coconilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahh-cai",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Ahh-Cai",
+      "nameEn": "Ahh-Cai",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-monkey",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Chocolate Monkey",
+      "nameEn": "Chocolate Monkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-moon",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Blue Moon",
+      "nameEn": "Blue Moon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-own-bowl",
+      "categoryId": "smoothie-bowls",
+      "nameEs": "Crea tu Propio Bowl",
+      "nameEn": "Create Your Own Bowl",
+      "descriptionEs": "Tu elección de base y 3 toppings: chía, nibs, semilla de cáñamo, granola, coco, nuez, goji, pasas, plátano, Rawtella, arándano azul, fresa, masa de galleta, chispas de chocolate, mantequilla de almendra, plátano caramelizado",
+      "descriptionEn": "Your choice of base and 3 toppings: chia, nibs, hemp seed, granola, coconut, walnut, goji, raisins, banana, Rawtella, blueberry, strawberry, cookie dough, chocolate chips, almond butter, caramelized banana",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada de Aguacate",
       "nameEn": "Avocado Toast",
-      "descriptionEs": "Pan tostado artesanal sin gluten cubierto con puré de aguacate fresco, limón y especias seleccionadas.",
-      "descriptionEn": "Artisanal gluten-free toast topped with smashed fresh avocado, citrus kick, and clean seasonings.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [],
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-11",
-      "categoryId": "mains",
-      "nameEs": "Toast de Salmón Ahumado",
+      "id": "smoked-salmon-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada de Salmón Ahumado",
       "nameEn": "Smoked Salmon Toast",
-      "descriptionEs": "Exquisito salmón ahumado sobre pan tostado sin gluten con aguacate y ingredientes limpios.",
-      "descriptionEn": "Premium smoked salmon layered over gluten-free toast with avocado and clean garnishes.",
-      "price": "$14.50",
-      "popular": false,
-      "badge": "Chef Special",
-      "tags": [
-        "Sin Gluten",
-        "Proteína"
-      ],
-      "allergens": [
-        "Fish"
-      ],
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-12",
-      "categoryId": "mains",
-      "nameEs": "Flatbread de Tomate y Mozzarella",
+      "id": "hummus-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada de Hummus",
+      "nameEn": "Hummus Toast",
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hard-boiled-egg-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada de Huevo Duro",
+      "nameEn": "Hard Boiled Egg Toast",
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rawtella-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada Rawtella",
+      "nameEn": "Rawtella Toast",
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada de durazno",
+      "nameEn": "Peach Toast",
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ab-j-toast",
+      "categoryId": "toasts",
+      "nameEs": "Tostada AB-J",
+      "nameEn": "AB-J Toast",
+      "descriptionEs": "Tostada sin gluten",
+      "descriptionEn": "Gluten-free toast",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-mozz-flatbread",
+      "categoryId": "flatbreads",
+      "nameEs": "Flatbread de tomate y mozzarella",
       "nameEn": "Tomato Mozz Flatbread",
-      "descriptionEs": "Masa plana sin gluten crujiente con tomate fresco, mozzarella selecta y hierbas aromáticas.",
-      "descriptionEn": "Crispy gluten-free flatbread topped with ripe tomatoes, select mozzarella, and aromatic herbs.",
-      "price": "$13.00",
-      "popular": true,
-      "badge": "Comfort",
-      "tags": [
-        "Sin Gluten",
-        "Sin Aceite de Semillas"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-13",
-      "categoryId": "mains",
-      "nameEs": "Wrap Nori Vegano",
+      "id": "mushroom-flatbread",
+      "categoryId": "flatbreads",
+      "nameEs": "Flatbread de hongos",
+      "nameEn": "Mushroom Flatbread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-vegetable-flatbread",
+      "categoryId": "flatbreads",
+      "nameEs": "Flatbread de vegetales picantes",
+      "nameEn": "Spicy Vegetable Flatbread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de pavo",
+      "nameEn": "Turkey Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nori-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Wrap de nori",
       "nameEn": "Nori Wrap",
-      "descriptionEs": "Hoja de nori crujiente rellena de vegetales frescos, brotes y aderezo especial de la casa.",
-      "descriptionEn": "Crispy nori sheet packed with fresh garden vegetables, sprouts, and house specialty spread.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Vegan",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "catch-a-healthy-habit-cafe-14",
-      "categoryId": "mains",
-      "nameEs": "Ensalada Mediterránea",
+      "id": "bagel",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "'Bagel'",
+      "nameEn": "'Bagel'",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Harvest",
+      "nameEn": "Harvest Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mediterránea",
       "nameEn": "Mediterranean Salad",
-      "descriptionEs": "Mezcla de verdes frescos, aceitunas, pepino, tomate y aderezo libre de aceites de semillas.",
-      "descriptionEn": "Crisp greens, olives, cucumber, tomatoes, and clean dressing free of seed oils.",
-      "price": "$13.50",
-      "popular": false,
-      "badge": "Healthy",
-      "tags": [
-        "Ensalada",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "water",
+      "categoryId": "drinks-snacks",
+      "nameEs": "Agua",
+      "nameEn": "Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kombucha",
+      "categoryId": "drinks-snacks",
+      "nameEs": "Kombucha",
+      "nameEn": "Kombucha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-snacks",
+      "categoryId": "drinks-snacks",
+      "nameEs": "Snacks variados",
+      "nameEn": "Assorted Snacks",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones sin gluten y sin aceites de semillas?",
-      "qEn": "Do you offer gluten-free and seed oil-free options?",
-      "aEs": "¡Sí! Toda nuestra carta está libre de gluten y de aceites de semillas refinados, elaborada con ingredientes limpios y conscientes.",
-      "aEn": "Yes! Our entire menu is 100% gluten-free and seed oil-free, made with thoughtful, wholesome ingredients."
-    },
-    {
-      "qEs": "¿Tienen opciones aptas para veganos?",
-      "qEn": "Do you offer plant-based or vegan options?",
-      "aEs": "Sí, la mayoría de nuestros platos y batidos son de origen vegetal, con opciones lácteas opcionales bajo pedido.",
-      "aEn": "Yes, mostly plant-based with select dairy and protein options available upon request."
-    }
-  ]
+  "faqs": []
 }

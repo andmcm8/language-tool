@@ -23,7 +23,7 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
     if (catProducts.length > 0) {
       menuLines.push(`\n[CATEGORY: ${cat.nameEn || cat.nameEs} / ${cat.nameEs}]`);
       catProducts.forEach((prod) => {
-        let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price}`;
+        let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed on the official menu (tell the guest to ask staff)"}`;
         if (prod.descriptionEn || prod.descriptionEs) {
           line += `\n  Description: ${prod.descriptionEn || prod.descriptionEs}`;
           if (prod.descriptionEs && prod.descriptionEs !== prod.descriptionEn) {
@@ -50,7 +50,7 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
   if (uncategorized.length > 0) {
     menuLines.push(`\n[OTHER MENU ITEMS]`);
     uncategorized.forEach((prod) => {
-      let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price}`;
+      let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed on the official menu (tell the guest to ask staff)"}`;
       if (prod.descriptionEn) line += ` - ${prod.descriptionEn}`;
       if (prod.tags && prod.tags.length > 0) line += ` [${prod.tags.join(", ")}]`;
       menuLines.push(line);
@@ -230,7 +230,7 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
     });
 
     if (matched.length === 0) matched = products.slice(0, 3);
-    const itemsList = matched.slice(0, 4).map((i) => `${isEnglish ? i.nameEn : i.nameEs} (${i.price})`).join(", ");
+    const itemsList = matched.slice(0, 4).map((i) => `${isEnglish ? i.nameEn : i.nameEs}${i.price?.trim() ? ` (${i.price})` : ""}`).join(", ");
 
     return isEnglish
       ? `We offer options to accommodate dietary needs at ${info.name}! Recommended items: ${itemsList}. Please inform our team of any specific allergies when ordering.`
@@ -248,7 +248,7 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
   ) {
     const populars = products.filter((prod) => prod.popular || prod.badge);
     const list = (populars.length > 0 ? populars : products).slice(0, 3);
-    const listStr = list.map((i) => `${isEnglish ? i.nameEn : i.nameEs} (${i.price})`).join(", ");
+    const listStr = list.map((i) => `${isEnglish ? i.nameEn : i.nameEs}${i.price?.trim() ? ` (${i.price})` : ""}`).join(", ");
 
     return isEnglish
       ? `Guest favorites at ${info.name} include: ${listStr}. Would you like more details on any of these dishes?`
@@ -267,8 +267,12 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
       const name = isEnglish ? prod.nameEn : prod.nameEs;
       const desc = isEnglish ? prod.descriptionEn : prod.descriptionEs;
       return isEnglish
-        ? `${name} is available for ${prod.price}. ${desc}`
-        : `${name} está disponible por ${prod.price}. ${desc}`;
+        ? prod.price?.trim()
+          ? `${name} is available for ${prod.price}. ${desc}`
+          : `${name} is on the menu. Please ask staff for the price. ${desc}`
+        : prod.price?.trim()
+          ? `${name} está disponible por ${prod.price}. ${desc}`
+          : `${name} está en el menú. Por favor pregunte el precio al personal. ${desc}`;
     }
   }
 
@@ -290,7 +294,7 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
       .map((c) => (isEnglish ? c.nameEn : c.nameEs))
       .filter((c) => !c.toLowerCase().includes("all") && !c.toLowerCase().includes("todos"));
     const catStr = catNames.length > 0 ? catNames.join(", ") : "our signature items";
-    const sampleItems = products.slice(0, 3).map((i) => `${isEnglish ? i.nameEn : i.nameEs} (${i.price})`).join(", ");
+    const sampleItems = products.slice(0, 3).map((i) => `${isEnglish ? i.nameEn : i.nameEs}${i.price?.trim() ? ` (${i.price})` : ""}`).join(", ");
 
     return isEnglish
       ? `Our menu at ${info.name} features ${catStr}. Top items include: ${sampleItems}. You can explore the full catalog in the Menu tab!`
