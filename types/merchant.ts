@@ -77,4 +77,6 @@ export interface MerchantConfig {
   categories: Category[];
   products: Product[];
   faqs: Faq[];
+  /** Set by the server from data/verified-menus.json; false = AI-generated, unconfirmed menu. */
+  menuVerified?: boolean;
 }

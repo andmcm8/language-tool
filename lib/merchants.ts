@@ -1,5 +1,6 @@
 import { MerchantConfig } from "@/types/merchant";
 import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
+import VERIFIED_MENUS from "@/data/verified-menus.json";
 
 /*
  * SERVER-ONLY: this module imports every merchant JSON (~27 MB). Import it
@@ -58,9 +59,15 @@ export function hasMerchant(id: string): boolean {
   return resolveMerchantKey(id) !== null;
 }
 
+/** Menus listed in data/verified-menus.json were taken from the place's real menu. */
+export function isMenuVerified(key: string): boolean {
+  return Object.prototype.hasOwnProperty.call(VERIFIED_MENUS, key);
+}
+
 export function getMerchantById(id: string): MerchantConfig {
   const key = resolveMerchantKey(id);
-  return (key && MERCHANTS_REGISTRY[key]) || MERCHANTS_REGISTRY["demo"];
+  if (!key || !MERCHANTS_REGISTRY[key]) return MERCHANTS_REGISTRY["demo"];
+  return { ...MERCHANTS_REGISTRY[key], menuVerified: isMenuVerified(key) };
 }
 
 export function getAllMerchants(): MerchantConfig[] {
