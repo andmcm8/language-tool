@@ -34,18 +34,8 @@ def build_isabelle():
             "themeColor": "#0284c7",
             "logoIcon": "cake",
             "policies": {
-                "restroomLocationEs": "Ubicado a la izquierda al fondo de la panadería.",
-                "restroomLocationEn": "Located at the back of the bakery on the left side.",
-                "restroomCodeEs": "Abierto para clientes de la pastelería.",
-                "restroomCodeEn": "Open for bakery guests.",
-                "wifiName": "IsabelleVincent_Guest",
-                "wifiPassword": "frenchpastry",
-                "parkingPolicyEs": "Estacionamiento disponible frente a la tienda en Post Rd y en el lote posterior.",
-                "parkingPolicyEn": "Parking available along Post Rd and in the dedicated rear parking lot.",
                 "returnPolicyEs": "Todos nuestros panes y pasteles se hornean desde cero cada madrugada; notifíquenos cualquier consulta.",
                 "returnPolicyEn": "All breads and pastries are baked from scratch daily; please let our team know if anything isn't perfect.",
-                "deliveryPolicyEs": "Pedidos de pasteles especiales y charolas disponibles con 3 días de anticipación por teléfono.",
-                "deliveryPolicyEn": "Custom celebration cakes and catering platters available with 3 days notice by phone."
             },
             "phone": "(203) 292-8022"
         },
@@ -462,3 +452,4 @@ def build_isabelle():
 
 if __name__ == "__main__":
     build_isabelle()
+

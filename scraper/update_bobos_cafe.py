@@ -43,18 +43,8 @@ def build_bobos_cafe():
             "themeColor": "#0284c7",
             "logoIcon": "coffee",
             "policies": {
-                "restroomLocationEs": "Ubicado al fondo del salón de la cafetería hacia la derecha.",
-                "restroomLocationEn": "Located at the back of the cafe dining area to the right.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for cafe customers (no code required).",
-                "wifiName": "BobosCafe_Guest",
-                "wifiPassword": "bobosridgefield",
-                "parkingPolicyEs": "Estacionamiento gratuito disponible en la plaza comercial de 32 Danbury Rd.",
-                "parkingPolicyEn": "Free plaza parking available directly in front of the cafe at 32 Danbury Rd.",
                 "returnPolicyEs": "Si su orden o bebida no queda a su gusto, con gusto se la preparamos nuevamente de inmediato.",
                 "returnPolicyEn": "If your drink or meal isn't made to your complete liking, we will gladly remake it right away.",
-                "deliveryPolicyEs": "Pedidos para recoger en mostrador o entrega a domicilio mediante Toast Tab y plataformas locales.",
-                "deliveryPolicyEn": "Order pickup at counter or delivery through Toast Tab and local partner platforms."
             }
         },
         "categories": [
@@ -670,3 +660,4 @@ def build_bobos_cafe():
 
 if __name__ == "__main__":
     build_bobos_cafe()
+

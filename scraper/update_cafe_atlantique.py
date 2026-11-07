@@ -36,18 +36,8 @@ def build_cafe_atlantique():
             "themeColor": "#0369a1",
             "logoIcon": "coffee",
             "policies": {
-                "restroomLocationEs": "Ubicado al final del salón cafetería hacia la izquierda.",
-                "restroomLocationEn": "Located at the back of the cafe dining room on the left.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for customers (no code required).",
-                "wifiName": "CafeAtlantique_Guest",
-                "wifiPassword": "riverstreetcoffee",
-                "parkingPolicyEs": "Estacionamiento disponible a lo largo de River St y en el lote del Milford Green.",
-                "parkingPolicyEn": "Street parking on River St and free public parking around the Milford Green.",
                 "returnPolicyEs": "Crêpes y paninis hechos al momento; avísenos de inmediato para personalizar su preparación.",
                 "returnPolicyEn": "Crêpes and paninis made fresh to order; please inform our baristas if you need any adjustments.",
-                "deliveryPolicyEs": "Servicio para llevar disponible por teléfono y pedidos en línea a través de Toast.",
-                "deliveryPolicyEn": "Takeout available by phone or online via Toast ordering."
             },
             "phone": "(203) 882-1602"
         },
@@ -431,3 +421,4 @@ def build_cafe_atlantique():
 
 if __name__ == "__main__":
     build_cafe_atlantique()
+

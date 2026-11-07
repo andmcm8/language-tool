@@ -324,3 +324,4 @@ with open(target_file, "w") as f:
     json.dump(tc, f, indent=2, ensure_ascii=False)
 
 print(f"🎉 Updated {target_file} with {len(products)} 100% verified real items!")
+

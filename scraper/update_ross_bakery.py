@@ -42,18 +42,8 @@ def build_ross_bakery():
             "themeColor": "#78350f",
             "logoIcon": "croissant",
             "policies": {
-                "restroomLocationEs": "Ubicado en el pasillo hacia la izquierda del mostrador principal.",
-                "restroomLocationEn": "Located in the hallway to the left of the main bakery counter.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for customers (no code required).",
-                "wifiName": "RossBread_Guest",
-                "wifiPassword": "artisanalbread",
-                "parkingPolicyEs": "Estacionamiento gratuito disponible en The Marketplace at Copps Hill.",
-                "parkingPolicyEn": "Free plaza parking available in The Marketplace at Copps Hill lot.",
                 "returnPolicyEs": "Garantizamos la frescura de nuestros panes y productos horneados del día; avísenos de inmediato.",
                 "returnPolicyEn": "We guarantee the daily freshness of all baked goods; please let our team know if anything falls short.",
-                "deliveryPolicyEs": "Pedidos para recoger en panadería o servicio a domicilio directo a través de rossartisanalbakeryandcafe.com.",
-                "deliveryPolicyEn": "Bakery counter pickup or direct local delivery through rossartisanalbakeryandcafe.com."
             }
         },
         "categories": [
@@ -559,3 +549,4 @@ def build_ross_bakery():
 
 if __name__ == "__main__":
     build_ross_bakery()
+

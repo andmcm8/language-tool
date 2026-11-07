@@ -34,18 +34,8 @@ def build_famous_pizza():
             "themeColor": "#b91c1c",
             "logoIcon": "pizza",
             "policies": {
-                "restroomLocationEs": "Ubicado al final del salón comedor a la derecha.",
-                "restroomLocationEn": "Located at the back of the dining room to the right.",
-                "restroomCodeEs": "Abierto para clientes (no requiere código).",
-                "restroomCodeEn": "Open for customers (no code required).",
-                "wifiName": "FamousPizza_Guest",
-                "wifiPassword": "famouspizzabethel",
-                "parkingPolicyEs": "Estacionamiento disponible frente al local en Greenwood Ave y en el lote público de Barnum Square.",
-                "parkingPolicyEn": "Street parking on Greenwood Ave and nearby Barnum Square public lot.",
                 "returnPolicyEs": "Preparado fresco con masa artesanal; si hay algún inconveniente con su pedido con gusto lo corregiremos.",
                 "returnPolicyEn": "Made fresh with artisan dough; please inform us immediately if any corrections are needed.",
-                "deliveryPolicyEs": "Entrega a domicilio rápida disponible en Bethel y pueblos vecinos a través de nuestro sitio web.",
-                "deliveryPolicyEn": "Prompt local delivery available in Bethel and surrounding areas via our online ordering portal."
             },
             "phone": "(203) 797-1550"
         },
@@ -677,3 +667,4 @@ def build_famous_pizza():
 
 if __name__ == "__main__":
     build_famous_pizza()
+
