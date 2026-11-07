@@ -2,26 +2,19 @@
   "storeInfo": {
     "id": "tarantino-restaurant-bar",
     "name": "Tarantino Restaurant & Bar",
-    "tagline": "Decades of tradition, unforgettable southern Italian flavors | Décadas de tradición, inolvidables sabores del sur de Italia",
+    "tagline": "Italian Restaurant & Bar in Westport, est. 1994 | Restaurante y Bar Italiano en Westport, desde 1994",
     "address": "30 Railroad Pl, Westport, CT 06880",
     "phone": "(203) 454-3188",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "12:00 PM - 10:30 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Lunch 12:00 PM - 2:30 PM; Dinner 5:00 PM - 9:30 PM",
+      "saturday": "Dinner 5:00 PM - 9:30 PM",
+      "sunday": "Closed"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Private Parties"
+      "Reservations",
+      "Bilingual Menu"
     ],
     "themeColor": "#8b1e0b",
     "logoIcon": "utensils",
@@ -33,287 +26,638 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "for-the-table",
+      "nameEs": "Para la mesa",
+      "nameEn": "For the Table",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "di-mare",
+      "nameEs": "Di Mare",
+      "nameEn": "Di Mare",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "della-terra",
+      "nameEs": "Della Terra",
+      "nameEn": "Della Terra",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "zuppe",
+      "nameEs": "Zuppe",
+      "nameEn": "Zuppe",
+      "icon": "Utensils"
+    },
+    {
+      "id": "insalate",
+      "nameEs": "Insalate",
+      "nameEn": "Insalate",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-casereccia",
+      "nameEs": "Pasta Casereccia",
+      "nameEn": "Pasta Casereccia",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-secca",
+      "nameEs": "Pasta Secca",
+      "nameEn": "Pasta Secca",
+      "icon": "Utensils"
+    },
+    {
+      "id": "maria-s-handmade-ravioli",
+      "nameEs": "Ravioli artesanal de Maria",
+      "nameEn": "Maria's Handmade Ravioli",
+      "icon": "Utensils"
+    },
+    {
+      "id": "il-pesce",
+      "nameEs": "Il Pesce",
+      "nameEn": "Il Pesce",
+      "icon": "Utensils"
+    },
+    {
+      "id": "la-carne",
+      "nameEs": "La Carne",
+      "nameEn": "La Carne",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tarantino-restaurant-bar-01",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finos cortes de lomo de res crudo, alcaparras, rúcula fresca, aceite de oliva virgen extra y lascas de queso Parmigiano-Reggiano.",
-      "descriptionEn": "Thinly sliced raw beef tenderloin, capers, fresh arugula, extra virgin olive oil, and shaved Parmigiano-Reggiano.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "antipasto-freddo",
+      "categoryId": "for-the-table",
+      "nameEs": "Antipasto Freddo",
+      "nameEn": "Antipasto Freddo",
+      "descriptionEs": "Variedad de embutidos, quesos, aceitunas y pimientos rellenos",
+      "descriptionEn": "Assortment of cured meats, cheeses, olives and stuffed peppers",
+      "price": "$17 per person",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-02",
-      "categoryId": "appetizers",
-      "nameEs": "Burrata Fresca con Prosciutto",
-      "nameEn": "Fresh Burrata with Prosciutto",
-      "descriptionEs": "Queso burrata cremoso servido con auténtico jamón prosciutto di Parma, tomates heirloom y reducción de balsámico añejo.",
-      "descriptionEn": "Creamy burrata cheese served with authentic prosciutto di Parma, heirloom tomatoes, and aged balsamic reduction.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Popular",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "mixed-marinated-olives",
+      "categoryId": "for-the-table",
+      "nameEs": "Aceitunas marinadas mixtas",
+      "nameEn": "Mixed Marinated Olives",
+      "descriptionEs": "Castelvetrano, Kalamata, orégano, aceite de oliva virgen extra, pimienta molida",
+      "descriptionEn": "Castelvetrano, Kalamata, oregano, EVOO, cracked pepper",
+      "price": "$9",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-03",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones al Vino Blanco",
-      "nameEn": "Mussels in White Wine",
-      "descriptionEs": "Mejillones frescos de la costa salteados en caldo de vino blanco, ajo, hierbas provenzales y un toque de tomate cherry.",
-      "descriptionEn": "Fresh coastal mussels sautéed in white wine broth, garlic, fresh herbs, and a touch of cherry tomato.",
-      "price": "$17.00",
-      "popular": false,
-      "badge": "Del Mar",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Moluscos"
-      ],
+      "id": "pizzetta",
+      "categoryId": "for-the-table",
+      "nameEs": "Pizzetta",
+      "nameEn": "Pizzetta",
+      "descriptionEs": "Tomate, mozzarella y albahaca",
+      "descriptionEn": "Tomato, mozzarella and basil",
+      "price": "$12",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-04",
-      "categoryId": "mains",
-      "nameEs": "Rigatoni a la Vodka",
-      "nameEn": "Rigatoni alla Vodka",
-      "descriptionEs": "Pasta rigatoni hecha en casa bañada en una rica y suave salsa cremosa de tomate, vodka y un toque de parmesano.",
-      "descriptionEn": "House-made rigatoni pasta tossed in a rich, smooth creamy tomato vodka sauce with a touch of parmesan.",
-      "price": "$24.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Casero",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "little-neck-clams-oreganata",
+      "categoryId": "di-mare",
+      "nameEs": "Almejas Little Neck Oreganata",
+      "nameEn": "Little Neck Clams Oreganata",
+      "descriptionEs": "Almejas al horno, pan molido sazonado, vino blanco",
+      "descriptionEn": "Baked clams, seasoned bread crumbs, white wine",
+      "price": "$19",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-05",
-      "categoryId": "mains",
-      "nameEs": "Tagliatelle al Ragù de la Nonna",
-      "nameEn": "Nonna’s Tagliatelle al Ragù",
-      "descriptionEs": "Fideos tagliatelle artesanales al huevo con salsa de carne estofada a fuego lento durante horas según la receta de la familia Marchetti.",
-      "descriptionEn": "Handmade egg tagliatelle pasta with slow-simmered meat ragù recipe passed down through the Marchetti family.",
-      "price": "$26.00",
-      "popular": true,
-      "badge": "Familiar",
-      "tags": [
-        "Tradicional",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos"
-      ],
+      "id": "little-neck-clams-on-the-half-shell",
+      "categoryId": "di-mare",
+      "nameEs": "Almejas Little Neck en su concha",
+      "nameEn": "Little Neck Clams on the Half Shell",
+      "descriptionEs": "Salsa cóctel picante",
+      "descriptionEn": "Zesty cocktail sauce",
+      "price": "$2 each",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-06",
-      "categoryId": "mains",
-      "nameEs": "Linguine con Frutti di Mare",
-      "nameEn": "Linguine Frutti di Mare",
-      "descriptionEs": "Linguine fresco con camarones, almejas, mejillones y calamares en una ligera salsa de vino blanco y tomate fresco.",
-      "descriptionEn": "Fresh linguine with shrimp, clams, mussels, and calamari tossed in a light white wine and fresh tomato sauce.",
-      "price": "$32.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Moluscos"
-      ],
+      "id": "copps-island-oysters-fried-or-rockefeller",
+      "categoryId": "di-mare",
+      "nameEs": "Ostiones de Copps Island (Fritos o Rockefeller)",
+      "nameEn": "Copps Island Oysters (Fried or Rockefeller)",
+      "descriptionEs": "Fritos o al estilo Rockefeller",
+      "descriptionEn": "Fried or Rockefeller style",
+      "price": "$3.50 each",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-07",
-      "categoryId": "specialties",
-      "nameEs": "Ternera a la Parmigiana",
-      "nameEn": "Veal Parmigiana",
-      "descriptionEs": "Tierna milanesa de ternera empanizada, horneada con salsa marinera casera, queso mozzarella fundido y albahaca, acompañada de pasta.",
-      "descriptionEn": "Tender breaded veal cutlet, baked with house marinara, melted mozzarella cheese and fresh basil, served with pasta.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Horneado",
-        "Favorito"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "copps-island-oysters-on-the-half-shell",
+      "categoryId": "di-mare",
+      "nameEs": "Ostiones de Copps Island en su concha",
+      "nameEn": "Copps Island Oysters on the Half Shell",
+      "descriptionEs": "Salsa Mignonette",
+      "descriptionEn": "Mignonette sauce",
+      "price": "$3 each",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-08",
-      "categoryId": "specialties",
-      "nameEs": "Pollo Saltimbocca a la Romana",
-      "nameEn": "Chicken Saltimbocca alla Romana",
-      "descriptionEs": "Pechuga de pollo sofrita con prosciutto y salvia fresca, desglasada en vino blanco Marsala, servida con espinacas salteadas.",
-      "descriptionEn": "Chicken breast sautéed with prosciutto and fresh sage, deglazed in Marsala white wine, served with sautéed spinach.",
-      "price": "$29.00",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "shrimp-cocktail",
+      "categoryId": "di-mare",
+      "nameEs": "Cóctel de camarones",
+      "nameEn": "Shrimp Cocktail",
+      "descriptionEs": "Alioli de tomate y rábano picante",
+      "descriptionEn": "Horseradish tomato aioli",
+      "price": "$4 each",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-09",
-      "categoryId": "specialties",
-      "nameEs": "Branzino al Horno",
-      "nameEn": "Roasted Mediterranean Branzino",
-      "descriptionEs": "Filete de lubina mediterránea horneado a la perfección con limón, alcaparras, hierbas finas y aceite de oliva virgen extra.",
-      "descriptionEn": "Mediterranean sea bass fillet roasted to perfection with lemon, capers, fine herbs, and extra virgin olive oil.",
-      "price": "$36.00",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Pescado",
-        "Saludable"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "calamari-point-judith-ri",
+      "categoryId": "di-mare",
+      "nameEs": "Calamares (Point Judith, RI)",
+      "nameEn": "Calamari (Point Judith, RI)",
+      "descriptionEs": "Fritos crujientes o a la parrilla",
+      "descriptionEn": "Fried crispy or grilled",
+      "price": "$18",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-10",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "House-Made Tiramisu",
-      "descriptionEs": "Clásico postre italiano de bizcochos empapaos en café espresso, crema mascarpone y cacao puro en polvo.",
-      "descriptionEn": "Classic Italian dessert made with espresso-soaked ladyfingers, rich mascarpone cream, and pure cocoa powder.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Postre Estelar",
-      "tags": [
-        "Dulce",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "cozze-fra-diavolo",
+      "categoryId": "di-mare",
+      "nameEs": "Cozze Fra' Diavolo",
+      "nameEn": "Cozze Fra' Diavolo",
+      "descriptionEs": "Mejillones de P.E.I. salteados en salsa de tomate picante",
+      "descriptionEn": "P.E.I. mussels sautéed in a spicy tomato sauce",
+      "price": "$19",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-11",
-      "categoryId": "beverages",
-      "nameEs": "Cannoli Siciliano",
-      "nameEn": "Sicilian Cannoli",
-      "descriptionEs": "Crocante tubo de masa frita relleno de crema dulce de ricotta fresca y trocitos de chocolate oscuro.",
-      "descriptionEn": "Crispy fried pastry shell filled with sweet fresh ricotta cream and dark chocolate chips.",
-      "price": "$9.50",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "tartare-di-tonno",
+      "categoryId": "di-mare",
+      "nameEs": "Tartare di Tonno",
+      "nameEn": "Tartare di Tonno",
+      "descriptionEs": "Tártar de atún, aguacate, salsa de soya, alioli de wasabi",
+      "descriptionEn": "Tuna tartare, avocado, soy sauce, wasabi aioli",
+      "price": "$24",
       "ctaType": "in_store"
     },
     {
-      "id": "tarantino-restaurant-bar-12",
-      "categoryId": "beverages",
-      "nameEs": "Espresso Italiano / Cappuccino",
-      "nameEn": "Italian Espresso / Cappuccino",
-      "descriptionEs": "Café espresso tradicional importado o cappuccino cremoso preparado con leche texturizada.",
-      "descriptionEn": "Traditional imported Italian espresso or creamy cappuccino prepared with textured milk.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "shrimp-and-eggplant",
+      "categoryId": "di-mare",
+      "nameEs": "Camarones y berenjena",
+      "nameEn": "Shrimp and Eggplant",
+      "descriptionEs": "Camarones sellados sobre caponata de berenjena",
+      "descriptionEn": "Seared shrimp over eggplant caponata",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carpaccio-di-manzo",
+      "categoryId": "della-terra",
+      "nameEs": "Carpaccio di Manzo",
+      "nameEn": "Carpaccio di Manzo",
+      "descriptionEs": "Carpaccio de res, rúgula, alcachofas, lascas de Parmigiano, aceite de oliva y limón",
+      "descriptionEn": "Beef carpaccio, arugula, artichokes, shaved Parmigiano, olive oil & lemon",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polpettine",
+      "categoryId": "della-terra",
+      "nameEs": "Polpettine",
+      "nameEn": "Polpettine",
+      "descriptionEs": "Albóndigas de ternera hechas en casa en salsa de tomate y albahaca",
+      "descriptionEn": "House-made veal meatballs in tomato and basil sauce",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-di-bufala",
+      "categoryId": "della-terra",
+      "nameEs": "Caprese di Bufala",
+      "nameEn": "Caprese di Bufala",
+      "descriptionEs": "Mozzarella de búfala, tomate, albahaca, aceite de oliva virgen extra",
+      "descriptionEn": "Buffalo mozzarella, tomato, basil, extra virgin olive oil",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carciofo-ripieno",
+      "categoryId": "della-terra",
+      "nameEs": "Carciofo Ripieno",
+      "nameEn": "Carciofo Ripieno",
+      "descriptionEs": "Alcachofa rellena al horno, panceta, hongos, pan molido, mozzarella",
+      "descriptionEn": "Baked stuffed artichoke, pancetta, mushrooms, breadcrumbs, mozzarella",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-e-fagioli",
+      "categoryId": "zuppe",
+      "nameEs": "Pasta e Fagioli",
+      "nameEn": "Pasta e Fagioli",
+      "descriptionEs": "Pasta casera y frijoles cannellini en un caldo a base de tomate",
+      "descriptionEn": "Homemade pasta and cannellini beans in a tomato based broth",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stracciatella",
+      "categoryId": "zuppe",
+      "nameEs": "Stracciatella",
+      "nameEn": "Stracciatella",
+      "descriptionEs": "Espinaca, huevos, caldo de pollo",
+      "descriptionEn": "Spinach, eggs, chicken broth",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "minestra-paesana",
+      "categoryId": "zuppe",
+      "nameEs": "Minestra Paesana",
+      "nameEn": "Minestra Paesana",
+      "descriptionEs": "Escarola, salchicha y frijoles",
+      "descriptionEn": "Escarole, sausage and beans",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbabietola",
+      "categoryId": "insalate",
+      "nameEs": "Barbabietola",
+      "nameEn": "Barbabietola",
+      "descriptionEs": "Mezcla de lechugas, remolacha roja, queso de cabra, nueces, vinagreta de mostaza, miel y naranja",
+      "descriptionEn": "Mixed greens, red beets, goat cheese, walnuts, orange-honey mustard vinaigrette",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tricolore",
+      "categoryId": "insalate",
+      "nameEs": "Tricolore",
+      "nameEn": "Tricolore",
+      "descriptionEs": "Endivia, radicchio, rúgula, lascas de Parmigiano, vinagreta balsámica",
+      "descriptionEn": "Endive, radicchio, arugula, shaved Parmigiano, balsamic vinaigrette",
+      "price": "$14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dei-cesari",
+      "categoryId": "insalate",
+      "nameEs": "Dei Cesari",
+      "nameEn": "Dei Cesari",
+      "descriptionEs": "Ensalada romana, crutones, lascas de Parmigiano, aderezo César casero",
+      "descriptionEn": "Romaine salad, croutons, shaved Parmigiano, homemade Caesar dressing",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lola",
+      "categoryId": "insalate",
+      "nameEs": "Lola",
+      "nameEn": "Lola",
+      "descriptionEs": "Lechuga de hoja roja, cebollas caramelizadas, almendras tostadas y gorgonzola, vinagreta de mostaza, miel y naranja",
+      "descriptionEn": "Red leaf lettuce, caramelized onions, toasted almonds and gorgonzola, orange-honey mustard vinaigrette",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-all-tarantino",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Cavatelli all Tarantino",
+      "nameEn": "Cavatelli all Tarantino",
+      "descriptionEs": "Salchicha, hongos, salsa de tomate",
+      "descriptionEn": "Sausage, mushrooms, tomato sauce",
+      "price": "$29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagne-classiche",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Lasagne Classiche",
+      "nameEn": "Lasagne Classiche",
+      "descriptionEs": "Ternera, boloñesa, bechamel, Parmigiano y mozzarella",
+      "descriptionEn": "Veal, Bolognese, béchamel, Parmigiano and mozzarella",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-alla-sorrentino",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Gnocchi alla Sorrentino",
+      "nameEn": "Gnocchi alla Sorrentino",
+      "descriptionEs": "Ñoquis de papa, berenjena, rúgula, salsa de tomate ligeramente picante",
+      "descriptionEn": "Potato dumplings, eggplant, arugula, light spicy tomato sauce",
+      "price": "$27",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-al-ragu-di-ossobuco",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Pappardelle al Ragu' di Ossobuco",
+      "nameEn": "Pappardelle al Ragu' di Ossobuco",
+      "descriptionEs": "Osobuco de ternera desmenuzado, hortalizas de raíz",
+      "descriptionEn": "Shredded veal shank, root vegetables",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alla-bolognese",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Fettuccine alla Bolognese",
+      "nameEn": "Fettuccine alla Bolognese",
+      "descriptionEs": "Ternera molida, zanahorias, apio, cebollas",
+      "descriptionEn": "Ground veal, carrots, celery, onions",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tonnarelli-cacio-e-pepe",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Tonnarelli Cacio e Pepe",
+      "nameEn": "Tonnarelli Cacio e Pepe",
+      "descriptionEs": "Pecorino cremoso, pimienta negra tostada servido con un espagueti grueso",
+      "descriptionEn": "Creamy pecorino, toasted black pepper tossed with a thick spaghetti",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-allo-scoglio",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Linguine allo Scoglio",
+      "nameEn": "Linguine allo Scoglio",
+      "descriptionEs": "Camarones, almejas, mejillones, calamares, salsa de tomate, toque de pimiento rojo molido",
+      "descriptionEn": "Shrimp, clams, mussels, calamari, tomato sauce, touch of crushed pepper",
+      "price": "$32",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maltagliati-con-fave",
+      "categoryId": "pasta-casereccia",
+      "nameEs": "Maltagliati con Fave",
+      "nameEn": "Maltagliati con Fave",
+      "descriptionEs": "Habas, salchicha, arvejas, tomate cherry, pasta cortada a mano",
+      "descriptionEn": "Fava beans, sausage, peas, cherry tomato, hand cut pasta",
+      "price": "$29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bucatini-alla-carbonara",
+      "categoryId": "pasta-secca",
+      "nameEs": "Bucatini alla Carbonara",
+      "nameEn": "Bucatini alla Carbonara",
+      "descriptionEs": "Guanciale, cebollas, huevos y Parmigiano",
+      "descriptionEn": "Guanciale, onions, eggs and Parmigiano",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-san-giovanni",
+      "categoryId": "pasta-secca",
+      "nameEs": "Spaghetti San Giovanni",
+      "nameEn": "Spaghetti San Giovanni",
+      "descriptionEs": "Camarones, alcaparras, tomates secos, aceitunas negras, ajo y aceite",
+      "descriptionEn": "Shrimp, capers, sun dried tomatoes, black olives, garlic and oil",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orecchiette-alla-barese",
+      "categoryId": "pasta-secca",
+      "nameEs": "Orecchiette alla Barese",
+      "nameEn": "Orecchiette alla Barese",
+      "descriptionEs": "Broccoli rabe, salchicha dulce, tomate cherry, ajo y aceite",
+      "descriptionEn": "Broccoli rabe, sweet sausage, cherry tomato, garlic and oil",
+      "price": "$27",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capellini-alle-vongole",
+      "categoryId": "pasta-secca",
+      "nameEs": "Capellini alle Vongole",
+      "nameEn": "Capellini alle Vongole",
+      "descriptionEs": "Berberechos servidos en salsa roja o blanca",
+      "descriptionEn": "Cockle clams served in a red or white sauce",
+      "price": "$32",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-ricotta-ravioli",
+      "categoryId": "maria-s-handmade-ravioli",
+      "nameEs": "Ravioli de espinaca y ricotta",
+      "nameEn": "Spinach & Ricotta Ravioli",
+      "descriptionEs": "Salsa de mantequilla y salvia",
+      "descriptionEn": "Butter and sage sauce",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-pork-ravioli",
+      "categoryId": "maria-s-handmade-ravioli",
+      "nameEs": "Ravioli de ternera y cerdo",
+      "nameEn": "Veal & Pork Ravioli",
+      "descriptionEs": "Salsa de mantequilla y lascas de trufa negra",
+      "descriptionEn": "Butter and shaved black truffle sauce",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-crab-ravioli",
+      "categoryId": "maria-s-handmade-ravioli",
+      "nameEs": "Ravioli de langosta y cangrejo",
+      "nameEn": "Lobster & Crab Ravioli",
+      "descriptionEs": "Salsa de crema al brandy y camarones",
+      "descriptionEn": "Brandy cream sauce and shrimp",
+      "price": "$32",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmone-in-mostarda",
+      "categoryId": "il-pesce",
+      "nameEs": "Salmone in Mostarda",
+      "nameEn": "Salmone in Mostarda",
+      "descriptionEs": "Salmón del Atlántico sellado a la sartén en una delicada salsa de crema de mostaza (disponible a la parrilla sencillo)",
+      "descriptionEn": "Pan seared Atlantic salmon in a delicate mustard cream sauce (plain grilled available)",
+      "price": "$36",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesce-spada",
+      "categoryId": "il-pesce",
+      "nameEs": "Pesce Spada",
+      "nameEn": "Pesce Spada",
+      "descriptionEs": "Pez espada, salsa de prosecco, hierbas frescas",
+      "descriptionEn": "Swordfish, prosecco sauce, fresh herbs",
+      "price": "$48",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filetto-di-branzino",
+      "categoryId": "il-pesce",
+      "nameEs": "Filetto di Branzino",
+      "nameEn": "Filetto di Branzino",
+      "descriptionEs": "Filete de lubina, alcachofas, tomates cherry confitados, alcaparras, salsa de vino blanco",
+      "descriptionEn": "Filet of seabass, artichokes, confit cherry tomatoes, capers, white wine sauce",
+      "price": "$39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brasato-tartufato",
+      "categoryId": "il-pesce",
+      "nameEs": "Brasato Tartufato",
+      "nameEn": "Brasato Tartufato",
+      "descriptionEs": "Camarones y vieiras sellados a la sartén, hongos, vino Marsala, aceite de trufa",
+      "descriptionEn": "Pan seared shrimp and scallops, mushrooms, Marsala wine, truffle oil",
+      "price": "$43",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-margherita",
+      "categoryId": "la-carne",
+      "nameEs": "Pollo Margherita",
+      "nameEn": "Pollo Margherita",
+      "descriptionEs": "Pechuga de pollo orgánico cubierta con prosciutto, tomate y mozzarella en una delicada salsa de crema al brandy",
+      "descriptionEn": "Organic chicken breast topped with prosciutto, tomato and mozzarella in a delicate brandy cream sauce",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "costata-di-suino-ai-peperoni-piccanti",
+      "categoryId": "la-carne",
+      "nameEs": "Costata di Suino ai Peperoni Piccanti",
+      "nameEn": "Costata di Suino ai Peperoni Piccanti",
+      "descriptionEs": "Chuleta de cerdo doble estilo frenched asada a la sartén con romero, ajo y pimiento cherry picante",
+      "descriptionEn": "Pan roasted double cut frenched pork chop with rosemary, garlic and hot cherry pepper",
+      "price": "$42",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-scarpariello",
+      "categoryId": "la-carne",
+      "nameEs": "Pollo Scarpariello",
+      "nameEn": "Pollo Scarpariello",
+      "descriptionEs": "Medio pollo orgánico deshuesado, vino blanco, salchicha, pimientos cherry picantes, ajo, papas",
+      "descriptionEn": "Organic deboned half chicken, white wine, sausage, hot cherry peppers, garlic, potatoes",
+      "price": "$35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nodino-al-balsamico",
+      "categoryId": "la-carne",
+      "nameEs": "Nodino al Balsamico",
+      "nameEn": "Nodino al Balsamico",
+      "descriptionEs": "Chuleta gruesa de ternera sellada a la sartén, pimientos cherry picantes y salsa de vinagre balsámico",
+      "descriptionEn": "Pan seared thick veal chop, hot cherry peppers and balsamic vinegar sauce",
+      "price": "$58",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scaloppine-di-vitello-ai-funghi",
+      "categoryId": "la-carne",
+      "nameEs": "Scaloppine di Vitello ai Funghi",
+      "nameEn": "Scaloppine di Vitello ai Funghi",
+      "descriptionEs": "Scaloppine de ternera, hongos mixtos, salsa de vino blanco",
+      "descriptionEn": "Veal scaloppine, mixed mushrooms, white wine sauce",
+      "price": "$43",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-aged-new-york-strip",
+      "categoryId": "la-carne",
+      "nameEs": "Prime Aged New York Strip",
+      "nameEn": "Prime Aged New York Strip",
+      "descriptionEs": "New York strip prime a la parrilla de 12 oz, mantequilla compuesta aromática, papas fritas toscanas",
+      "descriptionEn": "12 oz prime grilled New York strip, aromatic compound butter, Tuscan fries",
+      "price": "$53",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomahawk-di-vitello-milanese",
+      "categoryId": "la-carne",
+      "nameEs": "Tomahawk di Vitello Milanese",
+      "nameEn": "Tomahawk di Vitello Milanese",
+      "descriptionEs": "Chuleta de costilla de ternera tomahawk empanada y aplanada, ensalada de rúgula y tomate o Parmigiana con vegetales",
+      "descriptionEn": "Pounded breaded tomahawk veal rib chop, arugula and tomato salad or Parmigiana with vegetables",
+      "price": "$52",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-pasta",
+      "categoryId": "la-carne",
+      "nameEs": "Agregar pasta",
+      "nameEn": "Add Pasta",
+      "descriptionEs": "Agregue una guarnición de pasta a cualquier plato fuerte",
+      "descriptionEn": "Add a side of pasta to any entrée",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-rabe",
+      "categoryId": "sides",
+      "nameEs": "Broccoli Rabe",
+      "nameEn": "Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-mushrooms",
+      "categoryId": "sides",
+      "nameEs": "Hongos silvestres",
+      "nameEn": "Wild Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "escarole",
+      "categoryId": "sides",
+      "nameEs": "Escarola",
+      "nameEn": "Escarole",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinaca",
+      "nameEn": "Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuscan-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas toscanas",
+      "nameEn": "Tuscan Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli",
+      "categoryId": "sides",
+      "nameEs": "Brócoli",
+      "nameEn": "Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con diversas opciones de pastas y platos principales adaptables. Por favor, avísenos sobre cualquier alergia al ordenar.",
-      "aEn": "Yes, we offer various adaptable pasta dishes and entrees. Please inform your server of any food allergies when ordering."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones y organizan eventos privados?",
-      "qEn": "Do you accept reservations and host private events?",
-      "aEs": "Sí, aceptamos reservaciones por teléfono y ofrecemos espacios ideales para cumpleaños, cenas de ensayo y eventos corporativos.",
-      "aEn": "Yes, we accept phone reservations and offer ideal spaces for birthdays, rehearsal dinners, and corporate events."
-    },
-    {
-      "qEs": "¿Tienen servicio de catering fuera del restaurante?",
-      "qEn": "Do you offer offsite catering services?",
-      "aEs": "Sí, ofrecemos servicio completo de catering con menús personalizables, personal de servicio y mobiliario opcional.",
-      "aEn": "Yes, we offer full offsite catering services with customizable menus, wait staff, and optional event rentals."
-    }
-  ]
+  "faqs": []
 }
