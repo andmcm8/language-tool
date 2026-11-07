@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { generateWithFallback } from "@/lib/gemini";
 
 /* ================================================================
    TRANSLATE ROUTE — Official Google Translate Engine (GTX)
    Primary: Google Translate API (client=gtx, 100% real Google Translate)
-   Secondary: Gemini AI 2.0 Flash
+   Secondary: Gemini (see lib/gemini.ts for the model list)
    Fallback: Bi-directional Local Merchant Dictionary
    ================================================================ */
 
@@ -37,7 +37,7 @@ async function tryGoogleTranslate(text: string, targetLang: string = "es"): Prom
   }
 }
 
-/* ---------- ENGINE 2: Gemini AI 2.0 Flash ---------- */
+/* ---------- ENGINE 2: Gemini ---------- */
 async function tryGemini(text: string, targetLang: string = "es"): Promise<string | null> {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return null;
@@ -47,18 +47,8 @@ async function tryGemini(text: string, targetLang: string = "es"): Promise<strin
 
   const systemInstruction = `You are a professional bilingual translator. Translate the given text accurately from ${sourceLangName} to ${targetLangName}. Output ONLY the translated ${targetLangName} text. Do not add quotes, explanations, or notes.`;
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
-      systemInstruction,
-    });
-    const result = await model.generateContent(text);
-    const translation = result.response.text().trim();
-    return translation && translation.toLowerCase() !== text.toLowerCase() ? translation : null;
-  } catch {
-    return null;
-  }
+  const translation = await generateWithFallback({ systemInstruction, contents: [text], timeoutMs: 10000 });
+  return translation && translation.toLowerCase() !== text.toLowerCase() ? translation : null;
 }
 
 /* ---------- ENGINE 3: Bi-Directional Local Dictionary Fallback ---------- */
@@ -120,10 +110,11 @@ function localTranslate(text: string, targetLang: string = "es"): string {
    ================================================================ */
 export async function POST(req: NextRequest) {
   let text = "";
+  let targetLang = "es";
   try {
     const body = await req.json();
     text = (body.text || "").trim();
-    const targetLang = body.targetLang || "es";
+    targetLang = body.targetLang === "en" ? "en" : "es";
     if (!text) return NextResponse.json({ translation: "", translated: "" });
 
     // 1) Primary Engine: Official Google Translate API (gtx)
@@ -132,7 +123,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ translation: googleResult, translated: googleResult });
     }
 
-    // 2) Secondary Engine: Gemini AI 2.0 Flash
+    // 2) Secondary Engine: Gemini
     const geminiResult = await tryGemini(text, targetLang);
     if (geminiResult) {
       return NextResponse.json({ translation: geminiResult, translated: geminiResult });
@@ -143,7 +134,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ translation: local, translated: local });
   } catch (error: any) {
     console.error("Translate error:", error?.message);
-    const fallback = text ? localTranslate(text) : text;
+    const fallback = text ? localTranslate(text, targetLang) : text;
     return NextResponse.json({
       translation: fallback,
       translated: fallback,

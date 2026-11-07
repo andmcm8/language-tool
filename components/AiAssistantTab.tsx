@@ -218,7 +218,6 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           })),
           lang,
           merchantId: merchant.storeInfo.id,
-          merchantConfig: merchant,
         }),
       });
 
