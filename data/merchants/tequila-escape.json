@@ -1,27 +1,22 @@
 {
   "storeInfo": {
     "id": "tequila-escape",
-    "name": "Tequila Escape",
-    "tagline": "Modern Latin Cuisine & Craft Tequila Bar | Cocina Latina Moderna y Barra de Tequila Artesanal",
+    "name": "Tequila Escape Kitchen + Cocktail Bar",
+    "tagline": "Latin kitchen and cocktail bar on Ridgefield's Main Street | Cocina latina y bar de cócteles en Main Street de Ridgefield",
     "address": "439 Main St, Ridgefield, CT 06877",
-    "phone": "",
+    "phone": "(203) 438-2500",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "11:30 AM - 9:00 PM"
+      "monday_friday": "Mon-Thu 11:30 AM - 1:00 AM; Fri 11:30 AM - 2:00 AM",
+      "saturday": "11:30 AM - 2:00 AM",
+      "sunday": "11:30 AM - 1:00 AM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Full Bar"
+      "Bar",
+      "Reservations",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,296 +28,1744 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Antojitos",
-      "nameEn": "Appetizers & Starters",
+      "id": "small-plates",
+      "nameEs": "Platos Pequeños",
+      "nameEn": "Small Plates",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
       "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "nameEn": "Entrees",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades del Chef",
-      "icon": "Utensils",
-      "nameEn": "Chef Specialties"
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Cocteles y Bebidas",
-      "nameEn": "Cocktails & Drinks",
-      "icon": "Coffee"
+      "id": "lunch-small-plates",
+      "nameEs": "Almuerzo: Platos Pequeños",
+      "nameEn": "Lunch: Small Plates",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-salads",
+      "nameEs": "Almuerzo: Ensaladas",
+      "nameEn": "Lunch: Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sandwiches",
+      "nameEs": "Almuerzo: Sándwiches",
+      "nameEn": "Lunch: Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-entrees",
+      "nameEs": "Almuerzo: Platos principales",
+      "nameEn": "Lunch: Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sides",
+      "nameEs": "Almuerzo: Guarniciones",
+      "nameEn": "Lunch: Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "weekend-brunch",
+      "nameEs": "Brunch de fin de semana",
+      "nameEn": "Weekend Brunch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-cocktails",
+      "nameEs": "Cócteles de brunch",
+      "nameEn": "Brunch Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "margaritas",
+      "nameEs": "Margaritas",
+      "nameEn": "Margaritas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "latin-classics",
+      "nameEs": "Clásicos Latinos",
+      "nameEn": "Latin Classics",
+      "icon": "Utensils"
+    },
+    {
+      "id": "speakeasy-cocktails",
+      "nameEs": "Cócteles Clandestinos",
+      "nameEn": "Speakeasy Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pitchers-to-go",
+      "nameEs": "Jarras para Llevar",
+      "nameEn": "Pitchers To Go",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-glass",
+      "nameEs": "Vino por Copa",
+      "nameEn": "Wine by the Glass",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tequila-escape-01",
-      "categoryId": "appetizers",
-      "nameEs": "Guacamole Tradicional",
-      "nameEn": "Traditional Guacamole",
-      "descriptionEs": "Aguacate Hass fresco machacado a mano con jalapeño, cilantro, cebolla roja y jugo de lima fresco, servido con totopos crujientes.",
-      "descriptionEn": "Fresh hand-mashed Hass avocado with jalapeño, cilantro, red onion, and fresh lime juice, served with crispy corn tortilla chips.",
+      "id": "guacamole",
+      "categoryId": "small-plates",
+      "nameEs": "Guacamole",
+      "nameEn": "Guacamole",
+      "descriptionEs": "Ofrecido de 4 maneras deliciosas",
+      "descriptionEn": "Offered in 4 delicious ways",
+      "price": "Classic $16.00 / Serrano $17.00 / Shrimp Chimichurri $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day",
+      "categoryId": "small-plates",
+      "nameEs": "Sopa del Día",
+      "nameEn": "Soup Of The Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-artichokes",
+      "categoryId": "small-plates",
+      "nameEs": "Alcachofas Orgánicas",
+      "nameEn": "Organic Artichokes",
+      "descriptionEs": "Alioli de limón, jalapeño en rodajas, cebolla morada, cilantro, queso fresco, aceite de oliva con limón",
+      "descriptionEn": "Lemon aioli, sliced jalapeno, red onion, cilantro, queso fresco, lemon olive oil",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-02",
-      "categoryId": "appetizers",
-      "nameEs": "Queso Fundido al Tequila",
-      "nameEn": "Tequila Queso Fundido",
-      "descriptionEs": "Mezzela de quesos fundidos al horno con chorizo artesanal, toque de tequila blanco y chiles poblanos, servido con tortillas de maíz.",
-      "descriptionEn": "Baked melted cheese blend with artisanal chorizo, a splash of blanco tequila, and poblano chiles, served with warm corn tortillas.",
-      "price": "$15.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Caliente",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "buffalo-organic-chicken-flautas",
+      "categoryId": "small-plates",
+      "nameEs": "Flautas de Pollo Orgánico Búfalo",
+      "nameEn": "Buffalo Organic Chicken Flautas",
+      "descriptionEs": "Tinga de pollo orgánico, cebollas, tomate, chipotle, salsa búfalo, crema fresca",
+      "descriptionEn": "Organic chicken tinga, onions, tomato, chipotle, buffalo sauce, crema fresca",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ceviche de Camarón y Mango",
-      "nameEn": "Shrimp & Mango Ceviche",
-      "descriptionEs": "Camarones marinados en jugo de limón fresco con cubitos de mango dulce, aguacate, cebolla morada y cilantro.",
-      "descriptionEn": "Shrimp cured in fresh lime juice tossed with sweet mango cubes, avocado, red onion, and cilantro.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "id": "grass-fed-steak-empanadas",
+      "categoryId": "small-plates",
+      "nameEs": "Empanadas de Bistec de Pastoreo",
+      "nameEn": "Grass-fed Steak Empanadas",
+      "descriptionEs": "Falda de res de pastoreo, salsa ranchera de la casa",
+      "descriptionEn": "Grass-fed skirt steak, signature ranchero sauce",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-04",
-      "categoryId": "appetizers",
-      "nameEs": "Empanadas de Res",
-      "nameEn": "Beef Empanadas",
-      "descriptionEs": "Dos empanadas crujientes rellenas de carne de res sazonada, papas y sofrito, acompañadas de salsa chimichurri casera.",
-      "descriptionEn": "Two crispy pastries filled with seasoned ground beef, potatoes, and sofrito, served with house-made chimichurri sauce.",
-      "price": "$13.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "blistered-shishito-peppers",
+      "categoryId": "small-plates",
+      "nameEs": "Chiles Shishito Asados",
+      "nameEn": "Blistered Shishito Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-05",
-      "categoryId": "mains",
-      "nameEs": "Tacos de Birria de Res",
-      "nameEn": "Beef Birria Tacos",
-      "descriptionEs": "Tres tacos de tortilla de maíz sumergidos en consomé, planchados con queso Oaxaca, carne de res tierna braseada, cebolla y cilantro. Servido con consomé caliente para sumergir.",
-      "descriptionEn": "Three corn tortillas dipped in birria broth, griddled with Oaxaca cheese, tender braised beef, onions, and cilantro. Served with a side of warm consume for dipping.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Best Seller",
-      "tags": [
-        "Especialidad",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "brussels-sprouts",
+      "categoryId": "small-plates",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussels Sprouts",
+      "descriptionEs": "En tiras, con glaseado balsámico de trufa, chalotes, tocino",
+      "descriptionEn": "Shaved, with balsamic truffle glaze, shallots, bacon",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-06",
-      "categoryId": "mains",
-      "nameEs": "Tacos de Camarón al Pastor",
-      "nameEn": "Al Pastor Shrimp Tacos",
-      "descriptionEs": "Camarones salteados en adobo al pastor con piña asada, cebollas encurtidas y crema de cilantro sobre tortillas de maíz hechas a mano.",
-      "descriptionEn": "Sauteed shrimp in al pastor adobo with charred pineapple, pickled onions, and cilantro crema on hand-pressed corn tortillas.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "whole-tentacle-charred-wild-portuguese-octopus",
+      "categoryId": "small-plates",
+      "nameEs": "Pulpo Silvestre Portugués Tostado (Tentáculo Entero)",
+      "nameEn": "Whole Tentacle Charred Wild-Portuguese Octopus",
+      "descriptionEs": "Papa cambray, chorizo español, chile cherry, arúgula, aceite de oliva con limón",
+      "descriptionEn": "Baby potato, Spanish chorizo, cherry pepper, arugula, lemon olive oil",
+      "price": "$23.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-07",
-      "categoryId": "mains",
-      "nameEs": "Enchiladas Suizas de Pollo",
-      "nameEn": "Chicken Enchiladas Suizas",
-      "descriptionEs": "Tres enchiladas rellenas de pollo desmenuzado, cubiertas con salsa verde cremosa, gratinadas con queso y crema agria.",
-      "descriptionEn": "Three corn tortillas filled with shredded chicken, topped with creamy salsa verde, melted cheese, and crema.",
+      "id": "ahi-tuna-tostada",
+      "categoryId": "small-plates",
+      "nameEs": "Tostada de Atún Ahi",
+      "nameEn": "Ahi Tuna Tostada",
+      "descriptionEs": "Atún Ahi grado sushi, aguacate, cebollines, salsa de miso casera, alioli de sriracha",
+      "descriptionEn": "Sushi grade ahi tuna, avocado, scallions, homemade miso sauce, sriracha aioli",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-tentacle-wild-caught-octopus-anticuchero",
+      "categoryId": "small-plates",
+      "nameEs": "Anticucho de Pulpo Silvestre (Tentáculo Entero)",
+      "nameEn": "Whole Tentacle Wild-Caught Octopus Anticuchero",
+      "descriptionEs": "Puré de pimiento, alioli de rocoto, chimichurri de cilantro, alcaparras fritas, maíz dulce, ensalada mixta",
+      "descriptionEn": "Pimiento mash, rocoto aioli, cilantro chimichurri, fried capers, sweet corn, mixed greens",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peruvian-seafood-ceviche",
+      "categoryId": "small-plates",
+      "nameEs": "Cebiche Peruano de Mariscos",
+      "nameEn": "Peruvian Seafood Ceviche",
+      "descriptionEs": "Lenguado fresco, calamar, camarones, limón fresco, cebollas rojas, cilantro, maíz peruano, ají limo",
+      "descriptionEn": "Fresh flounder, calamari, shrimp, fresh lime, red onions, cilantro, peruvian corn, limo pepper",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-caught-shrimp-al-vino",
+      "categoryId": "small-plates",
+      "nameEs": "Camarones Silvestres al Vino",
+      "nameEn": "Wild Caught Shrimp al Vino",
+      "descriptionEs": "Plátanos maduros, salsa de vino blanco y chile cherry",
+      "descriptionEn": "Plantains, white wine cherry pepper sauce",
       "price": "$18.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Clásico"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-08",
-      "categoryId": "specialties",
-      "nameEs": "Fajitas Mixtas Sizzling",
-      "nameEn": "Sizzling Mixed Fajitas",
-      "descriptionEs": "Filete de arrachera marinada, pollo jugoso y camarones salteados con pimientos y cebollas en una sartén humeante. Acompañado de arroz mexicano, frijoles negros y tortillas.",
-      "descriptionEn": "Marinated skirt steak, juicy chicken, and shrimp sautéed with bell peppers and onions on a sizzling skillet. Served with Mexican rice, black beans, and tortillas.",
-      "price": "$26.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Para Compartir",
-        "Caliente"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "id": "open-faced-chicharron-sliders",
+      "categoryId": "small-plates",
+      "nameEs": "Sliders de Chicharrón Abiertos",
+      "nameEn": "Open-faced Chicharron Sliders",
+      "descriptionEs": "Cerdo cocinado a fuego lento y frito al momento, camotes, sarsa criolla de cebolla y limón, crema de rocoto, ají verde, pan baguette",
+      "descriptionEn": "Slow cooked flashed fried pork, sweet potatoes, onion-lime Peruvian sarsa, rococo crema, aji verde, baguette",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-09",
-      "categoryId": "specialties",
-      "nameEs": "Carne Asada a la Tampiqueña",
-      "nameEn": "Carne Asada Tampiqueña",
-      "descriptionEs": "Fina arrachera a la parrilla servida con una enchilada de mole, guacamole, frijoles refritos y cebollitas cambray asadas.",
-      "descriptionEn": "Grilled skirt steak served with a cheese enchilada in mole sauce, guacamole, refried beans, and charred scallions.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne",
-        "Tradicional"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "tequila-escape-10",
-      "categoryId": "specialties",
-      "nameEs": "Pollo en Mole Poblano",
-      "nameEn": "Chicken in Mole Poblano",
-      "descriptionEs": "Muslo y pierna de pollo tierno bañados en nuestro rico mole poblano casero hecho con chiles secos y chocolate amargo, servido con arroz.",
-      "descriptionEn": "Tender chicken leg and thigh simmered in our rich, complex house-made mole poblano sauce made with dried chiles and dark chocolate, served with rice.",
+      "id": "grass-fed-steak-skewers",
+      "categoryId": "small-plates",
+      "nameEs": "Brochetas de Bistec de Pastoreo",
+      "nameEn": "Grass-fed Steak Skewers",
+      "descriptionEs": "Falda de res de pastoreo, croquetas de papa y coliflor,",
+      "descriptionEn": "Grass fed skirt steak, potato cauliflower croquettes,",
       "price": "$21.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-11",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Escape de la Casa",
-      "nameEn": "Signature Escape Margarita",
-      "descriptionEs": "Tequila 100% de agave blanco, Cointreau, jugo de lima fresco y néctar de agave orgánico, servido con borde de sal marina y Tajín.",
-      "descriptionEn": "100% agave blanco tequila, Cointreau, fresh lime juice, and organic agave nectar, served with a sea salt and Tajín rim.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Alcohol",
-        "Cocktail"
-      ],
-      "allergens": [],
+      "id": "street-quesadillas",
+      "categoryId": "small-plates",
+      "nameEs": "Quesadillas Callejeras",
+      "nameEn": "Street Quesadillas",
+      "descriptionEs": "Queso Monterey Jack, chiles cherry, cebollas, guarnición de guacamole, crema agria, pico de gallo; agregados: Bistec +$9.00, Pollo +$7.00, Camarón +$8.00, chorizo +$7.00, cerdo al pastor con piña +$9.00",
+      "descriptionEn": "Monterey jack cheese, cherry peppers, onions, side of guacamole, sour cream, pico de gallo; add: Steak +$9.00, Chicken +$7.00, Shrimp +$8.00, chorizo +$7.00, pork pineapple pastor +$9.00",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-12",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Picante de Maracuyá",
-      "nameEn": "Spicy Passion Fruit Margarita",
-      "descriptionEs": "Tequila infusionado con habanero, puré fresco de maracuyá, triple sec y jugo de lima con borde de chamoy.",
-      "descriptionEn": "Habanero-infused tequila, fresh passion fruit puree, triple sec, and lime juice with a chili-chamoy rim.",
+      "id": "california-nachos",
+      "categoryId": "small-plates",
+      "nameEs": "Nachos California",
+      "nameEn": "California Nachos",
+      "descriptionEs": "Puré de frijoles negros, queso Monterey Jack, guacamole, crema agria, pico de gallo; agregados: Pollo +$7.00, Bistec +$9.00, Chorizo +$7.00, Camarón +$8.00, cerdo al pastor con piña +$9.00",
+      "descriptionEn": "Black bean puree, Monterrey jack cheese, guacamole, sour cream, pico de gallo; add: Chicken +$7.00, Steak +$9.00, Chorizo +$7.00, Shrimp +$8.00, pork pineapple pastor +$9.00",
       "price": "$15.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Alcohol",
-        "Picante"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "tequila-escape-13",
-      "categoryId": "beverages",
-      "nameEs": "Agua Fresca de Horchata",
-      "nameEn": "Horchata Agua Fresca",
-      "descriptionEs": "Bebida artesanal tradicional de arroz con leche, canela y un toque de vainilla, servida bien fría.",
-      "descriptionEn": "Traditional house-made rice milk beverage infused with cinnamon and a hint of vanilla, served over ice.",
+      "id": "crispy-calamari",
+      "categoryId": "small-plates",
+      "nameEs": "Calamar Crujiente",
+      "nameEn": "Crispy Calamari",
+      "descriptionEs": "Jalapeños fritos, mayonesa de chipotle, marinara",
+      "descriptionEn": "Fried jalapeños, chipotle mayo, marinara",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tacos",
+      "categoryId": "small-plates",
+      "nameEs": "Tacos de Camarón",
+      "nameEn": "Shrimp Tacos",
+      "descriptionEs": "Camarones al carbón, cebollas, chimichurri, cilantro, repollo, arúgula, salsa verde, 2 tacos",
+      "descriptionEn": "Blackened shrimp, onions, chimichurri, cilantro, cabbage, arugula, salsa verde, 2 tacos",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-cage-free-chicken-taco",
+      "categoryId": "small-plates",
+      "nameEs": "Taco de Pollo Orgánico Libre de Jaula",
+      "nameEn": "Organic Cage-free Chicken Taco",
+      "descriptionEs": "Queso cotija, cebolla, cilantro, repollo, arúgula, salsa verde, 2 tacos",
+      "descriptionEn": "Cotija cheese, onion, cilantro, cabbage, arugula, salsa verde, 2 tacos",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-tacos",
+      "categoryId": "small-plates",
+      "nameEs": "Tacos de Bistec de Pastoreo",
+      "nameEn": "Grass Fed Steak Tacos",
+      "descriptionEs": "Arúgula, repollo, cebollas, cilantro, salsa verde, crema fresca, 2 tacos",
+      "descriptionEn": "Arugula, cabbage, onions, cilantro, salsa verde, crema fresca, 2 tacos",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-pineapple-pastor-taco",
+      "categoryId": "small-plates",
+      "nameEs": "Taco de Cerdo al Pastor con Piña",
+      "nameEn": "Pork Pineapple Pastor Taco",
+      "descriptionEs": "Cerdo marinado al estilo pastor, piña a la parrilla, arúgula, repollo, cebollas, cilantro, salsa verde de aguacate",
+      "descriptionEn": "Pastor marinade rested pork. grilled pineapple, arugula, cabbage, onions, cilantro, avocado salsa verde",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-blend-tacos",
+      "categoryId": "small-plates",
+      "nameEs": "Tacos de Mezcla de Hongos",
+      "nameEn": "Mushroom Blend Tacos",
+      "descriptionEs": "Arúgula, repollo, cebollas moradas, hongos shiitake, hongos silvestres, queso fresco, alioli de limón, 2 tacos",
+      "descriptionEn": "Arugula, cabbage, red onions, shiitake mushrooms, wild mushrooms, queso fresco, lemon aioli, 2 tacos",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-tacos",
+      "categoryId": "small-plates",
+      "nameEs": "Tacos de Atún Ahi",
+      "nameEn": "Ahi Tuna Tacos",
+      "descriptionEs": "Atún Ahi grado sushi, salsa de miso casera, 2 tacos",
+      "descriptionEn": "Sushi grade ahi tuna, homemade miso sauce, 2 tacos",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quinoa-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Quinua",
+      "nameEn": "Quinoa Salad",
+      "descriptionEs": "Quinua, tomate, ejotes, brócoli, hongos shiitake, coliflor, manzanas, zanahorias, col risada, tirabeques, aguacate, semillas de pepita, edamame, arándanos rojos, puerro crujiente, vinagreta de jengibre, limón y miso",
+      "descriptionEn": "Quinoa, tomato, green beans, broccoli, shitakes, cauliflower, apples, carrots, kale, snap peas, avocado, pepita seeds, edamame, cranberries, crispy leeks, ginger lemon miso vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar",
+      "categoryId": "salads",
+      "nameEs": "Caesar Clásica",
+      "nameEn": "Classic Caesar",
+      "descriptionEs": "Corazones de lechuga romana, aderezo caesar casero, picatostes caseros",
+      "descriptionEn": "Romaine hearts, homemade caesar dressing, homemade croutons",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-calamari-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Calamar Crujiente",
+      "nameEn": "Crispy Calamari Salad",
+      "descriptionEs": "Frisée orgánica, vinagreta de miso",
+      "descriptionEn": "Organic frisee, miso vinaigrette",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-kale-boursin",
+      "categoryId": "salads",
+      "nameEs": "Col Risada Orgánica + Boursin",
+      "nameEn": "Organic Kale + Boursin",
+      "descriptionEs": "Col risada picada, tomates cherry, zanahorias ralladas, queso Boursin, pacanas garapiñadas, tocino con pimienta, vinagreta balsámica de aguacate y miel con mostaza",
+      "descriptionEn": "Chopped kale, cherry tomatoes, shaved carrots, Boursin cheese, candied pecans, peppered bacon, avocado-honey mustard balsamic vinaigrette",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "picadilla-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Picadilla",
+      "nameEn": "Picadilla Salad",
+      "descriptionEs": "Lechuga romana, pepino, tomates, jícama, maíz dulce, frijoles, aguacate, queso cotija, vinagreta de ajo asado y limón",
+      "descriptionEn": "Romaine, cucumber, tomatoes, jicama, sweet corn, beans, avocado, cotija cheese, roasted garlic lemon vinaigrette",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cali-taco-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Taco Cali",
+      "nameEn": "Cali Taco Salad",
+      "descriptionEs": "Tocino ahumado con madera de manzano, aguacate, tomate, cebolla morada, queso gorgonzola, lechuga romana, vinagreta de la casa.",
+      "descriptionEn": "Applewood smoked bacon, avocado, tomato, red onion, gorgonzola cheese, romaine, house vinaigrette.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-add-ons",
+      "categoryId": "salads",
+      "nameEs": "Adiciones para ensalada",
+      "nameEn": "Salad add-ons",
+      "descriptionEs": "Pollo 9, camarón silvestre 12, salmón o bistec de pastoreo 15",
+      "descriptionEn": "Chicken 9, wild shrimp 12, salmon or grass-fed steak 15",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-caught-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón Silvestre",
+      "nameEn": "Wild Caught Salmon",
+      "descriptionEs": "Glaseado teriyaki de piña, arroz blanco, espinacas salteadas",
+      "descriptionEn": "Teriyaki pineapple glaze, white rice, sautéed spinach",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-al-mojo-de-ajo",
+      "categoryId": "entrees",
+      "nameEs": "Camarones al Mojo de Ajo",
+      "nameEn": "Shrimp Al Mojo De Ajo",
+      "descriptionEs": "Camarones jumbo silvestres, chorizo español, risotto de calabacita",
+      "descriptionEn": "Wild-caught jumbo shrimp, Spanish chorizo, zucchini risotto",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-and-shrimp-enchiladas",
+      "categoryId": "entrees",
+      "nameEs": "Enchiladas de Camarones y Callos de Hacha",
+      "nameEn": "Scallops and Shrimp Enchiladas",
+      "descriptionEs": "Pimientos morrones, cebollas, queso jack, crema de chipotle",
+      "descriptionEn": "Bell peppers, onions, jack cheese, chipotle cream",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-flounder-a-lo-macho",
+      "categoryId": "entrees",
+      "nameEs": "Lenguado Fresco a lo Macho",
+      "nameEn": "Fresh Flounder a lo Macho",
+      "descriptionEs": "Calamar, camarones, almejas, pimientos, cebollas, papas crujientes, reducción de ají panka y vino blanco, lenguado frito en sartén",
+      "descriptionEn": "Calamari, shrimp, clams, peppers, onions, crispy potatoes, aji panka-white wine reduction, pan fried flounder",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-half-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Medio Pollo Orgánico",
+      "nameEn": "Organic Half Chicken",
+      "descriptionEs": "Pollo orgánico libre de jaula, chorizo español, ajo con romero, chiles cherry, judías verdes, puré de papas al poblano",
+      "descriptionEn": "Organic cage-free chicken, spanish chorizo, garlic rosemary, cherry peppers, haricot verts, poblano mashed potatoes",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer-roasted-pork-shank",
+      "categoryId": "entrees",
+      "nameEs": "Chamorro de Cerdo Asado a la Cerveza",
+      "nameEn": "Beer Roasted Pork Shank",
+      "descriptionEs": "Chamorro cocinado a fuego lento, puré de papas al poblano, salsa de reducción de jerez y romero",
+      "descriptionEn": "Slow cooked shank, poblano mash potatoes, sherry rosemary reduction sauce",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "certified-organic-grass-fed-burger",
+      "categoryId": "entrees",
+      "nameEs": "Hamburguesa Certificada Orgánica de Pastoreo",
+      "nameEn": "Certified Organic Grass Fed Burger",
+      "descriptionEs": "Carne de res orgánica certificada, queso cheddar, tocino ahumado, aros de cebolla delgados, mayonesa de chipotle, papas fritas",
+      "descriptionEn": "Certified organic beef, cheddar, smoked bacon, shoestring onion rings, chipotle mayo, fries",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-frites",
+      "categoryId": "entrees",
+      "nameEs": "Bistec Frites de Pastoreo",
+      "nameEn": "Grass-fed Steak Frites",
+      "descriptionEs": "Falda de res orgánica certificada de pastoreo, ensalada de hojas verdes orgánicas, chimichurri de cilantro hecho en casa, gorgonzola, papas fritas",
+      "descriptionEn": "Grass-fed certified organic skirt steak, organic mixed green salad, house-made cilantro chimichurri, gorgonzola, french fries",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon-saltado",
+      "categoryId": "entrees",
+      "nameEs": "Lomo Saltado",
+      "nameEn": "Filet Mignon Saltado",
+      "descriptionEs": "Filete mignon, cebollas, tomates, cebollines, salsa de reducción de soya y ostras, papas, cilantro. Agrega arroz +2",
+      "descriptionEn": "Filet mignon, onions, tomatoes, scallions, oyster soy reduction sauce, potatoes, cilantro. Add rice +2",
+      "price": "$39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "domestic-volcano-lamb-shank",
+      "categoryId": "entrees",
+      "nameEs": "Chamorro de Cordero Volcán Doméstico",
+      "nameEn": "Domestic Volcano Lamb Shank",
+      "descriptionEs": "Chamorro de cordero cocinado a fuego lento, polenta cremosa de chayote, salsa de vino con vegetales asados",
+      "descriptionEn": "Slow cooked lamb shank, creamy chayote polenta, roasted vegetable wine sauce",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paella-valenciana",
+      "categoryId": "entrees",
+      "nameEs": "Paella Valenciana",
+      "nameEn": "Paella Valenciana",
+      "descriptionEs": "Camarones, almejas, mejillones, calamares, chorizo, pimientos morrones, arroz con azafrán",
+      "descriptionEn": "Shrimp, clams, mussels, calamari, chorizo, bell peppers, saffron rice",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-paella",
+      "categoryId": "entrees",
+      "nameEs": "Paella de Pollo",
+      "nameEn": "Chicken Paella",
+      "descriptionEs": "Arroz con azafrán, pollo orgánico, pimientos rojos, pimientos verdes, cebollas",
+      "descriptionEn": "Saffron rice, organic chicken, red peppers, green peppers, onions",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-paella",
+      "categoryId": "entrees",
+      "nameEs": "Paella Vegetariana",
+      "nameEn": "Vegetarian Paella",
+      "descriptionEs": "Brócoli, col morada, coliflor, pimientos rojos y verdes, cebollas (GF, VO)",
+      "descriptionEn": "Broccoli, red cabbage, cauliflower, red and green peppers, onions (GF, VO)",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-iron-skillet-fajitas",
+      "categoryId": "entrees",
+      "nameEs": "Fajitas en sartén de hierro negro",
+      "nameEn": "Black iron skillet fajitas",
+      "descriptionEs": "Salteadas y chispeantes con cebollas caramelizadas, chayote, calabacín, pimientos morrones",
+      "descriptionEn": "Sizzling with caramelized onions, chayote, zucchini, bell peppers",
+      "price": "Mixed vegetables $25.00 / Grass-fed skirt steak $37.00 / Organic chicken $30.00 / Wild shrimp $31.00 / rice and beans - Add $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn",
+      "categoryId": "sides",
+      "nameEs": "Elote callejero",
+      "nameEn": "Street corn",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauted-organic-spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinacas Orgánicas Salteadas",
+      "nameEn": "Sauted Organic Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Fritas con Trufa",
+      "nameEn": "Truffle Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-beans",
+      "categoryId": "sides",
+      "nameEs": "Arroz + Frijoles",
+      "nameEn": "Rice + Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-seasonal-vegetables",
+      "categoryId": "sides",
+      "nameEs": "Verduras de Temporada a la Parrilla",
+      "nameEn": "Grilled Seasonal Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-risotto",
+      "categoryId": "sides",
+      "nameEs": "Risotto de Hongos",
+      "nameEn": "Mushroom Risotto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poblano-mashed-potato",
+      "categoryId": "sides",
+      "nameEs": "Puré de Papa al Poblano",
+      "nameEn": "Poblano Mashed Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$5.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Sin Alcohol",
-        "Dulce"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guacamole-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Guacamole (almuerzo)",
+      "nameEn": "Guacamole (lunch)",
+      "descriptionEs": "Ofrecido de 4 deliciosas maneras",
+      "descriptionEn": "Offered in 4 delicious ways",
+      "price": "Classic $16.00 / Serrano $17.00 / Shrimp Chimichurri $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Sopa del Día (almuerzo)",
+      "nameEn": "Soup Of The Day (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-flautas-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Flautas Buffalo (almuerzo)",
+      "nameEn": "Buffalo Flautas (lunch)",
+      "descriptionEs": "Tinga de pollo orgánica, cebollas, tomate, chipotle, salsa buffalo, crema fresca",
+      "descriptionEn": "Organic chicken tinga, onions, tomato, chipotle, buffalo sauce, crema Fresca",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-empanadas-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Empanadas de Pasto (almuerzo)",
+      "nameEn": "Grass-fed Empanadas (lunch)",
+      "descriptionEs": "Carne: salsa de chipotle casera",
+      "descriptionEn": "Steak: homemade chipotle sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-caught-jumbo-shrimp-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Camarones Jumbo Silvestres (almuerzo)",
+      "nameEn": "Wild Caught Jumbo Shrimp (lunch)",
+      "descriptionEs": "Plátanos maduros, salsa de vino blanco y chiles cherry",
+      "descriptionEn": "Plantains, white wine cherry pepper sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peruvian-seafood-ceviche-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Cebiche Peruano de Mariscos (almuerzo)",
+      "nameEn": "Peruvian Seafood Ceviche (lunch)",
+      "descriptionEs": "Lenguado fresco, calamares, camarones, limón fresco, cebolla morada, cilantro, maíz peruano, ají limo,",
+      "descriptionEn": "Fresh flounder, calamari, shrimp, fresh lime, red onion, cilantro, peruvian corn, limo pepper,",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-skewers-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Brochetas de Carne de Pasto (almuerzo)",
+      "nameEn": "Grass-fed Steak Skewers (lunch)",
+      "descriptionEs": "Entraña de res alimentada con pasto, pastel de papa y coliflor, salsa huancaína, salsa chimichurri",
+      "descriptionEn": "Grass-fed skirt steak, potato cauliflower cake, huancaina sauce, chimichurri sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-tostada-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Tostada de Atún Ahi (almuerzo)",
+      "nameEn": "Ahi Tuna Tostada (lunch)",
+      "descriptionEs": "Aguacate, cebollines, salsa de miso casera, alioli de sriracha",
+      "descriptionEn": "Avocado, scallions, homemade miso sauce, sriracha aioli",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-calamari-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Calamares Crujientes (almuerzo)",
+      "nameEn": "Crispy Calamari (lunch)",
+      "descriptionEs": "Con jalapeños fritos, alioli de chipotle a un lado",
+      "descriptionEn": "With fried jalapeños, chipotle aioli on the side",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tacos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Tacos de Camarón (almuerzo)",
+      "nameEn": "Shrimp Tacos (lunch)",
+      "descriptionEs": "Camarones al pastor/ennegrecidos, cebollas, chimichurri, cilantro, salsa verde, 2 tacos",
+      "descriptionEn": "Blackened shrimp, onions, chimichurri, cilantro, salsa verde, 2 tacos",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Elote Callejero (almuerzo)",
+      "nameEn": "Street Corn (lunch)",
+      "descriptionEs": "En mazorca, alioli de chipotle, queso cotija",
+      "descriptionEn": "On the cob, chipotle aioli, cotija cheese",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peruvian-artichokes-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Alcachofas Peruanas (almuerzo)",
+      "nameEn": "Peruvian Artichokes (lunch)",
+      "descriptionEs": "Alioli de limón, jalapeño en rodajas, cebolla morada, cilantro, queso fresco, aceite de oliva con limón",
+      "descriptionEn": "Lemon aioli, sliced jalapeno, red onion, cilantro, queso fresco, lemon olive oil",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-crispy-chicken-tacos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Tacos de Pollo Crujiente Orgánico (almuerzo)",
+      "nameEn": "Organic Crispy Chicken Tacos (lunch)",
+      "descriptionEs": "Queso cotija, cebolla, cilantro, repollo, arúgula, salsa verde, 2 tacos",
+      "descriptionEn": "Cotija cheese, onion, cilantro, cabbage, arugula, salsa verde, 2 tacos",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-tacos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Tacos de Atún Ahi (almuerzo)",
+      "nameEn": "Ahi Tuna Tacos (lunch)",
+      "descriptionEs": "Atún Ahi, cebollines, salsa especial de soya y sésamo, crema fresca picante, guacamole, 2 tacos",
+      "descriptionEn": "Ahi tuna, scallions, signature sesame soy sauce, spicy crema fresca, guacamole, 2 tacos",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-quesadillas-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Quesadillas Callejeras (almuerzo)",
+      "nameEn": "Street Quesadillas (lunch)",
+      "descriptionEs": "Tortilla de maíz, chiles cherry, cebollas, mezcla de quesos mexicanos, guacamole, crema agria, pico de gallo; agregue: Carne +$8.00, Pollo +$7.00, Camarón +$7.00, chorizo +$6.00, Verduras de Temporada +$4.00",
+      "descriptionEn": "Corn tortilla, cherry peppers, onions, Mexican cheese blend, guacamole, sour cream, pico de gallo; add: Steak +$8.00, Chicken +$7.00, Shrimp +$7.00, chorizo +$6.00, Seasonal Veggies +$4.00",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Coles de Bruselas (almuerzo)",
+      "nameEn": "Brussels Sprouts (lunch)",
+      "descriptionEs": "Cortadas finas, con glaseado de ajo y trufa, chalotes, tocino",
+      "descriptionEn": "Shaved, with garlic truffle glaze, shallots, bacon",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-charred-portuguese-octopus-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Pulpo Portugués Carbonizado Silvestre (almuerzo)",
+      "nameEn": "Wild Charred Portuguese Octopus (lunch)",
+      "descriptionEs": "Papa cambray, chorizo español, hinojo, chile cherry, aceite de oliva con limón",
+      "descriptionEn": "Baby potato, Spanish chorizo, fennel, cherry pepper, lemon olive oil",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-nachos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Nachos de California (almuerzo)",
+      "nameEn": "California Nachos (lunch)",
+      "descriptionEs": "Puré de frijoles negros, queso Monterrey Jack, guacamole, crema agria, pico de gallo; agregue: Pollo +$7.00, Carne +$8.00, Chorizo +$6.00, Camarón +$7.00",
+      "descriptionEn": "Black bean puree, Monterrey jack cheese, guacamole, sour cream, pico de gallo; add: Chicken +$7.00, Steak +$8.00, Chorizo +$6.00, Shrimp +$7.00",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blistered-shishito-peppers-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "chiles shishito ampollados (almuerzo)",
+      "nameEn": "blistered shishito peppers (lunch)",
+      "descriptionEs": "Ampollados a la parrilla con sal de mar",
+      "descriptionEn": "Blistered with sea salt",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-skewers-lunch-small-plates",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Brochetas de Carne de Pasto (almuerzo) (platos pequeños)",
+      "nameEn": "Grass-fed Steak Skewers (lunch) (small plates)",
+      "descriptionEs": "Entraña de res certificada orgánica alimentada con pasto, croquetas de papa y coliflor, salsa huancaína, salsa chimichurri",
+      "descriptionEn": "Certified organic grass fed skirt steak, potato cauliflower croquettes, huancaina sauce, chimichurri sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-tacos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "Tacos de carne de pasto (almuerzo)",
+      "nameEn": "Grass-fed steak tacos (lunch)",
+      "descriptionEs": "Arúgula, repollo, cebollas, cilantro, salsa verde de aguacate (picante), crema fresca",
+      "descriptionEn": "Arugula, cabbage, onions, cilantro, avocado salsa verde(spicy), crema fresca",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-blend-tacos-lunch",
+      "categoryId": "lunch-small-plates",
+      "nameEs": "tacos de mezcla de hongos (almuerzo)",
+      "nameEn": "mushroom blend tacos (lunch)",
+      "descriptionEs": "Arúgula, repollo, cebollas moradas, hongos shiitake, hongos silvestres, queso fresco, alioli de limón",
+      "descriptionEn": "Arugula, cabbage, red onions, shiitake mushrooms, wild mushrooms, queso fresco, lemon aioli",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quinoa-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de Quinoa (almuerzo)",
+      "nameEn": "Quinoa Salad (lunch)",
+      "descriptionEs": "Quinoa, tomate, ejotes, brócoli, shiitakes, coliflor, manzanas, zanahorias, col rizada, chícharos chinos, aguacate, semillas de pepita, edamame, arándanos, puerro crujiente, vinagreta de jengibre, limón y miso",
+      "descriptionEn": "Quinoa, tomato, green beans, broccoli, shitakes, cauliflower, apples, carrots, kale, snap peas, avocado, pepita seeds, edamame, cranberries, crispy leeks, ginger lemon miso vinaigrette",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-caesar-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Media César (almuerzo)",
+      "nameEn": "Half Caesar (lunch)",
+      "descriptionEs": "Media lechuga, aderezo césar casero, picatostes caseros",
+      "descriptionEn": "Half lettuce, homemade caesar dressing, homemade croutons",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Calamares (almuerzo)",
+      "nameEn": "Calamari (lunch)",
+      "descriptionEs": "Frisée orgánica, vinagreta de miso",
+      "descriptionEn": "Organic frisee, miso vinaigrette",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-boursin-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Col Rizada + Boursin (almuerzo)",
+      "nameEn": "Kale + Boursin (lunch)",
+      "descriptionEs": "Col rizada picada toscamente mezclada con tomates cherry, zanahorias ralladas, queso Boursin, nueces azucaradas, tocino especiado, vinagreta balsámica de aguacate y mostaza con miel",
+      "descriptionEn": "Roughly chopped kale tossed with cherry tomatoes, shaved carrots, Boursin cheese, candied pecans, peppered bacon, avocado-honey mustard balsamic vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "picadilla-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada Picadilla (almuerzo)",
+      "nameEn": "Picadilla Salad (lunch)",
+      "descriptionEs": "Lechuga romana, pepino, tomates, jícama, elote dulce, frijoles, aguacate, queso cotija, vinagreta de limón y ajo asado",
+      "descriptionEn": "Romaine, cucumber, tomatoes, jicama, sweet corn, beans, avocado, cotija cheese, roasted garlic lemon vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cali-taco-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de Taco Cali (almuerzo)",
+      "nameEn": "Cali Taco Salad (lunch)",
+      "descriptionEs": "Tocino ahumado con madera de manzano, aguacate, tomate, cebolla morada, queso gorgonzola, lechuga romana, vinagreta de la casa.",
+      "descriptionEn": "Applewood smoked bacon, avocado, tomato, red onion, gorgonzola cheese, romaine, house vinaigrette.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-sandwich-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Sándwich de Pollo (almuerzo)",
+      "nameEn": "Chicken Sandwich (lunch)",
+      "descriptionEs": "Aguacate, tomate, lechuga, alioli de chipotle, papas fritas",
+      "descriptionEn": "Avocado, tomato, lettuce, chipotle aioli, fries",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-sandwich-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Sándwich de Carne (almuerzo)",
+      "nameEn": "Steak Sandwich (lunch)",
+      "descriptionEs": "Entraña de res alimentada con pasto, cebolla caramelizada, hongos, alioli de sriracha, papas fritas",
+      "descriptionEn": "Grass-fed skirt steak, caramelized onion, mushroom, sriracha aioli, fries",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burritos-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Burritos (almuerzo)",
+      "nameEn": "Burritos (lunch)",
+      "descriptionEs": "Arroz, frijoles negros, queso Monterrey Jack, crema agria, guarnición de ensalada verde mixta",
+      "descriptionEn": "Rice, black beans, Monterrey jack cheese, sour cream, side of mixed greens",
+      "price": "Veggie $12.00 / Organic Chicken $16.00 / Grass Fed Steak $17.00 / Shrimp $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "certified-organic-grass-fed-burger-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Hamburguesa de res alimentada con pasto y certificada orgánica (almuerzo)",
+      "nameEn": "Certified Organic Grass Fed Burger (lunch)",
+      "descriptionEs": "Queso cheddar, tocino ahumado, aros de cebolla delgados, mayonesa de chipotle, papas fritas",
+      "descriptionEn": "Cheddar, smoked bacon, shoestring onion rings, chipotle mayo, fries",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-blt-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "BLT de aguacate (almuerzo)",
+      "nameEn": "Avocado BLT (lunch)",
+      "descriptionEs": "Alioli de sriracha, papas fritas",
+      "descriptionEn": "Sriracha aioli, fries",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-skirt-steak-frites-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Skirt steak frites de res alimentada con pasto (almuerzo)",
+      "nameEn": "Grass Fed Skirt Steak Frites (lunch)",
+      "descriptionEs": "Papas fritas, ensalada verde mixta, salsa chimichurri, gorgonzola",
+      "descriptionEn": "French fries, mixed greens, chimichurri sauce, gorgonzola",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-shrimp-enchiladas-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Enchiladas de callos de hacha / camarones (almuerzo)",
+      "nameEn": "Scallops / Shrimp Enchiladas (lunch)",
+      "descriptionEs": "Pimientos morrones, cebollas, queso jack, crema de chipotle",
+      "descriptionEn": "Bell peppers, onions, jack cheese, chipotle cream",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-iron-skillet-fajitas-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Fajitas en sartén de hierro negro (almuerzo)",
+      "nameEn": "Black iron skillet fajitas (lunch)",
+      "descriptionEs": "Salteadas a la plancha con cebollas caramelizadas, chayote, calabacita, pimientos morrones",
+      "descriptionEn": "Sizzling with caramelized onions, chayote, zucchini, bell peppers",
+      "price": "Mixed vegetables $18.00 / Grass-fed skirt steak $35.00 / Organic chicken $29.00 / Wild shrimp $29.00 / rice and beans - Add $3.00 / Chicken - Add to protein $7.00 / Shrimp - Add to protein $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-caught-alaskan-salmon-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Salmón salvaje de Alaska (almuerzo)",
+      "nameEn": "Wild Caught Alaskan Salmon (lunch)",
+      "descriptionEs": "Glaseado de piña teriyaki, arroz basmati, espinacas salteadas (GF)",
+      "descriptionEn": "Teriyaki pineapple glaze, basmati rice, sautéed spinach (GF)",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "atlantic-mahi-mahi-al-sherry-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Mahi Mahi del Atlántico al jerez (almuerzo)",
+      "nameEn": "Atlantic Mahi Mahi al sherry (lunch)",
+      "descriptionEs": "Risotto de callos de hacha, salsa de reducción de callos de hacha y jerez",
+      "descriptionEn": "Scallops risotto, scallop-sherry reduction sauce",
+      "price": "$37.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-half-chicken-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Medio pollo orgánico (almuerzo)",
+      "nameEn": "Organic Half Chicken (lunch)",
+      "descriptionEs": "Puré de papas poblano, ejotes, chorizo español, salsa de reducción de vino blanco y chiles cherry",
+      "descriptionEn": "Poblano mashed potatoes, haricot verts, spanish chorizo, white wine cherry pepper reduction sauce",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-al-mojo-de-ajo-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Camarones al mojo de ajo (almuerzo)",
+      "nameEn": "Shrimp al Mojo de Ajo (lunch)",
+      "descriptionEs": "Camarones jumbo silvestres, chorizo español, risotto de calabacita",
+      "descriptionEn": "Wild caught jumbo shrimp, Spanish chorizo, zucchini risotto",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn-lunch-sides",
+      "categoryId": "lunch-sides",
+      "nameEs": "Elote callejero (almuerzo) (guarniciones)",
+      "nameEn": "Street corn (lunch) (sides)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauted-organic-spinach-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Espinacas orgánicas salteadas (almuerzo)",
+      "nameEn": "Sauted Organic Spinach (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-fries-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Papas fritas con trufa (almuerzo)",
+      "nameEn": "Truffle Fries (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-beans-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Arroz + Frijoles (almuerzo)",
+      "nameEn": "Rice + Beans (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-seasonal-vegetables-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Verduras de temporada a la parrilla (almuerzo)",
+      "nameEn": "Grilled Seasonal Vegetables (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-risotto-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Risotto de hongos (almuerzo)",
+      "nameEn": "Mushroom Risotto (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poblano-mash-lunch",
+      "categoryId": "lunch-sides",
+      "nameEs": "Puré poblano (almuerzo)",
+      "nameEn": "Poblano Mash (lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Sopa",
+      "nameEn": "Soup",
+      "descriptionEs": "Selección del día del chef",
+      "descriptionEn": "Chefs daily selection",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gaucho-brunch",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Brunch gaucho",
+      "nameEn": "Gaucho Brunch",
+      "descriptionEs": "Faldita de res alimentada con pasto, huevos, papas estilo rústico",
+      "descriptionEn": "Grass-fed skirt steak, eggs, home fries",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-eggs-benedict",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Huevos Benedictinos con salmón ahumado",
+      "nameEn": "Smoked Salmon Eggs Benedict",
+      "descriptionEs": "Con guarnición de ensalada verde mixta",
+      "descriptionEn": "With side of mixed greens",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-steak-con-huevos-rancheros",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Bistec con huevos rancheros de res alimentada con pasto",
+      "nameEn": "Grass Fed Steak Con Huevos Rancheros",
+      "descriptionEs": "Faldita de res marinada alimentada con pasto, huevos, frijoles negros, salsa roja, tortillas a la parrilla",
+      "descriptionEn": "Marinated grass-fed skirt steak, eggs, black beans, salsa roja, grilled tortillas",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-and-walnut-french-toast",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Tostadas francesas de plátano y nuez",
+      "nameEn": "Banana And Walnut French Toast",
+      "descriptionEs": "Tostadas francesas de brioche en capas, nueces garapiñadas, plátanos al ron, crema batida, hilos de chocolate",
+      "descriptionEn": "Stacked and layered brioche French toast, candied walnuts, rum toasted bananas, whipped cream, chocolate drizzle",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "open-face-grass-fed-burger",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Hamburguesa abierta de res alimentada con pasto",
+      "nameEn": "Open Face Grass Fed Burger",
+      "descriptionEs": "Hamburguesa de 8oz de res alimentada con pasto y certificada orgánica, queso cheddar, tocino, aguacate en rodajas, huevo, salsa holandesa de jalapeño, papas estilo rústico",
+      "descriptionEn": "8oz certified organic grass fed burger, cheddar, bacon, sliced avocado, egg, jalapeno hollandaise sauce, home fries",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-veggies-omelet",
+      "categoryId": "weekend-brunch",
+      "nameEs": "Omelette de verduras de temporada",
+      "nameEn": "Seasonal Veggies Omelet",
+      "descriptionEs": "Hongos, cebollas caramelizadas, chayote, calabacita, pimientos morrones",
+      "descriptionEn": "Mushroom, caramelized onions, chayote, zucchini, bell peppers",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-75",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "French 75",
+      "nameEn": "French 75",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bloody-mary-or-bloody-maria",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "BLOODY MARY o BLOODY MARIA",
+      "nameEn": "BLOODY MARY or BLOODY MARIA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "any-of-our-mimosas",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Cualquiera de nuestras MIMOSAS",
+      "nameEn": "Any of our MIMOSAs",
+      "descriptionEs": "Elija entre: Clásica, Bellini, Fresa, Mango, Naranja Sanguina, Piña, Guayaba, Kiwi",
+      "descriptionEn": "Choose from : Classic, Bellini, Strawberry, Mango, Blood Orange, Pineapple, Guava, Kiwi",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bellini",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Bellini",
+      "nameEn": "Bellini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-or-white-sangria",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "SANGRÍA TINTA o BLANCA",
+      "nameEn": "RED or WHITE SANGRIA",
+      "descriptionEs": "Agregar: Jarra de 6 copas flaming +$60.00",
+      "descriptionEn": "Add: 6 glass flamming PITCHER +$60.00",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carajillo",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Carajillo",
+      "nameEn": "Carajillo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "campfire-espresso-martini",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Martini de espresso fogata",
+      "nameEn": "Campfire Espresso Martini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-organic-chicken-breast",
+      "categoryId": "kids-menu",
+      "nameEs": "Pechuga de pollo orgánico para niños",
+      "nameEn": "Kids Organic Chicken Breast",
+      "descriptionEs": "Con papas fritas",
+      "descriptionEn": "With fries",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-steak",
+      "categoryId": "kids-menu",
+      "nameEs": "Bistec para niños",
+      "nameEn": "Kids Steak",
+      "descriptionEs": "Bistec certificado orgánico alimentado con pasto + papas fritas",
+      "descriptionEn": "Certified organic grass-fed steak + fries",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-organic-chicken-tacos",
+      "categoryId": "kids-menu",
+      "nameEs": "Tacos de pollo orgánico para niños",
+      "nameEn": "Kids Organic Chicken Tacos",
+      "descriptionEs": "Con papas fritas; agregar: Agregar queso +$2.00",
+      "descriptionEn": "With fries; add: Add Cheese +$2.00",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-certified-organic-grass-fed-burger",
+      "categoryId": "kids-menu",
+      "nameEs": "Hamburguesa infantil de res alimentada con pasto y certificada orgánica",
+      "nameEn": "Kids Certified Organic Grass Fed Burger",
+      "descriptionEs": "Con papas fritas",
+      "descriptionEn": "With fries",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-mac-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Macarrones con queso para niños",
+      "nameEn": "Kids Mac + Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-penne-linguini-with-butter-marinara",
+      "categoryId": "kids-menu",
+      "nameEs": "Penne / Linguini con mantequilla / marinara para niños",
+      "nameEn": "Kids Penne / Linguini with Butter / Marinara",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-organic-monterrey-jack-cheese-quesadilla",
+      "categoryId": "kids-menu",
+      "nameEs": "Quesadilla infantil de queso Monterrey Jack orgánico",
+      "nameEn": "Kids Organic Monterrey Jack Cheese Quesadilla",
+      "descriptionEs": "Agregar: Pollo +$6.00",
+      "descriptionEn": "Add: Chicken +$6.00",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita clásica",
+      "nameEn": "Classic Margarita",
+      "descriptionEs": "Jimador blanco, licor de naranja 100% natural, jugo de lima fresco",
+      "descriptionEn": "Jimador blanco, all natural orange liqueur, fresh lime juice",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood-orange-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de naranja sanguina",
+      "nameEn": "Blood Orange Margarita",
+      "descriptionEs": "Espolón blanco, licor de naranja 100% natural, jugo de lima fresco, naranja sanguina",
+      "descriptionEn": "Espolon blanco, all natural orange liqueur, fresh lime juice, blood orange",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skinny-girl-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Skinny Girl",
+      "nameEn": "Skinny Girl Margarita",
+      "descriptionEs": "Herradura Blanco, Cointreau, jugo de lima",
+      "descriptionEn": "Herradura Blanco, Cointreau, Lime Juice",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passion-fruit-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de maracuyá",
+      "nameEn": "Passion Fruit Margarita",
+      "descriptionEs": "Puré de maracuyá, Exotico Blanco, licor de naranja 100% natural, jugo de lima fresco",
+      "descriptionEn": "Passion fruit puree, Exotico Blanco, all-natural orange liqueur, fresh lime juice",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapeno-cucumber-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de jalapeño y pepino",
+      "nameEn": "Jalapeno Cucumber Margarita",
+      "descriptionEs": "Blanco infusionado con jalapeño, licor de naranja 100% natural, jugo de lima fresco, trozos de pepino machacados",
+      "descriptionEn": "Jalapeno infused blanco, all natural orange liqueur, fresh lime juice, muddled cucumber",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-fields-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Strawberry Fields",
+      "nameEn": "Strawberry Fields Margarita",
+      "descriptionEs": "Fresas machacadas, Espolón Blanco, Combier, jugo de lima fresco",
+      "descriptionEn": "Muddled Strawberries, Espolon Blanco, Combier, fresh lime juice",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mezcal-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de mezcal",
+      "nameEn": "Mezcal Margarita",
+      "descriptionEs": "Mezcal blanco Banhez, combier, jugo de limón fresco",
+      "descriptionEn": "Banhez blanco mezcal, combier, fresh lime juice",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de Mango",
+      "nameEn": "Mango Margarita",
+      "descriptionEs": "Jimador blanco, licor de naranja 100% natural, jugo de limón fresco, mango",
+      "descriptionEn": "Jimador blanco, all natural orange liqueur, fresh lime juice, mango",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-blood-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Spicy Blood",
+      "nameEn": "Spicy Blood Margarita",
+      "descriptionEs": "Espolón blanco, licor de naranja natural, jugo de limón fresco, chiles serranos, naranja Sanguina, fresas",
+      "descriptionEn": "Espolon blanco, natural orange liqueur, fresh lime juice, serrano peppers, blood orange, strawberries",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "perfect-patron-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Perfect Patrón",
+      "nameEn": "Perfect Patron Margarita",
+      "descriptionEs": "Patrón silver, Patrón Citrónge orange, jugo de limón fresco",
+      "descriptionEn": "Patron silver, patron citronge orange, fresh lime juice",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-verde-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita La Verde",
+      "nameEn": "La Verde Margarita",
+      "descriptionEs": "Blanco infusionado con piña, cilantro, albahaca, menta, serrano, licor de naranja 100% natural, jugo de limón fresco",
+      "descriptionEn": "Pineapple infused blanco, cilantro, basil, mint, serrano, all natural orange liqueur, fresh lime juice",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "el-jefe-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita El Jefe",
+      "nameEn": "El Jefe Margarita",
+      "descriptionEs": "Casa Noble reposado, Grand Marnier, jugo de limón fresco",
+      "descriptionEn": "Casa noble reposado, grand mariner, fresh lime juice",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomegranate-mojito",
+      "categoryId": "latin-classics",
+      "nameEs": "Mojito de Granada",
+      "nameEn": "Pomegranate Mojito",
+      "descriptionEs": "Ron blanco Bacardí, puré de granada, fresas, menta, limón",
+      "descriptionEn": "Bacardi white rum, pomegranate puree, strawberries, mint, lime",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "traditional-mojito",
+      "categoryId": "latin-classics",
+      "nameEs": "Mojito Tradicional",
+      "nameEn": "Traditional Mojito",
+      "descriptionEs": "Limones, menta, ron blanco Bacardí",
+      "descriptionEn": "Limes, mint, bacardi white rum",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-mojito",
+      "categoryId": "latin-classics",
+      "nameEs": "Mojito Tropical",
+      "nameEn": "Tropical Mojito",
+      "descriptionEs": "Ron blanco Bacardí, puré de maracuyá, mango, menta, limón",
+      "descriptionEn": "Bacardi white rum, passion fruit puree, mango, mint, lime",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-mint-martini",
+      "categoryId": "latin-classics",
+      "nameEs": "Martini de Pepino y Menta",
+      "nameEn": "Cucumber Mint Martini",
+      "descriptionEs": "Vodka ultra premium Cylinder, pepino, menta, jugo de limón fresco",
+      "descriptionEn": "Cylinder ultra premium vodka, cucumber, mint, freshl lime juice",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caipirinha",
+      "categoryId": "latin-classics",
+      "nameEs": "Caipirinha",
+      "nameEn": "Caipirinha",
+      "descriptionEs": "Cachaça Leblon, limones frescos, azúcar morena orgánica *disponible tradicional, de maracuyá, fresa y mango",
+      "descriptionEn": "Leblon cachaca, fresh limes, organic brown sugar *traditional, passionfruit, strawberry & mango available",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pisco-sour",
+      "categoryId": "latin-classics",
+      "nameEs": "Pisco Sour",
+      "nameEn": "Pisco Sour",
+      "descriptionEs": "Pisco quebranta Barsol, jugo de limón fresco, licor de flor de saúco, clara de huevo, a elegir entre tradicional, maracuyá o fresa",
+      "descriptionEn": "Barsol pisco quebranta, fresh lime juice, elderflower liqueur, egg white choice of traditional, passion fruit or strawberry",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria",
+      "categoryId": "latin-classics",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "descriptionEs": "A elegir entre tinto (a base de pisco) o blanco (a base de vodka de durazno)",
+      "descriptionEn": "Choice of red (pisco based) or white (peach vodka based)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultima-palabra",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Última Palabra",
+      "nameEn": "Ultima palabra",
+      "descriptionEs": "Mezcal espadín Del Maguey, Luxardo maraschino, Chartreuse verde, jugo de limón fresco",
+      "descriptionEn": "Del maguey espadin mezcal, luxardo maraschino, green chartreuse, fresh lime juice",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-paperplane",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Japanese Paperplane",
+      "nameEn": "Japanese Paperplane",
+      "descriptionEs": "Gin japonés Roku, jugo de limón amarillo fresco, Aperol, Amaro Notion",
+      "descriptionEn": "Roku japanese gin, fresh lemon juice, aperol, amaro notion",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lavender-bees-knees",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Lavender Bees Knees",
+      "nameEn": "Lavender Bees Knees",
+      "descriptionEs": "Gin japonés Roku, jugo de limón amarillo fresco, jarabe infusionado con miel de lavanda, punta de lavanda fresca",
+      "descriptionEn": "Roku Japanese gin, fresh lemon juice, lavender honey-infused syrup, fresh lavender top",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mick-jagger-penicillin",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Mick Jagger Penicillin",
+      "nameEn": "Mick Jagger Penicillin",
+      "descriptionEs": "Whisky escocés de malta única Naked, jugo de limón amarillo fresco, miel local infusionada con jengibre",
+      "descriptionEn": "Naked single malt scotch, fresh lemon juice, ginger infused local honey",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barrel-aged-tequila-old-fashioned",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Tequila Old Fashioned Añejado en Barrica",
+      "nameEn": "Barrel Aged Tequila Old Fashioned",
+      "descriptionEs": "Espolón reposado, agave, amargo de naranja, amargo de Angostura, cáscara de naranja flameada, anejado en barrica durante 14 días en barricas usadas de bourbon",
+      "descriptionEn": "Espolon reposado, agave, orange bitters,. angostura bitters, flamed orange peel, barrel aged 14 days in used bourbon barrel casks",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barrel-aged-rye-manhattan",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Rye Manhattan Añejado en Barrica",
+      "nameEn": "Barrel Aged Rye Manhattan",
+      "descriptionEs": "Redemption rye, vermú dulce Dolin, amargo de Angostura, cereza maraschino. Añejado en barrica durante 14 días en barricas usadas de bourbon",
+      "descriptionEn": "Redemption rye, dolin sweet vermouth, angostura bitters, maraschino cherry. Barrel aged 14 days in used bourbon barrel casks",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barrel-aged-mezcal-negroni",
+      "categoryId": "speakeasy-cocktails",
+      "nameEs": "Mezcal Negroni Añejado en Barrica",
+      "nameEn": "Barrel Aged Mezcal Negroni",
+      "descriptionEs": "Ilegal blanco, Campari, Carpano Antica, humo de madera de arce, añejado en barrica durante 14 días en barricas usadas de bourbon",
+      "descriptionEn": "Ilegal blanco, campari, carpano antica, maplewood smoke, barrel aged 14 days in used bourbon barrel casks",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Jarra de Mojito para Llevar",
+      "nameEn": "Mojito Pitcher To Go",
+      "descriptionEs": "Un cuarto galón completo sin hielo. Equivale a 6 de nuestros cócteles. A elegir entre Tradicional, Coco, Granada, Tropical (maracuyá y mango), y Fresa",
+      "descriptionEn": "Full Quart without ice. Equivalent of 6 of our cocktails. Choice of Traditional, Coconut, Pomegranate, Tropical (passionfruit & mango), and Strawberry",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Jarra de Margarita para Llevar",
+      "nameEn": "Margarita Pitcher To Go",
+      "descriptionEs": "Jarra de margarita para llevar servida en un cuarto galón completo sin hielo. Equivale a 6 de nuestras famosas margaritas. A elegir entre: Tradicional, Fresa, Mango, Naranja Sanguina, Maracuyá, Guayaba, Jalapeño y Pepino, La verde, Naranja Sanguina picante, Maracuyá picante. Mezcal (+10), Patrón, Casamigos o Don Julio (+15), Skinny Girl (Herradura y Cointreau) +15",
+      "descriptionEn": "Margarita Pitcher to go served in a full quart without ice. Measures 6 of our famous margaritas. Choice of: Traditional, Strawberry, Mango, Blood Orange, Passionfruit, Guava, Jalapeño Cucumber, La verde, Spicy Blood Orange, Spicy Passionfruit. Mezcal (+10), Patron, Casamigos or Don Julio (+15), Skinny Girl (herradura & cointreau) +15",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito-half-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Media Jarra de Mojito para Llevar",
+      "nameEn": "Mojito Half Pitcher To Go",
+      "descriptionEs": "Servido en un recipiente de medio cuarto de galón sin hielo. Equivale a 3 de nuestros cócteles. A elegir entre Tradicional, Coco, Granada, Tropical (maracuyá y mango), y Fresa",
+      "descriptionEn": "Served in a half quart container with no ice. Equivalent of 3 of our cocktails. Choice of Traditional, Coconut, Pomegranate, Tropical (passionfruit & mango), and Strawberry",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita-half-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Media Jarra de Margarita para Llevar",
+      "nameEn": "Margarita Half Pitcher To Go",
+      "descriptionEs": "Jarra de margarita para llevar servida en medio cuarto de galón sin hielo. Equivale a 3 de nuestras famosas margaritas. A elegir entre: Tradicional, Fresa, Mango, Naranja Sanguina, Maracuyá, Guayaba, Jalapeño y Pepino, La verde, Naranja Sanguina picante, Maracuyá picante. Mezcal (+5), Patrón, Casamigos o Don Julio (+8), Skinny Girl (Herradura y Cointreau) +8",
+      "descriptionEn": "Margarita Pitcher to go served in a half quart without ice. Measures 3 of our famous margaritas. Choice of: Traditional, Strawberry, Mango, Blood Orange, Passionfruit, Guava, Jalapeño Cucumber, La verde, Spicy Blood Orange, Spicy Passionfruit. Mezcal (+5), Patron, Casamigos or Don Julio (+8), Skinny Girl (herradura & cointreau) +8",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Jarra de Sangría para Llevar",
+      "nameEn": "Sangria Pitcher To Go",
+      "descriptionEs": "Sangría servida en un cuarto galón completo sin hielo. Equivale a 6 de nuestras sangrías. A elegir entre: Tinto tradicional o Durazno blanco",
+      "descriptionEn": "Sangria served in a full quart without ice. Measures 6 of our sangrias. Choice of: Traditional Red or White Peach",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caipirinha-pitcher-to-go",
+      "categoryId": "pitchers-to-go",
+      "nameEs": "Jarra de Caipirinha para Llevar",
+      "nameEn": "Caipirinha Pitcher To Go",
+      "descriptionEs": "Jarra de caipirinha para llevar servida en un cuarto galón completo sin hielo. Equivale a 6 de nuestros cócteles. A elegir entre: Tradicional, Fresa, Mango, Naranja Sanguina, Maracuyá, Guayaba",
+      "descriptionEn": "Caipirinha Pitcher to go served in a full quart without ice. Measures 6 of our cocktails Choice of: Traditional, Strawberry, Mango, Blood Orange, Passionfruit, Guava",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Chardonnay",
+      "nameEn": "Chardonnay",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Pinot Grigio",
+      "nameEn": "Pinot Grigio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "napa-cabernet",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Cabernet de Napa",
+      "nameEn": "Napa Cabernet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rioja",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Rioja",
+      "nameEn": "Rioja",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "super-tuscan",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Super toscano",
+      "nameEn": "Super tuscan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Sauvignon Blanc",
+      "nameEn": "Sauvignon Blanc",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sonoma-chardonnay",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Chardonnay de Sonoma",
+      "nameEn": "Sonoma Chardonnay",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Prosecco",
+      "nameEn": "Prosecco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Malbec",
+      "nameEn": "Malbec",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Pinot Noir",
+      "nameEn": "Pinot Noir",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Rosado",
+      "nameEn": "Rose",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet",
+      "categoryId": "wine-by-the-glass",
+      "nameEs": "Cabernet",
+      "nameEn": "Cabernet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con una gran variedad de platos vegetarianos y sin gluten claramente marcados en nuestro menú. También podemos adaptar ciertos platos a sus necesidades dietéticas.",
-      "aEn": "Yes, we offer a wide variety of vegetarian and gluten-free items clearly marked on our menu. We can also accommodate certain dietary needs upon request."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Sí, aceptamos reservaciones por teléfono y también mantenemos espacio disponible para clientes sin reservación (walk-ins).",
-      "aEn": "Yes, we accept phone reservations and also keep tables open for walk-in guests."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Sí, contamos con estacionamiento en el lote contiguo y también hay estacionamiento gratuito disponible sobre Main Street en Ridgefield.",
-      "aEn": "Yes, we have parking available in the adjacent lot as well as complimentary street parking along Main Street in Ridgefield."
-    }
-  ]
+  "faqs": []
 }
