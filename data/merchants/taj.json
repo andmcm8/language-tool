@@ -1,25 +1,23 @@
 {
   "storeInfo": {
     "id": "taj",
-    "name": "Taj",
-    "tagline": "El arte de la alta cocina india / The Art of Fine Indian Dining",
-    "address": "1879 Black Rock Turnpike, Fairfield, CT",
+    "name": "Taj Indian Cuisine",
+    "tagline": "North and South Indian cuisine, tandoori and biryani in Fairfield | Cocina del norte y sur de la India, tandoori y biryani en Fairfield",
+    "address": "1879 Black Rock Turnpike (Lower Level), Fairfield, CT 06825",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 10:30 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Lunch Mon-Fri 11:30 AM - 2:30 PM; Dinner Mon-Thu 4:30 PM - 9:45 PM, Fri 4:30 PM - 10:15 PM",
+      "saturday": "Lunch 12:00 PM - 3:00 PM; Dinner 4:30 PM - 10:15 PM",
+      "sunday": "Lunch buffet 12:00 PM - 3:00 PM; Dinner 4:30 PM - 9:30 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
+      "Dine-in",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering",
+      "Reservations",
+      "Lunch Buffet (Sundays)",
+      "Happy Hour",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,318 +30,1392 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "veg-appetizer",
+      "nameEs": "Aperitivos Vegetarianos",
+      "nameEn": "Veg Appetizer",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "non-vegetarian",
+      "nameEs": "No Vegetariano",
+      "nameEn": "Non-Vegetarian",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "salad",
+      "nameEs": "Ensalada",
+      "nameEn": "Salad",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "from-the-clay-oven",
+      "nameEs": "Desde el Horno de Barro",
+      "nameEn": "From the Clay Oven",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entree-vegetarian",
+      "nameEs": "Plato Principal Vegetariano",
+      "nameEn": "Entrée Vegetarian",
+      "icon": "Utensils"
+    },
+    {
+      "id": "house-special",
+      "nameEs": "Especial de la Casa",
+      "nameEn": "House Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lamb",
+      "nameEs": "Cordero",
+      "nameEn": "Lamb",
+      "icon": "Utensils"
+    },
+    {
+      "id": "goat",
+      "nameEs": "Chivo",
+      "nameEn": "Goat",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-special",
+      "nameEs": "Especialidad de Mariscos",
+      "nameEn": "Seafood Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "biryani-and-rice",
+      "nameEs": "Biryani y Arroz",
+      "nameEn": "Biryani and Rice",
+      "icon": "Utensils"
+    },
+    {
+      "id": "indian-breads",
+      "nameEs": "Panes Indios",
+      "nameEn": "Indian Breads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo",
+      "nameEn": "Lunch Bowl",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "taj-01",
-      "categoryId": "appetizers",
-      "nameEs": "Samosa Vegetal",
-      "nameEn": "Vegetable Samosa",
-      "descriptionEs": "Cono crujiente relleno de papas condimentadas.",
-      "descriptionEn": "Crisp cone stuffed with spiced potatoes.",
-      "price": "$10.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "mulligatawny-soup",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Mulligatawny Soup",
+      "nameEn": "Mulligatawny Soup",
+      "descriptionEs": "Sopa espesa hecha de lentejas y verduras adornada con arroz",
+      "descriptionEn": "Thick soup made from lentils and vegetables garnished with rice",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "taj-02",
-      "categoryId": "appetizers",
+      "id": "vegetable-samosa",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Vegetable Samosa",
+      "nameEn": "Vegetable Samosa",
+      "descriptionEs": "Cono crujiente relleno de papas condimentadas",
+      "descriptionEn": "Crisp cone stuffed with spiced potatoes",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-paneer-tikki",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Aloo Paneer Tikki",
+      "nameEn": "Aloo Paneer Tikki",
+      "descriptionEs": "Tortitas de papa con guisantes verdes y queso cottage",
+      "descriptionEn": "Potatoes Patties with green peas & cottage cheese",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "samosa-chaat",
+      "categoryId": "veg-appetizer",
       "nameEs": "Samosa Chaat",
       "nameEn": "Samosa Chaat",
-      "descriptionEs": "Samosa vegetal cubierta con garbanzos, tamarindo y salsa de menta con yogur.",
-      "descriptionEn": "Vegetable samosa topped with chickpeas, tamarind, and mint sauce with yogurt.",
+      "descriptionEs": "Samosa vegetal cubierta con garbanzos, tamarindo, salsa de menta con yogur",
+      "descriptionEn": "Vegetable samosa topped with chickpeas, tamarind, mint sauce with yogurt",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "taj-03",
-      "categoryId": "appetizers",
+      "id": "tamarind-eggplant",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Tamarind Eggplant",
+      "nameEn": "Tamarind Eggplant",
+      "descriptionEs": "Berenjena crujiente cubierta con garbanzos, tamarindo, salsa de menta con yogur",
+      "descriptionEn": "Crispy eggplant topped with chickpeas, tamarind, mint sauce with yogurt",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasooni-gobi",
+      "categoryId": "veg-appetizer",
       "nameEs": "Lasooni Gobi",
       "nameEn": "Lasooni Gobi",
-      "descriptionEs": "Coliflor crujiente con sabor a ajo.",
-      "descriptionEn": "Garlic flavored crispy cauliflower.",
+      "descriptionEs": "Coliflor con sabor a ajo",
+      "descriptionEn": "Garlic flavored cauliflower",
       "price": "$17.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano",
-        "Ajo"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "taj-04",
-      "categoryId": "appetizers",
-      "nameEs": "Calamar Taj",
-      "nameEn": "Taj Calamari",
-      "descriptionEs": "Calamares fritos crujientes con cebollas y pimientos.",
-      "descriptionEn": "Fried squid tossed with onions and peppers.",
-      "price": "$16.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-05",
-      "categoryId": "mains",
-      "nameEs": "Dosa Masala",
-      "nameEn": "Masala Dosa",
-      "descriptionEs": "Crepes finas de arroz y urad dal rellenas de papas especiadas, servidas con chutney de coco, chutney de tomate y sambar.",
-      "descriptionEn": "Crepes made of rice and urad dal stuffed with spiced potatoes, served with coconut chutney, tomato chutney, and sambar.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-06",
-      "categoryId": "mains",
-      "nameEs": "Pollo Tikka al Chipotle y Lima",
-      "nameEn": "Chipotle-Lime Tikka",
-      "descriptionEs": "Pollo a la parrilla marinado en salsa de chipotle picante con un toque ahumado, equilibrado con lima fresca.",
-      "descriptionEn": "Grilled chicken marinated in a spicy chipotle sauce with a hint of smokiness, balanced by fresh lime.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Fusión",
-      "tags": [
-        "Sin Gluten",
-        "Picante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-07",
-      "categoryId": "mains",
-      "nameEs": "Pollo Basil Malai",
-      "nameEn": "Basil Malai Chicken",
-      "descriptionEs": "Pollo tierno marinado en una mezcla rica y cremosa de albahaca fresca, yogur y especias suaves, asado a la perfección.",
-      "descriptionEn": "Chicken marinated in a rich and creamy blend of fresh basil, yogurt, and mild spices, grilled to perfection.",
-      "price": "$18.00",
-      "popular": false,
-      "badge": "Cremoso",
-      "tags": [
-        "Sin Gluten",
-        "Nueces"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-08",
-      "categoryId": "mains",
-      "nameEs": "Pollo 65",
-      "nameEn": "Chicken 65",
-      "descriptionEs": "Popular aperitivo crujiente preparado con semillas de mostaza y hojas de curry.",
-      "descriptionEn": "Popular appetizer made with mustard seeds and curry leaves.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-09",
-      "categoryId": "specialties",
-      "nameEs": "Langostinos Ghee Pepper",
-      "nameEn": "Ghee Pepper Prawns",
-      "descriptionEs": "Langostinos cocinados con ajo y masala tostado en ghee casero.",
-      "descriptionEn": "Prawns cooked with garlic and homemade ghee roasted masala.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Chef Especial",
-      "tags": [
-        "Mariscos",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-10",
-      "categoryId": "specialties",
-      "nameEs": "Muestrario de Carnes",
-      "nameEn": "Meat Sampler",
-      "descriptionEs": "Surtido de kebabs de pollo, alitas de pollo y brochetas de cordero Sheek.",
-      "descriptionEn": "Assortment of chicken kebabs, chicken wings, and lamb sheek kebab.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Sin Gluten",
-        "Carnes Variadas"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-11",
-      "categoryId": "specialties",
-      "nameEs": "Kebab de Cordero Sheek",
-      "nameEn": "Lamb Sheek Kabab",
-      "descriptionEs": "Cordero picado mezclado con especias y hierbas aromáticas, cocinado en horno Tandoor.",
-      "descriptionEn": "Minced lamb mixed with spices and herbs cooked in the Tandoor.",
-      "price": "$16.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Sin Gluten",
-        "Cordero"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-12",
-      "categoryId": "beverages",
-      "nameEs": "Mango Tango",
-      "nameEn": "Mango Tango Cocktail",
-      "descriptionEs": "Tequila El Jimador, lima exprimida, puré de mango fresco, licor de durazno y borde con Tajín.",
-      "descriptionEn": "El Jimador tequila, pressed lime, fresh mango puree, peach schnapps, Tajín rim.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Coctel de la Casa",
-      "tags": [
-        "Alcohol",
-        "Frutal"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "taj-13",
-      "categoryId": "beverages",
-      "nameEs": "Botanico Ebrio",
-      "nameEn": "Drunken Botanist Cocktail",
-      "descriptionEs": "Ginebra infusionada con pistacho, jugo de remolacha y jarabe de pistacho.",
-      "descriptionEn": "Pistachio-infused gin, beetroot juice, pistachio syrup.",
+      "id": "plain-dosa",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Plain Dosa",
+      "nameEn": "Plain Dosa",
+      "descriptionEs": "Crepa fermentada servida con chutney de coco, chutney de tomate y sambar",
+      "descriptionEn": "Fermented crepe served with coconut chutney, tomato chutney and sambar",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Artesanal",
-      "tags": [
-        "Alcohol",
-        "Nueces"
-      ],
-      "allergens": [
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "taj-14",
-      "categoryId": "beverages",
-      "nameEs": "Martini Tiramisu Espresso",
-      "nameEn": "Tiramisu Espresso Martini",
-      "descriptionEs": "Amaretto Disaronno, crema de cacao, espresso recién hecho y polvo de chocolate.",
-      "descriptionEn": "Disaronno amaretto, crème de cacao, espresso, chocolate dust.",
-      "price": "$15.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Alcohol",
-        "Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "masala-dosa",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Masala Dosa",
+      "nameEn": "Masala Dosa",
+      "descriptionEs": "Crepas hechas de arroz y urad dal rellenas de papas condimentadas servidas con chutney de coco, chutney de tomate y sambar",
+      "descriptionEn": "Crepes made of rice and urad dal stuffed with spiced potatoes served with coconut chutney, tomato chutney and sambar",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mysore-masala-dosa",
+      "categoryId": "veg-appetizer",
+      "nameEs": "Mysore Masala Dosa",
+      "nameEn": "Mysore Masala Dosa",
+      "descriptionEs": "Crepa picante rellena de papas condimentadas servida con chutney de coco, chutney de tomate y sambar",
+      "descriptionEn": "Spicy crepe stuffed with spiced potatoes served with coconut chutney, tomato chutney and sambar",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "keema-samosa",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Keema Samosa",
+      "nameEn": "Keema Samosa",
+      "descriptionEs": "Empanadas crujientes rellenas de cordero picado",
+      "descriptionEn": "Crispy pastries stuffed with minced lamb",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-calamari",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Taj Calamari",
+      "nameEn": "Taj Calamari",
+      "descriptionEs": "Calamamar frito con cebollas y pimientos",
+      "descriptionEn": "Fried squid with onions & peppers",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tawa-fish",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Tawa Fish",
+      "nameEn": "Tawa Fish",
+      "descriptionEs": "Tilapia marinada a la parrilla en tawa",
+      "descriptionEn": "Marinated tilapia grilled on tawa",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ghee-pepper-prawns",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Ghee Pepper Prawns",
+      "nameEn": "Ghee Pepper Prawns",
+      "descriptionEs": "camarones cocinados con ajo y masala tostado en ghee casero",
+      "descriptionEn": "prawns cooked with garlic and homemade ghee roasted masala",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chipotle-lime-tikka",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Chipotle-Lime Tikka",
+      "nameEn": "Chipotle-Lime Tikka",
+      "descriptionEs": "Pollo a la parrilla marinado en una salsa de chipotle picante con un toque ahumado, equilibrado con un chorrito de lima fresca. Asado a la perfección, cada bocado es una sabrosa mezcla de picante y ácido",
+      "descriptionEn": "Grilled chicken marinated in a spicy chipotle sauce w/ a hint of smokiness, balanced by a squeeze of fresh lime. Charred to perfection, every bite is a flavorful blend of spice & tang",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-malai-chicken",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Basil Malai Chicken",
+      "nameEn": "Basil Malai Chicken",
+      "descriptionEs": "Pollo marinada en una mezcla rica y cremosa de albahaca fresca, yogur y especias suaves. A la parrilla a la perfección",
+      "descriptionEn": "Chicken marinated in a rich & creamy blend of fresh basil, yogurt & mild spices. Grilled to perfection",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-65",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Chicken 65",
+      "nameEn": "Chicken 65",
+      "descriptionEs": "Antojito popular hecho con semillas de mostaza y hojas de curry",
+      "descriptionEn": "Popular appetizer made with mustard seeds and curry leaves",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-chicken-wings",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Tandoori Chicken Wings",
+      "nameEn": "Tandoori Chicken Wings",
+      "descriptionEs": "Alitas de pollo marinadas cocinadas en horno de barro",
+      "descriptionEn": "Marinated chicken wings cooked in clay oven",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-majestic",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Chicken Majestic",
+      "nameEn": "Chicken Majestic",
+      "descriptionEs": "Tiras de pollo marinadas, fritas y salteadas en especias, chile seco y hojas de curry",
+      "descriptionEn": "Strips of chicken marinated, deep fried & tossed in spices, dry chili and curry leaves",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-sheek-kabab",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Lamb Sheek Kabab",
+      "nameEn": "Lamb Sheek Kabab",
+      "descriptionEs": "Cordero picado mezclado con especias y hierbas cocinado en el tandoor.",
+      "descriptionEn": "Minced Lamb mixed with spices and herbs cooked in the Tandoor.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-sampler",
+      "categoryId": "non-vegetarian",
+      "nameEs": "Meat Sampler",
+      "nameEn": "Meat Sampler",
+      "descriptionEs": "Surtido de kebabs de pollo, alitas de pollo y kabab de cordero sheek",
+      "descriptionEn": "Assortment of Chicken Kebabs, Chicken Wings and Lamb Sheek Kabab",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-garden-salad",
+      "categoryId": "salad",
+      "nameEs": "Taj Garden Salad",
+      "nameEn": "Taj Garden Salad",
+      "descriptionEs": "Verduras frescas de la huerta como lechuga, tomate, zanahoria y pepino servidas con raitha y aderezo",
+      "descriptionEn": "Garden fresh vegetable such as lettuce, tomato, carrot & cucumber served with raitha and dressing",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chickpea-salad",
+      "categoryId": "salad",
+      "nameEs": "Chickpea Salad",
+      "nameEn": "Chickpea Salad",
+      "descriptionEs": "Ensalada de verduras mixtas servida con garbanzos, menta, yogur y salsa de tamarindo",
+      "descriptionEn": "Mixed Vegetable salad served with chickpeas, mint, yogurt & tamarind sauce",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-salad",
+      "categoryId": "salad",
+      "nameEs": "Mango Salad",
+      "nameEn": "Mango Salad",
+      "descriptionEs": "Ensalada hecha con mango dulce, verduras crujientes, hierbas frescas y un aderezo vinagreta de piña.",
+      "descriptionEn": "Salad made with sweet mango, crisp veggies, fresh herbs, and a pineapple vinaigrette dressing.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-chicken-full",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Tandoori Chicken (Full)",
+      "nameEn": "Tandoori Chicken (Full)",
+      "descriptionEs": "Pollo marinado en yogur y sazonado con mezcla de especias y cocinado en horno de barro.",
+      "descriptionEn": "Chicken marinated in yogurt and seasoned with spice mixture and cooked in clay oven.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-chicken-half",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Tandoori Chicken (Half)",
+      "nameEn": "Tandoori Chicken (Half)",
+      "descriptionEs": "Pollo marinado en yogur y sazonado con mezcla de especias y cocinado en horno de barro.",
+      "descriptionEn": "Chicken marinated in yogurt and seasoned with spice mixture and cooked in clay oven.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-alfaham-chicken-full",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Taj Alfaham Chicken (Full)",
+      "nameEn": "Taj Alfaham Chicken (Full)",
+      "descriptionEs": "Pollo marinado con la especia secreta de taj y cocinado en un horno de barro.",
+      "descriptionEn": "Chicken marinated with taj secret spice and cooked in a clay oven.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-alfaham-chicken-half",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Taj Alfaham Chicken (Half)",
+      "nameEn": "Taj Alfaham Chicken (Half)",
+      "descriptionEs": "Pollo marinado con la especia secreta de taj y cocinado en un horno de barro.",
+      "descriptionEn": "Chicken marinated with taj secret spice and cooked in a clay oven.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-malai-kebab",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Chicken Malai Kebab",
+      "nameEn": "Chicken Malai Kebab",
+      "descriptionEs": "Pollo aromatizado con crema agria y pimienta blanca",
+      "descriptionEn": "Chicken flavored with sour cream and white pepper",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Chicken Tikka",
+      "nameEn": "Chicken Tikka",
+      "descriptionEs": "Pechuga de pollo deshuesada marinada con especias indias y yogur",
+      "descriptionEn": "Boneless chicken breast marinated with Indian spices and yogurt",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-malai-kebab",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Shrimp Malai Kebab",
+      "nameEn": "Shrimp Malai Kebab",
+      "descriptionEs": "Camarones marinados con crema agria y pimienta blanca servidos con verduras a la parrilla",
+      "descriptionEn": "Shrimp marinated with sour cream and white pepper served with grilled vegetables",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-shrimp",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Tandoori Shrimp",
+      "nameEn": "Tandoori Shrimp",
+      "descriptionEs": "Langostinos gigantes marinados con requesón escurrido y especias indias servidos con verduras a la parrilla",
+      "descriptionEn": "Jumbo prawns marinated with hung curd and indian spices served with grilled vegetables",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-salmon-tikka",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Tandoori Salmon Tikka",
+      "nameEn": "Tandoori Salmon Tikka",
+      "descriptionEs": "Salmón marinado cocinado en horno de barro con verduras a la parrilla",
+      "descriptionEn": "Marinated salmon cooked in clay oven with grilled vegetables",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-pomfret-bonefish",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Tandoori Pomfret (Bonefish)",
+      "nameEn": "Tandoori Pomfret (Bonefish)",
+      "descriptionEs": "Pámpano entero marinado con especias masala indias exóticas, yogur y asado en el horno de barro.",
+      "descriptionEn": "Whole pomfret marinated with exotic indian masala spices, yogurt and roasted in the clay oven.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-tikka",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Paneer Tikka",
+      "nameEn": "Paneer Tikka",
+      "descriptionEs": "Queso cottage cocinado en tandoor con hierbas",
+      "descriptionEn": "Cottage cheese cooked in tandoor with herbs",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-medley",
+      "categoryId": "from-the-clay-oven",
+      "nameEs": "Chicken Medley",
+      "nameEn": "Chicken Medley",
+      "descriptionEs": "Kebabs de pollo surtidos y pollo tandoori",
+      "descriptionEn": "Assorted chicken kebabs and tandoori chicken",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-vegetable-curry",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Taj Vegetable Curry",
+      "nameEn": "Taj Vegetable Curry",
+      "descriptionEs": "Verduras mixtas cocinadas en salsa de coco y templadas con mostaza y hojas de curry",
+      "descriptionEn": "Mixed vegetable cooked in coconut sauce and tempered with mustard and curry leaves",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-gobi",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Aloo Gobi",
+      "nameEn": "Aloo Gobi",
+      "descriptionEs": "Papa y coliflor con una gran mezcla de especias",
+      "descriptionEn": "Potato and cauliflower with great blend of spices",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "channa-masala",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Channa Masala",
+      "nameEn": "Channa Masala",
+      "descriptionEs": "Garbanzos en salsa de cebolla y tomate",
+      "descriptionEn": "Chickpea in onion and tomato sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chettinadu",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Chettinadu",
+      "nameEn": "Chettinadu",
+      "descriptionEs": "(Salsa de coco tostado y especias) con opción de: Papa | Vegetales Mixtos / Garbanzos | Berenjena",
+      "descriptionEn": "(Roasted coconut and spice sauce) with Choice: Potato | Mixed Vegetable / Chickpea | Eggplant",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baigan-mirch-ka-salan",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Baigan Mirch Ka Salan",
+      "nameEn": "Baigan Mirch Ka Salan",
+      "descriptionEs": "Receta de Hyderabad de berenjena y chile largo picante con salsa de pasta de coco",
+      "descriptionEn": "Hyderabadi recipe of eggplant and long hot chili with coconut paste sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-vindaloo",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Vegetable Vindaloo",
+      "nameEn": "Vegetable Vindaloo",
+      "descriptionEs": "Un plato de vegetales mixtos delicioso, cálido y picante con salsa de tomate, pimienta de Cayena y especias",
+      "descriptionEn": "A lovely, warm and spicy mixed vegetable dish with tomato sauce, cayenne pepper and spices",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tarkari",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Vegetable Tarkari",
+      "nameEn": "Vegetable Tarkari",
+      "descriptionEs": "Un curry de vegetales medianamente picante sazonado con ajwain",
+      "descriptionEn": "A medium spicy vegetable curry flavored with Ajwain",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bhindi-masala",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Bhindi Masala",
+      "nameEn": "Bhindi Masala",
+      "descriptionEs": "Okra cocinada con cebollas especiadas y tomate",
+      "descriptionEn": "Okra cooked with spiced onions and tomato",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malai-kofta",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Malai Kofta",
+      "nameEn": "Malai Kofta",
+      "descriptionEs": "Albóndigas de queso cottage y papa en una rica salsa de anacardos y almendras",
+      "descriptionEn": "Cottage cheese and Potato dumplings in rich cashew nut and almond gravy",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dal-makhani",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Dal Makhani",
+      "nameEn": "Dal Makhani",
+      "descriptionEs": "Plato popular de la región de Panyab, los ingredientes principales son lenteja negra entera (urad), frijoles colorados (rajma), mantequilla y crema. El plato obtiene su riqueza del uso de crema.",
+      "descriptionEn": "Popular dish from the Punjab region, the primary ingredients are whole black lentil (urad), red kidney beans (rajma), butter and cream. The dish gets its richness from the use of cream.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tadka-dal",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Tadka Dal",
+      "nameEn": "Tadka Dal",
+      "descriptionEs": "Lentejas amarillas cocinadas hasta estar suaves con cebollas, tomates y especias. Un sofrito de especias como semillas de comino",
+      "descriptionEn": "Yellow lentils cooked till soft with onions, tomatoes and spices. A tempering of spices like cumin seeds",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "navratan-korma",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Navratan Korma",
+      "nameEn": "Navratan Korma",
+      "descriptionEs": "Un plato rico y cremoso con nueve tipos de vegetales y paneer en salsa de anacardos y almendras",
+      "descriptionEn": "A rich creamy flavored dish with nine types of vegetables & paneer in cashew and almond sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-butter-masala",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Paneer Butter Masala",
+      "nameEn": "Paneer Butter Masala",
+      "descriptionEs": "Queso cottage casero cocinado en una salsa de tomate cremosa",
+      "descriptionEn": "Homemade cottage cheese cooked in a creamy tomato sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mattar-paneer",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Mattar Paneer",
+      "nameEn": "Mattar Paneer",
+      "descriptionEs": "Guisantes verdes y queso cottage en salsa de cebolla, anacardos y almendras",
+      "descriptionEn": "Green Peas and cottage cheese in onion, cashew and almond sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-shai-korma",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Paneer Shai Korma",
+      "nameEn": "Paneer Shai Korma",
+      "descriptionEs": "Queso cottage en salsa cremosa de anacardos y almendras.",
+      "descriptionEn": "Cottage cheese in creamy cashew and almond sauce.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-masala",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Vegetable Masala",
+      "nameEn": "Vegetable Masala",
+      "descriptionEs": "Vegetales mixtos cocinados en salsa de tomate cremosa con pimiento morrón y cebolla",
+      "descriptionEn": "Mixed Vegetable cooked in creamy tomato sauce with bell pepper and onion",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-masala",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Eggplant Masala",
+      "nameEn": "Eggplant Masala",
+      "descriptionEs": "Berenjena frita en salsa de tomate cremosa",
+      "descriptionEn": "Fried eggplant in creamy tomato sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "palak-spinach",
+      "categoryId": "entree-vegetarian",
+      "nameEs": "Palak (Spinach)",
+      "nameEn": "Palak (Spinach)",
+      "descriptionEs": "con su elección de: Paneer | Garbanzos | Papa | Vegetales Mixtos",
+      "descriptionEn": "with your choice: Paneer | Chickpeas | Potato | Mixed Vegetables",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rack-of-lamb",
+      "categoryId": "house-special",
+      "nameEs": "Rack Of Lamb",
+      "nameEn": "Rack Of Lamb",
+      "descriptionEs": "Costillar de cordero marinado con hierbas y especias y cocinado en horno de barro",
+      "descriptionEn": "Rack of Lamb marinated with herbs and spices and cooked in clay oven",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rack-of-lamb-chettinad",
+      "categoryId": "house-special",
+      "nameEs": "Rack Of Lamb Chettinad",
+      "nameEn": "Rack Of Lamb Chettinad",
+      "descriptionEs": "Costillar de cordero cocinado en horno de barro y cubierto con salsa chettinad (variedad de especias y la salsa está hecha con masala molido fresco)",
+      "descriptionEn": "Rack of Lamb cooked in clay oven and topped with chettinad sauce (variety of spices and the sauce is made with fresh ground masala)",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rack-of-lamb-masala",
+      "categoryId": "house-special",
+      "nameEs": "Rack Of Lamb Masala",
+      "nameEn": "Rack Of Lamb Masala",
+      "descriptionEs": "Costillar de cordero cocinado en horno de barro y cubierto con salsa de tomate cremosa, pimiento morrón y cebolla",
+      "descriptionEn": "Rack of Lamb cooked in clay oven and topped with creamy tomato sauce, bell pepper and onion",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala-fish",
+      "categoryId": "house-special",
+      "nameEs": "Masala Fish",
+      "nameEn": "Masala Fish",
+      "descriptionEs": "Opción de pescado cocinado con cebolla especiada y leche de coco (Robalo +$4.00)",
+      "descriptionEn": "Choice of fish cooked with spiced onion and coconut milk (Sea bass +$4.00)",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malabari-shrimp",
+      "categoryId": "house-special",
+      "nameEs": "Malabari Shrimp",
+      "nameEn": "Malabari Shrimp",
+      "descriptionEs": "Langostinos gigantes especialidad de Kerala con salsa al curry (Robalo +$4.00)",
+      "descriptionEn": "Kerala specialty jumbo prawns with curried sauce (Sea bass +$4.00)",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka-masala",
+      "categoryId": "chicken",
+      "nameEs": "Chicken Tikka Masala",
+      "nameEn": "Chicken Tikka Masala",
+      "descriptionEs": "Trocitos de pollo tikka asados en salsa de tomate cremosa y suave",
+      "descriptionEn": "Roasted chunks of chicken tikka in mild creamy tomato sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter-chicken",
+      "categoryId": "chicken",
+      "nameEs": "Butter Chicken",
+      "nameEn": "Butter Chicken",
+      "descriptionEs": "Cocinado en horno de barro, salsa de tomate dulce y mantecosa",
+      "descriptionEn": "Clay oven cooked, buttery sweet tomato sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-chettinad",
+      "categoryId": "chicken",
+      "nameEs": "Chicken Chettinad",
+      "nameEn": "Chicken Chettinad",
+      "descriptionEs": "Pollo cocinado en pasta de coco tostado y garam masala entero",
+      "descriptionEn": "Chicken cooked in roasted coconut paste and whole garam masala",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-korma",
+      "categoryId": "chicken",
+      "nameEs": "Chicken Korma",
+      "nameEn": "Chicken Korma",
+      "descriptionEs": "Pollo cocinado lentamente en salsa de anacardos y almendras",
+      "descriptionEn": "Chicken slowly cooked in cashew almond sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-vindaloo",
+      "categoryId": "chicken",
+      "nameEs": "Chicken Vindaloo",
+      "nameEn": "Chicken Vindaloo",
+      "descriptionEs": "Un pollo delicioso, cálido y picante con papa, salsa de tomate, pimienta de Cayena y especias",
+      "descriptionEn": "A lovely, warm and spicy chicken with potato, tomato sauce, cayenne pepper and spices",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka-saag",
+      "categoryId": "chicken",
+      "nameEs": "Chicken Tikka Saag",
+      "nameEn": "Chicken Tikka Saag",
+      "descriptionEs": "Plato clásico indio hecho con pollo tikka y espinacas",
+      "descriptionEn": "Classic Indian dish made with chicken tikka and spinach",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nadan-chicken-curry",
+      "categoryId": "chicken",
+      "nameEs": "Nadan Chicken Curry",
+      "nameEn": "Nadan Chicken Curry",
+      "descriptionEs": "Preparado con garam masala y leche de coco",
+      "descriptionEn": "Prepared with garam masala and coconut milk",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chili-chicken",
+      "categoryId": "chicken",
+      "nameEs": "Chili Chicken",
+      "nameEn": "Chili Chicken",
+      "descriptionEs": "Pollo rebozado y frito, salteado y siseado con salsa de soya y chile",
+      "descriptionEn": "Batter fried chicken, sauteed, and sizzled with soy and chili sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-tikka-masala",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Tikka Masala",
+      "nameEn": "Lamb Tikka Masala",
+      "descriptionEs": "Cubos de cordero sin hueso en una reducción de tomate cremosa",
+      "descriptionEn": "Boneless lamb cubes in a creamy tomato reduction",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-rogan-josh",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Rogan Josh",
+      "nameEn": "Lamb Rogan Josh",
+      "descriptionEs": "El rogan josh consiste en trozos de cordero braseados cocinados con una salsa a base de cebollas doradas, ajo, jengibre y especias aromáticas",
+      "descriptionEn": "Rogan josh consists of braised lamb chunks cooked with a gravy based on browned onions, garlic, ginger and aromatic spices",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-chettinad",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Chettinad",
+      "nameEn": "Lamb Chettinad",
+      "descriptionEs": "Cordero cocinado en pasta de coco tostado y garam masala entero",
+      "descriptionEn": "Lamb cooked in roasted coconut paste and whole garam masala",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-korma",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Korma",
+      "nameEn": "Lamb Korma",
+      "descriptionEs": "Cordero cocinado lentamente en salsa de anacardos y almendras",
+      "descriptionEn": "Lamb slowly cooked in cashew almond sauce",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-vindaloo",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Vindaloo",
+      "nameEn": "Lamb Vindaloo",
+      "descriptionEs": "Un cordero delicioso, cálido y picante con papa, salsa de tomate, pimienta de Cayena y especias",
+      "descriptionEn": "A lovely, warm and spicy lamb with potato, tomato sauce, cayenne pepper and spices",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-saag",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Saag",
+      "nameEn": "Lamb Saag",
+      "descriptionEs": "Un cordero suave en salsa de espinacas cremosa",
+      "descriptionEn": "A mild lamb in creamy spinach sauce",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-tarkari",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Tarkari",
+      "nameEn": "Lamb Tarkari",
+      "descriptionEs": "Un cordero picante estándar condimentado con semillas de ajwain",
+      "descriptionEn": "A standard spicy lamb tempered with ajwain seeds",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-pepper-fry",
+      "categoryId": "lamb",
+      "nameEs": "Lamb Pepper Fry",
+      "nameEn": "Lamb Pepper Fry",
+      "descriptionEs": "Pimienta salteada repleta de sabores picantes y ricos, y un tierno y delicioso cordero",
+      "descriptionEn": "Pepper fry packed with spicy, rich flavors and delicious tender lamb",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-vindaloo",
+      "categoryId": "goat",
+      "nameEs": "Goat Vindaloo",
+      "nameEn": "Goat Vindaloo",
+      "descriptionEs": "Un plato de chivo delicioso, cálido y picante con papa, salsa de tomate, pimienta de Cayena y especias",
+      "descriptionEn": "A lovely, warm and spicy goat dish with potato, tomato sauce, cayenne pepper and spices",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-chettinad",
+      "categoryId": "goat",
+      "nameEs": "Goat Chettinad",
+      "nameEn": "Goat Chettinad",
+      "descriptionEs": "Chivo cocinado en pasta de coco tostado y garam masala entero",
+      "descriptionEn": "Goat cooked in roasted coconut paste and whole garam masala",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-pepper-fry",
+      "categoryId": "goat",
+      "nameEs": "Goat Pepper Fry",
+      "nameEn": "Goat Pepper Fry",
+      "descriptionEs": "Pepper fry repleto de sabores picantes y ricos, y delicioso chivo",
+      "descriptionEn": "Pepper fry packed with spicy, rich flavors and delicious goat",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-curry",
+      "categoryId": "goat",
+      "nameEs": "Goat Curry",
+      "nameEn": "Goat Curry",
+      "descriptionEs": "Un plato de chivo medianamente picante en salsa de cebolla y tomate",
+      "descriptionEn": "A medium spicy goat dish in onion and tomato gravy",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-malabar",
+      "categoryId": "goat",
+      "nameEs": "Goat Malabar",
+      "nameEn": "Goat Malabar",
+      "descriptionEs": "Plato de chivo cocinado con papa y zanahoria en salsa de curry",
+      "descriptionEn": "Goat dish cooked with potato and carrot in curry sauce",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-moilee",
+      "categoryId": "seafood-special",
+      "nameEs": "Shrimp Moilee",
+      "nameEn": "Shrimp Moilee",
+      "descriptionEs": "Camarones cocinados en salsa suave de curry con jengibre y coco (Robalo +$6.00)",
+      "descriptionEn": "Shrimp cooked in mild ginger and coconut curry sauce (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-vindaloo",
+      "categoryId": "seafood-special",
+      "nameEs": "Shrimp Vindaloo",
+      "nameEn": "Shrimp Vindaloo",
+      "descriptionEs": "Un plato de camarones delicioso, cálido y picante con papa, salsa de tomate, pimienta cayena y especias (Robalo +$6.00)",
+      "descriptionEn": "A lovely, warm and spicy shrimp dish with potato, tomato sauce, cayenne pepper and spices (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-makhanwala",
+      "categoryId": "seafood-special",
+      "nameEs": "Shrimp Makhanwala",
+      "nameEn": "Shrimp Makhanwala",
+      "descriptionEs": "Un plato de camarones del norte de la India cocinado en salsa cremosa de tomate (Robalo +$6.00)",
+      "descriptionEn": "A north Indian shrimp dish cooked in creamy tomato sauce (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-saag",
+      "categoryId": "seafood-special",
+      "nameEs": "Shrimp Saag",
+      "nameEn": "Shrimp Saag",
+      "descriptionEs": "Camarones cocinados en una salsa cremosa de espinacas (Robalo +$6.00)",
+      "descriptionEn": "Shrimp cooked in a creamy spinach sauce (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mangalorean-shrimp",
+      "categoryId": "seafood-special",
+      "nameEs": "Mangalorean Shrimp",
+      "nameEn": "Mangalorean Shrimp",
+      "descriptionEs": "Curry de camarones medianamente picante hecho con salsa de coco y especias especiales del chef (Robalo +$6.00)",
+      "descriptionEn": "Medium spicy shrimp curry made from coconut sauce and chefs’ special spices (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-mango-curry",
+      "categoryId": "seafood-special",
+      "nameEs": "Shrimp Mango Curry",
+      "nameEn": "Shrimp Mango Curry",
+      "descriptionEs": "Camarones hervidos a fuego lento con salsa de coco y mango verde (Robalo +$6.00)",
+      "descriptionEn": "Shrimp simmered with coconut sauce and raw mango (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-malabar",
+      "categoryId": "seafood-special",
+      "nameEs": "Fish Malabar",
+      "nameEn": "Fish Malabar",
+      "descriptionEs": "Pescado cocinado en salsa de coco fresco (Robalo +$6.00)",
+      "descriptionEn": "Fish cooked in fresh coconut sauce (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kerala-fish-curry",
+      "categoryId": "seafood-special",
+      "nameEs": "Kerala Fish Curry",
+      "nameEn": "Kerala Fish Curry",
+      "descriptionEs": "Pescado picante y acidito cocinado en agua de tamarindo de Malabar (Robalo +$6.00)",
+      "descriptionEn": "Tangy spicy fish cooked in malabar tamarind water (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-jinga",
+      "categoryId": "seafood-special",
+      "nameEs": "Coconut Jinga",
+      "nameEn": "Coconut Jinga",
+      "descriptionEs": "Camarones cocinados en salsa a base de coco, mostaza y chile (Robalo +$6.00)",
+      "descriptionEn": "Shrimp cooked in coconut base sauce, mustard and chilli (Sea bass +$6.00)",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Chicken Biryani",
+      "nameEn": "Chicken Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-65-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Chicken 65 Biryani",
+      "nameEn": "Chicken 65 Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Goat Biryani",
+      "nameEn": "Goat Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Lamb Biryani",
+      "nameEn": "Lamb Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Shrimp Biryani",
+      "nameEn": "Shrimp Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetables-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Vegetables Biryani",
+      "nameEn": "Vegetables Biryani",
+      "descriptionEs": "Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "Aromatic basmati rice with ginger, garlic Served with raitha",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hydrebadi-chicken-biryani",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Hydrebadi Chicken Biryani",
+      "nameEn": "Hydrebadi Chicken Biryani",
+      "descriptionEs": "Con hueso. Arroz basmati aromático con jengibre y ajo. Servido con raita",
+      "descriptionEn": "With bone. Aromatic basmati rice with ginger, garlic. Served with raitha",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-rice",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Lemon Rice",
+      "nameEn": "Lemon Rice",
+      "descriptionEs": "Arroz aromático y acidito",
+      "descriptionEn": "Flavorful tangy rice",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saffron-rice",
+      "categoryId": "biryani-and-rice",
+      "nameEs": "Saffron Rice",
+      "nameEn": "Saffron Rice",
+      "descriptionEs": "Arroz aromático saborizado con azafrán",
+      "descriptionEn": "Aromatic rice flavored with saffron",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Naan",
+      "nameEn": "Naan",
+      "descriptionEs": "Pan indio leudado, suave y esponjoso, horneado a la perfección en un tandoor.",
+      "descriptionEn": "Soft, fluffy leavened Indian bread baked to perfection in a tandoor.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Garlic Naan",
+      "nameEn": "Garlic Naan",
+      "descriptionEs": "Pan plano suave y mantecoso infundido con ajo aromático y hierbas frescas.",
+      "descriptionEn": "Soft, buttery flatbread infused with aromatic garlic and fresh herbs.",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Onion Naan",
+      "nameEn": "Onion Naan",
+      "descriptionEs": "Naan suave horneado en tandoor cubierto con cebollas caramelizadas para un sabor dulce y salado.",
+      "descriptionEn": "Soft tandoor-baked naan topped with caramelized onions for a sweet, savory flavor.",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rosemary-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Rosemary Naan",
+      "nameEn": "Rosemary Naan",
+      "descriptionEs": "Naan tibio y esponjoso infundido con romero aromático para un aroma fresco a hierbas",
+      "descriptionEn": "Warm, fluffy naan infused with fragrant rosemary for a fresh herbal aroma",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-chilli-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Onion Chilli Naan",
+      "nameEn": "Onion Chilli Naan",
+      "descriptionEs": "Un naan sabroso cargado de chiles verdes picantes y cebollas para un toque audaz.",
+      "descriptionEn": "A flavorful naan loaded with spicy green chillies and onions for a bold kick.",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-chilli-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Garlic Chilli Naan",
+      "nameEn": "Garlic Chilli Naan",
+      "descriptionEs": "Naan suave infundido con ajo y realzado con el picante de los chiles verdes frescos.",
+      "descriptionEn": "Soft garlic-infused naan lifted with the heat of fresh green chillies.",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nuts-raisins-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Nuts & Raisins Naan",
+      "nameEn": "Nuts & Raisins Naan",
+      "descriptionEs": "Naan rico y festivo relleno de frutos secos crujientes y pasas dulces.",
+      "descriptionEn": "Rich, festive naan filled with crunchy nuts and sweet raisins.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-naan",
+      "categoryId": "indian-breads",
+      "nameEs": "Cheese Naan",
+      "nameEn": "Cheese Naan",
+      "descriptionEs": "Un naan cremoso y tentador relleno de queso fundido.",
+      "descriptionEn": "A creamy, indulgent naan stuffed with melted cheese.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malabar-paratha",
+      "categoryId": "indian-breads",
+      "nameEs": "Malabar Paratha",
+      "nameEn": "Malabar Paratha",
+      "descriptionEs": "Un paratha hojaldrado al estilo de Kerala con un acabado mantecoso y crujiente.",
+      "descriptionEn": "A flaky, layered Kerala-style paratha with a buttery, crisp finish.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chapatti",
+      "categoryId": "indian-breads",
+      "nameEs": "Chapatti",
+      "nameEn": "Chapatti",
+      "descriptionEs": "Pan plano de trigo integral suave y delgado cocinado en un tawa caliente para un bocado ligero y saludable.",
+      "descriptionEn": "Soft, thin whole-wheat flatbread cooked on a hot tawa for a light, wholesome bite.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-roti",
+      "categoryId": "indian-breads",
+      "nameEs": "Tandoori Roti",
+      "nameEn": "Tandoori Roti",
+      "descriptionEs": "Roti saludable de trigo integral horneado en el tandoor para un sabor cálido y ahumado.",
+      "descriptionEn": "Healthy whole-wheat roti baked in the tandoor for a warm, smoky flavor.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-paratha",
+      "categoryId": "indian-breads",
+      "nameEs": "Aloo Paratha",
+      "nameEn": "Aloo Paratha",
+      "descriptionEs": "Un paratha relleno y sustancioso lleno de puré de papas sazonado y cocinado a la perfección dorada.",
+      "descriptionEn": "A hearty stuffed paratha filled with seasoned mashed potatoes and cooked to golden perfection.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tawa-paratha",
+      "categoryId": "indian-breads",
+      "nameEs": "Tawa Paratha",
+      "nameEn": "Tawa Paratha",
+      "descriptionEs": "Paratha hojaldrado y en capas cocinado a la sartén en el tawa para un acabado crujiente y mantecoso.",
+      "descriptionEn": "Flaky, layered paratha pan-cooked on the tawa for a crisp, buttery finish.",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kheer",
+      "categoryId": "dessert",
+      "nameEs": "Kheer",
+      "nameEn": "Kheer",
+      "descriptionEs": "Arroz con leche tradicional saborizado con cardamomo y azafrán.",
+      "descriptionEn": "Traditional rice pudding flavored with cardamom and saffron.",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gajar-ka-halwa",
+      "categoryId": "dessert",
+      "nameEs": "Gajar Ka Halwa",
+      "nameEn": "Gajar Ka Halwa",
+      "descriptionEs": "Dulce de zanahoria salteado en ghee y adornado con frutos secos fritos.",
+      "descriptionEn": "Sweet carrot pudding sautéed in ghee and garnished with fried nuts.",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rasmalai",
+      "categoryId": "dessert",
+      "nameEs": "Rasmalai",
+      "nameEn": "Rasmalai",
+      "descriptionEs": "Dumplings de queso suave remojados en leche dulce y cremosa de azafrán; un postre rico similar a un pay de queso sin costra.",
+      "descriptionEn": "Soft cheese dumplings soaked in sweet, creamy saffron milk — a rich, crustless cheesecake–like dessert.",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gulab-jamun",
+      "categoryId": "dessert",
+      "nameEs": "Gulab Jamun",
+      "nameEn": "Gulab Jamun",
+      "descriptionEs": "Suaves bolitas de masa de leche que se deshacen en la boca, sumergidas en almíbar tibio.",
+      "descriptionEn": "Soft, melt-in-the-mouth milk dough balls soaked in warm sugar syrup.",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala-sauce",
+      "categoryId": "sides",
+      "nameEs": "Salsa Masala",
+      "nameEn": "Masala Sauce",
+      "descriptionEs": "Una salsa rica y suavemente especiada hecha con tomates, cebollas y condimentos tradicionales de la India.",
+      "descriptionEn": "A rich, mildly spiced sauce made with tomatoes, onions, and traditional Indian seasonings.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-chutney",
+      "categoryId": "sides",
+      "nameEs": "Chutney de Mango",
+      "nameEn": "Mango Chutney",
+      "descriptionEs": "Un chutney dulce y agridulce hecho con mangos maduros y especias suaves.",
+      "descriptionEn": "A sweet and tangy chutney made from ripe mangoes and gentle spices.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-lemon-pickle",
+      "categoryId": "sides",
+      "nameEs": "Encurtido Picante de Limón",
+      "nameEn": "Hot Lemon Pickle",
+      "descriptionEs": "Un encurtido picante y aromático hecho con limones, chile y especias aromáticas.",
+      "descriptionEn": "A spicy, zesty pickle made with lemons, chili, and aromatic spices.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raitha",
+      "categoryId": "sides",
+      "nameEs": "Raitha",
+      "nameEn": "Raitha",
+      "descriptionEs": "Una mezcla refrescante de yogur con pepino, cebollas y especias suaves.",
+      "descriptionEn": "A refreshing yogurt mix with cucumber, onions, and mild spices.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-chutney",
+      "categoryId": "sides",
+      "nameEs": "Chutney de Cebolla",
+      "nameEn": "Onion Chutney",
+      "descriptionEs": "Un chutney sabroso hecho con cebollas salteadas, especias y un toque picante.",
+      "descriptionEn": "A flavorful chutney made with sautéed onions, spices, and a hint of heat.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yogurt",
+      "categoryId": "sides",
+      "nameEs": "Yogur",
+      "nameEn": "Yogurt",
+      "descriptionEs": "Yogur natural, suave y fresco, servido frío.",
+      "descriptionEn": "Smooth, fresh plain yogurt served chilled.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "papadam",
+      "categoryId": "sides",
+      "nameEs": "Papadam",
+      "nameEn": "Papadam",
+      "descriptionEs": "Finas y crujientes obleas de lentejas ligeramente tostadas o fritas.",
+      "descriptionEn": "Thin, crispy lentil wafers lightly roasted or fried.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sambar",
+      "categoryId": "sides",
+      "nameEs": "Sambar",
+      "nameEn": "Sambar",
+      "descriptionEs": "Un estofado tradicional de lentejas del sur de la India cocinado con verduras y especias agridulces.",
+      "descriptionEn": "A traditional South Indian lentil stew cooked with vegetables and tangy spices.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mint-chutney",
+      "categoryId": "sides",
+      "nameEs": "Chutney de Menta",
+      "nameEn": "Mint Chutney",
+      "descriptionEs": "Un chutney fresco y refrescante hecho con menta fresca, cilantro y especias ligeras.",
+      "descriptionEn": "A cool, refreshing chutney made with fresh mint, coriander, and light spices.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tamarind-chutney",
+      "categoryId": "sides",
+      "nameEs": "Chutney de Tamarindo",
+      "nameEn": "Tamarind Chutney",
+      "descriptionEs": "Un chutney dulce y agridulce hecho de pulpa de tamarindo y especias.",
+      "descriptionEn": "A sweet and tangy chutney made from tamarind pulp and spices.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-lunch-bowl",
+      "categoryId": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo Vegetal",
+      "nameEn": "Vegetable Lunch Bowl",
+      "descriptionEs": "A elegir entre: Taj vegetable curry, Aloo gobi, Channa masala, Chettinadu, Baigan mirch ka salan, Vegetable vindaloo, Vegetable tarkari, Bhindi masala, Malai kofta, Dal makhani, Tadka dal, Navratan korma, Paneer butter masala, Mattar paneer, Paneer shahi korma, Vegetable masala, Eggplant masala, Palak (espinaca)",
+      "descriptionEn": "Choice of: Taj vegetable curry, Aloo gobi, Channa masala, Chettinadu, Baigan mirch ka salan, Vegetable vindaloo, Vegetable tarkari, Bhindi masala, Malai kofta, Dal makhani, Tadka dal, Navratan korma, Paneer butter masala, Mattar paneer, Paneer shahi korma, Vegetable masala, Eggplant masala, Palak (spinach)",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-lunch-bowl",
+      "categoryId": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo de Chivo",
+      "nameEn": "Goat Lunch Bowl",
+      "descriptionEs": "A elegir entre: Goat chettinad, Goat pepper fry, Goat curry, Goat vindaloo, Goat malabar",
+      "descriptionEn": "Choice of: Goat chettinad, Goat pepper fry, Goat curry, Goat vindaloo, Goat malabar",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-lunch-bowl",
+      "categoryId": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo de Cordero",
+      "nameEn": "Lamb Lunch Bowl",
+      "descriptionEs": "A elegir entre: Lamb tikka masala, Lamb rogan josh, Lamb chettinad, Lamb korma, Lamb vindaloo, Lamb saag, Starkari",
+      "descriptionEn": "Choice of: Lamb tikka masala, Lamb rogan josh, Lamb chettinad, Lamb korma, Lamb vindaloo, Lamb saag, Starkari",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-lunch-bowl",
+      "categoryId": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo de Pollo",
+      "nameEn": "Chicken Lunch Bowl",
+      "descriptionEs": "A elegir entre: Chicken tikka masala, Butter chicken, Chicken chettinad, Chicken korma, Chicken vindaloo, Chicken tikka saag, Nadan chicken curry, Chilli chicken",
+      "descriptionEn": "Choice of: Chicken tikka masala, Butter chicken, Chicken chettinad, Chicken korma, Chicken vindaloo, Chicken tikka saag, Nadan chicken curry, Chilli chicken",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-lunch-bowl",
+      "categoryId": "lunch-bowl",
+      "nameEs": "Tazón de Almuerzo de Camarones",
+      "nameEn": "Shrimp Lunch Bowl",
+      "descriptionEs": "A elegir entre: Shrimp mollee, Shrimp vindaloo, Shrimp makhanwala, Shrimp saag, Mangalorean shrimp, Shrimp mango curry",
+      "descriptionEn": "Choice of: Shrimp mollee, Shrimp vindaloo, Shrimp makhanwala, Shrimp saag, Mangalorean shrimp, Shrimp mango curry",
+      "price": "$14.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con una amplia variedad de platos vegetarianos y opciones sin gluten claramente marcadas en nuestro menú.",
-      "aEn": "Yes, we offer a wide variety of vegetarian dishes and clearly marked gluten-free options on our menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también puede reservar llamándonos directamente o a través de nuestro sitio web.",
-      "aEn": "We welcome walk-ins and you can also make reservations by calling us directly or via our website."
-    },
-    {
-      "qEs": "¿Tienen servicio de comida para llevar (Takeout)?",
-      "qEn": "Do you offer takeout service?",
-      "aEs": "Sí, puede realizar su pedido para llevar llamando al restaurante o mediante nuestras plataformas asociadas.",
-      "aEn": "Yes, you can place takeout orders by calling the restaurant or through our partner platforms."
-    }
-  ]
+  "faqs": []
 }
