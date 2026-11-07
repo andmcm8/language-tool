@@ -55,6 +55,14 @@ def gemini_json(prompt):
     raise SystemExit(f"All Gemini models failed: {last}")
 
 
+PROMPT = (
+    "Translate these restaurant menu strings from English into natural Latin American Spanish "
+    "for Spanish-speaking diners in Connecticut. Rules: keep Italian/foreign dish names as they are "
+    "(e.g. 'Pasta e Fagioli', 'Tiramisu', 'Pollo Scarpariello'), but translate English words around them; "
+    "keep brand names, wine producers and regions unchanged; keep every number, size and price exactly; "
+    "do not add or remove information. Return a JSON object mapping each k to its Spanish string.\n\n")
+
+
 def translate(src):
     entries = []
     for si, sec in enumerate(src["sections"]):
@@ -63,17 +71,18 @@ def translate(src):
             entries.append({"k": f"n{si}_{ii}", "en": name})
             if desc:
                 entries.append({"k": f"d{si}_{ii}", "en": desc})
-    prompt = (
-        "Translate these restaurant menu strings from English into natural Latin American Spanish "
-        "for Spanish-speaking diners in Connecticut. Rules: keep Italian/foreign dish names as they are "
-        "(e.g. 'Pasta e Fagioli', 'Tiramisu', 'Pollo Scarpariello'), but translate English words around them; "
-        "keep brand names, wine producers and regions unchanged; keep every number, size and price exactly; "
-        "do not add or remove information. Return a JSON object mapping each k to its Spanish string.\n\n"
-        + json.dumps(entries, ensure_ascii=False))
-    out = gemini_json(prompt)
-    missing = [e["k"] for e in entries if not out.get(e["k"])]
-    if missing:
-        raise SystemExit(f"Translation missing keys: {missing[:10]}")
+    out = {}
+    for start in range(0, len(entries), 80):  # chunk: long single calls truncate or change shape
+        chunk = entries[start:start + 80]
+        for _attempt in range(3):
+            got = gemini_json(PROMPT + json.dumps(chunk, ensure_ascii=False))
+            if isinstance(got, list):  # some models answer [{"k":..,"es":..}] instead of {k: es}
+                got = {g.get("k"): g.get("es") or g.get("v") or g.get("text") for g in got if isinstance(g, dict)}
+            if isinstance(got, dict) and all(got.get(e["k"]) for e in chunk):
+                out.update(got)
+                break
+        else:
+            raise SystemExit(f"Translation incomplete for keys starting at {chunk[0]['k']}")
     return out
 
 
@@ -115,6 +124,8 @@ def build(path):
         "amenities": src.get("amenities", ["Bilingual Menu"]),
         "paymentMethods": src.get("paymentMethods", []),
     })
+    if src.get("displayName"):
+        info["name"] = src["displayName"]
     merchant.update({"categories": categories, "products": products, "faqs": src.get("faqs", [])})
     with open(dest, "w") as f:
         json.dump(merchant, f, indent=2, ensure_ascii=False)
