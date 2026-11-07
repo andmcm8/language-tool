@@ -2,25 +2,22 @@
   "storeInfo": {
     "id": "the-whelk",
     "name": "The Whelk",
-    "tagline": "Sustainable Seafood & Coastal Fare | Mariscos Sostenibles y Comida Costera",
-    "address": "575 Riverside Ave, Westport, CT",
+    "tagline": "Bill Taibe's seafood restaurant and oyster bar on the Saugatuck River | Restaurante de mariscos y barra de ostras de Bill Taibe junto al río Saugatuck",
+    "address": "575 Riverside Ave, Westport, CT 06880",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "monday_friday": "Mon closed; Tue-Thu 4:30 PM - 8:30 PM; Fri 12:00 - 3:00 PM and 4:30 - 9:30 PM (happy hour Tue-Fri 4:30-5:30 PM)",
+      "saturday": "12:00 - 3:00 PM and 4:30 - 9:30 PM",
+      "sunday": "Closed"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
+      "Raw Bar",
+      "Full Bar",
+      "Happy Hour",
       "Outdoor Seating",
-      "Waterfront View"
+      "Bilingual Menu"
     ],
     "themeColor": "#0e7490",
     "logoIcon": "utensils",
@@ -33,244 +30,1588 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "snacks",
+      "nameEs": "Bocadillos",
+      "nameEn": "Snacks",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "raw-bar",
+      "nameEs": "Barra Cruda",
+      "nameEn": "Raw Bar",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "crudo",
+      "nameEs": "Crudo",
+      "nameEn": "Crudo",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "salad-veggies",
+      "nameEs": "Ensalada y Vegetales",
+      "nameEn": "Salad & Veggies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sea",
+      "nameEs": "Mar",
+      "nameEn": "Sea",
+      "icon": "Utensils"
+    },
+    {
+      "id": "land",
+      "nameEs": "Tierra",
+      "nameEn": "Land",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails-shaken",
+      "nameEs": "Cócteles (Agitado)",
+      "nameEn": "Cocktails (Shaken)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails-stirred",
+      "nameEs": "Cócteles (Reuelto)",
+      "nameEn": "Cocktails (Stirred)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mocktails",
+      "nameEs": "Cócteles sin Alcohol",
+      "nameEn": "Mocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sparkling-wine",
+      "nameEs": "Vino espumoso",
+      "nameEn": "Sparkling Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rose-skin-contact-wine",
+      "nameEs": "Vino rosado y con contacto con la piel",
+      "nameEn": "Rosé & Skin Contact Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wine",
+      "nameEs": "Vino blanco",
+      "nameEn": "White Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wine",
+      "nameEs": "Vino tinto",
+      "nameEn": "Red Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soft-drinks",
+      "nameEs": "Bebidas sin alcohol",
+      "nameEn": "Soft Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sweet",
+      "nameEs": "Postres",
+      "nameEn": "Sweet",
+      "icon": "Utensils"
+    },
+    {
+      "id": "coffee-tea",
+      "nameEs": "Café y Té",
+      "nameEn": "Coffee & Tea",
+      "icon": "Utensils"
+    },
+    {
+      "id": "port",
+      "nameEs": "Oporto",
+      "nameEn": "Port",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grappa",
+      "nameEs": "Grappa",
+      "nameEn": "Grappa",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sherry",
+      "nameEs": "Jerez",
+      "nameEn": "Sherry",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "the-whelk-01",
-      "categoryId": "appetizers",
-      "nameEs": "Ostras Locales de Long Island Sound",
-      "nameEn": "Local Long Island Sound Oysters",
-      "nameEnEs": "Ostras frescas de cultivo local servidas con mignonette de chalota y limón.",
-      "descriptionEs": "Ostras frescas de cultivo local servidas con mignonette de chalota y limón.",
-      "descriptionEn": "Freshly shucked local oysters served with shallot mignonette and lemon.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten",
-        "Crudo"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "id": "smoked-trout-dip",
+      "categoryId": "snacks",
+      "nameEs": "Dip de Trucha Ahumada",
+      "nameEn": "Smoked Trout Dip",
+      "descriptionEs": "Eneldo, hueva + piel de trucha, pan de masa madre",
+      "descriptionEn": "Dill, trout roe + skin, sourdough",
+      "price": "$18",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-02",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones al Vapor con Vino Blanco",
-      "nameEn": "Steamed White Wine Mussels",
-      "descriptionEs": "Mejillones de la costa este salteados con ajo, vino blanco, hierbas finas y pan tostado de masa madre.",
-      "descriptionEn": "East coast mussels sautéed with garlic, white wine, fine herbs, and toasted sourdough bread.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
+      "id": "calamari-fritti",
+      "categoryId": "snacks",
+      "nameEs": "Calamari Fritti",
+      "nameEn": "Calamari Fritti",
+      "descriptionEs": "Ponzu blanco, alioli de jalapeño, hierbas",
+      "descriptionEn": "White ponzu, jalapeño aioli, herbs",
+      "price": "$18",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-03",
-      "categoryId": "appetizers",
-      "nameEs": "Croquetas de Cangrejo Crujientes",
-      "nameEn": "Crispy Crab Cakes",
-      "descriptionEs": "Tortitas de cangrejo azul doradas a la perfección, acompañadas de alioli de pimiento de Espelette.",
-      "descriptionEn": "Golden brown blue crab cakes served with Espelette pepper aioli.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Huevos"
-      ],
+      "id": "handcut-fries",
+      "categoryId": "snacks",
+      "nameEs": "Papas Fritas Cortadas a Mano",
+      "nameEn": "Handcut Fries",
+      "descriptionEs": "Mayonesa ahumada, cebollín",
+      "descriptionEn": "Smoked mayo, chives",
+      "price": "$10",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-04",
-      "categoryId": "mains",
-      "nameEs": "Rollo de Langosta Estilo Connecticut",
-      "nameEn": "Connecticut-Style Lobster Roll",
-      "descriptionEs": "Abundante carne de langosta fresca bañada en mantequilla tibia y hierbas, servida en un pan brioche tostado.",
-      "descriptionEn": "Generous fresh lobster meat tossed in warm butter and herbs, served in a toasted brioche bun.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Langosta",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "deviled-eggs-fried-oysters-4",
+      "categoryId": "snacks",
+      "nameEs": "Huevos Rellenos y Ostras Fritas (4)",
+      "nameEn": "Deviled Eggs & Fried Oysters (4)",
+      "descriptionEs": "Green goddess, cebolla morada encurtida, sazonador cajún",
+      "descriptionEn": "Green goddess, pickled red onion, blackening",
+      "price": "$20",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-05",
-      "categoryId": "mains",
-      "nameEs": "Pescado del Día a la Plancha",
-      "nameEn": "Pan-Seared Catch of the Day",
-      "descriptionEs": "Pescado fresco local de temporada sobre un lecho de puré de papas con limón y verduras de estación.",
-      "descriptionEn": "Fresh seasonal local catch served over lemon potato mash and seasonal vegetables.",
-      "price": "$32.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "oysters-by-the-piece-each",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostras por Pieza (cada una)",
+      "nameEn": "Oysters by the Piece (each)",
+      "descriptionEs": "Copp's Island · Norwalk Islands, CT — Snow Island · Harpswell, ME — Mermaid Snack · Brewster, MA — Sweet Neck · Martha's Vineyard, MA — Aunt Dotty · Duxbury, MA",
+      "descriptionEn": "Copp's Island · Norwalk Islands, CT — Snow Island · Harpswell, ME — Mermaid Snack · Brewster, MA — Sweet Neck · Martha's Vineyard, MA — Aunt Dotty · Duxbury, MA",
+      "price": "$4",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-06",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa The Whelk con Tocino",
-      "nameEn": "The Whelk Bacon Burger",
-      "descriptionEs": "Doble carne de res de pastoreo, queso cheddar envejecido, tocino ahumado en casa y salsa especial en pan brioche.",
-      "descriptionEn": "Double grass-fed beef patties, aged cheddar, house-smoked bacon, and special sauce on a brioche bun.",
-      "price": "$24.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "Jugoso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "littleneck-clams-each",
+      "categoryId": "raw-bar",
+      "nameEs": "Almejas Littleneck (cada una)",
+      "nameEn": "Littleneck Clams (each)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-07",
-      "categoryId": "specialties",
-      "nameEs": "Arroz Caldoso con Mariscos del Estuario",
-      "nameEn": "Estuary Seafood Stew & Rice",
-      "descriptionEs": "Arroz de grano corto en caldo concentrado de mariscos con camarones, almejas, chorizo y sofrito artesanal.",
-      "descriptionEn": "Short-grain rice in concentrated seafood broth with shrimp, clams, chorizo, and artisanal sofrito.",
-      "price": "$36.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Especialidad",
-        "Picoso Suave"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "id": "chilled-shrimp-each",
+      "categoryId": "raw-bar",
+      "nameEs": "Camarones Fríos (cada uno)",
+      "nameEn": "Chilled Shrimp (each)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-08",
-      "categoryId": "specialties",
-      "nameEs": "Panceta de Cerdo Braseada a la Sidra",
-      "nameEn": "Cider-Braised Pork Belly",
-      "descriptionEs": "Panceta de cerdo tierna glaseada con sidra de manzana de CT, acompañada de puré de chirivía y manzana crujiente.",
-      "descriptionEn": "Tender pork belly glazed with CT apple cider, served with parsnip puree and crisp apple salad.",
-      "price": "$29.00",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Cerdo",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "ora-king-salmon-tiradito",
+      "categoryId": "crudo",
+      "nameEs": "Tiradito de Salmón Ora King",
+      "nameEn": "Ora King Salmon Tiradito",
+      "descriptionEs": "Zanahoria y jengibre de Kioto, serrano, manzana ginger gold, cilantro",
+      "descriptionEn": "Kyoto carrot ginger, serrano, ginger gold apple, cilantro",
+      "price": "$36",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-09",
-      "categoryId": "beverages",
-      "nameEs": "Coctel The Westport Mule",
-      "nameEn": "The Westport Mule Cocktail",
-      "descriptionEs": "Vodka artesanal, cerveza de jengibre hecha en casa, jugo de lima fresco y menta.",
-      "descriptionEn": "Artisanal vodka, house-made ginger beer, fresh lime juice, and mint.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Bar",
-      "tags": [
-        "Bebida con Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "id": "spicy-tuna-tartare",
+      "categoryId": "crudo",
+      "nameEs": "Tartar de Atún Picante",
+      "nameEn": "Spicy Tuna Tartare",
+      "descriptionEs": "Crema dulce de ají, puré de papa con cilantro, aguacate, salsa criolla",
+      "descriptionEn": "Sweet aji crema, cilantro whipped potato, avocado, salsa criolla",
+      "price": "$33",
       "ctaType": "in_store"
     },
     {
-      "id": "the-whelk-10",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Artesanal de Lavanda",
-      "nameEn": "Artisanal Lavender Lemonade",
-      "descriptionEs": "Limonada natural infusionada con flores de lavanda orgánica y un toque de miel silvestre.",
-      "descriptionEn": "Natural lemonade infused with organic lavender blossoms and a touch of wild honey.",
-      "price": "$6.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Sin Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "id": "hamachi",
+      "categoryId": "crudo",
+      "nameEs": "Hamachi",
+      "nameEn": "Hamachi",
+      "descriptionEs": "Té blanco Arogya, cebollino negi, sal maldon ahumada, aceite de ajonjolí, tobiko",
+      "descriptionEn": "Arogya white tea, negi scallion, smoked maldon, sesame oil, tobiko",
+      "price": "$31",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maitake-mushrooms",
+      "categoryId": "salad-veggies",
+      "nameEs": "Hongos Maitake",
+      "nameEn": "Maitake Mushrooms",
+      "descriptionEs": "Mantequilla de 'Nduja, yema de huevo",
+      "descriptionEn": "'Nduja butter, egg yolk",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fennel-pomegranate",
+      "categoryId": "salad-veggies",
+      "nameEs": "Hinojo y Granada",
+      "nameEn": "Fennel & Pomegranate",
+      "descriptionEs": "Agrodolce de granada, trevisano, queso azul, zumaque",
+      "descriptionEn": "Pomegranate agrodolce, trevisano, blue cheese, sumac",
+      "price": "$25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-caesar",
+      "categoryId": "salad-veggies",
+      "nameEs": "César de Kale",
+      "nameEn": "Kale Caesar",
+      "descriptionEs": "Kabocha roja, pepitas tostadas, cebolla, parmesano en láminas, boquerones",
+      "descriptionEn": "Red kabocha, toasted pepitas, onion, shaved parm, boquerones",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-gem",
+      "categoryId": "salad-veggies",
+      "nameEs": "Little Gem",
+      "nameEn": "Little Gem",
+      "descriptionEs": "Vinagreta de miel y trufa blanca, surtido de rábanos, hierbas, alcaparras, cebolla",
+      "descriptionEn": "White truffle honey vinaigrette, mixed radish, herbs, capers, onion",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-lumache",
+      "categoryId": "pasta",
+      "nameEs": "Lumache Picantes",
+      "nameEn": "Spicy Lumache",
+      "descriptionEs": "Vodka Sungold, ají amarillo, migas de pan, ricotta salata",
+      "descriptionEn": "Sungold vodka, aji amarillo, bread crumbs, ricotta salata",
+      "price": "$36",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "squid-ink-cavatellini",
+      "categoryId": "pasta",
+      "nameEs": "Cavatellini de Tinta de Calamar",
+      "nameEn": "Squid Ink Cavatellini",
+      "descriptionEs": "Camarón, chorizo milán, tomate de Calabria",
+      "descriptionEn": "Shrimp, milan chorizo, calabrian tomato",
+      "price": "$32",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ziti-rigate",
+      "categoryId": "pasta",
+      "nameEs": "Ziti Rigate",
+      "nameEn": "Ziti Rigate",
+      "descriptionEs": "Rabo de toro estofado, parmesano vacche rosse, albahaca",
+      "descriptionEn": "Braised oxtail, vacche rosse parm, basil",
+      "price": "$42",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arctic-char",
+      "categoryId": "sea",
+      "nameEs": "Arctic Char",
+      "nameEn": "Arctic Char",
+      "descriptionEs": "Puré de calabaza honeynut, beurre blanc de champaña, acedera roja. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Honeynut squash puree, champagne beurre blanc, red sorrel. Cooked to order; timing varies.",
+      "price": "$46",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "confit-octopus",
+      "categoryId": "sea",
+      "nameEs": "Pulpo Confitado",
+      "nameEn": "Confit Octopus",
+      "descriptionEs": "Mayonesa de sriracha, cebolla caramelizada, papa cambray. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Sriracha mayo, caramelized onion, fingerling potato. Cooked to order; timing varies.",
+      "price": "$30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mahi-mahi-sando",
+      "categoryId": "sea",
+      "nameEs": "Sándwich de Mahi Mahi",
+      "nameEn": "Mahi Mahi Sando",
+      "descriptionEs": "Ensalada de col (coleslaw), ají verde, papas fritas. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Coleslaw, aji verde, fries. Cooked to order; timing varies.",
+      "price": "$22",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-branzino",
+      "categoryId": "sea",
+      "nameEs": "Branzino Entero",
+      "nameEn": "Whole Branzino",
+      "descriptionEs": "Curry verde de coco, arroz basmati, cilantro. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Coconut green curry, basmati rice, cilantro. Cooked to order; timing varies.",
+      "price": "$54",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dry-aged-beef-burger",
+      "categoryId": "land",
+      "nameEs": "Hamburguesa de Res Madurada en Seco",
+      "nameEn": "Dry Aged Beef Burger",
+      "descriptionEs": "Término rojo o bien cocida — cheddar, tocino, mayonesa de cebolla, pepinillos, endibia rizada (frisée). Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Pink or no pink — cheddar, bacon, onion mayo, pickles, frisee. Cooked to order; timing varies.",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-roasted-chicken",
+      "categoryId": "land",
+      "nameEs": "Medio Pollo Asado",
+      "nameEn": "Half Roasted Chicken",
+      "descriptionEs": "Polenta, zanahorias, ejotes (haricot verts), grano padano, jugo de vino blanco. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Polenta, carrots, haricot verts, grano padano, white wine jus. Cooked to order; timing varies.",
+      "price": "$36",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-ny-strip",
+      "categoryId": "land",
+      "nameEs": "Prime NY Strip",
+      "nameEn": "Prime NY Strip",
+      "descriptionEs": "Papas fritas con trufa, cebollín. Se cocina al momento; el tiempo de preparación varía.",
+      "descriptionEn": "Truffle fries, chives. Cooked to order; timing varies.",
+      "price": "$58",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropic-thunder",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Tropic Thunder",
+      "nameEn": "Tropic Thunder",
+      "descriptionEs": "Mezcal, maracuyá, jengibre, lima",
+      "descriptionEn": "Mezcal, passionfruit, ginger, lime",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-by-you",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Blue By You",
+      "nameEn": "Blue By You",
+      "descriptionEs": "Gin, arándano azul, miel, lima, menta",
+      "descriptionEn": "Gin, blueberry, honey, lime, mint",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "perfect-girl",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Perfect Girl",
+      "nameEn": "Perfect Girl",
+      "descriptionEs": "Vodka, flor de saúco, kiwi, lima, albahaca",
+      "descriptionEn": "Vodka, elderflower, kiwi, lime, basil",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "knives-out",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Knives Out",
+      "nameEn": "Knives Out",
+      "descriptionEs": "Tequila, mezcal, frambuesa, benedictine, lima",
+      "descriptionEn": "Tequila, mezcal, raspberry, benedictine, lime",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gato-rosa",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Gato Rosa",
+      "nameEn": "Gato Rosa",
+      "descriptionEs": "Gin de jamaica (hibiscus), hierba limón, népeta, cocchi americano, yuzu, menta",
+      "descriptionEn": "Hibiscus gin, lemongrass, nepeta, cocchi americano, yuzu, mint",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frogger",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Frogger",
+      "nameEn": "Frogger",
+      "descriptionEs": "Vodka de pepino, jugo de pepino, lima, jengibre",
+      "descriptionEn": "Cucumber vodka, cucumber juice, lime, ginger",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jolly-roger",
+      "categoryId": "cocktails-shaken",
+      "nameEs": "Jolly Roger",
+      "nameEn": "Jolly Roger",
+      "descriptionEs": "Ron añejo (dark rum), naranja sanguina y serrano, orgeat*, piña, lima",
+      "descriptionEn": "Dark rum, blood orange serrano, orgeat*, pineapple, lime",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-fix-clarified",
+      "categoryId": "cocktails-stirred",
+      "nameEs": "Little Fix (clarificado)",
+      "nameEn": "Little Fix (clarified)",
+      "descriptionEs": "Tequila, sotol, genepy, sandía, jalapeño",
+      "descriptionEn": "Tequila, sotol, genepy, watermelon, jalapeño",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "m-n-t",
+      "categoryId": "cocktails-stirred",
+      "nameEs": "M.N.T",
+      "nameEn": "M.N.T",
+      "descriptionEs": "Tequila, amaro nonino, amaro montenegro",
+      "descriptionEn": "Tequila, amaro nonino, amaro montenegro",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chief",
+      "categoryId": "cocktails-stirred",
+      "nameEs": "Chief",
+      "nameEn": "Chief",
+      "descriptionEs": "Bourbon, jerez oloroso y east india, amargos (bitters)",
+      "descriptionEn": "Bourbon, oloroso & east india sherries, bitters",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gooseberry-spritz",
+      "categoryId": "cocktails-stirred",
+      "nameEs": "Gooseberry Spritz",
+      "nameEn": "Gooseberry Spritz",
+      "descriptionEs": "Shrub de uva espina (gooseberry), lima, prosecco",
+      "descriptionEn": "Gooseberry shrub, lime, prosecco",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sonoran-spritz",
+      "categoryId": "cocktails-stirred",
+      "nameEs": "Sonoran Spritz",
+      "nameEn": "Sonoran Spritz",
+      "descriptionEs": "Cocchi americano, sotol, toronja, prosecco",
+      "descriptionEn": "Cocchi americano, sotol, grapefruit, prosecco",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tadpole",
+      "categoryId": "mocktails",
+      "nameEs": "Tadpole",
+      "nameEn": "Tadpole",
+      "descriptionEs": "Pepino, jengibre, lima",
+      "descriptionEn": "Cucumber, ginger, lime",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-yuzu-spritz",
+      "categoryId": "mocktails",
+      "nameEs": "Raspberry Yuzu Spritz",
+      "nameEn": "Raspberry Yuzu Spritz",
+      "descriptionEs": "Frambuesa, yuzu, lima, agua con gas",
+      "descriptionEn": "Raspberry, yuzu, lime, soda water",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-brut-adami-garbel-nv-treviso-italy-glass",
+      "categoryId": "sparkling-wine",
+      "nameEs": "PROSECCO brut, adami, 'garbèl', nv, treviso, italy (copa)",
+      "nameEn": "PROSECCO brut, adami, 'garbèl', nv, treviso, italy (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-brut-adami-garbel-nv-treviso-italy-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "PROSECCO brut, adami, 'garbèl', nv, treviso, italy (botella)",
+      "nameEn": "PROSECCO brut, adami, 'garbèl', nv, treviso, italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$62",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sparkling-nebbiolo-rose-malvira-rive-gauche-nv-italy-glass",
+      "categoryId": "sparkling-wine",
+      "nameEs": "SPARKLING NEBBIOLO ROSÉ, 'malvirá', rive gauche, nv, italy (copa)",
+      "nameEn": "SPARKLING NEBBIOLO ROSÉ, 'malvirá', rive gauche, nv, italy (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sparkling-nebbiolo-rose-malvira-rive-gauche-nv-italy-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "SPARKLING NEBBIOLO ROSÉ, 'malvirá', rive gauche, nv, italy (botella)",
+      "nameEn": "SPARKLING NEBBIOLO ROSÉ, 'malvirá', rive gauche, nv, italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$78",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne-grognet-blanc-de-blancs-brut-nv-france-glass",
+      "categoryId": "sparkling-wine",
+      "nameEs": "CHAMPAGNE GROGNET blanc de blancs, brut, nv, france (copa)",
+      "nameEn": "CHAMPAGNE GROGNET blanc de blancs, brut, nv, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "champagne-grognet-blanc-de-blancs-brut-nv-france-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "CHAMPAGNE GROGNET blanc de blancs, brut, nv, france (botella)",
+      "nameEn": "CHAMPAGNE GROGNET blanc de blancs, brut, nv, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$106",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "victor-chastenay-cremant-de-bourgogne-brut-burgundy-france-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "VICTOR CHASTENAY cremant de bourgogne, brut, burgundy, france (botella)",
+      "nameEn": "VICTOR CHASTENAY cremant de bourgogne, brut, burgundy, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dremont-pere-fils-ephemere-029-grand-cru-blanc-de-blancs-nv-fr-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "DREMONT PÈRE & FILS 'ephemere 029', grand cru blanc de blancs, nv, fr (botella)",
+      "nameEn": "DREMONT PÈRE & FILS 'ephemere 029', grand cru blanc de blancs, nv, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$215",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "henri-billiot-fils-brut-reserve-ambonnay-grand-cru-nv-fr-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "HENRI BILLIOT FILS brut reserve, ambonnay grand cru, nv, fr (botella)",
+      "nameEn": "HENRI BILLIOT FILS brut reserve, ambonnay grand cru, nv, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$125",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "laurent-perrier-brut-blanc-de-blancs-nv-france-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "LAURENT-PERRIER brut, blanc de blancs, nv, france (botella)",
+      "nameEn": "LAURENT-PERRIER brut, blanc de blancs, nv, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$295",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "etienne-calsac-les-rocheforts-blanc-de-blancs-1er-cru-nv-fr-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "ETIENNE CALSAC, 'les rocheforts', blanc de blancs, 1er cru, nv, fr (botella)",
+      "nameEn": "ETIENNE CALSAC, 'les rocheforts', blanc de blancs, 1er cru, nv, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$190",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "larmandier-bernier-longitude-extra-brut-blanc-de-blancs-nv-fr-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "LARMANDIER-BERNIER, 'longitude', extra brut, blanc de blancs, nv, fr (botella)",
+      "nameEn": "LARMANDIER-BERNIER, 'longitude', extra brut, blanc de blancs, nv, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$165",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ponson-rose-premier-cru-extra-brut-nv-montagne-de-reims-fr-bottle",
+      "categoryId": "sparkling-wine",
+      "nameEs": "PONSON ROSÉ, premier cru, extra brut, nv, montagne de reims, fr (botella)",
+      "nameEn": "PONSON ROSÉ, premier cru, extra brut, nv, montagne de reims, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$150",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-rose-chateau-les-valentines-2024-cote-du-provence-france-glass",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (copa)",
+      "nameEn": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-rose-chateau-les-valentines-2024-cote-du-provence-france-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (botella)",
+      "nameEn": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-rose-chateau-les-valentines-2024-cote-du-provence-france-magnum",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (magnum)",
+      "nameEn": "GRENACHE ROSÉ château les valentines, 2024, côte du provence, france (magnum)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$178",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-rose-day-wines-2025-willamette-valley-or-glass",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "PINOT NOIR ROSÉ day wines, 2025, willamette valley, or (copa)",
+      "nameEn": "PINOT NOIR ROSÉ day wines, 2025, willamette valley, or (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-rose-day-wines-2025-willamette-valley-or-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "PINOT NOIR ROSÉ day wines, 2025, willamette valley, or (botella)",
+      "nameEn": "PINOT NOIR ROSÉ day wines, 2025, willamette valley, or (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$66",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "listan-negro-rosado-bermejos-2025-canary-islands-spain-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "LISTÁN NEGRO ROSADO bermejos, 2025, canary islands, spain (botella)",
+      "nameEn": "LISTÁN NEGRO ROSADO bermejos, 2025, canary islands, spain (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-gris-skin-contact-rose-craven-2024-stellenbosch-south-africa-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "PINOT GRIS SKIN CONTACT ROSÉ craven, 2024, stellenbosch, south africa (botella)",
+      "nameEn": "PINOT GRIS SKIN CONTACT ROSÉ craven, 2024, stellenbosch, south africa (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$76",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muller-thurgau-orange-furlani-altopiano-2023-trentino-a-a-italy-glass",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "MÜLLER THURGAU ORANGE furlani, altopiano, 2023, trentino-a.a. italy (copa)",
+      "nameEn": "MÜLLER THURGAU ORANGE furlani, altopiano, 2023, trentino-a.a. italy (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muller-thurgau-orange-furlani-altopiano-2023-trentino-a-a-italy-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "MÜLLER THURGAU ORANGE furlani, altopiano, 2023, trentino-a.a. italy (botella)",
+      "nameEn": "MÜLLER THURGAU ORANGE furlani, altopiano, 2023, trentino-a.a. italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$62",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gruner-veltliner-orange-arndorfer-2022-kamptal-austria-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "GRÜNER VELTLINER ORANGE arndorfer, 2022, kamptal, austria (botella)",
+      "nameEn": "GRÜNER VELTLINER ORANGE arndorfer, 2022, kamptal, austria (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "traminer-weiss-skin-contact-hannah-glatzer-2021-austria-bottle",
+      "categoryId": "rose-skin-contact-wine",
+      "nameEs": "TRAMINER 'WEISS' SKIN CONTACT hannah glatzer, 2021, austria (botella)",
+      "nameEn": "TRAMINER 'WEISS' SKIN CONTACT hannah glatzer, 2021, austria (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$76",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gruner-veltliner-freiheit-proidl-2023-kremstal-austria-glass",
+      "categoryId": "white-wine",
+      "nameEs": "GRÜNER VELTLINER 'freiheit', proidl, 2023, kremstal, austria (copa)",
+      "nameEn": "GRÜNER VELTLINER 'freiheit', proidl, 2023, kremstal, austria (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gruner-veltliner-freiheit-proidl-2023-kremstal-austria-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "GRÜNER VELTLINER 'freiheit', proidl, 2023, kremstal, austria (botella)",
+      "nameEn": "GRÜNER VELTLINER 'freiheit', proidl, 2023, kremstal, austria (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albarino-albanta-sobre-lias-2023-rias-baixas-spain-glass",
+      "categoryId": "white-wine",
+      "nameEs": "ALBARIÑO, albanta, 'sobre lias', 2023, rias baixas, spain (copa)",
+      "nameEn": "ALBARIÑO, albanta, 'sobre lias', 2023, rias baixas, spain (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albarino-albanta-sobre-lias-2023-rias-baixas-spain-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "ALBARIÑO, albanta, 'sobre lias', 2023, rias baixas, spain (botella)",
+      "nameEn": "ALBARIÑO, albanta, 'sobre lias', 2023, rias baixas, spain (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$66",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-pascal-jolivet-attitude-2023-france-glass",
+      "categoryId": "white-wine",
+      "nameEs": "SAUVIGNON BLANC pascal jolivet, 'attitude', 2023, france (copa)",
+      "nameEn": "SAUVIGNON BLANC pascal jolivet, 'attitude', 2023, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-pascal-jolivet-attitude-2023-france-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "SAUVIGNON BLANC pascal jolivet, 'attitude', 2023, france (botella)",
+      "nameEn": "SAUVIGNON BLANC pascal jolivet, 'attitude', 2023, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sancerre-pierre-martin-chavignol-2025-loire-france-glass",
+      "categoryId": "white-wine",
+      "nameEs": "SANCERRE pierre martin, 'chavignol', 2025, loire, france (copa)",
+      "nameEn": "SANCERRE pierre martin, 'chavignol', 2025, loire, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sancerre-pierre-martin-chavignol-2025-loire-france-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "SANCERRE pierre martin, 'chavignol', 2025, loire, france (botella)",
+      "nameEn": "SANCERRE pierre martin, 'chavignol', 2025, loire, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-famille-vincent-2022-burgundy-france-glass",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY famille vincent, 2022, burgundy, france (copa)",
+      "nameEn": "CHARDONNAY famille vincent, 2022, burgundy, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-famille-vincent-2022-burgundy-france-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY famille vincent, 2022, burgundy, france (botella)",
+      "nameEn": "CHARDONNAY famille vincent, 2022, burgundy, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$78",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gavi-il-poggio-nuvole-sul-poggio-2025-piedmont-italy-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "GAVI il poggio, 'nuvole sul poggio', 2025, piedmont, italy (botella)",
+      "nameEn": "GAVI il poggio, 'nuvole sul poggio', 2025, piedmont, italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "melon-de-bourgogne-domaine-de-l-epinay-2022-muscadet-fr-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "MELON DE BOURGOGNE domaine de l'epinay, 2022, muscadet, fr (botella)",
+      "nameEn": "MELON DE BOURGOGNE domaine de l'epinay, 2022, muscadet, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$58",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-kobal-suho-2025-slovenia-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "SAUVIGNON BLANC kobal, 'suho', 2025, slovenia (botella)",
+      "nameEn": "SAUVIGNON BLANC kobal, 'suho', 2025, slovenia (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$67",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-holloran-stafford-hill-2024-willamette-valley-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "SAUVIGNON BLANC holloran, stafford hill, 2024, willamette valley (botella)",
+      "nameEn": "SAUVIGNON BLANC holloran, stafford hill, 2024, willamette valley (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riesling-leitz-eins-zwei-dry-trocken-2024-rheingau-germany-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "RIESLING leitz, eins zwei dry, trocken, 2024, rheingau, germany (botella)",
+      "nameEn": "RIESLING leitz, eins zwei dry, trocken, 2024, rheingau, germany (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$72",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riesling-j-ferdinand-kimich-trocken-dry-2024-pfalz-germany-1-liter-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "RIESLING j ferdinand kimich, trocken dry, 2024, pfalz, germany — 1 liter (botella)",
+      "nameEn": "RIESLING j ferdinand kimich, trocken dry, 2024, pfalz, germany — 1 liter (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riesling-off-dry-gunderloch-jean-baptiste-2024-rheinhessen-germany-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "RIESLING, off-dry, gunderloch, 'jean baptiste', 2024, rheinhessen, germany (botella)",
+      "nameEn": "RIESLING, off-dry, gunderloch, 'jean baptiste', 2024, rheinhessen, germany (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$69",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garganega-trebbiano-monte-del-fra-custoza-superiore-2021-veneto-italy-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "GARGANEGA/TREBBIANO monte del frà, 'custoza superiore', 2021, veneto, italy (botella)",
+      "nameEn": "GARGANEGA/TREBBIANO monte del frà, 'custoza superiore', 2021, veneto, italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-arnot-roberts-watson-ranch-2024-napa-california-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY arnot-roberts, watson ranch, 2024, napa, california (botella)",
+      "nameEn": "CHARDONNAY arnot-roberts, watson ranch, 2024, napa, california (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$130",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-cht-des-rontets-clos-de-varambom-2022-pouilly-fuisse-fr-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY cht. des rontets, 'clos de varambom', 2022, pouilly-fuissé, fr (botella)",
+      "nameEn": "CHARDONNAY cht. des rontets, 'clos de varambom', 2022, pouilly-fuissé, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$145",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-florence-et-francois-bachelier-2023-chablis-france-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY florence et françois bachelier, 2023, chablis, france (botella)",
+      "nameEn": "CHARDONNAY florence et françois bachelier, 2023, chablis, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$120",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-crowley-2022-willamette-valley-oregon-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY crowley, 2022, willamette valley, oregon (botella)",
+      "nameEn": "CHARDONNAY crowley, 2022, willamette valley, oregon (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-pierre-henri-rougeot-saint-aubin-1er-cru-2023-burgundy-fr-bottle",
+      "categoryId": "white-wine",
+      "nameEs": "CHARDONNAY pierre-henri rougeot, saint-aubin, 1er cru, 2023, burgundy, fr (botella)",
+      "nameEn": "CHARDONNAY pierre-henri rougeot, saint-aubin, 1er cru, 2023, burgundy, fr (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$225",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zweigelt-christina-netzl-kuhlbar-2025-austria-chilled-red-glass",
+      "categoryId": "red-wine",
+      "nameEs": "ZWEIGELT christina netzl, 'kuhlbar', 2025, austria — ¡tinto frío! (copa)",
+      "nameEn": "ZWEIGELT christina netzl, 'kuhlbar', 2025, austria — chilled red! (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zweigelt-christina-netzl-kuhlbar-2025-austria-chilled-red-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "ZWEIGELT christina netzl, 'kuhlbar', 2025, austria — ¡tinto frío! (botella)",
+      "nameEn": "ZWEIGELT christina netzl, 'kuhlbar', 2025, austria — chilled red! (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$66",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-madson-2024-santa-cruz-mountains-california-glass",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR madson, 2024, santa cruz mountains, california (copa)",
+      "nameEn": "PINOT NOIR madson, 2024, santa cruz mountains, california (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$21",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-madson-2024-santa-cruz-mountains-california-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR madson, 2024, santa cruz mountains, california (botella)",
+      "nameEn": "PINOT NOIR madson, 2024, santa cruz mountains, california (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$82",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dolcetto-casavecchia-sori-bruni-diano-d-alba-2022-piedmont-glass",
+      "categoryId": "red-wine",
+      "nameEs": "DOLCETTO, casavecchia, söri bruni, diano d'alba, 2022, piedmont (copa)",
+      "nameEn": "DOLCETTO, casavecchia, söri bruni, diano d'alba, 2022, piedmont (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dolcetto-casavecchia-sori-bruni-diano-d-alba-2022-piedmont-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "DOLCETTO, casavecchia, söri bruni, diano d'alba, 2022, piedmont (botella)",
+      "nameEn": "DOLCETTO, casavecchia, söri bruni, diano d'alba, 2022, piedmont (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-syrah-mourvedre-a-berthet-rayne-2023-cairanne-france-glass",
+      "categoryId": "red-wine",
+      "nameEs": "GRENACHE/SYRAH/MOURVÈDRE a. berthet-rayne, 2023, cairanne, france (copa)",
+      "nameEn": "GRENACHE/SYRAH/MOURVÈDRE a. berthet-rayne, 2023, cairanne, france (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-syrah-mourvedre-a-berthet-rayne-2023-cairanne-france-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "GRENACHE/SYRAH/MOURVÈDRE a. berthet-rayne, 2023, cairanne, france (botella)",
+      "nameEn": "GRENACHE/SYRAH/MOURVÈDRE a. berthet-rayne, 2023, cairanne, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$66",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-stephen-ross-flying-cloud-2021-paso-robles-ca-glass",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON stephen ross, 'flying cloud', 2021, paso robles, ca (copa)",
+      "nameEn": "CABERNET SAUVIGNON stephen ross, 'flying cloud', 2021, paso robles, ca (glass)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-stephen-ross-flying-cloud-2021-paso-robles-ca-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON stephen ross, 'flying cloud', 2021, paso robles, ca (botella)",
+      "nameEn": "CABERNET SAUVIGNON stephen ross, 'flying cloud', 2021, paso robles, ca (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gamay-domaine-des-marrans-corcelette-morgon-2023-france-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "GAMAY domaine des marrans, corcelette, morgon, 2023, france (botella)",
+      "nameEn": "GAMAY domaine des marrans, corcelette, morgon, 2023, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-fumey-chatelain-arbois-aux-melinaux-2022-france-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR, fumey chatelain, arbois aux melinaux, 2022, france (botella)",
+      "nameEn": "PINOT NOIR, fumey chatelain, arbois aux melinaux, 2022, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$120",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-belle-pente-willamette-valley-2022-oregon-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR belle pente, willamette valley, 2022, oregon (botella)",
+      "nameEn": "PINOT NOIR belle pente, willamette valley, 2022, oregon (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$96",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-domaine-fichet-2024-burgundy-france-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR domaine fichet, 2024, burgundy, france (botella)",
+      "nameEn": "PINOT NOIR domaine fichet, 2024, burgundy, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$78",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-denis-mortet-mes-cinq-terroirs-2022-gevrey-chambertin-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "PINOT NOIR denis mortet, 'mes cinq terroirs', 2022, gevrey-chambertin (botella)",
+      "nameEn": "PINOT NOIR denis mortet, 'mes cinq terroirs', 2022, gevrey-chambertin (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$395",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebbiolo-san-lorenzo-sassella-2020-valtellina-superiore-lombardy-italy-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "NEBBIOLO san lorenzo, 'sassella', 2020, valtellina superiore, lombardy, italy (botella)",
+      "nameEn": "NEBBIOLO san lorenzo, 'sassella', 2020, valtellina superiore, lombardy, italy (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$110",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangiovese-chianti-classico-buondonno-casavecchia-2022-tuscany-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "SANGIOVESE, chianti classico, buondonno, casavecchia, 2022, tuscany (botella)",
+      "nameEn": "SANGIOVESE, chianti classico, buondonno, casavecchia, 2022, tuscany (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tempranillo-rioja-reserva-monte-real-de-familia-2020-spain-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "TEMPRANILLO rioja reserva, monte real de familia, 2020, spain (botella)",
+      "nameEn": "TEMPRANILLO rioja reserva, monte real de familia, 2020, spain (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$66",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grenache-syrah-mourvedre-les-valentines-2022-cotes-de-provence-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "GRENACHE/SYRAH/MOURVÈDRE les valentines, 2022, côtes de provence (botella)",
+      "nameEn": "GRENACHE/SYRAH/MOURVÈDRE les valentines, 2022, côtes de provence (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$76",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec-matias-riccitelli-2023-mendoza-argentina-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "MALBEC matias riccitelli, 2023, mendoza, argentina (botella)",
+      "nameEn": "MALBEC matias riccitelli, 2023, mendoza, argentina (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec-bodega-el-porvenir-amauta-2021-salta-argentina-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "MALBEC bodega el porvenir, 'amauta', 2021, salta, argentina (botella)",
+      "nameEn": "MALBEC bodega el porvenir, 'amauta', 2021, salta, argentina (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$64",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-cultivar-2023-north-coast-california-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON cultivar, 2023, north coast, california (botella)",
+      "nameEn": "CABERNET SAUVIGNON cultivar, 2023, north coast, california (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$82",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-outward-massa-vineyard-2023-carmel-valley-ca-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON outward, massa vineyard, 2023, carmel valley, ca (botella)",
+      "nameEn": "CABERNET SAUVIGNON outward, massa vineyard, 2023, carmel valley, ca (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$125",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-le-coteau-margaux-eucera-2020-bordeaux-france-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON le coteau margaux, 'eucera', 2020, bordeaux, france (botella)",
+      "nameEn": "CABERNET SAUVIGNON le coteau margaux, 'eucera', 2020, bordeaux, france (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$225",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-cathy-corison-2021-st-helena-napa-california-bottle",
+      "categoryId": "red-wine",
+      "nameEs": "CABERNET SAUVIGNON, cathy corison, 2021, st. helena, napa, california (botella)",
+      "nameEn": "CABERNET SAUVIGNON, cathy corison, 2021, st. helena, napa, california (bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$360",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebco-light-lager-5-draft",
+      "categoryId": "beer",
+      "nameEs": "NEBCO light lager, 5% — de barril",
+      "nameEn": "NEBCO light lager, 5% — draft",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebco-fuzzy-baby-ducks-ipa-6-2-draft",
+      "categoryId": "beer",
+      "nameEs": "NEBCO fuzzy baby ducks IPA, 6.2% — de barril",
+      "nameEn": "NEBCO fuzzy baby ducks IPA, 6.2% — draft",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kent-falls-the-hollow-pilsner-5-4-16-oz-can",
+      "categoryId": "beer",
+      "nameEs": "Kent Falls THE HOLLOW pilsner, 5.4% — lata de 16 oz",
+      "nameEn": "Kent Falls THE HOLLOW pilsner, 5.4% — 16 oz can",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kent-falls-kolsch-kolsch-inspired-ale-5-2-16-oz-can",
+      "categoryId": "beer",
+      "nameEs": "Kent Falls KOLSCH, cerveza estilo kolsch, 5.2% — lata de 16 oz",
+      "nameEn": "Kent Falls KOLSCH, kolsch-inspired ale, 5.2% — 16 oz can",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kent-falls-buddy-sprinkles-ipa-6-5-16-oz-can",
+      "categoryId": "beer",
+      "nameEs": "Kent Falls BUDDY SPRINKLES IPA, 6.5% — lata de 16 oz",
+      "nameEn": "Kent Falls BUDDY SPRINKLES IPA, 6.5% — 16 oz can",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "captain-zig-coastal-american-ale-5-16-oz-can",
+      "categoryId": "beer",
+      "nameEs": "Captain Zig COASTAL american ale, 5% — lata de 16 oz",
+      "nameEn": "Captain Zig COASTAL american ale, 5% — 16 oz can",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "founders-mi-breakfast-stout-8-3-bottle",
+      "categoryId": "beer",
+      "nameEs": "FOUNDERS MI breakfast stout, 8.3% — botella",
+      "nameEn": "FOUNDERS MI breakfast stout, 8.3% — bottle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miller-high-life-4-6-bottle",
+      "categoryId": "beer",
+      "nameEs": "MILLER HIGH LIFE, 4.6% — botella",
+      "nameEn": "MILLER HIGH LIFE, 4.6% — bottle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "citizen-cider-wit-s-up-6-2-dry-cider",
+      "categoryId": "beer",
+      "nameEs": "CITIZEN CIDER wit's up, 6.2% (seco) — sidra",
+      "nameEn": "CITIZEN CIDER wit's up, 6.2% (dry) — cider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing-upside-dawn-golden-ale-n-a",
+      "categoryId": "beer",
+      "nameEs": "Athletic Brewing UPSIDE DAWN golden ale, sin alcohol",
+      "nameEn": "Athletic Brewing UPSIDE DAWN golden ale, n/a",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing-run-wild-ipa-n-a",
+      "categoryId": "beer",
+      "nameEs": "Athletic Brewing RUN WILD IPA, sin alcohol",
+      "nameEn": "Athletic Brewing RUN WILD IPA, n/a",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coca-cola",
+      "categoryId": "soft-drinks",
+      "nameEs": "Coca-Cola",
+      "nameEn": "Coca-Cola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diet-coke",
+      "categoryId": "soft-drinks",
+      "nameEs": "Diet Coke",
+      "nameEn": "Diet Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sprite",
+      "categoryId": "soft-drinks",
+      "nameEs": "Sprite",
+      "nameEn": "Sprite",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-ale",
+      "categoryId": "soft-drinks",
+      "nameEs": "Ginger Ale",
+      "nameEn": "Ginger Ale",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-beer",
+      "categoryId": "soft-drinks",
+      "nameEs": "Ginger Beer",
+      "nameEn": "Ginger Beer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tonic",
+      "categoryId": "soft-drinks",
+      "nameEs": "Tónica",
+      "nameEn": "Tonic",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sparkling-water-1-liter-bottle",
+      "categoryId": "soft-drinks",
+      "nameEs": "Agua con gas — botella de 1 litro",
+      "nameEn": "Sparkling Water — 1 liter bottle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-pot-de-creme-gf",
+      "categoryId": "sweet",
+      "nameEs": "Chocolate Pot de Crème (sin gluten)",
+      "nameEn": "Chocolate Pot de Crème (GF)",
+      "descriptionEs": "Crema natilla de chocolate oscuro, crème fraîche, caramelo, cacao en polvo",
+      "descriptionEn": "Dark chocolate custard, crème fraîche, caramel, cocoa powder",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cuatros-leches",
+      "categoryId": "sweet",
+      "nameEs": "Carrot Cuatros Leches",
+      "nameEn": "Carrot Cuatros Leches",
+      "descriptionEs": "Crema batida de queso crema, nuez y pasas",
+      "descriptionEn": "Cream cheese whip, walnut raisin",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-regular-or-decaf",
+      "categoryId": "coffee-tea",
+      "nameEs": "Café — Regular o Descafeinado",
+      "nameEn": "Coffee — Regular or Decaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-lavazza-single",
+      "categoryId": "coffee-tea",
+      "nameEs": "Espresso Lavazza — Sencillo",
+      "nameEn": "Espresso Lavazza — Single",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-lavazza-double",
+      "categoryId": "coffee-tea",
+      "nameEs": "Espresso Lavazza — Doble",
+      "nameEn": "Espresso Lavazza — Double",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arogya-of-westport-tea-traditional-chai-pot",
+      "categoryId": "coffee-tea",
+      "nameEs": "Té Arogya of Westport — Chai tradicional (tetera)",
+      "nameEn": "Arogya of Westport Tea — Traditional Chai (pot)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arogya-of-westport-tea-jasmine-green-pot",
+      "categoryId": "coffee-tea",
+      "nameEs": "Té Arogya of Westport — Verde jazmín (tetera)",
+      "nameEn": "Arogya of Westport Tea — Jasmine Green (pot)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arogya-of-westport-tea-blood-orange-pear-caffeine-free-pot",
+      "categoryId": "coffee-tea",
+      "nameEs": "Té Arogya of Westport — Naranja sanguina y pera (sin cafeína) (tetera)",
+      "nameEn": "Arogya of Westport Tea — Blood Orange & Pear (caffeine free) (pot)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arogya-of-westport-tea-peppermint-caffeine-free-pot",
+      "categoryId": "coffee-tea",
+      "nameEs": "Té Arogya of Westport — Menta (sin cafeína) (tetera)",
+      "nameEn": "Arogya of Westport Tea — Peppermint (caffeine free) (pot)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arogya-of-westport-tea-chamomile-caffeine-free-pot",
+      "categoryId": "coffee-tea",
+      "nameEs": "Té Arogya of Westport — Manzanilla (sin cafeína) (tetera)",
+      "nameEn": "Arogya of Westport Tea — Chamomile (caffeine free) (pot)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemorton-pommeau-de-normandie-oaked-apple",
+      "categoryId": "port",
+      "nameEs": "Lemorton Pommeau de Normandie — Manzana añejada en barrica",
+      "nameEn": "Lemorton Pommeau de Normandie — Oaked Apple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dow-s-tawny-10-year",
+      "categoryId": "port",
+      "nameEs": "Dow's Tawny, 10 Años",
+      "nameEn": "Dow's Tawny, 10 Year",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "merlot-grappa",
+      "categoryId": "grappa",
+      "nameEs": "Merlot Grappa",
+      "nameEn": "Merlot Grappa",
+      "descriptionEs": "Pura, suave y redonda, pétalos de rosa y cereza suave",
+      "descriptionEn": "Pure, soft and round, rose petals & soft cherry",
+      "price": "$15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "manzanilla",
+      "categoryId": "sherry",
+      "nameEs": "Manzanilla",
+      "nameEn": "Manzanilla",
+      "descriptionEs": "Muy seco — 5 años. Almendras tostadas, manzanas horneadas, manzanilla",
+      "descriptionEn": "Very dry — 5yr. Roasted almonds, baked apples, chamomile",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-nuno-dry-oloroso",
+      "categoryId": "sherry",
+      "nameEs": "Don Nuño Dry Oloroso",
+      "nameEn": "Don Nuño Dry Oloroso",
+      "descriptionEs": "Seco — 12 años. Madera ahumada, chocolate, nueces y castañas",
+      "descriptionEn": "Dry — 12yr. Smoky wood, chocolate, walnuts & chestnuts",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "palo-cortado",
+      "categoryId": "sherry",
+      "nameEs": "Palo Cortado",
+      "nameEn": "Palo Cortado",
+      "descriptionEs": "Seco — 12 años. Frutos secos tostados, café, chocolate",
+      "descriptionEn": "Dry — 12yr. Toasted nuts, coffee, chocolate",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "east-india-solera",
+      "categoryId": "sherry",
+      "nameEs": "East India Solera",
+      "nameEn": "East India Solera",
+      "descriptionEs": "Dulce — 15 años. Arce, azúcar morena, betún para zapatos, pasas y cacahuates de cerveza",
+      "descriptionEn": "Sweet — 15yr. Maple, brown sugar, shoe polish, raisin & beer nuts",
+      "price": "$10",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú o adaptadas para alergias.",
-      "aEn": "Yes, please ask our staff for items marked on the menu or adapted for dietary needs."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono o a través de nuestra web.",
-      "aEn": "We welcome walk-ins and phone or online reservations."
-    }
-  ]
+  "faqs": []
 }
