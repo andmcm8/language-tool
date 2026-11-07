@@ -1,25 +1,22 @@
 {
   "storeInfo": {
     "id": "little-kitchen-westport",
-    "name": "Little Kitchen Westport",
-    "tagline": "Fresh, local comfort food crafted with love | Comida reconfortante fresca y local",
-    "address": "423 Post Rd E, Westport, CT",
+    "name": "The Little Kitchen of Westport",
+    "tagline": "Pan-Asian Chinese, Indonesian and sushi kitchen in Westport since 1987 | Cocina panasiática china, indonesia y sushi en Westport desde 1987",
+    "address": "423 Post Rd E, Westport, CT 06880",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
+      "monday_friday": "Mon-Thu 11:30 AM - 9:30 PM; Fri 11:30 AM - 10:00 PM",
       "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "sunday": "11:30 AM - 9:30 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Delivery",
+      "Sushi Bar",
+      "Lunch Specials",
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -27,323 +24,2331 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": "(203) 227-5683"
+    "phone": "(203) 454-5540"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
+      "id": "today-s-specials",
+      "nameEs": "Especiales del Día",
+      "nameEn": "Today's Specials",
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizers-salad",
+      "nameEs": "Entradas y Ensalada",
+      "nameEn": "Appetizers & Salad",
+      "icon": "Utensils"
+    },
+    {
+      "id": "maki-or-hand-rolls",
+      "nameEs": "Maki o Conos",
+      "nameEn": "Maki or Hand Rolls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rice-boxes",
+      "nameEs": "Cajas de Arroz",
+      "nameEn": "Rice Boxes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "combination-platters",
+      "nameEs": "Platos combinados",
+      "nameEn": "Combination Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi",
+      "nameEn": "Sushi or Sashimi",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chef-s-signature-roll",
+      "nameEs": "Rollo de la Casa",
+      "nameEn": "Chef's Signature Roll",
+      "icon": "Utensils"
+    },
+    {
       "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEs": "Antojitos",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "westporter-s-favorites",
+      "nameEs": "Los favoritos de Westporter",
+      "nameEn": "Westporter's Favorites",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "soup",
+      "nameEs": "Sopa",
+      "nameEn": "Soup",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "rice-noodles",
+      "nameEs": "Arroz y Fideos",
+      "nameEn": "Rice & Noodles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetables",
+      "nameEs": "Verduras",
+      "nameEn": "Vegetables",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beef",
+      "nameEs": "Carne de Res",
+      "nameEn": "Beef",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pork",
+      "nameEs": "Cerdo",
+      "nameEn": "Pork",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classics-miscellaneous",
+      "nameEs": "Clásicos y Varios",
+      "nameEn": "Classics & Miscellaneous",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beverages-condiments",
+      "nameEs": "Bebidas y Condimentos",
+      "nameEn": "Beverages & Condiments",
+      "icon": "Utensils"
+    },
+    {
+      "id": "luncheon",
+      "nameEs": "Almuerzo",
+      "nameEn": "Luncheon",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "little-kitchen-westport-01",
-      "categoryId": "appetizers",
-      "nameEs": "Croquetas de Jamón Artesanales",
-      "nameEn": "Artisanal Ham Croquettes",
-      "descriptionEs": "Crujientes por fuera y cremosas por dentro, elaboradas con jamón serrano y bechamel casera.",
-      "descriptionEn": "Crispy on the outside and creamy on the inside, made with serrano ham and housemade béchamel.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "11a-scallion-pancakes",
+      "categoryId": "today-s-specials",
+      "nameEs": "11a. Scallion Pancakes",
+      "nameEn": "11a. Scallion Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-02",
-      "categoryId": "appetizers",
-      "nameEs": "Empanadas de Carne Cortada a Cuchillo",
-      "nameEn": "Hand-Cut Beef Empanadas",
-      "descriptionEs": "Masa hojaldrada dorada al horno rellena de carne tierna marinada, cebolla y especias.",
-      "descriptionEn": "Golden baked flaky pastry stuffed with tender marinated beef, onions, and savory spices.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Al Horno",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "crystal-steamed-shrimp-dumpling",
+      "categoryId": "today-s-specials",
+      "nameEs": "Crystal Steamed Shrimp Dumpling",
+      "nameEn": "Crystal Steamed Shrimp Dumpling",
+      "descriptionEs": "Relleno jugoso envuelto en piel translúcida, Har-Gow (empanaditas de camarón estilo dim sum)",
+      "descriptionEn": "Juicy filling wrapped by translucent skin, Har-Gow (dim sum shrimp dumplings)",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-03",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Crujientes con Alioli de Cilantro",
-      "nameEn": "Crispy Calamari with Cilantro Aioli",
-      "descriptionEs": "Ligeramente empanizados y fritos a la perfección, servidos con nuestro alioli casero de cilantro y limón.",
-      "descriptionEn": "Lightly breaded and fried to perfection, served with our housemade cilantro lime aioli.",
-      "price": "$15.95",
-      "popular": false,
-      "badge": "New",
-      "tags": [
-        "Mariscos",
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "shanghai-bun",
+      "categoryId": "today-s-specials",
+      "nameEs": "Shanghai Bun",
+      "nameEn": "Shanghai Bun",
+      "descriptionEs": "panecillo de cerdo picado jugoso frito a la sartén (Baozi)",
+      "descriptionEn": "pan-fried juicy minced pork bun (Baozi)",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-04",
-      "categoryId": "appetizers",
-      "nameEs": "Guacamole Fresco de la Casa",
-      "nameEn": "House Fresh Guacamole",
-      "descriptionEs": "Aguacates Hass machacados al momento con cilantro, tomate, cebolla morada y un toque de lima.",
-      "descriptionEn": "Freshly mashed Hass avocados with cilantro, tomatoes, red onions, and a squeeze of lime.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "peking-duck",
+      "categoryId": "today-s-specials",
+      "nameEs": "Peking Duck",
+      "nameEn": "Peking Duck",
+      "descriptionEs": "Clásico pato asado servido con cebollín, pepino y panqueques con salsa para untar hoisin (30 minutos de tiempo de preparación); precio inicial (elección de opciones)",
+      "descriptionEn": "Classic roasted duck served with spring onion, cucumber and pancakes with hoisin dipping sauce (30 minutes preparation time); starting price (choice of options)",
+      "price": "$48.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-05",
-      "categoryId": "mains",
-      "nameEs": "Pollo a la Plancha con Chimichurri",
-      "nameEn": "Grilled Chicken Breast with Chimichurri",
-      "descriptionEs": "Pechuga de pollo jugosa a la parrilla cubierta con nuestra salsa chimichurri de hierbas frescas.",
-      "descriptionEn": "Juicy grilled chicken breast topped with our signature fresh herb chimichurri sauce.",
-      "price": "$21.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "A la Parrilla",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "crispy-whole-fish",
+      "categoryId": "today-s-specials",
+      "nameEs": "Crispy Whole Fish",
+      "nameEn": "Crispy Whole Fish",
+      "descriptionEs": "Pescado entero crujiente con salsa marrón de ají picante",
+      "descriptionEn": "Crispy whole fish with hot pepper brown sauce",
+      "price": "$39.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-06",
-      "categoryId": "mains",
-      "nameEs": "Lomo Saltado Peruano",
-      "nameEn": "Peruvian Style Lomo Saltado",
-      "descriptionEs": "Trozos tiernos de solomillo salteados con cebolla roja, tomates, salsa de soja y papas fritas doradas.",
-      "descriptionEn": "Tender strips of sirloin steak wok-tossed with red onions, tomatoes, soy sauce, and golden french fries.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Salteado",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Soja",
-        "Gluten"
-      ],
+      "id": "yi-mein-lobster",
+      "categoryId": "today-s-specials",
+      "nameEs": "Yi Mein Lobster",
+      "nameEn": "Yi Mein Lobster",
+      "descriptionEs": "Langosta sin caparazón salteada en salsa de frijol negro, servida con yi mein",
+      "descriptionEn": "Lobster out of shell sautéed in black bean sauce, served with yi mein",
+      "price": "$47.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-07",
-      "categoryId": "mains",
-      "nameEs": "Filete de Salmón al Horno con Limón y Hierbas",
-      "nameEn": "Baked Lemon Herb Salmon Filet",
-      "descriptionEs": "Salmón fresco del Atlántico al horno con mantequilla de hierbas, acompañado de vegetales de estación.",
-      "descriptionEn": "Fresh Atlantic salmon baked with herb butter, served alongside seasonal roasted vegetables.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "kani-salad",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Kani Salad",
+      "nameEn": "Kani Salad",
+      "descriptionEs": "Bastoncitos de cangrejo y pepino con mayonesa japonesa y tobiko",
+      "descriptionEn": "Crab stick & cucumber with Japanese mayo & tobiko",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-08",
-      "categoryId": "mains",
-      "nameEs": "Pasta Pappardelle con Ragú de Ternera",
-      "nameEn": "Pappardelle Pasta with Slow-Cooked Veal Ragù",
-      "descriptionEs": "Pasta ancha artesanal con un guiso de ternera cocinado a fuego lento durante 6 horas con vino tinto.",
-      "descriptionEn": "Handmade wide ribbon pasta tossed in a rich 6-hour slow-cooked red wine veal ragù.",
-      "price": "$24.50",
-      "popular": false,
-      "badge": "Comfort Food",
-      "tags": [
-        "Casero",
-        "Pasta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "sushi-platter",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Sushi Platter",
+      "nameEn": "Sushi Platter",
+      "descriptionEs": "5 piezas de sushi variado y tekka maki",
+      "descriptionEn": "5 pieces of assorted sushi and tekka maki",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-09",
-      "categoryId": "specialties",
-      "nameEs": "Paella Marinera de la Casa",
-      "nameEn": "House Seafood Paella",
-      "descriptionEs": "Arroz con azafrán, camarones, mejillones, almejas y calamares, cocinados en caldo concentrado de mariscos.",
-      "descriptionEn": "Saffron rice with shrimp, mussels, clams, and calamari, simmered in a rich seafood broth.",
-      "price": "$32.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Pescado"
-      ],
+      "id": "edamame",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Edamame",
+      "nameEn": "Edamame",
+      "descriptionEs": "Soya verde entera al vapor con sal",
+      "descriptionEn": "Salted steamed whole soy beans",
+      "price": "$7.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-10",
-      "categoryId": "specialties",
-      "nameEs": "Costillas de Cerdo BBQ al Estilo Little Kitchen",
-      "nameEn": "Little Kitchen Style BBQ Pork Ribs",
-      "descriptionEs": "Costillas tiernas que se desprenden del hueso, glaseadas con nuestra salsa barbacoa artesanal.",
-      "descriptionEn": "Fall-off-the-bone tender baby back ribs glazed in our signature housemade smoky BBQ sauce.",
-      "price": "$29.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "A la Parrilla",
-        "Carne"
-      ],
-      "allergens": [],
+      "id": "seaweed-salad",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Seaweed Salad",
+      "nameEn": "Seaweed Salad",
+      "descriptionEs": "Algas marinas y pepino en aceite de ajonjolí",
+      "descriptionEn": "Seaweed and cucumber in sesame oil",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-11",
-      "categoryId": "specialties",
-      "nameEs": "Risotto Cremoso de Setas Silvestres",
-      "nameEn": "Creamy Wild Mushroom Risotto",
-      "descriptionEs": "Arroz Arborio italiano cocinado lentamente con setas variadas, vino blanco y queso parmesano.",
-      "descriptionEn": "Slow-cooked Italian Arborio rice tossed with assorted wild mushrooms, white wine, and parmesan.",
-      "price": "$22.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "maguruzuke",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Maguruzuke",
+      "nameEn": "Maguruzuke",
+      "descriptionEs": "Aguacate, wasabi, tobiko y hojuelas de tempura envueltos en atún con soya de mostaza dulce",
+      "descriptionEn": "Avocado, wasabi, tobiko & tempura flakes wrapped in tuna with sweet mustard soy",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Casera de Lavanda",
-      "nameEn": "House Lavender Lemonade",
-      "descriptionEs": "Limonada fresca recién exprimida infundida con un sutil y aromático toque de lavanda.",
-      "descriptionEn": "Freshly squeezed lemonade infused with a subtle and fragrant touch of culinary lavender.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Artesanal"
-      ],
-      "allergens": [],
+      "id": "black-peppered-tuna",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Black Peppered Tuna",
+      "nameEn": "Black Peppered Tuna",
+      "descriptionEs": "Atún sellado pincelado con pimienta fresca, ajo y salsa picante",
+      "descriptionEn": "Seared tuna brushed with fresh pepper, garlic & spicy sauce",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-13",
-      "categoryId": "beverages",
-      "nameEs": "Horchata de Almendras y Canela",
-      "nameEn": "Almond & Cinnamon Horchata",
-      "descriptionEs": "Bebida cremosa y refrescante a base de almendras, arroz, vainilla y un toque de canela.",
-      "descriptionEn": "Creamy and refreshing traditional-style beverage made with almonds, rice, vanilla, and cinnamon.",
+      "id": "sashimi-platter",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Sashimi Platter",
+      "nameEn": "Sashimi Platter",
+      "descriptionEs": "7 piezas de sashimi variado",
+      "descriptionEn": "7 pieces of assorted sashimi",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-loa",
+      "categoryId": "appetizers-salad",
+      "nameEs": "Salmon Loa",
+      "nameEn": "Salmon Loa",
+      "descriptionEs": "Salmón picado con aguacate, edamame, masago y salsa tabasco",
+      "descriptionEn": "Chopped salmon with avocado, edamame, masago & tabasco sauce",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-tuna-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Spicy Tuna Roll",
+      "nameEn": "Spicy Tuna Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Salmon Roll",
+      "nameEn": "Salmon Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaska-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Alaska Roll",
+      "nameEn": "Alaska Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Tuna Roll",
+      "nameEn": "Tuna Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-tuna-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "White Tuna Roll",
+      "nameEn": "White Tuna Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tempura-5-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Shrimp Tempura (5) Roll",
+      "nameEn": "Shrimp Tempura (5) Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-scallion-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Yellowtail & Scallion Roll",
+      "nameEn": "Yellowtail & Scallion Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spider-5-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Spider (5) Roll",
+      "nameEn": "Spider (5) Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-yellowtail-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Spicy Yellowtail Roll",
+      "nameEn": "Spicy Yellowtail Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Eel Roll",
+      "nameEn": "Eel Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oshinko-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Oshinko Roll",
+      "nameEn": "Oshinko Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Avocado Roll",
+      "nameEn": "Avocado Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philadelphia-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Philadelphia Roll",
+      "nameEn": "Philadelphia Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Cucumber Roll",
+      "nameEn": "Cucumber Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
       "price": "$5.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sin Gluten",
-        "Vegano"
-      ],
-      "allergens": [
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "little-kitchen-westport-14",
-      "categoryId": "beverages",
-      "nameEs": "Café Espresso Doble",
-      "nameEn": "Double Espresso",
-      "descriptionEs": "Café espresso de tueste oscuro, intenso y aromático.",
-      "descriptionEn": "Dark roast espresso shot, rich, bold, and aromatic.",
+      "id": "shrimp-avocado-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Shrimp & Avocado Roll",
+      "nameEn": "Shrimp & Avocado Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sundried-tomato-avocado-cucumber-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Sundried Tomato, Avocado & Cucumber Roll",
+      "nameEn": "Sundried Tomato, Avocado & Cucumber Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-scallop-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Spicy Scallop Roll",
+      "nameEn": "Spicy Scallop Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "futo-maki-8-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Futo Maki (8) Roll",
+      "nameEn": "Futo Maki (8) Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-roll-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "California Roll Roll",
+      "nameEn": "California Roll Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-tempura-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "Sweet Potato Tempura Roll",
+      "nameEn": "Sweet Potato Tempura Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l-a-vegetarian-roll",
+      "categoryId": "maki-or-hand-rolls",
+      "nameEs": "L.A. Vegetarian Roll",
+      "nameEn": "L.A. Vegetarian Roll",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "unagi-don",
+      "categoryId": "rice-boxes",
+      "nameEs": "Unagi Don",
+      "nameEn": "Unagi Don",
+      "descriptionEs": "鳗 (Eel) sobre arroz sazonado con oshinko encurtido",
+      "descriptionEn": "Eel over seasoned rice with pickled oshinko",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chirashi-don",
+      "categoryId": "rice-boxes",
+      "nameEs": "Chirashi Don",
+      "nameEn": "Chirashi Don",
+      "descriptionEs": "Sashimi seleccionado por el chef sobre arroz sazonado",
+      "descriptionEn": "Chef's choice of sashimi over seasoned rice",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tekka-don",
+      "categoryId": "rice-boxes",
+      "nameEs": "Tekka Don",
+      "nameEn": "Tekka Don",
+      "descriptionEs": "Sashimi de atún sobre arroz sazonado",
+      "descriptionEn": "Tuna sashimi over seasoned rice",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sake-don",
+      "categoryId": "rice-boxes",
+      "nameEs": "Sake Don",
+      "nameEn": "Sake Don",
+      "descriptionEs": "Sashimi de salmón sobre arroz sazonado",
+      "descriptionEn": "Salmon sashimi over seasoned rice",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-deluxe",
+      "categoryId": "combination-platters",
+      "nameEs": "Sushi Deluxe",
+      "nameEn": "Sushi Deluxe",
+      "descriptionEs": "10 piezas de sushi a elección del chef y 1 rollo California",
+      "descriptionEn": "10 pieces of chef's choice of sushi & 1 California roll",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-deluxe",
+      "categoryId": "combination-platters",
+      "nameEs": "Sashimi Deluxe",
+      "nameEn": "Sashimi Deluxe",
+      "descriptionEs": "15 piezas de sashimi a elección del chef",
+      "descriptionEn": "15 pieces of chef's choice of sashimi",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-sashimi-deluxe",
+      "categoryId": "combination-platters",
+      "nameEs": "Sushi y Sashimi Deluxe",
+      "nameEn": "Sushi & Sashimi Deluxe",
+      "descriptionEs": "7 piezas de sashimi, 6 piezas de sushi y 1 rollo California",
+      "descriptionEn": "7 pieces of sashimi, 6 pieces of sushi & 1 California roll",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-deluxe-for-2",
+      "categoryId": "combination-platters",
+      "nameEs": "Sushi Deluxe (para 2)",
+      "nameEn": "Sushi Deluxe (for 2)",
+      "descriptionEs": "16 piezas de sushi a elección del chef, 1 rollo California, 1 rollo de atún y 1 rollo dragón",
+      "descriptionEn": "16 pieces of chef's choice of sushi, 1 California roll, 1 tuna roll & 1 dragon roll",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-sashimi-deluxe-for-2",
+      "categoryId": "combination-platters",
+      "nameEs": "Sushi y Sashimi Deluxe (para 2)",
+      "nameEn": "Sushi & Sashimi Deluxe (for 2)",
+      "descriptionEs": "15 piezas de sashimi, 10 piezas de sushi, 1 rollo California y 1 rollo de atún picante",
+      "descriptionEn": "15 pieces of sashimi, 10 pieces of sushi, 1 California roll & 1 spicy tuna roll",
+      "price": "$68.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Atún",
+      "nameEn": "Tuna Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toro-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Toro",
+      "nameEn": "Toro Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Salmón",
+      "nameEn": "Salmon Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fluke-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Lenguado",
+      "nameEn": "Fluke Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Medregal",
+      "nameEn": "Yellowtail Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mackerel-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Caballa",
+      "nameEn": "Mackerel Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Salmón Ahumado",
+      "nameEn": "Smoked Salmon Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "octopus-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Pulpo",
+      "nameEn": "Octopus Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "squid-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Calamar",
+      "nameEn": "Squid Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Camarón",
+      "nameEn": "Shrimp Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-scallop-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Callo de Hacha Picante",
+      "nameEn": "Spicy Scallop Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Anguila",
+      "nameEn": "Eel Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-roe-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Hueva de Salmón",
+      "nameEn": "Salmon Roe Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flying-fish-roe-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Hueva de Pez Volador",
+      "nameEn": "Flying Fish Roe Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kani-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Kani",
+      "nameEn": "Kani Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tamago-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Tamago",
+      "nameEn": "Tamago Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-tuna-sushi-or-sashimi",
+      "categoryId": "sushi-or-sashimi",
+      "nameEs": "Sushi o Sashimi de Atún Blanco",
+      "nameEn": "White Tuna Sushi or Sashimi",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fuji-mama",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Fuji Mama",
+      "nameEn": "Fuji Mama",
+      "descriptionEs": "Salmón, atún, medregal cubierto con atún picante",
+      "descriptionEn": "Salmon, tuna, yellowtail topped with spicy tuna",
+      "price": "$21.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dynamite-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Dynamite Roll",
+      "nameEn": "Dynamite Roll",
+      "descriptionEs": "Atún picado, salmón, medregal y hojuelas de tempura mezclados en mayonesa picante con aguacate, envueltos en papel de soya",
+      "descriptionEn": "Chopped tuna, salmon, yellowtail & tempura flakes mixed in spicy mayo with avocado, wrapped in soy paper",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naruto",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Naruto",
+      "nameEn": "Naruto",
+      "descriptionEs": "Medregal, salmón, atún y kani envueltos en pepino",
+      "descriptionEn": "Yellowtail, salmon, tuna & kani wrapped with cucumber",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-westporter",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "The Westporter",
+      "nameEn": "The Westporter",
+      "descriptionEs": "Pepino, aguacate y kani cubiertos con atún picante y hojuelas crujientes de tempura",
+      "descriptionEn": "Cucumber, avocado & kani topped with spicy tuna and crunchy tempura flakes",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "komodo-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Komodo Roll",
+      "nameEn": "Komodo Roll",
+      "descriptionEs": "Atún picante, hojuelas de tempura, camarón tempura y pepino, cubiertos con masago de wasabi y tobiko",
+      "descriptionEn": "Spicy tuna, tempura flakes, shrimp tempura and cucumber, topped with wasabi masago & tobiko",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dragon-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Dragon Roll",
+      "nameEn": "Dragon Roll",
+      "descriptionEs": "Anguila y pepino envueltos con aguacate",
+      "descriptionEn": "Eel & cucumber wrapped with avocado",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-shrimp-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Coconut Shrimp Roll",
+      "nameEn": "Coconut Shrimp Roll",
+      "descriptionEs": "Camarón tempura y tamago cubiertos con ebi y aguacate en una salsa dulce de coco",
+      "descriptionEn": "Shrimp tempura & tamago topped with ebi & avocado in a sweet coconut sauce",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Lobster Roll",
+      "nameEn": "Lobster Roll",
+      "descriptionEs": "Langosta al vapor con mayonesa picante, brotes de daikon y aguacate envoltura de frijol de soya",
+      "descriptionEn": "Steamed lobster with spicy mayo, daikon sprout and avocado in a soy bean wrap",
+      "price": "$22.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "madame-butterfly",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Madame Butterfly",
+      "nameEn": "Madame Butterfly",
+      "descriptionEs": "Salmón picante en papel de soya cubierto con chile picante",
+      "descriptionEn": "Spicy salmon in soy paper topped with hot chili",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-kitchen",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Little Kitchen",
+      "nameEn": "Little Kitchen",
+      "descriptionEs": "Pepino, bastoncito de cangrejo, aguacate y tobiko cubiertos con atún, salmón y medregal",
+      "descriptionEn": "Cucumber, crab stick, avocado & tobiko topped with tuna, salmon, yellowtail",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "samurai",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Samurai",
+      "nameEn": "Samurai",
+      "descriptionEs": "Medregal, jalapeño, cubierto con anguila y aguacate",
+      "descriptionEn": "Yellowtail, jalapeño, topped with eel & avocado",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angry-bird",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Angry Bird",
+      "nameEn": "Angry Bird",
+      "descriptionEs": "Kani picante sobre camarón tempura y pepino con mayonesa picante",
+      "descriptionEn": "Spicy kani on top of shrimp tempura & cucumber with spicy mayo",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caterpillar-roll",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Caterpillar Roll",
+      "nameEn": "Caterpillar Roll",
+      "descriptionEs": "Atún picante crujiente envuelto con aguacate",
+      "descriptionEn": "Spicy crunch tuna wrapped with avocado",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-sandwich",
+      "categoryId": "chef-s-signature-roll",
+      "nameEs": "Sushi Sandwich",
+      "nameEn": "Sushi Sandwich",
+      "descriptionEs": "Atún, atún blanco, aguacate y crujiente en mayonesa picante en sándwich con papel de soya y un toque de tobiko",
+      "descriptionEn": "Tuna, white tuna, avocado & crunch in spicy mayo sandwiched with soy paper and a sprinkle of tobiko",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "10-crispy-spring-roll",
+      "categoryId": "appetizers",
+      "nameEs": "10. Crispy Spring Roll",
+      "nameEn": "10. Crispy Spring Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$3.50",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Caliente",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "10a-cantonese-egg-roll",
+      "categoryId": "appetizers",
+      "nameEs": "10a. Cantonese Egg Roll",
+      "nameEn": "10a. Cantonese Egg Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "11-vegetarian-fried-wonton-10",
+      "categoryId": "appetizers",
+      "nameEs": "11. Vegetarian Fried Wonton (10)",
+      "nameEn": "11. Vegetarian Fried Wonton (10)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "12-steamed-chinese-vegetable-dumplings-5",
+      "categoryId": "appetizers",
+      "nameEs": "12. Empanaditas chinas de vegetales al vapor (5)",
+      "nameEn": "12. Steamed Chinese Vegetable Dumplings (5)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "13-steamed-or-fried-pork-dumplings-6",
+      "categoryId": "appetizers",
+      "nameEs": "13. Empanaditas de cerdo al vapor o fritas (6)",
+      "nameEn": "13. Steamed or Fried Pork Dumplings (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "14-cold-noodles-with-spicy-sesame-sauce",
+      "categoryId": "appetizers",
+      "nameEs": "14. Fideos fríos con salsa de sésamo picante",
+      "nameEn": "14. Cold Noodles with Spicy Sesame Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "15-szechuan-dumpling-in-red-hot-oil-8",
+      "categoryId": "appetizers",
+      "nameEs": "15. Empanaditas Szechuan en aceite rojo picante (8)",
+      "nameEn": "15. Szechuan Dumpling in Red Hot Oil (8)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "16-hot-and-spicy-chicken-wings",
+      "categoryId": "appetizers",
+      "nameEs": "16. Alitas de pollo picantes",
+      "nameEn": "16. Hot and Spicy Chicken Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "17-satay-beef-or-chicken-sticks-4",
+      "categoryId": "appetizers",
+      "nameEs": "17. Pinchos de carne o pollo al satay (4)",
+      "nameEn": "17. Satay Beef or Chicken Sticks (4)",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "18-roti-canai",
+      "categoryId": "appetizers",
+      "nameEs": "18. Roti Canai",
+      "nameEn": "18. Roti Canai",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "19-b-b-q-spare-ribs",
+      "categoryId": "appetizers",
+      "nameEs": "19. Costillitas B.B.Q.",
+      "nameEn": "19. B.B.Q. Spare Ribs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "20-crispy-vietnamese-spring-roll-6",
+      "categoryId": "appetizers",
+      "nameEs": "20. Rollo de primavera vietnamita crujiente (6)",
+      "nameEn": "20. Crispy Vietnamese Spring Roll (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "21-crab-rangoon",
+      "categoryId": "appetizers",
+      "nameEs": "21. Rangún de cangrejo",
+      "nameEn": "21. Crab Rangoon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "22-fried-spiced-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "22. Calamares fritos especiados",
+      "nameEn": "22. Fried Spiced Calamari",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "23-malaysian-curried-chicken-potstickers-6",
+      "categoryId": "appetizers",
+      "nameEs": "23. Potstickers de pollo al curry de Malasia (6)",
+      "nameEn": "23. Malaysian Curried Chicken Potstickers (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "24-steamed-shrimp-dumplings-5",
+      "categoryId": "appetizers",
+      "nameEs": "24. Empanaditas de camarones al vapor (5)",
+      "nameEn": "24. Steamed Shrimp Dumplings (5)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f1-sauteed-rice-noodles",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F1. Fideos de arroz salteados",
+      "nameEn": "F1. Sautéed Rice Noodles",
+      "descriptionEs": "Fideos de arroz con pollo, camarones y vegetales",
+      "descriptionEn": "Rice noodles with chicken, shrimp and vegetables",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f2-sauteed-ho-fun",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F2. Ho Fun salteado",
+      "nameEn": "F2. Sautéed Ho Fun",
+      "descriptionEs": "Fideos anchos con pollo, camarones y vegetales",
+      "descriptionEn": "Broad noodles with chicken, shrimp & vegetables",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f2b-sauteed-beef-ho-fun",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F2B. Ho Fun de carne salteado",
+      "nameEn": "F2B. Sautéed Beef Ho Fun",
+      "descriptionEs": "Fideos anchos con bistec de falda y vegetales",
+      "descriptionEn": "Broad noodles with flank steak & vegetables",
+      "price": "$20.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f3-green-jade-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F3. Pollo Jade Verde",
+      "nameEn": "F3. Green Jade Chicken",
+      "descriptionEs": "Tiras tiernas de pollo con judías verdes y jengibre rallado en salsa marrón picante",
+      "descriptionEn": "Tender strips of chicken with string beans and shredded ginger in spicy brown sauce",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f4-lemon-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F4. Pollo al limón",
+      "nameEn": "F4. Lemon Chicken",
+      "descriptionEs": "Pechuga de pollo crujiente sin hueso cubierta con salsa de limón casera",
+      "descriptionEn": "Crispy boneless chicken breast topped with homemade lemon sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f5-sauteed-mixed-vegetables-with-pork-beef-chicken-or-shrimp",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F5. Vegetales mixtos salteados con cerdo, carne, pollo o camarones",
+      "nameEn": "F5. Sautéed Mixed Vegetables with Pork, Beef, Chicken or Shrimp",
+      "descriptionEs": "En una sabrosa salsa marrón",
+      "descriptionEn": "In a tasty brown sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f6-home-style-curry-beef-or-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F6. Carne o pollo al curry estilo casero",
+      "nameEn": "F6. Home Style Curry Beef or Chicken",
+      "descriptionEs": "Carne o pollo en rodajas en salsa de curry especiada con limoncillo, cilantro, cúrcuma y semilla de hinojo; precio inicial (elección de opciones)",
+      "descriptionEn": "Sliced beef or chicken in curry sauce spiced with lemongrass, coriander, turmeric and fennel seed; starting price (choice of options)",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f7-tamarind-delicacies",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F7. Delicias de tamarindo",
+      "nameEn": "F7. Tamarind Delicacies",
+      "descriptionEs": "Carne, pollo o camarones en rodajas salteados con vegetales mixtos en una salsa picante de tamarindo",
+      "descriptionEn": "Sliced beef, chicken or shrimp sautéed with mixed vegetables in a spicy tamarind sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f8-general-tso-s-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F8. Pollo del General Tso",
+      "nameEn": "F8. General Tso's Chicken",
+      "descriptionEs": "Trozos de pollo frito sin hueso con pimiento picante, cocinados a fuego lento en una rica salsa Hunan; la opción de carne blanca es pechuga de pollo en rodajas",
+      "descriptionEn": "Chunks of fried boneless chicken with hot pepper, simmered in a rich Hunan sauce; the white meat option is sliced chicken breast",
+      "price": "$22.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f9-beef-or-chicken-in-teriyaki-sauce",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F9. Carne o pollo en salsa teriyaki",
+      "nameEn": "F9. Beef or Chicken in Teriyaki Sauce",
+      "descriptionEs": "Servido con brócoli al vapor; precio inicial (elección de opciones)",
+      "descriptionEn": "Served with steamed broccoli; starting price (choice of options)",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f11-sauteed-asparagus",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F11. Espárragos salteados",
+      "nameEn": "F11. Sautéed Asparagus",
+      "descriptionEs": "Con opción de carne, pollo o camarones en una sabrosa salsa marrón",
+      "descriptionEn": "With choice of beef, chicken or shrimp in a tasty brown sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f12-sauteed-sliced-chicken-with-hot-pepper-and-crispy-spinach",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F12. Pollo en rodajas salteado con pimiento picante y espinacas crujientes",
+      "nameEn": "F12. Sautéed Sliced Chicken with Hot Pepper and Crispy Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f13-orange-flavored-beef-or-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F13. Carne o pollo con sabor a naranja",
+      "nameEn": "F13. Orange Flavored Beef or Chicken",
+      "descriptionEs": "Filete de carne o trozos de pollo ligeramente fritos, salteados con cáscara de naranja seca y pimiento picante en una salsa picante; precio inicial (elección de opciones)",
+      "descriptionEn": "Filet of beef or chunks of chicken lightly fried, sautéed with dried orange peel and hot pepper in a spicy sauce; starting price (choice of options)",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f14-chinese-eggplant-delicacies",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F14. Delicias de berenjena china",
+      "nameEn": "F14. Chinese Eggplant Delicacies",
+      "descriptionEs": "Con opción de carne, pollo, cerdo o camarones en salsa picante de ajo",
+      "descriptionEn": "With choice of beef, chicken, pork or shrimp in spicy garlic sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f15-triple-delight",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F15. Triple delicia",
+      "nameEn": "F15. Triple Delight",
+      "descriptionEs": "Carne, pollo y camarones en rodajas salteados con vegetales mixtos en salsa marrón del chef",
+      "descriptionEn": "Sliced beef, chicken and shrimp sautéed with mixed vegetables in chef's brown sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f16-sesame-beef-or-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F16. Carne o pollo al sésamo",
+      "nameEn": "F16. Sesame Beef or Chicken",
+      "descriptionEs": "Salteado a fuego alto y mezclado con salsa de sésamo; precio inicial (elección de opciones)",
+      "descriptionEn": "Sautéed over a high flame and blended with sesame sauce; starting price (choice of options)",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f17-dry-sauteed-shredded-beef-szechuan-style",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F17. Carne desmenuzada salteada en seco estilo Szechuan",
+      "nameEn": "F17. Dry Sautéed Shredded Beef Szechuan Style",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f18-rendang-beef-or-chicken",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F18. Carne o pollo Rendang",
+      "nameEn": "F18. Rendang Beef or Chicken",
+      "descriptionEs": "Plato tradicional indonesio cocinado con limoncillo, chalota, cúrcuma, jengibre tropical y cilantro en una salsa picante de coco",
+      "descriptionEn": "Traditional Indonesian dish cooked with lemongrass, shallot, turmeric, tropical ginger and coriander in a spicy coconut sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f21-lamb-with-basil",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F21. Cordero con albahaca",
+      "nameEn": "F21. Lamb with Basil",
+      "descriptionEs": "Cordero en rodajas finas con cebollino, pimientos rojos y albahaca fresca en una salsa picante Hunan",
+      "descriptionEn": "Thin sliced lamb with scallion, red peppers and fresh basil in a spicy Hunan sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f22-seafood-delight",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F22. Delicia de mariscos",
+      "nameEn": "F22. Seafood Delight",
+      "descriptionEs": "Camarones jumbo y vieiras salteados con surtido de vegetales en salsa blanca ligera",
+      "descriptionEn": "Jumbo shrimp and scallops sautéed with assorted vegetables in light white sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f23-shiitake-wonder",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F23. Maravilla de shiitake",
+      "nameEn": "F23. Shiitake Wonder",
+      "descriptionEs": "Con tirabeques, zanahoria, albahaca fresca y opción de carne, pollo o camarones",
+      "descriptionEn": "With snow peas, carrot, fresh basil and choice of beef, chicken or shrimp",
+      "price": "$24.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f26-crispy-shrimp-or-scallop-with-walnut",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F26. Camarones o vieiras crujientes con nueces",
+      "nameEn": "F26. Crispy Shrimp or Scallop with Walnut",
+      "descriptionEs": "Camarones jumbo glaseados o vieiras salteados con la salsa especial del chef; precio inicial (elección de opciones)",
+      "descriptionEn": "Glazed jumbo shrimp or scallop sautéed with chef's special sauce; starting price (choice of options)",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f27-house-special-prawn",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F27. Langostino especial de la casa",
+      "nameEn": "F27. House Special Prawn",
+      "descriptionEs": "Camarones jumbo salteados con tirabeques, brócoli, maíz tierno, castañas de agua y pimiento rojo en una salsa marrón picante",
+      "descriptionEn": "Jumbo shrimp sautéed with snow peas, broccoli, baby corn, water chestnuts and red pepper in a spicy brown sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f28-grilled-chicken-indonesian-style",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F28. Pollo a la parrilla estilo indonesio",
+      "nameEn": "F28. Grilled Chicken Indonesian Style",
+      "descriptionEs": "Pollo a la parrilla marinado con limoncillo, lima kaffir y salsa dulce de soja",
+      "descriptionEn": "Grilled chicken marinated with lemongrass, kaffir lime and sweet soy bean sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f30-prawn-bali-style",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F30. Langostino estilo Bali",
+      "nameEn": "F30. Prawn Bali Style",
+      "descriptionEs": "Camarones jumbo crujientes salteados con jengibre tropical en una salsa dulce de soja",
+      "descriptionEn": "Crispy jumbo shrimp sautéed with tropical ginger in a sweet soy bean sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f32-tangerine-beef",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F32. Carne de res a la mandarina",
+      "nameEn": "F32. Tangerine Beef",
+      "descriptionEs": "Bistec de falda rebozado y frito al wok con glaseado de mandarina cítrica, servido con panqueques de sésamo",
+      "descriptionEn": "Battered wok-fried flank steak with citrus tangerine glaze, served with sesame pancakes",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "f33-norwegian-salmon-steamed-or-pan-seared",
+      "categoryId": "westporter-s-favorites",
+      "nameEs": "F33. Salmón noruego (al vapor o sellado a la sartén)",
+      "nameEn": "F33. Norwegian Salmon (Steamed or Pan-Seared)",
+      "descriptionEs": "Cubierto con salsa de frijoles negros y espinacas marchitas",
+      "descriptionEn": "Topped with black bean sauce and wilted spinach",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-wonton-soup",
+      "categoryId": "soup",
+      "nameEs": "1. Sopa wonton",
+      "nameEn": "1. Wonton Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1a-miso-soup",
+      "categoryId": "soup",
+      "nameEs": "1a. Sopa de miso",
+      "nameEn": "1a. Miso Soup",
+      "descriptionEs": "Tofú en cubitos, nori y cebollino en consomé japonés",
+      "descriptionEn": "Diced tofu, nori and scallion in Japanese consommé",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-egg-drop-soup",
+      "categoryId": "soup",
+      "nameEs": "2. Sopa de huevo revuelto",
+      "nameEn": "2. Egg Drop Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-hot-sour-soup",
+      "categoryId": "soup",
+      "nameEs": "3. Sopa agripicante",
+      "nameEn": "3. Hot & Sour Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "4-minced-chicken-and-corn-soup",
+      "categoryId": "soup",
+      "nameEs": "4. Sopa de pollo picado y maíz",
+      "nameEn": "4. Minced Chicken and Corn Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "5-crab-meat-asparagus-soup",
+      "categoryId": "soup",
+      "nameEs": "5. Sopa de espárragos con carne de cangrejo",
+      "nameEn": "5. Crab Meat Asparagus Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "6-indonesian-spicy-clam-soup",
+      "categoryId": "soup",
+      "nameEs": "6. Sopa de almejas picante indonesia",
+      "nameEn": "6. Indonesian Spicy Clam Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "7-vegetable-and-bean-curd-soup-for-2",
+      "categoryId": "soup",
+      "nameEs": "7. Sopa de vegetales y cuajada de frijol (para 2)",
+      "nameEn": "7. Vegetable and Bean Curd Soup (for 2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8-hot-and-sour-coconut-seafood-soup",
+      "categoryId": "soup",
+      "nameEs": "8. Sopa de mariscos con coco agripicante",
+      "nameEn": "8. Hot and Sour Coconut Seafood Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "9-soto-ayam",
+      "categoryId": "soup",
+      "nameEs": "9. Soto Ayam",
+      "nameEn": "9. Soto Ayam",
+      "descriptionEs": "Sopa de fideos con pollo indonesia, para 2",
+      "descriptionEn": "Indonesian chicken noodle soup, for 2",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "25-fried-rice",
+      "categoryId": "rice-noodles",
+      "nameEs": "25. Fried Rice",
+      "nameEn": "25. Fried Rice",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "26-lo-mein",
+      "categoryId": "rice-noodles",
+      "nameEs": "26. Lo Mein",
+      "nameEn": "26. Lo Mein",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "27-house-fried-rice",
+      "categoryId": "rice-noodles",
+      "nameEs": "27. House Fried Rice",
+      "nameEn": "27. House Fried Rice",
+      "descriptionEs": "Mezcla de camarones, pollo y cerdo",
+      "descriptionEn": "Mixed shrimp, chicken & pork",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "28-house-lo-mein",
+      "categoryId": "rice-noodles",
+      "nameEs": "28. House Lo Mein",
+      "nameEn": "28. House Lo Mein",
+      "descriptionEs": "Mezcla de camarones, pollo y cerdo",
+      "descriptionEn": "Mixed shrimp, chicken & pork",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "29-indonesian-fried-rice-or-lo-mein",
+      "categoryId": "rice-noodles",
+      "nameEs": "29. Indonesian Fried Rice o Lo Mein",
+      "nameEn": "29. Indonesian Fried Rice or Lo Mein",
+      "descriptionEs": "Ligeramente picante con chile sambal y soya dulce, con cerdo, pollo y camarones; precio inicial (elección de opciones)",
+      "descriptionEn": "Mildly spiced with sambal chili and sweet soy, with pork, chicken & shrimp; starting price (choice of options)",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "29a-duck-pineapple-fried-rice",
+      "categoryId": "rice-noodles",
+      "nameEs": "29a. Duck Pineapple Fried Rice",
+      "nameEn": "29a. Duck Pineapple Fried Rice",
+      "descriptionEs": "Con piña y pasas secas",
+      "descriptionEn": "With pineapple and dried raisins",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "30-vegetarian-pad-thai",
+      "categoryId": "rice-noodles",
+      "nameEs": "30. Vegetarian Pad Thai",
+      "nameEn": "30. Vegetarian Pad Thai",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "31-dry-sauteed-string-beans",
+      "categoryId": "vegetables",
+      "nameEs": "31. Dry Sautéed String Beans",
+      "nameEn": "31. Dry Sautéed String Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "32-sauteed-mixed-vegetables",
+      "categoryId": "vegetables",
+      "nameEs": "32. Sautéed Mixed Vegetables",
+      "nameEn": "32. Sautéed Mixed Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "33-sauteed-mixed-vegetables-with-garlic-sauce",
+      "categoryId": "vegetables",
+      "nameEs": "33. Sautéed Mixed Vegetables con salsa de ajo",
+      "nameEn": "33. Sautéed Mixed Vegetables with Garlic Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "34-sauteed-chinese-eggplant-with-garlic-sauce",
+      "categoryId": "vegetables",
+      "nameEs": "34. Sautéed Chinese Eggplant con salsa de ajo",
+      "nameEn": "34. Sautéed Chinese Eggplant with Garlic Sauce",
+      "descriptionEs": "En una salsa marrón de ajo ligeramente picante",
+      "descriptionEn": "In a mild spicy garlic brown sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "35-bean-curd-szechuan-style",
+      "categoryId": "vegetables",
+      "nameEs": "35. Bean Curd Szechuan Style",
+      "nameEn": "35. Bean Curd Szechuan Style",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "36-bean-curd-with-vegetables-country-style",
+      "categoryId": "vegetables",
+      "nameEs": "36. Bean Curd con verduras estilo campestre",
+      "nameEn": "36. Bean Curd with Vegetables Country Style",
+      "descriptionEs": "Verduras mixtas con requesón de soya frito en una salsa marrón ligera",
+      "descriptionEn": "Mixed greens with fried bean curd in a light brown sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "42-sweet-sour-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "42. Sweet & Sour Shrimp",
+      "nameEn": "42. Sweet & Sour Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "43-shrimp-with-broccoli",
+      "categoryId": "seafood",
+      "nameEs": "43. Camarones con brócoli",
+      "nameEn": "43. Shrimp with Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "44-shrimp-with-black-bean-sauce",
+      "categoryId": "seafood",
+      "nameEs": "44. Camarones con salsa de frijol negro",
+      "nameEn": "44. Shrimp with Black Bean Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "45-shrimp-with-cashew-nuts",
+      "categoryId": "seafood",
+      "nameEs": "45. Camarones con anacardos",
+      "nameEn": "45. Shrimp with Cashew Nuts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "46-shrimp-with-hot-spicy-sauce",
+      "categoryId": "seafood",
+      "nameEs": "46. Camarones con salsa picante",
+      "nameEn": "46. Shrimp with Hot Spicy Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "47-shrimp-with-snow-peas",
+      "categoryId": "seafood",
+      "nameEs": "47. Camarones con tirabeques",
+      "nameEn": "47. Shrimp with Snow Peas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "48-scallops-with-black-bean-sauce",
+      "categoryId": "seafood",
+      "nameEs": "48. Vieira con salsa de frijol negro",
+      "nameEn": "48. Scallops with Black Bean Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "49-kung-pao-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "49. Kung Pao Shrimp",
+      "nameEn": "49. Kung Pao Shrimp",
+      "descriptionEs": "Con pimiento rojo seco en una salsa marrón de Hunan, cubierto con cacahuates",
+      "descriptionEn": "With dried red pepper in a Hunan brown sauce, topped with peanuts",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "50-sliced-beef-with-broccoli",
+      "categoryId": "beef",
+      "nameEs": "50. Bistec en tiras con brócoli",
+      "nameEn": "50. Sliced Beef with Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "51-sliced-beef-with-snow-peas",
+      "categoryId": "beef",
+      "nameEs": "51. Bistec en tiras con tirabeques",
+      "nameEn": "51. Sliced Beef with Snow Peas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "52-sliced-beef-with-scallion",
+      "categoryId": "beef",
+      "nameEs": "52. Bistec en tiras con cebollín",
+      "nameEn": "52. Sliced Beef with Scallion",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "53-shredded-beef-in-hot-spicy-brown-sauce",
+      "categoryId": "beef",
+      "nameEs": "53. Carne de res desmenuzada en salsa marrón picante",
+      "nameEn": "53. Shredded Beef in Hot Spicy Brown Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "54-shredded-beef-with-garlic-sauce",
+      "categoryId": "beef",
+      "nameEs": "54. Carne de res desmenuzada con salsa de ajo",
+      "nameEn": "54. Shredded Beef with Garlic Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "62-sweet-sour-pork",
+      "categoryId": "pork",
+      "nameEs": "62. Sweet & Sour Pork",
+      "nameEn": "62. Sweet & Sour Pork",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "63-twice-cooked-pork",
+      "categoryId": "pork",
+      "nameEs": "63. Twice Cooked Pork",
+      "nameEn": "63. Twice Cooked Pork",
+      "descriptionEs": "Salsa marrón ligeramente picante",
+      "descriptionEn": "Mildly spicy brown sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "64-sliced-pork-with-scallion",
+      "categoryId": "pork",
+      "nameEs": "64. Cerdo en tiras con cebollín",
+      "nameEn": "64. Sliced Pork with Scallion",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "65-sliced-pork-with-broccoli-snow-peas",
+      "categoryId": "pork",
+      "nameEs": "65. Cerdo en tiras con brócoli y tirabeques",
+      "nameEn": "65. Sliced Pork with Broccoli & Snow Peas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "66-shredded-pork-with-garlic-sauce",
+      "categoryId": "pork",
+      "nameEs": "66. Cerdo desmenuzado con salsa de ajo",
+      "nameEn": "66. Shredded Pork with Garlic Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "67-shredded-pork-in-spicy-brown-sauce",
+      "categoryId": "pork",
+      "nameEs": "67. Cerdo desmenuzado en salsa marrón picante",
+      "nameEn": "67. Shredded Pork in Spicy Brown Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "55-sweet-sour-chicken",
+      "categoryId": "chicken",
+      "nameEs": "55. Sweet & Sour Chicken",
+      "nameEn": "55. Sweet & Sour Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "56-sliced-chicken-with-broccoli",
+      "categoryId": "chicken",
+      "nameEs": "56. Pollo en tiras con brócoli",
+      "nameEn": "56. Sliced Chicken with Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "57-sliced-chicken-with-snow-peas-mushroom",
+      "categoryId": "chicken",
+      "nameEs": "57. Pollo en tiras con tirabeques y champiñones",
+      "nameEn": "57. Sliced Chicken with Snow Peas & Mushroom",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "58-kung-pao-chicken",
+      "categoryId": "chicken",
+      "nameEs": "58. Kung Pao Chicken",
+      "nameEn": "58. Kung Pao Chicken",
+      "descriptionEs": "Con pimiento rojo seco en una salsa de Hunan, cubierto con cacahuates",
+      "descriptionEn": "With dried red pepper in a Hunan sauce, topped with peanuts",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "59-chicken-with-cashew-nuts",
+      "categoryId": "chicken",
+      "nameEs": "59. Pollo con anacardos",
+      "nameEn": "59. Chicken with Cashew Nuts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "60-sliced-chicken-with-garlic-sauce",
+      "categoryId": "chicken",
+      "nameEs": "60. Pollo en tiras con salsa de ajo",
+      "nameEn": "60. Sliced Chicken with Garlic Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "61-sliced-chicken-with-black-bean-sauce",
+      "categoryId": "chicken",
+      "nameEs": "61. Pollo en tiras con salsa de frijol negro",
+      "nameEn": "61. Sliced Chicken with Black Bean Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "37-chow-mein",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "37. Chow Mein",
+      "nameEn": "37. Chow Mein",
+      "descriptionEs": "Salsa marrón ligera con carne de res o cerdo, o salsa blanca con pollo o camarones",
+      "descriptionEn": "Light brown sauce with beef or pork, or white sauce with chicken or shrimp",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "38-moo-goo-gai-pan",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "38. Moo Goo Gai Pan",
+      "nameEn": "38. Moo Goo Gai Pan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "39-pepper-steak",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "39. Pepper Steak",
+      "nameEn": "39. Pepper Steak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "40-shrimp-with-lobster-sauce",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "40. Camarones con salsa de langosta",
+      "nameEn": "40. Shrimp with Lobster Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "41-mu-shu",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "41. Mu Shu",
+      "nameEn": "41. Mu Shu",
+      "descriptionEs": "Con especias hoisin y salsa marrón, servido con 4 panqueques",
+      "descriptionEn": "With hoisin spice and brown sauce, served with 4 pancakes",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-white-rice",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "Arroz blanco al vapor",
+      "nameEn": "Steamed White Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-brown-rice",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "Arroz integral al vapor",
+      "nameEn": "Steamed Brown Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-rice",
+      "categoryId": "classics-miscellaneous",
+      "nameEs": "Arroz para sushi",
+      "nameEn": "Sushi Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-drinks",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Bebidas embotelladas",
+      "nameEn": "Bottled Drinks",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-soda",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Refresco japonés",
+      "nameEn": "Japanese Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "snapple",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Snapple",
+      "nameEn": "Snapple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "can-soda",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Refresco en lata",
+      "nameEn": "Can Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa de pato",
+      "nameEn": "Duck Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mustard-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa de mostaza",
+      "nameEn": "Mustard Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hoisin-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa Hoisin",
+      "nameEn": "Hoisin Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-hot-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa picante de la casa",
+      "nameEn": "House Hot Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa de cacahuate",
+      "nameEn": "Peanut Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa de curry",
+      "nameEn": "Curry Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-sriracha-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa picante Sriracha",
+      "nameEn": "Hot Sriracha Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ponzu-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa Ponzu",
+      "nameEn": "Ponzu Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa de anguila",
+      "nameEn": "Eel Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-mayo-sauce",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Salsa mayonesa picante",
+      "nameEn": "Spicy Mayo Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-young-ginger",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Jengibre tierno para sushi",
+      "nameEn": "Sushi Young Ginger",
+      "descriptionEs": "Gratis a petición",
+      "descriptionEn": "Free on request",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wasabi",
+      "categoryId": "beverages-condiments",
+      "nameEs": "Wasabi",
+      "nameEn": "Wasabi",
+      "descriptionEs": "Gratis a petición",
+      "descriptionEn": "Free on request",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l1-sauteed-mixed-vegetables-with-pork-chicken-beef-or-shrimp",
+      "categoryId": "luncheon",
+      "nameEs": "L1. Vegetales mixtos salteados con cerdo, pollo, res o camarones",
+      "nameEn": "L1. Sautéed Mixed Vegetables with Pork, Chicken, Beef or Shrimp",
+      "descriptionEs": "En salsa marrón; precio inicial (elección de opciones)",
+      "descriptionEn": "In brown sauce; starting price (choice of options)",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l2-sauteed-broccoli-with-pork-chicken-beef-or-shrimp",
+      "categoryId": "luncheon",
+      "nameEs": "L2. Brócoli salteado con cerdo, pollo, res o camarones",
+      "nameEn": "L2. Sautéed Broccoli with Pork, Chicken, Beef or Shrimp",
+      "descriptionEs": "En salsa marrón; precio inicial (elección de opciones)",
+      "descriptionEn": "In brown sauce; starting price (choice of options)",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l3-sauteed-chinese-eggplant-with-pork-chicken-beef-or-shrimp",
+      "categoryId": "luncheon",
+      "nameEs": "L3. Berenjena china salteada con cerdo, pollo, res o camarones",
+      "nameEn": "L3. Sautéed Chinese Eggplant with Pork, Chicken, Beef or Shrimp",
+      "descriptionEs": "Con salsa marrón de ajo; precio inicial (elección de opciones)",
+      "descriptionEn": "With brown garlic sauce; starting price (choice of options)",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l4-spicy-garlic-sauce-with-pork-chicken-beef-or-shrimp",
+      "categoryId": "luncheon",
+      "nameEs": "L4. Salsa picante de ajo con cerdo, pollo, res o camarones",
+      "nameEn": "L4. Spicy Garlic Sauce with Pork, Chicken, Beef or Shrimp",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l5-lunch-fried-rice",
+      "categoryId": "luncheon",
+      "nameEs": "L5. Arroz frito de almuerzo",
+      "nameEn": "L5. Lunch Fried Rice",
+      "descriptionEs": "Con opción de res, pollo, cerdo o camarones",
+      "descriptionEn": "With choice of beef, chicken, pork or shrimp",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l6-lunch-lo-mein",
+      "categoryId": "luncheon",
+      "nameEs": "L6. Lo Mein de almuerzo",
+      "nameEn": "L6. Lunch Lo Mein",
+      "descriptionEs": "Con opción de res, pollo, cerdo o camarones",
+      "descriptionEn": "With choice of beef, chicken, pork or shrimp",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l7-lunch-sauteed-mixed-vegetables",
+      "categoryId": "luncheon",
+      "nameEs": "L7. Vegetales mixtos salteados de almuerzo",
+      "nameEn": "L7. Lunch Sautéed Mixed Vegetables",
+      "descriptionEs": "En salsa marrón",
+      "descriptionEn": "In brown sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l8-lunch-sauteed-broccoli",
+      "categoryId": "luncheon",
+      "nameEs": "L8. Brócoli salteado de almuerzo",
+      "nameEn": "L8. Lunch Sautéed Broccoli",
+      "descriptionEs": "En salsa marrón de ajo",
+      "descriptionEn": "In brown garlic sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l9-bean-curd-with-mixed-vegetables",
+      "categoryId": "luncheon",
+      "nameEs": "L9. Tofú con vegetales mixtos",
+      "nameEn": "L9. Bean Curd with Mixed Vegetables",
+      "descriptionEs": "En salsa marrón",
+      "descriptionEn": "In brown sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l10-lunch-chicken-with-cashew-nuts",
+      "categoryId": "luncheon",
+      "nameEs": "L10. Pollo con nueces de cajú de almuerzo",
+      "nameEn": "L10. Lunch Chicken with Cashew Nuts",
+      "descriptionEs": "En salsa marrón",
+      "descriptionEn": "In brown sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l11-lunch-chicken-with-black-bean-sauce",
+      "categoryId": "luncheon",
+      "nameEs": "L11. Pollo con salsa de frijol negro de almuerzo",
+      "nameEn": "L11. Lunch Chicken with Black Bean Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l12-shredded-beef-or-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L12. Res o pollo desmenuzado",
+      "nameEn": "L12. Shredded Beef or Chicken",
+      "descriptionEs": "En salsa marrón picante; precio inicial (elección de opciones)",
+      "descriptionEn": "In spicy brown sauce; starting price (choice of options)",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l13-lunch-general-tso-s-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L13. Pollo General Tso de almuerzo",
+      "nameEn": "L13. Lunch General Tso's Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l13w-lunch-general-tso-s-chicken-white-meat",
+      "categoryId": "luncheon",
+      "nameEs": "L13W. Pollo General Tso de almuerzo (carne blanca)",
+      "nameEn": "L13W. Lunch General Tso's Chicken (White Meat)",
+      "descriptionEs": "Pechuga de pollo en tiras con salsa General Tso",
+      "descriptionEn": "Sliced chicken breast with General Tso sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l14-teriyaki-beef-or-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L14. Res o pollo teriyaki",
+      "nameEn": "L14. Teriyaki Beef or Chicken",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l15-chicken-with-string-beans-and-ginger",
+      "categoryId": "luncheon",
+      "nameEs": "L15. Pollo conejito con judías verdes y jengibre",
+      "nameEn": "L15. Chicken with String Beans and Ginger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l16-home-style-curried-beef-or-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L16. Res o pollo al curri estilo casero",
+      "nameEn": "L16. Home Style Curried Beef or Chicken",
+      "descriptionEs": "precio inicial (elección de opciones)",
+      "descriptionEn": "starting price (choice of options)",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l17-sweet-and-sour-chicken-or-pork",
+      "categoryId": "luncheon",
+      "nameEs": "L17. Pollo o cerdo agridulce",
+      "nameEn": "L17. Sweet and Sour Chicken or Pork",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l18-lunch-orange-flavored-beef-or-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L18. Res o pollo con sabor a naranja de almuerzo",
+      "nameEn": "L18. Lunch Orange Flavored Beef or Chicken",
+      "descriptionEs": "Con chile picante y cáscara de naranja seca en una salsa marrón picante; precio inicial (elección de opciones)",
+      "descriptionEn": "With hot pepper and dried orange peel in a spicy brown sauce; starting price (choice of options)",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l19-lunch-sesame-beef-or-chicken",
+      "categoryId": "luncheon",
+      "nameEs": "L19. Res o pollo con sésamo de almuerzo",
+      "nameEn": "L19. Lunch Sesame Beef or Chicken",
+      "descriptionEs": "Salteado a fuego alto y mezclado con salsa de sésamo; precio inicial (elección de opciones)",
+      "descriptionEn": "Sautéed over a high flame and blended with sesame sauce; starting price (choice of options)",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l20-lunch-shrimp-with-black-bean-sauce",
+      "categoryId": "luncheon",
+      "nameEs": "L20. Camarones con salsa de frijol negro de almuerzo",
+      "nameEn": "L20. Lunch Shrimp with Black Bean Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l21-lunch-shrimp-with-lobster-sauce",
+      "categoryId": "luncheon",
+      "nameEs": "L21. Camarones con salsa de langosta de almuerzo",
+      "nameEn": "L21. Lunch Shrimp with Lobster Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l22-lunch-shrimp-with-hot-spicy-sauce",
+      "categoryId": "luncheon",
+      "nameEs": "L22. Camarones con salsa picante de almuerzo",
+      "nameEn": "L22. Lunch Shrimp with Hot Spicy Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l23-dry-sauteed-beef-szechuan-style",
+      "categoryId": "luncheon",
+      "nameEs": "L23. Res salteada seca al estilo Sichuan",
+      "nameEn": "L23. Dry Sautéed Beef Szechuan Style",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l24-lamb-with-fresh-basil",
+      "categoryId": "luncheon",
+      "nameEs": "L24. Cordero con albahaca fresca",
+      "nameEn": "L24. Lamb with Fresh Basil",
+      "descriptionEs": "Cordero en rodajas finas con cebollín, pimientos rojos y albahaca fresca en una salsa picante Hunan",
+      "descriptionEn": "Thin sliced lamb with scallion, red peppers and fresh basil in a spicy Hunan sauce",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l25-lunch-pepper-steak",
+      "categoryId": "luncheon",
+      "nameEs": "L25. Bistec con pimiento de almuerzo",
+      "nameEn": "L25. Lunch Pepper Steak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l27-mixed-seafood-with-fresh-basil",
+      "categoryId": "luncheon",
+      "nameEs": "L27. Mariscos mixtos con albahaca fresca",
+      "nameEn": "L27. Mixed Seafood with Fresh Basil",
+      "descriptionEs": "Camarones gigantes y vieiras salteados con vegetales variados en una salsa de albahaca y ajo",
+      "descriptionEn": "Jumbo shrimp and scallops sautéed with assorted vegetables in a basil garlic sauce",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l28-little-kitchen-special",
+      "categoryId": "luncheon",
+      "nameEs": "L28. Especial de Little Kitchen",
+      "nameEn": "L28. Little Kitchen Special",
+      "descriptionEs": "Pollo, res y camarones con vegetales variados en la salsa marrón especial del chef",
+      "descriptionEn": "Chicken, beef and shrimp with assorted vegetables in chef's special brown sauce",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "l29-chicken-with-hot-pepper-crispy-spinach",
+      "categoryId": "luncheon",
+      "nameEs": "L29. Pollo con chile picante y espinaca crujiente",
+      "nameEn": "L29. Chicken with Hot Pepper & Crispy Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones claramente marcadas en nuestro menú. Por favor informe a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we offer several options clearly marked on our menu. Please inform your server of any food allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos de todos los tamaños.",
-      "aEn": "We welcome walk-ins and phone reservations for parties of all sizes."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Sí, contamos con estacionamiento en el lote contiguo y también hay estacionamiento en la calle disponible.",
-      "aEn": "Yes, we have parking available in the adjacent lot as well as street parking."
-    }
-  ]
+  "faqs": []
 }
