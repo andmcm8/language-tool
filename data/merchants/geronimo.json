@@ -2,27 +2,23 @@
   "storeInfo": {
     "id": "geronimo",
     "name": "Geronimo Tequila Bar & Southwest Grill",
-    "tagline": "Authentic Santa Fe Flavors & Premier Tequila Selection | Sabores Auténticos de Santa Fe y la Mejor Selección de Tequila",
+    "tagline": "Southwestern grill and tequila bar on the Post Road in Fairfield | Parrilla del suroeste y bar de tequila en Post Road, Fairfield",
     "address": "2070 Post Rd, Fairfield, CT 06824",
-    "phone": "",
+    "phone": "(203) 955-1643",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "11:30 AM - 9:00 PM"
+      "monday_friday": "Open daily; call for hours (happy hour Mon-Fri 3-6 PM)",
+      "saturday": "Open daily; call for hours",
+      "sunday": "Open daily; call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
       "Dine-In",
       "Takeout",
-      "Bilingual Menu",
       "Outdoor Seating",
-      "Fireplace",
-      "Full Bar"
+      "Full Bar",
+      "Happy Hour",
+      "Catering",
+      "Bilingual Menu"
     ],
     "themeColor": "#c2410c",
     "logoIcon": "utensils",
@@ -34,309 +30,1664 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Botanas",
-      "nameEn": "Appetizers & Starters",
+      "id": "share-plates",
+      "nameEs": "Platos para Compartir",
+      "nameEn": "Share Plates",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Fuertes",
-      "nameEn": "Main Entrees",
+      "id": "chile-and-soup",
+      "nameEs": "Chile y Sopa",
+      "nameEn": "Chile and Soup",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades del Suroeste",
-      "nameEn": "Southwest Specialties",
+      "id": "greens",
+      "nameEs": "Ensaladas",
+      "nameEn": "Greens",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Tequilas y Cócteles",
-      "nameEn": "Tequila & Cocktails",
-      "icon": "Coffee"
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tableside",
+      "nameEs": "Preparado en la Mesa",
+      "nameEn": "Tableside",
+      "icon": "Utensils"
+    },
+    {
+      "id": "nachos",
+      "nameEs": "Nachos",
+      "nameEn": "Nachos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "navajo-taco",
+      "nameEs": "Taco Navajo",
+      "nameEn": "Navajo Taco",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tacos",
+      "nameEs": "Tacos",
+      "nameEn": "Tacos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burritos",
+      "nameEs": "Burritos",
+      "nameEn": "Burritos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "quesadillas",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "in-a-bun",
+      "nameEs": "En Pan",
+      "nameEn": "In a Bun",
+      "icon": "Utensils"
+    },
+    {
+      "id": "main-plates",
+      "nameEs": "Platos Principales",
+      "nameEn": "Main Plates",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch",
+      "nameEs": "Brunch",
+      "nameEn": "Brunch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "daily-lunch-special",
+      "nameEs": "Especial de Almuerzo Diario",
+      "nameEn": "Daily Lunch Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-food-fairfield",
+      "nameEs": "Comida de Hora Feliz (Fairfield)",
+      "nameEn": "Happy Hour Food (Fairfield)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-drinks-fairfield",
+      "nameEs": "Bebidas de Hora Feliz (Fairfield)",
+      "nameEn": "Happy Hour Drinks (Fairfield)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "margaritas",
+      "nameEs": "Margaritas",
+      "nameEn": "Margaritas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classics-signature-cocktails",
+      "nameEs": "Clásicos y Cócteles de la Casa",
+      "nameEn": "Classics & Signature Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "teetotalers-non-alcoholic",
+      "nameEs": "Bebidas sin alcohol (Abstemios)",
+      "nameEn": "Teetotalers (Non-Alcoholic)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "agave-flights",
+      "nameEs": "Catas de Agave",
+      "nameEn": "Agave Flights",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine",
+      "nameEs": "Vino",
+      "nameEn": "Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "geronimo-01",
-      "categoryId": "appetizers",
-      "nameEs": "Guacamole Tradicional Hecho en Casa",
-      "nameEn": "Tableside Fresh Guacamole",
-      "descriptionEs": "Aguacates frescos machacados con cilantro, cebolla morada, jalapeño y jugo de lima fresca, servidos con chips de tortilla recién hechos.",
-      "descriptionEn": "Freshly mashed avocados with cilantro, red onion, jalapeño, and fresh lime juice, served with warm house-made tortilla chips.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco",
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [],
+      "id": "chips-and-salsa",
+      "categoryId": "share-plates",
+      "nameEs": "Totopos y Salsa",
+      "nameEn": "Chips and Salsa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-02",
-      "categoryId": "appetizers",
-      "nameEs": "Queso Fundido con Chorizo y Poblanos",
-      "nameEn": "Queso Fundido with Chorizo & Poblanos",
-      "descriptionEs": "Queso Oaxaca y Jack fundidos a la perfección, servidos con chorizo artesanal, chiles poblanos asados y tortillas de maíz calientes.",
-      "descriptionEn": "Melted Oaxaca and Jack cheeses baked hot, topped with artisanal chorizo and roasted poblano peppers, served with warm corn tortillas.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Picante Suave",
-        "Caliente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "trio-buffalo-nickels",
+      "categoryId": "share-plates",
+      "nameEs": "Trío de Buffalo Nickels",
+      "nameEn": "Trio Buffalo Nickels",
+      "descriptionEs": "Servido en pan Apache, queso cheddar, cebollas caramelizadas, tocino, chiles poblanos",
+      "descriptionEn": "Served on Apache bread, cheddar cheese, caramelized onions, bacon, poblano peppers",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-03",
-      "categoryId": "appetizers",
-      "nameEs": "Nachos al Estilo Santa Fe",
-      "nameEn": "Santa Fe Style Nachos",
-      "descriptionEs": "Chips de tortilla cubiertos con frijoles negros, queso derretido, pico de gallo, jalapeños en escabeche, crema agria y guacamole.",
-      "descriptionEn": "Crispy tortilla chips layered with black beans, melted cheese, pico de gallo, pickled jalapeños, sour cream, and guacamole.",
-      "price": "$15.50",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Abundante",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "blistered-shishito-peppers",
+      "categoryId": "share-plates",
+      "nameEs": "Chiles Shishito Tostados",
+      "nameEn": "Blistered Shishito Peppers",
+      "descriptionEs": "Tajín, sal de mar, limón, salsa fresca, crujiente de chicharrón. Sin gluten.",
+      "descriptionEn": "Tajin, sea salt, lime, salsa fresca, chicharrón crunch. Gluten-free.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-04",
-      "categoryId": "appetizers",
-      "nameEs": "Taquitos Crujientes de Pollo",
-      "nameEn": "Crispy Chicken Taquitos",
-      "descriptionEs": "Tortillas de maíz enrolladas y fritas rellenas de pollo deshebrado sazonado, servidas con queso fresco, salsa verde y crema.",
-      "descriptionEn": "Crispy rolled corn tortillas filled with seasoned shredded chicken, topped with queso fresco, salsa verde, and Mexican crema.",
-      "price": "$12.95",
-      "popular": false,
-      "badge": "Crujiente",
-      "tags": [
-        "Tradicional"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "fried-cauliflower",
+      "categoryId": "share-plates",
+      "nameEs": "Coliflor Frita",
+      "nameEn": "Fried Cauliflower",
+      "descriptionEs": "Chile verde de Hatch, crema de limón y comino. Vegetariano.",
+      "descriptionEn": "Hatch green chile, lime cumin crema. Vegetarian.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-05",
-      "categoryId": "mains",
-      "nameEs": "Carne Asada a la Parrilla",
-      "nameEn": "Grilled Skirt Steak Carne Asada",
-      "descriptionEs": "Corte de entraña marinada al carbón, servida con rajas de poblano, arroz mexicano, frijoles negros y chimichurri de la casa.",
-      "descriptionEn": "Marinated grilled skirt steak served with roasted poblano strips, Mexican rice, black beans, and house chimichurri.",
-      "price": "$29.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Proteína",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "jalapeno-popper",
+      "categoryId": "share-plates",
+      "nameEs": "Jalapeño Popper",
+      "nameEn": "Jalapeño Popper",
+      "descriptionEs": "Tocino ahumado con madera de manzano, queso cheddar, Chimayo",
+      "descriptionEn": "Applewood smoked bacon, cheddar cheese, Chimayo",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-06",
-      "categoryId": "mains",
-      "nameEs": "Enchiladas Divorciadas",
-      "nameEn": "Enchiladas Divorciadas",
-      "descriptionEs": "Dos enchiladas rellenas de pollo: una cubierta con salsa de chile rojo de Nuevo México y la otra con chile verde Hatch.",
-      "descriptionEn": "Two chicken enchiladas: one covered in traditional New Mexico red chile sauce, the other in authentic Hatch green chile sauce.",
-      "price": "$21.00",
-      "popular": true,
-      "badge": "Auténtico",
-      "tags": [
-        "Picante",
-        "Nuevo México"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "navajo-frybread",
+      "categoryId": "share-plates",
+      "nameEs": "Pan Frito Navajo",
+      "nameEn": "Navajo Frybread",
+      "descriptionEs": "Chorizo, higo, ricotta, cebolla caramelizada, arúgula, crema mexicana, pico de gallo",
+      "descriptionEn": "Chorizo, fig, ricotta, caramelized onion, arugula, Mexican crema, pico de gallo",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-07",
-      "categoryId": "mains",
-      "nameEs": "Fajitas Mixtas de Res y Pollo",
-      "nameEn": "Sizzling Steak & Chicken Fajitas",
-      "descriptionEs": "Servidas en plato de hierro caliente con pimientos, cebollas salteadas, crema, guacamole, pico de gallo y tortillas de harina.",
-      "descriptionEn": "Served piping hot with bell peppers, sautéed onions, sour cream, guacamole, pico de gallo, and warm flour tortillas.",
-      "price": "$26.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Sartenada Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "orange-habanero-bbq-wings",
+      "categoryId": "share-plates",
+      "nameEs": "Alitas BBQ de Naranja y Habanero",
+      "nameEn": "Orange-Habanero BBQ Wings",
+      "descriptionEs": "A la barbacoa de naranja y habanero, cebollines, cebollas encurtidas, queso cotija; 6 por orden",
+      "descriptionEn": "Orange habanero barbecued, scallions, pickled onions, cotija cheese; 6 to an order",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-08",
-      "categoryId": "mains",
-      "nameEs": "Tacos de Pescado estilo Baja",
-      "nameEn": "Baja Style Fish Tacos",
-      "descriptionEs": "Tres tacos de dorado empanizado o a la plancha, ensalada de col crujiente, mayonesa de chipotle y aguacate en tortillas de maíz.",
-      "descriptionEn": "Three tacos filled with beer-battered or grilled mahi-mahi, crunchy cabbage slaw, chipotle drizzle, and fresh avocado.",
-      "price": "$19.50",
-      "popular": false,
-      "badge": "Mariscos",
-      "tags": [
-        "Fresco"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
+      "id": "queso-flameado",
+      "categoryId": "share-plates",
+      "nameEs": "Queso Flameado",
+      "nameEn": "Queso Flameado",
+      "descriptionEs": "Mezcla de quesos mexicanos, poblanos asados, cebollas caramelizadas, hongos silvestres, pico de gallo, tortillas de harina. Añade chorizo, cinco camarones a la parrilla o carne asada.",
+      "descriptionEn": "Mexican blend of cheeses, roasted poblanos, caramelized onions, wild mushrooms, pico de gallo, flour tortillas. Add chorizo, five grilled shrimp or carne asada.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-09",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Confit de Pato",
-      "nameEn": "Slow-Roasted Duck Confit Tacos",
-      "descriptionEs": "Pato deshebrado al horno, cebollas caramelizadas al mezcal, reducción de granada y cilantro en tortillas de maíz de la casa.",
-      "descriptionEn": "Slow-cooked shredded duck, mezcal-caramelized onions, pomegranate glaze, and fresh cilantro on warm corn tortillas.",
-      "price": "$23.00",
-      "popular": true,
-      "badge": "Firma del Chef",
-      "tags": [
-        "Gourmet",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "shrimp-scallop-ceviche",
+      "categoryId": "share-plates",
+      "nameEs": "Ceviche de Camarón y Callo de Hacha",
+      "nameEn": "Shrimp & Scallop Ceviche",
+      "descriptionEs": "Cebollas moradas, tomates, pepino, chipotle, cítricos",
+      "descriptionEn": "Red onions, tomatoes, cucumber, chipotle, citrus",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-10",
-      "categoryId": "specialties",
-      "nameEs": "Chile Relleno de Queso y Elote",
-      "nameEn": "Roasted Chile Relleno",
-      "descriptionEs": "Chile poblano asado relleno de queso Oaxaca y maíz dulce, horneado y bañado en salsa ranchera casera sobre arroz aromático.",
-      "descriptionEn": "Roasted poblano pepper stuffed with Oaxaca cheese and sweet corn, baked and topped with rich ranchero sauce over rice.",
-      "price": "$20.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "birria-flauta",
+      "categoryId": "share-plates",
+      "nameEs": "Flauta de Birria",
+      "nameEn": "Birria Flauta",
+      "descriptionEs": "Res braseada, tortilla de harina, queso Oaxaca, salsa verde, consomé de res",
+      "descriptionEn": "Braised beef, flour tortilla, Oaxaca cheese, salsa verde, beef consommé",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-11",
-      "categoryId": "specialties",
-      "nameEs": "Salmón al Glaseado de Chipotle y Miel",
-      "nameEn": "Chipotle-Honey Glazed Salmon",
-      "descriptionEs": "Filete de salmón salvaje a la plancha con glaseado agridulce de chipotle, acompañado de ensalada tibia de elote asado y arroz al cilantro.",
-      "descriptionEn": "Pan-seared Atlantic salmon with a spicy-sweet chipotle honey glaze, served over warm roasted corn salad and cilantro rice.",
-      "price": "$27.50",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "chicken-tortilla-soup",
+      "categoryId": "chile-and-soup",
+      "nameEs": "Sopa de Tortilla con Pollo",
+      "nameEn": "Chicken Tortilla Soup",
+      "descriptionEs": "Pollo ahumado, maíz, hilos de tortilla de maíz crujiente, aguacate, pan de maíz de la casa",
+      "descriptionEn": "Smoked chicken, corn, crispy corn tortilla threads, avocado, housemade cornbread",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-12",
-      "categoryId": "beverages",
-      "nameEs": "Margarita de la Casa Geronimo",
-      "nameEn": "Geronimo House Signature Margarita",
-      "descriptionEs": "Tequila 100% Agave Azul, jugo de lima recién exprimido, nectar de agave orgánico y Licor 43 o Triple Sec, servido con escarcha de sal.",
-      "descriptionEn": "100% Blue Agave tequila, fresh lime juice, organic agave nectar, and Triple Sec, served with a salted rim.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Cóctel Estrella",
-      "tags": [
-        "Bebida",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "hatch-green-chile-stew",
+      "categoryId": "chile-and-soup",
+      "nameEs": "Guisado de Chile Verde de Hatch",
+      "nameEn": "Hatch Green Chile Stew",
+      "descriptionEs": "Chiles verdes de Hatch tatemados al fuego, cebolla, cerdo, pozole, pan de maíz de la casa",
+      "descriptionEn": "Fire roasted Hatch green chiles, onion, pork, pozole, housemade cornbread",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-13",
-      "categoryId": "beverages",
-      "nameEs": "Paloma Ahumada de Mezcal",
-      "nameEn": "Smoky Mezcal Paloma",
-      "descriptionEs": "Mezcal artesanal, jugo de toronja fresco, lima, soda de toronja y borde escarchado con sal de chile Tajín.",
-      "descriptionEn": "Artisanal smoky mezcal, fresh grapefruit juice, lime, grapefruit soda, finished with a spicy Tajín chili-salt rim.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Mezcal",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "buffalo-steak-chile",
+      "categoryId": "chile-and-soup",
+      "nameEs": "Chile de Bistec estilo Buffalo",
+      "nameEn": "Buffalo Steak Chile",
+      "descriptionEs": "Frijoles negros, chiles Chimayo, cheddar añejo, pan de maíz de la casa",
+      "descriptionEn": "Black beans, Chimayo chiles, aged cheddar, housemade cornbread",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "geronimo-14",
-      "categoryId": "beverages",
-      "nameEs": "Vuelo de Tequila CRT Certificado",
-      "nameEn": "Certified CRT Tequila Flight",
-      "descriptionEs": "Degustación de tres tequilas seleccionados (Blanco, Reposado y Añejo) servidos con sangrita casera y rodajas de lima.",
-      "descriptionEn": "A tasting flight of three premium tequilas (Blanco, Reposado, Añejo) served with house-made sangrita and lime wedges.",
-      "price": "$24.00",
-      "popular": false,
-      "badge": "Especialidad CRT",
-      "tags": [
-        "Premium",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "vegetable-chile",
+      "categoryId": "chile-and-soup",
+      "nameEs": "Chile Vegetariano",
+      "nameEn": "Vegetable Chile",
+      "descriptionEs": "Maíz, garbanzos, frijoles pintos, quesos cheddar y jack, cebollines, pico de gallo, pan de maíz de la casa",
+      "descriptionEn": "Corn, garbanzos, kidney beans, cheddar and jack cheeses, scallions, pico de gallo, housemade cornbread",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cowgirl-chop-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada Cowgirl Chop",
+      "nameEn": "Cowgirl Chop Salad",
+      "descriptionEs": "Cuscús israelí, tomate, arúgula, pasas de corinto deshidratadas, pepitas, maíz, aderezo ranch de poblano, servida y mezclada en la mesa. Vegetariana.",
+      "descriptionEn": "Israeli couscous, tomato, arugula, dried currants, pepitas, corn, poblano ranch dressing, tableside tossed. Vegetarian.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tostada-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada Tostada",
+      "nameEn": "Tostada Salad",
+      "descriptionEs": "Tortillas crujientes, frijoles negros, queso Chihuahua, salsa de maíz asado, hojas verdes mixtas, vinagreta de miel y limón, crema mexicana. Vegetariana, sin gluten.",
+      "descriptionEn": "Crisp tortillas, black beans, Chihuahua cheese, roasted corn salsa, mixed greens, honey-lime vinaigrette, Mexican crema. Vegetarian, gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asado-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada Asado",
+      "nameEn": "Asado Salad",
+      "descriptionEs": "Arúgula, remolachas, naranjas, jícama, cebolla morada, aguacate, semillas de calabaza, queso de cabra, vinagreta de tequila y limón. Vegetariana, sin gluten.",
+      "descriptionEn": "Arugula, beets, oranges, jicama, red onion, avocado, pumpkin seeds, goat cheese, tequila-lime vinaigrette. Vegetarian, gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-fe-caesar-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada César Santa Fe",
+      "nameEn": "Santa Fe Caesar Salad",
+      "descriptionEs": "Crutón navajo, queso cotija, crujiente de masa",
+      "descriptionEn": "Navajo crouton, cotija cheese, masa crunch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shaved-brussels-sprout-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada de Coles de Bruselas Laminadas",
+      "nameEn": "Shaved Brussels Sprout Salad",
+      "descriptionEs": "Kale tierno, manzanas, queso de cabra, granada, pepitas, vinagreta de garbanzo y ancho. Vegetariana.",
+      "descriptionEn": "Baby kale, apples, goat cheese, pomegranate, pepitas, garbanzo-ancho vinaigrette. Vegetarian.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "citrus-grilled-avocado-salad",
+      "categoryId": "greens",
+      "nameEs": "Ensalada de Aguacate Asado a los Cítricos",
+      "nameEn": "Citrus Grilled Avocado Salad",
+      "descriptionEs": "Berro tierno, manzana, jícama, granada, vinagreta Chimayo. Añade pollo, bistec, cinco camarones a la parrilla o salmón a la parrilla.",
+      "descriptionEn": "Baby watercress, apple, jicama, pomegranate, Chimayo vinaigrette. Add chicken, steak, five grilled shrimp or grilled salmon.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poblano-cilantro-rice-black-beans",
+      "categoryId": "sides",
+      "nameEs": "Arroz con Poblano y Cilantro y Frijoles Negros",
+      "nameEn": "Poblano-Cilantro Rice & Black Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-street-corn",
+      "categoryId": "sides",
+      "nameEs": "Elote Callejero Mexicano",
+      "nameEn": "Mexican Street Corn",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cumin-sweet-potato-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Dulces Fritas al Comino",
+      "nameEn": "Cumin Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-plantains",
+      "categoryId": "sides",
+      "nameEs": "Plátanos Maduros",
+      "nameEn": "Sweet Plantains",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuca-fries",
+      "categoryId": "sides",
+      "nameEs": "Yuca Frita",
+      "nameEn": "Yuca Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-brussels-sprouts-bacon",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas Asadas con Tocino",
+      "nameEn": "Roasted Brussels Sprouts & Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-salad",
+      "categoryId": "sides",
+      "nameEs": "Ensalada Chica",
+      "nameEn": "Side Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tableside-guacamole",
+      "categoryId": "tableside",
+      "nameEs": "Guacamole Preparado en la Mesa",
+      "nameEn": "Tableside Guacamole",
+      "descriptionEs": "Elige maíz asado y tocino ahumado con madera de manzano, chicharrón y granada, o camarón y piña",
+      "descriptionEn": "Choose roasted corn and applewood smoked bacon, chicharrón and pomegranate, or shrimp and pineapple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tableside-salsa",
+      "categoryId": "tableside",
+      "nameEs": "Salsa Preparada en la Mesa",
+      "nameEn": "Tableside Salsa",
+      "descriptionEs": "Mango, habanero o piña",
+      "descriptionEn": "Mango, habanero or pineapple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-nachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos con Queso",
+      "nameEn": "Cheese Nachos",
+      "descriptionEs": "Servidos con crema agria, jalapeños, pimientos morrones y pico de gallo. Añade guacamole, maíz asado, crema agria o salsa Chimayo.",
+      "descriptionEn": "Served with sour cream, jalapeños, bell peppers and pico de gallo. Add guacamole, roasted corn, sour cream or Chimayo salsa.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-nachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos con Pollo a la Parrilla",
+      "nameEn": "Grilled Chicken Nachos",
+      "descriptionEs": "Servidos con crema agria, jalapeños, pimientos morrones y pico de gallo. Añade guacamole, maíz asado, crema agria o salsa Chimayo.",
+      "descriptionEn": "Served with sour cream, jalapeños, bell peppers and pico de gallo. Add guacamole, roasted corn, sour cream or Chimayo salsa.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chile-nachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos de Chile Buffalo",
+      "nameEn": "Buffalo Chile Nachos",
+      "descriptionEs": "Servidos con crema agria, jalapeños, pimientos morrones y pico de gallo. Añade guacamole, maíz asado, crema agria o salsa Chimayo.",
+      "descriptionEn": "Served with sour cream, jalapeños, bell peppers and pico de gallo. Add guacamole, roasted corn, sour cream or Chimayo salsa.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carnitas-nachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos de Carnitas",
+      "nameEn": "Carnitas Nachos",
+      "descriptionEs": "Servidos con crema agria, jalapeños, pimientos morrones y pico de gallo. Añade guacamole, maíz asado, crema agria o salsa Chimayo.",
+      "descriptionEn": "Served with sour cream, jalapeños, bell peppers and pico de gallo. Add guacamole, roasted corn, sour cream or Chimayo salsa.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-chile-nachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos de Chile Vegetariano",
+      "nameEn": "Vegetable Chile Nachos",
+      "descriptionEs": "Servidos con crema agria, jalapeños, pimientos morrones y pico de gallo. Añade guacamole, maíz asado, crema agria o salsa Chimayo.",
+      "descriptionEn": "Served with sour cream, jalapeños, bell peppers and pico de gallo. Add guacamole, roasted corn, sour cream or Chimayo salsa.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos-borrachos",
+      "categoryId": "nachos",
+      "nameEs": "Nachos Borrachos",
+      "nameEn": "Nachos Borrachos",
+      "descriptionEs": "Completamente cargados con pollo tinga, chile buffalo y carnitas; servidos con crema agria, jalapeños, pimientos morrones y pico de gallo",
+      "descriptionEn": "Fully loaded with chicken tinga, buffalo chile and carnitas; served with sour cream, jalapeños, bell peppers and pico de gallo",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "navajo-taco",
+      "categoryId": "navajo-taco",
+      "nameEs": "\"Taco\" Navajo",
+      "nameEn": "Navajo \"Taco\"",
+      "descriptionEs": "Pan frito nativo, pico de gallo, lechuga, queso cotija; con pollo tinga, buffalo o frijoles charros",
+      "descriptionEn": "Native frybread, pico de gallo, lettuce, cotija cheese; with chicken tinga, buffalo, or charro beans",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Birria (3)",
+      "nameEn": "Birria Tacos (3)",
+      "descriptionEs": "Queso Oaxaca y Chihuahua, salsa verde, consomé de res. Servidos en tortillas de maíz 100% hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate con tomatillo y rábanos.",
+      "descriptionEn": "Oaxaca and Chihuahua cheese, salsa verde, beef consommé. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mahi-mahi-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Mahi Mahi (3)",
+      "nameEn": "Mahi Mahi Tacos (3)",
+      "descriptionEs": "A la plancha con salsa Baja. Servidos en tortillas de maíz 100% hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate con tomatillo y rábanos.",
+      "descriptionEn": "A la plancha with Baja sauce. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Carne Asada (3)",
+      "nameEn": "Carne Asada Tacos (3)",
+      "descriptionEs": "Bistec marinado con salsa de chile de árbol. Servidos en tortillas de maíz 100% hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate con tomatillo y rábanos.",
+      "descriptionEn": "Marinated steak with arbol salsa. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tejano-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos Tejano (3)",
+      "nameEn": "Tejano Tacos (3)",
+      "descriptionEs": "Costilla corta estofada al epazote y cotija. Servido en tortillas 100% de maíz hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate y tomatillo, y rábano.",
+      "descriptionEn": "Braised epazote short rib and cotija. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-carnitas-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Carnitas de Puerco (3)",
+      "nameEn": "Pork Carnitas Tacos (3)",
+      "descriptionEs": "Estofadas y desmenuzadas con crema mexicana. Servidas en tortillas 100% de maíz hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate y tomatillo, y rábano.",
+      "descriptionEn": "Braised and pulled with Mexican crema. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cauliflower-al-pastor-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Coliflor al Pastor (3)",
+      "nameEn": "Cauliflower al Pastor Tacos (3)",
+      "descriptionEs": "Salsa de piña y habanero. Servidos en tortillas 100% de maíz hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate y tomatillo, y rábano.",
+      "descriptionEn": "Pineapple habanero salsa. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tempura-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Camarón Tempura (3)",
+      "nameEn": "Shrimp Tempura Tacos (3)",
+      "descriptionEs": "Mayonesa de chipotle. Servidos en tortillas 100% de maíz hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate y tomatillo, y rábano.",
+      "descriptionEn": "Chipotle mayo. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-fe-tacos-3",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de Santa Fe (3)",
+      "nameEn": "Santa Fe Tacos (3)",
+      "descriptionEs": "Pollo ahumado. Servidos en tortillas 100% de maíz hechas en casa (sin gluten) o en hojas de lechuga, con pico de gallo, salsa de aguacate y tomatillo, y rábano.",
+      "descriptionEn": "Smoked chicken. Served on housemade 100% corn tortillas (gluten-free) or lettuce wraps, with pico de gallo, avocado tomatillo salsa and radish.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mix-match-taco-party",
+      "categoryId": "tacos",
+      "nameEs": "Fiesta de Tacos Mix & Match",
+      "nameEn": "Mix & Match Taco Party",
+      "descriptionEs": "Elección de los tacos anteriores. Incluye doce tortillas 100% de maíz hechas en casa, pico de gallo, rábano, salsa borracha, salsa de tomatillo, guacamole, cebollas, cilantro, frijoles negros, arroz",
+      "descriptionEn": "Choice of the tacos above. Includes twelve housemade 100% corn tortillas, pico de gallo, radish, salsa borracha, tomatillo salsa, guacamole, onions, cilantro, black beans, rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tinga-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito de Tinga de Pollo",
+      "nameEn": "Chicken Tinga Burrito",
+      "descriptionEs": "Pollo estofado al chipotle, frijoles negros, aguacate, pozole, calabaza butternut, queso Oaxaca, mole de naranja y miel, salsa de tomatillo y pepita, crema mexicana, pico de gallo. Envuelto en una tortilla de harina o sobre arroz y frijoles negros.",
+      "descriptionEn": "Chipotle-braised chicken, black beans, avocado, pozole, butternut squash, Oaxaca cheese, orange-honey mole, tomatillo-pepita sauce, Mexican crema, pico de gallo. Wrapped in a flour tortilla or over rice and black beans.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chimayo-braised-pork-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito de Puerco Estofado al Chimayo",
+      "nameEn": "Chimayo Braised Pork Burrito",
+      "descriptionEs": "Arroz con cilantro, frijoles negros, elote, queso Chihuahua, pico de gallo, salsa navideña roja y verde, crema mexicana. Envuelto en una tortilla de harina o sobre arroz y frijoles negros.",
+      "descriptionEn": "Cilantro rice, black beans, corn, Chihuahua cheese, pico de gallo, red & green Christmas sauce, Mexican crema. Wrapped in a flour tortilla or over rice and black beans.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito de Carne Asada",
+      "nameEn": "Carne Asada Burrito",
+      "descriptionEs": "Sirloin de res, frijoles borrachos, guacamole, cebollas caramelizadas, jalapeño asado, pico de gallo, crema agria, queso Chihuahua, salsa Chimayo. Envuelto en una tortilla de harina o sobre arroz y frijoles negros.",
+      "descriptionEn": "Sirloin of beef, borracho beans, guacamole, caramelized onions, roasted jalapeño, pico de gallo, sour cream, Chihuahua cheese, Chimayo sauce. Wrapped in a flour tortilla or over rice and black beans.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "forest-mushroom-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito de Hongos del Bosque",
+      "nameEn": "Forest Mushroom Burrito",
+      "descriptionEs": "Vegetariano. Portobellos a la parrilla, frijoles negros, arroz con cilantro y poblano, queso de cabra, cebollas caramelizadas, salsa de tomatillo y pepita, crema mexicana. Agrega pollo, bistec, cinco camarones a la parrilla, chorizo, carnitas, costilla corta o tocino de madera de manzano. Envuelto en una tortilla de harina o sobre arroz y frijoles negros.",
+      "descriptionEn": "Vegetarian. Grilled portobellos, black beans, cilantro-poblano rice, goat cheese, caramelized onions, tomatillo-pepita sauce, Mexican crema. Add chicken, steak, five grilled shrimp, chorizo, carnitas, short rib or applewood bacon. Wrapped in a flour tortilla or over rice and black beans.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "achiote-chicken-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de Pollo al Achiote",
+      "nameEn": "Achiote Chicken Quesadilla",
+      "descriptionEs": "Tocino ahumado con madera de manzano, frijoles negros, cebollas caramelizadas, elote, queso Chihuahua, salsa de tomate ahumado, pico de gallo",
+      "descriptionEn": "Applewood smoked bacon, black beans, caramelized onions, corn, Chihuahua cheese, smoked tomato sauce, pico de gallo",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de Carne Asada",
+      "nameEn": "Carne Asada Quesadilla",
+      "descriptionEs": "Frijoles negros, hongos silvestres, cebollas, queso Chihuahua, Chimayo, ensalada de queso azul",
+      "descriptionEn": "Black beans, wild mushrooms, onions, Chihuahua cheese, Chimayo, bleu cheese salad",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-hermanas-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla Tres Hermanas",
+      "nameEn": "Tres Hermanas Quesadilla",
+      "descriptionEs": "Vegetariana. Abierta con calabaza butternut, frijoles negros, elote, pico de gallo, ranchero de chile Hatch",
+      "descriptionEn": "Vegetarian. Open faced with butternut squash, black beans, corn, pico de gallo, Hatch chile ranchero",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bison-green-chile-smash-burger",
+      "categoryId": "in-a-bun",
+      "nameEs": "Hamburguesa Smash de Bistec de Bisonte con Chile Verde",
+      "nameEn": "Bison Green Chile Smash Burger",
+      "descriptionEs": "Tocino al chile y azúcar morena, aguacate, chile verde Hatch, cheddar añejo. Servido con una ensalada de acompañamiento o papas dulces, yuca o papas fritas.",
+      "descriptionEn": "Chile-brown sugar bacon, avocado, Hatch green chile, aged cheddar. Served with a side salad or sweet potato, yuca or french fries.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-grilled-chicken-sandwich",
+      "categoryId": "in-a-bun",
+      "nameEs": "Sándwich de Pollo a la Parrilla con Chile",
+      "nameEn": "Chile-Grilled Chicken Sandwich",
+      "descriptionEs": "Pechuga de pollo frotada con chile con guacamole, lechuga, tomate, alioli de ajo, focaccia tostada. Servido con una ensalada de acompañamiento o papas dulces, yuca o papas fritas.",
+      "descriptionEn": "Chile-rubbed chicken breast with guacamole, lettuce, tomato, garlic aioli, toasted focaccia. Served with a side salad or sweet potato, yuca or french fries.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apache-blt",
+      "categoryId": "in-a-bun",
+      "nameEs": "BLT Apache",
+      "nameEn": "Apache BLT",
+      "descriptionEs": "Tocino de corte central al chile y azúcar morena, guacamole, tomate, arúgula, alioli de ajo, chipotle ranch en focaccia tostada. Servido con una ensalada de acompañamiento o papas dulces, yuca o papas fritas.",
+      "descriptionEn": "Center cut chile-brown sugar bacon, guacamole, tomato, arugula, garlic aioli, chipotle ranch on toasted focaccia. Served with a side salad or sweet potato, yuca or french fries.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chiles-rellenos",
+      "categoryId": "main-plates",
+      "nameEs": "Chiles Rellenos",
+      "nameEn": "Chiles Rellenos",
+      "descriptionEs": "Crema mexicana, pico de gallo, frijoles negros, salsa Chimayo, hongos, quinua roja, queso Chihuahua. Vegetariano, de puerco o cinco camarones a la parrilla. Sin gluten.",
+      "descriptionEn": "Mexican crema, pico de gallo, black beans, Chimayo sauce, mushrooms, red quinoa, Chihuahua cheese. Vegetarian, pork, or five grilled shrimp. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stacked-chicken-enchiladas",
+      "categoryId": "main-plates",
+      "nameEs": "Enchiladas de Pollo Apiladas",
+      "nameEn": "Stacked Chicken Enchiladas",
+      "descriptionEs": "Queso Chihuahua, arroz, frijoles, salsa navideña roja y verde. Sin gluten.",
+      "descriptionEn": "Chihuahua cheese, rice, beans, red & green Christmas sauce. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill-molcajete-to-share",
+      "categoryId": "main-plates",
+      "nameEs": "Molcajete de Parrillada Mixta para Compartir",
+      "nameEn": "Mixed Grill Molcajete to Share",
+      "descriptionEs": "Piedra volcánica chispeante con bistec a la parrilla, pollo, camarón, chorizo, frijoles negros, tomate a la parrilla, cebollas rojas, nopales, queso Oaxaca, Chimayo, tomate ahumado, arroz con cilantro y poblano, tortillas de maíz. Sin gluten.",
+      "descriptionEn": "Sizzling lava rock with grilled steak, chicken, shrimp, chorizo, black beans, grilled tomato, red onions, nopales cactus, Oaxaca cheese, Chimayo, smoked tomato, cilantro poblano rice, corn tortillas. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chimayo-sherry-glazed-salmon",
+      "categoryId": "main-plates",
+      "nameEs": "Salmón Glaseado al Chimayo y Jerez",
+      "nameEn": "Chimayo-Sherry Glazed Salmon",
+      "descriptionEs": "Salmón salvaje del Pacífico, quinua, shiitake, pimientos dulces, espinacas tiernas, vinagreta de tomatillo y aguacate. Sin gluten.",
+      "descriptionEn": "Wild Pacific salmon, quinoa, shiitake, sweet peppers, baby spinach, tomatillo-avocado vinaigrette. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "citrus-marinated-half-chicken",
+      "categoryId": "main-plates",
+      "nameEs": "Medio Pollo Marinado a los Cítricos",
+      "nameEn": "Citrus Marinated Half Chicken",
+      "descriptionEs": "Servido sobre coles de Bruselas, calabaza butternut, col rizada tierna, cebollas caramelizadas, jugo de cocción en sartén encurtido de cascabel y tomillo. Sin gluten.",
+      "descriptionEn": "Served over Brussels sprouts, butternut squash, baby kale, caramelized onions, pickled cascabel-thyme pan jus. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guajillo-braised-short-rib",
+      "categoryId": "main-plates",
+      "nameEs": "Costilla Corta Estofada al Guajillo",
+      "nameEn": "Guajillo Braised Short Rib",
+      "descriptionEs": "Puré de papas al azafrán, brócolini, caldo de guajillo. Sin gluten.",
+      "descriptionEn": "Saffron mashed potatoes, broccolini, guajillo broth. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-rack-baby-back-pork-ribs",
+      "categoryId": "main-plates",
+      "nameEs": "Media Costillar de Costillas de Puerco Baby Back",
+      "nameEn": "Half Rack Baby Back Pork Ribs",
+      "descriptionEs": "BBQ de chipotle, queso cotija, elote mexicano, más una guarnición de macarrones con queso y chile verde Hatch con pico de gallo, huitlacoche, migas de pan de maíz y aceite de trufa",
+      "descriptionEn": "Chipotle BBQ, cotija cheese, Mexican corn, plus a side of Hatch green chile mac & cheese with pico de gallo, huitlacoche, cornbread crumbs and truffle oil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada-steak",
+      "categoryId": "main-plates",
+      "nameEs": "Bistec de Carne Asada",
+      "nameEn": "Carne Asada Steak",
+      "descriptionEs": "Frijoles charros, ensalada de aguacate, escabeche de hongos. Sin gluten.",
+      "descriptionEn": "Charro beans, avocado salad, mushroom escabeche. Gluten-free.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-squash-burrito-bowl",
+      "categoryId": "main-plates",
+      "nameEs": "Tazón de Burrito con Calabaza Espagueti",
+      "nameEn": "Spaghetti Squash Burrito Bowl",
+      "descriptionEs": "Pimientos morrones, frijoles negros, elote asado, arroz, queso Oaxaca, tomate ahumado, Chimayo, pico de gallo, aguacate. Vegetariano, sin gluten. Agrega pollo, bistec, cinco camarones a la parrilla o salmón a la parrilla.",
+      "descriptionEn": "Bell peppers, black beans, roasted corn, rice, Oaxaca cheese, smoked tomato, Chimayo, pico de gallo, avocado. Vegetarian, gluten-free. Add chicken, steak, five grilled shrimp or grilled salmon.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elk-meatloaf",
+      "categoryId": "main-plates",
+      "nameEs": "Pastel de Carne de Alce",
+      "nameEn": "Elk Meatloaf",
+      "descriptionEs": "Pastel de carne de chorizo de alce glaseado a la granada, pozole gratinado de coliflor y camote, salsas navideñas roja y verde",
+      "descriptionEn": "Pomegranate-glazed elk chorizo meatloaf, cauliflower-sweet potato pozole au gratin, red & green Christmas sauces",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-chile-mac-cheese",
+      "categoryId": "main-plates",
+      "nameEs": "Macarrones con Queso y Chile Verde",
+      "nameEn": "Green Chile Mac & Cheese",
+      "descriptionEs": "Vegetariano. Quesos cheddar añejo y Gruyère, migas de pan de maíz, chile verde Hatch asado a la leña, pico de gallo, huitlacoche, aceite de trufa. Agrega pollo, bistec, cinco camarones a la parrilla, chorizo, carnitas, costilla corta o tocino de madera de manzano.",
+      "descriptionEn": "Vegetarian. Sharp cheddar and Gruyère cheeses, cornbread crumbs, fire roasted Hatch green chile, pico de gallo, huitlacoche, truffle oil. Add chicken, steak, five grilled shrimp, chorizo, carnitas, short rib or applewood bacon.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-rancheros",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Rancheros",
+      "nameEn": "Huevos Rancheros",
+      "descriptionEs": "Dos huevos, salsa navideña, frijoles charros, tortilla de maíz, papas asadas con hierbas",
+      "descriptionEn": "Two eggs, X-mas sauce, charro beans, corn tortilla, herbed roasted potatoes",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-fe-chilaquiles",
+      "categoryId": "brunch",
+      "nameEs": "Chilaquiles Santa Fe",
+      "nameEn": "Santa Fe Chilaquiles",
+      "descriptionEs": "Dos huevos, tortilla de maíz, tinga de pollo, cebolla roja, salsa de chile verde",
+      "descriptionEn": "Two eggs, corn tortilla, chicken tinga, red onion, green chile sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-french-toast",
+      "categoryId": "brunch",
+      "nameEs": "Tostadas Francesas de Plátano",
+      "nameEn": "Banana French Toast",
+      "descriptionEs": "Compota de chile verde, jarabe de maple, nueces pecanas",
+      "descriptionEn": "Green chile compote, maple syrup, pecans",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-eggs",
+      "categoryId": "brunch",
+      "nameEs": "Bistec y Huevos",
+      "nameEn": "Steak & Eggs",
+      "descriptionEs": "Dos huevos, carne asada, papas asadas con hierbas, salsa ranchera",
+      "descriptionEn": "Two eggs, carne asada, herbed roasted potatoes, ranchero sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "brunch",
+      "nameEs": "Tostada de Aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "Aguacate, pan tostado integral, huevos poché",
+      "descriptionEn": "Avocado, whole wheat toast, poached eggs",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "geronimo-eggs-benedict",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Benedictinos Geronimo",
+      "nameEn": "Geronimo Eggs Benedict",
+      "descriptionEs": "Dos huevos poché, chorizo, panecillo inglés, salsa holandesa de chile verde",
+      "descriptionEn": "Two poached eggs, chorizo, English muffin, green chile hollandaise",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "desayuno-bloody-mary",
+      "categoryId": "brunch",
+      "nameEs": "Bloody Mary \"Desayuno\"",
+      "nameEn": "\"Desayuno\" Bloody Mary",
+      "descriptionEs": "Hornitos Reposado, RIPE San Marzano, naranja sanguina, piña tostada, tocino, chorizo, jalapeño",
+      "descriptionEn": "Hornitos Reposado, RIPE San Marzano, blood orange, toasted pineapple, bacon, chorizo, jalapeño",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mimosa",
+      "categoryId": "brunch",
+      "nameEs": "Mimosa",
+      "nameEn": "Mimosa",
+      "descriptionEs": "Jugo de naranja recién exprimido, burbujas",
+      "descriptionEn": "Fresh squeezed OJ, bubbles",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juan-daly",
+      "categoryId": "brunch",
+      "nameEs": "Juan Daly",
+      "nameEn": "Juan Daly",
+      "descriptionEs": "Tequila infusionado con piña, té helado de maracuyá, limonada",
+      "descriptionEn": "Pineapple-infused tequila, passionfruit iced tea, limeade",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "daily-lunch-special",
+      "categoryId": "daily-lunch-special",
+      "nameEs": "Especial de Almuerzo Diario",
+      "nameEn": "Daily Lunch Special",
+      "descriptionEs": "Lunes a viernes de 12 a 3 PM. Un taco individual (carnitas, carne asada, coliflor o pescado) más una taza de sopa de tortilla de pollo o chile de vegetales",
+      "descriptionEn": "Monday-Friday 12-3 PM. Single taco (carnitas, carne asada, cauliflower or fish) plus a cup of chicken tortilla soup or vegetable chile",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-fried-avocado",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Aguacate Frito de Hora Feliz",
+      "nameEn": "Happy Hour Fried Avocado",
+      "descriptionEs": "Aguacate empanizado con panko, salsas \"Christmas\". Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Panko-crusted avocado, \"Christmas\" sauces. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-chicken-tinga-tostada",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Tostada de Tinga de Pollo de Hora Feliz",
+      "nameEn": "Happy Hour Chicken Tinga Tostada",
+      "descriptionEs": "Puré de frijol, lechuga, crema mexicana, queso cotija, salsa de tomatillo. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Bean purée, lettuce, crema Mexicana, cotija cheese, tomatillo salsa. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-buffalo-nickel",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Buffalo Nickel de Hora Feliz",
+      "nameEn": "Happy Hour Buffalo Nickel",
+      "descriptionEs": "Mini hamburguesa aplastada de bisonte magro, alioli de chipotle, tocino al chile y azúcar morena, chile poblano, focaccia sazonada. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Lean bison mini-smash burger, chipotle aioli, chili-brown sugar bacon, poblano pepper, seasoned focaccia. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-chori-papa",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Chori-Papa de Hora Feliz",
+      "nameEn": "Happy Hour Chori-Papa",
+      "descriptionEs": "Papas asadas, chorizo, queso Oaxaca. Sin gluten. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Roasted potatoes, chorizo, Oaxaca cheese. Gluten-free. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-jalapeno-popper",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Jalapeño Popper de Hora Feliz",
+      "nameEn": "Happy Hour Jalapeño Popper",
+      "descriptionEs": "Queso Oaxaca, tocino, salsa Chimayo. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Oaxaca cheese, bacon, Chimayo sauce. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-frito-pie",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Frito Pie de Hora Feliz",
+      "nameEn": "Happy Hour Frito Pie",
+      "descriptionEs": "Fritos abiertos, chili de bistec estilo búfalo, queso Chihuahua, crema agria, jalapeño, chiles dulces, cebollines. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Open-faced Fritos, buffalo steak chili, Chihuahua cheese, sour cream, jalapeño, bell peppers, scallions. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-birria-flauta",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Flauta de Birria de Hora Feliz",
+      "nameEn": "Happy Hour Birria Flauta",
+      "descriptionEs": "Tortilla de harina, carne deshebrada, queso Oaxaca y Chihuahua, salsas \"Christmas\". Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Flour tortilla, shredded beef, Oaxaca & Chihuahua cheese, \"Christmas\" sauces. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-buffalo-steak-chile-nachos",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Nachos de Chile con Bistec estilo Búfalo de Hora Feliz",
+      "nameEn": "Happy Hour Buffalo Steak Chile Nachos",
+      "descriptionEs": "Mezcla de quesos mexicanos, chile Chimayo, frijoles negros. Sin gluten. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Blend of Mexican cheeses, Chimayo chile, black beans. Gluten-free. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-shrimp-ceviche-shooter",
+      "categoryId": "happy-hour-food-fairfield",
+      "nameEs": "Shot de Ceviche de Camarón de Hora Feliz",
+      "nameEn": "Happy Hour Shrimp Ceviche Shooter",
+      "descriptionEs": "Vaso de chupito de 6 oz, salsa de tomate picante. Sin gluten. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "6 oz shot glass, spicy tomato sauce. Gluten-free. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-margarita",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Margarita de Hora Feliz",
+      "nameEn": "Happy Hour Margarita",
+      "descriptionEs": "Clásica, de pepino o la picante; añade sabor por $1. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Clasica, cucumber or the spicy; add flavor $1. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-aupale-vodka-martini",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Martini de Vodka Aupale de Hora Feliz",
+      "nameEn": "Happy Hour Aupale Vodka Martini",
+      "descriptionEs": "Aceituna, torcedura de limón o sucio. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Olive, lemon twist or dirty. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-espresso-martini",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Martini de Espresso de Hora Feliz",
+      "nameEn": "Happy Hour Espresso Martini",
+      "descriptionEs": "Vodka Aupale, espresso, Kahlua, cacao. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Aupale vodka, espresso, Kahlua, cocoa. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-draught-beer",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Cerveza de Barril de Hora Feliz",
+      "nameEn": "Happy Hour Draught Beer",
+      "descriptionEs": "Lager Modelo Especial, pale ale Cisco Whale's Tale, o Allagash White. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Modelo Especial lager, Cisco Whale's Tale pale ale, or Allagash White. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-red-or-white-sangria",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Sangría Roja o Blanca de Hora Feliz",
+      "nameEn": "Happy Hour Red or White Sangria",
+      "descriptionEs": "Ron de barrica única Cruzan \"Shell & Bones\", ron de mango, licor de naranja, cítricos. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Cruzan \"Shell & Bones\" single barrel rum, mango rum, orange liqueur, citrus fruit. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-wine-by-the-glass",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Vino por Copa de Hora Feliz",
+      "nameEn": "Happy Hour Wine by the Glass",
+      "descriptionEs": "Zonin Prosecco Rosé, Argento \"Minimalista\" Rosé, Dona Paula \"Los Cardos\" Sauvignon Blanc, o Bodegas San Antonio Abad Tempranillo. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Zonin Prosecco Rosé, Argento \"Minimalista\" Rosé, Dona Paula \"Los Cardos\" Sauvignon Blanc, or Bodegas San Antonio Abad Tempranillo. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-select-spirits",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Licores Seleccionados de Hora Feliz",
+      "nameEn": "Happy Hour Select Spirits",
+      "descriptionEs": "Vodka Aupale, ginebra Condesa, o ron Mount Gay Silver. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Aupale vodka, Condesa gin, or Mount Gay Silver rum. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-hour-select-tequilas-mezcales",
+      "categoryId": "happy-hour-drinks-fairfield",
+      "nameEs": "Tequilas y Mezcales Seleccionados de Hora Feliz",
+      "nameEn": "Happy Hour Select Tequilas & Mezcales",
+      "descriptionEs": "Cazcabel, Mi Campo u Olmeca Altos (blanco/plata o reposado), mezcal Fidencio Espadín, mezcal Xicaru Silver. Hora feliz: lun-vie 3-6 PM, vie y sáb 11 PM-cierre.",
+      "descriptionEn": "Cazcabel, Mi Campo or Olmeca Altos (blanco/plata or reposado), Fidencio Espadín mezcal, Xicaru Silver mezcal. Happy hour: Mon-Fri 3-6 PM, Fri & Sat 11 PM-close.",
+      "price": "$8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-geronimo-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Geronimo",
+      "nameEn": "The Geronimo Margarita",
+      "descriptionEs": "Hornitos Blanco, Cointreau, limón, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Hornitos Blanco, Cointreau, lime, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-skinny-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Skinny",
+      "nameEn": "The Skinny Margarita",
+      "descriptionEs": "Hornitos Blanco, jugo de limón, jugo de naranja, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Hornitos Blanco, lime juice, orange juice, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-spicy-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Picante",
+      "nameEn": "The Spicy Margarita",
+      "descriptionEs": "Tequila infusionado con jalapeño, Cointreau, limón, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Jalapeño-infused tequila, Cointreau, lime, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-tropicale-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Tropicale",
+      "nameEn": "The Tropicale Margarita",
+      "descriptionEs": "Tequila infusionado con piña, coco tostado, agave, limón, sal marina negra ahumada de Hawái. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Pineapple-infused tequila, toasted coconut, agave, lime, smoked black Hawaiian sea salt. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-santa-fe-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Santa Fe",
+      "nameEn": "The Santa Fe Margarita",
+      "descriptionEs": "Monte Alban Blanco, tuna (higo chumbo), limón, jengibre. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Monte Alban Blanco, prickly pear, lime, ginger. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-controlled-burn-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita de Quemadura Controlada",
+      "nameEn": "The Controlled Burn Margarita",
+      "descriptionEs": "Olmeca Altos Blanco, jugo de piña clarificado, jarabe simple de chipotle, limón, borde de chile guajillo. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Olmeca Altos Blanco, clarified pineapple juice, chipotle simple, lime, guajillo chile rim. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-spicy-blood-orange-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita Picante de Naranja Sanguina",
+      "nameEn": "The Spicy Blood Orange Margarita",
+      "descriptionEs": "Tequila infusionado con jalapeño, puré de naranja sanguina, Cointreau, limón, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Jalapeño-infused tequila, blood orange purée, Cointreau, lime, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-cucumber-strawberry-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "La Margarita de Pepino y Fresa",
+      "nameEn": "The Cucumber Strawberry Margarita",
+      "descriptionEs": "Tequila infusionado con pepino, fresa, limón. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Cucumber-infused tequila, strawberry, lime. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-mescalero",
+      "categoryId": "margaritas",
+      "nameEs": "El Mescalero",
+      "nameEn": "The Mescalero",
+      "descriptionEs": "Granja Nomada, limón, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "Granja Nomada, lime, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fistful-of-dollars",
+      "categoryId": "margaritas",
+      "nameEs": "Fistful of Dollars",
+      "nameEn": "Fistful of Dollars",
+      "descriptionEs": "El Tesoro \"Paradiso\" Extra Añejo, Grand Marnier Centenaire, limón, agave. Cóctel o jarra; hecha con jugo de limón exprimido en frío y agave azul orgánico.",
+      "descriptionEn": "El Tesoro \"Paradiso\" Extra Añejo, Grand Marnier Centenaire, lime, agave. Cocktail or pitcher; made with cold-pressed lime juice and organic blue agave.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita-flavors",
+      "categoryId": "margaritas",
+      "nameEs": "Sabores de Margarita",
+      "nameEn": "Margarita Flavors",
+      "descriptionEs": "Fresa, mango, maracuyá, naranja sanguina, coco, granada. Añade una Coronita a cualquier margarita.",
+      "descriptionEn": "Strawberry, mango, passionfruit, blood orange, coconut, pomegranate. Add a Coronita to any margarita.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "descriptionEs": "Blanca, rosada o tinto. Ron de barrica única Cruzan \"Shell & Bones\", ron de mango Brinley, licor de durazno, cítricos. Cóctel o jarra.",
+      "descriptionEn": "White, rosé or red. Cruzan \"Shell & Bones\" single barrel rum, Brinley mango rum, peach liqueur, citrus fruit. Cocktail or pitcher.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Mojito",
+      "nameEn": "Mojito",
+      "descriptionEs": "Ron blanco añejo Cruzan, azúcar blanca de caña, hierbabuena, limón, agua con gas. Cóctel o jarra.",
+      "descriptionEn": "Cruzan aged white rum, white cane sugar, mint, lime, soda. Cocktail or pitcher.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paloma",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Paloma",
+      "nameEn": "Paloma",
+      "descriptionEs": "Hornitos Reposado, limón, refresco de toronja",
+      "descriptionEn": "Hornitos Reposado, lime, grapefruit soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ranch-water",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Ranch Water",
+      "nameEn": "Ranch Water",
+      "descriptionEs": "Jimador Reposado, limón, agua mineral con gas",
+      "descriptionEn": "Jimador Reposado, lime, sparkling mineral water",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-resaca",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "La Resaca",
+      "nameEn": "La Resaca",
+      "descriptionEs": "Lunazul Blanco, mango, maracuyá, piña con acidez ajustada, jarabe de jengibre, burbujas",
+      "descriptionEn": "Lunazul Blanco, mango, passionfruit, acid adjusted pineapple, ginger syrup, bubbles",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalisco-mule",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Jalisco Mule",
+      "nameEn": "Jalisco Mule",
+      "descriptionEs": "Herradura Reposado, cerveza de jengibre Fever Tree",
+      "descriptionEn": "Herradura Reposado, Fever Tree ginger beer",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oaxaca-negroni",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Oaxaca Negroni",
+      "nameEn": "Oaxaca Negroni",
+      "descriptionEs": "Xicaru Silver, Contratto, Cocchi Vermouth di Torino, Dolin Blanc",
+      "descriptionEn": "Xicaru Silver, Contratto, Cocchi Vermouth di Torino, Dolin Blanc",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "your-julep-senor",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Your Julep, Señor",
+      "nameEn": "Your Julep, Señor",
+      "descriptionEs": "Bourbon Basil Hayden, mezcal Illegal, amargo de Angostura, hierbabuena",
+      "descriptionEn": "Basil Hayden bourbon, Illegal Mezcal, Angostura bitters, mint",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinche-sidecar",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Pinche Sidecar",
+      "nameEn": "Pinche Sidecar",
+      "descriptionEs": "Coñac Pierre Ferrand 1840 1er Cru, Cointreau, jugo de limón",
+      "descriptionEn": "Pierre Ferrand 1840 1er Cru cognac, Cointreau, lemon juice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wake-the-dead",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Wake the Dead",
+      "nameEn": "Wake the Dead",
+      "descriptionEs": "Corralejo Reposado, espresso Kimbo, vainilla",
+      "descriptionEn": "Corralejo Reposado, Kimbo espresso, vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruta-bomba-house-shot-special",
+      "categoryId": "classics-signature-cocktails",
+      "nameEs": "Fruta Bomba (Especial de Shot de la Casa)",
+      "nameEn": "Fruta Bomba (House Shot Special)",
+      "descriptionEs": "Tres Generaciones Reposado, Fruitful de sandía o papaya, agave de lima",
+      "descriptionEn": "Tres Generaciones Reposado, watermelon or papaya Fruitful, lime agave",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "un-respiro",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Un Respiro",
+      "nameEn": "Un Respiro",
+      "descriptionEs": "Aperitivo sin alcohol Ghia, piña, lima, soda. Cóctel o jarra.",
+      "descriptionEn": "Ghia non-alcoholic aperitif, pineapple, lime, soda. Cocktail or pitcher.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-raleigh",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "The Raleigh",
+      "nameEn": "The Raleigh",
+      "descriptionEs": "Pepino, menta, lima, soda. Cóctel o jarra.",
+      "descriptionEn": "Cucumber, mint, lime, soda. Cocktail or pitcher.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prickly-pear-punch",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Prickly Pear Punch",
+      "nameEn": "Prickly Pear Punch",
+      "descriptionEs": "Tuna (higo chumbo), lima, agave. Cóctel o jarra.",
+      "descriptionEn": "Prickly pear, lime, agave. Cocktail or pitcher.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "el-palmer",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "El Palmer",
+      "nameEn": "El Palmer",
+      "descriptionEs": "Té helado de maracuyá, limonada",
+      "descriptionEn": "Passionfruit iced tea, limeade",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "limeade-or-lemonade",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Limonada de lima o limón",
+      "nameEn": "Limeade or Lemonade",
+      "descriptionEs": "Jugo recién exprimido, agave, soda",
+      "descriptionEn": "Fresh squeezed juice, agave, soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passionfruit-iced-tea",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Passionfruit Iced Tea",
+      "nameEn": "Passionfruit Iced Tea",
+      "descriptionEs": "Té negro, jarabe de maracuyá",
+      "descriptionEn": "Black tea, passionfruit syrup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jarritos",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Jarritos",
+      "nameEn": "Jarritos",
+      "descriptionEs": "Azúcar de caña real, sabores surtidos",
+      "descriptionEn": "Real cane sugar, assorted flavors",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saratoga-spring-water",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Agua de manantial Saratoga",
+      "nameEn": "Saratoga Spring Water",
+      "descriptionEs": "Con gas o sin gas, 22 oz",
+      "descriptionEn": "Sparkling or still, 22 oz",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-coke",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Coca-Cola mexicana",
+      "nameEn": "Mexican Coke",
+      "descriptionEs": "Azúcar de caña real",
+      "descriptionEn": "Real cane sugar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing",
+      "categoryId": "teetotalers-non-alcoholic",
+      "nameEs": "Athletic Brewing",
+      "nameEn": "Athletic Brewing",
+      "descriptionEs": "Cerveza sin alcohol, con contenido reducido de gluten",
+      "descriptionEn": "Non-alcoholic, gluten reduced beer",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "geronimo-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Geronimo",
+      "nameEn": "Geronimo Flight",
+      "descriptionEs": "Corralejo Blanco, Clase Azul Reposado, Cincoro Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Corralejo Blanco, Clase Azul Reposado, Cincoro Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "los-altos-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Los Altos",
+      "nameEn": "Los Altos Flight",
+      "descriptionEs": "Don Julio Blanco, Chinaco Reposado, El Tesoro Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Don Julio Blanco, Chinaco Reposado, El Tesoro Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalisco-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Jalisco",
+      "nameEn": "Jalisco Flight",
+      "descriptionEs": "Espolón Blanco, Cazcabel Reposado, Lunazul Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Espolón Blanco, Cazcabel Reposado, Lunazul Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "el-valle-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata El Valle",
+      "nameEn": "El Valle Flight",
+      "descriptionEs": "Partida Blanco, Lunazul Reposado, Maestro Dobel Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Partida Blanco, Lunazul Reposado, Maestro Dobel Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rock-roll-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Rock & Roll",
+      "nameEn": "Rock & Roll Flight",
+      "descriptionEs": "Cabo Wabo Blanco, Teremana Reposado, Hotel California Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Cabo Wabo Blanco, Teremana Reposado, Hotel California Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "artesanal-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Artesanal",
+      "nameEn": "Artesanal Flight",
+      "descriptionEs": "Mezcal Alipús \"San Luis del Río\", mezcal Bozal Cuishe, Los Siete Misterios Joven. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Alipús \"San Luis del Río\" mezcal, Bozal Cuishe mezcal, Los Siete Misterios Joven. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cristalino-flight",
+      "categoryId": "agave-flights",
+      "nameEs": "Cata Cristalino",
+      "nameEn": "Cristalino Flight",
+      "descriptionEs": "Hornitos Añejo, Patrón Añejo, Herradura Ultra Añejo. Las catas de tequila se sirven con sangrita y lima con agave; las catas de mezcal con gajos de naranja y sal de gusano.",
+      "descriptionEn": "Hornitos Añejo, Patrón Añejo, Herradura Ultra Añejo. Tequila flights served with sangrita and agave lime; mezcal flights with orange wedges and sal de gusano.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zonin-prosecco-rose-187-ml",
+      "categoryId": "wine",
+      "nameEs": "Zonin Prosecco Rosé (187 ml)",
+      "nameEn": "Zonin Prosecco Rosé (187 ml)",
+      "descriptionEs": "Espumoso",
+      "descriptionEn": "Sparkling",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "freixenet-cordon-negro-cava-brut-187-ml",
+      "categoryId": "wine",
+      "nameEs": "Freixenet Cordon Negro Cava Brut (187 ml)",
+      "nameEn": "Freixenet Cordon Negro Cava Brut (187 ml)",
+      "descriptionEs": "Espumoso",
+      "descriptionEn": "Sparkling",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "argento-minimalista-rose",
+      "categoryId": "wine",
+      "nameEs": "Argento \"Minimalista\" Rosé",
+      "nameEn": "Argento \"Minimalista\" Rosé",
+      "descriptionEs": "Rosado",
+      "descriptionEn": "Rosé",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "monsignore-moscato-d-asti",
+      "categoryId": "wine",
+      "nameEs": "Monsignore Moscato d'Asti",
+      "nameEn": "Monsignore Moscato d'Asti",
+      "descriptionEs": "Espumoso",
+      "descriptionEn": "Sparkling",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dona-paula-los-cardos-sauvignon-blanc",
+      "categoryId": "wine",
+      "nameEs": "Dona Paula Los Cardos Sauvignon Blanc",
+      "nameEn": "Dona Paula Los Cardos Sauvignon Blanc",
+      "descriptionEs": "Blanco",
+      "descriptionEn": "White",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "conde-valdemar-rioja-tempranillo-blanco",
+      "categoryId": "wine",
+      "nameEs": "Conde Valdemar Rioja Tempranillo Blanco",
+      "nameEn": "Conde Valdemar Rioja Tempranillo Blanco",
+      "descriptionEs": "Blanco",
+      "descriptionEn": "White",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "folk-tree-chardonnay",
+      "categoryId": "wine",
+      "nameEs": "Folk Tree Chardonnay",
+      "nameEn": "Folk Tree Chardonnay",
+      "descriptionEs": "Blanco",
+      "descriptionEn": "White",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angelini-pinot-grigio",
+      "categoryId": "wine",
+      "nameEs": "Angelini Pinot Grigio",
+      "nameEn": "Angelini Pinot Grigio",
+      "descriptionEs": "Blanco",
+      "descriptionEn": "White",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martin-codax-albarino",
+      "categoryId": "wine",
+      "nameEs": "Martín Códax Albariño",
+      "nameEn": "Martín Códax Albariño",
+      "descriptionEs": "Blanco",
+      "descriptionEn": "White",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bodegas-san-antonio-abad-tempranillo",
+      "categoryId": "wine",
+      "nameEs": "Bodegas San Antonio Abad Tempranillo",
+      "nameEn": "Bodegas San Antonio Abad Tempranillo",
+      "descriptionEs": "Tinto",
+      "descriptionEn": "Red",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parcel-41-merlot",
+      "categoryId": "wine",
+      "nameEs": "Parcel 41 Merlot",
+      "nameEn": "Parcel 41 Merlot",
+      "descriptionEs": "Tinto",
+      "descriptionEn": "Red",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "catena-high-mountain-cabernet-sauvignon",
+      "categoryId": "wine",
+      "nameEs": "Catena \"High Mountain\" Cabernet Sauvignon",
+      "nameEn": "Catena \"High Mountain\" Cabernet Sauvignon",
+      "descriptionEs": "Tinto",
+      "descriptionEn": "Red",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "domaine-bousquet-reserve-pinot-noir",
+      "categoryId": "wine",
+      "nameEs": "Domaine Bousquet Reserve Pinot Noir",
+      "nameEn": "Domaine Bousquet Reserve Pinot Noir",
+      "descriptionEs": "Tinto",
+      "descriptionEn": "Red",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-miguel-gascon-malbec",
+      "categoryId": "wine",
+      "nameEs": "Don Miguel Gascón Malbec",
+      "nameEn": "Don Miguel Gascón Malbec",
+      "descriptionEs": "Tinto",
+      "descriptionEn": "Red",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona",
+      "categoryId": "beer",
+      "nameEs": "Corona",
+      "nameEn": "Corona",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "negra-modelo",
+      "categoryId": "beer",
+      "nameEs": "Negra Modelo",
+      "nameEn": "Negra Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-equis-amber",
+      "categoryId": "beer",
+      "nameEs": "Dos Equis Amber",
+      "nameEn": "Dos Equis Amber",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cisco-brewing-whale-s-tale",
+      "categoryId": "beer",
+      "nameEs": "Cisco Brewing Whale's Tale",
+      "nameEn": "Cisco Brewing Whale's Tale",
+      "descriptionEs": "Pale ale",
+      "descriptionEn": "Pale ale",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rotating-draft-selections",
+      "categoryId": "beer",
+      "nameEs": "Selecciones de barril rotativas",
+      "nameEn": "Rotating Draft Selections",
+      "descriptionEs": "Pregunte a su mesero",
+      "descriptionEn": "Ask your server",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Qué certificación tiene el programa de Tequila de Geronimo?",
-      "qEn": "What certification does Geronimo's Tequila program hold?",
-      "aEs": "Geronimo cuenta con la certificación CRT Award T otorgada por el Consejo Regulador del Tequila de México, garantizando autenticidad y conocimiento experto.",
-      "aEn": "Geronimo holds the CRT Award T Certification from the Mexican Tequila Regulatory Council, recognizing top-tier authenticity and tequila expertise."
-    },
-    {
-      "qEs": "¿Tienen opciones vegetarianas y sin gluten?",
-      "qEn": "Do you offer vegetarian and gluten-free options?",
-      "aEs": "Sí, contamos con numerosos platillos marcados sin gluten y opciones vegetarianas como nuestro Chile Relleno y Guacamole.",
-      "aEn": "Yes, we offer many gluten-free friendly dishes as well as vegetarian options like our Chile Relleno and Fresh Guacamole."
-    },
-    {
-      "qEs": "¿Se requiere reservación para cenar?",
-      "qEn": "Are reservations required for dining?",
-      "aEs": "Aceptamos clientes sin reservación, pero recomendamos reservar con anticipación durante los fines de semana a través de nuestro sitio web o por teléfono.",
-      "aEn": "Walk-ins are always welcome, but reservations are recommended for weekend dining via our website or telephone."
-    }
-  ]
+  "faqs": []
 }
