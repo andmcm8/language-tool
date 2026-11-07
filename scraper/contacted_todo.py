@@ -8,6 +8,7 @@ norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower().replace("&", "and").replace(
 
 db = json.load(open(os.path.join(ROOT, "outreach", "sent_emails_db.json")))
 verified = set(json.load(open(os.path.join(ROOT, "data", "verified-menus.json"))))
+verified |= set(json.load(open(os.path.join(ROOT, "scraper", "research_log.json"))))  # already researched
 by_name = {}
 for f in glob.glob(os.path.join(ROOT, "data", "merchants", "*.json")):
     d = json.load(open(f))

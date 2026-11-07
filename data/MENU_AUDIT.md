@@ -70,6 +70,20 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `vavalas-deli-catering-darien` | Vavala's Deli & Catering Darien | 156 Heights Road, Darien, CT 06820 | 178 |
 | `village-bagels` | Village Bagels | 873 Post Rd, Fairfield, CT 06824 | 42 |
 
+## Researched, no verifiable menu
+
+7 pages were searched for and still show the generated menu. Details are in `scraper/research_log.json`.
+
+| Page | Name | Status | Note |
+|---|---|---|---|
+| `anna-liffeys-irish-pub-restaurant` | Anna Liffey's Irish Pub & Restaurant | not-found | No Anna Liffey's in Fairfield found. The only listing is the New Haven pub (17 Whitney Ave), marked permanently closed. |
+| `early-bird-cafe` | Early Bird Cafe | no-menu-online | Only a delivery-app listing (Uber Eats), whose prices are marked up; not used. |
+| `mikes-pizza-restaurant` | Mike's Pizza Restaurant | no-menu-online | The listed website now redirects to an unrelated business. A Mike's Pizza may be at 1560 Post Rd, Fairfield; not confirmed. |
+| `tazza-cafe` | Tazza Cafe | no-menu-online | No menu published online. |
+| `the-georgetown-owl-saloon-restaurant` | The Georgetown Owl Saloon & Restaurant | no-menu-online | Instagram only; no menu text online. |
+| `toscana-italian-restaurant` | Toscana Italian Restaurant | no-menu-online | Official site refuses automated reads (403); no other menu found. |
+| `viva-zapata` | Viva Zapata | no-menu-online | No official website or menu found. |
+
 ## AI-generated
 
 | Page | Name | Address | Items |

@@ -14,6 +14,7 @@ import glob, json, os
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 MERCHANTS = os.path.join(ROOT, "data", "merchants")
 VERIFIED_PATH = os.path.join(ROOT, "data", "verified-menus.json")
+RESEARCH_PATH = os.path.join(ROOT, "scraper", "research_log.json")
 
 
 def sourced_slugs():
@@ -55,6 +56,12 @@ def main():
         "|---|---|---|---|",
     ]
     lines += [f"| `{r[1]}` | {r[2]} | {r[3]} | {r[4]} |" for r in src]
+    research = {k: v for k, v in json.load(open(RESEARCH_PATH)).items() if not k.startswith("_")}
+    names = {r[1]: r[2] for r in rows}
+    lines += ["", "## Researched, no verifiable menu", "",
+              f"{len(research)} pages were searched for and still show the generated menu. Details are in `scraper/research_log.json`.", "",
+              "| Page | Name | Status | Note |", "|---|---|---|---|"]
+    lines += [f"| `{k}` | {names.get(k, '')} | {v['status']} | {v.get('note', '')} |" for k, v in sorted(research.items())]
     lines += ["", "## AI-generated", "", "| Page | Name | Address | Items |", "|---|---|---|---|"]
     lines += [f"| `{r[1]}` | {r[2]} | {r[3]} | {r[4]} |" for r in gen]
     open(os.path.join(ROOT, "data", "MENU_AUDIT.md"), "w").write("\n".join(lines) + "\n")
