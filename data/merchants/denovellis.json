@@ -1,25 +1,17 @@
 {
   "storeInfo": {
     "id": "denovellis",
-    "name": "Denovelli's",
-    "tagline": "Authentic Northern Italian Cuisine & Family Dining | Cocina Italiana del Norte y Familiar",
-    "address": "Cromwell, CT 06416",
+    "name": "DeNovellis Restaurant",
+    "tagline": "Italian restaurant in Cromwell | Restaurante italiano en Cromwell",
+    "address": "2060 Silas Deane Hwy, Rocky Hill, CT 06067",
     "phone": "(860) 563-4474",
     "hours": {
-      "monday_friday": "11:00 AM - 9:00 PM",
-      "saturday": "5:00 PM - 9:30 PM",
-      "sunday": "Private In House Party Reservations Only"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
       "Bilingual Menu"
     ],
     "themeColor": "#991b1b",
@@ -32,247 +24,1730 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "pizza",
+      "nameEs": "Pizza",
+      "nameEn": "Pizza",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "specialty-pizzas",
+      "nameEs": "Pizzas especiales",
+      "nameEn": "Specialty Pizzas",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grinders",
+      "nameEs": "Grinders",
+      "nameEn": "Grinders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera (Todos los platos fuertes se sirven con ensalada y pasta)",
+      "nameEn": "Veal (All Entrees Served with a Salad and Pasta)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo (Todos los platos fuertes se sirven con ensalada y pasta)",
+      "nameEn": "Chicken (All Entrees Served with a Salad and Pasta)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Pasta (Todos los platos fuertes se sirven con ensalada)",
+      "nameEn": "Pasta (All Entrees Served with Salad)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-all-entrees-served-with-salad",
+      "nameEs": "Mariscos (Todos los platos fuertes se sirven con ensalada)",
+      "nameEn": "Seafood (All Entrees Served with Salad)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "childrens-menu-12-years-and-under",
+      "nameEs": "Menú infantil (12 años o menos)",
+      "nameEn": "Children’s Menu (12 years and under)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera (Todos los platos fuertes se sirven con ensalada y pasta) (cena)",
+      "nameEn": "Veal (All Entrees Served with a Salad and Pasta) (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo (Todos los platos fuertes se sirven con ensalada y pasta) (cena)",
+      "nameEn": "Chicken (All Entrees Served with a Salad and Pasta) (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Pasta (Todos los platos fuertes se sirven con ensalada) (cena)",
+      "nameEn": "Pasta (All Entrees Served with Salad) (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Mariscos (Todos los platos fuertes se sirven con ensalada) (cena)",
+      "nameEn": "Seafood (All Entrees Served with Salad) (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "from-the-grill-all-entrees-served-with-salad-baked-potato-and-vegetable",
+      "nameEs": "De la parrilla (todos los platos fuertes se sirven con ensalada, papa al horno y verdura)",
+      "nameEn": "From The Grill (All Entrees served with Salad, Baked Potato and Vegetable)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "party-menu-family-style-or-buffet",
+      "nameEs": "Menú para fiestas: estilo familiar o bufé",
+      "nameEn": "Party Menu: Family Style or Buffet",
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizers-catering",
+      "nameEs": "Entremeses (Catering)",
+      "nameEn": "Appetizers (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken-catering",
+      "nameEs": "Pollo (catering)",
+      "nameEn": "Chicken (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pork-catering",
+      "nameEs": "Cerdo (catering)",
+      "nameEn": "Pork (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-catering",
+      "nameEs": "Mariscos (catering)",
+      "nameEn": "Seafood (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-catering",
+      "nameEs": "Pasta (Catering)",
+      "nameEn": "Pasta (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetable-catering",
+      "nameEs": "Verduras (catering)",
+      "nameEn": "Vegetable (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salad-catering",
+      "nameEs": "Ensaladas (catering)",
+      "nameEn": "Salad (Catering)",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "denovellis-01",
+      "id": "mozzarella-sticks-4",
       "categoryId": "appetizers",
-      "nameEs": "Mozzarella Caprese",
+      "nameEs": "Palitos de mozzarella (4)",
+      "nameEn": "Mozzarella Sticks (4)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-3",
+      "categoryId": "appetizers",
+      "nameEs": "Tiras de pollo (3)",
+      "nameEn": "Chicken Fingers(3)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas búfalo",
+      "nameEn": "Buffalo Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-caprese",
+      "categoryId": "appetizers",
+      "nameEs": "Mozzarella caprese",
       "nameEn": "Mozzarella Caprese",
-      "descriptionEs": "Queso mozzarella fresco sobre rodajas de tomate con cebollas rojas y aceitunas, rociado con aceite de oliva, glaseado balsámico y albahaca fresca.",
-      "descriptionEn": "Fresh Mozzarella over sliced Tomatoes with Red Onions and Olives, drizzled with Olive Oil and Balsamic Glaze & fresh Basil.",
+      "descriptionEs": "Mozzarella fresca sobre rebanadas de tomate con cebolla morada y aceitunas, rociada con aceite de oliva, glaseado balsámico y albahaca fresca",
+      "descriptionEn": "Fresh Mozzarella over sliced Tomatoes with Red Onions and Olives Drizzled with Olive Oil and Balsamic Glaze & fresh Basil",
       "price": "$10.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "denovellis-02",
+      "id": "fried-calamari",
       "categoryId": "appetizers",
-      "nameEs": "Calamares fritos estilo Nueva York",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares estilo Nueva York",
       "nameEn": "New York Calamari",
-      "descriptionEs": "Calamares ligeramente empanizados y fritos, salteados en una salsa picante Fradiavolo.",
-      "descriptionEn": "Fried and sautéed in a spicy Fradiavolo sauce.",
+      "descriptionEs": "Fritos y salteados en salsa fra diavolo picante",
+      "descriptionEn": "Fried and sauteed in Spicy Fradiavolo Sauce",
       "price": "$17.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "denovellis-03",
+      "id": "clams-casino",
       "categoryId": "appetizers",
-      "nameEs": "Brócoli Rabe y Salchicha",
+      "nameEs": "Almejas Casino",
+      "nameEn": "Clams Casino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruschetta-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan bruschetta",
+      "nameEn": "Bruschetta Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day",
+      "categoryId": "appetizers",
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup of the Day",
+      "descriptionEs": "Pregunte a su mesero",
+      "descriptionEn": "Ask Your Server",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arancini",
+      "categoryId": "appetizers",
+      "nameEs": "Arancini",
+      "nameEn": "Arancini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-rabe-and-sausage",
+      "categoryId": "appetizers",
+      "nameEs": "Rapini con salchicha",
       "nameEn": "Broccoli Rabe and Sausage",
-      "descriptionEs": "Brócoli rabe tierno salteado con auténtica salchicha italiana y ajo.",
-      "descriptionEn": "Tender broccoli rabe sautéed with authentic Italian sausage and garlic.",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$14.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Sin Gluten",
-        "Ajo"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "denovellis-04",
+      "id": "portabello-mushrooms",
       "categoryId": "appetizers",
-      "nameEs": "Shrimp di Casa",
+      "nameEs": "Hongos portobello",
+      "nameEn": "Portabello Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zuppa-di-mussels-or-clams",
+      "categoryId": "appetizers",
+      "nameEs": "Zuppa de mejillones o almejas",
+      "nameEn": "Zuppa di Mussels or Clams",
+      "descriptionEs": "Salteados con ajo y vino blanco o en salsa fra diavolo picante",
+      "descriptionEn": "Sauteed with Garlic and White Wine or in a Spicy Fradiavolo Sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cocktail",
+      "categoryId": "appetizers",
+      "nameEs": "Cóctel de camarón",
+      "nameEn": "Shrimp Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-di-casa",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones de la casa",
       "nameEn": "Shrimp di Casa",
-      "descriptionEs": "Tres camarones jumbo envueltos en prosciutto y salteados en una salsa de ajo y brandy.",
-      "descriptionEn": "Three jumbo shrimp wrapped with prosciutto and sautéed in a garlic brandy sauce.",
+      "descriptionEs": "Tres camarones jumbo envueltos en prosciutto y salteados en salsa de ajo y brandy",
+      "descriptionEn": "Three jumbo Shrimp wrapped with Prosciutto and sauteed in a Garlic Brandy Sauce",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Recomendación del Chef",
-      "tags": [
-        "Mariscos",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "denovellis-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza Blanca de almejas",
-      "nameEn": "White Clam Pizza",
-      "descriptionEs": "Almejas tiernas de tamaño pequeño, queso mozzarella, ajo, perejil, orégano, aceite de oliva y queso rallado.",
-      "descriptionEn": "Baby clams, mozzarella, garlic, parsley, oregano, olive oil and grated cheese.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pizza",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "denovellis-06",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Pollo a la Bufálica",
-      "nameEn": "Buffalo Chicken Pizza",
-      "descriptionEs": "Trocitos de pollo en salsa picante de búfalo, queso parmesano rallado y mozzarella.",
-      "descriptionEn": "Chicken in spicy Buffalo sauce, grated Parmesan cheese and mozzarella.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Pizza",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "denovellis-07",
-      "categoryId": "mains",
-      "nameEs": "Pizza Brocotta",
-      "nameEn": "Brocotta Pizza",
-      "descriptionEs": "Brócoli, requesón ricotta, salchicha, tomates y mozzarella sobre una suave salsa blanca.",
-      "descriptionEn": "Broccoli, ricotta, sausage, tomatoes and mozzarella with white sauce.",
-      "price": "$23.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Pizza",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "denovellis-08",
-      "categoryId": "specialties",
-      "nameEs": "Ensalada de Rúcula y Remolacha",
-      "nameEn": "Arugula Beet Salad",
-      "descriptionEs": "Rúcula fresca, remolachas, cebollas rojas, champiñones frescos, tomates, queso feta, trocitos de tocino, crutones y aderezo a elegir.",
-      "descriptionEn": "Arugula, beets, red onions, fresh mushrooms, tomatoes, feta cheese, bacon crumbles, croutons and choice of dressing.",
-      "price": "$14.00",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Ensalada",
-        "Vegetariano OPC"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "denovellis-09",
-      "categoryId": "specialties",
-      "nameEs": "Antipasto Frío de la Casa",
+      "id": "cold-antipasto",
+      "categoryId": "appetizers",
+      "nameEs": "Antipasto frío",
       "nameEn": "Cold Antipasto",
-      "descriptionEs": "Salami, sopressata, prosciutto, queso cheddar Prairie Breeze, queso Asiago, pimientos asados, aceitunas y mozzarella fresca.",
-      "descriptionEn": "Salami, sopressata, prosciutto, Prairie Breeze cheddar, Asiago cheese, roasted peppers, olives and fresh mozzarella.",
+      "descriptionEs": "Salami, sopressata, prosciutto, cheddar Prairie Breeze, queso asiago, pimientos asados, aceitunas y mozzarella fresca",
+      "descriptionEn": "Salami, Sopressata, Prosciutto, Prairie Breeze Cheddar, Asiago Cheese, Roasted Peppers, Olives and fresh Mozzarella",
       "price": "$19.00",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Italiano",
-        "Embutidos"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "denovellis-10",
-      "categoryId": "beverages",
-      "nameEs": "Té Helado Estilo Italiano",
-      "nameEn": "Italian-Style Iced Tea",
-      "descriptionEs": "Té helado recién preparado con un toque de limón y menta fresca.",
-      "descriptionEn": "Freshly brewed iced tea with a twist of lemon and fresh mint.",
+      "id": "hot-antipasto-platter-for-two",
+      "categoryId": "appetizers",
+      "nameEs": "Plato de antipasto caliente para dos",
+      "nameEn": "Hot Antipasto Platter for Two",
+      "descriptionEs": "Almejas casino, champiñones rellenos, camarones envueltos en prosciutto, calamares fritos y vieiras envueltas en tocino",
+      "descriptionEn": "Clams Casino, Stuffed Mushrooms, Shrimp wrapped in Prosciutto, Fried Calamari and Scallops wrapped in Bacon",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "long-hots",
+      "categoryId": "appetizers",
+      "nameEs": "Chiles long hot",
+      "nameEn": "Long Hots",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-12-mozzarella",
+      "categoryId": "pizza",
+      "nameEs": "Mozzarella chica de 12\"",
+      "nameEn": "Small 12\" Mozzarella",
+      "descriptionEs": "Cada ingrediente adicional $1.00",
+      "descriptionEn": "Each additional item $1.00",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-16-mozzarella",
+      "categoryId": "pizza",
+      "nameEs": "Mozzarella grande de 16\"",
+      "nameEn": "Large 16\" Mozzarella",
+      "descriptionEs": "Cada ingrediente adicional $2.00",
+      "descriptionEn": "Each additional item $2.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "party-tray-pizza-with-mozzarella",
+      "categoryId": "pizza",
+      "nameEs": "Pizza en charola para fiestas con mozzarella",
+      "nameEn": "Party Tray Pizza with Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fradiavolo",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Fradiavolo",
+      "nameEn": "Fradiavolo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-anchovy",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Blanca con anchoas",
+      "nameEn": "White Anchovy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-clam",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Almejas blanca",
+      "nameEn": "White Clam",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brocotta",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Brocotta",
+      "nameEn": "Brocotta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-lovers",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Para amantes de la carne",
+      "nameEn": "Meat Lovers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spirotta",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Spirotta",
+      "nameEn": "Spirotta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian",
+      "categoryId": "specialty-pizzas",
+      "nameEs": "Vegetariano",
+      "nameEn": "Vegetarian",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de tomate",
+      "nameEn": "Tomato salad",
+      "descriptionEs": "Tomate, cebolla y pepino con albahaca fresca, aceite de oliva y menta",
+      "descriptionEn": "Tomatoes, Onions & Cucumbers with Fresh Basil & Olive oil and Mint",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "Hojas verdes mixtas, tomate, cebolla, pepino, crutones y queso cheddar",
+      "descriptionEn": "Mixed field Greens, Tomatoes, Onions, Cucumbers, Croutons and Cheddar Cheese",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, queso rallado y crutones mezclados con aderezo César",
+      "descriptionEn": "Romaine Lettuce, Grated Cheese & Croutons tossed in Caesar Dressing",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula-beet-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de arúgula y betabel",
+      "nameEn": "Arugula Beet Salad",
+      "descriptionEs": "Arúgula, betabel, cebolla morada, champiñones frescos, tomate, queso feta, trocitos de tocino, crutones y aderezo a elegir",
+      "descriptionEn": "Arugula, Beets, Red Onions, Fresh Mushrooms, Tomatoes, Feta Cheese, bacon crumbles, Croutons and Choice of Dressing",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prima-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Prima",
+      "nameEn": "Prima Salad",
+      "descriptionEs": "Hojas verdes mixtas, cebolla morada, tomate, pepino, manzana verde, arándanos secos, trocitos de tocino, queso gorgonzola, crutones y aderezo a elegir",
+      "descriptionEn": "Mixed Greens, Red Onions, Tomatoes, Cucumbers, Green Apples, Dried Cranberries, Bacon Crumbles, Gorgonzola Cheese, Croutons and Choice of Dressing",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham",
+      "categoryId": "grinders",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball",
+      "categoryId": "grinders",
+      "nameEs": "Albóndiga",
+      "nameEn": "Meatball",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "grinders",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey",
+      "categoryId": "grinders",
+      "nameEs": "Pavo",
+      "nameEn": "Turkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna",
+      "categoryId": "grinders",
+      "nameEs": "Atún",
+      "nameEn": "Tuna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "genoa",
+      "categoryId": "grinders",
+      "nameEs": "Genoa",
+      "nameEn": "Genoa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant",
+      "categoryId": "grinders",
+      "nameEs": "Berenjena",
+      "nameEn": "Eggplant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepperoni",
+      "categoryId": "grinders",
+      "nameEs": "Pepperoni",
+      "nameEn": "Pepperoni",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capicola",
+      "categoryId": "grinders",
+      "nameEs": "Capicola",
+      "nameEn": "Capicola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cutlet",
+      "categoryId": "grinders",
+      "nameEs": "Milanesa de pollo",
+      "nameEn": "Chicken Cutlet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef",
+      "categoryId": "grinders",
+      "nameEs": "Rosbif",
+      "nameEn": "Roast Beef",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-cutlet",
+      "categoryId": "grinders",
+      "nameEs": "Milanesa de ternera",
+      "nameEn": "Veal Cutlet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-combo",
+      "categoryId": "grinders",
+      "nameEs": "Combo italiano",
+      "nameEn": "Italian Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-francaise",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera a la francesa",
+      "nameEn": "Veal Francaise",
+      "descriptionEs": "Ternera rebozada en huevo en salsa de mantequilla, limón y vino, con espárragos",
+      "descriptionEn": "Egg Battered Veal in a Lemon Wine Butter Sauce W/Asparagus",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-marsala",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera Marsala",
+      "nameEn": "Veal Marsala",
+      "descriptionEs": "Escalopa de ternera salteada con champiñones en salsa de vino marsala",
+      "descriptionEn": "Veal Scallopine sauteed with Mushrooms in a Marsala Wine Sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-alla-sorrentine",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera a la sorrentina",
+      "nameEn": "Veal alla Sorrentine",
+      "descriptionEs": "Escalopa de ternera cubierta con prosciutto, berenjena y queso mozzarella en una ligera salsa marinara.",
+      "descriptionEn": "Veal Scaloppine topped with Prosciutto. Eggplant and Mozzarella Cheese in a Light Marinara Sauce.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-parmigiana",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera a la parmesana",
+      "nameEn": "Veal Parmigiana",
+      "descriptionEs": "Milanesa de ternera horneada con mozzarella y salsa marinara",
+      "descriptionEn": "Baked Veal Cutlet with Mozzarella and Marinara Sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-forte",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera Forte",
+      "nameEn": "Veal Forte",
+      "descriptionEs": "Ternera salteada con salchicha, tomate deshidratado, chiles cereza picantes y aceitunas negras en una ligera salsa de tomate",
+      "descriptionEn": "Veal sauteed with Sausage. Sun Dried Tomatoes Hot Cherry Peppers and Black Olives in a Light Tomato Sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-milanese",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Ternera milanesa",
+      "nameEn": "Veal Milanese",
+      "descriptionEs": "Sobre ensalada de arúgula con cebolla, aceitunas kalamata y queso feta, vinagreta de la casa",
+      "descriptionEn": "Over arugula salad w/onions, kalamata olives and fetta cheese, house vinaigrette",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "Milanesa de pollo horneada con queso mozzarella y salsa marinara",
+      "descriptionEn": "Baked Chicken Cutlet and Mozzarella Cheese with Marinara Sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo piccata",
+      "nameEn": "Chicken Piccata",
+      "descriptionEs": "Filete de pollo salteado con ajo, alcaparras, tomate deshidratado, alcachofas y espinaca en salsa de mantequilla al limón y vino jerez",
+      "descriptionEn": "Filet of Chicken sauteed with Garlic, Capers, Sun Dried Tomatoes, Artichokes, and Spinach in a Lemon Butter Sherry Wine Sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-alla-deno",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo a la DeNo",
+      "nameEn": "Chicken alla DeNo",
+      "descriptionEs": "Filete de pollo salteado con chalotes, alcaparras, aceitunas, tomate deshidratado y espárragos en salsa cremosa de jerez",
+      "descriptionEn": "Filet of Chicken sauteed with Shallots, Capers, Olives, Sun Dried Tomatoes, and Asparagus in a Sherry Cream Sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "Filete de pollo salteado con champiñones en salsa de vino marsala",
+      "descriptionEn": "Filet of Chicken sauteed with Mushrooms in a Marsala Wine Sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francaise",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo a la francesa",
+      "nameEn": "Chicken Francaise",
+      "descriptionEs": "Filete de pechuga de pollo rebozado en huevo, salteado en salsa de limón y vino blanco con espárragos",
+      "descriptionEn": "Egg Battered Filet of Chicken Breast sauteed in a Lemon White Wine Sauce with Asparagus",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-forte",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta",
+      "nameEs": "Pollo Forte",
+      "nameEn": "Chicken Forte",
+      "descriptionEs": "Filete de pollo salteado con salchicha, tomate deshidratado, chiles cereza picantes y aceitunas kalamata en una ligera salsa de tomate",
+      "descriptionEn": "Filet of chicken sauteed with Sausage, Sun Dried Tomatoes Hot Cherry Peppers and Kalamata Olives in a Light Tomato Sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-di-abruzzi",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Rigatoni a la Abruzzi",
+      "nameEn": "Rigatoni di Abruzzi",
+      "descriptionEs": "Salteado con tocino y prosciutto en una ligera salsa cremosa de tomate",
+      "descriptionEn": "Sauteed with Bacon and Prosciutto in a Light Cream Tomato Sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-primavera",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Rigatoni primavera",
+      "nameEn": "Rigatoni Primavera",
+      "descriptionEs": "Con tomate, cebolla, calabaza, calabacita, berenjena y pimientos; fettuccine servido con salsa de mantequilla y crema y queso parmesano, en salsa de aceite de oliva y ajo",
+      "descriptionEn": "With Tomatoes, Onions, Squash, Zucchini, Eggplant and Peppers Fettuccine served with a Butter Cream Sauce and Parmensan Cheese in an Olive Oil and Garlic Sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-arrabiatta",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Penne arrabbiata",
+      "nameEn": "Penne Arrabiatta",
+      "descriptionEs": "Salteado con salchicha y chiles cereza picantes en salsa de tomate picante",
+      "descriptionEn": "Sauteed with Sausage, and Hot Cherry Peppers in a Spicy Tomato Sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-di-vodka",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Penne a la vodka",
+      "nameEn": "Penne di Vodka",
+      "descriptionEs": "Salteado con prosciutto, chícharos y tocino en una ligera salsa cremosa de tomate y vodka",
+      "descriptionEn": "Sauteed with Prosciutto, Peas and Bacon in a Light Tomato Vodka Cream Sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Fettuccine alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "Fettuccine servido con salsa de mantequilla y crema y queso parmesano",
+      "descriptionEn": "Fettuccine served with a Butter Cream Sauce and Parmesan Cheese",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-carbonara",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Fettuccine carbonara",
+      "nameEn": "Fettuccine Carbonara",
+      "descriptionEs": "Salteado con prosciutto, tocino y chícharos",
+      "descriptionEn": "auteed with Prosciutto, Bacon & Peas",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Espagueti",
+      "nameEn": "Spaghetti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Ravioles",
+      "nameEn": "Ravioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmigiana",
+      "categoryId": "pasta-all-entrees-served-with-salad",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parmigiana",
+      "descriptionEs": "Berenjena con queso ricotta cubierta con salsa marinara y queso mozzarella, servida con una porción de penne",
+      "descriptionEn": "Eggplant with Ricotta Cheese topped with Marinara Sauce and Mozzarella Cheese served with a side of Penne Pasta",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-red-or-white-clam-sauce",
+      "categoryId": "seafood-all-entrees-served-with-salad",
+      "nameEs": "Linguine con salsa de almejas roja o blanca",
+      "nameEn": "Linguine with Red or White Clam Sauce",
+      "descriptionEs": "Salsa de almejas con almejas enteras y picadas",
+      "descriptionEn": "Clam Sauce with Whole and Chopped Clams",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi",
+      "categoryId": "seafood-all-entrees-served-with-salad",
+      "nameEs": "Camarones scampi al ajo",
+      "nameEn": "Shrimp Scampi",
+      "descriptionEs": "Camarones salteados en salsa de mantequilla al limón y vino blanco con ajo y alcaparras sobre linguine",
+      "descriptionEn": "Shrimp sauteed in a White Wine lemon butter sauce with garlic & Capers over Linguine",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari-fradiavolo",
+      "categoryId": "seafood-all-entrees-served-with-salad",
+      "nameEs": "Calamares fra diavolo",
+      "nameEn": "Calamari Fradiavolo",
+      "descriptionEs": "Calamares salteados en salsa de tomate picante servidos sobre linguine",
+      "descriptionEn": "Calamari sauteed in a Spicy Tomato Sauce served over Linguine",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-and-shrimp-with-vodka-sauce",
+      "categoryId": "seafood-all-entrees-served-with-salad",
+      "nameEs": "Vieiras y camarones con salsa de vodka",
+      "nameEn": "Scallops and Shrimp with Vodka Sauce",
+      "descriptionEs": "Vieiras y camarones salteados en salsa cremosa de tomate y vodka servidos sobre penne",
+      "descriptionEn": "Scallops and Shrimp sauteed in a Vodka Tomato Cream Sauce served over Penne",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-cheese",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Macaroni & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-with-fries",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Queso a la plancha con papas fritas",
+      "nameEn": "Grilled Cheese with Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-and-fries",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Dedos de pollo con papas fritas",
+      "nameEn": "Chicken Fingers and Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-or-shells-with-marinara",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Spaghetti o conchas con marinara",
+      "nameEn": "Spaghetti or Shells with Marinara",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo-childrens-menu",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Fettuccine Alfredo (menú infantil)",
+      "nameEn": "Fettuccine Alfredo (Children’s Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-with-meat-sauce",
+      "categoryId": "childrens-menu-12-years-and-under",
+      "nameEs": "Pasta con salsa de carne",
+      "nameEn": "Pasta with Meat Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-parmigiana-dinner",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera a la parmesana (cena)",
+      "nameEn": "Veal Parmigiana (Dinner)",
+      "descriptionEs": "Milanesa de ternera horneada con mozzarella y salsa marinara",
+      "descriptionEn": "Baked Veal Cutlet with Mozzarella and Marinara Sauce",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-marsala-dinner",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera marsala (cena)",
+      "nameEn": "Veal Marsala (Dinner)",
+      "descriptionEs": "Escalopa de ternera con champiñones salteados en salsa de vino marsala",
+      "descriptionEn": "Veal Scaloppine with sauteed Mushrooms in a Marsala Wine Sauce",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-forte-dinner",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera Forte (cena)",
+      "nameEn": "Veal Forte (Dinner)",
+      "descriptionEs": "Escalopa de ternera con salchicha salteada, tomate deshidratado, chiles cereza picantes y aceitunas kalamata en salsa marinara",
+      "descriptionEn": "Veal Scaloppine with sauteed Sausage, Sun Dried Tomatoes, Hot Cherry Peppers, and Kalamata Olives in a Marinara Sauce",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-alla-aspagi",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera a la Aspagi",
+      "nameEn": "Veal alla Aspagi",
+      "descriptionEs": "Ternera rebozada en huevo cubierta con prosciutto, espárragos y queso mozzarella en salsa de mantequilla y vino jerez",
+      "descriptionEn": "Egg battered Veal topped with Prosciutto, Asparagus, and Mozzarella Cheese in a Sherry Wine Butter Sauce",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-abruzese",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera Abruzzese",
+      "nameEn": "Veal Abruzese",
+      "descriptionEs": "Ternera rellena de salchicha, rapini, pimientos y queso mozzarella, cubierta con salsa cremosa de champiñones y gorgonzola",
+      "descriptionEn": "Veal stuffed with Sausage, Broccoli Rabe, Peppers, Mozzarella Cheese and topped with Mushroom Gorgonzola Cream Sauce",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-alla-sorrentine-dinner",
+      "categoryId": "veal-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Ternera a la sorrentina (cena)",
+      "nameEn": "Veal alla Sorrentine (Dinner)",
+      "descriptionEs": "Escalopa de ternera cubierta con prosciutto, berenjena y queso en una ligera salsa marinara",
+      "descriptionEn": "Veal scaloppine topped with Prosciutto, Eggplant and Cheese in a Light Marinara Sauce",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana-dinner",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo a la parmesana (cena)",
+      "nameEn": "Chicken Parmigiana (Dinner)",
+      "descriptionEs": "Milanesa de pollo horneada con mozzarella y salsa marinara",
+      "descriptionEn": "Baked Chicken Cutlet with Mozzarella and Marinara Sauce",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata-dinner",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo piccata (cena)",
+      "nameEn": "Chicken Piccata (Dinner)",
+      "descriptionEs": "Filete de pollo salteado con ajo, alcaparras, espinaca, tomate deshidratado y alcachofas en salsa de mantequilla al limón y vino jerez",
+      "descriptionEn": "Filet of Chicken sauteed with Garlic, Capers, Spinach, Sun Dried Tomatoes and Artichokes in a Sherry wine Lemon Butter Sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-alla-deno-dinner",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo a la DeNo (cena)",
+      "nameEn": "Chicken alla DeNo (Dinner)",
+      "descriptionEs": "Filete de pollo salteado con chalotes, alcaparras, aceitunas kalamata, tomate deshidratado y espárragos en salsa cremosa de jerez",
+      "descriptionEn": "Filet of Chicken sauteed with Shallots, Capers, Kalamata Olives, Sundried Tomatoes and Asparagus in a Sherry Cream Sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala-dinner",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo marsala (cena)",
+      "nameEn": "Chicken Marsala (Dinner)",
+      "descriptionEs": "Filete de pollo con champiñones salteados en salsa de vino marsala",
+      "descriptionEn": "Filet of Chicken with sauteed Mushrooms in a Marsala Wine Sauce",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-stone",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo Stone",
+      "nameEn": "Chicken Stone",
+      "descriptionEs": "Pollo sin hueso o con hueso, a elegir, salteado con ajo y vinagre",
+      "descriptionEn": "Choice of boneless or on the bone Chicken sauteed with Garlic and Vinegar",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francaise-dinner",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo francese (cena)",
+      "nameEn": "Chicken Francaise (Dinner)",
+      "descriptionEs": "Filete de pollo rebozado en huevo, salteado en salsa de mantequilla al limón y vino blanco con espárragos",
+      "descriptionEn": "Egg Battered Filet of Chicken sauteed in a Lemon white Wine Butter Sauce with Asparagus",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-di-nonna",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo de la nonna",
+      "nameEn": "Chicken di Nonna",
+      "descriptionEs": "Filete de pollo enrollado y relleno de queso ricotta, espinaca y salchicha, cubierto con mozzarella y salsa cremosa de marinara y pesto",
+      "descriptionEn": "Filet of Chicken rolled and stuffed with Ricotta Cheese, Spinach, and Sausage topped with Mozzarella and a Marinara Pesto Cream Sauce",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-di-fortuna",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo di Fortuna",
+      "nameEn": "Chicken di Fortuna",
+      "descriptionEs": "Filete de pollo rebozado en huevo con pimientos asados, espinaca y queso fontina, salteado en salsa de mantequilla al limón y vino jerez",
+      "descriptionEn": "Egg Battered Filet of Chicken with roasted Peppers, Spinach and Fontina Cheese sauteed in a Sherry Wine Lemon Butter Sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-casa-loma",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo Casa Loma",
+      "nameEn": "Chicken Casa Loma",
+      "descriptionEs": "Pollo sin hueso o con hueso, a elegir, salteado con chiles cereza picantes y ajo",
+      "descriptionEn": "Choice of boneless or on the bone Chicken sauteed with Hot Cherry Peppers & Garlic",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-enzo",
+      "categoryId": "chicken-all-entrees-served-with-a-salad-and-pasta-dinner",
+      "nameEs": "Pollo Enzo",
+      "nameEn": "Chicken Enzo",
+      "descriptionEs": "Pechuga de pollo cubierta con berenjena y mozzarella fresca en una ligera salsa de tomate con un toque de pesto",
+      "descriptionEn": "Chicken Breast topped with Eggplant, fresh Mozzarella in a light Tomato Sauce and touch of Pesto",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-di-abruzzi-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Rigatoni a la Abruzzi (cena)",
+      "nameEn": "Rigatoni di Abruzzi (Dinner)",
+      "descriptionEs": "Salteado con tocino y prosciutto en una ligera salsa cremosa de tomate",
+      "descriptionEn": "Sauteed with Bacon and Prosciutto in a Light Cream Tomato Sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-primavera-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Rigatoni primavera (cena)",
+      "nameEn": "Rigatoni Primavera (Dinner)",
+      "descriptionEs": "Cebolla, calabaza, berenjena, calabacita, tomate, espinaca y pimientos salteados en salsa de vino blanco y ajo",
+      "descriptionEn": "Sauteed Onions, Squash, Eggplant, Zucchini, Tomatoes, Spinach and Peppers in White wine Garlic sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-arrabiatta-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Penne arrabbiata (cena)",
+      "nameEn": "Penne Arrabiatta (Dinner)",
+      "descriptionEs": "Salteado con salchicha y chiles picantes en salsa de tomate picante.",
+      "descriptionEn": "Sauteed with Sausage and Hot Peppers in a Spicy Tomato Sauce.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-di-vodka-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Penne a la vodka (cena)",
+      "nameEn": "Penne di Vodka (Dinner)",
+      "descriptionEs": "Salteado con prosciutto, chícharos y tocino en una ligera salsa cremosa de tomate y vodka",
+      "descriptionEn": "Sauteed with Prosciutto, Peas and Bacon in a Light Tomato Vodka Cream Sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-di-mama",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Rigatoni de mamá",
+      "nameEn": "Rigatoni di Mama",
+      "descriptionEs": "Salchicha, pollo, tomate deshidratado y espinaca en salsa de aceite de oliva y ajo",
+      "descriptionEn": "Sausage, Chicken, Sundried Tomato and Spinach in an Olive oil and Garlic Sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-carbonara-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Fettuccine carbonara (cena)",
+      "nameEn": "Fettuccine Carbonara (Dinner)",
+      "descriptionEs": "Salteado con prosciutto, tocino y chícharos",
+      "descriptionEn": "Sauteed with Prosciutto, Bacon and Peas",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Fettuccine Alfredo (cena)",
+      "nameEn": "Fettuccine Alfredo (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-manicotti-or-ravioli",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Gnocchi, manicotti o ravioles",
+      "nameEn": "Gnocchi/Manicotti or Ravioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Spaghetti (cena)",
+      "nameEn": "Spaghetti (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmigiana-dinner",
+      "categoryId": "pasta-all-entrees-served-with-salad-dinner",
+      "nameEs": "Berenjena a la parmesana (cena)",
+      "nameEn": "Eggplant Parmigiana (Dinner)",
+      "descriptionEs": "Salteado con prosciutto, tocino y chícharos",
+      "descriptionEn": "Sauteed with Prosciutto, Bacon and Peas",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-red-or-white-clam-sauce-dinner",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Linguine con salsa de almejas roja o blanca (cena)",
+      "nameEn": "Linguine with Red or White Clam Sauce (Dinner)",
+      "descriptionEs": "Salsa de almejas con almejas enteras y picadas.",
+      "descriptionEn": "Clam sauce with whole and chopped Clams",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari-fradiavolo-dinner",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Calamares fra diavolo (cena)",
+      "nameEn": "Calamari Fradiavolo (Dinner)",
+      "descriptionEs": "Calamares salteados en salsa de tomate picante, servidos sobre linguine",
+      "descriptionEn": "Calamari sauteed in a spicy Tomato Sauce served over Linguine",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi-dinner",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Camarones al ajillo (scampi) (cena)",
+      "nameEn": "Shrimp Scampi (Dinner)",
+      "descriptionEs": "Camarones salteados con ajo y alcaparras en salsa de mantequilla al limón y vino blanco",
+      "descriptionEn": "Shrimp sauteed with Garlic & Capers in a lemon butter White wine sauce",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-mediterranean",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Camarones mediterráneos",
+      "nameEn": "Shrimp Mediterranean",
+      "descriptionEs": "Camarones salteados con tomate fresco, espinaca y aceitunas kalamata en una ligera salsa cremosa de champaña, servidos sobre fettuccine",
+      "descriptionEn": "Shrimp sauteed with Fresh Tomato, Spinach and Kalamata Olives in a Light Champagne Cream Sauce served over Fettuccine",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-mezzo-mezzo",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Rigatoni mitad y mitad",
+      "nameEn": "Rigatoni Mezzo-Mezzo",
+      "descriptionEs": "Camarones y vieiras salteados con cebolla, tomate deshidratado y hongos portobello en una ligera salsa cremosa de jerez con un toque de marinara",
+      "descriptionEn": "Shrimp & Scallops sauteed with Onions, Sun dried Tomatoes, Portabello Mushrooms in a light sherry Cream sauce with a touch of marinara",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-and-shrimp-with-vodka-sauce-dinner",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Vieiras y camarones con salsa de vodka (cena)",
+      "nameEn": "Scallops and Shrimp with Vodka Sauce (Dinner)",
+      "descriptionEs": "Vieiras y camarones salteados en crema de vodka con un toque de salsa de tomate fresco sobre penne",
+      "descriptionEn": "Scallops and Shrimp sauteed in a Vodka Cream with a touch of Fresh Tomato Sauce over Penne Pasta",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "san-francisco-cioppino",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Cioppino estilo San Francisco",
+      "nameEn": "San Francisco Cioppino",
+      "descriptionEs": "Camarones salteados con tomate fresco, espinaca y aceitunas kalamata en una ligera salsa cremosa de champaña, servidos sobre fettuccine",
+      "descriptionEn": "Shrimp sauteed with Fresh Tomato, Spinach and Kalamata Olives in a Light Champagne Cream Sauce served over Fettuccine",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zuppa-di-mare",
+      "categoryId": "seafood-all-entrees-served-with-salad-dinner",
+      "nameEs": "Zuppa di mare",
+      "nameEn": "Zuppa di Mare",
+      "descriptionEs": "Almejas, mejillones, calamar, pescado del día, camarones, vieiras y carne de langosta en salsa de vino blanco y ajo o salsa fra diavolo, servidos sobre linguine",
+      "descriptionEn": "Clams, Mussels, Calamari, Fish of the Day, Shrimp, Scallops and Lobster Meat in a white wine Garlic Sauce or Fradiavolo Sauce, served over Linguine",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-rib-of-beef-available-saturday-only",
+      "categoryId": "from-the-grill-all-entrees-served-with-salad-baked-potato-and-vegetable",
+      "nameEs": "Costilla de res prime, solo los sábados*",
+      "nameEn": "Prime Rib of Beef available Saturday Only*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-gorgonzola",
+      "categoryId": "from-the-grill-all-entrees-served-with-salad-baked-potato-and-vegetable",
+      "nameEs": "New York strip con gorgonzola*",
+      "nameEn": "New York Strip Gorgonzola*",
+      "descriptionEs": "New York strip cubierto con queso gorgonzola, tomate deshidratado y aceitunas kalamata",
+      "descriptionEn": "New York Strip topped with Gorgonzola Cheese, Sun Dried Tomatoes and Kalamata Olives",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip",
+      "categoryId": "from-the-grill-all-entrees-served-with-salad-baked-potato-and-vegetable",
+      "nameEs": "New York strip*",
+      "nameEn": "New York Strip*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "i",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "I",
+      "nameEn": "I",
+      "descriptionEs": "Pimientos asados con queso, ensalada, penne, pollo francese O pollo marsala, verduras mixtas, papas asadas, té o café",
+      "descriptionEn": "Roasted Peppers and Cheese, Salad, Penne Pasta, Chicken Francaise OR Chicken Marsala, Mixed Vegetables, Roasted Potatoes, Tea or Coffee",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ii",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "II",
+      "nameEn": "II",
+      "descriptionEs": "Antipasto frío, ensalada, penne, pollo francese, ternera marsala, verduras mixtas, papas asadas, té y café",
+      "descriptionEn": "Cold Antipasto, Salad, Penne Pasta, Chicken Francaise, Veal Marsala, Mixed Vegetables, Roasted Potatoes, Tea and Coffee",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iii",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "III",
+      "nameEn": "III",
+      "descriptionEs": "Calamares fritos, caprese de mozzarella, ensalada, penne, pollo marsala, ternera francese, verduras mixtas, papas asadas, té y café",
+      "descriptionEn": "Fried Calamari, Mozz. Caprese, Salad, Penne Pasta, Chicken Marsala, Veal Francaise, Mixed Vegetables, Roasted Potatoes, Tea and Coffee",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iv",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "IV",
+      "nameEn": "IV",
+      "descriptionEs": "Antipasto frío, calamares fritos, ensalada, penne, pollo francese, ternera marsala, rollatini de berenjena, verduras mixtas, papas asadas, té o café",
+      "descriptionEn": "Cold Antipasto, Fried Calamari, Salad, Penne Pasta, Chicken Francaise, Veal Marsala, Eggplant Rollatini, Mixed Vegetables, Roasted Potatoes, Tea or Coffee",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "v",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "V",
+      "nameEn": "V",
+      "descriptionEs": "Antipasto frío, calamares fritos, caprese de mozzarella, ensalada, penne, pollo piccata, ternera marsala, rollatini de berenjena, verduras mixtas, papas asadas, té o café",
+      "descriptionEn": "Cold Antipasto, Fried Calamari, Mozz. Caprese, Salad, Penne Pasta, Chicken Piccata, Veal Marsala, Eggpant Rollatini, Mixed Vegetables, Roasted Potatoes, Tea or Coffee",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vi",
+      "categoryId": "party-menu-family-style-or-buffet",
+      "nameEs": "VI",
+      "nameEn": "VI",
+      "descriptionEs": "Antipasto frío, calamares fritos, caprese de mozzarella, ensalada, penne, pollo francese, ternera marsala, lenguado relleno, verduras mixtas, papas asadas, té o café",
+      "descriptionEn": "Cold Antipasto, Fried Calamari, Mozz. Caprese, Salad, Penne Pasta, Chicken Francaise, Veal Marsala, Stuffed Sole, Mixed Vegetables, Roasted Potatoes, Tea or Coffee",
+      "price": "$39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Palitos de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-mushrooms",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Champiñones rellenos",
+      "nameEn": "Stuffed Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari-catering",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Calamares fritos (catering)",
+      "nameEn": "Fried Calamari (Catering)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-casino-catering",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Almejas casino (catering)",
+      "nameEn": "Clams Casino (Catering)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-antipasto-catering",
+      "categoryId": "appetizers-catering",
+      "nameEs": "Antipasto frío (catering)",
+      "nameEn": "Cold Antipasto (Catering)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oven-roasted",
+      "categoryId": "chicken-catering",
+      "nameEs": "Asado al horno",
+      "nameEn": "Oven Roasted",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cutlets",
+      "categoryId": "chicken-catering",
+      "nameEs": "Milanesas",
+      "nameEn": "Cutlets",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbecue",
+      "categoryId": "chicken-catering",
+      "nameEs": "A la barbacoa",
+      "nameEn": "Barbecue",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "picata",
+      "categoryId": "chicken-catering",
+      "nameEs": "Piccata",
+      "nameEn": "Picata",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "francais",
+      "categoryId": "chicken-catering",
+      "nameEs": "Francese",
+      "nameEn": "Francais",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marsala",
+      "categoryId": "chicken-catering",
+      "nameEs": "Marsala",
+      "nameEn": "Marsala",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmigiana",
+      "categoryId": "chicken-catering",
+      "nameEs": "A la parmesana",
+      "nameEn": "Parmigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cacciatore",
+      "categoryId": "chicken-catering",
+      "nameEs": "Cacciatore",
+      "nameEn": "Cacciatore",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casaloma-bone-no-bone",
+      "categoryId": "chicken-catering",
+      "nameEs": "Casa Loma (con o sin hueso)",
+      "nameEn": "Casaloma (Bone/No Bone)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-and-peppers",
+      "categoryId": "pork-catering",
+      "nameEs": "Salchicha con pimientos (catering)",
+      "nameEn": "Sausage and Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-back-ribs",
+      "categoryId": "pork-catering",
+      "nameEs": "Costillas baby back",
+      "nameEn": "Baby Back Ribs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porchetta-feeds-15ppl",
+      "categoryId": "pork-catering",
+      "nameEs": "Porchetta (alcanza para 15 personas)",
+      "nameEn": "Porchetta (Feeds 15ppl)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-and-scallops",
+      "categoryId": "seafood-catering",
+      "nameEs": "Camarones y vieiras",
+      "nameEn": "Shrimp and Scallops",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$70.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-sole",
+      "categoryId": "seafood-catering",
+      "nameEs": "Lenguado relleno",
+      "nameEn": "Stuffed Sole",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-stuffed-shrimp",
+      "categoryId": "seafood-catering",
+      "nameEs": "Camarones rellenos horneados",
+      "nameEn": "Baked Stuffed Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-salmon-or-cod",
+      "categoryId": "seafood-catering",
+      "nameEs": "Salmón o bacalao asado",
+      "nameEn": "Roasted Salmon or Cod",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne",
+      "categoryId": "pasta-catering",
+      "nameEs": "Penne",
+      "nameEn": "Penne",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti",
+      "categoryId": "pasta-catering",
+      "nameEs": "Ziti horneado",
+      "nameEn": "Baked Ziti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi",
+      "categoryId": "pasta-catering",
+      "nameEs": "Gnocchi",
+      "nameEn": "Gnocchi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna",
+      "categoryId": "pasta-catering",
+      "nameEs": "Lasaña",
+      "nameEn": "Lasagna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "pasta-catering",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "manicotti",
+      "categoryId": "pasta-catering",
+      "nameEs": "Manicotti",
+      "nameEn": "Manicotti",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$3.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Bebida",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "string-beans-hot-or-cold",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Ejotes (calientes o fríos)",
+      "nameEn": "String Beans (Hot or Cold)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-vegetables",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Verduras mixtas",
+      "nameEn": "Mixed Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-potatoes",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Papas asadas",
+      "nameEn": "Roasted Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parm",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parm",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Rollatini de berenjena *",
+      "nameEn": "Eggplant Rollatini *",
+      "descriptionEs": "20 piezas pequeñas en la media charola y 40 piezas pequeñas en la charola completa",
+      "descriptionEn": "20 small pieces in the 1/2 Tray and 40 small pieces in the Full Tray",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-rabe",
+      "categoryId": "vegetable-catering",
+      "nameEs": "Brócoli rabe",
+      "nameEn": "Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-mixed-greens",
+      "categoryId": "salad-catering",
+      "nameEs": "Hojas verdes mixtas de la casa",
+      "nameEn": "House Mixed Greens",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "salad-catering",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozz-and-tomato",
+      "categoryId": "salad-catering",
+      "nameEs": "Mozzarella con tomate",
+      "nameEn": "Mozz and Tomato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y podemos adaptar ciertos platos. Pregunte a su mesero.",
-      "aEn": "Yes, we offer several vegetarian options and can adapt certain dishes. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para cenar?",
-      "qEn": "Do you accept dinner reservations?",
-      "aEs": "Recomendamos hacer reservaciones para la cena durante los fines de semana llamando al (860) 563-4474.",
-      "aEn": "Dinner reservations are recommended on weekends by calling us at (860) 563-4474."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos?",
-      "qEn": "Do you offer catering services for events?",
-      "aEs": "Sí, ofrecemos servicio de catering para familias, fiestas privadas, bodas y eventos corporativos desde 2006.",
-      "aEn": "Yes, we offer catering for families, private parties, weddings, and corporate events since 2006."
-    }
-  ]
+  "faqs": []
 }

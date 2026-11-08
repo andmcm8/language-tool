@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "barbary-coast",
     "name": "Barbary Coast",
-    "tagline": "Maritime flavors and coastal cuisine | Sabores marítimos y cocina costera",
-    "address": "75 Thames St, Groton, CT 06340",
+    "tagline": "Mediterranean restaurant in Groton | Restaurante mediterráneo en Groton",
+    "address": "10 Water Street, Groton, CT 06355",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "5pm - Close (Tuesday - Friday)",
+      "saturday": "5pm - Close",
+      "sunday": "Closed"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Waterfront Views"
+      "Online Ordering"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -28,318 +20,339 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(860) 415-9277"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "oysters",
+      "nameEs": "Ostiones",
+      "nameEn": "Oysters",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "tapas",
+      "nameEs": "Tapas",
+      "nameEn": "Tapas",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "for-the-table",
+      "nameEs": "Para la mesa",
+      "nameEn": "For The Table",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "to-share",
+      "nameEs": "Para compartir",
+      "nameEn": "To Share",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grilled-meats-fish",
+      "nameEs": "Carnes y pescados a la parrilla",
+      "nameEn": "Grilled Meats & Fish",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cócteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "barbary-coast-01",
-      "categoryId": "appetizers",
-      "nameEs": "Almejas al Estilo de la Costa",
-      "nameEn": "Coast-Style Steamed Clams",
-      "descriptionEs": "Almejas frescas de Nueva Inglaterra al vapor con vino blanco, ajo, mantequilla de hierbas y pan crujiente.",
-      "descriptionEn": "Fresh New England steamed clams simmered in white wine, garlic, herb butter, and crusty artisanal bread.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "local-oysters-ct",
+      "categoryId": "oysters",
+      "nameEs": "Ostiones locales, CT",
+      "nameEn": "Local Oysters, CT",
+      "descriptionEs": "salsa coctelera con harissa, mignonette de manzana",
+      "descriptionEn": "harissa cocktail sauce, apple mignonette",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Crujientes",
-      "nameEn": "Crispy Calamari",
-      "descriptionEs": "Calamares ligeramente empanizados y fritos, servidos con rodajas de limón y salsa marinara picante.",
-      "descriptionEn": "Lightly battered and golden-fried calamari served with fresh lemon wedges and zesty house marinara.",
-      "price": "$14.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Crujiente",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "warm-marinated-olives",
+      "categoryId": "tapas",
+      "nameEs": "Aceitunas marinadas tibias",
+      "nameEn": "Warm Marinated Olives",
+      "descriptionEs": "aceite de oliva extra virgen, ralladura de limón, ajo, hierbas",
+      "descriptionEn": "extra virgin olive oil, lemon zest, garlic, herbs",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-03",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Mariscos (New England Clam Chowder)",
-      "nameEn": "New England Clam Chowder",
-      "descriptionEs": "Crema espesa y reconfortante con almejas tiernas, papas y tocino crujiente. Tradición de Nueva Inglaterra.",
-      "descriptionEn": "Rich and comforting thick chowder loaded with tender clams, diced potatoes, and smoked bacon. A local favorite.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Sopa",
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "spreads-breads",
+      "categoryId": "tapas",
+      "nameEs": "Untables y panes",
+      "nameEn": "Spreads & Breads",
+      "descriptionEs": "aceite de oliva, muhammara, zhoug picante",
+      "descriptionEn": "olive oil, muhammara, spicy zhoug",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-04",
-      "categoryId": "appetizers",
-      "nameEs": "Pastelillos de Cangrejo",
-      "nameEn": "Maryland Crab Cakes",
-      "descriptionEs": "Pastelillos de carne de cangrejo dorados a la sartén, servidos con salsa tártara de chipotle y ensalada de repollo.",
-      "descriptionEn": "Pan-seared jumbo lump crab cakes served with chipotle tartar sauce and crisp house coleslaw.",
-      "price": "$17.95",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Cangrejo",
-        "Especial"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Huevo",
-        "Gluten"
-      ],
+      "id": "hummus-bread",
+      "categoryId": "tapas",
+      "nameEs": "Hummus con pan",
+      "nameEn": "Hummus & Bread",
+      "descriptionEs": "garbanzo, za'atar, ajo crujiente, aceite de oliva",
+      "descriptionEn": "chickpea, za'atar, crispy garlic, olive oil",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-05",
-      "categoryId": "mains",
-      "nameEs": "Rollo de Langosta Clásico",
-      "nameEn": "Classic Lobster Roll",
-      "descriptionEs": "Generosa porción de carne de langosta fresca con mantequilla tibia o mayonesa ligera, en un pan brioche tostado.",
-      "descriptionEn": "Generous chunks of fresh lobster meat tossed in warm drawn butter or light mayo, served in a toasted brioche roll.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Estrella",
-      "tags": [
-        "Langosta",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "wrinkled-potatoes",
+      "categoryId": "tapas",
+      "nameEs": "Papas arrugadas",
+      "nameEn": "Wrinkled Potatoes",
+      "descriptionEs": "mojo rojo, alioli de ajo",
+      "descriptionEn": "mojo roja, garlic aioli",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-06",
-      "categoryId": "mains",
-      "nameEs": "Pescado con Papas Fritas (Fish & Chips)",
-      "nameEn": "Traditional Fish & Chips",
-      "descriptionEs": "Filete de eglefin fresco empanizado en cerveza, frito hasta estar dorado y crujiente. Acompañado de papas fritas y salsa tártara.",
-      "descriptionEn": "Fresh haddock fillet dipped in a crispy house beer batter, fried golden brown. Served with fries and tartar sauce.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Pescado",
-        "Frito"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
+      "id": "tahini-caesar",
+      "categoryId": "for-the-table",
+      "nameEs": "César de tahini",
+      "nameEn": "Tahini Caesar",
+      "descriptionEs": "lechugas romanas, migas de za'atar, rábano, hierbas, parmesano",
+      "descriptionEn": "romaine lettuces, za'atar crumb, radish, herbs, parmesan",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-07",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Costera con Tocino",
-      "nameEn": "Coastal Bacon Burger",
-      "descriptionEs": "Carne de res jugosa, queso cheddar añejo, tocino ahumado, lechuga, tomate y salsa especial en pan brioche.",
-      "descriptionEn": "Juicy beef patty topped with aged cheddar, smoked bacon, crisp lettuce, tomato, and signature sauce on brioche.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Hamburguesa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "smoked-carrots",
+      "categoryId": "for-the-table",
+      "nameEs": "Zanahorias ahumadas",
+      "nameEn": "Smoked Carrots",
+      "descriptionEs": "untable de yogur con hierbas, pistaches, reducción de naranja sanguina",
+      "descriptionEn": "herb yogurt spread, pistachios, blood orange reduction",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-08",
-      "categoryId": "mains",
-      "nameEs": "Pasta con Camarones al Ajillo",
-      "nameEn": "Garlic Shrimp Pasta",
-      "descriptionEs": "Camarones salteados con ajo, tomates cherry, vino blanco y albahaca fresca sobre pasta linguine.",
-      "descriptionEn": "Sautéed jumbo shrimp tossed with garlic, cherry tomatoes, white wine, and fresh basil over linguine pasta.",
-      "price": "$21.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Pasta",
-        "Camarones"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "saganaki",
+      "categoryId": "for-the-table",
+      "nameEs": "Saganaki",
+      "nameEn": "Saganaki",
+      "descriptionEs": "queso halloumi frito en sartén, mermelada de cebolla morada, melón con miel, frisée, vinagreta de chile calabrés",
+      "descriptionEn": "pan fried halloumi cheese, red onion jam, honey kissed melon, frisée, calabrian chile vinaigrette",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-09",
-      "categoryId": "specialties",
-      "nameEs": "Banquete del Capitán (Cioppino)",
-      "nameEn": "Captain's Cioppino Seafood Stew",
-      "descriptionEs": "Surtido abundante de langosta, camarones, almejas, mejillones y pescado en un caldo aromático de tomate y vino blanco.",
-      "descriptionEn": "A rich stew featuring lobster tail, shrimp, clams, mussels, and fresh fish in a savory tomato and white wine broth.",
-      "price": "$32.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Pescado"
-      ],
+      "id": "confit-duck",
+      "categoryId": "for-the-table",
+      "nameEs": "Pato confitado",
+      "nameEn": "Confit Duck",
+      "descriptionEs": "baghrir, ras el hanout, reducción de naranja y miel",
+      "descriptionEn": "baghrir, ras el hanout, orange honey reduction",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-10",
-      "categoryId": "specialties",
-      "nameEs": "Filete de Salmón a la Parrilla",
-      "nameEn": "Grilled Atlantic Salmon",
-      "descriptionEs": "Salmón fresco glaseado con miel y mostaza, servido con espárragos a la parrilla y puré de papas al ajo.",
-      "descriptionEn": "Fresh Atlantic salmon glazed with honey mustard, served alongside grilled asparagus and garlic mashed potatoes.",
-      "price": "$24.50",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "gambas-al-ajillo",
+      "categoryId": "for-the-table",
+      "nameEs": "Gambas al ajillo",
+      "nameEn": "Gambas Al Ajillo",
+      "descriptionEs": "langostinos con cáscara, ajo, vino blanco, hierbas, focaccia",
+      "descriptionEn": "shell on prawns, garlic, white wine, herbs, focaccia",
+      "price": "$19.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-11",
-      "categoryId": "specialties",
-      "nameEs": "Costillas BBQ Barbary Coast",
-      "nameEn": "Barbary BBQ Ribs",
-      "descriptionEs": "Costillas de cerdo tiernas ahumadas lentamente y glaseadas con salsa barbacoa casera. Con papas fritas y ensalada.",
-      "descriptionEn": "Slow-smoked tender pork ribs brushed with our signature homemade BBQ sauce, served with fries and coleslaw.",
-      "price": "$25.95",
-      "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "BBQ"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "porchetta",
+      "categoryId": "to-share",
+      "nameEs": "Porchetta",
+      "nameEn": "Porchetta",
+      "descriptionEs": "panceta de cerdo crujiente, espuma de hinojo y ajo puerro,\nmanzanas encurtidas y mostaza",
+      "descriptionEn": "crispy pork belly, garleek fennel foam, \npickled apples & mustard",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada de Moras Silvestres",
-      "nameEn": "Wild Blackberry Lemonade",
-      "descriptionEs": "Limonada fresca de la casa infusionada con moras silvestres y un toque de menta.",
-      "descriptionEn": "House-made fresh lemonade infused with hand-picked wild blackberries and fresh mint leaves.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "pei-mussels",
+      "categoryId": "to-share",
+      "nameEs": "Mejillones de la Isla del Príncipe Eduardo",
+      "nameEn": "PEI Mussels",
+      "descriptionEs": "vino blanco, ajo, mantequilla de harissa, hierbas",
+      "descriptionEn": "white wine, garlic, harissa butter, herbs",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "barbary-coast-13",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal Local IPA",
-      "nameEn": "Local Craft IPA",
-      "descriptionEs": "Cerveza IPA de barril elaborada en cervecerías locales de Connecticut. Notas cítricas y tropicales.",
-      "descriptionEn": "Draft IPA brewed locally in Connecticut. Crisp with refreshing citrus and tropical hop notes.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Local",
-      "tags": [
-        "Cerveza",
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "tortellini",
+      "categoryId": "to-share",
+      "nameEs": "Tortellini",
+      "nameEn": "Tortellini",
+      "descriptionEs": "relleno de zanahoria y ricotta, harissa, pimienta de Alepo,\nlimón, crema, dukkah de avellana",
+      "descriptionEn": "carrot & ricotta filling, harissa, aleppo pepper, \nlemon, cream, hazelnut dukkah",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mousakka",
+      "categoryId": "to-share",
+      "nameEs": "Musaka",
+      "nameEn": "Mousakka",
+      "descriptionEs": "cordero local braseado, berenjena a la parrilla, bechamel de queso de cabra",
+      "descriptionEn": "braised local lamb, grilled eggplant, goat cheese bechamel",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-spanish-octopus",
+      "categoryId": "to-share",
+      "nameEs": "Pulpo español a la parrilla",
+      "nameEn": "Grilled Spanish Octopus",
+      "descriptionEs": "puré de lenteja roja, gremolata de pistache, limón",
+      "descriptionEn": "red lentil puree, pistachio gremolata, lime",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip",
+      "categoryId": "grilled-meats-fish",
+      "nameEs": "NY strip",
+      "nameEn": "NY Strip",
+      "descriptionEs": "demi-glace especiado norafricano, canela, cuscús,\ncebollitas cipollini, grosellas negras, almendras, ajonjolí",
+      "descriptionEn": "North African spiced demi, cinnamon, cous cous, \ncipollini onions, black currants, almonds, sesame",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iberian-duroc-pork-chop",
+      "categoryId": "grilled-meats-fish",
+      "nameEs": "Chuleta de cerdo ibérico Duroc",
+      "nameEn": "Iberian Duroc Pork Chop",
+      "descriptionEs": "pimientos scarpariello, polenta cremosa",
+      "descriptionEn": "scarpariello peppers, creamy polenta",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-chicken",
+      "categoryId": "grilled-meats-fish",
+      "nameEs": "Medio pollo",
+      "nameEn": "Half Chicken",
+      "descriptionEs": "7 especias libanesas, limón asado,\ncebolla marinada en zumaque, toum",
+      "descriptionEn": "lebanese 7 spice, charred lemon, \nsumac marinated onions, toum",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino-whole-fish",
+      "categoryId": "grilled-meats-fish",
+      "nameEs": "Branzino entero",
+      "nameEn": "Branzino Whole Fish",
+      "descriptionEs": "chermoula, pimientos y aceitunas marinados, hierbas",
+      "descriptionEn": "chermoula, marinated peppers & olives, herbs",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carmelized-white-chocolate-creme-brulee",
+      "categoryId": "dessert",
+      "nameEs": "Crème brûlée de chocolate blanco caramelizado",
+      "nameEn": "Carmelized White Chocolate Creme Brulee",
+      "descriptionEs": "crema batida con miel",
+      "descriptionEn": "honey whipped cream",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-pudding",
+      "categoryId": "dessert",
+      "nameEs": "Pudín de limón",
+      "nameEn": "Lemon Pudding",
+      "descriptionEs": "pistache, helado de vainilla, aceite de oliva",
+      "descriptionEn": "pistachio, vanilla bean ice cream, olive oil",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sundae",
+      "categoryId": "dessert",
+      "nameEs": "Sundae",
+      "nameEn": "Sundae",
+      "descriptionEs": "kataifi, helado de pistache, chocolate batido con caramelo, halva de chocolate oscuro",
+      "descriptionEn": "kataifi, pistachio ice cream, whipped chocolate caramel, dark chocolate halva",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "affogato",
+      "categoryId": "dessert",
+      "nameEs": "Affogato",
+      "nameEn": "Affogato",
+      "descriptionEs": "espresso recién hecho, helado de vainilla hecho en casa",
+      "descriptionEn": "fresh brewed espresso, house made vanilla ice cream",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "istanbul-not-constantinople",
+      "categoryId": "cocktails",
+      "nameEs": "Estambul (no Constantinopla)",
+      "nameEn": "Istanbul (not constantinople)",
+      "descriptionEs": "bourbon infusionado con té turco, jarabe de higo caramelizado, amargos de cardamomo",
+      "descriptionEn": "turkish tea infused bourbon, caramelized fig syrup, cardamom bitters",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "voulez-vouz",
+      "categoryId": "cocktails",
+      "nameEs": "Voulez-Vouz",
+      "nameEn": "Voulez-Vouz",
+      "descriptionEs": "vodka infusionado con pomelo, toronja, limón",
+      "descriptionEn": "pomelo infused vodka, grapefruit, lime",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "descriptionEs": "vino tinto, licor de higo, brandy, cítricos, miel, canela",
+      "descriptionEn": "red wine, fig liqueur, brandy, citrus, honey, cinnamon",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-arabian",
+      "categoryId": "cocktails",
+      "nameEs": "Árabe picante",
+      "nameEn": "Spicy Arabian",
+      "descriptionEs": "ron ligero lavado con tahini, zhoug picante,\npiña, limón, azúcar",
+      "descriptionEn": "tahini washed light rum, spicy zhoug, \npineapple, lime, sugar",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "cocktails",
+      "nameEs": "Espresso martini",
+      "nameEn": "Espresso Martini",
+      "descriptionEs": "vodka, espresso, licor de espresso, nuez negra Forthave, azúcar morena, canela",
+      "descriptionEn": "vodka, espresso, espresso liqueur, forthave black walnut, brown sugar, cinnamon",
+      "price": "$16.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones vegetarianas y varios platos se pueden adaptar para ser libres de gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer vegetarian options and several dishes can be modified to be gluten-free. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones para grupos grandes por teléfono.",
-      "aEn": "We welcome walk-ins and accept phone reservations for larger parties."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Sí, disponemos de un lote de estacionamiento contiguo y espacio adicional en la calle.",
-      "aEn": "Yes, we have an adjacent parking lot as well as available street parking."
-    }
-  ]
+  "faqs": []
 }
