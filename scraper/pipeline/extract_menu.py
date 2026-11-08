@@ -181,6 +181,24 @@ def name_candidates(texts):
     return out
 
 
+SIZE_UNIT = re.compile(r"\s*(?:”|\"|''|-?inch(?:es)?\b|in\.?(?=\s|$|/)|oz\b|pcs?\b|pieces?\b|ct\b|lbs?\b|slices?\b|qt\b)", re.I)
+
+
+def money_values(price):
+    """Amounts in a model price string, skipping sizes/counts ('10” $16.29', 'For 2 $10.95', '6 pcs $11.59')."""
+    p = price.replace(",", ".")
+    vals = []
+    for m in re.finditer(r"(\$\s?)?(\d+(?:\.\d{1,2})?)", p):
+        if SIZE_UNIT.match(p, m.end()):
+            continue
+        pre = p[max(0, m.start() - 5):m.start()].lower()
+        if not m.group(1) and re.search(r"(for|x|of)\s*$", pre):
+            continue
+        vals.append((float(m.group(2)), bool(m.group(1)) or "." in m.group(2)))
+    strong = [v for v, s in vals if s]
+    return strong or [v for v, s in vals]
+
+
 def verify(sections, texts):
     full = "\n".join(t for _, t in texts)
     N = norm(full)
@@ -245,16 +263,17 @@ def verify(sections, texts):
                 desc = ""
                 blanked_desc += 1
         if price:
-            m = re.search(r"\d+(?:\.\d{1,2})?", price.replace(",", "."))
-            ok = False
-            if m:
-                val = float(m.group())
-                j = bisect.bisect_right(starts, pos)
-                nxt = starts[j] if j < len(starts) else len(N)
-                window = N[pos + len(nn): min(nxt, pos + len(nn) + 400 + len(norm(desc)))]
-                ok = any(abs(float(pm.group()) - val) < 0.001 for pm in re.finditer(r"\d+(?:\.\d{1,2})?", window))
-            if ok:
-                price = "$%.2f" % val
+            vals = money_values(price)
+            j = bisect.bisect_right(starts, pos)
+            nxt = starts[j] if j < len(starts) else len(N)
+            window = N[pos + len(nn): min(nxt, pos + len(nn) + 400 + len(norm(desc)))]
+            wnums = [float(pm.group()) for pm in re.finditer(r"\d+(?:\.\d{1,2})?", window)]
+            okv = [v for v in vals if any(abs(w - v) < 0.001 for w in wnums)]
+            if vals and len(okv) == len(vals) and len(vals) > 1:
+                price = re.sub(r"\s+", " ", price).strip()  # multi-size price, every amount on the page
+                nprice_ok += 1
+            elif okv:
+                price = " / ".join("$%.2f" % v for v in okv)
                 nprice_ok += 1
             else:
                 price = ""
