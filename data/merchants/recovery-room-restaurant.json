@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "recovery-room-restaurant",
     "name": "Recovery Room Restaurant",
-    "tagline": "Authentic local comfort food and neighborhood gathering spot in New London | Comida reconfortante y ambiente familiar en New London",
+    "tagline": "Restaurant in New London | Restaurant en New London",
     "address": "445 Ocean Ave, New London, CT 06320",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -32,274 +25,1034 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "signature-salads",
+      "nameEs": "Ensaladas de la casa",
+      "nameEn": "Signature Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "lunch-time-menu",
+      "nameEs": "Menú de almuerzo",
+      "nameEn": "Lunch Time Menu",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "red-pizzas",
+      "nameEs": "Pizzas rojas",
+      "nameEn": "Red Pizzas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-pizzas",
+      "nameEs": "Pizzas blancas",
+      "nameEn": "White Pizzas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "toppings",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-entree-menu",
+      "nameEs": "Menú de platos fuertes para la cena",
+      "nameEn": "Dinner Entree Menu",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "recovery-room-restaurant-01",
+      "id": "soup-of-the-day",
       "categoryId": "appetizers",
-      "nameEs": "Alitas Picantes al Estilo Recovery",
-      "nameEn": "Recovery Room Buffalo Wings",
-      "descriptionEs": "Alitas de pollo crujientes bañadas en nuestra salsa picante secreta de la casa, servidas con aderezo de queso azul y bastones de apio fresco.",
-      "descriptionEn": "Crispy chicken wings tossed in our signature house buffalo sauce, served with creamy blue cheese dressing and fresh celery sticks.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup of the Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-02",
+      "id": "pasta-fagiole",
       "categoryId": "appetizers",
-      "nameEs": "Pieles de Papa Cargadas",
-      "nameEn": "Loaded Potato Skins",
-      "descriptionEs": "Pieles de papa horneadas y crujientes repletas de queso cheddar fundido, tocino ahumado crujiente y cebollín fresco, acompañadas de crema agria.",
-      "descriptionEn": "Crispy baked potato skins loaded with melted cheddar cheese, crispy smoked bacon, and fresh scallions, served with a side of sour cream.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Casero",
-        "Vegetariano Opcional"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Pasta Fagiole",
+      "nameEn": "Pasta Fagiole",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-03",
+      "id": "focaccia-bread-pizza-wheel",
       "categoryId": "appetizers",
-      "nameEs": "Calamares Dorados Crujientes",
-      "nameEn": "Crispy Golden Calamari",
-      "descriptionEs": "Calamares tiernos empanizados y fritos a la perfección dorada, servidos con rodajas de limón fresco y nuestra salsa marinara casera.",
-      "descriptionEn": "Tender calamari lightly breaded and fried to golden perfection, served with fresh lemon wedges and our house-made marinara dipping sauce.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "nameEs": "Pan Focaccia (Rueda de pizza)",
+      "nameEn": "Focaccia Bread (Pizza Wheel)",
+      "descriptionEs": "Nuestra famosa masa de pizza de corteza delgada cubierta con queso parmesano, aceite de oliva y romero fresco",
+      "descriptionEn": "Our famous thin crust pizza dough topped with parmesan cheese, olive oil and fresh rosemary",
+      "price": "5.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Clásica Recovery",
-      "nameEn": "Recovery Classic Cheeseburger",
-      "descriptionEs": "Jugosa carne de res Angus a la parrilla con queso americano derretido, lechuga crujiente, tomate y cebolla morada en un pan brioche tostado.",
-      "descriptionEn": "Juicy grilled Angus beef patty topped with melted American cheese, crisp lettuce, tomato, and red onion on a toasted brioche bun.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne Angus",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "garlic-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "Pan ciabatta hecho en casa cubierto con ajo picado, aceite, mantequilla y una generosa cantidad de queso mozzarella y perejil",
+      "descriptionEn": "House made ciabatta bread topped with chopped garlic, oil, butter and a generous amount of mozzarella cheese and parsley",
+      "price": "12.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-05",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo a la Parrilla con Tocino y Aguacate",
-      "nameEn": "Grilled Chicken Bacon Avocado Sandwich",
-      "descriptionEs": "Pechuga de pollo marinada a la parrilla, tocino crujiente, aguacate fresco, lechuga y mayonesa de chipotle en pan rústico.",
-      "descriptionEn": "Marinated grilled chicken breast, crispy bacon, fresh avocado, lettuce, and chipotle mayo served on rustic artisan bread.",
-      "price": "$15.75",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Saludable",
-        "Aves"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "olive-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de aceitunas",
+      "nameEn": "Olive Bread",
+      "descriptionEs": "Pan ciabatta hecho en casa cubierto con aceitunas importadas, cebolla caramelizada, pesto, queso mozzarella y queso parmesano en lascas *** el pesto contiene nueces",
+      "descriptionEn": "House made ciabatta bread topped with imported olives, caramelized onions, pesto, mozzarella cheese and shaved parmesan cheese *** pesto contains nuts",
+      "price": "13.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Wrap de Pavo Club",
-      "nameEn": "Turkey Club Wrap",
-      "descriptionEs": "Pavo rebanado, tocino ahumado, lechuga, tomate y mayonesa envueltos firmemente en una tortilla de trigo integral.",
-      "descriptionEn": "Sliced roast turkey, smoked bacon, lettuce, tomato, and mayonnaise wrapped snugly in a warm whole wheat tortilla.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "Ligero",
-      "tags": [
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares",
+      "nameEn": "Calamari",
+      "descriptionEs": "Ligeramente empanizado y bañado en nuestra salsa aioli de pimiento cherry hecha en casa",
+      "descriptionEn": "Lightly breaded and tossed in our house made cherry pepper aioli sauce",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-07",
-      "categoryId": "specialties",
-      "nameEs": "Pescado con Papas Fritas (Fish & Chips)",
-      "nameEn": "New England Fish & Chips",
-      "descriptionEs": "Filete de bacalao fresco empanizado en cerveza local, frito hasta quedar crujiente. Servido con papas fritas sazonadas, ensalada de repollo y salsa tártara.",
-      "descriptionEn": "Fresh local cod fillet dipped in a craft beer batter and fried to perfection. Served with seasoned french fries, coleslaw, and tartar sauce.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Tradicional"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "mussels-and-clams-zuppa",
+      "categoryId": "appetizers",
+      "nameEs": "Zuppa de mejillones y almejas",
+      "nameEn": "Mussels and Clams Zuppa",
+      "descriptionEs": "Cocido a fuego lento en un caldo ligero de tomate con hierbas frescas",
+      "descriptionEn": "Simmered in a light tomato broth with fresh herbs",
+      "price": "16.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-08",
-      "categoryId": "specialties",
-      "nameEs": "Costillas BBQ Estilo Memphis",
-      "nameEn": "Memphis Style BBQ Ribs",
-      "descriptionEs": "Tiernas costillas de cerdo ahumadas lentamente y bañadas en nuestra salsa barbacoa dulce y ahumada, servidas con papas fritas y ensalada casera.",
-      "descriptionEn": "Slow-smoked tender pork ribs basted in our sweet and smoky barbecue sauce, served with french fries and house coleslaw.",
-      "price": "$24.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Ahumado",
-        "Carne"
-      ],
-      "allergens": [],
+      "id": "shrimp-bruschetta",
+      "categoryId": "appetizers",
+      "nameEs": "Bruschetta de camarones",
+      "nameEn": "Shrimp Bruschetta",
+      "descriptionEs": "Camarones jumbo salteados a la plancha, corazones de alcachofa, espinaca, tomates pera y salsa scampi sobre pan fresco tostado cubierto con queso parmesano en lascas",
+      "descriptionEn": "Pan seared jumbo shrimp, artichoke hearts, spinach, plum tomatoes and scampi sauce over toasted fresh bread topped with shaved parmesan cheese",
+      "price": "16.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-09",
-      "categoryId": "specialties",
-      "nameEs": "Pasta Alfredo con Pollo",
-      "nameEn": "Chicken Alfredo Pasta",
-      "descriptionEs": "Fettuccine tierno bañado en una rica y cremosa salsa de queso parmesano y ajo, coronado con pechuga de pollo a la parrilla en rodajas.",
-      "descriptionEn": "Tender fettuccine tossed in a rich, creamy garlic and parmesan cheese sauce, topped with sliced grilled chicken breast.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Cremoso",
-      "tags": [
-        "Pasta",
-        "Aves"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "asian-chicken-dumplings",
+      "categoryId": "appetizers",
+      "nameEs": "Dumplings asiáticos de pollo",
+      "nameEn": "Asian Chicken Dumplings",
+      "descriptionEs": "Pollo, hierba de limón, maíz nativo cubierto con glaseado dulce de ajo y soya (se ofrece frito o al vapor)",
+      "descriptionEn": "Chicken, lemongrass, native corn topped with sweet garlic soy glaze (offered fried or steamed)",
+      "price": "13.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-10",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera de Frambuesa",
-      "nameEn": "House Raspberry Lemonade",
-      "descriptionEs": "Refrescante limonada natural hecha en casa con un toque dulce de puré de frambuesas frescas.",
-      "descriptionEn": "Refreshing all-natural house-made lemonade infused with a sweet puree of fresh raspberries.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "arancinis",
+      "categoryId": "appetizers",
+      "nameEs": "Arancinis",
+      "nameEn": "Arancinis",
+      "descriptionEs": "(3) Bolitas de arroz arborio rellenas de queso mozzarella fresco, ligeramente empanizadas y cubiertas con salsa cremosa de tomate",
+      "descriptionEn": "(3) Arborio rice balls stuffed with fresh mozzarella cheese and lightly coated with bread crumbs topped with tomato cream sauce",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-11",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal Local de Nueva Inglaterra",
-      "nameEn": "New England Local Craft Beer",
-      "descriptionEs": "Selección rotativa de cervezas IPA y ales artesanales locales de cervecerías de Connecticut.",
-      "descriptionEn": "Rotating selection of local craft IPAs and ales from Connecticut microbreweries.",
-      "price": "$7.00",
-      "popular": true,
-      "badge": "Local",
-      "tags": [
-        "Alcohol",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "chicken-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "10 alitas salteadas con la opción de búfalo, BBQ, miel picante o parmesano y ajo, bañadas en mantequilla de ajo y parmesano",
+      "descriptionEn": "10 wings tossed in your choice of buffalo, BBQ, spicy honey or garlic parmesan tossed with garlic parmesan butter",
+      "price": "16.95",
       "ctaType": "in_store"
     },
     {
-      "id": "recovery-room-restaurant-12",
-      "categoryId": "beverages",
-      "nameEs": "Té Helado Estilo Sureño",
-      "nameEn": "Southern Style Sweet Iced Tea",
-      "descriptionEs": "Té negro recién infusionado, ligeramente endulzado y servido bien frío con una rodaja de limón.",
-      "descriptionEn": "Freshly brewed black tea, lightly sweetened and served over ice with a lemon wheel.",
-      "price": "$3.75",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "chopped-pasta-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Ensalada de pasta picada",
+      "nameEn": "Chopped Pasta Salad",
+      "descriptionEs": "Base de nuestra ensalada de jardín, con gorgonzola, pasta, pechuga de pollo en cubos y tocino crujiente, cubierta con nuestro aderezo balsámico de la casa",
+      "descriptionEn": "Start with our garden salad then add gorgonzola, pasta, diced chicken breast and crispy bacon topped with our house balsamic dressing",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-ocean-avenue-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "The Ocean Avenue Salad",
+      "nameEn": "The Ocean Avenue Salad",
+      "descriptionEs": "Verduras frescas, tomates cherry, cebolla morada, champiñones, pechuga de pollo en cubos y tiras de queso cheddar, cubiertas con su elección de chutney o nuestro aderezo balsámico de la casa",
+      "descriptionEn": "Fresh greens, grape tomatoes, red onions, mushrooms, diced chicken breast and cheddar cheese strips topped with a choice of chutney or our house balsamic dressing",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asian-sesame-chicken-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Ensalada asiática de pollo con sésamo",
+      "nameEn": "Asian Sesame Chicken Salad",
+      "descriptionEs": "Pollo a la parrilla cubierto con satay de cacahuate, servido sobre verduras mixtas con pasta cabello de ángel, wontons crujientes, mandarinas y tomates cherry, bañados en aderezo de miel y mostaza al champán *** contiene nueces",
+      "descriptionEn": "Grilled chicken topped with peanut satay served over mixed greens with angel hair pasta, crispy wontons, mandarin oranges and grape tomatoes tossed with a champagne honey mustard dressing *** contains nuts",
+      "price": "17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuscan-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Ensalada toscana",
+      "nameEn": "Tuscan Salad",
+      "descriptionEs": "Verduras mixtas, tomates cherry, cebolla morada, elote y pasta cabello de ángel, cubiertos con pechuga de pollo empanizada con costra de parmesano, con aderezo de limón y vinagreta",
+      "descriptionEn": "Mixed greens, grape tomatoes, red onion, corn, angel hair pasta topped with breaded Parmesan encrusted chicken breast with lemon and vinaigrette dressing",
+      "price": "19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "Verduras frescas, tomates cherry, cebollas moradas y champiñones, con su elección de aderezo",
+      "descriptionEn": "Fresh greens, grape tomatoes, red onions, mushrooms topped with your choice of dressing",
+      "price": "10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harbor-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Harbor Salad",
+      "nameEn": "Harbor Salad",
+      "descriptionEs": "Verduras mixtas, tomates cherry, cebollas moradas, nueces caramelizadas, arándanos secos y queso feta, con nuestro aderezo balsámico de la casa *** contiene nueces",
+      "descriptionEn": "Mixed greens, grape tomatoes, red onions, candied walnuts, dried cranberries and feta cheese topped with our house balsamic dressing *** contains nuts",
+      "price": "14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Verduras frescas, crutones, queso parmesano rallado y en lascas, con aderezo César cremoso",
+      "descriptionEn": "Fresh greens, croutons, grated and shaved parmesan cheese topped with creamy caesar dressing",
+      "price": "10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-a-scoop-of-tuna-salad-to-any-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Agregue una porción de ensalada de atún a cualquier ensalada",
+      "nameEn": "Add a scoop of tuna salad to any salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-grilled-or-blackened-chicken-to-any-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Agregue pollo a la parrilla o cajún a cualquier ensalada",
+      "nameEn": "Add grilled or blackened chicken to any salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-grilled-or-blackened-shrimp-to-any-salad",
+      "categoryId": "signature-salads",
+      "nameEs": "Agregue camarones a la parrilla o cajún a cualquier ensalada",
+      "nameEn": "Add grilled or blackened shrimp to any salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-old-school",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Linguine \"Old School\"",
+      "nameEn": "Linguine \"Old School\"",
+      "descriptionEs": "Linguine bañado en nuestra salsa marinara hecha en casa (tamaño almuerzo)",
+      "descriptionEn": "Linguine tossed in our house made marinara sauce (Lunch size)",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Gnocchi",
+      "nameEn": "Gnocchi",
+      "descriptionEs": "Pollo salteado, prosciutto, champiñones shiitake, queso parmesano en lascas y salsa cremosa de tomate (tamaño almuerzo)",
+      "descriptionEn": "Sautéed chicken, prosciutto, shiitake mushrooms, shaved parmesan cheese and tomato cream sauce (Lunch size)",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortellini",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Tortellini",
+      "nameEn": "Tortellini",
+      "descriptionEs": "Tortellini de queso importado bañados en salsa pesto alfredo con pollo a la parrilla (también disponible en alfredo cremosa) *** el pesto contiene nueces (tamaño almuerzo)",
+      "descriptionEn": "Imported cheese tortellini tossed in a pesto alfredo sauce with grilled chicken (Also available in creamy alfredo) *** pesto contains nuts (Lunch size)",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-jack-style",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Penne \"Jack Style\"",
+      "nameEn": "Penne \"Jack Style\"",
+      "descriptionEs": "Salchicha italiana dulce y pimientos morrones dulces salteados en nuestra salsa marinara hecha en casa (tamaño almuerzo)",
+      "descriptionEn": "Sautéed sweet Italian sausage and sweet bell peppers in our house marinara sauce (Lunch size)",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-grinder",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Grinder de albóndiga",
+      "nameEn": "Meatball Grinder",
+      "descriptionEs": "Albóndigas hechas en casa en pan grinder fresco tostado, con queso mozzarella derretido y salsa de la casa, servido con su elección de papitas, ensalada o papas fritas y un pepinillo",
+      "descriptionEn": "House made meatballs on a fresh grinder roll toasted and with melted mozzarella cheese and house made sauce served with choice of chips, salad, or french fries and a pickle",
+      "price": "14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-florentine",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Pollo a la florentina",
+      "nameEn": "Chicken Florentine",
+      "descriptionEs": "Pollo a la parrilla servido en pan brioche con espinaca, pimientos asados, tomate, queso provolone y pesto, servido con su elección de papitas, ensalada o papas fritas y un pepinillo *** el pesto contiene nueces",
+      "descriptionEn": "Grilled chicken served on a brioche roll with spinach, roasted peppers, tomato, provolone cheese and pesto served with choice of chips, salad, or french fries and a pickle *** pesto contains nuts",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-burger",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Hamburguesa clásica",
+      "nameEn": "Classic Burger",
+      "descriptionEs": "½ libra de carne de res Black Angus certificada en pan brioche, servida con lechuga, tomate y cebolla cruda, servida con su elección de papitas, ensalada o papas fritas y un pepinillo / Agregue queso... americano, cheddar, suizo o provolone 2.00",
+      "descriptionEn": "½ pound of certified Black Angus beef on a brioche roll, served with lettuce, tomato and raw onion served with choice of chips, salad, or french fries and a pickle / Add cheese... American, Cheddar, Swiss or Provolone 2.00",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-bacon-cheeseburger",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Cheeseburger BBQ con tocino",
+      "nameEn": "BBQ Bacon Cheeseburger",
+      "descriptionEs": "Nuestra hamburguesa Black Angus cubierta con tocino ahumado, aros de cebolla crujientes, lechuga, tomate, queso cheddar derretido y salsa BBQ con toque ácido, servida con su elección de papitas, ensalada o papas fritas y un pepinillo",
+      "descriptionEn": "Our Black Angus burger topped with smoked bacon, crispy onion rings, lettuce, tomato, melted cheddar cheese and tangy BBQ sauce served with choice of chips, salad, or french fries and a pickle",
+      "price": "18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-melt",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Atún fundido",
+      "nameEn": "Tuna Melt",
+      "descriptionEs": "Ensalada de atún hecha en casa, tomate en rodajas, cebolla morada y queso americano derretido en pan ciabatta tostado, servido con su elección de papitas, ensalada o papas fritas y un pepinillo",
+      "descriptionEn": "House made tuna salad, sliced tomato, red onion and melted American cheese on toasted ciabatta bread served with choice of chips, salad, or french fries and a pickle",
+      "price": "14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-wrap",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Wrap Buffalo",
+      "nameEn": "Buffalo Wrap",
+      "descriptionEs": "Pollo ligeramente empanizado, tocino crujiente, lechuga y tomate fresco con queso azul y salsa buffalo en un wrap, servido con su elección de papitas, ensalada o papas fritas y un pepinillo",
+      "descriptionEn": "Lightly breaded chicken, crispy bacon, fresh lettuce and tomato with blue cheese and buffalo sauce in a wrap served with choice of chips, salad, or french fries and a pickle",
+      "price": "14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-bomb-grinder",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Steak Bomb Grinder",
+      "nameEn": "Steak Bomb Grinder",
+      "descriptionEs": "Carne de res en lascas y queso cheddar derretido en pan grinder fresco tostado, servido con su elección de papitas, ensalada o papas fritas y un pepinillo / Agregue... pimientos, cebollas, champiñones salteados .95 c/u",
+      "descriptionEn": "Shaved steak and melted cheddar on a fresh grinder roll toasted served with choice of chips, salad, or french fries and a pickle / Add... sautéed peppers, onions, mushrooms .95 each",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef-melt",
+      "categoryId": "lunch-time-menu",
+      "nameEs": "Rosbif fundido",
+      "nameEn": "Roast Beef Melt",
+      "descriptionEs": "Rosbif cajún en rodajas con cebolla caramelizada, pimientos rojos asados, queso provolone y mayonesa de rábano picante en pan ciabatta a la parrilla, servido con su elección de papitas, ensalada o papas fritas y un pepinillo",
+      "descriptionEn": "Fresh, sliced blackened roast beef with caramelized onions, roasted red peppers, provolone cheese and horseradish mayo on grilled ciabatta bread served with choice of chips, salad, or french fries and a pickle",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-old-world-style",
+      "categoryId": "red-pizzas",
+      "nameEs": "Sencilla \"Estilo Old World\"",
+      "nameEn": "Plain \"Old World Style\"",
+      "descriptionEs": "Nuestra pizza original: salsa de tomate de la casa, queso parmesano, ajo y aceite de oliva",
+      "descriptionEn": "Our original pizza — house tomato sauce, parmesan cheese, garlic and olive oil",
+      "price": "12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella",
+      "categoryId": "red-pizzas",
+      "nameEs": "Mozzarella",
+      "nameEn": "Mozzarella",
+      "descriptionEs": "Nuestra pizza sencilla cubierta con mozzarella",
+      "descriptionEn": "Our Plain pizza topped with mozzarella",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepperoni",
+      "categoryId": "red-pizzas",
+      "nameEs": "Pepperoni",
+      "nameEn": "Pepperoni",
+      "descriptionEs": "Nuestra pizza sencilla con un toque picante de pepperoni y queso parmesano / Agregue... Mozzarella 1.95",
+      "descriptionEn": "Our Plain pizza spiced up with pepperoni and parmesan cheese / Add... Mozzarella 1.95",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "red-pizzas",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "Nuestra pizza sencilla cubierta con salchicha italiana dulce / Agregue... Mozzarella 1.95",
+      "descriptionEn": "Our Plain pizza topped with sweet Italian sausage / Add... Mozzarella 1.95",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-cheese-special",
+      "categoryId": "red-pizzas",
+      "nameEs": "Especial de 3 quesos",
+      "nameEn": "3 Cheese Special",
+      "descriptionEs": "Cubierta con una mezcla de ajo, parmesano rallado, mozzarella y queso gorgonzola",
+      "descriptionEn": "Topped with a mix of garlic, grated parmesan, mozzarella and gorgonzola cheese",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-spinach-tomato",
+      "categoryId": "red-pizzas",
+      "nameEs": "Tocino, espinaca y tomate",
+      "nameEn": "Bacon Spinach & Tomato",
+      "descriptionEs": "Cubierta con espinaca, tomates, tocino y queso parmesano / Agregue... Mozzarella 1.95",
+      "descriptionEn": "Topped with spinach, tomatoes, bacon, and parmesan cheese / Add... Mozzarella 1.95",
+      "price": "16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rosie-s-special",
+      "categoryId": "red-pizzas",
+      "nameEs": "Especial Rosie's",
+      "nameEn": "Rosie's Special",
+      "descriptionEs": "Tomates frescos en rodajas, tocino crujiente, mozzarella y queso parmesano",
+      "descriptionEn": "Fresh sliced tomatoes, crispy bacon, mozzarella and parmesan cheese",
+      "price": "16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-cacciatore",
+      "categoryId": "red-pizzas",
+      "nameEs": "Sausage Cacciatore",
+      "nameEn": "Sausage Cacciatore",
+      "descriptionEs": "Cubierta con salchicha italiana dulce, pimientos rojos y amarillos asados, cebollas, ajo y queso parmesano / Agregue... Mozzarella 1.95",
+      "descriptionEn": "Topped with sweet Italian sausage, roasted red and yellow peppers, onions, garlic and parmesan cheese / Add... Mozzarella 1.95",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-sicilian",
+      "categoryId": "red-pizzas",
+      "nameEs": "La siciliana",
+      "nameEn": "The Sicilian",
+      "descriptionEs": "Berenjena empanizada, ajo, aceitunas negras, pimientos rojos y amarillos con una mezcla de queso parmesano y mozzarella",
+      "descriptionEn": "Breaded eggplant, garlic, black olives, red and yellow peppers with a mix of parmesan and mozzarella cheese",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zia-margarita",
+      "categoryId": "red-pizzas",
+      "nameEs": "Zia Margarita",
+      "nameEn": "Zia Margarita",
+      "descriptionEs": "Albahaca fresca, tomates en rodajas, mozzarella fresca, salsa marinara con pesto y ajo, con una mezcla de queso parmesano y mozzarella *** el pesto contiene nueces",
+      "descriptionEn": "Fresh basil, sliced tomatoes, fresh mozzarella, pesto marinara sauce and garlic, with a mix of parmesan and mozzarella cheese *** pesto contains nuts",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-florentine",
+      "categoryId": "red-pizzas",
+      "nameEs": "Berenjena florentina",
+      "nameEn": "Eggplant Florentine",
+      "descriptionEs": "Berenjena empanizada, espinaca, ajo, ricota, mozzarella y queso parmesano",
+      "descriptionEn": "Breaded eggplant, spinach, garlic, ricotta, mozzarella and parmesan cheese",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shirley-s-special",
+      "categoryId": "white-pizzas",
+      "nameEs": "Especial de Shirley's",
+      "nameEn": "Shirley's Special",
+      "descriptionEs": "Nuestra pizza blanca original con queso mozzarella y un toque de parmesano",
+      "descriptionEn": "Our original white pizza with mozzarella cheese and a touch of parmesan",
+      "price": "12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable",
+      "categoryId": "white-pizzas",
+      "nameEs": "Vegetales",
+      "nameEn": "Vegetable",
+      "descriptionEs": "Pimientos rojos y amarillos asados, brócoli, cebollas, champiñones, ajo, aceite de oliva, un toque de queso parmesano y una pizca de pimienta negra / Agregue... Mozzarella 1.95",
+      "descriptionEn": "Roasted red and yellow peppers, broccoli, onions, mushrooms, garlic, olive oil, a dash of parmesan cheese, and a hint of black pepper / Add... Mozzarella 1.95",
+      "price": "15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi",
+      "categoryId": "white-pizzas",
+      "nameEs": "Camarones scampi al ajo",
+      "nameEn": "Shrimp Scampi",
+      "descriptionEs": "Camarones con ajo picado, cebollín, mantequilla, pimienta negra y un toque de queso parmesano",
+      "descriptionEn": "Shrimp with chopped garlic, scallions, butter, black pepper and a dash of parmesan cheese",
+      "price": "18.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-gorgonzola",
+      "categoryId": "white-pizzas",
+      "nameEs": "Espinaca y gorgonzola",
+      "nameEn": "Spinach & Gorgonzola",
+      "descriptionEs": "Pimientos rojos y amarillos asados, espinaca, ajo asado, aceite de oliva, mozzarella, gorgonzola y queso parmesano",
+      "descriptionEn": "Roasted red and yellow peppers, spinach, roasted garlic, olive oil, mozzarella, gorgonzola and parmesan cheese",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-broccoli-artichoke",
+      "categoryId": "white-pizzas",
+      "nameEs": "Camarones, brócoli y alcachofa",
+      "nameEn": "Shrimp, Broccoli & Artichoke",
+      "descriptionEs": "Camarones, brócoli, corazones de alcachofa, ajo picado, aceite de oliva y un toque de queso parmesano",
+      "descriptionEn": "Shrimp, broccoli, artichoke hearts, chopped garlic, olive oil and a dash of parmesan cheese",
+      "price": "17.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-casino",
+      "categoryId": "white-pizzas",
+      "nameEs": "Almejas Casino",
+      "nameEn": "Clams Casino",
+      "descriptionEs": "Almejas littleneck frescas, ajo, aceite de oliva, orégano, pimientos rojos y amarillos, cebollas, tocino y queso parmesano rallado",
+      "descriptionEn": "Fresh littleneck clams, garlic, olive oil, oregano, red and yellow peppers, onions, bacon and grated parmesan cheese",
+      "price": "18.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kris-dunn",
+      "categoryId": "white-pizzas",
+      "nameEs": "\"Kris Dunn\"",
+      "nameEn": "\"Kris Dunn\"",
+      "descriptionEs": "Pollo búfalo empanizado, tocino crujiente, aderezo ranch, mozzarella y queso parmesano",
+      "descriptionEn": "Breaded buffalo chicken, crispy bacon, ranch dressing, mozzarella and parmesan cheese",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-chicken",
+      "categoryId": "white-pizzas",
+      "nameEs": "Pollo tailandés",
+      "nameEn": "Thai Chicken",
+      "descriptionEs": "Pollo en cubos bañado en salsa satay de cacahuate, con ajo picado, albahaca fresca, cebollín, aderezo ranch, cheddar, mozzarella y un toque de queso parmesano *** la salsa satay contiene nueces",
+      "descriptionEn": "Diced chicken tossed in peanut Satay sauce, with chopped garlic, fresh basil, scallions, ranch dressing, cheddar, mozzarella and a dash of parmesan cheese *** Satay sauce contains nuts",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casey-s-hot-oil",
+      "categoryId": "white-pizzas",
+      "nameEs": "Casey's Hot Oil",
+      "nameEn": "Casey's Hot Oil",
+      "descriptionEs": "Nuestra masa hecha en casa untada con aceite de oliva infusionado con pimiento rojo, cubierta con salchicha italiana dulce y generosas cantidades de mozzarella y queso parmesano",
+      "descriptionEn": "Our house made dough brushed with red pepper infused olive oil topped with sweet Italian sausage with generous amounts of mozzarella and parmesan cheese",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-mason",
+      "categoryId": "white-pizzas",
+      "nameEs": "The Mason",
+      "nameEn": "The Mason",
+      "descriptionEs": "Espinaca fresca, tomates, tocino crujiente, ajo y aceite de oliva, cubiertos con mozzarella y queso gorgonzola",
+      "descriptionEn": "Fresh spinach, tomatoes, crispy bacon, garlic and olive oil topped with mozzarella and gorgonzola cheese",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-basil",
+      "categoryId": "white-pizzas",
+      "nameEs": "Tomate con albahaca",
+      "nameEn": "Tomato Basil",
+      "descriptionEs": "Tomates en rodajas, ajo picado y albahaca fresca con queso parmesano rallado",
+      "descriptionEn": "Sliced tomatoes, chopped garlic and fresh basil with grated parmesan cheese",
+      "price": "12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "white-pizzas",
+      "nameEs": "Papa al horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "Papas Yukon Gold horneadas en cubos, crema agria, cebollín, tocino, cheddar y queso parmesano",
+      "descriptionEn": "Diced baked golden Yukon potatoes, sour cream, scallions, bacon, cheddar and parmesan cheese",
+      "price": "16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ed-s-bbq-chicken",
+      "categoryId": "white-pizzas",
+      "nameEs": "Pollo BBQ de Ed's",
+      "nameEn": "Ed's BBQ Chicken",
+      "descriptionEs": "Pollo en cubos, salsa BBQ, cebolla morada, queso cheddar, tocino, ajo fresco con un toque de pimienta negra y queso parmesano",
+      "descriptionEn": "Diced chicken, BBQ sauce, red onion, cheddar cheese, bacon, fresh garlic with a dash of black pepper and parmesan cheese",
+      "price": "16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp",
+      "categoryId": "toppings",
+      "nameEs": "Camarón",
+      "nameEn": "Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon",
+      "categoryId": "toppings",
+      "nameEs": "Tocino",
+      "nameEn": "Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "toppings",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken",
+      "categoryId": "toppings",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball",
+      "categoryId": "toppings",
+      "nameEs": "Albóndiga",
+      "nameEn": "Meatball",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anchovies",
+      "categoryId": "toppings",
+      "nameEs": "Anchoas",
+      "nameEn": "Anchovies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepperoni-topping",
+      "categoryId": "toppings",
+      "nameEs": "Pepperoni (ingrediente)",
+      "nameEn": "Pepperoni (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-topping",
+      "categoryId": "toppings",
+      "nameEs": "Salchicha (ingrediente)",
+      "nameEn": "Sausage (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onions",
+      "categoryId": "toppings",
+      "nameEs": "Cebolla",
+      "nameEn": "Onions",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-basil",
+      "categoryId": "toppings",
+      "nameEs": "Albahaca fresca",
+      "nameEn": "Fresh Basil",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olives",
+      "categoryId": "toppings",
+      "nameEs": "Aceitunas",
+      "nameEn": "Olives",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapenos",
+      "categoryId": "toppings",
+      "nameEs": "Jalapeños",
+      "nameEn": "Jalapeños",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-topping",
+      "categoryId": "toppings",
+      "nameEs": "Espinaca (ingrediente)",
+      "nameEn": "Spinach (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushrooms",
+      "categoryId": "toppings",
+      "nameEs": "Champiñones",
+      "nameEn": "Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-yellow-peppers",
+      "categoryId": "toppings",
+      "nameEs": "Pimientos rojos y amarillos",
+      "nameEn": "Red & Yellow Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-topping",
+      "categoryId": "toppings",
+      "nameEs": "Brócoli (ingrediente)",
+      "nameEn": "Broccoli (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomatoes",
+      "categoryId": "toppings",
+      "nameEs": "Tomates",
+      "nameEn": "Tomatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesto",
+      "categoryId": "toppings",
+      "nameEs": "Pesto",
+      "nameEn": "Pesto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-garlic",
+      "categoryId": "toppings",
+      "nameEs": "Ajo rostizado",
+      "nameEn": "Roasted Garlic",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "artichokes",
+      "categoryId": "toppings",
+      "nameEs": "Alcachofas",
+      "nameEn": "Artichokes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant",
+      "categoryId": "toppings",
+      "nameEs": "Berenjena",
+      "nameEn": "Eggplant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-topping",
+      "categoryId": "toppings",
+      "nameEs": "Mozzarella (ingrediente)",
+      "nameEn": "Mozzarella (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheddar",
+      "categoryId": "toppings",
+      "nameEs": "Cheddar",
+      "nameEn": "Cheddar",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ricotta",
+      "categoryId": "toppings",
+      "nameEs": "Ricotta",
+      "nameEn": "Ricotta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola-topping",
+      "categoryId": "toppings",
+      "nameEs": "Gorgonzola (ingrediente)",
+      "nameEn": "Gorgonzola (Topping)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "feta",
+      "categoryId": "toppings",
+      "nameEs": "Feta",
+      "nameEn": "Feta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-crust",
+      "categoryId": "toppings",
+      "nameEs": "Masa sin gluten",
+      "nameEn": "Gluten Free Crust",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5.00 additional",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "Ligeramente empanizado, terminado con queso mozzarella fresco, servido sobre linguine con nuestra salsa marinara hecha en casa",
+      "descriptionEn": "Lightly breaded, finished with fresh mozzarella cheese served over linguine with our house made marinara",
+      "price": "23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Pollo piccata",
+      "nameEn": "Chicken Piccata",
+      "descriptionEs": "Ligeramente enharinado y salteado en salsa de mantequilla y limón con pimientos morrones dulces, champiñones y alcaparras, servido sobre fettuccine",
+      "descriptionEn": "Lightly floured and sautéed in lemon butter sauce with sweet bell peppers, mushrooms and capers served over fettuccine",
+      "price": "21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "recovery-room-signature-tortellini",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Tortellini de la casa Recovery Room",
+      "nameEn": "Recovery Room Signature Tortellini",
+      "descriptionEs": "Tortellini de queso importado bañados en salsa pesto alfredo con pollo a la parrilla (también disponible en alfredo cremosa) *** el pesto contiene nueces",
+      "descriptionEn": "Imported cheese tortellini tossed in a pesto alfredo sauce with grilled chicken (Also available in creamy alfredo) *** pesto contains nuts",
+      "price": "21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-dinner",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Ñoquis (cena)",
+      "nameEn": "Gnocchi (Dinner)",
+      "descriptionEs": "Pollo salteado, prosciutto, champiñones shiitake, queso parmesano en lascas y salsa cremosa de tomate",
+      "descriptionEn": "Sautéed chicken, prosciutto, shiitake mushrooms, shaved parmesan cheese and tomato cream sauce",
+      "price": "21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-pasta-marinara",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Pasta marinara clásica",
+      "nameEn": "Classic Pasta Marinara",
+      "descriptionEs": "A elegir penne, linguine o cabello de ángel bañados en nuestra salsa marinara hecha en casa",
+      "descriptionEn": "Choice of penne, linguine or angel hair tossed in our house made marinara sauce",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-pasta-alfredo",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Pasta alfredo clásica",
+      "nameEn": "Classic Pasta Alfredo",
+      "descriptionEs": "A elegir penne, linguine o cabello de ángel bañados en nuestra rica y cremosa salsa alfredo (Agregue... pollo a la parrilla 4.00; Agregue... camarones a la parrilla 8.00)",
+      "descriptionEn": "Choice of penne, linguine or angel hair tossed in our rich, creamy alfredo sauce (Add... grilled chicken 4.00; Add... grilled shrimp 8.00)",
+      "price": "18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "federal-hill",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "\"Federal Hill\"",
+      "nameEn": "\"Federal Hill\"",
+      "descriptionEs": "Chuleta de ternera empanizada con capas de prosciutto y queso mozzarella, servida con linguine marinara o ensalada de verduras mixtas a elegir",
+      "descriptionEn": "Breaded veal cutlet layered with prosciutto and mozzarella cheese served on a choice of linguine marinara or mixed green salad",
+      "price": "28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-jack-style-dinner",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Penne \"Jack Style\" (cena)",
+      "nameEn": "Penne \"Jack Style\" (Dinner)",
+      "descriptionEs": "Camarones jumbo, salchicha italiana dulce salteada y pimientos morrones dulces, en nuestra salsa marinara hecha en casa",
+      "descriptionEn": "Jumbo shrimp, sautéed sweet Italian sausage, and sweet bell peppers, in our house made marinara sauce",
+      "price": "24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-bolognese",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Fettuccine a la boloñesa",
+      "nameEn": "Fettuccine Bolognese",
+      "descriptionEs": "Ternera braseada artesanalmente durante seis horas, salchicha y champiñones, cocidos a fuego lento en nuestra salsa marinara hecha en casa y mezclados con fettuccine (nuestra salsa boloñesa no es sin gluten)",
+      "descriptionEn": "Hand crafted six hour braised veal, sausage and mushrooms, simmered in our house made marinara and tossed with fettuccine (Our Bolognese sauce is not gluten free)",
+      "price": "24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-little-neck-clams-zuppa",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Zuppa de camarones y almejas littleneck",
+      "nameEn": "Shrimp & Little Neck Clams Zuppa",
+      "descriptionEs": "Almejas littleneck nativas y camarones jumbo blancos salteados en vino blanco y ajo, sobre linguine. También disponible al estilo Fra Diavolo (marinara picante)",
+      "descriptionEn": "Native little necks and jumbo white shrimp sautéed in white wine and garlic, over linguine. Also available Fra Diavolo style (spicy marinara)",
+      "price": "Market Price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-ravioli",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Ravioles de salchicha",
+      "nameEn": "Sausage Ravioli",
+      "descriptionEs": "Bañados con salchicha italiana dulce salteada a la plancha y espinaca, cubiertos con salsa toscana de frijol blanco y queso parmesano",
+      "descriptionEn": "Tossed with pan seared sweet Italian sausage and spinach, topped with a Tuscan white bean sauce and parmesan cheese",
+      "price": "22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-steak",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Bistec New York strip",
+      "nameEn": "New York Strip Steak",
+      "descriptionEs": "Asado a la parrilla a la perfección, con papas reggiano en rodajas finas y espinaca salteada",
+      "descriptionEn": "Grilled to perfection with thinly sliced reggiano potatoes and sautéed spinach",
+      "price": "Market Price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-cod-fish",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Bacalao horneado",
+      "nameEn": "Baked Cod Fish",
+      "descriptionEs": "Horneado con limón, vino blanco y cobertura de pan rallado italiano con ajo, servido sobre arroz salvaje mezclado con brócoli",
+      "descriptionEn": "Baked with lemon, white wine and Italian garlic bread crumb topping served over wild rice mixed with broccoli",
+      "price": "20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-penne",
+      "categoryId": "dinner-entree-menu",
+      "nameEs": "Penne sin gluten",
+      "nameEn": "Gluten Free Penne",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5.00 additional",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú o modificaciones disponibles.",
-      "aEn": "Yes, please ask our staff for items marked on the menu or available modifications."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos y cenas familiares.",
-      "aEn": "We welcome walk-ins and accept phone reservations for groups and family dinners."
-    }
-  ]
+  "faqs": []
 }
