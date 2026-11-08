@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "sushi-koya",
     "name": "Sushi Koya",
-    "tagline": "Auténtica cocina japonesa y sushi fresco en el corazón de Montville",
+    "tagline": "Restaurant in Uncasville | Restaurant en Uncasville",
     "address": "1 Mohegan Sun Blvd., Uncasville, CT 06335",
     "phone": "(860) 862-9559",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Valet Parking"
+      "Bilingual Menu"
     ],
     "themeColor": "#0f172a",
     "logoIcon": "utensils",
@@ -32,327 +24,952 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "sushi-bar-appetizers",
+      "nameEs": "Entradas de la barra de sushi",
+      "nameEn": "Sushi Bar Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "regular-maki",
+      "nameEs": "Maki regular",
+      "nameEn": "Regular Maki",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "cooked-maki",
+      "nameEs": "Maki cocido",
+      "nameEn": "Cooked Maki",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "vegetable-maki",
+      "nameEs": "Maki de vegetales",
+      "nameEn": "Vegetable Maki",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-order",
+      "nameEs": "Guarniciones",
+      "nameEn": "Side Order",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sushi-supplements",
+      "nameEs": "Suplementos de sushi",
+      "nameEn": "Sushi Supplements",
+      "icon": "Utensils"
+    },
+    {
+      "id": "raw-bar",
+      "nameEs": "Barra cruda",
+      "nameEn": "Raw Bar",
+      "icon": "Utensils"
+    },
+    {
+      "id": "nigiri-sashimi",
+      "nameEs": "Nigiri y sashimi",
+      "nameEn": "Nigiri & Sashimi",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sushi-sashimi",
+      "nameEs": "Sushi y sashimi",
+      "nameEn": "Sushi & Sashimi",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chef-s-special-roll",
+      "nameEs": "Rollo especial del chef",
+      "nameEn": "Chef's Special Roll",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "sushi-koya-01",
-      "categoryId": "appetizers",
-      "nameEs": "Edamame al Vapor",
-      "nameEn": "Steamed Edamame",
-      "descriptionEs": "Frijoles de soya tiernos al vapor, ligeramente espolvoreados con sal marina.",
-      "descriptionEn": "Tender steamed soybean pods, lightly dusted with sea salt.",
-      "price": "$6.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Soya"
-      ],
+      "id": "miso-soup",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Sopa miso",
+      "nameEn": "Miso Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-02",
-      "categoryId": "appetizers",
-      "nameEs": "Gyoza de Cerdo",
-      "nameEn": "Pork Gyoza",
-      "descriptionEs": "Empanadillas japonesas rellenas de cerdo jugoso y vegetales, selladas a la plancha con salsa ponzu.",
-      "descriptionEn": "Japanese pan-fried dumplings filled with juicy pork and vegetables, served with house ponzu sauce.",
-      "price": "$9.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "A la Plancha"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soya"
-      ],
+      "id": "creamy-clam-chowder",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Chowder de almeja cremoso",
+      "nameEn": "Creamy Clam Chowder",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00 / $16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-03",
-      "categoryId": "appetizers",
-      "nameEs": "Tataki de Atún",
-      "nameEn": "Tuna Tataki",
-      "descriptionEs": "Finas rodajas de atún ligeramente selladas con costra de sésamo, servidas con salsa ponzu de trufa.",
-      "descriptionEn": "Thinly sliced lightly seared tuna with sesame crust, served with truffle ponzu sauce.",
+      "id": "kani-salad",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Ensalada de kani",
+      "nameEn": "Kani Salad",
+      "descriptionEs": "kani, pepino, tobiko, crujiente de tempura y mayonesa picante",
+      "descriptionEn": "kani, cucumber, tobiko, tempura crunch & spicy mayo",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seaweed-salad",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Ensalada de algas",
+      "nameEn": "Seaweed Salad",
+      "descriptionEs": "alga marina, semilla de sésamo",
+      "descriptionEn": "seaweed, sesame seed",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "edamame",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Edamame",
+      "nameEn": "Edamame",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyoza-steamed-or-baked",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Gyoza (al vapor o horneado)",
+      "nameEn": "Gyoza (Steamed or Baked)",
+      "descriptionEs": "a elegir cerdo, pollo con hierba de limón o edamame",
+      "descriptionEn": "choice of pork, chicken lemongrass or edamame",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dinosaur-eggs",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Dinosaur Eggs",
+      "nameEn": "Dinosaur Eggs",
+      "descriptionEs": "atún picante especial del chef envuelto en aguacate fresco, crujiente y mayonesa picante",
+      "descriptionEn": "chef’s special spicy tuna wrapped with fresh avocado, crunch & spicy mayo",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-tuna-tartar",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Tartar de atún picante",
+      "nameEn": "Spicy Tuna Tartar",
+      "descriptionEs": "atún picante, aguacate, crujiente de cebolla y tobiko",
+      "descriptionEn": "spicy tuna, avocado, onion crunch & tobiko",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-appetizer",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Entrada de sushi",
+      "nameEn": "Sushi Appetizer",
+      "descriptionEs": "cinco piezas de pescado crudo con arroz",
+      "descriptionEn": "five pieces of raw fish with rice",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Fresco",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Pescado",
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-04",
-      "categoryId": "appetizers",
-      "nameEs": "Camarones Tempura",
-      "nameEn": "Shrimp Tempura Appetizer",
-      "descriptionEs": "Camarones frescos rebozados y fritos en una ligera y crujiente pasta tempura con salsa tentsuyu.",
-      "descriptionEn": "Fresh shrimp dipped in light, crispy batter and fried golden, served with tentsuyu sauce.",
-      "price": "$13.50",
-      "popular": false,
-      "badge": "Crujiente",
-      "tags": [
-        "Frito"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-05",
-      "categoryId": "mains",
-      "nameEs": "Ramen Tonkotsu",
-      "nameEn": "Tonkotsu Ramen",
-      "descriptionEs": "Caldo de hueso de cerdo cocinado a fuego lento durante 12 horas, fideos frescos, chashu tierno, huevo marinero y nori.",
-      "descriptionEn": "Rich 12-hour simmered pork bone broth, fresh noodles, tender chashu pork, seasoned egg, and nori.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Caliente",
-        "Caldo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Soya"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-06",
-      "categoryId": "mains",
-      "nameEs": "Salmón Teriyaki",
-      "nameEn": "Salmon Teriyaki",
-      "descriptionEs": "Filete de salmón fresco a la parrilla glaseado con nuestra salsa teriyaki casera, acompañado de arroz y vegetales.",
-      "descriptionEn": "Fresh grilled salmon fillet glazed with our house-made teriyaki sauce, served with rice and vegetables.",
-      "price": "$22.00",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Pescado",
-        "Soya",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-07",
-      "categoryId": "mains",
-      "nameEs": "Bento Box Deluxe",
-      "nameEn": "Deluxe Bento Box",
-      "descriptionEs": "Incluye pollo teriyaki, camarones tempura, 4 piezas de rollo California, arroz y ensalada.",
-      "descriptionEn": "Includes chicken teriyaki, shrimp tempura, 4 pieces of California roll, rice, and house salad.",
+      "id": "jalapeno-pepper-toro",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Toro con jalapeño",
+      "nameEn": "Jalapeno Pepper Toro",
+      "descriptionEs": "sashimi de toro cubierto con tobiko, chile shishito y salsa ponzu",
+      "descriptionEn": "toro sashimi topped with tobiko, shishito pepper & ponzu sauce",
       "price": "$24.00",
-      "popular": true,
-      "badge": "Completo",
-      "tags": [
-        "Variado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Soya"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-08",
-      "categoryId": "specialties",
-      "nameEs": "Rollo Mohegan Sun",
-      "nameEn": "Mohegan Sun Roll",
-      "descriptionEs": "Atún picante, aguacate y pepino por dentro, cubierto con salmón fresco, atún, masago y salsa especial del chef.",
-      "descriptionEn": "Spicy tuna, avocado, and cucumber inside, topped with fresh salmon, tuna, masago, and chef's special sauce.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Picante",
-        "Fresco"
-      ],
-      "allergens": [
-        "Pescado",
-        "Mariscos",
-        "Soya"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-09",
-      "categoryId": "specialties",
-      "nameEs": "Rollo Koya Dragón",
-      "nameEn": "Koya Dragon Roll",
-      "descriptionEs": "Camarón tempura y pepino por dentro, cubierto con capas de aguacate fresco y anguila glaseada.",
-      "descriptionEn": "Shrimp tempura and cucumber inside, topped with layers of fresh avocado and glazed eel.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Pescado",
-        "Mariscos",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-10",
-      "categoryId": "specialties",
-      "nameEs": "Surtido de Nigiri del Chef",
-      "nameEn": "Chef's Nigiri Moriawase",
-      "descriptionEs": "7 piezas de nigiri seleccionadas por el chef (atún, salmón, pargo, anguila) y un rollo de atún picante.",
-      "descriptionEn": "7 pieces of chef-selected premium nigiri (tuna, salmon, snapper, eel) and a spicy tuna roll.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Premium",
-      "tags": [
-        "Fresco",
-        "Crudo"
-      ],
-      "allergens": [
-        "Pescado",
-        "Soya"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-11",
-      "categoryId": "specialties",
-      "nameEs": "Rollo Arcoíris",
-      "nameEn": "Rainbow Roll",
-      "descriptionEs": "Kani, aguacate y pepino por dentro, cubierto con una colorida variedad de pescado fresco y aguacate.",
-      "descriptionEn": "Kani, avocado, and cucumber inside, topped with a colorful variety of fresh fish and avocado.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Pescado"
-      ],
-      "allergens": [
-        "Pescado",
-        "Mariscos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sushi-koya-12",
-      "categoryId": "beverages",
-      "nameEs": "Sake Junmai Daiginjo",
-      "nameEn": "Junmai Daiginjo Sake",
-      "descriptionEs": "Sake premium refinado con notas aromáticas frutales y un final limpio y sedoso (Botella pequeña).",
-      "descriptionEn": "Premium refined sake with aromatic fruity notes and a clean, silky finish (Small bottle).",
+      "id": "martini-bowl",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Martini Bowl",
+      "nameEn": "Martini Bowl",
+      "descriptionEs": "atún, salmón, yellowtail, crujiente, pepino y mayonesa picante",
+      "descriptionEn": "tuna, salmon, yellowtail, crunch, cucumber & spicy mayo",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Alcohol",
-      "tags": [
-        "Bebida",
-        "Sake"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-13",
-      "categoryId": "beverages",
-      "nameEs": "Té Verde Helado Japonés",
-      "nameEn": "Japanese Iced Green Tea",
-      "descriptionEs": "Té verde destilado en frío, refrescante y sin azúcar añadido.",
-      "descriptionEn": "Cold-brewed green tea, refreshing and unsweetened.",
-      "price": "$3.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Azúcar"
-      ],
-      "allergens": [],
+      "id": "treasure-island",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Isla del tesoro",
+      "nameEn": "Treasure Island",
+      "descriptionEs": "aguacate relleno de pescado crudo mixto, pepino, salsa ponzu picante, tobiko y hojuelas de bonito",
+      "descriptionEn": "avocado filled with mixed raw fish, cucumber, spicy ponzu sauce, tobiko and bonito flake",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "sushi-koya-14",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Japonesa Asahi",
-      "nameEn": "Asahi Japanese Beer",
-      "descriptionEs": "Cerveza lager japonesa, crujiente, seca y muy refrescante (Botella 330ml).",
-      "descriptionEn": "Japanese dry lager, crisp, clean, and very refreshing (330ml bottle).",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Cerveza",
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "yellowtail-carpaccio",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Carpaccio de yellowtail",
+      "nameEn": "Yellowtail Carpaccio",
+      "descriptionEs": "ensalada mixta de primavera con cebolla, rábano blanco y jalapeño sobre sashimi de yellowtail",
+      "descriptionEn": "spring mixed salad with onion, white radish & jalapeno on yellowtail sashimi",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-blue-crab",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Salmón y cangrejo azul",
+      "nameEn": "Salmon Blue Crab",
+      "descriptionEs": "salmón fresco, cangrejo azul, aguacate y salsa ponzu de trufa",
+      "descriptionEn": "fresh salmon, blue crab, avocado & truffle ponzu sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-scallop-with-uni",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Callo de hacha jumbo con uni",
+      "nameEn": "Jumbo Scallop with Uni",
+      "descriptionEs": "callo de hacha sellado, erizo de mar, mayonesa de wasabi y salsa ponzu",
+      "descriptionEn": "seared scallop, sea urchin, wasabi mayo & ponzu sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "sushi-bar-appetizers",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "a elegir búfalo o jengibre con chile",
+      "descriptionEn": "choice of buffalo or ginger chili",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna",
+      "categoryId": "regular-maki",
+      "nameEs": "Atún",
+      "nameEn": "Tuna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon",
+      "categoryId": "regular-maki",
+      "nameEs": "Salmón",
+      "nameEn": "Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-scallion",
+      "categoryId": "regular-maki",
+      "nameEs": "Yellowtail con cebollín",
+      "nameEn": "Yellowtail Scallion",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-salmon",
+      "categoryId": "regular-maki",
+      "nameEs": "Salmón picante",
+      "nameEn": "Spicy Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-tuna",
+      "categoryId": "regular-maki",
+      "nameEs": "Atún picante",
+      "nameEn": "Spicy Tuna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-yellowtail",
+      "categoryId": "regular-maki",
+      "nameEs": "Yellowtail picante",
+      "nameEn": "Spicy Yellowtail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-scallop",
+      "categoryId": "regular-maki",
+      "nameEs": "Callo de hacha picante",
+      "nameEn": "Spicy Scallop",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philadelphia",
+      "categoryId": "regular-maki",
+      "nameEs": "Philadelphia",
+      "nameEn": "Philadelphia",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaska",
+      "categoryId": "regular-maki",
+      "nameEs": "Alaska",
+      "nameEn": "Alaska",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rainbow",
+      "categoryId": "regular-maki",
+      "nameEs": "Arcoíris",
+      "nameEn": "Rainbow",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-avocado",
+      "categoryId": "cooked-maki",
+      "nameEs": "Anguila y aguacate",
+      "nameEn": "Eel Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boston",
+      "categoryId": "cooked-maki",
+      "nameEs": "Boston",
+      "nameEn": "Boston",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california",
+      "categoryId": "cooked-maki",
+      "nameEs": "California",
+      "nameEn": "California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tempura",
+      "categoryId": "cooked-maki",
+      "nameEs": "Tempura de camarón",
+      "nameEn": "Shrimp Tempura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-shell-crab",
+      "categoryId": "cooked-maki",
+      "nameEs": "Cangrejo de caparazón blando",
+      "nameEn": "Soft Shell Crab",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dragon",
+      "categoryId": "cooked-maki",
+      "nameEs": "Dragón",
+      "nameEn": "Dragon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado",
+      "categoryId": "vegetable-maki",
+      "nameEs": "Aguacate",
+      "nameEn": "Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-potato",
+      "categoryId": "vegetable-maki",
+      "nameEs": "Papa japonesa",
+      "nameEn": "Japanese Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber",
+      "categoryId": "vegetable-maki",
+      "nameEs": "Pepino",
+      "nameEn": "Cucumber",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-roll",
+      "categoryId": "vegetable-maki",
+      "nameEs": "Rollo vegetariano",
+      "nameEn": "Veggie Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-rice",
+      "categoryId": "side-order",
+      "nameEs": "Arroz blanco",
+      "nameEn": "White Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brown-rice",
+      "categoryId": "side-order",
+      "nameEs": "Arroz integral",
+      "nameEn": "Brown Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-supplement",
+      "categoryId": "sushi-supplements",
+      "nameEs": "Aguacate (suplemento)",
+      "nameEn": "Avocado (Supplement)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tobiko",
+      "categoryId": "sushi-supplements",
+      "nameEs": "Tobiko",
+      "nameEn": "Tobiko",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soy-paper",
+      "categoryId": "sushi-supplements",
+      "nameEs": "Papel de soya",
+      "nameEn": "Soy paper",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brown-rice-supplement",
+      "categoryId": "sushi-supplements",
+      "nameEs": "Arroz integral (suplemento)",
+      "nameEn": "Brown Rice (Supplement)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "select-premium-oyster",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostra premium selecta",
+      "nameEn": "Select Premium Oyster",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "ea $3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cape-cod-littleneck",
+      "categoryId": "raw-bar",
+      "nameEs": "Littleneck de Cape Cod",
+      "nameEn": "Cape Cod littleneck",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "ea $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherrystone",
+      "categoryId": "raw-bar",
+      "nameEs": "Cherrystone",
+      "nameEn": "Cherrystone",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "ea $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-shrimp-cocktail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de camarón jumbo",
+      "nameEn": "Jumbo Shrimp Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "ea $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tower-of-power",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de Poder",
+      "nameEn": "Tower of Power",
+      "descriptionEs": "8 ostras, 8 littlenecks, 4 camarones de coctel, 2 ostras y sashimi de atún y 1 lb. de langosta fría",
+      "descriptionEn": "8 oysters, 8 littlenecks, 4 cocktail shrimp, 2 oyster & tuna sashimi & 1 lb. chilled lobster",
+      "price": "MKT",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-nigiri",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Atún (nigiri)",
+      "nameEn": "Tuna (Nigiri)",
+      "descriptionEs": "(Maguro)",
+      "descriptionEn": "(Maguro)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-nigiri",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Salmón (nigiri)",
+      "nameEn": "Salmon (Nigiri)",
+      "descriptionEs": "(Sake)",
+      "descriptionEn": "(Sake)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Jurel (yellowtail)",
+      "nameEn": "Yellowtail",
+      "descriptionEs": "(Hamachi)",
+      "descriptionEn": "(Hamachi)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-eel",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Anguila BBQ",
+      "nameEn": "BBQ Eel",
+      "descriptionEs": "(Unagi)",
+      "descriptionEn": "(Unagi)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "striped-bass",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Robalo Striped Bass",
+      "nameEn": "Striped Bass",
+      "descriptionEs": "(Suzuki)",
+      "descriptionEn": "(Suzuki)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fluke",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Lenguado",
+      "nameEn": "Fluke",
+      "descriptionEs": "(Engawa)",
+      "descriptionEn": "(Engawa)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Cangrejo",
+      "nameEn": "Crab",
+      "descriptionEs": "(Kani)",
+      "descriptionEn": "(Kani)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "squid",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Calamar",
+      "nameEn": "Squid",
+      "descriptionEs": "(Ika)",
+      "descriptionEn": "(Ika)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "octopus",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Pulpo",
+      "nameEn": "Octopus",
+      "descriptionEs": "(Tako)",
+      "descriptionEn": "(Tako)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Camarón",
+      "nameEn": "Shrimp",
+      "descriptionEs": "(Ebi)",
+      "descriptionEn": "(Ebi)",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallop",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Vieira",
+      "nameEn": "Scallop",
+      "descriptionEs": "(Hotate)",
+      "descriptionEn": "(Hotate)",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smelt-roe",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Huevas de capelán",
+      "nameEn": "Smelt Roe",
+      "descriptionEs": "(Massago)",
+      "descriptionEn": "(Massago)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-roe",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Hueva de salmón",
+      "nameEn": "Salmon Roe",
+      "descriptionEs": "(Ikura)",
+      "descriptionEn": "(Ikura)",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sea-urchin",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Erizo de mar",
+      "nameEn": "Sea Urchin",
+      "descriptionEs": "(Uni)",
+      "descriptionEn": "(Uni)",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fatty-tuna",
+      "categoryId": "nigiri-sashimi",
+      "nameEs": "Atún graso",
+      "nameEn": "Fatty Tuna",
+      "descriptionEs": "(Toro)",
+      "descriptionEn": "(Toro)",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-regular",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "Sushi regular",
+      "nameEn": "Sushi Regular",
+      "descriptionEs": "(7 pzas. de sushi y 1 rollo California)",
+      "descriptionEn": "(7 pcs sushi & 1 California roll)",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-deluxe",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "Sushi deluxe",
+      "nameEn": "Sushi Deluxe",
+      "descriptionEs": "(9 pzas. de sushi y 1 rollo de atún/salmón picante)",
+      "descriptionEn": "(9 pcs sushi & 1 spicy tuna/salmon roll)",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-regular",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "Sashimi regular",
+      "nameEn": "Sashimi Regular",
+      "descriptionEs": "(8 pzas. de selección del chef)",
+      "descriptionEn": "(8 pcs of chef’s choice assortment)",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-deluxe",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "Sashimi deluxe",
+      "nameEn": "Sashimi Deluxe",
+      "descriptionEs": "(16 pzas. de selección del chef)",
+      "descriptionEn": "(16 pcs of chef’s choice assortment)",
+      "price": "$58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "koya-plate",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "Plato Koya",
+      "nameEn": "Koya Plate",
+      "descriptionEs": "(5 pzas. de nigiri, 10 pzas. de sashimi y 1 rollo California)",
+      "descriptionEn": "(5 pcs nigiri, 10 pcs of sashimi & 1 california roll)",
+      "price": "$68.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-jackpot",
+      "categoryId": "sushi-sashimi",
+      "nameEs": "The Jackpot",
+      "nameEn": "The Jackpot",
+      "descriptionEs": "(10 piezas de nigiri, 15 piezas de sashimi, 1 rollo de atún y cualquier rollo especial del chef a elegir)",
+      "descriptionEn": "(10 pieces of nigiri, 15 pieces of sashimi, 1 tuna roll & any choice of chef special roll)",
+      "price": "$158.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dancing-eel-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Dancing Eel Roll",
+      "nameEn": "Dancing Eel Roll",
+      "descriptionEs": "langosta picante cubierta con anguila y aguacate, servida con salsa kabayaki",
+      "descriptionEn": "spicy lobster topped with eel & avocado served with kabayaki sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-tempura-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo de langosta tempura",
+      "nameEn": "Lobster Tempura Roll",
+      "descriptionEs": "tempura de langosta, aguacate y pepino con tobiko y salsa kabayaki",
+      "descriptionEn": "lobster tempura, avocado & cucumber with tobiko & kabayaki sauce",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-lover-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Salmon Lover Roll",
+      "nameEn": "Salmon Lover Roll",
+      "descriptionEs": "salmón picante y mango con salsa de mayonesa picante y crujiente",
+      "descriptionEn": "spicy salmon & mango with spicy mayo sauce & crunch",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-amazing-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo increíble de atún",
+      "nameEn": "Tuna Amazing Roll",
+      "descriptionEs": "atún, mango y atún picante con ensalada de algas y tobiko, servido con salsa de mango",
+      "descriptionEn": "tuna, mango & spicy tuna with seaweed salad & tobiko served with mango sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "koya-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Koya Roll",
+      "nameEn": "Koya Roll",
+      "descriptionEs": "tempura de camarón y pepino cubierto con atún picante, salsa kabayaki y tobiko",
+      "descriptionEn": "shrimp tempura & cucumber topped with spicy tuna, kabayaki sauce & tobiko",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "godzilla-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo Godzilla",
+      "nameEn": "Godzilla Roll",
+      "descriptionEs": "atún picante ligeramente frito cubierto con cangrejo azul picante con salsa kabayaki, mayonesa picante y mayonesa de wasabi",
+      "descriptionEn": "spicy tuna lightly fried topped with spicy blue crab with kabayaki sauce, spicy mayo & wasabi mayo",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paradise-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo paraíso",
+      "nameEn": "Paradise Roll",
+      "descriptionEs": "ensalada de langosta picante, tempura de camarón y plátano frito, envuelto en nori de soya, servido con salsa de mango y salsa kabayaki",
+      "descriptionEn": "spicy lobster salad, shrimp tempura & fried banana, wrapped with soybean nori, served with mango sauce & kabayaki sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "christmas-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo navideño",
+      "nameEn": "Christmas Roll",
+      "descriptionEs": "salmón, aguacate y anguila, cubierto con salmón, tobiko, ensalada de algas y salsa kabayaki",
+      "descriptionEn": "salmon, avocado & eel, topped with salmon, tobiko, seaweed salad & kabayaki sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sky-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Sky Roll",
+      "nameEn": "Sky Roll",
+      "descriptionEs": "carne de cangrejo, salmón, atún, aguacate, papel de soya, mayonesa picante y salsa kabayaki",
+      "descriptionEn": "crab meat, salmon, tuna, avocado, soy paper, spicy mayo & kabayaki sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-mango-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo de mango picante",
+      "nameEn": "Spicy Mango Roll",
+      "descriptionEs": "atún picante, aguacate, cubierto con mango, salsa de mango y mayonesa picante",
+      "descriptionEn": "spicy tuna, avocado, topped with mango, mango sauce & spicy mayo sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiger-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Tiger Roll",
+      "nameEn": "Tiger Roll",
+      "descriptionEs": "tempura de camarón, ensalada de langosta cubierta con aguacate y salmón",
+      "descriptionEn": "shrimp tempura, lobster salad topped with avocado & salmon",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "volcano-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Rollo volcán",
+      "nameEn": "Volcano Roll",
+      "descriptionEs": "atún picante, pepino, aguacate y crujiente de tempura con salsa kabayaki, mayonesa picante y tobiko",
+      "descriptionEn": "spicy tuna, cucumber, avocado & tempura crunch with kabayaki sauce, spicy mayo & tobiko",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-samurai-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Black Samurai Roll",
+      "nameEn": "Black Samurai Roll",
+      "descriptionEs": "atún picante y aguacate, cubierto con atún con pimienta negra, cebollín, tobiko y salsa kabayaki",
+      "descriptionEn": "spicy tuna & avocado, topped with black pepper tuna, scallion, tobiko & kabayaki sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pacific-ocean",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Pacific Ocean",
+      "nameEn": "Pacific Ocean",
+      "descriptionEs": "camarón, carne de cangrejo y ensalada de langosta con tobiko de wasabi, servido con mayonesa de wasabi y salsa kabayaki",
+      "descriptionEn": "shrimp, crab meat & lobster salad with wasabi tobiko served with wasabi mayo & kabayaki sauce",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pink-lady",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Pink Lady",
+      "nameEn": "Pink Lady",
+      "descriptionEs": "atún, salmón, yellowtail, tobiko, crujiente y aguacate con alga de soya rosa, salsa de miel y wasabi y salsa kabayaki",
+      "descriptionEn": "tuna, Salmon, yellowtail, tobiko, crunch & avocado with pink soy seaweed, honey wasabi sauce & kabayaki sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "american-dream",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "American Dream",
+      "nameEn": "American Dream",
+      "descriptionEs": "tempura de cangrejo de caparazón blando y espárragos cubierto con cangrejo y camarón picantes mezclados con aguacate",
+      "descriptionEn": "soft shell crab tempura & asparagus topped with spicy crab & shrimp mixed with avocado",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fancy-lobster-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Fancy Lobster Roll",
+      "nameEn": "Fancy Lobster Roll",
+      "descriptionEs": "atún picante y ensalada de langosta cubierta con aguacate y crujiente",
+      "descriptionEn": "spicy tuna & lobster salad topped with avocado & crunch",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mermaid-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Mermaid Roll",
+      "nameEn": "Mermaid Roll",
+      "descriptionEs": "kani, camarón y aguacate cubiertos con salmón picante sellado, tobiko y mayonesa picante",
+      "descriptionEn": "kani, shrimp & avocado topped with seared spicy salmon, tobiko & spicy mayo",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-tokyo-roll",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "Little Tokyo Roll",
+      "nameEn": "Little Tokyo Roll",
+      "descriptionEs": "tempura de langosta, cangrejo de nieve, aguacate, mango y tobiko envuelto en papel de soya, cubierto con atún, salmón, yellowtail y tobiko",
+      "descriptionEn": "lobster tempura, snow crab, avocado, mango & tobiko wrapped with soybean paper topped with tuna, salmon, yellowtail & tobiko",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-roller",
+      "categoryId": "chef-s-special-roll",
+      "nameEs": "High Roller",
+      "nameEn": "High Roller",
+      "descriptionEs": "atún picante y crujiente de tempura cubierto con aguacate, salmón, atún, yellowtail y anguila",
+      "descriptionEn": "spicy tuna & tempura crunch topped with avocado, salmon, tuna, yellowtail & eel",
+      "price": "$30.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con rollos vegetarianos, edamame y opciones sin gluten bajo pedido. Pregunte a nuestro personal.",
-      "aEn": "Yes, we offer vegetarian rolls, edamame, and gluten-free options upon request. Please ask our staff."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también puede reservar llamando directamente al restaurante.",
-      "aEn": "We welcome walk-ins and you can also reserve by calling the restaurant directly."
-    },
-    {
-      "qEs": "¿Ofrecen servicio para llevar?",
-      "qEn": "Do you offer takeout services?",
-      "aEs": "Sí, puede ordenar por teléfono llamando al (860) 862-9559 para recoger en el local.",
-      "aEn": "Yes, you can order by phone at (860) 862-9559 for convenient pickup."
-    }
-  ]
+  "faqs": []
 }
