@@ -2,27 +2,17 @@
   "storeInfo": {
     "id": "the-202-tavern",
     "name": "The 202 Tavern",
-    "tagline": "Traditional American Fare & Authentic Pit BBQ in Washington, CT",
-    "address": "202 Route 202, Washington, CT 06793",
+    "tagline": "American restaurant in New Preston | Restaurante americano en New Preston",
+    "address": "295 New Milford Turnpike, New Preston, CT 06777",
     "phone": "(860) 619-0808",
     "hours": {
-      "monday_friday": "11:00 AM - 9:00 PM",
-      "saturday": "11:00 AM - 10:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "monday_friday": "11 AM - 9 PM",
+      "saturday": "11 AM - 10 PM",
+      "sunday": "11 AM - 9 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Bar / Happy Hour"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -34,301 +24,1518 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
-      "nameEs": "Entradas y Antojos",
-      "nameEn": "Appetizers & Bar Bites",
+      "nameEs": "Entradas",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "signature-soups",
+      "nameEs": "Sopas de la casa",
+      "nameEn": "Signature Soups",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de 'The Pit'",
-      "nameEn": "The Pit BBQ Specialties",
-      "icon": "Flame"
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Cocteles",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches-wraps",
+      "nameEs": "Sándwiches y wraps",
+      "nameEn": "Sandwiches & Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrées",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "large-side-dishes",
+      "nameEs": "Guarniciones grandes",
+      "nameEn": "Large Side Dishes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "BBQ ahumado lentamente (del pit)",
+      "nameEn": "Slo-Smoked BBQ (From the Pit)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bbq-combo-platters",
+      "nameEs": "Platos combinados de BBQ",
+      "nameEn": "BBQ Combo Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bbq-sandwiches",
+      "nameEs": "Sándwiches de BBQ",
+      "nameEn": "BBQ Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "from-the-cafe",
+      "nameEs": "De la cafetería",
+      "nameEn": "From the Cafe",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kid-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kid's Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour",
+      "nameEs": "Happy Hour",
+      "nameEn": "Happy Hour",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cócteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "martinis",
+      "nameEs": "Martinis",
+      "nameEn": "Martinis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "frozen-drinks",
+      "nameEs": "Bebidas frappé",
+      "nameEn": "Frozen Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine",
+      "nameEs": "Vino",
+      "nameEn": "Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "the-202-tavern-01",
+      "id": "beer-battered-shrimp",
       "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Estilo Tavern",
-      "nameEn": "Tavern Wings",
-      "descriptionEs": "Alitas crujientes bañadas en nuestra salsa secreta de la casa, servidas con aderezo de queso azul y apio fresco.",
-      "descriptionEn": "Crispy chicken wings tossed in our signature house sauce, served with blue cheese dressing and fresh celery.",
-      "price": "$7.00",
-      "popular": true,
-      "badge": "Happy Hour",
-      "tags": [
-        "Picante",
-        "Popular"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Camarones rebozados en cerveza",
+      "nameEn": "Beer Battered Shrimp",
+      "descriptionEs": "Media libra de camarones rebozados en cerveza, fritos hasta dorar y servidos con salsa tártara y salsa coctelera",
+      "descriptionEn": "A half pound of beer battered shrimp deep fried until golden brown and served with tartar and cocktail sauce",
+      "price": "$13.95",
       "ctaType": "in_store"
     },
     {
-      "id": "the-202-tavern-02",
+      "id": "fried-pickle-chips",
       "categoryId": "appetizers",
-      "nameEs": "PEI Mussels",
-      "descriptionEs": "Mejillones de la Isla del Príncipe Eduardo cocinados a fuego lento en un caldo de vino blanco, ajo, mantequilla y hierbas frescas.",
-      "descriptionEn": "Prince Edward Island mussels simmered in a white wine, garlic, butter, and fresh herb broth.",
-      "price": "$7.00",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos"
-      ],
+      "nameEs": "Rodajas de pepinillo fritas",
+      "nameEn": "Fried Pickle Chips",
+      "descriptionEs": "Rodajas de pepinillo rebozadas en cerveza, fritas hasta dorar, servidas con aderezo ranch",
+      "descriptionEn": "Beer battered pickle chips deep fried until golden brown, served with ranch dressing",
+      "price": "$10.50",
       "ctaType": "in_store"
     },
     {
-      "id": "the-202-tavern-03",
+      "id": "steamed-little-neck-clams",
       "categoryId": "appetizers",
-      "nameEs": "Nachos Cargados del Tabernero",
-      "nameEn": "Loaded Tavern Nachos",
-      "descriptionEs": "Totopos de maíz crujientes cubiertos con queso fundido, frijoles negros, jalapeños, crema agria, guacamole y pico de gallo.",
-      "descriptionEn": "Crispy corn tortilla chips topped with melted cheese, black beans, jalapeños, sour cream, guacamole, and pico de gallo.",
-      "price": "$7.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-04",
-      "categoryId": "appetizers",
-      "nameEs": "Pieles de Papa Rellenas",
-      "nameEn": "Potato Skins",
-      "descriptionEs": "Pieles de papa crujientes cargadas con tocino ahumado, queso cheddar fundido y cebollín fresco, con crema agria al lado.",
-      "descriptionEn": "Crispy potato skins loaded with smoked bacon, melted cheddar cheese, and fresh chives, served with sour cream.",
-      "price": "$7.00",
-      "popular": false,
-      "badge": "Classic",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Cerdo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-05",
-      "categoryId": "appetizers",
-      "nameEs": "Queso Fundido con Brisket Ahumado",
-      "nameEn": "BBQ Brisket Queso & Chips",
-      "descriptionEs": "Queso fundido cremoso mezclado con nuestro brisket ahumado en 'The Pit' durante 14 horas, servido con totopos calientes.",
-      "descriptionEn": "Creamy melted cheese dip blended with our 14-hour pit-smoked brisket, served with warm tortilla chips.",
-      "price": "$8.00",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Especialidad",
-        "Ahumado"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-06",
-      "categoryId": "specialties",
-      "nameEs": "Costillas Ahumadas 'The Pit' (Media porción)",
-      "nameEn": "Pit Smoked Ribs (Half Rack)",
-      "descriptionEs": "Costillas de cerdo tierno ahumadas lentamente a la perfección con nuestra mezcla secreta de especias y glaseadas con salsa BBQ casera.",
-      "descriptionEn": "Tender pork ribs slow-smoked to perfection with our secret dry rub and glazed in house-made BBQ sauce.",
-      "price": "$24.95",
-      "popular": true,
-      "badge": "Pit Specialty",
-      "tags": [
-        "Ahumado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Cerdo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-07",
-      "categoryId": "specialties",
-      "nameEs": "Cerdo Desmenuzado al Estilo BBQ",
-      "nameEn": "Pulled Pork Platter",
-      "descriptionEs": "Carne de cerdo jugosa y desmenuzada a mano, ahumada por horas sobre madera de manzano, acompañada de ensalada de col y papas fritas.",
-      "descriptionEn": "Juicy, hand-pulled pork shoulder smoked for hours over applewood, served with coleslaw and french fries.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Crowd Favorite",
-      "tags": [
-        "Ahumado",
-        "Casero"
-      ],
-      "allergens": [
-        "Cerdo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-08",
-      "categoryId": "specialties",
-      "nameEs": "Brisket de Res Ahumado",
-      "nameEn": "Smoked Beef Brisket Plate",
-      "descriptionEs": "Brisket de res tierno que se deshace en la boca, sazonado con pimienta negra y sal kosher, ahumado lentamente en 'The Pit'.",
-      "descriptionEn": "Melt-in-your-mouth tender beef brisket seasoned with coarse black pepper and kosher salt, slow-smoked in 'The Pit'.",
-      "price": "$26.50",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Ahumado",
-        "Sin Gluten"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-09",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Clásica The 202",
-      "nameEn": "The 202 Tavern Burger",
-      "descriptionEs": "Jugosa carne de res local con queso cheddar añejo, tocino crujiente, lechuga, tomate y cebolla morada en pan brioche tostado.",
-      "descriptionEn": "Juicy local beef patty topped with sharp cheddar, crisp bacon, lettuce, tomato, and red onion on a toasted brioche bun.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Americano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Cerdo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-10",
-      "categoryId": "mains",
-      "nameEs": "Filete New York Strip con Mantequilla de Hierbas",
-      "nameEn": "New York Strip Steak",
-      "descriptionEs": "Corte New York de 12 oz a la parrilla a su gusto, coronado con mantequilla de hierbas y servido con puré de papa y vegetales de temporada.",
-      "descriptionEn": "12 oz New York strip grilled to your liking, topped with herb compound butter and served with mashed potatoes and seasonal vegetables.",
-      "price": "$32.00",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-202-tavern-11",
-      "categoryId": "mains",
-      "nameEs": "Ensalada César con Pollo a la Parrilla",
-      "nameEn": "Grilled Chicken Caesar Salad",
-      "descriptionEs": "Lechuga romana fresca y crujiente, crotones de ajo hechos en casa, queso parmesano rallado y pechuga de pollo a la parrilla.",
-      "descriptionEn": "Fresh, crisp romaine lettuce tossed with house garlic croutons, shaved parmesan cheese, and sliced grilled chicken breast.",
+      "nameEs": "Almejas little neck al vapor",
+      "nameEn": "Steamed Little Neck Clams",
+      "descriptionEs": "Almejas frescas en salsa de mantequilla con ajo y vino blanco con pan tostado al ajo",
+      "descriptionEn": "Fresh clams in a garlic butter white wine sauce with garlic toast",
       "price": "$16.00",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Pescado"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "the-202-tavern-12",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Patrón Signature",
-      "nameEn": "Patrón Signature Margarita",
-      "descriptionEs": "Tequila Patrón Silver, licor de naranja fresco, jugo de lima natural y un toque de néctar de agave con borde salado.",
-      "descriptionEn": "Patrón Silver tequila, fresh orange liqueur, natural lime juice, and a touch of agave nectar with a salted rim.",
+      "id": "pei-mussels",
+      "categoryId": "appetizers",
+      "nameEs": "Mejillones de la Isla del Príncipe Eduardo",
+      "nameEn": "PEI Mussels",
+      "descriptionEs": "Servidos en caldo de tomate rojo con hierbas o salsa de mantequilla con ajo y vino blanco con pan tostado al ajo",
+      "descriptionEn": "Served in an herb red tomato broth or garlic butter white wine sauce with garlic toast",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Alitas de pollo fritas y doradas bañadas en tu salsa favorita: BBQ con miel, BBQ suave, búfalo, Blazing Hot, BBQ de habanero o naturales",
+      "descriptionEn": "Golden fried chicken wings tossed in your favorite wing sauce: Honey BBQ, Mild BBQ, Buffalo Sauce, Blazing Hot, Habanero BBQ, or Naked (plain)",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos",
+      "categoryId": "appetizers",
+      "nameEs": "Nachos",
+      "nameEn": "Nachos",
+      "descriptionEs": "Montaña de totopos y chili con queso pepper jack fundido, queso cheddar, pico de gallo y crema agria. Agrega pollo $7",
+      "descriptionEn": "A pile of tortilla chips and chili with melted pepper jack cheese, cheddar cheese, pico de gallo, and sour cream. Add chicken $7",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesy-bacon-spuds",
+      "categoryId": "appetizers",
+      "nameEs": "Papas rellenas con queso y tocino",
+      "nameEn": "Cheesy Bacon Spuds",
+      "descriptionEs": "Cáscaras de papa rellenas de cerdo deshebrado ahumado, queso pepper jack fundido, queso cheddar, tocino crujiente ahumado con nogal, servidas con crema agria y pico de gallo",
+      "descriptionEn": "Potato skins loaded with smoked pulled pork, melted pepper jack cheese, cheddar cheese, crispy hickory-smoked bacon, and served with sour cream and pico de gallo",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "river-rolls",
+      "categoryId": "appetizers",
+      "nameEs": "Rollos River",
+      "nameEn": "River Rolls",
+      "descriptionEs": "Tortillas de harina rellenas a reventar de pollo, queso jalapeño jack y cheddar, elote, frijoles negros, cebolla y pimientos salteados, fritas a la perfección. Servidas con nuestra famosa salsa River Ripple casera",
+      "descriptionEn": "Flour tortillas stuffed to the max with chicken, jalapeno jack and cheddar cheese, corn, black beans, sautéed onions and peppers, and fried to perfection. Served with our famous house made River Ripple sauce",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-quesadillas",
+      "categoryId": "appetizers",
+      "nameEs": "Quesadillas de pollo",
+      "nameEn": "Chicken Quesadillas",
+      "descriptionEs": "Tortilla de harina rellena de pollo a la parrilla, queso pepper jack y queso cheddar, pimiento rojo y cebollín. Servida con crema agria y pico de gallo para remojar",
+      "descriptionEn": "Flour tortilla packed with grilled chicken, pepper jack cheese and cheddar cheese, red peppers, and scallions. Served with a side of sour cream and pico de gallo for dipping",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-crab-cakes",
+      "categoryId": "appetizers",
+      "nameEs": "Pasteles de cangrejo sellados en sartén",
+      "nameEn": "Pan-Seared Crab Cakes",
+      "descriptionEs": "Pastelitos de carne de cangrejo sellados hasta dorar y coronados con salsa de chipotle y pimiento rojo",
+      "descriptionEn": "Crab meat cakes pan-seared golden brown and crowned with chipotle red pepper sauce",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "river-rings",
+      "categoryId": "appetizers",
+      "nameEs": "Aros River",
+      "nameEn": "River Rings",
+      "descriptionEs": "Aros de cebolla gruesos rebozados en cerveza, empanizados a mano y fritos hasta dorar, servidos con aderezo ranch de jalapeño para remojar",
+      "descriptionEn": "Thick-cut beer battered onion rings, hand breaded, and fried golden brown, served with jalapeño ranch dressing for dipping",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-topple",
+      "categoryId": "appetizers",
+      "nameEs": "Tavern Topple",
+      "nameEn": "Tavern Topple",
+      "descriptionEs": "Un plato lleno de nuestras botanas favoritas para compartir: camarones rebozados en cerveza, alitas de pollo, papas rellenas con queso y tocino y rollos River",
+      "descriptionEn": "A plate full of our favorite snacks for everyone to share: beer battered shrimp, chicken wings, cheesy bacon spuds, and river rolls",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "golden-tempura-shrimp",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones tempura dorados",
+      "nameEn": "Golden Tempura Shrimp",
+      "descriptionEs": "Camarones dorados y crujientes con alioli de chile y lima",
+      "descriptionEn": "Golden crispy shrimp with chili lime aioli",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-daily-soup",
+      "categoryId": "signature-soups",
+      "nameEs": "Sopa del día casera",
+      "nameEn": "Homemade Daily Soup",
+      "descriptionEs": "¡Pregúntale a tu mesero! Agrégala a cualquier plato fuerte, sándwich o hamburguesa por $7.50",
+      "descriptionEn": "Just ask your server! Add to any entrée, sandwich, or burger for $7.50",
+      "price": "$8.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder",
+      "categoryId": "signature-soups",
+      "nameEs": "Clam chowder de Nueva Inglaterra",
+      "nameEn": "New England Clam Chowder",
+      "descriptionEs": "Sopa blanca cremosa y sustanciosa con almejas, papas, tocino, apio y cebolla (no forma parte del combo de sopa)",
+      "descriptionEn": "Creamy white hearty soup made with clams, potatoes, bacon, celery and onions (not part of soup combo)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "signature-soups",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Rico caldo de res y cebolla cubierto con queso suizo fundido. Agrégala a cualquier plato fuerte, sándwich o hamburguesa por $7.50",
+      "descriptionEn": "A rich beef and onion broth topped with melted Swiss cheese. Add to any entrée, sandwich, or burger for $7.50",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-chili",
+      "categoryId": "signature-soups",
+      "nameEs": "Chili de la taberna",
+      "nameEn": "Tavern Chili",
+      "descriptionEs": "Porción abundante de carne molida de res y cerdo, verduras, frijoles rojos, queso pepper jack fundido, queso cheddar y totopos crujientes (no forma parte del combo de sopa)",
+      "descriptionEn": "A hearty serving of ground beef, pork, veggies, kidney beans, melted pepper jack cheese, cheddar cheese, and crispy tortilla chips (not part of soup combo)",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-house-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "Tavern House Salad",
+      "descriptionEs": "Mezcla de lechugas con zanahoria, cebolla, tomate y el aderezo de tu elección. Agrega una ensalada de la casa a cualquier sándwich, hamburguesa o plato fuerte por $4.00",
+      "descriptionEn": "A blend of lettuce, with carrots, onions, tomatoes, with your choice of dressing. Add side house salad to any sandwich, burger, or entrée for $4.00",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-steak-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada con bistec New York strip",
+      "nameEn": "New York Strip Steak Salad",
+      "descriptionEs": "8 onzas de New York strip a la parrilla sobre una cama de hojas verdes con tomate, cebolla, pepino, zanahoria, queso azul desmoronado y crutones. Servida con tu aderezo favorito",
+      "descriptionEn": "8 ounces of New York strip grilled to perfection, on top of a bed of greens with tomatoes, onions, cucumbers, carrots, crumbled blue cheese and croutons. Served with your favorite dressing",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana crujiente picada, mezclada con aderezo César cremoso, crutones con costra de hierbas y queso parmesano",
+      "descriptionEn": "Crisp romaine lettuce chopped, tossed in a creamy Caesar dressing, with herb crusted croutons and Parmesan cheese",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pollo cajún",
+      "nameEn": "Cajun Chicken Salad",
+      "descriptionEs": "Cama de lechugas picadas con cebolla, zanahoria, tomate, queso pepper jack y queso cheddar. Cubierta con pollo cajún a la parrilla. Servida con vinagreta balsámica aparte",
+      "descriptionEn": "A chopped bed of blended lettuce, with onions, carrots, tomatoes, pepper jack cheese and cheddar cheese. Topped with cajun grilled chicken. Served with balsamic vinaigrette on the side",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-club-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada club de pollo",
+      "nameEn": "Chicken Club Salad",
+      "descriptionEs": "Mezcla de lechugas, cebolla morada, tomate, pepino, zanahoria, trocitos de tocino crujiente ahumado con nogal, queso azul desmoronado, huevo picado. Con pollo a la parrilla encima y aderezo a elegir aparte",
+      "descriptionEn": "A blend of lettuce, red onions, tomatoes, cucumbers, carrots, crispy hickory-smoked bacon pieces, crumbled blue cheese, chopped eggs. With grilled chicken on top and choice of dressing on the side",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-fruit-nut-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de frutas y nueces",
+      "nameEn": "Harvest Fruit & Nut Salad",
+      "descriptionEs": "Lechuga romana picada con pasas doradas, manzana, zanahoria, arándanos secos, nueces pecanas y queso azul desmoronado. Mezclada con aderezo de frambuesa y semillas de amapola. Agrega pollo a la parrilla $7",
+      "descriptionEn": "Chopped romaine lettuce with golden raisins, apple, carrots, dried cranberries, pecans, and crumbled blue cheese. Tossed in a raspberry poppyseed dressing. Add grilled chicken $7",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-taco-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de taco con pollo",
+      "nameEn": "Chicken Taco Salad",
+      "descriptionEs": "Pollo cajún con pimientos y cebolla salteados en nuestra salsa para fajitas, servido en un tazón de tortilla crujiente lleno de hojas verdes mixtas, salsa, crema agria, queso cheddar y pepper jack, cubierto con totopos de maíz crujientes",
+      "descriptionEn": "Cajun chicken, with sautéed peppers and onions in our fajita sauce, served in a fresh crispy tortilla bowl piled high with mixed salad greens, salsa, sour cream, cheddar and pepper jack cheese, topped with crispy corn chips",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-add-ons",
+      "categoryId": "salads",
+      "nameEs": "Extras para ensaladas",
+      "nameEn": "Salad Add-Ons",
+      "descriptionEs": "Pollo a la parrilla $7; camarones a la parrilla $10; salmón de 8 oz o bistec New York de 8 oz a la parrilla $15",
+      "descriptionEn": "Grilled chicken $7; grilled shrimp $10; grilled 8 oz salmon or 8 oz New York steak $15",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-mac-and-cheese",
+      "categoryId": "pasta",
+      "nameEs": "Mac and cheese de la taberna",
+      "nameEn": "Tavern Mac and Cheese",
+      "descriptionEs": "Pasta penne en nuestra salsa de 4 quesos: Velveeta, americano blanco, cheddar amarillo y parmesano, cubierta con tocino ahumado con nogal y pan molido panko sazonado, horneada a la perfección. Agrega pollo a la parrilla $7, agrega camarones a la parrilla $10. Se sirve con ensalada de la casa",
+      "descriptionEn": "Penne pasta in our Tavern 4 cheese sauce: Velveeta, white American, yellow cheddar, and Parmesan cheese, topped with hickory-smoked bacon and panko bread crumb seasonings, baked to perfection. Add grilled chicken $7, add grilled shrimp $10. Served with a house salad",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-alla-vodka-with-shrimp",
+      "categoryId": "pasta",
+      "nameEs": "Penne a la vodka con camarones",
+      "nameEn": "Penne alla Vodka with Shrimp",
+      "descriptionEs": "Pasta penne en nuestra salsa cremosa de tomate, parmesano y vodka, terminada con camarones tiernos y un toque de parmesano. Se sirve con pan de ajo y ensalada de la casa",
+      "descriptionEn": "Penne pasta tossed in our Tavern Parmesan tomato vodka cream sauce, finished with tender shrimp and a touch of Parmesan. Served with garlic bread and a house salad",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-and-sausage-pasta-party",
+      "categoryId": "pasta",
+      "nameEs": "Fiesta de pasta con pollo y salchicha",
+      "nameEn": "Chicken and Sausage Pasta Party",
+      "descriptionEs": "Pollo y salchicha andouille en salsa cremosa de tomate y parmesano. Servido sobre pasta penne con pan de ajo y ensalada de la casa",
+      "descriptionEn": "Chicken and andouille sausage in a Parmesan tomato cream sauce. Served over penne pasta with garlic bread and a house salad",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-lover-s-pasta",
+      "categoryId": "pasta",
+      "nameEs": "Pasta para amantes de los mariscos",
+      "nameEn": "Seafood Lover's Pasta",
+      "descriptionEs": "Almejas, camarones y mejillones salteados en nuestra salsa cremosa de tomate y parmesano, servidos sobre linguine con pan de ajo y ensalada de la casa",
+      "descriptionEn": "Sautéed clams, shrimp, and mussels in our Tavern Parmesan tomato cream sauce, served over linguine with garlic bread and a house salad",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riverside-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa Riverside",
+      "nameEn": "Riverside Burger",
+      "descriptionEs": "Una carne de ½ libra con una mezcla especial de costilla corta de res Angus, brisket y aguja de res, servida con lechuga, tomate y cebolla morada. Agrega el queso de tu elección. En pan brioche con papas fritas",
+      "descriptionEn": "A ½ pound patty with a special blend of Angus beef short ribs, brisket, and beef chuck roll, served with lettuce, tomato, and red onion. Add your choice of cheese. On a brioche roll with french fries",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-bacon-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de champiñones y tocino",
+      "nameEn": "Mushroom Bacon Burger",
+      "descriptionEs": "Una carne de ½ libra con una mezcla especial de costilla corta de res Angus, brisket y aguja de res, cubierta con queso suizo, tocino ahumado con nogal, champiñones, pimientos y cebolla salteados. Servida con lechuga, tomate y mayonesa de chipotle. En pan brioche con papas fritas",
+      "descriptionEn": "A ½ pound patty with a special blend of Angus beef short ribs, brisket, and beef chuck roll, topped with Swiss cheese, hickory smoked bacon, sautéed mushrooms, peppers, and onions. Served with lettuce, tomato, and chipotle mayo. On a brioche roll with french fries",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blazing-onion-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa Blazing Onion",
+      "nameEn": "Blazing Onion Burger",
+      "descriptionEs": "Una carne de ½ libra con una mezcla especial de costilla corta de res Angus, brisket y aguja de res, cubierta con tocino ahumado con nogal, queso pepper jack fundido, lechuga, tomate, tiras de cebolla picantes y mayonesa de chipotle. En pan brioche con papas fritas",
+      "descriptionEn": "A ½ pound patty with a special blend of Angus beef short ribs, brisket, and beef chuck roll, smothered with hickory-smoked bacon, melted pepper jack cheese, lettuce, tomato, spicy onion straws, and chipotle mayo. On a brioche roll with french fries",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zesty-veggie-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa vegetariana zesty",
+      "nameEn": "Zesty Veggie Burger",
+      "descriptionEs": "Torta de verduras con frijoles negros, pimientos rojos y verdes, avena, cubierta con queso pepper jack, lechuga, tomate, cebolla morada cruda, pimientos, champiñones y cebolla salteados, y mayonesa de chipotle. En pan brioche con papas fritas",
+      "descriptionEn": "A garden vegetable patty loaded with black beans, crushed red and green peppers, rolled oats, topped with pepper jack cheese, lettuce, tomato, raw red onion, sautéed peppers, mushrooms, and onions, topped with chipotle mayo. On a brioche roll with french fries",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hickory-chicken-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de pollo hickory",
+      "nameEn": "Hickory Chicken Sandwich",
+      "descriptionEs": "Pollo a la parrilla cubierto con tocino ahumado con nogal, cebolla salteada, queso pepper jack, queso cheddar y salsa BBQ Riverside Hickory, servido en pan telera tostado",
+      "descriptionEn": "Grilled chicken topped with hickory-smoked bacon, sautéed onions, pepper jack cheese, cheddar cheese and Riverside Hickory BBQ sauce, served on a toasted telera roll",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-club-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich club de la taberna",
+      "nameEn": "Tavern Club Sandwich",
+      "descriptionEs": "Pechuga de pollo a la parrilla en rebanadas finas, tocino crujiente ahumado con nogal, queso suizo, lechuga, tomate y mayonesa de chipotle en pan telera",
+      "descriptionEn": "Grilled chicken breast thinly sliced, crispy hickory-smoked bacon, Swiss cheese, lettuce, tomato and chipotle mayo on telera roll",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-rib-steak-melt",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Melt de prime rib",
+      "nameEn": "Prime Rib Steak Melt",
+      "descriptionEs": "Prime rib rebanado con champiñones, pimientos y cebolla salteados, queso americano, en pan telera tostado. Servido con jugo de carne para remojar",
+      "descriptionEn": "Sliced prime rib with sautéed mushrooms, peppers, onions, American cheese, on a toasted telera roll. Served with a side of au jus for dipping",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riverside-chili-dog",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Chili dog Riverside",
+      "nameEn": "Riverside Chili Dog",
+      "descriptionEs": "Salchicha de res de ¼ de libra a la parrilla, servida con chili, cebolla cruda picada y queso pepper jack. Servida en pan brioche",
+      "descriptionEn": "An all-beef ¼ pound hot dog grilled, served with chili, chopped raw onions and pepper jack cheese. Served on a brioche roll",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-or-beef-fajita-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Wrap de fajita de pollo o res",
+      "nameEn": "Chicken or Beef Fajita Wrap",
+      "descriptionEs": "Res o pollo a elegir, salteado con pimientos, cebolla, queso cheddar y pepper jack, salsa teriyaki de la casa, envuelto en tortilla de harina. Servido con pico de gallo y crema agria con lima",
+      "descriptionEn": "Your choice of beef or chicken sautéed with peppers, onions, cheddar and pepper jack cheese, Tavern teriyaki sauce, wrapped in a flour tortilla. Served with a side of pico de gallo and lime sour cream",
+      "price": "Chicken $15.50 / Beef $16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-or-shrimp-caesar-salad-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Wrap de ensalada César con pollo o camarones",
+      "nameEn": "Chicken or Shrimp Caesar Salad Wrap",
+      "descriptionEs": "Pollo o camarones a elegir con lechuga romana crujiente, aderezo César cremoso y queso parmesano, envuelto en tortilla de harina",
+      "descriptionEn": "Your choice of chicken or shrimp mixed with crisp romaine lettuce, creamy Caesar dressing, Parmesan cheese, wrapped in a flour tortilla",
+      "price": "Chicken $14.99 / Shrimp $15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatloaf-and-cheddar-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de pastel de carne con cheddar",
+      "nameEn": "Meatloaf and Cheddar Sandwich",
+      "descriptionEs": "Porción generosa de pastel de carne con queso cheddar, pepinillos, mayonesa de chipotle y catsup en pan brioche",
+      "descriptionEn": "Generous portion of meatloaf with cheddar cheese, pickles, chipotle mayo and ketchup served on brioche roll",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-cubano-flatboy",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Flatboy cubano de la taberna",
+      "nameEn": "Tavern Cubano Flatboy",
+      "descriptionEs": "Cerdo deshebrado, salchicha italiana picante, queso suizo, pepinillos en eneldo y mostaza criolla en pan naan",
+      "descriptionEn": "Pulled pork, hot Italian sausage, Swiss cheese, dill pickles and Creole mustard on a naan flatbread",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-steak",
+      "categoryId": "entrees",
+      "nameEs": "Bistec New York strip",
+      "nameEn": "New York Strip Steak",
+      "descriptionEs": "Bistec de lomo IBP Choice de 12 onzas, tierno y sazonado a la perfección. Con dos guarniciones a elegir",
+      "descriptionEn": "12 ounce IBP Choice strip steak, tender and seasoned to perfection. With your choice of two sides",
+      "price": "$31.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rib-eye-steak",
+      "categoryId": "entrees",
+      "nameEs": "Bistec rib eye",
+      "nameEn": "Rib-Eye Steak",
+      "descriptionEs": "Corte de rib eye de 12 onzas, sazonado y cocido a tu gusto. A la parrilla o estilo cajún, servido con cebollas Tabasco y dos guarniciones",
+      "descriptionEn": "12 ounce cut of rib-eye, seasoned and cooked to your liking. Your choice of grilled or Cajun style, served with Tabasco onions and two sides",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-meatloaf-dinner",
+      "categoryId": "entrees",
+      "nameEs": "Cena de pastel de carne de la taberna",
+      "nameEn": "Tavern Meatloaf Dinner",
+      "descriptionEs": "Res, cerdo, salchicha andouille y verduras, sazonadores de la casa, pan molido panko, cubierto con demi-glace de verduras. Con dos guarniciones",
+      "descriptionEn": "Beef, pork, andouille sausage, and vegetables, Tavern seasonings, panko bread crumbs, topped with a vegetable demi-glace. With two sides",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-prime-rib",
+      "categoryId": "entrees",
+      "nameEs": "Prime rib de la taberna",
+      "nameEn": "Tavern Prime-Rib",
+      "descriptionEs": "Prime rib con costra de hierbas rostizado lentamente, con salsa de rábano picante y jugo de carne. Con dos guarniciones. Disponible después de las 4 p.m.",
+      "descriptionEn": "Herb crusted prime rib slow roasted, with a side of horseradish sauce and au jus. With two sides. Available after 4 p.m.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shepherd-s-pie",
+      "categoryId": "entrees",
+      "nameEs": "Pastel del pastor",
+      "nameEn": "Shepherd's Pie",
+      "descriptionEs": "Res y cerdo, verduras, sazonadores de la casa, queso cheddar, cubierto con puré de papa con ajo como costra. Se sirve con ensalada de la casa",
+      "descriptionEn": "Beef and pork, vegetables, Tavern seasonings, cheddar cheese, and topped with garlic mashed potatoes for a potato crust. Served with a house salad",
+      "price": "$19.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sizzling-fajitas",
+      "categoryId": "entrees",
+      "nameEs": "Fajitas chisporroteantes",
+      "nameEn": "Sizzling Fajitas",
+      "descriptionEs": "Res o pollo salteado con pimientos, cebolla, queso cheddar, queso pepper jack, salsa teriyaki de la casa, lechuga, pico de gallo, crema agria, arroz amarillo con verduras y tortillas de harina. No incluye dos guarniciones",
+      "descriptionEn": "Beef or chicken sautéed with peppers, onions, cheddar cheese, pepper jack cheese, Tavern teriyaki sauce, lettuce, pico de gallo, sour cream, yellow vegetable rice and flour tortilla wraps. Not served with two sides",
+      "price": "Chicken $19.99 / Beef $21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-country-fried-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Pollo frito estilo campestre",
+      "nameEn": "Tavern Country Fried Chicken",
+      "descriptionEs": "Pechuga de pollo sin hueso frita estilo casero, marinada en suero de leche y empanizada a mano con nuestra mezcla de pan molido, servida con gravy oscuro encima. Con dos guarniciones",
+      "descriptionEn": "Home-style fried boneless chicken breast marinated in buttermilk, hand-coated in our bread crumb blend, served with brown gravy on top. With two sides",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brisket-burrito",
+      "categoryId": "entrees",
+      "nameEs": "Burrito de brisket",
+      "nameEn": "Brisket Burrito",
+      "descriptionEs": "Brisket ahumado sazonado, chili, frijoles, arroz, queso pepper jack, queso cheddar, envuelto en tortilla de harina y servido con pico de gallo y crema agria. Con dos guarniciones",
+      "descriptionEn": "Seasoned smoked brisket, chili, beans, rice, pepper jack cheese, cheddar cheese, wrapped in a flour tortilla, and served with pico de gallo and sour cream. With two sides",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-overstuffed-with-crabmeat",
+      "categoryId": "seafood",
+      "nameEs": "Camarones rellenos de cangrejo",
+      "nameEn": "Shrimp Overstuffed with Crabmeat",
+      "descriptionEs": "Camarones generosamente rellenos de carne de cangrejo, horneados con nuestra salsa de mantequilla con limón y eneldo. Con dos guarniciones",
+      "descriptionEn": "Shrimp generously stuffed with crab meat, and baked with our lemon dill butter sauce. With two sides",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crabmeat-stuffed-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón relleno de cangrejo",
+      "nameEn": "Crabmeat Stuffed Salmon",
+      "descriptionEs": "Filete de salmón de media libra relleno de carne de cangrejo, en salsa de mantequilla con limón, ajo y vino blanco. Con dos guarniciones",
+      "descriptionEn": "Half pound salmon filet stuffed with crab meat, in a lemon garlic butter white wine sauce. With two sides",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-swordfish",
+      "categoryId": "seafood",
+      "nameEs": "Pez espada a la parrilla",
+      "nameEn": "Grilled Swordfish",
+      "descriptionEs": "Media libra de filete de pez espada a la parrilla terminado al horno con salsa de mantequilla con limón y eneldo. Con dos guarniciones",
+      "descriptionEn": "Half pound of grilled swordfish filet oven roasted with a lemon dill butter sauce. With two sides",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cakes",
+      "categoryId": "seafood",
+      "nameEs": "Pastelitos de cangrejo",
+      "nameEn": "Crab Cakes",
+      "descriptionEs": "Tres pasteles de cangrejo sellados y horneados con salsa de chipotle y pimiento rojo. Con dos guarniciones",
+      "descriptionEn": "Three crab cakes seared and oven roasted with chipotle and red pepper sauce. With two sides",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón a la parrilla",
+      "nameEn": "Grilled Salmon",
+      "descriptionEs": "Media libra de salmón fresco sazonado y a la parrilla con salsa de mantequilla con ajo y vino blanco. Con dos guarniciones",
+      "descriptionEn": "Half pound fresh salmon seasoned and grilled with a garlic butter and white wine sauce. With two sides",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer-battered-fish-and-chips",
+      "categoryId": "seafood",
+      "nameEs": "Pescado con papas rebozado en cerveza",
+      "nameEn": "Beer Battered Fish and Chips",
+      "descriptionEs": "Bacalao del Atlántico Norte rebozado en masa con Guinness y frito rápidamente, con salsa tártara casera y salsa coctelera para remojar. Servido con ensalada de col y papas fritas",
+      "descriptionEn": "North Atlantic cod tossed in a Guinness batter and flash fried, with homemade tartar and cocktail sauce for dipping. Served with coleslaw and french fries",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-beans",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Frijoles horneados",
+      "nameEn": "Baked Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-garlic-mashed-potatoes",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Puré de papa con ajo rostizado",
+      "nameEn": "Roasted Garlic Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "$0.85 para agregarlas como guarnición a un plato fuerte",
+      "descriptionEn": "$0.85 to add as a side to an entrée",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coleslaw",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Coleslaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-of-the-day",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Vegetal del día",
+      "nameEn": "Vegetable of the Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamed-spinach",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Espinaca a la crema",
+      "nameEn": "Creamed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellow-vegetable-rice-with-kielbasa",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Arroz amarillo con verduras y kielbasa",
+      "nameEn": "Yellow Vegetable Rice with Kielbasa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "large-side-dishes",
+      "nameEs": "Papa al horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-back-ribs",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Costillas baby back",
+      "nameEn": "Baby Back Ribs",
+      "descriptionEs": "Costillas de la mejor calidad ahumadas lentamente con leña de nogal hasta quedar perfectas y tiernas. Con 2 guarniciones y salsa",
+      "descriptionEn": "Best quality ribs slow smoked over hickory wood until perfect and tender. With 2 sides and sauce",
+      "price": "1/2 Rack $24.00 / Full Rack $34.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-brisket",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Pecho de res (brisket)",
+      "nameEn": "Beef Brisket",
+      "descriptionEs": "Ahumado durante 12 horas. Con 2 guarniciones y salsa",
+      "descriptionEn": "Smoked for 12 hours. With 2 sides and sauce",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Cerdo deshebrado",
+      "nameEn": "Pulled Pork",
+      "descriptionEs": "Paleta de cerdo ahumada lentamente durante 14 horas. Con 2 guarniciones y salsa",
+      "descriptionEn": "Slo-smoked pork butts cooked for 14 hours. With 2 sides and sauce",
+      "price": "$27.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "slo-smoked-chicken",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Pollo ahumado lentamente",
+      "nameEn": "Slo-Smoked Chicken",
+      "descriptionEs": "Marinado en salmuera de manzana y especias. Con 2 guarniciones y salsa",
+      "descriptionEn": "Marinated in an apple spice brine. With 2 sides and sauce",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-italian-sausage",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Salchicha italiana picante",
+      "nameEn": "Hot Italian Sausage",
+      "descriptionEs": "Salchicha de cerdo servida con pimientos y cebolla salteados con nuestra salsa BBQ Hickory casera. Con 2 guarniciones",
+      "descriptionEn": "Pork sausage served with sautéed peppers and onions with our homemade Hickory BBQ sauce. With 2 sides",
+      "price": "$19.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-mac-cheese",
+      "categoryId": "slo-smoked-bbq-from-the-pit",
+      "nameEs": "Mac & cheese BBQ",
+      "nameEn": "BBQ Mac & Cheese",
+      "descriptionEs": "Pasta penne en nuestra salsa de 4 quesos cubierta con brisket de res o cerdo deshebrado. Se sirve con ensalada",
+      "descriptionEn": "Penne pasta in our Tavern 4 cheese sauce topped with our beef brisket or pulled pork. Served with side salad",
+      "price": "$27.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-s-a-party",
+      "categoryId": "bbq-combo-platters",
+      "nameEs": "Two's a Party (combo de dos)",
+      "nameEn": "Two's a Party",
+      "descriptionEs": "Elige 2 de nuestras carnes del menú de BBQ ahumado. Con 2 guarniciones y salsa",
+      "descriptionEn": "Pick 2 of our meats from our Slo-Smoked BBQ menu. With 2 sides and sauce",
+      "price": "$31.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "202-tavern-triple-combo",
+      "categoryId": "bbq-combo-platters",
+      "nameEs": "Combo triple 202 Tavern",
+      "nameEn": "202 Tavern Triple Combo",
+      "descriptionEs": "Elige 3 de nuestras carnes. Con 2 guarniciones y salsa",
+      "descriptionEn": "Choose 3 of our meats. With 2 sides and sauce",
+      "price": "$36.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-ultimate-202-tavern-feast",
+      "categoryId": "bbq-combo-platters",
+      "nameEs": "El banquete definitivo 202 Tavern",
+      "nameEn": "The Ultimate 202 Tavern Feast",
+      "descriptionEs": "Elige 3 carnes: cerdo deshebrado, pollo, costillas baby back, brisket de res y nuestra salchicha italiana picante. Servido con 2 guarniciones grandes a elegir. Para 4 personas; cada persona adicional $32.00",
+      "descriptionEn": "Choose 3 meats: pulled pork, chicken, baby back ribs, beef brisket and our hot Italian sausage. Served with your choice of 2 large sides. Serves 4 people; additional party members $32.00 per person",
+      "price": "$134.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-sandwich",
+      "categoryId": "bbq-sandwiches",
+      "nameEs": "Sándwich de cerdo",
+      "nameEn": "Pork Sandwich",
+      "descriptionEs": "Cerdo deshebrado bañado en nuestra salsa BBQ Hickory casera con ensalada de col en pan telera tostado. Servido con papas fritas",
+      "descriptionEn": "Pulled pork drenched in our homemade Hickory BBQ sauce paired with coleslaw on a toasted telera roll. Served with fries",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-pulled-chicken-sandwich",
+      "categoryId": "bbq-sandwiches",
+      "nameEs": "Sándwich de pollo deshebrado BBQ",
+      "nameEn": "BBQ Pulled Chicken Sandwich",
+      "descriptionEs": "Pollo ahumado deshebrado servido con ensalada de col y nuestra salsa BBQ Hickory casera en pan telera. Servido con papas fritas",
+      "descriptionEn": "Smoked chicken pulled and served with coleslaw and our homemade Hickory BBQ sauce on a telera roll. Served with fries",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brisket-sandwich",
+      "categoryId": "bbq-sandwiches",
+      "nameEs": "Sándwich de brisket",
+      "nameEn": "Brisket Sandwich",
+      "descriptionEs": "Brisket de res picado, cebolla caramelizada, queso cheddar y nuestra salsa BBQ Hickory casera en pan telera. Servido con papas fritas",
+      "descriptionEn": "Chopped beef brisket, caramelized onions, cheddar cheese and our homemade Hickory BBQ sauce on a telera roll. Served with fries",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "handmade-churro-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae de churro hecho a mano",
+      "nameEn": "Handmade Churro Sundae",
+      "descriptionEs": "Tazón de churro hecho a mano, revolcado en azúcar con canela, relleno de helado de vainilla, chocolate o fresa a elegir, cubierto con salsa de caramelo, salsa de chocolate y crema batida",
+      "descriptionEn": "Handmade churro bowl, rolled in cinnamon sugar, filled with your choice of vanilla, chocolate, or strawberry ice cream, topped with caramel sauce, chocolate sauce, and whipped cream",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "molten-chocolate-lava-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate fundido",
+      "nameEn": "Molten Chocolate Lava Cake",
+      "descriptionEs": "Pastel de chocolate con centro de chocolate fundido, cubierto con helado de vainilla en una concha de chocolate con crema batida",
+      "descriptionEn": "Chocolate cake with a molten chocolate center, topped with vanilla ice cream in a chocolate shell with whipped cream",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-sundae-bowl",
+      "categoryId": "desserts",
+      "nameEs": "Tazón de sundae de helado",
+      "nameEn": "Ice Cream Sundae Bowl",
+      "descriptionEs": "Elige 3 bolas de helado de vainilla, chocolate o fresa, servidas con salsa de chocolate y crema batida",
+      "descriptionEn": "Choose 3 scoops of vanilla, chocolate, or strawberry ice cream, served with chocolate sauce and whipped cream",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownie-explosion-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae explosión de brownie",
+      "nameEn": "Brownie Explosion Sundae",
+      "descriptionEs": "Brownie de chocolate servido caliente con helado de vainilla, chocolate o fresa a elegir, cubierto con salsa de chocolate y crema batida",
+      "descriptionEn": "A fudgy brownie served warm with your choice of vanilla, chocolate, or strawberry ice cream topped with chocolate sauce and whipped cream",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach-cobbler",
+      "categoryId": "desserts",
+      "nameEs": "Cobbler de durazno",
+      "nameEn": "Peach Cobbler",
+      "descriptionEs": "Duraznos horneados en un delicado jarabe especiado, terminados con una cubierta de masa crujiente y dorada. Servido con helado de vainilla",
+      "descriptionEn": "Oven-baked peaches in a delicate spiced syrup, finished with a crisp, golden pastry topping. Served with vanilla ice cream",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-apple-chimi",
+      "categoryId": "desserts",
+      "nameEs": "Chimi de manzana frito",
+      "nameEn": "Fried Apple Chimi",
+      "descriptionEs": "Cheesecake en cubitos mezclado con rebanadas de manzana fresca, salsa de caramelo, envuelto en tortilla y frito, servido con helado de vainilla y crema batida",
+      "descriptionEn": "Rich cheesecake diced and tossed with fresh apple slices, caramel sauce, wrapped in a tortilla shell and fried, served with vanilla ice cream and whipped cream",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-style-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake estilo Nueva York",
+      "nameEn": "New York Style Cheesecake",
+      "descriptionEs": "Cheesecake rico y cremoso servido con chorrito de fresa y crema batida",
+      "descriptionEn": "Rich and creamy cheesecake served with strawberry drizzle and whipped cream",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "from-the-cafe",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "Espresso con leche vaporizada cubierto con canela y servido con un biscotti",
+      "descriptionEn": "Espresso with steamed milk topped with cinnamon and served with a biscotti",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "irish-coffee",
+      "categoryId": "from-the-cafe",
+      "nameEs": "Café irlandés",
+      "nameEn": "Irish Coffee",
+      "descriptionEs": "Café caliente con Jameson, cubierto con crema batida y un chorrito de crème de menthe",
+      "descriptionEn": "Hot coffee served with Jameson, topped with whipped cream and a drizzle of crème de menthe",
       "price": "$9.00",
-      "popular": true,
-      "badge": "Happy Hour",
-      "tags": [
-        "Coctel",
-        "Popular"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "the-202-tavern-13",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Yuengling Draft (Vaso)",
-      "nameEn": "Yuengling Draft",
-      "descriptionEs": "Cerveza lager tradicional americana, crujiente, equilibrada y refrescante de barril.",
-      "descriptionEn": "Traditional American amber lager, crisp, rich, and refreshing on draft.",
+      "id": "the-tavern-special",
+      "categoryId": "from-the-cafe",
+      "nameEs": "El especial de la taberna",
+      "nameEn": "The Tavern Special",
+      "descriptionEs": "Café caliente con Baileys y RumChata, cubierto con crema batida y canela",
+      "descriptionEn": "Hot coffee served with Baileys and RumChata, topped with whipped cream and cinnamon",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ghiaccio-e-mosche",
+      "categoryId": "from-the-cafe",
+      "nameEs": "Ghiaccio e Mosche",
+      "nameEn": "Ghiaccio e Mosche",
+      "descriptionEs": "Café o espresso servido con una porción de sambuca blanca o negra y 3 granos de café",
+      "descriptionEn": "Coffee or espresso served with a side of white or black sambuca, served with 3 coffee beans",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "river-hopping-hot-dog",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hot dog River Hopping",
+      "nameEn": "River Hopping Hot Dog",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Dedos de pollo",
+      "nameEn": "Chicken Fingers",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-chicken-wings",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Alitas de pollo infantiles",
+      "nameEn": "Kid's Chicken Wings",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-and-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Macaroni and Cheese",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riverside-ribs",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Costillas Riverside",
+      "nameEn": "Riverside Ribs",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-hamburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa para niños",
+      "nameEn": "Kid's Hamburger",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-cheeseburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa con queso para niños",
+      "nameEn": "Kid's Cheeseburger",
+      "descriptionEs": "Elige una guarnición. Incluye refresco, leche, jugo o Shirley Temple",
+      "descriptionEn": "Choose one side. Includes soda, milk, juice or Shirley Temple",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-sides",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Guarniciones infantiles",
+      "nameEn": "Kid's Sides",
+      "descriptionEs": "Papas fritas, puré de manzana, yogur, ensalada de col, puré de papa, verdura del día, arroz o arroz amarillo con verduras y kielbasa",
+      "descriptionEn": "French fries, applesauce, yogurt, coleslaw, mashed potatoes, veggie of the day, rice, or yellow vegetable rice with kielbasa",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-s-milkshake",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Malteada infantil",
+      "nameEn": "Kid's Milkshake",
+      "descriptionEs": "Vainilla, chocolate o fresa",
+      "descriptionEn": "Vanilla, chocolate, or strawberry",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-yuenglings",
+      "categoryId": "happy-hour",
+      "nameEs": "Yuenglings a $3",
+      "nameEn": "$3 Yuenglings",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$3.00",
-      "popular": true,
-      "badge": "Happy Hour",
-      "tags": [
-        "Cerveza",
-        "Bebida"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patron-margarita-happy-hour",
+      "categoryId": "happy-hour",
+      "nameEs": "Margarita Patrón (happy hour)",
+      "nameEn": "Patrón Margarita (Happy Hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-off-wine-beer-drinks",
+      "categoryId": "happy-hour",
+      "nameEs": "$1 de descuento en vino, cerveza y bebidas",
+      "nameEn": "$1 Off Wine, Beer, Drinks",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pei-mussels-happy-hour",
+      "categoryId": "happy-hour",
+      "nameEs": "Mejillones PEI (happy hour)",
+      "nameEn": "PEI Mussels (Happy Hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings-happy-hour",
+      "categoryId": "happy-hour",
+      "nameEs": "Alitas (happy hour)",
+      "nameEn": "Wings (Happy Hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos-happy-hour",
+      "categoryId": "happy-hour",
+      "nameEs": "Nachos (happy hour)",
+      "nameEn": "Nachos (Happy Hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-skins-happy-hour",
+      "categoryId": "happy-hour",
+      "nameEs": "Cáscaras de papa (happy hour)",
+      "nameEn": "Potato Skins (Happy Hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-brisket-queso-chips",
+      "categoryId": "happy-hour",
+      "nameEs": "Queso fundido con brisket BBQ y totopos",
+      "nameEn": "BBQ Brisket Queso & Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries",
+      "categoryId": "happy-hour",
+      "nameEs": "Papas fritas con queso",
+      "nameEn": "Cheese Fries",
+      "descriptionEs": "Agrega chili $3",
+      "descriptionEn": "Add chili $3",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-corn-nuggets",
+      "categoryId": "happy-hour",
+      "nameEs": "Bocaditos de elote picantes",
+      "nameEn": "Spicy Corn Nuggets",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood-orange-mule",
+      "categoryId": "cocktails",
+      "nameEs": "Mule de naranja sanguina",
+      "nameEn": "Blood Orange Mule",
+      "descriptionEs": "Bacardi, puré de naranja sanguina, cerveza de jengibre",
+      "descriptionEn": "Bacardi, blood orange puree, ginger beer",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-watermelon-lemonade",
+      "categoryId": "cocktails",
+      "nameEs": "Limonada de fresa y sandía",
+      "nameEn": "Strawberry Watermelon Lemonade",
+      "descriptionEs": "Vodka 360 de sandía, puré de fresa, limonada",
+      "descriptionEn": "360 Watermelon vodka, strawberry puree, lemonade",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tavern-old-fashioned",
+      "categoryId": "cocktails",
+      "nameEs": "Old fashioned de la taberna",
+      "nameEn": "Tavern Old Fashioned",
+      "descriptionEs": "Bourbon Bulleit, jarabe simple, amargo de naranja, agua mineral, cáscara de naranja y cereza",
+      "descriptionEn": "Bulleit bourbon, simple syrup, orange bitters, soda, orange peel & cherry",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-berry-frose",
+      "categoryId": "cocktails",
+      "nameEs": "Frosé de frutos rojos",
+      "nameEn": "Mixed Berry Frosé",
+      "descriptionEs": "Puré de fresa y zarzamora, vino tinto, triple sec, congelado",
+      "descriptionEn": "Strawberry & blackberry puree, red wine, triple sec, frozen",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita",
+      "categoryId": "cocktails",
+      "nameEs": "Margarita",
+      "nameEn": "Margarita",
+      "descriptionEs": "Frozen o en las rocas. Sabores: lima, durazno, fresa, frambuesa, mango, guayaba con jalapeño picante, zarzamora, maracuyá. Prepárala con Patrón o Don Julio, agrega $2",
+      "descriptionEn": "Served frozen or on the rocks. Flavors: lime, peach, strawberry, raspberry, mango, spicy jalapeño guava, blackberry, passionfruit. Make it with Patrón or Don Julio, add $2",
+      "price": "Regular $10.00 / Flavored $11.00 / Jumbo $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito",
+      "categoryId": "cocktails",
+      "nameEs": "Mojito",
+      "nameEn": "Mojito",
+      "descriptionEs": "Preparado con Bacardi, menta fresca, agua mineral y lima. Sabores: durazno, fresa, frambuesa, mango, maracuyá y zarzamora",
+      "descriptionEn": "Made with Bacardi, fresh mint, club soda & lime. Flavors: peach, strawberry, raspberry, mango, passionfruit & blackberry",
+      "price": "Regular $10.00 / Jumbo $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-vodka-or-gin-martini",
+      "categoryId": "martinis",
+      "nameEs": "Martini clásico de vodka o ginebra",
+      "nameEn": "Classic Vodka or Gin Martini",
+      "descriptionEs": "Preparado con Absolut o Tanqueray",
+      "descriptionEn": "Made with Absolut or Tanqueray",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-martini",
+      "categoryId": "martinis",
+      "nameEs": "Martini francés",
+      "nameEn": "French Martini",
+      "descriptionEs": "Absolut Vanilla, Chambord, jugo de piña",
+      "descriptionEn": "Absolut Vanilla, Chambord, pineapple juice",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cosmopolitan",
+      "categoryId": "martinis",
+      "nameEs": "Cosmopolitan",
+      "nameEn": "Cosmopolitan",
+      "descriptionEs": "Tito's, Cointreau, jugo de lima, arándano",
+      "descriptionEn": "Tito's, Cointreau, lime juice, cranberry",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "martinis",
+      "nameEs": "Espresso martini",
+      "nameEn": "Espresso Martini",
+      "descriptionEs": "Absolut, Kahlúa, espresso",
+      "descriptionEn": "Absolut, Kahlua, espresso",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-martini",
+      "categoryId": "martinis",
+      "nameEs": "Martini de chocolate",
+      "nameEn": "Chocolate Martini",
+      "descriptionEs": "Crème de cacao, malteada de chocolate Tippy Cow, vodka y Baileys",
+      "descriptionEn": "Crème de cacao, Tippy Cow chocolate shake, vodka & Baileys",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pina-colada",
+      "categoryId": "frozen-drinks",
+      "nameEs": "Piña colada",
+      "nameEn": "Piña Colada",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-daiquiri",
+      "categoryId": "frozen-drinks",
+      "nameEs": "Daiquirí de fresa",
+      "nameEn": "Strawberry Daiquiri",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mindoro-sour",
+      "categoryId": "frozen-drinks",
+      "nameEs": "Mindoro Sour",
+      "nameEn": "Mindoro Sour",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-hawaiian",
+      "categoryId": "frozen-drinks",
+      "nameEs": "Blue Hawaiian",
+      "nameEn": "Blue Hawaiian",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-wine",
+      "categoryId": "wine",
+      "nameEs": "Vino de la casa",
+      "nameEn": "House Wine",
+      "descriptionEs": "Cabernet, chardonnay, merlot, pinot grigio, white zinfandel",
+      "descriptionEn": "Cabernet, chardonnay, merlot, pinot grigio, white zinfandel",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-la-marca-italy",
+      "categoryId": "wine",
+      "nameEs": "Prosecco, La Marca, Italia",
+      "nameEn": "Prosecco, La Marca, Italy",
+      "descriptionEs": "187 ml",
+      "descriptionEn": "187 ml",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose-josh-ca",
+      "categoryId": "wine",
+      "nameEs": "Rosé, Josh, CA",
+      "nameEn": "Rosé, Josh, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riesling-seaglass-ca",
+      "categoryId": "wine",
+      "nameEs": "Riesling, Seaglass, CA",
+      "nameEn": "Riesling, Seaglass, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-crowded-house-nz",
+      "categoryId": "wine",
+      "nameEs": "Sauvignon Blanc, Crowded House, Nueva Zelanda",
+      "nameEn": "Sauvignon Blanc, Crowded House, NZ",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio-ecco-domani-italy",
+      "categoryId": "wine",
+      "nameEs": "Pinot Grigio, Ecco Domani, Italia",
+      "nameEn": "Pinot Grigio, Ecco Domani, Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-clos-du-bois-ca",
+      "categoryId": "wine",
+      "nameEs": "Chardonnay, Clos du Bois, CA",
+      "nameEn": "Chardonnay, Clos du Bois, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-kendall-jackson-ca",
+      "categoryId": "wine",
+      "nameEs": "Chardonnay, Kendall-Jackson, CA",
+      "nameEn": "Chardonnay, Kendall-Jackson, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $11.00 / Bottle $38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-mark-west-ca",
+      "categoryId": "wine",
+      "nameEs": "Pinot Noir, Mark West, CA",
+      "nameEn": "Pinot Noir, Mark West, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "merlot-robert-mondavi-ca",
+      "categoryId": "wine",
+      "nameEs": "Merlot, Robert Mondavi, CA",
+      "nameEn": "Merlot, Robert Mondavi, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec-bousquet-argentina",
+      "categoryId": "wine",
+      "nameEs": "Malbec, Bousquet, Argentina",
+      "nameEn": "Malbec, Bousquet, Argentina",
+      "descriptionEs": "Orgánico",
+      "descriptionEn": "Organic",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-josh-ca",
+      "categoryId": "wine",
+      "nameEs": "Cabernet Sauvignon, Josh, CA",
+      "nameEn": "Cabernet Sauvignon, Josh, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $10.00 / Bottle $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-franciscan-ca",
+      "categoryId": "wine",
+      "nameEs": "Cabernet Sauvignon, Franciscan, CA",
+      "nameEn": "Cabernet Sauvignon, Franciscan, CA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $10.00 / Bottle $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-beer",
+      "categoryId": "beer",
+      "nameEs": "Cerveza embotellada",
+      "nameEn": "Bottled Beer",
+      "descriptionEs": "Coors Light, Corona, Angry Orchard, Sam Adams, Miller Lite, Budweiser, Bud Light, Michelob Ultra, Heineken, Athletic N/A IPA, Modelo",
+      "descriptionEn": "Coors Light, Corona, Angry Orchard, Sam Adams, Miller Lite, Budweiser, Bud Light, Michelob Ultra, Heineken, Athletic N/A IPA, Modelo",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "canned-drinks",
+      "categoryId": "beer",
+      "nameEs": "Bebidas en lata",
+      "nameEn": "Canned Drinks",
+      "descriptionEs": "High Noon, White Claw, Surfside",
+      "descriptionEn": "High Noon, White Claw, Surfside",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "draft-beer",
+      "categoryId": "beer",
+      "nameEs": "Cerveza de barril",
+      "nameEn": "Draft Beer",
+      "descriptionEs": "Yuengling, Guinness, Blue Moon, Stella. Pregunta a tu mesero por las cervezas de barril de temporada",
+      "descriptionEn": "Yuengling, Guinness, Blue Moon, Stella. Ask your server about rotating beers on draft",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones vegetarianas y platos que se pueden preparar sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer several vegetarian choices and dishes that can be prepared gluten-free. Please ask your server."
-    },
-    {
-      "qEs": "¿Tienen servicio de catering y eventos privados?",
-      "qEn": "Do you offer catering and private events?",
-      "aEs": "¡Por supuesto! Ofrecemos opciones de catering con nuestro famoso BBQ 'The Pit' por libra o en paquetes completos para cualquier evento.",
-      "aEn": "Absolutely! We offer catering options featuring our famous 'The Pit' BBQ by the pound or complete feasts for any event."
-    },
-    {
-      "qEs": "¿A qué hora es la hora feliz (Happy Hour)?",
-      "qEn": "What time is Happy Hour?",
-      "aEs": "Nuestra hora feliz es de lunes a viernes de 4:00 PM a 7:00 PM en el área de bar, con especiales en bebidas y bocadillos.",
-      "aEn": "Our happy hour is every weekday from 4:00 PM to 7:00 PM in our bar area with drink specials and discounted bar bites."
-    }
-  ]
+  "faqs": []
 }
