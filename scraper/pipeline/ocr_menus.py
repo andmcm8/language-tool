@@ -86,7 +86,7 @@ def main():
     path = os.path.join(F.DATA, "sites.json")
     sites = json.load(open(path))
     ext = json.load(open(os.path.join(F.DATA, "extract.json")))
-    todo = [s for s in sites if (only and s in only) or (not only and ext.get(s, {}).get("status") in ("no-menu-text", "no-menu") and "toast" not in sites[s].get("platforms", []))]
+    todo = [s for s in sites if (only and s in only) or (not only and ext.get(s, {}).get("status") in ("no-menu-text", "no-menu"))]
     todo = [s for s in todo if not sites[s].get("ocr_done")]
     print("ocr", len(todo), flush=True)
     found = []

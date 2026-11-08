@@ -124,9 +124,12 @@ def gemini(prompt):
     body = json.dumps({"contents": [{"role": "user", "parts": [{"text": prompt}]}],
                        "generationConfig": {"responseMimeType": "application/json", "temperature": 0, "maxOutputTokens": 65536}}).encode()
     last = None
+    if B.daily_quota_hit():
+        raise SystemExit("Gemini daily quota reached")
     for rnd in range(6):
         if rnd:
             time.sleep(20 * rnd)
+        per_day = 0
         for m in XMODELS:
             req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
                                          data=body, headers={"Content-Type": "application/json", "x-goog-api-key": B.api_key()})
@@ -137,9 +140,14 @@ def gemini(prompt):
             except urllib.error.HTTPError as e:
                 last = e
                 if e.code == 429:
+                    if B.note_429(e):
+                        per_day += 1
                     continue
             except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError, OSError) as e:
                 last = e
+        if per_day == len(XMODELS):
+            open(B.QUOTA_FLAG, "w").write(time.strftime("%Y-%m-%d"))
+            raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"Gemini failed: {last}")
 
 
@@ -147,79 +155,128 @@ def find_after(hay, needle, start=0):
     return hay.find(needle, start)
 
 
+def tidy(name):
+    name = name.strip(" \t-–—:|•·*")
+    if name.isupper() and len(name) > 3:
+        name = " ".join(w if (len(w) <= 3 and w.isalpha() and w in ("BBQ", "BLT", "NY", "IPA", "XL", "GF", "DF", "VG")) else w.capitalize() for w in name.split())
+    return name
+
+
+def name_candidates(texts):
+    """(normalized, original) name-like fragments from the source text: each line, and the part
+    of the line before a price / dash / colon."""
+    out = {}
+    for _, t in texts:
+        for line in t.split("\n"):
+            line = line.strip()
+            if not line or len(line) > 160:
+                continue
+            for frag in {line, re.split(r"\s[-–—|:]\s|\s?\$\s?\d|\.{3,}|\s\d{1,3}(?:\.\d{2})?\s*$", line)[0]}:
+                f = frag.strip()
+                if 2 < len(f) <= 90:
+                    out.setdefault(norm(f), f)
+    return out
+
+
 def verify(sections, texts):
     full = "\n".join(t for _, t in texts)
     N = norm(full)
-    # first pass: align items to the text in menu order, so a price is only accepted from that
-    # item's own segment (up to where the next item starts) - never borrowed from a neighbour
-    order, cur = [], 0
+    cands = None
+    import bisect
+
+    def locate(name):
+        """Return (name_as_published, position) or (None, -1). Exact match first; otherwise the
+        closest fragment of the page (>= 0.9 similar) and use the PAGE's wording, never the model's."""
+        nonlocal cands
+        nn = norm(name)
+        if not nn:
+            return None, -1
+        k = N.find(nn)
+        if k >= 0:
+            return name, k
+        alt = nn.strip(" .-:")
+        if alt and N.find(alt) >= 0:
+            return name, N.find(alt)
+        if cands is None:
+            cands = name_candidates(texts)
+        keys = [c for c in cands if abs(len(c) - len(nn)) <= max(4, 0.3 * len(nn))]
+        m = difflib.get_close_matches(nn, keys, n=1, cutoff=0.9)
+        if m and N.find(m[0]) >= 0:
+            return tidy(cands[m[0]]), N.find(m[0])
+        return None, -1
+
+    # pass 1: resolve names and positions in menu order
+    resolved, cur = [], 0
     for s0 in sections or []:
         for it in s0.get("items", []):
-            if isinstance(it, list) and it:
-                q = norm(str(it[0] or ""))
-                k = N.find(q, cur) if q else -1
-                if k < 0 and q:
-                    k = N.find(q)
-                if k >= 0:
-                    order.append(k)
-                    cur = k + len(q)
-    starts = sorted(set(order))
-    import bisect
-    kept, dropped, nprice_ok, blanked_desc = [], [], 0, 0
-    seen = set()
-    for s in sections or []:
-        items = []
-        for it in s.get("items", []):
             if not isinstance(it, list) or len(it) < 3:
                 continue
             name, desc, price = (str(x or "").strip() for x in it[:3])
-            nn = norm(name)
-            if not nn or nn in seen:
-                if nn in seen:
-                    dropped.append(name + " (dup)")
+            pub, pos = locate(name)
+            if pub is not None:
+                q = norm(pub)
+                k2 = N.find(q, cur)
+                if k2 >= 0:
+                    pos = k2
+                cur = pos + len(q)
+            resolved.append((s0.get("name") or "Menu", name, pub, pos, desc, price))
+    starts = sorted({r[3] for r in resolved if r[3] >= 0})
+    kept, dropped, nprice_ok, blanked_desc = {}, [], 0, 0
+    order = []
+    seen = {}
+    for sec, name, pub, pos, desc, price in resolved:
+        if pub is None:
+            dropped.append(name)
+            continue
+        nn = norm(pub)
+        if desc and norm(desc) not in N:
+            nd = norm(desc)
+            if not (len(nd) > 40 and nd[:40] in N and nd[-25:] in N):
+                desc = ""
+                blanked_desc += 1
+        if price:
+            m = re.search(r"\d+(?:\.\d{1,2})?", price.replace(",", "."))
+            ok = False
+            if m:
+                val = float(m.group())
+                j = bisect.bisect_right(starts, pos)
+                nxt = starts[j] if j < len(starts) else len(N)
+                window = N[pos + len(nn): min(nxt, pos + len(nn) + 400 + len(norm(desc)))]
+                ok = any(abs(float(pm.group()) - val) < 0.001 for pm in re.finditer(r"\d+(?:\.\d{1,2})?", window))
+            if ok:
+                price = "$%.2f" % val
+                nprice_ok += 1
+            else:
+                price = ""
+        key = nn
+        if key in seen:
+            prev = seen[key]
+            if prev[1:] == (norm(desc), price) or prev[0] == sec:
+                dropped.append(pub + " (dup)")
                 continue
-            pos = N.find(nn)
-            if pos < 0:
-                # tolerate trailing punctuation / leading numbering differences
-                alt = nn.strip(" .-:")
-                pos = N.find(alt) if alt else -1
-            if pos < 0:
-                dropped.append(name)
+            pub = f"{pub} ({sec})"
+            key = norm(pub)
+            if key in seen:
+                dropped.append(pub + " (dup)")
                 continue
-            if desc and norm(desc) not in N:
-                # keep if the description's first 40 normalized chars appear (line-wrap splits)
-                nd = norm(desc)
-                if not (len(nd) > 40 and nd[:40] in N and nd[-25:] in N):
-                    desc = ""
-                    blanked_desc += 1
-            if price:
-                m = re.search(r"\d+(?:\.\d{1,2})?", price.replace(",", "."))
-                ok = False
-                if m:
-                    val = float(m.group())
-                    j = bisect.bisect_right(starts, pos)
-                    nxt = starts[j] if j < len(starts) else len(N)
-                    window = N[pos + len(nn): min(nxt, pos + len(nn) + 400 + len(norm(desc)))]
-                    for pm in re.finditer(r"\d+(?:\.\d{1,2})?", window):
-                        try:
-                            if abs(float(pm.group()) - val) < 0.001:
-                                ok = True
-                                break
-                        except ValueError:
-                            pass
-                if ok:
-                    price = "$%.2f" % val
-                    nprice_ok += 1
-                else:
-                    price = ""
-            seen.add(nn)
-            items.append([name, desc, price])
-        if items:
-            kept.append({"name": s.get("name") or "Menu", "items": items})
-    # coverage: strict price tokens on the menu text vs prices kept
+        seen[key] = (sec, norm(desc), price)
+        if sec not in kept:
+            kept[sec] = []
+            order.append(sec)
+        kept[sec].append([pub, desc, price])
+    kept = [{"name": s, "items": kept[s]} for s in order]
+    # completeness: priced lines on the page that no kept item accounts for
+    names = [norm(i[0].split(" (")[0]) for s in kept for i in s["items"]]
+    lines = [l for _, t in texts for l in t.split("\n")]
+    priced = [i for i, l in enumerate(lines) if PRICE_STRICT.search(l)]
+    nl = [norm(l) for l in lines]
+    unmatched = 0
+    for i in priced:
+        ctx = " ".join(nl[max(0, i - 3): i + 1])
+        if not any(n and n in ctx for n in names):
+            unmatched += 1
     price_tokens = len(PRICE_STRICT.findall(full))
-    covered = nprice_ok + sum(len(re.findall(r"\$\s?\d|\d\.\d{2}", i[1])) for k in kept for i in k["items"])
-    return kept, dropped, covered, blanked_desc, price_tokens
+    return kept, dropped, nprice_ok, blanked_desc, price_tokens, (unmatched, len(priced))
 
 
 def identity(w, site, texts, got):
@@ -235,7 +292,7 @@ def identity(w, site, texts, got):
     return {"name": round(name_hit, 2), "phone": phone_hit, "town": town_hit}
 
 
-def process(w, site):
+def process(w, site, got=None):
     slug = w["slug"]
     texts = page_texts(slug, site, (w.get("town") or (w.get("osm") or {}).get("addr:city", "")).lower())
     # keep pages that look like menus (prices or menu words); always keep home for identity
@@ -266,7 +323,10 @@ def process(w, site):
         cur += b[:45000] + "\n\n"
     if cur:
         groups.append(cur)
-    got = {"has_menu": False, "sections": []}
+    if got is not None:
+        groups = []
+    else:
+        got = {"has_menu": False, "sections": []}
     try:
         for g in groups[:6]:
             part = gemini(PROMPT + g)
@@ -287,22 +347,25 @@ def process(w, site):
     if not got.get("has_menu"):
         rec["status"] = "no-menu"
         return rec
-    kept, dropped, nprice, blanked, ptok = verify(got.get("sections"), menu_pages)
+    kept, dropped, nprice, blanked, ptok, (unm, npl) = verify(got.get("sections"), menu_pages)
     n = sum(len(s["items"]) for s in kept)
     idt = identity(w, site, texts, got)
     rec.update({"items": n, "dropped": len(dropped), "dropped_examples": dropped[:8], "prices_kept": nprice,
                 "price_tokens": ptok, "desc_blanked": blanked, "identity": idt})
-    cov = nprice / ptok if ptok else (1.0 if n else 0)
-    rec["coverage"] = round(cov, 2)
+    miss = unm / npl if npl else 0.0
+    rec["unmatched_priced_lines"] = [unm, npl]
+    rec["coverage"] = round(1 - miss, 2)
+    real_drops = [d for d in dropped if not d.endswith("(dup)")]
     problems = []
     if n < 8: problems.append("few-items")
-    if dropped and len(dropped) > max(3, 0.1 * (n + len(dropped))): problems.append("many-dropped")
-    if ptok >= 10 and cov < 0.6: problems.append("low-coverage")
+    if real_drops and len(real_drops) > max(3, 0.1 * (n + len(real_drops))): problems.append("many-dropped")
+    if npl >= 10 and miss > 0.25: problems.append("low-coverage")
     if idt["name"] < 0.5: problems.append("name-not-on-site")
-    if not (idt["phone"] or idt["town"]): problems.append("location-unconfirmed")
+    phone_matched = (w.get("osm_match") == "phone") or ((w.get("overture") or {}).get("match") == "phone")
+    if not (idt["phone"] or idt["town"] or phone_matched): problems.append("location-unconfirmed")
     rec["problems"] = problems
     rec["status"] = "ok" if not problems else "review"
-    draft = {"slug": slug, "name": w["name"], "sources": rec["pages"], "checked": time.strftime("%Y-%m-%d"),
+    draft = {"slug": slug, "name": w["name"], "sources": rec["pages"], "dropped": dropped, "checked": time.strftime("%Y-%m-%d"),
              "extracted": got, "sections": kept}
     json.dump(draft, open(os.path.join(DRAFTS, slug + ".json"), "w"), indent=1, ensure_ascii=False)
     return rec
@@ -317,8 +380,8 @@ def main():
     sites = json.load(open(os.path.join(DATA, "sites.json")))
     outp = os.path.join(DATA, "extract.json")
     res = json.load(open(outp)) if os.path.exists(outp) else {}
-    todo = [s for s in sites if s in work and (only and s in only or (not only and s not in res))]
-    todo = [s for s in todo if sites[s].get("pages") and "toast" not in sites[s].get("platforms", []) or only]
+    todo = [s for s in sites if s in work and (only and s in only or (not only and (s not in res or res[s].get("status") in ("llm-failed", "error")))))]
+    todo = [s for s in todo if sites[s].get("pages") or only]
     if limit:
         todo = todo[:limit]
     print("extracting", len(todo), flush=True)
