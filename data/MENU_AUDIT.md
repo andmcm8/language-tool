@@ -58,7 +58,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `bryac-restaurant-raw-bar` | BRYAC | 3074 Fairfield Avenue, Bridgeport, CT 06604 | 77 |
 | `buon-appetito-ristorante-pizzeria` | Buon Appetito Ristorante & Pizzeria | 386 Norwich-Westerly Rd. North Stonington, CT 06359 | 84 |
 | `cadys-tea-room` | Cady's Tea Room | 76 Maple Ave, Greenwich, CT 06830 (Inside Stanton House Inn) | 12 |
-| `cafe-amici` | Amici Restaurant Group | 1640 Whitney Ave, Hamden | 332 |
+| `cafe-amici` | Amici Restaurant Group | 1640 Whitney Ave, Hamden | 333 |
 | `cafe-atlantique` | Cafe Atlantique | 33 River St, Milford, CT 06460 | 28 |
 | `cafe-luca-belle` | Cafe Luca Belle | 167 Center Street, Wallingford, CT 06492 | 38 |
 | `cake-box` | The Cake Box | 1 Grove St, Ridgefield, CT 06877 | 27 |
@@ -76,10 +76,10 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `common-grounds` | Common Grounds | 707 Bridgeport Ave, Shelton, CT 06484 | 36 |
 | `costellos-clam-shack` | Costello's Clam Shack | 145 Pearl Street, Groton, CT 06340 | 59 |
 | `country-diner` | The Country Diner | 111 Hazard Avenue, Enfield, CT 06082 | 227 |
-| `country-pizza-restaurant` | Country Pizza & Restaurant | 418 Main St, Monroe, CT 06468 | 250 |
+| `country-pizza-restaurant` | Country Pizza & Restaurant | 418 Main St, Monroe, CT 06468 | 273 |
 | `cromwell-diner` | Cromwell Diner | 135 Berlin Road, Cromwell, CT 06416 | 154 |
 | `diesel-lounge` | Diesel Lounge | 944 State Street New Haven CT 06511 | 36 |
-| `dish-n-dat` | Dish 'n Dat | 144 Albany Turnpike, Canton, CT 06019 | 494 |
+| `dish-n-dat` | Dish 'n Dat | 144 Albany Turnpike, Canton, CT 06019 | 526 |
 | `dog-lane-cafe` | Dog Lane Café | 1 Dog Ln, Storrs, CT 06269 | 114 |
 | `dono-cafe` | DoNo Cafe | 1212 Main Street, Hartford, CT 06103 | 17 |
 | `donovans-reef` | Donovan's Reef Restaurant | 1212 Main Street, Branford, CT 06405 | 172 |
@@ -101,7 +101,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `golden-mango` | Golden Mango Restaurant | 2 Spring Lane, Farmington, CT 06032 | 310 |
 | `goodies-of-milford` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `goodies` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
-| `grandpas-diner` | Grandpa's Diner | 126 South Street, Danbury, CT 06810 | 342 |
+| `grandpas-diner` | Grandpa's Diner | 126 South Street, Danbury, CT 06810 | 374 |
 | `grapevine` | Grapevine | 753 Maple Road, Longmeadow, MA, 01108 | 123 |
 | `green-kettle-coffee` | Green Kettle Coffee | 208 Center Street, Wallingford, CT 06492 | 21 |
 | `green-onion-pizza-restaurant` | Green Onion Pizza Restaurant | 10 River Road, Lisbon, CT 06351 | 114 |
@@ -149,7 +149,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `mountainside-cafe` | Mountainside | 251 Route 7, Salisbury, CT 06031 | 43 |
 | `mr-falafel` | Mr. Falafel | 68 Broad Street, Stamford, CT 06901 | 37 |
 | `newbury-gelato` | Newbury Gelato | 317 Federal Road Brookfield, CT 06804 | 18 |
-| `newtown-pizza-palace` | Pizza Palace | 65 Church Hill Road, Newtown, CT 06470 | 318 |
+| `newtown-pizza-palace` | Pizza Palace | 65 Church Hill Road, Newtown, CT 06470 | 335 |
 | `newtown-road-italian-deli-pizza` | Newtown Road Italian Deli & Pizza | 60 Newtown Rd, Danbury, CT 06810 | 166 |
 | `obriens-irish-pub` | O'Brien's Irish Pub | 83 Lake Ave, Danbury, CT 06810 | 14 |
 | `ocha-thai-japanese-cuisine` | Ocha Thai & Japanese Cuisine | 83 Prospect St, Stamford, CT 06901 | 173 |
@@ -185,7 +185,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `seven-seas-restaurant` | Seven Seas Restaurant | 167 Bridgeport Ave, Milford, CT 06460 | 12 |
 | `sherwood-diner` | Sherwood Diner | 901 Post Road East, Westport, CT 06880 | 103 |
 | `solis-restaurant` | Solis Restaurant | 352 CT-2, Preston, CT 06365 | 179 |
-| `somewhere-in-bangkok` | Somewhere In Bangkok Restaurant | 1103 Queen St Unit 1, Southington, CT 06489 | 174 |
+| `somewhere-in-bangkok` | Somewhere In Bangkok Restaurant | 1103 Queen St Unit 1, Southington, CT 06489 | 211 |
 | `sorrento-importing` | Sorrento Importing | 1838 Black Rock Turnpike, Fairfield, CT 06825 | 122 |
 | `southwest-cafe` | Southwest Cafe | 109 Danbury Rd, Ridgefield, CT 06877 | 56 |
 | `stamford-salads` | Volta | 30 Spring Street, Stamford, CT 06901 | 83 |
@@ -202,7 +202,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `tarantino-restaurant-bar` | Tarantino Restaurant & Bar | 30 Railroad Pl, Westport, CT 06880 | 56 |
 | `taste-of-thai` | Taste of Thai | 22 Broad Street, Milford, CT 06460 | 86 |
 | `tavern-in-the-square` | Tavern in the Square | 1393 New Britain Avenue, West Hartford, CT 06110 | 110 |
-| `tavern-on-3` | Tavern on 3 | 950 Cromwell Ave, Rocky Hill, Connecticut | 134 |
+| `tavern-on-3` | Tavern on 3 | 950 Cromwell Ave, Rocky Hill, Connecticut | 151 |
 | `taverna-grill` | Taverna Grill | 123 Main St, Bristol, CT 06010 | 95 |
 | `teds-restaurant-steamed-cheeseburgers` | Ted's Restaurant | 1046 Broad Street, Meriden, CT 06450 | 34 |
 | `tequila-escape` | Tequila Escape Kitchen + Cocktail Bar | 439 Main St, Ridgefield, CT 06877 | 163 |
@@ -211,13 +211,13 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `the-boca-oyster-bar` | Boca Oyster Bar | 10 E Main St, Bridgeport, CT 06608 | 105 |
 | `the-cake-box` | The Cake Box | 1 Grove St, Ridgefield, CT 06877 | 27 |
 | `the-cottage` | The Cottage | 256 Post Road East, Westport, CT 06880 | 136 |
-| `the-cove-deli` | The Cove Deli | 282 Silas Deane Hwy, Wethersfield, CT 06109, us | 51 |
+| `the-cove-deli` | The Cove Deli | 282 Silas Deane Hwy, Wethersfield, CT 06109, us | 75 |
 | `the-kakery` | The Kakery | 4 E. Cedar St. Newington, CT 06111 | 67 |
 | `the-loaded-goat-coffee-company` | The Loaded Goat Coffee Company | 64 Church St, Naugatuck, CT 06770 | 41 |
 | `the-luke-brasserie` | The Luke Brasserie | 261 College Street New Haven, CT 06510 | 27 |
 | `the-whelk` | The Whelk | 575 Riverside Ave, Westport, CT 06880 | 145 |
 | `the-white-horse-country-pub` | The White Horse A Country Pub & Restaurant | 258 New Milford Turnpike, Washington, CT 06777 | 321 |
-| `tisumi-sushi` | Tisumi Sushi | 2850 Main Street, Glastonbury, CT 06033 | 190 |
+| `tisumi-sushi` | Tisumi Sushi | 2850 Main Street, Glastonbury, CT 06033 | 235 |
 | `tony-ds-italian-restaurant` | Tony D’s Restaurant | 92 Huntington St, New London, Connecticut | 51 |
 | `tony-ds-restaurant` | Tony D's Restaurant | 92 Huntington St, New London, Connecticut | 51 |
 | `troupe429` | Troupe429 | 3 Wall Street, Norwalk, CT, 06850, United States | 87 |
