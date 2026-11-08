@@ -2,26 +2,17 @@
   "storeInfo": {
     "id": "otto",
     "name": "Otto",
-    "tagline": "Wood-Fired Perfection & Local Flavors / Perfección a la Leña y Sabores Locales",
-    "address": "69 Main St., Chester, CT 06412",
+    "tagline": "Italian pizzeria and restaurant in Chester | Pizzería y restaurante italiano en Chester",
+    "address": "69 Main St. Chester, CT 06412",
     "phone": "(860) 526-9445",
     "hours": {
-      "monday_friday": "4:30 PM - 9:00 PM",
-      "saturday": "12:00 PM - 9:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon-Thu 5:00 PM - 9:00 PM; Fri 11:30 AM - 10:00 PM",
+      "saturday": "11:30 AM - 10:00 PM",
+      "sunday": "11:30 AM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Wood-Fired Oven"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,277 +24,216 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Ensaladas",
-      "nameEn": "Appetizers & Salads",
+      "id": "salads-starters",
+      "nameEs": "Ensaladas + entradas",
+      "nameEn": "Salads + Starters",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Pizzas a la Leña",
-      "nameEn": "Wood-Fired Pizzas",
+      "id": "pizza-14-in-small-16in-large",
+      "nameEs": "Pizza (chica de 14 pulg. / grande de 16 pulg.)",
+      "nameEn": "Pizza (14 in. small / 16in. large)",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "casseroles",
+      "nameEs": "Cazuelas",
+      "nameEn": "Casseroles",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Desserts",
-      "icon": "Coffee"
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "otto-01",
-      "categoryId": "appetizers",
-      "nameEs": "Aceitunas Asadas y Marinadas",
-      "nameEn": "Roasted + Marinated Olives",
-      "descriptionEs": "Aceitunas marinadas con naranja, limón, chiles y hierbas frescas.",
-      "descriptionEn": "Roasted + marinated olives with orange, lemon, chilies + fresh herbs.",
+      "id": "roasted-castelvetrano-olives",
+      "categoryId": "salads-starters",
+      "nameEs": "Aceitunas Castelvetrano asadas",
+      "nameEn": "Roasted Castelvetrano Olives",
+      "descriptionEs": "con naranja, limón, chiles + hierbas frescas",
+      "descriptionEn": "with orange, lemon, chilies + fresh herbs",
       "price": "$8.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-02",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada César Clásica",
+      "id": "classic-caesar-salad",
+      "categoryId": "salads-starters",
+      "nameEs": "Ensalada César clásica",
       "nameEn": "Classic Caesar Salad",
-      "descriptionEs": "Lechuga romana crujiente con aderezo de limón y anchoas, grana padano y crutones.",
-      "descriptionEn": "Classic caesar with lemon-anchovy dressing, grana padano + croutons.",
+      "descriptionEs": "con aderezo de limón y anchoa, granarino + crutones",
+      "descriptionEn": "with lemon-anchovy dressing, granarino + croutons",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Pescado"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada Griega",
+      "id": "shaved-fennel-local-radicchio",
+      "categoryId": "salads-starters",
+      "nameEs": "Hinojo rallado + radicchio local",
+      "nameEn": "Shaved Fennel + Local Radicchio",
+      "descriptionEs": "con champiñones, nueces, menta, limón + aceite",
+      "descriptionEn": "with mushrooms, walnuts, mint, lemon + oil",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "salads-starters",
+      "nameEs": "Ensalada griega",
       "nameEn": "Greek Salad",
-      "descriptionEs": "Queso feta, tomates cherry locales, pepino, aceitunas, chiles picantes y cebolla roja.",
-      "descriptionEn": "Greek with feta, local cherry tomatoes + cucumber, olives, spicy cherry peppers, + red onion.",
+      "descriptionEs": "con tomates y pepino locales, aceitunas, chiles cereza picantes, feta, cebolla morada, limón + aceite",
+      "descriptionEn": "with local tomatoes + cucumber, olives, spicy cherry peppers, feta, red onion, lemon + oil",
       "price": "$16.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-04",
-      "categoryId": "appetizers",
-      "nameEs": "Sandía, Remolacha y Melocotón",
-      "nameEn": "Watermelon, Beet & Peach",
-      "descriptionEs": "Fresca combinación con sandía, remolacha, melocotón, feta, albahaca y quebradizo de pistacho.",
-      "descriptionEn": "Watermelon, beet, peach, feta, basil + pistachio brittle.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "whipped-ricotta",
+      "categoryId": "salads-starters",
+      "nameEs": "Ricotta batida",
+      "nameEn": "Whipped Ricotta",
+      "descriptionEs": "con miel picante y focaccia de la casa",
+      "descriptionEn": "with hot honey and housemade focaccia",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "otto-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza Margherita",
-      "nameEn": "Margherita Pizza",
-      "descriptionEs": "Salsa roja con mozzarella fresca Liuzzi, stracciatella y albahaca fresca. Disponible en tamaño S o L.",
-      "descriptionEn": "Margherita with fresh liuzzi mozzarella, stracciatella + basil. Available in Small or Large.",
+      "id": "simple-cheese",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Queso sencilla",
+      "nameEn": "Simple Cheese",
+      "descriptionEs": "(chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "(14 in. small / 16in. large)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margherita",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Margherita",
+      "nameEn": "Margherita",
+      "descriptionEs": "con mozzarella fresca Liuzzi, stracciatella + albahaca (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with fresh liuzzi mozzarella, stracciatella + basil (14 in. small / 16in. large)",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano",
-        "Horno de Leña"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-06",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Pepperoni",
-      "nameEn": "Pepperoni Pizza",
-      "descriptionEs": "Pepperoni con scamorza, mozzarella fresca, ajo, chiles, romero y miel picante.",
-      "descriptionEn": "Pepperoni with scamorza, fresh mozzarella, garlic, chilies, rosemary + hot honey.",
+      "id": "roasted-eggplant-peppers-caramelized-onion-garlic-basil-granarino",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Berenjena asada, pimientos, cebolla caramelizada, ajo, albahaca + granarino",
+      "nameEn": "Roasted Eggplant, Peppers, Caramelized Onion, Garlic, Basil + Granarino",
+      "descriptionEs": "(chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "(14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Horno de Leña"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-07",
-      "categoryId": "mains",
-      "nameEs": "Pizza de Albóndigas Toscanas",
-      "nameEn": "Tuscan Herbed Meatball Pizza",
-      "descriptionEs": "Albóndigas de hierbas toscanas, cebollas asadas, tomates cherry, salsa de vodka, mozzarella y scamorza.",
-      "descriptionEn": "Tuscan herbed meatball, roasted onions, cherry tomatoes, vodka sauce, fresh mozzarella, scamorza, grana padano + basil.",
+      "id": "pepperoni",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Pepperoni",
+      "nameEn": "Pepperoni",
+      "descriptionEs": "con scamorza, mozzarella fresca, ajo, romero + chiles de Calabria (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with scamorza, fresh mozzarella, garlic, rosemary + calabrian chilies (14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Horno de Leña"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-08",
-      "categoryId": "mains",
-      "nameEs": "Pizza Blanca de Pollo Tikka Masala",
-      "nameEn": "Chicken Tikka Masala White Pizza",
-      "descriptionEs": "Pollo tikka masala casero de la casa con cebollas caramelizadas, yogur y menta.",
-      "descriptionEn": "Our housemade chicken tikka masala with caramelized onions, yogurt + mint.",
+      "id": "spicy-homemade-sausage",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Salchicha casera picante",
+      "nameEn": "Spicy Homemade Sausage",
+      "descriptionEs": "con pimientos asados, cebolla caramelizada, scamorza + hierbas (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with roasted peppers, caramelized onion, scamorza + herbs (14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": true,
-      "badge": "Fusión",
-      "tags": [
-        "Horno de Leña"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-09",
-      "categoryId": "mains",
-      "nameEs": "Pizza Blanca de Champiñones Asados",
-      "nameEn": "Roasted Mushroom White Pizza",
-      "descriptionEs": "Champiñones asados, cebolla y papa con crema de parmesano, fontina, grana padano y salvia.",
-      "descriptionEn": "Roasted mushroom, onion + potato with parmesan cream, fontina, grana padano + sage.",
+      "id": "white-simple-cheese",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Blanca de queso sencilla",
+      "nameEn": "White Simple Cheese",
+      "descriptionEs": "con mozzarella fresca, scamorza, granarino, crema de parmesano, orégano + ajo (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with fresh mozzarella, scamorza, granarino, parmesan cream, oregano + garlic (14 in. small / 16in. large)",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Huevo",
+      "nameEn": "Egg",
+      "descriptionEs": "con tocino, papa asada, ricotta, fontina, granarino + tomillo (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with bacon, roasted potato, ricotta, fontina, granarino + thyme (14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Horno de Leña"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-10",
-      "categoryId": "specialties",
-      "nameEs": "Parmesana de Berenjena",
-      "nameEn": "Eggplant Parmesan",
-      "descriptionEs": "Berenjena horneada con ricotta, pimientos asados, tomate, cebollas asadas, ajo y hierbas frescas.",
-      "descriptionEn": "Eggplant parmesan with ricotta, roasted peppers, tomato, roasted onions, garlic + herbs.",
+      "id": "roasted-mushroom-onion-potato",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Champiñones asados, cebolla + papa",
+      "nameEn": "Roasted Mushroom, Onion + Potato",
+      "descriptionEs": "con crema de trufa, fontina, granarino + salvia (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with truffle cream, fontina, granarino + sage (14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": false,
-      "badge": "Horno",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-11",
-      "categoryId": "specialties",
-      "nameEs": "Albóndigas de la Casa",
-      "nameEn": "Meatballs",
-      "descriptionEs": "Albóndigas tiernas con ricotta, pimientos asados, cebollas asadas, tomate, ajo y hierbas.",
-      "descriptionEn": "Meatballs with ricotta, roasted peppers, roasted onions, tomato, garlic + herbs.",
+      "id": "prosciutto-cotto",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Prosciutto cotto",
+      "nameEn": "Prosciutto Cotto",
+      "descriptionEs": "con calabaza butternut, manzana, crema de gorgonzola, granarino + salvia (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "with butternut squash, apple, gorgonzola cream, granarino + sage (14 in. small / 16in. large)",
       "price": "$22.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Horno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "otto-12",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "Homemade Tiramisu",
-      "descriptionEs": "Clásico postre italiano hecho en casa con capas de espresso, mascarpone y cacao.",
-      "descriptionEn": "Homemade tiramisu crafted in-house with espresso, mascarpone and cocoa layers.",
+      "id": "tuscan-herbed-meatball",
+      "categoryId": "pizza-14-in-small-16in-large",
+      "nameEs": "Albóndiga toscana con hierbas",
+      "nameEn": "Tuscan Herbed Meatball",
+      "descriptionEs": "cebolla asada, tomates cherry, ajo, scamorza, granarino + hierbas (chica de 14 pulg. / grande de 16 pulg.)",
+      "descriptionEn": "roasted onions, cherry tomatoes, garlic, scamorza, granarino + herbs (14 in. small / 16in. large)",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-spicy-tuscan-herbed-meatballs",
+      "categoryId": "casseroles",
+      "nameEs": "Albóndigas toscanas picantes con hierbas al horno",
+      "nameEn": "Baked Spicy Tuscan Herbed Meatballs",
+      "descriptionEs": "con ricotta, pimientos asados, cebolla asada, tomate, ajo + hierbas",
+      "descriptionEn": "with ricotta, roasted peppers, roasted onions, tomato, garlic + herbs",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-eggplant-parmesan",
+      "categoryId": "casseroles",
+      "nameEs": "Berenjena a la parmesana al horno",
+      "nameEn": "Baked Eggplant Parmesan",
+      "descriptionEs": "con pimientos asados, cebolla, tomates cherry, mozzarella fresca, ricotta, parmesano + albahaca",
+      "descriptionEn": "with roasted peppers, onions, cherry tomatoes, fresh mozzarella, ricotta, parmesan + basil",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-tiramisu",
+      "categoryId": "dessert",
+      "nameEs": "Tiramisú de la casa",
+      "nameEn": "House Made Tiramisù",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$10.00",
-      "popular": true,
-      "badge": "Postre",
-      "tags": [
-        "Dulce",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con múltiples opciones vegetarianas en ensaladas y pizzas. Pregunte a nuestro personal por alternativas.",
-      "aEn": "Yes, we offer multiple vegetarian options in salads and pizzas. Please ask our staff for details."
-    },
-    {
-      "qEs": "Atendemos por orden de llegada (first-come, first-serve). Le recomendamos llegar temprano.",
-      "qEn": "How does seating work at the restaurant?",
-      "aEn": "We operate on a first-come, first-serve basis. We recommend arriving early."
-    }
-  ]
+  "faqs": []
 }

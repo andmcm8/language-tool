@@ -1,25 +1,19 @@
 {
   "storeInfo": {
     "id": "prime",
-    "name": "Prime",
-    "tagline": "Elevated American Cuisine | Cocina Americana Elevada",
-    "address": "78 Southfield Avenue, Stamford, CT",
+    "name": "Prime - Stamford",
+    "tagline": "Seafood restaurant in Stamford | Restaurante de mariscos en Stamford",
+    "address": "78 Southfield Ave, Stamford, CT 06902",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon 12:00 PM - 8:00 PM; Tue 12:00 PM - 9:00 PM; Wed-Fri 12:00 PM - 10:00 PM",
+      "saturday": "12:00 PM - 10:00 PM",
+      "sunday": "12:00 PM - 8:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering",
+      "Takeout"
     ],
     "themeColor": "#1e293b",
     "logoIcon": "utensils",
@@ -27,168 +21,595 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(203) 817-0700"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "primers",
+      "nameEs": "Entradas (Primers)",
+      "nameEn": "Primers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "mizu-sushi",
+      "nameEs": "Sushi Mizu",
+      "nameEn": "Mizu Sushi",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "surf",
+      "nameEs": "Mar",
+      "nameEn": "Surf",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "turf",
+      "nameEs": "Tierra",
+      "nameEn": "Turf",
+      "icon": "Utensils"
+    },
+    {
+      "id": "steaks-chops",
+      "nameEs": "Cortes y chuletas",
+      "nameEn": "Steaks & Chops",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "specials",
+      "nameEs": "Especiales",
+      "nameEn": "Specials",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "prime-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamar Crujiente",
-      "nameEn": "Crispy Calamari",
-      "descriptionEs": "Calamar fresco ligeramente empanizado, servido con salsa marinara picante y limón.",
-      "descriptionEn": "Fresh calamari lightly breaded, served with spicy marinara sauce and lemon.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Aperitivo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
+      "id": "baby-wedge-salad",
+      "categoryId": "primers",
+      "nameEs": "Ensalada de cuña baby",
+      "nameEn": "Baby Wedge Salad",
+      "descriptionEs": "tocino, queso azul, tomate, cebolla morada, ranch de suero de leche",
+      "descriptionEn": "bacon, blue cheese, tomato, red onion, buttermilk ranch",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "prime-02",
-      "categoryId": "appetizers",
-      "nameEs": "Tartar de Atún Ahi",
-      "nameEn": "Ahi Tuna Tartare",
-      "descriptionEs": "Atún de grado sushi, aguacate, pepino y aderezo de soja y jengibre.",
-      "descriptionEn": "Sushi-grade tuna, avocado, cucumber, and a soy-ginger dressing.",
-      "price": "$19.00",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Saludable",
-        "Fresco"
-      ],
-      "allergens": [
-        "Pescado",
-        "Soja"
-      ],
+      "id": "burrata-caprese",
+      "categoryId": "primers",
+      "nameEs": "Burrata caprese",
+      "nameEn": "Burrata Caprese",
+      "descriptionEs": "tomate heirloom madurado en la mata, pesto de albahaca y piñones, arúgula, vinagreta de balsámico blanco, crutón de parmesano",
+      "descriptionEn": "vine-ripe heirloom tomato, basil-pine nut pesto, arugula, white balsamic vinaigrette, parmesan crouton",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "prime-03",
-      "categoryId": "mains",
-      "nameEs": "Filete Mignon Prime",
-      "nameEn": "Prime Filet Mignon",
-      "descriptionEs": "Corte de 8oz de res de primera calidad, servido con puré de papas trufado y espárragos.",
-      "descriptionEn": "8oz premium beef cut, served with truffle mashed potatoes and grilled asparagus.",
-      "price": "$48.00",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Carne",
-        "Premium"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "caesar-salad",
+      "categoryId": "primers",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "lechuga romana, crutones, parmesano, aderezo César",
+      "descriptionEn": "romaine, croutons, parmesan, caesar dressing",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "prime-04",
-      "categoryId": "mains",
-      "nameEs": "Salmón a la Parrilla",
-      "nameEn": "Grilled Atlantic Salmon",
-      "descriptionEs": "Filete de salmón fresco con glaseado de miel y mostaza, servido con quinoa y vegetales.",
-      "descriptionEn": "Fresh salmon fillet with a honey-mustard glaze, served with quinoa and seasonal vegetables.",
-      "price": "$32.00",
-      "popular": false,
-      "badge": "Healthy",
-      "tags": [
-        "Pescado",
-        "Saludable"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "maryland-style-crab-cake",
+      "categoryId": "primers",
+      "nameEs": "Pastel de cangrejo estilo Maryland",
+      "nameEn": "Maryland Style Crab Cake",
+      "descriptionEs": "salsa tártara, apio, toronja, perifollo",
+      "descriptionEn": "tartar sauce, celery, grapefruit, chervil",
+      "price": "$29.00",
       "ctaType": "in_store"
     },
     {
-      "id": "prime-05",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Setas Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz cremoso arborio con una mezcla de setas locales, aceite de trufa y queso parmesano.",
-      "descriptionEn": "Creamy arborio rice with a blend of local mushrooms, truffle oil, and parmesan cheese.",
+      "id": "gnocchi",
+      "categoryId": "primers",
+      "nameEs": "Gnocchi",
+      "nameEn": "Gnocchi",
+      "descriptionEs": "salsa de parmesano y trufa blanca",
+      "descriptionEn": "parmesan-white truffle sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-wagyu-meatballs",
+      "categoryId": "primers",
+      "nameEs": "Albóndigas de wagyu japonés",
+      "nameEn": "Japanese Wagyu Meatballs",
+      "descriptionEs": "fondue de parmesano, jugo de ternera, parmesano rallado, pain de campagne tostado",
+      "descriptionEn": "parmesan fondue, veal jus, shaved parmesan, toasted pain de' campagne",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-lobster-wontons",
+      "categoryId": "primers",
+      "nameEs": "Wontons de camarón y langosta",
+      "nameEn": "Shrimp & Lobster Wontons",
+      "descriptionEs": "sellados en sartén, glaseado hoisin, mostaza con miso",
+      "descriptionEn": "pan seared, hoisin glaze, miso mustard",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-tartare",
+      "categoryId": "primers",
+      "nameEs": "Tartar de atún",
+      "nameEn": "Tuna Tartare",
+      "descriptionEs": "crema de aguacate, cebollín, togarashi, aceite de jengibre y cebollín, crujiente de bagel con ajonjolí",
+      "descriptionEn": "avocado crème, chive, toagrashi, ginger-scallion oil, sesame bagel crisp",
       "price": "$26.00",
-      "popular": true,
-      "badge": "Vegetarian",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "prime-06",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Prime Old Fashioned",
-      "nameEn": "Prime Old Fashioned",
-      "descriptionEs": "Bourbon premium, amargo de angostura, azúcar de caña y esencia de naranja.",
-      "descriptionEn": "Premium bourbon, angostura bitters, cane sugar, and orange essence.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Cocktail",
-      "tags": [
-        "Bebida",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "bread-basket",
+      "categoryId": "primers",
+      "nameEs": "Canasta de pan",
+      "nameEn": "Bread Basket",
+      "descriptionEs": "baguette, mantequilla cacio e pepe",
+      "descriptionEn": "baguette, cacio e pepe butter",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shared-mezze-plate",
+      "categoryId": "primers",
+      "nameEs": "Plato mezze para compartir",
+      "nameEn": "Shared Mezze Plate",
+      "descriptionEs": "hummus, dip de mariscos ahumados, aceitunas marinadas, pita, papitas de la casa",
+      "descriptionEn": "hummus, smoked seafood dip, marinated olives, pita, house-made chips",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-yellowtail-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo de cangrejo y jurel (yellowtail)",
+      "nameEn": "Crab & Yellowtail Roll",
+      "descriptionEs": "jurel picante, aguacate, crujiente, tobiko, cubierto con cangrejo picante",
+      "descriptionEn": "spicy yellowtail, avocado, crunch, tobiko, topped with spicy crab",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "montauk-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo Montauk",
+      "nameEn": "Montauk Roll",
+      "descriptionEs": "atún picante, aguacate, crujiente de tempura, cubierto con langosta, mayonesa de yuzu, salsa de anguila",
+      "descriptionEn": "spicy tuna, avocado, tempura crunch, topped with lobster, yuzu mayo, eel sauce",
+      "price": "$41.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo picante",
+      "nameEn": "Spicy Roll",
+      "descriptionEs": "atún, salmón o hamachi",
+      "descriptionEn": "tuna, salmon, or hamachi",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stamford-landing-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo Stamford Landing",
+      "nameEn": "Stamford Landing Roll",
+      "descriptionEs": "camarón, aguacate, cubierto con atún picante, tempura, mayonesa picante, salsa de anguila",
+      "descriptionEn": "shrimp, avocado, topped with spicy tuna, tempura, spicy mayo, eel sauce",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "starr-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo Starr",
+      "nameEn": "Starr Roll",
+      "descriptionEs": "salmón, mango, crujiente de tempura, aguacate, mayonesa picante",
+      "descriptionEn": "salmon, mango, tempura crunch, avocado, spicy mayo",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-cowboy-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo vaquero japonés",
+      "nameEn": "Japanese Cowboy Roll",
+      "descriptionEs": "langosta, cangrejo real, filete mignon, aguacate, salsa de miso rojo y chile, chalotas crujientes, caviar kaluga",
+      "descriptionEn": "lobster, king crab, filet mignon, avocado, red miso-chili sauce, crispy shallots, kaluga caviar",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tornado-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo tornado de camarón",
+      "nameEn": "Shrimp Tornado Roll",
+      "descriptionEs": "pepino, aguacate, camarón, envuelto en papa frita con mayonesa picante y salsa de anguila",
+      "descriptionEn": "cucumber, avocado, shrimp, wrapped in fried potato with spicy mayo and eel sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "karaage-chicken-roll",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Rollo de pollo karaage",
+      "nameEn": "Karaage Chicken Roll",
+      "descriptionEs": "caviar, BBQ de gochujang, aguacate, pollo crujiente, lechuga bibb, caramelo de soya",
+      "descriptionEn": "caviar, gochujang bbq, avocado, crispy chicken, bibb, soy caramel",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nigiri-trio",
+      "categoryId": "mizu-sushi",
+      "nameEs": "Trío de nigiri",
+      "nameEn": "Nigiri Trio",
+      "descriptionEs": "atún con glaseado de soya, salmón con yuzu kosho, wagyu japonés A5 con alioli de wasabi",
+      "descriptionEn": "tuna soy glaze, salmon yuzu kosho, a5 Japanese wagyu wasabi aioli",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "branzino",
+      "categoryId": "surf",
+      "nameEs": "Branzino",
+      "nameEn": "Branzino",
+      "descriptionEs": "broccolini, hinojo rallado, aceitunas, naranja sanguina",
+      "descriptionEn": "broccolini, shaved fennel, olives, blood orange",
+      "price": "$41.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miso-roasted-scottish-salmon",
+      "categoryId": "surf",
+      "nameEs": "Salmón escocés asado al miso",
+      "nameEn": "Miso-Roasted Scottish Salmon",
+      "descriptionEs": "ejotes franceses, coliflor, hongos honshimeji, hijiki, mantequilla de limón Meyer",
+      "descriptionEn": "haricots verts, cauliflower, honshimeji, hijiki, meyer lemon butter",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-halibut-tacos",
+      "categoryId": "surf",
+      "nameEs": "Tacos de halibut ennegrecido",
+      "nameEn": "Blackened Halibut Tacos",
+      "descriptionEs": "halibut espolvoreado con paprika, crema de chipotle, ensalada de col napa y jícama, tortillas de harina",
+      "descriptionEn": "paprika-dusted halibut, chipotle crèma, napa-jicama slaw, flour tortillas",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll",
+      "categoryId": "surf",
+      "nameEs": "Rollo de langosta",
+      "nameEn": "Lobster Roll",
+      "descriptionEs": "langosta escalfada en mantequilla, brioche, lechuga romana, mayonesa de hierbas, papas fritas",
+      "descriptionEn": "butter-poached lobster, brioche, romaine, herb-mayo, fries",
+      "price": "$54.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-chicken",
+      "categoryId": "turf",
+      "nameEs": "Pollo asado",
+      "nameEn": "Roasted Chicken",
+      "descriptionEs": "frijoles cannellini, kale toscano, salchicha de hinojo, alcaparras, aceitunas, jugo de romero",
+      "descriptionEn": "cannellini beans, tuscan kale, fennel sausage, capers, olives, rosemary jus",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-black-label-burger",
+      "categoryId": "turf",
+      "nameEs": "Hamburguesa Prime \"Black Label\"",
+      "nameEn": "Prime \"Black Label\" Burger",
+      "descriptionEs": "tocino ahumado con madera de manzano, lechuga, tomate, queso cheddar, cebolla, papas fritas",
+      "descriptionEn": "applewood smoked bacon, lettuce, tomato, cheddar cheese, onion, french fries",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wellington",
+      "categoryId": "turf",
+      "nameEs": "Wellington",
+      "nameEn": "Wellington",
+      "descriptionEs": "filete mignon, duxelles de champiñones, bordelesa, fondue de brie, hojaldre",
+      "descriptionEn": "filet mignon, mushroom duxelles, bordelaise, brie fondue, puff pastry",
+      "price": "$52.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tellers-delmonico",
+      "categoryId": "turf",
+      "nameEs": "Delmonico Tellers",
+      "nameEn": "Tellers Delmonico",
+      "descriptionEs": "salsa de mantequilla de trufa, cebolla crujiente 16 oz.",
+      "descriptionEn": "truffle butter sauce, crispy onions 16 oz.",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon",
+      "categoryId": "steaks-chops",
+      "nameEs": "Filete mignon",
+      "nameEn": "Filet Mignon",
+      "descriptionEs": "10 oz",
+      "descriptionEn": "10oz",
+      "price": "$79.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip",
+      "categoryId": "steaks-chops",
+      "nameEs": "NY strip",
+      "nameEn": "NY Strip",
+      "descriptionEs": "14 oz, USDA Prime, madurado en seco 35 días",
+      "descriptionEn": "14oz, USDA Prime, 35 Day Dry Aged",
+      "price": "$78.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porterhouse-for-2",
+      "categoryId": "steaks-chops",
+      "nameEs": "Porterhouse para 2",
+      "nameEn": "Porterhouse for 2",
+      "descriptionEs": "38 oz. USDA Prime, madurado en seco 35 días, bordelesa",
+      "descriptionEn": "38 oz. USDA Prime, 35 Day Dry Aged bordelaise",
+      "price": "$175.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tellers-ribeye-for-2",
+      "categoryId": "steaks-chops",
+      "nameEs": "Ribeye Tellers para 2",
+      "nameEn": "Tellers Ribeye for 2",
+      "descriptionEs": "40 oz, USDA Prime, madurado en seco 35 días",
+      "descriptionEn": "40oz, USDA Prime, 35 Day Dry Aged",
+      "price": "$155.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-chop-parmesan",
+      "categoryId": "steaks-chops",
+      "nameEs": "Chuleta de ternera \"a la parmesana\"",
+      "nameEn": "Veal Chop \"Parmesan\"",
+      "descriptionEs": "16 oz. (con costra de parmesano)",
+      "descriptionEn": "16 oz. (parmesan crusted)",
+      "price": "$69.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eye-of-the-ribeye-wagyu",
+      "categoryId": "steaks-chops",
+      "nameEs": "Ojo de ribeye (wagyu)",
+      "nameEn": "Eye of the Ribeye (Wagyu)",
+      "descriptionEs": "10 oz. Snake River Farms, wagyu americano \"gold\"",
+      "descriptionEn": "10 oz. snake river farms, american wagyu \"gold\"",
+      "price": "$115.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-a5-wagyu-4-oz",
+      "categoryId": "steaks-chops",
+      "nameEs": "Wagyu japonés A5 (4 oz.)",
+      "nameEn": "Japanese A5 Wagyu (4 oz.)",
+      "descriptionEs": "4 oz.",
+      "descriptionEn": "4 oz.",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-a5-wagyu-8-oz",
+      "categoryId": "steaks-chops",
+      "nameEs": "Wagyu japonés A5 (8 oz.)",
+      "nameEn": "Japanese A5 Wagyu (8 oz.)",
+      "descriptionEs": "8 oz.",
+      "descriptionEn": "8 oz.",
+      "price": "$105.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon-american-wagyu-gold",
+      "categoryId": "steaks-chops",
+      "nameEs": "Filete mignon (wagyu americano gold)",
+      "nameEn": "Filet Mignon (American Wagyu Gold)",
+      "descriptionEs": "10 oz., Snake River Farms wagyu americano \"gold\"",
+      "descriptionEn": "10 oz., Snake River Farms American Wagyu \"Gold\"",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asparagus-almondine",
+      "categoryId": "sides",
+      "nameEs": "Espárragos \"almondine\"",
+      "nameEn": "Asparagus \"Almondine\"",
+      "descriptionEs": "mantequilla de limón, almendras tostadas",
+      "descriptionEn": "lemon butter, toasted almonds",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli",
+      "categoryId": "sides",
+      "nameEs": "Brócoli",
+      "nameEn": "Broccoli",
+      "descriptionEs": "salsa de cebollín y jengibre, ajonjolí",
+      "descriptionEn": "scallion-ginger sauce, sesame seeds",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussels Sprouts",
+      "descriptionEs": "manzana verde, tocino, crema agria, vinagreta de maple y jerez",
+      "descriptionEn": "green apple, bacon, sour cream, maple-sherry vinaigrette",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamed-spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinaca a la crema",
+      "nameEn": "Creamed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-n-cheese",
+      "categoryId": "sides",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac n' Cheese",
+      "descriptionEs": "cavatappi, mezcla de cinco quesos",
+      "descriptionEn": "cavatappi, five-cheese blend",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas Prime",
+      "nameEn": "Prime Fries",
+      "descriptionEs": "estilo juliana (shoestring)",
+      "descriptionEn": "shoe string",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas con trufa",
+      "nameEn": "Truffle Fries",
+      "descriptionEs": "queso parmesano, aceite de trufa",
+      "descriptionEn": "parmesan cheese, truffle oil",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whipped-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Puré de papa batido",
+      "nameEn": "Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-mushroons",
+      "categoryId": "sides",
+      "nameEs": "Hongos silvestres",
+      "nameEn": "Wild Mushroons",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-mac-n-cheese",
+      "categoryId": "sides",
+      "nameEs": "Macarrones con queso y langosta",
+      "nameEn": "Lobster Mac n' Cheese",
+      "descriptionEs": "cavatappi, mezcla de cinco quesos con carne de langosta fresca",
+      "descriptionEn": "cavatappi, five-cheese blend with fresh lobster meat",
+      "price": "$49.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamed-corn",
+      "categoryId": "sides",
+      "nameEs": "Elote a la crema",
+      "nameEn": "Creamed Corn",
+      "descriptionEs": "crutones de pan de elote con jalapeño y queso jack",
+      "descriptionEn": "jalapeño jack cornbread croutons",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "sides",
+      "nameEs": "Papa al horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "crema agria, cheddar añejo, tocino ahumado, mantequilla",
+      "descriptionEn": "sour cream, aged cheddar, smoked bacon, butter",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "traditional-carrot-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de zanahoria tradicional",
+      "nameEn": "Traditional Carrot Cake",
+      "descriptionEs": "queso crema, mascarpone, nueces pecanas, pasas",
+      "descriptionEn": "cream cheese, mascarpone, pecans, raisins",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-bean-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de vainilla",
+      "nameEn": "Vanilla Bean Cheesecake",
+      "descriptionEs": "salsa de frutas tropicales, nueces de macadamia garapiñadas, salsa de caramelo",
+      "descriptionEn": "tropical fruit salsa, candied macadamia nuts, caramel sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "valrhona-chocolate-layer-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate Valrhona en capas",
+      "nameEn": "Valrhona Chocolate Layer Cake",
+      "descriptionEs": "ganache de chocolate oscuro, virutas de chocolate, crema batida",
+      "descriptionEn": "dark chocolate ganache, chocolate shavings, whipped cream",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "handcrafted-spaghetti",
+      "categoryId": "specials",
+      "nameEs": "Espagueti artesanal",
+      "nameEn": "Handcrafted Spaghetti",
+      "descriptionEs": "almejas manila, andouille, vino blanco, pan molido con ajo tostado",
+      "descriptionEn": "manila clams, andouille, white wine, toasted garlic breadcrumbs",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "handcrafted-mafaldine",
+      "categoryId": "specials",
+      "nameEs": "Mafaldine artesanal",
+      "nameEn": "Handcrafted Mafaldine",
+      "descriptionEs": "cachete de res braseado, morillas, chícharos, ricotta di bufala",
+      "descriptionEn": "braised beef cheek, morel, peas, ricotta di buffala",
+      "price": "$29.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú.",
-      "aEn": "Yes, please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono.",
-      "aEn": "We welcome walk-ins and phone reservations."
-    }
-  ]
+  "faqs": []
 }

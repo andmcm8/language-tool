@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "papa-joes-ristorante-italiano",
     "name": "Papa Joe's Ristorante Italiano",
-    "tagline": "Authentic Italian Cuisine in the Heart of Darien | Cocina Italiana Auténtica en el Corazón de Darien",
-    "address": "1973 Post Road, Darien, CT",
+    "tagline": "Italian restaurant in Darien | Restaurante italiano en Darien",
+    "address": "1973 POST RD, DARIEN CT 06820",
     "hours": {
-      "monday_friday": "Tuesday-Friday 11:30 AM - 10:00 PM",
-      "saturday": "Saturday 5:00 PM - 10:00 PM",
-      "sunday": "Sunday 5:00 PM - 10:00 PM"
+      "monday_friday": "5pm-10pm",
+      "saturday": "5pm-10pm",
+      "sunday": "5pm-10pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -32,241 +25,342 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "antipasti",
+      "nameEs": "Antipasti",
+      "nameEn": "Antipasti",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "house-made-pasta-by-joe",
+      "nameEs": "Pasta casera hecha por Joe",
+      "nameEn": "House Made Pasta by Joe",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "eggplant-dishes",
+      "nameEs": "Platillos de berenjena",
+      "nameEn": "Eggplant Dishes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "personal-hand-crafted-artisan-pizza",
+      "nameEs": "Pizza artesanal personal hecha a mano",
+      "nameEn": "Personal Hand Crafted Artisan Pizza",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "papa-joes-01",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada Caprese",
+      "id": "caprese-salad",
+      "categoryId": "antipasti",
+      "nameEs": "Ensalada caprese",
       "nameEn": "Caprese Salad",
-      "descriptionEs": "Pimientos asados, mozzarella fior di latte, tomates frescos y albahaca.",
-      "descriptionEn": "Roasted peppers, mozzarella fior di latte, tomatoes and basil.",
+      "descriptionEs": "pimientos asados, mozzarella fior di latte, tomates y albahaca",
+      "descriptionEn": "roasted peppers, mozzarella fior di latte, tomatoes and basil",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "papa-joes-02",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta Clásica",
-      "nameEn": "Classic Bruschetta",
-      "descriptionEs": "Pan tostado con tomates, ajo, mozzarella fresca y albahaca.",
-      "descriptionEn": "Toasted bread with tomatoes, garlic, fresh mozzarella and basil.",
-      "price": "$10.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "prince-edward-islands-mussels",
+      "categoryId": "antipasti",
+      "nameEs": "Mejillones de la Isla del Príncipe Eduardo",
+      "nameEn": "Prince Edward Islands Mussels",
+      "descriptionEs": "sellados en sartén con ajo, aceite de oliva virgen o marinara",
+      "descriptionEn": "pan seared with garlic, virgin olive oil or marinara",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "papa-joes-03",
-      "categoryId": "mains",
-      "nameEs": "Gnocchi Bolognese",
-      "nameEn": "Gnocchi Bolognese",
-      "descriptionEs": "Suaves ñoquis de papa servidos con nuestra salsa boloñesa casera.",
-      "descriptionEn": "Fluffy potato dumplings served with our house-made bolognese sauce.",
-      "price": "$26.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-04",
-      "categoryId": "mains",
-      "nameEs": "Lasagna Bolognese",
-      "nameEn": "Lasagna Bolognese",
-      "descriptionEs": "Pasta hecha en casa, capas de besciamella y salsa boloñesa tradicional.",
-      "descriptionEn": "House-made pasta layered with creamy besciamella and rich bolognese sauce.",
-      "price": "$27.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Tradicional"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-05",
-      "categoryId": "specialties",
-      "nameEs": "Pollo a la Parmigiana",
-      "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Filete de pollo empanizado, horneado con salsa de tomate, parmesano y mozzarella fresca.",
-      "descriptionEn": "Chicken cutlet baked with tomato sauce, parmigiano and fresh mozzarella.",
-      "price": "$27.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-06",
-      "categoryId": "specialties",
-      "nameEs": "Branzino al Horno",
-      "nameEn": "Baked Branzino",
-      "descriptionEs": "Branzino en papel pergamino con aceite de oliva, romero y vegetales frescos.",
-      "descriptionEn": "Branzino in parchment paper with light olive oil, rosemary and vegetables.",
-      "price": "$35.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Saludable",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-07",
-      "categoryId": "mains",
-      "nameEs": "Rigatoni a la Vodka",
-      "nameEn": "Rigatoni Vodka",
-      "descriptionEs": "Pasta rigatoni con tomates ciruela, un toque de crema, cebollas y panceta.",
-      "descriptionEn": "Rigatoni with plum tomatoes, a touch of cream, onions and pancetta.",
-      "price": "$27.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pasta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-08",
-      "categoryId": "specialties",
-      "nameEs": "Ternera Saltin Bocca",
-      "nameEn": "Veal Saltin Bocca",
-      "descriptionEs": "Ternera y prosciutto di parma salteados en vino, salvia y mantequilla.",
-      "descriptionEn": "Veal and prosciutto di parma sauteed in wine, sage and butter.",
-      "price": "$37.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "papa-joes-09",
-      "categoryId": "mains",
-      "nameEs": "Pizza Margherita",
-      "nameEn": "Margherita Pizza",
-      "descriptionEs": "Tomates frescos, mozzarella, albahaca y aceite de oliva virgen extra.",
-      "descriptionEn": "Fresh tomatoes, mozzarella, basil and extra virgin olive oil.",
+      "id": "calamari-fritti",
+      "categoryId": "antipasti",
+      "nameEs": "Calamari fritti",
+      "nameEn": "Calamari Fritti",
+      "descriptionEs": "calamar frito en sartén servido con gajos de limón y salsa picante",
+      "descriptionEn": "pan fried squid served with lemon wedges and hot sauce",
       "price": "$21.00",
-      "popular": true,
-      "badge": "Artesanal",
-      "tags": [
-        "Vegetariano",
-        "Pizza"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "papa-joes-10",
-      "categoryId": "specialties",
-      "nameEs": "Linguine Frutti di Mare",
-      "nameEn": "Linguine Frutti di Mare",
-      "descriptionEs": "Almejas, mejillones, calamares y camarones en salsa marinara o alio olio.",
-      "descriptionEn": "Fresh Manila clams, mussels, calamari, and shrimp in alio olio or marinara.",
-      "price": "$41.00",
-      "popular": true,
-      "badge": "Premium",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Pescado"
-      ],
+      "id": "shrimp",
+      "categoryId": "antipasti",
+      "nameEs": "Camarón",
+      "nameEn": "Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-rustico-assortitio",
+      "categoryId": "antipasti",
+      "nameEs": "Antipasto rústico surtido",
+      "nameEn": "Antipasto Rustico Assortitio",
+      "descriptionEs": "Affettati: prosciutto di Parma recién rebanado, soppressata, queso provolone",
+      "descriptionEn": "Affetati freshly sliced prosciutto di parma, sopressata, provolone cheese",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruschetta",
+      "categoryId": "antipasti",
+      "nameEs": "Bruschetta",
+      "nameEn": "Bruschetta",
+      "descriptionEs": "pan tostado con tomates, ajo, mozzarella fresca y albahaca",
+      "descriptionEn": "toasted bread with tomatoes, garlic, fresh mozzarella and basil",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-bresaola",
+      "categoryId": "antipasti",
+      "nameEs": "Bresaola de res",
+      "nameEn": "Beef Bresaola",
+      "descriptionEs": "con glaseado balsámico, arúgula y parmigiano rallado",
+      "descriptionEn": "with Balsamic Glaze, arugula and shaved parmigiano",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-fagioli",
+      "categoryId": "antipasti",
+      "nameEs": "Pasta e fagioli",
+      "nameEn": "Pasta Fagioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini",
+      "categoryId": "antipasti",
+      "nameEs": "Rollatini de berenjena",
+      "nameEn": "Eggplant Rollatini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-greens",
+      "categoryId": "salads",
+      "nameEs": "Hojas verdes mixtas",
+      "nameEn": "Mixed Greens",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-arugula-and-tomatoes",
+      "categoryId": "salads",
+      "nameEs": "Arúgula baby con tomates",
+      "nameEn": "Baby Arugula and Tomatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ceasar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Ceasar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beet-salad-served-over-baby-arugula-and-goat-s-cheese",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de betabel servida sobre arúgula baby con queso de cabra",
+      "nameEn": "Beet Salad Served over Baby Arugula and Goat's Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola",
+      "categoryId": "salads",
+      "nameEs": "Gorgonzola",
+      "nameEn": "Gorgonzola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread",
+      "categoryId": "salads",
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-bolognese",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Gnocchi a la boloñesa",
+      "nameEn": "Gnocchi Bolognese",
+      "descriptionEs": "esponjosos dumplings de papa",
+      "descriptionEn": "fluffy potato dumplings",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-sorrentina",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Gnocchi alla sorrentina",
+      "nameEn": "Gnocchi Sorrentina",
+      "descriptionEs": "en salsa de tomate y albahaca con mozzarella fresca y queso parmigiano",
+      "descriptionEn": "in tomato sauce and basil fresh mozzarella with parmigiano cheese",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Fettuccine alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "parmigiano y mantequilla",
+      "descriptionEn": "parmigiano and butter",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sunday-pappardelle",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Pappardelle del domingo",
+      "nameEn": "Sunday Pappardelle",
+      "descriptionEs": "pasta de listón servida con salsa boloñesa casera y queso ricotta fresco",
+      "descriptionEn": "ribbon pasta served with homemade bolognese sauce and fresh ricotta cheese",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-broccoli-rabe-sausage",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Cavatelli con brócoli rabe y salchicha",
+      "nameEn": "Cavatelli Broccoli Rabe & Sausage",
+      "descriptionEs": "servidos en aglio olio, ajo y hojuelas de chile rojo",
+      "descriptionEn": "served in ali olio, garlic and crushed red pepper flakes",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-campagnola",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Pappardelle campagnola",
+      "nameEn": "Pappardelle Campagnola",
+      "descriptionEs": "pollo, ternera, salchicha y champiñones en una ligera salsa boloñesa",
+      "descriptionEn": "chicken, veal, sausage and mushrooms in a light bolognese sauce",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna-bolognese",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Lasaña a la boloñesa",
+      "nameEn": "Lasagna Bolognese",
+      "descriptionEs": "pasta casera en capas con besciamella y salsa boloñesa",
+      "descriptionEn": "house made pasta layered with besciamella and bolognese sauce",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli-di-ricotta",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Ravioles de ricotta",
+      "nameEn": "Ravioli di Ricotta",
+      "descriptionEs": "ravioles de queso con salsa rosada",
+      "descriptionEn": "cheese ravioli with pink sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alla-carbonara",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Fettuccine alla carbonara",
+      "nameEn": "Fettuccine alla Carbonara",
+      "descriptionEs": "hecho con guanciale, huevos, pimienta negra y parmigiano",
+      "descriptionEn": "made with guanciale, eggs, black pepper and parmigiano",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-vodka",
+      "categoryId": "house-made-pasta-by-joe",
+      "nameEs": "Rigatoni a la vodka",
+      "nameEn": "Rigatoni Vodka",
+      "descriptionEs": "hecho con tomates guaje, un toque de crema, cebolla y pancetta",
+      "descriptionEn": "made with plum tomatoes, a touch of creme, onions and panchetta",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "melanzane-alla-parmigiana",
+      "categoryId": "eggplant-dishes",
+      "nameEs": "Berenjena a la parmesana (melanzane alla parmigiana)",
+      "nameEn": "Melanzane alla Parmigiana",
+      "descriptionEs": "berenjena horneada con salsa de tomate, parmigiano y mozzarella fresca",
+      "descriptionEn": "eggplant baked with tomato sauce, parmigiano and fresh mozzarella",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "papa-joe-s-signature",
+      "categoryId": "personal-hand-crafted-artisan-pizza",
+      "nameEs": "Pizza de la casa Papa Joe's",
+      "nameEn": "Papa Joe's Signature",
+      "descriptionEs": "Mozzarella fresca, albahaca fresca, aceite de oliva extra virgen, en nuestra salsa para pizza de la casa",
+      "descriptionEn": "Fresh mozzarella, fresh basil, EVOO olive oil, in our Signature pizza sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "napoletana",
+      "categoryId": "personal-hand-crafted-artisan-pizza",
+      "nameEs": "Napoletana",
+      "nameEn": "Napoletana",
+      "descriptionEs": "mozzarella, salsa de tomate y albahaca",
+      "descriptionEn": "mozzarella, tomato sauce, and basil",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margherita",
+      "categoryId": "personal-hand-crafted-artisan-pizza",
+      "nameEs": "Margherita",
+      "nameEn": "Margherita",
+      "descriptionEs": "tomates frescos y mozzarella",
+      "descriptionEn": "fresh tomatoes and mozzarella",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-and-broccoli-rabe",
+      "categoryId": "personal-hand-crafted-artisan-pizza",
+      "nameEs": "Salchicha con brócoli rabe",
+      "nameEn": "Sausage and Broccoli Rabe",
+      "descriptionEs": "ajo fresco, aceite de oliva y chile rojo triturado",
+      "descriptionEn": "fresh garlic, olive oil and crushed red pepper",
+      "price": "$24.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú.",
-      "aEn": "Yes, please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono.",
-      "aEn": "We welcome walk-ins and phone reservations."
-    }
-  ]
+  "faqs": []
 }
