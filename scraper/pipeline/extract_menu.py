@@ -271,8 +271,12 @@ def verify(sections, texts):
     priced = [i for i, l in enumerate(lines) if PRICE_STRICT.search(l)]
     nl = [norm(l) for l in lines]
     unmatched = 0
+    HOURS = re.compile(r"(?i)\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\b|\b\d{1,2}\s*(am|pm)\b|price range|minimum|tax|gratuity|delivery fee")
+    priced = [i for i in priced if not HOURS.search(lines[i])]
     for i in priced:
-        ctx = " ".join(nl[max(0, i - 3): i + 1])
+        textual = len(re.findall(r"[A-Za-z]", lines[i])) >= 3
+        back = 3 if textual else 10
+        ctx = " ".join(nl[max(0, i - back): i + 1])
         if not any(n and n in ctx for n in names):
             unmatched += 1
     price_tokens = len(PRICE_STRICT.findall(full))
@@ -380,7 +384,7 @@ def main():
     sites = json.load(open(os.path.join(DATA, "sites.json")))
     outp = os.path.join(DATA, "extract.json")
     res = json.load(open(outp)) if os.path.exists(outp) else {}
-    todo = [s for s in sites if s in work and (only and s in only or (not only and (s not in res or res[s].get("status") in ("llm-failed", "error")))))]
+    todo = [s for s in sites if s in work and (only and s in only or (not only and (s not in res or res[s].get("status") in ("llm-failed", "error"))))]
     todo = [s for s in todo if sites[s].get("pages") or only]
     if limit:
         todo = todo[:limit]
