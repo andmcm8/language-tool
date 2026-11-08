@@ -316,7 +316,8 @@ def process(w, site, got=None):
         scored.append((np, u, t))
     home = site.get("final") or ""
     menu_pages = [(u, t) for np, u, t in scored
-                  if np >= 5 or (u != home and MENU_URL.search(u) and (np >= 1 or MENU_WORDS.search(t)))]
+                  if np >= 5 or (u != home and MENU_URL.search(u) and (np >= 1 or MENU_WORDS.search(t)))
+                  or u in ((got or {}).get("force_pages") or [])]  # unpriced menu pages (e.g. cocktail list) Claude read
     rec = {"slug": slug, "status": "", "pages": [u for u, _ in menu_pages]}
     if not menu_pages:
         rec["status"] = "no-menu-text"

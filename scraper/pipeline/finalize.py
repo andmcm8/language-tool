@@ -110,7 +110,8 @@ def fmt_phone(p):
     return f"({d[:3]}) {d[3:6]}-{d[6:]}" if len(d) == 10 else ""
 
 
-SEASONAL = re.compile(r"(?i)thanksgiving|christmas|xmas|easter|valentine|mother'?s day|father'?s day|new year|halloween|holiday|special|today|this week|feast of|seven fishes|st\.? patrick|super bowl|limited time|seasonal")
+# rotating/holiday sections only; "Specialty Pizza", "Special Rolls", "Lunch Special" are permanent menu sections
+SEASONAL = re.compile(r"(?i)thanksgiving|christmas|xmas|easter|valentine|mother'?s day|father'?s day|new year|halloween|holiday|today|tonight|this week|\b(daily|weekly|weekend|monthly|rotating)\b.*\bspecials?\b|\bspecials? of the (day|week|month)\b|^\W*specials?\W*$|\b(january|february|march|april|may|june|july|august|september|october|november|december|football|summer|winter|spring|fall|autumn)\b.*\bspecials?\b|feast of|seven fishes|st\.? patrick|super bowl|limited time|seasonal")
 STRONG_MENU = re.compile(r"(?i)/[^/?#]*(menu|food|drinks?|dinner|lunch|brunch|breakfast|dessert|cocktails?|wine-list|beer)[^/?#]*/?$")
 
 
@@ -164,7 +165,7 @@ def finalize(slug, w, site, ext, draft):
     if draft.get("trusted_store"):
         return finalize_trusted(slug, w, site, draft)
     texts = E.page_texts(slug, site, (w.get("town") or "").lower())
-    used = list(draft.get("sources", []))
+    used = list(draft.get("sources", [])) + list(draft.get("reviewed", []))  # reviewed: checked by hand, no extra menu items
     used += [p.get("page") for p in site.get("pages", []) if p.get("type") == "ocr" and p["url"] in used and p.get("page")]
     site = dict(site, _used=used)
     miss = uncovered_menu_links(slug, site)
@@ -240,7 +241,7 @@ def main():
             dp = os.path.join(E.DRAFTS, slug + ".json")
             if r.get("status") in ("ok", "review") and os.path.exists(dp):
                 d = json.load(open(dp))
-                used = list(d.get("sources", [])) + [p.get("page") for p in sites[slug].get("pages", []) if p.get("type") == "ocr" and p.get("page")]
+                used = list(d.get("sources", [])) + list(d.get("reviewed", [])) + [p.get("page") for p in sites[slug].get("pages", []) if p.get("type") == "ocr" and p.get("page")]
                 m = uncovered_menu_links(slug, dict(sites[slug], _used=used))
                 if m:
                     out[slug] = m
