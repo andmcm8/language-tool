@@ -72,7 +72,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `cinco-de-mayo` | Fiesta Cinco De Mayo Restaurant | 1228 Main Street, Willimantic, CT 06226 | 97 |
 | `citrus` | Citrus | 56 Broad St, Suite A, Milford, CT 06460 | 120 |
 | `claires-corner-copia` | Claire's Corner Copia | 1000 Chapel Street, New Haven, CT 06510 | 194 |
-| `coco-thai-kitchen` | Coco Thai Kitchen | 801 Thompsonville Road Suffield, CT, 06078 United States | 85 |
+| `coco-thai-kitchen` | Coco Thai Kitchen | 801 Thompsonville Road Suffield, CT, 06078 United States | 108 |
 | `common-grounds` | Common Grounds | 707 Bridgeport Ave, Shelton, CT 06484 | 36 |
 | `costellos-clam-shack` | Costello's Clam Shack | 145 Pearl Street, Groton, CT 06340 | 59 |
 | `country-diner` | The Country Diner | 111 Hazard Avenue, Enfield, CT 06082 | 227 |
@@ -80,19 +80,19 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `cromwell-diner` | Cromwell Diner | 135 Berlin Road, Cromwell, CT 06416 | 154 |
 | `diesel-lounge` | Diesel Lounge | 944 State Street New Haven CT 06511 | 36 |
 | `dish-n-dat` | Dish 'n Dat | 144 Albany Turnpike, Canton, CT 06019 | 494 |
-| `dog-lane-cafe` | Dog Lane Café | 1 Dog Ln, Storrs, CT 06269 | 85 |
+| `dog-lane-cafe` | Dog Lane Café | 1 Dog Ln, Storrs, CT 06269 | 114 |
 | `dono-cafe` | DoNo Cafe | 1212 Main Street, Hartford, CT 06103 | 17 |
 | `donovans-reef` | Donovan's Reef Restaurant | 1212 Main Street, Branford, CT 06405 | 172 |
 | `eco-chic-salon-spa-blow-dry-bar` | Eco Chic Salon Spa & Blow Dry Bar | 16 Center Street, Wilton, CT 06897 | 67 |
-| `el-traviezo-mexican-food` | Traviezo | 1 Market Street, Norwich, CT 06360 | 84 |
+| `el-traviezo-mexican-food` | Traviezo | 1 Market Street, Norwich, CT 06360 | 93 |
 | `el-traviezo-mexican-restaurant` | Traviezo | 1 Market Street, Norwich, CT 06360 | 99 |
 | `elicit-brewing-co` | Elicit Brewing Co. — Fairfield | 111 Black Rock Turnpike, Fairfield, CT 06825 | 52 |
 | `epicure-brewing` | Epicure Brewing | 40 Franklin St, Norwich, CT 06360-5806 | 15 |
 | `famous-pizza-bethel` | Famous Pizza | 6 Greenwood Ave, Bethel, CT 06801 | 50 |
-| `ferris-acres-creamery` | Ferris Acres Creamery | 144 Sugar Street, Newtown, CT 06470 | 55 |
+| `ferris-acres-creamery` | Ferris Acres Creamery | 144 Sugar Street, Newtown, CT 06470 | 91 |
 | `frank-pepe-pizzeria-napoletana` | Frank Pepe Pizzeria Napoletana | 59 Federal Road, Danbury, CT 06810 | 57 |
 | `frank-pepes-west-hartford` | Frank Pepe Pizzeria Napoletana | 1148 New Britain Avenue, West Hartford, CT 06110 | 88 |
-| `frankies-pizza` | Frankie's Pizza | 809 Maple Rd, Longmeadow, MA 01106 | 80 |
+| `frankies-pizza` | Frankie's Pizza | 809 Maple Rd, Longmeadow, MA 01106 | 103 |
 | `fuego-mexican-grill` | Fuego Mexican Grill | 36 Shunpike Road, Cromwell, CT 06416 | 61 |
 | `geronimo` | Geronimo Tequila Bar & Southwest Grill | 2070 Post Rd, Fairfield, CT 06824 | 152 |
 | `gg-joe` | GG & Joe | 165 Main St, Westport, CT 06880 | 77 |
