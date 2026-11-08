@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "hanks-restaurant",
     "name": "Hank's Restaurant",
-    "tagline": "Serving Food and Fun Since '71 | Comida casera y ambiente familiar",
+    "tagline": "American restaurant in Brooklyn | Restaurante americano en Brooklyn",
     "address": "416 Providence Road, Brooklyn, CT 06234",
     "phone": "(860) 774-6071",
     "hours": {
-      "monday_friday": "11:30 AM - 9:00 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 8:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Bar / Lounge"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,319 +24,500 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "deli-sandwiches",
+      "nameEs": "Sándwiches de deli",
+      "nameEn": "Deli Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "salad",
+      "nameEs": "Ensalada",
+      "nameEn": "Salad",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hanks-10-pizzas",
+      "nameEs": "Pizzas de 10'' de Hank's",
+      "nameEn": "Hanks 10'' Pizzas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "poultry",
+      "nameEs": "Aves",
+      "nameEn": "Poultry",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beef-pork",
+      "nameEs": "Res y cerdo",
+      "nameEn": "Beef & Pork",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "hanks-restaurant-01",
+      "id": "spinach-artichoke-dip",
       "categoryId": "appetizers",
-      "nameEs": "Dip de Espinacas y Alcachofa",
+      "nameEs": "Dip de espinaca y alcachofa",
       "nameEn": "Spinach Artichoke Dip",
-      "descriptionEs": "Espinacas, corazones de alcachofa y tres quesos (Parmesano, Romano y Mozzarella) mezclados en cremosa salsa Alfredo. Servido con totopos.",
-      "descriptionEn": "Spinach, artichoke hearts and three cheeses (Parmesan, Romano, Mozzarella) blended in a creamy Alfredo sauce. Served with nachos.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "descriptionEs": "Espinaca, corazones de alcachofa y tres quesos (parmesano, romano y mozzarella), mezclados en una cremosa salsa alfredo. Servido con nachos.",
+      "descriptionEn": "Spinach, artichoke hearts and three cheeses, Parmesan, Romano and Mozzarella, blended together in a creamy Alfredo sauce. Served with nachos.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-02",
+      "id": "onion-petals",
       "categoryId": "appetizers",
-      "nameEs": "Calamares al Estilo Toscano",
+      "nameEs": "Pétalos de cebolla",
+      "nameEn": "Onion Petals",
+      "descriptionEs": "Rodajas de cebolla rebozadas con salsa bistro gourmet para mojar.",
+      "descriptionEn": "Battered onion slices with a gourmet bistro sauce for dipping.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-skins",
+      "categoryId": "appetizers",
+      "nameEs": "Cáscaras de papa",
+      "nameEn": "Potato Skins",
+      "descriptionEs": "Una porción generosa de cáscaras cubiertas con trocitos de tocino y queso cheddar derretido. Servidas con crema agria.",
+      "descriptionEn": "A healthy portion of skins topped with bacon pieces and melted Cheddar cheese. Served with sour cream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Servido con salsa marinara y aros de chile picante.",
+      "descriptionEn": "Served with marinara sauce and hot pepper rings.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuscan-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares toscanos",
       "nameEn": "Tuscan Calamari",
-      "descriptionEs": "Calamar frito mezclado con chiles banana en una deliciosa salsa de mantequilla de ajo y vino blanco.",
+      "descriptionEs": "Calamares fritos mezclados con chiles banana en salsa de mantequilla de ajo y vino blanco.",
       "descriptionEn": "Fried calamari tossed with banana peppers in a garlic butter and white wine sauce.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Seafood",
-        "Gluten"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-03",
+      "id": "stuffed-mushroom-caps",
       "categoryId": "appetizers",
-      "nameEs": "Combo de Entradas",
+      "nameEs": "Champiñones rellenos",
+      "nameEn": "Stuffed Mushroom Caps",
+      "descriptionEs": "Con relleno de mariscos y cubiertos con queso provolone.",
+      "descriptionEn": "With seafood stuffing and topped with provolone cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "appetizers-combo",
+      "categoryId": "appetizers",
+      "nameEs": "Combo de entradas",
       "nameEn": "Appetizers Combo",
-      "descriptionEs": "Dos pieles de papa, dos mozzarellas fritas, dos alitas Buffalo, dos tiras de pollo y aros de cebolla rebozados.",
+      "descriptionEs": "Dos cáscaras de papa, dos mozzarellas fritas, dos alitas búfalo, dos tiras de pollo y pétalos de cebolla.",
       "descriptionEn": "Two Potato Skins, Two Fried Mozzarella, Two Buffalo Wings, Two Chicken Tenders and Onion Petals.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Para Compartir",
-      "tags": [
-        "Surtido"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten",
-        "Soy"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-04",
+      "id": "fried-mozzarella",
       "categoryId": "appetizers",
-      "nameEs": "Rollitos de Carne Philly",
+      "nameEs": "Mozzarella frita",
+      "nameEn": "Fried Mozzarella",
+      "descriptionEs": "Queso mozzarella importado rebanado y ligeramente empanizado con hierbas, dorado y servido con salsa marinara.",
+      "descriptionEn": "Imported Mozzarella cheese sliced and breaded lightly with herbs golden browned and served with marinara sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "appetizers",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "Tiras de pechuga de pollo natural fritas, servidas con salsa BBQ agridulce. Disponibles estilo búfalo.",
+      "descriptionEn": "Natural chicken breast tenderloins deep fried served with sweet and tangy BBQ sauce. Buffalo Style Available.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Búfalo, natural, BBQ, BBQ agridulce, jengibre asiático, ajo y parmesano, mostaza con miel o chile dulce tailandés.",
+      "descriptionEn": "Buffalo, Plain, BBQ, Tangy BBQ, Asian Ginger, Garlic Parmesan, Honey Mustard or Thai Sweet Chili.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-steak-egg-rolls",
+      "categoryId": "appetizers",
+      "nameEs": "Rollos primavera de Philly steak",
       "nameEn": "Philly Steak Egg Rolls",
-      "descriptionEs": "Finas tiras de bistec, cebollas y queso fundido envueltos en un crujiente rollo estilo egg roll.",
-      "descriptionEn": "Shaved Steak, Onions & Cheese in a crispy egg roll wrapper.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "descriptionEs": "Bistec en tiras finas, cebolla y queso en un rollo primavera.",
+      "descriptionEn": "Shaved Steak, Onions & Cheese in an egg roll.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-05",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Alice's",
-      "nameEn": "Alice's Burger",
-      "descriptionEs": "Más de un cuarto de libra de carne de res selecta a la parrilla, servida con lechuga fresca y tomate.",
-      "descriptionEn": "More than a quarter pound of choice ground beef served with lettuce and tomato.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Carne",
-        "Parrilla"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "mussels",
+      "categoryId": "appetizers",
+      "nameEs": "Mejillones",
+      "nameEn": "Mussels",
+      "descriptionEs": "Ajo y parmesano o toscanos",
+      "descriptionEn": "Garlic Parmesan or Tuscan",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Sándwich Philly Steak",
-      "nameEn": "Philly Steak Sandwich",
-      "descriptionEs": "Estilo Filadelfia con abundante carne cortada finamente, cubierta con queso fundido y cebollas fritas en pan grinder.",
-      "descriptionEn": "Philly style with mountains of thinly sliced steak topped with melted cheese and fried onions on a grinder roll.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "Queso"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "id": "roast-beef",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "Rosbif",
+      "nameEn": "Roast Beef",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-07",
-      "categoryId": "mains",
-      "nameEs": "Sándwich Reuben Grill",
-      "nameEn": "Reuben Grill",
-      "descriptionEs": "Carne de res en salmuera amontonada con chucrut, queso suizo y aderezo ruso, todo perfectamente dorado a la parrilla.",
-      "descriptionEn": "Corned beef piled high and topped with sauerkraut, Swiss cheese and Russian dressing, then grilled to perfection.",
-      "price": "$14.25",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "id": "corned-beef",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "Corned beef",
+      "nameEn": "Corned Beef",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-08",
-      "categoryId": "mains",
-      "nameEs": "Wrap de Pollo Suroeste",
-      "nameEn": "Southwest Chicken Wrap",
-      "descriptionEs": "Trocitos de pollo jugoso con aguacate, tocino crujiente, queso y salsa especial estilo bistró en tortilla suave.",
-      "descriptionEn": "Tender chicken with avocado, bacon, cheese, and bistro sauce wrapped in a warm tortilla.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Pollo",
-        "Wrap"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "id": "ham",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-09",
-      "categoryId": "specialties",
-      "nameEs": "Pollo a la Parmesana",
+      "id": "turkey",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "Pavo",
+      "nameEn": "Turkey",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "Atún",
+      "nameEn": "Tuna",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "deli-sandwiches",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "A elegir: bollo bulky, pumpernickel, centeno, integral, pan blanco o wrap. Servidos con papas fritas y un pepinillo.",
+      "descriptionEn": "Your choice of Bulky Roll, Pumpernickel, Rye, Wheat, White Bread or Wrap. Served with French fries and a pickle spear.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-or-crispy-fried-chicken-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de pollo a la parrilla o frito crujiente",
+      "nameEn": "Grilled Or Crispy Fried Chicken Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada Cobb",
+      "nameEn": "Cobb Salad",
+      "descriptionEs": "Servido con pan de ajo",
+      "descriptionEn": "Served with Garlic Bread",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Servido con pan de ajo",
+      "descriptionEn": "Served with Garlic Bread",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-chicken-shrimp-or-steak",
+      "categoryId": "salad",
+      "nameEs": "Agrega pollo, camarón o bistec",
+      "nameEn": "Add Chicken, Shrimp Or Steak",
+      "descriptionEs": "Servido con pan de ajo",
+      "descriptionEn": "Served with Garlic Bread",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-veal-parmigiana",
+      "categoryId": "pasta",
+      "nameEs": "Ternera fresca a la parmesana",
+      "nameEn": "Fresh Veal Parmigiana",
+      "descriptionEs": "Milanesa de ternera empanizada servida sobre una cama de espagueti con salsa marinara. Servida con pan de ajo y sopa o ensalada pequeña a elección",
+      "descriptionEn": "A veal cutlet breaded served on a bed of spaghetti with marinara sauce. Served with Garlic Bread & Choice of Soup or Side Salad",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "pasta",
+      "nameEs": "Pollo a la parmesana",
       "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Pechuga de pollo empanizada servida sobre una cama de espagueti con salsa marinera casera. Incluye pan con ajo y sopa o ensalada.",
-      "descriptionEn": "A breaded chicken breast served on a bed of spaghetti with marinara sauce. Served with garlic bread & choice of soup or side salad.",
-      "price": "$18.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Italiano",
-        "Pollo"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "descriptionEs": "Pechuga de pollo empanizada servida sobre una cama de espagueti con salsa marinara. Servida con pan de ajo y sopa o ensalada pequeña a elección",
+      "descriptionEn": "A chicken breast breaded served on a bed of spaghetti with marinara sauce. Served with Garlic Bread & Choice of Soup or Side Salad",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-10",
-      "categoryId": "specialties",
+      "id": "spaghetti-with-meatballs-or-sausage",
+      "categoryId": "pasta",
+      "nameEs": "Espagueti con albóndigas o salchicha",
+      "nameEn": "Spaghetti With Meatballs Or Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de queso",
+      "nameEn": "Cheese Ravioli",
+      "descriptionEs": "Cubierto con marinara y queso provolone. Servido con pan de ajo y sopa o ensalada pequeña a elección",
+      "descriptionEn": "Topped with marinara and provolone cheese. Served with Garlic Bread & Choice of Soup or Side Salad",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-pizza",
+      "categoryId": "hanks-10-pizzas",
+      "nameEs": "Pizza de queso",
+      "nameEn": "Cheese Pizza",
+      "descriptionEs": "Pizza de diez pulgadas con ocho rebanadas, receta original de Hank's desde 1960. Nuestra propia masa de pizza cubierta con abundante cheddar.",
+      "descriptionEn": "Ten inch pizza with eight slices, Hank's Original Recipe since 1960. Our own pizza dough topped with plenty of Cheddar.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-pizza",
+      "categoryId": "hanks-10-pizzas",
+      "nameEs": "Pizza vegetariana",
+      "nameEn": "Veggie Pizza",
+      "descriptionEs": "Pizza de diez pulgadas con ocho rebanadas, receta original de Hank's desde 1960. Pimiento verde, cebolla, brócoli, aceitunas negras y champiñones.",
+      "descriptionEn": "Ten inch pizza with eight slices, Hank's Original Recipe since 1960. Green peppers, onions, broccoli, black olives and mushrooms.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alice-s-special",
+      "categoryId": "hanks-10-pizzas",
+      "nameEs": "Especial de Alice",
+      "nameEn": "Alice's Special",
+      "descriptionEs": "Pizza de diez pulgadas con ocho rebanadas, receta original de Hank's desde 1960. Cargada con todo para una abundante mezcla de sabores.",
+      "descriptionEn": "Ten inch pizza with eight slices, Hank's Original Recipe since 1960. The works load down this pizza for a hearty mix of flavors.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-own-pizza",
+      "categoryId": "hanks-10-pizzas",
+      "nameEs": "Crea tu propia pizza",
+      "nameEn": "Create Your Own Pizza",
+      "descriptionEs": "Pizza de diez pulgadas con ocho rebanadas, receta original de Hank's desde 1960. Pepperoni, tocino, carne de hamburguesa, albóndiga, salchicha, cebolla, pimiento verde, aceitunas negras, brócoli, anchoas y champiñones.",
+      "descriptionEn": "Ten inch pizza with eight slices, Hank's Original Recipe since 1960. Pepperoni, Bacon, Hamburger, Meatball, Sausage, Onions, Green Peppers, Black Olives, Broccoli, Anchovies and Mushrooms.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southern-fried-chicken",
+      "categoryId": "poultry",
+      "nameEs": "Pollo frito estilo sureño",
+      "nameEn": "Southern Fried Chicken",
+      "descriptionEs": "Empanizado extra crujiente, pollo tierno y jugoso. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Extra crispy breading tender juicy chicken. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "poultry",
       "nameEs": "Pollo Marsala",
       "nameEn": "Chicken Marsala",
-      "descriptionEs": "Tierno pollo salteado con ajo y champiñones, bañado en una exquisita salsa de vino Marsala. Incluye guarnición.",
-      "descriptionEn": "Tender chicken sauteed with garlic and mushrooms, tossed in a rich marsala wine sauce. Served with starch and soup or salad.",
-      "price": "$19.50",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Pollo",
-        "Vino"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "descriptionEs": "Pollo tierno salteado con ajo y champiñones, mezclado en salsa de vino marsala. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Tender chicken sauteed with garlic and mushrooms. Tossed in a marsala wine sauce. Served with starch and choice of soup or side salad.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-11",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Especial de Alice (10\")",
-      "nameEn": "Alice's Special Pizza (10\")",
-      "descriptionEs": "Nuestra famosa receta original desde 1960. Cargada con una mezcla abundante de ingredientes selectos para un gran sabor.",
-      "descriptionEn": "Hank's original recipe since 1960. The works loaded down for a hearty mix of flavors on 8 slices.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Receta Original",
-      "tags": [
-        "Pizza",
-        "Horno"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "hanks-restaurant-12",
-      "categoryId": "specialties",
-      "nameEs": "Cena Tradicional de Pavo",
+      "id": "turkey-dinner",
+      "categoryId": "poultry",
+      "nameEs": "Cena de pavo",
       "nameEn": "Turkey Dinner",
-      "descriptionEs": "Pavo blanco rebanado de la casa, servido con relleno de hierbas, jugo de carne y puré de papas real. Un clásico favorito.",
-      "descriptionEn": "Our own sliced white turkey meat served with herb stuffing, topped with gravy and real mashed potatoes.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Casero",
-      "tags": [
-        "Tradicional"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "descriptionEs": "Nuestra propia carne blanca de pavo rebanada servida con relleno de hierbas y cubierta con gravy. Un favorito tradicional con nuestro puré de papa auténtico. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Our own sliced white turkey meat served with herb stuffing and topped with gravy. A traditional favorite with our real mashed potatoes. Served with starch and choice of soup or side salad.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-13",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal Local de CT",
-      "nameEn": "Local CT Craft Beer",
-      "descriptionEs": "Selección rotativa de cervezas artesanales locales en barril. Pregunte a su mesero por las opciones de la semana.",
-      "descriptionEn": "Rotating selection of local craft beers on draft. Ask your server for this week's featured local brews.",
-      "price": "$7.00",
-      "popular": true,
-      "badge": "Bebida",
-      "tags": [
-        "Cerveza",
-        "Alcohol"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "baked-stuffed-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Camarones rellenos horneados",
+      "nameEn": "Baked Stuffed Shrimp",
+      "descriptionEs": "Cuatro camarones jumbo rellenos con nuestro relleno de mariscos y nuez, dorados. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Four jumbo shrimp filled with our seafood and walnut stuffing and golden browned. Served with starch and choice of soup or side salad.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "hanks-restaurant-14",
-      "categoryId": "beverages",
-      "nameEs": "Té Iced Tea Casero",
-      "nameEn": "Fresh Homemade Iced Tea",
-      "descriptionEs": "Té helado recién preparado diariamente, ligeramente endulzado o natural con rodaja de limón fresco.",
-      "descriptionEn": "Freshly brewed iced tea prepared daily, served sweet or unsweetened with a fresh lemon wedge.",
-      "price": "$3.25",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "grilled-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón a la parrilla",
+      "nameEn": "Grilled Salmon",
+      "descriptionEs": "Salmón fresco servido cajún, glaseado con bourbon, teriyaki, a la tabla de cedro o con frotado de azúcar morena. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Fresh salmon served cajun, bourbon glazed, teriyaki, cedar or with a brown sugar rub. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-cod",
+      "categoryId": "seafood",
+      "nameEs": "Bacalao horneado",
+      "nameEn": "Baked Cod",
+      "descriptionEs": "Filete de bacalao cubierto con migas de galleta y nuez. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Filet of cod topped with cracker crumbs and walnut topping. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bay-scallops",
+      "categoryId": "seafood",
+      "nameEs": "Vieiras de bahía",
+      "nameEn": "Bay Scallops",
+      "descriptionEs": "Elige si las quieres horneadas o fritas. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Choose to have them prepared baked or fried. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-clam-strips",
+      "categoryId": "seafood",
+      "nameEs": "Tiras de almeja fritas",
+      "nameEn": "Fried Clam Strips",
+      "descriptionEs": "Rebozadas y fritas, crujientes por fuera y jugosas por dentro. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Dipped in a batter and fried crispy on the outside and juicy on the inside. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "seafood",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "Una porción generosa de filete de bacalao sin espinas servido con papas fritas. Una tradición de Nueva Inglaterra. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "A generous portion of boneless cod fish filet served with French fries. A New England Tradition. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fisherman-s-platter",
+      "categoryId": "seafood",
+      "nameEs": "Plato del pescador",
+      "nameEn": "Fisherman's Platter",
+      "descriptionEs": "Una combinación de pescado fresco, tiras de almeja, vieiras de bahía y camarones mariposa rebozados ligeramente y fritos. Servido con salsa tártara o coctelera. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "A combination of fresh fish, clam strips, bay scallops and fantail shrimp dipped in a light batter and deep fried. Served with tartar or cocktail sauce. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-rib-au-jus",
+      "categoryId": "beef-pork",
+      "nameEs": "Prime rib au jus",
+      "nameEn": "Prime Rib Au Jus",
+      "descriptionEs": "Prime rib, un corte por encima del resto. Término rojo, medio o bien cocido: elige tu preferencia y haremos lo posible por servirlo con estilo. Lo sentimos, solo disponible viernes y sábado de 4 a 9 pm. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "Prime rib a cut above the rest. Rare, medium or well done, select your preference and we'll do our best to serve it up with style. Sorry, it's only available Friday and Saturday 4-9 pm. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-boneless-sirloin",
+      "categoryId": "beef-pork",
+      "nameEs": "Sirloin NY sin hueso",
+      "nameEn": "NY Boneless Sirloin",
+      "descriptionEs": "Nuestro bistec sirloin Black Angus de 14 oz completas, asado a tu gusto. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "All 14 oz. of our black Angus sirloin steak broiled to your liking. Served with starch and choice of soup or side salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yankee-pot-roast-dinner",
+      "categoryId": "beef-pork",
+      "nameEs": "Cena de asado de res Yankee (pot roast)",
+      "nameEn": "Yankee Pot Roast Dinner",
+      "descriptionEs": "Una gran opción servida con nuestro puré de papa auténtico. Servido con guarnición de almidón y sopa o ensalada pequeña a elección.",
+      "descriptionEn": "A great choice served with our real mashed potatoes. Served with starch and choice of soup or side salad.",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, ofrecemos varias opciones vegetarianas como pastas, pizzas de vegetales y ensaladas. Pregunte a su mesero sobre modificaciones sin gluten.",
-      "aEn": "Yes, we offer several vegetarian options such as pasta, veggie pizzas, and salads. Please ask your server about gluten-free modifications."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para grupos o eventos privados?",
-      "qEn": "Do you accept reservations for groups or private events?",
-      "aEs": "Sí, contamos con espacio ideal para reuniones familiares, baby showers y celebraciones. Comuníquese al 860-774-6071 para coordinar su evento.",
-      "aEn": "Yes, our venue provides a great setting for family reunions, baby showers, and celebrations. Contact us at 860-774-6071 to book your next event."
-    }
-  ]
+  "faqs": []
 }
