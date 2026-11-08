@@ -32,8 +32,8 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `augie-and-rays` | Augie & Ray's Drive-in | 314 Main Street East Hartford, CT 06118 | 43 |
 | `baileys-backyard` | Bailey's Backyard | 23 Bailey Ave, Ridgefield, CT 06877 | 37 |
 | `bajas-mexican-restaurant` | Baja's Mexican Restaurant | 63 Boston Post Road, Orange, CT 06477 | 73 |
-| `bakers-dozen` | Baker's Dozen | 520 Providence Road, Brooklyn, CT 06234 | 69 |
-| `bar-louie` | Louie's Pizza House | 126 East Main St. Waterbury CT 06702 | 107 |
+| `bakers-dozen` | Baker's Dozen | 520 Providence Road, Brooklyn, CT 06234 | 70 |
+| `bar-louie` | Louie's Pizza House | 126 East Main St. Waterbury CT 06702 | 138 |
 | `bartaco` | Bartaco | 20 Wilton Rd, Westport, CT 06880 | 115 |
 | `basso-restaurant-wine-bar` | Basso Restaurant & Wine Bar | 33 Jesup Rd, Westport, CT 06880 | 47 |
 | `bella-fiore-restaurante-modelo-bar-grill` | Bella Fiore Restaurante & Modelo Bar & Grill | 543 West Thames Street, Norwich, CT 06360 | 24 |
@@ -43,7 +43,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `bistro-mediterranean-tapas-bar` | Bistro Mediterranean & Tapas Bar | 383 Main Street, East Haven, CT 06512 | 36 |
 | `black-angus` | Barbarie's Black Angus Grill | 5 Eagle Road, Danbury, CT 06810 | 311 |
 | `black-duck-cafe` | Black Duck Cafe | 605 Riverside Ave, Westport, CT 06880 | 151 |
-| `black-point-pizza` | Black Point Pizza | 44 Black Point Road, Niantic, CT 06357 | 103 |
+| `black-point-pizza` | Black Point Pizza | 44 Black Point Road, Niantic, CT 06357 | 118 |
 | `black-rock-tavern-and-restaurant` | Black Rock Tavern | 78 Main Street, Thomaston, CT 06787 | 85 |
 | `blue-colony-diner` | Blue Colony Diner | 66 Church Hill Rd, Newtown, CT 06470 | 285 |
 | `bobbys-apizza` | Bobby's Apizza | 1181 Foxon Road, North Branford, CT 06471 | 146 |
@@ -52,7 +52,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `boost-bowls` | Boost Bowls | 1 Water Street, Groton, CT 06355 | 101 |
 | `bozrah-pizza-restaurant` | Bozrah Pizza | 426 Salem Turnpike, Bozrah, CT 06334 | 86 |
 | `bradley-wall` | Bradley and Wall - madison | 96 wall street, madison, CT 06443 | 384 |
-| `bread-chocolate` | Bread & Chocolate | 2457 WHITNEY AVE. HAMDEN, CT 06518 | 118 |
+| `bread-chocolate` | Bread & Chocolate | 2457 WHITNEY AVE. HAMDEN, CT 06518 | 121 |
 | `brewett-city-pub` | Brewett City Pub | 1 East Main St, Jewett City, CT 06351 | 48 |
 | `brewport` | Brewport | Bridgeport, CT | 12 |
 | `bryac-restaurant-raw-bar` | BRYAC | 3074 Fairfield Avenue, Bridgeport, CT 06604 | 77 |
@@ -98,7 +98,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `gg-joe` | GG & Joe | 165 Main St, Westport, CT 06880 | 77 |
 | `ggs-wood-fired-pizza` | GG's Wood Fired Pizza | 591 Boston Post Rd, Milford CT, 06460 | 80 |
 | `glastonbury-pizza-house` | Glastonbury Pizza House | 30 Hebron Ave, Glastonbury, CT 06033 | 313 |
-| `golden-mango` | Golden Mango Restaurant | 2 Spring Lane, Farmington, CT 06032 | 237 |
+| `golden-mango` | Golden Mango Restaurant | 2 Spring Lane, Farmington, CT 06032 | 310 |
 | `goodies-of-milford` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `goodies` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `grandpas-diner` | Grandpa's Diner | 126 South Street, Danbury, CT 06810 | 342 |
@@ -141,7 +141,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `marys-diner` | Mary's Diner | 579 Watertown Avenue, Waterbury, CT 06708 | 158 |
 | `ming-moon-restaurant` | Ming Moon Restaurant | 1386 Berlin Turnpike, Wethersfield, CT 06109 | 198 |
 | `misty-vale-deli` | Misty Vale Deli | 51 Berkshire Road, Sandy Hook Connecticut 06482 | 72 |
-| `modern-apizza` | Modern Apizza | 874 State St, New Haven, CT 06511 | 20 |
+| `modern-apizza` | Modern Apizza | 874 State St, New Haven, CT 06511 | 34 |
 | `modern-pastry-shop` | Modern Pastry Shop, Inc. | 422 Franklin Avenue, Hartford, CT 06114 | 62 |
 | `molten-java` | Molten Java | 213 Greenwood Ave, Bethel, CT 06801 | 34 |
 | `mothership-bakery-and-cafe` | Mothership Bakery & Cafe | 331 Main St, Danbury, CT 06810 | 21 |
