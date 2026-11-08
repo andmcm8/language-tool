@@ -1,25 +1,18 @@
 {
   "storeInfo": {
     "id": "zaytoon-mediterranean-cuisine",
-    "name": "Zaytoon Mediterranean Cuisine",
-    "tagline": "Auténtica comida libanesa y halal en West Hartford, CT | Authentic Lebanese & Halal Food in West Hartford, CT",
+    "name": "Zaytoon Mediterranean",
+    "tagline": "Mediterranean restaurant in West Hartford | Restaurante mediterráneo en West Hartford",
     "address": "1126 New Britain Ave, West Hartford, CT 06110",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Tue-Thurs - 11am - 9pm, Fri-Sat - 11am - 10pm",
+      "saturday": "11am - 10pm",
+      "sunday": "11am - 9pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "BYOB Friendly"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,326 +25,1504 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "cold-appetizers",
+      "nameEs": "Entradas frías",
+      "nameEn": "Cold Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "hot-appetizers",
+      "nameEs": "Entradas calientes",
+      "nameEn": "Hot Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "from-the-grill",
+      "nameEs": "De la parrilla",
+      "nameEn": "From The Grill",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetable-sandwiches",
+      "nameEs": "Sándwiches vegetarianos",
+      "nameEn": "Vegetable Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gyro-bowls",
+      "nameEs": "Bowls de gyro",
+      "nameEn": "Gyro Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-vegetable-bowls",
+      "nameEs": "Bowls calientes de verduras",
+      "nameEn": "Hot Vegetable Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-orders",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Side Orders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-vegetable-bowls",
+      "nameEs": "Bowls fríos de verduras",
+      "nameEn": "Cold Vegetable Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soups",
+      "nameEs": "Sopas",
+      "nameEn": "Soups",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-appetizers-dinner",
+      "nameEs": "Entradas frías (cena)",
+      "nameEn": "Cold Appetizers (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-appetizers-dinner",
+      "nameEs": "Entradas calientes (cena)",
+      "nameEn": "Hot Appetizers (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-dinner",
+      "nameEs": "Ensaladas (cena)",
+      "nameEn": "Salads (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mediterranean-pasta",
+      "nameEs": "Pasta mediterránea",
+      "nameEn": "Mediterranean Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grilled-kabobs-seafood",
+      "nameEs": "Kebabs a la parrilla y mariscos",
+      "nameEn": "Grilled Kabobs & Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mediterranean-home-cooked-dishes",
+      "nameEs": "Platillos caseros mediterráneos",
+      "nameEn": "Mediterranean Home Cooked Dishes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetable-platters",
+      "nameEs": "Platos de verduras",
+      "nameEn": "Vegetable Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gyro-platters",
+      "nameEs": "Platos de gyro",
+      "nameEn": "Gyro Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "moroccan-tagine",
+      "nameEs": "Tajín marroquí",
+      "nameEn": "Moroccan Tagine",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "zaytoon-mediterranean-cuisine-01",
-      "categoryId": "appetizers",
-      "nameEs": "Hummus Clásico",
-      "nameEn": "Classic Hummus",
-      "descriptionEs": "Fescos garbanzos mezclados con salsa tahini, jugo de limón, sal y aceite de oliva virgen extra. Servido con pan pita fresco.",
-      "descriptionEn": "Fresh chickpeas mixed with tahini sauce, lemon juice, salt, and extra virgin olive oil. Served with fresh pita bread.",
+      "id": "hummus",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Hummus",
+      "nameEn": "Hummus",
+      "descriptionEs": "Garbanzos frescos mezclados con salsa tahini, jugo de limón, sal y aceite de oliva",
+      "descriptionEn": "Fresh chickpeas mixed with tahini sauce, lemon juice, salt and olive oil",
       "price": "$6.99",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero",
-        "Vegano"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-02",
-      "categoryId": "appetizers",
-      "nameEs": "Baba Ganoush",
+      "id": "spicy-hummus",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Hummus picante",
+      "nameEn": "Spicy Hummus",
+      "descriptionEs": "Hecho de garbanzos frescos con salsa tahini, jugo de limón, aceite de oliva y hojuelas de chile",
+      "descriptionEn": "Made of fresh chickpeas with tahini sauce, lemon juice, olive oil and chili flakes",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baba-ganoush",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Baba ganoush",
       "nameEn": "Baba Ganoush",
-      "descriptionEs": "Berenjena fresca asada mezclada con cebolla roja, jugo de limón, sal, pimientos verdes y rojos, perejil, tomate y aceite de oliva.",
-      "descriptionEn": "Roasted fresh eggplant mixed with red onions, lemon juice, salt, green peppers, red bell peppers, parsley, tomato, and olive oil.",
+      "descriptionEs": "Berenjena fresca asada mezclada con cebolla morada, jugo de limón, sal, pimiento verde, pimiento morrón rojo, perejil, tomate y aceite de oliva",
+      "descriptionEn": "Roasted fresh eggplant mixed with red onions, lemon juice, salt, green peppers, red bell peppers, parsley, tomato and olive oil",
       "price": "$6.99",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano",
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-03",
-      "categoryId": "appetizers",
-      "nameEs": "Falafel Crujiente",
-      "nameEn": "Crispy Falafel",
-      "descriptionEs": "Deliciosas croquetas elaboradas con garbanzos frescos, perejil y especias especiales de la casa. Servidas con salsa tahini.",
-      "descriptionEn": "Delightful croquettes made of fresh chickpeas, parsley, and special house spices. Served with signature tahini sauce.",
-      "price": "$9.99",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Vegano",
-        "Halal"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
+      "id": "mutabal",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Mutabal",
+      "nameEn": "Mutabal",
+      "descriptionEs": "Berenjena fresca asada licuada con salsa tahini, sal, jugo de limón y aceite de oliva",
+      "descriptionEn": "Roasted fresh eggplant blended with tahini sauce, salt, lemon juice and olive oil",
+      "price": "$6.99",
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-04",
-      "categoryId": "appetizers",
-      "nameEs": "Kibbeh Tradicional (3 piezas)",
-      "nameEn": "Traditional Kibbeh (3 pcs)",
-      "descriptionEs": "Tradicional aperitivo libanés de cordero molido con especias, cebolla y bulgur; relleno de carne picada y cebollas.",
-      "descriptionEn": "Traditional Lebanese appetizer made of minced ground lamb with mixed spices, onions, bulgar; stuffed with meat and onions.",
-      "price": "$12.99",
-      "popular": false,
-      "badge": "Auténtico",
-      "tags": [
-        "Halal",
-        "Cordero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Frutos Secos"
-      ],
+      "id": "muhammara",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Muhammara",
+      "nameEn": "Muhammara",
+      "descriptionEs": "Pimiento morrón rojo fresco asado mezclado con aceite de oliva, jugo de limón, nueces, jugo de limón y hojuelas de chile.",
+      "descriptionEn": "Fresh grilled red bell pepper mixed with olive oil, lemon juice, walnuts, lemon juice and chili flakes.",
+      "price": "$6.99",
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-05",
-      "categoryId": "appetizers",
-      "nameEs": "Cigarrillos de Pollo al Horno",
-      "nameEn": "Oven-Baked Chicken Cigars",
-      "descriptionEs": "Rollitos crujientes horneados rellenos de pollo sazonado con cebolla, zumaque y especias mediterráneas.",
-      "descriptionEn": "Oven-baked crispy rolls filled with tender chicken mixed with onions, sumac, and Mediterranean spices.",
-      "price": "$12.99",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Horneado",
-        "Halal"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "zaytoon-mediterranean-cuisine-06",
-      "categoryId": "appetizers",
-      "nameEs": "Hojas de Parra Caseras",
+      "id": "homemade-grape-leaves",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Hojas de parra caseras",
       "nameEn": "Homemade Grape Leaves",
-      "descriptionEs": "Hojas de parra tiernas rellenas de arroz aromático, perejil, menta fresca, tomate, cebolla y un toque de aceite de oliva.",
-      "descriptionEn": "Tender grape leaves stuffed with seasoned rice, parsley, fresh mint, fresh tomato, red onions, and olive oil.",
+      "descriptionEs": "Hojas de parra rellenas de arroz, perejil, menta fresca, tomate fresco, cebolla morada, pimiento verde, pimiento morrón rojo y aceite de oliva",
+      "descriptionEn": "Grape leaves stuffed with rice, parsley, fresh mint, fresh tomato, red onions, green peppers, red bell peppers and olive oil",
       "price": "$6.99",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-07",
-      "categoryId": "mains",
-      "nameEs": "Gyros de Cordero",
+      "id": "moroccan-sardines",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Sardinas marroquíes",
+      "nameEn": "Moroccan Sardines",
+      "descriptionEs": "Sardinas marroquíes servidas con tomates cherry, cebolla morada, jugo de limón y pan pita",
+      "descriptionEn": "Moroccan sardines served with cherry tomatoes, red onion, lemon juice and served with pita bread",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beet-dip",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Dip de betabel",
+      "nameEn": "Beet Dip",
+      "descriptionEs": "Betabel fresco mezclado con tahini, sal, jugo de limón y aceite de oliva",
+      "descriptionEn": "Fresh beet mixed with tahini, salt, lemon juice and olive oil",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-dip",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Dip de aguacate",
+      "nameEn": "Avocado Dip",
+      "descriptionEs": "Aguacate fresco licuado con tomate, cebolla morada, jugo de limón, pimiento morrón rojo y pimiento verde. Servido con pan pita",
+      "descriptionEn": "Fresh avocado blended with tomato, red onion, lemon juice, red bell pepper and green pepper. Served with pita",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-lebneh",
+      "categoryId": "cold-appetizers",
+      "nameEs": "Labneh orgánico",
+      "nameEn": "Organic Lebneh",
+      "descriptionEs": "Yogur estilo libanés mezclado con menta, orégano y rociado con aceite de oliva",
+      "descriptionEn": "Lebanese style yogurt mixed with mint, oregano and drizzled with olive oil",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Falafel",
+      "nameEn": "Falafel",
+      "descriptionEs": "Falafel hecho de garbanzos frescos, perejil y especias especiales. Servido con salsa tahini",
+      "descriptionEn": "Falafel made of fresh chickpeas, parsley and special spices. Served with tahini sauce",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kibbeh",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Kibbeh",
+      "nameEn": "Kibbeh",
+      "descriptionEs": "El kibbeh es una entrada tradicional libanesa. Está hecho de cordero molido con especias mixtas, cebolla y bulgur, relleno de carne y cebolla. 3 piezas, servido con salsa tahini",
+      "descriptionEn": "Kibbeh is a traditional Lebanese appetizer. It is made of minced ground lamb with mixed spices, onions, bulgar; stuffed with meat and onions. 3 pieces, served with tahini sauce",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grilled-vegetables",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Verduras mixtas a la parrilla",
+      "nameEn": "Mixed Grilled Vegetables",
+      "descriptionEs": "Calabacita, calabaza, zanahoria, champiñones, espinaca y cebolla a la parrilla con especias mediterráneas",
+      "descriptionEn": "Grilled zucchini, squash, carrots, mushrooms, spinach, onions and Mediterranean spices",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-potato",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Champiñones con papa",
+      "nameEn": "Mushroom Potato",
+      "descriptionEs": "Champiñones salteados con cebolla y papa, mezclados con perejil, jugo de limón y especias mediterráneas",
+      "descriptionEn": "Sautéed mushroom with onions and potato, mixed with parsley, lemon juice and Mediterranean spices",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tahini-cauliflower",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Coliflor con tahini",
+      "nameEn": "Tahini Cauliflower",
+      "descriptionEs": "Coliflor salteada con ajo, sal, jugo de limón, cilantro y salsa tahini",
+      "descriptionEn": "Sautéed cauliflower with garlic, salt, lemon juice, cilantro and tahini sauce",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oven-baked-wings",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Alitas al horno",
+      "nameEn": "Oven Baked Wings",
+      "descriptionEs": "Alitas frescas horneadas mezcladas con especias mediterráneas",
+      "descriptionEn": "Oven baked fresh wings mixed with Mediterranean spices",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-cigar",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Cigarros de carne",
+      "nameEn": "Meat Cigar",
+      "descriptionEs": "Rollos horneados de res y cordero con cebolla y especias mediterráneas.",
+      "descriptionEn": "Oven baked rolls of mixed beef and lamb with onions and Mediterranean spices.",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cigar",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Cigarros de pollo",
+      "nameEn": "Chicken Cigar",
+      "descriptionEs": "Rollos horneados de pollo mezclado con cebolla, zumaque y especias mediterráneas",
+      "descriptionEn": "Oven baked rolls of chicken mixed with onions, sumac and Mediterranean spices",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-gyro",
+      "categoryId": "sandwiches",
+      "nameEs": "Gyro de cordero",
       "nameEn": "Lamb Gyro",
-      "descriptionEs": "Tierno cordero fresco marinado con especias de la casa, servido en pan pita con hummus, cebolla, pepinillos, tomate, perejil y tahini.",
-      "descriptionEn": "Fresh tender lamb marinated with our special spices, served with hummus, onions, pickles, tomato, parsley, and tahini sauce on pita.",
+      "descriptionEs": "Cordero fresco marinado con nuestras especias, servido con hummus, cebolla, pepinillos, tomate, perejil y salsa tahini",
+      "descriptionEn": "Fresh lamb marinated with our spices served with hummus, onions, pickles, tomato, parsley and tahini sauce",
       "price": "$15.99",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "Halal",
-        "Cordero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-08",
-      "categoryId": "mains",
-      "nameEs": "Gyros de Pollo",
-      "nameEn": "Chicken Gyro",
-      "descriptionEs": "Jugoso pollo marinado con especias tradicionales, acompañado de tomate, pepinillos, hummus y salsa de crema de ajo.",
-      "descriptionEn": "Juicy chicken marinated with our signature spices, served with tomato, pickles, hummus, and creamy garlic sauce.",
+      "id": "beef-gyro",
+      "categoryId": "sandwiches",
+      "nameEs": "Gyro de res",
+      "nameEn": "Beef Gyro",
+      "descriptionEs": "Nuestra res fresca marinada con nuestras especias, con hummus, pepinillos, cebolla, tomate, perejil y salsa tahini",
+      "descriptionEn": "Our fresh beef marinated with our spices with hummus, pickles onions, tomato, parsley and tahini sauce",
       "price": "$15.99",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Halal",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-09",
-      "categoryId": "mains",
-      "nameEs": "Kofta de Cordero",
+      "id": "lamb-kofta",
+      "categoryId": "sandwiches",
+      "nameEs": "Kofta de cordero",
       "nameEn": "Lamb Kofta",
-      "descriptionEs": "Carne de cordero molida y sazonada con perejil y cebolla, asada a la perfección y servida con hummus, tomate, pepinillos y tahini.",
-      "descriptionEn": "Fresh ground lamb blended with parsley and onions, served with hummus, tomato, pickles, and tahini sauce.",
+      "descriptionEs": "Cordero molido fresco con perejil y cebolla, servido con hummus, tomate, pepinillos y salsa tahini",
+      "descriptionEn": "Fresh ground lamb with parsley, onions served with hummus, tomato, pickles and tahini sauce",
       "price": "$15.99",
-      "popular": false,
-      "badge": "Halal",
-      "tags": [
-        "Halal",
-        "Cordero",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-10",
-      "categoryId": "mains",
-      "nameEs": "Gyros Combo (Pollo y Cordero)",
-      "nameEn": "Combo Gyro (Chicken & Lamb)",
-      "descriptionEs": "La combinación perfecta de pollo y cordero marinados, servidos con tomate, cebolla, pepinillos, perejil, tahini y salsa de ajo.",
-      "descriptionEn": "A savory mix of chicken and lamb, served with tomato, onion, pickles, parsley, tahini sauce, and garlic sauce.",
+      "id": "chicken-gyro",
+      "categoryId": "sandwiches",
+      "nameEs": "Gyro de pollo",
+      "nameEn": "Chicken Gyro",
+      "descriptionEs": "Servido con pollo marinado con nuestras especias, tomate, pepinillos, hummus y crema de ajo",
+      "descriptionEn": "Served with chicken marinated with our spices, tomato, pickles, hummus and garlic cream",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-gyro",
+      "categoryId": "sandwiches",
+      "nameEs": "Gyro combinado",
+      "nameEn": "Combo Gyro",
+      "descriptionEs": "Pollo y cordero servidos con tomate, cebolla, pepinillos, perejil, tahini y salsa de ajo",
+      "descriptionEn": "Served chicken and lamb mixed with tomato, onion, pickles, parsley and tahini and garlic sauce",
       "price": "$16.99",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Halal",
-        "Combinado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Sésamo",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-11",
-      "categoryId": "specialties",
-      "nameEs": "Plato Libanés (Ideal para Compartir)",
-      "nameEn": "Lebanese Platter (Great for Sharing)",
-      "descriptionEs": "Espectacular selección que incluye tabule, hojas de parra, falafel crujiente, hummus cremoso y baba ganoush. Perfecto para saborear en grupo.",
-      "descriptionEn": "A wonderful spread featuring tabouli, grape leaves, falafel, creamy hummus, and baba ganoush — perfect for sharing.",
+      "id": "kibbeh-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Kibbeh (sándwiches)",
+      "nameEn": "Kibbeh (Sandwiches)",
+      "descriptionEs": "Dos piezas de kibbeh servidas con tomate, pepinillos, cebolla, tabulé y salsa tahini",
+      "descriptionEn": "Two pieces of kibbeh served with tomato, pickles, onions, tabouli and tahini sauce",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-shish",
+      "categoryId": "from-the-grill",
+      "nameEs": "Shish de cordero",
+      "nameEn": "Lamb Shish",
+      "descriptionEs": "Cordero fresco marinado con nuestras especias, aceite de oliva, sal y pimienta negra",
+      "descriptionEn": "Fresh lamb marinated with our spices, olive oil, salt and black pepper",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-kofta-kabob",
+      "categoryId": "from-the-grill",
+      "nameEs": "Kebab de kofta de cordero",
+      "nameEn": "Lamb Kofta Kabob",
+      "descriptionEs": "Cordero molido fresco mezclado con perejil, cebolla, sal, pimienta, orégano y aceite de oliva",
+      "descriptionEn": "Fresh ground lamb mixed with parsley, onions, salt, pepper, oregano and olive oil",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-kofta-kabob",
+      "categoryId": "from-the-grill",
+      "nameEs": "Kebab de kofta de res",
+      "nameEn": "Beef Kofta Kabob",
+      "descriptionEs": "Res Angus molida fresca mezclada con especias, perejil y cebolla",
+      "descriptionEn": "Fresh ground Angus beef mixed with spices, parsley, and onions",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-chops",
+      "categoryId": "from-the-grill",
+      "nameEs": "Chuletas de cordero",
+      "nameEn": "Lamb Chops",
+      "descriptionEs": "Chuletas de cordero marinadas con aceite de oliva y nuestras especias mediterráneas",
+      "descriptionEn": "Lamb chops marinated with olive oil and our Mediterranean spices",
+      "price": "$31.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-kabobs",
+      "categoryId": "from-the-grill",
+      "nameEs": "Kebabs de pollo",
+      "nameEn": "Chicken Kabobs",
+      "descriptionEs": "Pollo molido fresco mezclado con pimiento morrón rojo, cebolla, jugo de limón y aceite de oliva, marinado con especias mediterráneas",
+      "descriptionEn": "Fresh ground chicken mixed with red bell pepper, onions, lemon juice, and olive oil marinated with Mediterranean spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-kofta-kabob",
+      "categoryId": "from-the-grill",
+      "nameEs": "Kebab de kofta de pollo",
+      "nameEn": "Chicken Kofta Kabob",
+      "descriptionEs": "Pollo molido fresco mezclado con pimiento morrón rojo, cebolla, jugo de limón y aceite de oliva, marinado con especias mediterráneas",
+      "descriptionEn": "Fresh ground chicken mixed with red bell pepper, onions, lemon juice, and olive oil marinated with Mediterranean spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill-kabobs",
+      "categoryId": "from-the-grill",
+      "nameEs": "Kebabs mixtos a la parrilla",
+      "nameEn": "Mixed Grill Kabobs",
+      "descriptionEs": "La parrillada mixta es una combinación de kebabs de pollo, shish kebabs de cordero y kebabs de kofta de cordero marinados con nuestras especias mediterráneas",
+      "descriptionEn": "Mixed grill is combination of chicken kabobs, lamb shish kabobs, lamb kofta kabobs marinated with our Mediterranean spices",
+      "price": "$29.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-shrimp",
+      "categoryId": "from-the-grill",
+      "nameEs": "Camarones a la parrilla",
+      "nameEn": "Grilled Shrimp",
+      "descriptionEs": "Camarones jumbo a la parrilla marinados con nuestras especias",
+      "descriptionEn": "Grilled jumbo shrimp marinated with our spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-grilled-salmon",
+      "categoryId": "from-the-grill",
+      "nameEs": "Salmón fresco a la parrilla",
+      "nameEn": "Fresh Grilled Salmon",
+      "descriptionEs": "Salmón a la parrilla marinado con jugo de limón fresco y nuestras especias",
+      "descriptionEn": "Grilled salmon marinated with fresh lemon juice, and our spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-whole-seabass",
+      "categoryId": "from-the-grill",
+      "nameEs": "Lubina entera mediterránea",
+      "nameEn": "Mediterranean Whole Seabass",
+      "descriptionEs": "Pescado entero servido a la parrilla, marinado con nuestras especias, jugo de limón, aceite de oliva y tomillo",
+      "descriptionEn": "Served whole fish over the grill marinated with our spices, lemon juice, olive oil, and thyme",
+      "price": "$31.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-vegetable-sandwiches",
+      "categoryId": "vegetable-sandwiches",
+      "nameEs": "Falafel (sándwiches vegetarianos)",
+      "nameEn": "Falafel (Vegetable Sandwiches)",
+      "descriptionEs": "Servido con falafel casero, lechuga, tomate, pepinillos y salsa tahini",
+      "descriptionEn": "Served with Homemade falafel, lettuce, tomato, pickles and tahini sauce",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-eggplant",
+      "categoryId": "vegetable-sandwiches",
+      "nameEs": "Falafel con berenjena",
+      "nameEn": "Falafel Eggplant",
+      "descriptionEs": "Servido con falafel, lechuga, tomate, pepinillos, berenjena y salsa tahini",
+      "descriptionEn": "Served with falafel, lettuce, tomato pickles, eggplant and tahini sauce",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill-vegetables",
+      "categoryId": "vegetable-sandwiches",
+      "nameEs": "Verduras mixtas asadas",
+      "nameEn": "Mixed Grill Vegetables",
+      "descriptionEs": "Verduras mixtas a la parrilla: espinaca, calabacita, zanahoria, champiñones, cebolla, crema de ajo y queso feta",
+      "descriptionEn": "Mixed grilled vegetables - spinach, zucchini, carrots, mushrooms, onions, garlic cream and feta cheese",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tabouli-falafel",
+      "categoryId": "vegetable-sandwiches",
+      "nameEs": "Falafel con tabulé",
+      "nameEn": "Tabouli Falafel",
+      "descriptionEs": "Servido con falafel, tabulé fresco y salsa tahini",
+      "descriptionEn": "Served with falafel, fresh tabouli and tahini sauce",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-gyro-bowl",
+      "categoryId": "gyro-bowls",
+      "nameEs": "Bowl de gyro de cordero",
+      "nameEn": "Lamb Gyro Bowl",
+      "descriptionEs": "Servido con cordero fresco marinado con nuestras especias, ensalada, arroz y pan pita",
+      "descriptionEn": "Served with fresh lamb marinated with our spices, salad, rice and pita bread",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-gyro-bowl",
+      "categoryId": "gyro-bowls",
+      "nameEs": "Bowl de gyro de pollo",
+      "nameEn": "Chicken Gyro Bowl",
+      "descriptionEs": "Servido con nuestro pollo fresco cortado a mano marinado con nuestras especias, ensalada y arroz",
+      "descriptionEn": "Served with our fresh hand cut chicken marinated with our spices, salad and rice",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-gyro-bowl",
+      "categoryId": "gyro-bowls",
+      "nameEs": "Bowl de gyro de res",
+      "nameEn": "Beef Gyro Bowl",
+      "descriptionEs": "De la plancha, res fresca cortada a mano servida con ensalada y arroz",
+      "descriptionEn": "From the griddle, hand cut fresh beef served with salad and rice",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combination-gyro-bowl",
+      "categoryId": "gyro-bowls",
+      "nameEs": "Bowl de gyro combinado",
+      "nameEn": "Combination Gyro Bowl",
+      "descriptionEs": "Res o cordero frescos con pollo, servidos con arroz y ensalada",
+      "descriptionEn": "Fresh beef or lamb with chicken served with rice and salad",
+      "price": "$18.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wrap",
+      "categoryId": "kids-menu",
+      "nameEs": "Wrap de pollo",
+      "nameEn": "Chicken Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "kids-menu",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-burger",
+      "categoryId": "kids-menu",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheese Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-bowl",
+      "categoryId": "hot-vegetable-bowls",
+      "nameEs": "Bowl de espinaca",
+      "nameEn": "Spinach Bowl",
+      "descriptionEs": "Guiso de champiñones frescos y espinaca mezclados con cebolla y especias",
+      "descriptionEn": "Stew of fresh mushrooms and spinach mixed with onions and spices",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tagine",
+      "categoryId": "hot-vegetable-bowls",
+      "nameEs": "Tajín de verduras",
+      "nameEn": "Vegetable Tagine",
+      "descriptionEs": "Verduras horneadas en salsa de tomate: tomate, papa, cebolla, calabacita, calabaza y zanahoria.",
+      "descriptionEn": "Oven baked vegetables in tomato sauce; tomatoes, potatoes, onions, zucchini, squash and carrots.",
+      "price": "$18.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stewed-protein-bowl",
+      "categoryId": "hot-vegetable-bowls",
+      "nameEs": "Bowl de proteína guisada",
+      "nameEn": "Stewed Protein Bowl",
+      "descriptionEs": "Frijoles blancos y rojos guisados, garbanzos, cebolla y ajo cocidos en salsa de tomate con especias mediterráneas.",
+      "descriptionEn": "Stewed white and red beans, chickpeas, onions, garlic cooked in tomato sauce with Mediterranean spices.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zaytoon-special-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa especial Zaytoon",
+      "nameEn": "Zaytoon Special Burger",
+      "descriptionEs": "Nuestra res Angus de ½ lb a la parrilla servida con aguacate, champiñones, cebolla y queso",
+      "descriptionEn": "Our ½ lb Angus beef grilled served with avocado, mushrooms, onions with cheese",
+      "price": "$18.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-cheese-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa clásica con queso",
+      "nameEn": "Classic Cheese Burger",
+      "descriptionEs": "Nuestra res Angus de ½ lb a la parrilla servida con queso derretido",
+      "descriptionEn": "Our ½ Angus beef grilled served with melted cheese",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de cordero",
+      "nameEn": "Lamb Burger",
+      "descriptionEs": "Nuestro cordero fresco molido mezclado con especias mediterráneas",
+      "descriptionEn": "Our grounded fresh lamb mixed with Mediterranean spices",
+      "price": "$18.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de pollo",
+      "nameEn": "Chicken Burger",
+      "descriptionEs": "Pollo molido fresco mezclado con pimiento morrón rojo, cebolla, jugo de limón y aceite de oliva, marinado con especias mediterráneas",
+      "descriptionEn": "Fresh ground chicken mixed with red bell pepper, onions, lemon juice, and olive oil marinated with Mediterranean spices",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa vegetariana",
+      "nameEn": "Vegetable Burger",
+      "descriptionEs": "Hecha de verduras recién cortadas, servida en pan",
+      "descriptionEn": "Made of fresh cut vegetables, served on a roll",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tabouli",
+      "categoryId": "salads",
+      "nameEs": "Tabulé",
+      "nameEn": "Tabouli",
+      "descriptionEs": "Ensalada libanesa hecha de tomate, menta fresca, perejil, jugo de limón, cebollín y bulgur",
+      "descriptionEn": "Lebanese salad made of tomatoes, fresh mint, parsley, lemon juice, scallions and bulgar",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lebanese-fattoush",
+      "categoryId": "salads",
+      "nameEs": "Fattoush libanés",
+      "nameEn": "Lebanese Fattoush",
+      "descriptionEs": "Hecho de tomate, pepino, perejil, cebolla, rábano y pan pita tostado",
+      "descriptionEn": "Made of tomatoes, cucumber, parsley, onions, radish and roasted pita bread",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek",
+      "categoryId": "salads",
+      "nameEs": "Griega",
+      "nameEn": "Greek",
+      "descriptionEs": "Tomate, cebolla morada, lechuga, pimiento verde y rojo, jugo de limón, pepino, orégano y queso feta",
+      "descriptionEn": "Tomatoes, red onions, lettuce, green, and red peppers, lemon juice, cucumber, oregano and feta cheese",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de falafel",
+      "nameEn": "Falafel Salad",
+      "descriptionEs": "Ensalada de hojas verdes mixtas servida con 3 piezas de falafel, salsa tahini y pan pita",
+      "descriptionEn": "Mixed green salad served with 3 pieces of falafel, tahini sauce and pita bread",
       "price": "$21.99",
-      "popular": true,
-      "badge": "Chef Especial",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir",
-        "Saludable"
-      ],
-      "allergens": [
-        "Sésamo",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-12",
-      "categoryId": "specialties",
-      "nameEs": "Sampler Zaytoon",
-      "nameEn": "Zaytoon Sampler",
-      "descriptionEs": "Nuestra selección insignia de los mejores sabores mediterráneos, ideal para una experiencia culinaria completa.",
-      "descriptionEn": "Our signature assortment featuring a curated selection of premier Mediterranean hot and cold appetizers.",
+      "id": "avocado-salmon-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de aguacate y salmón",
+      "nameEn": "Avocado Salmon Salad",
+      "descriptionEs": "Salmón a la parrilla servido sobre ensalada de hojas verdes mixtas con aguacate y rábano",
+      "descriptionEn": "Grilled Salmon served over mixed green salad with avocado and radish",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-tatziki-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada griega de tzatziki",
+      "nameEn": "Greek Tatziki Salad",
+      "descriptionEs": "Pepino recién cortado, yogur natural y eneldo mezclados con sal y jugo de limón",
+      "descriptionEn": "Fresh cut cucumber, plain yogurt and dill mixed with salt and lemon juice",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice",
+      "categoryId": "side-orders",
+      "nameEs": "Arroz",
+      "nameEn": "Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "side-orders",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado",
+      "categoryId": "side-orders",
+      "nameEs": "Aguacate",
+      "nameEn": "Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-cut-vegetables",
+      "categoryId": "side-orders",
+      "nameEs": "Verduras recién cortadas",
+      "nameEn": "Fresh Cut Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-lamb",
+      "categoryId": "side-orders",
+      "nameEs": "Cordero a la parrilla",
+      "nameEn": "Grilled Lamb",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-salmon",
+      "categoryId": "side-orders",
+      "nameEs": "Salmón a la parrilla",
+      "nameEn": "Grilled Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "side-orders",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-shrimp-side-orders",
+      "categoryId": "side-orders",
+      "nameEs": "Camarones a la parrilla (guarniciones)",
+      "nameEn": "Grilled Shrimp (Side Orders)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "side-orders",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-bowl",
+      "categoryId": "cold-vegetable-bowls",
+      "nameEs": "Bowl de falafel",
+      "nameEn": "Falafel Bowl",
+      "descriptionEs": "Servido con nuestras hojas de parra caseras, falafel, ensalada, arroz y salsa tahini",
+      "descriptionEn": "Served with our homemade grape leaves, falafel, salad, rice and tahini sauce",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lebanese-bowl",
+      "categoryId": "cold-vegetable-bowls",
+      "nameEs": "Bowl libanés",
+      "nameEn": "Lebanese Bowl",
+      "descriptionEs": "Servido con tabulé, hojas de parra, hummus y baba ganoush con pan pita",
+      "descriptionEn": "Served with tabouli, grape, hummus and baba ganoush with pita bread",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zaytoon-bowl",
+      "categoryId": "cold-vegetable-bowls",
+      "nameEs": "Bowl Zaytoon",
+      "nameEn": "Zaytoon Bowl",
+      "descriptionEs": "Servido con arroz, hummus, muhammara y falafel con pan pita",
+      "descriptionEn": "Served with rice, hummus, muhammara, and falafel with pita bread",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lentil-soup",
+      "categoryId": "soups",
+      "nameEs": "Sopa de lentejas",
+      "nameEn": "Lentil Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-soup",
+      "categoryId": "soups",
+      "nameEs": "Sopa de espinaca",
+      "nameEn": "Spinach Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-vegetable-soup",
+      "categoryId": "soups",
+      "nameEs": "Sopa de pollo con verduras",
+      "nameEn": "Chicken Vegetable Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hummus-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Hummus (cena)",
+      "nameEn": "Hummus (Dinner)",
+      "descriptionEs": "Hecho de garbanzos frescos con salsa tahini, jugo de limón y aceite de oliva",
+      "descriptionEn": "Made of fresh chickpeas with tahini sauce, lemon juice, and olive oil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-hummus-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Hummus picante (cena)",
+      "nameEn": "Spicy Hummus (Dinner)",
+      "descriptionEs": "Hecho de garbanzos frescos con salsa tahini, jugo de limón, aceite de oliva y hojuelas de chile",
+      "descriptionEn": "Made of fresh chickpeas with tahini sauce, lemon juice, olive oil and chili flakes",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hummus-with-vegetables",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Hummus con verduras",
+      "nameEn": "Hummus With Vegetables",
+      "descriptionEs": "Hummus servido con verduras recién cortadas: zanahoria, pimiento verde, pimiento morrón rojo y pepino",
+      "descriptionEn": "Hummus served with fresh cut vegetables; carrots, green peppers, red bell peppers and cucumber",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baba-ganoush-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Baba ganoush (cena)",
+      "nameEn": "Baba Ganoush (Dinner)",
+      "descriptionEs": "Berenjena fresca asada mezclada con cebolla morada, jugo de limón, sal, pimiento verde, pimiento morrón rojo, perejil, tomate y aceite de oliva",
+      "descriptionEn": "Roasted fresh eggplant mixed with red onions, lemon juice, salt, green peppers, red bell peppers, parsley, tomato and olive oil",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mutabal-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Mutabal (cena)",
+      "nameEn": "Mutabal (Dinner)",
+      "descriptionEs": "Berenjena fresca asada licuada con salsa tahini, sal, jugo de limón y aceite de oliva",
+      "descriptionEn": "Roasted fresh eggplant blended with tahini sauce, salt, lemon juice and olive oil",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "makdous",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Makdous",
+      "nameEn": "Makdous",
+      "descriptionEs": "Berenjena baby marinada con aceite de oliva y jugo de limón, rellena de nueces y hojuelas de chile",
+      "descriptionEn": "Marinated baby eggplant with olive oil, lemon juice, stuffed with walnuts and chili flakes",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muhammara-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Muhammara (cena)",
+      "nameEn": "Muhammara (Dinner)",
+      "descriptionEs": "Pimiento morrón rojo fresco asado mezclado con aceite de oliva, jugo de limón, nueces, jugo de limón y hojuelas de chile.",
+      "descriptionEn": "Fresh grilled red bell pepper mixed with olive oil, lemon juice, walnuts, lemon juice and chili flakes.",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-grape-leaves-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Hojas de parra caseras (cena)",
+      "nameEn": "Homemade Grape Leaves (Dinner)",
+      "descriptionEs": "Hojas de parra rellenas de arroz, perejil, menta fresca, tomate fresco, cebolla morada, pimiento verde, pimiento morrón rojo y aceite de oliva",
+      "descriptionEn": "Grape leaves stuffed with rice, parsley, fresh mint, fresh tomato, red onions, green peppers, red bell peppers and olive oil",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-lebneh-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Labneh orgánico (cena)",
+      "nameEn": "Organic Lebneh (Dinner)",
+      "descriptionEs": "Yogur estilo libanés mezclado con menta y orégano, rociado con aceite de oliva",
+      "descriptionEn": "Lebanese style yogurt mixed with mint, oregano and drizzle with olive oil",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moroccan-sardines-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Sardinas marroquíes (cena)",
+      "nameEn": "Moroccan Sardines (Dinner)",
+      "descriptionEs": "Sardinas marroquíes servidas con tomates cherry, cebolla morada, jugo de limón y pan pita.",
+      "descriptionEn": "Moroccan sardines served with cherry tomatoes, red onions, lemon juice and served with pita bread",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beet-dip-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Dip de betabel (cena)",
+      "nameEn": "Beet Dip (Dinner)",
+      "descriptionEs": "Betabel fresco mezclado con tahini, sal, jugo de limón y aceite de oliva",
+      "descriptionEn": "Fresh beet mixed with tahini, salt, lemon juice and olive oil",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-dip-dinner",
+      "categoryId": "cold-appetizers-dinner",
+      "nameEs": "Dip de aguacate (cena)",
+      "nameEn": "Avocado Dip (Dinner)",
+      "descriptionEs": "Aguacate fresco licuado con tomate, cebolla morada, jugo de limón, pimiento morrón rojo y pimiento verde. Servido con pan pita.",
+      "descriptionEn": "Fresh avocado blended with tomato, red onions, lemon juice, red bell pepper and green pepper. Served with pita",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-potato-dinner",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Champiñones con papa (cena)",
+      "nameEn": "Mushroom Potato (Dinner)",
+      "descriptionEs": "Champiñones salteados con cebolla y papa, mezclados con perejil, jugo de limón y especias mediterráneas",
+      "descriptionEn": "Sautéed mushroom with onions and potato, mixed with parsley, lemon juice and Mediterranean spices",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tahini-cauliflower-dinner",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Coliflor con tahini (cena)",
+      "nameEn": "Tahini Cauliflower (Dinner)",
+      "descriptionEs": "Coliflor salteada con ajo, sal, jugo de limón, cilantro y salsa tahini",
+      "descriptionEn": "Sautéed cauliflower with garlic, salt, lemon juice, cilantro and tahini sauce",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "foul-muddemas",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Foul mudammas",
+      "nameEn": "Foul Muddemas",
+      "descriptionEs": "Haba café mezclada con ajo, cebolla, tomate, perejil, pimiento verde y aceite de oliva",
+      "descriptionEn": "Brown fava bean mixed with garlic, onions, tomato, parsley, green peppers and olive oil",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill-vegetables-dinner",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Verduras mixtas asadas (cena)",
+      "nameEn": "Mixed Grill Vegetables (Dinner)",
+      "descriptionEs": "Calabacita, calabaza, zanahoria, champiñones, espinaca y cebolla a la parrilla con especias mediterráneas",
+      "descriptionEn": "Grilled zucchini, squash, carrots, mushrooms, spinach, onions and Mediterranean spices",
+      "price": "$14.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-hummus",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Hummus con cordero",
+      "nameEn": "Lamb Hummus",
+      "descriptionEs": "Cordero fresco salteado con cebolla servido sobre hummus y aceite de oliva",
+      "descriptionEn": "Sauteed fresh lamb with onions served over hummus and olive oil",
+      "price": "$18.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-hummus",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Hummus con pollo",
+      "nameEn": "Chicken Hummus",
+      "descriptionEs": "Pollo fresco salteado con cebolla servido sobre hummus y aceite de oliva",
+      "descriptionEn": "Sauteed fresh chicken with onions served over hummus and olive oil",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-cigar-dinner",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Cigarros de carne (cena)",
+      "nameEn": "Meat Cigar (Dinner)",
+      "descriptionEs": "Rollos horneados de res y cordero con cebolla y especias mediterráneas",
+      "descriptionEn": "Oven baked rolls of mixed beef and lamb with onions and Mediterranean spices",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari",
+      "categoryId": "hot-appetizers-dinner",
+      "nameEs": "Calamares",
+      "nameEn": "Calamari",
+      "descriptionEs": "Calamar salteado con verduras y chiles cereza, servido con jugo de limón y salsa marinara aparte",
+      "descriptionEn": "Sautéed calamari, with veggies and cherry peppers, perfectly served with lemon juice with a side of marinara sauce",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fattoush",
+      "categoryId": "salads-dinner",
+      "nameEs": "Fattoush",
+      "nameEn": "Fattoush",
+      "descriptionEs": "Hecho de tomate, pepino, perejil, cebolla, rábano y pan pita tostado",
+      "descriptionEn": "Made of tomatoes, cucumber, parsley, onions, radish and roasted pita bread",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad-dinner",
+      "categoryId": "salads-dinner",
+      "nameEs": "Ensalada griega (cena)",
+      "nameEn": "Greek Salad (Dinner)",
+      "descriptionEs": "Tomate, cebolla morada, lechuga, pimiento verde y rojo, jugo de limón, pepino, orégano y queso feta",
+      "descriptionEn": "Tomatoes, red onions, lettuce, green, and red peppers, lemon juice, cucumber, oregano and feta cheese",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-salad-dinner",
+      "categoryId": "salads-dinner",
+      "nameEs": "Ensalada de falafel (cena)",
+      "nameEn": "Falafel Salad (Dinner)",
+      "descriptionEs": "Ensalada de hojas verdes mixtas servida con 3 piezas de falafel, salsa tahini y pan pita.",
+      "descriptionEn": "Mixed green salad served with 3 pieces falafel, tahini sauce and pita bread",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula-beet-salad",
+      "categoryId": "salads-dinner",
+      "nameEs": "Ensalada de arúgula y betabel",
+      "nameEn": "Arugula Beet Salad",
+      "descriptionEs": "Betabel fresco mezclado con arúgula, jugo de limón y aceite de oliva",
+      "descriptionEn": "Fresh beet mixed with arugula, lemon juice and olive oil",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beet-salad",
+      "categoryId": "salads-dinner",
+      "nameEs": "Ensalada de betabel",
+      "nameEn": "Beet Salad",
+      "descriptionEs": "Arúgula fresca mezclada con tomate, perejil, jugo de limón y aceite de oliva",
+      "descriptionEn": "Fresh arugula mixed with tomatoes, parsley, lemon juice and olive oil",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-arrabiata",
+      "categoryId": "mediterranean-pasta",
+      "nameEs": "Penne arrabbiata",
+      "nameEn": "Penne Arrabiata",
+      "descriptionEs": "Penne mezclado con aceite de oliva, ajo, tomate picado, hojuelas de chile, albahaca fresca y queso parmesano",
+      "descriptionEn": "Penne tossed in olive oil, garlic, chopped tomatoes, hot pepper flakes, fresh basil and parmesan cheese",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-alfredo",
+      "categoryId": "mediterranean-pasta",
+      "nameEs": "Pollo Alfredo",
+      "nameEn": "Chicken Alfredo",
+      "descriptionEs": "Fettuccine, queso parmesano y brócoli cocidos en salsa blanca",
+      "descriptionEn": "Fettuccini, parmesan cheese, broccoli, cooked with white sauce",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi",
+      "categoryId": "mediterranean-pasta",
+      "nameEs": "Camarones scampi al ajo",
+      "nameEn": "Shrimp Scampi",
+      "descriptionEs": "Camarones, ajo, perejil, hojuelas de chile rojo, espagueti",
+      "descriptionEn": "Shrimp, garlic, parsley, red pepper flakes, spaghetti",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-kofta-kabob-dinner",
+      "categoryId": "grilled-kabobs-seafood",
+      "nameEs": "Kebab de kofta de cordero (cena)",
+      "nameEn": "Lamb Kofta Kabob (Dinner)",
+      "descriptionEs": "Cordero molido fresco mezclado con perejil, cebolla, sal, pimienta, orégano y aceite de oliva.",
+      "descriptionEn": "Fresh ground lamb mixed with parsley, onions, salt, peppers, oregano and olive oil",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-kabob",
+      "categoryId": "grilled-kabobs-seafood",
+      "nameEs": "Kebab de pollo",
+      "nameEn": "Chicken Kabob",
+      "descriptionEs": "Corte fresco de pechuga de pollo marinado en jugo de limón y nuestras especias",
+      "descriptionEn": "Served fresh cut of chicken breast marinated in lemon juice and our spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-kofta-kabob-dinner",
+      "categoryId": "grilled-kabobs-seafood",
+      "nameEs": "Kebab de kofta de pollo (cena)",
+      "nameEn": "Chicken Kofta Kabob (Dinner)",
+      "descriptionEs": "Pollo molido fresco mezclado con pimiento morrón rojo, cebolla, jugo de limón y aceite de oliva, marinado con especias mediterráneas",
+      "descriptionEn": "Fresh ground chicken mixed with red bell pepper, onions, lemon juice, and olive oil marinated with Mediterranean spices",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-salmon",
+      "categoryId": "grilled-kabobs-seafood",
+      "nameEs": "Salmón fresco",
+      "nameEn": "Fresh Salmon",
+      "descriptionEs": "Salmón a la parrilla marinado con jugo de limón fresco y nuestras especias",
+      "descriptionEn": "Grilled salmon marinated with fresh lemon juice, and our spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill-seafood",
+      "categoryId": "grilled-kabobs-seafood",
+      "nameEs": "Mariscos mixtos a la parrilla",
+      "nameEn": "Mixed Grill Seafood",
+      "descriptionEs": "Salmón fresco, camarones jumbo y vieiras a la parrilla, marinados con jugo de limón y especias",
+      "descriptionEn": "Fresh salmon, jumbo shrimp and scallops grilled, marinated with lemon juice and spices",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jordanian-mansaf",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Mansaf jordano",
+      "nameEn": "Jordanian Mansaf",
+      "descriptionEs": "Trozo de cordero fresco cocido con yogur, servido sobre arroz con perejil, piñones y almendras. Servido con salsa de yogur aparte",
+      "descriptionEn": "Fresh chunk of lamb cooked with yogurt served over rice with parsley, pine nuts and almonds. Served with yogurt sauce on the side",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-maftoul-with-chickpeas",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Maftoul de pollo con garbanzos",
+      "nameEn": "Chicken Maftoul With Chickpeas",
+      "descriptionEs": "Servido con pollo y cebolla mezclados con especias mediterráneas y guiso de garbanzos. Servido con cuscús marroquí cocido al vapor",
+      "descriptionEn": "Served with chicken, onions, mixed with Mediterranean spices and chickpea stew. Served with Moroccan couscous cooked over steam",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-haneeth",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Haneeth de cordero",
+      "nameEn": "Lamb Haneeth",
+      "descriptionEs": "Trozo de cordero fresco cocido con nuestras especias especiales, servido sobre arroz basmati y verduras guisadas",
+      "descriptionEn": "Fresh chunk of lamb cooked with our special spices served over basmati rice and stewed vegetables",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kibbeh-labanieh",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Kibbeh labanieh",
+      "nameEn": "Kibbeh Labanieh",
+      "descriptionEs": "Kibbeh libanés cocido en yogur con papa y cebolla. Servido con arroz",
+      "descriptionEn": "Lebanese kibbeh cooked in yogurt with potatoes and onions. Served with a side of rice",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dajaj-musakhan",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Dajaj musakhan",
+      "nameEn": "Dajaj Musakhan",
+      "descriptionEs": "Medio pollo horneado servido sobre pan pita mezclado con cebolla, zumaque y especias mediterráneas",
+      "descriptionEn": "Oven baked half chicken served over pita bread mixed with onions, sumac, and Mediterranean spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-tahini-kofta-sanieh",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Kofta sanieh de cordero con tahini",
+      "nameEn": "Lamb Tahini Kofta Sanieh",
+      "descriptionEs": "Cordero fresco en cubos con cebolla, perejil, jugo de limón y aceite de oliva, cubierto con un círculo de papas y cebolla cocidos en salsa tahini",
+      "descriptionEn": "Fresh-diced lamb with onion, parsley, lemon juice, olive oil and topped with a circle of potatoes and onions cooked in Tahini sauce",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-spinach-with-chickpeas",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Cordero con espinaca y garbanzos",
+      "nameEn": "Lamb Spinach With Chickpeas",
+      "descriptionEs": "Trozos de cordero fresco, cebolla, garbanzos, aceite de oliva, perejil",
+      "descriptionEn": "Fresh pieces of lamb, onion, chickpeas, olive oil, parsley",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-eggplant-with-vegetable",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Cordero con berenjena y verduras",
+      "nameEn": "Lamb Eggplant With Vegetable",
+      "descriptionEs": "Cubos de berenjena fresca, cordero, papa, tomate, cebolla, ajo y especias especiales",
+      "descriptionEn": "Cubes of fresh eggplant, lamb, potato, tomato, onions, garlic and special spices",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-mushroom",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Pollo con champiñones",
+      "nameEn": "Chicken Mushroom",
+      "descriptionEs": "Cubos de champiñones frescos, pollo, cebolla, garbanzos y especias especiales",
+      "descriptionEn": "Cubes of fresh mushrooms, chicken, onions, chickpeas and special spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-chicken",
+      "categoryId": "mediterranean-home-cooked-dishes",
+      "nameEs": "Pollo con papa",
+      "nameEn": "Potato Chicken",
+      "descriptionEs": "Trozos de pechuga de pollo, cebolla, papa, ajo, aceite de oliva, jugo de limón y especias especiales",
+      "descriptionEn": "Pieces of chicken breast, onions, potato, garlic, olive oil, lemon juice and special spices",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lebanese-platter",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Plato libanés",
+      "nameEn": "Lebanese Platter",
+      "descriptionEs": "Servido con tabulé, 2 piezas de hojas de parra, 2 piezas de falafel, hummus y baba ganoush",
+      "descriptionEn": "Served with tabouli, 2 pcs of grape leaves, 2 pcs of falafel, hummus and baba ganoush",
       "price": "$24.99",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Especialidad",
-        "Halal"
-      ],
-      "allergens": [
-        "Sésamo",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-13",
-      "categoryId": "beverages",
-      "nameEs": "Limonada de Menta Casera",
-      "nameEn": "Homemade Mint Lemonade",
-      "descriptionEs": "Refrescante limonada natural preparada al momento con hojas de menta fresca y un toque dulce equilibrado.",
-      "descriptionEn": "Refreshing natural lemonade freshly prepared with muddled fresh mint leaves and a balanced sweetness.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Casero"
-      ],
-      "allergens": [],
+      "id": "eggplant-platter",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Plato de berenjena",
+      "nameEn": "Eggplant Platter",
+      "descriptionEs": "Servido con baba ganoush, mutabal, makdous, tabulé y hummus. Servido con pan pita",
+      "descriptionEn": "Served with baba ganoush, mutabal, makdous, tabouli, hummus. Served with pita",
+      "price": "$24.99",
       "ctaType": "in_store"
     },
     {
-      "id": "zaytoon-mediterranean-cuisine-14",
-      "categoryId": "beverages",
-      "nameEs": "Té Turco / Árabe Tradicional",
-      "nameEn": "Traditional Middle Eastern Tea",
-      "descriptionEs": "Té negro recién infusionado servido caliente con un toque de menta o cardamomo.",
-      "descriptionEn": "Freshly brewed black tea served hot with a gentle hint of mint or cardamom.",
-      "price": "$3.00",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Caliente",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "zaytoon-sampler",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Muestrario Zaytoon",
+      "nameEn": "Zaytoon Sampler",
+      "descriptionEs": "Servido con hummus, baba ganoush, muhammara y 2 piezas de falafel",
+      "descriptionEn": "Served with hummus, baba ganoush, muhammara and 2 pcs of falafel",
+      "price": "$24.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tagine-dinner",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Tajín de verduras (cena)",
+      "nameEn": "Vegetable Tagine (Dinner)",
+      "descriptionEs": "Verduras horneadas en salsa de tomate: tomate, papa, cebolla, calabacita, calabaza y zanahoria.",
+      "descriptionEn": "Oven baked vegetables in tomato sauce; tomatoes, potatoes, onions, zucchini, squash and carrots.",
+      "price": "$22.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-platter",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Plato de falafel",
+      "nameEn": "Falafel Platter",
+      "descriptionEs": "3 piezas de falafel servidas con hummus, ensalada y arroz",
+      "descriptionEn": "3 pcs of falafel served with hummus, salad and rice",
+      "price": "$22.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grilled-vegetables-dinner",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Verduras mixtas a la parrilla (cena)",
+      "nameEn": "Mixed Grilled Vegetables (Dinner)",
+      "descriptionEs": "Calabacita, calabaza, zanahoria, champiñones, espinaca y cebolla a la parrilla con especias mediterráneas. Servido con arroz",
+      "descriptionEn": "Grilled zucchini, squash, carrots, mushrooms, spinach, onions and Mediterranean spices. Served with rice",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-mushroom",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Espinaca con champiñones",
+      "nameEn": "Spinach Mushroom",
+      "descriptionEs": "Espinaca, champiñones y cebolla salteados con especias mediterráneas. Servido con arroz",
+      "descriptionEn": "Sauteed spinach, mushroom and onions mixed with Mediterranean spices. Served with rice",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-eggplant",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Papa con berenjena",
+      "nameEn": "Potato Eggplant",
+      "descriptionEs": "Papa salteada con berenjena rebanada y cebolla con especias mixtas y salsa de tomate. Servido con arroz",
+      "descriptionEn": "Sauteed potato with sliced eggplant, onions with mixed spices and tomato sauce. Served with rice",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lentil-eggplant",
+      "categoryId": "vegetable-platters",
+      "nameEs": "Lentejas con berenjena",
+      "nameEn": "Lentil Eggplant",
+      "descriptionEs": "Lentejas, cebolla, papa y berenjena cocidas en salsa de yogur. Servido con arroz",
+      "descriptionEn": "Lentils, onions, potato and eggplant cooked in a yogurt sauce. Served with rice",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-gyro-platter",
+      "categoryId": "gyro-platters",
+      "nameEs": "Plato de gyro de cordero",
+      "nameEn": "Lamb Gyro Platter",
+      "descriptionEs": "Cordero fresco marinado con nuestras especias, asado con cebolla y tomate, servido sobre arroz, ensalada y a elección hummus o papas fritas. Servido con pan pita",
+      "descriptionEn": "Marinated fresh lamb with our spices grilled with onions and tomatoes served over rice, salad and your choice of hummus or french fries. Served with pita bread",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-gyro-platter",
+      "categoryId": "gyro-platters",
+      "nameEs": "Plato de gyro de pollo",
+      "nameEn": "Chicken Gyro Platter",
+      "descriptionEs": "Pollo fresco marinado con nuestras especias, asado con cebolla y tomate, servido sobre arroz, ensalada y a elección hummus o papas fritas. Servido con pan pita",
+      "descriptionEn": "Marinated fresh chicken with our spices grilled with onions and tomatoes served over rice, salad and your choice of hummus or french fries. Served with pita bread",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-gyro-platter",
+      "categoryId": "gyro-platters",
+      "nameEs": "Plato de gyro de res",
+      "nameEn": "Beef Gyro Platter",
+      "descriptionEs": "Res fresca marinada con nuestras especias, asado con cebolla y tomate, servido sobre arroz, ensalada y a elección hummus o papas fritas. Servido con pan pita",
+      "descriptionEn": "Marinated fresh beef with our spices grilled with onions and tomatoes served over rice, salad and your choice of hummus or french fries. Served with pita bread",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combination-platter",
+      "categoryId": "gyro-platters",
+      "nameEs": "Plato combinado",
+      "nameEn": "Combination Platter",
+      "descriptionEs": "Cordero o res frescos y pollo marinados con nuestras especias, asado con cebolla y tomate, servido sobre arroz, ensalada y a elección hummus o papas fritas. Servido con pan pita",
+      "descriptionEn": "Marinated fresh lamb or beef and chicken with our spices grilled with onions and tomatoes served over rice, salad and your choice of hummus or french fries. Served with pita bread",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-tagine",
+      "categoryId": "moroccan-tagine",
+      "nameEs": "Tajín de cordero",
+      "nameEn": "Lamb Tagine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tagine",
+      "categoryId": "moroccan-tagine",
+      "nameEs": "Tajín de pollo",
+      "nameEn": "Chicken Tagine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tagine",
+      "categoryId": "moroccan-tagine",
+      "nameEs": "Tajín de camarones",
+      "nameEn": "Shrimp Tagine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-tagine",
+      "categoryId": "moroccan-tagine",
+      "nameEs": "Tajín de mariscos",
+      "nameEn": "Seafood Tagine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$31.99",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o halal?",
-      "qEn": "Do you offer vegetarian, vegan, or halal options?",
-      "aEs": "¡Sí! Toda nuestra carne es 100% halal y ofrecemos una gran variedad de deliciosos platos vegetarianos y veganos como falafel, hummus, baba ganoush y el plato libanés.",
-      "aEn": "Yes! All our meat is 100% halal and we offer a wide variety of delicious vegetarian and vegan dishes such as falafel, hummus, baba ganoush, and the Lebanese platter."
-    },
-    {
-      "qEs": "¿Tienen política de BYOB (Traiga su propia bebida)?",
-      "qEn": "Do you have a BYOB policy?",
-      "aEs": "Sí, somos un restaurante BYOB. Puede traer su vino o cerveza favorita para acompañar su comida.",
-      "aEn": "Yes, we are a BYOB restaurant. You are welcome to bring your favorite wine or beer to pair with your meal."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o ofrecen servicio de catering?",
-      "qEn": "Do you accept reservations or offer catering services?",
-      "aEs": "Aceptamos reservaciones por teléfono y también ofrecemos servicio de catering para eventos íntimos y grandes celebraciones.",
-      "aEn": "We accept phone reservations and also provide full catering services for intimate dinners and large celebrations."
-    }
-  ]
+  "faqs": []
 }
