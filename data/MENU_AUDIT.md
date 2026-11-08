@@ -18,7 +18,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 |---|---|---|---|
 | `abbotts-lobster-in-the-rough` | Abbott's Lobster in the Rough | 117 Pearl St, Noank, CT 06340 | 47 |
 | `ac-petersons-farms` | A.C. Petersen Farms - West Hartford | 240 Park Rd, West Hartford, CT 06119 | 94 |
-| `adriatiks-restaurant-and-pizzeria` | Adriatik's Restaurant & Catering | 30 Welles Street, Glastonbury, CT, USA | 157 |
+| `adriatiks-restaurant-and-pizzeria` | Adriatik's Restaurant & Catering | 30 Welles Street, Glastonbury, CT, USA | 162 |
 | `aero-diner` | Aero Diner | 361 Boston Post Rd, North Windham, CT 06256-1114 | 164 |
 | `aji-10` | Aji 10 Latin Cuisine | 10 Wall St, Norwalk, CT 06850 | 38 |
 | `alinas-patisserie` | Alina's Cakes & Cookies | 2480 Black Rock Turnpike (White Birch Plaza), Fairfield, CT 06825 | 48 |
@@ -31,7 +31,7 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `arezzo` | Arezzo Ristorante | 5 Riverside Ave, Westport, CT 06880 | 136 |
 | `augie-and-rays` | Augie & Ray's Drive-in | 314 Main Street East Hartford, CT 06118 | 43 |
 | `baileys-backyard` | Bailey's Backyard | 23 Bailey Ave, Ridgefield, CT 06877 | 37 |
-| `bajas-mexican-restaurant` | Baja's Mexican Restaurant | 63 Boston Post Road, Orange, CT 06477 | 63 |
+| `bajas-mexican-restaurant` | Baja's Mexican Restaurant | 63 Boston Post Road, Orange, CT 06477 | 73 |
 | `bakers-dozen` | Baker's Dozen | 520 Providence Road, Brooklyn, CT 06234 | 69 |
 | `bar-louie` | Louie's Pizza House | 126 East Main St. Waterbury CT 06702 | 107 |
 | `bartaco` | Bartaco | 20 Wilton Rd, Westport, CT 06880 | 115 |
@@ -69,13 +69,13 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `catch-a-healthy-habit-cafe` | Clean Slate (formerly Catch A Healthy Habit) | 116 Sherman Street, Fairfield, CT 06824 | 70 |
 | `cfcf-coffee` | CFCF Coffee | 118 Greenwich Ave, Greenwich, CT 06830 | 12 |
 | `chaves-bakery-deli` | Chaves Bakery & Deli | 140 Bridgeport Avenue, Shelton, CT 06484 | 51 |
-| `cinco-de-mayo` | Fiesta Cinco De Mayo Restaurant | 1228 Main Street, Willimantic, CT 06226 | 79 |
+| `cinco-de-mayo` | Fiesta Cinco De Mayo Restaurant | 1228 Main Street, Willimantic, CT 06226 | 97 |
 | `citrus` | Citrus | 56 Broad St, Suite A, Milford, CT 06460 | 120 |
 | `claires-corner-copia` | Claire's Corner Copia | 1000 Chapel Street, New Haven, CT 06510 | 194 |
 | `coco-thai-kitchen` | Coco Thai Kitchen | 801 Thompsonville Road Suffield, CT, 06078 United States | 85 |
 | `common-grounds` | Common Grounds | 707 Bridgeport Ave, Shelton, CT 06484 | 36 |
 | `costellos-clam-shack` | Costello's Clam Shack | 145 Pearl Street, Groton, CT 06340 | 59 |
-| `country-diner` | The Country Diner | 111 Hazard Avenue, Enfield, CT 06082 | 213 |
+| `country-diner` | The Country Diner | 111 Hazard Avenue, Enfield, CT 06082 | 227 |
 | `country-pizza-restaurant` | Country Pizza & Restaurant | 418 Main St, Monroe, CT 06468 | 250 |
 | `cromwell-diner` | Cromwell Diner | 135 Berlin Road, Cromwell, CT 06416 | 154 |
 | `diesel-lounge` | Diesel Lounge | 944 State Street New Haven CT 06511 | 36 |
@@ -85,12 +85,12 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `donovans-reef` | Donovan's Reef Restaurant | 1212 Main Street, Branford, CT 06405 | 172 |
 | `eco-chic-salon-spa-blow-dry-bar` | Eco Chic Salon Spa & Blow Dry Bar | 16 Center Street, Wilton, CT 06897 | 67 |
 | `el-traviezo-mexican-food` | Traviezo | 1 Market Street, Norwich, CT 06360 | 84 |
-| `el-traviezo-mexican-restaurant` | Traviezo | 1 Market Street, Norwich, CT 06360 | 84 |
+| `el-traviezo-mexican-restaurant` | Traviezo | 1 Market Street, Norwich, CT 06360 | 99 |
 | `elicit-brewing-co` | Elicit Brewing Co. — Fairfield | 111 Black Rock Turnpike, Fairfield, CT 06825 | 52 |
 | `epicure-brewing` | Epicure Brewing | 40 Franklin St, Norwich, CT 06360-5806 | 15 |
 | `famous-pizza-bethel` | Famous Pizza | 6 Greenwood Ave, Bethel, CT 06801 | 50 |
 | `ferris-acres-creamery` | Ferris Acres Creamery | 144 Sugar Street, Newtown, CT 06470 | 55 |
-| `frank-pepe-pizzeria-napoletana` | Frank Pepe Pizzeria Napoletana | 59 Federal Road, Danbury, CT 06810 | 44 |
+| `frank-pepe-pizzeria-napoletana` | Frank Pepe Pizzeria Napoletana | 59 Federal Road, Danbury, CT 06810 | 57 |
 | `frank-pepes-west-hartford` | Frank Pepe Pizzeria Napoletana | 1148 New Britain Avenue, West Hartford, CT 06110 | 75 |
 | `frankies-pizza` | Frankie's Pizza | 809 Maple Rd, Longmeadow, MA 01106 | 80 |
 | `fuego-mexican-grill` | Fuego Mexican Grill | 36 Shunpike Road, Cromwell, CT 06416 | 61 |
