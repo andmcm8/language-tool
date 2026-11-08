@@ -1,26 +1,17 @@
 {
   "storeInfo": {
     "id": "the-social-bar-kitchen",
-    "name": "The Social Bar + Kitchen",
-    "tagline": "Great food, vibrant drinks, and unforgettable moments in New London.",
-    "address": "209 Bank St, New London, CT 06320",
+    "name": "The Social",
+    "tagline": "Modern American restaurant in New London | Restaurante americano moderno en New London",
+    "address": "208 Bank Street, New London, CT 06320",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon-Thu 3:00 PM - 9:00 PM; Fri 3:00 PM - 10:00 PM",
+      "saturday": "11:00 AM - 10:00 PM",
+      "sunday": "11:00 AM - 8:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Full Bar"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -28,308 +19,2063 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": "(860) 333-5188"
+    "phone": "(860) 442-6900"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
+      "id": "starters",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Starters",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "burgers-sandwiches",
+      "nameEs": "Hamburguesas y sándwiches",
+      "nameEn": "Burgers & Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-sat-sun-11am-3pm-bottomless-drink-special",
+      "nameEs": "Brunch (sáb-dom 11am-3pm):especial de bebidas ilimitadas",
+      "nameEn": "Brunch (Sat-Sun 11am-3pm): Bottomless Drink Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Brunch (sáb-dom 11am-3pm):platos de brunch",
+      "nameEn": "Brunch (Sat-Sun 11am-3pm): Brunch Plates",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Brunch (sáb-dom 11am-3pm):extras de brunch",
+      "nameEn": "Brunch (Sat-Sun 11am-3pm): Brunch Extras",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-weekdays-3-5pm-craft-beer-specials",
+      "nameEs": "Happy hour (entre semana 3-5pm):especiales de cerveza artesanal",
+      "nameEn": "Happy Hour (weekdays 3-5pm): Craft Beer Specials",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-weekdays-3-5pm-cocktails",
+      "nameEs": "Happy hour (entre semana 3-5pm):cócteles",
+      "nameEn": "Happy Hour (weekdays 3-5pm): Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-weekdays-3-5pm-wines",
+      "nameEs": "Happy hour (entre semana 3-5pm):vinos",
+      "nameEn": "Happy Hour (weekdays 3-5pm): Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Happy hour (entre semana 3-5pm):bocadillos",
+      "nameEn": "Happy Hour (weekdays 3-5pm): Bites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-13-4-upcharge",
+      "nameEs": "Niños (12 años y menores; 13+ cargo extra de $4)",
+      "nameEn": "Kids (12 & under; 13+ $4 upcharge)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "Cerveza artesanal de barril:IPAs y pale ales",
+      "nameEn": "Craft Beer on Draft: IPAs & Pale Ales",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "Cerveza artesanal de barril:lagers y pilsners",
+      "nameEn": "Craft Beer on Draft: Lagers & Pilsners",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-amber-dark-ales",
+      "nameEs": "Cerveza artesanal de barril:ales ámbar y oscuras",
+      "nameEn": "Craft Beer on Draft: Amber & Dark Ales",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-wheat-hefeweizen",
+      "nameEs": "Cerveza artesanal de barril:trigo / hefeweizen",
+      "nameEn": "Craft Beer on Draft: Wheat / Hefeweizen",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-belgians-saisons",
+      "nameEs": "Cerveza artesanal de barril:belgas y saisons",
+      "nameEn": "Craft Beer on Draft: Belgians & Saisons",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "Cerveza artesanal de barril:sours y ales salvajes",
+      "nameEn": "Craft Beer on Draft: Sours & Wild Ales",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-strong-ales",
+      "nameEs": "Cerveza artesanal de barril:ales fuertes",
+      "nameEn": "Craft Beer on Draft: Strong Ales",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "Cerveza artesanal de barril:stouts, porters y oscuras",
+      "nameEn": "Craft Beer on Draft: Stouts, Porters & Browns",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-ciders-mead",
+      "nameEs": "Cerveza artesanal de barril:sidras e hidromiel",
+      "nameEn": "Craft Beer on Draft: Ciders & Mead",
+      "icon": "Utensils"
+    },
+    {
+      "id": "craft-beer-on-draft-non-alcoholic",
+      "nameEs": "Cerveza artesanal de barril:sin alcohol",
+      "nameEn": "Craft Beer on Draft: Non-Alcoholic",
+      "icon": "Utensils"
+    },
+    {
+      "id": "featured-cocktails",
+      "nameEs": "Cócteles destacados",
+      "nameEn": "Featured Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mocktails",
+      "nameEs": "Cócteles sin alcohol",
+      "nameEn": "Mocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert-cocktails-and-shooters",
+      "nameEs": "Cócteles de postre y shots",
+      "nameEn": "Dessert Cocktails and Shooters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wines",
+      "nameEs": "Vinos tintos",
+      "nameEn": "Red Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wines",
+      "nameEs": "Vinos blancos",
+      "nameEn": "White Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bubbles",
+      "nameEs": "Espumosos",
+      "nameEn": "Bubbles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bottled-canned-beer",
+      "nameEs": "Cerveza en botella y lata",
+      "nameEn": "Bottled & Canned Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seltzer",
+      "nameEs": "Seltzer",
+      "nameEn": "Seltzer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gluten-free-reduced-beer",
+      "nameEs": "Cerveza sin gluten / reducida en gluten",
+      "nameEn": "Gluten-Free/Reduced Beer",
+      "icon": "Utensils"
+    },
+    {
+      "id": "non-alcoholic",
+      "nameEs": "Sin alcohol",
+      "nameEn": "Non-Alcoholic",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soda-juice",
+      "nameEs": "Refrescos / jugos",
+      "nameEn": "Soda / Juice",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-drinks",
+      "nameEs": "Bebidas calientes",
+      "nameEn": "Hot Drinks",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "the-social-bar-kitchen-01",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas Crujientes Bañadas en Salsa Buffalo",
-      "nameEn": "Crispy Buffalo Wings",
-      "descriptionEs": "Alitas de pollo jugosas fritas a la perfección, bañadas en nuestra salsa picante de la casa y servidas con aderezo de queso azul.",
-      "descriptionEn": "Juicy chicken wings fried to perfection, tossed in our signature house buffalo sauce, and served with cool blue cheese dressing.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "chips-salsa",
+      "categoryId": "starters",
+      "nameEs": "Totopos con salsa",
+      "nameEn": "Chips & Salsa",
+      "descriptionEs": "Totopos crujientes con nuestra salsa casera",
+      "descriptionEn": "Crispy tortilla chips with our housemade salsa",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Dorados con Alioli de Ajo",
-      "nameEn": "Golden Calamari with Garlic Aioli",
-      "descriptionEs": "Calamares tiernos empanizados y fritos ligeramente, acompañados de rodajas de limón fresco y nuestro alioli casero de ajo.",
-      "descriptionEn": "Tender squid lightly breaded and flash-fried, served with fresh lemon wedges and our house-made garlic aioli.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "street-corn-dip",
+      "categoryId": "starters",
+      "nameEs": "Dip de elote callejero",
+      "nameEn": "Street Corn Dip",
+      "descriptionEs": "Elote asado, queso cotija y crema de chile y limón, servido caliente con totopos",
+      "descriptionEn": "Roasted corn, cotija, and chili-lime crema served warm with tortilla chips",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-03",
-      "categoryId": "appetizers",
-      "nameEs": "Nachos Supremos de la Casa",
-      "nameEn": "House Supreme Nachos",
-      "descriptionEs": "Totopos de maíz crujientes cubiertos con queso fundido, frijoles negros, jalapeños, crema agria, guacamole y pico de gallo.",
-      "descriptionEn": "Crispy corn tortilla chips topped with melted cheese, black beans, jalapeños, sour cream, guacamole, and fresh pico de gallo.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "loaded-nachos",
+      "categoryId": "starters",
+      "nameEs": "Nachos cargados",
+      "nameEn": "Loaded Nachos",
+      "descriptionEs": "Con capas de cheddar, pico de gallo, crema agria y salsa. Agrega: res $3 | pollo o cerdo deshebrado $5",
+      "descriptionEn": "Layered with cheddar, pico de gallo, sour cream, and salsa Add: Beef $3 | Chicken or pulled pork $5",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-04",
-      "categoryId": "appetizers",
-      "nameEs": "Dip de Espinacas y Alcachofas",
-      "nameEn": "Spinach & Artichoke Dip",
-      "descriptionEs": "Espinacas tiernas y alcachofas mezcladas en una salsa cremosa de quesos calientes, servidas con pan pita tostado.",
-      "descriptionEn": "Tender spinach and artichokes blended in a warm, creamy cheese sauce, served with warm toasted pita bread.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Vegetariano",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "chicken-wings",
+      "categoryId": "starters",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Crujientes y jugosos, bañados en la salsa o sazonador seco de tu elección, servidos con ranch o queso azul. Sazonadores secos: ranch, cajún, búfalo, ajo y parmesano, limón y pimienta. Salsas: BBQ picante, teriyaki, picante, chile dulce tailandés, BBQ de bourbon de Kentucky",
+      "descriptionEn": "Crispy and juicy, tossed in your choice of sauce or dry rub, served with ranch or bleu cheese Dry Rubs: Ranch, Cajun, Buffalo, Garlic Parm, Lemon Pepper. Sauces: Spicy BBQ, Teriyaki, Hot, Sweet Thai Chili, Kentucky Bourbon BBQ",
+      "price": "6 pc $10.00 / 12 pc $18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-05",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Social con Tocino y Queso",
-      "nameEn": "The Social Bacon Cheeseburger",
-      "descriptionEs": "Carne de res jugosa a la parrilla con queso cheddar derretido, tocino crujiente, lechuga, tomate y cebolla caramelizada en pan brioche.",
-      "descriptionEn": "Juicy grilled beef patty topped with melted cheddar cheese, crispy bacon, crisp lettuce, tomato, and caramelized onions on a toasted brioche bun.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-06",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo Crujiente Estilo Sureño",
-      "nameEn": "Southern Fried Chicken Sandwich",
-      "descriptionEs": "Pechuga de pollo empanizada y frita con ensalada de repollo agridulce (coleslaw) y pepinillos en pan brioche tostado.",
-      "descriptionEn": "Crispy fried chicken breast topped with tangy house coleslaw and pickles on a toasted brioche bun.",
-      "price": "$17.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Pollo",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-07",
-      "categoryId": "mains",
-      "nameEs": "Tacos de Pescado al Estilo Baja",
-      "nameEn": "Baja Style Fish Tacos",
-      "descriptionEs": "Tres tacos de pescado fresco rebozado en tempura, con repollo morado crujiente, cilantro y salsa chipotle cremosa.",
-      "descriptionEn": "Three tacos featuring crispy battered fresh fish, topped with crunchy purple cabbage, fresh cilantro, and creamy chipotle sauce.",
-      "price": "$17.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pescado",
-        "Fresco"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-08",
-      "categoryId": "specialties",
-      "nameEs": "Filete de Res a la Parrilla con Papas Trufadas",
-      "nameEn": "Grilled NY Strip Steak with Truffle Fries",
-      "descriptionEs": "Corte New London de bistec cocinado a su gusto, servido con papas fritas sazonadas con aceite de trufa y mantequilla de hierbas.",
-      "descriptionEn": "Prime cut strip steak cooked to perfection, served with hand-cut truffle fries and rich herb butter.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Carne",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-09",
-      "categoryId": "specialties",
-      "nameEs": "Pasta con Camarones al Ajillo",
-      "nameEn": "Garlic Shrimp Pasta",
-      "descriptionEs": "Camarones salteados en vino blanco, ajo, tomates cherry y mantequilla, servidos sobre una cama de pasta linguine fresca.",
-      "descriptionEn": "Sautéed shrimp tossed in white wine, garlic, cherry tomatoes, and butter, served over a bed of fresh linguine pasta.",
-      "price": "$24.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Mariscos",
-        "Pasta"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-10",
-      "categoryId": "specialties",
-      "nameEs": "Costillas BBQ Cocinadas a Fuego Lento",
-      "nameEn": "Slow-Cooked BBQ Ribs",
-      "descriptionEs": "Costillas de cerdo tiernas bañadas en nuestra salsa barbacoa ahumada artesanal, servidas con papas fritas y ensalada de repollo.",
-      "descriptionEn": "Tender pork ribs basted in our artisanal smoky BBQ sauce, served with crispy fries and house coleslaw.",
-      "price": "$28.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "Ahumado"
-      ],
-      "allergens": [
-        "Soja"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "the-social-bar-kitchen-11",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Clásica de la Casa",
-      "nameEn": "House Classic Margarita",
-      "descriptionEs": "Tequila 100% de agave, Cointreau y jugo de limón fresco, servido en vaso con borde de sal y hielo.",
-      "descriptionEn": "100% agave tequila, Cointreau, and fresh lime juice, served on the rocks with a salted rim.",
+      "id": "boneless-chicken-bites",
+      "categoryId": "starters",
+      "nameEs": "Bocados de pollo sin hueso",
+      "nameEn": "Boneless Chicken Bites",
+      "descriptionEs": "Crujientes y jugosos, bañados en la salsa o sazonador seco de tu elección, servidos con ranch o queso azul",
+      "descriptionEn": "Crispy and juicy, tossed in your choice of sauce or dry rub, served with ranch or bleu cheese",
       "price": "$12.00",
-      "popular": true,
-      "badge": "Coctel Popular",
-      "tags": [
-        "Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-12",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel The Social Mule",
-      "nameEn": "The Social Mule",
-      "descriptionEs": "Vodka artesanal, cerveza de jengibre picante y jugo fresco de lima, servido en una taza tradicional de cobre.",
-      "descriptionEn": "Artisanal vodka, spicy ginger beer, and fresh lime juice, served chilled in a traditional copper mug.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Alcohol",
-        "Artesanal"
-      ],
-      "allergens": [],
+      "id": "korean-bbq-cauliflower-bites",
+      "categoryId": "starters",
+      "nameEs": "Bocados de coliflor BBQ coreana",
+      "nameEn": "Korean BBQ Cauliflower Bites",
+      "descriptionEs": "Coliflor frita crujiente con salsa BBQ coreana al lado",
+      "descriptionEn": "Crispy fried cauliflower with a side of Korean BBQ sauce",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-social-bar-kitchen-13",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Fresca de Moras",
-      "nameEn": "Fresh Blackberry Lemonade",
-      "descriptionEs": "Limonada natural hecha en casa infusionada con puré fresco de moras silvestres y menta.",
-      "descriptionEn": "House-made natural lemonade infused with fresh wild blackberry puree and mint leaves.",
+      "id": "buffalo-cauliflower-bites",
+      "categoryId": "starters",
+      "nameEs": "Bocados de coliflor búfalo",
+      "nameEn": "Buffalo Cauliflower Bites",
+      "descriptionEs": "Coliflor crujiente con sazonador búfalo seco, servida con ranch",
+      "descriptionEn": "Crispy cauliflower tossed in buffalo dry rub and served with ranch",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "social-fries",
+      "categoryId": "starters",
+      "nameEs": "Papas fritas Social",
+      "nameEn": "Social Fries",
+      "descriptionEs": "Papas fritas de la casa servidas con alioli de ajo asado",
+      "descriptionEn": "House fries served with roasted garlic aioli",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmesan-truffle-fries",
+      "categoryId": "starters",
+      "nameEs": "Papas fritas con parmesano y trufa",
+      "nameEn": "Parmesan Truffle Fries",
+      "descriptionEs": "Papas fritas de la casa con parmesano y aceite de trufa, con alioli de ajo asado",
+      "descriptionEn": "House fries tossed in parmesan and truffle oil with roasted garlic aioli",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts",
+      "categoryId": "starters",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussels Sprouts",
+      "descriptionEs": "Coles de Bruselas crujientes bañadas en chile dulce tailandés y cubiertas con pepitas tostadas",
+      "descriptionEn": "Crispy sprouts tossed in sweet Thai chili and topped with toasted pepitas",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Agregar pollo (ensalada)",
+      "nameEn": "Add chicken (salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-shrimp-or-salmon-salad",
+      "categoryId": "salads",
+      "nameEs": "Agregar camarones o salmón (ensalada)",
+      "nameEn": "Add shrimp or salmon (salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house",
+      "categoryId": "salads",
+      "nameEs": "De la casa",
+      "nameEn": "House",
+      "descriptionEs": "Lechuga romana, tomate, pepino y cebolla con nuestra vinagreta de la casa",
+      "descriptionEn": "Romaine, tomato, cucumber, and onion with our house vinaigrette",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "salads",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "Lechuga romana, parmesano y crutones con aderezo César cremoso",
+      "descriptionEn": "Romaine, parmesan, and croutons with creamy Caesar dressing",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest",
+      "categoryId": "salads",
+      "nameEs": "Suroeste",
+      "nameEn": "Southwest",
+      "descriptionEs": "Hojas verdes mixtas, elote, frijoles negros, cheddar, tiras de tortilla y ranch de chipotle",
+      "descriptionEn": "Mixed greens, corn, black beans, cheddar, tortilla strips, and chipotle ranch",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "about-burgers-sandwiches",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sobre las hamburguesas y sándwiches",
+      "nameEn": "About burgers & sandwiches",
+      "descriptionEs": "Todas las hamburguesas y sándwiches vienen en pan brioche a la parrilla (salvo que se indique otra cosa) y se sirven con papas fritas Social",
+      "descriptionEn": "All burgers & sandwiches come on a grilled brioche bun (unless noted otherwise) and served with Social fries",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Carne de hamburguesa extra",
+      "nameEn": "Extra burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-egg",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Agregar huevo",
+      "nameEn": "Add egg",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-bacon",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Agregar tocino",
+      "nameEn": "Add bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nice-guy",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Nice Guy",
+      "nameEn": "Nice Guy",
+      "descriptionEs": "Hamburguesa de res con cheddar, lechuga, tomate y alioli de chipotle",
+      "descriptionEn": "Beef burger with cheddar, lettuce, tomato, and chipotle aioli",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smash-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa smash",
+      "nameEn": "Smash Burger",
+      "descriptionEs": "Smash burger de doble carne con queso americano, pepinillos y alioli de chipotle",
+      "descriptionEn": "Double-patty smash burger with American cheese, pickles, and chipotle aioli",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-blue-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa de tocino y queso azul",
+      "nameEn": "Bacon Blue Burger",
+      "descriptionEs": "Hamburguesa de res cubierta con tocino, queso azul desmoronado y alioli de tomate deshidratado",
+      "descriptionEn": "Beef burger topped with bacon, blue cheese crumbles, and sundried tomato aioli",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mushroom-swiss-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa de champiñones y queso suizo",
+      "nameEn": "Mushroom Swiss Burger",
+      "descriptionEs": "Hamburguesa de res con champiñones salteados, cebolla caramelizada, queso suizo y alioli de salsa inglesa",
+      "descriptionEn": "Beef burger with sautéed mushrooms, caramelized onions, Swiss, and Worcestershire aioli",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-honey-chicken-sandwich",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sándwich de pollo con miel picante",
+      "nameEn": "Hot Honey Chicken Sandwich",
+      "descriptionEs": "Pollo frito crujiente bañado en miel picante, con pepinillos y ensalada de col",
+      "descriptionEn": "Crispy fried chicken drizzled with hot honey, with pickles and slaw",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cake-blt",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "BLT de pastel de cangrejo",
+      "nameEn": "Crab Cake BLT",
+      "descriptionEs": "Pastel de cangrejo casero con tocino, lechuga, tomate y alioli de sriracha",
+      "descriptionEn": "Housemade crab cake with bacon, lettuce, tomato, and sriracha aioli",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nashville-hot-fish-sandwich",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sándwich de pescado picante estilo Nashville",
+      "nameEn": "Nashville Hot Fish Sandwich",
+      "descriptionEs": "Bacalao crujiente con mayonesa picante y pepinillos",
+      "descriptionEn": "Crispy cod with spicy mayo and pickles",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Reuben",
+      "nameEn": "Reuben",
+      "descriptionEs": "Corned beef, chucrut, queso suizo y aderezo Thousand Island en pan de centeno a la plancha",
+      "descriptionEn": "Corned beef, sauerkraut, Swiss, and thousand island on grilled rye",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "short-rib-grilled-cheese",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sándwich de queso a la parrilla con costilla corta",
+      "nameEn": "Short Rib Grilled Cheese",
+      "descriptionEs": "Costilla de res estofada, cebolla caramelizada y gouda derretido en pan de centeno a la plancha",
+      "descriptionEn": "Braised short rib, caramelized onions, and melted gouda on grilled rye",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-garden",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "El jardín",
+      "nameEn": "The Garden",
+      "descriptionEs": "Hamburguesa casera de garbanzo y vegetales con lechuga, tomate, pepinillos y dijon con rábano picante",
+      "descriptionEn": "Housemade chickpea and veggie burger with lettuce, tomato, pickles, and horseradish dijon",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seared-scallops",
+      "categoryId": "entrees",
+      "nameEs": "Callos de hacha sellados",
+      "nameEn": "Seared Scallops",
+      "descriptionEs": "Callos de hacha sellados a la sartén sobre risotto de limón y pimienta con espárragos",
+      "descriptionEn": "Pan-seared scallops over lemon pepper risotto with asparagus",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seared-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón sellado",
+      "nameEn": "Seared Salmon",
+      "descriptionEs": "Salmón con beurre blanc, puré de papa y espárragos",
+      "descriptionEn": "Salmon with beurre blanc, mashed potatoes, and asparagus",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "entrees",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "Bacalao en masa de cerveza con papas fritas, ensalada de col y salsa tártara",
+      "descriptionEn": "Beer-battered cod with fries, slaw, and tartar sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gouda-havarti-mac-cheese",
+      "categoryId": "entrees",
+      "nameEs": "Mac and cheese de gouda y havarti",
+      "nameEn": "Gouda Havarti Mac & Cheese",
+      "descriptionEs": "Mezcla rica y cremosa de havarti y gouda con pan molido crujiente. Agrega cerdo deshebrado BBQ o pollo $5",
+      "descriptionEn": "Rich, creamy blend of havarti and gouda with crispy breadcrumbs Add BBQ pulled pork or chicken $5",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-shrimp-basket",
+      "categoryId": "entrees",
+      "nameEs": "Canasta de camarones fritos",
+      "nameEn": "Fried Shrimp Basket",
+      "descriptionEs": "Camarones crujientes con papas fritas, ensalada de col y alioli de sriracha",
+      "descriptionEn": "Crispy shrimp with fries, slaw, and sriracha aioli",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-short-ribs",
+      "categoryId": "entrees",
+      "nameEs": "Costillas cortas braseadas",
+      "nameEn": "Braised Short Ribs",
+      "descriptionEs": "Costillas de res estofadas lentamente con puré de papa y espárragos",
+      "descriptionEn": "Slow-braised short ribs with mashed potatoes and asparagus",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-parmesan-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas con trufa y parmesano",
+      "nameEn": "Truffle Parmesan Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asparagus",
+      "categoryId": "sides",
+      "nameEs": "Espárragos",
+      "nameEn": "Asparagus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cauliflower",
+      "categoryId": "sides",
+      "nameEs": "Coliflor",
+      "nameEn": "Cauliflower",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts-side",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas (guarnición)",
+      "nameEn": "Brussels Sprouts (side)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Puré de papa",
+      "nameEn": "Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "sides",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elote-street-corn",
+      "categoryId": "sides",
+      "nameEs": "Elote callejero",
+      "nameEn": "Elote Street Corn",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-risotto",
+      "categoryId": "sides",
+      "nameEs": "Risotto de vegetales",
+      "nameEn": "Veggie Risotto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "sides",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "sides",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cakes-by-suzy",
+      "categoryId": "dessert",
+      "nameEs": "Pasteles de Suzy",
+      "nameEn": "Cakes by Suzy",
+      "descriptionEs": "Selección rotativa de deliciosos pasteles caseros; pregunta a tu mesero por los sabores del día",
+      "descriptionEn": "Rotating selection of decadent housemade cakes — ask your server for today's flavors",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottomless-bloodys-mimosas",
+      "categoryId": "brunch-sat-sun-11am-3pm-bottomless-drink-special",
+      "nameEs": "Bloody Marys y mimosas ilimitados",
+      "nameEn": "Bottomless Bloodys & Mimosas",
+      "descriptionEs": "¡El brunch es mejor ilimitado! Elige Bloody Marys o mimosas ilimitados, o alterna entre ambos",
+      "descriptionEn": "Brunch is better bottomless! Choose unlimited Bloodys or mimosas or switch between both",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-plate",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Plato de la casa",
+      "nameEn": "House Plate",
+      "descriptionEs": "Dos huevos al gusto, papas caseras y pan tostado o biscuit, con tocino o salchichas a elegir",
+      "descriptionEn": "Two eggs any style, home fries & toast or biscuit served with your choice of bacon or sausage links",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscuits-gravy",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Bísquets con gravy",
+      "nameEn": "Biscuits & Gravy",
+      "descriptionEs": "Biscuit casero con gravy de salchicha y dos huevos al gusto, servido con papas caseras y mantequilla con miel",
+      "descriptionEn": "Housemade biscuit & sausage gravy with two eggs any style, served with home fries & honey butter",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-brioche-french-toast",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Pan francés de brioche con canela",
+      "nameEn": "Cinnamon Brioche French Toast",
+      "descriptionEs": "Tres rebanadas de pan francés servidas con compota de frutos rojos, jarabe de maple y crema batida encima",
+      "descriptionEn": "Three slices of french toast served with a side of mixed berry compote, maple syrup and topped with whipped cream",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-cheese-omelette",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Omelette de jamón y queso",
+      "nameEn": "Ham & Cheese Omelette",
+      "descriptionEs": "Omelette de cuatro huevos con jamón y queso asiago, servido con papas caseras",
+      "descriptionEn": "Four egg omelette with ham & asiago cheese, served with a side of homefries",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tall-stack-of-pancakes",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Torre de pancakes",
+      "nameEn": "Tall Stack Of Pancakes",
+      "descriptionEs": "Tres pancakes de vainilla servidos con compota de frutos rojos y jarabe de maple",
+      "descriptionEn": "Three vanilla pancakes served with a side of mixed berry compote and maple syrup",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-quesadilla",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-plates",
+      "nameEs": "Quesadilla de desayuno",
+      "nameEn": "Breakfast Quesadilla",
+      "descriptionEs": "Huevos revueltos, chorizo y cheddar, servidos con papitas tots y pico de gallo al lado",
+      "descriptionEn": "Scrambled eggs, chorizo, and cheddar, served with tater tots and a side of pico de gallo",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Tocino",
+      "nameEn": "Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chorizo",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Chorizo",
+      "nameEn": "Chorizo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-fries",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Papas caseras",
+      "nameEn": "Home Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tater-tots",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Tater tots (croquetas de papa)",
+      "nameEn": "Tater Tots",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscuit",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Bísquet",
+      "nameEn": "Biscuit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-links",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Salchichas",
+      "nameEn": "Sausage Links",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toast-white-wheat-or-rye",
+      "categoryId": "brunch-sat-sun-11am-3pm-brunch-extras",
+      "nameEs": "Pan tostado (blanco, integral o centeno)",
+      "nameEn": "Toast (White, wheat or rye)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "craft-beer-specials",
+      "categoryId": "happy-hour-weekdays-3-5pm-craft-beer-specials",
+      "nameEs": "Especiales de cerveza artesanal",
+      "nameEn": "Craft beer specials",
+      "descriptionEs": "Cervezas artesanales a $5 (las marcadas con ★ en el menú de cervezas) y $2 de descuento en cualquier degustación de cervezas",
+      "descriptionEn": "$5 craft beers (beers marked ★ on the beer menu) and $2 off any beer flight",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moscow-mules",
+      "categoryId": "happy-hour-weekdays-3-5pm-cocktails",
+      "nameEs": "Moscow Mules",
+      "nameEn": "Moscow Mules",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coquito-happy-hour",
+      "categoryId": "happy-hour-weekdays-3-5pm-cocktails",
+      "nameEs": "Coquito (happy hour)",
+      "nameEn": "Coquito (happy hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-merlot-happy-hour",
+      "categoryId": "happy-hour-weekdays-3-5pm-wines",
+      "nameEs": "Sterling Merlot (happy hour)",
+      "nameEn": "Sterling Merlot (happy hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-chardonnay-happy-hour",
+      "categoryId": "happy-hour-weekdays-3-5pm-wines",
+      "nameEs": "Sterling Chardonnay (happy hour)",
+      "nameEn": "Sterling Chardonnay (happy hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beringer-white-zinfandel-happy-hour",
+      "categoryId": "happy-hour-weekdays-3-5pm-wines",
+      "nameEs": "Beringer White Zinfandel (happy hour)",
+      "nameEn": "Beringer White Zinfandel (happy hour)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beefy-cheesy-tacos",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Tacos de res con queso",
+      "nameEn": "Beefy Cheesy Tacos",
+      "descriptionEs": "Dos tacos suaves de carne molida cubiertos con queso fundido y pico de gallo",
+      "descriptionEn": "Two soft ground beef tacos topped with queso and pico de gallo",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nashville-fried-chicken-sliders",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Mini hamburguesas de pollo frito estilo Nashville",
+      "nameEn": "Nashville Fried Chicken Sliders",
+      "descriptionEs": "Dos mini hamburguesas de pollo picante estilo Nashville con mayonesa y pepinillo",
+      "descriptionEn": "Two Nashville hot chicken sliders with mayo and pickle",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nice-guy-sliders",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Mini hamburguesas Nice Guy",
+      "nameEn": "Nice Guy Sliders",
+      "descriptionEs": "Dos mini hamburguesas de res con lechuga, tomate y alioli de chipotle",
+      "descriptionEn": "Two beef sliders with lettuce, tomato & chipotle aioli",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-tomato-grilled-cheese",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Sándwich de queso derretido con tocino y tomate",
+      "nameEn": "Bacon & Tomato Grilled Cheese",
+      "descriptionEs": "Pan Texas a la parrilla con queso cheddar y americano, tocino y tomate",
+      "descriptionEn": "Grilled Texas toast with Cheddar & American cheese, bacon & tomato",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bacon-ranch-wrap",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Wrap de pollo, tocino y ranch",
+      "nameEn": "Chicken Bacon Ranch Wrap",
+      "descriptionEs": "Wrap de pollo frito, tocino y ranch con lechuga romana, tomate y queso cheddar",
+      "descriptionEn": "Fried chicken, bacon and ranch wrap with romaine, tomato, and cheddar cheese",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-wrap",
+      "categoryId": "happy-hour-weekdays-3-5pm-bites",
+      "nameEs": "Wrap de pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "Pollo frito con lechuga romana, aderezo César, crutones y tomate",
+      "descriptionEn": "Fried chicken with romaine, Caesar dressing, croutons and tomato",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-quesadilla",
+      "categoryId": "kids-12-under-13-4-upcharge",
+      "nameEs": "Quesadilla de pollo",
+      "nameEn": "Chicken Quesadilla",
+      "descriptionEs": "Se sirve con papas fritas cortadas a mano",
+      "descriptionEn": "Served with hand-cut fries",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "kids-12-under-13-4-upcharge",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "Se sirve con papas fritas cortadas a mano",
+      "descriptionEn": "Served with hand-cut fries",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-bites",
+      "categoryId": "kids-12-under-13-4-upcharge",
+      "nameEs": "Bocados de pollo crujientes",
+      "nameEn": "Crispy Chicken Bites",
+      "descriptionEs": "Se sirve con papas fritas cortadas a mano",
+      "descriptionEn": "Served with hand-cut fries",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kids-12-under-13-4-upcharge",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Se sirve con papas fritas cortadas a mano",
+      "descriptionEn": "Served with hand-cut fries",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-n-cheese",
+      "categoryId": "kids-12-under-13-4-upcharge",
+      "nameEs": "Mac and cheese (niños)",
+      "nameEn": "Mac N Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "how-to-order",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "Cómo ordenar",
+      "nameEn": "How to order",
+      "descriptionEs": "Ordena por el número entre corchetes. El primer precio es el del vaso del tamaño indicado; el segundo es por vaso de degustación (ejemplo: 2+2+2+3 = degustación de $9). Las cervezas marcadas con ★ cuestan $5 durante el happy hour",
+      "descriptionEn": "Order by the number in brackets. First price is the glass size shown; second price is per flight glass (example: 2+2+2+3 = $9 flight). Beers marked ★ are $5 during happy hour",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "24-tox-fugu",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[24] Tox — Fugu",
+      "nameEn": "[24] Tox — Fugu",
+      "descriptionEs": "IPA americana · 6.5% · 16oz · New London, CT· ★ Happy hour $5",
+      "descriptionEn": "American IPA · 6.5% · 16oz · New London, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "27-threes-logical-conclusion",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[27] Threes — Logical Conclusion",
+      "nameEn": "[27] Threes — Logical Conclusion",
+      "descriptionEs": "IPA americana · 7% · 13oz · Brooklyn, NY· ★ Happy hour $5",
+      "descriptionEn": "American IPA · 7% · 13oz · Brooklyn, NY · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "5-kent-falls",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[5] Kent Falls — ¯_(ツ)_/¯",
+      "nameEn": "[5] Kent Falls — ¯_(ツ)_/¯",
+      "descriptionEs": "IPA americana · 6.2% · 13oz · Kent, CT",
+      "descriptionEn": "American IPA · 6.2% · 13oz · Kent, CT",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "31-new-park-little-cloud",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[31] New Park — Little Cloud",
+      "nameEn": "[31] New Park — Little Cloud",
+      "descriptionEs": "IPA de Nueva Inglaterra · 5.5% · 13oz · West Hartford, CT· ★ Happy hour $5",
+      "descriptionEn": "New England IPA · 5.5% · 13oz · West Hartford, CT · ★ Happy Hour $5",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "29-tribus-benji",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[29] Tribus — Benji",
+      "nameEn": "[29] Tribus — Benji",
+      "descriptionEs": "IPA de Nueva Inglaterra · 6.8% · 13oz · Milford, CT· ★ Happy hour $5",
+      "descriptionEn": "New England IPA · 6.8% · 13oz · Milford, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "30-the-barn-haze-for-horses",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[30] The Barn — Haze For Horses",
+      "nameEn": "[30] The Barn — Haze For Horses",
+      "descriptionEs": "IPA de Nueva Inglaterra · 6.4% · 13oz · Groton, CT· ★ Happy hour $5",
+      "descriptionEn": "New England IPA · 6.4% · 13oz · Groton, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "22-alvarium-x-other-half-other-hive",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[22] Alvarium x Other Half — Other Hive",
+      "nameEn": "[22] Alvarium x Other Half — Other Hive",
+      "descriptionEs": "IPA de Nueva Inglaterra / 6.6% / 12oz / New Britain, CT",
+      "descriptionEn": "New England IPA / 6.6% / 12oz / New Britain, CT",
+      "price": "Glass $8.00 / Flight glass $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "7-foam-dead-flowers",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[7] Foam — Dead Flowers",
+      "nameEn": "[7] Foam — Dead Flowers",
+      "descriptionEs": "IPA de Nueva Zelanda · 6% · 13oz · Burlington, VT",
+      "descriptionEn": "New Zealand IPA · 6% · 13oz · Burlington, VT",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "45-badsons-double-doobious",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[45] Badsons — Double Doobious",
+      "nameEn": "[45] Badsons — Double Doobious",
+      "descriptionEs": "IPA doble · 8.4% · 10oz · Derby, CT",
+      "descriptionEn": "Double IPA · 8.4% · 10oz · Derby, CT",
+      "price": "Glass $7.50 / Flight glass $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "14-timber-x-fidens-daydreams-are-necessary-v1",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[14] Timber x Fidens — Daydreams Are Necessary V1",
+      "nameEn": "[14] Timber x Fidens — Daydreams Are Necessary V1",
+      "descriptionEs": "IPA doble de Nueva Inglaterra · 8% · 8oz · North Haven, CT",
+      "descriptionEn": "Double New England IPA · 8% · 8oz · North Haven, CT",
+      "price": "Glass $8.00 / Flight glass $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "26-dogfish-head-grateful-dead",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[26] Dogfish Head — Grateful Dead",
+      "nameEn": "[26] Dogfish Head — Grateful Dead",
+      "descriptionEs": "Pale ale de Nueva Inglaterra · 5.3% · 16oz · Milton, DE· ★ Happy hour $5",
+      "descriptionEn": "New England Pale Ale · 5.3% · 16oz · Milton, DE · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "23-3-floyds-zombie-dust",
+      "categoryId": "craft-beer-on-draft-ipas-pale-ales",
+      "nameEs": "[23] 3 Floyds — Zombie Dust",
+      "nameEn": "[23] 3 Floyds — Zombie Dust",
+      "descriptionEs": "Pale ale americana · 6.5% · 16oz · Munster, IN",
+      "descriptionEn": "American Pale Ale · 6.5% · 16oz · Munster, IN",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "21-twelve-percent-snappy",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[21] Twelve Percent — Snappy!",
+      "nameEn": "[21] Twelve Percent — Snappy!",
+      "descriptionEs": "Lager americana · 5% · 16oz · North Haven, CT· ★ Happy hour $5",
+      "descriptionEn": "American Lager · 5% · 16oz · North Haven, CT · ★ Happy Hour $5",
+      "price": "Glass $5.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "40-counterweight-high-note",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[40] Counterweight — High Note",
+      "nameEn": "[40] Counterweight — High Note",
+      "descriptionEs": "Lager lupulada · 5.4% · 16oz · Cheshire, CT· ★ Happy hour $5",
+      "descriptionEn": "Hoppy Lager · 5.4% · 16oz · Cheshire, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8-oec-coolship-lager",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[8] OEC — Coolship Lager",
+      "nameEn": "[8] OEC — Coolship Lager",
+      "descriptionEs": "Lager pálida checa / 5.2% / 16oz / Oxford, CT",
+      "descriptionEn": "Czech Pale Lager / 5.2% / 16oz / Oxford, CT",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "34-schilling-jakobus",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[34] Schilling — Jakobus",
+      "nameEn": "[34] Schilling — Jakobus",
+      "descriptionEs": "Pilsner alemana · 5% · 13oz · Littleton, NH",
+      "descriptionEn": "German Pilsner · 5% · 13oz · Littleton, NH",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "25-counterweight-x-fox-farm-interweave",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[25] Counterweight x Fox Farm — Interweave",
+      "nameEn": "[25] Counterweight x Fox Farm — Interweave",
+      "descriptionEs": "Pilsner alemana · 4.8% · 16oz · Cheshire, CT· ★ Happy hour $5",
+      "descriptionEn": "German Pilsner · 4.8% · 16oz · Cheshire, CT · ★ Happy Hour $5",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "28-foam-tranquil-pils",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[28] Foam — Tranquil Pils",
+      "nameEn": "[28] Foam — Tranquil Pils",
+      "descriptionEs": "Pilsner alemana / 5% / 16oz / Burlington, VT",
+      "descriptionEn": "German Pilsner / 5% / 16oz / Burlington, VT",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "35-alvarium-the-pils",
+      "categoryId": "craft-beer-on-draft-lagers-pilsners",
+      "nameEs": "[35] Alvarium — The Pils",
+      "nameEn": "[35] Alvarium — The Pils",
+      "descriptionEs": "Pilsner americana / 4.5% / 16oz / New Britain, CT· ★ Happy hour $5",
+      "descriptionEn": "American Pilsner / 4.5% / 16oz / New Britain, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "38-epicure-maibock",
+      "categoryId": "craft-beer-on-draft-amber-dark-ales",
+      "nameEs": "[38] Epicure — Maibock",
+      "nameEn": "[38] Epicure — Maibock",
+      "descriptionEs": "Maibock · 6.7% · 16oz · Norwich, CT· ★ Happy hour $5",
+      "descriptionEn": "Maibock · 6.7% · 16oz · Norwich, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "39-belhaven-nitro-scottish-ale",
+      "categoryId": "craft-beer-on-draft-amber-dark-ales",
+      "nameEs": "[39] Belhaven — Nitro Scottish Ale",
+      "nameEn": "[39] Belhaven — Nitro Scottish Ale",
+      "descriptionEs": "Ale escocesa con nitrógeno / 5.2% / 13oz / Dunbar, Escocia",
+      "descriptionEn": "Scottish Ale on Nitro / 5.2% / 13oz / Dunbar, Scotland",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "16-von-trapp-schwarz",
+      "categoryId": "craft-beer-on-draft-amber-dark-ales",
+      "nameEs": "[16] Von Trapp — Schwarz",
+      "nameEn": "[16] Von Trapp — Schwarz",
+      "descriptionEs": "Schwarzbier (lager oscura) · 5.2% · 13oz · Stowe, VT",
+      "descriptionEn": "Schwarzbier (Dark Lager) · 5.2% · 13oz · Stowe, VT",
+      "price": "Glass $8.00 / Flight glass $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-east-rock-dark-lager",
+      "categoryId": "craft-beer-on-draft-amber-dark-ales",
+      "nameEs": "[1] East Rock — Dark Lager",
+      "nameEn": "[1] East Rock — Dark Lager",
+      "descriptionEs": "Munich dunkel / 5% / 13oz / New Haven, CT",
+      "descriptionEn": "Munich Dunkel / 5% / 13oz / New Haven, CT",
+      "price": "Glass $8.00 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "20-east-rock-summer-wheat",
+      "categoryId": "craft-beer-on-draft-wheat-hefeweizen",
+      "nameEs": "[20] East Rock — Summer Wheat",
+      "nameEn": "[20] East Rock — Summer Wheat",
+      "descriptionEs": "Cerveza de trigo con naranja, limón y manzanilla · 5.7% · 16oz · New Haven, CT· ★ Happy hour $5",
+      "descriptionEn": "Wheat Beer w/ Orange, Lemon & Chamomile · 5.7% · 16oz · New Haven, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "17-allagash-white",
+      "categoryId": "craft-beer-on-draft-wheat-hefeweizen",
+      "nameEs": "[17] Allagash — White",
+      "nameEn": "[17] Allagash — White",
+      "descriptionEs": "Witbier con naranja · 5.2% · 16oz · Portland, ME· ★ Happy hour $5",
+      "descriptionEn": "Witbier w/ Orange · 5.2% · 16oz · Portland, ME · ★ Happy Hour $5",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-ommegang-three-philosophers-nitro",
+      "categoryId": "craft-beer-on-draft-belgians-saisons",
+      "nameEs": "[2] Ommegang — Three Philosophers Nitro",
+      "nameEn": "[2] Ommegang — Three Philosophers Nitro",
+      "descriptionEs": "Quadrupel con nitrógeno · 9.7% · 10oz · Cooperstown, NY",
+      "descriptionEn": "Nitro Quadrupel · 9.7% · 10oz · Cooperstown, NY",
+      "price": "Glass $9.00 / Flight glass $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-allagash-curieux",
+      "categoryId": "craft-beer-on-draft-belgians-saisons",
+      "nameEs": "[3] Allagash — Curieux",
+      "nameEn": "[3] Allagash — Curieux",
+      "descriptionEs": "Tripel belga añejada en barrica de bourbon · 10.2% · 8oz · Portland, ME",
+      "descriptionEn": "Bourbon Barrel-Aged Belgian Tripel · 10.2% · 8oz · Portland, ME",
+      "price": "Glass $9.00 / Flight glass $4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "11-boulevard-mimosa-saison",
+      "categoryId": "craft-beer-on-draft-belgians-saisons",
+      "nameEs": "[11] Boulevard — Mimosa Saison",
+      "nameEn": "[11] Boulevard — Mimosa Saison",
+      "descriptionEs": "Saison de naranja sanguina / 8% / 10oz / Kansas City, MO",
+      "descriptionEn": "Blood Orange Saison / 8% / 10oz / Kansas City, MO",
+      "price": "Glass $8.50 / Flight glass $3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "12-evil-twin-woody-s-orange-cream",
+      "categoryId": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "[12] Evil Twin — Woody's Orange Cream",
+      "nameEn": "[12] Evil Twin — Woody's Orange Cream",
+      "descriptionEs": "Sour de refresco de naranja con vainilla y lactosa · 6% · 10oz · Ridgewood, NY",
+      "descriptionEn": "Orange Soda Sour w/ Vanilla & Milk Sugar · 6% · 10oz · Ridgewood, NY",
+      "price": "Glass $7.50 / Flight glass $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "41-tox-double-lily-of-the-valley-plum",
+      "categoryId": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "[41] Tox — Double Lily Of The Valley: Plum",
+      "nameEn": "[41] Tox — Double Lily Of The Valley: Plum",
+      "descriptionEs": "Sour afrutada con ciruela, vainilla y lactosa · 7% · 8oz · New London, CT",
+      "descriptionEn": "Fruited Sour w/ Plum, Vanilla & Milk Sugar · 7% · 8oz · New London, CT",
+      "price": "Glass $8.00 / Flight glass $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "6-skygazer-brambleberry-sour",
+      "categoryId": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "[6] Skygazer — Brambleberry Sour",
+      "nameEn": "[6] Skygazer — Brambleberry Sour",
+      "descriptionEs": "Sour con frambuesa y zarzamora / 5% / 13oz / North Haven, CT· ★ Happy hour $5",
+      "descriptionEn": "Sour w/ Raspberry & Blackberry / 5% / 13oz / North Haven, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "19-brasserie-des-franches-montagnes-sqrt225-saison",
+      "categoryId": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "[19] Brasserie Des Franches Montagnes — SqRt225 Saison",
+      "nameEn": "[19] Brasserie Des Franches Montagnes — SqRt225 Saison",
+      "descriptionEs": "Saison sour añejada en barricas de roble · 6% · 8oz · Saignelégier, Suiza",
+      "descriptionEn": "Sour Saison aged in Oak Barrels · 6% · 8oz · Saignelégier, Switzerland",
+      "price": "Glass $10.00 / Flight glass $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "46-oec-aura",
+      "categoryId": "craft-beer-on-draft-sours-wild-ales",
+      "nameEs": "[46] OEC — Aura",
+      "nameEn": "[46] OEC — Aura",
+      "descriptionEs": "Ale salvaje con flor de saúco y miel / 6% / 8oz / Oxford, CT",
+      "descriptionEn": "Wild Ale w/ Elderflower & Honey / 6% / 8oz / Oxford, CT",
+      "price": "Glass $8.50 / Flight glass $4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "18-founders-kbs-iced-latte",
+      "categoryId": "craft-beer-on-draft-strong-ales",
+      "nameEs": "[18] Founders — KBS Iced Latte",
+      "nameEn": "[18] Founders — KBS Iced Latte",
+      "descriptionEs": "Ale fuerte dorada añejada en barrica de bourbon con café y vainilla · 11% · 8oz · Grand Rapids, MI",
+      "descriptionEn": "Bourbon Barrel-Aged Golden Strong Ale w/ Coffee & Vanilla · 11% · 8oz · Grand Rapids, MI",
+      "price": "Glass $10.00 / Flight glass $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "4-false-hope-dire-consequences",
+      "categoryId": "craft-beer-on-draft-strong-ales",
+      "nameEs": "[4] False Hope — Dire Consequences",
+      "nameEn": "[4] False Hope — Dire Consequences",
+      "descriptionEs": "Barleywine con canela, nuez moscada, vainilla, melaza y ron · 11.5% · 8oz · North Haven, CT",
+      "descriptionEn": "Barleywine w/ Cinnamon, Nutmeg, Vanilla, Molasses & Rum · 11.5% · 8oz · North Haven, CT",
+      "price": "Glass $8.00 / Flight glass $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "36-tox-recluse",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[36] Tox — Recluse",
+      "nameEn": "[36] Tox — Recluse",
+      "descriptionEs": "Brown ale americana · 5.8% · 13oz · New London, CT· ★ Happy hour $5",
+      "descriptionEn": "American Brown Ale · 5.8% · 13oz · New London, CT · ★ Happy Hour $5",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "49-beer-d-p2-porter",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[49] Beer'd — P2 Porter",
+      "nameEn": "[49] Beer'd — P2 Porter",
+      "descriptionEs": "Porter de café · 6.1% · 12oz · Stonington, CT",
+      "descriptionEn": "Coffee Porter · 6.1% · 12oz · Stonington, CT",
+      "price": "Glass $7.50 / Flight glass $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "33-oec-trifaldi",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[33] OEC — Trifaldi",
+      "nameEn": "[33] OEC — Trifaldi",
+      "descriptionEs": "Stout británica de avena · 5.5% · 12oz · Oxford, CT",
+      "descriptionEn": "British Oatmeal Stout · 5.5% · 12oz · Oxford, CT",
+      "price": "Glass $8.00 / Flight glass $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "15-greater-good-good-night-moon",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[15] Greater Good — Good Night Moon",
+      "nameEn": "[15] Greater Good — Good Night Moon",
+      "descriptionEs": "Porter imperial de chocolate con leche · 11% · 10oz · Worcester, MA",
+      "descriptionEn": "Imperial Chocolate Milk Porter · 11% · 10oz · Worcester, MA",
+      "price": "Glass $8.00 / Flight glass $3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "32-founders-kbs-caramel",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[32] Founders — KBS Caramel",
+      "nameEn": "[32] Founders — KBS Caramel",
+      "descriptionEs": "Stout imperial añejada en barrica con caramelo · 12% · 8oz · Grand Rapids, MI",
+      "descriptionEn": "Barrel-Aged Imperial Stout w/ Caramel · 12% · 8oz · Grand Rapids, MI",
+      "price": "Glass $9.00 / Flight glass $4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "44-alvarium-lil-coconut",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[44] Alvarium — Lil' Coconut",
+      "nameEn": "[44] Alvarium — Lil' Coconut",
+      "descriptionEs": "Stout imperial con coco, canela, nuez moscada, melaza, vainilla y lactosa · 8% · 8oz · New Britain, CT",
+      "descriptionEn": "Imperial Stout w/ Coconut, Cinnamon, Nutmeg, Molasses, Vanilla & Milk Sugar · 8% · 8oz · New Britain, CT",
+      "price": "Glass $8.00 / Flight glass $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "37-oec-barrel-aged-malefactus",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[37] OEC — Barrel-Aged Malefactus",
+      "nameEn": "[37] OEC — Barrel-Aged Malefactus",
+      "descriptionEs": "Stout imperial añejada en barricas de bourbon y whiskey de centeno · 12% · 8oz · Oxford, CT",
+      "descriptionEn": "Imperial Stout aged in Bourbon & Rye Whiskey Barrels · 12% · 8oz · Oxford, CT",
+      "price": "Glass $9.00 / Flight glass $4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "43-duclaw-the-pastryarchy-unicorn-farts-after-dark",
+      "categoryId": "craft-beer-on-draft-stouts-porters-browns",
+      "nameEs": "[43] Duclaw — The PastryArchy: Unicorn Farts After Dark",
+      "nameEn": "[43] Duclaw — The PastryArchy: Unicorn Farts After Dark",
+      "descriptionEs": "Stout imperial de pan francés con chocolate, canela y brillantina comestible / 8.5% / 10oz / Ewing Township, NJ",
+      "descriptionEn": "French Toast Imperial Stout w/ Chocolate, Cinnamon & Edible Glitter / 8.5% / 10oz / Ewing Township, NJ",
+      "price": "Glass $8.00 / Flight glass $3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "9-downeast-blueberry-pie",
+      "categoryId": "craft-beer-on-draft-ciders-mead",
+      "nameEs": "[9] Downeast — Blueberry Pie",
+      "nameEn": "[9] Downeast — Blueberry Pie",
+      "descriptionEs": "Sidra con mora azul y vainilla / 5% / 16oz / Boston, MA",
+      "descriptionEn": "Cider w/ Blueberry & Vanilla / 5% / 16oz / Boston, MA",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "10-downeast-apple-pie",
+      "categoryId": "craft-beer-on-draft-ciders-mead",
+      "nameEs": "[10] Downeast — Apple Pie",
+      "nameEn": "[10] Downeast — Apple Pie",
+      "descriptionEs": "Sidra con canela y vainilla / 5% / 16oz / Boston, MA",
+      "descriptionEn": "Cider w/ Cinnamon & Vanilla / 5% / 16oz / Boston, MA",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "42-makana-tokoloshe",
+      "categoryId": "craft-beer-on-draft-ciders-mead",
+      "nameEs": "[42] Makana — Tokoloshe",
+      "nameEn": "[42] Makana — Tokoloshe",
+      "descriptionEs": "Hidromiel sudafricano con melaza, clavo y cáscara de mandarina del Cabo / 12% / 8oz / Grahamstown, Sudáfrica",
+      "descriptionEn": "South African Mead w/ Molasses, Cloves & Cape Naartjie Peel / 12% / 8oz / Grahamstown, South Africa",
+      "price": "Glass $10.00 / Flight glass $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "50-athletic-run-wild",
+      "categoryId": "craft-beer-on-draft-non-alcoholic",
+      "nameEs": "[50] Athletic — Run Wild",
+      "nameEn": "[50] Athletic — Run Wild",
+      "descriptionEs": "IPA sin alcohol · <0.5% · 16oz · Milford, CT· ★ Happy hour $5",
+      "descriptionEn": "Non-Alcoholic IPA · <0.5% · 16oz · Milford, CT · ★ Happy Hour $5",
+      "price": "Glass $8.00 / Flight glass $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "in-bloom",
+      "categoryId": "featured-cocktails",
+      "nameEs": "In Bloom",
+      "nameEn": "In Bloom",
+      "descriptionEs": "Ron de coco, licor de manzana y jugo de piña en las rocas con una cereza.",
+      "descriptionEn": "Coconut rum, apple schnapps and pineapple juice on ice with a cherry.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-fashioned",
+      "categoryId": "featured-cocktails",
+      "nameEs": "Old Fashioned",
+      "nameEn": "Old Fashioned",
+      "descriptionEs": "Bourbon Four Roses (o el bourbon de tu elección), jarabe simple, naranja, cereza y amargo de Angostura.",
+      "descriptionEn": "Four Roses Bourbon (or your choice of bourbon), simple syrup, orange, cherry, and angostura bitters.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cran-aperol-spritz",
+      "categoryId": "featured-cocktails",
+      "nameEs": "Cran-Aperol Spritz",
+      "nameEn": "Cran-Aperol Spritz",
+      "descriptionEs": "Aperol, naranja machacada, un toque de jugo de arándano, cubierto con prosecco y amargo de arándano.",
+      "descriptionEn": "Aperol, muddled orange, splash of cranberry juice and topped with prosecco and cranberry bitters.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-upside-down-cake",
+      "categoryId": "featured-cocktails",
+      "nameEs": "Pastel invertido de piña",
+      "nameEn": "Pineapple Upside Down Cake",
+      "descriptionEs": "Vodka de vainilla, jugo de piña, coco",
+      "descriptionEn": "Vanilla vodka, pineapple juice, coconut",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita",
+      "categoryId": "featured-cocktails",
+      "nameEs": "Margarita",
+      "nameEn": "Margarita",
+      "descriptionEs": "Exotico o el tequila de tu elección, triple sec y mezcla sour de la casa. ¡Hazla de coco, mango o frambuesa por dos dólares más!",
+      "descriptionEn": "Exotico or your choice of tequila, triple sec, and house sour mix. Make it a coconut, mango, or raspberry margarita for two dollars more!",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coquito",
+      "categoryId": "featured-cocktails",
+      "nameEs": "Coquito",
+      "nameEn": "Coquito",
+      "descriptionEs": "¡Ponche navideño puertorriqueño con el toque Social!",
+      "descriptionEn": "Puerto Rican eggnog with a Social Spin on it!",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-lime-mocktail",
+      "categoryId": "mocktails",
+      "nameEs": "Mocktail de coco y lima",
+      "nameEn": "Coconut Lime Mocktail",
+      "descriptionEs": "Crema de coco, lima, piña y granadina.",
+      "descriptionEn": "Cream of coconut, lime, pineapple and grenadine.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "virgin-cosmopolitan",
+      "categoryId": "mocktails",
+      "nameEs": "Cosmopolitan virgen",
+      "nameEn": "Virgin Cosmopolitan",
+      "descriptionEs": "Arándano, lima, jugo de naranja y agua con gas.",
+      "descriptionEn": "Cranberry, lime, orange juice and bubbly water.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chai-latte-martini",
+      "categoryId": "dessert-cocktails-and-shooters",
+      "nameEs": "Martini de chai latte",
+      "nameEn": "Chai Latte Martini",
+      "descriptionEs": "Licor de especias chai, café y crema irlandesa mezclados en el martini de postre perfecto.",
+      "descriptionEn": "Chai spice liqueur, coffee, and Irish cream blended into the perfect dessert Martini.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-martini",
+      "categoryId": "dessert-cocktails-and-shooters",
+      "nameEs": "Martini de chocolate",
+      "nameEn": "Chocolate Martini",
+      "descriptionEs": "Vodka de vainilla, licor de chocolate, crème de cacao.",
+      "descriptionEn": "Vanilla vodka, chocolate liquer, creme de cacao.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-pickleback-shot",
+      "categoryId": "dessert-cocktails-and-shooters",
+      "nameEs": "Shot pickleback de la casa",
+      "nameEn": "House Pickleback Shot",
+      "descriptionEs": "Shot de Jameson con jugo de pepinillo de chaser",
+      "descriptionEn": "Shot of Jameson with pickle juice chaser",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pistachio-shot",
+      "categoryId": "dessert-cocktails-and-shooters",
+      "nameEs": "Shot de pistache",
+      "nameEn": "Pistachio Shot",
+      "descriptionEs": "Amaretto, crema irlandesa, curazao azul",
+      "descriptionEn": "Amaretto, irish cream, blue curacao",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-tea-shot",
+      "categoryId": "dessert-cocktails-and-shooters",
+      "nameEs": "Shot de té verde",
+      "nameEn": "Green Tea Shot",
+      "descriptionEs": "Jameson, sour, licor de durazno Peachtree",
+      "descriptionEn": "Jameson, sour, peachtree",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simi-cabernet-sauvignon",
+      "categoryId": "red-wines",
+      "nameEs": "Simi Cabernet Sauvignon",
+      "nameEn": "Simi Cabernet Sauvignon",
+      "descriptionEs": "Condado de Sonoma 2018. Un cabernet intenso y con mucho cuerpo, con notas de plátano y cereza wishniak.",
+      "descriptionEn": "Sonoma County 2018. A sharp and full-bodied cab, with notes of banana and wishniak cherries.",
+      "price": "Glass $13.00 / Bottle $40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trapiche-oak-cask-malbec",
+      "categoryId": "red-wines",
+      "nameEs": "Trapiche Oak Cask Malbec",
+      "nameEn": "Trapiche Oak Cask Malbec",
+      "descriptionEs": "Mendoza, Argentina 2019. Con mucho cuerpo, especiado y con notas de roble, ¡este vino no decepciona!",
+      "descriptionEn": "Mendoza, Argentina 2019. Full-bodied, peppery and oaky, this wine will not disappoint!",
+      "price": "Glass $7.50 / Bottle $24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "firesteed-pinot-noir",
+      "categoryId": "red-wines",
+      "nameEs": "Firesteed Pinot Noir",
+      "nameEn": "Firesteed Pinot Noir",
+      "descriptionEs": "Oregón 2019. Un tinto ligeramente ahumado con toques de cereza que agradará a cualquier amante del vino.",
+      "descriptionEn": "Oregon 2019. A slightly smokey red with hints of cherry that should please any wine drinker!",
+      "price": "Glass $10.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "francis-ford-coppola-claret-bordeaux-red-blend",
+      "categoryId": "red-wines",
+      "nameEs": "Francis Ford Coppola Claret Bordeaux Red Blend",
+      "nameEn": "Francis Ford Coppola Claret Bordeaux Red Blend",
+      "descriptionEs": "Diamond Collection, California 2018. Aterciopelado y sofisticado, con toques de cereza oscura y chocolate.",
+      "descriptionEn": "Diamond Collection, California 2018. Velvety and sophisticated, with hints of dark cherry and chocolate.",
+      "price": "Glass $14.00 / Bottle $44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateau-ste-michelle-cabernet-sauvignon",
+      "categoryId": "red-wines",
+      "nameEs": "Chateau Ste. Michelle Cabernet Sauvignon",
+      "nameEn": "Chateau Ste. Michelle Cabernet Sauvignon",
+      "descriptionEs": "Columbia Valley, Washington 2017. ¿Te gusta un vino afrutado tipo mermelada? Aquí está. Abundan la fruta madura y las conservas.",
+      "descriptionEn": "Columbia Valley, Washington 2017. You like a jammy wine? Here's a jammy wine. Overripe fruit and preserves abound.",
+      "price": "Glass $12.00 / Bottle $40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-merlot",
+      "categoryId": "red-wines",
+      "nameEs": "Sterling Merlot",
+      "nameEn": "Sterling Merlot",
+      "descriptionEs": "Vintner's Collection, Napa Valley 2014. Un vino tinto expresivo y acogedor, lleno de sabor y carácter.",
+      "descriptionEn": "Vintner's Collection, Napa Valley 2014. An expressive and inviting red wine that's full of flavor and character.",
+      "price": "Glass $7.00 / Bottle $21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-cabernet-sauvignon",
+      "categoryId": "red-wines",
+      "nameEs": "Sterling Cabernet Sauvignon",
+      "nameEn": "Sterling Cabernet Sauvignon",
+      "descriptionEs": "Vintner's Collection, Napa Valley 2015. Ricos sabores de fruta negra con toques de caramelo y chocolate del roble tostado.",
+      "descriptionEn": "Vintner's Collection, Napa Valley 2015. Rich black fruit flavors mix with hints of toffee and chocolate from the toasty oak.",
+      "price": "Glass $7.00 / Bottle $21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-pinot-noir",
+      "categoryId": "red-wines",
+      "nameEs": "Sterling Pinot Noir",
+      "nameEn": "Sterling Pinot Noir",
+      "descriptionEs": "Vintner's Collection, Central Coast 2014. Perfecto para quienes disfrutan de tintos discretos pero sabrosos. Ideal con cerdo.",
+      "descriptionEn": "Vintner's Collection, Central Coast 2014. Perfect for those who enjoy demure, yet flavorful, red wines. Best paired with pork.",
+      "price": "Glass $7.00 / Bottle $21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matua-rose",
+      "categoryId": "white-wines",
+      "nameEs": "Matua Rosé",
+      "nameEn": "Matua Rosé",
+      "descriptionEs": "Marlborough, Nueva Zelanda 2019. Un rosado seco y equilibrado con fresas frescas, mandarina y un toque de arándano.",
+      "descriptionEn": "Marlborough, New Zealand 2019. A well-balanced dry rose with fresh strawberries, mandarin and a hint of cranberry.",
+      "price": "Glass $10.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sonoma-cutrer-russian-river-ranches-chardonnay",
+      "categoryId": "white-wines",
+      "nameEs": "Sonoma-Cutrer Russian River Ranches Chardonnay",
+      "nameEn": "Sonoma-Cutrer Russian River Ranches Chardonnay",
+      "descriptionEs": "Condado de Sonoma 2018. Ligeramente añejado en roble y afrutado, ideal con una ensalada abundante o con nuestro fish and chips.",
+      "descriptionEn": "Sonoma County 2018. Lightly oaked and fruit-forward, great with a hearty salad or our fish and chips.",
+      "price": "Glass $13.00 / Bottle $42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saint-m-riesling",
+      "categoryId": "white-wines",
+      "nameEs": "Saint M Riesling",
+      "nameEn": "Saint M Riesling",
+      "descriptionEs": "Pfalz, Alemania 2018. Aromas jugosos de manzana, melón y cítricos con un final sutil y seco",
+      "descriptionEn": "Pfalz, Germany 2018. Juicy apple, melon and citrus aromas with a subtle, drying finish",
+      "price": "Glass $8.50 / Bottle $27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coppola-pinot-grigio",
+      "categoryId": "white-wines",
+      "nameEs": "Coppola Pinot Grigio",
+      "nameEn": "Coppola Pinot Grigio",
+      "descriptionEs": "Rosso & Bianco 2015. Un vino blanco ligero y refrescante, versátil para cualquier ocasión.",
+      "descriptionEn": "Rosso & Bianco 2015. A light, refreshing white wine that's versatile enough for any occasion.",
+      "price": "Glass $6.00 / Bottle $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oyster-bay-sauvignon-blanc",
+      "categoryId": "white-wines",
+      "nameEs": "Oyster Bay Sauvignon Blanc",
+      "nameEn": "Oyster Bay Sauvignon Blanc",
+      "descriptionEs": "Marlborough 2015. Vivo y aromático. Siempre fresco, elegante y refrescante.",
+      "descriptionEn": "Marlborough 2015. Zesty and aromatic. Always crisp, elegant and refreshing.",
+      "price": "Glass $7.00 / Bottle $21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-chardonnay",
+      "categoryId": "white-wines",
+      "nameEs": "Sterling Chardonnay",
+      "nameEn": "Sterling Chardonnay",
+      "descriptionEs": "Vintner's Collection 2014. Fruta vibrante y textura suave, equilibrio perfecto para cualquier ocasión.",
+      "descriptionEn": "Vintner's Collection 2014. Vibrant fruit and supple texture, perfect poise for any occasion.",
+      "price": "Glass $6.00 / Bottle $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beringer-white-zinfandel",
+      "categoryId": "white-wines",
+      "nameEs": "Beringer White Zinfandel",
+      "nameEn": "Beringer White Zinfandel",
+      "descriptionEs": "California 2015. Zinfandel semiseco con aromas de frutos rojos frescos, cítricos y melón.",
+      "descriptionEn": "California 2015. Semi-dry zinfandel with fresh red berry, citrus and melon aromas.",
+      "price": "Glass $5.00 / Bottle $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sterling-prosecco",
+      "categoryId": "bubbles",
+      "nameEs": "Sterling Prosecco",
+      "nameEn": "Sterling Prosecco",
+      "descriptionEs": "Vintner's Collection, sin añada. Aromas de durazno blanco, melón verde y pera jugosa con un final fresco de manzana verde.",
+      "descriptionEn": "Vintner's Collection, non-vintage. Aromas of white peach, honeydew and juicy pear with crisp green apple finish.",
+      "price": "Glass $8.50 / Bottle $25.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "budweiser",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Budweiser",
+      "nameEn": "Budweiser",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coors-light",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Coors Light",
+      "nameEn": "Coors Light",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miller-lite",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Miller Lite",
+      "nameEn": "Miller Lite",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Corona",
+      "nameEn": "Corona",
+      "descriptionEs": "Botella de 12 oz",
+      "descriptionEn": "12oz bottle",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heineken",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Heineken",
+      "nameEn": "Heineken",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuengling",
+      "categoryId": "bottled-canned-beer",
+      "nameEs": "Yuengling",
+      "nameEn": "Yuengling",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truly-wild-berry",
+      "categoryId": "seltzer",
+      "nameEs": "Truly Wild Berry",
+      "nameEn": "Truly Wild Berry",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truly-pineapple",
+      "categoryId": "seltzer",
+      "nameEs": "Truly Pineapple",
+      "nameEn": "Truly Pineapple",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stone-delicious-ipa",
+      "categoryId": "gluten-free-reduced-beer",
+      "nameEs": "Stone Delicious IPA",
+      "nameEn": "Stone Delicious IPA",
+      "descriptionEs": "IPA reducida en gluten / lata de 12 oz / 7.7% / Escondido, CA",
+      "descriptionEn": "Gluten reduced IPA / 12oz can / 7.7% / Escondido, CA",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-free-wave",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Athletic Free Wave",
+      "nameEn": "Athletic Free Wave",
+      "descriptionEs": "IPA turbia sin alcohol / lata de 12 oz / Stratford, CT",
+      "descriptionEn": "Non-Alcoholic Hazy IPA / 12oz can / Stratford, CT",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-lite",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Athletic Lite",
+      "nameEn": "Athletic Lite",
+      "descriptionEs": "Cerveza ligera sin alcohol / 12 oz / Stratford, CT",
+      "descriptionEn": "Non-Alcoholic Everyday Brew / 12oz / Stratford, CT",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-zero",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Bud Zero",
+      "nameEn": "Bud Zero",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heineken-0-0",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Heineken 0.0",
+      "nameEn": "Heineken 0.0",
+      "descriptionEs": "Lata de 12 oz",
+      "descriptionEn": "12oz can",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beck-s-non-alcoholic",
+      "categoryId": "non-alcoholic",
+      "nameEs": "Beck's Non-Alcoholic",
+      "nameEn": "Beck's Non-Alcoholic",
+      "descriptionEs": "Botella de 12 oz",
+      "descriptionEn": "12oz bottle",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coke",
+      "categoryId": "soda-juice",
+      "nameEs": "Coca-Cola",
+      "nameEn": "Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diet-coke",
+      "categoryId": "soda-juice",
+      "nameEs": "Coca-Cola Light",
+      "nameEn": "Diet Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sprite",
+      "categoryId": "soda-juice",
+      "nameEs": "Sprite",
+      "nameEn": "Sprite",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-ale",
+      "categoryId": "soda-juice",
+      "nameEs": "Ginger Ale",
+      "nameEn": "Ginger Ale",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cranberry-juice",
+      "categoryId": "soda-juice",
+      "nameEs": "Jugo de arándano",
+      "nameEn": "Cranberry Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-juice",
+      "categoryId": "soda-juice",
+      "nameEs": "Jugo de naranja",
+      "nameEn": "Orange Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-juice",
+      "categoryId": "soda-juice",
+      "nameEs": "Jugo de piña",
+      "nameEn": "Pineapple Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-lemonade",
+      "categoryId": "soda-juice",
+      "nameEs": "Limonada de la casa",
+      "nameEn": "House Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-bull",
+      "categoryId": "soda-juice",
+      "nameEs": "Red Bull",
+      "nameEn": "Red Bull",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "hot-drinks",
+      "nameEs": "Café",
+      "nameEn": "Coffee",
+      "descriptionEs": "Regular o descafeinado",
+      "descriptionEn": "Regular or Decaf",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "descriptionEs": "Pregunta por nuestra selección actual",
+      "descriptionEn": "Ask about our current selection",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones vegetarianas y podemos adaptar ciertos platos para dietas sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer several vegetarian options and can modify certain dishes for gluten-free diets. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos de cualquier tamaño.",
-      "aEn": "We welcome walk-ins and phone reservations for parties of any size."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Hay estacionamiento disponible en la calle Bank Street y en los lotes públicos cercanos.",
-      "aEn": "Street parking along Bank Street and nearby public municipal lots are available."
-    }
-  ]
+  "faqs": []
 }
