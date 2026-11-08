@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "brennans-by-the-beach",
     "name": "Brennan's By The Beach",
-    "tagline": "Classic coastal comfort food and ocean views in Stamford, CT",
-    "address": "82 Iroquois Rd, Stamford, CT 06902",
+    "tagline": "Restaurant in Stamford | Restaurant en Stamford",
+    "address": "82 Iroquois Road, Stamford, Connecticut, 06902",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "11:00 AM - 1:00 AM",
+      "saturday": "11:00 AM - 1:00 AM",
+      "sunday": "11:00 AM - 1:00 AM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#0284c7",
     "logoIcon": "utensils",
@@ -27,296 +20,483 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": "(203) 323-1496"
+    "phone": "(203) 323-1787"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soup-salads",
+      "nameEs": "Sopas y ensaladas",
+      "nameEn": "Soup & Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salad-add-ons",
+      "nameEs": "Extras para ensalada",
+      "nameEn": "Salad Add-ons",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "wing-add-ons",
+      "nameEs": "Extras para alitas",
+      "nameEn": "Wing Add-ons",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "burgers-sandwiches",
+      "nameEs": "Hamburguesas y sándwiches",
+      "nameEn": "Burgers & Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "brennans-by-the-beach-01",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Almejas al Estilo New England",
+      "id": "new-england-clam-chowder",
+      "categoryId": "soup-salads",
+      "nameEs": "Clam chowder de Nueva Inglaterra",
       "nameEn": "New England Clam Chowder",
-      "descriptionEs": "Almejas frescas recién descascaradas con papas y tocino en un caldo cremoso de almejas.",
+      "descriptionEs": "Almejas frescas abiertas con papas y tocino en un caldo cremoso de almeja.",
       "descriptionEn": "Fresh shucked clams with potatoes and bacon in a creamy clam broth.",
       "price": "$10.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos",
-        "Sopa"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Dairy",
-        "Pork"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-02",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Cebolla Francesa",
+      "id": "french-onion-soup",
+      "categoryId": "soup-salads",
+      "nameEs": "Sopa de cebolla francesa",
       "nameEn": "French Onion Soup",
-      "descriptionEs": "Caldo rico con cebollas dulces caramelizadas, picatostes de hierbas y cubierto con queso suizo derretido.",
+      "descriptionEs": "Caldo rico con cebollas dulces caramelizadas, crutones de hierbas y cubierto con queso suizo derretido.",
       "descriptionEn": "Rich broth with sweet caramelized onions, herb croutons and topped with melted swiss cheese.",
       "price": "$8.00",
-      "popular": false,
-      "badge": "Comfort",
-      "tags": [
-        "Vegetariano",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-03",
-      "categoryId": "appetizers",
-      "nameEs": "Camarones Bang Bang",
-      "nameEn": "Bang Bang Shrimp",
-      "descriptionEs": "Camarones ligeros fritos rociados con un alioli rosado picante.",
-      "descriptionEn": "Lightly fried shrimp drizzled with a pink aioli.",
-      "price": "$13.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Gluten",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "brennans-by-the-beach-04",
-      "categoryId": "appetizers",
-      "nameEs": "Rollitos de Huevo Philly Cheesesteak",
-      "nameEn": "Philly Cheese Egg Rolls",
-      "descriptionEs": "Carne de bistec Philly con queso envuelta en rollo de huevo y frita, servida con salsa para dipear.",
-      "descriptionEn": "A Philly cheese steak wrapped in egg roll & fried served with dipping sauce.",
+      "id": "house-or-caesar-salad",
+      "categoryId": "soup-salads",
+      "nameEs": "Ensalada de la casa o César",
+      "nameEn": "House Or Caesar Salad",
+      "descriptionEs": "Verduras de hoja con zanahorias, tomates y pepinos. O César: lechuga romana, crutones de hierbas y queso parmesano.",
+      "descriptionEn": "Field greens topped with carrots, tomatoes & cucumbers. Or Ceasar - Romaine lettuce, herb croutons & parmesan cheese",
       "price": "$12.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Frito",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Soy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-05",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos",
-      "nameEn": "Fried Calamari",
-      "descriptionEs": "Fritos con chiles cherry, servidos con salsa marinara picante y fresca.",
-      "descriptionEn": "Deep fried with cherry peppers served with fresh spicy marinara sauce.",
+      "id": "create-your-own-salad",
+      "categoryId": "soup-salads",
+      "nameEs": "Crea tu propia ensalada",
+      "nameEn": "Create Your Own Salad",
+      "descriptionEs": "LECHUGA: (Elige 1) Mix de hojas baby O Lechuga romana QUESO: (Elige 1) Americano - Cheddar - Gorgonzola - Suizo VERDURAS: (Elige 4) Zanahorias - Cebollas - Pimientos - Brócoli - Pepinos - Tomates - Champiñones OTROS: (Elige 1) Aguacate - Tocino - Crutones - Arándanos rojos - Huevo $1 cada ingrediente adicional",
+      "descriptionEn": "LETTUCE: (Pick 1) Baby Field Green OR Romaine Lettuce CHEESE: (Pick 1) American - Cheddar - Gorgonzola - Swiss VEGGIES: (Pick 4) Carrots - Onions - Peppers - Broccoli - Cucumbers - Tomatoes - Mushrooms OTHERS: (Pick 1) Avocado - Bacon - Croutons - Cranberries - Egg $1 each additional item",
       "price": "$14.00",
-      "popular": false,
-      "badge": "Crujiente",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-06",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones al Vapor",
-      "nameEn": "Steamed Mussels",
-      "descriptionEs": "Mejillones locales al vapor en su elección de vino blanco con ajo o salsa picante Fra Diavlo.",
-      "descriptionEn": "Steamed local mussels in a choice of white wine garlic or a Spicy Fra Diavlo sauce.",
-      "price": "$15.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Alcohol"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "brennans-by-the-beach-07",
-      "categoryId": "specialties",
-      "nameEs": "Alitas de Pollo Brennan's (8 pzas)",
-      "nameEn": "Wings (8 pcs)",
-      "descriptionEs": "8 alitas fritas a la perfección, servidas solas, búfalo, BBQ o salsa Thai Chili.",
-      "descriptionEn": "8 wings, fried to perfection, served plain, buffalo, BBQ or Thai Chili sauce.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Top Sales",
-      "tags": [
-        "Pollo",
-        "Picante"
-      ],
-      "allergens": [
-        "Soy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "brennans-by-the-beach-08",
-      "categoryId": "mains",
-      "nameEs": "Ensalada Cobb con Pollo a la Parrilla",
+      "id": "cobb-chicken-salad",
+      "categoryId": "soup-salads",
+      "nameEs": "Ensalada Cobb de pollo",
       "nameEn": "Cobb Chicken Salad",
-      "descriptionEs": "Pollo a la parrilla, lechuga romana, tomates, tocino, huevo, cebolla, aguacate, queso gorgonzola y vinagreta de hierbas del chef.",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, tomates, tocino, huevo, cebolla, aguacate, gorgonzola y vinagreta de hierbas del chef.",
       "descriptionEn": "Grilled Chicken, romaine, tomatoes, bacon, egg, onion, avocado, gorgonzola & chef's herb vinaigrette.",
       "price": "$20.00",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Ensalada",
-        "Pollo"
-      ],
-      "allergens": [
-        "Eggs",
-        "Dairy",
-        "Pork"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-09",
-      "categoryId": "mains",
-      "nameEs": "Wrap de Pollo al Carbón César",
+      "id": "grilled-salmon-cobb",
+      "categoryId": "soup-salads",
+      "nameEs": "Cobb de salmón a la parrilla",
+      "nameEn": "Grilled Salmon Cobb",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-house-or-caesar-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Pollo (ensalada de la casa o César)",
+      "nameEn": "Chicken (House Or Caesar Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-house-or-caesar-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Camarón (ensalada de la casa o César)",
+      "nameEn": "Shrimp (House Or Caesar Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-house-or-caesar-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Salmón (ensalada de la casa o César)",
+      "nameEn": "Salmon (House Or Caesar Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-create-your-own-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Pollo (Crea tu propia ensalada)",
+      "nameEn": "Chicken (Create Your Own Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-create-your-own-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Camarón (Crea tu propia ensalada)",
+      "nameEn": "Shrimp (Create Your Own Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-create-your-own-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Salmón (Crea tu propia ensalada)",
+      "nameEn": "Salmon (Create Your Own Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cobb-chicken-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Pollo (ensalada Cobb de pollo)",
+      "nameEn": "Chicken (Cobb Chicken Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cobb-chicken-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Camarón (ensalada Cobb de pollo)",
+      "nameEn": "Shrimp (Cobb Chicken Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-cobb-chicken-salad",
+      "categoryId": "salad-add-ons",
+      "nameEs": "Salmón (ensalada Cobb de pollo)",
+      "nameEn": "Salmon (Cobb Chicken Salad)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bang-bang-shrimp",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones bang bang",
+      "nameEn": "Bang Bang Shrimp",
+      "descriptionEs": "Camarones ligeramente fritos bañados con alioli rosa",
+      "descriptionEn": "Lightly fried shrimp drizzled with a pink aioli",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crabby-bites",
+      "categoryId": "appetizers",
+      "nameEs": "Crabby Bites",
+      "nameEn": "Crabby Bites",
+      "descriptionEs": "Mini bocados de cangrejo fritos, servidos con salsa tártara y gajos de limón.",
+      "descriptionEn": "Mini crab bites deep-fried, served with tartar sauce and lemon wedges.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheese-egg-rolls",
+      "categoryId": "appetizers",
+      "nameEs": "Philly Cheese Egg Rolls",
+      "nameEn": "Philly Cheese Egg Rolls",
+      "descriptionEs": "Un Philly cheese steak envuelto en egg roll y frito, servido con salsa para mojar.",
+      "descriptionEn": "A Philly cheese steak wrapped in egg roll & fried served with dipping sauce",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Frito con pimientos cherry, servido con salsa marinara picante fresca.",
+      "descriptionEn": "Deep fried with cherry peppers served with fresh spicy marinara sauce.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-cheese-quesadilla",
+      "categoryId": "appetizers",
+      "nameEs": "Quesadilla de queso de cabra",
+      "nameEn": "Goat Cheese Quesadilla",
+      "descriptionEs": "Tortilla crujiente de trigo integral con queso de cabra derretido y espinaca, servida con salsa y crema agria. Agrega pollo $8",
+      "descriptionEn": "Crisp whole wheat tortilla with melted goat cheese and spinach, served with salsa and sour cream. Add chicken $8",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "Siete palitos crujientes con salsa marinara.",
+      "descriptionEn": "Seven crispy sticks with marinara sauce.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mussels",
+      "categoryId": "appetizers",
+      "nameEs": "Mejillones",
+      "nameEn": "Mussels",
+      "descriptionEs": "Mejillones locales al vapor en salsa a elegir: vino blanco con ajo o Fra Diavolo picante",
+      "descriptionEn": "Steamed local mussels in a choice of white wine garlic or a Spicy FraDiavlo sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos-w-chili",
+      "categoryId": "appetizers",
+      "nameEs": "Nachos con chili",
+      "nameEn": "Nachos w/Chili",
+      "descriptionEs": "Queso cheddar jack derretido, jalapeños y aceitunas.",
+      "descriptionEn": "Melted cheddar jack cheese, jalapeños & olives.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pretzel-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de pretzel",
+      "nameEn": "Pretzel Sticks",
+      "descriptionEs": "Palitos de pretzel horneados con sal kosher, servidos con salsa de queso de la casa.",
+      "descriptionEn": "Baked pretzel sticks with kosher salt & served with a house made cheese sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
+      "descriptionEs": "8 alitas, fritas a la perfección, servidas naturales, búfalo, BBQ o salsa tailandesa de chile.",
+      "descriptionEn": "8 wings, fried to perfection, served plain, buffalo, BBQ or Thai Chili sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-littlenecks-seasonal",
+      "categoryId": "appetizers",
+      "nameEs": "Almejas littleneck al vapor (de temporada)",
+      "nameEn": "Steamed Littlenecks (seasonal)",
+      "descriptionEs": "Almejas littleneck de pesca local al vapor en un caldo especial y mantequilla derretida, servidas con pan fresco.",
+      "descriptionEn": "Locally caught littlenecks clams steamed in a special broth and drawn butter served with fresh bread",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-blue-cheese",
+      "categoryId": "wing-add-ons",
+      "nameEs": "Extra de queso azul",
+      "nameEn": "Extra Blue Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ranch-extra-sauce",
+      "categoryId": "wing-add-ons",
+      "nameEs": "Salsa ranch extra",
+      "nameEn": "Ranch Extra Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-chicken-caesar-wrap",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Wrap César de pollo al cajún",
       "nameEn": "Blackened Chicken Caesar Wrap",
-      "descriptionEs": "Pechuga de pollo ennegrecida, lechuga crujiente y aderezo César en una tortilla integral.",
+      "descriptionEs": "Pechuga de pollo al cajún, lechuga crujiente y aderezo César en un wrap de trigo integral.",
       "descriptionEn": "Blackened Chicken breast, crisp lettuce and caesar dressing in a whole wheat wrap.",
       "price": "$15.50",
-      "popular": false,
-      "badge": "Wrap",
-      "tags": [
-        "Pollo",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Fish"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-10",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Bistec Brennan's",
+      "id": "brennan-s-steak-sandwich",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sándwich de bistec Brennan's",
       "nameEn": "Brennan's Steak Sandwich",
-      "descriptionEs": "Trozos tiernos de bistec a la parrilla con champiñones salteados, cebollas, pimientos y queso suizo en pan tostado tipo wedge.",
+      "descriptionEs": "Trozos tiernos de bistec a la parrilla, con champiñones, cebollas y pimientos salteados, y queso suizo, en un pan wedge tostado.",
       "descriptionEn": "Tender pieces of grilled steak, with sautéed mushrooms, onions, peppers and swiss cheese on toasted wedge.",
       "price": "$19.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-11",
-      "categoryId": "mains",
-      "nameEs": "Sándwich Cubano",
+      "id": "buffalo-chicken-wrap",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Wrap de pollo búfalo",
+      "nameEn": "Buffalo Chicken Wrap",
+      "descriptionEs": "Pollo crujiente con ranch y queso cheddar jack derretido en un wrap de trigo integral.",
+      "descriptionEn": "Crispy chicken with ranch & melted cheddar jack cheese in a whole wheat wrap.",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cuban-sandwich",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Sándwich cubano",
       "nameEn": "Cuban Sandwich",
-      "descriptionEs": "Cerdo asado, jamón, queso, pepinillos y mostaza en pan prensado artesanal.",
-      "descriptionEn": "Pork, ham, cheese, pickles & mustard on pressed bread.",
+      "descriptionEs": "Cerdo, jamón, queso, pepinillos y mostaza en pan prensado.",
+      "descriptionEn": "Pork, ham, cheese, pickles & mustard on pressed bread",
       "price": "$16.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Cerdo",
-        "Sándwich"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Pork"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "brennans-by-the-beach-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera helada",
-      "nameEn": "House Fresh Iced Lemonade",
-      "descriptionEs": "Refrescante limonada recién exprimida con un toque de menta.",
-      "descriptionEn": "Refreshing freshly squeezed lemonade with a hint of mint.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "french-dip-w-au-jus",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "French dip con au jus",
+      "nameEn": "French Dip w/Au jus",
+      "descriptionEs": "Carne de res en rebanadas finas con cebollas salteadas, queso suizo y alioli de ajo en un pan wedge.",
+      "descriptionEn": "Thinly sliced beef with sautéed onions, swiss cheese & drizzled with garlic aioli on a wedge.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheese-steak-wedge",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Wedge de Philly Cheese Steak",
+      "nameEn": "Philly Cheese Steak Wedge",
+      "descriptionEs": "Bistec en rebanadas finas con cebollas salteadas y queso americano derretido.",
+      "descriptionEn": "Thinly sliced steak with sautéed onions & melted american cheese",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nickel-sandwich",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Nickel Sandwich",
+      "nameEn": "Nickel Sandwich",
+      "descriptionEs": "Pavo asado fresco cubierto con queso suizo derretido y ensalada de col sobre pan pumpernickel marmoleado a la parrilla.",
+      "descriptionEn": "Fresh roasted turkey topped with melted swiss cheese, coleslaw on grilled pumpernickel swirl bread.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shippan-burger-american-cheese",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa Shippan (queso americano)",
+      "nameEn": "Shippan Burger (American Cheese)",
+      "descriptionEs": "Hamburguesa de 8 oz, nunca congelada, con lechuga y tomate.",
+      "descriptionEn": "8oz burger, never frozen, with lettuce & tomato.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-blue-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa Black & Blue",
+      "nameEn": "Black & Blue Burger",
+      "descriptionEs": "Hamburguesa de 8 oz cubierta con queso azul, bocaditos de tocino en pan pretzel.",
+      "descriptionEn": "8oz burger topped with blue cheese, bacon bites on a pretzel roll",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa California",
+      "nameEn": "California Burger",
+      "descriptionEs": "Hamburguesa fresca con aguacate, queso cheddar jack, cebolla cruda y alioli de aguacate en pan pretzel.",
+      "descriptionEn": "Fresh burger with avocado, cheddar jack cheese, raw onion & avocado aioli on a pretzel roll.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-sliders",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Mini hamburguesas con queso (sliders)",
+      "nameEn": "Cheeseburger Sliders",
+      "descriptionEs": "Cuatro mini sliders con queso americano.",
+      "descriptionEn": "Four mini sliders with american cheese.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-burger",
+      "categoryId": "burgers-sandwiches",
+      "nameEs": "Hamburguesa de salmón",
+      "nameEn": "Salmon Burger",
+      "descriptionEs": "Carne de la casa servida con salsa tártara, lechuga y tomate en pan de papa.",
+      "descriptionEn": "House made patty served with tartar sauce, lettuce & tomato on a potato roll.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herb-marinated-chicken-breast",
+      "categoryId": "entrees",
+      "nameEs": "Pechuga de pollo marinada con hierbas",
+      "nameEn": "Herb Marinated Chicken Breast",
+      "descriptionEs": "servida sobre cama de espinaca salteada con arroz de limón y perejil",
+      "descriptionEn": "served over bed of sautéed spinach with lemon parsley rice",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexicali-chicken-rice",
+      "categoryId": "entrees",
+      "nameEs": "Mexicali Chicken & Rice",
+      "nameEn": "Mexicali Chicken & Rice",
+      "descriptionEs": "Pollo deshebrado mezclado con frijoles negros, elote, salsa de tomate asado fresco con cilantro, aguacate y jugo de limón.",
+      "descriptionEn": "Pulled chicken tossed with black beans, corn, fresh roasted tomato sauce with cilantro, avocado & lime juice.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón al limón",
+      "nameEn": "Lemon Salmon",
+      "descriptionEs": "Filete de salmón fresco sellado, servido con salsa de vino blanco y limón, puré de papas y verduras de temporada.",
+      "descriptionEn": "Fresh seared salmon filet served with a a white wine lemon sauce, mashed potatoes and seasonal vegetables.",
+      "price": "$30.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú o adaptadas para alergias.",
-      "aEn": "Yes, please ask our staff for items marked on the menu or customizable for allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos y cenas.",
-      "aEn": "We welcome walk-ins and phone reservations for parties and dining."
-    }
-  ]
+  "faqs": []
 }

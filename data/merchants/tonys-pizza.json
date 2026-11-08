@@ -2,25 +2,18 @@
   "storeInfo": {
     "id": "tonys-pizza",
     "name": "Tony's Pizza",
-    "tagline": "Fresh Oven Pizzas, Wings & Homestyle Italian-Greek Favorites | Pizzas al Horno, Alitas y Especialidades Griega-Italianas",
-    "address": "66 Main St, Windham, CT 06280",
+    "tagline": "Restaurant in Willimantic | Restaurant en Willimantic",
+    "address": "117 Main Street Willimantic, CT 06226",
     "phone": "(860) 423-7717",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:00 AM - 10:00 PM",
-      "sunday": "11:00 AM - 10:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
-      "Bilingual Menu"
+      "Bilingual Menu",
+      "Online Ordering"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -32,327 +25,870 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
-      "nameEs": "Entradas y Para Compartir",
-      "nameEn": "Appetizers & Starters",
+      "nameEs": "Entradas",
+      "nameEn": "Appetizers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
       "id": "pizzas",
-      "nameEs": "Pizzas al Horno",
-      "nameEn": "Fresh Oven Pizzas",
+      "nameEs": "Pizzas",
+      "nameEn": "Pizzas",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Pastas y Platos Principales",
-      "nameEn": "Pasta & Main Entrees",
+      "id": "signature-pizzas",
+      "nameEs": "Pizzas de la casa",
+      "nameEn": "Signature Pizzas",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades Griegas y de la Casa",
-      "nameEn": "House & Greek Specialties",
+      "id": "grinders",
+      "nameEs": "Grinders",
+      "nameEn": "Grinders",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
+      "icon": "Utensils"
+    },
+    {
+      "id": "meals",
+      "nameEs": "Comidas",
+      "nameEn": "Meals",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tonys-pizza-01",
+      "id": "garlic-bread",
       "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Crispy Buffalo",
-      "nameEn": "Crispy Buffalo Wings",
-      "descriptionEs": "Alitas de pollo crujientes bañadas en nuestra salsa Buffalo picante artesanal, servidas con apio fresco y aderezo de queso azul.",
-      "descriptionEn": "Crispy fried chicken wings tossed in our signature spicy Buffalo sauce, served with fresh celery and blue cheese dressing.",
-      "price": "$13.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00 / $5.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-02",
+      "id": "cheesy-garlic-bread",
       "categoryId": "appetizers",
-      "nameEs": "Bastonecitos de Queso Mozzarella",
-      "nameEn": "Mozzarella Cheese Sticks",
-      "descriptionEs": "Mozzarella empanizada dorada y crujiente, servida con salsa marinara tibia hecha en casa.",
-      "descriptionEn": "Golden-crisp breaded mozzarella sticks served with warm homemade marinara sauce.",
+      "nameEs": "Pan de ajo con queso",
+      "nameEn": "Cheesy Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00 / $6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-or-buffalo-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas naturales o búfalo",
+      "nameEn": "Plain or Buffalo Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-garlic-or-bbq-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas picantes, de ajo o BBQ",
+      "nameEn": "Hot, Garlic or BBQ Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "appetizers",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mozzarella",
+      "categoryId": "appetizers",
+      "nameEs": "Mozzarella frita",
+      "nameEn": "Fried Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapeno-poppers",
+      "categoryId": "appetizers",
+      "nameEs": "Jalapeños poppers",
+      "nameEn": "Jalapeño Poppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-skins",
+      "categoryId": "appetizers",
+      "nameEs": "Cáscaras de papa",
+      "nameEn": "Potato Skins",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers",
+      "categoryId": "appetizers",
+      "nameEs": "Dedos de pollo",
+      "nameEn": "Chicken Fingers",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$9.95",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-03",
+      "id": "fried-pickles",
       "categoryId": "appetizers",
-      "nameEs": "Pan de Ajo al Horno con Queso",
-      "nameEn": "Cheesy Baked Garlic Bread",
-      "descriptionEs": "Pan de la casa horneado con mantequilla de ajo, hierbas italianas y abundante queso mozzarella fundido.",
-      "descriptionEn": "Fresh house bread baked with garlic butter, Italian herbs, and melted mozzarella cheese.",
+      "nameEs": "Pepinillos fritos",
+      "nameEn": "Fried Pickles",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas con queso",
+      "nameEn": "Cheese Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries-with-bacon",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas con queso y tocino",
+      "nameEn": "Cheese Fries with Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curly-fries",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas rizadas",
+      "nameEn": "Curly Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$7.50",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Clásico",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-04",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Clásica de Queso",
-      "nameEn": "Classic Cheese Pizza",
-      "descriptionEs": "Nuestra famosa masa estilo griego-italiano horneada al punto con salsa de tomate especial y queso mozzarella fundido.",
-      "descriptionEn": "Our famous house-made crust topped with signature pizza sauce and bubbly melted mozzarella.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Tradicional",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "curly-fries-with-cheese",
+      "categoryId": "appetizers",
+      "nameEs": "Papas rizadas con queso",
+      "nameEn": "Curly Fries with Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-05",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Especial Tony's",
-      "nameEn": "Tony's House Special Pizza",
-      "descriptionEs": "Cargada con pepperoni, salchicha italiana, albóndigas, pimientos verdes, cebollas, champiñones y mozzarella.",
-      "descriptionEn": "Loaded with pepperoni, Italian sausage, meatballs, green peppers, onions, mushrooms, and mozzarella cheese.",
-      "price": "$21.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Casero",
-        "Recomendado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "curly-fries-with-cheese-and-bacon",
+      "categoryId": "appetizers",
+      "nameEs": "Papas rizadas con queso y tocino",
+      "nameEn": "Curly Fries with Cheese and Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.99",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-06",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Isla Griega",
-      "nameEn": "Greek Island Pizza",
-      "descriptionEs": "Salsa blanca con ajo, espinacas frescas, tomates picados, aceitunas Kalamata, queso feta y mozzarella.",
-      "descriptionEn": "White garlic sauce, fresh spinach, diced tomatoes, Kalamata olives, crumbled feta cheese, and mozzarella.",
-      "price": "$19.95",
-      "popular": false,
-      "badge": "Receta Tradicional",
-      "tags": [
-        "Griego",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "spaghetti-or-shells",
+      "categoryId": "pasta",
+      "nameEs": "Espagueti o conchas",
+      "nameEn": "Spaghetti or Shells",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.75",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-07",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Amantes de la Carne",
-      "nameEn": "Meat Lovers Pizza",
-      "descriptionEs": "Abundante combinación de pepperoni, salchicha italiana, tocino crujiente y albóndigas de la casa.",
-      "descriptionEn": "Hearty combination of pepperoni, Italian sausage, crispy bacon, and savory house meatballs.",
-      "price": "$20.95",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Carnes"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "marinara-sauce",
+      "categoryId": "pasta",
+      "nameEs": "Salsa marinara",
+      "nameEn": "Marinara Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.75",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-08",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza de Pollo Buffalo",
-      "nameEn": "Buffalo Chicken Pizza",
-      "descriptionEs": "Pechuga de pollo empanizada en salsa picante Buffalo sobre capa de queso mozzarella y aderezo ranch.",
-      "descriptionEn": "Crispy chicken tossed in Buffalo sauce topped with mozzarella cheese and a drizzle of creamy ranch.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "meatsauce",
+      "categoryId": "pasta",
+      "nameEs": "Salsa de carne",
+      "nameEn": "Meatsauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.75",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-09",
-      "categoryId": "mains",
-      "nameEs": "Lasaña Casera de la Casa",
-      "nameEn": "Homestyle Meat Lasagna",
-      "descriptionEs": "Capas artesanales de pasta, carne molida sazonada, queso ricotta, marinara casera y mozzarella horneada al gratin.",
-      "descriptionEn": "Layered pasta with seasoned ground beef, ricotta cheese, homemade marinara sauce, and melted mozzarella.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Plato de la Casa",
-      "tags": [
-        "Casero",
-        "Plato Forte"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "meatballs-or-sausage",
+      "categoryId": "pasta",
+      "nameEs": "Albóndigas o salchicha",
+      "nameEn": "Meatballs or Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.25",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-10",
-      "categoryId": "mains",
-      "nameEs": "Pollo a la Parmigiana con Ziti",
-      "nameEn": "Chicken Parmigiana with Ziti",
-      "descriptionEs": "Pechuga de pollo empanizada a mano, cubierta de salsa marinara y mozzarella fundida sobre pasta ziti.",
-      "descriptionEn": "Hand-breaded chicken breast topped with marinara sauce and melted mozzarella cheese over ziti pasta.",
+      "id": "mushrooms",
+      "categoryId": "pasta",
+      "nameEs": "Champiñones",
+      "nameEn": "Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-or-chicken-patty-parm",
+      "categoryId": "pasta",
+      "nameEs": "Parmesana de berenjena o de pollo empanizado",
+      "nameEn": "Eggplant or Chicken Patty Parm",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-d-angelo",
+      "categoryId": "pasta",
+      "nameEs": "Chicken D'Angelo",
+      "nameEn": "Chicken D'Angelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$17.95",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Clásico Italiano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-11",
-      "categoryId": "specialties",
-      "nameEs": "Plato Gyro Griego Tradicional",
-      "nameEn": "Traditional Greek Gyro Platter",
-      "descriptionEs": "Tiras de carne Gyro sazonada servidas en pan pita caliente con cebolla, tomate, salsa tzatziki artesanal y papas fritas.",
-      "descriptionEn": "Seasoned gyro meat served wrapped in warm pita bread with onions, tomatoes, house tzatziki sauce, and French fries.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Especialidad Griega",
-      "tags": [
-        "Auténtico",
-        "Griego"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "tonys-pizza-12",
-      "categoryId": "specialties",
-      "nameEs": "Ensalada Griega con Pollo a la Parrilla",
-      "nameEn": "Greek Salad with Grilled Chicken",
-      "descriptionEs": "Lechuga fresca, tomates, pepinos, cebolla morada, aceitunas Kalamata, pimientos peperoncini y queso feta con pechuga de pollo a la parrilla.",
-      "descriptionEn": "Crisp greens, tomatoes, cucumbers, red onion, Kalamata olives, pepperoncini, and feta cheese topped with juicy grilled chicken breast.",
+      "id": "homestyle-lasagna",
+      "categoryId": "pasta",
+      "nameEs": "Lasaña casera",
+      "nameEn": "Homestyle Lasagna",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$14.95",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Saludable",
-        "Fresco"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-13",
-      "categoryId": "beverages",
-      "nameEs": "Refrescos de Fuente",
-      "nameEn": "Fountain Drinks",
-      "descriptionEs": "Elección de Coca-Cola, Diet Coke, Sprite, Ginger Ale o Root Beer.",
-      "descriptionEn": "Choice of Coca-Cola, Diet Coke, Sprite, Ginger Ale, or Root Beer.",
-      "price": "$2.95",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Refrescante"
-      ],
-      "allergens": [],
+      "id": "cheese-tortellini",
+      "categoryId": "pasta",
+      "nameEs": "Tortellini de queso",
+      "nameEn": "Cheese Tortellini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.75",
       "ctaType": "in_store"
     },
     {
-      "id": "tonys-pizza-14",
-      "categoryId": "beverages",
-      "nameEs": "Té Helado Fresco",
-      "nameEn": "Freshly Brewed Iced Tea",
-      "descriptionEs": "Té negro recién preparado servido con hielo y rodaja de limón.",
-      "descriptionEn": "Freshly brewed black iced tea served chilled with lemon.",
-      "price": "$3.25",
-      "popular": false,
-      "badge": null,
-      "tags": [
-        "Sin Azúcar"
-      ],
-      "allergens": [],
+      "id": "stuffed-shells",
+      "categoryId": "pasta",
+      "nameEs": "Conchas rellenas",
+      "nameEn": "Stuffed Shells",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "manicotti",
+      "categoryId": "pasta",
+      "nameEs": "Manicotti",
+      "nameEn": "Manicotti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de queso",
+      "nameEn": "Cheese Ravioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "Lechuga iceberg con pepino, tomate, cebolla y pimiento verde. Con el aderezo de tu elección.",
+      "descriptionEn": "Iceberg lettuce topped with cucumbers, tomatoes, onions and green peppers. With your choice of dressing",
+      "price": "$7.75 / $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana con queso parmesano y crutones. Con el aderezo de tu elección.",
+      "descriptionEn": "Romaine lettuce topped with parmesan cheese and croutons. With your choice of dressing",
+      "price": "$7.75 / $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César con pollo",
+      "nameEn": "Chicken Caesar Salad",
+      "descriptionEs": "Lechuga romana con pollo a la parrilla, queso parmesano y crutones. Con el aderezo de tu elección.",
+      "descriptionEn": "Romaine lettuce topped with grilled chicken, parmesan cheese and croutons. With your choice of dressing",
+      "price": "$9.50 / $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef Salad",
+      "descriptionEs": "Lechuga iceberg con pepino, tomate, salami, jamón y queso provolone. Con el aderezo de tu elección.",
+      "descriptionEn": "Iceberg lettuce topped with cucumbers, tomatoes, salami, ham and provolone cheese. With your choice of dressing",
+      "price": "$8.50 / $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga iceberg con pepino, tomate, feta y aceitunas kalamata. Con el aderezo de tu elección.",
+      "descriptionEn": "Iceberg lettuce topped with cucumbers, tomatoes, feta and kalamata olives. With your choice of dressing",
+      "price": "$8.50 / $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada antipasto",
+      "nameEn": "Antipasto Salad",
+      "descriptionEs": "Lechuga iceberg con pepino, tomate, salami genovés, pavo, mozzarella y pepperoni. Con el aderezo de tu elección.",
+      "descriptionEn": "Iceberg lettuce topped with cucumbers, tomatoes, genoa salami, turkey, mozzarella and pepperoni. With your choice of dressing",
+      "price": "$8.50 / $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pollo",
+      "nameEn": "Chicken Salad",
+      "descriptionEs": "Lechuga iceberg con pollo a la parrilla o crujiente, pepino, tomate, cebolla y pimiento verde. Con el aderezo de tu elección.",
+      "descriptionEn": "Iceberg lettuce topped with grilled or crispy chicken, cucumbers, tomatoes, onions and green peppers. With your choice of dressing",
+      "price": "$9.50 / $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dressings",
+      "categoryId": "salads",
+      "nameEs": "Aderezos",
+      "nameEn": "Dressings",
+      "descriptionEs": "Francés, italiano, queso azul, parmesano con pimienta, César y nuestro aderezo de la casa. Nuestro aderezo de la casa se elabora con base de vino.",
+      "descriptionEn": "French, Italian, Bleu Cheese, Parmesan Peppercorn, Caesar and our homemade House. Our House dressing is made with a wine base.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-own",
+      "categoryId": "pizzas",
+      "nameEs": "Crea tu propia pizza",
+      "nameEn": "Create Your Own",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small - 13.50 Large - 22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toppings",
+      "categoryId": "pizzas",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
+      "descriptionEs": "Mozzarella, pepperoni, cebollas, pimientos, anchoas, champiñones, hamburguesa, salchicha, salami, brócoli, albóndiga de grinder y berenjena",
+      "descriptionEn": "Mozzarella, Pepperoni, Onions, Peppers, Anchovies, Mushrooms, Hamburger, Sausage, Salami, Broccoli, Grinder Meatball, and Eggplant",
+      "price": "1 extra for Small / 2 extra for Large",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "premium-toppings",
+      "categoryId": "pizzas",
+      "nameEs": "Ingredientes premium",
+      "nameEn": "Premium Toppings",
+      "descriptionEs": "Tomate, jamón, tocino, aceitunas, jalapeños, feta y piña",
+      "descriptionEn": "Tomato, Ham, Bacon, Olives, Jalapeños, Feta and Pineapple",
+      "price": "2 extra for Small / 4 extra for Large",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hawaiian",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Hawaiana",
+      "nameEn": "Hawaiian",
+      "descriptionEs": "Jamón y piña",
+      "descriptionEn": "Ham and Pineapple",
+      "price": "$14.85 / $25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taco",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Taco",
+      "nameEn": "Taco",
+      "descriptionEs": "Carne de taco, salsa, totopos, cebollas, aceitunas, lechuga, tomates y jalapeños",
+      "descriptionEn": "Taco meat, Salsa, Tortilla Chips, Onions, Olives, Lettuce, Tomatoes, and Jalapeños",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grecian-delight",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Grecian Delight",
+      "nameEn": "Grecian Delight",
+      "descriptionEs": "Feta, aceitunas, cebollas y tomates sobre base blanca",
+      "descriptionEn": "Feta, Olives, Onions, and Tomatoes on a White Base",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moussaka",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Moussaka",
+      "nameEn": "Moussaka",
+      "descriptionEs": "Berenjena, aceitunas, cebollas, ajo y salsa de carne",
+      "descriptionEn": "Eggplant, Olives, Onions, Garlic and Meat Sauce",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "special",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Especial",
+      "nameEn": "Special",
+      "descriptionEs": "Carne de hamburguesa, salchicha, champiñones, pepperoni, cebollas y pimientos verdes",
+      "descriptionEn": "Hamburg, Sausage, Mushrooms, Pepperoni, Onions, and Green Peppers",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-special",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Especial vegetariana",
+      "nameEn": "Vegetarian Special",
+      "descriptionEs": "Champiñones, aceitunas, pimientos asados, tomates, cebollas y pimientos verdes",
+      "descriptionEn": "Mushrooms, Olives, Roasted Peppers, Tomatoes, Onions and Green Peppers",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatlovers",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Meatlovers",
+      "nameEn": "Meatlovers",
+      "descriptionEs": "Albóndiga de grinder, tocino, pepperoni, salchicha y carne de hamburguesa",
+      "descriptionEn": "Grinder Meatball, Bacon, Pepperoni, Sausage, and Hamburg",
+      "price": "$15.95 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clam",
+      "categoryId": "signature-pizzas",
+      "nameEs": "Almeja",
+      "nameEn": "Clam",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.85 / $26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salami",
+      "categoryId": "grinders",
+      "nameEs": "Salami",
+      "nameEn": "Salami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatless",
+      "categoryId": "grinders",
+      "nameEs": "Sin carne",
+      "nameEn": "Meatless",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.25 / $12.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball",
+      "categoryId": "grinders",
+      "nameEs": "Albóndiga",
+      "nameEn": "Meatball",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant",
+      "categoryId": "grinders",
+      "nameEs": "Berenjena",
+      "nameEn": "Eggplant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham",
+      "categoryId": "grinders",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "grinders",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-and-egg",
+      "categoryId": "grinders",
+      "nameEs": "Jamón y huevo",
+      "nameEn": "Ham and Egg",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepper-and-egg",
+      "categoryId": "grinders",
+      "nameEs": "Pimiento con huevo",
+      "nameEn": "Pepper and Egg",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "capicola",
+      "categoryId": "grinders",
+      "nameEs": "Capicola",
+      "nameEn": "Capicola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.25 / $13.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-patty",
+      "categoryId": "grinders",
+      "nameEs": "Pollo empanizado",
+      "nameEn": "Chicken Patty",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.65 / $13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm",
+      "categoryId": "grinders",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parm",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.65 / $13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "genoa-salami",
+      "categoryId": "grinders",
+      "nameEs": "Salami genovés",
+      "nameEn": "Genoa Salami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian",
+      "categoryId": "grinders",
+      "nameEs": "Italiano",
+      "nameEn": "Italian",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.55 / $12.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepperoni",
+      "categoryId": "grinders",
+      "nameEs": "Pepperoni",
+      "nameEn": "Pepperoni",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tunafish",
+      "categoryId": "grinders",
+      "nameEs": "Atún",
+      "nameEn": "Tunafish",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey",
+      "categoryId": "grinders",
+      "nameEs": "Pavo",
+      "nameEn": "Turkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.45 / $12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "grinders",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.65 / $13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "grinders",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.65 / $13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pastami",
+      "categoryId": "grinders",
+      "nameEs": "Pastrami",
+      "nameEn": "Pastami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.25 / $13.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-special",
+      "categoryId": "grinders",
+      "nameEs": "Especial de la casa",
+      "nameEn": "House Special",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.25 / $13.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-d-angelo-grinders",
+      "categoryId": "grinders",
+      "nameEs": "Chicken D'Angelo (Grinders)",
+      "nameEn": "Chicken D'Angelo (Grinders)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95 / $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak",
+      "categoryId": "grinders",
+      "nameEs": "Bistec",
+      "nameEn": "Steak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95 / $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ricotta-and-mozzarella",
+      "categoryId": "calzones",
+      "nameEs": "Ricotta y mozzarella",
+      "nameEn": "Ricotta and Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "meals",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-meals",
+      "categoryId": "meals",
+      "nameEs": "Cheeseburger (comidas)",
+      "nameEn": "Cheeseburger (Meals)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger-platter",
+      "categoryId": "meals",
+      "nameEs": "Plato de hamburguesa",
+      "nameEn": "Hamburger Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-platter",
+      "categoryId": "meals",
+      "nameEs": "Plato de hamburguesa con queso",
+      "nameEn": "Cheeseburger Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-nuggets",
+      "categoryId": "meals",
+      "nameEs": "Nuggets de pollo",
+      "nameEn": "Chicken Nuggets",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-with-fries",
+      "categoryId": "meals",
+      "nameEs": "Tiras de pollo con papas fritas",
+      "nameEn": "Chicken Tenders with Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-basket",
+      "categoryId": "meals",
+      "nameEs": "Canasta de camarones",
+      "nameEn": "Shrimp Basket",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clam-strip-dinner",
+      "categoryId": "meals",
+      "nameEs": "Cena de tiras de almeja",
+      "nameEn": "Clam Strip Dinner",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "meals",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro",
+      "categoryId": "meals",
+      "nameEs": "Gyro",
+      "nameEn": "Gyro",
+      "descriptionEs": "Pollo y carne",
+      "descriptionEn": "Chicken and Meat",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro-platter",
+      "categoryId": "meals",
+      "nameEs": "Plato de gyro",
+      "nameEn": "Gyro Platter",
+      "descriptionEs": "Pollo o carne",
+      "descriptionEn": "Chicken or Meat",
+      "price": "$13.95",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas o adaptación de ingredientes?",
-      "qEn": "Do you offer vegetarian options or topping customizations?",
-      "aEs": "Sí, contamos con opciones vegetarianas como nuestra Pizza Isla Griega, ensaladas y pastas. Puede personalizar las coberturas a su gusto.",
-      "aEn": "Yes, we offer vegetarian options including our Greek Island Pizza, salads, and pasta dishes. You can also customize pizza toppings to your preference."
-    },
-    {
-      "qEs": "¿Hacen envíos a domicilio en Windham y alrededores?",
-      "qEn": "Do you deliver in Windham and surrounding areas?",
-      "aEs": "Sí, ofrecemos servicio de entrega a domicilio local así como pedidos para llevar por teléfono o en línea.",
-      "aEn": "Yes, we offer local delivery service as well as takeout orders via phone or online."
-    },
-    {
-      "qEs": "¿Cuáles son los horarios de atención?",
-      "qEn": "What are your operating hours?",
-      "aEs": "Estamos abiertos los 7 días de la semana de 11:00 AM a 10:00 PM.",
-      "aEn": "We are open 7 days a week from 11:00 AM to 10:00 PM."
-    }
-  ]
+  "faqs": []
 }
