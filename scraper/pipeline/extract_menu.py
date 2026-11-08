@@ -216,18 +216,25 @@ def verify(sections, texts):
                 continue
             name, desc, price = (str(x or "").strip() for x in it[:3])
             pub, pos = locate(name)
+            suf = ""
+            if pub is None:  # "Pad Thai (Lunch)": the model tags a repeated dish with its menu name
+                m = re.match(r"^(.*\S)\s*\(([^()]{2,40})\)$", name)
+                if m:
+                    pub, pos = locate(m.group(1))
+                    if pub is not None:
+                        suf = m.group(2)
             if pub is not None:
                 q = norm(pub)
                 k2 = N.find(q, cur)
                 if k2 >= 0:
                     pos = k2
                 cur = pos + len(q)
-            resolved.append((s0.get("name") or "Menu", name, pub, pos, desc, price))
+            resolved.append((s0.get("name") or "Menu", name, pub, pos, desc, price, suf))
     starts = sorted({r[3] for r in resolved if r[3] >= 0})
     kept, dropped, nprice_ok, blanked_desc = {}, [], 0, 0
     order = []
     seen = {}
-    for sec, name, pub, pos, desc, price in resolved:
+    for sec, name, pub, pos, desc, price, suf in resolved:
         if pub is None:
             dropped.append(name)
             continue
@@ -257,7 +264,7 @@ def verify(sections, texts):
             if prev[1:] == (norm(desc), price) or prev[0] == sec:
                 dropped.append(pub + " (dup)")
                 continue
-            pub = f"{pub} ({sec})"
+            pub = f"{pub} ({suf or sec})"
             key = norm(pub)
             if key in seen:
                 dropped.append(pub + " (dup)")
