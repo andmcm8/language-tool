@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "sweet-scoops",
     "name": "Sweet Scoops",
-    "tagline": "Super premium homemade ice cream crafted fresh daily in Brookfield, CT | Helado artesanal súper prémium hecho fresco todos los días",
+    "tagline": "Ice cream shop in Brookfield | Heladería en Brookfield",
     "address": "7 Station Road, Brookfield, CT 06804",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
+      "monday_friday": "Mon-Thu 12:00 PM - 9:00 PM; Fri 12:00 PM - 9:30 PM",
+      "saturday": "12:00 PM - 9:30 PM",
       "sunday": "12:00 PM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -32,285 +24,602 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Productos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "ice_cream",
-      "nameEs": "Helados Prémium",
-      "nameEn": "Super Premium Ice Cream",
+      "id": "flavors",
+      "nameEs": "Sabores",
+      "nameEn": "Flavors",
       "icon": "Utensils"
     },
     {
-      "id": "treats",
-      "nameEs": "Especialidades y Postres",
-      "nameEn": "Treats & Specialties",
+      "id": "toppings",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Malteadas",
-      "icon": "Coffee",
-      "nameEn": "Beverages & Milkshakes"
+      "id": "italian-ice",
+      "nameEs": "Hielo italiano",
+      "nameEn": "Italian Ice",
+      "icon": "Utensils"
+    },
+    {
+      "id": "ice-cream-flights",
+      "nameEs": "Degustaciones de helado",
+      "nameEn": "Ice Cream Flights",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pints-quarts-to-go",
+      "nameEs": "Pintas y cuartos para llevar",
+      "nameEn": "Pints & Quarts To Go",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "sweet-scoops-01",
-      "categoryId": "ice_cream",
-      "nameEs": "Helado de Biscoff",
-      "nameEn": "Biscoff Ice Cream",
-      "descriptionEs": "Nuestro helado artesanal con base dye-free y auténtico sabor a galleta Biscoff crujiente.",
-      "descriptionEn": "Our signature homemade dye-free ice cream infused with rich, spiced Biscoff cookie crunch.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "Sin Colorantes"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "id": "vanilla",
+      "categoryId": "flavors",
+      "nameEs": "Vainilla",
+      "nameEn": "Vanilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-02",
-      "categoryId": "ice_cream",
-      "nameEs": "Caramelo Banilla",
-      "nameEn": "Banilla Caramel",
-      "descriptionEs": "Deliciosa combinación casera de vainilla pura y plátano con remolinos de caramelo suave.",
-      "descriptionEn": "A stunning blend of fresh banana and rich vanilla ice cream swirled with decadent caramel.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Casero",
-        "Sin Jarabe de Maíz"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "id": "chocolate",
+      "categoryId": "flavors",
+      "nameEs": "Chocolate",
+      "nameEn": "Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-03",
-      "categoryId": "ice_cream",
-      "nameEs": "Espresso con Copitos de Chocolate",
+      "id": "strawberry",
+      "categoryId": "flavors",
+      "nameEs": "Fresa",
+      "nameEn": "Strawberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-cookie-dough",
+      "categoryId": "flavors",
+      "nameEs": "Masa de galleta con chispas de chocolate",
+      "nameEn": "Chocolate Chip Cookie Dough",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-cream",
+      "categoryId": "flavors",
+      "nameEs": "Galletas con crema",
+      "nameEn": "Cookies and Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mint-chocolate-chip",
+      "categoryId": "flavors",
+      "nameEs": "Menta con chispas de chocolate",
+      "nameEn": "Mint Chocolate Chip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter-pecan",
+      "categoryId": "flavors",
+      "nameEs": "Mantequilla con nuez pecana",
+      "nameEn": "Butter Pecan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-peanut-butter-swirl",
+      "categoryId": "flavors",
+      "nameEs": "Chocolate con remolino de crema de cacahuate",
+      "nameEn": "Chocolate Peanut Butter Swirl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-w-chocolate-flakes",
+      "categoryId": "flavors",
+      "nameEs": "Espresso con hojuelas de chocolate",
       "nameEn": "Espresso w/ Chocolate Flakes",
-      "descriptionEs": "Intenso helado de café espresso hecho en casa salpicado con finos trocitos de chocolate crujiente.",
-      "descriptionEn": "Bold homemade espresso ice cream studded with delicate, melt-in-your-mouth chocolate flakes.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Café",
-        "Sin Conservantes"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-04",
-      "categoryId": "ice_cream",
+      "id": "salted-caramel-swirl",
+      "categoryId": "flavors",
+      "nameEs": "Remolino de caramelo salado",
+      "nameEn": "Salted Caramel Swirl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-monster",
+      "categoryId": "flavors",
       "nameEs": "Cookie Monster",
       "nameEn": "Cookie Monster",
-      "descriptionEs": "Divertido y dulce helado artesanal cargado con trozos de galletas Oreo y masa de galleta horneada.",
-      "descriptionEn": "A fan-favorite blue-tinted dye-free sweet cream loaded with chunks of cookies and chocolate chip dough.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Top Seller",
-      "tags": [
-        "Dulce",
-        "Galletas"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-05",
-      "categoryId": "ice_cream",
-      "nameEs": "Remolino de Caramelo Salado",
-      "nameEn": "Salted Caramel Swirl",
-      "descriptionEs": "Helado ultra cremoso realzado con hilos generosos de caramelo salado artesanal.",
-      "descriptionEn": "Ultra-creamy homemade vanilla base ribboned with a savory-sweet salted caramel swirl.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Artesanal"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "id": "pistachio",
+      "categoryId": "flavors",
+      "nameEs": "Pistache",
+      "nameEn": "Pistachio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-06",
-      "categoryId": "treats",
-      "nameEs": "Vuelo de Helados (Ice Cream Flight)",
+      "id": "cake-batter",
+      "categoryId": "flavors",
+      "nameEs": "Masa de pastel",
+      "nameEn": "Cake Batter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscoff",
+      "categoryId": "flavors",
+      "nameEs": "Biscoff",
+      "nameEn": "Biscoff",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "german-chocolate-brownie",
+      "categoryId": "flavors",
+      "nameEs": "Brownie de chocolate alemán",
+      "nameEn": "German Chocolate Brownie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-chip",
+      "categoryId": "flavors",
+      "nameEs": "Coco con chispas",
+      "nameEn": "Coconut Chip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-raspberry",
+      "categoryId": "flavors",
+      "nameEs": "Frambuesa negra",
+      "nameEn": "Black Raspberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-cheesecake",
+      "categoryId": "flavors",
+      "nameEs": "Cheesecake de mora azul",
+      "nameEn": "Blueberry Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banilla-caramel",
+      "categoryId": "flavors",
+      "nameEs": "Banilla caramelo",
+      "nameEn": "Banilla Caramel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toasted-almond-crunch",
+      "categoryId": "flavors",
+      "nameEs": "Almendra tostada crujiente",
+      "nameEn": "Toasted Almond Crunch",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-cream",
+      "categoryId": "flavors",
+      "nameEs": "Crema dulce",
+      "nameEn": "Sweet Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-swirl-chunk",
+      "categoryId": "flavors",
+      "nameEs": "Frambuesa con remolino y trozos",
+      "nameEn": "Raspberry Swirl Chunk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lavender",
+      "categoryId": "flavors",
+      "nameEs": "Lavanda",
+      "nameEn": "Lavender",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smores",
+      "categoryId": "flavors",
+      "nameEs": "S'mores",
+      "nameEn": "Smores",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "flavors",
+      "nameEs": "Café",
+      "nameEn": "Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-cherry-vanilla",
+      "categoryId": "flavors",
+      "nameEs": "Vainilla con cereza negra",
+      "nameEn": "Black Cherry Vanilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-walnut",
+      "categoryId": "flavors",
+      "nameEs": "Maple con nuez",
+      "nameEn": "Maple Walnut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crunchies",
+      "categoryId": "toppings",
+      "nameEs": "Crujientes",
+      "nameEn": "Crunchies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oreos",
+      "categoryId": "toppings",
+      "nameEs": "Oreos",
+      "nameEn": "Oreos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reece-s-peanut-butter-cups",
+      "categoryId": "toppings",
+      "nameEs": "Copas de crema de cacahuate Reese's",
+      "nameEn": "Reece's Peanut Butter Cups",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reese-s-pieces",
+      "categoryId": "toppings",
+      "nameEs": "Reese's Pieces",
+      "nameEn": "Reese's Pieces",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whipped-cream",
+      "categoryId": "toppings",
+      "nameEs": "Crema batida",
+      "nameEn": "Whipped Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waffle-bits",
+      "categoryId": "toppings",
+      "nameEs": "Trocitos de waffle",
+      "nameEn": "Waffle Bits",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownie-bits",
+      "categoryId": "toppings",
+      "nameEs": "Trocitos de brownie",
+      "nameEn": "Brownie Bits",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-dough",
+      "categoryId": "toppings",
+      "nameEs": "Masa de galleta",
+      "nameEn": "Cookie Dough",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rainbow-sprinkles",
+      "categoryId": "toppings",
+      "nameEs": "Chispitas arcoíris",
+      "nameEn": "Rainbow Sprinkles",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-sprinkles",
+      "categoryId": "toppings",
+      "nameEs": "Chispitas de chocolate",
+      "nameEn": "Chocolate Sprinkles",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "m-m-s",
+      "categoryId": "toppings",
+      "nameEs": "M&M's",
+      "nameEn": "M&M's",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marshmallows",
+      "categoryId": "toppings",
+      "nameEs": "Malvaviscos",
+      "nameEn": "Marshmallows",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gummy-worms",
+      "categoryId": "toppings",
+      "nameEs": "Gomitas de gusano",
+      "nameEn": "Gummy Worms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gummy-bears",
+      "categoryId": "toppings",
+      "nameEs": "Gomitas de osito",
+      "nameEn": "Gummy Bears",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marshmallow-sauce",
+      "categoryId": "toppings",
+      "nameEs": "Salsa de malvavisco",
+      "nameEn": "Marshmallow Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "walnuts",
+      "categoryId": "toppings",
+      "nameEs": "Nueces",
+      "nameEn": "Walnuts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-fudge",
+      "categoryId": "toppings",
+      "nameEs": "Fudge caliente",
+      "nameEn": "Hot Fudge",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-caramel",
+      "categoryId": "toppings",
+      "nameEs": "Caramelo caliente",
+      "nameEn": "Hot Caramel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-syrup",
+      "categoryId": "toppings",
+      "nameEs": "Jarabe de chocolate",
+      "nameEn": "Chocolate Syrup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-sauce",
+      "categoryId": "toppings",
+      "nameEs": "Salsa de crema de cacahuate",
+      "nameEn": "Peanut Butter Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-sauce",
+      "categoryId": "toppings",
+      "nameEs": "Salsa de Nutella",
+      "nameEn": "Nutella Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chips",
+      "categoryId": "toppings",
+      "nameEs": "Chispas de chocolate",
+      "nameEn": "Chocolate Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-lime",
+      "categoryId": "italian-ice",
+      "nameEs": "Limón-lima",
+      "nameEn": "Lemon-Lime",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "watermelon",
+      "categoryId": "italian-ice",
+      "nameEs": "Sandía",
+      "nameEn": "Watermelon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherry",
+      "categoryId": "italian-ice",
+      "nameEs": "Cereza",
+      "nameEn": "Cherry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-raspberry",
+      "categoryId": "italian-ice",
+      "nameEs": "Frambuesa azul",
+      "nameEn": "Blue Raspberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango",
+      "categoryId": "italian-ice",
+      "nameEs": "Mango",
+      "nameEn": "Mango",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-flights",
+      "categoryId": "ice-cream-flights",
+      "nameEs": "Degustaciones de helado",
       "nameEn": "Ice Cream Flights",
-      "descriptionEs": "Pruebe lo mejor de ambos mundos seleccionando 4 o 6 de nuestros más de 40 sabores artesanales.",
-      "descriptionEn": "Take your taste buds on a trip and sample either 4 or 6 of our unique homemade flavors side by side!",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Para Compartir",
-        "Degustación"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "descriptionEs": "¿No sabes qué sabor probar? No te preocupes: lleva tus papilas de viaje y prueba 4 o 6 sabores caseros con nuestras degustaciones de helado.",
+      "descriptionEn": "Stuck choosing which flavor you want to try? No worries - take your taste buds on a trip and sample either 4 or 6 homemade flavors with our ice cream flights!",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "sweet-scoops-07",
-      "categoryId": "treats",
-      "nameEs": "Cono de Waffle o Burbuja Fresco",
-      "nameEn": "Fresh Waffle & Bubble Cones",
-      "descriptionEs": "Conos crujientes elaborados diariamente en el local para complementar cualquier bola de helado.",
-      "descriptionEn": "Golden bubble and waffle cones made fresh daily right in our shop for the ultimate crunch.",
-      "price": "$2.50",
-      "popular": true,
-      "badge": "Hecho Hoy",
-      "tags": [
-        "Fresco",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sweet-scoops-08",
-      "categoryId": "treats",
-      "nameEs": "Helado de Lavanda",
-      "nameEn": "Lavender Ice Cream",
-      "descriptionEs": "Una experiencia sutil, floral y refrescante preparada con ingredientes limpios y naturales.",
-      "descriptionEn": "A delicate, floral, and deeply refreshing botanical creation crafted with real, premium ingredients.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Único",
-      "tags": [
-        "Floral",
-        "Sin Colorantes"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sweet-scoops-09",
-      "categoryId": "treats",
-      "nameEs": "Sundae de Brownie",
-      "nameEn": "Brownie Sundae",
-      "descriptionEs": "Brownie tibio recién horneado cubierto con su helado favorito, chocolate caliente y crema batida.",
-      "descriptionEn": "Warm, fudgy house-baked brownie topped with your favorite scoop, hot fudge, and whipped cream.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Indulgente",
-      "tags": [
-        "Chocolate",
-        "Caliente y Frío"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten",
-        "Nuts"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sweet-scoops-10",
-      "categoryId": "beverages",
-      "nameEs": "Malteada Clásica Artesanal",
-      "nameEn": "Classic Homemade Milkshake",
-      "descriptionEs": "Cualquiera de nuestros más de 40 sabores batidos a la perfección con leche fresca y crema batida.",
-      "descriptionEn": "Any of our unique homemade ice cream flavors hand-spun into a thick, creamy milkshake.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Bebida",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sweet-scoops-11",
-      "categoryId": "beverages",
-      "nameEs": "Hielo Italiano (Italian Ice)",
-      "nameEn": "Italian Ice",
-      "descriptionEs": "Refrescante helado de agua disponible en sabores rotativos como limón-lima, sandía, cereza y mango.",
-      "descriptionEn": "Refreshing water ice featuring rotating weekly flavors like lemon-lime, watermelon, cherry, and mango.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Lácteos",
-        "Fruta"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "sweet-scoops-12",
-      "categoryId": "treats",
-      "nameEs": "Pinta de Helado para Llevar",
-      "nameEn": "Pint To-Go",
-      "descriptionEs": "Lleve a casa cualquiera de nuestros sabores artesanales en presentación de una pinta.",
-      "descriptionEn": "Take your sweet cravings anywhere you go! Enjoy any flavor from home in a convenient pint.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Para Llevar",
-      "tags": [
-        "Pinta",
-        "En Casa"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "id": "pints-quarts-to-go",
+      "categoryId": "pints-quarts-to-go",
+      "nameEs": "Pintas y cuartos para llevar",
+      "nameEn": "Pints & Quarts To Go",
+      "descriptionEs": "¡Lleva tus antojos dulces a donde vayas! Disfruta cualquier sabor en casa o en el camino. *Disponible en cuartos y pintas.",
+      "descriptionEn": "Take your sweet cravings with you wherever you go! Enjoy any flavor from home or on the road. *Available in quarts and pints.",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen helados sin colorantes artificiales?",
-      "qEn": "Are your ice creams dye-free?",
-      "aEs": "¡Sí! Todas nuestras bases de helado son completamente libres de colorantes artificiales, elaboradas sin jarabe de maíz ni conservantes.",
-      "aEn": "Yes! Our ice cream bases are completely dye-free, made with real sugar, no corn syrup, and no preservatives."
-    },
-    {
-      "qEs": "¿Tienen opciones veganas o italian ice?",
-      "qEn": "Do you offer vegan options or Italian ice?",
-      "aEs": "Sí, ofrecemos opciones veganas rotativas semanalmente e Italian Ice refrescante. Llame o visite nuestra tienda para conocer los sabores especiales de la semana.",
-      "aEn": "Yes, we feature weekly rotating vegan options and refreshing Italian ice. Please call or message to check current weekly specials."
-    },
-    {
-      "qEs": "¿Las instalaciones son libres de nueces?",
-      "qEn": "Is your facility nut-free?",
-      "aEs": "Sweet Scoops NO es una instalación libre de nueces. Algunos productos contienen frutos secos y todo nuestro helado se procesa y empaqueta donde hay presencia de nueces.",
-      "aEn": "Sweet Scoops is NOT a nut-free facility. Some ice cream products contain nuts and all ice cream served here is processed and packaged where nuts are present."
-    },
-    {
-      "qEs": "¿Ofrecen conos frescos hechos en casa?",
-      "qEn": "Do you make fresh waffle and bubble cones?",
-      "aEs": "¡Por supuesto! Todos nuestros conos de waffle y de burbuja se preparan frescos todos los días para garantizar la mejor calidad y textura.",
-      "aEn": "Absolutely! All of our bubble and waffle cones are made fresh daily for you to enjoy."
-    }
-  ]
+  "faqs": []
 }

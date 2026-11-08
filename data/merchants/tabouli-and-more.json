@@ -2,27 +2,18 @@
   "storeInfo": {
     "id": "tabouli-and-more",
     "name": "Tabouli and More",
-    "tagline": "Homemade Authentic Middle Eastern Food in Brookfield, CT",
-    "address": "270 Federal Road, Brookfield, CT 06804",
+    "tagline": "Lebanese restaurant in Brookfield | Restaurante libanés en Brookfield",
+    "address": "270 Federal Road Brookfield, CT 06804",
     "phone": "(203) 885-0355",
     "hours": {
-      "monday_friday": "Mon: 8:30 AM - 7:00 PM, Tue-Sat: 8:30 AM - 8:30 БМ",
-      "saturday": "8:30 AM - 8:30 PM",
-      "sunday": "11:30 AM - 7:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
       "Bilingual Menu",
-      "Vegan Options",
-      "Gluten Free Options"
+      "Online Ordering"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -34,14 +25,20 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
-      "nameEs": "Entradas y Tapas",
-      "nameEn": "Appetizers & Tapas",
+      "nameEs": "Entradas",
+      "nameEn": "Appetizers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tapas-menu",
+      "nameEs": "Menú de tapas",
+      "nameEn": "Tapas Menu",
       "icon": "Utensils"
     },
     {
@@ -51,305 +48,747 @@
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Parrilladas",
-      "nameEn": "Entrees & Grills",
+      "id": "combo-platters",
+      "nameEs": "Platos combinados",
+      "nameEn": "Combo Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
       "icon": "Utensils"
     },
     {
       "id": "sandwiches",
-      "nameEs": "Sándwiches y Wraps",
+      "nameEs": "Sándwiches",
       "nameEn": "Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades y Combos",
-      "nameEn": "Combo Platters & Specialties",
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sweet-treats",
+      "nameEs": "Dulces",
+      "nameEn": "Sweet Treats",
       "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tabouli-and-more-01",
+      "id": "hommous",
       "categoryId": "appetizers",
-      "nameEs": "Hommous Tradicional",
+      "nameEs": "Hummus",
       "nameEn": "Hommous",
-      "descriptionEs": "Puré cremoso de garbanzos con tahini, ajo y jugo de limón fresco.",
-      "descriptionEn": "Mashed chickpeas, tahini, garlic, lemon.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
+      "descriptionEs": "Garbanzo machacado, tahini, ajo, limón,",
+      "descriptionEn": "Mashed chick peas, tahini, garlic, lemon,",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-02",
+      "id": "hommous-with-spiced-beef",
       "categoryId": "appetizers",
-      "nameEs": "Hommous con Carne Especiada",
+      "nameEs": "Hummus con carne de res especiada",
       "nameEn": "Hommous with Spiced Beef",
-      "descriptionEs": "Nuestro cremoso hommous coronado con tierna carne especiada y piñones tostados.",
-      "descriptionEn": "Topped with spiced beef and pine nuts.",
-      "price": "$12.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Sésamo"
-      ],
+      "descriptionEs": "Cubierto con carne de res especiada, piñones",
+      "descriptionEn": "Topped with spiced beef, pine nuts",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-03",
+      "id": "baba-ghannouj",
       "categoryId": "appetizers",
       "nameEs": "Baba Ghannouj",
       "nameEn": "Baba Ghannouj",
-      "descriptionEs": "Berenjena asada al horno triturada con tahini, ajo y toque de limón.",
-      "descriptionEn": "Broiled eggplant pureed with tahini, garlic, and lemon.",
-      "price": "$9.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
+      "descriptionEs": "Berenjena asada en puré con tahini, ajo, limón",
+      "descriptionEn": "Broiled Eggplant pureed with tahini, garlic, lemon",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-04",
-      "categoryId": "salads",
-      "nameEs": "Ensalada Tabbouli",
-      "nameEn": "Tabbouli Salad",
-      "descriptionEs": "Perejil fresco picado finamente, tomates, trigo burguer, cebolla, aceite y limón.",
-      "descriptionEn": "Parsley, tomato, bulgar, onion, oil, lemon.",
-      "price": "$10.95",
-      "popular": true,
-      "badge": "Fresco del Día",
-      "tags": [
-        "Vegano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "tabouli-and-more-05",
+      "id": "tabbouli",
       "categoryId": "appetizers",
-      "nameEs": "Plato de Falafel",
+      "nameEs": "Tabule",
+      "nameEn": "Tabbouli",
+      "descriptionEs": "Perejil, tomate, bulgur, cebolla, aceite, limón.",
+      "descriptionEn": "Parsley, tomato, Bulgar, onion, oil, lemon.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yogurt-cucumber",
+      "categoryId": "appetizers",
+      "nameEs": "Yogur con pepino",
+      "nameEn": "Yogurt & Cucumber",
+      "descriptionEs": "Pepino en cubos en salsa de yogur con menta y ajo",
+      "descriptionEn": "Diced cucumber in a mint, garlic, yogurt sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-platter",
+      "categoryId": "appetizers",
+      "nameEs": "Plato de falafel",
       "nameEn": "Falafel Platter",
-      "descriptionEs": "Croquetas crujientes fritas de garbanzos y habas sazonadas, servidas con salsa tahini.",
-      "descriptionEn": "Mashed chickpeas and fava beans deep fried, served with tahini.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegano",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
+      "descriptionEs": "Garbanzos y habas machacados y fritos, tahini",
+      "descriptionEn": "Mashed chick peas and fava beans deep fried, tahini",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-06",
+      "id": "stuffed-grape-leaves",
       "categoryId": "appetizers",
-      "nameEs": "Hojas de Parra Rellenas",
+      "nameEs": "Hojas de parra rellenas",
       "nameEn": "Stuffed Grape Leaves",
-      "descriptionEs": "Hojas de parra tiernas rellenas de arroz sazonado, garbanzos, tomates y cebolla.",
-      "descriptionEn": "Rice, chickpeas, tomatoes, and onion wrapped in tender grape leaves.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Casero",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "descriptionEs": "Arroz, garbanzos, tomate, cebolla",
+      "descriptionEn": "Rice, chick peas, tomatoes, onion",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-07",
-      "categoryId": "mains",
-      "nameEs": "Parrillada Mixta (Mixed Grill)",
-      "nameEn": "Mixed Grill",
-      "descriptionEs": "Selección de kafta, cordero y shish tawook, servido con arroz aromático.",
-      "descriptionEn": "Kafta, lamb, and tawook served with seasoned rice.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Especial de la Casa",
-      "tags": [
-        "Carne",
-        "Parrilla"
-      ],
-      "allergens": [],
+      "id": "lamb-stuffed-grape-leaves",
+      "categoryId": "appetizers",
+      "nameEs": "Hojas de parra rellenas de cordero",
+      "nameEn": "Lamb Stuffed Grape Leaves",
+      "descriptionEs": "Cordero, arroz y ajo cocinados con ajo y limón",
+      "descriptionEn": "Lamb, rice and garlic cooked with garlic & lemon",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-08",
-      "categoryId": "mains",
-      "nameEs": "Brochetas de Shish Tawook",
-      "nameEn": "Shish Tawook",
-      "descriptionEs": "Jugosos trozos de pollo marinados en ajo y especias libanesas tradicionales.",
-      "descriptionEn": "Chicken breast marinated in garlic and authentic spices.",
-      "price": "$21.95",
-      "popular": false,
-      "badge": "Popular",
-      "tags": [
-        "Pollo",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "loubieh-string-green-beans",
+      "categoryId": "tapas-menu",
+      "nameEs": "Loubieh (ejotes)",
+      "nameEn": "Loubieh String Green Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-09",
-      "categoryId": "mains",
-      "nameEs": "Kafta a la Parrilla",
-      "nameEn": "Kafta Platter",
-      "descriptionEs": "Carne picada de res y cordero mezclada con finas hierbas, especias y perejil.",
-      "descriptionEn": "Beef and lamb ground together with Mediterranean spices and parsley.",
-      "price": "$21.95",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [],
+      "id": "labne",
+      "categoryId": "tapas-menu",
+      "nameEs": "Labné",
+      "nameEn": "Labné",
+      "descriptionEs": "Yogur libanés para untar cubierto con menta y aceite de oliva",
+      "descriptionEn": "Lebanese yogurt spread topped with mint & olive oil",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-10",
-      "categoryId": "mains",
-      "nameEs": "Shawarma de Pollo",
-      "nameEn": "Chicken Shawarma Entree",
-      "descriptionEs": "Finas láminas de pollo marinado asadas al espiedo con especias y perejil.",
-      "descriptionEn": "Marinated chicken spiced and roasted, served with house accompaniments.",
-      "price": "$20.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pollo"
-      ],
-      "allergens": [],
+      "id": "syrian-cheese-kalamata-olives",
+      "categoryId": "tapas-menu",
+      "nameEs": "Queso sirio y aceitunas kalamata",
+      "nameEn": "Syrian Cheese & Kalamata Olives",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-11",
-      "categoryId": "sandwiches",
-      "nameEs": "Sándwich de Falafel",
-      "nameEn": "Falafel Sandwich",
-      "descriptionEs": "Falafel crujiente envuelto en pan pita con lechuga, tomate y salsa tahini.",
-      "descriptionEn": "Crispy falafel wrapped with lettuce, tomato, and tahini sauce.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegano",
-        "Al Paso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Sésamo"
-      ],
+      "id": "foul",
+      "categoryId": "tapas-menu",
+      "nameEs": "Foul",
+      "nameEn": "Foul",
+      "descriptionEs": "Habas machacadas con limón y ajo, cubiertas con aceite de oliva",
+      "descriptionEn": "Fava beans, mashed with lemon and garlic, topped with olive oil",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-12",
-      "categoryId": "sandwiches",
-      "nameEs": "Sándwich Gyro",
-      "nameEn": "Gyro Sandwich",
-      "descriptionEs": "Carne sazonada en pan pita con cebolla, tomate y cremosa salsa Tzatziki.",
-      "descriptionEn": "Marinated gyro meat with onions, tomatoes, and Tzatziki sauce.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "moujadara",
+      "categoryId": "tapas-menu",
+      "nameEs": "Moujadara",
+      "nameEn": "Moujadara",
+      "descriptionEs": "Lentejas cocinadas con arroz y sazón libanesa, cubiertas con cebolla frita",
+      "descriptionEn": "Lentils cooked with rice, Lebanese seasoning, topped with fried onions",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-13",
-      "categoryId": "specialties",
-      "nameEs": "Combo del Chef #2",
-      "nameEn": "Chef’s Special Combo #2",
-      "descriptionEs": "Combinación perfecta de Hommous, Baba Ghannouj, Tabbouli, Pastel de Espinaca y Queso con Aceitunas.",
-      "descriptionEn": "Hommous, Baba Ghannouj, Tabbouli, Spinach Pie, Cheese & Olives.",
-      "price": "$24.95",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Vegetariano",
-        "Combo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Sésamo"
-      ],
+      "id": "moussaka",
+      "categoryId": "tapas-menu",
+      "nameEs": "Moussaka",
+      "nameEn": "Moussaka",
+      "descriptionEs": "Capas de berenjena al horno, garbanzos, tomate, cebolla, ajo",
+      "descriptionEn": "Layers of baked eggplant, chick peas, tomatoes, onion, garlic",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tabouli-and-more-14",
-      "categoryId": "specialties",
-      "nameEs": "Kibbe Horneado",
+      "id": "spinach-pies",
+      "categoryId": "tapas-menu",
+      "nameEs": "Empanadas de espinaca",
+      "nameEn": "Spinach Pies",
+      "descriptionEs": "2 por orden",
+      "descriptionEn": "2 per order",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-pie",
+      "categoryId": "tapas-menu",
+      "nameEs": "Empanada de carne",
+      "nameEn": "Meat Pie",
+      "descriptionEs": "2 por orden",
+      "descriptionEn": "2 per order",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-kibbe",
+      "categoryId": "tapas-menu",
+      "nameEs": "Kibbe frito",
+      "nameEn": "Fried Kibbe",
+      "descriptionEs": "2 por orden",
+      "descriptionEn": "2 per order",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "makanik",
+      "categoryId": "tapas-menu",
+      "nameEs": "Makanik",
+      "nameEn": "Makanik",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soujouk",
+      "categoryId": "tapas-menu",
+      "nameEs": "Soujouk",
+      "nameEn": "Soujouk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "build-your-own-salad",
+      "categoryId": "salads",
+      "nameEs": "Arma tu ensalada",
+      "nameEn": "Build Your Own Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arabic-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada árabe",
+      "nameEn": "Arabic Salad",
+      "descriptionEs": "Pepino, tomate, cebolla, pimiento, aceitunas, queso feta",
+      "descriptionEn": "Cucumbers, tomatoes, onion, pepper, olives, Feta cheese",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-greens",
+      "categoryId": "salads",
+      "nameEs": "Hojas verdes mixtas",
+      "nameEn": "Mixed Greens",
+      "descriptionEs": "Hojas verdes cubiertas con pepino y tomate",
+      "descriptionEn": "Greens topped with cucumbers, tomatoes",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-house-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada griega de la casa",
+      "nameEn": "Greek House Salad",
+      "descriptionEs": "Cubierta con pepino, tomate, aceitunas kalamata, queso feta",
+      "descriptionEn": "Topped with cucumbers, tomatoes, kalamata olives, Feta cheese",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chefs-special-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada especial del chef",
+      "nameEn": "Chef’s Special Salad",
+      "descriptionEs": "Hojas verdes con tomate, aceitunas, feta, pepino, cubierta con tabule",
+      "descriptionEn": "Greens with tomatoes, olives, Feta, cucumbers, topped with tabbouli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fattouch",
+      "categoryId": "salads",
+      "nameEs": "Fattoush",
+      "nameEn": "Fattouch",
+      "descriptionEs": "Hojas verdes, pan pita tostado, tomate, pepino, zumaque",
+      "descriptionEn": "Greens, toasted pita bread, tomato, cucumber, Sumac",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1",
+      "categoryId": "combo-platters",
+      "nameEs": "#1",
+      "nameEn": "#1",
+      "descriptionEs": "Hummus, baba ghannouj, tabule",
+      "descriptionEn": "Hommous, Baba Ghannouj, Tabbouli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2",
+      "categoryId": "combo-platters",
+      "nameEs": "#2",
+      "nameEn": "#2",
+      "descriptionEs": "Hummus, baba ghannouj, tabule, empanada de espinaca, queso y aceitunas",
+      "descriptionEn": "Hommous, Baba Ghannouj, Tabbouli, Spinach Pie, Cheese & Olives",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3",
+      "categoryId": "combo-platters",
+      "nameEs": "#3",
+      "nameEn": "#3",
+      "descriptionEs": "Hummus, tabule, falafel",
+      "descriptionEn": "Hommous, Tabbouli, Falafel",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "4",
+      "categoryId": "combo-platters",
+      "nameEs": "#4",
+      "nameEn": "#4",
+      "descriptionEs": "Hummus, tabule, falafel, hojas de parra rellenas",
+      "descriptionEn": "Hommous, Tabbouli, Falafel, Stuffed Grape Leaves",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "5",
+      "categoryId": "combo-platters",
+      "nameEs": "#5",
+      "nameEn": "#5",
+      "descriptionEs": "Kibbe al horno, hummus, tabule",
+      "descriptionEn": "Baked Kibbe, Hommous, Tabbouli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "6",
+      "categoryId": "combo-platters",
+      "nameEs": "#6",
+      "nameEn": "#6",
+      "descriptionEs": "Kibbe al horno, calabacita rellena, cordero, hojas de parra. Servido con arroz",
+      "descriptionEn": "Baked Kibbe, Stuffed Squash, Lamb, Grape Leaves Served with rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-grape-leaves-entrees",
+      "categoryId": "entrees",
+      "nameEs": "Hojas de parra rellenas (platos fuertes)",
+      "nameEn": "Stuffed Grape Leaves (Entrees)",
+      "descriptionEs": "Hojas de parra de cordero o vegetarianas servidas con yogur casero",
+      "descriptionEn": "Lamb or vegetarian grape leaves served with homemade yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-squash",
+      "categoryId": "entrees",
+      "nameEs": "Calabacita rellena",
+      "nameEn": "Stuffed Squash",
+      "descriptionEs": "Calabacita de verano rellena de cordero y arroz, servida en caldo de tomate y yogur casero",
+      "descriptionEn": "Summer squash stuffed with lamb and rice, served in a tomato broth and homemade yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-cabbage",
+      "categoryId": "entrees",
+      "nameEs": "Col rellena",
+      "nameEn": "Stuffed Cabbage",
+      "descriptionEs": "Cordero, arroz y ajo cocinados con ajo y limón",
+      "descriptionEn": "Lamb, rice and garlic cooked with garlic and lemon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-kibbe",
+      "categoryId": "entrees",
+      "nameEs": "Kibbe al horno",
       "nameEn": "Baked Kibbe",
-      "descriptionEs": "Capa crujiente de cordero molido y trigo burguer rellena de carne picada y piñones, servida con arroz y yogur casero.",
-      "descriptionEn": "Ground lamb & beef mixed with Bulgar and pine nuts, served with rice and homemade yogurt.",
-      "price": "$22.95",
-      "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Carne",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Frutos Secos",
-        "Lácteos"
-      ],
+      "descriptionEs": "Cordero y res molidos mezclados con bulgur y piñones, servido con arroz y yogur casero",
+      "descriptionEn": "Ground lamb & beef mixed with Bulgar, pine nuts, served with rice & homemade yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro-platter",
+      "categoryId": "entrees",
+      "nameEs": "Plato de gyro",
+      "nameEn": "Gyro Platter",
+      "descriptionEs": "Res, pollo o cordero marinado servido con queso feta, aceitunas y salsa tzatziki",
+      "descriptionEn": "Marinated beef, chicken or lamb served with Feta cheese, olives and Tzatziki sauce",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moujadara-entrees",
+      "categoryId": "entrees",
+      "nameEs": "Moujadara (platos fuertes)",
+      "nameEn": "Moujadara (Entrees)",
+      "descriptionEs": "Lentejas cocinadas con arroz y sazón libanesa, cubiertas con cebolla frita",
+      "descriptionEn": "Lentils cooked with rice and Lebanese seasoning, topped with fried onions",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moussaka-entrees",
+      "categoryId": "entrees",
+      "nameEs": "Moussaka (platos fuertes)",
+      "nameEn": "Moussaka (Entrees)",
+      "descriptionEs": "Capas de berenjena al horno, garbanzos, tomate, cebolla y ajo",
+      "descriptionEn": "Layers of baked eggplant, chick peas, tomatoes, onions and garlic",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-breast",
+      "categoryId": "entrees",
+      "nameEs": "Pechuga de pollo",
+      "nameEn": "Chicken Breast",
+      "descriptionEs": "Servido sobre una cama de arroz",
+      "descriptionEn": "Served on a bed of rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-kabobs",
+      "categoryId": "entrees",
+      "nameEs": "Brochetas de res",
+      "nameEn": "Beef Kabobs",
+      "descriptionEs": "Servido con arroz, cebolla y pimientos a la parrilla",
+      "descriptionEn": "Served with rice, grilled onions and peppers",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-kabobs",
+      "categoryId": "entrees",
+      "nameEs": "Brochetas de cordero",
+      "nameEn": "Lamb Kabobs",
+      "descriptionEs": "Servido con arroz, cebolla y pimientos a la parrilla",
+      "descriptionEn": "Served with rice, grilled onions and peppers",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shish-tawook",
+      "categoryId": "entrees",
+      "nameEs": "Shish Tawook",
+      "nameEn": "Shish Tawook",
+      "descriptionEs": "Pollo marinado en ajo y especias",
+      "descriptionEn": "Chicken marinated ingarlic and spices",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kafta",
+      "categoryId": "entrees",
+      "nameEs": "Kafta",
+      "nameEn": "Kafta",
+      "descriptionEs": "Res y cordero molidos juntos con especias y perejil",
+      "descriptionEn": "Beef and lamb ground together with spices, parsley",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-shawarma",
+      "categoryId": "entrees",
+      "nameEs": "Shawarma de res",
+      "nameEn": "Beef Shawarma",
+      "descriptionEs": "Res con especias, perejil",
+      "descriptionEn": "Beef with spices, parsley",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-shawarma",
+      "categoryId": "entrees",
+      "nameEs": "Shawarma de pollo",
+      "nameEn": "Chicken Shawarma",
+      "descriptionEs": "Pollo con especias, perejil",
+      "descriptionEn": "Chicken with spices, parsley",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grill",
+      "categoryId": "entrees",
+      "nameEs": "Parrillada mixta",
+      "nameEn": "Mixed Grill",
+      "descriptionEs": "Kafta, cordero, tawook, servido con arroz",
+      "descriptionEn": "Kafta, lamb, tawook, served with rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-chops",
+      "categoryId": "entrees",
+      "nameEs": "Chuletas de cordero",
+      "nameEn": "Lamb Chops",
+      "descriptionEs": "Servido con arroz",
+      "descriptionEn": "Served with rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-salmon",
+      "categoryId": "entrees",
+      "nameEs": "Salmón sellado en sartén",
+      "nameEn": "Pan-Seared Salmon",
+      "descriptionEs": "Servido con arroz",
+      "descriptionEn": "Served with rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp",
+      "categoryId": "entrees",
+      "nameEs": "Camarón",
+      "nameEn": "Shrimp",
+      "descriptionEs": "Servido con arroz",
+      "descriptionEn": "Served with rice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-shawarma-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Shawarma de res (sándwiches)",
+      "nameEn": "Beef Shawarma (Sandwiches)",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-shawarma-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Shawarma de pollo (sándwiches)",
+      "nameEn": "Chicken Shawarma (Sandwiches)",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kibbe",
+      "categoryId": "sandwiches",
+      "nameEs": "Kibbe",
+      "nameEn": "Kibbe",
+      "descriptionEs": "Con hummus y tabule",
+      "descriptionEn": "With Hommous and Tabbouli",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-breast-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de pechuga de pollo",
+      "nameEn": "Chicken Breast Sandwich",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tawook",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo tawook",
+      "nameEn": "Chicken Tawook",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kafta-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Kafta (sándwiches)",
+      "nameEn": "Kafta (Sandwiches)",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef",
+      "categoryId": "sandwiches",
+      "nameEs": "Res",
+      "nameEn": "Beef",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shish-kabob-lamb-or-beef",
+      "categoryId": "sandwiches",
+      "nameEs": "Shish kabob (cordero o res)",
+      "nameEn": "Shish Kabob (Lamb or Beef)",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel",
+      "categoryId": "sandwiches",
+      "nameEs": "Falafel",
+      "nameEn": "Falafel",
+      "descriptionEs": "Tahini",
+      "descriptionEn": "Tahini",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hommous-tabbouli-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de hummus y tabule",
+      "nameEn": "Hommous & Tabbouli Sandwich",
+      "descriptionEs": "Lechuga y tomate incluidos en todos",
+      "descriptionEn": "All come with lettuce & tomato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de ensalada",
+      "nameEn": "Salad Sandwich",
+      "descriptionEs": "Con cebolla, feta y aceitunas",
+      "descriptionEn": "With onions, Feta and olives",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tzatziki",
+      "categoryId": "sides",
+      "nameEs": "Tzatziki",
+      "nameEn": "Tzatziki",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whipped-garlic",
+      "categoryId": "sides",
+      "nameEs": "Ajo batido",
+      "nameEn": "Whipped Garlic",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tahini",
+      "categoryId": "sides",
+      "nameEs": "Tahini",
+      "nameEn": "Tahini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "feta",
+      "categoryId": "sides",
+      "nameEs": "Feta",
+      "nameEn": "Feta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yogurt",
+      "categoryId": "sides",
+      "nameEs": "Yogur",
+      "nameEn": "Yogurt",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice",
+      "categoryId": "sides",
+      "nameEs": "Arroz",
+      "nameEn": "Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hommous-baba-ghannouj-and-tabbouli",
+      "categoryId": "sides",
+      "nameEs": "Hummus, baba ghannouj y tabule",
+      "nameEn": "Hommous, Baba Ghannouj and Tabbouli",
+      "descriptionEs": "Disponible en tamaños de 1/2 pinta, pinta y cuarto",
+      "descriptionEn": "Available in 1/2 pint, pint and quart sizes",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baklava",
+      "categoryId": "sweet-treats",
+      "nameEs": "Baklava",
+      "nameEn": "Baklava",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "knafeh",
+      "categoryId": "sweet-treats",
+      "nameEs": "Knafeh",
+      "nameEn": "Knafeh",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maamoul",
+      "categoryId": "sweet-treats",
+      "nameEs": "Maamoul",
+      "nameEn": "Maamoul",
+      "descriptionEs": "Pistache, nuez, dátiles",
+      "descriptionEn": "Pistachio, walnuts, dates",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con una gran variedad de platos frescos elaborados diariamente que son veganos, vegetarianos y sin gluten, como nuestro hommous, falafel y ensaladas.",
-      "aEn": "Yes, we offer a wide variety of fresh daily dishes that are vegan, vegetarian, and gluten-free, including our hommous, falafel, and salads."
-    },
-    {
-      "qEs": "¿Ofrecen servicio a domicilio o para llevar?",
-      "qEn": "Do you offer delivery or takeout?",
-      "aEs": "¡Sí! Puede ordenar directamente por teléfono para recoger, o encontrarnos en Grubhub, DoorDash y Uber Eats.",
-      "aEn": "Yes! You can order directly by phone for pickup, or find us on Grubhub, DoorDash, and Uber Eats."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o clientes sin cita previa?",
-      "qEn": "Do you accept reservations or walk-ins?",
-      "aEs": "Aceptamos clientes sin reservación y también puede llamarnos para reservar una mesa o pedir especiales del día.",
-      "aEn": "We welcome walk-ins and you can also call us to reserve a table or ask about daily specials."
-    }
-  ]
+  "faqs": []
 }
