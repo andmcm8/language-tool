@@ -1,27 +1,18 @@
 {
   "storeInfo": {
     "id": "olio-restaurant-bar",
-    "name": "Olio Restaurant & Bar",
-    "tagline": "Creative & Exciting Cuisine in Groton, CT | Cocina Creativa y Emocionante",
-    "address": "33 Groton Square, Groton, CT 06340",
+    "name": "Olio",
+    "tagline": "American restaurant in Groton | Restaurante americano en Groton",
+    "address": "33 Kings Highway Groton, CT 06340",
     "phone": "(860) 445-6546",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 10:30 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon-Thu 11:30 AM - 8:00 PM; Fri 11:30 AM - 9:00 PM",
+      "saturday": "11:30 AM - 9:00 PM",
+      "sunday": "4:30 PM - 8:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Full Bar"
+      "Bilingual Menu"
     ],
     "themeColor": "#111111",
     "logoIcon": "utensils",
@@ -33,326 +24,1580 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
+      "id": "raw-bar",
+      "nameEs": "Barra cruda",
+      "nameEn": "Raw Bar",
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizer",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizer",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salad",
+      "nameEs": "Ensalada",
+      "nameEn": "Salad",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades y Sándwiches",
-      "nameEn": "Specialties & Sandwiches",
+      "id": "pizza",
+      "nameEs": "Pizza",
+      "nameEn": "Pizza",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "sandwiches-wraps",
+      "nameEs": "Sándwiches y wraps",
+      "nameEn": "Sandwiches & Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entree",
+      "nameEs": "Plato fuerte",
+      "nameEn": "Entree",
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizer-dinner",
+      "nameEs": "Entradas (cena)",
+      "nameEn": "Appetizer (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salad-dinner",
+      "nameEs": "Ensaladas (cena)",
+      "nameEn": "Salad (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pizza-dinner",
+      "nameEs": "Pizza (cena)",
+      "nameEn": "Pizza (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta-dinner",
+      "nameEs": "Pasta (cena)",
+      "nameEn": "Pasta (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entree-dinner",
+      "nameEs": "Plato fuerte (cena)",
+      "nameEn": "Entree (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cócteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "martinis",
+      "nameEs": "Martinis",
+      "nameEn": "Martinis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mules",
+      "nameEs": "Mules",
+      "nameEn": "Mules",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wine",
+      "nameEs": "Vino tinto",
+      "nameEn": "Red Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wine",
+      "nameEs": "Vino blanco",
+      "nameEn": "White Wine",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "olio-restaurant-bar-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos Crujientes",
+      "id": "oysters-clams",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostiones y almejas",
+      "nameEn": "Oysters & Clams",
+      "descriptionEs": "Ostiones del día o almejas little neck",
+      "descriptionEn": "Oysters of the Day or Little Neck Clams",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-fried-calamari",
+      "categoryId": "appetizer",
+      "nameEs": "Calamares fritos crujientes",
       "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Servido con chiles banana, mantequilla de ajo y salsa marinara de la casa.",
-      "descriptionEn": "Tossed with banana peppers, garlic butter, and house marinara.",
+      "descriptionEs": "Chiles banana, mantequilla de ajo",
+      "descriptionEn": "Banana Peppers, Garlic Butter",
       "price": "$16.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-02",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones Estilo Olio",
-      "nameEn": "Mussels Olio Style",
-      "descriptionEs": "Mejillones frescos preparados al estilo de la casa o en salsa roja picante con pan artesanal.",
-      "descriptionEn": "Fresh mussels prepared Olio style or in a spicy red sauce with crusty bread.",
+      "id": "mussels",
+      "categoryId": "appetizer",
+      "nameEs": "Mejillones",
+      "nameEn": "Mussels",
+      "descriptionEs": "Estilo Olio o salsa roja picante",
+      "descriptionEn": "Olio Style or Spicy Red Sauce",
       "price": "$18.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-03",
-      "categoryId": "appetizers",
-      "nameEs": "Aguacate Relleno de Langosta",
-      "nameEn": "Stuffed Avocado Lobster",
-      "descriptionEs": "Aguacate fresco relleno de langosta, tomates frescos y sofrito de elote con chipotle.",
-      "descriptionEn": "Fresh avocado stuffed with lobster, tomatoes, and chipotle corn relish.",
+      "id": "stuffed-avocado",
+      "categoryId": "appetizer",
+      "nameEs": "Aguacate relleno",
+      "nameEn": "Stuffed Avocado",
+      "descriptionEs": "Langosta, tomate, relish de elote al chipotle",
+      "descriptionEn": "Lobster, Tomatoes, Chipotle Corn Relish",
       "price": "$19.95",
-      "popular": true,
-      "badge": "Chef's Pick",
-      "tags": [
-        "Langosta",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-04",
-      "categoryId": "appetizers",
-      "nameEs": "Plato Mezze",
-      "nameEn": "MEZZE Plate",
-      "descriptionEs": "Falafel crujiente, hummus cremoso, tzatziki, queso feta, aceitunas y pan plano tibio.",
-      "descriptionEn": "Crispy falafel, hummus, tzatziki, feta, olives, served with warm flat bread.",
+      "id": "coconut-shrimp-trio",
+      "categoryId": "appetizer",
+      "nameEs": "Trío de camarones al coco",
+      "nameEn": "Coconut Shrimp Trio",
+      "descriptionEs": "Salsas para remojar",
+      "descriptionEn": "Dipping Sauces",
       "price": "$16.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Mediterráneo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-05",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta de Filete Hanger",
+      "id": "hanger-steak-bruschetta",
+      "categoryId": "appetizer",
+      "nameEs": "Bruschetta de arrachera",
       "nameEn": "Hanger Steak Bruschetta",
-      "descriptionEs": "Hongos portobello, chalotes caramelizados y queso gorgonzola sobre crostini crujiente.",
-      "descriptionEn": "Portobello mushrooms, shallots, and Gorgonzola served over toasted crostini.",
+      "descriptionEs": "Hongos portobello, chalotes, gorgonzola",
+      "descriptionEn": "Portobello Mushrooms, Shallots, Gorgonzola",
       "price": "$16.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-06",
-      "categoryId": "mains",
-      "nameEs": "Ensalada de Pollo Paillard Crujiente",
-      "nameEn": "Crispy Chicken Paillard Salad",
-      "descriptionEs": "Pechuga de pollo crujiente sobre cama de arúgula baby con salsa beurre blanc de limón y alcaparras.",
-      "descriptionEn": "Crispy chicken breast over baby arugula with a lemon caper beurre blanc dressing.",
+      "id": "nachos",
+      "categoryId": "appetizer",
+      "nameEs": "Nachos",
+      "nameEn": "Nachos",
+      "descriptionEs": "Cheddar, frijol negro, salsa, guacamole, crema agria",
+      "descriptionEn": "Cheddar, Black Bean, Salsa, Guacamole, Sour Cream",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "littleneck-clams",
+      "categoryId": "appetizer",
+      "nameEs": "Almejas littleneck",
+      "nameEn": "Littleneck Clams",
+      "descriptionEs": "Chorizo, caldo de tomate con ajo asado, pan de ajo crujiente",
+      "descriptionEn": "Chorizo, Roasted Garlic Tomato Broth, Crusty Garlic Bread",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-bang-bang-shrimp",
+      "categoryId": "appetizer",
+      "nameEs": "Camarones Bang Bang crujientes",
+      "nameEn": "Crispy Bang Bang Shrimp",
+      "descriptionEs": "(4) Salsa dulce y picante",
+      "descriptionEn": "(4) Spicy Sweet Sauce",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mezze-plate",
+      "categoryId": "appetizer",
+      "nameEs": "Plato MEZZE",
+      "nameEn": "MEZZE Plate",
+      "descriptionEs": "Falafel, hummus, tzatziki, feta, aceitunas, pan plano",
+      "descriptionEn": "Felafel, Hummus, Tzatziki, Feta, Olives, Flat Bread",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-thai-vegetable",
+      "categoryId": "appetizer",
+      "nameEs": "Camarones con verduras tailandesas",
+      "nameEn": "shrimp Thai Vegetable",
+      "descriptionEs": "Rollitos de celofán",
+      "descriptionEn": "Cellophane Rolls",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-and-pork-meatball-bruschetta",
+      "categoryId": "appetizer",
+      "nameEs": "Bruschetta de albóndigas de ternera y cerdo",
+      "nameEn": "Veal and Pork Meatball Bruschetta",
+      "descriptionEs": "(3) Ricotta batida, crostini de masa madre 15.95",
+      "descriptionEn": "(3) Whipped Ricotta, Sour Dough Crostini 15.95",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted",
+      "categoryId": "appetizer",
+      "nameEs": "Asadas",
+      "nameEn": "Roasted",
+      "descriptionEs": "Coles de Bruselas con tocino y alioli de rábano picante",
+      "descriptionEn": "Brussel Sprouts with bacon and horseradish aioli",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potatchos",
+      "categoryId": "appetizer",
+      "nameEs": "Potatchos",
+      "nameEn": "Potatchos",
+      "descriptionEs": "Cáscaras de papa crujientes, colby cheddar, pico de gallo, rémoulade de chile chipotle, guacamole de molcajete, crema agria",
+      "descriptionEn": "Crispy Potato Skins, Colby Cheddar, Pico de Gallo, Chipotle Pepper Remoulade, Mortar Guacamole, Sour Cream",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-15-95",
+      "categoryId": "appetizer",
+      "nameEs": "Tacos $15.95",
+      "nameEn": "Tacos $15.95",
+      "descriptionEs": "Pollo o camarones crujientes",
+      "descriptionEn": "Crispy Chicken Or Shrimp",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olio-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada Olio",
+      "nameEn": "Olio Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, gorgonzola, crutones, aderezo balsámico",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Gorgonzola, Croutons Balsamic Dressing",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada César clásica",
+      "nameEn": "Classic Caesar Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "field-greens",
+      "categoryId": "salad",
+      "nameEs": "Hojas verdes de campo",
+      "nameEn": "Field Greens",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, nueces pecanas, naranja, arándanos, manzana, gorgonzola, vinagreta",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Pecans, Oranges, Cranberries Apples, Gorgonzola, Vinaigrette",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrata-baby-arugula-blt-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada BLT de burrata y arúgula baby",
+      "nameEn": "Burrata, Baby Arugula BLT Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-paillard",
+      "categoryId": "salad",
+      "nameEs": "Paillard de pollo crujiente",
+      "nameEn": "Crispy Chicken Paillard",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, arúgula baby, beurre blanc de limón y alcaparras",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Baby Arugula, Lemon Caper Beurre Blanc",
       "price": "$22.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Ensalada",
-        "Pollo"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-07",
-      "categoryId": "mains",
-      "nameEs": "Ensalada de Pasta Picada",
-      "nameEn": "Chopped Pasta Salad",
-      "descriptionEs": "Mix de hojas verdes, pollo a la parrilla, tocino, champiñones, queso gorgonzola, tomates y aderezo balsámico.",
-      "descriptionEn": "Mixed greens, grilled chicken, bacon, mushrooms, Gorgonzola cheese, tomatoes, balsamic dressing.",
+      "id": "chopped-pasta",
+      "categoryId": "salad",
+      "nameEs": "Pasta picada",
+      "nameEn": "Chopped Pasta",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, hojas verdes mixtas, pollo a la parrilla, tocino, champiñones, queso gorgonzola, tomate, aderezo balsámico",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Mixed Greens, Grilled Chicken, Bacon, Mushrooms, Gorgonzola Cheese, Tomatoes, Balsamic Dressing",
       "price": "$18.95",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Saludable"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-08",
-      "categoryId": "mains",
-      "nameEs": "Pizza Bolognese con Mozzarella",
-      "nameEn": "Bolognese Pizza with Mozzarella",
-      "descriptionEs": "Masa artesanal horneada a la piedra con nuestra rica salsa boloñesa y abundante mozzarella.",
-      "descriptionEn": "Artisan stone-baked crust topped with rich homemade bolognese sauce and mozzarella.",
+      "id": "grilled-sliced-hanger-steak",
+      "categoryId": "salad",
+      "nameEs": "Arrachera a la parrilla rebanada",
+      "nameEn": "Grilled Sliced Hanger Steak",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, arúgula baby, champiñones marinados, cebolla encurtida, queso azul, aderezo mil islas",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Baby Arugula, Marinated Mushrooms, Pickled Onions, Blue Cheese, Thousand Island Dressing",
       "price": "$19.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pizza",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-09",
-      "categoryId": "mains",
-      "nameEn": "Fig & Gorgonzola Pizza",
-      "descriptionEs": "Higos dulces, queso gorgonzola, tocino crujiente y arúgula fresca sobre base de pizza estilo ensalada.",
-      "descriptionEn": "Sweet figs, Gorgonzola, bacon, baby arugula, served pizza-salad style.",
+      "id": "ahi-tuna-poke-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada poke de atún ahi",
+      "nameEn": "Ahi Tuna Poke Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, pepino, tomate, listones de zanahoria, rábano, lechuga romana, nuoc cham de ajonjolí, miel y lima",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Cucumbers, Tomato, Ribbon Carrot, Radish, Romaine Lettuce Sesame Honey lime Nuoc Cham",
       "price": "$19.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Gourmet",
-        "Pizza"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-10",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich BLT de Salmón",
-      "nameEn": "Salmon BLT Sandwich",
-      "descriptionEs": "Salmón a la parrilla con tocino crujiente, lechuga, tomate y mayonesa especial Olio en pan focaccia.",
-      "descriptionEn": "Grilled salmon on focaccia with bacon, lettuce, tomato, and Olio mayo. Served with fries.",
+      "id": "belgium-endive-chopped-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada picada de endivia belga",
+      "nameEn": "Belgium Endive Chopped Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, naranja Valencia, higos secos, queso azul Great Hill, nueces pecanas tostadas, vinagreta",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Valencia Oranges, Sun-dried Figs,, Great Hill Blue, Toasted Pecans, Vinaigrette",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-salad-romaine-tomatoes-cucumber-banana-peppers-parmesan-cheese-red-onion-vinaigrette",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de albóndigas, lechuga romana, tomate, pepino, chiles banana, queso parmesano, cebolla morada, vinagreta",
+      "nameEn": "Meatball Salad, Romaine, Tomatoes, Cucumber, Banana Peppers, Parmesan Cheese, Red Onion, Vinaigrette",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each",
       "price": "$16.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pescado",
-        "Sándwich"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-11",
-      "categoryId": "specialties",
-      "nameEs": "Queso Fundido con Aguacate y Langosta",
-      "nameEn": "Lobster Avocado Grilled Cheese",
-      "descriptionEs": "Queso fundido premium con trozos de langosta y aguacate fresco entre pan tostado de girasol.",
-      "descriptionEn": "Rich melted cheese loaded with lobster meat and avocado between sunflower toast.",
-      "price": "$22.95",
-      "popular": true,
-      "badge": "Chef's Choice",
-      "tags": [
-        "Langosta",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "mini-cheeseburger-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de mini hamburguesas con queso",
+      "nameEn": "Mini Cheeseburger Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, lechuga, tomate, cebolla, pepinillos, cheddar, salsa especial, mini crutones de brioche",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Lettuce, Tomato, Onion, Pickles, Cheddar, Special Sauce, Mini Brioche Croutons",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-12",
-      "categoryId": "specialties",
-      "nameEs": "\"Hamburguesa\" de Atún Ahi",
-      "nameEn": "Tuna \"Burger\"",
-      "descriptionEs": "Atún Ahi sellado y rebanado con salsa de chile dulce, aguacate y vegetales tailandeses en pan brioche.",
-      "descriptionEn": "Seared and sliced Ahi tuna burger with sweet chili, avocado, and Thai veggies on brioche.",
+      "id": "grilled-heart-of-romaine-wedge-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada wedge de corazón de lechuga romana a la parrilla",
+      "nameEn": "Grilled Heart of Romaine Wedge Salad",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $8, camarones $4 c/u, queso gorgonzola, aderezo de queso azul, tomate, tocino crujiente",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $8, Shrimp $4 Each, Gorgonzola Cheese, Blue Cheese Dressing, Tomatoes, Crisp Bacon",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomodoro-tomato",
+      "categoryId": "pizza",
+      "nameEs": "Pomodoro de tomate",
+      "nameEn": "Pomodoro Tomato",
+      "descriptionEs": "Albahaca fresca, ricotta",
+      "descriptionEn": "Fresh Basil, Ricotta",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chipotle-bbq",
+      "categoryId": "pizza",
+      "nameEs": "BBQ al chipotle",
+      "nameEn": "Chipotle BBQ",
+      "descriptionEs": "Pollo, cheddar, tocino, cebolla morada",
+      "descriptionEn": "Chicken, Cheddar, Bacon, Red Onions",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fig",
+      "categoryId": "pizza",
+      "nameEs": "Higo",
+      "nameEn": "Fig",
+      "descriptionEs": "Gorgonzola, tocino, arúgula baby, pizza ensalada",
+      "descriptionEn": "Gorgonzola, Bacon, Baby Arugula, Pizza Salad",
       "price": "$19.95",
-      "popular": false,
-      "badge": "Innovador",
-      "tags": [
-        "Atún",
-        "Saludable"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-13",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel Especial de la Casa Olio",
-      "nameEn": "Olio Specialty Craft Cocktail",
-      "descriptionEs": "Bebida exclusiva de temporada preparada por nuestros mixólogos con licores selectos.",
-      "descriptionEn": "Rotating seasonal craft cocktail hand-crafted by our expert bartenders.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Cocktail",
-      "tags": [
-        "Bebida",
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "bolognese-pizza-with-mozzarella",
+      "categoryId": "pizza",
+      "nameEs": "Pizza boloñesa con mozzarella",
+      "nameEn": "Bolognese Pizza with Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.95",
       "ctaType": "in_store"
     },
     {
-      "id": "olio-restaurant-bar-14",
-      "categoryId": "beverages",
-      "nameEs": "Selección de Vinos Finos (Copa)",
-      "nameEn": "Selected House Wine (Glass)",
-      "descriptionEs": "Selección rotativa de vinos tintos y blancos de alta calidad para complementar su cena.",
-      "descriptionEn": "Carefully curated rotation of red and white wines to enhance your dining experience.",
-      "price": "$12.00",
-      "popular": false,
-      "badge": "Vino",
-      "tags": [
-        "Vino"
-      ],
-      "allergens": [],
+      "id": "grilled-portobello-mushrooms",
+      "categoryId": "pizza",
+      "nameEs": "Hongos portobello a la parrilla",
+      "nameEn": "Grilled Portobello Mushrooms",
+      "descriptionEs": "Vieiras, gorgonzola",
+      "descriptionEn": "Scallops, Gorgonzola",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-blt",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "BLT de salmón",
+      "nameEn": "Salmon BLT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-avocado-grilled-cheese",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de queso a la plancha con langosta y aguacate",
+      "nameEn": "Lobster Avocado Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-spicy-chicken-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de pollo crujiente picante",
+      "nameEn": "Crispy Spicy Chicken Sandwich",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, ensalada de col, alioli de cayena, pan brioche, papas fritas crujientes cortadas a mano",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Cole Slaw, Cayenne Aioli, Brioche Roll, Crispy Hand Cut Fries",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-all-natural-turkey-blt",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "BLT de pavo asado 100% natural",
+      "nameEn": "Roasted All Natural Turkey BLT",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, gouda ahumado, aguacate, mayonesa Olio en pan de girasol",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Smoked Gouda, Avocado, Olio Mayo On Sunflower Bread",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-grilled-chicken-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Wrap mediterráneo de pollo a la parrilla",
+      "nameEn": "Mediterranean Grilled Chicken Wrap",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, falafel, hummus, tzatziki, feta, lechuga, tomate",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Falafel, Hummus, Tzatziki, Feta, Lettuce, Tomato",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-burger",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "“Hamburguesa” de atún",
+      "nameEn": "Tuna \"Burger\"",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, hamburguesa de atún ahi sellada y rebanada con chile dulce, aguacate, verduras tailandesas en pan brioche",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Ahi Tuna Burger, Seared and Sliced with Sweet Chili, Avocado, Thai Veg on Brioche roll",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-vegetables",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Verduras a la parrilla",
+      "nameEn": "Grilled Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chipotle-bbq-pulled-pork",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Cerdo deshebrado BBQ al chipotle",
+      "nameEn": "Chipotle BBQ Pulled Pork",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, cheddar, cebolla morada crujiente, ensalada de col, pan brioche",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Cheddar, Crispy Red Onions, Coleslaw, Brioche Roll",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, queso de cabra, espinaca salteada, tomates secos en focaccia",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Goat Cheese, Sautéed Spinach, Sun-dried Tomatoes on Focaccia",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-salad-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Wrap de ensalada de atún",
+      "nameEn": "Tuna Salad Wrap",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, naranja, arándanos, gorgonzola, nueces pecanas, hojas verdes baby, manzana y aderezo balsámico",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Oranges, Cranberries, Gorgonzola, Pecans, Baby Greens, Apples and Balsamic Dressing",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmesan",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, en focaccia, marinara, mozzarella, ensalada César aparte",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, On Focaccia, Marinara, Mozzarella, Side of Caesar Salad",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crunchy-tofu-burger",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Hamburguesa de tofu crujiente",
+      "nameEn": "Crunchy Tofu Burger",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, pepino, tomate de mata, verduras encurtidas, alioli de sriracha, pan brioche casero, papas de polenta crujientes",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Cucumber, Vine Tomato, Pickled Vegetable, Sriracha Aioli, Homemade Brioche Bun, Crispy Polenta Fries",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-burger",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Hamburguesa de res alimentada con pasto",
+      "nameEn": "Grass Fed Burger",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, cheddar Grafton, lechuga, tomate, mayonesa Olio, pan brioche casero, papas fritas crujientes cortadas a mano",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Grafton Cheddar, Lettuce, Tomato, Olio Mayo, Homemade Brioche Bun, Crispy Hand Cut Fries",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-clams",
+      "categoryId": "pasta",
+      "nameEs": "Linguine con almejas",
+      "nameEn": "Linguine With Clams",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-lobster",
+      "categoryId": "pasta",
+      "nameEs": "Linguine con langosta",
+      "nameEn": "Linguine With Lobster",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$34.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-shrimp",
+      "categoryId": "pasta",
+      "nameEs": "Penne con camarones",
+      "nameEn": "Penne With Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-chicken-or-veal-parmesan",
+      "categoryId": "pasta",
+      "nameEs": "Pollo o ternera a la parmesana clásico",
+      "nameEn": "Classic Chicken or Veal Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-ala-vodka-with-shrimp",
+      "categoryId": "pasta",
+      "nameEs": "Penne a la vodka con camarones",
+      "nameEn": "Penne ala Vodka With Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angel-hair-with-shrimp",
+      "categoryId": "pasta",
+      "nameEs": "Cabello de ángel con camarones",
+      "nameEn": "Angel Hair With Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-fettuccine-alfredo-with-chicken",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine Alfredo clásico con pollo",
+      "nameEn": "Classic Fettuccine Alfredo With Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese",
+      "categoryId": "pasta",
+      "nameEs": "Rigatoni a la boloñesa",
+      "nameEn": "Rigatoni Bolognese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-with-artichoke",
+      "categoryId": "pasta",
+      "nameEs": "Pappardelle con alcachofa",
+      "nameEn": "Pappardelle With Artichoke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-and-chips",
+      "categoryId": "entree",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish and Chips",
+      "descriptionEs": "Bacalao del Atlántico capeado en cerveza con papas fritas cortadas a mano",
+      "descriptionEn": "Beer Battered Atlantic Cod with Hand Cut Fries",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-francaise",
+      "categoryId": "entree",
+      "nameEs": "Ternera a la francesa",
+      "nameEn": "Veal Francaise",
+      "descriptionEs": "Tomates asados lentamente, espinaca baby salteada, beurre blanc de limón y alcaparras sobre risotto de vino blanco",
+      "descriptionEn": "Slow Roasted Tomatoes, Wilted Baby Spinach, Lemon Caper Beurre Blanc over White Wine Risotto",
+      "price": "$30.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-lump-crab-cakes",
+      "categoryId": "entree",
+      "nameEs": "Pasteles de cangrejo jumbo lump",
+      "nameEn": "Jumbo Lump Crab Cakes",
+      "descriptionEs": "Papas dauphinoise, salsa de langosta y cebollín",
+      "descriptionEn": "Dauphinoise Potatoes, Lobster Chive Sauce",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-breaded-stuffed-chicken-breast",
+      "categoryId": "entree",
+      "nameEs": "Pechuga de pollo rellena empanizada crujiente",
+      "nameEn": "Crispy Breaded Stuffed Chicken Breast",
+      "descriptionEs": "Prosciutto, gorgonzola, puré de papas, ejotes franceses, crema de demi-glace de portobello",
+      "descriptionEn": "Prosciutto, Gorgonzola, Mashed Potatoes, Haricot Vert, Portobello Demi-Glacé Cream",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-pork-tenderloin",
+      "categoryId": "entree",
+      "nameEs": "Lomo de cerdo a la parrilla",
+      "nameEn": "Grilled Pork Tenderloin",
+      "descriptionEs": "Salsa balsámica de manzana asada, ejotes franceses, papas gratinadas con gorgonzola y tocino",
+      "descriptionEn": "Grilled Apple Balsamic Sauce, Haricot Vert, Gorgonzola Bacon Scalloped Potatoes",
+      "price": "$30.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-avocado-dinner",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Aguacate relleno (cena)",
+      "nameEn": "Stuffed Avocado (Dinner)",
+      "descriptionEs": "Langosta, tomate, relish de elote al chipotle 19.95",
+      "descriptionEn": "Lobster, Tomatoes, Chipotle Corn Relish 19.95",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hanger-steak-bruschetta-dinner",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Bruschetta de arrachera (cena)",
+      "nameEn": "Hanger Steak Bruschetta (Dinner)",
+      "descriptionEs": "Hongos portobello, chalotes, gorgonzola",
+      "descriptionEn": "Portobello Mushrooms, Shallots, Gorgonzola",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mezze-plate-felafel-hummus-tzatziki-feta-olives-flat-bread",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Plato mezze, falafel, hummus, tzatziki, feta, aceitunas, pan plano",
+      "nameEn": "Mezze plate, felafel, Hummus, Tzatziki, Feta, Olives, Flat Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-thai-vegetable-dinner",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Camarones con verduras tailandesas (cena)",
+      "nameEn": "shrimp Thai Vegetable (Dinner)",
+      "descriptionEs": "Rollitos de celofán",
+      "descriptionEn": "Cellophane Rolls",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-and-pork-meatball-bruschetta-appetizer-dinner",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Bruschetta de albóndigas de ternera y cerdo (entradas de la cena)",
+      "nameEn": "Veal and Pork Meatball Bruschetta (Appetizer (Dinner))",
+      "descriptionEs": "(3) Ricotta batida, crostini de masa madre",
+      "descriptionEn": "(3) Whipped Ricotta, Sour Dough Crostini",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussel-sprouts-roasted-with-bacon-and-horseradish-aioli",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Coles de Bruselas asadas con tocino y alioli de rábano picante",
+      "nameEn": "Brussel Sprouts roasted with Bacon and horseradish aioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-shrimp-or-chicken-taco",
+      "categoryId": "appetizer-dinner",
+      "nameEs": "Taco de camarones o pollo crujiente",
+      "nameEn": "Crispy Shrimp Or Chicken Taco",
+      "descriptionEs": "Pico de gallo, col encurtida, alioli de cilantro",
+      "descriptionEn": "Pico de Gallo, Pickled Cabbage, Cilantro Aioli",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olio-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada Olio (cena)",
+      "nameEn": "Olio Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, gorgonzola, crutones, aderezo balsámico",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Gorgonzola, Croutons Balsamic Dressing",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada César clásica (cena)",
+      "nameEn": "Classic Caesar Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "field-greens-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Hojas verdes de campo (cena)",
+      "nameEn": "Field Greens (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, nueces pecanas, naranja, arándanos, manzana, gorgonzola, vinagreta",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Pecans, Oranges, Cranberries Apples, Gorgonzola, Vinaigrette",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrata-baby-arugula-blt-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada BLT de burrata y arúgula baby (cena)",
+      "nameEn": "Burrata, Baby Arugula BLT Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-paillard-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Paillard de pollo crujiente (cena)",
+      "nameEn": "Crispy Chicken Paillard (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, arúgula baby, beurre blanc de limón y alcaparras",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Baby Arugula, Lemon Caper Beurre Blanc",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-sliced-hanger-steak-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Arrachera a la parrilla rebanada (cena)",
+      "nameEn": "Grilled Sliced Hanger Steak (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, arúgula baby, champiñones marinados, cebolla encurtida, queso azul, aderezo mil islas",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Baby Arugula, Marinated Mushrooms, Pickled Onions, Blue Cheese, Thousand Island Dressing",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-poke-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada poke de atún ahi (cena)",
+      "nameEn": "Ahi Tuna Poke Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, pepino, tomate, listones de zanahoria, rábano, lechuga romana, nuoc cham de ajonjolí, miel y lima",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Cucumbers, Tomato, Ribbon Carrot, Radish, Romaine Lettuce Sesame Honey lime Nuoc Cham",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belgium-endive-chopped-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada picada de endivia belga (cena)",
+      "nameEn": "Belgium Endive Chopped Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, naranja Valencia, higos secos, queso azul Great Hill, nueces pecanas tostadas, vinagreta",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Valencia Oranges, Sun-dried Figs,, Great Hill Blue, Toasted Pecans, Vinaigrette",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-salad-romaine-tomatoes-cucumber-banana-peppers-parmesan-cheese-red-onion-vinaigrette-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada de albóndigas, lechuga romana, tomate, pepino, chiles banana, queso parmesano, cebolla morada, vinagreta (cena)",
+      "nameEn": "Meatball Salad, Romaine, Tomatoes, Cucumber, Banana Peppers, Parmesan Cheese, Red Onion, Vinaigrette (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-cheeseburger-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada de mini hamburguesas con queso (cena)",
+      "nameEn": "Mini Cheeseburger Salad (Dinner)",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, lechuga, tomate, cebolla, pepinillos, cheddar, salsa especial, mini crutones de brioche",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Lettuce, Tomato, Onion, Pickles, Cheddar, Special Sauce, Mini Brioche Croutons",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-heart-of-romaine-wedge-salad-salad-dinner",
+      "categoryId": "salad-dinner",
+      "nameEs": "Ensalada wedge de corazón de lechuga romana a la parrilla (ensaladas de la cena)",
+      "nameEn": "Grilled Heart of Romaine Wedge Salad (Salad (Dinner))",
+      "descriptionEs": "Agrega: salmón $9, pollo $7, bistec $9, camarones $4 c/u, queso gorgonzola, aderezo de queso azul, tomate, tocino crujiente",
+      "descriptionEn": "Add: Salmon $9, Chicken $7, Steak $9, Shrimp $4 Each, Gorgonzola Cheese, Blue Cheese Dressing, Tomatoes, Crisp Bacon",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussel-sprouts",
+      "categoryId": "pizza-dinner",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussel Sprouts",
+      "descriptionEs": "Pizza blanca de tocino, alioli de rábano picante fresco",
+      "descriptionEn": "Bacon White Pizza, Fresh Horseradish Aioli",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-burger-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa de res alimentada con pasto (sándwiches)",
+      "nameEn": "Grass Fed Burger (Sandwiches)",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, cheddar Grafton, lechuga, tomate, mayonesa Olio, pan brioche casero, papas fritas crujientes cortadas a mano",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Grafton Cheddar, Lettuce, Tomato, Olio Mayo, Homemade Brioche Bun, Crispy Hand Cut Fries",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crunchy-tofu-burger-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa de tofu crujiente (sándwiches)",
+      "nameEn": "Crunchy Tofu Burger (Sandwiches)",
+      "descriptionEs": "Servido con papas fritas. Sustituye por ensalada $3 o papas de camote $1, pepino, tomate de mata, verduras encurtidas, alioli de sriracha, pan brioche casero, papas de polenta crujientes",
+      "descriptionEn": "Served with Fries. Sub Salad $3 or Sweet Potato Fries $1, Cucumber, Vine Tomato, Pickled Vegetable, Sriracha Aioli, Homemade Brioche Bun, Crispy Polenta Fries",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-shrimp-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Penne con camarones (cena)",
+      "nameEn": "Penne With Shrimp (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-chicken-or-veal-parmesan-pasta-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Pollo o ternera a la parmesana clásico (pasta de la cena)",
+      "nameEn": "Classic Chicken or Veal Parmesan (Pasta (Dinner))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-ricotta-filled-gnocchi",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Gnocchi rellenos de espinaca y ricotta",
+      "nameEn": "Spinach Ricotta Filled Gnocchi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-ala-vodka-with-shrimp-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Penne a la vodka con camarones (cena)",
+      "nameEn": "Penne ala Vodka With Shrimp (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angel-hair-with-shrimp-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Cabello de ángel con camarones (cena)",
+      "nameEn": "Angel Hair With Shrimp (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "housemade-gnocchi-with-pomodoro-sauce-and-pecorino-romano",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Gnocchi caseros con salsa pomodoro y pecorino romano",
+      "nameEn": "Housemade Gnocchi with Pomodoro Sauce and Pecorino Romano",
+      "descriptionEs": "*Pasta sin gluten disponible",
+      "descriptionEn": "*Gluten Free Pasta Available",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Rigatoni a la boloñesa (cena)",
+      "nameEn": "Rigatoni Bolognese (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pappardelle-with-artichoke-dinner",
+      "categoryId": "pasta-dinner",
+      "nameEs": "Pappardelle con alcachofa (cena)",
+      "nameEn": "Pappardelle With Artichoke (Dinner)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-and-chips-dinner",
+      "categoryId": "entree-dinner",
+      "nameEs": "Fish and chips (cena)",
+      "nameEn": "Fish and Chips (Dinner)",
+      "descriptionEs": "Bacalao del Atlántico capeado en cerveza con papas fritas crujientes cortadas a mano",
+      "descriptionEn": "Beer Battered Atlantic Cod with Crispy Hand Cut Fries",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork-taco-dinner",
+      "categoryId": "entree-dinner",
+      "nameEs": "Cena de tacos de cerdo deshebrado",
+      "nameEn": "Pulled Pork Taco Dinner",
+      "descriptionEs": "(3) Tacos suaves de maíz con cerdo deshebrado, cebolla, salsa picante de tomate asado, queso fresco",
+      "descriptionEn": "(3) Soft Corn Pulled Pork Tacos, Onion, Charred Tomato Salsa Picante, Queso Fresco",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porcini-mushroom-dusted-grilled-swordfish",
+      "categoryId": "entree-dinner",
+      "nameEs": "Pez espada a la parrilla espolvoreado con hongo porcini",
+      "nameEn": "Porcini Mushroom Dusted Grilled Swordfish",
+      "descriptionEs": "Sobre cangrejo jumbo lump, mango fresco, chiles banana, mantequilla de trufa blanca, pappardelle al huevo",
+      "descriptionEn": "Over Lump Crab, Fresh Mango, Banana Peppers, White Truffle Butter, Egg Pappardelle",
+      "price": "$34.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-francaise-dinner",
+      "categoryId": "entree-dinner",
+      "nameEs": "Ternera a la francesa (cena)",
+      "nameEn": "Veal Francaise (Dinner)",
+      "descriptionEs": "Tomates asados lentamente, espinaca baby salteada, beurre blanc de limón y alcaparras sobre risotto de vino blanco",
+      "descriptionEn": "Slow Roasted Tomatoes, Wilted Baby Spinach, Lemon Caper Beurre Blanc over White Wine Risotto",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-sliced-hanger-steak-chimichurri-pomme-frites",
+      "categoryId": "entree-dinner",
+      "nameEs": "Arrachera a la parrilla rebanada, chimichurri, papas fritas",
+      "nameEn": "Grilled Sliced Hanger Steak, Chimichurri, Pomme Frites",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-pesto-chicken-and-shrimp-mashed-potatoes-haricots-vert",
+      "categoryId": "entree-dinner",
+      "nameEs": "Pollo y camarones al pesto a la parrilla, puré de papas, ejotes franceses",
+      "nameEn": "Grilled Pesto Chicken and Shrimp, Mashed Potatoes, Haricots Vert",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-with-mashed",
+      "categoryId": "entree-dinner",
+      "nameEs": "New York strip con puré",
+      "nameEn": "New York Strip with Mashed",
+      "descriptionEs": "de papas, aros de cebolla, demi-glace $44.95",
+      "descriptionEn": "Potatoes, Onion Rings Demi Glaze $44.95",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-pork-tenderloin-dinner",
+      "categoryId": "entree-dinner",
+      "nameEs": "Lomo de cerdo a la parrilla (cena)",
+      "nameEn": "Grilled Pork Tenderloin (Dinner)",
+      "descriptionEs": "Salsa balsámica de manzana asada, ejotes franceses, papa gratinada con gorgonzola y tocino",
+      "descriptionEn": "Grilled Apple Balsamic Sauce, Haricot Vert, Gorgonzola Bacon Scalloped Potato",
+      "price": "$30.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olio-sangria",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría Olio",
+      "nameEn": "Olio Sangria",
+      "descriptionEs": "Nuestra propia receta",
+      "descriptionEn": "Our own recipe",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "key-west-cooler",
+      "categoryId": "cocktails",
+      "nameEs": "Key West Cooler",
+      "nameEn": "Key West Cooler",
+      "descriptionEs": "Malibu, Stoli Vanilla, jugo de lima recién exprimido, soda",
+      "descriptionEn": "Malibu, Stoli Vanilla, Fresh Squeezed Lime Juice, Soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "adult-creme-soda",
+      "categoryId": "cocktails",
+      "nameEs": "Crème soda para adultos",
+      "nameEn": "Adult Crème Soda",
+      "descriptionEs": "Stoli Vanilla, ginger ale",
+      "descriptionEn": "Stoli Vanilla, Ginger Ale",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aperol-cocktail",
+      "categoryId": "cocktails",
+      "nameEs": "Coctel Aperol",
+      "nameEn": "Aperol Cocktail",
+      "descriptionEs": "Prosecco, licor Aperol, rodajas de naranja fresca",
+      "descriptionEn": "Prosecco, Aperol Liquor, Fresh Orange Slices",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hawaiian-breeze",
+      "categoryId": "cocktails",
+      "nameEs": "Hawaiian Breeze",
+      "nameEn": "Hawaiian Breeze",
+      "descriptionEs": "Malibu, ron Myers, arándano, piña",
+      "descriptionEn": "Malibu, Myers Rum, Cranberry, Pineapple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hendricks-cocktail",
+      "categoryId": "cocktails",
+      "nameEs": "Coctel Hendricks",
+      "nameEn": "Hendricks Cocktail",
+      "descriptionEs": "Ginebra Hendricks, St. Germaine, soda",
+      "descriptionEn": "Hendricks Gin, St. Germaine, Soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bourbon-citrus-smash",
+      "categoryId": "cocktails",
+      "nameEs": "Smash cítrico de bourbon",
+      "nameEn": "Bourbon Citrus Smash",
+      "descriptionEs": "Bourbon, mezcla cítrica de la casa, limón y naranja macerados, soda",
+      "descriptionEn": "Bourbon, House Made Citrus Mix, Muddled Lemon & Orange, Soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cool-as-a-cucumber",
+      "categoryId": "cocktails",
+      "nameEs": "Fresco como un pepino",
+      "nameEn": "Cool As A Cucumber",
+      "descriptionEs": "Vodka de pepino, soda, licor de flor de saúco",
+      "descriptionEn": "Cucumber Vodka, Soda, Elderflower Liquor",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kentucky-tea",
+      "categoryId": "cocktails",
+      "nameEs": "Té de Kentucky",
+      "nameEn": "Kentucky Tea",
+      "descriptionEs": "Té recién preparado, bourbon, limonada recién exprimida",
+      "descriptionEn": "Fresh Brewed Tea, Bourbon, Fresh Squeezed Lemonade",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-fields",
+      "categoryId": "cocktails",
+      "nameEs": "Strawberry Fields",
+      "nameEn": "Strawberry Fields",
+      "descriptionEs": "Vodka de pepino, puré de fresa fresca, albahaca, agua mineral",
+      "descriptionEn": "Cucumber Vodka, Fresh Strawberry Purée, Basil, Club Soda",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olio-blue",
+      "categoryId": "martinis",
+      "nameEs": "Olio Blue",
+      "nameEn": "Olio Blue",
+      "descriptionEs": "Vodka servido dirty con aceituna rellena de queso azul",
+      "descriptionEn": "Vodka Served Dirty with a Blue Cheese Stuffed Olive",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-lemonade",
+      "categoryId": "martinis",
+      "nameEs": "Limonada de frambuesa",
+      "nameEn": "Raspberry Lemonade",
+      "descriptionEs": "Vodka de frambuesa y cítricos con mezcla de limón fresco",
+      "descriptionEn": "Raspberry, Citrus Vodka with Fresh Lemon Mix",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "german-chocolate-cake",
+      "categoryId": "martinis",
+      "nameEs": "Pastel de chocolate alemán",
+      "nameEn": "German Chocolate Cake",
+      "descriptionEs": "Licor Godiva, Malibu, vodka, amaretto",
+      "descriptionEn": "Godiva Liqueur, Malibu, Vodka, Amaretto",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-drop",
+      "categoryId": "martinis",
+      "nameEs": "Lemon Drop",
+      "nameEn": "Lemon Drop",
+      "descriptionEs": "Vodka cítrico, limón fresco, limoncello",
+      "descriptionEn": "Citrus Vodka, Fresh Lemon, Lemoncello",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-italy",
+      "categoryId": "martinis",
+      "nameEs": "Little Italy",
+      "nameEn": "Little Italy",
+      "descriptionEs": "Licor Aperol, prosecco, vodka",
+      "descriptionEn": "Aperol Liquor, Prosecco, Vodka",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wide-awake",
+      "categoryId": "martinis",
+      "nameEs": "Bien despierto",
+      "nameEn": "Wide Awake",
+      "descriptionEs": "Kahlua, Stoli Vanilla, espresso, un toque de crema irlandesa",
+      "descriptionEn": "Kahlua, Stoli Vanilla, Espresso, Splash of Irish Cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bubbly-martini",
+      "categoryId": "martinis",
+      "nameEs": "Martini burbujeante",
+      "nameEn": "Bubbly Martini",
+      "descriptionEs": "Vodka, St. Germain, prosecco",
+      "descriptionEn": "Vodka, St. Germain, Prosecco",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-strawberry-tini",
+      "categoryId": "martinis",
+      "nameEs": "Martini de fresa fresca",
+      "nameEn": "Fresh Strawberry Tini",
+      "descriptionEs": "Vodka, puré de fresa fresca",
+      "descriptionEn": "Vodka, Fresh Strawberry Purée",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "georgia",
+      "categoryId": "mules",
+      "nameEs": "Georgia",
+      "nameEn": "Georgia",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peachtree",
+      "categoryId": "mules",
+      "nameEs": "Peachtree",
+      "nameEn": "Peachtree",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic",
+      "categoryId": "mules",
+      "nameEs": "Orgánico",
+      "nameEn": "Organic",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-cucumber-vodka",
+      "categoryId": "mules",
+      "nameEs": "Vodka de pepino orgánico",
+      "nameEn": "Organic Cucumber Vodka",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino",
+      "categoryId": "red-wine",
+      "nameEs": "Ruffino",
+      "nameEn": "Ruffino",
+      "descriptionEs": "Chianti",
+      "descriptionEn": "Chianti",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simi",
+      "categoryId": "red-wine",
+      "nameEs": "Simi",
+      "nameEn": "Simi",
+      "descriptionEs": "Cabernet Sauvignon",
+      "descriptionEn": "Cabernet Sauvignon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caymus",
+      "categoryId": "red-wine",
+      "nameEs": "Caymus",
+      "nameEn": "Caymus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "conundrum-red",
+      "categoryId": "red-wine",
+      "nameEs": "Conundrum Red",
+      "nameEn": "Conundrum Red",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coastal-vines",
+      "categoryId": "red-wine",
+      "nameEs": "Coastal Vines",
+      "nameEn": "Coastal Vines",
+      "descriptionEs": "Merlot",
+      "descriptionEn": "Merlot",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "decoy",
+      "categoryId": "red-wine",
+      "nameEs": "Decoy",
+      "nameEn": "Decoy",
+      "descriptionEs": "Merlot",
+      "descriptionEn": "Merlot",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "argento",
+      "categoryId": "red-wine",
+      "nameEs": "Argento",
+      "nameEn": "Argento",
+      "descriptionEs": "Malbec",
+      "descriptionEn": "Malbec",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cline-sonoma-coast",
+      "categoryId": "red-wine",
+      "nameEs": "Cline Sonoma Coast",
+      "nameEn": "Cline Sonoma Coast",
+      "descriptionEs": "Pinot Noir",
+      "descriptionEn": "Pinot Noir",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parducci-pinot-noir",
+      "categoryId": "red-wine",
+      "nameEs": "Parducci Pinot Noir",
+      "nameEn": "Parducci Pinot Noir",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-opal",
+      "categoryId": "red-wine",
+      "nameEs": "Black Opal",
+      "nameEn": "Black Opal",
+      "descriptionEs": "Shiraz",
+      "descriptionEn": "Shiraz",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "j-lohr",
+      "categoryId": "red-wine",
+      "nameEs": "J. Lohr",
+      "nameEn": "J. Lohr",
+      "descriptionEs": "Cabernet Sauvignon",
+      "descriptionEn": "Cabernet Sauvignon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-crema",
+      "categoryId": "red-wine",
+      "nameEs": "La Crema",
+      "nameEn": "La Crema",
+      "descriptionEs": "Pinot Noir",
+      "descriptionEn": "Pinot Noir",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marchesi-di-barolo-dolcetto",
+      "categoryId": "red-wine",
+      "nameEs": "Marchesi Di Barolo Dolcetto",
+      "nameEn": "Marchesi Di Barolo Dolcetto",
+      "descriptionEs": "D’alba “Madonna”",
+      "descriptionEn": "D’alba “Madonna”",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roth",
+      "categoryId": "red-wine",
+      "nameEs": "Roth",
+      "nameEn": "Roth",
+      "descriptionEs": "Cabernet Sauvignon",
+      "descriptionEn": "Cabernet Sauvignon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zonin",
+      "categoryId": "white-wine",
+      "nameEs": "Zonin",
+      "nameEn": "Zonin",
+      "descriptionEs": "Prosecco (187 ml)",
+      "descriptionEn": "Prosecco (187 ml)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moment-de-plaisir",
+      "categoryId": "white-wine",
+      "nameEs": "Moment de Plaisir",
+      "nameEn": "Moment de Plaisir",
+      "descriptionEs": "Rosado",
+      "descriptionEn": "Rose",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oyster-bay",
+      "categoryId": "white-wine",
+      "nameEs": "Oyster Bay",
+      "nameEn": "Oyster Bay",
+      "descriptionEs": "Sauvignon Blanc",
+      "descriptionEn": "Sauvignon Blanc",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "giesen",
+      "categoryId": "white-wine",
+      "nameEs": "Giesen",
+      "nameEn": "Giesen",
+      "descriptionEs": "Sauvignon Blanc",
+      "descriptionEn": "Sauvignon Blanc",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavazza",
+      "categoryId": "white-wine",
+      "nameEs": "Cavazza",
+      "nameEn": "Cavazza",
+      "descriptionEs": "Pinot grigio",
+      "descriptionEn": "Pinot Grigio",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-margherita",
+      "categoryId": "white-wine",
+      "nameEs": "Santa Margherita",
+      "nameEn": "Santa Margherita",
+      "descriptionEs": "Pinot grigio",
+      "descriptionEn": "Pinot Grigio",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poggio",
+      "categoryId": "white-wine",
+      "nameEs": "Poggio",
+      "nameEn": "Poggio",
+      "descriptionEs": "Moscato",
+      "descriptionEn": "Moscato",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stone-cellars",
+      "categoryId": "white-wine",
+      "nameEs": "Stone Cellars",
+      "nameEn": "Stone Cellars",
+      "descriptionEs": "Chardonnay",
+      "descriptionEn": "Chardonnay",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kendall-jackson",
+      "categoryId": "white-wine",
+      "nameEs": "Kendall Jackson",
+      "nameEn": "Kendall Jackson",
+      "descriptionEs": "Chardonnay",
+      "descriptionEn": "Chardonnay",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "joseph-carr",
+      "categoryId": "white-wine",
+      "nameEs": "Joseph Carr",
+      "nameEn": "Joseph Carr",
+      "descriptionEs": "Chardonnay",
+      "descriptionEn": "Chardonnay",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beringer",
+      "categoryId": "white-wine",
+      "nameEs": "Beringer",
+      "nameEn": "Beringer",
+      "descriptionEs": "White zinfandel",
+      "descriptionEn": "White Zinfandel",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blufeld",
+      "categoryId": "white-wine",
+      "nameEs": "Blufeld",
+      "nameEn": "Blufeld",
+      "descriptionEs": "Riesling",
+      "descriptionEn": "Riesling",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino-prosecco",
+      "categoryId": "white-wine",
+      "nameEs": "Ruffino Prosecco",
+      "nameEn": "Ruffino Prosecco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "valdo",
+      "categoryId": "white-wine",
+      "nameEs": "Valdo",
+      "nameEn": "Valdo",
+      "descriptionEs": "Prosecco",
+      "descriptionEn": "Prosecco",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y platos adaptables. Por favor pregunte a su mesero.",
-      "aEn": "Yes, we feature various vegetarian options and adaptable dishes. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o clientes sin cita?",
-      "qEn": "Do you accept reservations or walk-ins?",
-      "aEs": "Aceptamos clientes sin reservación y también aceptamos reservaciones por teléfono.",
-      "aEn": "We warmly welcome walk-ins and also accept phone reservations."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Do you have parking available?",
-      "aEs": "Sí, contamos con amplio estacionamiento disponible directamente en nuestro local en Groton.",
-      "aEn": "Yes, we offer ample onsite parking directly at our Groton location."
-    }
-  ]
+  "faqs": []
 }
