@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "castello",
     "name": "Castello",
-    "tagline": "Traditional Italian & Mediterranean Cuisine / Cocina Tradicional Italiana y Mediterránea",
-    "address": "Danbury, CT",
+    "tagline": "Restaurant in Danbury | Restaurant en Danbury",
+    "address": "2 Padanaram Road, Danbury, CT 06811",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -27,369 +20,1875 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(203) 743-3828"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "antipasto",
+      "nameEs": "Antipasto",
+      "nameEn": "Antipasto",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "insalata",
+      "nameEs": "Insalata (ensaladas)",
+      "nameEn": "Insalata",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "zuppa",
+      "nameEs": "Zuppa",
+      "nameEn": "Zuppa",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "contorni",
+      "nameEs": "Contorni",
+      "nameEn": "Contorni",
+      "icon": "Utensils"
+    },
+    {
+      "id": "carni",
+      "nameEs": "Carni",
+      "nameEn": "Carni",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pesce",
+      "nameEs": "Pescados",
+      "nameEn": "Pesce",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-glass-red-wines",
+      "nameEs": "Vino por copa - Vinos tintos",
+      "nameEn": "Wine By The Glass - Red Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-by-the-glass-white-wines",
+      "nameEs": "Vino por copa - Vinos blancos",
+      "nameEn": "Wine By The Glass - White Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sparkling-wines",
+      "nameEs": "Vinos espumosos",
+      "nameEn": "Sparkling Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "half-bottle-selections-375-ml",
+      "nameEs": "Selección en media botella (375 ml)",
+      "nameEn": "Half Bottle Selections (375 ml)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-whites",
+      "nameEs": "Blancos italianos",
+      "nameEn": "Italian Whites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "french-whites",
+      "nameEs": "Blancos franceses",
+      "nameEn": "French Whites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "california-whites",
+      "nameEs": "Blancos de California",
+      "nameEn": "California Whites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "new-zealand-whites",
+      "nameEs": "Blancos de Nueva Zelanda",
+      "nameEn": "New Zealand Whites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-reds-tuscany-chianti",
+      "nameEs": "Tintos italianos - Chianti de la Toscana",
+      "nameEn": "Italian Reds - Tuscany Chianti",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Tintos italianos - Brunello di Montalcino de la Toscana",
+      "nameEn": "Italian Reds - Tuscany Brunello di Montalcino",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-reds-super-tuscan-igt",
+      "nameEs": "Tintos italianos - Super Toscano/IGT",
+      "nameEn": "Italian Reds - Super Tuscan/IGT",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-reds-veneto",
+      "nameEs": "Tintos italianos - Véneto",
+      "nameEn": "Italian Reds - Veneto",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-reds-piedmont",
+      "nameEs": "Tintos italianos - Piamonte",
+      "nameEn": "Italian Reds - Piedmont",
+      "icon": "Utensils"
+    },
+    {
+      "id": "old-world-reds",
+      "nameEs": "Tintos del Viejo Mundo",
+      "nameEn": "Old World Reds",
+      "icon": "Utensils"
+    },
+    {
+      "id": "california-washington-oregon-reds",
+      "nameEs": "Tintos de California / Washington / Oregón",
+      "nameEn": "California / Washington / Oregon Reds",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "castello-01",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta al Pomodoro",
-      "nameEn": "Classic Bruschetta",
-      "descriptionEs": "Pan rústico tostado al horno con ajo, tomates frescos de la huerta, albahaca y aceite de oliva virgen extra.",
-      "descriptionEn": "Toasted rustic artisan bread rubbed with garlic, topped with fresh garden tomatoes, basil, and extra virgin olive oil.",
-      "price": "$9.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "gamberetti-castello",
+      "categoryId": "antipasto",
+      "nameEs": "Gamberetti Castello",
+      "nameEn": "Gamberetti Castello",
+      "descriptionEs": "Camarones jumbo, corazones de alcachofa, pimiento asado, mozzarella y vinagre balsámico.",
+      "descriptionEn": "Jumbo shrimp, artichoke hearts, roasted pepper, mozzarella, and balsamic.",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos",
-      "nameEn": "Crispy Calamari",
-      "descriptionEs": "Calamares tiernos empanizados y fritos a la perfección, servidos con salsa marinara casera y rodajas de limón.",
-      "descriptionEn": "Tender squid lightly breaded and fried to golden perfection, served with house-made marinara sauce and fresh lemon wedges.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "shrimp-cocktail",
+      "categoryId": "antipasto",
+      "nameEs": "Cóctel de camarón",
+      "nameEn": "Shrimp Cocktail",
+      "descriptionEs": "(3) camarones jumbo, salsa cóctel.",
+      "descriptionEn": "(3) jumbo shrimp, cocktail sauce.",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-03",
-      "categoryId": "appetizers",
-      "nameEs": "Mozzarella en Carrozza",
-      "nameEn": "Fried Mozzarella Sticks",
-      "descriptionEs": "Queso mozzarella fresco empanizado en pan rallado italiano, frito y acompañado de nuestra salsa marinara de la casa.",
-      "descriptionEn": "Fresh mozzarella cheese coated in Italian breadcrumbs, fried until golden and gooey, served with warm marinara.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Vegetariano",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "calamari-fritti",
+      "categoryId": "antipasto",
+      "nameEs": "Calamari fritti",
+      "nameEn": "Calamari Fritti",
+      "descriptionEs": "Calamar fresco, salsa marinara.",
+      "descriptionEn": "Fresh calamari, marinara sauce.",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-04",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finísimas rodajas de solomillo de res crudo con alcaparras, rúcula fresca, queso parmesano en lascas y aderezo de limón.",
-      "descriptionEn": "Thinly sliced raw beef tenderloin served with capers, fresh arugula, shaved parmesan cheese, and a zesty lemon dressing.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Sin Gluten",
-        "Fino"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "artichoke-oreganata",
+      "categoryId": "antipasto",
+      "nameEs": "Alcachofa oreganata",
+      "nameEn": "Artichoke Oreganata",
+      "descriptionEs": "Corazones de alcachofa, migas de pan con ajo, limón y salsa de vino blanco.",
+      "descriptionEn": "Hearts of artichoke, garlic bread crumbs, lemon, and white wine sauce.",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-05",
-      "categoryId": "mains",
-      "nameEs": "Fettuccine Alfredo con Pollo",
-      "nameEn": "Chicken Fettuccine Alfredo",
-      "descriptionEs": "Pasta fettuccine fresca bañada en una cremosa salsa de mantequilla, crema y queso parmesano, coronada con pollo a la parrilla.",
-      "descriptionEn": "Fresh fettuccine pasta tossed in a rich and creamy butter, cream, and parmesan sauce, topped with grilled chicken breast.",
-      "price": "$21.95",
-      "popular": true,
-      "badge": "Bestseller",
-      "tags": [
-        "Pasta",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "vongole-oreganata",
+      "categoryId": "antipasto",
+      "nameEs": "Vongole oreganata",
+      "nameEn": "Vongole Oreganata",
+      "descriptionEs": "Almejas little neck, migas de pan con ajo.",
+      "descriptionEn": "Little neck clams, garlic bread crumbs.",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-06",
-      "categoryId": "mains",
-      "nameEs": "Spaghetti a la Boloñesa",
-      "nameEn": "Spaghetti Bolognese",
-      "descriptionEs": "La clásica receta italiana con nuestra salsa de carne cocinada a fuego lento durante horas con hierbas aromáticas y tomates san marzano.",
-      "descriptionEn": "The classic Italian recipe featuring our slow-simmered meat sauce with aromatic herbs and authentic San Marzano tomatoes.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Pasta",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "caprese",
+      "categoryId": "antipasto",
+      "nameEs": "Caprese",
+      "nameEn": "Caprese",
+      "descriptionEs": "Mozzarella fresca, tomate, pimientos asados.",
+      "descriptionEn": "Fresh mozzarella, tomato, roasted peppers.",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-07",
-      "categoryId": "mains",
-      "nameEs": "Ravioles de Langosta al Vodka",
-      "nameEn": "Lobster Ravioli in Vodka Sauce",
-      "descriptionEs": "Ravioles artesanales rellenos de tierna langosta, servidos en una suave salsa cremosa de tomate rosado con un toque de vodka.",
-      "descriptionEn": "Handmade ravioli stuffed with tender lobster meat, served in a velvety pink vodka cream sauce with fresh herbs.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos",
-        "Pasta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "cozze",
+      "categoryId": "antipasto",
+      "nameEs": "Cozze",
+      "nameEn": "Cozze",
+      "descriptionEs": "Mejillones de la Isla del Príncipe Eduardo en caldo de tomate con ajo y albahaca.",
+      "descriptionEn": "Prince Edward Island mussels in tomato broth with garlic and basil.",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-08",
-      "categoryId": "mains",
-      "nameEs": "Lasaña Tradicional al Horno",
-      "nameEn": "Traditional Baked Lasagna",
-      "descriptionEs": "Capas de pasta ancha, ragú de carne, ricotta cremosa, mozzarella y salsa marinara, horneadas hasta dorar.",
-      "descriptionEn": "Layers of wide pasta sheets, hearty meat ragu, creamy ricotta, melted mozzarella, and marinara sauce, baked to perfection.",
-      "price": "$20.50",
-      "popular": false,
-      "badge": "Horneado",
-      "tags": [
-        "Confort",
-        "Horno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "tuna-tartare",
+      "categoryId": "antipasto",
+      "nameEs": "Tartar de atún",
+      "nameEn": "Tuna Tartare",
+      "descriptionEs": "Atún fresco en cubos, tomates y papas en chips finamente laminadas.",
+      "descriptionEn": "Diced fresh tuna, tomatoes, and thinly sliced potato chips.",
+      "price": "$20.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-09",
-      "categoryId": "specialties",
-      "nameEs": "Pollo a la Parmigiana",
-      "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Pechuga de pollo empanizada cubierta con salsa marinara y abundante queso mozzarella fundido, servida con un lado de spaghetti.",
-      "descriptionEn": "Breaded chicken cutlet topped with marinara sauce and melted mozzarella cheese, served with a side of spaghetti.",
-      "price": "$22.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pollo",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "cesare",
+      "categoryId": "insalata",
+      "nameEs": "Cesare",
+      "nameEn": "Cesare",
+      "descriptionEs": "Lechuga romana crujiente, crutones de hierbas, aderezo César preparado en la mesa.",
+      "descriptionEn": "Crisp romaine, herbed croutons, table-side Caesar dressing.",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-10",
-      "categoryId": "specialties",
-      "nameEs": "Ternera a la Marsala",
-      "nameEn": "Veal Marsala",
-      "descriptionEs": "Tiernos medallones de ternera sofritos con champiñones frescos en una rica y aromática reducción de vino dulce Marsala.",
-      "descriptionEn": "Tender medallions of veal sautéed with fresh mushrooms in a rich and aromatic sweet Marsala wine reduction sauce.",
-      "price": "$27.50",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Ternera",
-        "Vino"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "insalata-castello",
+      "categoryId": "insalata",
+      "nameEs": "Insalata Castello",
+      "nameEn": "Insalata Castello",
+      "descriptionEs": "Mezcla de hojas verdes, betabel, gorgonzola importado, almendras tostadas.",
+      "descriptionEn": "Mixed field greens, red beets, imported gorgonzola, toasted almonds.",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-11",
-      "categoryId": "specialties",
-      "nameEs": "Filete de Salmón a la Parrilla",
-      "nameEn": "Grilled Salmon Fillet",
-      "descriptionEs": "Salmón fresco del Atlántico a la parrilla con mantequilla de limón y hierbas finas, acompañado de vegetales asados.",
-      "descriptionEn": "Fresh Atlantic salmon fillet grilled with lemon herb butter, served alongside roasted seasonal vegetables.",
-      "price": "$28.95",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "insalata-di-misticanza",
+      "categoryId": "insalata",
+      "nameEs": "Insalata Di Misticanza",
+      "nameEn": "Insalata Di Misticanza",
+      "descriptionEs": "Mezcla de hojas verdes, tomate, cebolla morada y aderezo de la casa.",
+      "descriptionEn": "Mixed field greens, tomato, red onions, and house dressing.",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-12",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Mariscos",
-      "nameEn": "Seafood Risotto",
-      "descriptionEs": "Arroz Arborio cremoso cocinado lentamente con camarones, mejillones, almejas y calamares en un caldo de vino blanco y tomate.",
-      "descriptionEn": "Slow-cooked creamy Arborio rice tossed with shrimp, mussels, clams, and calamari in a white wine and tomato seafood broth.",
-      "price": "$29.95",
-      "popular": false,
-      "badge": "Chef Special",
-      "tags": [
-        "Mariscos",
-        "Arroz"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos"
-      ],
+      "id": "carpaccio",
+      "categoryId": "insalata",
+      "nameEs": "Carpaccio",
+      "nameEn": "Carpaccio",
+      "descriptionEs": "Filet mignon laminado finamente, rúcula, pecorino romano en lascas.",
+      "descriptionEn": "Thinly sliced filet mignon, arugula, shaved pecorino romano.",
+      "price": "$22.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-13",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "House-Made Tiramisu",
-      "descriptionEs": "Clásico postre italiano con bizcochos empapados en café espresso, crema de mascarpone y cacao en polvo.",
-      "descriptionEn": "Classic Italian dessert made with ladyfingers dipped in espresso, layered with rich mascarpone cream and cocoa dust.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Postre",
-      "tags": [
-        "Dulce",
-        "Café"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "insalata-di-avocado",
+      "categoryId": "insalata",
+      "nameEs": "Insalata Di Avocado",
+      "nameEn": "Insalata Di Avocado",
+      "descriptionEs": "Rúcula, tomates, corazones de palma, aderezo de limón.",
+      "descriptionEn": "Arugula, tomatoes, hearts of palm, lemon dressing.",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-14",
-      "categoryId": "beverages",
-      "nameEs": "Cannoli Siciliano",
-      "nameEn": "Sicilian Cannoli",
-      "descriptionEs": "Crocante tubo de masa frita relleno de crema dulce de ricotta y trocitos de chocolate oscuro.",
-      "descriptionEn": "Crispy pastry shell filled with sweet ricotta cream and dark chocolate chips.",
-      "price": "$7.50",
-      "popular": false,
-      "badge": "Dulce",
-      "tags": [
-        "Tradicional"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "pasta-fagioli",
+      "categoryId": "zuppa",
+      "nameEs": "Pasta e fagioli",
+      "nameEn": "Pasta Fagioli",
+      "descriptionEs": "Frijoles cannellini, pasta de mantequilla y caldo de hierbas.",
+      "descriptionEn": "Cannellini beans, buerre pasta, and herbed broth.",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-15",
-      "categoryId": "beverages",
-      "nameEs": "San Pellegrino (Aranciata o Limonata)",
-      "nameEn": "San Pellegrino Sparkling Beverage",
-      "descriptionEs": "Refrescante bebida italiana con gas, elaborada con auténticos jugos cítricos mediterráneos.",
-      "descriptionEn": "Refreshing sparkling Italian beverage made with authentic Mediterranean citrus juices.",
-      "price": "$3.95",
-      "popular": false,
-      "badge": "Refresco",
-      "tags": [
-        "Sin Alcohol",
-        "Importado"
-      ],
-      "allergens": [],
+      "id": "stracciatella",
+      "categoryId": "zuppa",
+      "nameEs": "Stracciatella",
+      "nameEn": "Stracciatella",
+      "descriptionEs": "Sopa italiana de huevo con espinaca.",
+      "descriptionEn": "Italian egg drop soup with spinach.",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "castello-16",
-      "categoryId": "beverages",
-      "nameEs": "Espresso Italiano",
-      "nameEn": "Italian Espresso",
-      "descriptionEs": "Café espresso robusto, aromático y con una perfecta capa de crema.",
-      "descriptionEn": "Rich, robust, and aromatic espresso with a delicate crema on top.",
-      "price": "$3.50",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Caliente"
-      ],
-      "allergens": [],
+      "id": "broccoli-rabe",
+      "categoryId": "contorni",
+      "nameEs": "Brócoli rabe",
+      "nameEn": "Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach",
+      "categoryId": "contorni",
+      "nameEs": "Espinaca",
+      "nameEn": "Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-potatoes",
+      "categoryId": "contorni",
+      "nameEs": "Papas asadas",
+      "nameEn": "Roasted Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "contorni",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potatoes",
+      "categoryId": "contorni",
+      "nameEs": "Puré de papa",
+      "nameEn": "Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-vegetables",
+      "categoryId": "contorni",
+      "nameEs": "Vegetales del chef",
+      "nameEn": "Chef's Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-castello",
+      "categoryId": "carni",
+      "nameEs": "Pollo Castello",
+      "nameEn": "Pollo Castello",
+      "descriptionEs": "Pechuga de pollo orgánico, prosciutto di Parma, mozzarella fresca, pimiento morrón asado.",
+      "descriptionEn": "Organic breast of chicken, prosciutto di Parma, fresh mozzarella, roasted bell pepper.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-parmigiana",
+      "categoryId": "carni",
+      "nameEs": "Pollo Parmigiana",
+      "nameEn": "Pollo Parmigiana",
+      "descriptionEs": "Pollo orgánico empanizado, salsa marinara y mozzarella derretida.",
+      "descriptionEn": "Organic breaded chicken, marinara, and melted mozzarella.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-francese",
+      "categoryId": "carni",
+      "nameEs": "Pollo Francese",
+      "nameEn": "Pollo Francese",
+      "descriptionEs": "Pechuga de pollo orgánico, capa de huevo, limón y vino blanco.",
+      "descriptionEn": "Organic breast of chicken, egg wash, lemon, and white wine.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-scarpariello",
+      "categoryId": "carni",
+      "nameEs": "Pollo Scarpariello",
+      "nameEn": "Pollo Scarpariello",
+      "descriptionEs": "Pollo orgánico y salchicha italiana con ajo, chiles cereza picantes, champiñones y romero.",
+      "descriptionEn": "Organic chicken and Italian sausage with garlic, hot cherry peppers, mushrooms, and rosemary.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vitello-marsala",
+      "categoryId": "carni",
+      "nameEs": "Ternera Marsala",
+      "nameEn": "Vitello Marsala",
+      "descriptionEs": "Escalopa de ternera, champiñones y vino marsala.",
+      "descriptionEn": "Veal scallopini, mushrooms, and marsala wine.",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vitello-saltimboca",
+      "categoryId": "carni",
+      "nameEs": "Vitello Saltimboca",
+      "nameEn": "Vitello Saltimboca",
+      "descriptionEs": "Escalopa de ternera, prosciutto di Parma, salvia, salsa de coñac oscuro.",
+      "descriptionEn": "Veal scallopini, prosciutto di Parma, sage, brown cognac sauce.",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vitello-castello",
+      "categoryId": "carni",
+      "nameEs": "Vitello Castello",
+      "nameEn": "Vitello Castello",
+      "descriptionEs": "Escalopa de ternera, camarones jumbo picados, champiñones y salsa ligera de tomate.",
+      "descriptionEn": "Veal scallopini, chopped jumbo shrimp, mushrooms, and light tomato sauce.",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistecca-alla-griglia",
+      "categoryId": "carni",
+      "nameEs": "Bistecca Alla Griglia",
+      "nameEn": "Bistecca Alla Griglia",
+      "descriptionEs": "NY strip prime de 15 oz, madurado en seco 30 días.",
+      "descriptionEn": "15 oz prime NY strip, 30 days dry aged.",
+      "price": "$54.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "costoletta-di-vitello",
+      "categoryId": "carni",
+      "nameEs": "Costoletta di vitello",
+      "nameEn": "Costoletta Di Vitello",
+      "descriptionEs": "Chuleta de ternera alimentada con pasto de 14 oz.",
+      "descriptionEn": "14 oz grass-fed veal chop.",
+      "price": "$54.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filetto-di-manzo",
+      "categoryId": "carni",
+      "nameEs": "Filetto di Manzo",
+      "nameEn": "Filetto di Manzo",
+      "descriptionEs": "Filet mignon prime de corte central de 13 oz, madurado en seco 30 días.",
+      "descriptionEn": "13 oz center cut prime filet mignon, 30 days dry aged.",
+      "price": "$58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-vodka",
+      "categoryId": "pasta",
+      "nameEs": "Penne a la vodka (catering)",
+      "nameEn": "Penne Vodka",
+      "descriptionEs": "Tomate, crema, albahaca.",
+      "descriptionEn": "Tomato, cream, basil.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese",
+      "categoryId": "pasta",
+      "nameEs": "Rigatoni a la boloñesa",
+      "nameEn": "Rigatoni Bolognese",
+      "descriptionEs": "Salsa de carne casera.",
+      "descriptionEn": "Homemade meat sauce.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ravioli-pomodoro",
+      "categoryId": "pasta",
+      "nameEs": "Ravioli Pomodoro",
+      "nameEn": "Ravioli Pomodoro",
+      "descriptionEs": "Ravioles, ricotta, mozzarella, parmigiana y salsa de tomate fresco.",
+      "descriptionEn": "Ravioli, ricotta, mozzarella, parmigiana, and fresh tomato sauce.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cacio-e-pepe",
+      "categoryId": "pasta",
+      "nameEs": "Cacio e Pepe",
+      "nameEn": "Cacio e Pepe",
+      "descriptionEs": "Espagueti mezclado en la mesa con salsa de queso fresco, rociado con aceite de trufa.",
+      "descriptionEn": "Spaghetti tossed tableside in fresh cheese sauce, drizzled with truffle oil.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "categoryId": "pasta",
+      "nameEs": "Espagueti a la carbonara",
+      "nameEn": "Spaghetti Carbonara",
+      "descriptionEs": "Espagueti, pancetta, huevo, pecorino romano.",
+      "descriptionEn": "Spaghetti, pancetta, egg, pecorino romano.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguini-con-vongole",
+      "categoryId": "pasta",
+      "nameEs": "Linguini con Vongole",
+      "nameEn": "Linguini con Vongole",
+      "descriptionEs": "Linguini, almejas little neck, ajo y salsa de vino blanco.",
+      "descriptionEn": "Linguini, little neck clams, garlic, and white wine sauce.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-castello",
+      "categoryId": "pasta",
+      "nameEs": "Spaghetti Castello",
+      "nameEn": "Spaghetti Castello",
+      "descriptionEs": "Espagueti, camarones jumbo, chiles cereza picantes y salsa de tomate.",
+      "descriptionEn": "Spaghetti, jumbo shrimp, hot cherry peppers, and tomato sauce.",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi",
+      "categoryId": "pesce",
+      "nameEs": "Camarones scampi al ajo",
+      "nameEn": "Shrimp Scampi",
+      "descriptionEs": "Camarones jumbo salteados con ajo y hierbas en salsa de limón, servidos sobre linguini.",
+      "descriptionEn": "Jumbo shrimp tossed with garlic and herbs in a lemon sauce, served over linguini.",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon",
+      "categoryId": "pesce",
+      "nameEs": "Salmón",
+      "nameEn": "Salmon",
+      "descriptionEs": "Salmón orgánico sellado en sartén, salsa Roma.",
+      "descriptionEn": "Pan-seared organic salmon, Roma sauce.",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna",
+      "categoryId": "pesce",
+      "nameEs": "Atún ahi",
+      "nameEn": "Ahi Tuna",
+      "descriptionEs": "Costra de pimienta, salsa de mostaza Dijon.",
+      "descriptionEn": "Peppercorn crust, Dijon mustard sauce.",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-cheesecake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de queso italiano",
+      "nameEn": "Italian Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "dessert",
+      "nameEs": "Tiramisú",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli",
+      "categoryId": "dessert",
+      "nameEs": "Cannoli",
+      "nameEn": "Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-creme-brulee",
+      "categoryId": "dessert",
+      "nameEs": "Espresso Crème Brûlée",
+      "nameEn": "Espresso Crème Brûlée",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-strudel",
+      "categoryId": "dessert",
+      "nameEs": "Strudel de manzana",
+      "nameEn": "Apple Strudel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "josh-cellars-cabernet-sauvignon",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Josh Cellars Cabernet Sauvignon",
+      "nameEn": "Josh Cellars Cabernet Sauvignon",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gaja-promis-super-tuscan",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Gaja Promis Super Tuscan",
+      "nameEn": "Gaja Promis Super Tuscan",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "art-of-earth-montepulciano",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Art of Earth Montepulciano",
+      "nameEn": "Art of Earth Montepulciano",
+      "descriptionEs": "Italia | Orgánico",
+      "descriptionEn": "Italy | Organic",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "castello-di-volpaia-super-tuscan",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Castello di Volpaia Super Tuscan",
+      "nameEn": "Castello di Volpaia Super Tuscan",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poggio-della-torre-chianti",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Poggio della Torre Chianti",
+      "nameEn": "Poggio della Torre Chianti",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pavillon-royal-merlot",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Pavillon Royal Merlot",
+      "nameEn": "Pavillon Royal Merlot",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "firestone-pinot-noir",
+      "categoryId": "wine-by-the-glass-red-wines",
+      "nameEs": "Firestone Pinot Noir",
+      "nameEn": "Firestone Pinot Noir",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chalk-hill-chardonnay",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Chalk Hill Chardonnay",
+      "nameEn": "Chalk Hill Chardonnay",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pavillon-royal-chardonnay",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Pavillon Royal Chardonnay",
+      "nameEn": "Pavillon Royal Chardonnay",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dashwood-sauvignon-blanc",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Dashwood Sauvignon Blanc",
+      "nameEn": "Dashwood Sauvignon Blanc",
+      "descriptionEs": "Nueva Zelanda",
+      "descriptionEn": "New Zealand",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barone-fini-pinot-grigio",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Barone Fini Pinot Grigio",
+      "nameEn": "Barone Fini Pinot Grigio",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mas-la-chevaliere-rose",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Mas la Chevaliere Rosé",
+      "nameEn": "Mas la Chevaliere Rosé",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinzano-prosecco",
+      "categoryId": "wine-by-the-glass-white-wines",
+      "nameEs": "Cinzano Prosecco",
+      "nameEn": "Cinzano Prosecco",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-marina-prosecco",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Santa Marina Prosecco",
+      "nameEn": "Santa Marina Prosecco",
+      "descriptionEs": "Veneto",
+      "descriptionEn": "Veneto",
+      "price": "$36.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maschio-prosecco",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Maschio Prosecco",
+      "nameEn": "Maschio Prosecco",
+      "descriptionEs": "Veneto",
+      "descriptionEn": "Veneto",
+      "price": "$42.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "domaine-chandon-blanc-de-noir",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Domaine Chandon Blanc de Noir",
+      "nameEn": "Domaine Chandon Blanc de Noir",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$54.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nicolas-feuillate-brut-champagne",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Nicolas Feuillate Brut Champagne",
+      "nameEn": "Nicolas Feuillate Brut Champagne",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$76.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moet-chandon-imperial-champagne",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Moët & Chandon Imperial Champagne",
+      "nameEn": "Moët & Chandon Imperial Champagne",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$99.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nicolas-feuillate-rose-champagne",
+      "categoryId": "sparkling-wines",
+      "nameEs": "Nicolas Feuillate Rosé Champagne",
+      "nameEn": "Nicolas Feuillate Rosé Champagne",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$99.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roederer-estate-brut-sparkling-wine",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Roederer Estate Brut Sparkling Wine",
+      "nameEn": "Roederer Estate Brut Sparkling Wine",
+      "descriptionEs": "Anderson Valley, California",
+      "descriptionEn": "Anderson Valley, California",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ferrari-rose-brut-sparkling-wine",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Ferrari Rosé Brut Sparkling Wine",
+      "nameEn": "Ferrari Rosé Brut Sparkling Wine",
+      "descriptionEs": "Trentino, Italia",
+      "descriptionEn": "Trentino, Italy",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whispering-angel-rose",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Whispering Angel Rosé",
+      "nameEn": "Whispering Angel Rosé",
+      "descriptionEs": "Provenza, Francia",
+      "descriptionEn": "Provence, France",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pascal-jolivet-sancerre",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Pascal Jolivet Sancerre",
+      "nameEn": "Pascal Jolivet Sancerre",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-margherita-pinot-grigio",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Santa Margherita Pinot Grigio",
+      "nameEn": "Santa Margherita Pinot Grigio",
+      "descriptionEs": "Valdadige, Italia",
+      "descriptionEn": "Valdadige, Italy",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clos-du-bois-chardonnay",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Clos Du Bois Chardonnay",
+      "nameEn": "Clos Du Bois Chardonnay",
+      "descriptionEs": "North Coast",
+      "descriptionEn": "North Coast",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino-chianti-classico-riserva-ducale",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Ruffino Chianti Classico Riserva Ducale",
+      "nameEn": "Ruffino Chianti Classico Riserva Ducale",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steele-pinot-noir",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Steele Pinot Noir",
+      "nameEn": "Steele Pinot Noir",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "starmont-pinot-noir",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Starmont Pinot Noir",
+      "nameEn": "Starmont Pinot Noir",
+      "descriptionEs": "Napa, California",
+      "descriptionEn": "Napa, California",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zaccagnini-montepulciano-d-abuzzo-reserve",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Zaccagnini Montepulciano D' Abuzzo Reserve",
+      "nameEn": "Zaccagnini Montepulciano D' Abuzzo Reserve",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rocco-delle-macie-chianti-classico",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Rocco Delle Macie Chianti Classico",
+      "nameEn": "Rocco Delle Macie Chianti Classico",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alexander-valley-vineyards-cabernet-sauvignon",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Alexander Valley Vineyards Cabernet Sauvignon",
+      "nameEn": "Alexander Valley Vineyards Cabernet Sauvignon",
+      "descriptionEs": "Alexander Valley",
+      "descriptionEn": "Alexander Valley",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "terrazas-malbec-reserve",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Terrazas Malbec Reserve",
+      "nameEn": "Terrazas Malbec Reserve",
+      "descriptionEs": "Mendoza, Argentina",
+      "descriptionEn": "Mendoza, Argentina",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciacci-piccolomini-brunello-di-montalcino",
+      "categoryId": "half-bottle-selections-375-ml",
+      "nameEs": "Ciacci Piccolomini Brunello Di Montalcino",
+      "nameEn": "Ciacci Piccolomini Brunello Di Montalcino",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-san-angelo-pinot-grigio",
+      "categoryId": "italian-whites",
+      "nameEs": "Banfi San Angelo Pinot Grigio",
+      "nameEn": "Banfi San Angelo Pinot Grigio",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$46.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-margherita-pinot-grigio-italian-whites",
+      "categoryId": "italian-whites",
+      "nameEs": "Santa Margherita Pinot Grigio (Blancos italianos)",
+      "nameEn": "Santa Margherita Pinot Grigio (Italian Whites)",
+      "descriptionEs": "Valdadige, Italia",
+      "descriptionEn": "Valdadige, Italy",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuffo-soave",
+      "categoryId": "italian-whites",
+      "nameEs": "Tuffo Soave",
+      "nameEn": "Tuffo Soave",
+      "descriptionEs": "Verona, Italia",
+      "descriptionEn": "Verona, Italy",
+      "price": "$40.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-principessa-gavi",
+      "categoryId": "italian-whites",
+      "nameEs": "Banfi Principessa Gavi",
+      "nameEn": "Banfi Principessa Gavi",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$45.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-bramito-chardonnay",
+      "categoryId": "italian-whites",
+      "nameEs": "Antinori Bramito Chardonnay",
+      "nameEn": "Antinori Bramito Chardonnay",
+      "descriptionEs": "Umbría, Italia",
+      "descriptionEn": "Umbria, Italy",
+      "price": "$55.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "villa-sparina-gavi-di-gavi",
+      "categoryId": "italian-whites",
+      "nameEs": "Villa Sparina Gavi di Gavi",
+      "nameEn": "Villa Sparina Gavi di Gavi",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$50.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-scolca-black-label-gavi-di-gavi",
+      "categoryId": "italian-whites",
+      "nameEs": "La Scolca Black Label Gavi di Gavi",
+      "nameEn": "La Scolca Black Label Gavi di Gavi",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$80.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cave-de-lugny-les-charmes",
+      "categoryId": "french-whites",
+      "nameEs": "Cave De Lugny Les Charmes",
+      "nameEn": "Cave De Lugny Les Charmes",
+      "descriptionEs": "Borgoña, Francia",
+      "descriptionEn": "Burgundy, France",
+      "price": "$45.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whispering-angel",
+      "categoryId": "french-whites",
+      "nameEs": "Whispering Angel",
+      "nameEn": "Whispering Angel",
+      "descriptionEs": "Provenza, Francia",
+      "descriptionEn": "Provence, France",
+      "price": "$55.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vincent-estate-pouilly-fuisse-marie-antoinette",
+      "categoryId": "french-whites",
+      "nameEs": "Vincent Estate Pouilly Fuisse Marie Antoinette",
+      "nameEn": "Vincent Estate Pouilly Fuisse Marie Antoinette",
+      "descriptionEs": "Borgoña, Francia",
+      "descriptionEn": "Burgundy, France",
+      "price": "$74.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rock-angel",
+      "categoryId": "french-whites",
+      "nameEs": "Rock Angel",
+      "nameEn": "Rock Angel",
+      "descriptionEs": "Provenza, Francia",
+      "descriptionEn": "Provence, France",
+      "price": "$80.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "langlois-chateau-sancerre",
+      "categoryId": "french-whites",
+      "nameEs": "Langlois Chateau Sancerre",
+      "nameEn": "Langlois Chateau Sancerre",
+      "descriptionEs": "Loira, Francia",
+      "descriptionEn": "Loire, France",
+      "price": "$70.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateau-d-esclans-garrus",
+      "categoryId": "french-whites",
+      "nameEs": "Chateau d' Esclans Garrus",
+      "nameEn": "Chateau d' Esclans Garrus",
+      "descriptionEs": "Costas de Provenza, Francia",
+      "descriptionEn": "Cotes de Provence, France",
+      "price": "$198.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chalk-hill-estate-sauvignon-blanc",
+      "categoryId": "california-whites",
+      "nameEs": "Chalk Hill Estate Sauvignon Blanc",
+      "nameEn": "Chalk Hill Estate Sauvignon Blanc",
+      "descriptionEs": "Sonoma",
+      "descriptionEn": "Sonoma",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orin-swift-blank-stare-sauvignon-blanc",
+      "categoryId": "california-whites",
+      "nameEs": "Orin Swift Blank Stare Sauvignon Blanc",
+      "nameEn": "Orin Swift Blank Stare Sauvignon Blanc",
+      "descriptionEs": "California",
+      "descriptionEn": "California",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stag-s-leap-wine-cellars-sauvignon-blanc",
+      "categoryId": "california-whites",
+      "nameEs": "Stag's Leap Wine Cellars Sauvignon Blanc",
+      "nameEn": "Stag's Leap Wine Cellars Sauvignon Blanc",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$85.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "markham-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Markham Chardonnay",
+      "nameEn": "Markham Chardonnay",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calling-dutton-ranch-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Calling Dutton Ranch Chardonnay",
+      "nameEn": "Calling Dutton Ranch Chardonnay",
+      "descriptionEs": "Russian River",
+      "descriptionEn": "Russian River",
+      "price": "$75.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jordan-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Jordan Chardonnay",
+      "nameEn": "Jordan Chardonnay",
+      "descriptionEs": "Russian River",
+      "descriptionEn": "Russian River",
+      "price": "$80.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cakebread-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Cakebread Chardonnay",
+      "nameEn": "Cakebread Chardonnay",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$86.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stag-s-leap-wine-cellars-karia-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Stag's Leap Wine Cellars Karia Chardonnay",
+      "nameEn": "Stag's Leap Wine Cellars Karia Chardonnay",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$100.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nickel-nickel-truchard-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Nickel & Nickel Truchard Chardonnay",
+      "nameEn": "Nickel & Nickel Truchard Chardonnay",
+      "descriptionEs": "Carneros, Napa",
+      "descriptionEn": "Carneros, Napa",
+      "price": "$140.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "far-niente-chardonnay",
+      "categoryId": "california-whites",
+      "nameEs": "Far Niente Chardonnay",
+      "nameEn": "Far Niente Chardonnay",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$150.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "villa-maria-sauvignon-blanc",
+      "categoryId": "new-zealand-whites",
+      "nameEs": "Villa Maria Sauvignon Blanc",
+      "nameEn": "Villa Maria Sauvignon Blanc",
+      "descriptionEs": "Marlborough, Nueva Zelanda",
+      "descriptionEn": "Marlborough, NZ",
+      "price": "$45.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vavasour-sauvignon-blanc",
+      "categoryId": "new-zealand-whites",
+      "nameEs": "Vavasour Sauvignon Blanc",
+      "nameEn": "Vavasour Sauvignon Blanc",
+      "descriptionEs": "Marlborough, Nueva Zelanda",
+      "descriptionEn": "Marlborough, NZ",
+      "price": "$45.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loveblock-sauvignon-blanc",
+      "categoryId": "new-zealand-whites",
+      "nameEs": "Loveblock Sauvignon Blanc",
+      "nameEn": "Loveblock Sauvignon Blanc",
+      "descriptionEs": "Marlborough, Nueva Zelanda",
+      "descriptionEn": "Marlborough, NZ",
+      "price": "$65.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cecchi-chianti",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Cecchi Chianti",
+      "nameEn": "Cecchi Chianti",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$43.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "castello-di-monastero-chianti-classico",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Castello di Monastero Chianti Classico",
+      "nameEn": "Castello di Monastero Chianti Classico",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$49.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-peppoli-chianti-classico",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Antinori Peppoli Chianti Classico",
+      "nameEn": "Antinori Peppoli Chianti Classico",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$75.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino-chianti-classico-reserva-ducale",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Ruffino Chianti Classico Reserva Ducale",
+      "nameEn": "Ruffino Chianti Classico Reserva Ducale",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$74.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-chianti-classico-riserva",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Banfi Chianti Classico Riserva",
+      "nameEn": "Banfi Chianti Classico Riserva",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$65.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-tenuta-di-marchese-chianti-classico-riserva",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Antinori Tenuta di Marchese Chianti Classico Riserva",
+      "nameEn": "Antinori Tenuta di Marchese Chianti Classico Riserva",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$90.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino-gold-label-chianti-classico-riserva",
+      "categoryId": "italian-reds-tuscany-chianti",
+      "nameEs": "Ruffino Gold Label Chianti Classico Riserva",
+      "nameEn": "Ruffino Gold Label Chianti Classico Riserva",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$110.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caparzo-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Caparzo Brunello di Montalcino",
+      "nameEn": "Caparzo Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$120.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Banfi Brunello di Montalcino",
+      "nameEn": "Banfi Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$150.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciacci-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Ciacci Brunello di Montalcino",
+      "nameEn": "Ciacci Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$288.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "il-poggione-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Il Poggione Brunello di Montalcino",
+      "nameEn": "Il Poggione Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$169.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ruffino-greppone-mazi-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Ruffino Greppone Mazi Brunello di Montalcino",
+      "nameEn": "Ruffino Greppone Mazi Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$175.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fattoria-la-lecciaia-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Fattoria La Lecciaia Brunello di Montalcino",
+      "nameEn": "Fattoria La Lecciaia Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia | 1999",
+      "descriptionEn": "Montalcino, Italy | 1999",
+      "price": "$259.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fattoria-le-lecciaia-brunello-di-montalcino",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Fattoria Le Lecciaia Brunello di Montalcino",
+      "nameEn": "Fattoria Le Lecciaia Brunello di Montalcino",
+      "descriptionEs": "Montalcino, Italia | 2010",
+      "descriptionEn": "Montalcino, Italy | 2010",
+      "price": "$125.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "il-poggione-brunello-di-montalcino-reserve",
+      "categoryId": "italian-reds-tuscany-brunello-di-montalcino",
+      "nameEs": "Il Poggione Brunello Di Montalcino Reserve",
+      "nameEn": "Il Poggione Brunello Di Montalcino Reserve",
+      "descriptionEs": "Montalcino, Italia",
+      "descriptionEn": "Montalcino, Italy",
+      "price": "$300.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-centine-rossi",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Banfi Centine Rossi",
+      "nameEn": "Banfi Centine Rossi",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$40.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sassoregale-sangiovese",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Sassoregale Sangiovese",
+      "nameEn": "Sassoregale Sangiovese",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$45.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-rosso-di-montalcino",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Banfi Rosso di Montalcino",
+      "nameEn": "Banfi Rosso di Montalcino",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$69.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-toscana-magna-cum-laude",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Banfi Toscana Magna Cum Laude",
+      "nameEn": "Banfi Toscana Magna Cum Laude",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$75.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-rosso-di-montalcino",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Antinori Rosso di Montalcino",
+      "nameEn": "Antinori Rosso di Montalcino",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$80.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tenuta-guado-al-tasso-il-bruciato",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Tenuta Guado Al Tasso Il Bruciato",
+      "nameEn": "Tenuta Guado Al Tasso Il Bruciato",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$90.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-toscana-excelsus",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Banfi Toscana Excelsus",
+      "nameEn": "Banfi Toscana Excelsus",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$165.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banfi-summus-sant-antimo",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Banfi Summus Sant'Antimo",
+      "nameEn": "Banfi Summus Sant'Antimo",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$200.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-tignanello",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Antinori Tignanello",
+      "nameEn": "Antinori Tignanello",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$269.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tenuta-san-guido-sassicaia",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Tenuta San Guido Sassicaia",
+      "nameEn": "Tenuta San Guido Sassicaia",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$649.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tenuta-dellornellaia-ornellaia",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Tenuta Dellornellaia Ornellaia",
+      "nameEn": "Tenuta Dellornellaia Ornellaia",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$699.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antinori-solaia",
+      "categoryId": "italian-reds-super-tuscan-igt",
+      "nameEs": "Antinori Solaia",
+      "nameEn": "Antinori Solaia",
+      "descriptionEs": "Toscana, Italia",
+      "descriptionEn": "Tuscany, Italy",
+      "price": "$800.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sartori-pinot-noir",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Sartori Pinot Noir",
+      "nameEn": "Sartori Pinot Noir",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$42.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santi-solane-valpolicella",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Santi Solane Valpolicella",
+      "nameEn": "Santi Solane Valpolicella",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$52.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masi-campofiorin-ripasso-valpolicella",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Masi Campofiorin Ripasso Valpolicella",
+      "nameEn": "Masi Campofiorin Ripasso Valpolicella",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$55.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masi-amarone-costasera",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Masi Amarone Costasera",
+      "nameEn": "Masi Amarone Costasera",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$179.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuffo-amarone",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Tuffo Amarone",
+      "nameEn": "Tuffo Amarone",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$96.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santi-amarone",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Santi Amarone",
+      "nameEn": "Santi Amarone",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$120.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bertani-amarone",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Bertani Amarone",
+      "nameEn": "Bertani Amarone",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$267.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dal-forno-amarone",
+      "categoryId": "italian-reds-veneto",
+      "nameEs": "Dal Forno Amarone",
+      "nameEn": "Dal Forno Amarone",
+      "descriptionEs": "Véneto, Italia",
+      "descriptionEn": "Veneto, Italy",
+      "price": "$559.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marchesi-di-barolo-dolcetto-d-alba",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Marchesi di Barolo Dolcetto d'Alba",
+      "nameEn": "Marchesi di Barolo Dolcetto d'Alba",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$72.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riva-leone-barbera",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Riva Leone Barbera",
+      "nameEn": "Riva Leone Barbera",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$40.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pio-cesare-barbera-d-alba",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Pio Cesare Barbera d'Alba",
+      "nameEn": "Pio Cesare Barbera d'Alba",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$70.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prunotto-barbaresco",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Prunotto Barbaresco",
+      "nameEn": "Prunotto Barbaresco",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$120.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riva-leone-barolo",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Riva Leone Barolo",
+      "nameEn": "Riva Leone Barolo",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$69.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marchesi-di-barolo-barolo",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Marchesi di Barolo Barolo",
+      "nameEn": "Marchesi di Barolo Barolo",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$159.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pio-cesare-barolo",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Pio Cesare Barolo",
+      "nameEn": "Pio Cesare Barolo",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$209.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prunotto-barolo",
+      "categoryId": "italian-reds-piedmont",
+      "nameEs": "Prunotto Barolo",
+      "nameEn": "Prunotto Barolo",
+      "descriptionEs": "Piamonte, Italia",
+      "descriptionEn": "Piedmont, Italy",
+      "price": "$139.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cadrans-de-lassegue-bordeaux",
+      "categoryId": "old-world-reds",
+      "nameEs": "Cadrans De Lassegue Bordeaux",
+      "nameEn": "Cadrans De Lassegue Bordeaux",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$55.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lincourt-pinot-noir",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Lincourt Pinot Noir",
+      "nameEn": "Lincourt Pinot Noir",
+      "descriptionEs": "Sonoma",
+      "descriptionEn": "Sonoma",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calling-pinot-noir",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Calling Pinot Noir",
+      "nameEn": "Calling Pinot Noir",
+      "descriptionEs": "Monterey",
+      "descriptionEn": "Monterey",
+      "price": "$50.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "erath-reserve-pinot-noir",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Erath Reserve Pinot Noir",
+      "nameEn": "Erath Reserve Pinot Noir",
+      "descriptionEs": "Willamette",
+      "descriptionEn": "Willamette",
+      "price": "$88.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "markham-merlot",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Markham Merlot",
+      "nameEn": "Markham Merlot",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$60.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rutherford-hill-merlot",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Rutherford Hill Merlot",
+      "nameEn": "Rutherford Hill Merlot",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$70.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chalk-hill-estate-red",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Chalk Hill Estate Red",
+      "nameEn": "Chalk Hill Estate Red",
+      "descriptionEs": "Chalk Hill",
+      "descriptionEn": "Chalk Hill",
+      "price": "$100.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateau-st-jean-cinq-cepages-bordeaux-blend",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Chateau St Jean Cinq Cepages Bordeaux Blend",
+      "nameEn": "Chateau St Jean Cinq Cepages Bordeaux Blend",
+      "descriptionEs": "Sonoma",
+      "descriptionEn": "Sonoma",
+      "price": "$200.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "geyser-peak-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Geyser Peak Cabernet Sauvignon",
+      "nameEn": "Geyser Peak Cabernet Sauvignon",
+      "descriptionEs": "Sonoma",
+      "descriptionEn": "Sonoma",
+      "price": "$41.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "justin-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Justin Cabernet Sauvignon",
+      "nameEn": "Justin Cabernet Sauvignon",
+      "descriptionEs": "Paso Robles, California",
+      "descriptionEn": "Paso Robles, California",
+      "price": "$48.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jordan-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Jordan Cabernet Sauvignon",
+      "nameEn": "Jordan Cabernet Sauvignon",
+      "descriptionEs": "Alexander Valley",
+      "descriptionEn": "Alexander Valley",
+      "price": "$160.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antica-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Antica Cabernet Sauvignon",
+      "nameEn": "Antica Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$158.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-union-by-far-niente-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Bella Union By Far Niente Cabernet Sauvignon",
+      "nameEn": "Bella Union By Far Niente Cabernet Sauvignon",
+      "descriptionEs": "Napa, California",
+      "descriptionEn": "Napa, California",
+      "price": "$125.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mount-brave-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Mount Brave Cabernet Sauvignon",
+      "nameEn": "Mount Brave Cabernet Sauvignon",
+      "descriptionEs": "Napa, California",
+      "descriptionEn": "Napa, California",
+      "price": "$184.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stag-s-leap-wine-cellars-artemis-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Stag's Leap Wine Cellars Artemis Cabernet Sauvignon",
+      "nameEn": "Stag's Leap Wine Cellars Artemis Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$199.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chimney-rock-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Chimney Rock Cabernet Sauvignon",
+      "nameEn": "Chimney Rock Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$215.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "post-beam-cabernet-sauvignon-by-far-niente",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Post & Beam Cabernet Sauvignon By Far Niente",
+      "nameEn": "Post & Beam Cabernet Sauvignon By Far Niente",
+      "descriptionEs": "Napa, California",
+      "descriptionEn": "Napa, California",
+      "price": "$100.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "far-niente-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Far Niente Cabernet Sauvignon",
+      "nameEn": "Far Niente Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$250.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cakebread-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Cakebread Cabernet Sauvignon",
+      "nameEn": "Cakebread Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$160.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nickel-nickel-c-c-ranch-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Nickel & Nickel C C Ranch Cabernet Sauvignon",
+      "nameEn": "Nickel & Nickel C C Ranch Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$252.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nickel-nickel-sullinger-vineyard-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Nickel & Nickel Sullinger Vineyard Cabernet Sauvignon",
+      "nameEn": "Nickel & Nickel Sullinger Vineyard Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$253.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sebastiani-cherry-block-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Sebastiani Cherry Block Cabernet Sauvignon",
+      "nameEn": "Sebastiani Cherry Block Cabernet Sauvignon",
+      "descriptionEs": "Sonoma, California",
+      "descriptionEn": "Sonoma, California",
+      "price": "$250.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "silver-oak-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Silver Oak Cabernet Sauvignon",
+      "nameEn": "Silver Oak Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$399.00/bottle",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dominus-cabernet-sauvignon",
+      "categoryId": "california-washington-oregon-reds",
+      "nameEs": "Dominus Cabernet Sauvignon",
+      "nameEn": "Dominus Cabernet Sauvignon",
+      "descriptionEs": "Col napa",
+      "descriptionEn": "Napa",
+      "price": "$449.00/bottle",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones vegetarianas y podemos adaptar ciertos platos para dietas sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer several vegetarian options and can adapt certain dishes for gluten-free diets. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también aceptamos reservaciones por teléfono o a través de nuestra página web.",
-      "aEn": "We welcome walk-ins and also accept reservations by phone or through our website."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de comida para llevar y entrega a domicilio?",
-      "qEn": "Do you offer takeout and delivery services?",
-      "aEs": "Sí, ofrecemos servicio para llevar llamando directamente al restaurante y también estamos en las principales plataformas de entrega.",
-      "aEn": "Yes, we offer takeout by calling the restaurant directly and are also featured on major local delivery platforms."
-    }
-  ]
+  "faqs": []
 }
