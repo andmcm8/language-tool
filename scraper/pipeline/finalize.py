@@ -128,14 +128,45 @@ def uncovered_menu_links(slug, site):
         for m in re.finditer(r"href\s*=\s*[\"']([^\"'#]+)[\"']", open(f, errors="ignore").read(), re.I):
             u = urllib.parse.urljoin(p["url"], m.group(1))
             pu = urllib.parse.urlparse(u)
-            if pu.netloc.replace("www.", "") == host and STRONG_MENU.search(pu.path) and not re.search(r"(?i)catering|gift|event|private|party|job|career", pu.path):
+            if pu.netloc.replace("www.", "") == host and STRONG_MENU.search(pu.path) and not re.search(r"(?i)catering|gift|event|private|party|job|career|\.(css|js|jpe?g|png|gif|webp|svg|ico|woff2?)$|/wp-content/(plugins|themes)/", pu.path):
                 found.add(pu.path.rstrip("/").lower())
     return sorted(found - used)
 
 
+def finalize_trusted(slug, w, site, draft):
+    """Structured ordering-platform menus (ChowNow): store details come from the platform."""
+    t = draft["trusted_store"]
+    o = w.get("osm") or {}
+    town = (o.get("addr:city") or w.get("town") or "").title()
+    hours = t.get("hours") or osm_hours(o.get("opening_hours")) or {k: "Call for hours" for k in ("monday_friday", "saturday", "sunday")}
+    CU = {"pizza": ("Pizzeria", "Pizzería"), "italian": ("Italian restaurant", "Restaurante italiano"), "mexican": ("Mexican restaurant", "Restaurante mexicano"),
+          "chinese": ("Chinese restaurant", "Restaurante chino"), "japanese": ("Japanese restaurant", "Restaurante japonés"), "sushi": ("Sushi restaurant", "Restaurante de sushi"),
+          "thai": ("Thai restaurant", "Restaurante tailandés"), "indian": ("Indian restaurant", "Restaurante indio"), "american": ("American restaurant", "Restaurante americano"),
+          "diner": ("Diner", "Cafetería americana (diner)"), "ice_cream": ("Ice cream shop", "Heladería"), "coffee_shop": ("Coffee shop", "Cafetería"), "bakery": ("Bakery", "Panadería"),
+          "burger": ("Burger restaurant", "Hamburguesería"), "seafood": ("Seafood restaurant", "Restaurante de mariscos"), "greek": ("Greek restaurant", "Restaurante griego"),
+          "sandwich": ("Sandwich shop", "Sandwichería"), "deli": ("Deli", "Delicatessen"), "barbecue": ("Barbecue restaurant", "Restaurante de barbacoa"),
+          "steak_house": ("Steakhouse", "Asador"), "mediterranean": ("Mediterranean restaurant", "Restaurante mediterráneo"), "chicken": ("Chicken restaurant", "Restaurante de pollo")}
+    c0 = (o.get("cuisine") or "").split(";")[0].strip().lower()
+    en, es = CU.get(c0, ("Restaurant", "Restaurante"))
+    src = {"slug": slug, "name": w["name"], "sources": draft["sources"], "checked": draft["checked"],
+           "notes": "Menu, prices, address, phone and hours copied from the restaurant's own online ordering page (ChowNow), linked from its website. Items only offered in-restaurant may not be listed.",
+           "taglineEn": f"{en} in {town}" if town else en,
+           "taglineEs": f"{es} en {town}" if town else es,
+           "amenities": ["Bilingual Menu", "Online Ordering", "Takeout"], "address": t["address"], "phone": fmt_phone(t.get("phone")),
+           "hours": hours, "sections": draft["sections"]}
+    nos = draft["extracted"].get("name_on_site")
+    if nos and E.norm(nos) != E.norm(w["name"]) and len(nos) < 60:
+        src["displayName"] = nos
+    return src, None
+
+
 def finalize(slug, w, site, ext, draft):
+    if draft.get("trusted_store"):
+        return finalize_trusted(slug, w, site, draft)
     texts = E.page_texts(slug, site, (w.get("town") or "").lower())
-    site = dict(site, _used=draft.get("sources", []))
+    used = list(draft.get("sources", []))
+    used += [p.get("page") for p in site.get("pages", []) if p.get("type") == "ocr" and p["url"] in used and p.get("page")]
+    site = dict(site, _used=used)
     miss = uncovered_menu_links(slug, site)
     if miss:
         return None, "uncovered-menu-pages " + " ".join(miss[:5])
@@ -155,6 +186,9 @@ def finalize(slug, w, site, ext, draft):
     elif o.get("addr:housenumber") and o.get("addr:street"):
         address = f'{o["addr:housenumber"]} {o["addr:street"]}, {o.get("addr:city", town)}, CT {o.get("addr:postcode", "")}'.strip()
         a_src = "OpenStreetMap"
+    elif (w.get("overture") or {}).get("street") and (w.get("overture") or {}).get("city"):
+        ov = w["overture"]
+        address, a_src = f'{ov["street"]}, {ov["city"]}, CT {ov.get("zip") or ""}'.strip(), "Overture Maps"
     else:
         address, a_src = "", None
     # phone
@@ -162,6 +196,8 @@ def finalize(slug, w, site, ext, draft):
         phone, p_src = fmt_phone(x["phone"]), "website"
     elif o.get("phone") or o.get("contact:phone"):
         phone, p_src = fmt_phone(o.get("phone") or o.get("contact:phone")), "OpenStreetMap"
+    elif (w.get("overture") or {}).get("phones"):
+        phone, p_src = fmt_phone(w["overture"]["phones"][0]), "Overture Maps"
     else:
         phone, p_src = "", None
     # hours
@@ -195,6 +231,22 @@ def finalize(slug, w, site, ext, draft):
 
 def main():
     a = sys.argv[1:]
+    if "--uncovered" in a:
+        work = {w["slug"]: w for w in json.load(open(os.path.join(E.DATA, "worklist.json")))}
+        sites = json.load(open(os.path.join(E.DATA, "sites.json")))
+        ext = json.load(open(os.path.join(E.DATA, "extract.json")))
+        out = {}
+        for slug, r in ext.items():
+            dp = os.path.join(E.DRAFTS, slug + ".json")
+            if r.get("status") in ("ok", "review") and os.path.exists(dp):
+                d = json.load(open(dp))
+                used = list(d.get("sources", [])) + [p.get("page") for p in sites[slug].get("pages", []) if p.get("type") == "ocr" and p.get("page")]
+                m = uncovered_menu_links(slug, dict(sites[slug], _used=used))
+                if m:
+                    out[slug] = m
+        json.dump(out, open(os.path.join(E.DATA, "uncovered.json"), "w"), indent=1)
+        print(len(out), "sites with uncovered menu pages")
+        return
     status = a[a.index("--status") + 1] if "--status" in a else "ok"
     only = set(a[a.index("--only") + 1].split(",")) if "--only" in a else None
     work = {w["slug"]: w for w in json.load(open(os.path.join(E.DATA, "worklist.json")))}

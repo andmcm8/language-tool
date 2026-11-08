@@ -21,12 +21,32 @@ MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest", "g
 
 
 def api_key():
-    if os.environ.get("GEMINI_API_KEY"):
-        return os.environ["GEMINI_API_KEY"]
-    for line in open(os.path.join(ROOT, ".env.local")):
-        if line.startswith("GEMINI_API_KEY="):
-            return line.split("=", 1)[1].strip().strip("\"'")
+    """Prefer a separate GEMINI_SCRAPER_API_KEY so menu scraping never uses up the free-tier
+    quota the live chatbots depend on; fall back to GEMINI_API_KEY."""
+    for name in ("GEMINI_SCRAPER_API_KEY", "GEMINI_API_KEY"):
+        if os.environ.get(name):
+            return os.environ[name]
+        for line in open(os.path.join(ROOT, ".env.local")):
+            if line.startswith(name + "="):
+                return line.split("=", 1)[1].strip().strip("\"'")
     raise SystemExit("GEMINI_API_KEY not found")
+
+
+QUOTA_FLAG = os.path.join(ROOT, "scraper", "pipeline", "data", "gemini_daily_quota_hit")
+
+
+def daily_quota_hit():
+    return os.path.exists(QUOTA_FLAG) and open(QUOTA_FLAG).read().strip() == time.strftime("%Y-%m-%d")
+
+
+def note_429(err):
+    """If every model reports a per-DAY quota error, write a flag so all scraper scripts stop
+    calling Gemini for the rest of the day (leaves the chatbots alone)."""
+    try:
+        body = err.read().decode()
+    except Exception:
+        return False
+    return "PerDay" in body
 
 
 def slugify(s):
@@ -40,9 +60,12 @@ def gemini_json(prompt):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }).encode()
     last = None
+    if daily_quota_hit():
+        raise SystemExit("Gemini daily quota reached")
     for rnd in range(5):  # rate limits (429) and overload (503) are usually temporary: back off and retry
         if rnd:
             time.sleep(30 * rnd)
+        per_day = 0
         for m in MODELS:
             req = urllib.request.Request(
                 f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
@@ -52,9 +75,17 @@ def gemini_json(prompt):
                     data = json.load(r)
                 text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
                 return json.loads(text)
+            except urllib.error.HTTPError as e:
+                last = e
+                if e.code == 429 and note_429(e):
+                    per_day += 1
+                print(f"  {m} failed: {e}", file=sys.stderr)
             except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError, OSError) as e:  # OSError covers socket timeouts on py3.9
                 last = e
                 print(f"  {m} failed: {e}", file=sys.stderr)
+        if per_day == len(MODELS):
+            open(QUOTA_FLAG, "w").write(time.strftime("%Y-%m-%d"))
+            raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"All Gemini models failed: {last}")
 
 

@@ -82,7 +82,7 @@ def main():
     path = os.path.join(F.DATA, "sites.json")
     sites = json.load(open(path))
     todo = [s for s, x in sites.items()
-            if (only is None or s in only) and not x.get("rendered") and "toast" not in x.get("platforms", [])
+            if (only is None or s in only) and not x.get("rendered") and "toasttab.com" not in (x.get("final") or "")
             and x.get("status") not in (202, 403, 429) and (only or thin(s, x))]
     print("rendering", len(todo), flush=True)
     n = 0
