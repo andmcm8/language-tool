@@ -102,23 +102,23 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `goodies-of-milford` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `goodies` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `grandpas-diner` | Grandpa's Diner | 126 South Street, Danbury, CT 06810 | 342 |
-| `grapevine` | Grapevine | 753 Maple Road, Longmeadow, MA, 01108 | 116 |
+| `grapevine` | Grapevine | 753 Maple Road, Longmeadow, MA, 01108 | 123 |
 | `green-kettle-coffee` | Green Kettle Coffee | 208 Center Street, Wallingford, CT 06492 | 21 |
 | `green-onion-pizza-restaurant` | Green Onion Pizza Restaurant | 10 River Road, Lisbon, CT 06351 | 114 |
 | `green-tonic` | Green & Tonic | 17 Jesup Rd, Westport, CT 06880 | 126 |
-| `hanks-restaurant` | Hank's Restaurant | 416 Providence Road, Brooklyn, CT 06234 | 44 |
+| `hanks-restaurant` | Hank's Restaurant | 416 Providence Road, Brooklyn, CT 06234 | 53 |
 | `harpos-bakery-and-cafe` | Harpo's Bakery & Cafe | 908 Main Street, Glastonbury, CT 06073 | 42 |
 | `heights-pizza` | Heights Pizza | 882 Post Road, Darien, CT 06820 | 149 |
-| `hm-pizza-giant-grinders` | H & M Pizza & Giant Grinder | 492 Spring St, Windsor Locks, CT 06096 | 87 |
+| `hm-pizza-giant-grinders` | H & M Pizza & Giant Grinder | 492 Spring St, Windsor Locks, CT 06096 | 99 |
 | `honey-joes-family-coffeehouse` | Honey Joe’s Family Coffeehouse | 5 Broad St, Stamford, CT 06901 | 37 |
 | `hudson-social` | Hudson Social | 128 Bedford Street, Stamford, CT 06901 | 75 |
 | `hunan-noodle-bar` | Hunan Noodle Bar & Sushi Bar | 461 Main Street, Ridgefield, CT 06877 | 328 |
 | `hungry-pot` | Hungry Pot | 80 Newtown Rd., Danburg, CT 06810 | 94 |
 | `irenes-family-restaurant` | Irene's Family Restaurant | 58 Town Street, Norwich, CT 06360 | 274 |
 | `isabella-et-vincent` | Isabelle et Vincent | 1903 Post Rd, Fairfield, CT 06824 | 31 |
-| `jacks-brick-oven-pizza` | Jack’s Brick Oven | 493 W Main St, Norwich, CT 06360 | 126 |
+| `jacks-brick-oven-pizza` | Jack’s Brick Oven | 493 W Main St, Norwich, CT 06360 | 149 |
 | `jia-mei-asian-kitchen` | Jia Mei Asian Kitchen LLC | 105 Wall Street, Madison, CT 06443 | 70 |
-| `john-marias-pizzeria-restaurant` | John & Maria's Pizzeria & Restaurant | 280 Foxon Road, East Haven, CT 06513 | 73 |
+| `john-marias-pizzeria-restaurant` | John & Maria's Pizzeria & Restaurant | 280 Foxon Road, East Haven, CT 06513 | 88 |
 | `johnnys-clam-shack` | Johnny's Clam Shack | 184 North Main Street, Norwich, CT 06360 | 36 |
 | `kawa-ni` | Kawa Ni | 19A Bridge Square, Westport, CT 06880 | 121 |
 | `lao-sze-chuan-chinese-restaurant` | Lao Sze Chuan Chinese Restaurant | 1585 Boston Post Rd, Milford, CT 06460 | 185 |
@@ -135,12 +135,12 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `luigis-restaurant` | Luigi's Restaurant | 170 Post Road, Fairfield, CT 06824 | 94 |
 | `mama-chow` | Mama Chow | 3381 Post Rd, Southport (Fairfield), CT 06890 | 58 |
 | `mama-teresas` | Mama Teresa's Italian Restaurant & Pizza | 851 Boston Post Rd, Milford, CT 06460 | 36 |
-| `mamouns` | Mamoun's Falafel | 85 Howe St, Howe St, CT | 32 |
+| `mamouns` | Mamoun's Falafel | 85 Howe St, Howe St, CT | 36 |
 | `mandarin-garden` | Mandarin Garden Restaurant | 31 Main Street, Griswold, CT 06351 | 174 |
 | `martel-bistro-bar` | Martel | 2316 Post Road, Fairfield, CT 06824 | 115 |
 | `marys-diner` | Mary's Diner | 579 Watertown Avenue, Waterbury, CT 06708 | 158 |
 | `ming-moon-restaurant` | Ming Moon Restaurant | 1386 Berlin Turnpike, Wethersfield, CT 06109 | 198 |
-| `misty-vale-deli` | Misty Vale Deli | 51 Berkshire Road, Sandy Hook Connecticut 06482 | 72 |
+| `misty-vale-deli` | Misty Vale Deli | 51 Berkshire Road, Sandy Hook Connecticut 06482 | 113 |
 | `modern-apizza` | Modern Apizza | 874 State St, New Haven, CT 06511 | 34 |
 | `modern-pastry-shop` | Modern Pastry Shop, Inc. | 422 Franklin Avenue, Hartford, CT 06114 | 62 |
 | `molten-java` | Molten Java | 213 Greenwood Ave, Bethel, CT 06801 | 34 |
