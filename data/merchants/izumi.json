@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "izumi",
     "name": "Izumi",
-    "tagline": "Fine Japanese Cuisine, Hibachi & Sushi Bar | Alta Cocina Japonesa y Barra de Sushi",
+    "tagline": "Japanese restaurant in Windsor Locks | Restaurante japonés en Windsor Locks",
     "address": "25 Ella Grasso Turnpike, Windsor Locks, CT 06096",
-    "phone": "",
+    "phone": "(860) 292-8888",
     "hours": {
-      "monday_friday": "11:30 AM - 9:30 PM",
-      "saturday": "12:00 PM - 10:00 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Mon 11:30 am-9:30 pm; Tue closed; Wed-Thu 11:30 am-9:30 pm; Fri 11:30 am-10 pm",
+      "saturday": "12 pm-10 pm",
+      "sunday": "12 pm-9:30 pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
-      "Hibachi Grill"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -32,327 +24,2218 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "soup",
+      "nameEs": "Sopa",
+      "nameEn": "Soup",
       "icon": "Utensils"
     },
     {
-      "id": "sushi_bar",
-      "nameEs": "Barra de Sushi y Rollos",
-      "nameEn": "Sushi Bar & Rolls",
+      "id": "salad",
+      "nameEs": "Ensalada",
+      "nameEn": "Salad",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "hot-appetizers",
+      "nameEs": "Entradas calientes",
+      "nameEn": "Hot Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de Hibachi",
-      "nameEn": "Hibachi Specialties",
+      "id": "cold-appetizers-raw-fish",
+      "nameEs": "Entradas frías (* pescado crudo)",
+      "nameEn": "Cold Appetizers (* raw fish)",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollos clásicos o temakis (arroz integral +$1)",
+      "nameEn": "Classic Roll or Hand Rolls (brown rice +$1)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi y sashimi a la carta (sushi 2 piezas; sashimi 3 piezas $2.00 extra, con algunas excepciones; con huevo de codorniz +1 c/u)",
+      "nameEn": "Sushi & Sashimi A La Carte (sushi 2 pcs; sashimi 3 pcs $2.00 extra, some exceptions; w. quail egg +1 each)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Platos fuertes de sushi (con sopa miso o ensalada verde)",
+      "nameEn": "Sushi Entrees (w. miso soup or green salad)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "special-roll-brown-rice-1",
+      "nameEs": "Rollos especiales (arroz integral +$1)",
+      "nameEn": "Special Roll (brown rice +$1)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Platos de cocina: teriyaki a la parrilla (con sopa o ensalada verde y arroz blanco; arroz frito hibachi +$3.5)",
+      "nameEn": "Kitchen Entrees: Teriyaki Grill (served with soup or green salad & white rice; hibachi fried rice +$3.5)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Platos de cocina: katsu, tempura y shogayaki",
+      "nameEn": "Kitchen Entrees: Katsu, Tempura & Shogayaki",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chef-s-special",
+      "nameEs": "Especial del chef",
+      "nameEn": "Chef's Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Hibachi tradicional (con sopa de hongos o ensalada, vegetales mixtos, arroz frito o fideos hibachi; arroz frito y fideos +$3.5)",
+      "nameEn": "Hibachi Traditional (served with mushroom soup or salad, mix veg, hibachi fried rice or noodle; fried rice & noodle +$3.5)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "japanese-sauteed-noodle-w-miso-soup-or-green-salad",
+      "nameEs": "Fideos japoneses salteados (con sopa miso o ensalada verde)",
+      "nameEn": "Japanese Sautéed Noodle (w. miso soup or green salad)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "japanese-noodle-soup-w-miso-soup-or-green-salad",
+      "nameEs": "Sopas japonesas de fideos (con sopa miso o ensalada verde)",
+      "nameEn": "Japanese Noodle Soup (w. miso soup or green salad)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Arroz frito / fideos estilo hibachi",
+      "nameEn": "Hibachi Style Fried Rice / Noodle",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Especiales de almuerzo (11:30 am-3:00 pm, excepto domingos y feriados)",
+      "nameEn": "Lunch Specials (11:30 am-3:00 pm, except Sunday & holiday)",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "izumi-01",
-      "categoryId": "appetizers",
-      "nameEs": "Gyoza de Cerdo al Vapor o frita",
-      "nameEn": "Pork Gyoza (Steam or Pan-Fried)",
-      "descriptionEs": "Empanadillas japonesas rellenas de cerdo jugoso y vegetales crujientes, servidas con salsa ponzu.",
-      "descriptionEn": "Japanese dumplings filled with juicy pork and crisp vegetables, served with a zesty ponzu dipping sauce.",
+      "id": "mushroom-clear-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa clara de hongos",
+      "nameEn": "Mushroom Clear Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miso-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa miso",
+      "nameEn": "Miso Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tofu-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de vegetales y tofu",
+      "nameEn": "Vegetable & Tofu Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-dumpling-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de dumplings de vegetales",
+      "nameEn": "Vegetable Dumpling Soup",
+      "descriptionEs": "Caldo vegetariano con gyoza de vegetales",
+      "descriptionEn": "Vegetarian broth veggie gyoza",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-dumpling-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de dumplings de cerdo",
+      "nameEn": "Pork Dumpling Soup",
+      "descriptionEs": "Sopa clara con gyoza de cerdo",
+      "descriptionEn": "Clear soup w. pork gyoza",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-duck-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de pato asado",
+      "nameEn": "Roasted Duck Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$7.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Entrada",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-02",
-      "categoryId": "appetizers",
-      "nameEs": "Edamame Fresco",
-      "nameEn": "Steamed Edamame",
-      "descriptionEs": "Vainas de soya tiernas cocidas al vapor y espolvoreadas con sal marina fina.",
-      "descriptionEn": "Tender young soybean pods steamed to perfection and sprinkled with fine sea salt.",
+      "id": "ocean-seafood-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de mariscos del océano",
+      "nameEn": "Ocean Seafood Soup",
+      "descriptionEs": "Camarón, vieira, carne de cangrejo, vegetales mixtos",
+      "descriptionEn": "Shrimp, scallop, crabmeat, mix veggie",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada verde",
+      "nameEn": "Green Salad",
+      "descriptionEs": "con aderezo de jengibre",
+      "descriptionEn": "w. ginger dressing",
       "price": "$6.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Saludable",
-        "Vegano"
-      ],
-      "allergens": [
-        "Soy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-03",
-      "categoryId": "appetizers",
-      "nameEs": "Camarones Tempura",
-      "nameEn": "Shrimp Tempura Appetizer",
-      "descriptionEs": "Camarones frescos rebozados en una pasta ligera y crujiente, fritos a la perfección dorada.",
-      "descriptionEn": "Fresh shrimp dipped in a light, delicate batter and fried to a golden crisp.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Crujiente",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Gluten"
-      ],
+      "id": "avocado-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de aguacate",
+      "nameEn": "Avocado Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-04",
-      "categoryId": "sushi_bar",
+      "id": "seaweed-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de algas",
+      "nameEn": "Seaweed Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kani-salad-spicy-kani-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de kani / ensalada de kani picante",
+      "nameEn": "Kani Salad / Spicy Kani Salad",
+      "descriptionEs": "Kani desmenuzado y pepino, mayonesa y tobiko",
+      "descriptionEn": "Shredded kani, and cucumber, mayo and tobiko",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de Mariscos",
+      "nameEn": "Seafood Salad",
+      "descriptionEs": "Camarón cocido, cangrejo, pulpo y calamar sobre ensalada verde",
+      "descriptionEn": "Cooked shrimp, crab, octopus, squid on green salad",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "squid-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de calamar",
+      "nameEn": "Squid Salad",
+      "descriptionEs": "Calamar marinado con alga y vegetales",
+      "descriptionEn": "Squid marinated w. seaweed and vegetable",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-skin-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada de piel de salmón",
+      "nameEn": "Salmon Skin Salad",
+      "descriptionEs": "Piel de salmón ahumada asada, lechuga, pepino, con salsa de anguila y mayonesa picante",
+      "descriptionEn": "Roost smoke salmon skin, lettuce, cucumber, w. eel sauce and spicy mayo",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "edamame",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Edamame",
+      "nameEn": "Edamame",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-edamame",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Edamame picante",
+      "nameEn": "Spicy Edamame",
+      "descriptionEs": "Frijol de soya salteado con sazón picante de ajo",
+      "descriptionEn": "Sautee soybean with spicy garlic seasoning",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-shumai",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Shumai de camarón",
+      "nameEn": "Shrimp Shumai",
+      "descriptionEs": "Frito crujiente o al vapor",
+      "descriptionEn": "Crisp fried or steam",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-vegetable-gyoza",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Gyoza de cerdo / vegetales",
+      "nameEn": "Pork / Vegetable Gyoza",
+      "descriptionEs": "Dumpling japonés dorado en sartén",
+      "descriptionEn": "Japanese pan-fried dumpling",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Calamares fritos con salsa de chile dulce",
+      "descriptionEn": "Deep fried calamari w. sweet chili sauce",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-squid",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Calamar BBQ",
+      "nameEn": "BBQ Squid",
+      "descriptionEs": "Calamar a la parrilla con salsa teriyaki",
+      "descriptionEn": "Grilled squid with teriyaki sauce",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-rangoons-6",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Crab rangoons (6)",
+      "nameEn": "Crab Rangoons (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wing-8",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Alitas de pollo (8)",
+      "nameEn": "Chicken Wing (8)",
+      "descriptionEs": "Alitas para fiesta marinadas por 24 horas",
+      "descriptionEn": "24 hours marinaded party wings",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-squid",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Calamar picante",
+      "nameEn": "Spicy Squid",
+      "descriptionEs": "Calamar en rebanadas finas con salsa picante",
+      "descriptionEn": "Thinly sliced squid w. spicy sauce",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asian-spiced-spareribs-3",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Costillas de cerdo con especias asiáticas (3)",
+      "nameEn": "Asian Spiced Spareribs (3)",
+      "descriptionEs": "Costillas estilo St. Louis cocidas lentamente hasta quedar tiernas, luego salteadas con ajo, cebolla morada y jalapeño",
+      "descriptionEn": "St Louis style ribs are slow cooked until tender, then sautéed garlic red onion jalapeno",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-negimaki",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Negimaki de res",
+      "nameEn": "Beef Negimaki",
+      "descriptionEs": "Bistec en rebanadas enrollado con cebollín",
+      "descriptionEn": "Sliced steak rolled w. scallion",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-on-stick-2",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Brochetas de res (2)",
+      "nameEn": "Beef on Stick (2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-yakitori-3",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Yakitori de pollo (3)",
+      "nameEn": "Chicken Yakitori (3)",
+      "descriptionEs": "Brochetas de pollo y vegetales asadas",
+      "descriptionEn": "Skewered chicken & vegetable broiled",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tempura-starter",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Entrada de tempura",
+      "nameEn": "Tempura Starter",
+      "descriptionEs": "A elegir: vegetales / pollo y vegetales / camarón y vegetales +1",
+      "descriptionEn": "Choice of vegetable / chicken vegetable / shrimp & vegetable +1",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "japanese-fried-spring-roll-3",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Rollitos primavera japoneses fritos (3)",
+      "nameEn": "Japanese Fried Spring Roll (3)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heart-attack",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Heart Attack",
+      "nameEn": "Heart Attack",
+      "descriptionEs": "Jalapeño frito relleno de queso crema y atún picante",
+      "descriptionEn": "Deep fried jalapeno stuffed w. cream cheese & spicy tuna",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "age-tofu",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Age Tofu",
+      "nameEn": "Age Tofu",
+      "descriptionEs": "Tofu japonés frito",
+      "descriptionEn": "Japanese fried bean curd",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-shell-crab",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Cangrejo de caparazón blando",
+      "nameEn": "Soft Shell Crab",
+      "descriptionEs": "Frito y crujiente",
+      "descriptionEn": "Deep fried and crispy",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-maki",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Maki de pollo",
+      "nameEn": "Chicken Maki",
+      "descriptionEs": "Pollo en rebanadas finas enrollado con espárragos, zanahoria y queso, frito hasta quedar crujiente",
+      "descriptionEn": "Thinly sliced chicken rolled w. asparagus, carrot and cheese deep-fried to crispy",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-mix-vegetable",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Vegetales mixtos salteados",
+      "nameEn": "Sauteed Mix Vegetable",
+      "descriptionEs": "Salteados con salsa de ostión y ajo",
+      "descriptionEn": "Stir fried w. oyster sauce & garlic",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-crispy-shrimps",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Camarones crujientes salteados",
+      "nameEn": "Sauteed Crispy Shrimps",
+      "descriptionEs": "Camarón crujiente salteado con ajo, cebolla morada, jalapeño y vino de cocina",
+      "descriptionEn": "Crispy shrimp sautéed with garlic, red onion, jalapeno and cooking wine",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-mussel-7",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Mejillones horneados (7)",
+      "nameEn": "Baked Mussel (7)",
+      "descriptionEs": "Mejillones gigantes con mayonesa y huevas de pescado, horneados a la perfección",
+      "descriptionEn": "Giant mussels with mayonnaise fish egg baked them to perfection",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fry-onion-rings",
+      "categoryId": "hot-appetizers",
+      "nameEs": "Papas fritas / aros de cebolla",
+      "nameEn": "French Fry / Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-appetizer",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Entrada de sushi",
+      "nameEn": "Sushi Appetizer",
+      "descriptionEs": "Pescado crudo · 5 rebanadas generosas de pescado variado sobre arroz de sushi",
+      "descriptionEn": "Raw fish · 5 generously sliced assorted fish on top of sushi rice",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-appetizer",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Entrada de sashimi",
+      "nameEn": "Sashimi Appetizer",
+      "descriptionEs": "Pescado crudo · 9 rebanadas de pescado crudo variado",
+      "descriptionEn": "Raw fish · 9 slices of assorted raw fish",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "takosu",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Takosu",
+      "nameEn": "Takosu",
+      "descriptionEs": "Pescado crudo · Pulpo en rebanadas con salsa ponzu",
+      "descriptionEn": "Raw fish · Sliced octopus with ponzu sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sunomono",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Sunomono",
+      "nameEn": "Sunomono",
+      "descriptionEs": "Pescado crudo · Mariscos variados con salsa ponzu",
+      "descriptionEn": "Raw fish · Assorted shellfish with ponzu sauce",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-zukuri",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Yellowtail Zukuri",
+      "nameEn": "Yellowtail Zukuri",
+      "descriptionEs": "Pescado crudo · Jurel (yellowtail) en cortes finos con salsa ponzu picante",
+      "descriptionEn": "Raw fish · Thinly cut yellowtail with spicy ponzu sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-octopus",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Pulpo baby",
+      "nameEn": "Baby Octopus",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepper-tuna",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Atún a la pimienta",
+      "nameEn": "Pepper Tuna",
+      "descriptionEs": "Pescado crudo · Atún sellado con salsa de mayonesa de wasabi y crujiente",
+      "descriptionEn": "Raw fish · Seared tuna with wasabi mayo sauce and crunchy",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-tuna-tataki",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Tataki de atún ennegrecido",
+      "nameEn": "Blackened Tuna Tataki",
+      "descriptionEs": "Pescado crudo · Atún ennegrecido en rebanadas finas con salsa ponzu picante",
+      "descriptionEn": "Raw fish · Thinly sliced blackened tuna w. spicy ponzu sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "treasure-island",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Isla del tesoro",
+      "nameEn": "Treasure Island",
+      "descriptionEs": "Pescado crudo · Atún picante, salmón y jurel sobre aguacate",
+      "descriptionEn": "Raw fish · Spicy tuna, salmon, yellowtail on avocado",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-tataki",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Tataki de Res",
+      "nameEn": "Beef Tataki",
+      "descriptionEs": "Pescado crudo · Res poco cocida en rebanadas finas con salsa ponzu picante",
+      "descriptionEn": "Raw fish · Rare thin sliced beef w. spicy ponzu sauce",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naruto",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Naruto",
+      "nameEn": "Naruto",
+      "descriptionEs": "Pescado crudo · Calamar, pescado blanco, carne de cangrejo y atún a la pimienta envueltos en pepino, servido con salsa ponzu",
+      "descriptionEn": "Raw fish · Squid, white fish, crabmeat, pepper tuna & wrap w. cucumber serve w. ponzu sauce",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-dumpling-2",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Dumplings de atún (2)",
+      "nameEn": "Tuna Dumpling (2)",
+      "descriptionEs": "Pescado crudo · Sashimi de atún relleno de ensalada de langosta, tobiko, aguacate y tempura crujiente, bañado con salsa especial",
+      "descriptionEn": "Raw fish · Tuna sashimi filled w. lobster salad, tobiko, avocado, tempura crunch and drizzle it with special sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lighthouse-tartar",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Tartar Lighthouse",
+      "nameEn": "Lighthouse Tartar",
+      "descriptionEs": "Pescado crudo · Torre de atún picante crujiente, salmón y aguacate, cubierta con huevo de codorniz, tobiko y salsa ponzu",
+      "descriptionEn": "Raw fish · A tower of spicy crunchy tuna, salmon, avocado topped w. quail egg, tobiko, ponzu sauce",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-lover",
+      "categoryId": "cold-appetizers-raw-fish",
+      "nameEs": "Amante del salmón",
+      "nameEn": "Salmon Lover",
+      "descriptionEs": "Pescado crudo · Salmón envuelto con cangrejo picante y pepino, con salsa de mango encima",
+      "descriptionEn": "Raw fish · Salmon wrapped w. spicy crab & cucumber, mango salsa on the top",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de atún",
+      "nameEn": "Tuna Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de salmón",
+      "nameEn": "Salmon Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaskan-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo Alaska",
+      "nameEn": "Alaskan Roll",
+      "descriptionEs": "Pescado crudo · Salmón, aguacate, pepino",
+      "descriptionEn": "Raw fish · Salmon, avocado, cucumber",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo Philly",
+      "nameEn": "Philly Roll",
+      "descriptionEs": "Pescado crudo · Salmón ahumado, queso crema, cebollín",
+      "descriptionEn": "Raw fish · Smoked salmon, cream cheese, scallion",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-avocado-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de atún y aguacate",
+      "nameEn": "Tuna Avocado Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de atún y pepino",
+      "nameEn": "Tuna Cucumber Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-tuna-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de atún picante crujiente",
+      "nameEn": "Spicy Crunchy Tuna Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-salmon-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de salmón picante crujiente",
+      "nameEn": "Spicy Crunchy Salmon Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-yellowtail-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de jurel picante crujiente",
+      "nameEn": "Spicy Crunchy Yellowtail Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-scallop-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de vieira picante crujiente",
+      "nameEn": "Spicy Crunchy Scallop Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-jalapeno-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de jurel con jalapeño",
+      "nameEn": "Yellowtail Jalapeno Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-scallion-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de jurel y cebollín",
+      "nameEn": "Yellowtail Scallion Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de salmón y pepino",
+      "nameEn": "Salmon Cucumber Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-avocado-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de salmón y aguacate",
+      "nameEn": "Salmon Avocado Roll",
+      "descriptionEs": "Crudo",
+      "descriptionEn": "Raw",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
       "nameEs": "Rollo California",
       "nameEn": "California Roll",
-      "descriptionEs": "Cangrejo, aguacate y pepino envueltos en arroz de sushi y alga nori.",
-      "descriptionEn": "Krab meat, avocado, and cucumber rolled in seasoned sushi rice and nori.",
+      "descriptionEs": "Cocido · Cangrejo, aguacate, pepino",
+      "descriptionEn": "Cooked · Crab, avocado, cucumber",
       "price": "$7.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Sushi"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Fish"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-05",
-      "categoryId": "sushi_bar",
-      "nameEs": "Rollo Dragón",
-      "nameEn": "Dragon Roll",
-      "descriptionEs": "Eel y pepino por dentro, cubierto con rodajas de aguacate fresco y salsa agridulce de anguila.",
-      "descriptionEn": "Eel and cucumber inside, topped with layers of fresh avocado and sweet eel sauce.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Favorito del Chef",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Fish",
-        "Gluten",
-        "Soy"
-      ],
+      "id": "king-california",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "California king",
+      "nameEn": "King California",
+      "descriptionEs": "Cocido · Cangrejo real de Alaska, aguacate, pepino",
+      "descriptionEn": "Cooked · Alaskan king crab, avocado, cucumber",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-06",
-      "categoryId": "sushi_bar",
-      "nameEs": "Rollo Spicy Tuna",
-      "nameEn": "Spicy Tuna Roll",
-      "descriptionEs": "Atún fresco picado mezclado con nuestra salsa picante especial, pepino y semillas de ajonjolí.",
-      "descriptionEn": "Fresh minced tuna tossed in our special spicy sauce, crisp cucumber, and toasted sesame seeds.",
+      "id": "chicken-tempura-maki",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Maki de pollo tempura",
+      "nameEn": "Chicken Tempura Maki",
+      "descriptionEs": "Cocido · con aguacate, pepino",
+      "descriptionEn": "Cooked · w. avocado, cucumber",
       "price": "$8.50",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Sushi"
-      ],
-      "allergens": [
-        "Fish",
-        "Sesame"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-07",
-      "categoryId": "sushi_bar",
-      "nameEs": "Rollo Arcoíris",
-      "nameEn": "Rainbow Roll",
-      "descriptionEs": "Rollo California por dentro, cubierto artísticamente con atún fresco, salmón, pescado blanco y aguacate.",
-      "descriptionEn": "California roll base artfully draped with fresh tuna, salmon, white fish, and avocado.",
+      "id": "boston-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo Boston",
+      "nameEn": "Boston Roll",
+      "descriptionEs": "Cocido · Camarón, pepino, lechuga, mayonesa japonesa",
+      "descriptionEn": "Cooked · Shrimp, cucumber, lettuce, japanese mayo",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-avocado-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de anguila y aguacate",
+      "nameEn": "Eel Avocado Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de anguila y pepino",
+      "nameEn": "Eel Cucumber Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-skin-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de piel de salmón y pepino",
+      "nameEn": "Salmon Skin Cucumber Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-avocado-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de camarón y aguacate",
+      "nameEn": "Shrimp Avocado Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de camarón y pepino",
+      "nameEn": "Shrimp Cucumber Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-crab-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de cangrejo picante crujiente",
+      "nameEn": "Spicy Crunchy Crab Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tempura-maki",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Maki de camarón tempura",
+      "nameEn": "Shrimp Tempura Maki",
+      "descriptionEs": "Cocido · con aguacate, pepino, tobiko",
+      "descriptionEn": "Cooked · w. avocado, cucumber, tobiko",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crunchy-shrimp-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de camarón picante crujiente",
+      "nameEn": "Spicy Crunchy Shrimp Roll",
+      "descriptionEs": "Cocido",
+      "descriptionEn": "Cooked",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spider-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo araña (spider roll)",
+      "nameEn": "Spider Roll",
+      "descriptionEs": "Cocido · Cangrejo de caparazón blando en tempura, aguacate, pepino, tobiko",
+      "descriptionEn": "Cooked · Soft shell crab tempura, avocado, cucumber, tobiko",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "futo-maki",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Futo Maki",
+      "nameEn": "Futo Maki",
+      "descriptionEs": "Cocido · Cangrejo, tamago, kampyo, gobo, oshinko, pepino, aguacate",
+      "descriptionEn": "Cooked · Crab, tamago, kampyo, gobo, oshinko, cucumber, avocado",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-tempura-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de langosta tempura",
+      "nameEn": "Lobster Tempura Roll",
+      "descriptionEs": "Cocido · con aguacate, pepino, tobiko",
+      "descriptionEn": "Cooked · w. avocado, cucumber, tobiko",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-or-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de aguacate o pepino",
+      "nameEn": "Avocado or Cucumber Roll",
+      "descriptionEs": "Vegetariano",
+      "descriptionEn": "Vegetarian",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oshinko-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo oshinko",
+      "nameEn": "Oshinko Roll",
+      "descriptionEs": "Vegetariano · Encurtidos japoneses",
+      "descriptionEn": "Vegetarian · Japanese pickles",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asparagus-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de espárrago",
+      "nameEn": "Asparagus Roll",
+      "descriptionEs": "Vegetariano",
+      "descriptionEn": "Vegetarian",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-avocado-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de cacahuate y aguacate",
+      "nameEn": "Peanut Avocado Roll",
+      "descriptionEs": "Vegetariano",
+      "descriptionEn": "Vegetarian",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "inari-avocado-cucumber-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de inari con aguacate / pepino",
+      "nameEn": "Inari Avocado / Cucumber Roll",
+      "descriptionEs": "Vegetariano · Piel de tofu",
+      "descriptionEn": "Vegetarian · Tofu skin",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-tempura-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de camote tempura",
+      "nameEn": "Sweet Potato Tempura Roll",
+      "descriptionEs": "Vegetariano",
+      "descriptionEn": "Vegetarian",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-roll",
+      "categoryId": "classic-roll-or-hand-rolls-brown-rice-1",
+      "nameEs": "Rollo de verduras",
+      "nameEn": "Vegetable Roll",
+      "descriptionEs": "Vegetariano · Lechuga, aguacate, espárragos, pepino",
+      "descriptionEn": "Vegetarian · Lettuce, avocado, asparagus, cucumber",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de atún",
+      "nameEn": "Tuna Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de salmón",
+      "nameEn": "Salmon Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strip-bass-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de lubina rayada",
+      "nameEn": "Strip Bass Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "squid-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de calamar",
+      "nameEn": "Squid Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tobiko-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de tobiko",
+      "nameEn": "Tobiko Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-clam-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de almeja roja",
+      "nameEn": "Red Clam Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de camarón",
+      "nameEn": "Shrimp Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tamago-egg-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de tamago (huevo)",
+      "nameEn": "Tamago Egg Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de salmón ahumado",
+      "nameEn": "Smoked Salmon Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallop-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de vieira",
+      "nameEn": "Scallop Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-shrimp-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de camarón dulce",
+      "nameEn": "Sweet Shrimp Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fatty-tuna-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de toro (atún graso)",
+      "nameEn": "Fatty Tuna Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellowtail-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de jurel",
+      "nameEn": "Yellowtail Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fluke-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de lenguado",
+      "nameEn": "Fluke Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mackerel-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de caballa",
+      "nameEn": "Mackerel Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-roe-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de hueva de salmón",
+      "nameEn": "Salmon Roe Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eel-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de anguila",
+      "nameEn": "Eel Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tofu-skin-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de piel de tofu",
+      "nameEn": "Tofu Skin Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-stick-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de barrita de cangrejo",
+      "nameEn": "Crab Stick Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "octopus-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de pulpo",
+      "nameEn": "Octopus Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-tuna-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de atún blanco",
+      "nameEn": "White Tuna Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sea-urchin-uni-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de erizo de mar / uni",
+      "nameEn": "Sea Urchin / Uni Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "king-crab-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de cangrejo real",
+      "nameEn": "King Crab Sushi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "live-scallop-sushi",
+      "categoryId": "sushi-sashimi-a-la-carte-sushi-2-pcs-sashimi-3-pcs-2-00-extra-some-exceptions-w-quail-egg-1-each",
+      "nameEs": "Sushi de vieira viva",
+      "nameEn": "Live Scallop Sushi",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-roll-dinner-3-rolls",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Cena de rollos California (3 rollos)",
+      "nameEn": "California Roll Dinner (3 Rolls)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-roll-dinner-3-rolls",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Cena de rollos de atún (3 rollos)",
+      "nameEn": "Tuna Roll Dinner (3 Rolls)",
+      "descriptionEs": "Pescado crudo",
+      "descriptionEn": "Raw fish",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maki-combo",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Combo de maki",
+      "nameEn": "Maki Combo",
+      "descriptionEs": "Pescado crudo · Rollo California, rollo de salmón y rollo de atún",
+      "descriptionEn": "Raw fish · California roll, salmon roll and tuna roll",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-maki-combo-w-crunchy",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Combo de maki picante (con crujiente)",
+      "nameEn": "Spicy Maki Combo (w. Crunchy)",
+      "descriptionEs": "Pescado crudo · Atún picante, salmón picante y cangrejo picante",
+      "descriptionEn": "Raw fish · Spicy tuna, spicy salmon and spicy crab",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-or-salmon-sushi-dinner",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Cena de sushi de atún o salmón",
+      "nameEn": "Tuna or Salmon Sushi Dinner",
+      "descriptionEs": "Pescado crudo · 7 piezas de sushi y 1 rollo",
+      "descriptionEn": "Raw fish · 7 pcs sushi and 1 roll",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-regular",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sushi regular",
+      "nameEn": "Sushi Regular",
+      "descriptionEs": "Pescado crudo · a elección del chef: 8 piezas de sushi y rollo California",
+      "descriptionEn": "Raw fish · Chef's choice of 8 pcs sushi and california roll",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-deluxe",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sushi deluxe",
+      "nameEn": "Sushi Deluxe",
+      "descriptionEs": "Pescado crudo · a elección del chef: 10 piezas de sushi y rollo de atún",
+      "descriptionEn": "Raw fish · Chef's choice of 10 pcs sushi and tuna roll",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-regular",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sashimi regular",
+      "nameEn": "Sashimi Regular",
+      "descriptionEs": "Pescado crudo · a elección del chef: 16 piezas de pescado crudo variado",
+      "descriptionEn": "Raw fish · Chef's choice of 16 pcs assorted raw fish",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-deluxe",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sashimi deluxe",
+      "nameEn": "Sashimi Deluxe",
+      "descriptionEs": "Pescado crudo · a elección del chef: 20 piezas de pescado crudo variado",
+      "descriptionEn": "Raw fish · Chef's choice of 20 pcs assorted raw fish",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tekka-don",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Tekka Don",
+      "nameEn": "Tekka Don",
+      "descriptionEs": "Pescado crudo · Atún sobre arroz sazonado",
+      "descriptionEn": "Raw fish · Tuna over seasoned rice",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "unagi-don",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Don de anguila (unagi don)",
+      "nameEn": "Unagi Don",
+      "descriptionEs": "Anguila sobre arroz sazonado",
+      "descriptionEn": "Eel over seasoned rice",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chirashi",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Chirashi",
+      "nameEn": "Chirashi",
+      "descriptionEs": "Pescado crudo · 15 piezas de pescado crudo, 1 pieza de camarón y 1 de kani sobre una cama de arroz de sushi",
+      "descriptionEn": "Raw fish · 15 pcs of raw fish, 1 pc shrimp, 1 pc kani over a bed of sushi rice",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trio-sushi",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Trío de sushi",
+      "nameEn": "Trio Sushi",
+      "descriptionEs": "Pescado crudo · 3 piezas de salmón, 3 de atún, 3 de jurel y rollo de atún",
+      "descriptionEn": "Raw fish · 3 pcs salmon, 3 pcs tuna, 3 pcs yellowtail and tuna roll",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trio-sashimi",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Trío de sashimi",
+      "nameEn": "Trio Sashimi",
+      "descriptionEs": "Pescado crudo · 6 piezas de salmón, 6 de atún y 6 de jurel",
+      "descriptionEn": "Raw fish · 6 pcs salmon, 6 pcs tuna, 6 pcs yellowtail",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-and-sashimi-combo",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Combo de sushi y sashimi",
+      "nameEn": "Sushi and Sashimi Combo",
+      "descriptionEs": "Pescado crudo · a elección del chef: 16 piezas de sashimi, 5 piezas de sushi y rollo de atún",
+      "descriptionEn": "Raw fish · Chef's choice of 16 pcs sashimi, 5 pcs sushi and tuna roll",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-for-two",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sushi para dos",
+      "nameEn": "Sushi for Two",
+      "descriptionEs": "Pescado crudo · a elección del chef: 16 piezas de sushi y 1 rollo arcoíris",
+      "descriptionEn": "Raw fish · Chef's choice of 16 pcs sushi and 1 rainbow roll",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-for-two",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Sashimi para dos",
+      "nameEn": "Sashimi for Two",
+      "descriptionEs": "Pescado crudo · 40 piezas variadas de sashimi a elección del chef",
+      "descriptionEn": "Raw fish · Assorted 40 pcs of sashimi chef's choice",
+      "price": "$57.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "love-boat",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Barco del amor",
+      "nameEn": "Love Boat",
+      "descriptionEs": "Pescado crudo · a elección del chef: 20 piezas de sashimi, 8 piezas de sushi y 1 rollo arcoíris",
+      "descriptionEn": "Raw fish · Chef's choice of 20 pcs sashimi, 8 pcs sushi and 1 rainbow roll",
+      "price": "$57.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "party-special",
+      "categoryId": "sushi-entrees-w-miso-soup-or-green-salad",
+      "nameEs": "Especial para fiesta",
+      "nameEn": "Party Special",
+      "descriptionEs": "Pescado crudo · a elección del chef: 36 piezas de sashimi, 15 piezas de sushi, 1 rollo de atún y 1 rollo especial",
+      "descriptionEn": "Raw fish · Chef's choice of 36 pcs sashimi, 15 pcs sushi, 1 tuna roll and 1 special roll",
+      "price": "$96.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dragon-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo dragón",
+      "nameEn": "Dragon Roll",
+      "descriptionEs": "Anguila, pepino y arroz envueltos en alga, cubiertos con aguacate en rebanadas",
+      "descriptionEn": "Eel, cucumber, rice wrapped w. seaweed and topped with sliced avocado",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Sushi"
-      ],
-      "allergens": [
-        "Fish",
-        "Shellfish"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-08",
-      "categoryId": "mains",
-      "nameEs": "Pollo Teriyaki",
+      "id": "rock-n-roll-deep-fried",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rock N' Roll (frito)",
+      "nameEn": "Rock N' Roll (Deep Fried)",
+      "descriptionEs": "Carne de cangrejo, aguacate y pescado blanco envueltos en alga, fritos hasta quedar crujientes y bellamente decorados",
+      "descriptionEn": "Crabmeat avocado white fish wrapped with seaweed, deep fried to crispy, decorate beautifully",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rainbow-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo arcoíris",
+      "nameEn": "Rainbow Roll",
+      "descriptionEs": "Pescado crudo · Pescado crudo variado sobre el rollo California",
+      "descriptionEn": "Raw fish · Assorted raw fish on top of the california roll",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-dragon-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo dragón naranja",
+      "nameEn": "Orange Dragon Roll",
+      "descriptionEs": "Pescado crudo · Rollo de anguila y pepino cubierto con salmón fresco, de color bien naranja",
+      "descriptionEn": "Raw fish · Eel, cucumber roll top with fresh salmon and looks so orange",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "phoenix-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo fénix",
+      "nameEn": "Phoenix Roll",
+      "descriptionEs": "Pescado crudo · Camarón tempura dentro del rollo con atún sellado y aguacate encima",
+      "descriptionEn": "Raw fish · Shrimp tempura inside the roll with seared tuna and avocado on top",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "deep-impact-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Deep Impact Roll",
+      "nameEn": "Deep Impact Roll",
+      "descriptionEs": "Pescado crudo · Camarón tempura ligeramente frito por dentro, cubierto con atún picante y realzado con salsa de anguila",
+      "descriptionEn": "Raw fish · Lightly fried tempura shrimp inside, topped with spicy tuna and offset by eel sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angel-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo ángel",
+      "nameEn": "Angel Roll",
+      "descriptionEs": "Pescado crudo · Atún sellado y hojuelas de tempura, cubierto con salmón, atún, anguila, pescado blanco y aguacate, combinados en un rollo impresionante",
+      "descriptionEn": "Raw fish · Seared tuna, tempura flakes topped with salmon, tuna, eel, white fish, avocado combined to make an impressive roll",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crazy-eel-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo loco de anguila",
+      "nameEn": "Crazy Eel Roll",
+      "descriptionEs": "Anguila entera sobre un rollo de anguila y pepino",
+      "descriptionEn": "Whole piece eel on top of eel and cucumber roll",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "freedom-dragon-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo dragón de la libertad",
+      "nameEn": "Freedom Dragon Roll",
+      "descriptionEs": "Camarón tempura dentro del rollo con trozos de aguacate y anguila encima",
+      "descriptionEn": "Shrimp tempura inside the roll with pieces avocado, eel on top",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fancy-ocean-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Fancy Ocean",
+      "nameEn": "Fancy Ocean Roll",
+      "descriptionEs": "Pescado crudo · Atún, salmón, jurel, aguacate y tobiko envueltos en alga blanca, acompañado de salsa picante",
+      "descriptionEn": "Raw fish · Tuna, salmon, yellowtail, avocado, tobiko wrapped with white seaweed accompanied by spicy sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "izumi-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Izumi",
+      "nameEn": "Izumi Roll",
+      "descriptionEs": "Pescado crudo · Atún, atún a la pimienta, pepino y crujiente envueltos en alga blanca, cubierto con salmón ahumado, anguila, jurel y aguacate",
+      "descriptionEn": "Raw fish · Tuna, pepper tuna, cucumber and crunch wrap with white seaweed, topped w. smoked salmon, eel, yellowtail and avocado",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mohegan-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Mohegan",
+      "nameEn": "Mohegan Roll",
+      "descriptionEs": "Pescado crudo · Atún picante, jurel y salmón con mayonesa picante y crujiente, envuelto en alga blanca, cubierto con atún sellado y aguacate",
+      "descriptionEn": "Raw fish · Spicy tuna, yellowtail, salmon w. spicy mayo and crunch, wrapped w. white seaweed, topped by seared tuna and avocado",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "volcano-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo volcán",
+      "nameEn": "Volcano Roll",
+      "descriptionEs": "Pescado crudo · Salmón y jurel en trozos mezclados con crujiente, ajo asado y jalapeño al centro, rodeados de ensalada de langosta y atún picante, envuelto en alga y arroz",
+      "descriptionEn": "Raw fish · Chunky salmon and yellowtail mixed w. crunch roasted garlic and jalapeno in the center, surrounded by lobster salad and spicy tuna wrapped w. seaweed and rice",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angry-dragon-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo dragón enojado",
+      "nameEn": "Angry Dragon Roll",
+      "descriptionEs": "Pescado crudo · Camarón tempura, atún picante y mango por dentro, cubierto con langosta picante",
+      "descriptionEn": "Raw fish · Shrimp tempura, spicy tuna, mango inside topped w. spicy lobster",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-roll-no-rice",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo de sashimi (sin arroz)",
+      "nameEn": "Sashimi Roll (No Rice)",
+      "descriptionEs": "Pescado crudo · Atún picante, jurel, salmón, ensalada de alga, espárragos y aguacate, envueltos en papel de soya con salsa especial",
+      "descriptionEn": "Raw fish · Spicy tuna, yellowtail, salmon, seaweed salad, asparagus, avocado, wrapped w. soy paper and special sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paradise-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo paraíso",
+      "nameEn": "Paradise Roll",
+      "descriptionEs": "Langosta picante, camarón tempura y plátano tempura envueltos en papel de soya",
+      "descriptionEn": "Spicy lobster, shrimp tempura, banana tempura w. soybean paper wrapped",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-peace-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Green Peace Roll",
+      "nameEn": "Green Peace Roll",
+      "descriptionEs": "Espárragos, aguacate, pepino, mango y tomate deshidratado envueltos en papel de soya",
+      "descriptionEn": "Asparagus, avocado, cucumber, mango, sun-dried tomato wrapped w. soybean paper",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spider-king-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Spider King",
+      "nameEn": "Spider King Roll",
+      "descriptionEs": "Cangrejo de caparazón blando en tempura y cangrejo real envueltos en papel de soya, cubierto con anguila, aguacate y salsa de anguila",
+      "descriptionEn": "Soft shell crab tempura, king crab wrapped in soy paper, top with eel, avocado and eel sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "out-of-control-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo fuera de control",
+      "nameEn": "Out of Control Roll",
+      "descriptionEs": "Pescado crudo · Atún, salmón, jurel y aguacate, cubierto con atún blanco sellado, mayonesa japonesa, salsa de anguila, crujiente y tobiko",
+      "descriptionEn": "Raw fish · Tuna, salmon, yellowtail, avocado top with seared white tuna, Japanese mayo, eel sauce, crunch and tobiko",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "godzilla-roll-deep-fried",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Godzilla (frito)",
+      "nameEn": "Godzilla Roll (Deep Fried)",
+      "descriptionEs": "Atún picante, cangrejo picante, aguacate y queso crema, frito hasta quedar crujiente, con salsa de anguila, mayonesa picante y crujiente encima",
+      "descriptionEn": "Spicy tuna, spicy crab, avocado, cream cheese deep fried to crisp, with eel sauce, spicy mayo and crunch on the top",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "springtime-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo primavera",
+      "nameEn": "Springtime Roll",
+      "descriptionEs": "Pescado crudo · Atún picante, espárragos y cangrejo picante, cubierto con atún sellado, salmón y aguacate con mayonesa picante y mayonesa de wasabi",
+      "descriptionEn": "Raw fish · Spicy tuna, asparagus and spicy crab, top with seared tuna, salmon, avocado with spicy mayo and wasabi mayo",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bonsai-tree-roll-no-rice",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo bonsái (sin arroz)",
+      "nameEn": "Bonsai Tree Roll (No Rice)",
+      "descriptionEs": "Pescado crudo · Salmón, jurel, atún, espárragos, aguacate y ensalada de alga envueltos en pepino en rebanadas finas, con salsa ponzu ligeramente picante",
+      "descriptionEn": "Raw fish · Salmon, yellowtail, tuna, asparagus, avocado, seaweed salad wrapped with thinly sliced cucumber, with light spicy ponzu sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ocean-garden-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo jardín del océano",
+      "nameEn": "Ocean Garden Roll",
+      "descriptionEs": "Pescado crudo · Langosta tempura, lechuga y espárragos envueltos en papel de soya, cubierto con anguila, atún sellado, camarón, aguacate y mayonesa picante",
+      "descriptionEn": "Raw fish · Lobster tempura, lettuce, asparagus wrapped with soy paper, top with eel, seared tuna, shrimp, avocado and spicy mayo",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-amazing-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo increíble de atún",
+      "nameEn": "Tuna Amazing Roll",
+      "descriptionEs": "Pescado crudo · Atún blanco tempura y atún picante, cubierto con atún a la pimienta, aguacate, salsa de anguila, mayonesa picante y mayonesa de wasabi",
+      "descriptionEn": "Raw fish · Tempura white tuna, spicy tuna, top with pepper tuna, avocado, eel sauce, spicy mayo, wasabi mayo",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "surf-turf-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo mar y tierra",
+      "nameEn": "Surf & Turf Roll",
+      "descriptionEs": "Pescado crudo · Atún picante en trozos, crujiente y espárragos envueltos en papel de alga blanca, cubierto con bistec sellado y mayonesa picante",
+      "descriptionEn": "Raw fish · Chunky spicy tuna, crunch, asparagus wrapped with white seaweed paper, top with seared steak and spicy mayo",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-dragon-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo Red Dragon",
+      "nameEn": "Red Dragon Roll",
+      "descriptionEs": "Pescado crudo · Camote tempura y mango, cubierto con atún picante y salsa de anguila",
+      "descriptionEn": "Raw fish · Sweet potato tempura, mango, top with spicy tuna and eel sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kiss-of-fire-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo beso de fuego",
+      "nameEn": "Kiss of Fire Roll",
+      "descriptionEs": "Pescado crudo · Atún picante y aguacate, cubierto con atún blanco y salmón",
+      "descriptionEn": "Raw fish · Spicy tuna, avocado, top with white tuna and salmon",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fusion-roll",
+      "categoryId": "special-roll-brown-rice-1",
+      "nameEs": "Rollo fusión",
+      "nameEn": "Fusion Roll",
+      "descriptionEs": "Siempre puedes crear tu propio rollo especial con nosotros.",
+      "descriptionEn": "You can always create your own fancy roll with us.",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tofu-teriyaki-fried",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Tofu teriyaki (frito)",
+      "nameEn": "Tofu Teriyaki (Fried)",
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Pollo teriyaki",
       "nameEn": "Chicken Teriyaki",
-      "descriptionEs": "Tierno pollo a la parrilla glaseado con nuestra salsa teriyaki casera dulce y salada, servido con arroz y vegetales.",
-      "descriptionEn": "Tender grilled chicken glazed with our sweet and savory homemade teriyaki sauce, served with steamed rice and vegetables.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Plato Principal"
-      ],
-      "allergens": [
-        "Soy",
-        "Gluten"
-      ],
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$20.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-09",
-      "categoryId": "mains",
-      "nameEs": "Salmón Teriyaki",
+      "id": "steak-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Bistec teriyaki",
+      "nameEn": "Steak Teriyaki",
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Camarones teriyaki",
+      "nameEn": "Shrimp Teriyaki",
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-negimaki-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Negimaki de res teriyaki",
+      "nameEn": "Beef Negimaki Teriyaki",
+      "descriptionEs": "Res enrollada con cebollín",
+      "descriptionEn": "Beef rolled w. scallion",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Salmón teriyaki",
       "nameEn": "Salmon Teriyaki",
-      "descriptionEs": "Filete de salmón fresco a la parrilla bañado en salsa teriyaki aromática con un toque de jengibre.",
-      "descriptionEn": "Fresh grilled salmon fillet brushed with aromatic ginger-infused teriyaki glaze.",
-      "price": "$20.95",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy",
-        "Gluten"
-      ],
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$23.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-10",
-      "categoryId": "mains",
-      "nameEs": "Yaki Udon de Res",
-      "nameEn": "Beef Yaki Udon",
-      "descriptionEs": "Fideos gruesos de trigo salteados al wok con tiernas tiras de res y vegetales mixtos en salsa stir-fry.",
-      "descriptionEn": "Thick Japanese wheat noodles stir-fried with tender beef slices and mixed garden vegetables in savory sauce.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fideos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soy"
-      ],
+      "id": "scallop-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Vieiras Teriyaki",
+      "nameEn": "Scallop Teriyaki",
+      "descriptionEs": "Marinado en salsa teriyaki casera, con vegetales asados",
+      "descriptionEn": "Marinated in homemade teriyaki sauce & broiled vegetable",
+      "price": "$23.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-11",
-      "categoryId": "specialties",
-      "nameEs": "Hibachi Filet Mignon y Camarones",
-      "nameEn": "Hibachi Filet Mignon & Shrimp",
-      "descriptionEs": "Tierno filete mignon y camarones jugosos cocinados a la plancha hibachi, servidos con arroz frito y vegetales.",
-      "descriptionEn": "Tender filet mignon and juicy shrimp grilled live hibachi-style, served with fried rice and hibachi vegetables.",
-      "price": "$28.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Hibachi",
-        "Carne y Mariscos"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Soy",
-        "Dairy"
-      ],
+      "id": "combo-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Combo teriyaki",
+      "nameEn": "Combo Teriyaki",
+      "descriptionEs": "Dos a elegir: pollo, bistec, camarón, vieira, salmón",
+      "descriptionEn": "Any two: chicken, steak, shrimp, scallop, salmon",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-12",
-      "categoryId": "specialties",
-      "nameEs": "Combinación Hibachi Trío",
-      "nameEn": "Hibachi Trio Combination",
-      "descriptionEs": "Selección de bistec, pollo y camarones preparados al estilo hibachi con mantequilla de ajo y vegetales.",
-      "descriptionEn": "Combination of steak, chicken, and shrimp prepared hibachi style with garlic butter and fresh vegetables.",
-      "price": "$31.95",
-      "popular": true,
-      "badge": "Festín",
-      "tags": [
-        "Hibachi"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Soy",
-        "Dairy"
-      ],
+      "id": "seafood-teriyaki",
+      "categoryId": "kitchen-entrees-teriyaki-grill-served-with-soup-or-green-salad-white-rice-hibachi-fried-rice-3-5",
+      "nameEs": "Mariscos Teriyaki",
+      "nameEn": "Seafood Teriyaki",
+      "descriptionEs": "Camarón, vieira y salmón asados",
+      "descriptionEn": "Broiled shrimp, scallop, salmon",
+      "price": "$26.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-13",
-      "categoryId": "beverages",
-      "nameEs": "Té Verde Helado Japonés",
-      "nameEn": "Japanese Iced Green Tea",
-      "descriptionEs": "Té verde fresco ligeramente endulzado con matices herbales refrescantes.",
-      "descriptionEn": "Fresh brewed green tea lightly sweetened with refreshing herbal undertones.",
-      "price": "$3.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "pork-chicken-fish-katsu",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Katsu de cerdo / pollo / pescado",
+      "nameEn": "Pork / Chicken / Fish Katsu",
+      "descriptionEs": "Empanizado y frito, con salsa katsu",
+      "descriptionEn": "Deep fried breaded w. katsu sauce",
+      "price": "$19.00",
       "ctaType": "in_store"
     },
     {
-      "id": "izumi-14",
-      "categoryId": "beverages",
-      "nameEs": "Refrescos de Sabor (Ramune)",
-      "nameEn": "Japanese Ramune Soda",
-      "descriptionEs": "Clásico refresco japonés con canica de vidrio, sabor original o melón.",
-      "descriptionEn": "Classic Japanese marble soda available in original or melon flavor.",
-      "price": "$4.00",
-      "popular": true,
-      "badge": "Divertido",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "mix-vegetable-tempura",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Tempura de vegetales mixtos",
+      "nameEn": "Mix Vegetable Tempura",
+      "descriptionEs": "Frito suavemente, con salsa tempura casera",
+      "descriptionEn": "Gently fried with homemade tempura sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-vegetable-tempura",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Tempura de Pollo y Vegetales",
+      "nameEn": "Chicken & Vegetable Tempura",
+      "descriptionEs": "Frito suavemente, con salsa tempura casera",
+      "descriptionEn": "Gently fried with homemade tempura sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-vegetable-tempura",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Tempura de camarón y verduras",
+      "nameEn": "Shrimp & Vegetable Tempura",
+      "descriptionEs": "Frito suavemente, con salsa tempura casera",
+      "descriptionEn": "Gently fried with homemade tempura sauce",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-combo-tempura",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Combo de mariscos en tempura",
+      "nameEn": "Seafood Combo Tempura",
+      "descriptionEs": "Camarones, vieira, pescado blanco, carne de cangrejo y vegetales",
+      "descriptionEn": "Shrimps, scallop, white fish, crabmeat and vegetable",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shogayaki",
+      "categoryId": "kitchen-entrees-katsu-tempura-shogayaki",
+      "nameEs": "Shogayaki",
+      "nameEn": "Shogayaki",
+      "descriptionEs": "Salteado con glaseado de jengibre y miel. Pollo / cerdo / camarón",
+      "descriptionEn": "Sautéed w. ginger & honey glaze. Chicken / Pork / Shrimp",
+      "price": "Chicken $17.00 / Pork $17.00 / Shrimp $22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-crispy-shrimp",
+      "categoryId": "chef-s-special",
+      "nameEs": "Camarón crujiente salteado",
+      "nameEn": "Sautéed Crispy Shrimp",
+      "descriptionEs": "Camarón crujiente salteado con ajo, cebolla morada, pimiento y jalapeño",
+      "descriptionEn": "Crispy shrimp sautéed with garlic, red onion, pepper, jalapeño",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grill-red-snapper",
+      "categoryId": "chef-s-special",
+      "nameEs": "Pargo rojo a la parrilla",
+      "nameEn": "Grill Red Snapper",
+      "descriptionEs": "Pargo rojo dorado en sartén con salsa especial sobre cama de vegetales de temporada",
+      "descriptionEn": "Pan-fried red snapper with special sauce bed of seasonal vegetables",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-shell-crab-tempura",
+      "categoryId": "chef-s-special",
+      "nameEs": "Cangrejo de caparazón blando en tempura",
+      "nameEn": "Soft Shell Crab Tempura",
+      "descriptionEs": "Cangrejo de caparazón blando frito con vegetales mixtos",
+      "descriptionEn": "Deep-fried soft-shell crab and mixed vegetables",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-duck",
+      "categoryId": "chef-s-special",
+      "nameEs": "Pato crujiente",
+      "nameEn": "Crispy Duck",
+      "descriptionEs": "Glaseado de teriyaki con jengibre, vegetales de temporada",
+      "descriptionEn": "Ginger teriyaki glazed, seasonal vegetables",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-delight",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Delicia de vegetales",
+      "nameEn": "Vegetable Delight",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Pollo hibachi",
+      "nameEn": "Chicken Hibachi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Bistec hibachi",
+      "nameEn": "Steak Hibachi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallop-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Vieiras hibachi",
+      "nameEn": "Scallop Hibachi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Camarón hibachi",
+      "nameEn": "Shrimp Hibachi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Salmón hibachi",
+      "nameEn": "Salmon Hibachi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "any-two-combo",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Combo de dos a elegir",
+      "nameEn": "Any Two Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-hibachi",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Hibachi para niños",
+      "nameEn": "Kids Hibachi",
+      "descriptionEs": "Se sirve con sopa o ensalada, vegetales mixtos y arroz frito o fideos. Pollo / bistec / camarón / salmón a elegir (para niños menores de 12 años)",
+      "descriptionEn": "Served with soup or salad, mix veg. Fried rice or noodle. Choice of chicken / steak / shrimp / salmon (for children under 12)",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-side-extra-vegetable-chicken-steak",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Extra de hibachi: vegetales / pollo / bistec",
+      "nameEn": "Hibachi Side Extra: Vegetable / Chicken / Steak",
+      "descriptionEs": "Con la compra de un plato hibachi",
+      "descriptionEn": "With hibachi entree purchased",
+      "price": "Vegetable $5.00 / Chicken $7.00 / Steak $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-side-extra-shrimp-salmon-scallop",
+      "categoryId": "hibachi-traditional-served-with-mushroom-soup-or-salad-mix-veg-hibachi-fried-rice-or-noodle-fried-rice-noodle-3-5",
+      "nameEs": "Extra de hibachi: camarón / salmón / vieira",
+      "nameEn": "Hibachi Side Extra: Shrimp / Salmon / Scallop",
+      "descriptionEs": "Con la compra de un plato hibachi",
+      "descriptionEn": "With hibachi entree purchased",
+      "price": "Shrimp $9.00 / Salmon $9.00 / Scallop $10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yaki-soba",
+      "categoryId": "japanese-sauteed-noodle-w-miso-soup-or-green-salad",
+      "nameEs": "Yaki Soba",
+      "nameEn": "Yaki Soba",
+      "descriptionEs": "Fideos japoneses delgados tipo espagueti salteados con vegetales mixtos",
+      "descriptionEn": "Stir-fried thin spaghetti japanese noodles and mixed vegetable",
+      "price": "Veg $14.00 / Chicken $15.00 / Beef $17.00 / Shrimp $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-yaki-soba",
+      "categoryId": "japanese-sauteed-noodle-w-miso-soup-or-green-salad",
+      "nameEs": "Yaki soba de mariscos",
+      "nameEn": "Seafood Yaki Soba",
+      "descriptionEs": "Camarón, vieira, carne de cangrejo",
+      "descriptionEn": "Shrimp, scallop, crabmeat",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yaki-udon",
+      "categoryId": "japanese-sauteed-noodle-w-miso-soup-or-green-salad",
+      "nameEs": "Yaki Udon",
+      "nameEn": "Yaki Udon",
+      "descriptionEs": "Fideos japoneses gruesos de harina de trigo salteados con vegetales mixtos",
+      "descriptionEn": "Stir-fried thick japanese wheat flour noodles and mixed vegetable",
+      "price": "Veg $14.00 / Chicken $15.00 / Beef $17.00 / Shrimp $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-yaki-udon",
+      "categoryId": "japanese-sauteed-noodle-w-miso-soup-or-green-salad",
+      "nameEs": "Yaki udon de mariscos",
+      "nameEn": "Seafood Yaki Udon",
+      "descriptionEs": "Camarón, vieira, carne de cangrejo",
+      "descriptionEn": "Shrimp, scallop, crabmeat",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-sukiyaki",
+      "categoryId": "japanese-noodle-soup-w-miso-soup-or-green-salad",
+      "nameEs": "Sukiyaki de res",
+      "nameEn": "Beef Sukiyaki",
+      "descriptionEs": "Fideos de ñame cocidos en la sopa con tofu, vegetales mixtos y res en rebanadas",
+      "descriptionEn": "Yam noodles cooked in the soup with tofu, mixed vegetables, and sliced beef",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nabe-yaki-udon",
+      "categoryId": "japanese-noodle-soup-w-miso-soup-or-green-salad",
+      "nameEs": "Nabe Yaki Udon",
+      "nameEn": "Nabe Yaki Udon",
+      "descriptionEs": "Fideos udon en sopa con pollo, vegetales mixtos, carne de cangrejo y huevo, con 2 piezas de camarón tempura al lado",
+      "descriptionEn": "Udon noodle in soup with chicken, mixed vegetable, crabmeat and egg, 2 pcs shrimp tempura on the side",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yose-nabe",
+      "categoryId": "japanese-noodle-soup-w-miso-soup-or-green-salad",
+      "nameEs": "Yose Nabe",
+      "nameEn": "Yose Nabe",
+      "descriptionEs": "Fideos de ñame cocidos en la sopa con tofu, vegetales mixtos, camarón, vieira y carne de cangrejo",
+      "descriptionEn": "Yam noodles cooked in the soup with tofu, mixed vegetable, shrimp, scallop and crabmeat",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-egg-veg-fried-rice",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Arroz frito hibachi con huevo y vegetales",
+      "nameEn": "Hibachi Egg & Veg. Fried Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-fried-rice-w-chicken-pork-beef-shrimp",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Arroz frito hibachi con pollo / cerdo / res / camarón",
+      "nameEn": "Hibachi Fried Rice w. Chicken / Pork / Beef / Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Chicken $12.00 / Pork $12.00 / Beef $13.00 / Shrimp $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-fried-rice-house-special-seafood",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Arroz frito hibachi especial de la casa / de mariscos",
+      "nameEn": "Hibachi Fried Rice House Special / Seafood",
+      "descriptionEs": "Mariscos: camarón, vieira, carne de cangrejo",
+      "descriptionEn": "Seafood: shrimp, scallop, crabmeat",
+      "price": "House Special $14.00 / Seafood $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-veg-fried-noodle",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Fideos fritos hibachi con vegetales",
+      "nameEn": "Hibachi Veg. Fried Noodle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-fried-noodle-w-chicken-pork-beef-shrimp",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Fideos fritos hibachi con pollo / cerdo / res / camarón",
+      "nameEn": "Hibachi Fried Noodle w. Chicken / Pork / Beef / Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Chicken $12.00 / Pork $12.00 / Beef $13.00 / Shrimp $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibachi-fried-noodle-house-special-seafood",
+      "categoryId": "hibachi-style-fried-rice-noodle",
+      "nameEs": "Fideos fritos hibachi especial de la casa / de mariscos",
+      "nameEn": "Hibachi Fried Noodle House Special / Seafood",
+      "descriptionEs": "Mariscos: camarón, vieira, carne de cangrejo",
+      "descriptionEn": "Seafood: shrimp, scallop, crabmeat",
+      "price": "House Special $14.00 / Seafood $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teriyaki-box",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Caja teriyaki",
+      "nameEn": "Teriyaki Box",
+      "descriptionEs": "Caja bento: sopa o ensalada verde, rollo California, shumai y arroz blanco ($3 extra por arroz frito hibachi). A elegir: vegetales / pollo / salmón / bistec / negimaki de res / camarón / pato (más $1.5)",
+      "descriptionEn": "Bento box: soup or green salad, california roll, shumai and white rice ($3 extra for hibachi fried rice). Choice of vegetable / chicken / salmon / steak / beef negimaki / shrimp / duck (plus $1.5)",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tempura-box",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Caja de tempura",
+      "nameEn": "Tempura Box",
+      "descriptionEs": "Caja bento. A elegir: vegetales / pollo y vegetales / camarón y vegetales",
+      "descriptionEn": "Bento box. Choice of vegetable / chicken & vegetable / shrimp & vegetable",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "katsu-box",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Caja de katsu",
+      "nameEn": "Katsu Box",
+      "descriptionEs": "Caja bento. Pollo o cerdo empanizado",
+      "descriptionEn": "Bento box. Breaded chicken, pork",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-chicken-box",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Caja de pollo al jengibre",
+      "nameEn": "Ginger Chicken Box",
+      "descriptionEs": "Caja bento. Salteado con jengibre y miel",
+      "descriptionEn": "Bento box. Sautéed in ginger & honey",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-lunch",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Almuerzo de sushi",
+      "nameEn": "Sushi Lunch",
+      "descriptionEs": "5 piezas de sushi variado con rollo California; se sirve con sopa miso o ensalada verde",
+      "descriptionEn": "5 pcs assorted sushi w. california roll; served w. miso soup or green salad",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sashimi-lunch",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Almuerzo de sashimi",
+      "nameEn": "Sashimi Lunch",
+      "descriptionEs": "12 piezas de pescado crudo variado; se sirve con sopa miso o ensalada verde",
+      "descriptionEn": "12 pcs of assorted raw fish; served w. miso soup or green salad",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chirashi-lunch",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Chirashi de almuerzo",
+      "nameEn": "Chirashi Lunch",
+      "descriptionEs": "12 piezas de pescado variado, 1 pieza de camarón y 1 de kani sobre una cama de arroz de sushi",
+      "descriptionEn": "12 pcs assorted fish, 1 pc shrimp, 1 pc kani over a bed of sushi rice",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "unagi-don-lunch",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Unagi don de almuerzo",
+      "nameEn": "Unagi Don Lunch",
+      "descriptionEs": "Anguila sobre arroz sazonado",
+      "descriptionEn": "Eel over seasoned rice",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sushi-sashimi-combo-lunch",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Combo de sushi y sashimi de almuerzo",
+      "nameEn": "Sushi & Sashimi Combo Lunch",
+      "descriptionEs": "3 piezas de sushi y 9 piezas de sashimi con rollo California",
+      "descriptionEn": "3 pcs sushi, 9 pcs sashimi w. california roll",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lunch-maki-any-two-rolls",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Maki de almuerzo: dos rollos a elegir",
+      "nameEn": "Lunch Maki: Any Two Rolls",
+      "descriptionEs": "Se sirve con sopa o ensalada verde. Crudos: atún, atún y pepino, salmón y aguacate, jurel y cebollín, atún picante crujiente, salmón, salmón y pepino, jurel picante crujiente, atún y aguacate, salmón picante crujiente, alaskan. Vegetarianos: aguacate o pepino, vegetales, cacahuate y aguacate, espárragos, camote tempura. Cocidos: camarón tempura, cangrejo picante crujiente, boston, california, camarón con aguacate o pepino, philly, anguila con aguacate o pepino, camarón y pepino, pollo tempura",
+      "descriptionEn": "Served w. soup or green salad. Raw: tuna, tuna cucumber, salmon avocado, yellowtail scallion, spicy crunchy tuna, salmon, salmon cucumber, spicy crunchy yellowtail, tuna avocado, spicy crunchy salmon, alaskan. Vegetarian: avocado or cucumber, vegetable, peanut avocado, asparagus, sweet potato tempura. Cooked: shrimp tempura, spicy crunchy crab, boston, california, shrimp avocado or cucumber, philly, eel avocado or cucumber, shrimp cucumber, chicken tempura",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lunch-maki-any-three-rolls",
+      "categoryId": "lunch-specials-11-30-am-3-00-pm-except-sunday-holiday",
+      "nameEs": "Maki de almuerzo: tres rollos a elegir",
+      "nameEn": "Lunch Maki: Any Three Rolls",
+      "descriptionEs": "Se sirve con sopa o ensalada verde. Mismas opciones de rollos que en dos rollos a elegir",
+      "descriptionEn": "Served w. soup or green salad. Same roll choices as Any Two Rolls",
+      "price": "$16.50",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas o sin gluten en el menú?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con rollos vegetarianos, edamame y platos que se pueden adaptar. Por favor, informe a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we offer vegetarian rolls, edamame, and adaptable dishes. Please inform your server of any food allergies."
-    },
-    {
-      "qEs": "¿Se requiere reservación para las mesas de Hibachi?",
-      "qEn": "Do I need a reservation for Hibachi tables?",
-      "aEs": "No es estrictamente obligatorio, pero es altamente recomendable para fines de semana y grupos grandes.",
-      "aEn": "Reservations are not strictly required, but they are highly recommended for weekends and large parties."
-    },
-    {
-      "qEs": "¿Tienen servicio de entrega a domicilio?",
-      "qEn": "Do you offer delivery services?",
-      "aEs": "Sí, ofrecemos servicio de entrega a través de plataformas locales asociadas y pedidos para llevar llamando directamente.",
-      "aEn": "Yes, we offer delivery through local partner platforms and direct takeout orders by phone."
-    }
-  ]
+  "faqs": []
 }
