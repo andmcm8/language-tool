@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "bread-chocolate",
     "name": "Bread & Chocolate",
-    "tagline": "Artisan breads, delicious sandwiches, and sweet treats crafted daily / Panes artesanales, deliciosos sándwiches y dulces elaborados diariamente",
-    "address": "2457 Whitney Ave, Hamden, CT 06518",
+    "tagline": "Bakery and Café in Hamden | Panadería y cafetería en Hamden",
+    "address": "2457 WHITNEY AVE. HAMDEN, CT 06518",
     "hours": {
-      "monday_friday": "6:30 AM - 3:00 PM",
-      "saturday": "8:00 AM - 1:00 PM",
-      "sunday": "Closed"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,282 +24,1306 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
+      "id": "cold-beverages",
+      "nameEs": "Bebidas frías",
+      "nameEn": "Cold Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gluten-free-items",
+      "nameEs": "Productos sin gluten",
+      "nameEn": "Gluten Free Items",
+      "icon": "Utensils"
+    },
+    {
       "id": "breakfast",
-      "nameEs": "Desayunos",
+      "nameEs": "Desayuno",
       "nameEn": "Breakfast",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Sándwiches y Platos",
-      "nameEn": "Sandwiches & Plates",
+      "id": "breakfast-plates",
+      "nameEs": "Platos de desayuno",
+      "nameEn": "Breakfast Plates",
       "icon": "Utensils"
     },
     {
-      "id": "bakery",
-      "nameEs": "Panadería y Postres",
-      "nameEn": "Bakery & Sweets",
+      "id": "omelets",
+      "nameEs": "Omelets",
+      "nameEn": "Omelets",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "freshly-made-soups",
+      "nameEs": "Sopas recién hechas",
+      "nameEn": "Freshly Made Soups",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "panini-sandwiches",
+      "nameEs": "Sándwiches panini",
+      "nameEn": "Panini Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-combos",
+      "nameEs": "Combos de almuerzo",
+      "nameEn": "Lunch Combos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "freshly-baked-artisan-breads",
+      "nameEs": "Panes artesanales recién horneados",
+      "nameEn": "Freshly Baked Artisan Breads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rolls-and-paninis",
+      "nameEs": "Bollos y paninis",
+      "nameEn": "Rolls and Paninis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pastries",
+      "nameEs": "Repostería",
+      "nameEn": "Pastries",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cookies-brownies",
+      "nameEs": "Galletas y brownies",
+      "nameEn": "Cookies & Brownies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "100-colombian-coffee",
+      "nameEs": "Café 100% colombiano",
+      "nameEn": "100% Colombian Coffee",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-chocolate",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Chocolate",
+      "icon": "Utensils"
+    },
+    {
+      "id": "iced-beverages",
+      "nameEs": "Bebidas heladas",
+      "nameEn": "Iced Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "breakfast-meeting-catering-options",
+      "nameEs": "Opciones de catering para reuniones de desayuno",
+      "nameEn": "Breakfast Meeting Catering Options",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-meeting-catering-options",
+      "nameEs": "Opciones de catering para reuniones de almuerzo",
+      "nameEn": "Lunch Meeting Catering Options",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "bread-chocolate-01",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Huevo y Queso en Pan Ciabatta",
-      "nameEn": "Egg & Cheese on a Ciabatta Roll",
-      "descriptionEs": "Huevo fresco y queso derretido servidos en nuestro pan ciabatta artesanal recién horneado.",
-      "descriptionEn": "Fresh egg and melted cheese served on our freshly baked artisanal ciabatta roll.",
-      "price": "$5.30",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Desayuno",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "smoothies-mango-strawberry-peach-blueberry",
+      "categoryId": "cold-beverages",
+      "nameEs": "Smoothies de mango, fresa, durazno, arándano",
+      "nameEn": "Smoothies Mango-strawberry-peach- Blueberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "bread-chocolate-02",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Carne, Huevo y Queso",
-      "nameEn": "Meat, Egg and Cheese on a Ciabatta Roll",
-      "descriptionEs": "Elija entre tocino, salchicha o jamón, acompañado de huevo y queso en pan ciabatta.",
-      "descriptionEn": "Choice of bacon, sausage, or ham, paired with egg and cheese on a ciabatta roll.",
-      "price": "$6.99",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Desayuno",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-03",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Huevo, Pastrami o Bistec",
-      "nameEn": "Egg Pastrami or Steak Sandwich",
-      "descriptionEs": "Exquisito sándwich matutino con pastrami o bistec tierno, huevo y queso en pan fresco.",
-      "descriptionEn": "Exquisite morning sandwich with pastrami or tender steak, egg, and cheese on fresh bread.",
-      "price": "$8.55",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Desayuno",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-04",
-      "categoryId": "breakfast",
-      "nameEs": "Plato de Huevos Estrellados",
-      "nameEn": "Eggs Over Easy Plate",
-      "descriptionEs": "Dos huevos cocinados al gusto, servidos con rebanadas de pan ciabatta y fruta fresca.",
-      "descriptionEn": "Two eggs cooked to your liking, served with slices of ciabatta bread and fresh fruit.",
-      "price": "$6.65",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Desayuno",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-05",
-      "categoryId": "bakery",
-      "nameEs": "Tarta de Frutas Sin Gluten",
-      "nameEn": "Gluten Free Fruit Tart",
-      "descriptionEs": "Delicada tarta sin gluten repleta de crema suave y frutas de temporada.",
-      "descriptionEn": "Delicate gluten-free tart filled with smooth cream and seasonal fruits.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Sin Gluten",
-      "tags": [
-        "Sin Gluten",
-        "Postre"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-06",
-      "categoryId": "bakery",
-      "nameEs": "Galletas con Chispas de Chocolate Sin Gluten",
-      "nameEn": "Gluten Free Chocolate Chip Cookies",
-      "descriptionEs": "Galletas artesanales crujientes por fuera y suaves por dentro, con abundantes chispas de chocolate.",
-      "descriptionEn": "Artisanal cookies, crispy on the outside and soft on the inside, packed with chocolate chips.",
-      "price": "$3.25",
-      "popular": true,
-      "badge": "Sin Gluten",
-      "tags": [
-        "Sin Gluten",
-        "Dulce"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-07",
-      "categoryId": "bakery",
-      "nameEs": "Panqué de Limón Sin Gluten",
-      "nameEn": "Gluten Free Lemon Pound Cake",
-      "descriptionEs": "Bizcocho húmedo con un toque refrescante de limón natural y glaseado ligero.",
-      "descriptionEn": "Moist pound cake with a refreshing touch of natural lemon and light glaze.",
-      "price": "$4.25",
-      "popular": false,
-      "badge": "Sin Gluten",
-      "tags": [
-        "Sin Gluten",
-        "Repostería"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-08",
-      "categoryId": "bakery",
-      "nameEs": "Pan Artesanal 'Poolish' (Barra)",
-      "nameEn": "Artisan Poolish Bread Loaf",
-      "descriptionEs": "Nuestra barra insignia elaborada con fermentación natural poolish; corteza crujiente y miga tierna.",
-      "descriptionEn": "Our signature loaf made with natural poolish fermentation; crispy crust and tender crumb.",
-      "price": "$6.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Pan Artesanal",
-        "Vegano"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-09",
-      "categoryId": "beverages",
-      "nameEs": "Batido Super Verdes",
-      "nameEn": "Super Greens Smoothie",
-      "descriptionEs": "Mezcla energizante de vegetales frescos y frutas para empezar bien el día.",
-      "descriptionEn": "Energizing blend of fresh greens and fruits to kickstart your day.",
-      "price": "$6.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Bebida",
-        "Vegano"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bread-chocolate-10",
-      "categoryId": "beverages",
+      "id": "monkey-frappuccino",
+      "categoryId": "cold-beverages",
       "nameEs": "Frappuccino Monkey",
       "nameEn": "Monkey Frappuccino",
-      "descriptionEs": "Deliciosa combinación helada de café, banano y notas de chocolate cremoso.",
-      "descriptionEn": "Delicious iced combination of coffee, banana, and creamy chocolate notes.",
-      "price": "$6.75",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Bebida",
-        "Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "bread-chocolate-11",
-      "categoryId": "beverages",
-      "nameEs": "Mocktail Frambuesa-Mango-Maracuyá",
-      "nameEn": "Raspberry-Mango-Passionfruit Mocktail",
-      "descriptionEs": "Refrescante bebida sin alcohol elaborada con puré de frutas tropicales naturales.",
-      "descriptionEn": "Refreshing non-alcoholic beverage made with natural tropical fruit purees.",
-      "price": "$5.99",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Bebida",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "super-greens-smoothie",
+      "categoryId": "cold-beverages",
+      "nameEs": "Smoothie Super Greens",
+      "nameEn": "Super Greens Smoothie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "bread-chocolate-12",
-      "categoryId": "beverages",
-      "nameEs": "Matcha Latte",
-      "nameEn": "Matcha Latte",
-      "descriptionEs": "Té verde matcha ceremonial preparado con leche al vapor para una textura suave y sedosa.",
-      "descriptionEn": "Ceremonial grade green tea matcha prepared with steamed milk for a smooth texture.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Bebida",
-        "Té"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "mocktails-rasberry-mango-passionfruit",
+      "categoryId": "cold-beverages",
+      "nameEs": "Mocktails: frambuesa, mango, maracuyá",
+      "nameEn": "Mocktails : Rasberry-Mango-Passionfruit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha",
+      "categoryId": "cold-beverages",
+      "nameEs": "Matcha",
+      "nameEn": "Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-iced-tea",
+      "categoryId": "cold-beverages",
+      "nameEs": "Té helado embotellado",
+      "nameEn": "Bottled Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda",
+      "categoryId": "cold-beverages",
+      "nameEs": "Refresco",
+      "nameEn": "Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-water",
+      "categoryId": "cold-beverages",
+      "nameEs": "Agua embotellada",
+      "nameEn": "Bottled Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-tart",
+      "categoryId": "gluten-free-items",
+      "nameEs": "Tarta de fruta",
+      "nameEn": "Fruit Tart",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-tart",
+      "categoryId": "gluten-free-items",
+      "nameEs": "Tarta de limón",
+      "nameEn": "Lemon Tart",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-cookies",
+      "categoryId": "gluten-free-items",
+      "nameEs": "Galletas con chispas de chocolate",
+      "nameEn": "Chocolate Chip Cookies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-pound-cake",
+      "categoryId": "gluten-free-items",
+      "nameEs": "Panqué de limón",
+      "nameEn": "Lemon Pound Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-toast",
+      "categoryId": "gluten-free-items",
+      "nameEs": "Pan tostado sin gluten",
+      "nameEn": "Gluten Free Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-sandwich-on-a-ciabatta-roll",
+      "categoryId": "breakfast",
+      "nameEs": "Sándwich de huevo en pan ciabatta",
+      "nameEn": "Egg Sandwich on a Ciabatta Roll",
+      "descriptionEs": "Servido con un vaso de fruta | Claras de huevo disponibles por $2.40 adicionales | En croissant sencillo 2.20",
+      "descriptionEn": "Served with a fruit cup | Egg Whites available for additional $2.40 | On plain croissant 2.20",
+      "price": "$4.80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-cheese-on-a-ciabatta-roll",
+      "categoryId": "breakfast",
+      "nameEs": "Huevo y queso en pan ciabatta",
+      "nameEn": "Egg & Cheese on a Ciabatta Roll",
+      "descriptionEs": "Servido con un vaso de fruta | Claras de huevo disponibles por $2.40 adicionales | En croissant sencillo 2.20",
+      "descriptionEn": "Served with a fruit cup | Egg Whites available for additional $2.40 | On plain croissant 2.20",
+      "price": "$5.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-egg-and-cheese-on-a-ciabatta-roll",
+      "categoryId": "breakfast",
+      "nameEs": "Carne, huevo y queso en pan ciabatta",
+      "nameEn": "Meat, Egg and Cheese on a Ciabatta Roll",
+      "descriptionEs": "(Tocino, salchicha o jamón) (tocino de pavo agrega 1.20)",
+      "descriptionEn": "(Bacon-Sausage or Ham)(Turkey bacon add 1.20 )",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-pastrami-or-steak",
+      "categoryId": "breakfast",
+      "nameEs": "Huevo con pastrami o bistec",
+      "nameEn": "Egg Pastrami or Steak",
+      "descriptionEs": "Servido con un vaso de fruta | Claras de huevo disponibles por $2.40 adicionales | En croissant sencillo 2.20",
+      "descriptionEn": "Served with a fruit cup | Egg Whites available for additional $2.40 | On plain croissant 2.20",
+      "price": "$8.55",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggs-over-easy",
+      "categoryId": "breakfast-plates",
+      "nameEs": "Huevos volteados (over easy)",
+      "nameEn": "Eggs Over Easy",
+      "descriptionEs": "Dos huevos, servidos con rebanadas de pan ciabatta y fruta fresca",
+      "descriptionEn": "Two Eggs, served with slices of Ciabatta bread and fresh fruit",
+      "price": "$6.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-bacon",
+      "categoryId": "breakfast-plates",
+      "nameEs": "Agrega tocino",
+      "nameEn": "Add Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-turkey-bacon",
+      "categoryId": "breakfast-plates",
+      "nameEs": "Agrega tocino de pavo",
+      "nameEn": "Add Turkey Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-toast",
+      "categoryId": "breakfast-plates",
+      "nameEs": "Tostada francesa",
+      "nameEn": "French Toast",
+      "descriptionEs": "Dos rebanadas de pan brioche servidas con huevos revueltos y fruta fresca",
+      "descriptionEn": "Two slices of Brioche bread served with scrambled eggs and fresh fruit",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-toast-no-eggs",
+      "categoryId": "breakfast-plates",
+      "nameEs": "Pan francés sin huevos",
+      "nameEn": "French Toast No Eggs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "omelets",
+      "categoryId": "omelets",
+      "nameEs": "Omelets",
+      "nameEn": "Omelets",
+      "descriptionEs": "Servidos con dos rebanadas de pan ciabatta y fruta fresca. Claras de huevo agrega $2.40, aguacate agrega $2.45, cargo adicional por vegetales a la parrilla $2.40 | Elige 1 carne, 1 vegetal y 1 queso de los siguientes:\nEspinaca, champiñones, tomate, pimiento rojo; vegetales a la parrilla agrega 2.40\nQueso (americano, provolone, cheddar, jack o suizo)\nCarne\n(Tocino, jamón, salchicha) (tocino de pavo o pastrami agrega 2.00)",
+      "descriptionEn": "Served with two slices of Ciabatta bread and fresh fruit. Egg whites add $2.40, Avocado add $2.45, additional charge for grilled Veggies $2.40| Choose 1 meat, 1 vegetable, 1 cheese of the following:\nSpinach, Mushrooms, tomato, red peppers, Grilled veggies add 2.40\nCheese(American, Provolone, Cheddar, Jack or Swiss)\nMeat\n(Bacon-Ham-Sausage-)(turkey bacon or pastrami add 2.00)",
+      "price": "$10.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-soup-with-ciabatta-bread",
+      "categoryId": "freshly-made-soups",
+      "nameEs": "Sopa de cebolla con pan ciabatta",
+      "nameEn": "Onion Soup with Ciabatta Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "freshly-made-soups",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day-with-ciabatta",
+      "categoryId": "freshly-made-soups",
+      "nameEs": "Sopa del día con ciabatta",
+      "nameEn": "Soup of the Day with Ciabatta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "Mesclun, tomate, aceitunas, cebolla, pepinos, aderezo a elección.",
+      "descriptionEn": "Mesclum, tomato, olives, onions, cucumbers, choice of dressing.",
+      "price": "$9.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada tropical",
+      "nameEn": "Tropical Salad",
+      "descriptionEs": "Lechuga, manzanas, pimientos rojos, arándanos rojos, nueces, mandarinas, tomate, cebolla, pepinos, aceitunas, queso de cabra, aderezo a elección.",
+      "descriptionEn": "Lettuce, apples, red peppers, cranberries, nuts, tangerines, tomato, onions, cucumbers, olives, Goat cheese, choice of dressing.",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, crutones caseros, aderezo César.",
+      "descriptionEn": "Romaine, homemade croutons, Caesar dressing.",
+      "price": "$8.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de espinaca",
+      "nameEn": "Spinach Salad",
+      "descriptionEs": "Pimientos rojos asados, nueces, champiñones, huevos duros.",
+      "descriptionEn": "Roasted red peppers, nuts, mushrooms, hard boiled eggs.",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "substitute-for-baby-arugula-or-baby-spinach",
+      "categoryId": "salads",
+      "nameEs": "Sustituye por arúgula baby o espinaca baby",
+      "nameEn": "Substitute for Baby Arugula or Baby Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-turkey-breast",
+      "categoryId": "sandwiches",
+      "nameEs": "Pechuga de pavo ahumada",
+      "nameEn": "Smoked Turkey Breast",
+      "descriptionEs": "en pan ciabatta, | Agrega lechuga, tomate y mayonesa sin costo.",
+      "descriptionEn": "on ciabatta bread, | Add lettuce, tomato, and mayo for no charge.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ham",
+      "categoryId": "sandwiches",
+      "nameEs": "Jamón horneado",
+      "nameEn": "Baked Ham",
+      "descriptionEs": "en pan ciabatta, | Agrega lechuga, tomate y mayonesa sin costo.",
+      "descriptionEn": "on ciabatta bread, | Add lettuce, tomato, and mayo for no charge.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef",
+      "categoryId": "sandwiches",
+      "nameEs": "Rosbif",
+      "nameEn": "Roast Beef",
+      "descriptionEs": "en pan ciabatta, | Agrega lechuga, tomate y mayonesa sin costo.",
+      "descriptionEn": "on ciabatta bread, | Add lettuce, tomato, and mayo for no charge.",
+      "price": "$11.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-salad",
+      "categoryId": "sandwiches",
+      "nameEs": "Ensalada de pollo",
+      "nameEn": "Chicken Salad",
+      "descriptionEs": "en pan ciabatta, | Agrega lechuga, tomate y mayonesa sin costo.",
+      "descriptionEn": "on ciabatta bread, | Add lettuce, tomato, and mayo for no charge.",
+      "price": "$11.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-salad",
+      "categoryId": "sandwiches",
+      "nameEs": "Ensalada de atún",
+      "nameEn": "Tuna Salad",
+      "descriptionEs": "en pan ciabatta, | Agrega lechuga, tomate y mayonesa sin costo.",
+      "descriptionEn": "on ciabatta bread, | Add lettuce, tomato, and mayo for no charge.",
+      "price": "$11.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-cut-combo",
+      "categoryId": "sandwiches",
+      "nameEs": "Combo de carnes frías",
+      "nameEn": "Cold Cut Combo",
+      "descriptionEs": "Pavo, jamón, rosbif, lechuga, tomate, tocino, queso en pan ciabatta",
+      "descriptionEn": "Turkey, ham, roast beef, lettuce, tomato, bacon, cheese on Ciabatta bread",
+      "price": "$12.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich caprese",
+      "nameEn": "Caprese Sandwich",
+      "descriptionEs": "Mozzarella fresca, tomate, albahaca, aceite y vinagre en pan ciabatta.",
+      "descriptionEn": "Fresh mozzarella, tomato, basil, oil and vinegar on Ciabatta bread.",
+      "price": "$10.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-baby-spinach-or-arugula",
+      "categoryId": "sandwiches",
+      "nameEs": "Agrega: espinaca baby o arúgula",
+      "nameEn": "Add: Baby Spinach or Arugula",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-fresh-mozzarella",
+      "categoryId": "sandwiches",
+      "nameEs": "Agrega: mozzarella fresca",
+      "nameEn": "Add: Fresh Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-bacon-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Agrega: tocino (Sándwiches)",
+      "nameEn": "Add: Bacon (Sandwiches)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-avocado",
+      "categoryId": "sandwiches",
+      "nameEs": "Agrega: aguacate",
+      "nameEn": "Add: Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-with-tomato",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Queso a la plancha con tomate",
+      "nameEn": "Grilled Cheese with Tomato",
+      "descriptionEs": "Servido en pan ciabatta con el queso de tu elección",
+      "descriptionEn": "Served on Ciabatta bread with your choice of cheese",
+      "price": "$6.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-baked-ham-and-cheese",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Jamón horneado con queso a la plancha",
+      "nameEn": "Grilled Baked Ham and Cheese",
+      "descriptionEs": "en pan ciabatta",
+      "descriptionEn": "on Ciabatta bread",
+      "price": "$9.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-breast",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Pechuga de pollo",
+      "nameEn": "Chicken Breast",
+      "descriptionEs": "Servido en pan integral con lechuga, tomate y cebolla",
+      "descriptionEn": "Served on whole wheat with lettuce and tomato and onion",
+      "price": "$11.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-melt",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Atún fundido",
+      "nameEn": "Tuna Melt",
+      "descriptionEs": "Servido en pan focaccia con tomate y queso suizo",
+      "descriptionEn": "Served on Focaccia bread with tomato and swiss cheese",
+      "price": "$11.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pastrami-melt",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Pastrami fundido",
+      "nameEn": "Pastrami Melt",
+      "descriptionEs": "Servido en pan focaccia con mostaza, cebolla caramelizada y queso suizo",
+      "descriptionEn": "Served on Focaccia bread with mustard, caramelized onions and swiss cheese",
+      "price": "$11.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-and-cheese-the-works-on-ciabatta",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Bistec con queso \"con todo\" en ciabatta",
+      "nameEn": "Steak and Cheese the \"works\" on ciabatta",
+      "descriptionEs": "Champiñones portobello, cebolla caramelizada, pimientos rojos asados y queso americano en ciabatta",
+      "descriptionEn": "Portobello Mushrooms-Caramelized Onions-Roasted Red Peppers-American Cheese on Ciabatta",
+      "price": "$13.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-veggie",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Vegetales a la parrilla",
+      "nameEn": "Grilled Veggie",
+      "descriptionEs": "Berenjena, calabacita y champiñones portobello a la parrilla, pimientos rojos asados y queso en pan focaccia",
+      "descriptionEn": "Grilled Eggplant, zucchini, Portabella mushrooms, roasted red peppers and cheese on focaccia bread",
+      "price": "$11.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-portobello",
+      "categoryId": "panini-sandwiches",
+      "nameEs": "Pollo portobello",
+      "nameEn": "Chicken Portobello",
+      "descriptionEs": "Servido en pan ciabatta con cebolla caramelizada, pimientos rojos asados y queso suizo",
+      "descriptionEn": "Served on Ciabatta bread with caramelized onions, roasted red peppers and Swiss cheese",
+      "price": "$11.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-half",
+      "categoryId": "lunch-combos",
+      "nameEs": "Mitad y mitad",
+      "nameEn": "Half & Half",
+      "descriptionEs": "¿No te decides entre sopa, ensalada o sándwich? ¡Ya no tienes que hacerlo! Elige dos de los siguientes: taza de sopa, medio sándwich o media ensalada\n(NO se incluyen el bistec con queso con todo ni el combo de carnes frías)",
+      "descriptionEn": "Can't decide on soup, salad or sandwich? Now you don't have to! Select any two of the following: Cup of Soup, Half Sandwich, or Half Salad\n(STEAK AND CHEESE THE WORKS AND COLD CUT COMBO are not included)",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciabatta",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Ciabatta",
+      "nameEn": "Ciabatta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciabatta-oil",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Ciabatta con aceite",
+      "nameEn": "Ciabatta Oil",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheat-ciabatta",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Ciabatta integral",
+      "nameEn": "Wheat Ciabatta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-baguette",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Baguette francesa",
+      "nameEn": "French Baguette",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheat-baguette",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Baguette integral",
+      "nameEn": "Wheat Baguette",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "challah-bread",
+      "categoryId": "freshly-baked-artisan-breads",
+      "nameEs": "Pan jalá (challah)",
+      "nameEn": "Challah Bread",
+      "descriptionEs": "Solo los viernes",
+      "descriptionEn": "Friday's Only",
+      "price": "$7.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brioche-roll",
+      "categoryId": "rolls-and-paninis",
+      "nameEs": "Bollo brioche",
+      "nameEn": "Brioche Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciabatta-roll",
+      "categoryId": "rolls-and-paninis",
+      "nameEs": "Bollo ciabatta",
+      "nameEn": "Ciabatta Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheat-ciabatta-roll",
+      "categoryId": "rolls-and-paninis",
+      "nameEs": "Bollo ciabatta integral",
+      "nameEn": "Wheat Ciabatta Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-panini",
+      "categoryId": "rolls-and-paninis",
+      "nameEs": "Panini blanco",
+      "nameEn": "White Panini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheat-panini",
+      "categoryId": "rolls-and-paninis",
+      "nameEs": "Panini integral",
+      "nameEn": "Wheat Panini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "croissant",
+      "categoryId": "pastries",
+      "nameEs": "Croissant",
+      "nameEn": "Croissant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-croissant",
+      "categoryId": "pastries",
+      "nameEs": "Croissant de chocolate",
+      "nameEn": "Chocolate Croissant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "almond-croissant",
+      "categoryId": "pastries",
+      "nameEs": "Croissant de almendra",
+      "nameEn": "Almond Croissant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "danishes",
+      "categoryId": "pastries",
+      "nameEs": "Daneses",
+      "nameEn": "Danishes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guava-turnovers",
+      "categoryId": "pastries",
+      "nameEs": "Empanadas de guayaba",
+      "nameEn": "Guava Turnovers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-rolls",
+      "categoryId": "pastries",
+      "nameEs": "Rollos de canela",
+      "nameEn": "Cinnamon Rolls",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sticky-buns",
+      "categoryId": "pastries",
+      "nameEs": "Sticky buns (bollos pegajosos)",
+      "nameEn": "Sticky Buns",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muffins",
+      "categoryId": "pastries",
+      "nameEs": "Muffins",
+      "nameEn": "Muffins",
+      "descriptionEs": "Arándano, elote, chispas de chocolate, arándano rojo",
+      "descriptionEn": "Blueberry-Corn-Chocolate Chip-Cranberry",
+      "price": "$3.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scones",
+      "categoryId": "pastries",
+      "nameEs": "Scones",
+      "nameEn": "Scones",
+      "descriptionEs": "Arándano, arándano rojo, chispas de chocolate, nuez, pasas, manzana, zarzamora, arándano",
+      "descriptionEn": "Blueberry-Cranberry-Chocolate Chip-Walnut-Raisin-Apple-Blackberry-Blueberry",
+      "price": "$3.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Galletas",
+      "nameEn": "Cookies",
+      "descriptionEs": "Chispas de chocolate | Avena con pasas | Cluster",
+      "descriptionEn": "Chocolate Chip | Oatmeal Raisin | Cluster",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies-without-nuts",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Brownies sin nueces",
+      "nameEn": "Brownies without Nuts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies-with-nuts",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Brownies con nueces",
+      "nameEn": "Brownies with Nuts",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies-with-cream-cheese",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Brownies con queso crema",
+      "nameEn": "Brownies with Cream Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-pudding-blueberry",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Budín de pan con arándanos",
+      "nameEn": "Bread Pudding Blueberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cake",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Pastel de zanahoria",
+      "nameEn": "Carrot Cake",
+      "descriptionEs": "Todo hecho desde cero",
+      "descriptionEn": "All made from Scratch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-roll",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Rollo de chocolate",
+      "nameEn": "Chocolate Roll",
+      "descriptionEs": "Todo hecho desde cero",
+      "descriptionEn": "All made from Scratch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-cake",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Pastel de coco",
+      "nameEn": "Coconut Cake",
+      "descriptionEs": "Todo hecho desde cero",
+      "descriptionEn": "All made from Scratch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesecake",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Cheesecake",
+      "nameEn": "Cheesecake",
+      "descriptionEs": "Todo hecho desde cero",
+      "descriptionEn": "All made from Scratch",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscotti",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Biscotti",
+      "nameEn": "Biscotti",
+      "descriptionEs": "(Arándano rojo con naranja y chocolate con nuez)",
+      "descriptionEn": "(Cranberry Orange and Chocolate walnut)",
+      "price": "$3.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eclair",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Éclair",
+      "nameEn": "Eclair",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diplomat-cream-puff",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Profiterol con crema diplomática",
+      "nameEn": "Diplomat Cream Puff",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tarts",
+      "categoryId": "cookies-brownies",
+      "nameEs": "Tartas",
+      "nameEn": "Tarts",
+      "descriptionEs": "(Tarta de queso ricotta, de limón y de fruta)",
+      "descriptionEn": "(Ricotta Cheese-Lemon-and Fruit Tart)",
+      "price": "$5.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-single",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Espresso sencillo",
+      "nameEn": "Espresso Single",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-double",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Espresso doble",
+      "nameEn": "Espresso Double",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medium-cappuccino",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Cappuccino mediano",
+      "nameEn": "Medium Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-cappuccino",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Cappuccino grande",
+      "nameEn": "Large Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medium-mocha-cappuccino",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Cappuccino moca mediano",
+      "nameEn": "Medium Mocha Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-mocha-cappuccino",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Cappuccino moca grande",
+      "nameEn": "Large Mocha Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medium-latte",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Latte mediano",
+      "nameEn": "Medium Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-latte-to-go",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Latte grande (PARA LLEVAR)",
+      "nameEn": "Large Latte (TO GO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medium-mocha-latte-to-go",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Latte moca mediano (PARA LLEVAR)",
+      "nameEn": "Medium Mocha Latte (TO GO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-mocha-latte-to-go",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Latte moca grande (PARA LLEVAR)",
+      "nameEn": "Large Mocha Latte (TO GO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-extra-shot-of-espresso",
+      "categoryId": "100-colombian-coffee",
+      "nameEs": "Agrega un shot extra de espresso",
+      "nameEn": "Add Extra Shot of Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.80",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medium-hot-chocolate",
+      "categoryId": "hot-chocolate",
+      "nameEs": "Chocolate caliente mediano",
+      "nameEn": "Medium Hot Chocolate",
+      "descriptionEs": "¿Alguna vez has probado un auténtico chocolate caliente? Tienes que probar este: no es un chocolate caliente cualquiera...",
+      "descriptionEn": "Ever had an authentic hot chocolate? You must try this - it's not your average hot cocoa...",
+      "price": "$4.30",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-iced-tea",
+      "categoryId": "iced-beverages",
+      "nameEs": "Té helado casero",
+      "nameEn": "Homemade Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-iced-coffee",
+      "categoryId": "iced-beverages",
+      "nameEs": "Café helado casero",
+      "nameEn": "Homemade Iced Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-mocha-latte-medium",
+      "categoryId": "iced-beverages",
+      "nameEs": "Latte moca helado mediano",
+      "nameEn": "Iced Mocha Latte Medium",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-mocha-latte-large",
+      "categoryId": "iced-beverages",
+      "nameEs": "Latte moca helado grande",
+      "nameEn": "Iced Mocha Latte Large",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha-medium",
+      "categoryId": "iced-beverages",
+      "nameEs": "Matcha helado mediano",
+      "nameEn": "Iced Matcha Medium",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha-large",
+      "categoryId": "iced-beverages",
+      "nameEs": "Matcha helado grande",
+      "nameEn": "Iced Matcha Large",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chaider-medium",
+      "categoryId": "iced-beverages",
+      "nameEs": "Chaider helado mediano",
+      "nameEn": "Iced Chaider Medium",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chaider-large",
+      "categoryId": "iced-beverages",
+      "nameEs": "Chaider helado grande",
+      "nameEn": "Iced Chaider Large",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.90",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai-latte-medium",
+      "categoryId": "iced-beverages",
+      "nameEs": "Chai latte helado mediano",
+      "nameEn": "Iced Chai Latte Medium",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.35",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai-latte-large",
+      "categoryId": "iced-beverages",
+      "nameEs": "Chai latte helado grande",
+      "nameEn": "Iced Chai Latte Large",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-americano-medium",
+      "categoryId": "iced-beverages",
+      "nameEs": "Americano helado mediano",
+      "nameEn": "Iced Americano Medium",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-americano-largr",
+      "categoryId": "iced-beverages",
+      "nameEs": "Americano helado grande",
+      "nameEn": "Iced Americano Largr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.60",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-tea-takeout-container",
+      "categoryId": "breakfast-meeting-catering-options",
+      "nameEs": "Contenedor de café/té para llevar",
+      "nameEn": "Coffee/Tea Takeout Container",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-apple-juice",
+      "categoryId": "breakfast-meeting-catering-options",
+      "nameEs": "Jugo de naranja y de manzana",
+      "nameEn": "Orange & Apple Juice",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scones-muffins-croissants-danishes",
+      "categoryId": "breakfast-meeting-catering-options",
+      "nameEs": "Scones, muffins, croissants y daneses",
+      "nameEn": "Scones, Muffins, Croissants & Danishes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-platter",
+      "categoryId": "breakfast-meeting-catering-options",
+      "nameEs": "Charola de frutas",
+      "nameEn": "Fruit Platter",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-half-soup-sandwich",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Mitad y mitad (sopa/sándwich)",
+      "nameEn": "Half & Half (Soup/Sandwich)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "platter-of-sandwiches",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Charola de sándwiches",
+      "nameEn": "Platter of Sandwiches",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soups",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Sopas",
+      "nameEn": "Soups",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-salads",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Ensaladas grandes",
+      "nameEn": "Large Salads",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies-cookies",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Brownies/galletas",
+      "nameEn": "Brownies/Cookies",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "individual-drinks",
+      "categoryId": "lunch-meeting-catering-options",
+      "nameEs": "Bebidas individuales",
+      "nameEn": "Individual Drinks",
+      "descriptionEs": "Llámanos para conocer los precios",
+      "descriptionEn": "Call us for pricing",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones sin gluten disponibles?",
-      "qEn": "Do you have gluten-free options available?",
-      "aEs": "Sí, ofrecemos tartas, galletas, panqué de limón y tostadas sin gluten.",
-      "aEn": "Yes, we offer gluten-free tarts, cookies, pound cake, and toast."
-    },
-    {
-      "qEs": "¿Cuál es su horario de atención?",
-      "qEn": "What are your operating hours?",
-      "aEs": "Abrimos de lunes a viernes de 6:30 AM a 3:00 PM, y sábados de 8:00 AM a 1:00 PM. Los domingos permanecemos cerrados.",
-      "aEn": "We are open Monday through Friday from 6:30 AM to 3:00 PM, and Saturdays from 8:00 AM to 1:00 PM. Sundays we are closed."
-    }
-  ]
+  "faqs": []
 }
