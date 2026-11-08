@@ -2,26 +2,18 @@
   "storeInfo": {
     "id": "ggs-wood-fired-pizza",
     "name": "GG's Wood Fired Pizza",
-    "tagline": "Auténtica pizza artesanal al horno de leña | Authentic Wood-Fired Artisan Pizza",
-    "address": "591 Boston Post Rd, Milford, CT 06460",
+    "tagline": "Pizza and Italian restaurant in Milford | Restaurante de pizza y comida italiana en Milford",
+    "address": "591 Boston Post Rd, Milford CT, 06460",
     "phone": "(203) 876-8000",
     "hours": {
-      "monday_friday": "11:30 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Mon Closed; Tue-Fri 11:30 AM - 9:00 PM",
+      "saturday": "11:30 AM - 9:00 PM",
+      "sunday": "4:00 PM - 8:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Wood-Fired Oven"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,354 +25,674 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "starters",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Starters",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "wings",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Pizzas al Horno de Leña",
-      "nameEn": "Wood-Fired Pizzas",
+      "id": "entrees",
+      "nameEs": "Platos principales",
+      "nameEn": "Entrees",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Postres",
-      "nameEn": "Drinks & Desserts",
-      "icon": "Coffee"
+      "id": "pizzas",
+      "nameEs": "Pizzas",
+      "nameEn": "Pizzas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-menu",
+      "nameEs": "Menú de banquetes",
+      "nameEn": "Catering Menu",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "ggs-wood-fired-pizza-01",
-      "categoryId": "appetizers",
-      "nameEs": "Albóndigas Picantes",
-      "nameEn": "Spicy Meatballs",
-      "descriptionEs": "Albóndigas caseras servidas con chiles picantes y cebollas crujientes en salsa de la casa.",
-      "descriptionEn": "House-made meatballs served with hot peppers and frizzled onions in rich tomato sauce.",
+      "id": "caesar",
+      "categoryId": "salads",
+      "nameEs": "Caesar",
+      "nameEn": "Caesar",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamar Frito",
-      "nameEn": "Fried Calamari",
-      "descriptionEs": "Calamar tierno empanizado y frito a la perfección, servido con salsa marinara clásica.",
-      "descriptionEn": "Tender calamari lightly breaded and fried to golden perfection, served with classic marinara.",
+      "id": "belle",
+      "categoryId": "salads",
+      "nameEs": "Belle",
+      "nameEn": "Belle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto",
+      "categoryId": "salads",
+      "nameEs": "Antipasto",
+      "nameEn": "Antipasto",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-03",
-      "categoryId": "appetizers",
-      "nameEs": "Rollatini de Berenjena",
-      "nameEn": "Eggplant Rollatini",
-      "descriptionEs": "Finas capas de berenjena rellenas de quesos selectos, horneadas en salsa marinara.",
-      "descriptionEn": "Thin eggplant slices stuffed with a blend of cheeses, baked in signature marinara.",
+      "id": "arugula-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de arúgula",
+      "nameEn": "Arugula Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wedge",
+      "categoryId": "salads",
+      "nameEs": "Wedge",
+      "nameEn": "Wedge",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$16.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-04",
-      "categoryId": "appetizers",
-      "nameEs": "Pan de Ajo Log Cabin",
-      "nameEn": "Log Cabin Garlic Bread",
-      "descriptionEs": "Pan de ajo crujiente horneado al horno de leña, cubierto con nuestra cálida salsa gorgonzola.",
-      "descriptionEn": "Wood-fired crispy garlic bread topped with our warm, creamy gorgonzola sauce.",
+      "id": "marchigiana",
+      "categoryId": "salads",
+      "nameEs": "Marchigiana",
+      "nameEn": "Marchigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-meatballs",
+      "categoryId": "starters",
+      "nameEs": "Spicy Meatballs",
+      "nameEn": "Spicy Meatballs",
+      "descriptionEs": "chiles picantes, cebollas fritas crujientes",
+      "descriptionEn": "hot peppers, frizzled onions",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Ajo",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-05",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas al Horno de Leña",
-      "nameEn": "Wood-Fired Wings",
-      "descriptionEs": "Alitas ahumadas en horno de leña con glaseado de tocino, ajo y parmesano.",
-      "descriptionEn": "Wood-smoked wings tossed in a bacon garlic parmesan glaze.",
+      "id": "gorgonzola-meatballs",
+      "categoryId": "starters",
+      "nameEs": "Gorgonzola Meatballs",
+      "nameEn": "Gorgonzola Meatballs",
+      "descriptionEs": "crema de gorgonzola, cubiertas con tocino crujiente",
+      "descriptionEn": "gorgonzola cream, topped with crunchy bacon",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "starters",
+      "nameEs": "Fried Calamari",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "con marinara",
+      "descriptionEn": "with marinara",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini",
+      "categoryId": "starters",
+      "nameEs": "Eggplant Rollatini",
+      "nameEn": "Eggplant Rollatini",
+      "descriptionEs": "Berenjena rellena de quesos, horneada en marinara",
+      "descriptionEn": "Eggplant stuffed with cheeses, baked in marinara",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-cheese-meatballs",
+      "categoryId": "starters",
+      "nameEs": "3-Cheese Meatballs",
+      "nameEn": "3-Cheese Meatballs",
+      "descriptionEs": "Ricota, mozzarella, pecorino, tomate, crema",
+      "descriptionEn": "Ricotta, mozzarella, pecorino, tomato, cream",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heather-s-bruschetta",
+      "categoryId": "starters",
+      "nameEs": "Heather's Bruschetta",
+      "nameEn": "Heather's Bruschetta",
+      "descriptionEs": "tomates, cebollas moradas, albahaca, mezcla de quesos",
+      "descriptionEn": "tomatoes, red onions, basil, blended cheeses",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-ravioli",
+      "categoryId": "starters",
+      "nameEs": "Fried Ravioli",
+      "nameEn": "Fried Ravioli",
+      "descriptionEs": "con marinara y pecorino",
+      "descriptionEn": "with marinara and pecorino",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "log-cabin",
+      "categoryId": "starters",
+      "nameEs": "Log Cabin",
+      "nameEn": "Log Cabin",
+      "descriptionEs": "pan de ajo, salsa de gorgonzola tibia",
+      "descriptionEn": "garlic bread, warm gorgonzola sauce",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bronx-calamari",
+      "categoryId": "starters",
+      "nameEs": "Bronx Calamari",
+      "nameEn": "Bronx Calamari",
+      "descriptionEs": "Calamares, camarones, calabacín, chiles picantes, balsamico",
+      "descriptionEn": "Calamari, shrimp, zucchini, hot peppers, balsamico",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-stacker",
+      "categoryId": "starters",
+      "nameEs": "Eggplant Stacker",
+      "nameEn": "Eggplant Stacker",
+      "descriptionEs": "berenjena frita, mozzarella fresca, tomates, chiles asados, arúgula",
+      "descriptionEn": "fried eggplant, fresh mozzarella, tomatoes, roasted peppers, arugula",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-pot",
+      "categoryId": "starters",
+      "nameEs": "Meatball Pot",
+      "nameEn": "Meatball Pot",
+      "descriptionEs": "con quesos burrata",
+      "descriptionEn": "with burrata cheeses",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mozzarella",
+      "categoryId": "starters",
+      "nameEs": "Fried Mozzarella",
+      "nameEn": "Fried Mozzarella",
+      "descriptionEs": "mozzarella empanizada con panko, marinara",
+      "descriptionEn": "panko crusted mozzarella, marinara",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-clams-pascale",
+      "categoryId": "starters",
+      "nameEs": "Stuffed Clams Pascale",
+      "nameEn": "Stuffed Clams Pascale",
+      "descriptionEs": "estilo Matlaw – relleno estilo RI",
+      "descriptionEn": "Matlaw style – RI stuffy",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "long-hot-peppers-with-sausage",
+      "categoryId": "starters",
+      "nameEs": "Long Hot Peppers with Sausage",
+      "nameEn": "Long Hot Peppers with Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-balls",
+      "categoryId": "starters",
+      "nameEs": "Rice Balls",
+      "nameEn": "Rice Balls",
+      "descriptionEs": "Con quesos y chícharos, marinara",
+      "descriptionEn": "With cheeses and peas, marinara",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-in-our-sunday-sauce",
+      "categoryId": "starters",
+      "nameEs": "Meatball in our Sunday sauce",
+      "nameEn": "Meatball in our Sunday sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wood-fried-wings",
+      "categoryId": "wings",
+      "nameEs": "Wood Fried Wings",
+      "nameEn": "Wood Fried Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$12.25",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Ahumado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-06",
-      "categoryId": "mains",
-      "nameEs": "Pollo a la Parmigiana",
+      "id": "chicken-parmigiana",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Parmigiana",
       "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Dos pechugas de pollo empanizadas y gruesas, cubiertas con salsa y queso, servidas con espagueti.",
-      "descriptionEn": "Two thick breaded chicken breasts topped with sauce and melted cheese, served with spaghetti.",
+      "descriptionEs": "Dos pechugas de pollo gruesas, con espagueti",
+      "descriptionEn": "Two thick chicken breast, with spaghetti",
       "price": "$26.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Italiano",
-        "Abundante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-07",
-      "categoryId": "mains",
-      "nameEs": "Penne a la Vodka",
+      "id": "penne-vodka",
+      "categoryId": "entrees",
+      "nameEs": "Penne Vodka",
       "nameEn": "Penne Vodka",
-      "descriptionEs": "Pasta penne salteada con cebollas, ajo, prosciutto y una suave salsa de tomate con crema.",
-      "descriptionEn": "Penne pasta tossed with onions, garlic, prosciutto, and a rich tomato cream sauce.",
+      "descriptionEs": "Penne, cebollas, ajo, prosciutto, crema de tomate",
+      "descriptionEn": "Penne, onions, garlic, prosciutto, tomato cream",
       "price": "$22.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pasta",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-08",
-      "categoryId": "mains",
-      "nameEs": "Cavatelli Hechos a Mano",
+      "id": "handmade-cavatelli",
+      "categoryId": "entrees",
+      "nameEs": "Handmade Cavatelli",
       "nameEn": "Handmade Cavatelli",
-      "descriptionEs": "Cavatelli frescos con su elección de marinara o salsa Sunday, coronados con queso burrata.",
-      "descriptionEn": "Fresh cavatelli with your choice of marinara or Sunday sauce, topped with fresh burrata.",
+      "descriptionEs": "Con opción de marinara o salsa de domingo, cubierto con burrata",
+      "descriptionEn": "With choice – marinara or Sunday sauce, topper with burrata",
       "price": "$25.00",
-      "popular": false,
-      "badge": "Hecho en Casa",
-      "tags": [
-        "Artesanal",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-09",
-      "categoryId": "mains",
-      "nameEs": "Pasta Nanny Grace",
+      "id": "george-s-handmade-ravioli",
+      "categoryId": "entrees",
+      "nameEs": "George's Handmade Ravioli",
+      "nameEn": "George's Handmade Ravioli",
+      "descriptionEs": "ravioles de ricota hechos en casa con Sunday Sauce",
+      "descriptionEn": "house-made ricotta raviolis with Sunday Sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti",
+      "categoryId": "entrees",
+      "nameEs": "Spaghetti",
+      "nameEn": "Spaghetti",
+      "descriptionEs": "Opción de marinara, Sunday Gravy o Ajo y Aceite",
+      "descriptionEn": "Choice of marinara, Sunday Gravy or Garlic & Oil",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nanny-grace-pasta",
+      "categoryId": "entrees",
+      "nameEs": "Nanny Grace Pasta",
       "nameEn": "Nanny Grace Pasta",
-      "descriptionEs": "Gruesos fettuccine hechos a mano con salsa Sunday y ricotta batida fría encima.",
-      "descriptionEn": "Thick, handmade fettuccine served with Sunday sauce and cold whipped ricotta.",
+      "descriptionEs": "Fettuccine grueso hecho a mano con salsa de domingo y ricota batida fría",
+      "descriptionEn": "Thick, handmade fettuccine with Sunday sauce and cold whipped ricotta",
       "price": "$25.00",
-      "popular": true,
-      "badge": "Firma",
-      "tags": [
-        "Artesanal",
-        "Recomendado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-10",
-      "categoryId": "mains",
-      "nameEs": "Pollo Carmella",
-      "nameEn": "Chicken Carmella",
-      "descriptionEs": "Filete de pollo delgado al estilo parmesano servido junto a nuestra famosa Pasta Nanny Grace.",
-      "descriptionEn": "Thin pounded chicken cutlet parm-style served with our signature Nanny Grace Pasta.",
+      "id": "tortellini",
+      "categoryId": "entrees",
+      "nameEs": "Tortellini",
+      "nameEn": "Tortellini",
+      "descriptionEs": "Tortellini de queso con tocino crujiente, chícharos, crema y pecorino romano",
+      "descriptionEn": "Cheese tortellini with crispy bacon, peas, cream and pecorino romano",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs",
+      "categoryId": "entrees",
+      "nameEs": "Meatballs",
+      "nameEn": "Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gregorys-meatball-crusher",
+      "categoryId": "entrees",
+      "nameEs": "Gregory’s Meatball Crusher",
+      "nameEn": "Gregory’s Meatball Crusher",
+      "descriptionEs": "nuestras albóndigas trituradas sobre mezzi rigatoni con una porción de ricota fría",
+      "descriptionEn": "our meatballs crushed over mezzi rigatoni with a dollop of cool ricotta",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "handmade-gnocchi",
+      "categoryId": "entrees",
+      "nameEs": "Handmade Gnocchi",
+      "nameEn": "Handmade Gnocchi",
+      "descriptionEs": "Salsa de tomate cremosa con mozzarella fresca derretida",
+      "descriptionEn": "Creamy tomato sauce with melted fresh mozzarella",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-milanese",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Milanese",
+      "nameEn": "Chicken Milanese",
+      "descriptionEs": "milanesa de pollo empanizada, tomate, mozzarella fresca, cebollas moradas, arúgula, reducción de balsámico",
+      "descriptionEn": "breaded chicken cutlet, tomato, fresh mozzarella, red onions, arugula, balsamic reduction",
       "price": "$26.00",
-      "popular": true,
-      "badge": "Especial del Chef",
-      "tags": [
-        "Plato Estrella"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-11",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Clásica de Mozzarella (Pequeña 12\")",
-      "nameEn": "Our Pie w/ Mozzarella (Small 12\")",
-      "descriptionEs": "Masa madre artesanal horneada a 1000 grados en horno Mugnaini con salsa de tomate y mozzarella fresca.",
-      "descriptionEn": "Artisan sourdough baked at 1000 degrees in our Mugnaini oven with tomato sauce and fresh mozzarella.",
+      "id": "chicken-carmella-signature-dish",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Carmella Signature Dish",
+      "nameEn": "Chicken Carmella Signature Dish",
+      "descriptionEs": "milanesa de pollo delgada aplanada estilo parm con nuestra Nanny Grace Pasta",
+      "descriptionEn": "thin pounded chicken cutlet parm style with our Nanny Grace Pasta",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "our-pie-w-mozarella",
+      "categoryId": "pizzas",
+      "nameEs": "Our Pie w/ Mozarella",
+      "nameEn": "Our Pie w/ Mozarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$12.50",
-      "popular": true,
-      "badge": "Horno de Leña",
-      "tags": [
-        "Pizza",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-12",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Clásica de Mozzarella (Grande 16\")",
-      "nameEn": "Our Pie w/ Mozzarella (Large 16\")",
-      "descriptionEs": "Nuestra emblemática pizza grande con queso mozzarella derretido y salsa de tomate casera.",
-      "descriptionEn": "Our signature large pie with melted fresh mozzarella and house-made tomato sauce.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Pizza",
-        "Familiar"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "ggs-wood-fired-pizza-13",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Blanca (Pequeña 12\")",
-      "nameEn": "White Pie (Small 12\")",
-      "descriptionEs": "Ajo, mezcla de quesos italianos, orégano y aceite de oliva virgen extra, sin salsa de tomate.",
-      "descriptionEn": "Garlic, blend of cheeses, oregano, and extra virgin olive oil, without tomato sauce.",
+      "id": "white-pie",
+      "categoryId": "pizzas",
+      "nameEs": "White Pie",
+      "nameEn": "White Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$12.50",
-      "popular": false,
-      "badge": "Sin Salsa",
-      "tags": [
-        "Vegetariano",
-        "Ajo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-14",
-      "categoryId": "specialties",
-      "nameEs": "Pizza de Tomate (Grande 16\")",
-      "nameEn": "Our Tomato Pie (Large 16\")",
-      "descriptionEs": "Tomates triturados frescos de la mejor calidad, queso pecorino y hierbas aromáticas al horno de leña.",
-      "descriptionEn": "Crushed fresh tomatoes, pecorino cheese, and aromatic herbs baked in our wood-fired oven.",
-      "price": "$18.00",
-      "popular": true,
-      "badge": "Tradicional",
-      "tags": [
-        "Tomate",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "our-tomato-pie",
+      "categoryId": "pizzas",
+      "nameEs": "Our Tomato Pie",
+      "nameEn": "Our Tomato Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.50",
       "ctaType": "in_store"
     },
     {
-      "id": "ggs-wood-fired-pizza-15",
-      "categoryId": "beverages",
-      "nameEs": "Crème Brûlée de Pistacho",
-      "nameEn": "Pistachio Crème Brûlée",
-      "descriptionEs": "Delicioso postre cremoso con infusión de pistacho y una crujiente capa de azúcar caramelizado.",
-      "descriptionEn": "Rich and creamy pistachio-infused custard topped with a perfectly torched caramelized sugar crust.",
-      "price": "$9.50",
-      "popular": true,
-      "badge": "Postre Estrella",
-      "tags": [
-        "Dulce",
-        "Postre"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos",
-        "Huevo"
-      ],
+      "id": "toppings",
+      "categoryId": "pizzas",
+      "nameEs": "Ingredientes adicionales",
+      "nameEn": "Toppings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-truffle-cake",
+      "categoryId": "desserts",
+      "nameEs": "Chocolate Truffle Cake",
+      "nameEn": "Chocolate Truffle Cake",
+      "descriptionEs": "Pastel de chocolate amargo Guittard 76% relleno de un ganache de chocolate líquido tibio",
+      "descriptionEn": "Guittard 76% dark chocolate cake filled with a warm liquid chocolate ganache",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake",
+      "nameEn": "Cheesecake",
+      "descriptionEs": "Un rico pay de queso estilo Nueva York con un toque de ricota, acompañamientos del chef",
+      "descriptionEn": "A rich New York style cheesecake with a touch of ricotta, chefs accompaniments",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vintage-carnival",
+      "categoryId": "desserts",
+      "nameEs": "Vintage Carnival",
+      "nameEn": "Vintage Carnival",
+      "descriptionEs": "Masa frita, azúcar con canela, caramelo, helado de caramelo salado",
+      "descriptionEn": "Fried dough, cinnamon sugar, caramel , salted caramel ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marchigiana-salad",
+      "categoryId": "catering-menu",
+      "nameEs": "Marchigiana Salad",
+      "nameEn": "Marchigiana Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$31.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belle-salad",
+      "categoryId": "catering-menu",
+      "nameEs": "Belle Salad",
+      "nameEn": "Belle Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Antipasto (Catering Menu)",
+      "nameEn": "Antipasto (Catering Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$63.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "catering-menu",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula-salad-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Ensalada de Arúgula (Menú de Banquetes)",
+      "nameEn": "Arugula Salad (Catering Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-eggplant-stacker",
+      "categoryId": "catering-menu",
+      "nameEs": "The Eggplant Stacker",
+      "nameEn": "The Eggplant Stacker",
+      "descriptionEs": "(20) porciones",
+      "descriptionEn": "(20) portions",
+      "price": "$90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-ravioli-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Fried Ravioli (Menú de Banquetes)",
+      "nameEn": "Fried Ravioli (Catering Menu)",
+      "descriptionEs": "(48) Ravioli",
+      "descriptionEn": "(48) Ravioli",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Albóndigas (Menú de Banquetes)",
+      "nameEn": "Meatballs (Catering Menu)",
+      "descriptionEs": "(20) Albóndigas",
+      "descriptionEn": "(20) Meatballs",
+      "price": "$100.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-knots",
+      "categoryId": "catering-menu",
+      "nameEs": "Nudos de Ajo",
+      "nameEn": "Garlic Knots",
+      "descriptionEs": "(12) Nudos",
+      "descriptionEn": "(12) Knots",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Eggplant Rollatini (Menú de Banquetes)",
+      "nameEn": "Eggplant Rollatini (Catering Menu)",
+      "descriptionEs": "(12) Rolls",
+      "descriptionEn": "(12) Rolls",
+      "price": "$84.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-clams",
+      "categoryId": "catering-menu",
+      "nameEs": "Almejas Rellenas",
+      "nameEn": "Stuffed Clams",
+      "descriptionEs": "(12) Almejas",
+      "descriptionEn": "(12) Clams",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wings",
+      "categoryId": "catering-menu",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
+      "descriptionEs": "Precio de Mercado ($1.75) cada una",
+      "descriptionEn": "Market Price ($1.75) each",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-full-tray-only",
+      "categoryId": "catering-menu",
+      "nameEs": "Penne - Solo Bandeja Grande",
+      "nameEn": "Penne-Full Tray Only",
+      "descriptionEs": "Elección de salsa Marinara o Sunday sauce - Cambiar por Salsa Vodka ($20.00)",
+      "descriptionEn": "Choice of Marinara or Sunday sauce- Sub Vodka Sauce ($20.00)",
+      "price": "$90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-full-tray-only",
+      "categoryId": "catering-menu",
+      "nameEs": "Cavatelli - Solo Bandeja Grande",
+      "nameEn": "Cavatelli-Full Tray Only",
+      "descriptionEs": "Elección de salsa Marinara o Sunday sauce - Cambiar por Salsa Vodka ($20.00)",
+      "descriptionEn": "Choice of Marinara or Sunday sauce- Sub Vodka Sauce ($20.00)",
+      "price": "$200.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-full-tray-only",
+      "categoryId": "catering-menu",
+      "nameEs": "Gnocchi - Solo Bandeja Grande",
+      "nameEn": "Gnocchi-Full Tray Only",
+      "descriptionEs": "Elección de salsa Marinara o Sunday sauce - Cambiar por Salsa Vodka ($20.00)",
+      "descriptionEn": "Choice of Marinara or Sunday sauce- Sub Vodka Sauce ($20.00)",
+      "price": "$200.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-crusher-full-tray-only",
+      "categoryId": "catering-menu",
+      "nameEs": "Meatball Crusher - Solo Bandeja Grande",
+      "nameEn": "Meatball Crusher-Full Tray Only",
+      "descriptionEs": "Nuestras albóndigas trituradas, Rigatoni y Ricotta",
+      "descriptionEn": "Our Crushed Meatballs Rigatoni and Ricotta",
+      "price": "$140.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hand-made-ravioli",
+      "categoryId": "catering-menu",
+      "nameEs": "Ravioli Hechos a Mano",
+      "nameEn": "Hand-Made Ravioli",
+      "descriptionEs": "(25) cada uno",
+      "descriptionEn": "(25) each",
+      "price": "$125.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Chicken Parmigiana (Menú de Banquetes)",
+      "nameEn": "Chicken Parmigiana (Catering Menu)",
+      "descriptionEs": "(10) piezas pasta no incluida",
+      "descriptionEn": "(10) pieces pasta not included",
+      "price": "$150.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caramella",
+      "categoryId": "catering-menu",
+      "nameEs": "Chicken Caramella",
+      "nameEn": "Chicken Caramella",
+      "descriptionEs": "(10) piezas pasta no incluida",
+      "descriptionEn": "(10) pieces pasta not included",
+      "price": "$150.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-milanese-catering-menu",
+      "categoryId": "catering-menu",
+      "nameEs": "Chicken Milanese (Menú de Banquetes)",
+      "nameEn": "Chicken Milanese (Catering Menu)",
+      "descriptionEs": "(10) piezas",
+      "descriptionEn": "(10) pieces",
+      "price": "$200.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿De qué tipo es su horno para pizzas?",
-      "qEn": "What kind of oven do you use for pizzas?",
-      "aEs": "Utilizamos un horno de leña Mugnaini que alcanza hasta 1000 grados usando maderas duras locales.",
-      "aEn": "We use a Mugnaini wood-fired oven reaching up to 1000 degrees fired with local natural hardwoods."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o órdenes para llevar?",
-      "qEn": "Do you accept reservations or takeout orders?",
-      "aEs": "Aceptamos clientes sin reservación y llamadas telefónicas para pedidos para llevar.",
-      "aEn": "We welcome walk-ins for dining and phone orders for takeout."
-    },
-    {
-      "qEs": "¿Tienen opciones vegetarianas?",
-      "qEn": "Do you offer vegetarian options?",
-      "aEs": "Sí, contamos con múltiples opciones de ensaladas, pastas y pizzas vegetarianas.",
-      "aEn": "Yes, we offer multiple vegetarian options across our salads, pastas, and pizzas."
-    }
-  ]
+  "faqs": []
 }
