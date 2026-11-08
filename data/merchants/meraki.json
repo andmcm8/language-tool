@@ -2,25 +2,18 @@
   "storeInfo": {
     "id": "meraki",
     "name": "Meraki",
-    "tagline": "Cooking with love, passion, and creativity / Cocinando con amor, pasión y creatividad",
+    "tagline": "American restaurant in Litchfield | Restaurante americano en Litchfield",
     "address": "239 West Street, Litchfield, CT 06759",
-    "phone": "",
+    "phone": "(860) 361-9777",
     "hours": {
-      "monday_friday": "7:00 AM - 4:00 PM (Tuesday - Saturday)",
-      "saturday": "7:00 AM - 3:00 PM",
-      "sunday": "Closed (Sunday - Monday)"
+      "monday_friday": "Tuesday - Saturday 7 am – 4 pm",
+      "saturday": "Tuesday - Saturday 7 am – 4 pm",
+      "sunday": "Closed"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,280 +25,440 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Mañanas",
-      "nameEn": "Appetizers & Mornings",
+      "id": "all-day-cafe",
+      "nameEs": "Café todo el día",
+      "nameEn": "All Day Cafe",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "entree",
+      "nameEs": "Plato fuerte",
+      "nameEn": "Entree",
       "icon": "Utensils"
-    },
-    {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
     }
   ],
   "products": [
     {
-      "id": "meraki-01",
-      "categoryId": "appetizers",
-      "nameEs": "Tostada de Aguacate Artesanal",
-      "nameEn": "Artisanal Avocado Toast",
-      "descriptionEs": "Aguacate hass fresco machacado sobre pan tostado de masa madre, coronado con rábanos encurtidos y huevo pochado.",
-      "descriptionEn": "Fresh mashed hass avocado on sourdough toast, topped with pickled radishes and a poached farm egg.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "avocado-toast",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Pan tostado con aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "Huevo local pochado, feta, tomate, pimiento, rábano, cebolla encurtida, pan integral tostado",
+      "descriptionEn": "Local Poached Egg, Feta, Tomato, Pepper, Radish, Pickled Onion, Toasted Whole Grain",
+      "price": "$10.95",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-02",
-      "categoryId": "appetizers",
-      "nameEs": "Parfait de Yogur Griego y Granola",
-      "nameEn": "Greek Yogurt & Granola Parfait",
-      "descriptionEs": "Yogur griego cremoso servido con nuestra granola casera tostada, bayas frescas de temporada y miel de lavanda.",
-      "descriptionEn": "Creamy Greek yogurt served with house-toasted granola, fresh seasonal berries, and local lavender honey.",
+      "id": "hash-bowl",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Bowl de hash",
+      "nameEn": "Hash Bowl",
+      "descriptionEs": "Tocino crujiente, 2 huevos locales volteados poco cocidos, papa asada, pimientos, cebolla, aguacate, alioli de sriracha",
+      "descriptionEn": "Crispy Bacon, 2 Local Over Easy Eggs, Roasted Potato, Peppers, Onions, Avocado, Sriracha Aioli",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meraki-porchetta",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Porchetta Meraki",
+      "nameEn": "Meraki Porchetta",
+      "descriptionEs": "Huevo local frito, kimchi picante de la casa, tomate, alioli de sriracha, pan brioche",
+      "descriptionEn": "Local Fried Egg, Spicy House Kimchi, Tomato, Sriracha Aioli, Brioche Bun",
+      "price": "$10.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-burrito",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Burrito de desayuno",
+      "nameEn": "Breakfast Burrito",
+      "descriptionEs": "Huevos locales, res al chipotle o frijol negro con elote, salsa Meraki, crema agria, guacamole, queso",
+      "descriptionEn": "Local Eggs, Chipotle Beef or Black Bean & Corn, Meraki Salsa, Sour Cream, Guacamole, Cheese",
+      "price": "$10.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-sandwich",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Sándwich de desayuno",
+      "nameEn": "Breakfast Sandwich",
+      "descriptionEs": "Queso / Agregue tomate +0.75 / Agregue aguacate +1.00 / Agregue jamón, tocino o salchicha +1.00",
+      "descriptionEn": "Cheese / Add Tomato +0.75 / Add Avocado +1.00 / Add Ham, Bacon, or Sausage +1.00",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "healthy-plate",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Plato saludable",
+      "nameEn": "Healthy Plate",
+      "descriptionEs": "Pan integral tostado abierto, huevo local, aguacate, queso havarti, tocino $8.75",
+      "descriptionEn": "Open Faced Whole Grain Toast, Local Egg, Avocado, Havarti Cheese, Bacon $8.75",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-healthy-plate",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Plato saludable de salmón ahumado",
+      "nameEn": "Smoked Salmon Healthy Plate",
+      "descriptionEs": "Huevo local, aguacate, cebolla encurtida, salmón ahumado, pan integral tostado",
+      "descriptionEn": "Local Egg, Avocado, Pickled Onions, Smoked Salmon, Whole Grain Toast",
       "price": "$9.75",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten Opcional"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-03",
-      "categoryId": "appetizers",
-      "nameEs": "Panqueques de Ricota al Limón",
-      "nameEn": "Lemon Ricotta Pancakes",
-      "descriptionEs": "Ligeros y esponjosos panqueques de ricota impregnados con ralladura de limón fresco, servidos con jarabe de arce puro.",
-      "descriptionEn": "Light and fluffy ricotta pancakes infused with fresh lemon zest, served with pure Vermont maple syrup.",
-      "price": "$14.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "yogurt-parfait",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Parfait de yogur",
+      "nameEn": "Yogurt Parfait",
+      "descriptionEs": "Yogur natural o de vainilla con granola de nueces de la casa y fruta fresca",
+      "descriptionEn": "Plain or Vanilla Yogurt w/ House Nutty Granola & Fresh Fruit",
+      "price": "$6.75",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-04",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo Callejero California",
-      "nameEn": "California Chicken Street Sandwich",
-      "descriptionEs": "Pechuga de pollo a la parrilla con alioli de hierbas, aguacate, tocino crujiente y lechuga en pan brioche tostado.",
-      "descriptionEn": "Grilled chicken breast with herb aioli, avocado, crispy bacon, and crisp lettuce on toasted brioche.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carnes",
-        "Almuerzo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "meraki-power-bowl",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Power bowl Meraki",
+      "nameEn": "Meraki Power Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.25",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-05",
-      "categoryId": "mains",
-      "nameEs": "Tazón de Granos Nourish Soul",
-      "nameEn": "Nourish Soul Grain Bowl",
-      "descriptionEs": "Quinoa orgánica, verduras de temporada asadas, aguacate, garbanzos crujientes y aderezo de tahini y limón.",
-      "descriptionEn": "Organic quinoa, roasted seasonal vegetables, avocado, crispy chickpeas, and lemon tahini dressing.",
-      "price": "$15.25",
-      "popular": false,
-      "badge": "Vegano",
-      "tags": [
-        "Vegano",
-        "Saludable"
-      ],
-      "allergens": [],
+      "id": "cauliflower-panini",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Panini de coliflor",
+      "nameEn": "Cauliflower Panini",
+      "descriptionEs": "Coliflor asada, pepino, zanahoria y daikon encurtidos, menta y cilantro frescos, alioli de hoisin, chalote crujiente, ciabatta tostada",
+      "descriptionEn": "Roasted Cauliflower, Cucumber, Pickled Carrot-Daikon, Fresh Mint & Cilantro, Hoisin Aioli, Crispy Shallot, Toasted Ciabatta",
+      "price": "$10.95",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-06",
-      "categoryId": "mains",
-      "nameEs": "Omelette del Chef Patty y Martin",
-      "nameEn": "Chef Patty & Martin's Omelette",
-      "descriptionEs": "Omelette de tres huevos de granja con espinacas frescas, queso feta local, tomates cherry confitados y papas rostizadas.",
-      "descriptionEn": "Three-farm-egg omelette with fresh spinach, local feta cheese, confit cherry tomatoes, and roasted breakfast potatoes.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "house-grilled-havarti-on-white-bread",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Havarti a la parrilla de la casa en pan blanco",
+      "nameEn": "House Grilled Havarti on White Bread",
+      "descriptionEs": "Havarti / Agregue tomate y aguacate +0.75 / Agregue tocino +1.50",
+      "descriptionEn": "Havarti / Add Tomato & Avocado +0.75 / Add Bacon +1.50",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-07",
-      "categoryId": "specialties",
-      "nameEs": "Shakshuka al Horno con Feta",
-      "nameEn": "Baked Shakshuka with Feta",
-      "descriptionEs": "Huevos escalfados en una salsa aromática de tomate especiado y pimientos, terminados con queso feta desmenuzado y pan crujiente.",
-      "descriptionEn": "Eggs poached in a spiced tomato and pepper sauce, finished with crumbled feta and crusty artisan bread.",
-      "price": "$17.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Vegetariano",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "falafel",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Falafel",
+      "nameEn": "Falafel",
+      "descriptionEs": "Croqueta de garbanzo y trigo bulgur, pepino, lechuga, tomate, cebolla morada encurtida, salsa de yogur, wrap de lavash",
+      "descriptionEn": "Chickpea/Bulgur Wheat Fritter, Cucumber, Lettuce, Tomato, Pickled Red Onions, Yogurt Sauce, Lavash Wrap",
+      "price": "$10.25",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-08",
-      "categoryId": "specialties",
-      "nameEs": "Tostada Rústica de Salmón Ahumado",
-      "nameEn": "Rustic Smoked Salmon Toast",
-      "descriptionEs": "Salmón ahumado en frío sobre queso crema de hierbas, alcaparras, cebolla morada encurtida y eneldo fresco en pan artesanal.",
-      "descriptionEn": "Cold-smoked salmon over herb cream cheese, capers, pickled red onion, and fresh dill on artisanal bread.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Pescado",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "chipotle-chicken-burrito",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Burrito de pollo al chipotle",
+      "nameEn": "Chipotle Chicken Burrito",
+      "descriptionEs": "Pechuga de pollo orgánica, frijoles negros con elote asado y pimientos rojos, arroz con cilantro y limón, salsa, aguacate, queso, crema agria, tortilla tostada",
+      "descriptionEn": "Organic Chicken Breast, Black Beans w/Roasted Corn & Red Peppers, Cilantro Lime Rice, Salsa, Avocado, Cheese, Sour Cream, Toasted Tortilla",
+      "price": "$11.75",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-09",
-      "categoryId": "specialties",
-      "nameEs": "Burger Meraki de Carne Angus",
-      "nameEn": "Meraki Angus Beef Burger",
-      "descriptionEs": "Carne Angus jugosa con queso cheddar de Vermont, cebolla caramelizada, alioli de la casa y papas fritas rústicas.",
-      "descriptionEn": "Juicy Angus beef patty with Vermont cheddar, caramelized onions, house aioli, and rustic hand-cut fries.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Indispensable",
-      "tags": [
-        "Carnes"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "meraki-pulled-pork-quesadilla",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Quesadilla de cerdo deshebrado Meraki",
+      "nameEn": "Meraki Pulled Pork Quesadilla",
+      "descriptionEs": "Cerdo deshebrado, aguacate, frijoles negros con elote asado, salsa, crema agria, tortilla hecha en casa",
+      "descriptionEn": "Pulled Pork, Avocado, Black Beans w/ Roasted Corn, Salsa, Sour Cream, House Made Tortilla",
+      "price": "$11.00",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-10",
-      "categoryId": "beverages",
-      "nameEs": "Café Latte de Lavanda y Miel",
-      "nameEn": "Honey Lavender Latte",
-      "descriptionEs": "Espresso suave con leche vaporizada, infusión de miel local y un toque sutil de lavanda silvestre.",
-      "descriptionEn": "Smooth espresso with steamed milk, infused with local honey and a subtle hint of wild lavender.",
-      "price": "$5.75",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Café",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "coffee-rubbed-burger",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Hamburguesa con costra de café",
+      "nameEn": "Coffee Rubbed Burger",
+      "descriptionEs": "Tocino, tomate, queso suizo, pepinillo Meraki, chalote crujiente, lechuga, mayonesa",
+      "descriptionEn": "Bacon, Tomato, Swiss, Meraki Pickle, Crunchy Shallot, Lettuce, Mayo",
+      "price": "$12.95",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-11",
-      "categoryId": "beverages",
-      "nameEs": "Jugo Exprimido de Naranja y Zanahoria",
-      "nameEn": "Fresh Orange & Carrot Juice",
-      "descriptionEs": "100% natural, recién exprimido al momento con naranjas valencia y zanahorias orgánicas.",
-      "descriptionEn": "100% natural, freshly squeezed to order with Valencia oranges and organic carrots.",
-      "price": "$6.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Sin Gluten",
-        "Vegano"
-      ],
-      "allergens": [],
+      "id": "organic-salmon-tacos",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Tacos de salmón orgánico",
+      "nameEn": "Organic Salmon Tacos",
+      "descriptionEs": "Salsa de piña asada, ensalada de col con naranja agria, aguacate, tortilla de maíz",
+      "descriptionEn": "Roasted Pineapple Salsa, Sour Orange Slaw, Avocado, Corn Tortilla",
+      "price": "$11.50",
       "ctaType": "in_store"
     },
     {
-      "id": "meraki-12",
-      "categoryId": "beverages",
-      "nameEs": "Té Chai Helado Artesanal",
-      "nameEn": "Artisanal Iced Chai Tea",
-      "descriptionEs": "Té negro especiado con cardamomo, canela y jengibre, servido con leche de avena sobre hielo.",
-      "descriptionEn": "Spiced black tea with cardamom, cinnamon, and ginger, served with oat milk over ice.",
-      "price": "$5.25",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Vegano"
-      ],
-      "allergens": [],
+      "id": "pastrami-panini",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Panini de pastrami",
+      "nameEn": "Pastrami Panini",
+      "descriptionEs": "Kimchi de la casa, queso suizo, alioli de sriracha, pan de centeno con semillas tostado",
+      "descriptionEn": "House Kimchi, Swiss, Sriracha Aioli, Toasted Seeded Rye",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-bahn-mi",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Banh mi de pavo",
+      "nameEn": "Turkey Bahn Mi",
+      "descriptionEs": "Pavo rostizado en casa, zanahoria y daikon encurtidos, pepino, menta, cilantro, chalote crujiente, alioli de hoisin, ciabatta",
+      "descriptionEn": "House Roasted Turkey, Pickled Carrots & Daikon, Cucumber, Mint, Cilantro, Crispy Shallot, Hoisin Aioli, Ciabatta",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porchetta-rice-bowl",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Bowl de arroz con porchetta",
+      "nameEn": "Porchetta Rice Bowl",
+      "descriptionEs": "Porchetta crujiente, arroz frito con verduras, kimchi de la casa, huevo volteado poco cocido, lechuga, nori tostado, chalote crujiente",
+      "descriptionEn": "Crispy Porchetta, Vegetable Fried Rice, House Kimchi, Over easy Egg, Lettuce, Toasted Nori, Crispy Shallot",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "korean-chicken-sandwich",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Sándwich de pollo coreano",
+      "nameEn": "Korean Chicken Sandwich",
+      "descriptionEs": "Salsa BBQ de gochujang, pollo, aguacate, kimchi, lechuga, alioli de sriracha en ciabatta",
+      "descriptionEn": "Gochujang BBQ Sauce, Chicken, Avocado, Kimchi, Lettuce, Sriracha Aioli on Ciabatta",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-cubano",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Cubano ahumado",
+      "nameEn": "Smoked Cubano",
+      "descriptionEs": "Cerdo ahumado en casa, jamón, queso suizo, pepinillos Meraki y mostaza",
+      "descriptionEn": "House Smoked Pork, Ham, Swiss, Meraki Pickles & Mustard",
+      "price": "$11.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-chicken-salad-wrap",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Wrap de ensalada de pollo orgánico",
+      "nameEn": "Organic Chicken Salad Wrap",
+      "descriptionEs": "Pollo rostizado, arándano, manzana, cebolla morada, apio, cebollín, perejil",
+      "descriptionEn": "Roasted Chicken, Cranberry, Apple, Red Onion, Celery, Scallion, Parsley",
+      "price": "$10.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tarragon-tuna-melt",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Atún gratinado al estragón",
+      "nameEn": "Tarragon Tuna Melt",
+      "descriptionEs": "Atún al estragón, aguacate, hinojo encurtido Meraki, queso havarti, pan integral",
+      "descriptionEn": "Tarragon Tuna, Avocado, Meraki Pickled Fennel, Havarti Cheese, Whole Grain",
+      "price": "$11.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "litchfield-hilly",
+      "categoryId": "all-day-cafe",
+      "nameEs": "Litchfield Hilly",
+      "nameEn": "Litchfield Hilly",
+      "descriptionEs": "Bistec en láminas, hojas verdes nutritivas, pimientos y cebolla ahumados con madera de manzano, mayonesa, queso derretido en pan tostado",
+      "descriptionEn": "Shaved Steak, Power Greens, Applewood Smoked Peppers & Onions, Mayo, Melted Cheese on a Toasted Roll",
+      "price": "$11.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "farro-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de farro",
+      "nameEn": "Farro Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-bean-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de frijol blanco",
+      "nameEn": "White Bean Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curried-cauliflower",
+      "categoryId": "salads",
+      "nameEs": "Coliflor al curry",
+      "nameEn": "Curried Cauliflower",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccolini",
+      "categoryId": "salads",
+      "nameEs": "Brocolini",
+      "nameEn": "Broccolini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-carrot-ginger",
+      "categoryId": "salads",
+      "nameEs": "Zanahoria orgánica con jengibre",
+      "nameEn": "Organic Carrot Ginger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soba-noodles",
+      "categoryId": "salads",
+      "nameEs": "Fideos soba",
+      "nameEn": "Soba Noodles",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-noodles-and-veggies",
+      "categoryId": "salads",
+      "nameEs": "Fideos de arroz con verduras",
+      "nameEn": "Rice Noodles and Veggies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-slaw",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de col rizada",
+      "nameEn": "Kale Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-bean",
+      "categoryId": "salads",
+      "nameEs": "Frijol negro",
+      "nameEn": "Black Bean",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curried-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "*Ensalada de pollo al curry",
+      "nameEn": "*Curried Chicken Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orzo-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de orzo",
+      "nameEn": "Orzo Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quinoa-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de quinoa",
+      "nameEn": "Quinoa Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-fried-rice",
+      "categoryId": "salads",
+      "nameEs": "Arroz frito con verduras",
+      "nameEn": "Vegetable Fried Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-bake",
+      "categoryId": "entree",
+      "nameEs": "*Pasta al horno",
+      "nameEn": "*Pasta Bake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quiche",
+      "categoryId": "entree",
+      "nameEs": "*Quiche",
+      "nameEn": "*Quiche",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-sausage-en-croute",
+      "categoryId": "entree",
+      "nameEs": "Salchicha de pollo en croûte",
+      "nameEn": "Chicken Sausage En Croute",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-spring-rolls",
+      "categoryId": "entree",
+      "nameEs": "Rollos primavera vegetarianos",
+      "nameEn": "Vegetarian Spring Rolls",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con múltiples opciones vegetarianas y alternativas sin gluten. Por favor, informe a su servidor sobre cualquier alergia.",
-      "aEn": "Yes, we offer multiple vegetarian options and gluten-free alternatives. Please inform your server of any allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o es por orden de llegada?",
-      "qEn": "Do you accept reservations or is it walk-in only?",
-      "aEs": "Aceptamos clientes sin reservación y también puede llamarnos para asegurar su mesa durante las horas pico.",
-      "aEn": "We welcome walk-ins and you can also call us ahead to secure a table during peak hours."
-    }
-  ]
+  "faqs": []
 }
