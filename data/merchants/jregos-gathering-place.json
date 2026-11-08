@@ -2,27 +2,18 @@
   "storeInfo": {
     "id": "jregos-gathering-place",
     "name": "JRego's Gathering Place",
-    "tagline": "Savor Every Moment, Enjoy Every Bite | Saborea Cada Momento, Disfruta Cada Bocado",
-    "address": "28 West Rd, Ellington, CT 06029",
+    "tagline": "Restaurant in Ellington | Restaurant en Ellington",
+    "address": "175 West Road, Ellington, CT 06029",
     "phone": "(860) 454-4458",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Private Parties"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -34,305 +25,1890 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "shareables",
+      "nameEs": "Para compartir",
+      "nameEn": "Shareables",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches-burgers",
+      "nameEs": "Sándwiches y hamburguesas",
+      "nameEn": "Sandwiches & Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sweet-tooth",
+      "nameEs": "Antojo dulce",
+      "nameEn": "Sweet Tooth",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "happy-hour-menu",
+      "nameEs": "Menú Happy Hour",
+      "nameEn": "Happy Hour Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "shareables-second-menu",
+      "nameEs": "Para compartir (Segundo menú)",
+      "nameEn": "Shareables (Second Menu)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-second-menu",
+      "nameEs": "Ensaladas (Segundo menú)",
+      "nameEn": "Salads (Second Menu)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "handhelds",
+      "nameEs": "Para comer con las manos",
+      "nameEn": "Handhelds",
       "icon": "Utensils"
     },
     {
       "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees & Sandwiches",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Mains",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sides-second-menu",
+      "nameEs": "Guarniciones (Segundo menú)",
+      "nameEn": "Sides (Second Menu)",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "after-dinner-cocktails",
+      "nameEs": "Cócteles después de cenar",
+      "nameEn": "After Dinner Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "specialty-cocktails",
+      "nameEs": "Cócteles de especialidad",
+      "nameEn": "Specialty Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seasonal-cocktails",
+      "nameEs": "Cócteles de temporada",
+      "nameEn": "Seasonal Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "summer-spritz-flights",
+      "nameEs": "Spritz y degustaciones de verano",
+      "nameEn": "Summer Spritz & Flights",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mocktails",
+      "nameEs": "Cócteles sin alcohol",
+      "nameEn": "Mocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "draft",
+      "nameEs": "De barril",
+      "nameEn": "Draft",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bottle",
+      "nameEs": "Botella",
+      "nameEn": "Bottle",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-white",
+      "nameEs": "Vino - Blanco",
+      "nameEn": "Wine - White",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-red",
+      "nameEs": "Vino - Tinto",
+      "nameEn": "Wine - Red",
+      "icon": "Utensils"
+    },
+    {
+      "id": "add-ons",
+      "nameEs": "Extras",
+      "nameEn": "Add-ons",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "jregos-gathering-place-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamari Picante",
+      "id": "spicy-calamari",
+      "categoryId": "shareables",
+      "nameEs": "Calamar picante",
       "nameEn": "Spicy Calamari",
-      "descriptionEs": "Calamari crujiente empanizado al suero de leche, chiles cherry y salsa marinara de la casa.",
-      "descriptionEn": "Crispy buttermilk fried calamari, cherry peppers, house marinara.",
+      "descriptionEs": "Calamar crujiente frito en suero de mantequilla, chiles cherry, salsa marinara de la casa",
+      "descriptionEn": "Crispy buttermilk fried calamari, cherry peppers, house marinara",
       "price": "$17.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-02",
-      "categoryId": "appetizers",
-      "nameEs": "Costillas Glaseadas Coreanas",
+      "id": "sticky-ribs",
+      "categoryId": "shareables",
+      "nameEs": "Costillas pegajosas",
       "nameEn": "Sticky Ribs",
-      "descriptionEs": "Costillas cocinadas a fuego lento con mezcla de especias de la casa, glaseadas con barbacoa coreana, ensalada de repollo y semillas de sésamo.",
-      "descriptionEn": "Slow roasted ribs with a house rub blend, tossed in Korean BBQ, served with slaw and topped with sesame seeds.",
+      "descriptionEs": "Costillas asadas lentamente con mezcla de especias de la casa, bañadas en BBQ coreano, servidas con ensalada de col y cubiertas con semillas de sésamo (contiene sésamo)",
+      "descriptionEn": "Slow roasted ribs with a house rub blend, tossed in Korean BBQ, served with slaw and topped with sesame seeds (contains sesame)",
       "price": "$19.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne de Cerdo",
-        "Dulce y Picante"
-      ],
-      "allergens": [
-        "Sésamo",
-        "Soja"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-03",
-      "categoryId": "appetizers",
-      "nameEs": "Coles de Bruselas Crujientes",
+      "id": "chicken-wings",
+      "categoryId": "shareables",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "(Elija dos) Estilo búfalo (SG), Sal y vinagre (SG/seco), Habanero mango (SG) BBQ coreano, Búfalo dorado, BBQ, BBQ dorado, Ajo y parmesano (SG/seco). Elija aderezo ranch o queso azul",
+      "descriptionEn": "(Choice of two) Buffalo style (GF), Salt & Vinegar (GF/Dry Rub), Habanero Mango (GF) Korean BBQ, Golden Buffalo, BBQ, Golden BBQ, Garlic Parmesan (GF/Dry Rub). Choice of ranch –or- blue cheese",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gfa-vegetable-flatbread",
+      "categoryId": "shareables",
+      "nameEs": "(SG disponible) Pan plano de vegetales",
+      "nameEn": "(GFA) Vegetable Flatbread",
+      "descriptionEs": "Vegetales de temporada, pesto de la casa, mozzarella rallada, tomates cherry, cubierto con glaseado balsámico",
+      "descriptionEn": "Seasonal vegetables, house made pesto, shredded mozzarella, cherry tomatoes, topped with a balsamic glaze",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-brussel-sprouts",
+      "categoryId": "shareables",
+      "nameEs": "Coles de Bruselas crujientes",
       "nameEn": "Crispy Brussel Sprouts",
-      "descriptionEs": "Mezcladas con tocino, nueces azucaradas, arándanos secos, miel picante y alioli de ajo.",
-      "descriptionEn": "Tossed with bacon, candied walnuts, craisins, hot honey, and garlic aioli.",
+      "descriptionEs": "Mezclado con tocino, nueces caramelizadas, arándanos secos, miel picante y alioli de ajo",
+      "descriptionEn": "Tossed with bacon, candied walnuts, crasins, hot honey, & garlic aioli",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Vegetariano Disponible",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-04",
-      "categoryId": "appetizers",
-      "nameEs": "Nachos de la Casa",
-      "nameEn": "Nachos",
-      "descriptionEs": "Totopos de maíz crujientes, queso fundido de la casa, pico de gallo y crema de jalapeño y lima.",
-      "descriptionEn": "Crispy corn tortilla chips, house-made queso, house-made pico de gallo, jalapeno lime crema.",
+      "id": "v-nachos",
+      "categoryId": "shareables",
+      "nameEs": "(V) Nachos",
+      "nameEn": "(V) Nachos",
+      "descriptionEs": "Totopos de maíz crujientes, queso de la casa, pico de gallo de la casa, crema de jalapeño y limón | Agregar pollo deshebrado +$4.00 | Carne molida +$5.00",
+      "descriptionEn": "Crispy corn tortilla chips, house-made queso, house-made pico de gallo, jalapeno lime crema | Add Pulled Chicken +$4.00 | Ground Beef +$5.00",
       "price": "$13.00",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-05",
-      "categoryId": "appetizers",
-      "nameEs": "Queso Fundido con Mozzarella Frita",
-      "nameEn": "Fried Mozzarella",
-      "descriptionEs": "Queso mozzarella en rodajas gruesas con costra de panko, servido con salsa marinara de la casa.",
-      "descriptionEn": "Panko-crusted thick sliced mozzarella cheese, topped with house marinara.",
+      "id": "v-guacamole-and-chips",
+      "categoryId": "shareables",
+      "nameEs": "(V) Guacamole con totopos",
+      "nameEn": "(V) Guacamole and Chips",
+      "descriptionEs": "Guacamole de la casa, servido con totopos y un gajo de limón",
+      "descriptionEn": "House made guacamole, served with chips and a lime wedge",
       "price": "$13.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-06",
-      "categoryId": "mains",
-      "nameEs": "Ensalada Cobb",
-      "nameEn": "Cobb Salad",
-      "descriptionEs": "Lechugas mixtas, tocino, tomates cherry, queso feta, cebolla morada, aguacate, huevo devorado crujiente y vinagreta balsámica.",
-      "descriptionEn": "Mixed greens, bacon, cherry tomatoes, feta cheese, red onions, avocado, crispy deviled egg, balsamic vinaigrette.",
+      "id": "gfa-3-cheese-flatbread",
+      "categoryId": "shareables",
+      "nameEs": "(SG disponible) Pan plano de 3 quesos",
+      "nameEn": "(GFA) 3-Cheese Flatbread",
+      "descriptionEs": "Marinara, mozzarella rallada, cheddar, parmesano, decorado con perejil",
+      "descriptionEn": "Marinara, shredded mozzarella, cheddar, parmesan, garnished with parsley",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "v-fried-mozzarella",
+      "categoryId": "shareables",
+      "nameEs": "(V) Mozzarella frita",
+      "nameEn": "(V) Fried Mozzarella",
+      "descriptionEs": "Mozzarella en rebanadas gruesas empanizada con panko, cubierta con marinara de la casa",
+      "descriptionEn": "Panko-crusted thick sliced mozzarella cheese, topped with house marinara",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gfa-classic-caesar",
+      "categoryId": "salads",
+      "nameEs": "(SG disponible) Caesar clásica",
+      "nameEn": "(GFA) Classic Caesar",
+      "descriptionEs": "Lechuga romana, parmigiano reggiano, crutones, aderezo César cremoso",
+      "descriptionEn": "Romaine, parmigiano reggiano, croutons, creamy Caesar dressing",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gfa-cobb-salad",
+      "categoryId": "salads",
+      "nameEs": "(SG disponible) Ensalada Cobb",
+      "nameEn": "(GFA) Cobb Salad",
+      "descriptionEs": "Mezclum de hojas verdes, tocino, tomates cherry, queso feta, cebolla morada, aguacate, huevo endiablado crujiente, vinagreta balsámica",
+      "descriptionEn": "Mixed greens, bacon, cherry tomatoes, feta cheese, red onions, avocado, crispy deviled egg, balsamic vinaigrette",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Saludable",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-07",
-      "categoryId": "mains",
-      "nameEs": "Ensalada de Bistec NY",
+      "id": "steak-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de bistec",
       "nameEn": "Steak Salad",
-      "descriptionEs": "Bistec NY de 6 oz, lechuga romana, tomates cherry, aguacate, pepino y aderezo casero de chalotes y mostaza.",
-      "descriptionEn": "6 oz NY strip steak, romaine lettuce, cherry tomatoes, avocado, cucumber, served with a house made shallot mustard dressing.",
+      "descriptionEs": "Filete New York de 6 oz, lechuga romana, tomates cherry, aguacate, pepino, servido con aderezo de mostaza y chalote de la casa",
+      "descriptionEn": "6 oz NY strip steak, romaine lettuce, cherry tomatoes, avocado, cucumber, served with a house made shallot mustard dressing",
       "price": "$21.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten",
-        "Carne"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-08",
-      "categoryId": "mains",
-      "nameEs": "Tartar de Atún",
-      "nameEn": "Tuna Tartar",
-      "descriptionEs": "Salsa de piña y mango asados, ensalada de repollo, atún marinado en lima, cubierto con mayonesa sriracha.",
-      "descriptionEn": "Grilled pineapple and mango salsa, slaw, lime marinated tuna, topped with a sriracha mayo.",
+      "id": "gf-tuna-tartar",
+      "categoryId": "salads",
+      "nameEs": "(SG) Tartar de atún",
+      "nameEn": "(GF) Tuna Tartar",
+      "descriptionEs": "Salsa de piña asada y mango, ensalada de col, atún marinado en limón, cubierto con mayonesa de sriracha (contiene soya)",
+      "descriptionEn": "Grilled pineapple and mango salsa, slaw, lime marinated tuna, topped with a sriracha mayo (contains soy)",
       "price": "$20.00",
-      "popular": true,
-      "badge": "Especial del Chef",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Pescado",
-        "Soja",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-09",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich Caprese",
-      "nameEn": "Caprese Sandwich",
-      "descriptionEs": "Rúcula fresca, cebolla morada, tomates jugosos, perlas de mozzarella y pesto de albahaca en pan artesanal con glaseado balsámico.",
-      "descriptionEn": "Fresh arugula, red onion, ripe tomatoes, mozzarella pearls, basil pesto, and balsamic glaze on artisan bread.",
-      "price": "$13.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Frutos Secos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "jregos-gathering-place-10",
-      "categoryId": "specialties",
-      "nameEs": "Alitas de Pollo JRego's",
-      "nameEn": "JRego's Chicken Wings",
-      "descriptionEs": "Elige tu estilo: Buffalo, Sal y Vinagre, Habanero Mango, Barbacoa Coreana, Ajo Parmesano u opciones doradas. Servidas con aderezo ranch o azul.",
-      "descriptionEn": "Choice of two styles: Buffalo, Salt & Vinegar, Habanero Mango, Korean BBQ, Garlic Parmesan. Served with ranch or blue cheese.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Muy Solicitado",
-      "tags": [
-        "Pollo",
-        "Sin Gluten Disponible"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "jregos-gathering-place-11",
-      "categoryId": "specialties",
-      "nameEs": "Flatbread de Vegetales de Temporada",
-      "nameEn": "Vegetable Flatbread",
-      "descriptionEs": "Verduras de temporada, pesto hecho en casa, mozzarella rallada, tomates cherry, coronado con un toque de glaseado balsámico.",
-      "descriptionEn": "Seasonal vegetables, house made pesto, shredded mozzarella, cherry tomatoes, topped with a balsamic glaze.",
+      "id": "caprese-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada caprese",
+      "nameEn": "Caprese Salad",
+      "descriptionEs": "Rúcula, tomates frescos, perlas de mozzarella, ricota con albahaca, cubierto con glaseado balsámico y albahaca fresca",
+      "descriptionEn": "Arugula, fresh tomatoes, mozzarella pearls, basil ricotta, topped with balsamic glaze, and fresh basil",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Horno"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-12",
-      "categoryId": "beverages",
-      "nameEs": "Vuelos de Bourbon Artesanal",
-      "nameEn": "Bourbon Flights",
-      "descriptionEs": "Una exquisita selección rotativa de bourbons premium para degustar y descubrir nuevos perfiles de sabor.",
-      "descriptionEn": "An exquisite rotating selection of premium bourbons curated for tasting and discovering new flavor profiles.",
+      "id": "mango-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de mango",
+      "nameEn": "Mango Salad",
+      "descriptionEs": "Rúcula, cebolla morada, queso de cabra, arándanos secos, nueces, mango, cubierto con glaseado balsámico de naranja sanguina",
+      "descriptionEn": "Arugula, red onion, goat cheese, craisins, walnuts, mango, topped with a blood orange balsamic glaze",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "v-caprese-sandwich",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "(V) Sándwich caprese",
+      "nameEn": "(V) Caprese Sandwich",
+      "descriptionEs": "Rúcula, cebolla morada, tomate, pesto, mozzarella rallada, glaseado balsámico, aceite de oliva griego, servido en pan brioche | Agregar pollo +$7.00",
+      "descriptionEn": "Arugula, red onion, tomato, pesto, shredded mozzarella, balsamic glaze, Greek olive oil, served on a brioche roll | Add Chicken +$7.00",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-sriracha-chicken-sandwich",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Sándwich de pollo con ajo y sriracha",
+      "nameEn": "Garlic Sriracha Chicken Sandwich",
+      "descriptionEs": "Pollo (a elegir crujiente o a la parrilla), alioli de ajo, sriracha, tocino, rúcula, cebolla morada, pepinillos, servido en pan brioche",
+      "descriptionEn": "Chicken (choice of crispy or grilled), garlic aioli, sriracha, bacon, arugula, red onion, pickles, served on a brioche roll",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-pulled-chicken-sandwich",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Sándwich de pollo deshebrado BBQ",
+      "nameEn": "BBQ Pulled Chicken Sandwich",
+      "descriptionEs": "Pollo deshebrado, ensalada de col, salsa BBQ, cubierto con cebolleta y pepinillos, servido en pan brioche",
+      "descriptionEn": "Pulled chicken, coleslaw, BBQ sauce, topped with green onions, pickles, served on a brioche roll",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa de piña",
+      "nameEn": "Pineapple Burger",
+      "descriptionEs": "Carne molida red angus de 8 oz, mezclum de hojas verdes, tomate, cebolla morada, salsa de piña asada y mango, cubierta con crema de jalapeño y limón de la casa, servida en pan brioche",
+      "descriptionEn": "8 oz red angus ground beef, mixed greens, tomato, red onion, grilled pineapple and mango salsa, topped with a house-made jalapeno lime crema, served on a brioche roll",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-jrego-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa clásica JRego",
+      "nameEn": "Classic JRego Burger",
+      "descriptionEs": "Carne molida red angus de 8 oz, mezclum de hojas verdes, tomate, cebolla morada, servida en pan brioche",
+      "descriptionEn": "8oz red angus ground beef, mixed greens, tomato, red onion, served on a brioche roll",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-12oz-ny-strip",
+      "categoryId": "entrees",
+      "nameEs": "(SG) New York strip de 12 oz",
+      "nameEn": "(GF) 12oz. NY Strip",
+      "descriptionEs": "Cubierto con reducción de vino tinto, servido con puré de papa al ajo y vegetales de temporada",
+      "descriptionEn": "Topped with red wine reduction, served with garlic mashed potatoes & seasonal vegetables",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-lemon-dill-salmon",
+      "categoryId": "entrees",
+      "nameEs": "(SG) Salmón con eneldo y limón",
+      "nameEn": "(GF) Lemon Dill Salmon",
+      "descriptionEs": "Salmón sellado en sartén, arroz salvaje, vegetales de temporada, cubierto con mantequilla de limón y eneldo",
+      "descriptionEn": "Pan seared salmon, wild rice, seasonal vegetables, topped with a lemon dill butter",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-stuffed-chicken",
+      "categoryId": "entrees",
+      "nameEs": "(SG) Pollo relleno",
+      "nameEn": "(GF) Stuffed Chicken",
+      "descriptionEs": "Pechuga de pollo rellena de ricota con tomate cherry y albahaca, servida sobre puré de papa, vegetales de temporada y salsa cremosa de pesto",
+      "descriptionEn": "Cherry tomato and basil ricotta stuffed chicken breast, served over mashed potatoes, seasonal vegetables and a creamy pesto sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gfa-shrimp-scampi",
+      "categoryId": "entrees",
+      "nameEs": "Scampi de camarón (SG disponible)",
+      "nameEn": "(GFA) Shrimp Scampi",
+      "descriptionEs": "Linguine DiFiore, salsa de mantequilla, limón y vino blanco, ajo, tomates cherry asados, decorado con albahaca fresca, servido con pan italiano",
+      "descriptionEn": "DiFiore linguine, a buttery lemon wine sauce, garlic, blistered cherry tomatoes, garnished with fresh basil, served with Italian bread",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-basil-ricotta-tortellini",
+      "categoryId": "entrees",
+      "nameEs": "Tortellini de ricota, limón y albahaca",
+      "nameEn": "Lemon Basil Ricotta Tortellini",
+      "descriptionEs": "Tortellini DiFiore salteado en mantequilla de limón, decorado con queso parmesano y ricota de albahaca de la casa",
+      "descriptionEn": "DiFiore tortellini tossed in a lemon butter, garnished with parmesan cheese and a house made basil ricotta",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gfa-pesto-linguine",
+      "categoryId": "entrees",
+      "nameEs": "Linguine al pesto (SG disponible)",
+      "nameEn": "(GFA) Pesto Linguine",
+      "descriptionEs": "Linguine DiFiore, pesto cremoso, tomates cherry, queso parmesano",
+      "descriptionEn": "DiFiore linguine, creamy pesto, cherry tomatoes, parmesan cheese",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Bebida Estrella",
-      "tags": [
-        "Alcohol",
-        "Bourbon"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "jregos-gathering-place-13",
-      "categoryId": "beverages",
-      "nameEs": "Selección de Cervezas de Barril",
-      "nameEn": "Draft Beers Assortment",
-      "descriptionEs": "Amplia variedad de cervezas artesanales locales e importadas de barril.",
-      "descriptionEn": "A large array of rotating local and imported beers on tap.",
+      "id": "gf-cherry-tomato-risotto",
+      "categoryId": "entrees",
+      "nameEs": "(SG) Risotto de tomate cherry",
+      "nameEn": "(GF) Cherry Tomato Risotto",
+      "descriptionEs": "Tomates cherry asados, ajo, arroz arborio cremoso, queso parmesano y albahaca | Se pueden sustituir por vegetales de temporada o champiñones",
+      "descriptionEn": "Blistered cherry tomatoes, garlic, creamy arborio rice, parmesan cheese, and basil | Seasonal vegetables or mushrooms may be substituted",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-vegetable-stir-fry",
+      "categoryId": "entrees",
+      "nameEs": "(SG) Salteado de vegetales",
+      "nameEn": "(GF) Vegetable Stir-Fry",
+      "descriptionEs": "Vegetales de temporada sellados en sartén con glaseado teriyaki sobre arroz blanco, decorado con cebolleta (contiene soya)",
+      "descriptionEn": "Pan-seared teriyaki glazed seasonal vegetables over white rice, green onion garnish (contains soy)",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-dfa-chocolate-brownie",
+      "categoryId": "sweet-tooth",
+      "nameEs": "(SG, sin lácteos disponible) Brownie de chocolate",
+      "nameEn": "(GF, DFA) Chocolate Brownie",
+      "descriptionEs": "Hecho en casa, servido tibio con helado de vainilla, hilos de chocolate y caramelo",
+      "descriptionEn": "House made, served warm with vanilla bean ice cream, chocolate & caramel drizzle",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-checkerboard-brownies",
+      "categoryId": "sweet-tooth",
+      "nameEs": "Brownies tibios tipo tablero de ajedrez",
+      "nameEn": "Warm Checkerboard Brownies",
+      "descriptionEs": "Blondie y brownie de la casa cubiertos con helado de vainilla, hilos de chocolate y caramelo",
+      "descriptionEn": "House made blondie & brownie topped with vanilla bean ice cream, chocolate & caramel drizzle",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-upside-down-cake",
+      "categoryId": "sweet-tooth",
+      "nameEs": "Pastel invertido de piña",
+      "nameEn": "Pineapple Upside Down Cake",
+      "descriptionEs": "Pastel de la casa, cubierto con piña glaseada con azúcar morena y cereza marrasquino, servido tibio con helado de vainilla",
+      "descriptionEn": "House made cake, topped with a brown sugar pineapple and a maraschino cherry glaze, served warm with a vanilla bean ice cream",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bowl-of-seasonal-ice-cream",
+      "categoryId": "sweet-tooth",
+      "nameEs": "Bowl de helado de temporada",
+      "nameEn": "Bowl of Seasonal Ice Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-of-penne",
+      "categoryId": "sides",
+      "nameEs": "Porción de penne",
+      "nameEn": "Side of Penne",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$7.00",
-      "popular": false,
-      "badge": "Bebidas",
-      "tags": [
-        "Cerveza",
-        "Local"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-greens",
+      "categoryId": "sides",
+      "nameEs": "Hojas verdes mixtas",
+      "nameEn": "Mixed Greens",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-seasonal-vegetables",
+      "categoryId": "sides",
+      "nameEs": "Vegetales de temporada salteados",
+      "nameEn": "Sautéed Seasonal Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "sides",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-whipped-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Papas batidas al ajo",
+      "nameEn": "Garlic Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "sides",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-bread",
+      "categoryId": "sides",
+      "nameEs": "Pan italiano",
+      "nameEn": "Italian Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-caesar",
+      "categoryId": "sides",
+      "nameEs": "Caesar picada",
+      "nameEn": "Chopped Caesar",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussel-sprouts",
+      "categoryId": "sides",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussel Sprouts",
+      "descriptionEs": "Agregar complementos +$2.00",
+      "descriptionEn": "Add toppings +$2.00",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-cheese-fries",
+      "categoryId": "happy-hour-menu",
+      "nameEs": "Papas Fritas Cargadas",
+      "nameEn": "Loaded Cheese Fries",
+      "descriptionEs": "Papas fritas crujientes, tocino, cebollín, queso parmesano, queso fundido",
+      "descriptionEn": "Crispy French fries, bacon, scallions, parmesan cheese, queso",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-flatbread",
+      "categoryId": "happy-hour-menu",
+      "nameEs": "Mini pan plano",
+      "nameEn": "Mini Flatbread",
+      "descriptionEs": "3 quesos, papa horneada cargada, vegetales, pollo BBQ | Sin gluten disponible +$2.00",
+      "descriptionEn": "3-cheese, loaded baked potato, vegetable, BBQ chicken | Gluten-free available +$2.00",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos",
+      "categoryId": "happy-hour-menu",
+      "nameEs": "Nachos",
+      "nameEn": "Nachos",
+      "descriptionEs": "Totopos de maíz crujientes, queso de la casa, pico de gallo | Agregar pollo deshebrado +$3.00 | Carne molida +$4.00",
+      "descriptionEn": "Crispy corn tortillas chips, house-made queso, pico de gallo | Add Pulled Chicken +$3.00 | Ground Beef +$4.00",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-happy-hour",
+      "categoryId": "happy-hour-menu",
+      "nameEs": "Alitas de pollo (Happy Hour)",
+      "nameEn": "Chicken Wings (Happy Hour)",
+      "descriptionEs": "Seis (6) alitas servidas con ranch o queso azul • Sabores: Búfalo, Búfalo dorado, BBQ, BBQ dorado, BBQ coreano, Mango habanero, Ajo y parmesano (seco), Sal y vinagre (seco)",
+      "descriptionEn": "Six (6) wings served with ranch or blue cheese • Flavors: Buffalo, Golden Buffalo, BBQ, Golden BBQ, Korean BBQ, Mango Habanero, Garlic Parm (Dry), Salt & Vinegar (Dry)",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Calamares",
+      "nameEn": "Calamari",
+      "descriptionEs": "Servido con jalapeños encurtidos y marinara.",
+      "descriptionEn": "Served with pickled jalapenos and marinara.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-shareables",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Alitas de pollo (Para compartir)",
+      "nameEn": "Chicken Wings (Shareables)",
+      "descriptionEs": "Búfalo, BBQ de bourbon y maple, ajo y parmesano, sal y vinagre, buffaque, a elegir queso azul o ranch.",
+      "descriptionEn": "Buffalo, maple bourbon BBQ, garlic Parmesan, salt & vinegar, buffaque, choice of blue cheese or ranch.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-nacho",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Nacho cargado",
+      "nameEn": "Loaded Nacho",
+      "descriptionEs": "Queso, salsa de maíz y frijol, jalapeño encurtido y crema de aguacate | Agregar carne molida sazonada +$5.00",
+      "descriptionEn": "Queso, corn bean salsa, pickled jalapeno, and avocado crema | Add Seasoned Ground Beef +$5.00",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-brussels",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Coles de Bruselas crujientes",
+      "nameEn": "Crispy Brussels",
+      "descriptionEs": "Arándanos secos, pepitas, queso de cabra y glaseado balsámico de granada.",
+      "descriptionEn": "Cranberries, pepitas, goat cheese, and pomegranate balsamic glaze.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-rack-bbq-ribs",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Media costilla BBQ",
+      "nameEn": "Half-Rack BBQ Ribs",
+      "descriptionEs": "BBQ de bourbon y maple, ensalada de col y pepinillos.",
+      "descriptionEn": "Maple bourbon BBQ, coleslaw, and pickles.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-butter-board",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Tabla de pan y mantequilla",
+      "nameEn": "Bread & Butter Board",
+      "descriptionEs": "Pan de masa madre, aceitunas marinadas con cítricos, mantequilla cultivada de la casa y mantequilla de manzana doble.",
+      "descriptionEn": "Sourdough, marinated citrus olives, house-cultured butter, and double apple butter.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-cheese-curds",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Cuajada de queso frita",
+      "nameEn": "Fried Cheese Curds",
+      "descriptionEs": "Rebozada en cerveza, servida con aderezo ranch de chipotle ahumado y marinara.",
+      "descriptionEn": "Beer-battered, served with smoked chipotle ranch & marinara.",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ricotta-crostini",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Crostini de ricota",
+      "nameEn": "Ricotta Crostini",
+      "descriptionEs": "Ricota con maple, calabaza delicata frita, pepitas y glaseado balsámico de granada.",
+      "descriptionEn": "Maple ricotta, fried delicata squash, pepitas, and pomegranate balsamic glaze.",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basket-of-chips",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Canasta de papitas",
+      "nameEn": "Basket of Chips",
+      "descriptionEs": "Papitas estilo kettle y fondue de queso azul.",
+      "descriptionEn": "Kettle-style chips and blue cheese fondue.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries-shareables",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Papas fritas de camote (Para compartir)",
+      "nameEn": "Sweet Potato Fries (Shareables)",
+      "descriptionEs": "Servidas con alioli de maple.",
+      "descriptionEn": "Served with maple aioli.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings-shareables",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Aros de cebolla (Para compartir)",
+      "nameEn": "Onion Rings (Shareables)",
+      "descriptionEs": "Servidos con aderezo ranch de chipotle ahumado.",
+      "descriptionEn": "Served with smoked chipotle ranch.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-week",
+      "categoryId": "shareables-second-menu",
+      "nameEs": "Sopa de la semana",
+      "nameEn": "Soup of the Week",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads-second-menu",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana picada, crutones de la casa, Pecorino Romano y aderezo César de la casa.",
+      "descriptionEn": "Chopped romaine, house croutons, Pecorino Romano, and house Caesar dressing.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taco-salad",
+      "categoryId": "salads-second-menu",
+      "nameEs": "Ensalada de taco",
+      "nameEn": "Taco Salad",
+      "descriptionEs": "Lechuga romana, carne molida sazonada, salsa de maíz y frijol, queso cheddar, jalapeño encurtido, pico de gallo y aderezo ranch de chipotle ahumado.",
+      "descriptionEn": "Romaine, seasoned ground beef, corn & bean salsa, cheddar cheese, pickled jalapeno, pico de gallo, and smoked chipotle ranch.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-salad",
+      "categoryId": "salads-second-menu",
+      "nameEs": "Ensalada de otoño",
+      "nameEn": "Autumn Salad",
+      "descriptionEs": "Coles de Bruselas, lechuga iceberg, arándanos secos, manzana, queso de cabra, calabaza delicata asada, pepitas y vinagreta de sidra de manzana.",
+      "descriptionEn": "Brussel sprouts, iceberg, dried cranberries, apple, goat cheese, roasted delicata squash, pepitas, and apple cider vinaigrette.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "club-salad",
+      "categoryId": "salads-second-menu",
+      "nameEs": "Ensalada club",
+      "nameEn": "Club Salad",
+      "descriptionEs": "Lechuga iceberg baby, queso azul, tocino, tomates, cebolla morada encurtida y aderezo de queso azul.",
+      "descriptionEn": "Baby iceberg, blue cheese, bacon, tomatoes, pickled red onion, and blue cheese dressing.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoke-house-burger",
+      "categoryId": "handhelds",
+      "nameEs": "Hamburguesa Smoke House",
+      "nameEn": "Smoke House Burger",
+      "descriptionEs": "Carne molida de 6 oz, lechuga romana rallada, tocino, Gouda ahumado, pimientos rojos asados y alioli de pimentón ahumado.",
+      "descriptionEn": "6oz ground beef patty, shaved romaine, bacon, smoked Gouda, roasted red peppers, and smoked paprika aioli.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-sandwich-handhelds",
+      "categoryId": "handhelds",
+      "nameEs": "Sándwich caprese (De mano)",
+      "nameEn": "Caprese Sandwich (Handhelds)",
+      "descriptionEs": "Lechuga iceberg, cebolla morada, tomate, albahaca, mozzarella fresca, glaseado balsámico y aceite de oliva griego | Agregar pollo +$7.00",
+      "descriptionEn": "Iceburg, red onion, tomato, basil, fresh mozzarella, balsamic glaze, and Greek olive oil | Add Chicken +$7.00",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan-hoagie",
+      "categoryId": "handhelds",
+      "nameEs": "Hoagie de pollo a la parmesana",
+      "nameEn": "Chicken Parmesan Hoagie",
+      "descriptionEs": "Milanesa de pollo empanizada con panko, marinara, mozzarella fresca y albahaca.",
+      "descriptionEn": "Panko-crusted chicken cutlet, marinara, fresh mozzarella, and basil.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-peppers-onions-hoagie",
+      "categoryId": "handhelds",
+      "nameEs": "Hoagie de salchicha, pimientos y cebolla",
+      "nameEn": "Sausage, Peppers & Onions Hoagie",
+      "descriptionEs": "Mezcla dulce y picante, pimientos rojos asados, cebollas caramelizadas y alioli de ajo.",
+      "descriptionEn": "Blend of sweet & spicy, roasted red peppers, caramelized onions, and garlic aioli.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-buffalo-chicken-hoagie",
+      "categoryId": "handhelds",
+      "nameEs": "Hoagie de pollo búfalo con miel",
+      "nameEn": "Honey Buffalo Chicken Hoagie",
+      "descriptionEs": "Milanesa de pollo crujiente, salsa búfalo con miel, ensalada de col y fondue de queso azul.",
+      "descriptionEn": "Crispy chicken cutlet, honey buffalo sauce, slaw, and blue cheese fondue.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-blt-hoagie",
+      "categoryId": "handhelds",
+      "nameEs": "Hoagie BLT de pollo",
+      "nameEn": "Chicken BLT Hoagie",
+      "descriptionEs": "A elegir a la parrilla o crujiente, tocino, lechuga romana, tomate y alioli de ajo con cheddar.",
+      "descriptionEn": "Choice of grilled or crispy, bacon, romaine, tomato, and cheddar garlic aioli.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-jrego-s-burger",
+      "categoryId": "handhelds",
+      "nameEs": "Hamburguesa clásica Jrego's",
+      "nameEn": "Classic Jrego's Burger",
+      "descriptionEs": "Carne molida de 6 oz, lechuga iceberg, tomate y cebolla morada.",
+      "descriptionEn": "6oz ground beef patty, iceburg, tomato, and red onion.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-frites",
+      "categoryId": "mains",
+      "nameEs": "Frites bistró",
+      "nameEn": "Bistro Frites",
+      "descriptionEs": "Filete bistró de 10 oz, mantequilla de queso azul, papas fritas con Pecorino, alioli de ajo y ensalada de jardín.",
+      "descriptionEn": "10oz bistro filet, blue cheese butter, Pecorino French fries, garlic aioli, and garden salad.",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-skin-salmon",
+      "categoryId": "mains",
+      "nameEs": "Salmón de piel crujiente",
+      "nameEn": "Crispy Skin Salmon",
+      "descriptionEs": "Coles de Bruselas asadas, puré de camote, gastrique de arándano y chirivías crujientes.",
+      "descriptionEn": "Roasted brussels sprouts, sweet potato mash, cranberry gastrique, and crispy parsnips.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "mains",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "Pescado rebozado en cerveza, papas fritas con vinagre de malta, ensalada de col y salsa tártara.",
+      "descriptionEn": "Beer-battered fish, malt vinegar French fries, coleslaw, and tartar sauce.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-airline-chicken",
+      "categoryId": "mains",
+      "nameEs": "Pollo asado tipo airline",
+      "nameEn": "Roasted Airline Chicken",
+      "descriptionEs": "Puré de camote, vegetales de raíz asados, jugo de sartén con mantequilla dorada y salvia crujiente.",
+      "descriptionEn": "Sweet potato mash, roasted root vegetables, brown butter pan jus, and crispy sage.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "short-rib-bolognese",
+      "categoryId": "mains",
+      "nameEs": "Boloñesa de costilla corta",
+      "nameEn": "Short Rib Bolognese",
+      "descriptionEs": "Rigatoni fresco, salchicha molida, tomates y ricota.",
+      "descriptionEn": "Fresh rigatoni, ground sausage, tomatoes, and ricotta.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butternut-pumpkin-tortellacci",
+      "categoryId": "mains",
+      "nameEs": "Tortellacci de calabaza butternut y calabaza",
+      "nameEn": "Butternut & Pumpkin Tortellacci",
+      "descriptionEs": "Salsa de mantequilla dorada con salvia, gastrique de arándano, pepitas y salvia crujiente.",
+      "descriptionEn": "Brown sage butter sauce, cranberry gastrique, pepitas, and crispy sage.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto-of-the-week",
+      "categoryId": "mains",
+      "nameEs": "Risotto de la semana",
+      "nameEn": "Risotto of the Week",
+      "descriptionEs": "Arroz arborio cremoso y queso Asiago | Agregar pollo a la parrilla/crujiente +$7.00 | Camarones salteados +$9.00 | Salmón +$10.00 | Filete +$15.00",
+      "descriptionEn": "Creamy Arborio rice and Asiago cheese | Add Grilled/Crispy Chicken +$7.00 | Sauteed Shrimp +$9.00 | Salmon +$10.00 | Steak +$15.00",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries-sides",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Papas fritas (Guarniciones)",
+      "nameEn": "French Fries (Sides)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings-sides",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Aros de cebolla (Guarniciones)",
+      "nameEn": "Onion Rings (Sides)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "descriptionEs": "A elegir mantequilla o marinara.",
+      "descriptionEn": "Choice of butter or marinara.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-root-vegetables",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Vegetales de raíz asados",
+      "nameEn": "Roasted Root Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-mash",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Puré de camote",
+      "nameEn": "Sweet Potato Mash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries-sides",
+      "categoryId": "sides-second-menu",
+      "nameEs": "Papas fritas de camote (Guarniciones)",
+      "nameEn": "Sweet Potato Fries (Sides)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-checkerboard-brownies-dessert",
+      "categoryId": "dessert",
+      "nameEs": "Brownies tibios tipo tablero de ajedrez (Postre)",
+      "nameEn": "Warm Checkerboard Brownies (Dessert)",
+      "descriptionEs": "Blondie y brownie de la casa cubiertos con helado de vainilla, hilos de chocolate y caramelo.",
+      "descriptionEn": "House-made blondie & brownie topped with vanilla bean ice cream, chocolate, and caramel drizzle.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-foster-mousse",
+      "categoryId": "dessert",
+      "nameEs": "Mousse Banana Foster",
+      "nameEn": "Banana Foster Mousse",
+      "descriptionEs": "Crumble de Nilla, dulce de leche, plátano fresco y deshidratado, y hilos de chocolate.",
+      "descriptionEn": "Nilla crumble, dulce de leche, fresh & dried bananas, and chocolate drizzle.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mom-s-apple-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de manzana de mamá",
+      "nameEn": "Mom's Apple Cake",
+      "descriptionEs": "Pastel de otoño en capas con manzana, crema batida de canela, helado de vainilla y hilos de caramelo.",
+      "descriptionEn": "Seasonal fall cake layered with apples, cinnamon whipped cream, vanilla bean ice cream, and caramel drizzle.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flourless-chocolate-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel de chocolate sin harina",
+      "nameEn": "Flourless Chocolate Cake",
+      "descriptionEs": "Servido con helado de vainilla y hilos de chocolate.",
+      "descriptionEn": "Served with vanilla bean ice cream and chocolate drizzle.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-of-the-week",
+      "categoryId": "dessert",
+      "nameEs": "Helado de la semana",
+      "nameEn": "Ice Cream of the Week",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-almond-coffee",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Café de chocolate y almendra",
+      "nameEn": "Chocolate Almond Coffee",
+      "descriptionEs": "Servido con Chocolate Dorda, Disaranno Amaretto.",
+      "descriptionEn": "Served from Chocolate Dorda, Disaranno Amaretto.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Espresso martini",
+      "nameEn": "Espresso Martini",
+      "descriptionEs": "Vodka de vainilla de Madagascar, licor de café cold brew Mr. Black, espresso local Loose Leash | Agregar Bailey's +$1.00 | Caramelo salado +$1.00",
+      "descriptionEn": "Madagascar Vanilla Vodka, Mr. Black Cold Brew Liqueur, Loose Leash Local Espresso | Add Bailey's +$1.00 | Salted Caramel +$1.00",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-martini",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Martini de chocolate",
+      "nameEn": "Chocolate Martini",
+      "descriptionEs": "Vodka de vainilla, crema irlandesa y chocolate.",
+      "descriptionEn": "Vanilla Vodka, Irish Cream, and Chocolate.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toasted-almond",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Almendra tostada",
+      "nameEn": "Toasted Almond",
+      "descriptionEs": "Amaretto, Mr. Black y crema irlandesa.",
+      "descriptionEn": "Amaretto, Mr. Black, and Irish Cream.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "disaranno-amaretto",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Disaranno Amaretto",
+      "nameEn": "Disaranno Amaretto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "irish-coffee",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Café irlandés",
+      "nameEn": "Irish Coffee",
+      "descriptionEs": "Servido con crema irlandesa y Jameson.",
+      "descriptionEn": "Served with Irish Cream and Jameson.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rego-s-mudslide",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Mudslide de Rego's",
+      "nameEn": "Rego's Mudslide",
+      "descriptionEs": "Mr. Black, vodka de vainilla, Chocolate Dorda, Caramel Dorda y sal de mar.",
+      "descriptionEn": "Mr. Black, Vanilla Vodka, Chocolate Dorda, Caramel Dorda, and Sea Salt.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pistachio-martini",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Martini de pistache",
+      "nameEn": "Pistachio Martini",
+      "descriptionEs": "Vodka de vainilla, amaretto y crema irlandesa.",
+      "descriptionEn": "Vanilla Vodka, Amaretto, and Irish Cream.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frangelico",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Frangelico",
+      "nameEn": "Frangelico",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chambord",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Chambord",
+      "nameEn": "Chambord",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "amaro-averna",
+      "categoryId": "after-dinner-cocktails",
+      "nameEs": "Amaro Averna",
+      "nameEn": "Amaro Averna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "almost-famous-espresso-martini",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Almost Famous Espresso Martini",
+      "nameEn": "Almost Famous Espresso Martini",
+      "descriptionEs": "Vodka de vainilla de Madagascar, licor de café cold brew Mr. Black, espresso local Loose Leash, Bailey's +1",
+      "descriptionEn": "madagascar vanilla vodka, mr. black cold brew coffee liqueur, loose leash local espresso, bailey's +1",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "citrus-smash",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Citrus Smash",
+      "nameEn": "Citrus Smash",
+      "descriptionEs": "Vodka Breckenridge, flor de saúco, limón, agua con gas | agregar un sabor +1",
+      "descriptionEn": "breckenridge vodka, elderflower, lemon, soda water | add a flavor +1",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-martini",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Martini francés",
+      "nameEn": "French Martini",
+      "descriptionEs": "Vodka Breckenridge, Chambord, piña",
+      "descriptionEn": "breckenridge vodka, chambord, pineapple",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kevin-s-heavenly-old-fashioned",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Kevin's Heavenly Old Fashioned",
+      "nameEn": "Kevin's Heavenly Old Fashioned",
+      "descriptionEs": "Bourbon Four Roses, cereza Luxardo, amargos aromáticos y de naranja, ahumado +1",
+      "descriptionEn": "four roses bourbon, luxardo cherry, aromatic & orange bitters, smoked +1",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jessica-s-classic-pisco-sour",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Pisco Sour clásico de Jessica",
+      "nameEn": "Jessica's Classic Pisco Sour",
+      "descriptionEs": "Pisco peruano, limón, jarabe simple, clara de huevo, amargos aromáticos",
+      "descriptionEn": "peruvian pisco, lime, simple syrup, egg white, aromatic bitters",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "divine-manhattan",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Divine Manhattan",
+      "nameEn": "Divine Manhattan",
+      "descriptionEs": "Whisky de centeno Redemption, vermut Cinzano, amargos Prohibition",
+      "descriptionEn": "redemption rye, cinzano vermouth, prohibition bitters",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lavender-lemon-drop",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Lemon Drop de lavanda",
+      "nameEn": "Lavender Lemon Drop",
+      "descriptionEs": "Vodka cítrico Waypoint, licor de naranja, lavanda, limón",
+      "descriptionEn": "waypoint citrus vodka, orange liqueur, lavender, lemon",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "now-boarding",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Now Boarding",
+      "nameEn": "Now Boarding",
+      "descriptionEs": "Bourbon Four Roses, Aperol, amaro, limón, toronja, miel",
+      "descriptionEn": "four roses bourbon, aperol, amaro, lemon, grapefruit, honey",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rego-s-margarita",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Margarita de Rego's",
+      "nameEn": "Rego's Margarita",
+      "descriptionEs": "Tequila blanco Mi Campo, licor de naranja, limón, agave | afrutado +1, picante +1, ahumado (mezcal) +2",
+      "descriptionEn": "mi campo blanco tequila, orange liqueur, lime, agave | fruity +1, spicy +1, smoky (mezcal) +2",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-sangria",
+      "categoryId": "specialty-cocktails",
+      "nameEs": "Sangría de temporada",
+      "nameEn": "Seasonal Sangria",
+      "descriptionEs": "Tinto, blanco o espumoso + fruta y cítricos | garrafa ($20) (para dos)",
+      "descriptionEn": "red, white, or bubbly + fruit & citrus | carafe ($20) (serves two)",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "how-you-dewin",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "How you 'Dewin'?!",
+      "nameEn": "How you 'Dewin'?!",
+      "descriptionEs": "Vodka, jugo fresco de melón honeydew, kiwi, limón, menta",
+      "descriptionEn": "Vodka, fresh honey dew melon juice, kiwi, lemon, mint",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "some-like-it-hot",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "Some Like it Hot",
+      "nameEn": "Some Like it Hot",
+      "descriptionEs": "Tequila blanco, jugo de toronja ajustado en acidez, amargos de habanero, agave, albahaca",
+      "descriptionEn": "Blanco tequila, acid adjusted grapefruit juice, habenero bitters, agave, basil",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beach-please",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "Beach, Please!",
+      "nameEn": "Beach, Please!",
+      "descriptionEs": "Ron infusionado con mango y piña, ron Kasama, agave, limón, agua de coco, espuma fría de piña",
+      "descriptionEn": "Mango & pineapple infused rum, kasama rum, agave, lime, coconut water, pineapple cold foam",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-sour",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "Sour de pepino",
+      "nameEn": "Cucumber Sour",
+      "descriptionEs": "Vodka, jugo fresco de pepino, limón, jarabe de caña, clara de huevo (*¿sin huevo? Pruébalo con espuma fee!)",
+      "descriptionEn": "Vodka, fresh cucumber juice, lemon, cane syrup, egg white (*no egg? try it with fee foam!)",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "botanicals-bubbles",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "Botánicos y burbujas",
+      "nameEn": "Botanicals & Bubbles",
+      "descriptionEs": "Gin de tuna y azahar Condesa, licor de flor de saúco, limón, prosecco",
+      "descriptionEn": "Condesa prickly pear & orange blossom gin, elderflower liqueur, lemon, prosecco",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sunset-drive",
+      "categoryId": "seasonal-cocktails",
+      "nameEs": "Sunset Drive",
+      "nameEn": "Sunset Drive",
+      "descriptionEs": "¡No preguntes, solo confía en el proceso!",
+      "descriptionEn": "Don't ask, just trust the process!",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spritz-flight",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Spritz / Degustación",
+      "nameEn": "Spritz / Flight",
+      "descriptionEs": "Spritz: elige (1) | Degustación: elige (4)",
+      "descriptionEn": "Spritz: Pick (1) | Flight: Pick (4)",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apricot",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Albaricoque",
+      "nameEn": "Apricot",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackberry",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Zarzamora",
+      "nameEn": "Blackberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood-orange",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Naranja sanguina",
+      "nameEn": "Blood Orange",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Arándano",
+      "nameEn": "Blueberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dragon-fruit",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Pitahaya",
+      "nameEn": "Dragon Fruit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elderflower",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Flor de saúco",
+      "nameEn": "Elderflower",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fig",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Higo",
+      "nameEn": "Fig",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guava",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Guayaba",
+      "nameEn": "Guava",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Mango",
+      "nameEn": "Mango",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "papaya",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Papaya",
+      "nameEn": "Papaya",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passion-fruit",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Maracuyá",
+      "nameEn": "Passion Fruit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Durazno (Peach)",
+      "nameEn": "Peach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Piña",
+      "nameEn": "Pineapple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prickly-pear",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Tuna",
+      "nameEn": "Prickly Pear",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Fresa",
+      "nameEn": "Strawberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "watermelon",
+      "categoryId": "summer-spritz-flights",
+      "nameEs": "Sandía",
+      "nameEn": "Watermelon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "berry-mango-blast",
+      "categoryId": "mocktails",
+      "nameEs": "Berry Mango Blast",
+      "nameEn": "Berry Mango Blast",
+      "descriptionEs": "Agua de coco, fresa, mango, limón",
+      "descriptionEn": "Coconut water, strawberry, mango, lime",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach-palmer",
+      "categoryId": "mocktails",
+      "nameEs": "Peach Palmer",
+      "nameEn": "Peach Palmer",
+      "descriptionEs": "Té helado, limón, durazno, almendra | *Contiene almendra",
+      "descriptionEn": "Iced tea, lemon, peach, almond | *Contains almond",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passion-of-the-spritz",
+      "categoryId": "mocktails",
+      "nameEs": "Passion of the Spritz",
+      "nameEn": "Passion of the Spritz",
+      "descriptionEs": "Maracuyá, limón, vainilla, agua mineral",
+      "descriptionEn": "Passion fruit, lime, vanilla, seltzer",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "available-as-cocktails",
+      "categoryId": "mocktails",
+      "nameEs": "Disponible como cóctel",
+      "nameEn": "Available as Cocktails",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stella-artois",
+      "categoryId": "draft",
+      "nameEs": "Stella Artois",
+      "nameEn": "Stella Artois",
+      "descriptionEs": "Pilsner europeo, 5.2%, BE",
+      "descriptionEn": "Euro Pilsner, 5.2%, BE",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jacks-abby",
+      "categoryId": "draft",
+      "nameEs": "Jack’s Abby",
+      "nameEn": "Jack’s Abby",
+      "descriptionEs": "Selección rotativa, MA",
+      "descriptionEn": "Rotating Selection, MA",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "allagash-white",
+      "categoryId": "draft",
+      "nameEs": "Allagash White",
+      "nameEn": "Allagash White",
+      "descriptionEs": "Trigo belga, 5.2%, ME",
+      "descriptionEn": "Belgian Wheat, 5.2%, ME",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "downeast-cider",
+      "categoryId": "draft",
+      "nameEs": "Downeast Cider",
+      "nameEn": "Downeast Cider",
+      "descriptionEs": "Selección rotativa, MA",
+      "descriptionEn": "Rotating Selection, MA",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naughty-nurse",
+      "categoryId": "draft",
+      "nameEs": "Naughty Nurse",
+      "nameEn": "Naughty Nurse",
+      "descriptionEs": "Ale ámbar, 5.2%, CT",
+      "descriptionEn": "Amber Ale, 5.2%, CT",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "headway",
+      "categoryId": "draft",
+      "nameEs": "Headway",
+      "nameEn": "Headway",
+      "descriptionEs": "NEIPA turbia, 6.5%, CT",
+      "descriptionEn": "Hazy NEIPA, 6.5%, CT",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sam-adams",
+      "categoryId": "draft",
+      "nameEs": "Sam Adams",
+      "nameEn": "Sam Adams",
+      "descriptionEs": "Selección rotativa, MA",
+      "descriptionEn": "Rotating Selection, MA",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "urban-lodge",
+      "categoryId": "draft",
+      "nameEs": "Urban Lodge",
+      "nameEn": "Urban Lodge",
+      "descriptionEs": "Selección rotativa, CT",
+      "descriptionEn": "Rotating Selection, CT",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "bottle",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miller-light",
+      "categoryId": "bottle",
+      "nameEs": "Miller Light",
+      "nameEn": "Miller Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "bottle",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo",
+      "categoryId": "bottle",
+      "nameEs": "Modelo",
+      "nameEn": "Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "just-the-haze-0",
+      "categoryId": "bottle",
+      "nameEs": "Just the Haze 0%",
+      "nameEn": "Just the Haze 0%",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guinness",
+      "categoryId": "bottle",
+      "nameEs": "Guinness",
+      "nameEn": "Guinness",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-noon",
+      "categoryId": "bottle",
+      "nameEs": "High Noon",
+      "nameEn": "High Noon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sun-cruiser",
+      "categoryId": "bottle",
+      "nameEs": "Sun Cruiser",
+      "nameEn": "Sun Cruiser",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gooseneck-prosecco-italy",
+      "categoryId": "wine-white",
+      "nameEs": "Gooseneck, Prosecco, Italia",
+      "nameEn": "Gooseneck, Prosecco, Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "castello-del-poggio-moscato",
+      "categoryId": "wine-white",
+      "nameEs": "Castello del Poggio, Moscato",
+      "nameEn": "Castello del Poggio, Moscato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "luna-nuda-pinot-grigio-italy",
+      "categoryId": "wine-white",
+      "nameEs": "Luna Nuda, Pinot Grigio, Italia",
+      "nameEn": "Luna Nuda, Pinot Grigio, Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00 / $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tangaroa-sauvignon-blanc-new-zealand",
+      "categoryId": "wine-white",
+      "nameEs": "Tangaroa, Sauvignon Blanc, Nueva Zelanda",
+      "nameEn": "Tangaroa, Sauvignon Blanc, New Zealand",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00 / $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "colome-torrontes-argentina",
+      "categoryId": "wine-white",
+      "nameEs": "Colomé, Torrontés, Argentina",
+      "nameEn": "Colomé, Torrontés, Argentina",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00 / $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clos-henri-sauvignon-blanc-new-zealand",
+      "categoryId": "wine-white",
+      "nameEs": "Clos Henri, Sauvignon Blanc, Nueva Zelanda",
+      "nameEn": "Clos Henri, Sauvignon Blanc, New Zealand",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00 / $44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "robert-mondavi-chardonnay-california",
+      "categoryId": "wine-white",
+      "nameEs": "Robert Mondavi, Chardonnay, California",
+      "nameEn": "Robert Mondavi, Chardonnay, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00 / $44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sonoma-cutrer-chardonnay-california",
+      "categoryId": "wine-white",
+      "nameEs": "Sonoma-Cutrer, Chardonnay, California",
+      "nameEn": "Sonoma-Cutrer, Chardonnay, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00 / $56.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gooseneck-rhody-red-blend-portugal",
+      "categoryId": "wine-red",
+      "nameEs": "Gooseneck, Rhody Red Blend, Portugal",
+      "nameEn": "Gooseneck, Rhody Red Blend, Portugal",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00 / $40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boen-pinot-noir-california",
+      "categoryId": "wine-red",
+      "nameEs": "Boen, Pinot Noir, California",
+      "nameEn": "Boen, Pinot Noir, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00 / $44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "josh-cabernet-sauvignon-california",
+      "categoryId": "wine-red",
+      "nameEs": "Josh, Cabernet Sauvignon, California",
+      "nameEn": "Josh, Cabernet Sauvignon, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00 / $40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "daou-cabernet-sauvignon-california",
+      "categoryId": "wine-red",
+      "nameEs": "Daou, Cabernet Sauvignon, California",
+      "nameEn": "Daou, Cabernet Sauvignon, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00 / $56.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barco-reale-sangiovese-italy",
+      "categoryId": "wine-red",
+      "nameEs": "Barco Reale, Sangiovese, Italia",
+      "nameEn": "Barco Reale, Sangiovese, Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00 / $48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caymus-cabernet-sauvignon-napa-california",
+      "categoryId": "wine-red",
+      "nameEs": "Caymus, Cabernet Sauvignon, Napa, California",
+      "nameEn": "Caymus, Cabernet Sauvignon, Napa, California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$110.00/Bottle Only",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-6oz-ny-strip",
+      "categoryId": "add-ons",
+      "nameEs": "Agregar New York strip de 6 oz",
+      "nameEn": "Add 6oz, NY Strip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-salmon",
+      "categoryId": "add-ons",
+      "nameEs": "Agregar salmón",
+      "nameEn": "Add Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-sauteed-blackened-shrimp",
+      "categoryId": "add-ons",
+      "nameEs": "Agregar camarones salteados/ennegrecidos",
+      "nameEn": "Add Sauteed/Blackened Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-grilled-crispy-chicken",
+      "categoryId": "add-ons",
+      "nameEs": "Agregar pollo a la parrilla/crujiente",
+      "nameEn": "Add Grilled/Crispy Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "additional-toppings",
+      "categoryId": "add-ons",
+      "nameEs": "Ingredientes adicionales",
+      "nameEn": "Additional Toppings",
+      "descriptionEs": "Cebollas caramelizadas, champiñones salteados, pepinillos (+$0.50), queso americano, queso cheddar, queso mozzarella, queso feta, queso de cabra (+$1.00), aguacate, huevo frito, tocino (+$1.50)",
+      "descriptionEn": "Caramelized onions, sauteed mushrooms, pickles (+$0.50), american cheese, cheddar cheese, mozzarella cheese, feta cheese, goat cheese (+$1.00) avocado, fried egg , bacon (+$1.50)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-toppings",
+      "categoryId": "add-ons",
+      "nameEs": "Agregar complementos",
+      "nameEn": "Add toppings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$2.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones vegetarianas (V), sin gluten (GF) y opciones adaptables (GFA) marcadas en nuestro menú.",
-      "aEn": "Yes, we offer vegetarian (V), gluten-free (GF), and gluten-free available (GFA) options marked on our menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o fiestas privadas?",
-      "qEn": "Do you accept reservations or host private parties?",
-      "aEs": "¡Por supuesto! Ofrecemos un espacio ideal para cumpleaños, cenas de ensayo y eventos corporativos. Contáctenos hoy mismo para planificar su evento.",
-      "aEn": "Absolutely! We specialize in birthday parties, rehearsal dinners, and corporate events. Contact us to book your gathering."
-    }
-  ]
+  "faqs": []
 }
