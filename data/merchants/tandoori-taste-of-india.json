@@ -1,26 +1,19 @@
 {
   "storeInfo": {
     "id": "tandoori-taste-of-india",
-    "name": "Tandoori-Taste of India",
-    "tagline": "Servimos auténtica cocina india desde 1996 | Serving Authentic Indian Cuisine Since 1996",
-    "address": "163 North Main Street, Port Chester, CT",
+    "name": "Tandoori Taste of India - Port Chester",
+    "tagline": "Restaurant in Port Chester | Restaurante en Port Chester",
+    "address": "223 Westchester Ave, Port Chester, NY 10573",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:30 AM - 10:30 PM",
-      "sunday": "11:30 AM - 10:00 PM"
+      "monday_friday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "saturday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "sunday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
-      "Lunch Buffet",
-      "Bilingual Menu"
+      "Bilingual Menu",
+      "Online Ordering",
+      "Takeout"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -28,283 +21,821 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(914) 937-2727"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads-soups",
+      "nameEs": "Ensaladas y sopas",
+      "nameEn": "Salads & Soups",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades del Tandoor y Panes",
-      "nameEn": "Tandoor Specialties & Breads",
+      "id": "breads",
+      "nameEs": "Panes",
+      "nameEn": "Breads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "the-classics",
+      "nameEs": "Los clásicos",
+      "nameEn": "The Classics",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tandoori-house-specials",
+      "nameEs": "Especialidades de la casa Tandoori",
+      "nameEn": "Tandoori House Specials",
+      "icon": "Utensils"
+    },
+    {
+      "id": "from-the-tandoor",
+      "nameEs": "Del tandoor",
+      "nameEn": "From The Tandoor",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tandoori-taste-of-india-01",
+      "id": "papadams",
       "categoryId": "appetizers",
-      "nameEs": "Samosas de Vegetales",
+      "nameEs": "Papadums",
+      "nameEn": "Papadams",
+      "descriptionEs": "Obleas de lenteja delgadas como papel.",
+      "descriptionEn": "Paper-thin lentil wafers.",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baingan-burhani",
+      "categoryId": "appetizers",
+      "nameEs": "Baingan Burhani",
+      "nameEn": "Baingan Burhani",
+      "descriptionEs": "Berenjena al horno cubierta con yogur, menta y salsa tropical de tamarindo.",
+      "descriptionEn": "Baked eggplant topped with yogurt, mint, and tropical tamarind sauce.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-meat-platter",
+      "categoryId": "appetizers",
+      "nameEs": "Plato de carnes tandoori",
+      "nameEn": "Tandoori Meat Platter",
+      "descriptionEs": "Surtido de 3 kebabs (seekh kebab, pollo tikka, pollo malai) servido con salsa de tamarindo, ajo y eneldo.",
+      "descriptionEn": "Assortment of 3 kababs (seekh kabab, chicken tikka, chicken malai) served with tamarind garlic dill sauce.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-samosa",
+      "categoryId": "appetizers",
+      "nameEs": "Samosa de verduras",
       "nameEn": "Vegetable Samosa",
-      "descriptionEs": "Crujiente masa pastelera rellena de papas sazonadas y guisantes verdes, servida con salsa de tamarindo.",
-      "descriptionEn": "Pastry stuffed with potatoes and green peas with tangy tamarind sauce.",
+      "descriptionEs": "Masa rellena de papa y chícharos con salsa de tamarindo.",
+      "descriptionEn": "Pastry stuffed with potatoes and green peas with tamarind sauce.",
       "price": "$10.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-02",
+      "id": "lamb-samosa",
       "categoryId": "appetizers",
-      "nameEs": "Samosas de Cordero",
+      "nameEs": "Samosa de cordero",
       "nameEn": "Lamb Samosa",
-      "descriptionEs": "Pastelito triangular crujiente relleno de cordero molido especiado y guisantes.",
-      "descriptionEn": "Triangular pastry stuffed with seasoned ground lamb and peas.",
+      "descriptionEs": "Masa triangular rellena de cordero molido y chícharos.",
+      "descriptionEn": "Triangular pastry stuffed with ground lamb and peas.",
       "price": "$10.00",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Carnes"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-03",
+      "id": "dosa",
+      "categoryId": "appetizers",
+      "nameEs": "Dosa",
+      "nameEn": "Dosa",
+      "descriptionEs": "Crepa delgada como papel con relleno a elección, servida con chutney de coco y sambar (sopa de lentejas salada).",
+      "descriptionEn": "Paper-thin crepe with your choice of stuffing served with coconut chutney and sambar (savory lentil soup).",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-pakora",
+      "categoryId": "appetizers",
+      "nameEs": "Pakora de verduras",
+      "nameEn": "Vegetable Pakora",
+      "descriptionEs": "Buñuelos de verduras servidos con salsa de tamarindo.",
+      "descriptionEn": "Vegetable fritters served with tamarind sauce.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "samosa-chaat",
       "categoryId": "appetizers",
       "nameEs": "Samosa Chaat",
       "nameEn": "Samosa Chaat",
-      "descriptionEs": "Deliciosa combinación de samosa vegetal, garbanzos, maíz, cebolla picada y papas con yogur y salsas.",
+      "descriptionEs": "Combinación de samosa de verduras, garbanzos, elote, cebolla picada y papa con yogur.",
       "descriptionEn": "Combination of vegetable samosa, chickpeas, corn, chopped onion, and potatoes with yogurt.",
       "price": "$12.00",
-      "popular": true,
-      "badge": "Chef's Choice",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-04",
+      "id": "crispy-bhindi-chaat",
       "categoryId": "appetizers",
-      "nameEs": "Berenjena Baingan Burhani",
-      "nameEn": "Baingan Burhani",
-      "descriptionEs": "Berenjena horneada cubierta con yogur fresco, menta y salsa tropical de tamarindo.",
-      "descriptionEn": "Baked eggplant topped with yogurt, mint, and tropical tamarind sauce.",
+      "nameEs": "Bhindi chaat crujiente",
+      "nameEn": "Crispy Bhindi Chaat",
+      "descriptionEs": "Okra frita en bastoncitos cubierta con cebolla y tomate picados.",
+      "descriptionEn": "Matchstick okra fries topped with chopped onions and tomatoes.",
       "price": "$10.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-05",
-      "categoryId": "specialties",
-      "nameEs": "Kebabs Tandoori Surtidos",
-      "nameEn": "Tandoori Kababs Assortment",
-      "descriptionEs": "Surtido de tres exquisitos kebabs (seekh kabab, pollo tikka, pollo malai) servidos con salsa de ajo, eneldo y tamarindo.",
-      "descriptionEn": "Assortment of three kababs (seekh kabab, chicken tikka, chicken malai) served with tamarind garlic dill sauce.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Sin Gluten",
-        "Carnes"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "tandoori-taste-of-india-06",
+      "id": "tandoori-wings",
       "categoryId": "appetizers",
-      "nameEs": "Alitas Tandoori",
+      "nameEs": "Alitas tandoori",
       "nameEn": "Tandoori Wings",
-      "descriptionEs": "Alitas de pollo especiadas (6 piezas) marinadas y asadas a la perfección en nuestro horno tandoor.",
-      "descriptionEn": "Spiced chicken wings (6) grilled to perfection in the tandoor oven.",
+      "descriptionEs": "Alitas de pollo especiadas (6) asadas en horno tandoor.",
+      "descriptionEn": "Spiced chicken wings (6) grilled in the tandoor oven.",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Carnes"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-07",
-      "categoryId": "specialties",
-      "nameEs": "Masala Dosa",
-      "nameEn": "Masala Dosa",
-      "descriptionEs": "Crepe de arroz crujiente y fina rellena de papas y cebollas especiadas, servida con chutney de coco y sambhar.",
-      "descriptionEn": "Paper-thin crepe stuffed with spiced potatoes and onions, served with coconut chutney and sambhar.",
-      "price": "$15.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "tandoori-taste-of-india-08",
-      "categoryId": "specialties",
-      "nameEs": "Keema Dosa",
-      "nameEn": "Keema Dosa",
-      "descriptionEs": "Fina crepe crujiente rellena de cordero especiado, acompañada de chutney de coco y reconfortante sopa de lentejas sambhar.",
-      "descriptionEn": "Paper-thin crepe stuffed with spiced lamb, served with coconut chutney and savory lentil sambhar soup.",
+      "id": "shrimp-bagari",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones bagari",
+      "nameEn": "Shrimp Bagari",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$18.00",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Carnes"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-09",
-      "categoryId": "specialties",
-      "nameEs": "Pan Naan con Ajo",
-      "nameEn": "Garlic Naan",
-      "descriptionEs": "Clásico pan plano de harina fina horneado en el tandoor, sazonado con ajo picado y cilantro fresco.",
-      "descriptionEn": "Naan bread seasoned with minced garlic and cilantro, baked in the clay oven.",
+      "id": "garden-salad",
+      "categoryId": "salads-soups",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "Lechuga, garbanzos, tomate, pepino y zanahoria servidos con aderezo de yogur aparte.",
+      "descriptionEn": "Lettuce, chickpeas, tomatoes, cucumbers and carrots served with yogurt dressing on the side.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-salad",
+      "categoryId": "salads-soups",
+      "nameEs": "Ensalada de mango",
+      "nameEn": "Mango Salad",
+      "descriptionEs": "Mezcla de hojas tiernas con mango fresco servida con aderezo de ajonjolí.",
+      "descriptionEn": "Spring mix salad with fresh mango served with sesame seed dressing.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-coconut-soup",
+      "categoryId": "salads-soups",
+      "nameEs": "Sopa de tomate y coco",
+      "nameEn": "Tomato Coconut Soup",
+      "descriptionEs": "Sopa ligeramente especiada de tomate fresco y coco.",
+      "descriptionEn": "Mildly spiced fresh tomato and coconut flavored soup.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mulligatawny-soup",
+      "categoryId": "salads-soups",
+      "nameEs": "Sopa mulligatawny",
+      "nameEn": "Mulligatawny Soup",
+      "descriptionEs": "Sopa de lentejas con deliciosas verduras.",
+      "descriptionEn": "Lentil soup with delightful vegetables.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "naan",
+      "categoryId": "breads",
+      "nameEs": "Naan",
+      "nameEn": "Naan",
+      "descriptionEs": "Pan sin levadura de harina blanca fina horneado en horno tandoor.",
+      "descriptionEn": "Unleavened bread of fine white flour baked in the tandoor oven.",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-naan",
+      "categoryId": "breads",
+      "nameEs": "Naan de cebolla",
+      "nameEn": "Onion Naan",
+      "descriptionEs": "Pan naan sazonado con cebolla picada y cilantro.",
+      "descriptionEn": "Naan bread seasoned with minced onion and cilantro.",
       "price": "$6.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Panadería"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-10",
-      "categoryId": "specialties",
-      "nameEs": "Naan Relleno de Pollo Tikka",
+      "id": "chapati",
+      "categoryId": "breads",
+      "nameEs": "Chapati",
+      "nameEn": "Chapati",
+      "descriptionEs": "Pan plano integral sin levadura.",
+      "descriptionEn": "Unleavened whole wheat flatbread.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-naan",
+      "categoryId": "breads",
+      "nameEs": "Naan de ajo",
+      "nameEn": "Garlic Naan",
+      "descriptionEs": "Pan naan sazonado con ajo picado y cilantro.",
+      "descriptionEn": "Naan bread seasoned with minced garlic and cilantro.",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poori",
+      "categoryId": "breads",
+      "nameEs": "Poori",
+      "nameEn": "Poori",
+      "descriptionEs": "Pan integral inflado.",
+      "descriptionEn": "A puffed whole wheat bread.",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-roti",
+      "categoryId": "breads",
+      "nameEs": "Tandoori Roti",
+      "nameEn": "Tandoori Roti",
+      "descriptionEs": "Pan integral sin levadura horneado en horno tandoor.",
+      "descriptionEn": "Unleavened whole wheat bread baked in the tandoor oven.",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka-naan",
+      "categoryId": "breads",
+      "nameEs": "Naan de pollo tikka",
       "nameEn": "Chicken Tikka Naan",
-      "descriptionEs": "Pan naan fresco horneado en tandoor, generosamente relleno de pollo tikka picado y especias con cilantro.",
+      "descriptionEs": "Naan relleno de pollo tikka especiado picado y cilantro.",
       "descriptionEn": "Naan stuffed with spiced chopped chicken tikka and cilantro.",
       "price": "$8.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Carnes"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-11",
-      "categoryId": "specialties",
+      "id": "keema-naan",
+      "categoryId": "breads",
+      "nameEs": "Keema Naan",
+      "nameEn": "Keema Naan",
+      "descriptionEs": "Pan naan relleno de cordero especiado.",
+      "descriptionEn": "Naan bread stuffed with spiced lamb.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-naan",
+      "categoryId": "breads",
+      "nameEs": "Paneer Naan",
+      "nameEn": "Paneer Naan",
+      "descriptionEs": "Pan naan relleno de queso casero.",
+      "descriptionEn": "Naan bread stuffed with homemade cheese.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peshwari-naan",
+      "categoryId": "breads",
       "nameEs": "Peshwari Naan",
       "nameEn": "Peshwari Naan",
-      "descriptionEs": "Exquisito pan naan relleno de queso paneer casero, pasas dulces y nueces de anacardo.",
+      "descriptionEs": "Pan naan relleno de queso paneer, pasas y nuez de la India.",
       "descriptionEn": "Naan bread stuffed with paneer cheese, raisins, and cashew nuts.",
       "price": "$8.00",
-      "popular": true,
-      "badge": "Dulce",
-      "tags": [
-        "Vegetariano",
-        "Frutos Secos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "tandoori-taste-of-india-12",
-      "categoryId": "mains",
-      "nameEs": "Ensalada de la Casa (Garden Salad)",
-      "nameEn": "Garden Salad",
-      "descriptionEs": "Lechuga crujiente, garbanzos, tomates, pepinos y zanahorias, servidos con aderezo de yogur a un lado.",
-      "descriptionEn": "Lettuce, chickpeas, tomatoes, cucumbers, and carrots, served with yogurt dressing on the side.",
+      "id": "lachha-paratha",
+      "categoryId": "breads",
+      "nameEs": "Lachha Paratha",
+      "nameEn": "Lachha Paratha",
+      "descriptionEs": "Pan integral de varias capas horneado en horno tandoor.",
+      "descriptionEn": "Multi-layered whole wheat bread baked in a tandoor oven.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry",
+      "categoryId": "the-classics",
+      "nameEs": "Curry",
+      "nameEn": "Curry",
+      "descriptionEs": "Mezcla clásica de la casa de especias enteras y molidas, cocinada lentamente con cebolla, tomate, jengibre y ajo.",
+      "descriptionEn": "Classic house blend of whole and ground spices, slowly cooked with onions, tomatoes, ginger, and garlic.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala",
+      "categoryId": "the-classics",
+      "nameEs": "Masala",
+      "nameEn": "Masala",
+      "descriptionEs": "Nuestra famosa salsa de tomate y crema, sazonada con fenogreco, ajo fresco y especias indias molidas.",
+      "descriptionEn": "Our famous tomato-cream sauce, seasoned with fenugreek, fresh garlic and ground Indian spices.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "korma",
+      "categoryId": "the-classics",
+      "nameEs": "Korma",
+      "nameEn": "Korma",
+      "descriptionEs": "Una salsa rica y cremosa cocinada con almendras, nuez de la India molida y cardamomo.",
+      "descriptionEn": "A rich creamy sauce cooked with almonds, blended cashew nuts and cardamom spice.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vindaloo",
+      "categoryId": "the-classics",
+      "nameEs": "Vindaloo",
+      "nameEn": "Vindaloo",
+      "descriptionEs": "Un favorito de Goa: salsa de tomate intensa y ácida, mezclada con jengibre, ajo y chiles rojos.",
+      "descriptionEn": "A Goan favorite, fiery and tangy tomato-based gravy, blended with ginger, garlic and red chilies.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "madras",
+      "categoryId": "the-classics",
+      "nameEs": "Madras",
+      "nameEn": "Madras",
+      "descriptionEs": "Salsa estilo sureño hecha con coco, semillas de mostaza, chiles rojos y hojas de curry.",
+      "descriptionEn": "Southern-style sauce made with coconut, mustard seeds, red chilies and curry leaves.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saag",
+      "categoryId": "the-classics",
+      "nameEs": "Saag",
+      "nameEn": "Saag",
+      "descriptionEs": "Espinaca picada a la crema salteada con cebolla, jengibre y ajo.",
+      "descriptionEn": "A creamed chopped spinach sauteed with onions, ginger and garlic.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tadka-dal",
+      "categoryId": "the-classics",
+      "nameEs": "Tadka Dal",
+      "nameEn": "Tadka Dal",
+      "descriptionEs": "Lentejas moong amarillas cocinadas con hierbas frescas y tomate.",
+      "descriptionEn": "Yellow moong lentils cooked with fresh herbs and tomato.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dal-makhani",
+      "categoryId": "the-classics",
+      "nameEs": "Dal Makhani",
+      "nameEn": "Dal Makhani",
+      "descriptionEs": "Una mezcla de lentejas urad y rajma en una salsa cremosa de mantequilla.",
+      "descriptionEn": "A medley with urad and rajma lentils mixed into a buttery cream sauce.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biryani",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Biryani",
+      "nameEn": "Biryani",
+      "descriptionEs": "Arroz basmati al vapor con azafrán, sazonado con especias indias tradicionales.",
+      "descriptionEn": "Streamed saffron basmati rice seasoned with traditional Indian spices.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bindhi-bhuna",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Bindhi Bhuna",
+      "nameEn": "Bindhi Bhuna",
+      "descriptionEs": "Okra salteada con jengibre, ajo, cebolla y tomate en una salsa suave.",
+      "descriptionEn": "Okra sauteed with ginger, garlic, onions, and tomatoes tempered in a mild sauce.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-gobi",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Aloo Gobi",
+      "nameEn": "Aloo Gobi",
+      "descriptionEs": "Papa, tomate y coliflor sazonados con un toque de salsa a base de cebolla.",
+      "descriptionEn": "Seasoned potatoes, tomatoes, and cauliflower with a touch of an onion-based sauce.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baingan-bhartha",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Baingan Bhartha",
+      "nameEn": "Baingan Bhartha",
+      "descriptionEs": "Berenjena baby asada y machacada, cocida a fuego lento con una mezcla de hierbas frescas y especias.",
+      "descriptionEn": "Charred and mashed baby eggplant simmered with a medley of fresh herbs and spices.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "channa-masala",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Channa Masala",
+      "nameEn": "Channa Masala",
+      "descriptionEs": "Garbanzos en una salsa espesa de tomate de picor medio.",
+      "descriptionEn": "Chickpeas tossed in a medium spiced, thick tomato-based gravy.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malai-kofta",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Malai Kofta",
+      "nameEn": "Malai Kofta",
+      "descriptionEs": "Croquetas rellenas de verduras y paneer en salsa de almendra y nuez de la India, con sabor a cardamomo.",
+      "descriptionEn": "Vegetable and paneer-filled croquettes tossed in an almond and cashew nut sauce, flavored with cardamom.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-rogan-josh",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Cordero rogan josh",
+      "nameEn": "Lamb Rogan Josh",
+      "descriptionEs": "Cordero braseado lentamente con salsa a base de cebolla y combinado con una salsa tradicional de curry con yogur.",
+      "descriptionEn": "Slow-braised lamb cooked with onion-based gravy and combined with a traditional yogurt curry sauce.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-malabar",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Camarones malabar",
+      "nameEn": "Shrimp Malabar",
+      "descriptionEs": "Camarones jumbo cocinados en una deliciosa y aromática salsa con sabor a coco, sazonada con semillas de mostaza, pimienta negra y chiles rojos.",
+      "descriptionEn": "Jumbo Shrimp cooked in a delightful and aromatic sauce, flavored with coconut and seasoned with mustard seeds, black pepper, and red chilies.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matar-paneer",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Matar Paneer",
+      "nameEn": "Matar Paneer",
+      "descriptionEs": "Cubos de queso casero con chícharos en salsa de tomate, especiada con masala.",
+      "descriptionEn": "Homemade cheese cubes with green peas mixed into a tomato-based sauce, spiced with masala.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "keema-matter",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Keema Matter",
+      "nameEn": "Keema Matter",
+      "descriptionEs": "Cordero molido cocinado con chícharos en una salsa espesa de picor medio, en un curry clásico.",
+      "descriptionEn": "Ground lamb cooked with green peas in a medium spiced thick gravy in a classic curry.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-chop-masala",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Chuleta de cordero masala",
+      "nameEn": "Lamb Chop Masala",
+      "descriptionEs": "Tiernas chuletas de cordero en horno tandoor con jengibre, ajo, salsa de tomate y especias.",
+      "descriptionEn": "Tender lamb chops in the tandoor oven with ginger, garlic, tomato sauce, and spices.",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-methi",
+      "categoryId": "tandoori-house-specials",
+      "nameEs": "Pollo methi",
+      "nameEn": "Chicken Methi",
+      "descriptionEs": "Cubos de pollo con cebolla, jengibre, ajo y hojas de fenogreco (methi fresco) en salsa de picor medio.",
+      "descriptionEn": "Chicken cubes with onion, ginger, garlic, and Fenugreek leaves (fresh methi) in medium spiced gravy.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Pollo tikka",
+      "nameEn": "Chicken Tikka",
+      "descriptionEs": "Pechuga de pollo en cubos marinada con jengibre, ajo, pimienta blanca y yogur.",
+      "descriptionEn": "Cubed chicken breast marinated with ginger, garlic, white pepper, and yogurt.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seekh-kabab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Seekh Kabab",
+      "nameEn": "Seekh Kabab",
+      "descriptionEs": "Cordero molido fresco a la parrilla con hojas de cilantro, cebolla en rebanadas, pimiento y chiles verdes, enrollado en brochetas.",
+      "descriptionEn": "Grilled fresh ground lamb with cilantro leaves, sliced onions, bell peppers, and green chilies rolled on skewers.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-shrimp",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Camarones tandoori",
+      "nameEn": "Tandoori Shrimp",
+      "descriptionEs": "Camarones jumbo marinados en jengibre, ajo, jugo de limón y yogur, cocinados en horno tandoor.",
+      "descriptionEn": "Jumbo shrimp marinated in ginger, garlic, lemon juice, and yogurt, cooked in the tandoor oven.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-chicken",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Pollo tandoori",
+      "nameEn": "Tandoori Chicken",
+      "descriptionEs": "1/2 pollo con hueso marinado con jengibre y ajo, cocinado en horno tandoor.",
+      "descriptionEn": "1/2 chicken on the bone marinated with ginger and garlic, cooked in the tandoor oven.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-malai-kabab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Kebab malai de camarón",
+      "nameEn": "Shrimp Malai Kabab",
+      "descriptionEs": "Camarones jumbo marinados con jengibre, ajo, pimienta blanca, crema agria y yogur.",
+      "descriptionEn": "Jumbo shrimp marinated with ginger, garlic, white pepper, sour cream, yogurt.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-chops",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Chuletas de cordero",
+      "nameEn": "Lamb Chops",
+      "descriptionEs": "Chuletas de cordero de Nueva Zelanda marinadas en yogur, jengibre, ajo y jugo de limón, asadas en horno tandoor, servidas con arroz y verduras frescas.",
+      "descriptionEn": "New Zealand lamb chops, marinated in yogurt, ginger, garlic, and lemon juice, grilled in the tandoor oven, served with rice and fresh vegetables.",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-salmon",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Salmón tandoori",
+      "nameEn": "Tandoori Salmon",
+      "descriptionEs": "Filete de salmón marinado y cocinado en horno tandoor.",
+      "descriptionEn": "Salmon filet marinated and cooked in the tandoor oven.",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-branzino",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Branzino entero",
+      "nameEn": "Whole Branzino",
+      "descriptionEs": "Lubina europea marinada con hierbas y especias, cocinada en horno tandoor.",
+      "descriptionEn": "European bass marinated with herbs and spices, cooked in the tandoor oven.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-tikka",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Paneer Tikka",
+      "nameEn": "Paneer Tikka",
+      "descriptionEs": "Paneer en cubos marinado con jengibre, ajo, pimienta blanca y yogur.",
+      "descriptionEn": "Cubed paneer marinated with ginger, garlic, white pepper, and yogurt.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-mix-grill",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Parrillada mixta del chef",
+      "nameEn": "Chef Mix Grill",
+      "descriptionEs": "Kebabs surtidos (seekh kebab, pollo tikka, pollo malai, camarón tikka) servidos con salsa de tamarindo, ajo y eneldo.",
+      "descriptionEn": "Assorted kababs (seekh kabab, chicken tikka, chicken malai, shrimp tikka) served with tamarind garlic dill sauce.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-chicken",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Pollo entero",
+      "nameEn": "Whole Chicken",
+      "descriptionEs": "Pollo entero marinado con jengibre y ajo cocinado en horno tandoor.",
+      "descriptionEn": "Whole chicken marinated with ginger and garlic cooked in the tandoor oven.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-malai-kabab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Kebab malai de pollo",
+      "nameEn": "Chicken Malai Kabab",
+      "descriptionEs": "Pechuga de pollo en cubos marinada con jengibre, ajo, crema agria, pimienta blanca y yogur.",
+      "descriptionEn": "Cubed breast of chicken marinated with ginger, garlic, sour cream, white pepper, yogurt.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-seekh-kabab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "Seekh kebab de pollo",
+      "nameEn": "Chicken Seekh Kabab",
+      "descriptionEs": "Pollo molido fresco a la parrilla con hojas de cilantro, cebolla en rebanadas, pimiento y chiles verdes, enrollado en brochetas.",
+      "descriptionEn": "Grilled fresh ground chicken with cilantro leaves, sliced onions, bell peppers, and green chilies rolled on skewers.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "saag-paneer-side",
+      "categoryId": "sides",
+      "nameEs": "Saag paneer | Guarnición",
+      "nameEn": "Saag Paneer | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "channa-masala-side",
+      "categoryId": "sides",
+      "nameEs": "Channa masala | Guarnición",
+      "nameEn": "Channa Masala | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-gobi-side",
+      "categoryId": "sides",
+      "nameEs": "Aloo gobi | Guarnición",
+      "nameEn": "Aloo Gobi | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-curry-side",
+      "categoryId": "sides",
+      "nameEs": "Curry de verduras | Guarnición",
+      "nameEn": "Vegetable Curry | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-chutney-side",
+      "categoryId": "sides",
+      "nameEs": "Chutney de mango | Guarnición",
+      "nameEn": "Mango Chutney | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-pickle-side",
+      "categoryId": "sides",
+      "nameEs": "Encurtido picante | Guarnición",
+      "nameEn": "Hot Pickle | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raita-side",
+      "categoryId": "sides",
+      "nameEs": "Raita | Guarnición",
+      "nameEn": "Raita | Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice",
+      "categoryId": "sides",
+      "nameEs": "Arroz",
+      "nameEn": "Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gulab-jamun",
+      "categoryId": "desserts",
+      "nameEs": "Gulab Jamun",
+      "nameEn": "Gulab Jamun",
+      "descriptionEs": "Bolitas fritas de masa y leche servidas en un jarabe aromático de agua de rosas y miel.",
+      "descriptionEn": "Lightly fried dough and milk balls served in an aromatic rose water and honey syrup.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ras-malai",
+      "categoryId": "desserts",
+      "nameEs": "Ras Malai",
+      "nameEn": "Ras Malai",
+      "descriptionEs": "Pastelitos redondos y planos caseros de requesón endulzado, cocidos al vapor y remojados en leche dulce reducida, cubiertos con pistache.",
+      "descriptionEn": "Homemade flat, round cakes made from sweetened Cottage cheese that is steamed and soaked in sweet, reduced milk topped with pistachios.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kheer",
+      "categoryId": "desserts",
+      "nameEs": "Kheer",
+      "nameEn": "Kheer",
+      "descriptionEs": "Arroz con leche casero. Arroz con leche estilo indio cocinado con agua de rosas aromática, azafrán, frutas secas y nueces.",
+      "descriptionEn": "Homemade rice pudding. Indian-style rice pudding cooked with aromatic rose water with saffron, dried fruits, and nuts.",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-madness",
+      "categoryId": "desserts",
+      "nameEs": "Locura de mango",
+      "nameEn": "Mango Madness",
+      "descriptionEs": "Helado de mango y coco cubierto con delicioso jarabe de mango y crema batida.",
+      "descriptionEn": "Mango and coconut ice cream topped with delicious mango syrup and whipped cream.",
       "price": "$9.00",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-lassi",
+      "categoryId": "beverages",
+      "nameEs": "Lassi de mango",
+      "nameEn": "Mango Lassi",
+      "descriptionEs": "Yogur dulce batido con mango.",
+      "descriptionEn": "Churned sweet yogurt with mango.",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda",
+      "categoryId": "beverages",
+      "nameEs": "Refresco",
+      "nameEn": "Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-liter-pellegrino-water",
+      "categoryId": "beverages",
+      "nameEs": "Agua Pellegrino de 1 litro",
+      "nameEn": "1 Liter Pellegrino Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con una amplia variedad de platos vegetarianos tradicionales y opciones sin gluten. Por favor, avise a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we feature a wide variety of traditional vegetarian dishes and gluten-free options. Please inform your server of any allergies."
-    },
-    {
-      "qEs": "¿Tienen servicio de buffet o eventos privados?",
-      "qEn": "Do you offer a buffet or private catering?",
-      "aEs": "¡Sí! Únase a nosotros todos los domingos para nuestro delicioso Buffet de Almuerzo de 12:00 PM a 2:30 PM, y ofrecemos servicio de catering completo para eventos.",
-      "aEn": "Yes! Join us every Sunday for our delicious Lunch Buffet from 12:00 PM to 2:30 PM, and we offer full catering services for events."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para cenar en el restaurante?",
-      "qEn": "Do you accept dine-in reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono al nuestra tienda.",
-      "aEn": "We warmly welcome walk-ins and phone reservations at our store directly."
-    }
-  ]
+  "faqs": []
 }
