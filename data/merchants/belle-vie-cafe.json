@@ -2,26 +2,18 @@
   "storeInfo": {
     "id": "belle-vie-cafe",
     "name": "Belle Vie Cafe",
-    "tagline": "Wholesome, local, real food made with care in Guilford, CT | Comida real, local y saludable hecha con amor",
-    "address": "769 Boston Post Rd, Guilford, CT 06437",
+    "tagline": "Cafe in Guilford | Cafetería en Guilford",
+    "address": "20 Church Street, Guilford, CT 06437",
     "phone": "(203) 689-5060",
     "hours": {
-      "monday_friday": "8:00 AM - 4:00 PM",
-      "saturday": "8:00 AM - 4:00 PM",
-      "sunday": "8:00 AM - 3:00 PM"
+      "monday_friday": "8:00 AM - 3:30 PM",
+      "saturday": "8:00 AM - 3:30 PM",
+      "sunday": "8:00 AM - 3:30 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Cozy Loft Seating",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,302 +25,940 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
+      "id": "breakfast-sandwiches",
+      "nameEs": "Sándwiches de desayuno",
+      "nameEn": "Breakfast Sandwiches",
+      "icon": "Utensils"
+    },
+    {
       "id": "breakfast",
-      "nameEs": "Desayunos",
-      "nameEn": "Breakfast & Sandwiches",
+      "nameEs": "Desayuno",
+      "nameEn": "Breakfast",
       "icon": "Utensils"
     },
     {
-      "id": "crepes",
-      "nameEs": "Crepas Dulces y Saladas",
-      "nameEn": "Sweet & Savory Crepes",
+      "id": "sweet-crepes",
+      "nameEs": "Crepas dulces",
+      "nameEn": "Sweet Crepes",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Tartinas y Paninis",
-      "nameEn": "Tartines & Paninis",
+      "id": "savory-crepes",
+      "nameEs": "Crepas saladas",
+      "nameEn": "Savory Crepes",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "sandwiches-and-tartines",
+      "nameEs": "Sándwiches y tartines",
+      "nameEn": "Sandwiches and Tartines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "paninis",
+      "nameEs": "Paninis",
+      "nameEn": "Paninis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-soups",
+      "nameEs": "Ensaladas y sopas",
+      "nameEn": "Salads & Soups",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "espresso",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold",
+      "nameEs": "Frías",
+      "nameEn": "Cold",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot",
+      "nameEs": "Calientes",
+      "nameEn": "Hot",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "protein",
+      "nameEs": "Proteínas",
+      "nameEn": "Protein",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-bowls",
+      "nameEs": "Tazones de guarnición",
+      "nameEn": "Side Bowls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pastries-dessert",
+      "nameEs": "Repostería y postres",
+      "nameEn": "Pastries & Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sauces",
+      "nameEs": "Salsas",
+      "nameEn": "Sauces",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-salads",
+      "nameEs": "Ensaladas para catering",
+      "nameEn": "Catering Salads",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "belle-vie-cafe-01",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Huevo California",
-      "nameEn": "California Egg Sandwich",
-      "descriptionEs": "Huevo, queso cheddar, alioli picante y aguacate fresco servido en pan brioche artesanal.",
-      "descriptionEn": "Egg, cheddar cheese, spicy aioli, and fresh avocado served on a fresh brioche roll.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
+      "id": "egg-and-cheese-sandwich",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Sándwich de huevo y queso",
+      "nameEn": "Egg and Cheese Sandwich",
+      "descriptionEs": "Agrega tocino, jamón o salchicha $3.75",
+      "descriptionEn": "Add Bacon, Ham or Sausage $3.75",
+      "price": "$11.50",
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-02",
-      "categoryId": "breakfast",
-      "nameEs": "Bagel Keto con Salmón Ahumado",
+      "id": "california",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "California",
+      "nameEn": "California",
+      "descriptionEs": "Huevo, cheddar, alioli picante y aguacate",
+      "descriptionEn": "Egg, Cheddar, Spicy Aioli and Avocado",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "keto-bagel-with-lox",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Bagel keto con salmón ahumado (lox)",
       "nameEn": "Keto Bagel with Lox",
-      "descriptionEs": "Salmón ahumado, queso crema, cebolla morada, tomates y alcaparras sobre un bagel keto.",
-      "descriptionEn": "Smoked salmon, cream cheese, red onions, tomatoes, and capers on a keto bagel.",
-      "price": "$16.25",
-      "popular": true,
-      "badge": "Keto Friendly",
-      "tags": [
-        "Keto",
-        "Sin Azúcar Añadida"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "descriptionEs": "Salmón ahumado, queso crema, cebolla morada, tomates, alcaparras en un bagel keto",
+      "descriptionEn": "Smoked Salmon, Cream Cheese, Red Onions, Tomatoes, Capers on a Keto Bagel",
+      "price": "$16.75",
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-03",
+      "id": "2-eggs-your-way",
       "categoryId": "breakfast",
-      "nameEs": "Parfait de Yogur Griego Orgánico",
+      "nameEs": "2 huevos a tu gusto",
+      "nameEn": "2 Eggs Your Way",
+      "descriptionEs": "Con pan tostado a elección (integral o centeno) y ensalada pequeña. Agrega tocino, jamón o salchicha $3.75",
+      "descriptionEn": "With choice of toast (Whole Wheat or Rye) and Side Salad. Add Bacon, Ham, or Sausage $3.75",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-greek-yogurt-parfait",
+      "categoryId": "breakfast",
+      "nameEs": "Parfait de yogur griego orgánico",
       "nameEn": "Organic Greek Yogurt Parfait",
-      "descriptionEs": "Granola casera, yogur griego orgánico, bayas mixtas y miel orgánica pura.",
-      "descriptionEn": "Homemade granola, organic Greek yogurt, mixed berries, and organic honey.",
-      "price": "$14.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Orgánico"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "descriptionEs": "Granola casera, yogur griego orgánico, frutos rojos mixtos, miel orgánica",
+      "descriptionEn": "Homemade Granola, Organic Greek Yogurt, Mixed Berries, Organic Honey",
+      "price": "$14.75",
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-04",
+      "id": "french-toast",
       "categoryId": "breakfast",
-      "nameEs": "Tostadas Francesas Brioche",
+      "nameEs": "Tostada francesa",
       "nameEn": "French Toast",
-      "descriptionEs": "Pan brioche tostado a la perfección, cubierto con salsa de arándanos casera y mantequilla.",
-      "descriptionEn": "Brioche toast, homemade wild blueberry sauce, and butter.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Dulce",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
+      "descriptionEs": "Pan brioche tostado, compota de manzana orgánica casera, salsa de caramelo y helado de vainilla orgánico",
+      "descriptionEn": "Brioche Toast, Homemade Organic Apple Compote, Caramel Sauce, and Organic Vanilla Ice Cream",
+      "price": "$17.75",
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-05",
+      "id": "shakshuka",
       "categoryId": "breakfast",
       "nameEs": "Shakshuka",
       "nameEn": "Shakshuka",
-      "descriptionEs": "2 huevos soleados, salsa de tomate y pimientos, queso de cabra, aguacate y pan focaccia.",
-      "descriptionEn": "2 sunny eggs, tomato and peppers sauce, goat cheese, avocado, and focaccia.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano",
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "belle-vie-cafe-06",
-      "categoryId": "crepes",
-      "nameEs": "Crepa Clásica de Nutella",
-      "nameEn": "Classic Crepe",
-      "descriptionEs": "Crepa delicada rellena de Nutella cremosa con su elección de fresas frescas o plátano.",
-      "descriptionEn": "Delicate crepe filled with Nutella and your choice of fresh strawberry or banana.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Dulce",
-      "tags": [
-        "Vegetariano",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "belle-vie-cafe-07",
-      "categoryId": "crepes",
-      "nameEs": "Crepa de Cheesecake de Limón y Arándanos",
-      "nameEn": "Lemon Blueberry Cheesecake Crepe",
-      "descriptionEs": "Crema de queso al limón y salsa casera de arándanos silvestres sobre crepa recién hecha.",
-      "descriptionEn": "Lemon cheese cream and homemade wild blueberry sauce folded into a warm crepe.",
-      "price": "$15.95",
-      "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Casero",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "belle-vie-cafe-08",
-      "categoryId": "crepes",
-      "nameEs": "Crepa de Pollo y Alcachofa",
-      "nameEn": "Chicken and Artichoke Crepe",
-      "descriptionEs": "Pollo a la parrilla, alcachofa rostizada, queso mozzarella y pesto casero.",
-      "descriptionEn": "Grilled chicken, roasted artichoke, mozzarella, and homemade pesto.",
+      "descriptionEs": "2 huevos estrellados, salsa de tomate y pimientos, queso de cabra, aguacate, focaccia",
+      "descriptionEn": "2 Sunny Eggs, Tomato and Peppers Sauce, Goat Cheese, Avocado, Focaccia",
       "price": "$17.95",
-      "popular": true,
-      "badge": "Salado",
-      "tags": [
-        "Fresco",
-        "Hecho en Casa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-09",
-      "categoryId": "crepes",
-      "nameEs": "Crepa de Champiñones y Queso de Cabra",
-      "nameEn": "Mushroom and Goat Cheese Crepe",
-      "descriptionEs": "Hongos silvestres salteados, tocino crujiente, cebolla caramelizada y queso de cabra cremoso.",
-      "descriptionEn": "Wild mushrooms, bacon, caramelized onion, and creamy goat cheese.",
+      "id": "3-egg-omelet-served-with-a-side-of-mixed-green-salad",
+      "categoryId": "breakfast",
+      "nameEs": "Omelet de 3 huevos servido con ensalada de hojas verdes mixtas",
+      "nameEn": "3 Egg Omelet Served With A Side Of Mixed Green Salad",
+      "descriptionEs": "Elige 3: espinaca, champiñones, pimientos, cebolla caramelizada, tomates, queso cheddar, queso de cabra, jamón, salchicha, tocino. Con pan tostado a elección (integral o centeno)",
+      "descriptionEn": "Pick 3 of: Spinach, Mushrooms, Peppers, Caramelized Onions, Tomatoes, Cheddar Cheese, Goat Cheese, Ham, Sausage, Bacon. With choice of toast (Whole Wheat or Rye)",
+      "price": "$19.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "croissant-sandwich-platter",
+      "categoryId": "breakfast",
+      "nameEs": "Charola de sándwiches de croissant",
+      "nameEn": "Croissant Sandwich Platter",
+      "descriptionEs": "12 mitades con huevos revueltos, tocino y queso cheddar",
+      "descriptionEn": "12 Halves with Scrambled Eggs, Bacon and Cheddar Cheese",
+      "price": "$85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "keto-lox-platter",
+      "categoryId": "breakfast",
+      "nameEs": "Charola keto de salmón ahumado",
+      "nameEn": "Keto Lox Platter",
+      "descriptionEs": "12 mitades de bagels keto, salmón ahumado, queso ricotta batido con paprika y aceite de oliva, y tomates rebanados. -Agrega huevos duros $18.00, -Agrega cebolla morada $6.00, -Agrega alcaparras $6.00",
+      "descriptionEn": "12 Halves Keto Bagels, Smoked Salmon, Whipped Ricotta Cheese with Paprika and Olive Oil, and Sliced Tomatoes. -Add Hard Boiled Eggs $18.00, -Add Red Onions $6.00, -Add Capers $6.00",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smash-avocado-platter",
+      "categoryId": "breakfast",
+      "nameEs": "Charola de aguacate machacado",
+      "nameEn": "Smash Avocado Platter",
+      "descriptionEs": "16 mitades de pan integral tostado con aguacate machacado, tomates cherry y rábano. -Agrega huevos duros $18.00, -Agrega tocino $18.00",
+      "descriptionEn": "16 Halves Whole Wheat Toast with Smashed Avocado, Cherry Tomatoes, and Radish. -Add Hard Boiled Eggs $18.00, -Add Bacon $18.00",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crepe-platter",
+      "categoryId": "breakfast",
+      "nameEs": "Charola de crepas",
+      "nameEn": "Crepe Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$115.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-crepe",
+      "categoryId": "sweet-crepes",
+      "nameEs": "Crepa clásica",
+      "nameEn": "Classic Crepe",
+      "descriptionEs": "Nutella con fresa o plátano",
+      "descriptionEn": "Nutella with Strawberry or Banana",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simple-jen-2-crepes",
+      "categoryId": "sweet-crepes",
+      "nameEs": "Simple Jen (2 crepas)",
+      "nameEn": "Simple Jen (2 Crepes)",
+      "descriptionEs": "Mantequilla y azúcar con canela",
+      "descriptionEn": "Butter and Cinnamon Sugar",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-carmel-crepe",
+      "categoryId": "sweet-crepes",
+      "nameEs": "Crepa de manzana con caramelo",
+      "nameEn": "Apple Carmel Crepe",
+      "descriptionEs": "Compota de manzana casera, nueces pecanas y salsa de caramelo",
+      "descriptionEn": "Homemade Apple Compote, Pecans and Caramel Sauce",
+      "price": "$16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-cheesecake-crepe",
+      "categoryId": "sweet-crepes",
+      "nameEs": "Crepa de cheesecake de calabaza",
+      "nameEn": "Pumpkin Cheesecake Crepe",
+      "descriptionEs": "Crema de queso con calabaza orgánica, galletas graham y azúcar con canela",
+      "descriptionEn": "Organic Pumpkin Cheese Cream, Graham Crackers, and Cinnamon Sugar",
+      "price": "$16.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bacon-crepe",
+      "categoryId": "savory-crepes",
+      "nameEs": "Crepa de pollo con tocino",
+      "nameEn": "Chicken Bacon Crepe",
+      "descriptionEs": "Pollo a la parrilla, tocino, espinaca, mozzarella y pesto casero",
+      "descriptionEn": "Grilled Chicken, Bacon, Spinach, Mozzarella, and Homemade Pesto",
+      "price": "$18.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-egg-and-cheese-crepe",
+      "categoryId": "savory-crepes",
+      "nameEs": "Crepa de jamón, huevo y queso",
+      "nameEn": "Ham, Egg and Cheese Crepe",
+      "descriptionEs": "Jamón, queso suizo y un huevo estrellado",
+      "descriptionEn": "Ham, Swiss, and a Sunny Side up Egg",
       "price": "$16.95",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Salado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-10",
-      "categoryId": "mains",
-      "nameEs": "Croque Monsieur",
+      "id": "butternut-squash-and-kale-crepe",
+      "categoryId": "savory-crepes",
+      "nameEs": "Crepa de calabaza butternut y kale",
+      "nameEn": "Butternut Squash and Kale Crepe",
+      "descriptionEs": "Calabaza butternut, hongos silvestres, kale, queso de cabra, nueces pecanas y glaseado balsámico",
+      "descriptionEn": "Butternut Squash, Wild Mushrooms, Kale, Goat Cheese, Pecans and Balsamic Glaze",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "croque-monsieur",
+      "categoryId": "sandwiches-and-tartines",
+      "nameEs": "Croque monsieur",
       "nameEn": "Croque Monsieur",
-      "descriptionEs": "Jamón y queso suizo fundido, salsa bechamel cremosa, servido con guarnición de ensalada fresca.",
-      "descriptionEn": "Ham & Swiss cheese, rich bechamel sauce, and a side of mixed green salad.",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "b-l-t-a",
+      "categoryId": "sandwiches-and-tartines",
+      "nameEs": "B.L.T.A (tocino, lechuga, tomate y aguacate)",
+      "nameEn": "B.L.T.A",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmesan-tartine",
+      "categoryId": "sandwiches-and-tartines",
+      "nameEs": "Tartine de berenjena a la parmesana",
+      "nameEn": "Eggplant Parmesan Tartine",
+      "descriptionEs": "Ragú de berenjena y tomate, queso mozzarella fresco, parmesano y glaseado balsámico en pan de masa madre tostado",
+      "descriptionEn": "Eggplant and Tomato Ragu, Fresh Mozzarella Cheese, Parmesan and Balsamic Glaze on Sourdough Toast",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "sandwiches-and-tartines",
+      "nameEs": "Pan tostado con aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "Aguacate, calabaza butternut asada, queso de cabra, pepitas y miel picante en pan de masa madre tostado",
+      "descriptionEn": "Avocado, Roasted Butternut Squash, Goat Cheese, Pepitas and Hot Honey on Sourdough Toast",
       "price": "$18.95",
-      "popular": true,
-      "badge": "Clásico Francés",
-      "tags": [
-        "Tradicional",
-        "Horneado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-11",
-      "categoryId": "mains",
-      "nameEs": "Tartina de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Tartine",
-      "descriptionEs": "Hongos silvestres salteados, huevos revueltos, queso manchego, aceite de trufa y semillas de cáñamo sobre pan masa madre.",
-      "descriptionEn": "Sauteed wild mushrooms, scrambled eggs, Manchego cheese, truffle oil, hemp seeds, on sourdough toast.",
-      "price": "$17.25",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Artesanal",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
+      "id": "chicken-and-avocado",
+      "categoryId": "paninis",
+      "nameEs": "Pollo y aguacate",
+      "nameEn": "Chicken and Avocado",
+      "descriptionEs": "Pollo a la parrilla, tocino, espinaca, queso cheddar, aguacate",
+      "descriptionEn": "Grilled Chicken, Bacon, Spinach, Cheddar Cheese, Avocado",
+      "price": "$19.75",
       "ctaType": "in_store"
     },
     {
-      "id": "belle-vie-cafe-12",
-      "categoryId": "mains",
-      "nameEs": "Panini de Mortadella y Arúgula",
-      "nameEn": "Mortadella and Arugula Panini",
-      "descriptionEs": "Mortadella italiana, arúgula fresca, queso stracciatella, pesto casero y pistache tostado.",
-      "descriptionEn": "Mortadella, fresh arugula, stracciatella cheese, homemade pesto, and toasted pistachio.",
-      "price": "$19.15",
-      "popular": true,
-      "badge": "Nuevo",
-      "tags": [
-        "Italiano",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "short-rib-panini",
+      "categoryId": "paninis",
+      "nameEs": "Panini de costilla corta",
+      "nameEn": "Short Rib Panini",
+      "descriptionEs": "Costilla corta braseada, queso cheddar, arúgula y cebolla morada encurtida",
+      "descriptionEn": "Braised Short Rib, Cheddar Cheese, Arugula and Red Pickled Onions",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto-and-buratta",
+      "categoryId": "paninis",
+      "nameEs": "Prosciutto y burrata",
+      "nameEn": "Prosciutto and Buratta",
+      "descriptionEs": "Prosciutto di Parma, burrata, tomates asados y pesto casero",
+      "descriptionEn": "Prosciutto Di Parma, Buratta, Roasted Tomatoes and Homemade Pesto",
+      "price": "$19.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day-cup",
+      "categoryId": "salads-soups",
+      "nameEs": "Sopa del día (taza)",
+      "nameEn": "Soup of the Day Cup",
+      "descriptionEs": "Cambia diariamente - taza",
+      "descriptionEn": "Changes Daily - Cup",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day-bowl",
+      "categoryId": "salads-soups",
+      "nameEs": "Sopa del día (tazón)",
+      "nameEn": "Soup of the Day Bowl",
+      "descriptionEs": "Cambia diariamente - tazón",
+      "descriptionEn": "Changes Daily - Bowl",
+      "price": "$11.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-arugula-salad",
+      "categoryId": "salads-soups",
+      "nameEs": "Ensalada de arúgula de la cosecha",
+      "nameEn": "Harvest Arugula Salad",
+      "descriptionEs": "Arúgula orgánica, manzanas orgánicas, jícama, zanahoria rallada, queso de cabra, nueces y vinagreta casera de miel y limón",
+      "descriptionEn": "Organic Arugula, Organic Apples, Jicama, Shaved Carrots, Goat Cheese, Walnuts, and Homemade Honey Lemon Vinaigrette",
+      "price": "$19.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-cobb-salad",
+      "categoryId": "salads-soups",
+      "nameEs": "Ensalada Cobb de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Cobb Salad",
+      "descriptionEs": "Hojas verdes mixtas, pollo a la parrilla, tocino, tomates cherry, aguacate, queso azul, huevo duro, vinagreta casera de balsámico blanco",
+      "descriptionEn": "Mixed Greens, Grilled Chicken, Bacon, Cherry Tomatoes, Avocado, Blue Cheese, Hard Boiled Egg, Homemade White Balsamic Vinaigrette",
+      "price": "$19.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grain-bowl",
+      "categoryId": "salads-soups",
+      "nameEs": "Tazón de granos",
+      "nameEn": "Grain Bowl",
+      "descriptionEs": "Quinoa orgánica, calabaza butternut asada, kale, garbanzos, aguacate, pepitas y vinagreta casera de limón y miel",
+      "descriptionEn": "Organic Quinoa, Roasted Butternut Squash, Kale, Chickpeas, Avocado, Pepitas, and Homemade Lemon Honey Vinaigrette",
+      "price": "$18.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Agrega jamón o pollo $5.50",
+      "descriptionEn": "Add Ham or Chicken $5.50",
+      "price": "$11.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "kids-menu",
+      "nameEs": "Quesadilla de queso",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "Agrega pollo $5.50",
+      "descriptionEn": "Add Chicken $5.50",
+      "price": "$11.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-cheeseburger",
+      "categoryId": "kids-menu",
+      "nameEs": "Hamburguesa con queso de res alimentada con pasto",
+      "nameEn": "Grass Fed Cheeseburger",
+      "descriptionEs": "Hamburguesa 100% de res alimentada con pasto, queso cheddar, pan brioche",
+      "descriptionEn": "100% Grass Fed Burger, Cheddar Cheese, Brioche Bun",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "espresso",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macchiato",
+      "categoryId": "espresso",
+      "nameEs": "Macchiato",
+      "nameEn": "Macchiato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cortado",
+      "categoryId": "espresso",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "latte",
+      "categoryId": "espresso",
+      "nameEs": "Latte",
+      "nameEn": "Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "espresso",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "americano",
+      "categoryId": "espresso",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flat-white",
+      "categoryId": "espresso",
+      "nameEs": "Flat white",
+      "nameEn": "Flat White",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mocha",
+      "categoryId": "espresso",
+      "nameEs": "Moca",
+      "nameEn": "Mocha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-eye",
+      "categoryId": "espresso",
+      "nameEs": "Red eye",
+      "nameEn": "Red Eye",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-brew",
+      "categoryId": "cold",
+      "nameEs": "Cold brew",
+      "nameEn": "Cold Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-latte",
+      "categoryId": "cold",
+      "nameEs": "Latte helado",
+      "nameEn": "Iced Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-mocha",
+      "categoryId": "cold",
+      "nameEs": "Moca helado",
+      "nameEn": "Iced Mocha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "cold",
+      "nameEs": "Té helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai",
+      "categoryId": "cold",
+      "nameEs": "Chai helado",
+      "nameEn": "Iced Chai",
+      "descriptionEs": "Especiado o de vainilla",
+      "descriptionEn": "Spiced or Vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha",
+      "categoryId": "cold",
+      "nameEs": "Matcha helado",
+      "nameEn": "Iced Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "cold",
+      "nameEs": "Limonada",
+      "nameEn": "Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-americano",
+      "categoryId": "cold",
+      "nameEs": "Americano helado",
+      "nameEn": "Iced Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "daily-brew",
+      "categoryId": "hot",
+      "nameEs": "Café del día",
+      "nameEn": "Daily Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cafe-au-lait",
+      "categoryId": "hot",
+      "nameEs": "Café au lait",
+      "nameEn": "Cafe Au Lait",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tea",
+      "categoryId": "hot",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chai",
+      "categoryId": "hot",
+      "nameEs": "Chai",
+      "nameEn": "Chai",
+      "descriptionEs": "Especiado o de vainilla",
+      "descriptionEn": "Spiced or Vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha",
+      "categoryId": "hot",
+      "nameEs": "Matcha",
+      "nameEn": "Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-cocoa",
+      "categoryId": "hot",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Cocoa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "london-fog",
+      "categoryId": "hot",
+      "nameEs": "London fog",
+      "nameEn": "London Fog",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belle-vie-house-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la casa Belle Vie",
+      "nameEn": "Belle Vie House Salad",
+      "descriptionEs": "Hojas verdes mixtas, tomates cherry, pepino, garbanzos, cebolla morada, rábano y queso de cabra, con vinagreta casera de balsámico blanco",
+      "descriptionEn": "Mixed Greens, Cherry Tomatoes, Cucumber, Chickpeas, Red Onion, Radish, and Goat Cheese, with Homemade White Balsamic Vinaigrette",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grain-bowl-salads",
+      "categoryId": "salads",
+      "nameEs": "Tazón de granos (Ensaladas)",
+      "nameEn": "Grain Bowl (Salads)",
+      "descriptionEs": "Quinoa orgánica, kale salteado, aguacate, calabacita asada, pistache y vinagreta casera de limón y miel",
+      "descriptionEn": "Organic Quinoa, Sauteed Kale, Avocado, Roasted Zucchini, Pistachio, and Homemade Lemon Honey Vinaigrette",
+      "price": "$105.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César de kale",
+      "nameEn": "Kale Caesar Salad",
+      "descriptionEs": "Kale crujiente, crutones de ajo caseros, queso parmesano rallado y aderezo César casero",
+      "descriptionEn": "Crispy Kale, Homemade Garlic Croutons, Shaved Parmesan Cheese, and Homemade Caesar Dressing",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pasta",
+      "nameEn": "Pasta Salad",
+      "descriptionEs": "Pasta orgánica, tomates cherry, alcachofas, aceitunas kalamata, alcaparras, rábano y queso cheddar, con vinagreta casera de balsámico blanco",
+      "descriptionEn": "Organic Pasta, Cherry Tomatoes, Artichokes, Kalamata Olives, Capers, Radish, and Cheddar Cheese, with Homemade White Balsamic Vinaigrette",
+      "price": "$90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-avocado-sandwich-platter",
+      "categoryId": "sandwiches",
+      "nameEs": "Charola de sándwiches de pollo y aguacate",
+      "nameEn": "Chicken & Avocado Sandwich Platter",
+      "descriptionEs": "12 mitades, pollo a la parrilla, tocino, espinaca, queso cheddar",
+      "descriptionEn": "12 Halves, Grilled Chicken, Bacon, Spinach, Cheddar Cheese",
+      "price": "$105.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto-mozzarella-sandwich-platter",
+      "categoryId": "sandwiches",
+      "nameEs": "Charola de sándwiches de prosciutto y mozzarella",
+      "nameEn": "Prosciutto & Mozzarella Sandwich Platter",
+      "descriptionEs": "12 mitades, prosciutto di Parma, rúcula, mozzarella y tomates rebanados",
+      "descriptionEn": "12 Halves, Prosciutto di Parma, Rucola, Mozzarella, and Sliced Tomatoes",
+      "price": "$115.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-turkey-swiss-sandwich-platter",
+      "categoryId": "sandwiches",
+      "nameEs": "Charola de sándwiches de pavo orgánico y queso suizo",
+      "nameEn": "Organic Turkey & Swiss Sandwich Platter",
+      "descriptionEs": "12 mitades, pavo orgánico, hojas verdes mixtas, tomates rebanados y queso suizo",
+      "descriptionEn": "12 Halves, Organic Turkey, Mixed Greens, Sliced Tomatoes, and Swiss Cheese",
+      "price": "$105.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-avocado-sandwich-platter",
+      "categoryId": "sandwiches",
+      "nameEs": "Charola de sándwiches de pepino y aguacate",
+      "nameEn": "Cucumber & Avocado Sandwich Platter",
+      "descriptionEs": "12 mitades, pepino rebanado, aguacate, germinados y queso cheddar",
+      "descriptionEn": "12 Halves, Shaved Cucumber, Avocado, Sprouts, and Cheddar Cheese",
+      "price": "$100.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-wild-caught-salmon-platter",
+      "categoryId": "protein",
+      "nameEs": "Charola de salmón salvaje sellado",
+      "nameEn": "Pan-Seared Wild Caught Salmon Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$125.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-platter",
+      "categoryId": "protein",
+      "nameEs": "Charola de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-platter",
+      "categoryId": "protein",
+      "nameEs": "Charola de salmón ahumado",
+      "nameEn": "Smoked Salmon Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "100-grass-fed-sirloin-steak-platter",
+      "categoryId": "protein",
+      "nameEs": "Charola de bistec sirloin 100% de res alimentada con pasto",
+      "nameEn": "100% Grass-Fed Sirloin Steak Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$125.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-herb-potatoes",
+      "categoryId": "side-bowls",
+      "nameEs": "Papas asadas con hierbas",
+      "nameEn": "Roasted Herb Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-quinoa-pilaf",
+      "categoryId": "side-bowls",
+      "nameEs": "Pilaf de quinoa orgánica",
+      "nameEn": "Organic Quinoa Pilaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-butternut-squash",
+      "categoryId": "side-bowls",
+      "nameEs": "Calabaza butternut asada",
+      "nameEn": "Roasted Butternut Squash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-quiche",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Quiche de temporada",
+      "nameEn": "Seasonal Quiche",
+      "descriptionEs": "-Para 8 personas",
+      "descriptionEn": "-Serves 8 people",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-breakfast-pastries-platter",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Charola de repostería surtida para desayuno",
+      "nameEn": "Assorted Breakfast Pastries Platter",
+      "descriptionEs": "Incluye: croissants, croissants de chocolate, scones, bisquets, daneses y rollos de canela. Grande para 20-30 personas / chica para 15-20 personas",
+      "descriptionEn": "Includes: Croissants, Chocolate Croissants, Scones, Biscuits, Danishes, and Cinnamon Rolls. Large Serves 20-30 People / Small Serves 15-20 People",
+      "price": "$95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-cookies-brownies-platter",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Charola surtida de galletas y brownies",
+      "nameEn": "Assorted Cookies & Brownies Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basque-cheesecake",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Cheesecake vasco",
+      "nameEn": "Basque Cheesecake",
+      "descriptionEs": "-9 pulgadas",
+      "descriptionEn": "-9 Inch",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-bread-pudding",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Budín de pan con chispas de chocolate",
+      "nameEn": "Chocolate Chip Bread Pudding",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-strudel",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Strudel de manzana",
+      "nameEn": "Apple Strudel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-salad-bowl",
+      "categoryId": "pastries-dessert",
+      "nameEs": "Tazón de ensalada de frutas",
+      "nameEn": "Fruit Salad Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8-ounce-sauces",
+      "categoryId": "sauces",
+      "nameEs": "Salsas de 8 onzas",
+      "nameEn": "8-Ounce Sauces",
+      "descriptionEs": "-Chimichurri, alioli de chipotle, alioli de limón y hierbas, pesto, labne",
+      "descriptionEn": "-Chimichurri, Chipotle Aioli, Lemon Herb Aioli, Pesto, Labne",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grain-bowl-catering-salads",
+      "categoryId": "catering-salads",
+      "nameEs": "Tazón de granos (Ensaladas para catering)",
+      "nameEn": "Grain Bowl (Catering Salads)",
+      "descriptionEs": "Quinoa orgánica, kale salteado, aguacate, calabacita asada, pistache y vinagreta casera de limón y miel",
+      "descriptionEn": "Organic Quinoa, Sauteed Kale, Avocado, Roasted Zucchini, Pistachio, and Homemade Lemon Honey Vinaigrette",
+      "price": "$105.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones sin gluten o aptas para dietas especiales?",
-      "qEn": "Do you offer gluten-free or special diet options?",
-      "aEs": "¡Sí! Ofrecemos opciones sin gluten (como crepas y pan tostado GF), así como alternativas veganas, keto y paleo.",
-      "aEn": "Yes! We offer gluten-free choices (like GF crepes and toast), along with vegan, keto, and paleo options."
-    },
-    {
-      "qEs": "¿Tienen servicio de catering para eventos en Guilford y la costa?",
-      "qEn": "Do you offer catering services in Guilford and the shoreline?",
-      "aEs": "Sí, ofrecemos servicio de catering completo con charolas de desayuno, almuerzos, sándwiches y repostería para todo tipo de eventos.",
-      "aEn": "Yes, we offer complete catering with breakfast platters, lunch spreads, sandwiches, and pastries for all gatherings."
-    },
-    {
-      "qEs": "¿Tienen espacio para sentarse a trabajar o relajarse?",
-      "qEn": "Do you have space to sit down, work, or relax?",
-      "aEs": "Contamos con una planta baja animada y un acogedor altillo (loft) brillante arriba, perfecto para relajarse o disfrutar de nuestro café.",
-      "aEn": "We have a lively downstairs area and a bright, cozy loft upstairs, perfect for relaxing or enjoying our artisan coffee."
-    }
-  ]
+  "faqs": []
 }

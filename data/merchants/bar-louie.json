@@ -1,27 +1,18 @@
 {
   "storeInfo": {
     "id": "bar-louie",
-    "name": "Bar Louie",
-    "tagline": "Craft Cocktails, Food & Neighborhood Bar in Waterbury, CT",
-    "address": "219 Chase Ave, Waterbury, CT 06708",
-    "phone": "",
+    "name": "Louie's Pizza House",
+    "tagline": "Pizza and Italian restaurant in Waterbury | Restaurante de pizza y comida italiana en Waterbury",
+    "address": "126 East Main St. Waterbury CT 06702",
+    "phone": "(203) 754-2998",
     "hours": {
-      "monday_friday": "11:00 AM - 12:00 AM",
-      "saturday": "11:00 AM - 1:00 AM",
-      "sunday": "11:00 AM - 11:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Full Bar"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -33,280 +24,1142 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "pizzas",
+      "nameEs": "Pizzas",
+      "nameEn": "Pizzas",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "wings",
+      "nameEs": "Alitas",
+      "nameEn": "Wings",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grinders",
+      "nameEs": "Grinders",
+      "nameEn": "Grinders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wraps",
+      "nameEs": "Wraps",
+      "nameEn": "Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizers-sides",
+      "nameEs": "Entradas / Acompañamientos",
+      "nameEn": "Appetizers / Sides",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "party-catering-platters",
+      "nameEs": "Charolas para fiestas / catering",
+      "nameEn": "Party / Catering Platters",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "bar-louie-01",
-      "categoryId": "appetizers",
-      "nameEs": "Bocaditos de Pretzel con Queso",
-      "nameEn": "Bavarian Pretzel Bites",
-      "descriptionEs": "Pretzel suave y caliente horneado al horno, servido con salsa de queso cheddar y cerveza artesanal y mostaza picante.",
-      "descriptionEn": "Warm, soft-baked artisan pretzel bites served with craft beer cheddar cheese dip and spicy mustard.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "cheese-pizza",
+      "categoryId": "pizzas",
+      "nameEs": "Pizza de queso",
+      "nameEn": "Cheese Pizza",
+      "descriptionEs": "¡Puedes agregar cualquier ingrediente!",
+      "descriptionEn": "You may add any Toppings!",
+      "price": "$11.40",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-02",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas Crujientes Estilo Buffalo",
-      "nameEn": "Crispy Buffalo Wings",
-      "descriptionEs": "Alitas de pollo jugosas y crujientes bañadas en nuestra salsa buffalo secreta, acompañadas de aderezo ranch y apio fresco.",
-      "descriptionEn": "Juicy and crispy chicken wings tossed in our signature buffalo sauce, served with cool ranch dressing and fresh celery.",
-      "price": "$15.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Picante",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "cheese-calzone",
+      "categoryId": "calzones",
+      "nameEs": "Calzone de queso",
+      "nameEn": "Cheese Calzone",
+      "descriptionEs": "Ricotta y mozzarella: ¡puedes agregar cualquier relleno!",
+      "descriptionEn": "Ricotta and mozzarella - You may add any fillings!",
+      "price": "$11.75",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-03",
-      "categoryId": "appetizers",
-      "nameEs": "Dip de Espinacas y Alcachofas",
-      "nameEn": "Spinach Artichoke Dip",
-      "descriptionEs": "Mezcla cremosa de espinacas, alcachofas y quesos fundidos, servida con totopos de tortilla crujientes calientes.",
-      "descriptionEn": "A creamy blend of spinach, artichokes, and melted cheeses, served piping hot with crispy tortilla chips.",
-      "price": "$13.25",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "6-wings",
+      "categoryId": "wings",
+      "nameEs": "6 alitas",
+      "nameEn": "6 Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Gastro de la Casa",
-      "nameEn": "The Gastro Burger",
-      "descriptionEs": "Carne de res angus jugosa, queso cheddar blanco maduro, tocino ahumado, lechuga, tomate, cebolla roja y salsa especial en pan brioche.",
-      "descriptionEn": "Juicy angus beef patty, sharp white cheddar, smoked bacon, lettuce, tomato, red onion, and signature spread on a toasted brioche bun.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Estrella",
-      "tags": [
-        "Carne",
-        "Popular"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "12-wings",
+      "categoryId": "wings",
+      "nameEs": "12 alitas",
+      "nameEn": "12 Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.99",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-05",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa con Queso y Tocino Ahumado",
-      "nameEn": "Smokehouse Bacon Burger",
-      "descriptionEs": "Doble carne jugosa, queso gouda ahumado, tocino crujiente, aros de cebolla fritos y salsa barbacoa artesanal.",
-      "descriptionEn": "Double smashed patties, smoked gouda, crispy bacon, beer-battered onion rings, and sweet bourbon BBQ sauce.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "24-wings",
+      "categoryId": "wings",
+      "nameEs": "24 alitas",
+      "nameEn": "24 Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.99",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-06",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo Crispy Nashville",
-      "nameEn": "Nashville Hot Chicken Sandwich",
-      "descriptionEs": "Pechuga de pollo empanizada picante estilo Nashville, pepinillos crujientes y ensalada de repollo cremosa en pan brioche tostado.",
-      "descriptionEn": "Spicy hand-breaded crispy chicken breast, tangy pickles, and creamy coleslaw on a toasted brioche bun.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Pollo",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "36-wings",
+      "categoryId": "wings",
+      "nameEs": "36 alitas",
+      "nameEn": "36 Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$41.95",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-07",
-      "categoryId": "specialties",
-      "nameEs": "Tacos Callejeros de Birria de Res",
-      "nameEn": "Crispy Beef Birria Tacos",
-      "descriptionEs": "Tres tacos de res tierna cocinada a fuego lento con queso fundido, cilantro, cebolla y consomé caliente para sumergir.",
-      "descriptionEn": "Three crispy tacos filled with tender slow-cooked beef, melted cheese, cilantro, onions, and a side of rich warm consommé for dipping.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "50-wings",
+      "categoryId": "wings",
+      "nameEs": "50 alitas",
+      "nameEn": "50 Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$56.95",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-08",
-      "categoryId": "specialties",
-      "nameEs": "Flatbread Margherita al Horno",
-      "nameEn": "Margherita Flatbread",
-      "descriptionEs": "Masa crujiente cubierta con salsa de tomate marinara, rodajas de mozzarella fresca, tomates cherry y albahaca fresca con un toque de reducción de balsámico.",
-      "descriptionEn": "Crispy flatbread topped with marinara sauce, fresh mozzarella slices, cherry tomatoes, fresh basil, and a balsamic glaze drizzle.",
-      "price": "$14.25",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "steak-n-cheese-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de bistec con queso",
+      "nameEn": "Steak N Cheese Grdr",
+      "descriptionEs": "Con pimientos, cebolla",
+      "descriptionEn": "W/ Peppers, Onion",
+      "price": "$9.24",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-09",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Camarón al Estilo Baja",
-      "nameEn": "Baja Shrimp Tacos",
-      "descriptionEs": "Camarones crujientes tempura, repollo fresco rallado, aguacate, cilantro y salsa picante de lima y chipotle en tortillas de maíz.",
-      "descriptionEn": "Crispy tempura shrimp, fresh shredded cabbage, avocado, cilantro, and spicy chipotle-lime crema in soft corn tortillas.",
-      "price": "$16.25",
-      "popular": false,
-      "badge": "Del Mar",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "ham-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de jamón",
+      "nameEn": "Ham Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-10",
+      "id": "meatball-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de albóndiga",
+      "nameEn": "Meatball Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de salchicha",
+      "nameEn": "Sausage Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de pollo búfalo",
+      "nameEn": "Buffalo Chicken Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de pollo a la parmesana",
+      "nameEn": "Chicken Parm Grdr",
+      "descriptionEs": "Con marinara",
+      "descriptionEn": "W/ marinara",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cutlet-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de milanesa de pollo",
+      "nameEn": "Chicken Cutlet Grdr",
+      "descriptionEs": "Con lechuga y tomates",
+      "descriptionEn": "W/ lettuce and tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "b-l-t-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder BLT",
+      "nameEn": "B L T Grdr",
+      "descriptionEs": "Con tocino, lechuga, tomates",
+      "descriptionEn": "W/ bacon, lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder vegetariano",
+      "nameEn": "Veggie Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de pavo",
+      "nameEn": "Turkey Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "genoa-salami-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de salami genovés",
+      "nameEn": "Genoa Salami Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de berenjena",
+      "nameEn": "Eggplant Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-peppers-n-egg-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de queso, pimientos y huevo",
+      "nameEn": "Cheese, Peppers N Egg Grdr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pastrami-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de pastrami",
+      "nameEn": "Pastrami Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de rosbif",
+      "nameEn": "Roast Beef Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de atún",
+      "nameEn": "Tuna Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder combinado",
+      "nameEn": "Combo Grdr",
+      "descriptionEs": "Con salami, jamón",
+      "descriptionEn": "W/ salami, ham",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de hamburguesa",
+      "nameEn": "Burger Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-grdr",
+      "categoryId": "grinders",
+      "nameEs": "Grinder de hamburguesa con queso",
+      "nameEn": "Cheeseburger Grdr",
+      "descriptionEs": "Con lechuga, tomates",
+      "descriptionEn": "W/ lettuce, tomatoes",
+      "price": "$8.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap vegetariano",
+      "nameEn": "Veggie Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de bistec",
+      "nameEn": "Steak Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pavo",
+      "nameEn": "Turkey Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo",
+      "nameEn": "Chicken Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo búfalo",
+      "nameEn": "Buffalo Chicken Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de atún",
+      "nameEn": "Tuna Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "b-l-t-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap BLT",
+      "nameEn": "B L T Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bacon-ranch-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo, tocino y ranch",
+      "nameEn": "Chicken Bacon Ranch Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "south-west-chicken-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo estilo suroeste",
+      "nameEn": "South West Chicken Wrap",
+      "descriptionEs": "Cebolla, pimientos, crema agria, salsa gold fever",
+      "descriptionEn": "Onions, peppers, sour cream, gold fever sauce",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "Lechuga, tomates, cebolla, pimientos",
+      "descriptionEn": "Lettuce, tomatoes, onion, peppers",
+      "price": "$7.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de atún",
+      "nameEn": "Tuna Salad",
+      "descriptionEs": "Lechuga, tomates, cebolla, pimientos",
+      "descriptionEn": "Lettuce, tomatoes, onion, peppers",
+      "price": "$11.44",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga, tomates, cebolla, pimientos, queso feta griego, hoja de parra rellena,",
+      "descriptionEn": "Lettuce, tomatoes, onion, peppers, greek feta, stuffed grape leave,",
+      "price": "$10.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad-w-chicken",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César con pollo",
+      "nameEn": "Caesar Salad w/ Chicken",
+      "descriptionEs": "Pollo a la parrilla y aderezo César",
+      "descriptionEn": "Grilled Chicken and Caesar dressing",
+      "price": "$11.44",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Salad",
+      "descriptionEs": "Pechuga de pollo a la parrilla, lechuga, tomates, cebolla, pimientos, aceitunas",
+      "descriptionEn": "Grilled Chicken breast, lettuce, tomatoes, onion, peppers, olives",
+      "price": "$11.44",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cutlet-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de milanesa de pollo",
+      "nameEn": "Chicken Cutlet Salad",
+      "descriptionEs": "Milanesa de pollo, lechuga, tomates, cebolla, pimientos, aceitunas",
+      "descriptionEn": "Chicken Cutlet , lettuce, tomatoes, onion, peppers, olives",
+      "price": "$11.44",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-n-cheese-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pavo y queso",
+      "nameEn": "Turkey N Cheese Salad",
+      "descriptionEs": "Pavo, lechuga, tomates, cebolla, pimientos, mozzarella",
+      "descriptionEn": "Turkey, lettuce, tomatoes, onion, peppers, mozzarella",
+      "price": "$10.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef's Salad",
+      "descriptionEs": "Pavo, lechuga, tomates, jamón, salami, cebolla, pimientos, mozzarella",
+      "descriptionEn": "Turkey, lettuce, tomatoes, ham, salami, onion, peppers, mozzarella",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pollo búfalo",
+      "nameEn": "Buffalo Chicken Salad",
+      "descriptionEs": "Pollo, salsa búfalo",
+      "descriptionEn": "Chicken, buffalo sauce",
+      "price": "$11.65",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks-aptzr",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Palitos de mozzarella (entrada)",
+      "nameEn": "Mozzarella Sticks Aptzr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curly-fries",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Papas fritas rizadas",
+      "nameEn": "Curly Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Papas fritas con queso",
+      "nameEn": "Cheese Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-fries",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Papas fritas estilo pizza",
+      "nameEn": "Pizza Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings-sml",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Aros de cebolla - chico",
+      "nameEn": "Onion Rings - Sml",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings-lg",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Aros de cebolla - grande",
+      "nameEn": "Onion Rings - Lg",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-aptzr",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Tiras de pollo (entrada)",
+      "nameEn": "Chicken Tenders Aptzr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-aptzr-w-fries",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Tiras de pollo (entrada) con papas fritas",
+      "nameEn": "Chicken Tenders Aptzr w/ Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.69",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.69",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chips",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Papitas",
+      "nameEn": "Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-ravioli",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Ravioles fritos",
+      "nameEn": "Fried Ravioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-n-cheese-bites",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Bocaditos de macarrones con queso",
+      "nameEn": "Mac N Cheese Bites",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mushrooms-aptzr",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Champiñones fritos (entrada)",
+      "nameEn": "Fried Mushrooms Aptzr",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.23",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-cheese-bites",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Bocaditos de brócoli con queso",
+      "nameEn": "Broccoli Cheese Bites",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread-w-cheese",
+      "categoryId": "appetizers-sides",
+      "nameEs": "Pan de ajo con queso",
+      "nameEn": "Garlic Bread w/ Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-liter-soda",
       "categoryId": "beverages",
-      "nameEs": "Martini Artesanal Louie's Signature",
-      "nameEn": "Louie's Signature Craft Martini",
-      "descriptionEs": "Nuestra bebida emblemática con vodka premium, chambord, puré de frambuesa fresca y un toque espumoso.",
-      "descriptionEn": "Our signature cocktail featuring premium vodka, Chambord, fresh raspberry puree, and a sparkling finish.",
-      "price": "$13.00",
-      "popular": true,
-      "badge": "Cóctel Estrella",
-      "tags": [
-        "Bebida con Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "nameEs": "Refresco de 1 litro",
+      "nameEn": "1 Liter Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-11",
+      "id": "2-liter-soda",
       "categoryId": "beverages",
-      "nameEs": "Margarita Kickin' Watermelon",
-      "nameEn": "Kickin' Watermelon Margarita",
-      "descriptionEs": "Tequila 100% de agave, licor de naranja, jugo fresco de lima y puré dulce de sandía con borde de sal y chile Tajín.",
-      "descriptionEn": "100% agave tequila, triple sec, fresh lime juice, and sweet watermelon puree with a Tajín chili-salt rim.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Bebida con Alcohol",
-        "Popular"
-      ],
-      "allergens": [],
+      "nameEs": "Refresco de 2 litros",
+      "nameEn": "2 Liter Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
       "ctaType": "in_store"
     },
     {
-      "id": "bar-louie-12",
+      "id": "20-oz-soda",
       "categoryId": "beverages",
-      "nameEs": "Limonada Artesanal de Moras Sin Alcohol",
-      "nameEn": "Blackberry Mint Lemonade (Mocktail)",
-      "descriptionEs": "Limonada casera recién exprimida mezclada con moras frescas de la temporada y hojas de menta fresca.",
-      "descriptionEn": "Freshly squeezed homemade lemonade muddled with seasonal fresh blackberries and fresh mint leaves.",
-      "price": "$6.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Sin Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "nameEs": "Refresco de 20 oz",
+      "nameEn": "20 Oz Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "can-of-soda",
+      "categoryId": "beverages",
+      "nameEs": "Refresco en lata",
+      "nameEn": "Can of Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "water",
+      "categoryId": "beverages",
+      "nameEs": "Agua",
+      "nameEn": "Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "snapple",
+      "categoryId": "beverages",
+      "nameEs": "Snapple",
+      "nameEn": "Snapple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "powerade",
+      "categoryId": "beverages",
+      "nameEs": "Powerade",
+      "nameEn": "Powerade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-cake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake",
+      "nameEn": "Cheese Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake surtido",
+      "nameEn": "Assorted Cheesecake",
+      "descriptionEs": "Arándano, fresa, cereza, piña, chocolate",
+      "descriptionEn": "Blueberry, strawberry, cherry, pineapple, chocolate",
+      "price": "$5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-strudel",
+      "categoryId": "desserts",
+      "nameEs": "Strudel de manzana",
+      "nameEn": "Apple Strudel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-turnover",
+      "categoryId": "desserts",
+      "nameEs": "Empanada de manzana (turnover)",
+      "nameEn": "Apple Turnover",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownie",
+      "categoryId": "desserts",
+      "nameEs": "Brownie",
+      "nameEn": "Brownie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-pudding",
+      "categoryId": "desserts",
+      "nameEs": "Arroz con leche",
+      "nameEn": "Rice Pudding",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flan",
+      "categoryId": "desserts",
+      "nameEs": "Flan",
+      "nameEn": "Flan",
+      "descriptionEs": "Pudín de caramelo",
+      "descriptionEn": "Caramel Pudding",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli",
+      "categoryId": "desserts",
+      "nameEs": "Cannoli",
+      "nameEn": "Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ecclair",
+      "categoryId": "desserts",
+      "nameEs": "Éclair",
+      "nameEn": "Ecclair",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-oreos",
+      "categoryId": "desserts",
+      "nameEs": "Oreos fritas",
+      "nameEn": "Fried Oreos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate",
+      "nameEn": "Chocolate Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "louies-famous-cheesecake-sml",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake famoso de Louie - chico",
+      "nameEn": "Louies Famous Cheesecake - Sml",
+      "descriptionEs": "Natural, arándano, fresa, cereza, piña, chocolate",
+      "descriptionEn": "Plain, blueberry, strawberry, cheery, pineapple, chocolate",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "louies-famous-cheesecake-lrg",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake famoso de Louie - grande",
+      "nameEn": "Louies Famous Cheesecake - Lrg",
+      "descriptionEs": "Natural, arándano, fresa, cereza, piña, chocolate",
+      "descriptionEn": "Plain, blueberry, strawberry, cheery, pineapple, chocolate",
+      "price": "$41.40",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-apple-strudel",
+      "categoryId": "desserts",
+      "nameEs": "Strudel de manzana entero",
+      "nameEn": "Whole Apple Strudel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.70",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-flan",
+      "categoryId": "desserts",
+      "nameEs": "Flan entero",
+      "nameEn": "Whole Flan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Lasaña (catering)",
+      "nameEn": "Lasagna Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$46.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-meat-lasagna-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Lasaña de carne horneada (catering)",
+      "nameEn": "Baked Meat Lasagna Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$46.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-manicotti-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Manicotti horneados (catering)",
+      "nameEn": "Baked Manicotti Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$41.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-sausage-n-peppers-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con salchicha y pimientos (catering)",
+      "nameEn": "Pasta w/ Sausage N Peppers Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$43.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-w-marinara-sauce-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Albóndigas en salsa marinara (catering)",
+      "nameEn": "Meatball w/ Marinara Sauce Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$43.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ziti horneado (catering)",
+      "nameEn": "Baked Ziti Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$41.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-marinara-sauce-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con salsa marinara (catering)",
+      "nameEn": "Pasta w/ Marinara Sauce Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-meatballs-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con albóndigas (catering)",
+      "nameEn": "Pasta w/ Meatballs Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-sausage-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con salchicha (catering)",
+      "nameEn": "Pasta w/ Sausage Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-chicken-parm-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con pollo a la parmesana (catering)",
+      "nameEn": "Pasta w/ Chicken Parm Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$47.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-w-eggplant-parm-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pasta con berenjena a la parmesana (catering)",
+      "nameEn": "Pasta w/ Eggplant Parm Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francese-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pollo francese (catering)",
+      "nameEn": "Chicken Francese Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$47.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-broccoli-alfredo-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Pollo con brócoli alfredo (catering)",
+      "nameEn": "Chicken Broccoli Alfredo Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-shells-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Conchas rellenas (catering)",
+      "nameEn": "Stuffed Shells Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$45.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada antipasto (catering)",
+      "nameEn": "Antipasto Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$41.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada César (catering)",
+      "nameEn": "Caesar Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada César con pollo (catering)",
+      "nameEn": "Chicken Caesar Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada mixta (catering)",
+      "nameEn": "Tossed Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada del chef (catering)",
+      "nameEn": "Chef Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Ensalada griega (catering)",
+      "nameEn": "Greek Salad Catering",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-catering",
+      "categoryId": "party-catering-platters",
+      "nameEs": "Alitas de pollo (catering)",
+      "nameEn": "Chicken Wings Catering",
+      "descriptionEs": "36 o 60 piezas",
+      "descriptionEn": "36 or 60 ct",
+      "price": "$45.95",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y alternativas sin gluten. Por favor informe a su mesero sobre cualquier alergia.",
-      "aEn": "Yes, we offer several vegetarian options and gluten-free alternatives. Please inform your server of any food allergies."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para grupos grandes?",
-      "qEn": "Do you accept large group reservations?",
-      "aEs": "Sí, aceptamos reservaciones para grupos y eventos privados. Puede llamarnos directamente para coordinar su visita.",
-      "aEn": "Yes, we welcome group reservations and private events. You can call us directly to coordinate your visit."
-    },
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Is parking available?",
-      "aEs": "Contamos con estacionamiento conveniente en el lote adyacente y opciones de estacionamiento en la calle.",
-      "aEn": "We have convenient parking available in the adjacent lot as well as street parking options."
-    }
-  ]
+  "faqs": []
 }
