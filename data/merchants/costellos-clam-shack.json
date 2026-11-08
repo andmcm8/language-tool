@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "costellos-clam-shack",
     "name": "Costello's Clam Shack",
-    "tagline": "Heaven by the sea in Groton, CT | El paraíso junto al mar",
-    "address": "145 Pearl Street, Groton, CT",
+    "tagline": "Seafood restaurant in Groton | Restaurante de mariscos en Groton",
+    "address": "145 Pearl Street, Groton, CT 06340",
     "hours": {
-      "monday_friday": "11:00 AM - 8:00 PM",
-      "saturday": "11:00 AM - 8:00 PM",
-      "sunday": "11:00 AM - 8:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Waterfront Seating"
+      "Online Ordering"
     ],
     "themeColor": "#0284c7",
     "logoIcon": "utensils",
@@ -32,277 +25,662 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Sopas",
-      "nameEn": "Soups & Starters",
+      "id": "soups",
+      "nameEs": "Sopas",
+      "nameEn": "Soups",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Clásicos y Cenas",
+      "id": "starters",
+      "nameEs": "Entradas",
+      "nameEn": "Starters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "costello-s-classics",
+      "nameEs": "Clásicos de Costello's",
       "nameEn": "Costello's Classics",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades y Tacos",
-      "nameEn": "Tacos & Specialties",
+      "id": "all-ashore",
+      "nameEs": "¡Todos a tierra!",
+      "nameEn": "All Ashore!",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "on-the-shells",
+      "nameEs": "En las Conchas",
+      "nameEn": "On the Shells",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-rolls",
+      "nameEs": "Rollos de Mariscos",
+      "nameEn": "Seafood Rolls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "little-minnows",
+      "nameEs": "Pequeños Piscues (Little Minnows)",
+      "nameEn": "Little Minnows",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "costellos-clam-shack-01",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Almejas al Estilo Noank (Claro)",
+      "id": "noank-style-clam-chowder",
+      "categoryId": "soups",
+      "nameEs": "Clam Chowder al estilo Noank",
       "nameEn": "Noank Style Clam Chowder",
-      "descriptionEs": "Caldo claro tradicional con almejas frescas, una auténtica leyenda local sin gluten.",
-      "descriptionEn": "Clear broth style in the traditional manner - a local legend! Gluten free.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Local Legend",
-      "tags": [
-        "Sin Gluten",
-        "Clásico"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
+      "descriptionEs": "Estilo de caldo claro de la manera tradicional: ¡una leyenda local! Sin gluten",
+      "descriptionEn": "Clear broth style in the traditional manner - a local legend! Gluten free",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-02",
-      "categoryId": "appetizers",
-      "nameEs": "Cóctel de Camarones",
+      "id": "new-england-style-clam-chowder",
+      "categoryId": "soups",
+      "nameEs": "Clam Chowder al estilo de Nueva Inglaterra",
+      "nameEn": "New England Style Clam Chowder",
+      "descriptionEs": "Versión cremosa de nuestro estilo Noank. Sin gluten",
+      "descriptionEn": "Creamy version of our Noank style. Gluten free",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque",
+      "categoryId": "soups",
+      "nameEs": "Bisque de langosta",
+      "nameEn": "Lobster Bisque",
+      "descriptionEs": "¡Bisque espeso, rico y cremoso con la esencia de langosta fresca!",
+      "descriptionEn": "Thick, rich, creamy bisque with the essence of fresh lobster!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cocktail",
+      "categoryId": "starters",
+      "nameEs": "Cóctel de camarones",
       "nameEn": "Shrimp Cocktail",
-      "descriptionEs": "Seis camarones grandes servidos fríos con limón y salsa de cóctel casera.",
+      "descriptionEs": "Seis camarones grandes servidos con limón y salsa cóctel.",
       "descriptionEn": "Six large shrimp served with lemon and cocktail sauce.",
-      "price": "$14.95",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-03",
-      "categoryId": "appetizers",
-      "nameEs": "Almejas al Vapor",
+      "id": "oysters-on-the-half-shell",
+      "categoryId": "starters",
+      "nameEs": "Ostras en su concha",
+      "nameEn": "Oysters on the Half Shell",
+      "descriptionEs": "Servidas muy frías con salsa cóctel y gajo de limón. La disponibilidad cambia diariamente, llame para conocer las opciones de hoy.",
+      "descriptionEn": "Served icy cold with cocktail sauce and lemon wedge. Supply changes daily, call for today's offerings.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-on-the-half-shell",
+      "categoryId": "starters",
+      "nameEs": "Almejas en su concha",
+      "nameEn": "Clams on the Half Shell",
+      "descriptionEs": "Abiertas recientemente y servidas con gajo de limón, salsa cóctel y galletas saladas.",
+      "descriptionEn": "Freshly shucked and served with lemon wedge, cocktail sauce and oyster crackers.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fritters",
+      "categoryId": "starters",
+      "nameEs": "Frituras",
+      "nameEn": "Fritters",
+      "descriptionEs": "Frituras al estilo Noank servidas con salsa para dipear.",
+      "descriptionEn": "Noank style fritters served with dipping sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cakes",
+      "categoryId": "starters",
+      "nameEs": "Pastelitos de jaiba",
+      "nameEn": "Crab Cakes",
+      "descriptionEs": "Dos porciones de carne de jaiba fresca en trozos salteadas con la cantidad justa de empanizado y sazón. Servidas con nuestra salsa de la casa.",
+      "descriptionEn": "Two fresh lump crabmeat sautéed with just the right amount of breading and seasoning. Served with our house sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-clams",
+      "categoryId": "starters",
+      "nameEs": "Almejas rellenas",
+      "nameEn": "Stuffed Clams",
+      "descriptionEs": "Tres conchas de almeja quahog de mar profundo rellenas con base de pan. Servidas con salsa cóctel.",
+      "descriptionEn": "Three deep ocean quahog shells stuffed with bread base. Served with cocktail sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-clams",
+      "categoryId": "starters",
+      "nameEs": "Almejas al vapor",
       "nameEn": "Steamed Clams",
-      "descriptionEs": "Un tazón rebosante de almejas suaves y frescas. Servidas con mantequilla clarificada y caldo.",
-      "descriptionEn": "A heaping bowlful of our succulent, fresh steamers. Served with drawn butter and broth.",
-      "price": "$18.95",
-      "popular": true,
-      "badge": "Fresh Catch",
-      "tags": [
-        "Popular"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Dairy"
-      ],
+      "descriptionEs": "Un tazón colmado de nuestras suculentas y frescas almejas al vapor. Servidas con mantequilla derretida y caldo. ¡Ni un solo grano de arena!",
+      "descriptionEn": "A heaping bowlful of our succulent, fresh steamers. Served with drawn butter and broth. Not a crunch in the bunch!",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-04",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos al Estilo Rhode Island",
-      "nameEn": "Fried Calamari Rhode Island Style",
-      "descriptionEs": "Fritos a la perfección con chiles banana, servidos con salsa marinara clásica.",
+      "id": "mussels",
+      "categoryId": "starters",
+      "nameEs": "Mejillones",
+      "nameEn": "Mussels",
+      "descriptionEs": "Un tazón generoso fresco de los lechos de aguas profundas del Atlántico Norte.",
+      "descriptionEn": "A bountiful bowlful fresh from the deep-water beds of the North Atlantic.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "very-special-mussels",
+      "categoryId": "starters",
+      "nameEs": "Mejillones muy especiales",
+      "nameEn": "Very Special Mussels",
+      "descriptionEs": "¡Al vapor en ajo y vino! ¡Deliciosos!",
+      "descriptionEn": "Steamed in garlic and wine! Yum!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "starters",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Estilo Rhode Island con chiles banana, servidos con salsa marinara.",
       "descriptionEn": "Rhode Island Style with banana peppers, served with marinara sauce.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Favorite",
-      "tags": [
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Seafood"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-05",
-      "categoryId": "mains",
-      "nameEs": "Cena de Almejas Enteras (Whole Belly Clams)",
+      "id": "mozzarella-sticks",
+      "categoryId": "starters",
+      "nameEs": "Bastones de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "Seis con salsa marinara. Vegetariano",
+      "descriptionEn": "Six with marinara sauce. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popcorn-shrimp",
+      "categoryId": "starters",
+      "nameEs": "Camarones popcorn",
+      "nameEn": "Popcorn Shrimp",
+      "descriptionEs": "Deliciosos camarones fritos servidos con salsa cóctel.",
+      "descriptionEn": "Delicious fried shrimp served with cocktail sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wedge-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Wedge",
+      "nameEn": "Wedge Salad",
+      "descriptionEs": "Tocino, Gorgonzola y aderezo de queso azul. Vegetariano ¡Agregue proteína! Pollo Callos de hacha Camarones Mostrar más",
+      "descriptionEn": "Bacon, Gorgonzola and blue cheese dressing. Vegetarian Add Protein! Chicken Scallops Shrimp Show More",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar salad",
+      "descriptionEs": "César clásica. Vegetariano ¡Agregue proteína! Pollo Callos de hacha Camarones Mostrar más",
+      "descriptionEn": "Classic Caesar. Vegetarian Add Protein! Chicken Scallops Shrimp Show More",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pearl-street-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Pearl Street",
+      "nameEn": "Pearl Street Salad",
+      "descriptionEs": "Lechuga Bibb, aguacate, mango, nueces, cubierta con callos de hacha y camarones sellados. ¡Agregue proteína! Pollo Callos de hacha Camarones Mostrar más",
+      "descriptionEn": "Bibb lettuce, avocado, mango, walnuts, topped with seared scallops and shrimp. Add Protein! Chicken Scallops Shrimp Show More",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "costello-s-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas de Costello's",
+      "nameEn": "Costello's Fries",
+      "descriptionEs": "Delgadas y crujientes: ¡las más sabrosas! Una charola colmada. Vegetariano",
+      "descriptionEn": "Thin & crispy - the tastiest around! A heaping tray full. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "Empanizados a mano. Vegetariano",
+      "descriptionEn": "Hand breaded. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corn-on-the-cob",
+      "categoryId": "sides",
+      "nameEs": "Elote dulce",
+      "nameEn": "Corn on the Cob",
+      "descriptionEs": "Al vapor y servido con mantequilla derretida. Vegetariano",
+      "descriptionEn": "Steamed and served with drawn butter. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trip-s-street-corn",
+      "categoryId": "sides",
+      "nameEs": "Elote callejero de Trip",
+      "nameEn": "Trip's Street Corn",
+      "descriptionEs": "Frito y cubierto con un chorrito de crema de chipotle y queso cotija. Vegetariano",
+      "descriptionEn": "Fried and topped with a chipotle cream drizzle and cotija cheese. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas callejeras",
+      "nameEn": "Street Fries",
+      "descriptionEs": "Papas fritas de Costello's espolvoreadas con especias y cubiertas con queso cotija y crema de chipotle. Vegetariano",
+      "descriptionEn": "Costello's fries dusted with spice and topped with cotija cheese and chipotle cream. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-pickles",
+      "categoryId": "sides",
+      "nameEs": "Pepinillos fritos",
+      "nameEn": "Fried Pickles",
+      "descriptionEs": "Rodajas de pepinillo fritas con salsa especial para dipear. Vegetariano",
+      "descriptionEn": "Fried pickle chips with special dipping sauce. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-belly-clam-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de almejas de vientre entero",
       "nameEn": "Whole Belly Clam Dinner",
-      "descriptionEs": "Almejas de vientre entero directas de las aguas frías de la Bahía de Fundy. Incluye papas fritas y ensalada de col.",
-      "descriptionEn": "Whole belly clams shipped straight from the cold clear waters of the Bay of Fundy. Served with fries and coleslaw.",
-      "price": "$28.95",
-      "popular": true,
-      "badge": "Must Try",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish"
-      ],
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Almejas de vientre entero enviadas directamente a Costello's desde las aguas frías y claras de la Bahía de Fundy.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Whole belly clams shipped straight to Costello's from the cold clear waters of the Bay of Fundy.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-06",
-      "categoryId": "mains",
-      "nameEs": "Pescado con Papas Fritas (Fish & Chips)",
+      "id": "clam-strip-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de tiras de almeja",
+      "nameEn": "Clam Strip Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Una porción generosa de tiras de almeja empanizadas y fritas. ¡Uno de nuestros favoritos!",
+      "descriptionEn": "Served with Costello's fries and coleslaw A generous serving of battered and fried clam strips. One of our favorites!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-and-chips-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de pescado con papas fritas",
       "nameEn": "Fish and Chips Dinner",
-      "descriptionEs": "Dos generosos trozos de bacalao fresco del Atlántico Norte rebozados y fritos. Servidos con papas fritas y ensalada de col.",
-      "descriptionEn": "Two generous pieces of center cut North Atlantic cod, batter fried to peak flavor. Served with fries and coleslaw.",
-      "price": "$21.95",
-      "popular": false,
-      "badge": "Classic",
-      "tags": [
-        "Frito"
-      ],
-      "allergens": [
-        "Gluten",
-        "Fish"
-      ],
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. ¡Nuestra versión de un favorito! Dos generosos trozos de bacalao del Atlántico Norte cortado del centro, fritos con rebozado hasta alcanzar su sabor máximo.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Our version of a favorite! Two generous pieces of center cut North Atlantic cod, batter fried to peak flavor.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-07",
-      "categoryId": "mains",
-      "nameEs": "Cena de Vieiras (Scallops)",
+      "id": "scallop-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de callos de hacha",
       "nameEn": "Scallop Dinner",
-      "descriptionEs": "Vieiras de mar dulces y jugosas llenas de sabor, ligeramente empanizadas y fritas con papas fritas y ensalada de col.",
-      "descriptionEn": "Sweet and juicy sea scallops full of flavor. Served with Costello's fries and coleslaw.",
-      "price": "$26.50",
-      "popular": false,
-      "badge": "Fresh",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish"
-      ],
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Callos de hacha dulces y jugosos llenos de sabor.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Sweet and juicy sea scallops full of flavor.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-08",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa All Ashore!",
-      "nameEn": "All Ashore! Burger",
-      "nameEn_alt": "Burger",
-      "descriptionEs": "Hamburguesa jugosa con queso, tocino, lechuga, tomate y cebolla en pan brioche. Servida con papas fritas.",
-      "descriptionEn": "Juicy burger - cheese, bacon, lettuce, tomato, onion. Served on a brioche bun with fries.",
-      "price": "$15.95",
-      "popular": false,
-      "badge": "Meat Lover",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "shrimp-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de camarones",
+      "nameEn": "Shrimp Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Siete bellezas rechonchas, ¡y las llevamos al siguiente nivel! Empanizadas a mano y fritas.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Seven plump beauties - and we kick them up a notch! Hand breaded and fried.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-09",
-      "categoryId": "specialties",
+      "id": "coconut-shrimp-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de camarones al coco",
+      "nameEn": "Coconut Shrimp Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Camarones rechonchos empanizados con coco servidos con una salsa dulce oriental para dipear.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Coconut breaded plump shrimp served with a sweet oriental dipping sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oyster-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de ostras",
+      "nameEn": "Oyster Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Ostras abiertas recientemente, sazonadas, ligeramente empanizadas y fritas.",
+      "descriptionEn": "Served with Costello's fries and coleslaw Freshly shucked oysters, seasoned, lightly breaded & fried.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "c-s-triple-mixed-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena mixta triple de C",
+      "nameEn": "C's Triple Mixed Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. ¡Mezcle tres cualesquiera de las opciones anteriores!",
+      "descriptionEn": "Served with Costello's fries and coleslaw Mix any three of the above!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-dinner",
+      "categoryId": "costello-s-classics",
+      "nameEs": "Cena de langosta",
+      "nameEn": "Lobster Dinner",
+      "descriptionEs": "Servida con papas fritas de Costello's y ensalada de coleslaw. Cena de 1 1/4 libra servida con mantequilla derretida.",
+      "descriptionEn": "Served with Costello's fries and coleslaw 1 1/4 pound dinner served with drawn butter.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger",
+      "categoryId": "all-ashore",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Burger",
+      "descriptionEs": "Hamburguesa jugosa: queso, tocino, lechuga, jitomate, cebolla. Servida en pan brioche.",
+      "descriptionEn": "Juicy burger - cheese, bacon, lettuce, tomato, onion. Served on a brioche bun.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-dog",
+      "categoryId": "all-ashore",
+      "nameEs": "Hot dog",
+      "nameEn": "Hot Dog",
+      "descriptionEs": "Hot dog de calidad prémium. 100% de res.",
+      "descriptionEn": "Premium quality hot dog. All beef.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-sandwich",
+      "categoryId": "all-ashore",
+      "nameEs": "Sándwich de pollo",
+      "nameEn": "Chicken Sandwich",
+      "descriptionEs": "Pechuga de pollo a la parrilla, lechuga, jitomate, cebolla y queso.",
+      "descriptionEn": "Grilled chicken breast, lettuce, tomato, onion and cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "all-ashore",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "3 o 6.",
+      "descriptionEn": "3 or 6.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-tacos",
+      "categoryId": "on-the-shells",
       "nameEs": "Tacos de Pescado",
       "nameEn": "Fish Tacos",
-      "descriptionEs": "Bacalao frito o a la plancha en tortilla de harina con repollo, salsa de mango y salsa de taco casera. Servido con papas fritas.",
-      "descriptionEn": "Fried or grilled cod on flour tortilla with cabbage, mango salsa, and housemade taco sauce. Served with fries.",
-      "price": "$17.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Tacos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Fish"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-10",
-      "categoryId": "specialties",
+      "id": "coconut-shrimp-tacos",
+      "categoryId": "on-the-shells",
       "nameEs": "Tacos de Camarón al Coco",
       "nameEn": "Coconut Shrimp Tacos",
-      "descriptionEs": "Camarones empanizados al coco combinados con salsa dulce oriental en tortilla de harina con papas fritas.",
-      "descriptionEn": "Coconut breaded shrimp meets taco shell with mango salsa and house sauce. Served with fries.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Chef Special",
-      "tags": [
-        "Dulce y Salado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish",
-        "Tree Nuts"
-      ],
+      "descriptionEs": "Servido en tortilla de harina con repollo, salsa de mango y salsa para tacos casera de Costello. Tacos sin gluten y tortillas de maíz disponibles. Servido con papas fritas de Costello. El camarón empanizado al coco se encuentra con la concha de taco.",
+      "descriptionEn": "Served on flour tortilla with cabbage, mango salsa, and Costello’s housemade taco sauce. Gluten free tacos and corn tortillas available. Served with Costello’s fries. Coconut breaded shrimp meets taco shell.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-11",
-      "categoryId": "specialties",
+      "id": "lobster-tacos",
+      "categoryId": "on-the-shells",
+      "nameEs": "Tacos de Langosta",
+      "nameEn": "Lobster Tacos",
+      "descriptionEs": "Servido en tortilla de harina con repollo, salsa de mango y salsa para tacos casera de Costello. Tacos sin gluten y tortillas de maíz disponibles. Servido con papas fritas de Costello. Dos favoritos de Costello combinados.",
+      "descriptionEn": "Served on flour tortilla with cabbage, mango salsa, and Costello’s housemade taco sauce. Gluten free tacos and corn tortillas available. Served with Costello’s fries. Two Costello's favorites combined.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tacos",
+      "categoryId": "on-the-shells",
+      "nameEs": "Tacos de Pollo",
+      "nameEn": "Chicken Tacos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tacos",
+      "categoryId": "on-the-shells",
+      "nameEs": "Tacos de Vegetales",
+      "nameEn": "Vegetable Tacos",
+      "descriptionEs": "Servido en tortilla de harina con repollo, salsa de mango y salsa para tacos casera de Costello. Tacos sin gluten y tortillas de maíz disponibles. Servido con papas fritas de Costello. Pepino, zanahorias, repollo morado, aguacate, maíz y cotija. Vegetariano",
+      "descriptionEn": "Served on flour tortilla with cabbage, mango salsa, and Costello’s housemade taco sauce. Gluten free tacos and corn tortillas available. Served with Costello’s fries. Cucumber, carrots, purple cabbage, avocado, corn & cotija. Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-tacos",
+      "categoryId": "on-the-shells",
+      "nameEs": "Tacos de Camarón",
+      "nameEn": "Shrimp Tacos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-tacos",
+      "categoryId": "on-the-shells",
+      "nameEs": "Tacos de Atún",
+      "nameEn": "Tuna Tacos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "weekly-special",
+      "categoryId": "on-the-shells",
+      "nameEs": "¡Especial Semanal!",
+      "nameEn": "Weekly Special!",
+      "descriptionEs": "¡Pregunte por nuestro taco especial de la semana!",
+      "descriptionEn": "Ask about our weekly taco special!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-lobster-roll",
+      "categoryId": "seafood-rolls",
       "nameEs": "Rollo de Langosta Caliente",
       "nameEn": "Hot Lobster Roll",
-      "descriptionEs": "Un cuarto de libra de langosta fresca de la costa servida caliente con mantequilla derretida, papas fritas y ensalada de col.",
-      "descriptionEn": "A 1/4 pound of fresh coastal lobster served warm with drawn butter, chips, and coleslaw.",
-      "price": "$32.95",
-      "popular": true,
-      "badge": "Signature",
-      "tags": [
-        "Langosta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Shellfish",
-        "Dairy"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "costellos-clam-shack-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera",
-      "nameEn": "Housemade Lemonade",
-      "descriptionEs": "Refrescante limonada recién exprimida al estilo tradicional.",
-      "descriptionEn": "Freshly squeezed classic lemonade.",
-      "price": "$3.95",
-      "popular": false,
-      "badge": "Refreshing",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "omg-hot-lobster-roll",
+      "categoryId": "seafood-rolls",
+      "nameEs": "Rollo de Langosta Caliente OMG",
+      "nameEn": "OMG Hot Lobster Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-salad-roll",
+      "categoryId": "seafood-rolls",
+      "nameEs": "Rollo de Ensalada de Langosta",
+      "nameEn": "Lobster Salad Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whole-belly-clam-roll",
+      "categoryId": "seafood-rolls",
+      "nameEs": "Rollo de Almeja Entera (Whole Belly Clam)",
+      "nameEn": "Whole Belly Clam Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clam-strip-roll",
+      "categoryId": "seafood-rolls",
+      "nameEs": "Rollo de Tiras de Almeja",
+      "nameEn": "Clam Strip Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-sandwich",
+      "categoryId": "seafood-rolls",
+      "nameEs": "Sándwich de Pescado",
+      "nameEn": "Fish Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-run",
+      "categoryId": "seafood-rolls",
+      "nameEs": "¡Jonrón!",
+      "nameEn": "Home Run!",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-j",
+      "categoryId": "little-minnows",
+      "nameEs": "PB&J",
+      "nameEn": "PB&J",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "little-minnows",
+      "nameEs": "Queso Fundido a la Plancha (Grilled Cheese)",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-and-cheese",
+      "categoryId": "little-minnows",
+      "nameEs": "Macarrones con Queso",
+      "nameEn": "Macaroni and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "descriptionEs": "¡Helado Gifford's! Consulte nuestro pizarrón de especiales para ver los sabores de hoy.",
+      "descriptionEn": "Gifford's ice cream! Check our specials board for today's flavors.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-dough",
+      "categoryId": "desserts",
+      "nameEs": "Masa Frita",
+      "nameEn": "Fried Dough",
+      "descriptionEs": "Azúcar glass o azúcar con canela.",
+      "descriptionEn": "Powdered sugar or cinnamon sugar.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Agregar Helado",
+      "nameEn": "Add Ice Cream",
+      "descriptionEs": "Vegetariano",
+      "descriptionEn": "Vegetarian",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-smucker-s-pb-j",
+      "categoryId": "desserts",
+      "nameEs": "PB&J de Smucker's Frito",
+      "nameEn": "Fried Smucker's PB&J",
+      "descriptionEs": "Servido con helado de fresa. ¡No querrás compartir! Vegetariano",
+      "descriptionEn": "Served with strawberry ice cream. You will not want to share! Vegetarian",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones sin gluten?",
-      "qEn": "Do you offer gluten-free options?",
-      "qEs_alt": "¿Tienen opciones vegetarianas o sin gluten?",
-      "aEs": "Sí, contamos con sopas sin gluten y tortillas de maíz disponibles para tacos bajo pedido.",
-      "aEn": "Yes, we offer gluten-free soups and corn tortillas for tacos upon request."
-    },
-    {
-      "qEs": "¿Se permite comer al aire libre?",
-      "qEn": "Is outdoor seating available?",
-      "aEs": "Sí, ofrecemos área de comedor exterior techada junto al mar con vista al astillero.",
-      "aEn": "Yes, we offer outdoor covered dining by the sea overlooking the shipyard."
-    }
-  ]
+  "faqs": []
 }
