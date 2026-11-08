@@ -1,27 +1,18 @@
 {
   "storeInfo": {
     "id": "anya",
-    "name": "ANYA",
-    "tagline": "A celebration of life, legacy, and love / Una celebración de la vida, el legado y el amor",
-    "address": "900 Riverside Dr, Thompson, CT 06277",
+    "name": "ANYA Restaurant",
+    "tagline": "American restaurant in Thompson | Restaurante estadounidense en Thompson",
+    "address": "49 CT 193 Thompson, CT 06277",
     "phone": "(860) 315-5959",
     "hours": {
-      "monday_friday": "Wed-Sat: 4:00 PM - 9:00 PM, Mon-Tue: Closed",
-      "saturday": "4:00 PM - 10:00 PM",
-      "sunday": "12:00 PM - 8:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Private Dining",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#334155",
     "logoIcon": "utensils",
@@ -33,288 +24,1370 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "dinner-raw",
+      "nameEs": "Cena - Crudos",
+      "nameEn": "Dinner - Raw",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "icon": "Utensils",
-      "nameEn": "Main Entrees"
-    },
-    {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "dinner-soup",
+      "nameEs": "Cena - Sopas",
+      "nameEn": "Dinner - Soup",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "dinner-salad",
+      "nameEs": "Cena - Ensaladas",
+      "nameEn": "Dinner - Salad",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-small-plates",
+      "nameEs": "Cena - Platos pequeños",
+      "nameEn": "Dinner - Small Plates",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-land",
+      "nameEs": "Cena - Tierra",
+      "nameEn": "Dinner - Land",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-sea",
+      "nameEs": "Cena - Mar",
+      "nameEn": "Dinner - Sea",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-pasta",
+      "nameEs": "Cena - Pastas",
+      "nameEn": "Dinner - Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cócteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Muestra de vinos por copa - Vino blanco",
+      "nameEn": "Sample Wine By The Glass - White Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Muestra de vinos por copa - Vino tinto",
+      "nameEn": "Sample Wine By The Glass - Red Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sample-beer-bottles",
+      "nameEs": "Muestra de cervezas - Botellas",
+      "nameEn": "Sample Beer - Bottles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "autumn-prix-fixe-first",
+      "nameEs": "Menú fijo de otoño - Primer tiempo",
+      "nameEn": "Autumn Prix Fixe - First",
+      "icon": "Utensils"
+    },
+    {
+      "id": "autumn-prix-fixe-main",
+      "nameEs": "Menú fijo de otoño - Plato fuerte",
+      "nameEn": "Autumn Prix Fixe - Main",
+      "icon": "Utensils"
+    },
+    {
+      "id": "autumn-prix-fixe-dessert",
+      "nameEs": "Menú fijo de otoño - Postre",
+      "nameEn": "Autumn Prix Fixe - Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-soup",
+      "nameEs": "Almuerzo - Sopas",
+      "nameEn": "Lunch - Soup",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-salad",
+      "nameEs": "Almuerzo - Ensaladas",
+      "nameEn": "Lunch - Salad",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sandwich",
+      "nameEs": "Almuerzo - Sándwiches",
+      "nameEn": "Lunch - Sandwich",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sides",
+      "nameEs": "Almuerzo - Guarniciones",
+      "nameEn": "Lunch - Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-dessert",
+      "nameEs": "Almuerzo - Postres",
+      "nameEn": "Lunch - Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "be-our-guest-hors-d-oeuvres",
+      "nameEs": "'Be Our Guest' - Bocadillos",
+      "nameEn": "‘ Be Our Guest ‘ - Hors D'oeuvres",
+      "icon": "Utensils"
+    },
+    {
+      "id": "be-our-guest-entrees",
+      "nameEs": "'Be Our Guest' - Platos fuertes",
+      "nameEn": "‘ Be Our Guest ‘ - Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "be-our-guest-desserts",
+      "nameEs": "'Be Our Guest' - Postres",
+      "nameEn": "‘ Be Our Guest ‘ - Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "anya-01",
-      "categoryId": "appetizers",
-      "nameEs": "Tartar de Atún",
-      "nameEn": "Tuna Tartare",
-      "descriptionEs": "Wonton crujiente, aguacate, gochujang, salsa de soya, caviar de wasabi y cebollín fresco.",
-      "descriptionEn": "Crispy wonton, avocado, gochujang, soy sauce, wasabi caviar, and scallion.",
+      "id": "shrimp-cocktail",
+      "categoryId": "dinner-raw",
+      "nameEs": "Cóctel de camarón",
+      "nameEn": "Shrimp Cocktail",
+      "descriptionEs": "salsa coctelera rosada, alioli de estragón y alcaparras, limón",
+      "descriptionEn": "blushing cocktail sauce, tarragon-caper aioli, lemon",
       "price": "$21.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Fresco",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Fish",
-        "Soy",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "anya-02",
-      "categoryId": "appetizers",
-      "nameEs": "Ostras en su Media Concha",
-      "nameEn": "Oysters on the Half",
-      "descriptionEs": "Variedad cambiante de temporada, mignonette de pimienta, salsa cóctel clásica, granita de ruibarbo y limón.",
-      "descriptionEn": "Ever changing variety, peppercorn mignonette, classic cocktail sauce, rhubarb granita, and fresh lemon.",
+      "id": "oysters-on-the-half",
+      "categoryId": "dinner-raw",
+      "nameEs": "Ostiones en media concha",
+      "nameEn": "Oysters On The Half",
+      "descriptionEs": "variedad siempre cambiante, mignonette, salsa coctelera, granita, limón",
+      "descriptionEn": "ever changing variety, mignonette, cocktail sauce, granita, lemon",
       "price": "$24.00",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Shellfish"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "anya-03",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Almejas al Estilo Nueva Inglaterra",
-      "nameEn": "New England Clam Chowder",
-      "descriptionEs": "Almejas picadas, papa, tocino ahumado, crema espesa y galletas de pescado Old Bay.",
-      "descriptionEn": "Chopped clams, potato, smoked bacon, cream, and old bay fish cracker.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Sopa",
-        "Confort"
-      ],
-      "allergens": [
-        "Dairy",
-        "Shellfish",
-        "Gluten"
-      ],
+      "id": "tuna-tartare",
+      "categoryId": "dinner-raw",
+      "nameEs": "Tartar de atún",
+      "nameEn": "Tuna Tartare",
+      "descriptionEs": "wonton crujiente, aguacate, gochujang, salsa de soya, caviar de wasabi, cebollín",
+      "descriptionEn": "crispy wonton, avocado, gochujang, soy sauce, wasabi caviar, scallion",
+      "price": "$21.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-04",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
+      "id": "beef-carpaccio",
+      "categoryId": "dinner-raw",
+      "nameEs": "Carpaccio de res",
       "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Sellado poco hecho, arúgula, limón, aceite de oliva virgen extra, parmesano, chalote, grisines, alcaparras y sal marina.",
-      "descriptionEn": "Seared rare, arugula, lemon, evoo, parmesan, shallot, grissini, caper, and sea salt.",
+      "descriptionEs": "sellado término rojo, arúgula, aceite de oliva extra virgen, parmesano, chalota, grissini, alcaparra, sal de mar",
+      "descriptionEn": "seared rare, arugula, evoo, parmesan, shallot, grissini, caper, sea salt",
       "price": "$18.00",
-      "popular": false,
-      "badge": "Elegante",
-      "tags": [
-        "Carne",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Dairy",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "anya-05",
-      "categoryId": "mains",
-      "nameEs": "Salmón de las Islas Feroe",
-      "nameEn": "Faroe Island Salmon",
-      "descriptionEs": "Risotto de calabacín, salsa de maíz asado, confit de tomate y limón fresco.",
-      "descriptionEn": "Zucchini risotto, roast corn sauce, tomato confit, and lemon.",
-      "price": "$36.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Pescado",
-        "Saludable"
-      ],
-      "allergens": [
-        "Fish",
-        "Dairy"
-      ],
+      "id": "french-onion",
+      "categoryId": "dinner-soup",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion",
+      "descriptionEs": "cebolla caramelizada, fontina, hojaldre",
+      "descriptionEn": "caramelized onion, fontina, puff pastry",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-06",
-      "categoryId": "mains",
-      "nameEs": "Filete Au Poivre",
-      "nameEn": "Rib Eye Au Poivre",
-      "descriptionEs": "Crema de pimienta verde al coñac, puré de papas y verduras tiernas de temporada.",
-      "descriptionEn": "Cognac green peppercorn cream, pommes puree, and baby vegetables.",
+      "id": "ne-clam-chowder",
+      "categoryId": "dinner-soup",
+      "nameEs": "Clam chowder de Nueva Inglaterra",
+      "nameEn": "NE Clam Chowder",
+      "descriptionEs": "papa, tocino, crema, galleta Old Bay",
+      "descriptionEn": "potato, bacon, cream, old bay cracker",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butternut-squash",
+      "categoryId": "dinner-soup",
+      "nameEs": "Calabaza butternut",
+      "nameEn": "Butternut Squash",
+      "descriptionEs": "manzana, salvia crujiente, brandy",
+      "descriptionEn": "apple, crisp sage, brandy",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-bounty",
+      "categoryId": "dinner-salad",
+      "nameEs": "Abundancia de otoño",
+      "nameEn": "Autumn Bounty",
+      "descriptionEs": "kale, crutones de butternut, quinoa, manzana, arándano rojo, vinagreta de mantequilla dorada y salvia",
+      "descriptionEn": "kale, butternut croutons quinoa, apple, cranberry, brown butter-sage vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-gem-caesar",
+      "categoryId": "dinner-salad",
+      "nameEs": "César de little gem",
+      "nameEn": "Little Gem Caesar",
+      "descriptionEs": "brioche, pesto de tomate deshidratado, grana padano, teja de parmesano, aderezo clásico, limón",
+      "descriptionEn": "brioche, sun-dried tomato pesto, grana padano, parmesan tuile, classic dressing, lemon",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iceberg-wedge",
+      "categoryId": "dinner-salad",
+      "nameEs": "Cuña de lechuga iceberg",
+      "nameEn": "Iceberg Wedge",
+      "descriptionEs": "panceta de cerdo, tomate asado, praliné de cheddar añejo, chalotas encurtidas, suero de leche con hierbas",
+      "descriptionEn": "pork belly, charred tomato, aged cheddar praline, pickled shallots, herb buttermilk",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poached-pear",
+      "categoryId": "dinner-salad",
+      "nameEs": "Pera escalfada",
+      "nameEn": "Poached Pear",
+      "descriptionEs": "endivia, frisée, mousse de queso azul, nueces especiadas, gastrique de vino de oporto",
+      "descriptionEn": "endive, frisée, blue cheese mousse, spiced walnuts, port wine gastrique",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-bacon",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Vieiras con tocino",
+      "nameEn": "Scallops & Bacon",
+      "descriptionEs": "Chesapeake Bay, glaseado de maple y Dijon, crumble de pan de elote",
+      "descriptionEn": "Chesapeake Bay, maple - dijon glaze, cornbread crumble",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steakhouse-meatballs",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Albóndigas estilo steakhouse",
+      "nameEn": "Steakhouse Meatballs",
+      "descriptionEs": "pomodoro, tuétano, gremolata de apio, rábano picante rallado",
+      "descriptionEn": "pomodoro, bone marrow, celery gremolata, shaved horseradish",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "point-judith-calamari",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Calamares de Point Judith",
+      "nameEn": "Point Judith Calamari",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-casino",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Almejas Casino",
+      "nameEn": "Clams Casino",
+      "descriptionEs": "mostaza de grano entero, limón",
+      "descriptionEn": "whole grain mustard, lemon",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lump-crab-cake",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Pastel de cangrejo en trozo",
+      "nameEn": "Lump Crab Cake",
+      "descriptionEs": "mostaza de grano entero, limón",
+      "descriptionEn": "whole grain mustard, lemon",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben-spring-roll",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Rollito primavera Reuben",
+      "nameEn": "Reuben Spring Roll",
+      "descriptionEs": "corned beef, ensalada de col, queso suizo, aderezo mil islas",
+      "descriptionEn": "corned beef, cabbage slaw, swiss, 1000 island dressing",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pigs-in-a-blanket",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Cerditos en cobija",
+      "nameEn": "Pigs in a Blanket",
+      "descriptionEs": "wagyu, hojaldre, mostaza de cerveza en grano, relish de pepino",
+      "descriptionEn": "wagyu, puff pastry, ale mustard seed, cucumber relish",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anyas-perogies",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Pierogis de ANYA",
+      "nameEn": "ANYA’s Perogies",
+      "descriptionEs": "sellados en sartén, relleno de papa, crème fraîche, poro confitado, mantequilla dorada, cebollín picado",
+      "descriptionEn": "pan seared, potato filling, crème fraîche, melted leeks, brown butter, snipped chives",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts",
+      "categoryId": "dinner-small-plates",
+      "nameEs": "Coles de Bruselas",
+      "nameEn": "Brussels Sprouts",
+      "descriptionEs": "gastrique de sidra, manzanas asadas, pepitas garapiñadas, arándano rojo",
+      "descriptionEn": "cider gastrique, roast apples, candied pepitas, cranberry",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-wellington",
+      "categoryId": "dinner-land",
+      "nameEs": "Filete Wellington",
+      "nameEn": "Beef Wellington",
+      "descriptionEs": "filete mignon, hojaldre, duxelles de champiñones, demi-glace, puré de papa, vegetales baby",
+      "descriptionEn": "filet mignon, puff pastry, mushroom duxelles, demi glace, potato purée, baby vegetables",
+      "price": "$64.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chateaubriand",
+      "categoryId": "dinner-land",
+      "nameEs": "Chateaubriand",
+      "nameEn": "Chateaubriand",
+      "descriptionEs": "filete de res, puré de papa, zanahorias baby, espárragos asados, bearnesa, bordelesa",
+      "descriptionEn": "beef tenderloin, potato purée, baby carrots, roast asparagus, béarnaise, bordelaise",
       "price": "$52.00",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Carne",
-        "Res"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "anya-07",
-      "categoryId": "mains",
+      "id": "steak-frites",
+      "categoryId": "dinner-land",
+      "nameEs": "Steak frites (bistec con papas)",
+      "nameEn": "Steak Frites",
+      "descriptionEs": "NY strip, papas fritas cortadas a mano con trufa y parmesano, salsa Worcestershire de la casa",
+      "descriptionEn": "NY strip, hand-cut truffle parmesan fries, house Worcestershire sauce",
+      "price": "$44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ribeye-au-poivre",
+      "categoryId": "dinner-land",
+      "nameEs": "Ribeye au poivre",
+      "nameEn": "Ribeye Au Poivre",
+      "descriptionEs": "crema de coñac y pimienta verde, puré de papa, espinaca a la crema",
+      "descriptionEn": "cognac - green peppercorn cream, potato purée, creamed spinach",
+      "price": "$53.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dry-aged-burger",
+      "categoryId": "dinner-land",
+      "nameEs": "Hamburguesa de res madurada en seco",
+      "nameEn": "Dry-Aged Burger",
+      "descriptionEs": "salsa de cheddar con cerveza, mermelada de tocino y cebolla, alioli de ajo asado, lechuga, brioche, papas fritas cortadas a mano",
+      "descriptionEn": "cheddar ale sauce, bacon-onion jam, roast garlic aioli, lettuce, brioche, hand-cut fries",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heritage-pork-chop",
+      "categoryId": "dinner-land",
+      "nameEs": "Chuleta de cerdo heritage",
+      "nameEn": "Heritage Pork Chop",
+      "descriptionEs": "puré de manzana, puré de papa, hojas de mostaza, salsa de sidra",
+      "descriptionEn": "apple sauce, potato purée, mustard greens, cider sauce",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "statler-chicken",
+      "categoryId": "dinner-land",
       "nameEs": "Pollo Statler",
       "nameEn": "Statler Chicken",
-      "descriptionEs": "Duraznos a la parrilla, judías verdes, polenta de maíz dulce, crujiente de cebolla y jugo de pollo ahumado al bourbon y BBQ.",
-      "descriptionEn": "Grilled peaches, haricot verts, sweet corn polenta, onion crisps, and smokey bourbon bbq spiced chicken jus.",
-      "price": "$28.00",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Pollo",
-        "Ahumado"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "descriptionEs": "reducción de Grand Marnier y naranja, puré de hinojo y chirivía asados, reducción de zarzamora",
+      "descriptionEn": "grand marnier-orange reduction, roast fennel & parsnip purée, blackberry reduction",
+      "price": "$46.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-08",
-      "categoryId": "mains",
-      "nameEs": "Pescado con Papas Fritas (Fish & Chips)",
+      "id": "rack-of-lamb",
+      "categoryId": "dinner-land",
+      "nameEs": "Costillar de cordero",
+      "nameEn": "Rack of Lamb",
+      "descriptionEs": "con costra de Dijon y hierbas, gratín de papa, hojas verdes salteadas, jugo de cordero al romero",
+      "descriptionEn": "dijon herb crusted, potato gratin, wilted greens, rosemary lamb jus",
+      "price": "$56.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "faroe-island-salmon",
+      "categoryId": "dinner-sea",
+      "nameEs": "Salmón de las Islas Feroe",
+      "nameEn": "Faroe Island Salmon",
+      "descriptionEs": "calabaza delicata asada, coles de Bruselas salteadas, tocino ahumado con madera de manzano, salvia crujiente, vinagreta de sidra",
+      "descriptionEn": "roast delicate squash, sautéed brussels sprouts, applewood smoked bacon, crisp sage, cider vinaigrette",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "dinner-sea",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
       "nameEn": "Fish & Chips",
-      "descriptionEs": "Abadejo del Atlántico en masa de cerveza, ensalada de repollo, salsa tártara con alcaparras, papas fritas cortadas a mano y limón.",
-      "descriptionEn": "Beer battered Atlantic haddock, cabbage slaw, caper tartar sauce, hand-cut fries, and lemon.",
+      "descriptionEs": "eglefino del Atlántico rebozado en cerveza, ensalada de col, salsa tártara con alcaparras, papas fritas cortadas a mano, limón",
+      "descriptionEn": "beer-battered Atlantic haddock, cabbage slaw, caper tartar sauce, hand-cut fries, lemon",
       "price": "$29.00",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Frito",
-        "Pescado"
-      ],
-      "allergens": [
-        "Fish",
-        "Gluten",
-        "Eggs"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "anya-09",
-      "categoryId": "specialties",
-      "nameEs": "Wellington de Res",
-      "nameEn": "Beef Wellington",
-      "descriptionEs": "Hojaldre crujiente, filete mignon, duxelles de champiñones, demiglase y puré de papas suave.",
-      "descriptionEn": "Puff pastry, filet mignon, mushroom duxelle, demi-glace, and pommes puree.",
-      "price": "$68.00",
-      "popular": true,
-      "badge": "Exclusivo",
-      "tags": [
-        "Gourmet",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "new-england-cod",
+      "categoryId": "dinner-sea",
+      "nameEs": "Bacalao de Nueva Inglaterra",
+      "nameEn": "New England Cod",
+      "descriptionEs": "costra mantequillosa de galleta Ritz, limón, hierbas, vino blanco, papas fingerling asadas, vegetal de temporada",
+      "descriptionEn": "buttery Ritz cracker crust, lemon, herbs, white wine, roast fingerlings, seasonal vegetable",
+      "price": "$34.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-10",
-      "categoryId": "specialties",
-      "nameEs": "Estofado del Pescador",
-      "nameEn": "Fisherman’s Pan Stew",
-      "descriptionEs": "Almejas, calamares, vieiras, chorizo, tomate, hinojo, papa de dedo, caldo de azafrán y salsa rouille.",
-      "descriptionEn": "Clams, calamari, scallops, chorizo, tomato, fennel, fingerling potato, saffron broth, and rouille.",
-      "price": "$40.00",
-      "popular": true,
-      "badge": "Especial del Mar",
-      "tags": [
-        "Mariscos",
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Shellfish",
-        "Fish",
-        "Dairy"
-      ],
+      "id": "pappardelle",
+      "categoryId": "dinner-pasta",
+      "nameEs": "Pappardelle",
+      "nameEn": "Pappardelle",
+      "descriptionEs": "cerdo, res, costilla corta, vino tinto, San Marzano, ricotta, crema, albahaca",
+      "descriptionEn": "pork, beef, short rib, red wine, san marzano, ricotta, cream, basil",
+      "price": "$32.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-11",
-      "categoryId": "specialties",
-      "nameEs": "Hamburguesa Madurada con Seco",
-      "nameEn": "Dry Aged Burger",
-      "descriptionEs": "Salsa de queso cheddar y cerveza, mermelada de tocino y cebolla, lechuga, alioli de ajo asado, pan brioche y papas fritas cortadas a mano.",
-      "descriptionEn": "Cheddar ale sauce, bacon-onion jam, lettuce, roast garlic aioli, brioche bun, and hand-cut fries.",
-      "price": "$30.00",
-      "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Hamburguesa",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Eggs"
-      ],
+      "id": "ravioli",
+      "categoryId": "dinner-pasta",
+      "nameEs": "Ravioles",
+      "nameEn": "Ravioli",
+      "descriptionEs": "langosta, camarón, cangrejo, tomate, chícharos, azafrán, salsa de langosta con crema y jerez",
+      "descriptionEn": "lobster, shrimp, crab, tomato, petite peas, saffron, sherry cream lobster sauce",
+      "price": "$42.00",
       "ctaType": "in_store"
     },
     {
-      "id": "anya-12",
-      "categoryId": "beverages",
-      "nameEs": "Cóctel ANYA’s Run",
-      "nameEn": "ANYA’s Run Cocktail",
-      "descriptionEs": "Vodka Chopin, jarabe simple de fresa fresca, limón y notas aromáticas de la casa.",
-      "descriptionEn": "Chopin vodka, strawberry simple syrup, fresh lemon, and house botanical notes.",
+      "id": "cannelloni",
+      "categoryId": "dinner-pasta",
+      "nameEs": "Canelones",
+      "nameEn": "Cannelloni",
+      "descriptionEs": "ricotta, espinaca, parmesano, crema de porcini, pan molido con trufa",
+      "descriptionEn": "ricotta, spinach, parmesan, porcini cream, truffle bread crumbs",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkintini",
+      "categoryId": "cocktails",
+      "nameEs": "Pumpkintini",
+      "nameEn": "Pumpkintini",
+      "descriptionEs": "vodka de vainilla de la casa, puré de calabaza especiado, azúcar morena y canela, caviar de maple",
+      "descriptionEn": "house vanilla vodka, spiced pumpkin puree, raw sugar & cinnamon, maple caviar",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Cóctel Estrella",
-      "tags": [
-        "Bebida con Alcohol",
-        "Cóctel"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orchards-harvest",
+      "categoryId": "cocktails",
+      "nameEs": "Cosecha del huerto (Orchards Harvest)",
+      "nameEn": "Orchards Harvest",
+      "descriptionEs": "coñac Pierre Ferrand Ambre, pera, limón fresco, champaña y nuez moscada rallada",
+      "descriptionEn": "pierre ferrand ambre cognac, pear, fresh lemon, champagne & grated nutmeg",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchanted-potion",
+      "categoryId": "cocktails",
+      "nameEs": "Poción encantada (Enchanted Potion)",
+      "nameEn": "Enchanted Potion",
+      "descriptionEs": "ginebra Empress 1908, St-Germain, miel local, limón fresco, azafrán, cereza",
+      "descriptionEn": "empress 1908 gin, st germain, local honey, fresh lemon, saffron, cherry",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-dove",
+      "categoryId": "cocktails",
+      "nameEs": "Autumn Dove",
+      "nameEn": "Autumn Dove",
+      "descriptionEs": "tequila Lunazul, Cointreau, flor de jamaica, granada, agave, sal de mar especiada",
+      "descriptionEn": "lunazul tequila, cointreau, hibiscus flower, pomegranate, agave, spiced sea salt",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-old-fashioned",
+      "categoryId": "cocktails",
+      "nameEs": "Old fashioned ahumado",
+      "nameEn": "Smoked Old Fashioned",
+      "descriptionEs": "Old Forester, jarabe especiado de la casa, cereza Luxardo, naranja, clavo",
+      "descriptionEn": "old forester, house spiced syrup, luxardo cherry, orange, clove",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-manhattan",
+      "categoryId": "cocktails",
+      "nameEs": "Manhattan ahumado",
+      "nameEn": "Smoked Manhattan",
+      "descriptionEs": "WhistlePig, whiskey de centeno 'Piggy Back', Carpano Antica, cereza Luxardo, astillas de madera de manzano",
+      "descriptionEn": "whistle pig, ‘piggy back’ rye, carpano antica, luxardo cherry, applewood chips",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aged-hot-toddy",
+      "categoryId": "cocktails",
+      "nameEs": "Hot toddy añejado",
+      "nameEn": "Aged Hot Toddy",
+      "descriptionEs": "Plantation, sidra de manzana, amargo de Angostura, canela, anís estrella, miel infusionada",
+      "descriptionEn": "plantation, apple cider, angostura bitters, cinnamon, star anise, infused honey",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jack-rose",
+      "categoryId": "cocktails",
+      "nameEs": "Jack Rose",
+      "nameEn": "Jack Rose",
+      "descriptionEs": "calvados La Pommeraie, granadina de la casa, flor de azahar, limón fresco, manzana",
+      "descriptionEn": "la pommiere calvados, house grenadine, orange blossom, fresh lemon, apple",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-sangria",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría de otoño",
+      "nameEn": "Autumn Sangria",
+      "descriptionEs": "inspiración de temporada del mixólogo",
+      "descriptionEn": "mixologist seasonal inspiration",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-lastra-vernaccia-san-gimignano",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "La Lastra, Vernaccia, San Gimignano",
+      "nameEn": "La Lastra, Vernaccia, San Gimignano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "villa-dugo-pinot-grigio-friuli-isonzo",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Villa Dugo, Pinot Grigio, Friuli Isonzo",
+      "nameEn": "Villa Dugo, Pinot Grigio, Friuli Isonzo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-margarita-pinot-grigio-collio",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Santa Margarita, Pinot Grigio, Collio",
+      "nameEn": "Santa Margarita, Pinot Grigio, Collio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whitehaven-sauv-blanc-marlborough",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Whitehaven, Sauv Blanc, Marlborough",
+      "nameEn": "Whitehaven, Sauv Blanc, Marlborough",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stags-leap-sauv-blanc-napa",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Stags’ Leap, Sauv Blanc, Napa",
+      "nameEn": "Stags’ Leap, Sauv Blanc, Napa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whispering-angel-rose-cotes-de-provence",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Whispering Angel, rosado, Côtes de Provence",
+      "nameEn": "Whispering Angel, Rosé, Côtes de Provence",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "a-z-reisling-mosel",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "A-Z, Reisling, Mosel",
+      "nameEn": "A-Z, Reisling, Mosel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mer-soleil-chardonnay-st-lucia",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Mer Soleil, Chardonnay, St Lucia",
+      "nameEn": "Mer Soleil, Chardonnay, St Lucia",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ramey-chardonnay-sonoma",
+      "categoryId": "sample-wine-by-the-glass-white-wine",
+      "nameEs": "Ramey, Chardonnay, Sonoma",
+      "nameEn": "Ramey, Chardonnay, Sonoma",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meiomi-pinot-noir-village-series",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Meiomi, Pinot Noir, Village Series",
+      "nameEn": "Meiomi, Pinot Noir, Village Series",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belle-glos-pinot-noir-napa",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Belle Glos, Pinot Noir, Napa",
+      "nameEn": "Belle Glos, Pinot Noir, Napa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-schooner-malbec-wagner",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Red Schooner, Malbec, Wagner",
+      "nameEn": "Red Schooner, Malbec, Wagner",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broadside-merlot-margarita",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Broadside, Merlot, Margarita",
+      "nameEn": "Broadside, Merlot, Margarita",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caymus-grand-durif-petite-syrah-suisun",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Caymus Grand Durif, Petite Syrah, Suisun",
+      "nameEn": "Caymus Grand Durif, Petite Syrah, Suisun",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tridente-tempranillo-rioja",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Tridente, Tempranillo, Rioja",
+      "nameEn": "Tridente, Tempranillo, Rioja",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "montana-tempranillo-rioja-reserva",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Montana, Tempranillo, Rioja Reserva",
+      "nameEn": "Montana, Tempranillo, Rioja Reserva",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-margarita-sangiovese-chianti",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Santa Margarita, Sangiovese, Chianti",
+      "nameEn": "Santa Margarita, Sangiovese, Chianti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bila-haut-shiraz-grenache-roussillon",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Bila-Haut, Shiraz, Grenache, Roussillon",
+      "nameEn": "Bila-Haut, Shiraz, Grenache, Roussillon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bonanza-cabernet-sauvignon-wagner",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Bonanza, Cabernet Sauvignon, Wagner",
+      "nameEn": "Bonanza, Cabernet Sauvignon, Wagner",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quilt-cabernet-sauvignon-napa",
+      "categoryId": "sample-wine-by-the-glass-red-wine",
+      "nameEs": "Quilt, Cabernet Sauvignon, Napa",
+      "nameEn": "Quilt, Cabernet Sauvignon, Napa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coors-light",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Coors Light",
+      "nameEn": "Coors Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Modelo",
+      "nameEn": "Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "budweiser",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Budweiser",
+      "nameEn": "Budweiser",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stella-artois",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Stella Artois",
+      "nameEn": "Stella Artois",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heiniken",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Heiniken",
+      "nameEn": "Heiniken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-equis",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Dos Equis",
+      "nameEn": "Dos Equis",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stone-ipa",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Stone IPA",
+      "nameEn": "Stone IPA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peroni-0-0",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Peroni 0.0",
+      "nameEn": "Peroni 0.0",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "heineken-0-0",
+      "categoryId": "sample-beer-bottles",
+      "nameEs": "Heineken 0.0",
+      "nameEn": "Heineken 0.0",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butternut-squash-autumn-prix-fixe-first",
+      "categoryId": "autumn-prix-fixe-first",
+      "nameEs": "Calabaza butternut (Menú fijo de otoño - Primer tiempo)",
+      "nameEn": "Butternut Squash (Autumn Prix Fixe - First)",
+      "descriptionEs": "manzana, salvia crujiente, brandy",
+      "descriptionEn": "apple, crisp sage, brandy",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-bounty-autumn-prix-fixe-first",
+      "categoryId": "autumn-prix-fixe-first",
+      "nameEs": "Abundancia de otoño (Menú fijo de otoño - Primer tiempo)",
+      "nameEn": "Autumn Bounty (Autumn Prix Fixe - First)",
+      "descriptionEs": "kale, 'crutones' de butternut, quinoa, manzana, arándano rojo, vinagreta de mantequilla dorada y salvia",
+      "descriptionEn": "kale, butternut ‘croutons’, quinoa, apple, cranberry, brown butter-sage vinaigrette",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-autumn-prix-fixe-first",
+      "categoryId": "autumn-prix-fixe-first",
+      "nameEs": "Sopa de cebolla francesa (Menú fijo de otoño - Primer tiempo)",
+      "nameEn": "French Onion (Autumn Prix Fixe - First)",
+      "descriptionEs": "cebolla caramelizada, fontina, hojaldre",
+      "descriptionEn": "caramelized onion, fontina, puff pastry",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-gem-caesar-autumn-prix-fixe-first",
+      "categoryId": "autumn-prix-fixe-first",
+      "nameEs": "César de little gem (Menú fijo de otoño - Primer tiempo)",
+      "nameEn": "Little Gem Caesar (Autumn Prix Fixe - First)",
+      "descriptionEs": "brioche, pesto de tomate deshidratado, grana padano, teja de parmesano, aderezo clásico, limón",
+      "descriptionEn": "brioche, sun-dried tomato pesto, grana padano, parmesan tuile, classic dressing, lemon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anya-bolognese",
+      "categoryId": "autumn-prix-fixe-main",
+      "nameEs": "Boloñesa ANYA",
+      "nameEn": "ANYA Bolognese",
+      "descriptionEs": "cerdo, res, costilla corta, vino tinto, San Marzano, ricotta, crema, albahaca",
+      "descriptionEn": "pork, beef, short rib, red wine, San Marzano, ricotta, cream, basil",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "faroe-island-salmon-autumn-prix-fixe-main",
+      "categoryId": "autumn-prix-fixe-main",
+      "nameEs": "Salmón de las Islas Feroe (Menú fijo de otoño - Plato fuerte)",
+      "nameEn": "Faroe Island Salmon (Autumn Prix Fixe - Main)",
+      "descriptionEs": "calabaza delicata asada, coles de Bruselas salteadas, tocino ahumado con madera de manzano, salvia crujiente, vinagreta de sidra",
+      "descriptionEn": "roast delicate squash, sautéed brussels sprouts, applewood smoked bacon, crisp sage, cider vinaigrette",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "statler-chicken-breast",
+      "categoryId": "autumn-prix-fixe-main",
+      "nameEs": "Pechuga de pollo Statler",
+      "nameEn": "Statler Chicken Breast",
+      "descriptionEs": "camote, manzana asada, tocino, kale, salvia, reducción de sidra",
+      "descriptionEn": "sweet potato, roast apple, bacon, kale, sage, cider reduction",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-tenderloin-tips",
+      "categoryId": "autumn-prix-fixe-main",
+      "nameEs": "Puntas de filete de res",
+      "nameEn": "Beef Tenderloin Tips",
+      "descriptionEs": "braseadas en cerveza Guinness, puré de papa, champiñones, zanahoria, cebolla, hierbas, jugo de res",
+      "descriptionEn": "Guinness stout braised, potato purée, mushroom, carrot, onion, herbs, beef jus",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannelloni-autumn-prix-fixe-main",
+      "categoryId": "autumn-prix-fixe-main",
+      "nameEs": "Canelones (Menú fijo de otoño - Plato fuerte)",
+      "nameEn": "Cannelloni (Autumn Prix Fixe - Main)",
+      "descriptionEs": "ricotta, espinaca, parmesano, crema de porcini, pan molido con trufa",
+      "descriptionEn": "ricotta, spinach, parmesan, porcini cream, truffle bread crumbs",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-creme-brulee",
+      "categoryId": "autumn-prix-fixe-dessert",
+      "nameEs": "Crème brûlée de maple",
+      "nameEn": "Maple Crème Brûlée",
+      "descriptionEs": "crema, azúcar de maple flameada",
+      "descriptionEn": "cream, torched maple sugar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-toffee-cake",
+      "categoryId": "autumn-prix-fixe-dessert",
+      "nameEs": "Pastel de manzana y toffee",
+      "nameEn": "Apple Toffee Cake",
+      "descriptionEs": "pastel tibio de especias, manzanas caramelizadas, salsa de toffee, crema chantilly",
+      "descriptionEn": "warm spice cake, caramelized apples, toffee sauce, chantilly cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ne-clam-chowder-lunch-soup",
+      "categoryId": "lunch-soup",
+      "nameEs": "Clam chowder de Nueva Inglaterra (Almuerzo - Sopas)",
+      "nameEn": "Ne Clam Chowder (Lunch - Soup)",
+      "descriptionEs": "crema, tocino, papa, tomillo",
+      "descriptionEn": "cream, bacon, potato, thyme",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-lunch-soup",
+      "categoryId": "lunch-soup",
+      "nameEs": "Sopa de cebolla francesa (Almuerzo - Sopas)",
+      "nameEn": "French Onion (Lunch - Soup)",
+      "descriptionEs": "cebolla caramelizada, fontina, hojaldre",
+      "descriptionEn": "caramelized onion, fontina, puff pastry",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butternut-squash-lunch-soup",
+      "categoryId": "lunch-soup",
+      "nameEs": "Calabaza butternut (Almuerzo - Sopas)",
+      "nameEn": "Butternut Squash (Lunch - Soup)",
+      "descriptionEs": "manzana, salvia crujiente, brandy",
+      "descriptionEn": "apple, crisp sage, brandy",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "autumn-bounty-lunch-salad",
+      "categoryId": "lunch-salad",
+      "nameEs": "Abundancia de otoño (Almuerzo - Ensaladas)",
+      "nameEn": "Autumn Bounty (Lunch - Salad)",
+      "descriptionEs": "quinoa, arúgula, manzana, butternut, arándanos rojos, nuez pecana, semillas de calabaza, vinagreta de maple y Dijon",
+      "descriptionEn": "quinoa, arugula, apple, butternut, cranberries, pecan, pumpkin seeds, maple-dijon vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wedge",
+      "categoryId": "lunch-salad",
+      "nameEs": "Cuña",
+      "nameEn": "Wedge",
+      "descriptionEs": "iceberg, panceta de cerdo, praliné de cheddar y nuez pecana, tomate, cebolla, migas de pan tostado, aderezo de suero de leche con hierbas",
+      "descriptionEn": "iceberg, pork belly, cheddar-pecan praline, tomato, onion, toast crumbs, herb buttermilk dressing",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "lunch-salad",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "little gem, crutón de brioche, grana padano, teja de parmesano, limón, pesto de tomate deshidratado, aderezo clásico",
+      "descriptionEn": "little gem, brioche crouton, grana padano, parmesan tuile, lemon, sun-dried tomato pesto, classic dressing",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-cobb",
+      "categoryId": "lunch-salad",
+      "nameEs": "Cobb clásica",
+      "nameEn": "Classic Cobb",
+      "descriptionEs": "pavo, tocino, aguacate, huevo, lechuga, tomate, queso azul, cebollín, vinagreta de vino tinto",
+      "descriptionEn": "turkey, bacon, avocado, egg, lettuce, tomato, blue cheese, chive, red wine vinaigrette",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smash-burger",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Hamburguesa smash",
+      "nameEn": "Smash Burger",
+      "descriptionEs": "mezcla de res de la casa, cheddar de Nueva Inglaterra, lechuga, tomate, cebolla, pepinillos, salsa para hamburguesa, brioche",
+      "descriptionEn": "house beef blend, NE cheddar, lettuce, tomato, onion, pickles, burger sauce, brioche",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey Club",
+      "descriptionEs": "pavo en salmuera, cerdo curado con maple y pimienta, cheddar de Nueva Inglaterra, lechuga, tomate, alioli de salvia, pan pullman",
+      "descriptionEn": "brined turkey, maple peppercorn cured pork, NE cheddar, green leaf, tomato, sage aioli, pullman bread",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-pulled-pork",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Cerdo deshebrado ahumado",
+      "nameEn": "Smoked Pulled Pork",
+      "descriptionEs": "madera de manzano, ensalada de col con mostaza y sidra, salsa BBQ de bourbon, pepinillos, brioche",
+      "descriptionEn": "applewood, cider mustard slaw, bourbon bbq sauce, pickles, brioche",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttermilk-chicken",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Pollo en suero de leche",
+      "nameEn": "Buttermilk Chicken",
+      "descriptionEs": "frito crujiente, miel, pepinillos, lechuga, salsa de la casa, brioche",
+      "descriptionEn": "crispy fried, honey, pickles, lettuce, house sauce, brioche",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "atlantic-haddock",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Eglefino del Atlántico",
+      "nameEn": "Atlantic Haddock",
+      "descriptionEs": "rebozado en cerveza Sam Adams, lechuga, tomate, salsa tártara, limón, brioche",
+      "descriptionEn": "Sam Adams beer battered, lettuce, tomato, tartar sauce, lemon, brioche",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheesesteak",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Philly cheesesteak",
+      "nameEn": "Philly Cheesesteak",
+      "descriptionEs": "res Angus en tiras finas, queso americano, cebolla caramelizada, alioli Worcestershire, chiles cereza suaves, pan hoagie",
+      "descriptionEn": "shaved Angus beef, American cheese, caramelized onion, Worcestershire aioli, mild cherry peppers, hoagie",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "union-reuben",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Reuben Union",
+      "nameEn": "Union Reuben",
+      "descriptionEs": "corned beef curado en casa, queso suizo, chucrut de col rápido, rémoulade de cornichon, pan de centeno marmoleado",
+      "descriptionEn": "house cured corned beef, Swiss, flash cabbage kraut, cornichon remoulade, marble rye",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-veggie-burger",
+      "categoryId": "lunch-sandwich",
+      "nameEs": "Hamburguesa vegetariana de la cosecha",
+      "nameEn": "Harvest Veggie Burger",
+      "descriptionEs": "lenteja, quinoa, cebada, vegetales asados, alioli ahumado de ajo asado, espinaca baby, brioche",
+      "descriptionEn": "lentil, quinoa, barley, roast vegetables, smoky roast garlic aioli, baby spinach, brioche",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-potato-salad",
+      "categoryId": "lunch-sides",
+      "nameEs": "Ensalada de papa tibia",
+      "nameEn": "Warm Potato Salad",
+      "descriptionEs": "cebollín, apio nabo, aderezo de crème fraîche",
+      "descriptionEn": "chive, celery root, crème fraîche dressing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "three-bean",
+      "categoryId": "lunch-sides",
+      "nameEs": "Tres frijoles",
+      "nameEn": "Three Bean",
+      "descriptionEs": "ejote, frijol cannellini, garbanzo, vinagreta de hierbas",
+      "descriptionEn": "green bean, cannellini bean, chickpea, herb vinaigrette",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gemelli",
+      "categoryId": "lunch-sides",
+      "nameEs": "Gemelli",
+      "nameEn": "Gemelli",
+      "descriptionEs": "vegetales de otoño asados y hojas verdes salteadas, vinagreta de vino tinto",
+      "descriptionEn": "roast autumn vegetables & wilted greens, red wine vinaigrette",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-milk",
+      "categoryId": "lunch-dessert",
+      "nameEs": "Galletas con leche",
+      "nameEn": "Cookies and Milk",
+      "descriptionEs": "galletas con chispas de chocolate y mantequilla dorada, leche entera, jarabe de chocolate con Baileys, sal de mar",
+      "descriptionEn": "brown butter chocolate chip cookies, whole milk, Baileys chocolate syrup, sea salt",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-pie",
+      "categoryId": "lunch-dessert",
+      "nameEs": "Pay de manzana",
+      "nameEn": "Apple Pie",
+      "descriptionEs": "streusel de avena, pasas remojadas en calvados, crème anglaise de maple",
+      "descriptionEn": "oatmeal streusel, Calvados-soaked raisins, maple crème anglaise",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "concord-grape-sorbet",
+      "categoryId": "lunch-dessert",
+      "nameEs": "Sorbete de uva Concord",
+      "nameEn": "Concord Grape Sorbet",
+      "descriptionEs": "shortbread de romero, pera escalfada",
+      "descriptionEn": "rosemary shortbread, poached pear",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-du-jour",
+      "categoryId": "be-our-guest-hors-d-oeuvres",
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup du Jour",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-crudite",
+      "categoryId": "be-our-guest-hors-d-oeuvres",
+      "nameEs": "Crudités de vegetales",
+      "nameEn": "Vegetable Crudité",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "be-our-guest-hors-d-oeuvres",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-crackers",
+      "categoryId": "be-our-guest-hors-d-oeuvres",
+      "nameEs": "Queso con galletas saladas",
+      "nameEn": "Cheese & Crackers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-cheese-souffle",
+      "categoryId": "be-our-guest-entrees",
+      "nameEs": "Soufflé de macarrones con queso",
+      "nameEn": "Macaroni & Cheese Soufflé",
+      "descriptionEs": "salsa cremosa de parmesano, pan molido",
+      "descriptionEn": "parmesan cream sauce, breadcrumbs",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-tenderloin",
+      "categoryId": "be-our-guest-entrees",
+      "nameEs": "Filete de res",
+      "nameEn": "Beef Tenderloin",
+      "descriptionEs": "puré de papa batido, espárragos, demi-glace",
+      "descriptionEn": "whipped potato, asparagus, demi glace",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "faroe-island-salmon-be-our-guest-entrees",
+      "categoryId": "be-our-guest-entrees",
+      "nameEs": "Salmón de las Islas Feroe ('Be Our Guest' - Platos fuertes)",
+      "nameEn": "Faroe Island Salmon (‘ Be Our Guest ‘ - Entrees)",
+      "descriptionEs": "risotto, zanahorias baby",
+      "descriptionEn": "risotto, baby carrots",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-ragu",
+      "categoryId": "be-our-guest-entrees",
+      "nameEs": "Ragú de res",
+      "nameEn": "Beef Ragu",
+      "descriptionEs": "la boloñesa de la casa de ANYA",
+      "descriptionEn": "anya’s signature bolognese",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creme-brulee",
+      "categoryId": "be-our-guest-desserts",
+      "nameEs": "Crème brûlée",
+      "nameEn": "Creme Brûlée",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-mousse",
+      "categoryId": "be-our-guest-desserts",
+      "nameEs": "Mousse de chocolate",
+      "nameEn": "Chocolate Mousse",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-fruit-sorbet",
+      "categoryId": "be-our-guest-desserts",
+      "nameEs": "Sorbete de fruta de temporada",
+      "nameEn": "Seasonal Fruit Sorbet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-creme-brulee-desserts",
+      "categoryId": "desserts",
+      "nameEs": "Crème brûlée de maple (Postres)",
+      "nameEn": "Maple Crème Brûlée (Desserts)",
+      "descriptionEs": "crema, azúcar de maple flameada",
+      "descriptionEn": "cream, torched maple sugar",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-toffee-cake-desserts",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de manzana y toffee (Postres)",
+      "nameEn": "Apple Toffee Cake (Desserts)",
+      "descriptionEs": "pastel tibio de especias, manzanas caramelizadas, salsa de toffee, crema chantilly",
+      "descriptionEn": "warm spice cake, caramelized apples, toffee sauce, chantilly cream",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "concord-grape-sorbet-desserts",
+      "categoryId": "desserts",
+      "nameEs": "Sorbete de uva Concord (Postres)",
+      "nameEn": "Concord Grape Sorbet (Desserts)",
+      "descriptionEs": "pera escalfada, shortbread de romero",
+      "descriptionEn": "poached pear, rosemary shortbread",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-bourbon-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de calabaza y bourbon",
+      "nameEn": "Pumpkin Bourbon Cheesecake",
+      "descriptionEs": "base de galleta de jengibre, caramelo de bourbon, nuez pecana garapiñada",
+      "descriptionEn": "gingersnap crust, bourbon caramel, candied pecan",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dark-chocolate-tart",
+      "categoryId": "desserts",
+      "nameEs": "Tarta de chocolate oscuro",
+      "nameEn": "Dark Chocolate Tart",
+      "descriptionEs": "helado de aceite de oliva, teja de chocolate, crema chantilly",
+      "descriptionEn": "olive oil ice cream, chocolate tuile, chantilly cream",
+      "price": "$15.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones adaptadas. Por favor, pregunte a nuestro personal por los platos indicados en el menú.",
-      "aEn": "Yes, we offer adapted options. Please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones y organizan eventos privados?",
-      "qEn": "Do you accept reservations and host private events?",
-      "aEs": "Aceptamos reservaciones por teléfono y contamos con un salón comedor privado con capacidad para hasta 50 personas.",
-      "aEn": "We accept phone reservations and feature a private dining room accommodating up to 50 guests."
-    }
-  ]
+  "faqs": []
 }
