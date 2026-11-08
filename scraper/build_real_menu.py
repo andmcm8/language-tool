@@ -17,7 +17,10 @@ date it was checked. This script:
 import json, os, re, sys, time, unicodedata, urllib.request, urllib.error
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest", "gemini-3.8-flash"]
+# Scraper uses ONE free-tier model only and stops at RESERVE of its learned daily cap, so the
+# chatbots (lib/gemini.ts) keep the flash models, gemini-flash-lite-latest and some headroom.
+MODELS = ["gemini-3.5-flash-lite"]
+RESERVE = 0.85
 
 
 def api_key():
@@ -40,8 +43,47 @@ def quota_day():
 QUOTA_FLAG = os.path.join(ROOT, "scraper", "pipeline", "data", "gemini_daily_quota_hit")
 
 
+USAGE = os.path.join(ROOT, "scraper", "pipeline", "data", "gemini_usage.json")
+
+
+def _usage(update=None):
+    """Read (and optionally update) the per-day call counter under a file lock (shared by threads
+    and processes). Keeps the learned daily cap across days."""
+    import fcntl
+    os.makedirs(os.path.dirname(USAGE), exist_ok=True)
+    with open(USAGE + ".lock", "w") as lk:
+        fcntl.flock(lk, fcntl.LOCK_EX)
+        try:
+            u = json.load(open(USAGE))
+        except Exception:
+            u = {}
+        if u.get("day") != quota_day():
+            u.update(day=quota_day(), count=0)
+        if update:
+            update(u)
+            json.dump(u, open(USAGE, "w"))
+        return u
+
+
+def count_call():
+    _usage(lambda u: u.__setitem__("count", u["count"] + 1))
+
+
+def learn_cap():
+    """Called when the model reports its per-day quota is used up. Learns the cap from today's
+    count (only if today saw enough calls to be a real measurement) and stops for the day."""
+    def f(u):
+        if u["count"] >= 50:
+            u["cap"] = u["count"]
+    _usage(f)
+    open(QUOTA_FLAG, "w").write(quota_day())
+
+
 def daily_quota_hit():
-    return os.path.exists(QUOTA_FLAG) and open(QUOTA_FLAG).read().strip() == quota_day()
+    if os.path.exists(QUOTA_FLAG) and open(QUOTA_FLAG).read().strip() == quota_day():
+        return True
+    u = _usage()
+    return bool(u.get("cap")) and u["count"] >= RESERVE * u["cap"]
 
 
 def note_429(err):
@@ -76,6 +118,7 @@ def gemini_json(prompt):
                 f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
                 data=body, headers={"Content-Type": "application/json", "x-goog-api-key": api_key()})
             try:
+                count_call()
                 with urllib.request.urlopen(req, timeout=180) as r:
                     data = json.load(r)
                 text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
@@ -89,7 +132,9 @@ def gemini_json(prompt):
                 last = e
                 print(f"  {m} failed: {e}", file=sys.stderr)
         if per_day == len(MODELS):
-            open(QUOTA_FLAG, "w").write(quota_day())
+            learn_cap()
+            raise SystemExit("Gemini daily quota reached")
+        if daily_quota_hit():
             raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"All Gemini models failed: {last}")
 

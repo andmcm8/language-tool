@@ -116,7 +116,7 @@ PAGES:
 """
 
 
-XMODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest", "gemini-3.8-flash"]
+XMODELS = B.MODELS  # one free-tier model with a daily reserve (see build_real_menu.py)
 
 
 def gemini(prompt):
@@ -134,6 +134,9 @@ def gemini(prompt):
             req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
                                          data=body, headers={"Content-Type": "application/json", "x-goog-api-key": B.api_key()})
             try:
+                if B.daily_quota_hit():
+                    raise SystemExit("Gemini daily quota reached")
+                B.count_call()
                 with urllib.request.urlopen(req, timeout=300) as r:
                     data = json.load(r)
                 return json.loads("".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"]))
@@ -146,7 +149,7 @@ def gemini(prompt):
             except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError, OSError) as e:
                 last = e
         if per_day == len(XMODELS):
-            open(B.QUOTA_FLAG, "w").write(B.quota_day())
+            B.learn_cap()
             raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"Gemini failed: {last}")
 
