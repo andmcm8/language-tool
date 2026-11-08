@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "grapevine",
     "name": "Grapevine",
-    "tagline": "Fine dining meets neighborhood warmth • Buena comida y calidez de vecindario",
-    "address": "753 Maple Road, Longmeadow, CT",
+    "tagline": "Greek and American restaurant in Longmeadow | Restaurante griego y estadounidense en Longmeadow",
+    "address": "753 Maple Road, Longmeadow, MA, 01108",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -27,288 +19,1237 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": ""
+    "phone": "(413) 567-6266"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "soups-salads",
+      "nameEs": "Sopas y ensaladas",
+      "nameEn": "Soups & Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "pizza-calzones",
+      "nameEs": "Pizza y calzones",
+      "nameEn": "Pizza & Calzones",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-oven-grinders",
+      "nameEs": "Grinders calientes al horno",
+      "nameEn": "Hot Oven Grinders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches-burgers",
+      "nameEs": "Sándwiches y hamburguesas",
+      "nameEn": "Sandwiches & Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrées",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-orders",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Side Orders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kid-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kid's Menu",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "grapevine-01",
+      "id": "garlic-bread",
       "categoryId": "appetizers",
-      "nameEs": "Bruschetta de la Casa",
-      "nameEn": "House Bruschetta",
-      "descriptionEs": "Pan rústico tostado al horno, cubierto con tomates frescos de la región, albahaca, ajo y un chorrito de aceite de oliva virgen extra.",
-      "descriptionEn": "Oven-toasted rustic bread topped with fresh local tomatoes, sweet basil, garlic, and a drizzle of extra virgin olive oil.",
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread-with-cheese",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de ajo con queso",
+      "nameEn": "Garlic Bread with Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola-garlic-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de ajo con gorgonzola",
+      "nameEn": "Gorgonzola Garlic Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks-8-pc",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de mozzarella (8 pzas.)",
+      "nameEn": "Mozzarella Sticks (8) pc",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hummus-served-with-pita",
+      "categoryId": "appetizers",
+      "nameEs": "Hummus servido con pan pita",
+      "nameEn": "Hummus Served with Pita",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-grape-leaves",
+      "categoryId": "appetizers",
+      "nameEs": "Hojas de parra rellenas",
+      "nameEn": "Stuffed Grape Leaves",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "servido con chiles banana y salsa marinara",
+      "descriptionEn": "served with banana peppers and marinara sauce",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-buffalo-bbq-honey-bbq-0r-honey-hot",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas de pollo (búfalo, BBQ, BBQ con miel o miel picante)",
+      "nameEn": "Chicken Wings (Buffalo , BBQ , Honey BBQ 0r Honey Hot)",
+      "descriptionEs": "(búfalo, BBQ, BBQ con miel o miel picante) 10 piezas con apio y queso azul",
+      "descriptionEn": "(Buffalo , BBQ , Honey BBQ 0r Honey Hot) 10 pieces with celery and blue cheese",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "appetizers",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$11.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-02",
+      "id": "buffalo-chicken-tenders",
       "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos Crujientes",
-      "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Calamares tiernos empanizados y fritos a la perfección, servidos con salsa marinara casera y rodajas de limón.",
-      "descriptionEn": "Tender squid lightly breaded and fried to perfection, served with house-made marinara sauce and fresh lemon wedges.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "nameEs": "Tiras de pollo búfalo",
+      "nameEn": "Buffalo Chicken Tenders",
+      "descriptionEs": "con apio y queso azul",
+      "descriptionEn": "with celery and blue cheese",
+      "price": "$13.50",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-03",
+      "id": "tyropita",
       "categoryId": "appetizers",
-      "nameEs": "Tabla de Quesos y Embutidos",
-      "nameEn": "Charcuterie & Cheese Board",
-      "descriptionEs": "Selección artesanal de quesos finos, carnes curadas, frutos secos, miel local y pan tostado crujiente.",
-      "descriptionEn": "Artisanal selection of fine cheeses, cured meats, dried fruits, local honey, and crispy toasted bread.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Para Compartir",
-      "tags": [
-        "Artesanal",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Frutos Secos"
-      ],
+      "nameEs": "Tyropita",
+      "nameEn": "Tyropita",
+      "descriptionEs": "Pay de queso envuelto en masa filo, bañado con miel picante",
+      "descriptionEn": "Cheese pie wrapped in phyllo, drizzled with hot honey",
+      "price": "$10.50",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-04",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Cebolla Gratinada",
-      "nameEn": "French Onion Soup",
-      "descriptionEs": "Cebollas caramelizadas a fuego lento en caldo rico de res, cubiertas con pan tostado y queso gruyère derretido.",
-      "descriptionEn": "Slow-caramelized onions in a rich beef broth, topped with toasted bread and melted bubbling gruyère cheese.",
-      "price": "$9.75",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Caliente",
-        "Confort"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "tossed-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "Lechuga, tomate, cebolla morada y pepino Ch $6.00, Med $9.50, Gde $12.00",
+      "descriptionEn": "Lettuce, tomatoes, red onions and cucumbers Sm $6.00, Med $9.50, Lg $12.00",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-05",
-      "categoryId": "mains",
-      "nameEs": "Pollo a la Parmesana",
-      "nameEn": "Chicken Parmesan",
-      "descriptionEs": "Pechuga de pollo empanizada al estilo tradicional, horneada con salsa marinara y abundante mozzarella, servida con pasta linguine.",
-      "descriptionEn": "Traditionally breaded chicken breast baked with marinara sauce and abundant mozzarella, served alongside linguine pasta.",
-      "price": "$21.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Italiano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "greek-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga, tomate, queso feta, cebolla morada, pepino, aceitunas y chiles pepperoncini Ch $7.00, Med $12.00, Gde $14.00",
+      "descriptionEn": "Lettuce, tomatoes, feta cheese. red onions, cucumbers, olives, and pepperoncini peppers Sm $7.00, Med $12.00, Lg $14.00",
+      "price": "$7.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-06",
-      "categoryId": "mains",
-      "nameEs": "Filete de Salmón al Horno",
-      "nameEn": "Baked Salmon Fillet",
-      "descriptionEs": "Salmón fresco del Atlántico con una costra de hierbas finas, acompañado de risotto de limón y espárragos salteados.",
-      "descriptionEn": "Fresh Atlantic salmon with a fine herb crust, served with zesty lemon risotto and sautéed asparagus.",
-      "price": "$24.50",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Pescado",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "roasted-red-pepper",
+      "categoryId": "soups-salads",
+      "nameEs": "Pimiento rojo asado",
+      "nameEn": "Roasted Red Pepper",
+      "descriptionEs": "Lechuga, tomate, gorgonzola desmoronado, cebolla morada, pimiento rojo asado y pepino Ch $7.00, Med $12.00, Gde $14.00",
+      "descriptionEn": "Lettuce, tomatoes, crumbled gorgonzola, red onions, roasted red pepper and cucumbers Sm $7.00, Med $12.00, Lg $14.00",
+      "price": "$7.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-07",
-      "categoryId": "mains",
-      "nameEs": "Pasta Pappardelle con Ragú de Ternera",
-      "nameEn": "Pappardelle with Veal Ragù",
-      "descriptionEs": "Pasta ancha artesanal con un estofado de ternera cocinado a fuego lento durante horas en vino tinto y tomate San Marzano.",
-      "descriptionEn": "Handmade wide ribbon pasta tossed with tender slow-simmered veal ragù braised in red wine and San Marzano tomatoes.",
-      "price": "$22.50",
-      "popular": false,
-      "badge": "Casero",
-      "tags": [
-        "Pasta Fresca",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "caesar-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana crujiente, crutones y parmesano rallado mezclados con nuestro aderezo César clásico Med $10.00, con pollo a la parrilla $16.00",
+      "descriptionEn": "Crisp romaine lettuce, croutons and shaved parmesan cheese tossed in our classic caesar dressing Med $10.00 w/ grilled chicken $16.00",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-08",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Artesanal Grapevine",
-      "nameEn": "Grapevine Artisan Burger",
-      "descriptionEs": "Carne de res angus jugosa, queso cheddar ahumado, tocino crujiente, cebolla caramelizada y alioli de ajo en brioche tostado.",
-      "descriptionEn": "Juicy angus beef patty, smoked cheddar, crispy bacon, caramelized onion, and garlic aioli on a toasted brioche bun.",
-      "price": "$17.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Jugoso",
-        "Americana"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "antipasto",
+      "categoryId": "soups-salads",
+      "nameEs": "Antipasto",
+      "nameEn": "Antipasto",
+      "descriptionEs": "Lechuga, tomate, cebolla morada, jamón, salami, queso provolone, huevo, aceitunas, pepino y chiles pepperoncini Med $13.00, Gde $16.00",
+      "descriptionEn": "Lettuce, tomatoes, red onions, ham, salami, provolone cheese, egg, olives, cucumbers and pepperoncini peppers Med $13.00, Lg $16.00",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-09",
-      "categoryId": "specialties",
-      "nameEs": "Costillas de Cordero al Romero",
-      "nameEn": "Rosemary Crusted Lamb Chops",
-      "descriptionEs": "Costillas de cordero marinadas en hierbas frescas y ajo, selladas a la perfección y servidas con puré de papa trufado.",
-      "descriptionEn": "Lamb chops marinated in fresh herbs and garlic, seared to perfection and served alongside creamy truffle mashed potatoes.",
-      "price": "$32.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Gourmet",
-        "Cordero"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "crispy-chicken-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de pollo crujiente",
+      "nameEn": "Crispy Chicken Salad",
+      "descriptionEs": "Nuestra ensalada mixta cubierta con tiras de pollo crujiente y aderezo de miel y mostaza",
+      "descriptionEn": "Our tossed salad topped with crispy chicken tenders and honey mustard dressing",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-10",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Hongos Silvestres y Trufa",
-      "nameEn": "Wild Mushroom & Truffle Risotto",
-      "descriptionEs": "Arroz arborio cremoso cocinado con hongos silvestres salteados, queso parmesano reggiano y un toque de aceite de trufa blanca.",
-      "descriptionEn": "Creamy arborio rice simmered with earthy wild mushrooms, aged reggiano parmesan, and a delicate finish of white truffle oil.",
-      "price": "$23.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "add-grilled-chicken-on-any-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Agrega pollo a la parrilla a cualquier ensalada",
+      "nameEn": "Add grilled Chicken on any salad",
+      "descriptionEs": "Ch $3.50, Med $6.50, Gde $7.50",
+      "descriptionEn": "Sm $3.50, Med $6.50, Lg $7.50",
+      "price": "$3.50",
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-11",
-      "categoryId": "beverages",
-      "nameEs": "Limonada de Lavanda y Arándanos",
-      "nameEn": "Lavender Blueberry Lemonade",
-      "descriptionEs": "Refrescante limonada natural infusionada con jarabe de lavanda casera y puré de arándanos frescos.",
-      "descriptionEn": "Refreshing all-natural lemonade infused with house-made lavender syrup and fresh blueberry puree.",
+      "id": "add-marinated-steak-strips-on-any-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Agrega tiras de bistec marinado a cualquier ensalada",
+      "nameEn": "Add marinated steak strips on any salad",
+      "descriptionEs": "Ch $7.00, Med $10.00, Gde $12.00",
+      "descriptionEn": "Sm $7.00, Med $10.00, Lg $12.00",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-a-scoop-of-tuna-on-any-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Agrega una bola de atún a cualquier ensalada",
+      "nameEn": "Add a scoop of tuna on any salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-grilled-shrimp-on-any-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Agrega camarones a la parrilla a cualquier ensalada",
+      "nameEn": "Add grilled shrimp on any salad",
+      "descriptionEs": "Media orden (3) $4.50, orden completa (6) $9.00",
+      "descriptionEn": "Half order (3) $4.50, Full order (6) $9.00",
       "price": "$4.50",
-      "popular": true,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Refrescante",
-        "Artesanal"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "grapevine-12",
-      "categoryId": "beverages",
-      "nameEs": "Vino Tinto de la Casa (Copa)",
-      "nameEn": "House Red Wine (Glass)",
-      "descriptionEs": "Selección especial del sommelier, un vino tinto equilibrado con notas de frutos rojos y roble sutil.",
-      "descriptionEn": "Sommelier's special selection, a balanced red wine featuring notes of dark berries and subtle oak.",
+      "id": "cup-of-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza de sopa",
+      "nameEn": "Cup of Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bowl-of-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "Tazón de sopa",
+      "nameEn": "Bowl of Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-cheese",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Queso mozzarella",
+      "nameEn": "Mozzarella Cheese",
+      "descriptionEs": "6 rebanadas (ch. 10) $14.00, 8 rebanadas (med. 14) $17.00, 12 rebanadas (gde. 16) $19.00",
+      "descriptionEn": "6 Slices (sm 10) $14.oo, 8 Slices (med 14) $17.00, 12 Slices (lg 16) $19.00",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-special",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Especial de la casa",
+      "nameEn": "House Special",
+      "descriptionEs": "Pepperoni, cebolla, pimiento, champiñones, salchicha y albóndigas Ch $18.50, Med $23.00, Gde $27.00",
+      "descriptionEn": "Pepperoni, onions, pepper, mushroom, sausage and meatballs Sm $18.50, Med $23.00, Lg $27.00",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian-special",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Especial vegetariana",
+      "nameEn": "Vegetarian Special",
+      "descriptionEs": "Tomate, cebolla, pimiento, brócoli, champiñones y berenjena Ch $18.50, Med $23.00, Gde $27.00",
+      "descriptionEn": "Tomatoes, onions, peppers, broccoli, mushroom and eggplant Sm $18.50, Med $23.00, Lg $27.00",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-ranch-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza de pollo ranch",
+      "nameEn": "Chicken Ranch Pizza",
+      "descriptionEs": "Aderezo ranch, queso mozzarella, tomate, cebolla morada, tocino y pollo a la parrilla Ch $19.00, Med $24.00, Gde $29.00",
+      "descriptionEn": "Ranch dressing, mozzarella cheese, tomatoes, red onions, bacon and grilled chicken Sm $19.00, Med $24.00, Lg $29.00",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "Aderezo de queso azul, queso mozzarella, pollo a la parrilla bañado con salsa picante Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Blue cheese dressing, mozzarella cheese, grilled chicken drizzled with hot sauce Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bbq-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza de pollo BBQ",
+      "nameEn": "Chicken BBQ Pizza",
+      "descriptionEs": "Aderezo ranch, mozzarella, pollo a la parrilla y salsa BBQ Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Ranch dressing, mozzarella, grilled chicken & BBQ sauce Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hawaiian-white-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza blanca hawaiana",
+      "nameEn": "Hawaiian White Pizza",
+      "descriptionEs": "Queso mozzarella, jamón y piña Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Mozzarella cheese, ham and pineapple Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-white-special",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Especial blanca griega",
+      "nameEn": "Greek White Special",
+      "descriptionEs": "Queso feta, queso mozzarella, tomate, ajo fresco, pimiento, brócoli, corazones de alcachofa y aceitunas Ch $18.00, Med $24.00, Gde $28.00",
+      "descriptionEn": "Feta cheese, mozzarella cheese, tomatoes, fresh garlic, peppers, broccoli, artichoke hearts, and olives Sm $18.00, Med $24.00, Lg $28.00",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-pizza-special",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Especial de pizza blanca",
+      "nameEn": "White Pizza Special",
+      "descriptionEs": "Queso ricotta, queso mozzarella, con tomate, ajo fresco y brócoli Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Ricotta cheese, mozzarella cheese, with tomatoes, fresh garlic and broccoli Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-basillico",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza basillico",
+      "nameEn": "Pizza Basillico",
+      "descriptionEs": "Rebanadas de tomate, ajo fresco, orégano y albahaca fresca Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Tomato slices, fresh garlic, oregano, and fresh basil Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athenian-white-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza blanca ateniense",
+      "nameEn": "Athenian White Pizza",
+      "descriptionEs": "Aceite con ajo, mozzarella, espinaca, pimientos asados y queso feta Ch $17.00, Med $22.00, Gde $25.00",
+      "descriptionEn": "Oil garlic, mozzarella, spinach, roasted peppers and feta cheese Sm $17.00, Med $22.00, Lg $25.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza de gyro",
+      "nameEn": "Gyro Pizza",
+      "descriptionEs": "Mozzarella, tomate en rebanadas, cebolla morada, carne de gyro, papas fritas, bañada con salsa tzatziki Ch $20.00, Med $25.00, Gde $30.00",
+      "descriptionEn": "Mozzarella, sliced tomato, red onions, gyro meat, french fries, drizzled with tzatziki sauce Sm $20.00, Med $25.00, Lg $30.00",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-pizza",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Pizza sin gluten",
+      "nameEn": "Gluten Free Pizza",
+      "descriptionEs": "Cada ingrediente $1.50",
+      "descriptionEn": "Each topping $1.50",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calzones",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
+      "descriptionEs": "Masa de pizza rellena de queso ricotta y mozzarella, disponible con tu elección de ingredientes para pizza. Calzone de queso $13.00. Cada ingrediente $1.15",
+      "descriptionEn": "Pizza dough filled with ricotta cheese and mozzarella cheese available with your choice of pizza toppings Cheese calzone $13.00 Each topping $1.15",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-toppings",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Ingredientes extra",
+      "nameEn": "Extra Toppings",
+      "descriptionEs": "6 rebanadas (ch. 10) $1.15, 8 rebanadas (med. 14) $1.75, 12 rebanadas (gde. 16) $2.25",
+      "descriptionEn": "6 Slices (sm 10) $1.15, 8 Slices (med 14) $1.75, 12 Slices (lg 16) $2.25",
+      "price": "$1.15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toppings",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
+      "descriptionEs": "Pepperoni, albóndiga, salchicha, jamón, anchoa, cebolla, pimiento, champiñones, brócoli, corazones de alcachofa, berenjena, tomate, aceitunas, ajo fresco, albahaca fresca, queso feta, chile jalapeño, espinaca baby",
+      "descriptionEn": "Pepperoni, meatball, sausage, ham, anchovy, onion, peppers, mushrooms, broccoli, artichoke hearts, eggplant, tomatoes, olives, fresh garlic, fresh basil, feta cheese, jalapeño pepper, baby spinach",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-cheese",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Queso extra",
+      "nameEn": "Extra Cheese",
+      "descriptionEs": "6 rebanadas (ch. 10) $1.50, 8 rebanadas (med. 14) $2.25, 12 rebanadas (gde. 16) $2.50",
+      "descriptionEn": "6 Slices (sm 10) $1.50, 8 Slices (med 14) $2.25, 12 Slices (lg 16) $2.50",
+      "price": "$1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "special-toppings",
+      "categoryId": "pizza-calzones",
+      "nameEs": "Ingredientes especiales",
+      "nameEn": "Special Toppings",
+      "descriptionEs": "Tomates deshidratados, pimientos rojos asados, cebolla salteada, piña Dole, tocino: 6 rebanadas (ch. 10) $1.75, 8 rebanadas (med. 14) $2.75, 12 rebanadas (gde. 16) $3.50. Pollo a la parrilla: 6 rebanadas (ch. 10) $4.50, 8 rebanadas (med. 14) $7.00, 12 rebanadas (gde. 16) $8.00",
+      "descriptionEn": "Sun Dried Tomatoes, Roasted Red Peppers, Sautéed Onions, Dole Pineapple, Bacon 6 Slices (Sm 10) $1.75 8 Slices (Med 14) $2.75 12 Slices (Lg 16) $3.50 Grilled Chicken 6 Slices (Sm 10) $4.50 8 Slices (Med 14) $7.00 12 Slices (Lg 16) $8.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tender",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tender",
+      "descriptionEs": "con queso americano, tomate, tocino, lechuga y aderezo ranch 8 (medio) $10.00, 12 (entero) $13.00",
+      "descriptionEn": "with American cheese, tomatoes, bacon, lettuce and ranch dressing 8(half) $10.00, 12(whole) $13.00",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "con queso provolone, tomate, lechuga y aderezo de miel y mostaza 8 (medio) $10.50, 12 (entero) $13.00",
+      "descriptionEn": "with provolone cheese, tomatoes, lettuce and honey mustard dressing 8(half) $10.50, 12(whole) $13.00",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-chicken-parmesan",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Pollo a la parmesana casero",
+      "nameEn": "Homemade Chicken Parmesan",
+      "descriptionEs": "servido en pan grinder con salsa marinara y provolone 8 (medio) $11.00, 12 (entero) $14.00",
+      "descriptionEn": "served on grinder roll with marinara sauce and provolone 8(half) $11.00, 12(whole) $14.00",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-cheese",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Bistec con queso",
+      "nameEn": "Steak & Cheese",
+      "descriptionEs": "8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "8(half) $9.50, 12(whole) $12.00",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "descriptionEs": "servido con salsa marinara y queso 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with marinara sauce & cheese 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Ternera",
+      "nameEn": "Veal",
+      "descriptionEs": "servido con salsa marinara y queso 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with marinara sauce & cheese 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Berenjena",
+      "nameEn": "Eggplant",
+      "descriptionEs": "servido con salsa marinara y queso 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with marinara sauce & cheese 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "servido con salsa marinara y queso 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with marinara sauce & cheese 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Albóndiga",
+      "nameEn": "Meatball",
+      "descriptionEs": "servido con salsa marinara y queso 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with marinara sauce & cheese 8(half) $9.50, 12(whole) $12.00",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-grinder",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Grinder vegetariano",
+      "nameEn": "Veggie Grinder",
+      "descriptionEs": "tomate, cebolla morada, pimiento rojo asado, aceitunas, queso y lechuga 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "tomatoes, red onions, roasted red pepper, olives, cheese, and lettuce 8(half) $9.50, 12(whole) $12.00",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-cut",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Carnes frías",
+      "nameEn": "Cold Cut",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Atún",
+      "nameEn": "Tuna",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cutlet",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Milanesa de pollo",
+      "nameEn": "Chicken Cutlet",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "genoa-salami",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Salami genovés",
+      "nameEn": "Genoa Salami",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Pavo",
+      "nameEn": "Turkey",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "servido con lechuga, tomate y queso provolone. A elegir: mayonesa, mostaza o aceite y vinagre 8 (medio) $9.50, 12 (entero) $12.00",
+      "descriptionEn": "served with lettuce, tomato and provolone cheese Choice of Mayonnaise, Mustard, Oil & Vinegar 8(half) $9.50, 12(whole) $12.00",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extras",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Extras",
+      "nameEn": "Extras",
+      "descriptionEs": "cebolla salteada, champiñones salteados, pimientos salteados, chiles banana, chiles picantes, aceitunas, pimientos o pepinillos 8 (medio) $0.50, 12 (entero) $0.75",
+      "descriptionEn": "sautéed onions, sauteed mushrooms, sautéed peppers, banana peppers hot peppers, olives, peppers or pickles 8(half) $0.50, 12(whole) $0.75",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon",
+      "categoryId": "hot-oven-grinders",
+      "nameEs": "Tocino",
+      "nameEn": "Bacon",
+      "descriptionEs": "8 (medio) $1.00, 12 (entero) $1.50",
+      "descriptionEn": "8(half) $1.00, 12(whole) $1.50",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-bbq-grilled-chicken",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Pollo a la parrilla BBQ con miel",
+      "nameEn": "Honey BBQ Grilled Chicken",
+      "descriptionEs": "servido con lechuga, tomate y tocino en pan",
+      "descriptionEn": "served with lettuce, tomatoes, and bacon on a bun",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-sandwich",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Sándwich de pescado",
+      "nameEn": "Fish Sandwich",
+      "descriptionEs": "filete de lenguado servido con lechuga, tomate y salsa tártara en pan",
+      "descriptionEn": "flounder filet served with lettuce, tomatoes and tartar sauce on a bun",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey club",
+      "descriptionEs": "tocino, lechuga, tomate y mayonesa",
+      "descriptionEn": "bacon, lettuce, tomato and mayo",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corn-beef-reuben",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Reuben de corned beef",
+      "nameEn": "Corn Beef Reuben",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-melt",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Atún fundido",
+      "nameEn": "Tuna Melt",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "con tomate .75, tocino $1.25, jamón $1.25",
+      "descriptionEn": "with tomato .75 Bacon $ 1.25 ham $ 1.25",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "con lechuga y tomate, servido con papas fritas",
+      "descriptionEn": "with lettuce & tomato, served with french fries",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-sandwiches-burgers",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa con queso (sándwiches y hamburguesas)",
+      "nameEn": "Cheeseburger (Sandwiches & Burgers)",
+      "descriptionEs": "con lechuga y tomate, servido con papas fritas",
+      "descriptionEn": "with lettuce & tomato, served with french fries",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheeseburger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa con tocino y queso",
+      "nameEn": "Bacon Cheeseburger",
+      "descriptionEs": "con lechuga y tomate, servido con papas fritas",
+      "descriptionEn": "with lettuce & tomato, served with french fries",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-burger",
+      "categoryId": "sandwiches-burgers",
+      "nameEs": "Hamburguesa garden",
+      "nameEn": "Garden Burger",
+      "descriptionEs": "Hamburguesa vegetariana con queso americano, lechuga, tomate, servida con papas fritas",
+      "descriptionEn": "Vegetarian Burger with American cheese, lettuce, tomato, served with french fries",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-primavera",
+      "categoryId": "entrees",
+      "nameEs": "Primavera mediterránea",
+      "nameEn": "Mediterranean Primavera",
+      "descriptionEs": "Cebolla, champiñones, pimientos asados, corazones de alcachofa, tomates deshidratados y tomillo salteados en aceite de oliva, espolvoreados con queso sobre pasta cabello de ángel. Agrega pollo a la parrilla $5.00",
+      "descriptionEn": "Onions, mushrooms, roasted peppers, artichoke hearts, sun – dried tomatoes and thyme sauteed in olive oil, sprinkled with cheese over angel hair pasta Add Grilled Chicken $ 5.00",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-florentine",
+      "categoryId": "entrees",
+      "nameEs": "Camarones florentinos",
+      "nameEn": "Shrimp Florentine",
+      "descriptionEs": "Camarones salteados con cebolla, champiñones, pimiento rojo y espinaca baby en salsa de vino blanco, ajo y mantequilla, servidos sobre pasta cabello de ángel",
+      "descriptionEn": "Sauteed shrimp with onions, mushrooms , red peppers and baby spinach in white wine garlic butter sauce served over angel hair pasta",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Pollo cajún",
+      "nameEn": "Cajun Chicken",
+      "descriptionEs": "Tiras de pollo cajún salteadas con pimiento verde, pimiento rojo asado y champiñones, en salsa de vino blanco con un toque de crema, mezcladas con pasta penne",
+      "descriptionEn": "Sautéed cajun chicken strips with green peppers , roasted red peppers , mushrooms, in a white wine sauce with a touch of cream, tossed with penne pasta",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata",
+      "categoryId": "entrees",
+      "nameEs": "Pollo piccata",
+      "nameEn": "Chicken Piccata",
+      "descriptionEs": "Pechuga de pollo salteada en una ligera salsa de limón y mantequilla con champiñones y espolvoreada con alcaparras, servida con tu elección de pasta",
+      "descriptionEn": "Chicken breast sauteed in a light lemon – butter sauce with mushrooms and sprinkled with capers, served with your choice of pasta",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-broccoli-alfredo",
+      "categoryId": "entrees",
+      "nameEs": "Pollo con brócoli Alfredo",
+      "nameEn": "Chicken & Broccoli Alfredo",
+      "descriptionEs": "Tiras de pollo y brócoli salteados en salsa Alfredo mezclados con pasta penne",
+      "descriptionEn": "Chicken strips and broccoli sauteed in Alfredo sauce tossed with penne pasta",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grapevine-chicken-special",
+      "categoryId": "entrees",
+      "nameEs": "Especial de pollo Grapevine",
+      "nameEn": "Grapevine Chicken Special",
+      "descriptionEs": "Pechuga de pollo marinada a la parrilla, cubierta con pimientos asados, corazones de alcachofa y queso mozzarella, horneada y servida con arroz pilaf",
+      "descriptionEn": "Marinated chicken breast grilled and topped with roasted peppers, artichoke hearts and mozzarella cheese, baked and served with rice pilaf",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-roast-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Medio pollo rostizado",
+      "nameEn": "Half Roast Chicken",
+      "descriptionEs": "Medio pollo sazonado con hierbas servido con papa al horno y verduras",
+      "descriptionEn": "Half of an herb-seasoned chicken served with a baked potato and vegetables",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmesan-crusted-pork-chops",
+      "categoryId": "entrees",
+      "nameEs": "Chuletas de cerdo con costra de parmesano",
+      "nameEn": "Parmesan Crusted Pork Chops",
+      "descriptionEs": "Servidas con papas asadas y puré de manzana",
+      "descriptionEn": "Served with roasted potatoes and applesauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-scrod",
+      "categoryId": "entrees",
+      "nameEs": "Scrod al horno",
+      "nameEn": "Baked Scrod",
+      "descriptionEs": "Bacalao al horno cubierto con pan molido, mantequilla y limón, servido con arroz y verduras",
+      "descriptionEn": "Baked Cod topped with bread crumbs , butter and lemon , served with rice and vegetables",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan",
+      "categoryId": "entrees",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmesan",
+      "descriptionEs": "Pechuga de pollo ligeramente empanizada y frita, cubierta con salsa marinara y queso mozzarella, horneada, servida con tu elección de pasta",
+      "descriptionEn": "Chicken breast lightly breaded and fried topped with marinara sauce , mozzarella cheese baked in the oven , served with your choice of pasta",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmesan",
+      "categoryId": "entrees",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parmesan",
+      "descriptionEs": "Berenjena ligeramente empanizada y frita, cubierta con salsa marinara y queso mozzarella, horneada, servida con tu elección de pasta",
+      "descriptionEn": "Eggplant lightly breaded and fried topped with marinara sauce ,mozzarella cheese baked in the oven, served with your choice of pasta",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-n-chips",
+      "categoryId": "entrees",
+      "nameEs": "Pescado con papas (fish 'n' chips)",
+      "nameEn": "Fish ‘n’ Chips",
+      "descriptionEs": "Filete de bacalao capeado a mano, frito y servido con papas fritas y ensalada de col",
+      "descriptionEn": "Hand battered cod filet fried and served with french fries and coleslaw",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Pollo frito",
+      "nameEn": "Fried Chicken",
+      "descriptionEs": "4 piezas de pollo frito servidas con papas fritas",
+      "descriptionEn": "4 piece Fried Chicken served with French fries",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-with-marinara-sauce",
+      "categoryId": "pasta",
+      "nameEs": "Pasta con salsa marinara",
+      "nameEn": "Pasta with Marinara Sauce",
+      "descriptionEs": "Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-with-meatball",
+      "categoryId": "pasta",
+      "nameEs": "Pasta con albóndigas",
+      "nameEn": "Pasta with Meatball",
+      "descriptionEs": "Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-bolognese",
+      "categoryId": "pasta",
+      "nameEs": "Pasta a la boloñesa",
+      "nameEn": "Pasta Bolognese",
+      "descriptionEs": "Nuestra salsa de carne casera estilo griego servida sobre pasta. Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "Our homemade Greek style meat sauce served over pasta. All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti",
+      "categoryId": "pasta",
+      "nameEs": "Ziti horneado",
+      "nameEn": "Baked Ziti",
+      "descriptionEs": "Ziti al horno con salsa marinara, queso ricotta y queso mozzarella. Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "Oven baked ziti with marinara sauce, ricotta cheese and mozzarella cheese. All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna",
+      "categoryId": "pasta",
+      "nameEs": "Lasaña",
+      "nameEn": "Lasagna",
+      "descriptionEs": "Capas de pasta, queso ricotta, salsa de carne y cubierta con queso mozzarella. Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "Layers of pasta , ricotta cheese, meat sauce and topped with mozzarella cheese. All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de queso",
+      "nameEn": "Cheese Ravioli",
+      "descriptionEs": "En salsa marinara. Todas las pastas de plato fuerte se sirven con pan y tu elección de sopa o ensalada",
+      "descriptionEn": "In a marinara sauce All entrees pasta served with bread and your choice of Soup or Salad",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "side-orders",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "side-orders",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "side-orders",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$9.00",
-      "popular": true,
-      "badge": "Vino",
-      "tags": [
-        "Bebida con Alcohol",
-        "Reserva"
-      ],
-      "allergens": [
-        "Sulfitos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs",
+      "categoryId": "side-orders",
+      "nameEs": "Albóndigas",
+      "nameEn": "Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-side-orders",
+      "categoryId": "side-orders",
+      "nameEs": "Salchicha (guarniciones)",
+      "nameEn": "Sausage (Side Orders)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetables",
+      "categoryId": "side-orders",
+      "nameEs": "Verduras",
+      "nameEn": "Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-pilaf",
+      "categoryId": "side-orders",
+      "nameEs": "Pilaf de arroz",
+      "nameEn": "Rice Pilaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-potatoes",
+      "categoryId": "side-orders",
+      "nameEs": "Papas asadas",
+      "nameEn": "Roasted Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coleslaw",
+      "categoryId": "side-orders",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Coleslaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anchovies",
+      "categoryId": "side-orders",
+      "nameEs": "Anchoas",
+      "nameEn": "Anchovies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-tomato-sauce",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Espagueti con salsa de tomate",
+      "nameEn": "Spaghetti with Tomato Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-butter",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Espagueti con mantequilla",
+      "nameEn": "Spaghetti with Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-meatballs",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Espagueti con albóndigas",
+      "nameEn": "Spaghetti with Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-with-melted-mozzarella-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Espagueti con queso mozzarella derretido",
+      "nameEn": "Spaghetti with Melted Mozzarella Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Macaroni & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli-kid-s-menu",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Ravioles de queso (menú infantil)",
+      "nameEn": "Cheese Ravioli (Kid's Menu)",
+      "descriptionEs": "con salsa marinara",
+      "descriptionEn": "with marinara sauce",
+      "price": "$9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-kid-s-menu",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Tiras de pollo (menú infantil)",
+      "nameEn": "Chicken Tenders (Kid's Menu)",
+      "descriptionEs": "y papas fritas",
+      "descriptionEn": "& French Fries",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-6-oz-black-angus",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa con queso (6 oz. Black Angus)",
+      "nameEn": "Cheeseburger (6 oz. Black Angus)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sodas",
+      "categoryId": "beverages",
+      "nameEs": "Refrescos",
+      "nameEn": "Sodas",
+      "descriptionEs": "(relleno gratis) Coca-Cola, Coca-Cola Light, Sprite, ginger ale, root beer Barq's, limonada, té helado de frambuesa Nestea, té helado sin azúcar o café helado",
+      "descriptionEn": "(free refill) Coke, Diet Coke, Sprite, Ginger Ale, Barq’s Root Beer, Lemonade, Nestea Raspberry Iced Tea, Unsweetened Ice Tea or Iced Coffee",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zagori-sparkling-water",
+      "categoryId": "beverages",
+      "nameEs": "Agua mineral Zagori",
+      "nameEn": "Zagori Sparkling Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "beverages",
+      "nameEs": "Café",
+      "nameEn": "Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harney-sons-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té Harney & Sons",
+      "nameEn": "Harney & Sons Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "beverages",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk",
+      "categoryId": "beverages",
+      "nameEs": "Leche",
+      "nameEn": "Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-milk",
+      "categoryId": "beverages",
+      "nameEs": "Leche con chocolate",
+      "nameEn": "Chocolate Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juice",
+      "categoryId": "beverages",
+      "nameEs": "Jugo",
+      "nameEn": "Juice",
+      "descriptionEs": "Arándano o naranja",
+      "descriptionEn": "Cranberry or Orange",
+      "price": "$4.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú o adaptables según sus necesidades.",
-      "aEn": "Yes, please ask our staff for items marked on the menu or adaptable to your dietary needs."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también reservaciones por teléfono o a través de nuestra web.",
-      "aEn": "We welcome walk-ins and also accept reservations by phone or via our website."
-    }
-  ]
+  "faqs": []
 }
