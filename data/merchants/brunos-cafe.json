@@ -2,26 +2,18 @@
   "storeInfo": {
     "id": "brunos-cafe",
     "name": "Bruno's Cafe",
-    "tagline": "Exceptional sips, gourmet bites, and a second home in Farmington.",
-    "address": "1049 Farmington Ave, Farmington, CT 06032",
-    "phone": "(203) 405-1354",
+    "tagline": "Restaurant in Farmington | Restaurant en Farmington",
+    "address": "55 Mill St Unionville, CT 06085",
+    "phone": "(860) 470-3189",
     "hours": {
-      "monday_friday": "7:00 AM - 4:00 PM",
-      "saturday": "8:00 AM - 4:00 PM",
-      "sunday": "8:00 AM - 3:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Free Wi-Fi"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,300 +25,736 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "breakfast",
-      "nameEs": "Desayunos y Bagels",
-      "nameEn": "Breakfast & Bagels",
+      "nameEs": "Desayuno",
+      "nameEn": "Breakfast",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Tostadas de Aguacate",
-      "nameEn": "Avocado Toasts",
+      "id": "avocado-toast",
+      "nameEs": "Pan tostado con aguacate",
+      "nameEn": "Avocado Toast",
       "icon": "Utensils"
     },
     {
-      "id": "sandwiches",
-      "nameEs": "Sándwiches Gourmet",
-      "nameEn": "Gourmet Sandwiches",
+      "id": "gourmet-breakfast-sandwiches",
+      "nameEs": "Sándwiches gourmet para desayuno",
+      "nameEn": "Gourmet Breakfast Sandwiches",
       "icon": "Utensils"
     },
     {
       "id": "salads",
-      "nameEs": "Ensaladas Frescas",
-      "nameEn": "Fresh Salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Café y Bebidas",
-      "nameEn": "Coffee & Drinks",
-      "icon": "Coffee"
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wraps",
+      "nameEs": "Wraps",
+      "nameEn": "Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soup",
+      "nameEs": "Sopa",
+      "nameEn": "Soup",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-drinks",
+      "nameEs": "Bebidas frías",
+      "nameEn": "Cold Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-drinks",
+      "nameEs": "Bebidas calientes",
+      "nameEn": "Hot Drinks",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "brunos-cafe-01",
+      "id": "bagels",
       "categoryId": "breakfast",
-      "nameEs": "Sándwich The Doodle",
-      "nameEn": "The Doodle Sandwich",
-      "descriptionEs": "Salchicha, tocino, papa hash brown, huevo, queso cheddar y miel picante en tu elección de bagel.",
-      "descriptionEn": "Sausage, bacon, hash brown, egg, cheddar cheese & hot honey, on your choice of bagel.",
-      "price": "$10.49",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Desayuno",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "nameEs": "Bagels",
+      "nameEn": "Bagels",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.99 each | $12.00 half dozen | $20.00 full dozen",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-02",
+      "id": "croissants",
       "categoryId": "breakfast",
-      "nameEs": "Sándwich Tocino, Huevo y Queso",
+      "nameEs": "Croissants",
+      "nameEn": "Croissants",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Plain $5.00 | Everything $5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-sourdough",
+      "categoryId": "breakfast",
+      "nameEs": "Masa madre sin gluten",
+      "nameEn": "GF Sourdough",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3.5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-bagel",
+      "categoryId": "breakfast",
+      "nameEs": "Bagel sin gluten",
+      "nameEn": "GF Bagel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sourdough",
+      "categoryId": "breakfast",
+      "nameEs": "Masa madre",
+      "nameEn": "Sourdough",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortilla-fold-over",
+      "categoryId": "breakfast",
+      "nameEs": "Tortilla doblada",
+      "nameEn": "Tortilla Fold Over",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ciabatta",
+      "categoryId": "breakfast",
+      "nameEs": "Ciabatta",
+      "nameEn": "Ciabatta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Tocino, huevo y queso",
       "nameEn": "Bacon, Egg & Cheese",
-      "descriptionEs": "Crujiente tocino local, huevo recién hecho y queso melt fundido en un bagel artesanal.",
-      "descriptionEn": "Crispy bacon, freshly cooked egg, and melted cheese served on your choice of fresh bagel.",
-      "price": "$8.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Clásico",
-        "Desayuno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.00 - $3.25",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-03",
-      "categoryId": "specialties",
-      "nameEs": "Tostada Bruno's Bite",
+      "id": "egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Huevo y queso",
+      "nameEn": "Egg & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.00 - $2.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Salchicha, huevo y queso",
+      "nameEn": "Sausage, Egg & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.00 - $3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Jamón y queso",
+      "nameEn": "Ham & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.50 - $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-egg-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Jamón, huevo y queso",
+      "nameEn": "Ham, Egg & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1.00 - $3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter",
+      "categoryId": "breakfast",
+      "nameEs": "Mantequilla",
+      "nameEn": "Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "0.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "make-it-bruno-s-way",
+      "categoryId": "breakfast",
+      "nameEs": "Hazlo a la manera de Bruno's",
+      "nameEn": "Make It Bruno's Way",
+      "descriptionEs": "Sal, pimienta, catsup y hash brown",
+      "descriptionEn": "Salt, Pepper, Ketchup and Hashbrown",
+      "price": "1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cream-cheese",
+      "categoryId": "breakfast",
+      "nameEs": "Queso crema",
+      "nameEn": "Cream Cheese",
+      "descriptionEs": "Jalapeño cheddar, natural o vegetariano",
+      "descriptionEn": "Jalapeño Cheddar, Plain, or Veggie",
+      "price": "1.85 - 2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-river-hawk",
+      "categoryId": "avocado-toast",
+      "nameEs": "The River Hawk",
+      "nameEn": "The River Hawk",
+      "descriptionEs": "Huevo, queso de cabra, aguacate, rúcula y glaseado balsámico",
+      "descriptionEn": "Egg, Goat Cheese, Avocado, Arugula & Balsamic Glaze",
+      "price": "13.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruno-s-bite",
+      "categoryId": "avocado-toast",
+      "nameEs": "Bruno's Bite",
       "nameEn": "Bruno's Bite",
-      "descriptionEs": "Huevo, aguacate, miel picante, queso feta y hojuelas de chile sobre pan artesanal tostado.",
-      "descriptionEn": "Egg, avocado, hot honey, feta & chili flakes served on artisanal toasted bread.",
-      "price": "$13.49",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "descriptionEs": "Huevo, aguacate, miel picante, feta y hojuelas de chile",
+      "descriptionEn": "Egg, Avocado, Hot Honey, Feta & Chili Flakes",
+      "price": "13.49",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-04",
-      "categoryId": "specialties",
-      "nameEs": "Tostada Burrata y Miel",
+      "id": "burrata-the-bee",
+      "categoryId": "avocado-toast",
+      "nameEs": "Burrata & The Bee",
       "nameEn": "Burrata & The Bee",
-      "descriptionEs": "Burrata cremosa, rúcula, aguacate, miel orgánica y hojuelas de chile sobre tostada crujiente.",
-      "descriptionEn": "Burrata, arugula, avocado, organic honey & chili flakes on artisan crusty bread.",
-      "price": "$13.99",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Vegetariano",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Burrata, rúcula, aguacate, miel orgánica y hojuelas de chile",
+      "descriptionEn": "Burrata, Arugula, Avocado, Organic Honey & Chili Flakes",
+      "price": "13.99",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-05",
-      "categoryId": "specialties",
-      "nameEs": "Tostada Avocado Alchemy",
+      "id": "the-mediterranean",
+      "categoryId": "avocado-toast",
+      "nameEs": "El mediterráneo",
+      "nameEn": "The Mediterranean",
+      "descriptionEs": "Aceitunas kalamata, feta desmoronado, aguacate, tomate y hilo de glaseado balsámico",
+      "descriptionEn": "Kalamata Olives, Crumbled Feta, Avocado, Tomato & Balsamic Glaze Drizzle",
+      "price": "12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-jane",
+      "categoryId": "avocado-toast",
+      "nameEs": "Plain Jane",
+      "nameEn": "Plain Jane",
+      "descriptionEs": "Sazón \"Everything but the Bagel\", aguacate y aceite de oliva cítrico",
+      "descriptionEn": "\"Everything but the Bagel\" Seasoning, Avocado & Citrus Olive Oil",
+      "price": "8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-alchemy",
+      "categoryId": "avocado-toast",
+      "nameEs": "Avocado Alchemy",
       "nameEn": "Avocado Alchemy",
-      "descriptionEs": "Aguacate, rúcula, tomates deshidratados, Prosciutto di Parma y un toque de pesto fresco.",
-      "descriptionEn": "Avocado, arugula, sun-dried tomatoes, Prosciutto di Parma, and a delicate drizzle of pesto.",
-      "price": "$14.99",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Gourmet",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Frutos Secos"
-      ],
+      "descriptionEs": "Aguacate, rúcula, tomates secos, prosciutto di Parma, hilo de pesto",
+      "descriptionEn": "Avocado, Arugula, Sun-dried Tomatoes, Prosciutto di Parma, Drizzle of Pesto",
+      "price": "14.99",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-06",
-      "categoryId": "sandwiches",
-      "nameEs": "Sándwich The Golden Child",
-      "nameEn": "The Golden Child",
-      "descriptionEs": "Milanesa de pollo crujiente, miel picante, pepinillos, ensalada de repollo casera y queso azul en pan baguette Il Filone.",
-      "descriptionEn": "Chicken cutlets, hot honey, pickles, home-made slaw & blue cheese on an Il Filone baguette.",
-      "price": "$12.99",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Picante",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "the-doodle",
+      "categoryId": "gourmet-breakfast-sandwiches",
+      "nameEs": "The Doodle",
+      "nameEn": "The Doodle",
+      "descriptionEs": "Salchicha, tocino, hash brown, huevo, queso cheddar y miel picante, en el bagel de tu elección. (Disponible en croissant o masa madre con cargo extra)",
+      "descriptionEn": "Sausage, Bacon, Hash brown, Egg, Cheddar Cheese & Hot Honey, on your choice of bagel. (Available on a Croissant or Sourdough for an extra charge)",
+      "price": "10.49",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-07",
-      "categoryId": "sandwiches",
-      "nameEs": "Sándwich The French Riviera",
+      "id": "the-french-riviera",
+      "categoryId": "gourmet-breakfast-sandwiches",
+      "nameEs": "The French Riviera",
       "nameEn": "The French Riviera",
-      "descriptionEs": "Huevo, queso de cabra, aguacate, rúcula, glaseado balsámico, tomates deshidratados y aceitunas Kalamata en baguette.",
-      "descriptionEn": "Egg, goat cheese, avocado, arugula, balsamic glaze, sun-dried tomatoes & Kalamata olives on Il Filone baguette.",
-      "price": "$12.99",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Vegetariano",
-        "Mediterráneo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "descriptionEs": "Huevo, queso de cabra, aguacate, rúcula, glaseado balsámico, tomates secos y aceitunas kalamata en baguettes Il Filone",
+      "descriptionEn": "Egg, Goat Cheese, Avocado, Arugula, Balsamic Glaze, Sun Dried Tomatoes & Kalamata Olives on a Il Filone baguettes",
+      "price": "12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-08",
-      "categoryId": "sandwiches",
-      "nameEs": "Burrito Breky",
+      "id": "sunny-grove",
+      "categoryId": "gourmet-breakfast-sandwiches",
+      "nameEs": "Sunny Grove",
+      "nameEn": "Sunny Grove",
+      "descriptionEs": "Tocino, aioli de sriracha, huevo, aguacate en croissant",
+      "descriptionEn": "Bacon, Sriracha Aioli, Egg, Avocado on a Croissant",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breky-burrito",
+      "categoryId": "gourmet-breakfast-sandwiches",
+      "nameEs": "Breky Burrito",
       "nameEn": "Breky Burrito",
-      "descriptionEs": "3 huevos, tocino, salchicha, chiles cherry, papa hash brown, alioli de Sriracha y queso cheddar en tortilla de espinaca.",
-      "descriptionEn": "3 eggs, bacon, sausage, cherry peppers, hash brown, sriracha aioli & cheddar cheese in a spinach wrap.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Abundante",
-      "tags": [
-        "Desayuno",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "descriptionEs": "3 huevos, tocino, salchicha, chiles cherry, hash brown, aioli de sriracha y queso cheddar en wrap de espinaca",
+      "descriptionEn": "3 Eggs, Bacon, Sausage, Cherry Peppers, Hash Brown, Sriracha Aioli & Cheddar Cheese on a Spinach Wrap",
+      "price": "11",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-09",
+      "id": "caesar-salad",
       "categoryId": "salads",
-      "nameEs": "Ensalada Mr. Bruno's",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, queso parmesano, crutones caseros",
+      "descriptionEn": "Romaine, Parmesan Cheese, House-Made Croutons",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mr-bruno-s-salad",
+      "categoryId": "salads",
+      "nameEs": "Mr. Bruno's Salad",
       "nameEn": "Mr. Bruno's Salad",
-      "descriptionEs": "Rúcula fresca, arándanos secos, queso de cabra, milanesa de pollo crujiente y manzana en rodajas con aderezo de la casa.",
-      "descriptionEn": "Arugula, cran-raisins, goat cheese, chicken cutlets & fresh apple served with house dressing.",
-      "price": "$17.00",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Ensalada",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Rúcula, arándanos secos, queso de cabra, milanesa de pollo y manzana",
+      "descriptionEn": "Arugula, Cran-Raisins, Goat Cheese, Chicken Cutlets & Apple",
+      "price": "17",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-10",
+      "id": "southern-salad",
       "categoryId": "salads",
-      "nameEs": "Ensalada Toscana",
+      "nameEs": "Southern Salad",
+      "nameEn": "Southern Salad",
+      "descriptionEs": "Lechuga romana, aguacate, cebolla morada encurtida, elote, crutones caseros y Tajín",
+      "descriptionEn": "Romaine, Avocado, Pickled Red Onion, Corn, House Made Croutons & Tajin",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuscan-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada toscana",
       "nameEn": "Tuscan Salad",
-      "descriptionEs": "Rúcula, trozos de queso azul, pollo tierno a la parrilla y nueces, servido con aderezo casero de miel y balsámico.",
-      "descriptionEn": "Arugula, blue cheese crumble, chicken & walnuts served with a homemade honey balsamic dressing.",
-      "price": "$15.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Ensalada",
-        "Frutos Secos"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "descriptionEs": "Rúcula, queso azul desmoronado, pollo y nueces, servido con aderezo casero de miel y balsámico",
+      "descriptionEn": "Arugula, Blue Cheese Crumble, Chicken & Walnuts Served with a Homemade Honey Balsamic Dressing",
+      "price": "15",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-11",
-      "categoryId": "beverages",
-      "nameEs": "Café Latte Artesanal",
-      "nameEn": "Artisanal Cafe Latte",
-      "descriptionEs": "Excepcionales granos de Counter Culture Coffee con leche fresca de Arethusa Farm o leche vegetal casera.",
-      "descriptionEn": "Exceptional Counter Culture espresso paired with fresh Arethusa Farm milk or in-house plant milk.",
-      "price": "$5.25",
-      "popular": true,
-      "badge": "Cafetería",
-      "tags": [
-        "Café",
-        "Bebida"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "greek-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga romana, tomate, feta desmoronado, aceitunas kalamata",
+      "descriptionEn": "Romaine, Tomato, Crumbled Feta, Kalamata Olives",
+      "price": "14",
       "ctaType": "in_store"
     },
     {
-      "id": "brunos-cafe-12",
-      "categoryId": "beverages",
-      "nameEs": "Café Cold Brew de la Casa",
-      "nameEn": "Signature Cold Brew",
-      "descriptionEs": "Café infundido en frío durante 24 horas, suave, refrescante y con notas aromáticas intensas.",
-      "descriptionEn": "Slow-steeped cold brew coffee roasted weekly, served ice cold over artisanal ice.",
-      "price": "$4.75",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Café",
-        "Frío"
-      ],
-      "allergens": [],
+      "id": "the-golden-child",
+      "categoryId": "sandwiches",
+      "nameEs": "The Golden Child",
+      "nameEn": "The Golden Child",
+      "descriptionEs": "Milanesas de pollo, miel picante, pepinillos, coleslaw casero y queso azul en baguettes Il Filone",
+      "descriptionEn": "Chicken Cutlets, Hot Honey, Pickles, Home-made Slaw & Blue Cheese on a Il Filone baguettes",
+      "price": "12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bee-l-tee",
+      "categoryId": "sandwiches",
+      "nameEs": "Bee-L-Tee",
+      "nameEn": "Bee-L-Tee",
+      "descriptionEs": "Tocino, lechuga romana, tomate y mayonesa en masa madre",
+      "descriptionEn": "Bacon, Romaine, Tomato & Mayo on Sourdough",
+      "price": "11.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "di-parma-panini",
+      "categoryId": "sandwiches",
+      "nameEs": "Di Parma Panini",
+      "nameEn": "Di Parma Panini",
+      "descriptionEs": "Prosciutto di Parma, rúcula, queso de cabra, glaseado balsámico y manzana en baguettes Il Filone",
+      "descriptionEn": "Prosciutto di Parma, Arugula, Goat Cheese, Balsamic Glaze & Apple on a Il Filone baguettes",
+      "price": "13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-ville",
+      "categoryId": "sandwiches",
+      "nameEs": "The Ville",
+      "nameEn": "The Ville",
+      "descriptionEs": "Pavo, aguacate, tocino, tomate, rúcula y aioli de sriracha en masa madre",
+      "descriptionEn": "Turkey, Avocado, Bacon, Tomato, Arugula & Sriracha Aioli on Sourdough",
+      "price": "13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-soup",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de queso a la plancha y sopa",
+      "nameEn": "Grilled Cheese & Soup",
+      "descriptionEs": "Servido en masa madre con sopa de tomate y albahaca",
+      "descriptionEn": "Served on sourdough with Tomato Basil Soup",
+      "price": "11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-garden-goddess-panini",
+      "categoryId": "sandwiches",
+      "nameEs": "The Garden Goddess Panini",
+      "nameEn": "The Garden Goddess Panini",
+      "descriptionEs": "Queso cheddar, aguacate, cebolla morada encurtida, lechuga romana crujiente, rebanadas de tomate y aceite de oliva cítrico ligero en masa madre",
+      "descriptionEn": "Cheddar Cheese, Avocado, Pickled Red Onion, Crispy Romaine Lettuce, Tomato Slices and light Citrus Olive Oil on Sourdough",
+      "price": "12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-mama",
+      "categoryId": "sandwiches",
+      "nameEs": "Hot Mama",
+      "nameEn": "Hot Mama",
+      "descriptionEs": "Servido en ciabatta prensada tipo panini, burrata, rúcula, prosciutto, miel picante y chiles cherry suaves",
+      "descriptionEn": "Served on a Panini Pressed Ciabatta, Burrata, Arugula, Prosciutto, Hot Honey, and Light Cherry Peppers",
+      "price": "14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruno-s-cubano",
+      "categoryId": "sandwiches",
+      "nameEs": "Bruno's Cubano",
+      "nameEn": "Bruno's Cubano",
+      "descriptionEs": "Servido en ciabatta prensada tipo panini, jamón, tocino, pepinillo, queso cheddar y mostaza dulce/picante, con un pepinillo aparte",
+      "descriptionEn": "Served on a Panini Pressed Ciabatta, Ham, Bacon, Pickle, Cheddar Cheese, and Sweet/Spicy Mustard, with a pickle on the side",
+      "price": "13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicky-salad-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Chicky Salad Wrap",
+      "nameEn": "Chicky Salad Wrap",
+      "descriptionEs": "Ensalada de pollo, manzana, arándanos secos y lechuga romana en wrap de espinaca",
+      "descriptionEn": "Chicken Salad, Apple, Cran-Raisins & Romaine on a Spinach Wrap",
+      "price": "12.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "exit-14",
+      "categoryId": "wraps",
+      "nameEs": "Exit 14",
+      "nameEn": "Exit 14",
+      "descriptionEs": "Milanesa de pollo, aguacate, rúcula, miel picante, feta y hojuelas de chile en wrap de espinaca",
+      "descriptionEn": "Chicken Cutlet, Avocado, Arugula, Hot Honey, Feta & Chili Flakes on a Spinach Wrap",
+      "price": "13.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-avocado-club",
+      "categoryId": "wraps",
+      "nameEs": "The Avocado Club",
+      "nameEn": "The Avocado Club",
+      "descriptionEs": "Pavo, aguacate, tocino, tomate, aioli de sriracha y lechuga romana en wrap de espinaca",
+      "descriptionEn": "Turkey, Avocado, Bacon, Tomato, Sriracha Aioli & Romaine on a Spinach Wrap",
+      "price": "12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "Milanesa de pollo, lechuga romana, queso parmesano y aderezo César en wrap de espinaca",
+      "descriptionEn": "Chicken Cutlet, Romaine, Parmesan Cheese & Caesar Dressing on a Spinach Wrap",
+      "price": "12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamy-tomato-basil",
+      "categoryId": "soup",
+      "nameEs": "Sopa cremosa de tomate y albahaca",
+      "nameEn": "Creamy Tomato Basil",
+      "descriptionEs": "Servida con una rebanada de pan de masa madre",
+      "descriptionEn": "Served with a slice of Sourdough Bread",
+      "price": "6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-noodle",
+      "categoryId": "soup",
+      "nameEs": "Pollo con fideos",
+      "nameEn": "Chicken Noodle",
+      "descriptionEs": "Servida con una rebanada de pan de masa madre",
+      "descriptionEn": "Served with a slice of Sourdough Bread",
+      "price": "6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-coffee-americano",
+      "categoryId": "cold-drinks",
+      "nameEs": "Café helado (americano)",
+      "nameEn": "Iced Coffee (Americano)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (16oz) | 5.5 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-latte",
+      "categoryId": "cold-drinks",
+      "nameEs": "Latte helado",
+      "nameEn": "Iced Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5 (16oz) | 6.5 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-cold-brew",
+      "categoryId": "cold-drinks",
+      "nameEs": "Cold brew de la casa",
+      "nameEn": "House-Made Cold Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5 (16oz) | 6.5 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shaken-espresso",
+      "categoryId": "cold-drinks",
+      "nameEs": "Espresso agitado",
+      "nameEn": "Shaken Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6.5 (16oz) | 8 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai-tea-latte",
+      "categoryId": "cold-drinks",
+      "nameEs": "Chai latte helado",
+      "nameEn": "Iced Chai Tea Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6.5 (16oz) | 8 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha-tea-latte",
+      "categoryId": "cold-drinks",
+      "nameEs": "Latte de té matcha helado",
+      "nameEn": "Iced Matcha Tea Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6 (16oz) | 7.5 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "cold-drinks",
+      "nameEs": "Té helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (16oz) | 5.5 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruno-s-cold-cocoa",
+      "categoryId": "cold-drinks",
+      "nameEs": "Chocolate frío de Bruno's",
+      "nameEn": "Bruno's Cold Cocoa",
+      "descriptionEs": "cubierto con crema batida",
+      "descriptionEn": "topped w/ whipped cream",
+      "price": "5.5 (16oz) | 7 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "cold-drinks",
+      "nameEs": "Limonada",
+      "nameEn": "Lemonade",
+      "descriptionEs": "Regular | Compota de fresa o mango +0.75",
+      "descriptionEn": "Regular | Strawberry or mango compote +0.75",
+      "price": "4.5 (16oz) | 6 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "refresher",
+      "categoryId": "cold-drinks",
+      "nameEs": "Refresher",
+      "nameEn": "Refresher",
+      "descriptionEs": "Sabores: pitahaya, saúco, mango, carambola, maracuyá, kiwi, menta, hierba de limón",
+      "descriptionEn": "Flavors: Dragonfruit, Elderberry, Mango, Starfruit, Passionfruit, Kiwi, Mint, Lemongrass",
+      "price": "5.5 (16oz) | 7 (24oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "single-espresso",
+      "categoryId": "hot-drinks",
+      "nameEs": "Espresso sencillo",
+      "nameEn": "Single Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "2 (1oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-espresso",
+      "categoryId": "hot-drinks",
+      "nameEs": "Espresso doble",
+      "nameEn": "Double Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3 (2oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "con-panna",
+      "categoryId": "hot-drinks",
+      "nameEs": "Con Panna",
+      "nameEn": "Con Panna",
+      "descriptionEs": "+ Crema batida",
+      "descriptionEn": "+ Whipped Cream",
+      "price": "3.5 (2oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-macchiato",
+      "categoryId": "hot-drinks",
+      "nameEs": "Espresso Macchiato",
+      "nameEn": "Espresso Macchiato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (3oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cortado",
+      "categoryId": "hot-drinks",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4.5 (4oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "hot-drinks",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5.25 (8oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "americano",
+      "categoryId": "hot-drinks",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (12oz) | 5 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caffe-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Caffe Latte",
+      "nameEn": "Caffe Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6.25 (12oz) | 7.25 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "batch-brew",
+      "categoryId": "hot-drinks",
+      "nameEs": "Café de lote",
+      "nameEn": "Batch Brew",
+      "descriptionEs": "café de goteo",
+      "descriptionEn": "drip coffee",
+      "price": "3 (12oz) | 4 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (12oz) | 5 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha-tea-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Latte de té matcha",
+      "nameEn": "Matcha Tea Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5.5 (12oz) | 6.5 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chai-tea-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chai latte caliente",
+      "nameEn": "Hot Chai Tea Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5 (12oz) | 6 (16oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruno-s-hot-cocoa",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chocolate caliente de Bruno's",
+      "nameEn": "Bruno's Hot Cocoa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4 (12oz) | 5 (16oz)",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "Sí, usamos leche fresca de Arethusa Farm Dairy en Bantam, CT, y elaboramos nuestras propias leches vegetales caseras sin conservantes.",
-      "qEn": "Do you use local dairy in your drinks?",
-      "aEn": "Yes, we proudly use farm-fresh milk from Arethusa Farm Dairy in Bantam, CT, and make our own oat and almond milks in-house."
-    },
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con pan sin gluten, bagels sin gluten y deliciosas opciones vegetarianas en todo nuestro menú.",
-      "aEn": "Yes, we offer gluten-free bread, gluten-free bagels, and numerous vegetarian options across our menu."
-    },
-    {
-      "qEs": "¡Claro que sí! Contamos con opciones de catering para reuniones corporativas y eventos, además de nuestro tráiler Airstream de 1965.",
-      "qEn": "Do you offer catering services for events?",
-      "aEn": "Yes! We offer catering for corporate events and gatherings, plus our beautifully restored 1965 vintage Airstream trailer."
-    }
-  ]
+  "faqs": []
 }
