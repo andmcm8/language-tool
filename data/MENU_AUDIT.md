@@ -136,10 +136,10 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `mama-chow` | Mama Chow | 3381 Post Rd, Southport (Fairfield), CT 06890 | 58 |
 | `mama-teresas` | Mama Teresa's Italian Restaurant & Pizza | 851 Boston Post Rd, Milford, CT 06460 | 36 |
 | `mamouns` | Mamoun's Falafel | 85 Howe St, Howe St, CT | 36 |
-| `mandarin-garden` | Mandarin Garden Restaurant | 31 Main Street, Griswold, CT 06351 | 174 |
+| `mandarin-garden` | Mandarin Garden Restaurant | 31 Main Street, Griswold, CT 06351 | 231 |
 | `martel-bistro-bar` | Martel | 2316 Post Road, Fairfield, CT 06824 | 115 |
 | `marys-diner` | Mary's Diner | 579 Watertown Avenue, Waterbury, CT 06708 | 158 |
-| `ming-moon-restaurant` | Ming Moon Restaurant | 1386 Berlin Turnpike, Wethersfield, CT 06109 | 198 |
+| `ming-moon-restaurant` | Ming Moon Restaurant | 1386 Berlin Turnpike, Wethersfield, CT 06109 | 214 |
 | `misty-vale-deli` | Misty Vale Deli | 51 Berkshire Road, Sandy Hook Connecticut 06482 | 113 |
 | `modern-apizza` | Modern Apizza | 874 State St, New Haven, CT 06511 | 34 |
 | `modern-pastry-shop` | Modern Pastry Shop, Inc. | 422 Franklin Avenue, Hartford, CT 06114 | 62 |
@@ -152,9 +152,9 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `newtown-pizza-palace` | Pizza Palace | 65 Church Hill Road, Newtown, CT 06470 | 318 |
 | `newtown-road-italian-deli-pizza` | Newtown Road Italian Deli & Pizza | 60 Newtown Rd, Danbury, CT 06810 | 166 |
 | `obriens-irish-pub` | O'Brien's Irish Pub | 83 Lake Ave, Danbury, CT 06810 | 14 |
-| `ocha-thai-japanese-cuisine` | Ocha Thai & Japanese Cuisine | 83 Prospect St, Stamford, CT 06901 | 137 |
+| `ocha-thai-japanese-cuisine` | Ocha Thai & Japanese Cuisine | 83 Prospect St, Stamford, CT 06901 | 173 |
 | `oko` | OKO | 6 Wilton Rd, Westport, CT 06880 | 149 |
-| `old-tymes-restaurant` | Olde Tymes | 360 West Main Street, Norwich, CT 06360 | 168 |
+| `old-tymes-restaurant` | Olde Tymes | 360 West Main Street, Norwich, CT 06360 | 175 |
 | `olio-restaurant-bar` | Olio | 33 Kings Highway Groton, CT 06340 | 146 |
 | `one-world-roasters` | One World Coffee Roasters | 967 North High Street East Haven, CT 06512 | 21 |
 | `orems-diner` | Orem's Diner | 167 Danbury Road, Wilton, CT 06897 | 362 |
@@ -178,13 +178,13 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `ralph-n-richs` | Ralph n Rich's | 815 Main Street, Bridgeport, CT | 12 |
 | `riverdale-diner` | Riverdale Diner | 521 River Road, Shelton, CT 06484 | 67 |
 | `rizzutos-oyster-bar-restaurant` | Rizzuto's Oyster Bar & Restaurant | 540 Riverside Avenue, Westport, CT 06880 | 108 |
-| `roma-pizza-and-deli` | Roma Pizza and Deli | 95 Forestville Ave Plainville CT 06062 | 197 |
+| `roma-pizza-and-deli` | Roma Pizza and Deli | 95 Forestville Ave Plainville CT 06062 | 209 |
 | `roma-sports-bar-grill` | Roma Restaurant | 382 Allen Street, New Britain, CT 06053 | 136 |
 | `ross-artisanal-bakery` | Ross Artisanal Bakery & Cafe | 109 Danbury Rd, Ridgefield, CT 06877 | 40 |
 | `sbc-brewery-restaurant` | SBC Restaurant & Beer Bar | 33 New Haven Ave, Milford, CT 06460 | 63 |
 | `seven-seas-restaurant` | Seven Seas Restaurant | 167 Bridgeport Ave, Milford, CT 06460 | 12 |
 | `sherwood-diner` | Sherwood Diner | 901 Post Road East, Westport, CT 06880 | 103 |
-| `solis-restaurant` | Solis Restaurant | 352 CT-2, Preston, CT 06365 | 165 |
+| `solis-restaurant` | Solis Restaurant | 352 CT-2, Preston, CT 06365 | 179 |
 | `somewhere-in-bangkok` | Somewhere In Bangkok Restaurant | 1103 Queen St Unit 1, Southington, CT 06489 | 174 |
 | `sorrento-importing` | Sorrento Importing | 1838 Black Rock Turnpike, Fairfield, CT 06825 | 122 |
 | `southwest-cafe` | Southwest Cafe | 109 Danbury Rd, Ridgefield, CT 06877 | 56 |
