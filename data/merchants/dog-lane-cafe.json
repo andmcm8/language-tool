@@ -2,25 +2,18 @@
   "storeInfo": {
     "id": "dog-lane-cafe",
     "name": "Dog Lane Café",
-    "tagline": "Crafted comfort food and artisanal coffee in the heart of Mansfield, CT.",
-    "address": "One Dog Lane, Storrs, CT 06268",
-    "phone": "",
+    "tagline": "American cafe in Storrs | Cafetería americana en Storrs",
+    "address": "1 Dog Ln, Storrs, CT 06269",
+    "phone": "(860) 429-4900",
     "hours": {
-      "monday_friday": "8:00 AM - 9:00 PM",
-      "saturday": "8:00 AM - 10:00 PM",
-      "sunday": "8:00 AM - 8:00 PM"
+      "monday_friday": "7:00 AM - 9:00 PM",
+      "saturday": "8:00 AM - 9:00 PM",
+      "sunday": "8:00 AM - 9:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,278 +25,922 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "burritos",
+      "nameEs": "Burritos",
+      "nameEn": "Burritos",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "breakfast-sandwiches",
+      "nameEs": "Sándwiches de desayuno",
+      "nameEn": "Breakfast Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "soups-salads",
+      "nameEs": "Sopas y ensaladas",
+      "nameEn": "Soups & Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "from-the-grill",
+      "nameEs": "De la parrilla",
+      "nameEn": "From The Grill",
+      "icon": "Utensils"
+    },
+    {
+      "id": "artisan-grilled-cheese",
+      "nameEs": "Queso a la plancha artesanal",
+      "nameEn": "Artisan Grilled Cheese",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kid’s Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "smoothies",
+      "nameEs": "Smoothies",
+      "nameEn": "Smoothies",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-wine",
+      "nameEs": "Cerveza y vino",
+      "nameEn": "Beer & Wine",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "dog-lane-cafe-01",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Cebolla Gratinada",
-      "nameEn": "French Onion Soup",
-      "descriptionEs": "Caldo de cebolla caramelizada a fuego lento, cubierto con pan crujiente y queso Gruyère fundido.",
-      "descriptionEn": "Slow-simmered caramelized onion broth topped with crusty artisanal bread and melted Gruyère cheese.",
-      "price": "$9.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "ham-cheddar",
+      "categoryId": "burritos",
+      "nameEs": "Jamón y cheddar",
+      "nameEn": "Ham & Cheddar",
+      "descriptionEs": "Huevos revueltos, jamón rebanado y cheddar Cabot",
+      "descriptionEn": "Scrambled Eggs, Sliced Ham & Cabot Cheddar",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-02",
-      "categoryId": "appetizers",
-      "nameEs": "Trocitos de Pollo Crujientes",
-      "nameEn": "Crispy Chicken Tenders",
-      "descriptionEs": "Tiras de pollo empanizadas al estilo casero, servidas con salsa honey mustard y papas fritas.",
-      "descriptionEn": "Hand-breaded crispy chicken strips served with house honey mustard and seasoned French fries.",
-      "price": "$11.95",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "vegetable",
+      "categoryId": "burritos",
+      "nameEs": "Vegetales",
+      "nameEn": "Vegetable",
+      "descriptionEs": "Huevos revueltos, vegetales mixtos y cheddar Cabot",
+      "descriptionEn": "Scrambled Eggs, Mixed Vegetables & Cabot Cheddar",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada César Clásica",
-      "nameEn": "Classic Caesar Salad",
-      "descriptionEs": "Lechuga romana fresca, crutones de ajo al horno, queso parmesano rallado y aderezo César de la casa.",
-      "descriptionEn": "Crisp romaine lettuce, garlic butter croutons, shaved parmesan cheese, and house-made Caesar dressing.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Fresco",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Pescado"
-      ],
+      "id": "abc",
+      "categoryId": "burritos",
+      "nameEs": "ABC",
+      "nameEn": "ABC",
+      "descriptionEs": "Huevos revueltos, aguacate, tocino ahumado con madera de manzano, cheddar Cabot y arúgula",
+      "descriptionEn": "Scrambled Eggs, Avocado, Applewood Smoked Bacon, Cabot Cheddar & Arugula",
+      "price": "$13.50",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Dog Lane Signature",
-      "nameEn": "Dog Lane Signature Burger",
-      "descriptionEs": "Jugosa carne de res a la parrilla, tocino crujiente, queso cheddar maduro, lechuga, tomate y mayonesa de ajo en pan brioche.",
-      "descriptionEn": "Juicy grilled beef patty, crisp bacon, aged cheddar cheese, lettuce, tomato, and garlic aioli on a toasted brioche bun.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "A la Parrilla",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "hangover",
+      "categoryId": "burritos",
+      "nameEs": "Cruda (Hangover)",
+      "nameEn": "Hangover",
+      "descriptionEs": "Huevos revueltos, salchicha de pollo con maple, papas caseras, cheddar Cabot, arúgula y sriracha",
+      "descriptionEn": "Scrambled Eggs, Maple Chicken Sausage, Home Fries, Cabot Cheddar, Arugula & Sriracha",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-05",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo a la Parrilla con Aguacate",
-      "nameEn": "Grilled Chicken & Avocado Sandwich",
-      "descriptionEs": "Pechuga de pollo marinada, aguacate fresco, brotes tiernos, tomate y alioli de chipotle en pan ciabatta artesanal.",
-      "descriptionEn": "Marinated grilled chicken breast, fresh avocado, microgreens, tomato, and chipotle aioli on artisanal ciabatta bread.",
-      "price": "$15.25",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "chorizo",
+      "categoryId": "burritos",
+      "nameEs": "Chorizo",
+      "nameEn": "Chorizo",
+      "descriptionEs": "Huevos revueltos, cebolla caramelizada, aguacate, salsa y pepper jack ahumado",
+      "descriptionEn": "Scrambled Eggs, Caramelized Onions, Avocado, Salsa & Smoked Pepper Jack",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-06",
-      "categoryId": "mains",
-      "nameEs": "Macarrones con Queso Artesanales",
-      "nameEn": "Artisanal Truffle Mac & Cheese",
-      "descriptionEs": "Pasta cavatappi mezclada con una cremosa mezcla de cuatro quesos, toque de aceite de trufa y costra de pan rallado.",
-      "descriptionEn": "Cavatappi pasta tossed in a creamy four-cheese blend, finished with a hint of white truffle oil and toasted breadcrumb crust.",
-      "price": "$14.75",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano",
-        "Confort"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "egg-cheese",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Huevo y queso",
+      "nameEn": "Egg & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-07",
-      "categoryId": "specialties",
-      "nameEs": "Salmón a la Plancha con Glaseado Balsámico",
-      "nameEn": "Pan-Seared Balsamic Glazed Salmon",
-      "descriptionEs": "Filete de salmón fresco de Alaska cocinado a la perfección, acompañado de espárragos salteados y puré de papas.",
-      "descriptionEn": "Fresh Alaskan salmon fillet seared to perfection, served alongside sautéed asparagus and garlic herb mashed potatoes.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "bagel",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Bagel",
+      "nameEn": "Bagel",
+      "descriptionEs": "pregunta por las opciones de hoy",
+      "descriptionEn": "ask about today’s choices",
+      "price": "$5.50",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-08",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz arborio cremoso cocinado con hongos silvestres salteados, vino blanco, mantequilla y queso parmesano fresco.",
-      "descriptionEn": "Creamy Arborio rice simmered with assorted wild mushrooms, white wine, butter, and shaved parmesan cheese.",
-      "price": "$18.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Gourmet"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "with-cream-cheese-or-peanut-butter",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "con queso crema o mantequilla de maní",
+      "nameEn": "with Cream Cheese or Peanut Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.25",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-09",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Pescado Baja Style",
-      "nameEn": "Baja Style Fish Tacos",
-      "descriptionEs": "Pescado rebozado crujiente en tortillas de maíz suave, repollo morado, pico de gallo y salsa cremosa de chipotle y cilantro.",
-      "descriptionEn": "Crispy battered fish in soft corn tortillas with shredded red cabbage, fresh pico de gallo, and creamy cilantro-lime crema.",
+      "id": "with-hummus-avocado-tomato",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "con hummus, aguacate y tomate",
+      "nameEn": "with Hummus, Avocado & Tomato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "best-evah-egg-sandwich",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "El mejor sándwich de huevo (Best Evah)",
+      "nameEn": "Best Evah Egg Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-goddess-fried-egg-sandwich",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Sándwich de huevo frito Green Goddess",
+      "nameEn": "Green Goddess Fried Egg Sandwich",
+      "descriptionEs": "Cheddar Cabot, espinaca, aguacate y pesto en pan de masa madre",
+      "descriptionEn": "Cabot Cheddar, Spinach, Avocado & Pesto on Sourdough",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-avocado-sandwich",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Sándwich de pavo y aguacate",
+      "nameEn": "Turkey Avocado Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hummus-egg-sandwich",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Sándwich de huevo con hummus",
+      "nameEn": "Hummus Egg Sandwich",
+      "descriptionEs": "con pimientos rojos asados y kale en pan multigrano",
+      "descriptionEn": "with Roasted Red Peppers, & Kale on Multigrain",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-cowboy",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Vaquero picante (Spicy Cowboy)",
+      "nameEn": "Spicy Cowboy",
+      "descriptionEs": "Tocino ahumado con madera de manzano, queso americano y sriracha en muffin inglés",
+      "descriptionEn": "Applewood Smoked Bacon, American Cheese & Sriracha on English Muffin",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel-with-smoked-salmon",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Bagel con salmón ahumado",
+      "nameEn": "Bagel with Smoked Salmon",
+      "descriptionEs": "con queso crema con hierbas, lechuga, tomate, cebolla, limón y alcaparras",
+      "descriptionEn": "with Herbed Cream Cheese, Lettuce, Tomato, Onion, Lemon & Capers",
       "price": "$16.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante Suave"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-10",
+      "id": "cup-bowl-of-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza/tazón de sopa",
+      "nameEn": "Cup/Bowl of Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-bowl-of-chili",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza/tazón de chili",
+      "nameEn": "Cup/Bowl of Chili",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-of-soup-12-sandwich",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza de sopa y ½ sándwich",
+      "nameEn": "Cup of Soup & ½ Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-of-soup-small-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza de sopa y ensalada chica",
+      "nameEn": "Cup of Soup & Small Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-of-chili-12-sandwich",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza de chili y ½ sándwich",
+      "nameEn": "Cup of Chili & ½ Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-of-chili-small-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Taza de chili y ensalada chica",
+      "nameEn": "Cup of Chili & Small Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-spinach-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada caprese de espinaca",
+      "nameEn": "Caprese Spinach Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-cobb-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada Cobb de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Cobb Salad",
+      "descriptionEs": "con queso azul, tocino ahumado con madera de manzano, huevo, tomates cherry, aguacate, hojas verdes mixtas y aderezo ranch",
+      "descriptionEn": "with Bleu Cheese, Applewood Smoked Bacon, Egg, Cherry Tomatoes, Avocado, Mixed Greens & Ranch Dressing",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buddha-bowl",
+      "categoryId": "soups-salads",
+      "nameEs": "Tazón Buda",
+      "nameEn": "Buddha Bowl",
+      "descriptionEs": "Quinoa, kale, pepino, zanahoria rallada, aguacate, hummus, pimientos rojos asados y aderezo de ajonjolí tostado",
+      "descriptionEn": "Quinoa, Kale, Cucumber, Shredded Carrot, Avocado, Hummus, Roasted Red Peppers, & Toasted Sesame Dressing",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-beet-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de betabel asado",
+      "nameEn": "Roasted Beet Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-burger",
+      "categoryId": "from-the-grill",
+      "nameEs": "Hamburguesa de bistec",
+      "nameEn": "Steak Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-dog-house-burger",
+      "categoryId": "from-the-grill",
+      "nameEs": "Hamburguesa The Dog House",
+      "nameEn": "The Dog House Burger",
+      "descriptionEs": "con tocino ahumado con madera de manzano, cheddar Cabot, lechuga, tomate, cebolla caramelizada y kétchup picante",
+      "descriptionEn": "with Applewood Smoked Bacon, Cabot Cheddar, Lettuce, Tomato, Caramelized Onions & Spicy Ketchup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-burger",
+      "categoryId": "from-the-grill",
+      "nameEs": "Hamburguesa de pavo",
+      "nameEn": "Turkey Burger",
+      "descriptionEs": "con lechuga, tomate, cebolla y kétchup picante",
+      "descriptionEn": "with Lettuce, Tomato, Onion & Spicy Ketchup",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-breast",
+      "categoryId": "from-the-grill",
+      "nameEs": "Pechuga de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Breast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-chicken-breast",
+      "categoryId": "from-the-grill",
+      "nameEs": "Pechuga de pollo ennegrecida",
+      "nameEn": "Blackened Chicken Breast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-black-bean-burger",
+      "categoryId": "from-the-grill",
+      "nameEs": "Hamburguesa de frijol negro de la casa",
+      "nameEn": "House Black Bean Burger",
+      "descriptionEs": "con lechuga, tomate, cebolla y kétchup picante",
+      "descriptionEn": "with Lettuce, Tomato, Onion & Spicy Ketchup",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-caramelized-onions",
+      "categoryId": "artisan-grilled-cheese",
+      "nameEs": "Manzana y cebolla caramelizada",
+      "nameEn": "Apple & Caramelized Onions",
+      "descriptionEs": "con queso azul y cheddar Cabot en pan de centeno",
+      "descriptionEn": "with Bleu Cheese & Cabot Cheddar on Rye",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-beef-short-rib",
+      "categoryId": "artisan-grilled-cheese",
+      "nameEs": "Costilla corta de res con trufa",
+      "nameEn": "Truffle Beef Short Rib",
+      "descriptionEs": "con cebolla caramelizada, cheddar Cabot y mayonesa de trufa en pan de masa madre",
+      "descriptionEn": "with Caramelized Onions, Cabot Cheddar & Truffle Mayo on Sourdough",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese",
+      "categoryId": "artisan-grilled-cheese",
+      "nameEs": "Caprese",
+      "nameEn": "Caprese",
+      "descriptionEs": "con espinaca, mozzarella fresca, pesto, tomates asados y aceite de oliva en pan de masa madre",
+      "descriptionEn": "with Spinach, Fresh Mozzarella, Pesto, Roasted Tomatoes & Olive Oil on Sourdough",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chipotle-fried-cheddar",
+      "categoryId": "artisan-grilled-cheese",
+      "nameEs": "Cheddar frito al chipotle",
+      "nameEn": "Chipotle Fried Cheddar",
+      "descriptionEs": "con mayonesa de chipotle y pepinillos picados en pan de masa madre",
+      "descriptionEn": "with Chipotle Mayo & Chopped Pickles on Sourdough",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetarian",
+      "categoryId": "sandwiches",
+      "nameEs": "Vegetariano",
+      "nameEn": "Vegetarian",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-panino",
+      "categoryId": "sandwiches",
+      "nameEs": "Panino italiano",
+      "nameEn": "Italian Panino",
+      "descriptionEs": "Jamón, salami, provolone, pimientos rojos asados, lechuga, tomate, cebolla morada y vinagreta de balsámico blanco en ciabatta",
+      "descriptionEn": "Ham, Salami, Provolone, Roasted Red Peppers, Lettuce, Tomato, Red Onion & White Balsamic Vinaigrette on Ciabatta",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cranberry-apple-chicken-salad",
+      "categoryId": "sandwiches",
+      "nameEs": "Ensalada de pollo con arándano rojo y manzana",
+      "nameEn": "Cranberry Apple Chicken Salad",
+      "descriptionEs": "con arúgula baby y mayonesa de manzana de la casa en pan multigrano",
+      "descriptionEn": "with Baby Arugula & House Apple Mayo on Multigrain",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "BLT con aguacate",
+      "nameEn": "Avocado BLT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pastrami-reuben",
+      "categoryId": "sandwiches",
+      "nameEs": "Reuben de pastrami",
+      "nameEn": "Pastrami Reuben",
+      "descriptionEs": "Pastrami magro, chucrut y aderezo ruso en pan de centeno",
+      "descriptionEn": "Lean Pastrami, Sauerkraut & Russian Dressing on Rye",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-reuben",
+      "categoryId": "sandwiches",
+      "nameEs": "Reuben de vegetales",
+      "nameEn": "Vegetable Reuben",
+      "descriptionEs": "Vegetales surtidos, chucrut, queso suizo y aderezo ruso en pan de centeno",
+      "descriptionEn": "Assorted Vegetables, Sauerkraut, Swiss & Russian Dressing on Rye",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "BLT de salmón ahumado",
+      "nameEn": "Smoked Salmon BLT",
+      "descriptionEs": "Tocino ahumado con madera de manzano, salmón ahumado, lechuga, tomate y queso crema con hierbas en pan multigrano tostado",
+      "descriptionEn": "Applewood Smoked Bacon, Smoked Salmon, Lettuce, Tomato & Herbed Cream Cheese on Toasted Multigrain",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-ham-maple-mustard",
+      "categoryId": "sandwiches",
+      "nameEs": "Pavo, jamón y mostaza con maple",
+      "nameEn": "Turkey, Ham & Maple Mustard",
+      "descriptionEs": "Pavo asado al horno, jamón, queso suizo, mostaza con maple de la casa, arúgula, tomate, cebolla y mayonesa en pan multigrano",
+      "descriptionEn": "Oven Roasted Turkey, Ham, Swiss, House Maple Mustard, Arugula, Tomato, Onion & Mayo on Multigrain",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-turkey-bacon",
+      "categoryId": "sandwiches",
+      "nameEs": "Pavo asado con tocino",
+      "nameEn": "Roast Turkey & Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger",
+      "categoryId": "kids-menu",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandwich",
+      "categoryId": "kids-menu",
+      "nameEs": "Sándwich",
+      "nameEn": "Sandwich",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pbj",
+      "categoryId": "kids-menu",
+      "nameEs": "Sándwich de mantequilla de maní y mermelada",
+      "nameEn": "PBJ",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kids-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "kids-menu",
+      "nameEs": "Quesadilla de queso",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dirty-monkey",
+      "categoryId": "smoothies",
+      "nameEs": "Dirty Monkey",
+      "nameEn": "Dirty Monkey",
+      "descriptionEs": "Plátano, mantequilla de maní, leche con chocolate, mezcla de cacao de la casa",
+      "descriptionEn": "Banana, Peanut Butter, Chocolate Milk, House Cocoa Mix",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "healthy-monkey",
+      "categoryId": "smoothies",
+      "nameEs": "Healthy Monkey",
+      "nameEn": "Healthy Monkey",
+      "descriptionEs": "Plátano, mantequilla de maní, leche de almendra, miel local, cacao en polvo crudo",
+      "descriptionEn": "Banana, Peanut Butter, Almond Milk, Local Honey, Raw Cacao Powder",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-berry-blast",
+      "categoryId": "smoothies",
+      "nameEs": "Explosión de frutos rojos",
+      "nameEn": "Mixed Berry Blast",
+      "descriptionEs": "Fresas, arándanos, jugo de arándano rojo, jugo de limón, yogur de vainilla bajo en grasa",
+      "descriptionEn": "Strawberries, Blueberries, Cranberry Juice, Lime Juice, Low-Fat Vanilla Yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-twist",
+      "categoryId": "smoothies",
+      "nameEs": "Toque tropical (Tropical Twist)",
+      "nameEn": "Tropical Twist",
+      "descriptionEs": "Piña, coco tostado, fresa, mango, yogur de vainilla bajo en grasa",
+      "descriptionEn": "Pineapple, Toasted Coconut, Strawberry, Mango, Low-Fat Vanilla Yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "purple-dragon",
+      "categoryId": "smoothies",
+      "nameEs": "Dragón morado",
+      "nameEn": "Purple Dragon",
+      "descriptionEs": "Pitahaya, arándanos, fresas, miel local, yogur de vainilla bajo en grasa",
+      "descriptionEn": "Dragon Fruit, Blueberries, Strawberries, Local Honey, Low-Fat Vanilla Yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-banana",
+      "categoryId": "smoothies",
+      "nameEs": "Fresa y plátano",
+      "nameEn": "Strawberry Banana",
+      "descriptionEs": "Fresa, plátano, semillas de chía, miel local, yogur de vainilla bajo en grasa",
+      "descriptionEn": "Strawberry, Banana, Chia Seeds, Local Honey, Low-Fat Vanilla Yogurt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-goddess",
+      "categoryId": "smoothies",
+      "nameEs": "Green Goddess",
+      "nameEn": "Green Goddess",
+      "descriptionEs": "Aguacate, espinaca, plátano, piña, miel, leche de almendra, jugo de limón",
+      "descriptionEn": "Avocado, Spinach, Banana, Pineapple, Honey, Almond Milk, Lime Juice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-matcha-detox",
+      "categoryId": "smoothies",
+      "nameEs": "Detox de mango y matcha",
+      "nameEn": "Mango Matcha Detox",
+      "descriptionEs": "Mango, té verde matcha, jugo de limón, leche de almendra, aguacate, pimienta de cayena",
+      "descriptionEn": "Mango, Matcha Green Tea, Lime Juice, Almond Milk, Avocado, Cayenne Pepper",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mocha-campus-express",
+      "categoryId": "smoothies",
+      "nameEs": "Mocha Campus Express",
+      "nameEn": "Mocha Campus Express",
+      "descriptionEs": "Espresso, chocolate, mitad y mitad, crema, mezcla de cacao de la casa",
+      "descriptionEn": "Espresso, Chocolate, ½ & ½, Cream, House Cocoa Mix",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salted-caramel-jolt",
+      "categoryId": "smoothies",
+      "nameEs": "Jolt de caramelo salado",
+      "nameEn": "Salted Caramel Jolt",
+      "descriptionEs": "Espresso, caramelo salado de la casa, crema, sal, crema batida",
+      "descriptionEn": "Espresso, House Salted Caramel, Cream, Salt, Whipped Cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frozen-hot-chocolate",
+      "categoryId": "smoothies",
+      "nameEs": "Chocolate caliente frappé",
+      "nameEn": "Frozen Hot Chocolate",
+      "descriptionEs": "con crema batida",
+      "descriptionEn": "with Whipped Cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
       "categoryId": "beverages",
-      "nameEs": "Café Latte Artesanal",
-      "nameEn": "Artisanal Café Latte",
-      "descriptionEs": "Espresso doble con leche vaporizada sedosa y una delicada capa de espuma cremosa.",
-      "descriptionEn": "Double shot of rich espresso with steamed velvety milk and a delicate layer of microfoam.",
+      "nameEs": "Café",
+      "nameEn": "Coffee",
+      "descriptionEs": "Refill ilimitado en el local",
+      "descriptionEn": "In-House Bottomless",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-to-go",
+      "categoryId": "beverages",
+      "nameEs": "Café – para llevar",
+      "nameEn": "Coffee – To Go",
+      "descriptionEs": "Chico / grande",
+      "descriptionEn": "Small / Large",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "beverages",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "Sencillo / doble / triple",
+      "descriptionEn": "Single / Double / Triple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino-caffe-latte",
+      "categoryId": "beverages",
+      "nameEs": "Cappuccino/caffè latte",
+      "nameEn": "Cappuccino/Caffè Latte",
+      "descriptionEs": "Sencillo/doble/triple",
+      "descriptionEn": "Single/Double/Triple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-hot-cocoa",
+      "categoryId": "beverages",
+      "nameEs": "Chocolate caliente de la casa",
+      "nameEn": "House Hot Cocoa",
+      "descriptionEs": "con leche local al vapor, crema batida",
+      "descriptionEn": "with Steamed Local Milk, Whipped Cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salted-caramel",
+      "categoryId": "beverages",
+      "nameEs": "Caramelo salado",
+      "nameEn": "Salted Caramel",
+      "descriptionEs": "Mezcla de cacao de la casa con nuestro caramelo salado de la casa, leche local al vapor, crema batida, sal gruesa",
+      "descriptionEn": "House Cocoa Mix with our House Salted Caramel, Steamed Local Milk, Whipped Cream, Coarse Salt",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "healthy-cocoa",
+      "categoryId": "beverages",
+      "nameEs": "Cacao saludable",
+      "nameEn": "Healthy Cocoa",
+      "descriptionEs": "Cacao en polvo crudo, miel local, leche de almendra espumada",
+      "descriptionEn": "Raw Cacao Powder, Local Honey, Frothed Almond Milk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chai",
+      "categoryId": "beverages",
+      "nameEs": "Chai caliente",
+      "nameEn": "Hot Chai",
+      "descriptionEs": "Chocolate, especiado, vainilla (de temporada)",
+      "descriptionEn": "Chocolate, Spiced, Vanilla (seasonal)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "muchas opciones",
+      "descriptionEn": "many choices",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caffe-macchiato",
+      "categoryId": "beverages",
+      "nameEs": "Caffè macchiato",
+      "nameEn": "Caffè Macchiato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "americano",
+      "categoryId": "beverages",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.50",
-      "popular": true,
-      "badge": "Cafetería",
-      "tags": [
-        "Caliente",
-        "Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-11",
+      "id": "london-fog",
       "categoryId": "beverages",
-      "nameEs": "Limonada Fresca de Frambuesa",
-      "nameEn": "Fresh Raspberry Lemonade",
-      "descriptionEs": "Limonada recién exprimida infusionada con puré de frambuesas naturales y hojas de menta fresca.",
-      "descriptionEn": "Freshly squeezed house lemonade infused with natural raspberry purée and fresh garden mint leaves.",
-      "price": "$4.00",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "nameEs": "London fog",
+      "nameEn": "London Fog",
+      "descriptionEs": "Té Earl Grey, jarabe simple de vainilla, leche local espumada",
+      "descriptionEn": "Earl Grey Tea, Vanilla Simple Syrup, Frothed Local Milk",
+      "price": "$5.00",
       "ctaType": "in_store"
     },
     {
-      "id": "dog-lane-cafe-12",
+      "id": "matcha",
       "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal Local de CT",
-      "nameEn": "Local CT Craft IPA",
-      "descriptionEs": "Cerveza IPA de barril elaborada por cervecerías artesanales locales en Connecticut. Notas cítricas y tropicales.",
-      "descriptionEn": "Rotating draft IPA brewed locally in Connecticut showcasing vibrant citrus and tropical hop notes.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Local",
-      "tags": [
-        "Alcohol",
-        "Cerveza"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "nameEs": "Matcha",
+      "nameEn": "Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-coffee",
+      "categoryId": "beverages",
+      "nameEs": "Café helado",
+      "nameEn": "Iced Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-latte",
+      "categoryId": "beverages",
+      "nameEs": "Latte helado",
+      "nameEn": "Iced Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-lemonade",
+      "categoryId": "beverages",
+      "nameEs": "Limonada de jengibre",
+      "nameEn": "Ginger Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "12-ginger-lemonade-12-iced-tea",
+      "categoryId": "beverages",
+      "nameEs": "½ limonada de jengibre + ½ té helado",
+      "nameEn": "½ Ginger Lemonade + ½ Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha",
+      "categoryId": "beverages",
+      "nameEs": "Matcha helado",
+      "nameEn": "Iced Matcha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai",
+      "categoryId": "beverages",
+      "nameEs": "Chai helado",
+      "nameEn": "Iced Chai",
+      "descriptionEs": "Chocolate, especiado, vainilla o frambuesa",
+      "descriptionEn": "Chocolate, Spiced, Vanilla, or Raspberry",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juice",
+      "categoryId": "beverages",
+      "nameEs": "Jugo",
+      "nameEn": "Juice",
+      "descriptionEs": "Opciones del refrigerador de autoservicio: naranja, manzana, arándano rojo",
+      "descriptionEn": "Selections from self-service cooler include: Orange, Apple, Cranberry",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer",
+      "categoryId": "beer-wine",
+      "nameEs": "Cerveza",
+      "nameEn": "Beer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wine",
+      "categoryId": "beer-wine",
+      "nameEs": "Vino",
+      "nameEn": "Wine",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y platos que se pueden preparar sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer multiple vegetarian choices and dishes that can be prepared gluten-free. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y también aceptamos reservaciones por teléfono para grupos o cenas especiales.",
-      "aEn": "We welcome walk-ins and also accept phone reservations for parties or dinner seating."
-    }
-  ]
+  "faqs": []
 }
