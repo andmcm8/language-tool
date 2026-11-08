@@ -1,27 +1,18 @@
 {
   "storeInfo": {
     "id": "elm-st-diner",
-    "name": "Elm St Diner",
-    "tagline": "Next-level comfort food, viral cake shakes & legendary brunch in Stamford, CT. / Comida reconfortante de otro nivel, batidos virales y brunch legendario.",
-    "address": "463 Elm St, Stamford, CT 06902",
+    "name": "Elm Street Diner",
+    "tagline": "Diner in Stamford | Diner en Stamford",
+    "address": "463 Elm Street, Stamford, CT 06902",
     "phone": "(203) 325-1141",
     "hours": {
-      "monday_friday": "8:00 AM - 8:00 PM",
+      "monday_friday": "Mon-Tue 8:00 AM - 4:00 PM; Wed-Fri 8:00 AM - 8:00 PM",
       "saturday": "8:00 AM - 8:00 PM",
       "sunday": "8:00 AM - 2:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Parking Lot",
-      "Viral Shakes"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -33,256 +24,2520 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas & Antojitos",
-      "nameEn": "Appetizers & Starters",
+      "id": "starters-things-to-share",
+      "nameEs": "Entradas, para compartir",
+      "nameEn": "Starters, Things To Share",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees & Burgers",
+      "id": "entree-salads",
+      "nameEs": "Ensaladas como plato fuerte",
+      "nameEn": "Entrée Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades Virales",
-      "nameEn": "Viral Specialties",
+      "id": "classic-sandwiches",
+      "nameEs": "Sándwiches clásicos",
+      "nameEn": "Classic Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Batidos & Bebidas",
-      "nameEn": "Shakes & Beverages",
-      "icon": "Coffee"
+      "id": "handhelds",
+      "nameEs": "Para comer con las manos",
+      "nameEn": "Handhelds",
+      "icon": "Utensils"
+    },
+    {
+      "id": "elm-streets-egg-rolls",
+      "nameEs": "Rollitos de Elm Street",
+      "nameEn": "Elm Street’s Egg Rolls",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-dishes-vegetables",
+      "nameEs": "Guarniciones y verduras",
+      "nameEn": "Side Dishes & Vegetables",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-specialties",
+      "nameEs": "Especialidades de brunch",
+      "nameEn": "Brunch Specialties",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "social-media-superstars",
+      "nameEs": "Estrellas de redes sociales",
+      "nameEn": "Social Media Superstars",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kid-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kid's Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "steaks",
+      "nameEs": "Cortes",
+      "nameEn": "Steaks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Sándwiches apilados y crunchwraps",
+      "nameEn": "Stacked Sandwiches & Crunchwraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "monster-burritos",
+      "nameEs": "Burritos monstruo",
+      "nameEn": "Monster Burritos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "loaded-waffle-fries",
+      "nameEs": "Papas waffle cargadas",
+      "nameEn": "Loaded Waffle Fries",
+      "icon": "Utensils"
+    },
+    {
+      "id": "elm-streets-brunch-board",
+      "nameEs": "Tabla de brunch de Elm Street",
+      "nameEn": "Elm Street’s Brunch Board",
+      "icon": "Utensils"
+    },
+    {
+      "id": "breakfast-mains",
+      "nameEs": "Platos de desayuno",
+      "nameEn": "Breakfast Mains",
+      "icon": "Utensils"
+    },
+    {
+      "id": "farm-fresh-omelets",
+      "nameEs": "Omelets de huevos frescos de granja",
+      "nameEn": "Farm Fresh Omelets",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-favorites",
+      "nameEs": "Favoritos del brunch",
+      "nameEn": "Brunch Favorites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "breakfast-handhelds",
+      "nameEs": "Sándwiches de desayuno",
+      "nameEn": "Breakfast Handhelds",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pancakes",
+      "nameEs": "Pancakes",
+      "nameEn": "Pancakes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "breakfast-sides",
+      "nameEs": "Guarniciones de desayuno",
+      "nameEn": "Breakfast Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "belgian-waffles",
+      "nameEs": "Waffles belgas",
+      "nameEn": "Belgian Waffles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "french-toast",
+      "nameEs": "Tostada francesa",
+      "nameEn": "French Toast",
+      "icon": "Utensils"
+    },
+    {
+      "id": "build-your-own-omelet",
+      "nameEs": "Arma tu propio omelet",
+      "nameEn": "Build Your Own Omelet",
+      "icon": "Utensils"
+    },
+    {
+      "id": "donuts",
+      "nameEs": "Donas",
+      "nameEn": "Donuts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "our-famous-milkshakes",
+      "nameEs": "Nuestras famosas malteadas",
+      "nameEn": "Our Famous Milkshakes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-drinks",
+      "nameEs": "Bebidas calientes",
+      "nameEn": "Hot Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-drinks",
+      "nameEs": "Bebidas frías",
+      "nameEn": "Cold Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-cocktails",
+      "nameEs": "Cócteles de brunch",
+      "nameEn": "Brunch Cocktails",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "elm-st-diner-01",
-      "categoryId": "appetizers",
-      "nameEs": "Rollitos de Huevo Birria",
-      "nameEn": "Birria Egg Rolls",
-      "descriptionEs": "Crujientes rollitos de huevo rellenos de jugosa birria de res, servidos con consomé humeante para sumergir.",
-      "descriptionEn": "Crispy egg rolls stuffed with tender, savory birria beef, served with a steaming side of rich consommé for dipping.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Viral",
-      "tags": [
-        "Picante",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "chicken-soup-bowl",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Sopa de pollo (tazón)",
+      "nameEn": "Chicken Soup Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-02",
-      "categoryId": "appetizers",
-      "nameEs": "Mac & Cheese Crujiente con Pollo Búfalo",
-      "nameEn": "Crispy Buffalo Chicken Mac & Cheese",
-      "descriptionEs": "Pasta cremosa con abundante mezcla de quesos, cubierta con pollo crujiente bañado en salsa búfalo picante.",
-      "descriptionEn": "Creamy, decadent mac & cheese loaded with ultra-crispy buffalo chicken pieces and a golden crust.",
-      "price": "$17.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Confort",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "soup-of-the-day-bowl",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Sopa del día (tazón)",
+      "nameEn": "Soup of the Day Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-03",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Doble Smash Suprema",
-      "nameEn": "Double Smash Supreme Burger",
-      "descriptionEs": "Dos jugosas carnes estilo smash con bordes crujientes, queso americano derretido, salsa secreta y cebolla caramelizada en pan brioche tostado.",
-      "descriptionEn": "Two smashed beef patties with crispy lace edges, melted American cheese, secret house sauce, and caramelized onions on a toasted brioche bun.",
-      "price": "$18.95",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Carne",
-        "Jugoso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "beef-chili-bowl",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Chili de res (tazón)",
+      "nameEn": "Beef Chili Bowl",
+      "descriptionEs": "Queso jack y cheddar, cebolla morada picada, totopos, crema agria",
+      "descriptionEn": "Jack & cheddar, chopped red onions, tortilla crisps, sour cream",
+      "price": "$10.50",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-04",
-      "categoryId": "mains",
-      "nameEs": "El Brunchzilla",
-      "nameEn": "The Brunchzilla",
-      "descriptionEs": "Una torre descomunal de hamburguesas, tocino crujiente, huevos fritos, queso derretido y papas sazonadas. ¡Creado para compartir o destruir en minutos!",
-      "descriptionEn": "An epic tower of beef patties, crispy bacon, fried eggs, melted cheese, and seasoned potatoes. Built for the table!",
-      "price": "$24.95",
-      "popular": true,
-      "badge": "Épico",
-      "tags": [
-        "Brunch",
-        "Gigante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "cheesy-vodka-garlic-bread",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Pan de ajo con queso y vodka",
+      "nameEn": "Cheesy Vodka Garlic Bread",
+      "descriptionEs": "Mozzarella, pan de sémola recién horneado",
+      "descriptionEn": "Mozzarella, freshly baked semolina bread",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-05",
-      "categoryId": "specialties",
-      "nameEs": "Parm Supreme de Pasta",
-      "nameEn": "The Parm Supreme Pasta",
-      "descriptionEs": "Fettuccine Alfredo cremoso cubierto con una pechuga de pollo a la parmesana gigante, crujiente por fuera y fundida en queso mozzarella.",
-      "descriptionEn": "Rich fettuccine Alfredo topped with a massive, golden chicken parmesan cutlet, smothered in melted mozzarella.",
-      "price": "$22.50",
-      "popular": true,
-      "badge": "Nuevo",
-      "tags": [
-        "Italiano",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "classic-diner-disco-fries",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Papas disco clásicas de diner",
+      "nameEn": "Classic Diner Disco Fries",
+      "descriptionEs": "Montaña de papas fritas, mozzarella fundida, gravy oscuro",
+      "descriptionEn": "French fries piled high, melted mozzarella, brown gravy",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-06",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich El Volcán",
-      "nameEn": "The Volcano Sandwich",
-      "descriptionEs": "Pan rústico ahuecado y repleto de costilla braised short ribs desmenuzada, bañada en abundante queso fundido.",
-      "descriptionEn": "Hollowed crusty bread stuffed with tender braised short ribs and overflowing with molten melted cheese.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Carne",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "mozzarella-sticks",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Palitos de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "Salsa de tomate, parmesano rallado",
+      "descriptionEn": "Tomato sauce, grated parmesan",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-07",
-      "categoryId": "specialties",
-      "nameEs": "Derritiendo Pollo Mozzarella Alfredo",
-      "nameEn": "Chicken Mozzarella Alfredo Melt",
-      "descriptionEs": "Pechuga de pollo empanizada, salsa Alfredo de la casa, gratinado generoso de mozzarella sobre pan de ajo tostado.",
-      "descriptionEn": "Crispy breaded chicken, house-made Alfredo sauce, and melted mozzarella cheese piled high on toasted garlic bread.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pollo",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "jumbo-fried-mozzarella",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Mozzarella frita jumbo",
+      "nameEn": "Jumbo Fried Mozzarella",
+      "descriptionEs": "Mozzarella frita casera, a elegir ranch búfalo o mostaza con miel y chile dulce",
+      "descriptionEn": "Housemade fried mozzarella, choice of buffalo ranch or sweet chile honey mustard",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-08",
-      "categoryId": "beverages",
-      "nameEs": "Batido de Pastel Viral con Galletas",
-      "nameEn": "Viral Cookie Overload Cake Shake",
-      "descriptionEs": "Batido espeso de vainilla coronado con una porción entera de pastel de cumpleaños, galletas Oreo y chocolate derretido.",
-      "descriptionEn": "Thick vanilla milkshake topped with an entire slice of birthday cake, loaded with cookies, sprinkles, and chocolate drizzle.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Viral",
-      "tags": [
-        "Dulce",
-        "Postre"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Soya"
-      ],
+      "id": "chicken-fingers",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Dedos de pollo",
+      "nameEn": "Chicken Fingers",
+      "descriptionEs": "Mostaza con miel o salsa BBQ",
+      "descriptionEn": "Honey mustard or bbq sauce",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-09",
-      "categoryId": "beverages",
-      "nameEs": "Tazón de Cereal Loco",
-      "nameEn": "Cereal Bowl Gone Crazy Shake",
-      "descriptionEs": "Batido cremoso de leche infusionada con cereal Fruity Pebbles, decorado con barras de arroz crujiente y malvaviscos.",
-      "descriptionEn": "Creamy cereal-infused milkshake packed with Fruity Pebbles, marshmallow fluff, and topped with cereal treats.",
+      "id": "chicken-wings",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "A elegir búfalo, BBQ clásica o naturales, servidas con queso azul o ranch",
+      "descriptionEn": "Choice of buffalo, classic bbq or plain, served with bleu cheese or ranch",
       "price": "$15.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Dulce",
-        "Cereal"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elm-st-diner-10",
-      "categoryId": "beverages",
-      "nameEs": "Café Helado Elm Street",
-      "nameEn": "Elm Street Iced Coffee",
-      "descriptionEs": "Café cold brew de la casa con un toque de vainilla francesa y crema batida artesanal.",
-      "descriptionEn": "Smooth house cold brew coffee with a splash of French vanilla and handmade whipped cream.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Cafeína",
-        "Frío"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "sweet-chile-glazed-chicken-wings",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Alitas de pollo glaseadas con chile dulce",
+      "nameEn": "Sweet Chile Glazed Chicken Wings",
+      "descriptionEs": "Glaseado de chile estilo tailandés, ajonjolí tostado",
+      "descriptionEn": "Thai style chile glaze, toasted sesame seeds",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-mozzarella-alfredo-garlic-bread",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Pan de ajo con pollo, mozzarella y alfredo",
+      "nameEn": "Chicken Mozzarella Alfredo Garlic Bread",
+      "descriptionEs": "Pollo empanizado, pan de sémola recién horneado",
+      "descriptionEn": "Breaded chicken, freshly baked semolina bread",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultimate-nachos",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Nachos supremos",
+      "nameEn": "Ultimate Nachos",
+      "descriptionEs": "Chili de res de la casa, queso jack y cheddar, tomate, aguacate fresco, jalapeños, crema agria, salsa",
+      "descriptionEn": "House beef chili, jack & cheddar cheese, tomatoes, fresh avocado, jalapeños, sour cream, salsa",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mac-cheese",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Mac & cheese frito",
+      "nameEn": "Fried Mac & Cheese",
+      "descriptionEs": "Empanizado crujiente, salsa de vodka de la casa",
+      "descriptionEn": "Crispy crumb coated, house vodka sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-alfredo-mozzarella-bombs",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Bombas de mozzarella con pollo alfredo",
+      "nameEn": "Chicken Alfredo Mozzarella Bombs",
+      "descriptionEs": "Empanizadas crujientes, fettuccine, salsa alfredo de la casa",
+      "descriptionEn": "Crispy crumb coated, fettuccine, house alfredo sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Salsa de tomate, alioli picante, limón fresco",
+      "descriptionEn": "Tomato sauce, spicy aioli, fresh lemons",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesadillas",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
+      "descriptionEs": "Queso jack y cheddar, aguacate, cebolla asada, pimientos asados, crema agria, salsa. Agrega pollo +4 • agrega arrachera +8",
+      "descriptionEn": "Jack & cheddar, avocado, grilled onions, roasted peppers, sour cream, salsa add chicken +4 • add skirt steak +8",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bigg-macc-quesadilla",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Quesadilla Bigg Macc",
+      "nameEn": "Bigg Macc Quesadilla",
+      "descriptionEs": "Hamburguesa con queso picada, lechuga, pepinillos, salsa especial de la casa",
+      "descriptionEn": "Chopped cheeseburger, lettuce, pickles, house special sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-double-stacked-fried-chicken-bigg-macc-quesadilla",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Quesadilla Bigg Macc doble con pollo frito",
+      "nameEn": "The Double Stacked Fried Chicken Bigg Macc Quesadilla",
+      "descriptionEs": "Tres tortillas, hamburguesa con queso picada, pollo frito",
+      "descriptionEn": "Three tortillas, chopped cheeseburger, fried chicken",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-spicy-caesar-monster-quesadilla",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Quesadilla monstruo César picante",
+      "nameEn": "The Spicy Caesar Monster Quesadilla",
+      "descriptionEs": "Tres tortillas, pollo crujiente, mozzarella, ensalada César, aderezo César picante",
+      "descriptionEn": "Three tortillas, crispy chicken, mozzarella, caesar salad, spicy caesar dressing",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parm-supreme-triple-quesadilla",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Quesadilla triple Parm Supreme",
+      "nameEn": "Parm Supreme Triple Quesadilla",
+      "descriptionEs": "Tres tortillas, pollo a la parmesana, mac & cheese frito",
+      "descriptionEn": "Three tortillas, chicken parm, fried mac & cheese",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-super-sampler",
+      "categoryId": "starters-things-to-share",
+      "nameEs": "Super surtido de Elm Street",
+      "nameEn": "Elm Street’s Super Sampler",
+      "descriptionEs": "Dedos de pollo, mozzarella frita, alitas de pollo, rollitos de cheesesteak, torre de aros de cebolla, varias salsas para remojar",
+      "descriptionEn": "Chicken fingers, fried mozzarella, chicken wings, cheesesteak egg rolls, onion ring tower, multiple dipping sauces",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek",
+      "categoryId": "entree-salads",
+      "nameEs": "Griega",
+      "nameEn": "Greek",
+      "descriptionEs": "Lechuga romana, hojas verdes mixtas, tomate uva, feta, pepino, cebolla morada, pimientos, aceitunas kalamata, pepperoncini, hojas de parra, aderezo griego de la casa",
+      "descriptionEn": "Romaine, mixed greens, grape tomato, feta, cucumbers, red onions, bell peppers, kalamata olives, pepperoncini, grape leaves, house greek dressing",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped",
+      "categoryId": "entree-salads",
+      "nameEs": "Ensalada picada",
+      "nameEn": "Chopped",
+      "descriptionEs": "Lechuga romana, tocino, aguacate, cebolla morada, tomate, elote, queso azul desmoronado, aderezo ranch",
+      "descriptionEn": "Romaine, bacon, avocado, red onions, tomato, corn, crumbled bleu cheese, ranch dressing",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar",
+      "categoryId": "entree-salads",
+      "nameEs": "Pollo César",
+      "nameEn": "Chicken Caesar",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, crutones, queso parmesano, aderezo César de la casa",
+      "descriptionEn": "Grilled chicken, romaine, croutons, parmesan cheese, house caesar dressing",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cobb",
+      "categoryId": "entree-salads",
+      "nameEs": "Cobb de pollo",
+      "nameEn": "Chicken Cobb",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, hojas verdes, tomate uva, tocino, aguacate, cebolla morada, queso azul desmoronado, huevo cocido picado, aderezo ranch",
+      "descriptionEn": "Grilled chicken, romaine, greens, grape tomato, bacon, avocado, red onions, crumbled bleu cheese, chopped boiled egg, ranch dressing",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greens-grains-bowl",
+      "categoryId": "entree-salads",
+      "nameEs": "Tazón de verduras y granos",
+      "nameEn": "Greens & Grains Bowl",
+      "descriptionEs": "Pollo a la parrilla, arúgula baby, feta, aguacate, tomate uva, pepino, cebolla morada, mezcla de quinoa y cuscús, aderezo balsámico",
+      "descriptionEn": "Grilled chicken, baby arugula, feta, avocado, grape tomato, cucumbers, red onions, quinoa couscous blend, balsamic dressing",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest",
+      "categoryId": "entree-salads",
+      "nameEs": "Suroeste",
+      "nameEn": "Southwest",
+      "descriptionEs": "Pollo a la parrilla, hojas verdes, tomate, pepino, cebolla morada, queso jack rallado, aguacate, elote asado, tiras de tortilla crujientes, aderezo ranch",
+      "descriptionEn": "Grilled chicken, greens, tomatoes, cucumbers, red onions, shredded jack, avocado, grilled corn, crispy tortilla strips, ranch dressing",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "entree-salads",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "Pollo búfalo crujiente, lechuga romana, hojas verdes, tomate uva, cebolla morada, cheddar rallado, queso azul desmoronado, totopos, aderezo ranch",
+      "descriptionEn": "Crispy buffalo chicken, romaine, greens, grape tomato, red onions, shredded cheddar, crumbled bleu cheese, tortilla crisps, ranch dressing",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-avocado",
+      "categoryId": "entree-salads",
+      "nameEs": "Salmón con aguacate",
+      "nameEn": "Salmon Avocado",
+      "descriptionEs": "Salmón glaseado con teriyaki, espinaca baby, tomate uva, aguacate, pepino, pimientos asados, cebolla morada, aderezo balsámico",
+      "descriptionEn": "Teriyaki glazed salmon, baby spinach, grape tomato, avocado, cucumbers, roasted peppers, red onions, balsamic dressing",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skirt-steak-gorgonzola",
+      "categoryId": "entree-salads",
+      "nameEs": "Arrachera con gorgonzola",
+      "nameEn": "Skirt Steak Gorgonzola",
+      "descriptionEs": "Arrachera marinada, hojas verdes mixtas, aguacate, tomate uva, cebolla morada, queso azul desmoronado, elote asado, aderezo balsámico",
+      "descriptionEn": "Marinated skirt steak, mixed greens, avocado, grape tomato, red onions, crumbled bleu cheese, grilled corn, balsamic dressing",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-melt",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Atún fundido",
+      "nameEn": "Tuna Melt",
+      "descriptionEs": "Ensalada de atún albacora recién hecha, cheddar, aguacate, tomate, pan integral a la plancha",
+      "descriptionEn": "Freshly made albacore tuna salad, cheddar, avocado, tomato, grilled wheat",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-fish-sandwich",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Sándwich de pescado crujiente",
+      "nameEn": "Crispy Fish Sandwich",
+      "descriptionEs": "Bacalao del Atlántico empanizado, cheddar, ensalada de col, pepinillos, salsa tártara",
+      "descriptionEn": "Breaded atlantic cod, cheddar, cole slaw, pickles, tartar sauce",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken-sandwich",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Sándwich de pollo frito",
+      "nameEn": "Fried Chicken Sandwich",
+      "descriptionEs": "Pollo empanizado crujiente, tocino, queso pepper jack, cebolla asada, alioli de chipotle",
+      "descriptionEn": "Crispy breaded chicken, bacon, pepper jack, grilled onions, chipotle aioli",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-crispy-chicken-sandwich",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Sándwich de pollo crujiente picante",
+      "nameEn": "Spicy Crispy Chicken Sandwich",
+      "descriptionEs": "Pollo empanizado picante, queso pepper jack, ensalada de col, alioli de chipotle",
+      "descriptionEn": "Spicy breaded chicken, pepper jack, cole slaw, chipotle aioli",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey Club",
+      "descriptionEs": "Triple piso, tocino, lechuga, tomate, mayonesa, pan blanco tostado",
+      "descriptionEn": "Triple decker, bacon, lettuce, tomato, mayo, white toast",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Reuben",
+      "nameEn": "Reuben",
+      "descriptionEs": "Corned beef apilado, queso suizo, chucrut, aderezo ruso, pan de centeno a la plancha",
+      "descriptionEn": "Stacked corned beef, swiss, sauerkraut, russian dressing, grilled rye",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheesesteak",
+      "categoryId": "classic-sandwiches",
+      "nameEs": "Philly cheesesteak",
+      "nameEn": "Philly Cheesesteak",
+      "descriptionEs": "Rib eye en láminas, mozzarella, cebolla asada, pan hoagie recién horneado",
+      "descriptionEn": "Shaved ribeye, mozzarella, grilled onions, freshly baked hoagie roll",
+      "price": "$22.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-wrap",
+      "categoryId": "handhelds",
+      "nameEs": "Wrap de pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, aderezo César de la casa, crutones, pecorino",
+      "descriptionEn": "Grilled chicken, romaine, house caesar dressing, croutons, pecorino",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-crispy-chicken-club-wrap",
+      "categoryId": "handhelds",
+      "nameEs": "Wrap club de pollo crujiente California",
+      "nameEn": "California Crispy Chicken Club Wrap",
+      "descriptionEs": "Tocino, queso pepper jack, aguacate, tomate, cebolla morada, alioli de chipotle",
+      "descriptionEn": "Bacon, pepper jack, avocado, tomato, red onions, chipotle aioli",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-souvlaki-or-shaved-lamb-gyro",
+      "categoryId": "handhelds",
+      "nameEs": "Souvlaki de pollo o gyro de cordero en láminas",
+      "nameEn": "Chicken Souvlaki or Shaved Lamb Gyro",
+      "descriptionEs": "Pan pita a la parrilla, lechuga, tomate, cebolla, salsa tzatziki casera, papas fritas, ensalada griega",
+      "descriptionEn": "Grilled pita bread, lettuce, tomatoes, onions, housemade tzatziki sauce, french fries, greek salad",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm",
+      "categoryId": "handhelds",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parm",
+      "descriptionEs": "Pollo empanizado crujiente, mozzarella, salsa de tomate, pan de ajo",
+      "descriptionEn": "Breaded crispy chicken, mozzarella, tomato sauce, garlic bread",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-chicken-panini",
+      "categoryId": "handhelds",
+      "nameEs": "Panini de pollo California",
+      "nameEn": "California Chicken Panini",
+      "descriptionEs": "Aguacate, queso suizo, arúgula baby, tomate, cebolla morada, mayonesa",
+      "descriptionEn": "Avocado, swiss, baby arugula, tomatoes, red onions, mayo",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-turkey-club-melt",
+      "categoryId": "handhelds",
+      "nameEs": "Club melt de pavo con aguacate",
+      "nameEn": "Avocado Turkey Club Melt",
+      "descriptionEs": "Tocino, mozzarella, hojas verdes, tomate, mayonesa, pan de masa madre a la plancha",
+      "descriptionEn": "Bacon, mozzarella, greens, tomato, mayo, grilled sourdough",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skirt-steak-sandwich",
+      "categoryId": "handhelds",
+      "nameEs": "Sándwich de arrachera",
+      "nameEn": "Skirt Steak Sandwich",
+      "descriptionEs": "Mozzarella, cebolla salteada, pimientos asados, arúgula baby, alioli de chipotle, ciabatta prensada",
+      "descriptionEn": "Mozzarella, sauteed onions, roasted peppers, baby arugula, chipotle aioli, pressed ciabatta",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "short-rib-grilled-cheese",
+      "categoryId": "handhelds",
+      "nameEs": "Sándwich de queso a la parrilla con costilla corta",
+      "nameEn": "Short Rib Grilled Cheese",
+      "descriptionEs": "Costilla de res braseada, cheddar, mozzarella, cebolla salteada, pan de masa madre a la plancha, papas fritas con ajo y parmesano",
+      "descriptionEn": "Braised short ribs, cheddar, mozzarella, sautéed onions, grilled sourdough, garlic parmesan fries",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-vodka-mozzarella-melt",
+      "categoryId": "handhelds",
+      "nameEs": "Melt de pollo crujiente con vodka y mozzarella",
+      "nameEn": "Crispy Chicken Vodka Mozzarella Melt",
+      "descriptionEs": "Pollo empanizado, mozzarella fundida, mozzarella frita casera, salsa de vodka, pan texas toast a la plancha",
+      "descriptionEn": "Breaded chicken, melted mozzarella, housemade fried mozzarella, vodka sauce, grilled texas toast",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-egg-rolls",
+      "categoryId": "elm-streets-egg-rolls",
+      "nameEs": "Rollitos de brunch",
+      "nameEn": "Brunch Egg Rolls",
+      "descriptionEs": "Tocino, huevo, queso, papas caseras",
+      "descriptionEn": "Bacon, eggs, cheese, home fries",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-egg-rolls",
+      "categoryId": "elm-streets-egg-rolls",
+      "nameEs": "Rollitos de hamburguesa con queso",
+      "nameEn": "Cheeseburger Egg Rolls",
+      "descriptionEs": "Pepinillos, salsa especial de la casa",
+      "descriptionEn": "Pickles, house special sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesesteak-egg-rolls",
+      "categoryId": "elm-streets-egg-rolls",
+      "nameEs": "Rollitos de cheesesteak",
+      "nameEn": "Cheesesteak Egg Rolls",
+      "descriptionEs": "Glaseado de chile dulce, mostaza con miel",
+      "descriptionEn": "Sweet chile glaze, honey mustard",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "short-rib-mac-cheese-egg-rolls",
+      "categoryId": "elm-streets-egg-rolls",
+      "nameEs": "Rollitos de mac & cheese con costilla de res",
+      "nameEn": "Short Rib Mac & Cheese Egg Rolls",
+      "descriptionEs": "Salsa de queso de la casa",
+      "descriptionEn": "House cheese sauce",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potatoes",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Puré de papa",
+      "nameEn": "Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-pilaf",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Pilaf de arroz",
+      "nameEn": "Rice Pilaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-mixed-vegetables",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Verduras mixtas de temporada",
+      "nameEn": "Seasonal Mixed Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-baby-spinach",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Espinaca baby salteada",
+      "nameEn": "Sautéed Baby Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-broccoli",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Brócoli salteado",
+      "nameEn": "Sautéed Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-string-beans",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Ejotes salteados",
+      "nameEn": "Sautéed String Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "Mostaza con miel",
+      "descriptionEn": "Honey mustard",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasoned-curly-fries",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Papas rizadas sazonadas",
+      "nameEn": "Seasoned Curly Fries",
+      "descriptionEs": "Ranch de suero de leche",
+      "descriptionEn": "Buttermilk ranch",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waffle-fries",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Papas fritas waffle",
+      "nameEn": "Waffle Fries",
+      "descriptionEs": "Ranch de suero de leche",
+      "descriptionEn": "Buttermilk ranch",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-parmesan-fries",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Papas fritas con ajo y parmesano",
+      "nameEn": "Garlic Parmesan Fries",
+      "descriptionEs": "Aceite de oliva, parmesano rallado, perejil fresco",
+      "descriptionEn": "Olive oil, shaved parmesan, fresh parsley",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thick-cut-onion-rings",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Aros de cebolla gruesos",
+      "nameEn": "Thick Cut Onion Rings",
+      "descriptionEs": "Alioli de chipotle, aderezo ranch",
+      "descriptionEn": "Chipotle aioli sauce, ranch dressing",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "side-dishes-vegetables",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-toast-crunch-cheesecake-pancakes",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Pancakes de cheesecake con Cinnamon Toast Crunch",
+      "nameEn": "Cinnamon Toast Crunch Cheesecake Pancakes",
+      "descriptionEs": "Mousse de cheesecake, salsa de caramelo y vainilla, crema batida",
+      "descriptionEn": "Cheesecake mousse, caramel vanilla sauce, whipped cream",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-cheesecake-french-toast",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Pan francés de cheesecake de fresa",
+      "nameEn": "Strawberry Cheesecake French Toast",
+      "descriptionEs": "Mousse de cheesecake, cobertura de fresa, crema batida",
+      "descriptionEn": "Cheesecake mousse, strawberry topping, whipped cream",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-crunchwrap",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Crunchwrap de brunch",
+      "nameEn": "Brunch Crunchwrap",
+      "descriptionEs": "Tocino, salchicha, huevo, queso para quesadilla, croqueta de papa, miel picante con chipotle",
+      "descriptionEn": "Bacon, sausage, eggs, quesadilla cheese, hash brown patty, chipotle hot honey",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-viral-churro-pancakes-brunch-burrito",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Burrito de brunch de pancakes de churro \"The Viral\"",
+      "nameEn": "\"The Viral\" Churro Pancakes Brunch Burrito",
+      "descriptionEs": "Jeringa de miel picante con chipotle, papas caseras",
+      "descriptionEn": "Chipotle hot honey syringe, home fries",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria-brunch-giant-burrito",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Burrito gigante de brunch de birria",
+      "nameEn": "Birria Brunch Giant Burrito",
+      "descriptionEs": "Res braseada, tres huevos, queso jack para quesadilla, papitas tots, cebolla, cilantro, consomé de la casa",
+      "descriptionEn": "Braised beef, three eggs, quesadilla jack cheese, tater tots, onions, cilantro, house consommé",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-pancake-tacos-the-classic",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Tacos de pancake para el brunch - Clásico",
+      "nameEn": "Brunch Pancake Tacos - The Classic",
+      "descriptionEs": "Tocino, salchicha, huevo revuelto, queso rallado. Servido con jarabe de maple",
+      "descriptionEn": "Bacon, sausage, scrambled eggs, shredded cheese. Served with maple syrup",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-pancake-tacos-fried-chicken",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Tacos de pancake para el brunch - Pollo frito",
+      "nameEn": "Brunch Pancake Tacos - Fried Chicken",
+      "descriptionEs": "Huevo revuelto, queso rallado, crema ahumada de chipotle. Servido con jarabe de maple",
+      "descriptionEn": "Scrambled eggs, shredded cheese, smoky chipotle cream. Served with maple syrup",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-pancake-tacos-short-ribs",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Tacos de pancake para el brunch - Costilla de res",
+      "nameEn": "Brunch Pancake Tacos - Short Ribs",
+      "descriptionEs": "Huevo revuelto, queso rallado, papitas tots crujientes. Servido con jarabe de maple",
+      "descriptionEn": "Scrambled eggs, shredded cheese, crispy tater tots. Served with maple syrup",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-pancake-tacos-sweet-savory",
+      "categoryId": "brunch-specialties",
+      "nameEs": "Tacos de pancake para el brunch - Dulce y salado",
+      "nameEn": "Brunch Pancake Tacos - Sweet & Savory",
+      "descriptionEs": "Tocino, pollo frito, bocados de pan francés de churro. Servido con jarabe de maple",
+      "descriptionEn": "Bacon, fried chicken, churro french toast bites. Served with maple syrup",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-cheeseburger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa clásica con queso",
+      "nameEn": "Classic Cheeseburger",
+      "descriptionEs": "Lechuga, tomate, cebolla",
+      "descriptionEn": "Lettuce, tomatoes, onions",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheeseburger-patty-melt",
+      "categoryId": "burgers",
+      "nameEs": "Patty melt de hamburguesa con queso y tocino",
+      "nameEn": "Bacon Cheeseburger Patty Melt",
+      "descriptionEs": "Cebolla salteada, pepinillos, salsa especial, pan de masa madre a la plancha",
+      "descriptionEn": "Sauteed onions, pickles, special sauce, grilled sourdough",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-street-house-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de la casa Elm Street",
+      "nameEn": "Elm Street House Burger",
+      "descriptionEs": "Doble, queso americano, pepinillos, salsa especial de la casa",
+      "descriptionEn": "Double, american cheese, pickles, house special sauce",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smokehouse-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa Smokehouse",
+      "nameEn": "Smokehouse Burger",
+      "descriptionEs": "Tocino, cheddar, salsa BBQ, cebolla crujiente, mayonesa",
+      "descriptionEn": "Bacon, cheddar, bbq sauce, crispy onions, mayo",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "south-of-the-border-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa South of the Border",
+      "nameEn": "South of the Border Burger",
+      "descriptionEs": "Queso pepper jack, aguacate, tomate, cebolla crujiente, jalapeños, alioli de chipotle",
+      "descriptionEn": "Pepper jack, avocado, tomato, crispy onions, jalapeños, chipotle aioli",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de brunch",
+      "nameEn": "Brunch Burger",
+      "descriptionEs": "Tocino, queso americano, papitas tots aplastadas, huevo estrellado, salsa especial de la casa",
+      "descriptionEn": "Bacon, american cheese, smashed tater tots, sunny side up egg, house special sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "even-bigger-mac",
+      "categoryId": "burgers",
+      "nameEs": "Even Bigger Mac",
+      "nameEn": "Even Bigger Mac",
+      "descriptionEs": "Una carne de res, queso americano, pollo frito crujiente, lechuga, pepinillos, cebolla, salsa especial de la casa",
+      "descriptionEn": "Single beef burger, american cheese, crispy fried chicken, lettuce, pickles, onions, house special sauce",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-honey-fried-chicken-cheeseburger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa con queso y pollo frito con miel picante",
+      "nameEn": "Hot Honey Fried Chicken Cheeseburger",
+      "descriptionEs": "Una carne de res, pollo frito crujiente, queso americano, jalapeños rellenos fritos, pepinillos, alioli de chipotle con miel picante",
+      "descriptionEn": "Single beef burger, crispy fried chicken, american cheese, jalapeño poppers, pickles, hot honey chipotle aioli",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-mamba",
+      "categoryId": "burgers",
+      "nameEs": "Black Mamba",
+      "nameEn": "Black Mamba",
+      "descriptionEs": "Doble, tocino, queso americano, cebolla asada, pepinillos, alioli de chipotle, cubierta con 5 aros de cebolla gruesos empanizados",
+      "descriptionEn": "Double, bacon, american cheese, grilled onions, pickles, chipotle aioli, topped with 5 thick cut breaded onion rings",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wow-waffle-tower",
+      "categoryId": "social-media-superstars",
+      "nameEs": "¡¡Torre de waffles WOW!!",
+      "nameEn": "Wow Waffle Tower!!",
+      "descriptionEs": "Dos waffles belgas grandes, cinco bolas de helado, pastel de capas, donas caseras, dulces surtidos, varios toppings, crema batida ¡¡y una bengala JUMBO!! ¡¡Visita @elmstreetdiner para ver los sabores destacados y las últimas creaciones!!",
+      "descriptionEn": "Two large belgian waffles, five scoops of ice cream, layer cake, homemade donuts, assorted candy, multiple toppings, whipped cream and a JUMBO sparkler!! Visit @elmstreetdiner for featured flavors & latest creations!!",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southern-fried-chicken",
+      "categoryId": "chicken",
+      "nameEs": "Pollo frito estilo sureño",
+      "nameEn": "Southern Fried Chicken",
+      "descriptionEs": "Pollo frito súper jumbo, puré de papa, gravy oscuro, elote fresco",
+      "descriptionEn": "Jumbo super fried chicken, mashed potatoes, brown gravy, fresh corn",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shanghai-chicken-bowl",
+      "categoryId": "chicken",
+      "nameEs": "Tazón de pollo Shanghai",
+      "nameEn": "Shanghai Chicken Bowl",
+      "descriptionEs": "Pollo salteado, brócoli, cebolla, champiñones, pimientos, salsa asiática de teriyaki y jengibre, fideos lo mein",
+      "descriptionEn": "Sauteed chicken, broccoli, onions, mushrooms, bell peppers, asian teriyaki ginger sauce, lo mein noodles",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmesan",
+      "descriptionEs": "Pechuga de pollo empanizada, mozzarella, salsa de tomate, espagueti, parmesano",
+      "descriptionEn": "Breaded chicken breast, mozzarella, tomato sauce, spaghetti, parmesan",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francaise",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la francesa",
+      "nameEn": "Chicken Francaise",
+      "descriptionEs": "Pechuga de pollo frita en sartén, salsa de mantequilla y limón, arroz pilaf",
+      "descriptionEn": "Pan fried chicken breast, lemon butter sauce, rice pilaf",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "chicken",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "Pechuga de pollo frita en sartén, salsa de champiñones y vino marsala, puré de papa",
+      "descriptionEn": "Pan fried chicken breast, mushroom marsala wine sauce, mashed potatoes",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-alla-vodka",
+      "categoryId": "pasta",
+      "nameEs": "Penne a la vodka",
+      "nameEn": "Penne Alla Vodka",
+      "descriptionEs": "Salsa de vodka con tocino, tomate y crema, pecorino",
+      "descriptionEn": "Bacon tomato cream vodka sauce, pecorino",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "Salsa cremosa de mantequilla y parmesano, pecorino",
+      "descriptionEn": "Parmesan butter cream sauce, pecorino",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-meatballs",
+      "categoryId": "pasta",
+      "nameEs": "Espagueti con albóndigas",
+      "nameEn": "Spaghetti & Meatballs",
+      "descriptionEs": "Tomate salteado, ajo, albahaca fresca, salsa de tomate, pecorino",
+      "descriptionEn": "Sauteed tomatoes, garlic, fresh basil, tomato sauce, pecorino",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese",
+      "categoryId": "pasta",
+      "nameEs": "Rigatoni a la boloñesa",
+      "nameEn": "Rigatoni Bolognese",
+      "descriptionEs": "Salsa de tomate con res cocida a fuego lento, tomate salteado, ajo, albahaca, pecorino, burrata",
+      "descriptionEn": "Slow cooked beef tomato sauce, sauteed tomatoes, garlic, basil, pecorino, burrata",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-chicken-pasta",
+      "categoryId": "pasta",
+      "nameEs": "Pasta de pollo cajún",
+      "nameEn": "Cajun Chicken Pasta",
+      "descriptionEs": "Pollo con costra de parmesano, pimientos y cebolla salteados, salsa cremosa picante de parmesano, fettuccine",
+      "descriptionEn": "Parmesan crusted chicken, sauteed peppers, onions, spicy parmesan cream sauce, fettuccine",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gnocchi-alla-vodka",
+      "categoryId": "pasta",
+      "nameEs": "Gnocchi a la vodka",
+      "nameEn": "Gnocchi Alla Vodka",
+      "descriptionEs": "salsa de vodka con tocino, tomate y crema, pecorino, burrata frita",
+      "descriptionEn": "Bacon tomato cream vodka sauce, pecorino, fried burrata",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm-fettuccine-alfredo",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine alfredo con pollo a la parmesana",
+      "nameEn": "Chicken Parm Fettuccine Alfredo",
+      "descriptionEs": "Pollo empanizado, mozzarella, cubierto con fettuccine alfredo",
+      "descriptionEn": "Breaded chicken, mozzarella, topped with fettuccine alfredo",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-vodka-parm-alfredo",
+      "categoryId": "pasta",
+      "nameEs": "Parm alfredo picante a la vodka",
+      "nameEn": "Spicy Vodka Parm Alfredo",
+      "descriptionEs": "Pollo empanizado, mozzarella, salsa de vodka picante, cubierto con fettuccine alfredo",
+      "descriptionEn": "Breaded chicken, mozzarella, spicy vodka sauce, topped with fettuccine alfredo",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-brunch",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Brunch infantil",
+      "nameEn": "Kids Brunch",
+      "descriptionEs": "Un pancake jumbo, dos tiras de tocino, un huevo al gusto, mantequilla, jarabe",
+      "descriptionEn": "Single jumbo pancake, two strips bacon, single egg, any style butter, syrup",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "Res Angus, servida con papas fritas",
+      "descriptionEn": "Angus beef, served with french fries",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-dog",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hot dog",
+      "nameEn": "Hot Dog",
+      "descriptionEs": "Toda de res, servido con papas fritas",
+      "descriptionEn": "All beef, served with french fries",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-kid-s-menu",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Dedos de pollo (menú infantil)",
+      "nameEn": "Chicken Fingers (Kid's Menu)",
+      "descriptionEs": "Una salsa para remojar a elegir, papas fritas",
+      "descriptionEn": "Choice of one dipping sauce, french fries",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Pan blanco o integral a elegir, papas fritas",
+      "descriptionEn": "Choice of white or wheat bread, french fries",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-pasta",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Pasta penne",
+      "nameEn": "Penne Pasta",
+      "descriptionEs": "Salsa de tomate con albóndiga o simplemente con mantequilla",
+      "descriptionEn": "Tomato sauce with meatball or simply butter",
+      "price": "$11.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skirt-steak",
+      "categoryId": "steaks",
+      "nameEs": "Arrachera (skirt steak)",
+      "nameEn": "Skirt Steak",
+      "descriptionEs": "Res Angus certificada, arroz pilaf, espinaca baby salteada con ajo y aceite de oliva",
+      "descriptionEn": "Certified angus beef, rice pilaf, garlic & olive oil sauteed baby spinach",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-diane",
+      "categoryId": "steaks",
+      "nameEs": "Steak Diane",
+      "nameEn": "Steak Diane",
+      "descriptionEs": "Puntas de res selladas, cebolla salteada, salsa de champiñones y vino, pimienta negra en grano, puré de papa",
+      "descriptionEn": "Pan seared steak tips, sauteed onions, mushroom wine sauce, black peppercorn, mashed potatoes",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-short-ribs",
+      "categoryId": "steaks",
+      "nameEs": "Costillas cortas braseadas",
+      "nameEn": "Braised Short Ribs",
+      "descriptionEs": "Costilla de res cocida a fuego lento, gravy de vino tinto, cebolla crujiente, puré de papa, espinaca baby salteada",
+      "descriptionEn": "Slow cooked beef short ribs, red wine gravy, crispy onions, mashed potatoes, sauteed baby spinach",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip-steak",
+      "categoryId": "steaks",
+      "nameEs": "Bistec New York strip",
+      "nameEn": "New York Strip Steak",
+      "descriptionEs": "Res Angus certificada, dos guarniciones a elegir",
+      "descriptionEn": "Certified angus beef, choice of two side dishes",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-chips",
+      "categoryId": "seafood",
+      "nameEs": "Fish and chips (pescado con papas fritas)",
+      "nameEn": "Fish & Chips",
+      "descriptionEs": "Bacalao del Atlántico rebozado en cerveza, papas fritas, ensalada de col casera, salsa tártara, limón",
+      "descriptionEn": "Beer battered atlantic cod, french fries, housemade cole slaw, tartar sauce, lemon",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Camarones fritos",
+      "nameEn": "Fried Shrimp",
+      "descriptionEs": "Mariposa empanizados, papas fritas, ensalada de col casera, salsa tártara, limón",
+      "descriptionEn": "Butterflied breaded, french fries, housemade cole slaw, tartar sauce, lemon",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alaskan-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón de Alaska",
+      "nameEn": "Alaskan Salmon",
+      "descriptionEs": "Salsa de mantequilla y limón, glaseado teriyaki o simplemente a la parrilla, dos guarniciones a elegir",
+      "descriptionEn": "Lemon butter sauce, teriyaki glaze or simply grilled, choice of two sides",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-shrimp-scampi-pasta",
+      "categoryId": "seafood",
+      "nameEs": "Pasta de camarones al ajillo scampi",
+      "nameEn": "Garlic Shrimp Scampi Pasta",
+      "descriptionEs": "Camarones fritos en sartén, salsa de mantequilla y limón, ajo fresco, tomate cherry rostizado, hierbas frescas, espagueti",
+      "descriptionEn": "Pan fried shrimp, lemon butter sauce, fresh garlic, roasted cherry tomato, fresh herbs, spaghetti",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-mac-n-cheese",
+      "categoryId": "seafood",
+      "nameEs": "Mac & cheese con langosta",
+      "nameEn": "Lobster Mac N’ Cheese",
+      "descriptionEs": "Colas de langosta de Maine, mac & cheese horneado, pan molido tostado con ajo",
+      "descriptionEn": "Maine lobster tails, baked mac & cheese, toasted garlic bread crumbs",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultimate-fried-chicken",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Pollo frito supremo",
+      "nameEn": "Ultimate Fried Chicken",
+      "descriptionEs": "Tocino, mozzarella, pepinillos fritos, ranch",
+      "descriptionEn": "Bacon, mozzarella, fried pickles, ranch",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-rigatoni-parm",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Rigatoni parm picante",
+      "nameEn": "Spicy Rigatoni Parm",
+      "descriptionEs": "Pollo a la parmesana, salsa de vodka, mozzarella frita",
+      "descriptionEn": "Chicken parm, vodka sauce, fried mozzarella",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alfredo-supreme",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Alfredo Supreme",
+      "nameEn": "Alfredo Supreme",
+      "descriptionEs": "Pollo a la parmesana, fettuccine alfredo, mozzarella frita",
+      "descriptionEn": "Chicken parm, fettuccine alfredo, fried mozzarella",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagna-monster",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Lasaña monstruo",
+      "nameEn": "Lasagna Monster",
+      "descriptionEs": "Mozzarella, mozzarella frita, pan de ajo",
+      "descriptionEn": "Mozzarella, fried mozzarella, garlic bread",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "holy-ravioli",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Holy Ravioli",
+      "nameEn": "Holy Ravioli",
+      "descriptionEs": "Pollo a la parmesana, espagueti, ravioles de queso fritos, pan de ajo",
+      "descriptionEn": "Chicken parm, spaghetti, fried cheese ravioli, garlic bread",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-crunchwrap",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Crunchwrap de pollo César",
+      "nameEn": "Chicken Caesar Crunchwrap",
+      "descriptionEs": "Papas waffle con ajo y parmesano",
+      "descriptionEn": "Garlic parmesan waffle fries",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vodka-parm-crunch-bomb",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Bomba crujiente vodka parm",
+      "nameEn": "Vodka Parm Crunch Bomb",
+      "descriptionEs": "Pollo a la parmesana, espagueti, mozzarella frita",
+      "descriptionEn": "Chicken parm, spaghetti, fried mozzarella",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smash-crunch",
+      "categoryId": "stacked-sandwiches-crunchwraps",
+      "nameEs": "Smash Crunch",
+      "nameEn": "Smash Crunch",
+      "descriptionEs": "Burrito Smashrito al estilo crunchwrap",
+      "descriptionEn": "Smashrito burrito crunchwrap style",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-caesar",
+      "categoryId": "monster-burritos",
+      "nameEs": "Pollo César crujiente",
+      "nameEn": "Crispy Chicken Caesar",
+      "descriptionEs": "Papas waffle con ajo y parmesano",
+      "descriptionEn": "Garlic parmesan waffle fries",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken-mac-cheese",
+      "categoryId": "monster-burritos",
+      "nameEs": "Mac & cheese con pollo frito",
+      "nameEn": "Fried Chicken Mac & Cheese",
+      "descriptionEs": "Papas waffle, salsa especial de la casa",
+      "descriptionEn": "Waffle fries, house special sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vodka-parm",
+      "categoryId": "monster-burritos",
+      "nameEs": "Vodka parm",
+      "nameEn": "Vodka Parm",
+      "descriptionEs": "Milanesa de pollo, espagueti, mozzarella frita",
+      "descriptionEn": "Chicken cutlet, spaghetti, fried mozzarella",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-bacon-cheeseburger",
+      "categoryId": "monster-burritos",
+      "nameEs": "Hamburguesa con queso y tocino cargada",
+      "nameEn": "Loaded Bacon Cheeseburger",
+      "descriptionEs": "Palitos de mozzarella, papas waffle, salsa de queso",
+      "descriptionEn": "Mozzarella sticks, waffle fries, cheese sauce",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cowboy",
+      "categoryId": "monster-burritos",
+      "nameEs": "Vaquero",
+      "nameEn": "Cowboy",
+      "descriptionEs": "Costilla de res, palitos de mozzarella, cebolla asada, papas rizadas",
+      "descriptionEn": "Short ribs, mozzarella sticks, grilled onions, curly fries",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smashrito",
+      "categoryId": "monster-burritos",
+      "nameEs": "Smashrito",
+      "nameEn": "Smashrito",
+      "descriptionEs": "Hamburguesa con queso aplastada, tocino, mac & cheese, cebolla asada, pepinillos, alioli de chipotle",
+      "descriptionEn": "Smashed cheeseburger, bacon, mac & cheese, grilled onions, pickles, chipotle aioli",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smokehouse",
+      "categoryId": "loaded-waffle-fries",
+      "nameEs": "Ahumado",
+      "nameEn": "Smokehouse",
+      "descriptionEs": "Pollo frito con BBQ y miel, mac & cheese, ajo y parmesano",
+      "descriptionEn": "Honey bbq fried chicken, mac & cheese, garlic parmesan",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bigg-macc-attack",
+      "categoryId": "loaded-waffle-fries",
+      "nameEs": "Bigg Macc Attack",
+      "nameEn": "Bigg Macc Attack",
+      "descriptionEs": "Hamburguesa con queso picada, lechuga, pepinillos, salsa especial",
+      "descriptionEn": "Chopped cheeseburger, lettuce, pickles, special sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-vodka-parm",
+      "categoryId": "loaded-waffle-fries",
+      "nameEs": "Vodka parm picante",
+      "nameEn": "Spicy Vodka Parm",
+      "descriptionEs": "Pollo crujiente, mozzarella, salsa de vodka picante",
+      "descriptionEn": "Crispy chicken, mozzarella, spicy vodka sauce",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-daddy",
+      "categoryId": "loaded-waffle-fries",
+      "nameEs": "Mac Daddy",
+      "nameEn": "Mac Daddy",
+      "descriptionEs": "Pollo frito, tocino, mac & cheese, alioli de chipotle",
+      "descriptionEn": "Fried chicken, bacon, mac & cheese, chipotle aioli",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-brunch-board-serves-3-4",
+      "categoryId": "elm-streets-brunch-board",
+      "nameEs": "Tabla de brunch de Elm Street (para 3-4)",
+      "nameEn": "Elm Street’s Brunch Board (Serves 3-4)",
+      "descriptionEs": "Pancakes de suero de leche tamaño dólar, waffles belgas, bocados de pan francés de churro, fruta fresca y moras, chispas de chocolate, Nutella, Cinnamon Toast Crunch, mantequilla de cacahuate con Reese's Pieces, jarabe de maple",
+      "descriptionEn": "Silver dollar buttermilk pancakes, belgian waffles, churro french toast bites, fresh fruit & berries, chocolate chips, nutella, cinnamon toast crunch, peanut butter reeses pieces butter, maple syrup",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-breakfast",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Desayuno clásico",
+      "nameEn": "Classic Breakfast",
+      "descriptionEs": "Dos huevos al gusto, a elegir tocino, jamón, hamburguesitas de salchicha de cerdo, salchichas de pavo o tocino canadiense, servido con papas caseras y pan tostado",
+      "descriptionEn": "Two eggs any style, choice of bacon, ham, pork sausage patties, turkey sausage links, canadian bacon, served with home fries and toast",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-hash-eggs",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Picadillo de corned beef con huevos",
+      "nameEn": "Corned Beef Hash & Eggs",
+      "descriptionEs": "Dos huevos al gusto, servido con papas caseras y pan tostado",
+      "descriptionEn": "Two eggs any style, served with home fries and toast",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-big-brunch",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Gran brunch de Elm Street",
+      "nameEn": "Elm Street’s Big Brunch",
+      "descriptionEs": "Dos huevos al gusto, tocino, salchicha, papas caseras, dos pancakes de suero de leche",
+      "descriptionEn": "Two eggs any style, bacon, sausage, home fries, two buttermilk pancakes",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-steak-eggs",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Bistec New York con huevos",
+      "nameEn": "New York Steak & Eggs",
+      "descriptionEs": "Dos huevos al gusto, bistec de lomo, servido con papas caseras y pan tostado",
+      "descriptionEn": "Two eggs any style, strip steak, served with home fries and toast",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-eggs-benedict",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Huevos benedictinos clásicos",
+      "nameEn": "Classic Eggs Benedict",
+      "descriptionEs": "Huevos pochados, tocino canadiense, salsa holandesa, muffin inglés, a elegir papas caseras o ensalada de hojas verdes y tomate",
+      "descriptionEn": "Poached eggs, canadian bacon, hollandaise, english muffin, choice of home fries or mixed greens tomato salad",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-hash-benedict",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Benedictinos con picadillo de corned beef",
+      "nameEn": "Corned Beef Hash Benedict",
+      "descriptionEs": "Huevos pochados, picadillo de corned beef, cheddar fundido, salsa holandesa, muffin inglés, papas caseras",
+      "descriptionEn": "Poached eggs, corned beef hash, melted cheddar, hollandaise, english muffin, home fries",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-benedict",
+      "categoryId": "breakfast-mains",
+      "nameEs": "Benedictinos con salmón ahumado",
+      "nameEn": "Smoked Salmon Benedict",
+      "descriptionEs": "Huevos pochados, salmón ahumado, salsa holandesa, muffin inglés, a elegir papas caseras o ensalada de hojas verdes y tomate",
+      "descriptionEn": "Poached eggs, smoked salmon, hollandaise, english muffin, choice of home fries or mixed greens tomato salad",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-fajita",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "Fajita cargado",
+      "nameEn": "Loaded Fajita",
+      "descriptionEs": "Aguacate, cheddar, queso jack, pimientos, cebolla, crema agria, salsa",
+      "descriptionEn": "Avocado, cheddar, jack, peppers, onions, sour cream, salsa",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "denver",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "Denver",
+      "nameEn": "Denver",
+      "descriptionEs": "Jamón, cheddar, cebolla, pimientos",
+      "descriptionEn": "Ham, cheddar, onions, bell peppers",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "farmers",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "Del granjero",
+      "nameEn": "Farmers",
+      "descriptionEs": "Tocino, jamón, salchicha, papas caseras, cebolla",
+      "descriptionEn": "Bacon, ham, sausage, home fries, onions",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "local-harvest",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "Cosecha local",
+      "nameEn": "Local Harvest",
+      "descriptionEs": "Espinaca, champiñones, tomate, cheddar, aguacate, fruta fresca, pan de masa madre tostado",
+      "descriptionEn": "Spinach, mushrooms, tomato, cheddar, avocado, fresh fruit, sourdough toast",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-favorite",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "El favorito de Elm Street",
+      "nameEn": "Elm Street’s Favorite",
+      "descriptionEs": "Panceta de cerdo ahumada con nogal, salchicha, jamón, cheddar, pimientos, cebolla",
+      "descriptionEn": "Hickory smoked pork belly, sausage, ham, cheddar, peppers, onions",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria",
+      "categoryId": "farm-fresh-omelets",
+      "nameEs": "Birria",
+      "nameEn": "Birria",
+      "descriptionEs": "Res braseada lentamente, mozzarella, cebolla, cilantro",
+      "descriptionEn": "Slow braised beef, mozzarella, onions, cilantro",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-savory-waffle",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Waffle dulce y salado",
+      "nameEn": "Sweet & Savory Waffle",
+      "descriptionEs": "Pollo frito jumbo crujiente con hueso, tocino picado, fresas frescas, jarabe de maple",
+      "descriptionEn": "Jumbo crispy bone in fried chicken, chopped bacon, fresh strawberries, maple syrup",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oatmeal",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Avena",
+      "nameEn": "Oatmeal",
+      "descriptionEs": "Moras azules, miel. Se sirve de 8 am a 12 pm",
+      "descriptionEn": "Blueberries, honey. Served 8 am - 12 pm",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-yogurt",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Yogur griego",
+      "nameEn": "Greek Yogurt",
+      "descriptionEs": "Granola, miel, moras frescas",
+      "descriptionEn": "Granola, honey, fresh berries",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-ham-pork-sausage-patties-turkey-sausage-links-canadian-bacon-or-chorizo",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Tocino, jamón, hamburguesitas de salchicha de cerdo, salchichas de pavo, tocino canadiense o chorizo",
+      "nameEn": "Bacon, Ham, Pork Sausage Patties, Turkey Sausage Links, Canadian Bacon or Chorizo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Pan tostado con aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "Aguacate machacado, Dos huevos al gusto, pan de masa madre tostado, ensalada de hojas verdes y tomate",
+      "descriptionEn": "Smashed avocado, two eggs any style, sourdough toast, mixed greens tomato salad",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "he-man",
+      "categoryId": "brunch-favorites",
+      "nameEs": "He-Man",
+      "nameEn": "He-Man",
+      "descriptionEs": "Tres rebanadas de pan francés, dos huevos, tocino, jamón, salchicha, mantequilla, jarabe",
+      "descriptionEn": "Three slices french toast, two eggs, bacon, ham, sausage, butter, syrup",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon-bagel",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Bagel de salmón ahumado",
+      "nameEn": "Smoked Salmon Bagel",
+      "descriptionEs": "Queso crema, arúgula baby, tomate, pepino inglés, cebolla morada, alcaparras frescas",
+      "descriptionEn": "Cream cheese, baby arugula, tomatoes, english cucumbers, red onions, fresh capers",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-big-brunch-burrito",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Gran burrito de brunch de Elm Street",
+      "nameEn": "Elm Street’s Big Brunch Burrito",
+      "descriptionEs": "Pollo a la parrilla, chorizo desmoronado, huevo revuelto, queso jack para quesadilla, aguacate, tomate, cebolla, cilantro, tres tortillas prensadas, crema agria, salsa roja",
+      "descriptionEn": "Grilled chicken, crumbled chorizo, scrambled eggs, quesadilla jack cheese, avocado, tomatoes, onions, cilantro, three pressed tortillas, sour cream, salsa roja",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-rancheros",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Huevos Rancheros",
+      "nameEn": "Huevos Rancheros",
+      "descriptionEs": "Chorizo desmoronado, huevos estrellados, aguacate machacado, frijoles refritos, queso jack para quesadilla, tortillas de maíz, cilantro, salsa verde",
+      "descriptionEn": "Crumbled chorizo, sunny side up eggs, smashed avocado, refried beans, quesadilla jack cheese, corn tortillas, cilantro, salsa verde",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bec-brunch-bowl",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Tazón de brunch BEC",
+      "nameEn": "Bec Brunch Bowl",
+      "descriptionEs": "Panceta de cerdo ahumada, huevos estrellados, queso jack, aguacate, papas caseras, papitas tots, chorrito de alioli de chipotle",
+      "descriptionEn": "Smoked pork belly, sunny side up eggs, jack cheese, avocado, home fries, tater tots, chipotle aioli drizzle",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "protein-brunch-bowl",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Tazón de brunch con proteína",
+      "nameEn": "Protein Brunch Bowl",
+      "descriptionEs": "Pollo a la parrilla, huevos estrellados, aguacate, feta, arúgula baby, tomate, mezcla de quinoa y cuscús",
+      "descriptionEn": "Grilled chicken, sunny side up eggs, avocado, feta, baby arugula, tomato, quinoa couscous blend",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hangover-brunch-bowl",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Tazón de brunch para la cruda",
+      "nameEn": "Hangover Brunch Bowl",
+      "descriptionEs": "Costilla de res braseada, huevos estrellados, queso jack para quesadilla, cebolla crujiente, papas caseras",
+      "descriptionEn": "Braised short ribs, sunny side up eggs, quesadilla jack cheese, crispy onions, home fries",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-bec",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "The BEC",
+      "nameEn": "The Bec",
+      "descriptionEs": "Tocino, huevo doble revuelto o frito, queso americano, pan brioche",
+      "descriptionEn": "Bacon, double scrambled or fried egg, american cheese, brioche bun",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "morning-burrito",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "Burrito mañanero",
+      "nameEn": "Morning Burrito",
+      "descriptionEs": "Chorizo mexicano, queso pepper jack con jalapeño, dos huevos, aguacate, salsa, tortilla de harina",
+      "descriptionEn": "Mexican chorizo, jalapeño pepper jack, two eggs, avocado, salsa, flour tortilla",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "healthy-choice",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "Opción saludable",
+      "nameEn": "Healthy Choice",
+      "descriptionEs": "Claras de huevo revueltas, pollo a la parrilla, aguacate, espinaca baby, tomate fresco, tortilla integral, servido con fruta fresca",
+      "descriptionEn": "Scrambled egg whites, grilled chicken, avocado, baby spinach, fresh tomato, whole wheat tortilla, served with fresh fruit",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stacked-brunch-burrito",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "Burrito de brunch apilado",
+      "nameEn": "Stacked Brunch Burrito",
+      "descriptionEs": "Tocino, salchicha, huevo, mozzarella, papitas tots, alioli de chipotle, papas caseras",
+      "descriptionEn": "Bacon, sausage, eggs, mozzarella, tater tots, chipotle aioli, home fries",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "morning-quesadilla",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "Quesadilla mañanera",
+      "nameEn": "Morning Quesadilla",
+      "descriptionEs": "Chorizo, huevo revuelto, queso jack, aguacate, crema agria, salsa, papas caseras",
+      "descriptionEn": "Chorizo, scrambled eggs, jack cheese, avocado, sour cream, salsa, home fries",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-panini",
+      "categoryId": "breakfast-handhelds",
+      "nameEs": "Panini de brunch",
+      "nameEn": "Brunch Panini",
+      "descriptionEs": "Tocino, huevo, cheddar, aguacate, arúgula, tomate, ciabatta, alioli de chipotle, papas caseras",
+      "descriptionEn": "Bacon, eggs, cheddar, avocado, arugula, tomato, ciabatta, chipotle aioli, home fries",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "original-buttermilk",
+      "categoryId": "pancakes",
+      "nameEs": "Suero de leche original",
+      "nameEn": "Original Buttermilk",
+      "descriptionEs": "Tres pancakes, receta de la casa",
+      "descriptionEn": "Three pancakes, house recipe",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry",
+      "categoryId": "pancakes",
+      "nameEs": "Arándano",
+      "nameEn": "Blueberry",
+      "descriptionEs": "Horneados con moras azules frescas, cubiertos con azúcar glas",
+      "descriptionEn": "Baked with fresh blueberries, topped with powdered sugar",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip",
+      "categoryId": "pancakes",
+      "nameEs": "Chispas de chocolate",
+      "nameEn": "Chocolate Chip",
+      "descriptionEs": "Horneados y cubiertos con chispas de chocolate, salsa de chocolate, crema batida",
+      "descriptionEn": "Baked & topped with chocolate chips, chocolate sauce, whipped cream",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana-walnut",
+      "categoryId": "pancakes",
+      "nameEs": "Plátano con nuez",
+      "nameEn": "Banana Walnut",
+      "descriptionEs": "Horneados con nueces, cubiertos con plátano fresco",
+      "descriptionEn": "Baked with walnuts, topped with fresh bananas",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella",
+      "categoryId": "pancakes",
+      "nameEs": "Nutella",
+      "nameEn": "Nutella",
+      "descriptionEs": "Plátano, fresas, moras azules, salsa de chocolate, crema batida",
+      "descriptionEn": "Bananas, strawberries, blueberries, chocolate sauce, whipped cream",
+      "price": "$18.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oreo-red-velvet-cake-pancakes",
+      "categoryId": "pancakes",
+      "nameEs": "Pancakes de pastel red velvet con Oreo",
+      "nameEn": "Oreo Red Velvet Cake Pancakes",
+      "descriptionEs": "Cuatro pancakes jumbo, pastel de capas red velvet, Oreo triturado, salsa de chocolate, chorrito de frambuesa y vainilla, crema batida",
+      "descriptionEn": "Four jumbo pancakes, red velvet layer cake, crushed oreos, chocolate sauce, raspberry vanilla drizzle, whipped cream",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-eggs",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Dos huevos",
+      "nameEn": "Two Eggs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sliced-avocado",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Aguacate en Rodajas",
+      "nameEn": "Sliced Avocado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-fruit",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Fruta fresca",
+      "nameEn": "Fresh Fruit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-honey",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Miel picante",
+      "nameEn": "Hot Honey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-syrup-jar",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Frasco de jarabe de maple",
+      "nameEn": "Maple Syrup Jar",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-fries",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Papas caseras",
+      "nameEn": "Home Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tater-tots",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Tater tots (croquetas de papa)",
+      "nameEn": "Tater Tots",
+      "descriptionEs": "Queso jack rallado fundido",
+      "descriptionEn": "Melted shredded jack cheese",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-hash",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Hash de corned beef",
+      "nameEn": "Corned Beef Hash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel-with-cream-cheese",
+      "categoryId": "breakfast-sides",
+      "nameEs": "Bagel con queso crema",
+      "nameEn": "Bagel with Cream Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belgian-waffle",
+      "categoryId": "belgian-waffles",
+      "nameEs": "Waffle belga",
+      "nameEn": "Belgian Waffle",
+      "descriptionEs": "Waffle jumbo clásico",
+      "descriptionEn": "Classic jumbo waffle",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-cream",
+      "categoryId": "belgian-waffles",
+      "nameEs": "Galleta con crema",
+      "nameEn": "Cookies & Cream",
+      "descriptionEs": "Trozos de Oreo triturado, salsa de chocolate y vainilla, crema batida",
+      "descriptionEn": "Crushed oreo pieces, chocolate & vanilla sauce, whipped cream",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-waffle",
+      "categoryId": "belgian-waffles",
+      "nameEs": "Pollo con waffle",
+      "nameEn": "Chicken & Waffle",
+      "descriptionEs": "Pollo frito jumbo crujiente con hueso, mantequilla, jarabe de maple",
+      "descriptionEn": "Jumbo crispy bone in fried chicken, butter, maple syrup",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-waffle-benedict",
+      "categoryId": "belgian-waffles",
+      "nameEs": "Benedictinos de pollo y waffle",
+      "nameEn": "Chicken & Waffle Benedict",
+      "descriptionEs": "Pollo empanizado sin hueso, huevos pochados, salsa holandesa, mini waffles belgas, jarabe de maple, servido con papas caseras",
+      "descriptionEn": "Boneless breaded chicken, poached eggs, hollandaise, mini belgian waffles, maple syrup, served with home fries",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Tostada francesa",
+      "nameEn": "French Toast",
+      "descriptionEs": "Pan texas toast jumbo, sumergido en nuestra mezcla de canela y vainilla de la casa",
+      "descriptionEn": "Jumbo texas toast, dipped in our house cinnamon vanilla batter",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churro",
+      "categoryId": "french-toast",
+      "nameEs": "Churro",
+      "nameEn": "Churro",
+      "descriptionEs": "Frito y crujiente, revolcado en azúcar con canela",
+      "descriptionEn": "Crispy fried, rolled in cinnamon sugar mix",
+      "price": "$15.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-banana",
+      "categoryId": "french-toast",
+      "nameEs": "Nutella con plátano",
+      "nameEn": "Nutella Banana",
+      "descriptionEs": "Salsa de chocolate, azúcar glas",
+      "descriptionEn": "Chocolate sauce, powdered sugar",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-toast-crunch-churro",
+      "categoryId": "french-toast",
+      "nameEs": "Churro de Cinnamon Toast Crunch",
+      "nameEn": "Cinnamon Toast Crunch Churro",
+      "descriptionEs": "Salsa de caramelo y vainilla, crema batida",
+      "descriptionEn": "Caramel vanilla sauce, whipped cream",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-reeses-churro-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de churro con Nutella y Reese's",
+      "nameEn": "Nutella Reeses Churro French Toast",
+      "descriptionEs": "Reese's Pieces, chispas de mantequilla de cacahuate, salsa de chocolate, crema batida",
+      "descriptionEn": "Reeses pieces, peanut butter chips, chocolate sauce, whipped cream",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-oreo-churro-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de churro con Nutella y Oreo",
+      "nameEn": "Nutella Oreo Churro French Toast",
+      "descriptionEs": "Helado de vainilla, salsa de chocolate, crema batida",
+      "descriptionEn": "Vanilla ice cream, chocolate sauce, whipped cream",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-honey-fried-chicken-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pollo frito con miel picante y pan francés",
+      "nameEn": "Hot Honey Fried Chicken & French Toast",
+      "descriptionEs": "Pollo frito crujiente, tocino picado, chorrito de miel picante, jarabe de maple",
+      "descriptionEn": "Crispy fried chicken, chopped bacon, hot honey drizzle, maple syrup",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "build-your-own-omelet",
+      "categoryId": "build-your-own-omelet",
+      "nameEs": "Arma tu propio omelet",
+      "nameEn": "Build Your Own Omelet",
+      "descriptionEs": "Hecho con tres ingredientes a elegir, servido con papas caseras y pan tostado",
+      "descriptionEn": "Made with Your Choice of Three Toppings, served with Home Fries & Toast",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "our-famous-donuts",
+      "categoryId": "donuts",
+      "nameEs": "Nuestras famosas donas",
+      "nameEn": "Our Famous Donuts",
+      "descriptionEs": "Donas de pastel tradicionales con azúcar y canela",
+      "descriptionEn": "Old Fashioned Cinnamon Sugar Cake Donuts",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nutella-donut",
+      "categoryId": "donuts",
+      "nameEs": "Dona de Nutella",
+      "nameEn": "Nutella Donut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "featured-donut",
+      "categoryId": "donuts",
+      "nameEs": "Dona destacada",
+      "nameEn": "Featured Donut",
+      "descriptionEs": "Visita nuestras redes sociales para ver nuestras creaciones más recientes @elmstreetdiner",
+      "descriptionEn": "Visit our social media for our newest creations @elmstreetdiner",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-chocolate-or-strawberry",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Vainilla, chocolate o fresa",
+      "nameEn": "Vanilla, Chocolate or Strawberry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-cream-our-famous-milkshakes",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Galleta con crema (nuestras famosas malteadas)",
+      "nameEn": "Cookies & Cream (Our Famous Milkshakes)",
+      "descriptionEs": "Galletas Oreo, salsa de chocolate",
+      "descriptionEn": "Oreo cookies, chocolate sauce",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peanut-butter-cup",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Copa de mantequilla de cacahuate",
+      "nameEn": "Peanut Butter Cup",
+      "descriptionEs": "Mantequilla de cacahuate, salsa de chocolate",
+      "descriptionEn": "Peanut butter, chocolate sauce",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cafe-cocoa",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Café cocoa",
+      "nameEn": "Café Cocoa",
+      "descriptionEs": "Nutella, espresso gourmet",
+      "descriptionEn": "Nutella, gourmet espresso",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-toast-crunch",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Cinnamon Toast Crunch",
+      "nameEn": "Cinnamon Toast Crunch",
+      "descriptionEs": "Cereal Cinnamon Toast Crunch, salsa de caramelo",
+      "descriptionEn": "Cinnamon toast crunch cereal, caramel sauce",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotton-candy",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Algodón de azúcar",
+      "nameEn": "Cotton Candy",
+      "descriptionEs": "Algodón de azúcar de feria, crocante de algodón de azúcar",
+      "descriptionEn": "Carnival cotton candy, cotton candy crunch",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "funfetti",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Funfetti",
+      "nameEn": "Funfetti",
+      "descriptionEs": "Mezcla de pastel de cumpleaños, chispas de colores",
+      "descriptionEn": "Birthday cake mix, rainbow sprinkles",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kinder-bueno",
+      "categoryId": "our-famous-milkshakes",
+      "nameEs": "Kinder Bueno",
+      "nameEn": "Kinder Bueno",
+      "descriptionEs": "Chocolate con crema de avellana, oblea crujiente",
+      "descriptionEn": "Hazelnut cream chocolate, crispy wafer",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-brewed-drip-coffee",
+      "categoryId": "hot-drinks",
+      "nameEs": "Café de goteo recién hecho",
+      "nameEn": "Fresh Brewed Drip Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "Limón, miel",
+      "descriptionEn": "Lemon, honey",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herbal-tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té de hierbas",
+      "nameEn": "Herbal Tea",
+      "descriptionEs": "Té verde, menta, manzanilla, Earl Grey, English Breakfast",
+      "descriptionEn": "Green Tea, Mint, Chamomile, Earl Grey, English Breakfast",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "Crema batida, chocolate rallado",
+      "descriptionEn": "Whipped cream, shaved chocolate",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-drinks",
+      "categoryId": "cold-drinks",
+      "nameEs": "Refrescos",
+      "nameEn": "Soft Drinks",
+      "descriptionEs": "Pepsi, Pepsi Light, Sprite, Ginger Ale",
+      "descriptionEn": "Pepsi, Diet Pepsi, Sprite, Ginger Ale",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "unsweetened-iced-tea",
+      "categoryId": "cold-drinks",
+      "nameEs": "Té helado sin azúcar",
+      "nameEn": "Unsweetened Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-coffee",
+      "categoryId": "cold-drinks",
+      "nameEs": "Café helado",
+      "nameEn": "Iced Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk",
+      "categoryId": "cold-drinks",
+      "nameEs": "Leche",
+      "nameEn": "Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-milk",
+      "categoryId": "cold-drinks",
+      "nameEs": "Leche con chocolate",
+      "nameEn": "Chocolate Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "cold-drinks",
+      "nameEs": "Limonada",
+      "nameEn": "Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "king-of-golf",
+      "categoryId": "cold-drinks",
+      "nameEs": "King of Golf",
+      "nameEn": "King of Golf",
+      "descriptionEs": "Mitad té helado, mitad limonada",
+      "descriptionEn": "50/50 iced tea and lemonade",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-juice",
+      "categoryId": "cold-drinks",
+      "nameEs": "Jugo de manzana",
+      "nameEn": "Apple Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cranberry-juice",
+      "categoryId": "cold-drinks",
+      "nameEs": "Jugo de arándano",
+      "nameEn": "Cranberry Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-juice",
+      "categoryId": "cold-drinks",
+      "nameEs": "Jugo de naranja",
+      "nameEn": "Orange Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shirley-temple",
+      "categoryId": "cold-drinks",
+      "nameEs": "Shirley Temple",
+      "nameEn": "Shirley Temple",
+      "descriptionEs": "Refresco de lima-limón, jarabe de granadina, cerezas marrasquino",
+      "descriptionEn": "Lemon lime soda, grenadine syrup, maraschino cherries",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "five-layer-chocolate-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate de cinco capas",
+      "nameEn": "Five Layer Chocolate Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-red-velvet-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel red velvet alto",
+      "nameEn": "High Red Velvet Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "layer-cakes",
+      "categoryId": "desserts",
+      "nameEs": "Pasteles de capas",
+      "nameEn": "Layer Cakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Pay de queso con fresa",
+      "nameEn": "Strawberry Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake surtido",
+      "nameEn": "Assorted Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-streets-favorite-desserts",
+      "categoryId": "desserts",
+      "nameEs": "El favorito de Elm Street (postres)",
+      "nameEn": "Elm Street’s Favorite (Desserts)",
+      "descriptionEs": "Nutella, trozos de Oreo triturado, salsa de mantequilla de cacahuate",
+      "descriptionEn": "Nutella, crushed oreo pieces, peanut butter sauce",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa",
+      "nameEn": "Mimosa",
+      "descriptionEs": "Prosecco, jugo de naranja",
+      "descriptionEn": "Prosecco, orange juice",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Prosecco",
+      "nameEn": "Prosecco",
+      "descriptionEs": "Vino espumoso burbujeante",
+      "descriptionEn": "Bubbly sparkling wine",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa de temporada",
+      "nameEn": "Seasonal Mimosa",
+      "descriptionEs": "Especial destacado",
+      "descriptionEn": "Featured special",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bellini",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Bellini",
+      "nameEn": "Bellini",
+      "descriptionEs": "A elegir mango, durazno o maracuyá",
+      "descriptionEn": "Choice of mango, peach or passionfruit",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cotton-candy-prosecco",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Prosecco con algodón de azúcar",
+      "nameEn": "Cotton Candy Prosecco",
+      "descriptionEs": "Algodón de azúcar de feria",
+      "descriptionEn": "Carnival cotton candy",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "candy-land-prosecco",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Prosecco Candy Land",
+      "nameEn": "Candy Land Prosecco",
+      "descriptionEs": "Piña, arándano, prosecco, cubierto con gomitas surtidas",
+      "descriptionEn": "Pineapple, cranberry, prosecco, topped with assorted gummies",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boozy-shakes",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Malteadas con alcohol",
+      "nameEn": "Boozy Shakes",
+      "descriptionEs": "Algodón de azúcar arcoíris o fresa con rosa",
+      "descriptionEn": "Rainbow cotton candy or strawberry rose",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-street-mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa Elm Street",
+      "nameEn": "Elm Street Mimosa",
+      "descriptionEs": "Prosecco y jugo de naranja (límite de 3 por persona)",
+      "descriptionEn": "Prosecco and orange juice (limit 3 per guest)",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elm-street-cake-shakes",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Cake shakes de Elm Street",
+      "nameEn": "Elm Street Cake Shakes",
+      "descriptionEs": "Creadas y diseñadas exclusivamente por nuestro personal con: borde decorado con betún, pastel de capas, donas caseras, cupcake jumbo, dulces surtidos y varios toppings. ¡Elige el sabor de tu malteada y nosotros hacemos el resto!",
+      "descriptionEn": "Uniquely crafted and designed by our staff with the following: decorated frosted rim, layer cake, homemade donuts, jumbo cupcake, assorted candy and multiple toppings. Choose your flavor milkshake and let us do the rest!",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "omg-birthday-bowl",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Tazón de cumpleaños OMG",
+      "nameEn": "Omg Birthday Bowl",
+      "descriptionEs": "¡Celebra tu día especial con estilo! Elige tu malteada favorita y deja que nuestro personal diseñe tu tazón con los siguientes toppings: borde decorado con betún, pastel de capas, waffle belga, dulces surtidos, varios toppings ¡y una bengala jumbo!",
+      "descriptionEn": "Celebrate your special day in style! You pick your favorite milkshake and let our staff specially design your bowl with the following toppings: decorated frosted rim, layer cake, belgian waffle, assorted candy, multiple toppings and a jumbo sparkler!",
+      "price": "$30.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen estacionamiento disponible?",
-      "qEn": "Do you have parking available?",
-      "aEs": "Sí, contamos con un lote de estacionamiento propio en la parte trasera del edificio, accesible por Halloween Blvd.",
-      "aEn": "Yes, we have a private parking lot located at the rear of the building, accessible via Halloween Blvd."
-    },
-    {
-      "qEs": "¿Es necesario hacer reservación para los batidos virales y el brunch?",
-      "qEn": "Do I need a reservation for viral shakes and brunch?",
-      "aEs": "Trabajamos principalmente por orden de llegada (walk-ins). Los fines de semana pueden llenarse rápido, ¡así que venga con tiempo!",
-      "aEn": "We operate primarily on a walk-in basis. Weekends can get quite busy, so we recommend arriving early!"
-    },
-    {
-      "qEs": "¿Ofrecen opciones para llevar (takeout)?",
-      "qEn": "Do you offer takeout options?",
-      "aEs": "¡Sí! Puede ordenar por teléfono o a través de nuestras plataformas de entrega asociadas.",
-      "aEn": "Yes! You can order directly by phone or through our partnered delivery platforms."
-    }
-  ]
+  "faqs": []
 }
