@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "tony-ds-restaurant",
     "name": "Tony D's Restaurant",
-    "tagline": "Authentic Italian & American comfort food in New London | Auténtica comida italiana y americana",
-    "address": "92 Huntington St, New London, CT 06320",
+    "tagline": "Italian restaurant in New London | Restaurante italiano en New London",
+    "address": "92 Huntington St, New London, Connecticut",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,324 +24,582 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "pesce",
+      "nameEs": "Pescados",
+      "nameEn": "Pesce",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "pollo",
+      "nameEs": "Pollo",
+      "nameEn": "Pollo",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "carne",
+      "nameEs": "Carnes",
+      "nameEn": "Carne",
+      "icon": "Utensils"
+    },
+    {
+      "id": "prime-cut-meats",
+      "nameEs": "Cortes de carne prime",
+      "nameEn": "Prime Cut Meats",
+      "icon": "Utensils"
+    },
+    {
+      "id": "zuppa-antipasti",
+      "nameEs": "Sopas/Antipasti",
+      "nameEn": "Zuppa/Antipasti",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tuscan-grilled-pizza",
+      "nameEs": "Pizza toscana a la parrilla",
+      "nameEn": "Tuscan Grilled Pizza",
+      "icon": "Utensils"
+    },
+    {
+      "id": "insalate",
+      "nameEs": "Ensaladas",
+      "nameEn": "Insalate",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-dishes",
+      "nameEs": "Guarniciones",
+      "nameEn": "Side Dishes",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "tony-ds-restaurant-01",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones a la Marinara",
-      "nameEn": "Mussels Marinara",
-      "descriptionEs": "Mejillones frescos de roca salteados en vino blanco, ajo y nuestra clásica salsa marinara casera.",
-      "descriptionEn": "Fresh rock mussels sautéed in white wine, garlic, and our signature homemade marinara sauce.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "rigatoni-with-pork-ribs-or-meatballs",
+      "categoryId": "pasta",
+      "nameEs": "Rigatoni con costillas de cerdo o albóndigas",
+      "nameEn": "Rigatoni with Pork Ribs or Meatballs",
+      "descriptionEs": "Salsa de cerdo al vino tinto.",
+      "descriptionEn": "Red wine pork sauce.",
+      "price": "$26.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-02",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos Crujientes",
-      "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Calamares tiernos empanizados y fritos a la perfección, servidos con salsa marinara picante y rodajas de limón.",
-      "descriptionEn": "Tender squid lightly breaded and fried to perfection, served with spicy marinara sauce and fresh lemon wedges.",
-      "price": "$15.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Crujiente",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "sweet-sausage-peppers",
+      "categoryId": "pasta",
+      "nameEs": "Salchicha dulce con pimientos",
+      "nameEn": "Sweet Sausage & Peppers",
+      "descriptionEs": "Mezclada en marinara al vino tinto y servida sobre pasta rigatoni.",
+      "descriptionEn": "Tossed in a red wine marinara and served over rigatoni pasta.",
+      "price": "$28.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-03",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta al Pomodoro",
-      "nameEn": "Tomato Basil Bruschetta",
-      "descriptionEs": "Pan tostado al horno con ajo, cubierto con tomates diced frescos, albahaca, aceite de oliva virgen extra y un toque de reducción de balsámico.",
-      "descriptionEn": "Toasted garlic bread topped with fresh diced tomatoes, basil, extra virgin olive oil, and a drizzle of balsamic glaze.",
-      "price": "$9.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "tortellini",
+      "categoryId": "pasta",
+      "nameEs": "Tortellini",
+      "nameEn": "Tortellini",
+      "descriptionEs": "En salsa alfredo con pesto y pollo a la parrilla.",
+      "descriptionEn": "In an Alfredo pesto sauce with grilled chicken.",
+      "price": "$30.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-04",
-      "categoryId": "appetizers",
-      "nameEs": "Mozzarella Fritta",
-      "nameEn": "Fried Mozzarella Sticks",
-      "descriptionEs": "Bastones de queso mozzarella empanizados y dorados, servidos con nuestra salsa marinara casera caliente.",
-      "descriptionEn": "Golden-brown breaded mozzarella cheese sticks served warm with our signature seasoned house marinara sauce.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Queso",
-        "Favorito"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "bolognese",
+      "categoryId": "pasta",
+      "nameEs": "Boloñesa",
+      "nameEn": "Bolognese",
+      "descriptionEs": "La famosa salsa de carne de la tía Edie con pasta pappardelle.",
+      "descriptionEn": "Aunt Edie’s famous meat sauce with pappardelle pasta.",
+      "price": "$26.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-05",
-      "categoryId": "mains",
-      "nameEs": "Fettuccine Alfredo con Pollo",
-      "nameEn": "Chicken Fettuccine Alfredo",
-      "descriptionEs": "Fettuccine fresco bañado en una cremosa salsa de mantequilla y queso parmesano, coronado con pechuga de pollo a la parrilla.",
-      "descriptionEn": "Fresh fettuccine tossed in a rich, creamy garlic parmesan butter sauce, topped with tender grilled chicken breast.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pasta",
-        "Cremoso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "white-truffle-fettucini",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccini con trufa blanca",
+      "nameEn": "White Truffle Fettucini",
+      "descriptionEs": "Fettuccini mezclado con salsa cremosa de trufa blanca, parmigiano reggiano, hongos shiitake y pancetta crujiente.",
+      "descriptionEn": "Fettucini tossed with white truffle cream sauce, parmigiano reggiano, shiitake mushrooms and crispy pancetta.",
+      "price": "$28.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Pechuga de Pollo a la Parmigiana",
-      "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Pechuga de pollo empanizada y horneada con salsa marinara y abundante queso mozzarella fundido, servida con espagueti.",
-      "descriptionEn": "Breaded chicken breast baked with marinara sauce and melted mozzarella cheese, served alongside a bed of spaghetti.",
-      "price": "$21.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Horneado",
-        "Italiano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "eggplant-parmagiana",
+      "categoryId": "pasta",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parmagiana",
+      "descriptionEs": "Berenjena fresca ligeramente empanizada en capas con queso ricotta y cubierta con salsa marinara.",
+      "descriptionEn": "Lightly coated fresh eggplant layered with ricotta cheese and topped with marinara sauce.",
+      "price": "$24.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-07",
-      "categoryId": "mains",
-      "nameEs": "Espagueti con Albóndigas de la Nonna",
-      "nameEn": "Spaghetti & Nonna's Meatballs",
-      "descriptionEs": "Espagueti al dente cubierto con nuestras tradicionales albóndigas de carne caseras y salsa de tomate de cocción lenta.",
-      "descriptionEn": "Al dente spaghetti topped with our traditional homemade beef meatballs and slow-simmered house tomato sauce.",
-      "price": "$18.95",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Casero",
-        "Carne"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "linguine-alla-vongole",
+      "categoryId": "pesce",
+      "nameEs": "Linguine alle vongole",
+      "nameEn": "Linguine Alla Vongole",
+      "descriptionEs": "Almejas little neck frescas en su delicioso jugo sobre linguine con salsa roja o blanca.",
+      "descriptionEn": "Fresh littleneck clams in their own delicious juices over linguine with a red or white sauce.",
+      "price": "$30.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-08",
-      "categoryId": "mains",
-      "nameEs": "Lasaña Clásica al Horno",
-      "nameEn": "Classic Baked Lasagna",
-      "descriptionEs": "Capas de pasta ancha, carne picada sazonada, ricotta cremosa y mozzarella, horneadas a la perfección.",
-      "descriptionEn": "Layers of wide pasta sheets, seasoned ground beef, creamy ricotta, and mozzarella, baked bubbly and golden.",
-      "price": "$20.50",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Horneado",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "lobster-fra-diavolo",
+      "categoryId": "pesce",
+      "nameEs": "Langosta fra diavolo",
+      "nameEn": "Lobster Fra Diavolo",
+      "descriptionEs": "Servida sobre pasta linguine.",
+      "descriptionEn": "Served over linguine pasta.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-09",
-      "categoryId": "specialties",
-      "nameEs": "Bistec a la Florentina",
-      "nameEn": "Bistecca alla Fiorentina",
-      "descriptionEs": "Jugoso filete de carne asado a la parrilla al punto deseado, acompañado de papas al romero y vegetales salteados.",
-      "descriptionEn": "Juicy grilled steak cooked to your liking, served with rosemary roasted potatoes and seasonal sautéed vegetables.",
-      "price": "$28.95",
-      "popular": true,
-      "badge": "Especial del Chef",
-      "tags": [
-        "Carne",
-        "Parrilla"
-      ],
-      "allergens": [],
+      "id": "scampi",
+      "categoryId": "pesce",
+      "nameEs": "Scampi",
+      "nameEn": "Scampi",
+      "descriptionEs": "Camarones salteados en salsa de ajo y vino blanco servidos sobre linguine.",
+      "descriptionEn": "Sauteed shrimp in a garlic white wine sauce served over linguine.",
+      "price": "$30.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-10",
-      "categoryId": "specialties",
-      "nameEs": "Linguine Frutti di Mare",
-      "nameEn": "Linguine Frutti di Mare",
-      "descriptionEs": "Linguine fresco con una generosa selección de camarones, mejillones, almejas y calamares en salsa marinara de vino blanco.",
-      "descriptionEn": "Fresh linguine tossed with a generous selection of shrimp, mussels, clams, and calamari in a white wine marinara sauce.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Del Mar",
-      "tags": [
-        "Mariscos",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "wild-atlantic-salmon",
+      "categoryId": "pesce",
+      "nameEs": "Salmón salvaje del Atlántico",
+      "nameEn": "Wild Atlantic Salmon",
+      "descriptionEs": "Con costra de hierbas sobre una cama de nuestra espinaca frita de la casa y papas asadas.",
+      "descriptionEn": "Herb crusted over a bed of our signature fried spinach and roasted potatoes.",
+      "price": "$36.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-11",
-      "categoryId": "specialties",
+      "id": "zuppa-di-pesce",
+      "categoryId": "pesce",
+      "nameEs": "Zuppa di pesce",
+      "nameEn": "Zuppa Di Pesce",
+      "descriptionEs": "Pescado fresco del día, camarón, vieiras, calamar, almejas y mejillones en nuestra salsa roja o blanca sobre linguine.",
+      "descriptionEn": "Fresh fish of the day, shrimp, scallops, calamari, clams and mussels in our own red or white sauce over linguine.",
+      "price": "$38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-genovese",
+      "categoryId": "pollo",
+      "nameEs": "Pollo genovés",
+      "nameEn": "Chicken Genovese",
+      "descriptionEs": "Pechuga de pollo en capas con berenjena, prosciutto, pimientos asados y queso fontina en salsa rosada de pesto, servida sobre linguine.",
+      "descriptionEn": "Chicken breast layered with eggplant, prosciutto, roasted peppers and fontina cheese in a pink pesto sauce served over linguine.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "pollo",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "Escalopini de pollo, salteado con champiñones, espinaca, tomates deshidratados y servido con fettuccini alfredo.",
+      "descriptionEn": "Scallopini of chicken, sauteed with mushrooms, spinach, sun-dried tomatoes and served with Fettuccini Alfredo.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigana",
+      "categoryId": "pollo",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigana",
+      "descriptionEs": "Pollo ligeramente empanizado en salsa marinara clásica servido sobre linguine.",
+      "descriptionEn": "Lightly breaded chicken in a classic marinara sauce served over linguine.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-ornella",
+      "categoryId": "pollo",
+      "nameEs": "Pollo Ornella",
+      "nameEn": "Chicken Ornella",
+      "descriptionEs": "Pechuga de pollo en marinada de limón y ajo, salteada con espinaca, sobre linguine. Un clásico de Tony D's.",
+      "descriptionEn": "Chicken breast in a lemon and garlic marinade, sauteed with spinach, over linguine. A Tony D’s classic.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-parmagiana",
+      "categoryId": "carne",
+      "nameEs": "Ternera a la parmesana",
+      "nameEn": "Veal Parmagiana",
+      "descriptionEs": "Ternera ligeramente empanizada en salsa marinara clásica",
+      "descriptionEn": "Lightly breaded veal in a classic marinara sauce",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-saltimbocca",
+      "categoryId": "carne",
+      "nameEs": "Ternera saltimbocca",
+      "nameEn": "Veal Saltimbocca",
+      "descriptionEs": "Medallones de ternera fritos en sartén en capas con prosciutto, mozzarella y demi-glace de vino de oporto, servidos con linguine marinara al lado.",
+      "descriptionEn": "Pan fried veal medallions layered with prosciutto, mozzarella and a port wine demi glaze, served with a side of linguine marinara.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chianti-braised-short-ribs",
+      "categoryId": "carne",
+      "nameEs": "Costillas cortas braseadas en Chianti",
+      "nameEn": "Chianti Braised Short Ribs",
+      "descriptionEs": "servidas con puré de papa al ajo.",
+      "descriptionEn": "served with garlic mashed potatoes.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-piccata",
+      "categoryId": "carne",
+      "nameEs": "Ternera piccata",
+      "nameEn": "Veal Piccata",
+      "descriptionEs": "Salteada con limón, vino blanco y alcaparras, con linguini marinara al lado.",
+      "descriptionEn": "Sauteed with lemon, white wine and capers, side of linguini marinara.",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-marsala",
+      "categoryId": "carne",
       "nameEs": "Ternera Marsala",
       "nameEn": "Veal Marsala",
-      "descriptionEs": "Tiernos medallones de ternera sofritos con champiñones frescos en una rica salsa de vino Marsala dulce.",
-      "descriptionEn": "Tender medallions of veal sautéed with fresh mushrooms in a rich, flavorful sweet Marsala wine sauce.",
-      "price": "$24.95",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Ternera",
-        "Salsa"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "descriptionEs": "Escalopini de ternera, salteado con hongos shiitake, espinaca, tomates deshidratados, servido con fettuccini alfredo.",
+      "descriptionEn": "Scallopini of veal, sauteed with shitake mushrooms, spinach, sun-dried tomatoes, served with Fettuccini Alfredo.",
+      "price": "$28.00",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-12",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Casera Italiana",
-      "nameEn": "Italian Homemade Lemonade",
-      "descriptionEs": "Refrescante limonada natural hecha en casa con un toque de jarabe de menta fresca.",
-      "descriptionEn": "Refreshing house-made natural lemonade infused with a hint of fresh mint syrup.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "14-oz-new-york-strip",
+      "categoryId": "prime-cut-meats",
+      "nameEs": "New York strip de 14 oz",
+      "nameEn": "14 oz. New York Strip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-13",
-      "categoryId": "beverages",
-      "nameEs": "Espresso Doble",
-      "nameEn": "Double Espresso",
-      "descriptionEs": "Café espresso italiano tradicional, fuerte, aromático y con una perfecta capa de crema.",
-      "descriptionEn": "Traditional Italian espresso, bold and aromatic, served with a rich crema layer.",
-      "price": "$3.95",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Caliente",
-        "Café"
-      ],
-      "allergens": [],
+      "id": "10-oz-filet-mignon",
+      "categoryId": "prime-cut-meats",
+      "nameEs": "Filete mignon de 10 oz",
+      "nameEn": "10 oz. Filet Mignon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "tony-ds-restaurant-14",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "Homemade Tiramisu",
-      "descriptionEs": "Clásico postre italiano de bizcochos soaked en espresso y licor, con suave crema de mascarpone y cacao.",
-      "descriptionEn": "Classic Italian dessert made with ladyfingers soaked in espresso and liqueur, layered with rich mascarpone cream and cocoa.",
-      "price": "$8.50",
-      "popular": true,
-      "badge": "Postre Favorito",
-      "tags": [
-        "Postre",
-        "Dulce"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Huevos"
-      ],
+      "id": "16-oz-pork-chop",
+      "categoryId": "prime-cut-meats",
+      "nameEs": "Chuleta de cerdo de 16 oz",
+      "nameEn": "16 oz. Pork Chop",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "niantic-bay-oysters",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Ostiones de Niantic Bay",
+      "nameEn": "Niantic Bay Oysters",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-neck-clams",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Almejas little neck",
+      "nameEn": "Little Neck Clams",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Camarón",
+      "nameEn": "Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-fagioli",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Pasta e fagioli",
+      "nameEn": "Pasta Fagioli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasti-tony-d-s",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Antipasti Tony D's",
+      "nameEn": "Antipasti Tony D's",
+      "descriptionEs": "Queso importado, prosciutto, aceitunas, berenjena, soppressata, pimientos asados salteados y corazones de alcachofa sazonados. Para uno / 18 - Para dos / 22",
+      "descriptionEn": "Imported cheese, prosciutto, olives, eggplant soppressata, roasted sauteed peppers and seasoned artichoke hearts. For One / 18 - For Two / 22",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scallops-d-alba",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Vieiras D'Alba",
+      "nameEn": "Scallops D'Alba",
+      "descriptionEs": "Vieiras de Stonington selladas y cocidas a fuego lento en salsa cremosa de trufa blanca con chalotas y hongos shiitake.",
+      "descriptionEn": "Stonington scallops pan seared and simmered in a white truffle cream sauce with shallots and shiitake mushrooms.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lollipop-lamb-chops",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Chuletitas de cordero (lollipop)",
+      "nameEn": "Lollipop Lamb Chops",
+      "descriptionEs": "A la parrilla, servidas con arúgula con limón y pimienta en grano.",
+      "descriptionEn": "Grilled, served with lemon peppercorn arugula.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zuppa-di-vongole-e-cozze",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Zuppa di vongole e cozze",
+      "nameEn": "Zuppa Di Vongole e Cozze",
+      "descriptionEs": "Almejas y mejillones cocidos a fuego lento en caldo de tomate con vino blanco y ajo, con focaccia tostada.",
+      "descriptionEn": "Clams and mussels simmered in a white wine and garlic tomato broth with toasted focaccia.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-shrimp",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Camarones cajún",
+      "nameEn": "Cajun Shrimp",
+      "descriptionEs": "Camarones jumbo ennegrecidos con pimientos, cebolla y bourbon, servidos sobre un pastelito de polenta frita.",
+      "descriptionEn": "Jumbo shrimp blackened with peppers, onions and Bourbon, served over a fried polenta cake.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "signature-clam-bisque",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Bisque de almeja de la casa",
+      "nameEn": "Signature Clam Bisque",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calamari-caprese",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Calamari caprese",
+      "nameEn": "Calamari Caprese",
+      "descriptionEs": "Nuestro puré balsámico de la casa con mascarpone, tomates, cebolla morada y limón.",
+      "descriptionEn": "Our signature balsamic puree with mascarpone, tomatoes, red onion and lemon.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mussels-giovanni",
+      "categoryId": "zuppa-antipasti",
+      "nameEs": "Mejillones Giovanni",
+      "nameEn": "Mussels Giovanni",
+      "descriptionEs": "Mejillones de la Isla del Príncipe Eduardo cocidos a fuego lento en salsa cremosa de vino blanco con chalotas y mostaza Dijon.",
+      "descriptionEn": "Prince Edward Island mussels simmered in a white wine cream sauce with shallots and Dijon mustard.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clam-and-bacon",
+      "categoryId": "tuscan-grilled-pizza",
+      "nameEs": "Almeja y tocino",
+      "nameEn": "Clam and Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-di-rabe",
+      "categoryId": "tuscan-grilled-pizza",
+      "nameEs": "Brócoli rabe (di rabe)",
+      "nameEn": "Broccoli di Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-basil-and-homemade-mozzarella",
+      "categoryId": "tuscan-grilled-pizza",
+      "nameEs": "Tomate, albahaca y mozzarella casera",
+      "nameEn": "Tomato, Basil and Homemade Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto-peach-and-gorgonzola",
+      "categoryId": "tuscan-grilled-pizza",
+      "nameEs": "Prosciutto, durazno y gorgonzola",
+      "nameEn": "Prosciutto, Peach and Gorgonzola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola",
+      "categoryId": "insalate",
+      "nameEs": "Gorgonzola",
+      "nameEn": "Gorgonzola",
+      "descriptionEs": "Hojas verdes mixtas con vinagreta balsámica de frambuesa, crutones con costra de hierbas.",
+      "descriptionEn": "Mixed greens dressed in a raspberry balsamic vinaigrette, herb encrusted croutons.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula",
+      "categoryId": "insalate",
+      "nameEs": "Arúgula",
+      "nameEn": "Arugula",
+      "descriptionEs": "Mezclada en vinagreta de balsámico blanco con miel, con nueces, pasas doradas, arándanos secos, gorgonzola y ajo asado con miel.",
+      "descriptionEn": "Tossed in honey white balsamic vinaigrette with walnuts, golden raisins, craisins, gorgonzola and honey roasted garlic.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "insalate",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "Corazones de lechuga romana, crutones con costra de hierbas y pecorino romano rallado, adornada con anchoas.",
+      "descriptionEn": "Romaine hearts, herb encrusted croutons, and grated Pecorino Romano, garnished with anchovies.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli",
+      "categoryId": "dessert",
+      "nameEs": "Cannoli",
+      "nameEn": "Cannoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "dessert",
+      "nameEs": "Tiramisú",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-mousse",
+      "categoryId": "dessert",
+      "nameEs": "Mousse de chocolate",
+      "nameEn": "Chocolate Mousse",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-peppers",
+      "categoryId": "side-dishes",
+      "nameEs": "Pimientos fritos",
+      "nameEn": "Fried Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-rabe",
+      "categoryId": "side-dishes",
+      "nameEs": "Brócoli rabe",
+      "nameEn": "Broccoli Rabe",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-smashed-potatoes",
+      "categoryId": "side-dishes",
+      "nameEs": "Papas aplastadas al ajo",
+      "nameEn": "Garlic Smashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-vegetables-or-roasted-potatoes",
+      "categoryId": "side-dishes",
+      "nameEs": "Vegetales de temporada o papas asadas",
+      "nameEn": "Seasonal Vegetables or Roasted Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-spinach",
+      "categoryId": "side-dishes",
+      "nameEs": "Espinaca frita",
+      "nameEn": "Fried Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-spinach",
+      "categoryId": "side-dishes",
+      "nameEs": "Espinaca salteada",
+      "nameEn": "Sauteed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú o modificaciones disponibles.",
-      "aEn": "Yes, please ask our staff for items marked on the menu or available modifications."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono.",
-      "aEn": "We welcome walk-ins and phone reservations."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de comida para llevar?",
-      "qEn": "Do you offer takeout service?",
-      "aEs": "Sí, puede ordenar por teléfono para recoger en el restaurante.",
-      "aEn": "Yes, you can place orders by phone for quick pickup at the restaurant."
-    }
-  ]
+  "faqs": []
 }
