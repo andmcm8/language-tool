@@ -1,26 +1,19 @@
 {
   "storeInfo": {
     "id": "luce-restaurant",
-    "name": "Luce Restaurant",
-    "tagline": "Authentic Italian and Mediterranean Cuisine in Middletown | Cocina Italiana y Mediterránea Auténtica",
-    "address": "98 Washington St, Middletown, CT",
+    "name": "Luce Restaurant - Middletown",
+    "tagline": "Italian restaurant in Middletown | Restaurante italiano en Middletown",
+    "address": "98 Washington St, Middletown, CT 06457",
     "hours": {
       "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "12:00 PM - 11:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "saturday": "11:30 AM - 10:00 PM",
+      "sunday": "11:30 AM - 10:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Full Bar"
+      "Online Ordering",
+      "Takeout"
     ],
     "themeColor": "#991b1b",
     "logoIcon": "utensils",
@@ -28,294 +21,669 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato ante cualquier inconveniente.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately with any concerns."
     },
-    "phone": "(860) 347-9997"
+    "phone": "(860) 344-0222"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "dinner-appetizers",
+      "nameEs": "Cena | Entradas",
+      "nameEn": "Dinner | Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "dinner-raw-bar",
+      "nameEs": "Cena | Barra cruda",
+      "nameEn": "Dinner | Raw Bar",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "dinner-soup",
+      "nameEs": "Cena | Sopa",
+      "nameEn": "Dinner | Soup",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "dinner-salads",
+      "nameEs": "Cena | Ensaladas",
+      "nameEn": "Dinner | Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-pastas",
+      "nameEs": "Cena | Pastas",
+      "nameEn": "Dinner | Pastas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-steaks",
+      "nameEs": "Cena | Cortes",
+      "nameEn": "Dinner | Steaks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-entrees",
+      "nameEs": "Cena | Platos fuertes",
+      "nameEn": "Dinner | Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner-sides",
+      "nameEs": "Cena | Guarniciones",
+      "nameEn": "Dinner | Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-appetizers",
+      "nameEs": "Almuerzo | Entradas",
+      "nameEn": "Lunch | Appetizers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-salads",
+      "nameEs": "Almuerzo | Ensaladas",
+      "nameEn": "Lunch | Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-entrees",
+      "nameEs": "Almuerzo | Platos fuertes",
+      "nameEn": "Lunch | Entrees",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "luce-restaurant-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamari Frito Crujiente",
-      "nameEn": "Crispy Fried Calamari",
-      "descriptionEs": "Calamar fresco empanizado y frito a la perfección, servido con salsa marinara casera y rodajas de limón fresco.",
-      "descriptionEn": "Fresh squid lightly breaded and fried to perfection, served with house-made marinara sauce and fresh lemon wedges.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
+      "id": "clams-casino-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Almejas Casino (cena)",
+      "nameEn": "Clams Casino Dinner",
+      "descriptionEs": "Almejas little neck rellenas de pimientos y panko, cubiertas con tocino.",
+      "descriptionEn": "Little necks stuffed with peppers, panko and topped with bacon.",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-02",
-      "categoryId": "appetizers",
-      "nameEs": "Bruschetta al Pomodoro",
-      "nameEn": "Tomato Bruschetta",
-      "descriptionEs": "Pan rústico tostado al horno con ajo, cubierto con tomates marinados en aceite de oliva virgen extra, albahaca fresca y reducción de balsámico.",
-      "descriptionEn": "Toasted rustic artisanal bread rubbed with garlic, topped with ripe tomatoes marinated in extra virgin olive oil, fresh basil, and balsamic glaze.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "crispy-calamari-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Calamares crujientes (cena)",
+      "nameEn": "Crispy Calamari Dinner",
+      "descriptionEs": "Con alioli de poblano y marinara.",
+      "descriptionEn": "With a poblano aioli and Marinara.",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-03",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones a la Marinara",
-      "nameEn": "Mussels Marinara",
-      "descriptionEs": "Mejillones frescos al vapor cocinados en un vino blanco aromático y caldo de tomate picante con ajo y perejil fresco.",
-      "descriptionEn": "Fresh steamed mussels simmered in an aromatic white wine and spicy garlic tomato broth with fresh parsley.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Sulfitos"
-      ],
+      "id": "octopus-inzimino",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Pulpo inzimino",
+      "nameEn": "Octopus Inzimino",
+      "descriptionEs": "salteado en una ligera salsa de tomate con albahaca, espinaca, ajo, hierbas y un toque de hojuelas de chile.",
+      "descriptionEn": "sautéed in a light tomato sauce with basil, spinach, garlic, herb and a touch of chili flakes.",
+      "price": "$20.95",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-04",
-      "categoryId": "mains",
-      "nameEs": "Pollo a la Parmigiana",
-      "nameEn": "Chicken Parmigiana",
-      "descriptionEs": "Pechuga de pollo empanizada cubierta con salsa marinara de la casa y queso mozzarella derretido, servida con una porción de pasta spaghetti.",
-      "descriptionEn": "Breaded chicken breast topped with house marinara and melted mozzarella cheese, served with a side of spaghetti pasta.",
-      "price": "$22.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Horneado",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "luce-restaurant-05",
-      "categoryId": "mains",
-      "nameEs": "Fettuccine Alfredo con Pollo",
-      "nameEn": "Chicken Fettuccine Alfredo",
-      "descriptionEs": "Fettuccine fresco bañado en una salsa cremosa de mantequilla y queso parmesano reggiano, acompañado de jugoso pollo a la parrilla.",
-      "descriptionEn": "Fresh fettuccine tossed in a rich, creamy butter and aged parmesan cheese sauce, topped with grilled chicken breast.",
-      "price": "$21.50",
-      "popular": false,
-      "badge": "Cremoso",
-      "tags": [
-        "Pasta",
-        "Lácteos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "luce-restaurant-06",
-      "categoryId": "mains",
-      "nameEs": "Berenjena a la Parmigiana",
-      "nameEn": "Eggplant Parmigiana",
-      "descriptionEs": "Capas de berenjena ligeramente empanizada, horneada con salsa marinara, queso mozzarella y parmesano.",
-      "descriptionEn": "Layers of lightly breaded eggplant baked with marinara sauce, mozzarella, and parmesan cheese.",
+      "id": "beef-carpaccio-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Carpaccio de res (cena)",
+      "nameEn": "Beef Carpaccio Dinner",
+      "descriptionEs": "Con arúgula baby, parmesano rallado, alcaparras, crostini de ajo y aceite de oliva extra virgen.",
+      "descriptionEn": "With baby arugula, shaved Parmesan, capers, garlic crostini and extra virgin olive oil.",
       "price": "$19.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-07",
-      "categoryId": "specialties",
-      "nameEs": "Linguine con Frutti di Mare",
-      "nameEn": "Linguine Frutti di Mare",
-      "descriptionEs": "Una generosa selección de camarones, mejillones, almejas y calamares salteados con ajo, vino blanco y salsa de tomate ligera sobre pasta linguine.",
-      "descriptionEn": "A generous selection of shrimp, mussels, clams, and calamari sautéed with garlic, white wine, and light tomato sauce over linguine pasta.",
+      "id": "hot-italian-sausage-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Salchicha italiana picante (cena)",
+      "nameEn": "Hot Italian Sausage Dinner",
+      "descriptionEs": "Con escarola, ajo, frijoles cannellini, mantequilla de hierbas.",
+      "descriptionEn": "With escarole, garlic, cannelini beans, herbs butter.",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzerella-di-bufala-caprese-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Caprese de mozzarella di bufala (cena)",
+      "nameEn": "Mozzerella Di Bufala Caprese Dinner",
+      "descriptionEs": "Tomates heirloom frescos, albahaca, aceite de oliva extra virgen, reducción de balsámico añejado.",
+      "descriptionEn": "Fresh heirloom tomatoes, basil, extra virgin olive oil, aged balsamic reduction.",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-grilled-eggplant-dinner",
+      "categoryId": "dinner-appetizers",
+      "nameEs": "Berenjena a la parrilla rellena (cena)",
+      "nameEn": "Stuffed Grilled Eggplant Dinner",
+      "descriptionEs": "Rellena de espinaca fresca, ricotta, grana padano, hierbas frescas y cubierta con fontina derretido en una ligera salsa de tomate.",
+      "descriptionEn": "Stuffed with fresh spinach, ricotta, grana pagano, fresh herbs and topped with melted fontina in a light tomato sauce.",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oysters-on-a-1-2-shell-dinner-1-2-dozen",
+      "categoryId": "dinner-raw-bar",
+      "nameEs": "Ostiones en media concha (cena) (1/2 docena)",
+      "nameEn": "Oysters on a 1/2 Shell Dinner (1/2 Dozen)",
+      "descriptionEs": "Servidos con mignonette de vino Chianti y salsa coctelera.",
+      "descriptionEn": "Served with Chianti wine mignonette and cocktail sauce.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oysters-on-a-1-2-shell-dinner-full-dozen",
+      "categoryId": "dinner-raw-bar",
+      "nameEs": "Ostiones en media concha (cena) (docena)",
+      "nameEn": "Oysters on a 1/2 Shell Dinner (Full Dozen)",
+      "descriptionEs": "Servidos con mignonette de vino Chianti y salsa coctelera.",
+      "descriptionEn": "Served with Chianti wine mignonette and cocktail sauce.",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-on-a-1-2-shell-dinner-1-2-dozen",
+      "categoryId": "dinner-raw-bar",
+      "nameEs": "Almejas en media concha (cena) (1/2 docena)",
+      "nameEn": "Clams on a 1/2 Shell Dinner (1/2 Dozen)",
+      "descriptionEs": "Servidos con mignonette de vino Chianti y salsa coctelera.",
+      "descriptionEn": "Served with Chianti wine mignonette and cocktail sauce.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-on-a-1-2-shell-dinner-full-dozen",
+      "categoryId": "dinner-raw-bar",
+      "nameEs": "Almejas en media concha (cena) (docena)",
+      "nameEn": "Clams on a 1/2 Shell Dinner (Full Dozen)",
+      "descriptionEs": "Servidos con mignonette de vino Chianti y salsa coctelera.",
+      "descriptionEn": "Served with Chianti wine mignonette and cocktail sauce.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-shrimp-cocktail-dinner",
+      "categoryId": "dinner-raw-bar",
+      "nameEs": "Cóctel de camarón jumbo (cena)",
+      "nameEn": "Jumbo Shrimp Cocktail Dinner",
+      "descriptionEs": "Con salsa coctelera de la casa.",
+      "descriptionEn": "With house made cocktail sauce.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-de-poisson-dinner",
+      "categoryId": "dinner-soup",
+      "nameEs": "Sopa de pescado (cena)",
+      "nameEn": "Soup de Poisson Dinner",
+      "descriptionEs": "Vieiras, salmón, mejillones y camarón.",
+      "descriptionEn": "Scallops, salmon, mussels, and shrimp.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup-dinner",
+      "categoryId": "dinner-soup",
+      "nameEs": "Sopa de cebolla francesa (cena)",
+      "nameEn": "French Onion Soup Dinner",
+      "descriptionEs": "Cubierta con queso gruyère y un crutón de hierbas.",
+      "descriptionEn": "Topped with Gruyere cheese and a herb crouton.",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mesclun-salad-dinner",
+      "categoryId": "dinner-salads",
+      "nameEs": "Ensalada mesclun (cena)",
+      "nameEn": "Mesclun Salad Dinner",
+      "descriptionEs": "Hojas verdes mixtas, hinojo rallado, almendras fileteadas tostadas, tomates asados al horno y vinagreta de balsámico blanco.",
+      "descriptionEn": "Mixed greens, shaved fennel, toasted slivered almonds, oven roasted tomatoes, and white balsamic vinaigrette.",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar-salad-dinner",
+      "categoryId": "dinner-salads",
+      "nameEs": "Ensalada César clásica (cena)",
+      "nameEn": "Classic Caesar Salad Dinner",
+      "descriptionEs": "Con lechuga romana, crutones de ajo.",
+      "descriptionEn": "With Romaine, garlic croutons.",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "luce-signature-salad-dinner",
+      "categoryId": "dinner-salads",
+      "nameEs": "Ensalada de la casa Luce (cena)",
+      "nameEn": "Luce Signature Salad Dinner",
+      "descriptionEs": "Arúgula baby, pancetta crujiente, crutones de polenta, mozzarella fresca, vinagreta de chalota y jerez.",
+      "descriptionEn": "Baby arugula, crisp pancetta, polenta croutons, fresh Mozzarella, shallot sherry vinaigrette.",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-salad-dinner",
+      "categoryId": "dinner-salads",
+      "nameEs": "Ensalada mediterránea (cena)",
+      "nameEn": "Mediterranean Salad Dinner",
+      "descriptionEs": "Con hojas verdes baby orgánicas, cubierta con hongos silvestres, pollo a la parrilla, camarón y aderezo de balsámico blanco.",
+      "descriptionEn": "With organic baby greens, topped with wild mushrooms, grilled chicken, shrimp and white balsamic dressing.",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-beet-salad-dinner",
+      "categoryId": "dinner-salads",
+      "nameEs": "Ensalada de betabel asado (cena)",
+      "nameEn": "Roasted Beet Salad Dinner",
+      "descriptionEs": "Manzanas Granny Smith, cebollín, queso de cabra con costra de hierbas y nueces garapiñadas.",
+      "descriptionEn": "Granny Smith apples, chives, herb encrusted Goat cheese and candied walnuts.",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-spinach-gnocchi-dinner",
+      "categoryId": "dinner-pastas",
+      "nameEs": "Gnocchi de espinaca caseros (cena)",
+      "nameEn": "Homemade Spinach Gnocchi Dinner",
+      "descriptionEs": "Con una salsa cremosa de gorgonzola dolce latte.",
+      "descriptionEn": "With a dolce latte creamy gorgonzola sauce.",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "exotic-porcini-mushroom-ravioli-dinner",
+      "categoryId": "dinner-pastas",
+      "nameEs": "Ravioles de hongos porcini exóticos (cena)",
+      "nameEn": "Exotic Porcini Mushroom Ravioli Dinner",
+      "descriptionEs": "Con hierbas frescas en salsa cremosa de trufa negra.",
+      "descriptionEn": "With fresh herbs in a black truffle cream sauce.",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-crumbled-sweet-sausage-penne-dinner",
+      "categoryId": "dinner-pastas",
+      "nameEs": "Penne con salchicha italiana dulce desmoronada (cena)",
+      "nameEn": "Italian Crumbled Sweet Sausage Penne Dinner",
+      "descriptionEs": "Anís rallado, chícharos ingleses, ajo en salsa de tomate guaje y aceite de oliva extra virgen.",
+      "descriptionEn": "Shaved anise, English peas, garlic in a plum tomato extra virgin olive oil sauce.",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-bolognese-dinner",
+      "categoryId": "dinner-pastas",
+      "nameEs": "Rigatoni a la boloñesa (cena)",
+      "nameEn": "Rigatoni Bolognese Dinner",
+      "descriptionEs": "Res y ternera cubiertos con chalotas asadas y ricotta con hierbas.",
+      "descriptionEn": "Beef and veal topped with roasted shallots herb Ricotta.",
       "price": "$28.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos",
-        "Sulfitos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-08",
-      "categoryId": "specialties",
-      "nameEs": "Ternera Marsala",
-      "nameEn": "Veal Marsala",
-      "descriptionEs": "Tiernos medallones de ternera salteados con champiñones frescos en una rica reducción de vino Marsala, servidos con puré de papa.",
-      "descriptionEn": "Tender veal medallions sautéed with fresh mushrooms in a rich Marsala wine reduction sauce, served with garlic mashed potatoes.",
-      "price": "$27.50",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Sulfitos",
-        "Lácteos"
-      ],
+      "id": "linguine-dinner",
+      "categoryId": "dinner-pastas",
+      "nameEs": "Linguine (cena)",
+      "nameEn": "Linguine Dinner",
+      "descriptionEs": "Con pesto cremoso, camarón jumbo, guanciale crujiente, pecorino romano.",
+      "descriptionEn": "With creamy pesto, jumbo shrimp, crispy guanciale, Pecorino Romano.",
+      "price": "$34.95",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-09",
-      "categoryId": "specialties",
-      "nameEs": "Risotto de Hongos Silvestres",
-      "nameEn": "Wild Mushroom Risotto",
-      "descriptionEs": "Arroz Arborio cremoso cocinado lentamente con una mezcla de hongos silvestres, aceite de trufa y queso parmesano añejo.",
-      "descriptionEn": "Slow-cooked creamy Arborio rice infused with a medley of wild mushrooms, truffle oil, and aged parmesan cheese.",
-      "price": "$24.50",
-      "popular": false,
-      "badge": "Sin Gluten",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "usda-prime-new-york-strip-dinner",
+      "categoryId": "dinner-steaks",
+      "nameEs": "New York strip USDA Prime (cena)",
+      "nameEn": "USDA Prime New York Strip Dinner",
+      "descriptionEs": "14 oz USDA Prime. Todos nuestros cortes se añejan 21 días; asados al carbón y ahumados a la perfección, y adornados con vegetal y hush de cortesía. Llama al restaurante para conocer el sabor de ahumado del día.",
+      "descriptionEn": "14 oz. USDA prime. All of our steaks are aged 21 days; char-grilled and smoked to perfection and garnished with complementary vegetable and hush. Call the restaurant for the daily smoke flavor.",
+      "price": "$47.95",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-10",
-      "categoryId": "beverages",
-      "nameEs": "Tiramisú Casero",
-      "nameEn": "House-Made Tiramisu",
-      "descriptionEs": "Clásico postre italiano de bizcochos empapaedos en espresso, crema de mascarpone suave y cacao amargo.",
-      "descriptionEn": "Classic Italian dessert made with espresso-soaked ladyfingers, velvety mascarpone cream, and bitter cocoa dust.",
+      "id": "usda-prime-cowboy-bone-in-ribeye-dinner",
+      "categoryId": "dinner-steaks",
+      "nameEs": "Cowboy USDA Prime | Ribeye con hueso (cena)",
+      "nameEn": "USDA Prime Cowboy | Bone-In Ribeye Dinner",
+      "descriptionEs": "18 oz USDA Prime. Todos nuestros cortes se añejan 21 días; asados al carbón y ahumados a la perfección, y adornados con vegetal y hush de cortesía. Llama al restaurante para conocer el sabor de ahumado del día.",
+      "descriptionEn": "18 oz. USDA prime. All of our steaks are aged 21 days; char-grilled and smoked to perfection and garnished with complementary vegetable and hush. Call the restaurant for the daily smoke flavor.",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porterhouse-dinner-for-2",
+      "categoryId": "dinner-steaks",
+      "nameEs": "Porterhouse (cena) | Para 2",
+      "nameEn": "Porterhouse Dinner | For 2",
+      "descriptionEs": "34 oz USDA Prime. Corte porterhouse de la casa Luce acompañado de 2 guarniciones a elección. Todos nuestros cortes se añejan 21 días; asados al carbón y ahumados a la perfección, y adornados con vegetal y hush de cortesía. Llama al restaurante para conocer el sabor de ahumado del día.",
+      "descriptionEn": "34 oz. USDA prime. Luce signature porterhouse cut accompanied with 2 sides of your choice. All of our steaks are aged 21 days; char-grilled and smoked to perfection and garnished with complementary vegetable and hush. Call the restaurant for the daily smoke flavor.",
+      "price": "$106.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon-dinner",
+      "categoryId": "dinner-steaks",
+      "nameEs": "Filete mignon (cena)",
+      "nameEn": "Filet Mignon Dinner",
+      "descriptionEs": "10 oz. Todos nuestros cortes se añejan 21 días; asados al carbón y ahumados a la perfección, y adornados con vegetal y hush de cortesía. Llama al restaurante para conocer el sabor de ahumado del día.",
+      "descriptionEn": "10 oz. All of our steaks are aged 21 days; char grilled and smoked to perfection and garnished with complementary vegetable and hush. Call the restaurant for the daily smoke flavor.",
+      "price": "$62.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-medallions-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Medallones de pollo (cena)",
+      "nameEn": "Chicken Medallions Dinner",
+      "descriptionEs": "Salteados con espárragos frescos, tomates deshidratados, hongos silvestres, hierbas frescas, tomates guaje y vino blanco, servidos sobre pilaf de arroz jazmín con azafrán.",
+      "descriptionEn": "Sautéed with fresh asparagus, sundried tomatoes, wild mushrooms, fresh herbs, plum tomatoes and white wine served on saffron Jasmine rice pilaf.",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-baby-chicken-diavolo-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Pollito orgánico diavolo (cena)",
+      "nameEn": "Organic Baby Chicken Diavolo Dinner",
+      "descriptionEs": "Marinado con hierbas, ajo, vino, pimienta cajún, servido con papas red bliss asadas, espinaca y su jugo natural picante.",
+      "descriptionEn": "Marinated with herbs, garlic, wine, cajun pepper, served with roasted red bliss potatoes, spinach, and spicy natural a jus.",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "long-island-duckling-2-ways-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Pato de Long Island en 2 formas (cena)",
+      "nameEn": "Long Island Duckling 2 Ways Dinner",
+      "descriptionEs": "Confit de pierna crujiente, pechuga tierna, con col de Milán braseada, hush de polenta y reducción de vino de ciruela.",
+      "descriptionEn": "Crispy leg confit, tender breast, with braised savoy cabbage, polenta hush and plum wine reduction.",
+      "price": "$37.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "luce-combo-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Combo Luce (cena)",
+      "nameEn": "Luce Combo Dinner",
+      "descriptionEs": "Escalopini de ternera combinado con camarón jumbo, hongos shiitake, tomates frescos y alcaparras, terminado con salsa de brandy, servido sobre orecchiette.",
+      "descriptionEn": "Veal scallopini combined with jumbo shrimp, shitake mushrooms, fresh tomatoes, and capers finished with brandy sauce, served on orecchiette.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-chop-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Chuleta de ternera (cena)",
+      "nameEn": "Veal Chop Dinner",
+      "descriptionEs": "12 oz, servida con brócoli al ajo y papas asadas en salsa de romero y coñac.",
+      "descriptionEn": "12 oz. served with garlic broccoli, roasted potatoes in a rosemary cognac sauce.",
+      "price": "$40.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-scaloppini-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Escalopini de ternera (cena)",
+      "nameEn": "Veal Scaloppini Dinner",
+      "descriptionEs": "Servido sobre portobello picado, poro y papas asadas con prosciutto picado en jugo de marsala.",
+      "descriptionEn": "Served on diced portobello, leeks, and roasted potatoes with minced prosciutto in a marsala jus.",
+      "price": "$31.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-diver-scallops-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Vieiras de buceo selladas (cena)",
+      "nameEn": "Pan Seared Diver Scallops Dinner",
+      "descriptionEs": "Con ensalada de cuscús en salsa de mantequilla cítrica.",
+      "descriptionEn": "With couscous salad in a citrus butter sauce.",
+      "price": "$42.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tenderloin-tips",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Puntas de filete",
+      "nameEn": "Tenderloin Tips",
+      "descriptionEs": "Salteadas con cebolla caramelizada, su jugo natural y un toque de gorgonzola, servidas sobre puré de papa.",
+      "descriptionEn": "Sautéed with caramelized onions, natural au jus, and light gorgonzola, served over mashed potatoes.",
+      "price": "$43.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oven-roasted-norwegian-salmon-dinner",
+      "categoryId": "dinner-entrees",
+      "nameEs": "Salmón noruego asado al horno (cena)",
+      "nameEn": "Oven Roasted Norwegian Salmon Dinner",
+      "descriptionEs": "Sobre ratatouille de vegetales de temporada, poro frito y salsa verde tradicional.",
+      "descriptionEn": "On seasonal vegetable ratatouille, frizzled leeks and traditional salsa verde.",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-garlic-spinach",
+      "categoryId": "dinner-sides",
+      "nameEs": "Espinaca salteada al ajo",
+      "nameEn": "Sautéed Garlic Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$9.00",
-      "popular": true,
-      "badge": "Postre",
-      "tags": [
-        "Dulce",
-        "Café"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-11",
-      "categoryId": "beverages",
-      "nameEs": "San Pellegrino Sparkling Water (750ml)",
-      "nameEn": "San Pellegrino Sparkling Water (750ml)",
-      "descriptionEs": "Agua mineral con gas natural de Italia, ideal para acompañar su comida.",
-      "descriptionEn": "Natural sparkling mineral water from Italy, perfect for pairing with your meal.",
-      "price": "$6.00",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Refrescante",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "wild-mushrooms-onions",
+      "categoryId": "dinner-sides",
+      "nameEs": "Hongos silvestres y cebolla",
+      "nameEn": "Wild Mushrooms & Onions",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "luce-restaurant-12",
-      "categoryId": "beverages",
-      "nameEs": "Espresso Doble",
-      "nameEn": "Double Espresso",
-      "descriptionEs": "Café espresso italiano recién molido, fuerte, aromático y con una crema perfecta.",
-      "descriptionEn": "Freshly ground Italian espresso, rich, bold, and aromatic with a golden crema.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Café",
-      "tags": [
-        "Caliente",
-        "Café"
-      ],
-      "allergens": [],
+      "id": "grilled-asparagus-with-parmesan-crisp",
+      "categoryId": "dinner-sides",
+      "nameEs": "Espárragos a la parrilla con crujiente de parmesano",
+      "nameEn": "Grilled Asparagus with Parmesan Crisp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccolini-with-roasted-garlic-crushed-pepper",
+      "categoryId": "dinner-sides",
+      "nameEs": "Broccolini con ajo asado y chile triturado",
+      "nameEn": "Broccolini with Roasted Garlic & Crushed Pepper",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-potatoes",
+      "categoryId": "dinner-sides",
+      "nameEs": "Papas asadas",
+      "nameEn": "Roasted Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "molten-lava-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de lava fundido",
+      "nameEn": "Molten Lava Cake",
+      "descriptionEs": "Pastel de chocolate intenso con centro tibio de ganache de chocolate. Servido con helado de vainilla francesa.",
+      "descriptionEn": "Rich chocolate cake with a warm chocolate ganache center. Served with french vanilla ice cream.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mascarpone-ricotta-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de mascarpone y ricotta",
+      "nameEn": "Mascarpone Ricotta Cheesecake",
+      "descriptionEs": "Servido con salsa de frutos rojos frescos.",
+      "descriptionEn": "Served with fresh berry sauce.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-bean-pana-cotta",
+      "categoryId": "desserts",
+      "nameEs": "Panna cotta de vainilla",
+      "nameEn": "Vanilla Bean Pana Cotta",
+      "descriptionEs": "Flan italiano cremoso con vainilla en vaina. Cubierto con compota de frutas secas.",
+      "descriptionEn": "Creamy italian flan with vanilla beans. Topped with a dried fruit compote.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "liqueur-flavored-creme-brulee",
+      "categoryId": "desserts",
+      "nameEs": "Crème brûlée con licor",
+      "nameEn": "Liqueur Flavored Crème Brulee",
+      "descriptionEs": "Suave natilla de huevo con un toque de licor. Cubierta con azúcar caramelizada.",
+      "descriptionEn": "Smooth egg custard with a hint of liqueur. Topped with caramelized sugar.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisú",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "Soletas remojadas en espresso y Kahlúa. En capas con crema de mascarpone.",
+      "descriptionEn": "Lady fingers soaked in espresso and Kahlua. Layered with Mascarpone cream.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-ripieno",
+      "categoryId": "desserts",
+      "nameEs": "Ripieno de limón",
+      "nameEn": "Lemon Ripieno",
+      "descriptionEs": "Sorbete de limón en una cáscara natural de limón.",
+      "descriptionEn": "Lemon sorbet in a natural lemon shell.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-ripieno",
+      "categoryId": "desserts",
+      "nameEs": "Ripieno de coco",
+      "nameEn": "Coconut Ripieno",
+      "descriptionEs": "Sorbete de coco en una cáscara natural de coco.",
+      "descriptionEn": "Coconut sorbet in a natural coconut shell.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bomba",
+      "categoryId": "desserts",
+      "nameEs": "Bomba",
+      "nameEn": "Bomba",
+      "descriptionEs": "Helado de chocolate y vainilla separados por nueces mixtas rebanadas; con centro de cereza y cubierto con chocolate semiamargo.",
+      "descriptionEn": "Chocolate and vanilla ice cream separated by mixed sliced nuts; with a cherry center, and coated with semi-sweet chocolate.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannolis",
+      "categoryId": "desserts",
+      "nameEs": "Cannolis",
+      "nameEn": "Cannolis",
+      "descriptionEs": "Comunícate con el restaurante para conocer el sabor del día.",
+      "descriptionEn": "Please contact the restaurant for today's flavor.",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "octopus-inzimino-lunch-appetizers",
+      "categoryId": "lunch-appetizers",
+      "nameEs": "Pulpo inzimino (Almuerzo | Entradas)",
+      "nameEn": "Octopus Inzimino (Lunch | Appetizers)",
+      "descriptionEs": "salteado en una ligera salsa de tomate con albahaca, espinaca, ajo, hierbas y un toque de hojuelas de chile.",
+      "descriptionEn": "sautéed in a light tomato sauce with basil, spinach, garlic, herb and a touch of chili flakes.",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mesclun-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada mesclun (almuerzo)",
+      "nameEn": "Mesclun Salad Lunch",
+      "descriptionEs": "Hojas verdes mixtas, hinojo rallado, almendras fileteadas tostadas, tomates asados al horno y vinagreta de balsámico blanco.",
+      "descriptionEn": "Mixed greens, shaved fennel, toasted slivered almonds, oven roasted tomatoes, and white balsamic vinaigrette.",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada César clásica (almuerzo)",
+      "nameEn": "Classic Caesar Salad Lunch",
+      "descriptionEs": "Con lechuga romana, crutones de ajo.",
+      "descriptionEn": "With Romaine, garlic croutons.",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "luce-signature-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de la casa Luce (almuerzo)",
+      "nameEn": "Luce Signature Salad Lunch",
+      "descriptionEs": "Arúgula baby, pancetta crujiente, crutones de polenta, mozzarella fresca, vinagreta de chalota y jerez.",
+      "descriptionEn": "Baby arugula, crisp pancetta, polenta croutons, fresh Mozzarella, shallot sherry vinaigrette.",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada mediterránea (almuerzo)",
+      "nameEn": "Mediterranean Salad Lunch",
+      "descriptionEs": "Con hojas verdes baby orgánicas, cubierta con hongos silvestres, pollo a la parrilla, camarón y aderezo de balsámico blanco.",
+      "descriptionEn": "With organic baby greens, topped with wild mushrooms, grilled chicken, shrimp and white balsamic dressing.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-beet-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de betabel asado (almuerzo)",
+      "nameEn": "Roasted Beet Salad Lunch",
+      "descriptionEs": "Manzanas Granny Smith, cebollín, queso de cabra con costra de hierbas y nueces garapiñadas.",
+      "descriptionEn": "Granny Smith apples, chives, herb encrusted Goat cheese and candied walnuts.",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "petite-filet-mignon-lunch",
+      "categoryId": "lunch-entrees",
+      "nameEs": "Filete mignon petite (almuerzo)",
+      "nameEn": "Petite Filet Mignon Lunch",
+      "descriptionEs": "6 oz. Servido con papas asadas y brócoli al ajo.",
+      "descriptionEn": "6 oz. Served with roasted potatoes and garlic broccoli.",
+      "price": "$34.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con varias opciones vegetarianas y podemos adaptar ciertos platos para dietas sin gluten. Por favor pregunte a su mesero.",
-      "aEn": "Yes, we offer several vegetarian options and can adapt certain dishes for gluten-free diets. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones para grupos grandes?",
-      "qEn": "Do you accept reservations for large parties?",
-      "aEs": "Sí, aceptamos reservaciones por teléfono y acomodamos grupos grandes con previa notificación.",
-      "aEn": "Yes, we accept phone reservations and happily accommodate large parties with advance notice."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de comida para llevar y entrega a domicilio?",
-      "qEn": "Do you offer takeout and delivery services?",
-      "aEs": "Sí, ofrecemos servicio de comida para llevar llamando directamente al restaurante y también colaboramos con plataformas locales de entrega.",
-      "aEn": "Yes, we offer takeout service by calling the restaurant directly and also partner with local delivery platforms."
-    }
-  ]
+  "faqs": []
 }
