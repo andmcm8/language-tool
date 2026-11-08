@@ -2,26 +2,17 @@
   "storeInfo": {
     "id": "torito-mexican",
     "name": "Torito Mexican",
-    "tagline": "Food, Music, Margaritas, and Memories in North Haven",
-    "address": "123 Washington Ave, North Haven, CT 06473",
+    "tagline": "Restaurant in North Haven | Restaurant en North Haven",
+    "address": "150 Universal Dr N, North Haven, CT 06473",
     "phone": "(203) 691-9469",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:30 AM - 11:00 PM",
-      "sunday": "12:00 PM - 9:30 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
-      "Live Mariachi",
-      "Full Bar"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,274 +24,3134 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "soups-salads",
+      "nameEs": "Sopas y ensaladas",
+      "nameEn": "Soups & Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "burritos",
+      "nameEs": "Burritos",
+      "nameEn": "Burritos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tacos",
+      "nameEs": "Tacos",
+      "nameEn": "Tacos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "enchiladas",
+      "nameEs": "Enchiladas",
+      "nameEn": "Enchiladas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "quesadillas",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chimichangas",
+      "nameEs": "Chimichangas",
+      "nameEn": "Chimichangas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "combinations",
+      "nameEs": "Combinaciones",
+      "nameEn": "Combinations",
+      "icon": "Utensils"
+    },
+    {
+      "id": "fajitas",
+      "nameEs": "Fajitas",
+      "nameEn": "Fajitas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pork",
+      "nameEs": "Cerdo",
+      "nameEn": "Pork",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beef-steak",
+      "nameEs": "Carne de res y bistec",
+      "nameEn": "Beef & Steak",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetarian",
+      "nameEs": "Vegetariano",
+      "nameEn": "Vegetarian",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "huevos",
+      "nameEs": "Huevos",
+      "nameEn": "Huevos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-salads",
+      "nameEs": "Ensaladas de almuerzo",
+      "nameEn": "Lunch Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-sandwiches",
+      "nameEs": "Sándwiches de almuerzo",
+      "nameEn": "Lunch Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-enchiladas",
+      "nameEs": "Enchiladas de almuerzo",
+      "nameEn": "Lunch Enchiladas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-combinations",
+      "nameEs": "Combinaciones de almuerzo",
+      "nameEn": "Lunch Combinations",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-quesadillas",
+      "nameEs": "Quesadillas de almuerzo",
+      "nameEn": "Lunch Quesadillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-burritos-and-chimichangas",
+      "nameEs": "Burritos y chimichangas de almuerzo",
+      "nameEn": "Lunch Burritos and Chimichangas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-house-specials",
+      "nameEs": "Especiales de la casa de almuerzo",
+      "nameEn": "Lunch House Specials",
+      "icon": "Utensils"
+    },
+    {
+      "id": "lunch-huevos",
+      "nameEs": "Huevos de almuerzo",
+      "nameEn": "Lunch Huevos",
+      "icon": "Utensils"
+    },
+    {
+      "id": "add-ons",
+      "nameEs": "Extras",
+      "nameEn": "Add-ons",
+      "icon": "Utensils"
+    },
+    {
+      "id": "imported-beers",
+      "nameEs": "Cervezas importadas",
+      "nameEn": "Imported Beers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "draft-beers",
+      "nameEs": "Cervezas de barril",
+      "nameEn": "Draft Beers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "domestic-beers",
+      "nameEs": "Cervezas nacionales",
+      "nameEn": "Domestic Beers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wines",
+      "nameEs": "Vinos",
+      "nameEn": "Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "specialty-drinks",
+      "nameEs": "Bebidas especiales",
+      "nameEn": "Specialty Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "margaritas-cocktails",
+      "nameEs": "Margaritas (cócteles)",
+      "nameEn": "Margaritas Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "silver-tequillas",
+      "nameEs": "Tequilas blancos",
+      "nameEn": "Silver Tequillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "reposado-tequillas",
+      "nameEs": "Tequilas reposados",
+      "nameEn": "Reposado Tequillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "anejo-tequillas",
+      "nameEs": "Tequilas añejos",
+      "nameEn": "Anejo Tequillas",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "torito-mexican-01",
+      "id": "fiesta-platter",
       "categoryId": "appetizers",
-      "nameEs": "Guacamole Fresco de la Casa",
-      "nameEn": "House-Made Fresh Guacamole",
-      "descriptionEs": "Aguacates Hass madurados en su punto, picados con cebolla fresca, cilantro, tomate y un toque de lima. Servido con chips de maíz recién hechos.",
-      "descriptionEn": "Ripe Hass avocados hand-mashed with fresh onions, cilantro, tomato, and a squeeze of lime. Served with crispy, house-made tortilla chips.",
-      "price": "$9.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
+      "nameEs": "Plato Fiesta",
+      "nameEn": "Fiesta Platter",
+      "descriptionEs": "Prueba un poco de todo. Quesadillas de queso, nachos, taquitos, flautas y alitas de la casa.",
+      "descriptionEn": "Try a sample of everything. Cheese quesadillas, nachos, taquitos, flautas, and house wings.",
+      "price": "$20.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-02",
+      "id": "idaho-potatoes",
       "categoryId": "appetizers",
-      "nameEs": "Queso Fundido con Chorizo",
-      "nameEn": "Queso Fundido with Chorizo",
-      "descriptionEs": "Mezcla de quesos mexicanos fundidos al horno con auténtico chorizo picante, servido con tortillas de maíz calientes.",
-      "descriptionEn": "Melted Mexican cheeses baked to perfection with savory spiced chorizo, served with warm corn tortillas.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Sin Gluten",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Papas Idaho",
+      "nameEn": "Idaho Potatoes",
+      "descriptionEs": "Cáscaras de papa con queso Jack y cheddar derretidos, a elegir pollo, carne molida o carne deshebrada, y cubiertas con pico de gallo.",
+      "descriptionEn": "Potato skins with melted Jack and cheddar cheeses, your choice of Chicken, Ground Beef, or Shredded Beef, and topped with pico de gallo.",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-03",
+      "id": "super-nachos",
       "categoryId": "appetizers",
-      "nameEs": "Taquitos Dorados de Pollo",
-      "nameEn": "Crispy Chicken Taquitos",
-      "descriptionEs": "Cuatro taquitos dorados crujientes rellenos de pollo desmenuzado, servidos con crema agria, queso fresco y salsa verde.",
-      "descriptionEn": "Four crispy rolled corn tortillas stuffed with seasoned shredded chicken, topped with sour cream, fresh cheese, and salsa verde.",
-      "price": "$11.25",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Crujiente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Súper Nachos",
+      "nameEn": "Super Nachos",
+      "descriptionEs": "Totopos hechos en casa, queso Jack derretido con pollo, carne molida o carne deshebrada a elegir. Cubiertos con pico de gallo.",
+      "descriptionEn": "House-made tortilla chips, melted jack cheese with your choice of chicken, ground beef, or shredded beef. Topped with pico de gallo.",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-04",
-      "categoryId": "mains",
-      "nameEs": "Tacos Tradicionales (3 piezas)",
-      "nameEn": "Traditional Tacos (3 pcs)",
-      "descriptionEs": "Su elección de carne asada, carnitas o pollo al pastor en tortillas de maíz suaves, cubiertos con cebolla, cilantro fresco y salsa de la casa.",
-      "descriptionEn": "Your choice of grilled steak, tender carnitas, or pastor on soft corn tortillas, topped with onions, fresh cilantro, and house salsa.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Bestseller",
-      "tags": [
-        "Sin Gluten",
-        "Clásico"
-      ],
-      "allergens": [],
+      "id": "taquito-bites",
+      "categoryId": "appetizers",
+      "nameEs": "Bocados de Taquito",
+      "nameEn": "Taquito Bites",
+      "descriptionEs": "Tortilla de maíz enrollada y frita, rellena de pollo o carne deshebrada a elegir. Cubierta con salsa roja sabrosa y queso cotija.",
+      "descriptionEn": "Rolled and deep-fried corn tortilla filled with your choice of Chicken or Shredded Beef. Topped with a savory salsa roja and cotija cheese.",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-05",
-      "categoryId": "mains",
-      "nameEs": "Burrito Supreme",
-      "nameEn": "Supreme Burrito",
-      "descriptionEs": "Tortilla de harina gigante rellena de frijoles negros, arroz mexicano, su carne preferida, bañada en salsa de tomate casera, queso derretido y crema.",
-      "descriptionEn": "Giant flour tortilla stuffed with black beans, Mexican rice, choice of meat, smothered in house red sauce, melted cheese, and crema.",
-      "price": "$15.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Abundante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "torito-platter",
+      "categoryId": "appetizers",
+      "nameEs": "Plato Torito",
+      "nameEn": "Torito Platter",
+      "descriptionEs": "Camarones y champiñones salteados en mantequilla y ajo, carnitas de cerdo mezcladas con salsa roja de la casa y alitas de pollo crujientes. Servido con rebanadas de aguacate y alitas buffalo.",
+      "descriptionEn": "Sautéed shrimp and mushrooms in butter and garlic, pork carnitas mixed with a house red sauce, and crispy chicken wings. Served with sliced avocados and buffalo wings.",
+      "price": "$40.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-06",
-      "categoryId": "mains",
-      "nameEs": "Enchiladas Supremas",
-      "nameEn": "Supreme Enchiladas",
-      "descriptionEs": "Tres enchiladas de pollo bañadas en rica salsa mole tradicional o salsa verde, cubiertas con queso fresco, crema y cebolla.",
-      "descriptionEn": "Three chicken enchiladas smothered in rich traditional mole sauce or salsa verde, topped with fresh cheese, crema, and onions.",
-      "price": "$16.25",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "elote-azado",
+      "categoryId": "appetizers",
+      "nameEs": "Elote azado",
+      "nameEn": "Elote Azado",
+      "descriptionEs": "Elote callejero mexicano con crema agria, queso fresco y chile Tajín.",
+      "descriptionEn": "Mexican street corn dressed with sour cream, queso fresco, and Tajín pepper.",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-07",
-      "categoryId": "specialties",
-      "nameEs": "Fajitas Mixtas Sizzling",
-      "nameEn": "Sizzling Mixed Fajitas",
-      "descriptionEs": "Tiras marinadas de carne de res, pollo y camarones a la plancha servidas sobre una sartén hirviendo con pimientos y cebollas salteados. Acompañado de frijoles, arroz y tortillas.",
-      "descriptionEn": "Marinated strips of grilled steak, chicken, and shrimp served sizzling on a hot skillet with sautéed bell peppers and onions. Served with rice, beans, and warm tortillas.",
-      "price": "$21.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "A La Plancha",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "id": "camarones-de-ajo",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones al ajo",
+      "nameEn": "Camarones De Ajo",
+      "descriptionEs": "Camarones salteados con champiñones y ajo machacado. Servidos con una ensalada pequeña y rebanadas de aguacate.",
+      "descriptionEn": "Sautéed shrimp with mushrooms and crushed garlic. Served with a side salad and avocado slices.",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-08",
-      "categoryId": "specialties",
-      "nameEs": "Carne Asada a la Tampiqueña",
-      "nameEn": "Carne Asada a la Tampiqueña",
-      "descriptionEs": "Jugoso bistec a la parrilla servido con una enchilada de mole, guacamole, arroz mexicano, frijoles negros y cebollitas asadas.",
-      "descriptionEn": "Juicy grilled skirt steak served with a mole enchilada, fresh guacamole, Mexican rice, black beans, and grilled spring onions.",
-      "price": "$23.50",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne",
-        "Premium"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "torito-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamar Torito",
+      "nameEn": "Torito Calamari",
+      "descriptionEs": "Calamar empanizado y frito, cubierto con pico de gallo y chiles jalapeños.",
+      "descriptionEn": "Battered and deep-fried calamari topped with pico de gallo and jalapeños.",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-09",
-      "categoryId": "specialties",
-      "nameEs": "Chimichanga de Camarón",
-      "nameEn": "Shrimp Chimichanga",
-      "descriptionEs": "Tortilla de harina frita y crujiente rellena de camarones sazonados, pimientos y queso, cubierta con salsa de queso fundido y pico de gallo.",
-      "descriptionEn": "Crispy fried flour tortilla stuffed with seasoned shrimp, bell peppers, and melted cheese, topped with warm queso sauce and fresh pico de gallo.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "queso-dip",
+      "categoryId": "appetizers",
+      "nameEs": "Dip de queso",
+      "nameEn": "Queso Dip",
+      "descriptionEs": "Nuestra salsa de queso cremosa y rica, con un toque picante de chiles jalapeños.",
+      "descriptionEn": "Our creamy, rich cheese sauce with a little kick of jalapeños.",
+      "price": "Regular $10.00 | With Spinach $11.00 | With Chorizo $12.00 | With Shrimp $16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-10",
-      "categoryId": "beverages",
-      "nameEs": "Ultimate Margarita",
-      "nameEn": "Ultimate Margarita",
-      "descriptionEs": "Lima fresca y Cointreau con su elección de uno de nuestros tequilas top-shelf, agitado a mano a la perfección.",
-      "descriptionEn": "Fresh lime juice and Cointreau with your choice of one of our top-shelf tequilas, hand-shaken to iced perfection.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Cocktail Popular",
-      "tags": [
-        "Alcohol",
-        "Signature"
-      ],
-      "allergens": [],
+      "id": "fajita-nachos",
+      "categoryId": "appetizers",
+      "nameEs": "Nachos de fajita",
+      "nameEn": "Fajita Nachos",
+      "descriptionEs": "Totopos hechos en casa con queso derretido. Pimientos y cebollas marinados con pollo o bistec a elegir. Cubiertos con pico de gallo.",
+      "descriptionEn": "House-made tortilla chips with melted cheese. marinated peppers and onions with your choice of chicken or steak. Topped with pico de gallo.",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-11",
-      "categoryId": "beverages",
-      "nameEs": "Cadillac Margarita",
-      "nameEn": "Cadillac Margarita",
-      "descriptionEs": "Mezcla agridulce casera, triple sec, tequila dorado y un toque flotante de licor Grand Marnier.",
-      "descriptionEn": "Sweet and sour house mix, triple sec, gold tequila, and a luxurious floater of Grand Marnier.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Alcohol"
-      ],
-      "allergens": [],
+      "id": "guacamole-dip",
+      "categoryId": "appetizers",
+      "nameEs": "Dip de guacamole",
+      "nameEn": "Guacamole Dip",
+      "descriptionEs": "Aguacate recién machacado combinado con nuestra mezcla de especias, cilantro, tomate, cebolla y jugo de limón.",
+      "descriptionEn": "Freshly smashed avocado combined with our blend of spices, cilantro, tomatoes, onion, and lime juice.",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "torito-mexican-12",
-      "categoryId": "beverages",
-      "nameEs": "Torito Michelada",
+      "id": "chicken-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas de pollo",
+      "nameEn": "Chicken Wings",
+      "descriptionEs": "Alitas buffalo con hueso, aderezo ranch con salsa picante aparte.",
+      "descriptionEn": "Buffalo Wings with bone, Ranch dressing with hot salsa on the side.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taco-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de taco",
+      "nameEn": "Taco Salad",
+      "descriptionEs": "Bowl de tacos con pollo, carne molida, carne deshebrada o cerdo a elegir, sobre una cama de lechuga fresca, cubierto con tomate, queso cheddar, guacamole y crema agria.",
+      "descriptionEn": "Taco bowl with your choice of chicken, ground beef, shredded beef, or pork over a bed of fresh lettuce topped with tomatoes, cheddar cheese, guacamole, and sour cream.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-avocado-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de pollo y aguacate",
+      "nameEn": "Chicken Avocado Salad",
+      "descriptionEs": "Pollo a la parrilla en rebanadas en un bowl de tacos sobre una cama de lechuga fresca, cubierto con tomate, queso, crema agria y rebanadas de aguacate.",
+      "descriptionEn": "Sliced grilled chicken in a taco bowl over a bed of fresh lettuce, topped with tomatoes, cheese, sour cream, and avocado slices.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-caesar-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada César con camarones",
+      "nameEn": "Shrimp Caesar Salad",
+      "descriptionEs": "Camarones a la parrilla servidos sobre frijoles negros y lechuga romana, cubiertos con queso ranchero, tomate y rebanadas de aguacate.",
+      "descriptionEn": "Grilled shrimp served over black beans and romaine lettuce, topped with ranchero cheese, tomatoes, and avocado slices.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de fajita",
+      "nameEn": "Fajita Salad",
+      "descriptionEs": "A elegir pollo, bistec o camarones estilo fajita en un bowl de tacos servido sobre una cama de lechuga fresca, cubierto con tomate, pimientos y cebollas marinados, guacamole y crema agria • Con camarones +$3.00",
+      "descriptionEn": "A choice of fajitas-style chicken, steak, or shrimp in a taco bowl served over a bed of fresh lettuce, topped with tomatoes, marinated peppers, onions, guacamole, and sour cream • With Shrimp +$3.00",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada César con pollo",
+      "nameEn": "Chicken Caesar Salad",
+      "descriptionEs": "Lechuga romana, tomate, queso ranchero, pollo a la parrilla en rebanadas y crutones.",
+      "descriptionEn": "Romaine lettuce, tomatoes, ranchero cheese, sliced grilled chicken, and croutons.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "7-mares",
+      "categoryId": "soups-salads",
+      "nameEs": "7 Mares",
+      "nameEn": "7 Mares",
+      "descriptionEs": "Auténtica cocina mexicana: esta sopa picante es una mezcla de camarones, vieiras, pulpo, almejas, calamar, mejillones, patas de cangrejo y verduras mixtas.",
+      "descriptionEn": "Authentic Mexican cuisine, this spicy soup is a medley of shrimp, scallops, octopus, clams, calamari, mussels, crab legs, and mixed vegetables.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sopa-de-albondigas",
+      "categoryId": "soups-salads",
+      "nameEs": "Sopa de albóndigas",
+      "nameEn": "Sopa De Albondigas",
+      "descriptionEs": "Una sopa mexicana clásica de albóndigas hechas en casa de cerdo y res, con menta y arroz, servida en caldo de verduras con rebanadas de zanahoria, papa y calabacita.",
+      "descriptionEn": "A classic Mexican meatball soup made with house-made pork and beef meatballs, mint, rice, and served in a vegetable broth with slices of fresh carrots, potatoes, and zucchini.",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-bean-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "Sopa de frijol negro",
+      "nameEn": "Black Bean Soup",
+      "descriptionEs": "Sopa saludable de frijol negro con pico de gallo y queso ranchero.",
+      "descriptionEn": "Healthy black bean soup with pico de gallo and ranchero cheese.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortilla-soup",
+      "categoryId": "soups-salads",
+      "nameEs": "Sopa de tortilla",
+      "nameEn": "Tortilla Soup",
+      "descriptionEs": "Sopa mexicana de pollo con tiras de tortilla, rebanadas de aguacate y queso Jack.",
+      "descriptionEn": "A Mexican chicken soup with tortilla strips, avocado slices, and jack cheese.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria-ramen",
+      "categoryId": "soups-salads",
+      "nameEs": "Ramen de birria",
+      "nameEn": "Birria Ramen",
+      "descriptionEs": "El ramen de birria es un platillo de fusión que combina el ramen japonés tradicional con los sabores del guiso mexicano de birria.",
+      "descriptionEn": "Birria ramen is a fusion dish that combines traditional Japanese ramen with the flavors of Mexican birria stew.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesadilla-chicken-salad",
+      "categoryId": "soups-salads",
+      "nameEs": "Ensalada de quesadilla con pollo",
+      "nameEn": "Quesadilla Chicken Salad",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, queso, tomate, frijoles negros, salsa, tiras de tortilla, con vinagreta de miel y chipotle y guacamole.",
+      "descriptionEn": "Grilled chicken, romaine lettuce, cheese, tomatoes, black beans, salsa, tortilla strips, with chipotle honey vinaigrette and guacamole.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "campechana",
+      "categoryId": "soups-salads",
+      "nameEs": "Campechana",
+      "nameEn": "Campechana",
+      "descriptionEs": "Una mezcla perfecta de cóctel de camarón con aguacate, tomate picado y cebolla • Con pulpo +$2.00",
+      "descriptionEn": "A perfect blend of shrimp cocktail mixed with avocados, diced tomatoes, and onions • With Octopus +$2.00",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parrilla-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito parrilla de pollo",
+      "nameEn": "Chicken Parrilla Burrito",
+      "descriptionEs": "Pollo a la parrilla, frijoles negros, arroz blanco y verduras mixtas envueltos en tortilla de harina. Cubiertos con nuestra salsa verde, pico de gallo, queso y crema agria.",
+      "descriptionEn": "Grilled chicken, black beans, white rice, and mixed vegetables wrapped in a flour tortilla. Topped with our salsa verde, pico de gallo, cheese, and sour cream.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito blanco",
+      "nameEn": "White Burrito",
+      "descriptionEs": "A elegir pollo deshebrado, carne deshebrada, carne molida o cerdo. Envuelto en una tortilla de harina grande con arroz y frijoles refritos. Cubierto con nuestra salsa de queso hecha en casa y cebollín. Servido con crema agria aparte.",
+      "descriptionEn": "Your choice of shredded chicken, shredded beef, ground beef, or pork. Wrapped in a large flour tortilla with rice and refried beans. Topped with our housemade cheese sauce and green onions. Served with sour cream on the side.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asado-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito asado",
+      "nameEn": "Asado Burrito",
+      "descriptionEs": "Bistec o pollo marinado a elegir envuelto en tortilla de harina, cubierto con nuestra salsa roja, pico de gallo, queso cotija, crema agria y guacamole.",
+      "descriptionEn": "Choice of marinated steak or chicken wrapped in a flour tortilla, topped with our salsa roja, pico de gallo, cotija cheese, sour cream, and guacamole.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-wrap-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito wrap de fajita",
+      "nameEn": "Fajita Wrap Burrito",
+      "descriptionEs": "A elegir bistec, pollo o camarones a la parrilla. Envuelto en tortilla de harina con pimientos y cebollas marinados. Servido con lechuga, tomate, queso cheddar, guacamole y crema agria • Con camarones +$2.00",
+      "descriptionEn": "Your choice of grilled steak, chicken, or shrimp. Wrapped in a flour tortilla with marinated peppers and onions. Served with lettuce, tomato, cheddar cheese, guacamole, and sour cream • With Shrimp +$2.00",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loco-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito loco",
+      "nameEn": "Loco Burrito",
+      "descriptionEs": "Carne asada preparada con nuestro sazonador hecho en casa, envuelta en tortilla de harina con frijoles negros y arroz, cubierta con queso cotija, salsa roja y guacamole.",
+      "descriptionEn": "Carne asada prepared with our house-made seasoning, wrapped in a flour tortilla with black beans and rice, topped with cotija cheese, salsa roja, and guacamole.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mole-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito de mole",
+      "nameEn": "Mole Burrito",
+      "descriptionEs": "Burrito de pollo deshebrado bañado en nuestra salsa mole especial* hecha con Tía María. *La salsa mole contiene un toque de crema de cacahuate.",
+      "descriptionEn": "A shredded chicken burrito smothered in our special mole sauce* made with Tia Maria. *Mole sauce contains a hint of peanut butter.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "colorado-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito colorado",
+      "nameEn": "Colorado Burrito",
+      "descriptionEs": "Carne de res braseada y sabrosa cocinada en salsa roja con una mezcla de hierbas y especias mexicanas. Envuelta en tortilla de harina con arroz y frijoles refritos, cubierta con cebollín, lechuga, queso y crema agria.",
+      "descriptionEn": "Savory braised beef cooked in a salsa roja with a blend of Mexican herbs and spices. Wrapped in a flour tortilla with rice and refried beans, topped with scallions, lettuce, cheese, and sour cream.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito Torito",
+      "nameEn": "Torito Burrito",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo, con arroz y frijoles refritos envueltos juntos en una tortilla de harina grande. Cubierto con nuestra sabrosa salsa roja, queso rallado, lechuga, tomate, guacamole y crema agria.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork with rice and refried beans wrapped together in a large flour tortilla. Topped with our savory salsa roja, shredded cheese, lettuce, tomatoes, guacamole, and sour cream.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oceano-burrito",
+      "categoryId": "burritos",
+      "nameEs": "Burrito Océano",
+      "nameEn": "Oceano Burrito",
+      "descriptionEs": "Mezcla de mariscos de carne de cangrejo, vieiras, camarones y pescado blanco envuelta en tortilla de harina, cubierta con nuestra salsa de tomatillo y queso Jack derretido. Servido con rebanadas de aguacate.",
+      "descriptionEn": "A seafood medley of crab meat, scallops, shrimp, and white fish wrapped in a flour tortilla, topped with our tomatillo sauce and melted jack cheese. Served with avocado slices.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito-bowl",
+      "categoryId": "burritos",
+      "nameEs": "Burrito bowl",
+      "nameEn": "Burrito Bowl",
+      "descriptionEs": "Servido sobre una cama de lechuga romana fresca, arroz, frijoles negros, aguacate en rebanadas, elote asado, tomate, cilantro, chiles, cebolla, queso fresco y un hilo de salsa de miel y chipotle • A elegir uno: pollo, bistec, camarones o vegetales | Ingredientes adicionales a elegir + $3.00 c/u.",
+      "descriptionEn": "Served on a bed of fresh romaine lettuce, rice, black beans, sliced avocado, roasted corn, tomatoes, cilantro, peppers, onion, queso fresco, and a drizzle of chipotle honey sauce • Choice of one: Chicken, Steak, Shrimp, or Vegetable | Choice of Additional Toppings + $3.00 ea.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-de-birria",
+      "categoryId": "tacos",
+      "nameEs": "Tacos De Birria",
+      "nameEn": "Tacos De Birria",
+      "descriptionEs": "Los tacos de birria son tradicionalmente un guiso mexicano de res adictivo, dulce y ácido, ligeramente picante y sabroso. La carne de res cocida lentamente queda tan tierna que se deshace, y está llena de un sabor jugoso y rico. Rellenos de queso Jack y carne de res en una tortilla de maíz, se bañan en el caldo y se fríen. Servidos con consomé de birria, limón, cebolla asada y cilantro.",
+      "descriptionEn": "Birria tacos are traditionally an addictive, sweet, and sour. slightly spicy, savory Mexican beef stew. The slow-cooked beef is fall-apart tender and loaded with juicy, rich flavor. Stuffed with jack cheese and beefy goodness into a taco shell, dipped into the stew, and fried up. Served with consommé de birria, lime, grilled onion, and cilantro.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-carnitas-tacos",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de carnitas de cerdo",
+      "nameEn": "Pork Carnitas Tacos",
+      "descriptionEs": "Tres tortillas de maíz suaves con queso Jack derretido, rellenas de cerdo cocido lentamente. Cubiertas con una salsa roja suave de carnitas hecha en casa y pico de gallo. Servidos con guacamole aparte.",
+      "descriptionEn": "Three soft corn tortillas with melted Jack cheese, filled with slow-cooked pork. Topped with a housemade mild red carnitas sauce and pico de gallo. Served with guacamole on the side.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-shrimp-tacos",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de camarón con tocino",
+      "nameEn": "Bacon Shrimp Tacos",
+      "descriptionEs": "Camarones envueltos en tocino, cubiertos con cebolla caramelizada, queso Jack, repollo y pico de gallo en tortillas de maíz suaves. Servidos con aioli de chipotle.",
+      "descriptionEn": "Shrimp wrapped in bacon, topped with caramelized onions, jack cheese, cabbage, and pico de gallo in soft corn tortillas. Served with a chipotle aioli.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexico-tacos",
+      "categoryId": "tacos",
+      "nameEs": "Tacos México",
+      "nameEn": "Mexico Tacos",
+      "descriptionEs": "Bistec o pollo estilo fajita en tortillas de maíz suaves cubiertas con mango picado y queso cotija.",
+      "descriptionEn": "Fajita steak or chicken in soft corn tortillas topped with chopped mangos and cojita cheese.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-al-carbon",
+      "categoryId": "tacos",
+      "nameEs": "Tacos al carbón",
+      "nameEn": "Tacos Al Carbón",
+      "descriptionEs": "Tres tortillas de maíz suaves marinadas en salsa roja hecha en casa, ligeramente asadas, con pollo o bistec a elegir, cubiertas con cebolla fresca y queso cotija, servidas aparte.",
+      "descriptionEn": "Three soft corn tortillas marinated in house-made red salsa, lightly grilled, with your choice of chicken or steak, topped with fresh onions and cotija cheese, served on the side.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-al-pastor",
+      "categoryId": "tacos",
+      "nameEs": "Tacos al pastor",
+      "nameEn": "Tacos Al Pastor",
+      "descriptionEs": "A elegir lomo de cerdo, bistec o pollo marinado, cubierto con pico de gallo y repollo fresco en tortillas de maíz suaves. Servido con salsa roja.",
+      "descriptionEn": "Your choice of marinated pork loin, steak, or chicken, topped with pico de gallo and fresh cabbage in soft corn tortillas. Served with salsa roja.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-tacos",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de fajita",
+      "nameEn": "Fajita Tacos",
+      "descriptionEs": "A elegir bistec o pollo a la parrilla con pimientos y cebollas marinados, servidos en tortillas de harina. Servidos con lechuga, tomate y crema agria • Con camarones +$1.00",
+      "descriptionEn": "Your choice of grilled steak or chicken with marinated peppers and onions served in flour tortillas. Served with lettuce, tomato, and sour cream • With Shrimp +$1.00",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-de-pescado",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de pescado",
+      "nameEn": "Tacos De Pescado",
+      "descriptionEs": "Bacalao fresco dorado en sartén con repollo rallado en tortillas de harina. Servido con nuestra salsa de pescado hecha en casa.",
+      "descriptionEn": "Fresh pan-seared cod with shredded cabbage in flour tortillas. Served with our house-made salsa de pescado.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-tacos",
+      "categoryId": "tacos",
+      "nameEs": "Tacos de calle",
+      "nameEn": "Street Tacos",
+      "descriptionEs": "Tortillas mexicanas, bistec, pollo a la parrilla, chorizo, al pastor (cerdo marinado) o lengua (de res). La comida más popular de México. Una orden de cinco tacos mini con una carne a elegir. Servidos con cilantro, cebolla y salsa de tomatillo.",
+      "descriptionEn": "Mexican tortillas, steak, grilled chicken, chorizo, al pastor (marinated pork), or lengua (beef tongue). The most popular meal in Mexico. An order of five mini tacos with your choice of one meat. Served with cilantro, onions, and tomatillo sauce.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tacos-jalisco",
+      "categoryId": "tacos",
+      "nameEs": "Tacos Jalisco",
+      "nameEn": "Tacos Jalisco",
+      "descriptionEs": "Carne asada servida en tres tortillas de maíz suaves con salsa ranchera hecha en casa y un limón aparte.",
+      "descriptionEn": "Carne asada served in three soft corn tortillas with house-made ranchero sauce and a lime on the side.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas-rancheras",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas rancheras",
+      "nameEn": "Enchiladas Rancheras",
+      "descriptionEs": "Tres enchiladas bañadas en salsa roja hecha en casa, con carne molida, carne deshebrada, pollo deshebrado, cerdo o queso y cebolla, a elegir. Cubiertas con repollo, pico de gallo y queso cotija, servidas con crema agria aparte.",
+      "descriptionEn": "Three enchiladas marinated with house-made red sauce with your choice of ground beef, shredded beef, shredded chicken, pork, or cheese and onions. Topped with cabbage, pico de gallo, and cotija cheese, served with sour cream on the side.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas-torito",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas Torito",
+      "nameEn": "Enchiladas Torito",
+      "descriptionEs": "Tres enchiladas: una de pollo, una de queso y una de carne deshebrada, servidas en tortilla de maíz cada una con su propia salsa especial.",
+      "descriptionEn": "Three enchiladas, one chicken, one cheese, one shredded beef, served in a corn tortilla each with their own signature sauce.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas-seafood",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas de mariscos",
+      "nameEn": "Enchiladas Seafood",
+      "descriptionEs": "Mezcla de mariscos de carne de cangrejo, vieiras, camarones y pescado blanco, envueltos en tortillas de maíz, cubiertos con nuestra salsa de tomatillo suave y queso Jack derretido. Servidos con crema agria y rebanadas de aguacate.",
+      "descriptionEn": "A seafood medley of crab meat, scallops, shrimp, and white fish, wrapped in corn tortillas, topped with our mild tomatillo sauce and melted Jack cheese. Served with sour cream and avocado slices.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas-suizas",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas Suizas",
+      "nameEn": "Enchiladas Suizas",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo envueltos en tortillas de maíz suaves, cubiertos con queso Jack derretido y salsa de tomatillo.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork wrapped in soft corn tortillas, topped with melted jack cheese and tomatillo sauce.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-enchiladas",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas blancas",
+      "nameEn": "White Enchiladas",
+      "descriptionEs": "Dos enchiladas a elegir con carne molida, pollo, carne deshebrada o cerdo. Cubiertas con salsa de queso. Servidas con crema agria y aguacate.",
+      "descriptionEn": "Two enchiladas with your choice of ground beef, chicken, shredded beef, or pork. Topped with cheese sauce. Served with sour cream and avocado.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-enchiladas",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas de Camarón",
+      "nameEn": "Shrimp Enchiladas",
+      "descriptionEs": "Camarones, tomate y cebolla salteados envueltos en tortilla de maíz. Cubiertos con salsa de tomatillo suave y queso Jack derretido. Servidos con lechuga, tomate, rebanadas de aguacate y crema agria.",
+      "descriptionEn": "Sautéed shrimp, tomatoes, and onions wrapped in a corn tortilla. Topped with mild tomatillo sauce and melted Jack cheese. Served with lettuce, tomatoes, avocado slices, and sour cream.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mole-enchiladas",
+      "categoryId": "enchiladas",
+      "nameEs": "Enchiladas mole",
+      "nameEn": "Mole Enchiladas",
+      "descriptionEs": "Dos enchiladas de pollo bañadas en nuestra salsa mole especial* hecha con Tía María. *La salsa mole contiene un toque de crema de cacahuate.",
+      "descriptionEn": "Two chicken enchiladas smothered in our special mole sauce* made with Tia Maria. *Mole sauce contains a hint of peanut butter.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla a la parrilla",
+      "nameEn": "Grilled Quesadilla",
+      "descriptionEs": "Tortilla de harina a la parrilla rellena de una mezcla de queso cheddar y pollo o bistec asado a la parrilla a elegir.",
+      "descriptionEn": "Grilled flour tortilla, stuffed with a blend of cheddar cheese and your choice of char-broiled chicken or steak.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla Torito",
+      "nameEn": "Torito Quesadilla",
+      "descriptionEs": "Camarones salteados con ajo, pimientos y cebolla, servidos en tortilla de harina con queso, decorados con lechuga, tomate, guacamole y crema agria.",
+      "descriptionEn": "Sautéed shrimp with garlic, peppers, and onions, served in a flour tortilla with cheese, garnished with lettuce, tomatoes, guacamole, and sour cream.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesa-birria",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesa-birria",
+      "nameEn": "Quesa - Birria",
+      "descriptionEs": "La quesa-birria es tradicionalmente un guiso mexicano de res adictivo, ligeramente picante y sabroso. La carne de res cocida lentamente queda tan tierna que se deshace, y está llena de un sabor jugoso y rico. Rellena de queso Jack en una tortilla de harina grande, se baña en el caldo y se fríe. Servida con consomé de birria, limón, cebolla asada y cilantro.",
+      "descriptionEn": "Quesa-Birria is traditionally an addictive, slightly spicy, savory Mexican beef stew. The slow-cooked beef is fall-apart tender and loaded with a juicy, rich flavor. Stuffed with jack cheese into a large flour tortilla, dipped in the stew, and fried up. Served with consommé de birria, lime, frilled onions, and cilantro.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de fajita",
+      "nameEn": "Fajita Quesadilla",
+      "descriptionEs": "Tortilla de harina a la parrilla rellena de una mezcla de queso cheddar y bistec o pollo estilo fajita a elegir, pimientos y cebolla.",
+      "descriptionEn": "Grilled flour tortilla, stuffed with a blend of cheddar cheese and your choice of fajita steak or chicken, peppers, and onions.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla Baja",
+      "nameEn": "Baja Quesadilla",
+      "descriptionEs": "Nuestra quesadilla de la casa con una mezcla de queso cheddar y pollo deshebrado, carne molida o chorizo mexicano a elegir.",
+      "descriptionEn": "Our house quesadilla with a blend of cheddar cheese and your choice of shredded chicken. ground beef or Mexican chorizo.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-chimichanga",
+      "categoryId": "chimichangas",
+      "nameEs": "Chimichanga de fajita",
+      "nameEn": "Fajita Chimichanga",
+      "descriptionEs": "Bistec marinado, pollo a la parrilla o camarones a elegir, envueltos en tortilla de harina y fritos a la perfección. Cubiertos con salsa de tomatillo, queso derretido y pimientos y cebollas marinados. Servidos con arroz, frijoles refritos, lechuga, tomate, crema agria y guacamole.",
+      "descriptionEn": "Your choice of marinated steak, grilled chicken, or shrimp wrapped in a flour tortilla and fried to perfection. Topped with tomatillo sauce, melted cheese, and marinated peppers and onions. Served with rice, refried beans, lettuce, tomatoes, sour cream, and guacamole.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pacifico-chimichanga",
+      "categoryId": "chimichangas",
+      "nameEs": "Chimichanga Pacífico",
+      "nameEn": "Pacifico Chimichanga",
+      "descriptionEs": "Mezcla de mariscos de carne de cangrejo, vieiras, camarones y pescado blanco envuelta en tortilla de harina y frita a la perfección, cubierta con nuestra salsa de tomatillo y queso Jack derretido. Servida con frijoles refritos, arroz, crema agria y rebanadas de aguacate.",
+      "descriptionEn": "A seafood medley of crab meat, scallops, shrimp, and white fish wrapped in a flour tortilla and fried to perfection, topped with our tomatillo sauce and melted Jack cheese. Served with refried beans, rice, sour cream, and avocado slices.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-chimichanga",
+      "categoryId": "chimichangas",
+      "nameEs": "Chimichanga Torito",
+      "nameEn": "Torito Chimichanga",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo envueltos en tortilla de harina y fritos a la perfección. Cubiertos con lechuga, tomate, crema agria y guacamole. Servidos con arroz y frijoles.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork wrapped in a flour tortilla and fried to perfection. Topped with lettuce, tomatoes, sour cream, and guacamole. Served with rice and beans.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-chimichanga",
+      "categoryId": "chimichangas",
+      "nameEs": "Chimichanga blanca",
+      "nameEn": "White Chimichanga",
+      "descriptionEs": "A elegir pollo, carne molida o carne deshebrada. Cubierta con salsa de queso y servida con crema agria aparte.",
+      "descriptionEn": "Your choice of chicken, ground beef, or shredded beef. Topped with cheese sauce and served with sour cream on the side.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-1-pick-1",
+      "categoryId": "combinations",
+      "nameEs": "Combo 1 (elige 1)",
+      "nameEn": "Combo 1 (pick 1)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada o chile relleno.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, or Chile Relleno.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-2-pick-2",
+      "categoryId": "combinations",
+      "nameEs": "Combo 2 (elige 2)",
+      "nameEn": "Combo 2 (pick 2)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada, chile relleno o chimichanga.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, Chile Relleno, or Chimichanga.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-3-pick-3",
+      "categoryId": "combinations",
+      "nameEs": "Combo 3 (elige 3)",
+      "nameEn": "Combo 3 (pick 3)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada, chile relleno o chimichanga.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, Chile Relleno, or Chimichanga.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-fajitas",
+      "categoryId": "fajitas",
+      "nameEs": "Fajitas Torito",
+      "nameEn": "Torito Fajitas",
+      "descriptionEs": "Elige uno.",
+      "descriptionEn": "Choice of one.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-combo",
+      "categoryId": "fajitas",
+      "nameEs": "Combo de fajitas",
+      "nameEn": "Fajita Combo",
+      "descriptionEs": "Elige dos.",
+      "descriptionEn": "Choice of two.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-tiros",
+      "categoryId": "fajitas",
+      "nameEs": "Tres tiros",
+      "nameEn": "Tres Tiros",
+      "descriptionEs": "Elige tres.",
+      "descriptionEn": "Choice of three.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cuatro-tiros",
+      "categoryId": "fajitas",
+      "nameEs": "Cuatro tiros",
+      "nameEn": "Cuatro Tiros",
+      "descriptionEs": "Los cuatro están incluidos.",
+      "descriptionEn": "All four are included.",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-fajitas",
+      "categoryId": "fajitas",
+      "nameEs": "Fajitas vegetarianas",
+      "nameEn": "Veggie Fajitas",
+      "descriptionEs": "Pimientos, cebollas, champiñones, zanahorias, brócoli y coliflor.",
+      "descriptionEn": "Peppers, onions, mushrooms, carrots, broccoli, and cauliflower.",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "puerco-adovado",
+      "categoryId": "pork",
+      "nameEs": "Puerco adobado",
+      "nameEn": "Puerco Adovado",
+      "descriptionEs": "Lomo de cerdo marinado en nuestra salsa roja y asado a la perfección. Servido con arroz, frijoles y guacamole.",
+      "descriptionEn": "Pork loin marinated in our salsa roja and grilled to perfection. Served with rice, beans, and guacamole.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-carnitas",
+      "categoryId": "pork",
+      "nameEs": "Carnitas de cerdo",
+      "nameEn": "Pork Carnitas",
+      "descriptionEs": "Cerdo cocido lentamente y braseado en nuestra salsa roja casera para carnitas, servido con arroz, frijoles y guacamole. Un platillo mexicano clásico.",
+      "descriptionEn": "Slow-cooked pork braised in our homemade carnitas salsa roja served with rice, beans, and guacamole. A classic Mexican dish.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-verde",
+      "categoryId": "pork",
+      "nameEs": "Chile verde",
+      "nameEn": "Chile Verde",
+      "descriptionEs": "Cerdo cocido lentamente y braseado en nuestra salsa de tomatillo casera, servido con arroz, frijoles y guacamole.",
+      "descriptionEn": "Slow-cooked pork braised in our homemade salsa tomatillo served with rice, beans, and guacamole.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cochinita-pibil",
+      "categoryId": "pork",
+      "nameEs": "Cochinita pibil",
+      "nameEn": "Cochinita Pibil",
+      "descriptionEs": "Cerdo marinado en achiote, asado lentamente en hojas de plátano, con plátano macho dulce, queso fresco y cebolla morada encurtida.",
+      "descriptionEn": "Achiote marinated pork slow roasted in banana leaves with sweet plantains, queso fresco, and pickled red onions.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cochinita-pibil-burrito",
+      "categoryId": "pork",
+      "nameEs": "Burrito de cochinita pibil",
+      "nameEn": "Cochinita Pibil Burrito",
+      "descriptionEs": "Una tortilla de harina grande rellena de cerdo deshebrado marinado en achiote y asado lentamente, arroz y frijoles refritos, cubierta con salsa mole. Decorada con lechuga, plátano, queso fresco y cebolla morada encurtida.",
+      "descriptionEn": "A large flour tortilla stuffed with slow-roasted achiote marinated pulled pork, rice, and refried beans, topped with mole sauce. Garnished with lettuce, plantains, queso fresco, and pickled red onion.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cochinita-pibil-tacos",
+      "categoryId": "pork",
+      "nameEs": "Tacos de cochinita pibil",
+      "nameEn": "Cochinita Pibil Tacos",
+      "descriptionEs": "Tres tortillas de maíz suaves rellenas de cerdo asado lentamente en achiote, pico de gallo, plátano dulce, queso fresco y cebolla morada encurtida.",
+      "descriptionEn": "Three soft corn tortillas stuffed with slow-roasted achiote pork, pico de gallo, sweet plantains, queso fresco, and pickled red onion.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arroz-con-pollo",
+      "categoryId": "chicken",
+      "nameEs": "Arroz Con Pollo",
+      "nameEn": "Arroz Con Pollo",
+      "descriptionEs": "Pollo salteado y una mezcla de verduras en salsa roja hecha en casa, servido sobre una cama de arroz mexicano y queso. Acompañado con crema agria.",
+      "descriptionEn": "Sautéed chicken and a medley of vegetables in a house-made salsa roja served over a bed of mexican rice and cheese. Accompanied with sour cream.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-a-la-parrilla",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Pollo a La Parrilla",
+      "descriptionEs": "Pollo marinado a la parrilla con mucho sabor. Servido con lechuga, tomate y crema agria.",
+      "descriptionEn": "Savory marinated grilled chicken. Served with lettuce, tomatoes, and sour cream.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-a-la-crema",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la crema",
+      "nameEn": "Pollo a La Crema",
+      "descriptionEs": "Trozos tiernos de pollo servidos en salsa cremosa con champiñones. Servidos con lechuga y tomate.",
+      "descriptionEn": "Tender pieces of chicken served in a creamy sauce with mushrooms. Served with lettuce and tomatoes.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-flautas",
+      "categoryId": "chicken",
+      "nameEs": "Flautas de pollo",
+      "nameEn": "Chicken Flautas",
+      "descriptionEs": "Pollo deshebrado sazonado, enrollado en tortilla de maíz y frito hasta quedar crujiente. Cubierto con salsa roja sabrosa y queso cotija.",
+      "descriptionEn": "Seasoned shredded chicken wrapped in a corn tortilla and deep-fried until crispy. Topped with a savory salsa roja and cotija cheese.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-empanizado",
+      "categoryId": "chicken",
+      "nameEs": "Pollo empanizado",
+      "nameEn": "Pollo Empanizado",
+      "descriptionEs": "Dos pechugas de pollo empanizadas. Decoradas con lechuga y tomate.",
+      "descriptionEn": "Two breaded chicken breasts. Garnished with lettuce and tomatoes.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-abuelos",
+      "categoryId": "chicken",
+      "nameEs": "Dos Abuelos",
+      "nameEn": "Dos Abuelos",
+      "descriptionEs": "Bistec mariposa asado a la llama y una pechuga de pollo empanizada, decorados con lechuga, pico de gallo y aguacate.",
+      "descriptionEn": "Flame-broiled, butterfly steak and a breaded chicken breast, garnished with lettuce, pico de gallo, and avocado.",
+      "price": "$31.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-mole",
+      "categoryId": "chicken",
+      "nameEs": "Pollo mole",
+      "nameEn": "Pollo Mole",
+      "descriptionEs": "Trozos tiernos de pollo bañados en nuestra salsa mole especial* hecha con Tía María. *La salsa mole contiene un toque de crema de cacahuate.",
+      "descriptionEn": "Tender pieces of chicken smothered in our special mole sauce* made with Tía Maria. *Mole sauce contains a hint of peanut butter.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-chipotle",
+      "categoryId": "chicken",
+      "nameEs": "Pollo chipotle",
+      "nameEn": "Pollo Chipotle",
+      "descriptionEs": "Pechuga de pollo tierna en rebanadas marinada en salsa de chipotle con verduras mixtas. Decorada con lechuga y tomate.",
+      "descriptionEn": "Tender sliced chicken breast marinated in a chipotle sauce with mixed vegetables. Garnished with lettuce and tomatoes.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cazuela",
+      "categoryId": "seafood",
+      "nameEs": "Cazuela",
+      "nameEn": "Cazuela",
+      "descriptionEs": "Un platillo de mariscos muy popular hecho con pescado, carne de cangrejo, mejillones y almejas, pulpo y camarones cocinados en una salsa especial. Servido sobre una cama de arroz blanco y aguacate.",
+      "descriptionEn": "A very popular seafood dish made with fish, crab meat, mussels and clams, octopus, and shrimp cooked in a special sauce. Served over a bed of white rice and avocado.",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arroz-con-camarones",
+      "categoryId": "seafood",
+      "nameEs": "Arroz con camarones",
+      "nameEn": "Arroz Con Camarones",
+      "descriptionEs": "Camarones salteados y una mezcla de verduras en salsa roja hecha en casa, servidos sobre una cama de arroz mexicano y queso. Acompañados con rebanadas de aguacate y crema agria.",
+      "descriptionEn": "Sautéed shrimp and a medley of vegetables in a house-made salsa roja served over a bed of Mexican rice and cheese. Accompanied by avocado slices and sour cream.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-special",
+      "categoryId": "seafood",
+      "nameEs": "Especial Torito",
+      "nameEn": "Torito Special",
+      "descriptionEs": "Tilapia a la parrilla con mariscos (cangrejo, pulpo, vieiras, mejillones, almejas, camarones y mantequilla de ajo). Decorada con aguacate y limón.",
+      "descriptionEn": "Grilled tilapia with seafood (crab, octopus, scallops, mussels, clams, shrimp, and garlic butter). Garnished with avocado and lime.",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-a-la-diabla",
+      "categoryId": "seafood",
+      "nameEs": "Camarones a la diabla",
+      "nameEn": "Camarones a La Diabla",
+      "descriptionEs": "Camarones cocinados en salsa roja picante con champiñones, servidos con lechuga, tomate y rebanadas de aguacate.",
+      "descriptionEn": "Shrimp cooked in a spicy salsa roja with mushrooms, served with lettuce, tomato, and avocado slices.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-and-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Bistec y camarones",
+      "nameEn": "Steak and Shrimp",
+      "descriptionEs": "Un surf and turf mexicano. Camarones y bistec a la parrilla. Servido con lechuga y tomate.",
+      "descriptionEn": "A Mexican surf and turf. Grilled shrimp and steak. Served with lettuce and tomato.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-a-la-mexicana",
+      "categoryId": "seafood",
+      "nameEs": "Camarones a la mexicana",
+      "nameEn": "Camarones a La Mexicana",
+      "descriptionEs": "Camarones salteados cocinados en salsa roja suave con cilantro. Servidos con lechuga y rebanadas de aguacate.",
+      "descriptionEn": "Sautéed shrimp cooked in a mild salsa roja with cilantro. Served with lettuce and avocado slices.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-zarandeado",
+      "categoryId": "seafood",
+      "nameEs": "Salmón zarandeado",
+      "nameEn": "Salmon Zarandeado",
+      "descriptionEs": "Filete de salmón sabroso, cubierto y asado en salsa roja adobo picante. Servido con lechuga, pico de gallo y rebanadas de aguacate.",
+      "descriptionEn": "Zesty salmon fillet coated and grilled in tangy adobo red sauce. Served with lettuce, pico de gallo, and avocado slices.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojarra-frita",
+      "categoryId": "seafood",
+      "nameEs": "Mojarra Frita",
+      "nameEn": "Mojarra Frita",
+      "descriptionEs": "Pescado entero a la parrilla cubierto con cítricos, cebolla y tomate. Servido con rebanadas de tomate y aguacate.",
+      "descriptionEn": "An entire grilled fish covered in citrus, onions, and tomato. Served with tomato and avocado slices.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ceviche",
+      "categoryId": "seafood",
+      "nameEs": "Ceviche",
+      "nameEn": "Ceviche",
+      "descriptionEs": "Un platillo de mariscos refrescante hecho con camarón, cebolla, cilantro, tomate y jugo de limón. Servido con tostadas de maíz, tomate y rebanadas de aguacate. El ceviche no incluye los 2 acompañamientos.",
+      "descriptionEn": "A refreshing seafood dish made with shrimp, onions, cilantro, tomato, and lime juice. Served with hard corn tortillas, tomato, and avocado slices. Ceviche does not come with the 2 side dishes.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-de-ajo-seafood",
+      "categoryId": "seafood",
+      "nameEs": "Camarones al ajo (mariscos)",
+      "nameEn": "Camarones De Ajo (Seafood)",
+      "descriptionEs": "Camarones a la parrilla servidos en una salsa de ajo sabrosa, decorados con lechuga y tomate.",
+      "descriptionEn": "Grilled shrimp served in a flavorful garlic sauce, garnished with lettuce and tomato.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-chipotle",
+      "categoryId": "seafood",
+      "nameEs": "Camarones chipotle",
+      "nameEn": "Camarones Chipotle",
+      "descriptionEs": "Camarones salteados en salsa de chipotle casera con pimientos morrones. Decorados con lechuga, tomate y rebanadas de aguacate.",
+      "descriptionEn": "Shrimp sautéed in a homemade chipotle sauce with bell peppers. Garnished with lettuce, tomatoes, and avocado slices.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-cancun",
+      "categoryId": "seafood",
+      "nameEs": "Camarones Cancún",
+      "nameEn": "Camarones Cancún",
+      "descriptionEs": "Camarones tiernos y champiñones preparados de dos formas: la mitad salteada en mantequilla de ajo con especias, y la otra mitad marinada en salsa roja picante. Decorados con lechuga, tomate, limón y aguacate.",
+      "descriptionEn": "Tender shrimp and mushrooms are prepared two ways: half sautéed in garlic butter with spices, and the other half marinated in a spicy red sauce. Garnished with lettuce, tomatoes, lime, and avocado.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huachinango",
+      "categoryId": "seafood",
+      "nameEs": "Huachinango",
+      "nameEn": "Huachinango",
+      "descriptionEs": "Pargo rojo frito con pico de gallo encima. Decorado con lechuga, tomate y rebanadas de aguacate.",
+      "descriptionEn": "Red snapper fried with pico de gallo on top. Garnished with lettuce, tomatoes, and avocado slices.",
+      "price": "$29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-zarandeado",
+      "categoryId": "seafood",
+      "nameEs": "Camarones zarandeados",
+      "nameEn": "Camarones Zarandeado",
+      "descriptionEs": "Camarones jumbo abiertos en mariposa, cubiertos y asados en salsa roja adobo picante, servidos con lechuga, pico de gallo y rebanadas de aguacate.",
+      "descriptionEn": "Butterflied jumbo shrimp coated and grilled in tangy adobo red sauce, served with lettuce, pico de gallo, and avocado slices.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulpo-zarandeado",
+      "categoryId": "seafood",
+      "nameEs": "Pulpo zarandeado",
+      "nameEn": "Pulpo Zarandeado",
+      "descriptionEs": "Trozos de pulpo cubiertos y asados en salsa roja adobo picante. Servidos con lechuga, pico de gallo y rebanadas de aguacate.",
+      "descriptionEn": "Octopus pieces coated and grilled in a tango adobo red sauce. Served with lettuce, pico de gallo, and avocado slices.",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-amigos",
+      "categoryId": "beef-steak",
+      "nameEs": "Tres Amigos",
+      "nameEn": "Tres Amigos",
+      "descriptionEs": "Bistec a la parrilla, pollo a la parrilla, camarones mexicanos con verduras, cebollín, lechuga y tomate. Servido con guacamole.",
+      "descriptionEn": "Grilled steak, grilled chicken, Mexican shrimp with vegetables, green onions, lettuce, and tomatoes. Served with guacamole.",
+      "price": "$33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada",
+      "categoryId": "beef-steak",
+      "nameEs": "Carne asada",
+      "nameEn": "Carne Asada",
+      "descriptionEs": "Bistec marinado a la parrilla acompañado de cebollín frito. Decorado con lechuga, tomate y servido con guacamole.",
+      "descriptionEn": "Marinated grilled steak accompanied by fried green onions. Garnished with lettuce, tomatoes, and served with guacamole.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tampiquena",
+      "categoryId": "beef-steak",
+      "nameEs": "Tampiqueña",
+      "nameEn": "Tampiqueña",
+      "descriptionEs": "Bistec marinado a la parrilla y una enchilada de mole bañada en nuestra salsa mole hecha en casa con Tía María*, acompañada de cebollín y rebanadas de aguacate. *La salsa mole contiene un toque de crema de cacahuate.",
+      "descriptionEn": "Marinated grilled steak and a mole enchilada smothered in our house-made Tia Maria Mole sauce*, accompanied with green onions and avocado slices. *Mole sauce contains a hint of peanut butter.",
+      "price": "$27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-picado",
+      "categoryId": "beef-steak",
+      "nameEs": "Bistec picado",
+      "nameEn": "Steak Picado",
+      "descriptionEs": "Puntas de bistec marinadas servidas en una sabrosa salsa roja casera con pimientos y cebolla.",
+      "descriptionEn": "Marinated steak tips served in a savory red homemade sauce with peppers and onions.",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria-de-borrego",
+      "categoryId": "beef-steak",
+      "nameEs": "Birria de borrego",
+      "nameEn": "Birria De Borrego",
+      "descriptionEs": "Pierna de cordero marinada toda la noche en vino y salsa de chile guajillo, horneada a la perfección. Decorada con lechuga, pico de gallo y aguacate.",
+      "descriptionEn": "Lamb shank marinated overnight in wine and guajillo pepper sauce, baked to perfection. Garnished with lettuce, pico de gallo, and avocado.",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-colorado",
+      "categoryId": "beef-steak",
+      "nameEs": "Chile colorado",
+      "nameEn": "Chile Colorado",
+      "descriptionEs": "Carne de res braseada y sabrosa cocinada en salsa roja con una mezcla de hierbas y especias mexicanas.",
+      "descriptionEn": "Savory braised beef cooked in a salsa roja with a blend of Mexican herbs and spices.",
+      "price": "$23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-molcajete",
+      "categoryId": "beef-steak",
+      "nameEs": "Molcajete Torito",
+      "nameEn": "Torito Molcajete",
+      "descriptionEs": "Bistec, pollo a la parrilla, camarones. Chorizo mexicano y champiñones salteados en salsa roja casera, cubiertos con chiles jalapeños asados y cebollín.",
+      "descriptionEn": "Steak, grilled chicken, shrimp. Mexican chorizo and mushrooms sautéed in house-made red sauce, topped with grilled jalapeño peppers and green onions.",
+      "price": "$50.00/2 People",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-molcajete",
+      "categoryId": "beef-steak",
+      "nameEs": "Molcajete de mariscos",
+      "nameEn": "Seafood Molcajete",
+      "descriptionEs": "Tilapia, camarones, pulpo y vieiras salteados en salsa roja casera. Cubiertos con cilantro y cebolla frescos. Servidos con lechuga, tomate y rebanadas de aguacate aparte.",
+      "descriptionEn": "Tilapia, shrimp, octopus, and scallops sautéed in a house-made red sauce. Topped with fresh cilantro and onions. Served with lettuce, tomatoes, and avocado slices on the side.",
+      "price": "$45.00/2 People",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-fiesta",
+      "categoryId": "vegetarian",
+      "nameEs": "Fiesta vegetariana",
+      "nameEn": "Veggie Fiesta",
+      "descriptionEs": "Una enchilada, un burrito y un chile relleno, todos rellenos de queso y servidos con frijoles negros.",
+      "descriptionEn": "One enchilada, one burrito, and one chile relleno, all filled with cheese and served with black beans.",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-chimichanga",
+      "categoryId": "vegetarian",
+      "nameEs": "Chimichanga vegetariana",
+      "nameEn": "Veggie Chimichanga",
+      "descriptionEs": "Cebolla, pimientos y champiñones envueltos en tortilla de harina y fritos a la perfección. Cubiertos con salsa verde y queso Jack, servidos con arroz y frijoles.",
+      "descriptionEn": "Onions, peppers, and mushrooms are all wrapped in a flour tortilla and fried to perfection. Topped with salsa verde and jack cheese, served with rice and beans.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-green-burrito",
+      "categoryId": "vegetarian",
+      "nameEs": "Burrito verde vegetariano",
+      "nameEn": "Veggie Green Burrito",
+      "descriptionEs": "Cebolla, pimientos, champiñones, arroz y lechuga envueltos en tortilla de harina, cubiertos con pico de gallo, queso ranchero y salsa verde.",
+      "descriptionEn": "Onions, peppers, mushrooms, rice, and lettuce wrapped in a flour tortilla, topped with pico de gallo, ranchero cheese, and salsa verde.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-enchiladas",
+      "categoryId": "vegetarian",
+      "nameEs": "Enchiladas de espinaca",
+      "nameEn": "Spinach Enchiladas",
+      "descriptionEs": "Dos enchiladas rellenas de espinaca salteada, servidas con arroz blanco y frijoles negros.",
+      "descriptionEn": "Two enchiladas filled with sautéed spinach served with white rice and black beans.",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-quesadilla",
+      "categoryId": "vegetarian",
+      "nameEs": "Quesadilla vegetariana",
+      "nameEn": "Veggie Quesadilla",
+      "descriptionEs": "Tortilla de harina a la parrilla con queso Jack derretido, espinaca, pimientos y cebolla. Servida con lechuga, tomate, crema agria y guacamole aparte.",
+      "descriptionEn": "Grilled flour tortilla with melted jack cheese. spinach, peppers, and onions. Served with lettuce, tomato, sour cream, and guacamole on the side.",
+      "price": "Cheese only $14.00 | Regular $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice",
+      "categoryId": "sides",
+      "nameEs": "Arroz",
+      "nameEn": "Rice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beans",
+      "categoryId": "sides",
+      "nameEs": "Frijoles",
+      "nameEn": "Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-and-beans",
+      "categoryId": "sides",
+      "nameEs": "Arroz con frijoles",
+      "nameEn": "Rice and Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guacamole",
+      "categoryId": "sides",
+      "nameEs": "Guacamole",
+      "nameEn": "Guacamole",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sour-cream",
+      "categoryId": "sides",
+      "nameEs": "Crema agria",
+      "nameEn": "Sour Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "deluxe-sour-cream-and-guacamole",
+      "categoryId": "sides",
+      "nameEs": "Deluxe (crema agria y guacamole)",
+      "nameEn": "Deluxe (Sour Cream and Guacamole)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pico-de-gallo",
+      "categoryId": "sides",
+      "nameEs": "Pico De Gallo",
+      "nameEn": "Pico De Gallo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-slices",
+      "categoryId": "sides",
+      "nameEs": "Rebanadas de aguacate",
+      "nameEn": "Avocado Slices",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese",
+      "categoryId": "sides",
+      "nameEs": "Queso",
+      "nameEn": "Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lettuce",
+      "categoryId": "sides",
+      "nameEs": "Lechuga",
+      "nameEn": "Lettuce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomatoes",
+      "categoryId": "sides",
+      "nameEs": "Tomates",
+      "nameEn": "Tomatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortillas",
+      "categoryId": "sides",
+      "nameEs": "Tortillas",
+      "nameEn": "Tortillas",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-a-la-machaca",
+      "categoryId": "huevos",
+      "nameEs": "Huevos a la machaca",
+      "nameEn": "Huevos a La Machaca",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con carne deshebrada sazonada, servido con arroz, frijoles y rebanadas de aguacate.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with seasoned shredded beef, served with rice, beans, and avocado slices.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-con-chorizo",
+      "categoryId": "huevos",
+      "nameEs": "Huevos con chorizo",
+      "nameEn": "Huevos Con Chorizo",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con chorizo mexicano picante, servido con arroz y frijoles.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with spicy Mexican sausage is served with rice and beans.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-rancheros",
+      "categoryId": "huevos",
+      "nameEs": "Huevos Rancheros",
+      "nameEn": "Huevos Rancheros",
+      "descriptionEs": "Huevos fritos bañados en queso ranchero y salsa roja, servidos con arroz y frijoles.",
+      "descriptionEn": "Fried eggs smothered in ranchero cheese and salsa roja served with rice and beans.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-a-la-mexicana",
+      "categoryId": "huevos",
+      "nameEs": "Huevos a la mexicana",
+      "nameEn": "Huevos a La Mexicana",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con cebolla, pimientos y rebanadas frescas de chile jalapeño para un toque extra. Servido con arroz, frijoles y rebanadas frescas de aguacate.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with onions, peppers, and fresh sliced jalapeño for an added kick. Served with rice, beans, and fresh avocado slices.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-torta",
+      "categoryId": "sandwiches",
+      "nameEs": "Torta de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Torta",
+      "descriptionEs": "Pollo a la parrilla sabroso con queso Jack derretido, lechuga, tomate y aguacate servido en pan tostado con papas a la francesa.",
+      "descriptionEn": "Savory grilled chicken with melted Jack cheese, lettuce, tomato, and avocado served on a toasted bun with French fries.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "big-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa grande",
+      "nameEn": "Big Burger",
+      "descriptionEs": "Dos hamburguesas de res cubiertas con queso cheddar, lechuga, tomate y cebolla. Servidas con papas a la francesa.",
+      "descriptionEn": "Two beef patties topped with cheddar cheese, lettuce, tomatoes, and onions. Served with French fries.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torta-union",
+      "categoryId": "sandwiches",
+      "nameEs": "Torta Unión",
+      "nameEn": "Torta Union",
+      "descriptionEs": "Rellena de carne deshebrada y frijoles refritos, cubierta con lechuga, tomate y rebanadas de aguacate, servida en pan tostado con papas a la francesa.",
+      "descriptionEn": "Filled with shredded beef and refried beans, topped with lettuce, tomato, and avocado slices served on a toasted bun with French fries.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-melt",
+      "categoryId": "sandwiches",
+      "nameEs": "Fajita melt",
+      "nameEn": "Fajita Melt",
+      "descriptionEs": "Pollo o bistec marinado a elegir con queso Jack derretido, pimientos y cebolla. Servido en pan tostado con papas a la francesa.",
+      "descriptionEn": "Your choice of marinated chicken or steak with melted Jack cheese, peppers, and onions. Served on a toasted bun with French fries.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dessert-platter",
+      "categoryId": "desserts",
+      "nameEs": "Plato de postres",
+      "nameEn": "Dessert Platter",
+      "descriptionEs": "Una mezcla de nuestros favoritos: churros, sopapillas y helado frito.",
+      "descriptionEn": "A mix of our favorites, churros, sopapillas, and deep-fried ice cream.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownie-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae de brownie",
+      "nameEn": "Brownie Sundae",
+      "descriptionEs": "Brownie tibio de fudge cubierto con helado de vainilla y salsa de chocolate.",
+      "descriptionEn": "A warm fudge brownie topped with vanilla ice cream and chocolate sauce.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito-dessert",
+      "categoryId": "desserts",
+      "nameEs": "Burrito de postre",
+      "nameEn": "Burrito Dessert",
+      "descriptionEs": "Pastel de queso cremoso enrollado en tortilla de harina, ligeramente frito, luego cubierto con salsa de caramelo y crema batida.",
+      "descriptionEn": "A creamy cheesecake rolled in a flour tortilla. lightly fried, then covered with caramel sauce and whipped cream.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sopapillas",
+      "categoryId": "desserts",
+      "nameEs": "Sopapillas",
+      "nameEn": "Sopapillas",
+      "descriptionEs": "Un pan dulce mexicano tibio espolvoreado con azúcar y canela, crema batida con un hilo de salsa de chocolate • Con helado, agregue +$2.00",
+      "descriptionEn": "A warm Mexican pastry dusted with cinnamon sugar, whipped cream with a drizzle of chocolate sauce • With Ice Cream, add +$2.00",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flan",
+      "categoryId": "desserts",
+      "nameEs": "Flan",
+      "nameEn": "Flan",
+      "descriptionEs": "Flan casero hecho con huevos, leche y licor de café. Glaseado con un toque de caramelo. Servido con crema batida.",
+      "descriptionEn": "Homemade caramel custard made with eggs, milk, and coffee liquor. Glazed with a hint of caramel. Served with whipped cream.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churros-rellenos",
+      "categoryId": "desserts",
+      "nameEs": "Churros rellenos",
+      "nameEn": "Churros Rellenos",
+      "descriptionEs": "Un pastelillo crujiente mexicano tradicional cubierto con azúcar y canela, con un hilo de salsa de chocolate.",
+      "descriptionEn": "A traditional Mexican crispy pastry coated with cinnamon sugar, with a drizzle of chocolate sauce.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "deep-fried-ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Helado Frito",
+      "nameEn": "Deep Fried Ice Cream",
+      "descriptionEs": "Helado de vainilla con capa crujiente, cubierto con salsa de chocolate y crema batida.",
+      "descriptionEn": "Vanilla ice cream in a crispy coating topped with chocolate sauce and whipped cream.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches",
+      "categoryId": "desserts",
+      "nameEs": "Tres leches",
+      "nameEn": "Tres Leches",
+      "descriptionEs": "Un delicioso pastel esponjoso empapado en una mezcla de leche condensada, leche evaporada y crema. Cubierto con crema batida y una cereza.",
+      "descriptionEn": "A luscious sponge cake soaked in a mixture of condensed milk, evaporated milk, and cream. Topped with whipped cream and a cherry.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake",
+      "nameEn": "Cheesecake",
+      "descriptionEs": "Pastel de queso con hilo de chocolate, cubierto con crema batida y una cereza.",
+      "descriptionEn": "Cheesecake with a chocolate drizzle, topped with whipped cream and a cherry.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-avocado-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de pollo y aguacate (almuerzo)",
+      "nameEn": "Chicken Avocado Salad (Lunch)",
+      "descriptionEs": "Pollo a la parrilla en rebanadas en un bowl de tacos sobre una cama de lechuga fresca, cubierto con tomate, queso, crema agria y rebanadas de aguacate.",
+      "descriptionEn": "Sliced grilled chicken in a taco bowl over a bed of fresh lettuce, topped with tomatoes, cheese, sour cream and avocado slices.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, tomate, queso ranchero y crutones. A elegir pollo a la parrilla en rebanadas o camarones.",
+      "descriptionEn": "Romaine lettuce, tomatoes, ranchero cheese, and croutons. Choice of sliced grilled chicken or shrimp.",
+      "price": "Chicken $15.00 | Shrimp $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taco-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de tacos (almuerzo)",
+      "nameEn": "Taco Salad (Lunch)",
+      "descriptionEs": "Bowl de tacos con pollo, carne molida, carne deshebrada o cerdo a elegir, sobre una cama de lechuga fresca, cubierto con tomate, queso americano y crema agria.",
+      "descriptionEn": "Taco Bowl with your choice of chicken, ground beef, shredded beef, or pork over a bed of fresh lettuce topped with tomatoes, American cheese, and sour cream.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-salad-lunch",
+      "categoryId": "lunch-salads",
+      "nameEs": "Ensalada de fajita (almuerzo)",
+      "nameEn": "Fajita Salad (Lunch)",
+      "descriptionEs": "A elegir pollo, bistec o camarones estilo fajita, en un bowl de tacos servido sobre una cama de lechuga fresca, cubierto con tomate, pimientos y cebollas marinados.",
+      "descriptionEn": "A choice of fajita-style chicken, steak, or shrimp, in a taco bowl served over a bed of fresh lettuce, topped with tomatoes, marinated peppers, and onions.",
+      "price": "Chicken or Steak $15.00 | Shrimp $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-torta-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Torta de pollo a la parrilla (almuerzo)",
+      "nameEn": "Grilled Chicken Torta (Lunch)",
+      "descriptionEs": "Pollo a la parrilla sabroso con queso Jack derretido, lechuga, tomate y aguacate servido en pan tostado con papas a la francesa.",
+      "descriptionEn": "Savory grilled chicken with melted Jack cheese, lettuce, tomato, and avocado served on a toasted bun with French fries.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torta-union-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Torta Unión (almuerzo)",
+      "nameEn": "Torta Union (Lunch)",
+      "descriptionEs": "Rellena de carne deshebrada y frijoles refritos, cubierta con lechuga, tomate y rebanadas de aguacate, servida en pan tostado con papas a la francesa.",
+      "descriptionEn": "Filled with shredded beef and refried beans, topped with lettuce, tomato, and avocado slices, served on a toasted bun with French fries.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "big-burger-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Big Burger (almuerzo)",
+      "nameEn": "Big Burger (Lunch)",
+      "descriptionEs": "Dos hamburguesas de un cuarto de libra personalizables a tu elección. Servidas con papas a la francesa • Ingredientes adicionales +$0.50 c/u",
+      "descriptionEn": "Two quarter-pound patties customizable with your choice: Served with French Fries • Toppings +$0.50 each",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-melt-lunch",
+      "categoryId": "lunch-sandwiches",
+      "nameEs": "Fajita melt (almuerzo)",
+      "nameEn": "Fajita Melt (Lunch)",
+      "descriptionEs": "Pollo o bistec marinado a elegir con queso Jack derretido, pimientos y cebolla. Servido en pan tostado con papas a la francesa • Con bistec +$2.00",
+      "descriptionEn": "Your choice of marinated chicken or steak with melted Jack cheese, peppers, and onions. Served on a toasted bun with French fries • With Steak +$2.00",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "enchiladas-tapatias",
+      "categoryId": "lunch-enchiladas",
+      "nameEs": "Enchiladas tapatías",
+      "nameEn": "Enchiladas Tapatias",
+      "descriptionEs": "Tres enchiladas: (1) de pollo, (1) de queso, (1) de carne deshebrada, servidas en tortilla de maíz, cada una envuelta con su propia salsa especial.",
+      "descriptionEn": "Three enchiladas, (1) chicken, (1) cheese. (1) shredded beef, served in a corn tortilla, each wrapped with its own signature sauce.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-enchiladas",
+      "categoryId": "lunch-enchiladas",
+      "nameEs": "Dos enchiladas",
+      "nameEn": "Dos Enchiladas",
+      "descriptionEs": "Dos enchiladas a elegir con pollo, carne molida, carne deshebrada o cerdo.",
+      "descriptionEn": "Two enchiladas with your choice of chicken, ground beef, shredded beef, or pork.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-enchiladas-lunch",
+      "categoryId": "lunch-enchiladas",
+      "nameEs": "Enchiladas de espinaca (almuerzo)",
+      "nameEn": "Spinach Enchiladas (Lunch)",
+      "descriptionEs": "Dos enchiladas rellenas de espinaca salteada servidas con arroz blanco y frijoles negros. Cubiertas con salsa de tomatillo, queso derretido y crema agria aparte.",
+      "descriptionEn": "Two enchiladas filled with sautéed spinach served with white rice and black beans. Topped with tomatillo sauce, melted cheese, and sour cream on the side.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-1-pick-1-lunch",
+      "categoryId": "lunch-combinations",
+      "nameEs": "Combo 1 (elige 1) (almuerzo)",
+      "nameEn": "Combo 1 (pick 1) (Lunch)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada o chile relleno.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, or Chile Relleno.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-2-pick-2-lunch",
+      "categoryId": "lunch-combinations",
+      "nameEs": "Combo 2 (elige 2) (almuerzo)",
+      "nameEn": "Combo 2 (pick 2) (Lunch)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada, chile relleno o chimichanga.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, Chile Relleno, or Chimichanga.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combo-3-pick-3-lunch",
+      "categoryId": "lunch-combinations",
+      "nameEs": "Combo 3 (elige 3) (almuerzo)",
+      "nameEn": "Combo 3 (pick 3) (Lunch)",
+      "descriptionEs": "Taco, tamal, enchilada, burrito, tostada, chile relleno o chimichanga.",
+      "descriptionEn": "Taco, Tamale, Enchilada, Burrito, Tostada, Chile Relleno, or Chimichanga.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-quesadilla-lunch",
+      "categoryId": "lunch-quesadillas",
+      "nameEs": "Quesadilla a la parrilla (almuerzo)",
+      "nameEn": "Grilled Quesadilla (Lunch)",
+      "descriptionEs": "Tortilla de harina a la parrilla rellena de una mezcla de queso cheddar y pollo o bistec asado a la parrilla a elegir.",
+      "descriptionEn": "Grilled flour tortilla, stuffed with a blend of cheddar cheese and your choice of char-broiled chicken or steak.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fajita-quesadilla-lunch",
+      "categoryId": "lunch-quesadillas",
+      "nameEs": "Quesadilla de fajita (almuerzo)",
+      "nameEn": "Fajita Quesadilla (Lunch)",
+      "descriptionEs": "Tortilla de harina a la parrilla rellena de una mezcla de queso cheddar y bistec o pollo estilo fajita a elegir, pimientos y cebolla.",
+      "descriptionEn": "Grilled flour tortilla, stuffed with a blend of cheddar cheese and your choice of fajita steak or chicken, peppers, and onions.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mazatlan-quesadilla",
+      "categoryId": "lunch-quesadillas",
+      "nameEs": "Quesadilla Mazatlán",
+      "nameEn": "Mazatlán Quesadilla",
+      "descriptionEs": "Camarones salteados con ajo, pimientos y cebolla, servidos en tortilla de harina con queso, decorados con lechuga, tomate, guacamole y crema agria.",
+      "descriptionEn": "Sautéed shrimp with garlic, peppers, and onions, served in a flour tortilla with cheese. garnished with lettuce, tomatoes, guacamole, and sour cream.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-quesadilla-lunch",
+      "categoryId": "lunch-quesadillas",
+      "nameEs": "Quesadilla Baja (almuerzo)",
+      "nameEn": "Baja Quesadilla (Lunch)",
+      "descriptionEs": "Nuestra quesadilla de la casa con una mezcla de queso cheddar y pollo deshebrado, carne molida o chorizo mexicano a elegir.",
+      "descriptionEn": "Our house quesadilla with a blend of cheddar cheese and your choice of shredded chicken, ground beef, or Mexican chorizo.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesa-birria-lunch",
+      "categoryId": "lunch-quesadillas",
+      "nameEs": "Quesa-birria (almuerzo)",
+      "nameEn": "Quesa - Birria (Lunch)",
+      "descriptionEs": "La quesa-birria es tradicionalmente un guiso mexicano de res adictivo, ligeramente picante y sabroso. La carne de res cocida lentamente queda tan tierna que se deshace, y está llena de un sabor jugoso y rico. Rellena de queso Jack en una tortilla de harina grande, se baña en el caldo y se fríe. Servida con consomé de birria, limón, cebolla asada y cilantro.",
+      "descriptionEn": "Quesa-Birria is traditionally an addictive, slightly spicy, savory Mexican beef stew. The slow-cooked beef is fall-apart tender and loaded with a juicy, rich flavor. Stuffed with jack cheese into a large flour tortilla, dipped in the stew, and fried up. Served with consommé de birria, lime, frilled onions, and cilantro.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-burrito-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Burrito Torito (almuerzo)",
+      "nameEn": "Torito Burrito (Lunch)",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo, con arroz y frijoles refritos envueltos juntos en una tortilla de harina grande. Cubierto con nuestra sabrosa salsa roja, queso rallado, lechuga, tomate, guacamole y crema agria.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork with rice and refried beans wrapped together in a large flour tortilla. Topped with our savory salsa roja, shredded cheese, lettuce, tomatoes, guacamole, and sour cream.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oceano-burrito-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Burrito Océano (almuerzo)",
+      "nameEn": "Oceano Burrito (Lunch)",
+      "descriptionEs": "Mezcla de mariscos de carne de cangrejo, vieiras, camarones y pescado blanco envuelta en tortilla de harina, cubierta con nuestra salsa de tomatillo y queso Jack derretido. Servida con frijoles refritos, arroz, crema agria y rebanadas de aguacate.",
+      "descriptionEn": "A seafood medley of crab meat, scallops, shrimp, and white fish wrapped in a flour tortilla, topped with our tomatillo sauce and melted jack cheese. Served with refried beans, rice, sour cream, and avocado slices.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "texana-chimichanga",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Chimichanga texana",
+      "nameEn": "Texana Chimichanga",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo envueltos en tortilla de harina y fritos a la perfección. Cubiertos con queso derretido y salsa roja. Servidos con lechuga, tomate, crema agria, frijoles refritos y arroz.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork wrapped in a flour tortilla and fried to perfection. Topped with melted cheese and salsa roja. Served with lettuce, tomatoes, sour cream, refried beans and rice.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-chimichanga-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Chimichanga Torito (almuerzo)",
+      "nameEn": "Torito Chimichanga (Lunch)",
+      "descriptionEs": "A elegir pollo, carne molida, carne deshebrada o cerdo envueltos en tortilla de harina y fritos a la perfección. Cubiertos con lechuga, tomate, crema agria y guacamole. Servidos con arroz y frijoles.",
+      "descriptionEn": "Your choice of chicken, ground beef, shredded beef, or pork wrapped in a flour tortilla and fried to perfection. Topped with lettuce and tomatoes. sour cream and guacamole. Served with rice and beans.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parrilla-burrito-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Burrito parrilla de pollo (almuerzo)",
+      "nameEn": "Chicken Parrilla Burrito (Lunch)",
+      "descriptionEs": "Pollo a la parrilla, frijoles negros, arroz blanco y verduras mixtas envueltos en tortilla de harina. Cubiertos con nuestra salsa verde, pico de gallo, queso y crema agria.",
+      "descriptionEn": "Grilled chicken, black beans, white rice, and mixed vegetables wrapped in a flour tortilla. Topped with our salsa verde, pico de gallo, cheese, and sour cream.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-green-burrito-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Burrito verde vegetariano (almuerzo)",
+      "nameEn": "Veggie Green Burrito (Lunch)",
+      "descriptionEs": "Cebolla, pimientos, champiñones, arroz y lechuga envueltos en tortilla de harina, cubiertos con pico de gallo, queso ranchero y salsa verde.",
+      "descriptionEn": "Onions, peppers, mushrooms, rice, and lettuce wrapped in a flour tortilla. topped with pico de gallo, ranchero cheese, and salsa verde.",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pacifico-chimichanga-lunch",
+      "categoryId": "lunch-burritos-and-chimichangas",
+      "nameEs": "Chimichanga Pacífico (almuerzo)",
+      "nameEn": "Pacifico Chimichanga (Lunch)",
+      "descriptionEs": "Mezcla de mariscos de carne de cangrejo, vieiras, camarones y pescado blanco envuelta en tortilla de harina y frita a la perfección, cubierta con nuestra salsa de tomatillo y queso Jack derretido. Servida con frijoles refritos, arroz, crema agria y rebanadas de aguacate.",
+      "descriptionEn": "A seafood medley of crab meat, scallops, shrimp, and white fish wrapped in a flour tortilla and fried to perfection, topped with our tomatillo sauce and melted Jack cheese. Served with refried beans, rice, sour cream, and avocado slices.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-de-ajo-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Camarones al ajo (almuerzo)",
+      "nameEn": "Camarones De Ajo (Lunch)",
+      "descriptionEs": "Camarones a la parrilla y champiñones servidos en una salsa de ajo sabrosa, con una ensalada pequeña y aguacate. Servidos con arroz y frijoles.",
+      "descriptionEn": "Grilled shrimp and mushrooms served in a flavorful garlic sauce with a side salad and avocado. Served with rice and beans.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arroz-con-camarones-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Arroz con camarones (almuerzo)",
+      "nameEn": "Arroz Con Camarones (Lunch)",
+      "descriptionEs": "Camarones a la parrilla y una mezcla de verduras en salsa roja hecha en casa, servidos sobre una cama de arroz mexicano con rebanadas de aguacate y crema agria.",
+      "descriptionEn": "Grilled shrimp and a medley of vegetables in a house-made salsa roja served over a bed of Mexican rice with avocado slices and sour cream.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-picado-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Bistec picado (almuerzo)",
+      "nameEn": "Steak Picado (Lunch)",
+      "descriptionEs": "Puntas de bistec marinadas servidas en una sabrosa salsa roja casera con pimientos y cebolla, acompañadas con arroz y frijoles.",
+      "descriptionEn": "Marinated steak tips served in a savory red homemade sauce with peppers and onions, and accompanied by rice and beans.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-verde-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Chile verde (almuerzo)",
+      "nameEn": "Chile Verde (Lunch)",
+      "descriptionEs": "Cerdo cocido lentamente y braseado en nuestra salsa de tomatillo casera, servido con arroz, frijoles y guacamole.",
+      "descriptionEn": "Slow-cooked pork braised in our homemade salsa tomatillo served with rice, beans, and guacamole.",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-a-la-crema-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Pollo a la crema (almuerzo)",
+      "nameEn": "Pollo a La Crema (Lunch)",
+      "descriptionEs": "Trozos tiernos de pollo servidos en salsa cremosa con champiñones. Servidos con arroz y frijoles.",
+      "descriptionEn": "Tender pieces of chicken served in a creamy sauce with mushrooms. Served with rice and beans.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ceviche-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Ceviche (almuerzo)",
+      "nameEn": "Ceviche (Lunch)",
+      "descriptionEs": "Un platillo de mariscos refrescante hecho con camarón, cebolla, cilantro, tomate y jugo de limón. Servido con tostadas de maíz, tomate y rebanadas de aguacate.",
+      "descriptionEn": "A refreshing seafood dish made with shrimp, onions, cilantro, tomato, and lime juice. Served with hard corn tortillas, tomato, and avocado slices.",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chile-colorado-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Chile colorado (almuerzo)",
+      "nameEn": "Chile Colorado (Lunch)",
+      "descriptionEs": "Carne de res braseada y sabrosa cocinada en salsa roja con una mezcla de hierbas y especias mexicanas, acompañada con arroz y frijoles.",
+      "descriptionEn": "Savory braised beef cooked in a salsa roja with a blend of Mexican herbs and spices and accompanied by rice and beans.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pollo-mole-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Pollo mole (almuerzo)",
+      "nameEn": "Pollo Mole (Lunch)",
+      "descriptionEs": "Trozos tiernos de pollo bañados en nuestra salsa mole especial* hecha con Tía María, servidos con arroz y frijoles. *La salsa mole contiene un toque de crema de cacahuate.",
+      "descriptionEn": "Tender pieces of chicken smothered in our special mole sauce* made with Tia Maria, and served with rice and beans. *Mole sauce contains a hint of peanut butter.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arroz-con-pollo-lunch",
+      "categoryId": "lunch-house-specials",
+      "nameEs": "Arroz con pollo (almuerzo)",
+      "nameEn": "Arroz Con Pollo (Lunch)",
+      "descriptionEs": "Pollo salteado con una mezcla de verduras en salsa roja hecha en casa, servido sobre una cama de arroz mexicano y queso derretido. Servido con rebanadas de aguacate y crema agria.",
+      "descriptionEn": "Chicken sautéed along with a medley of vegetables in a house-made salsa roja served over a bed of Mexican rice and melted cheese. Served with avocado slices and sour cream.",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-con-chorizo-lunch",
+      "categoryId": "lunch-huevos",
+      "nameEs": "Huevos con chorizo (almuerzo)",
+      "nameEn": "Huevos Con Chorizo (Lunch)",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con chorizo mexicano picante, servido con arroz y frijoles.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with spicy Mexican sausage is served with rice and beans.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-rancheros-lunch",
+      "categoryId": "lunch-huevos",
+      "nameEs": "Huevos rancheros (almuerzo)",
+      "nameEn": "Huevos Rancheros (Lunch)",
+      "descriptionEs": "Huevos fritos bañados en queso ranchero y salsa roja, servidos con arroz y frijoles.",
+      "descriptionEn": "Fried eggs smothered in ranchero cheese and salsa roja served with rice and beans.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-a-la-mexicana-lunch",
+      "categoryId": "lunch-huevos",
+      "nameEs": "Huevos a la mexicana (almuerzo)",
+      "nameEn": "Huevos a La Mexicana (Lunch)",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con cebolla, pimientos y rebanadas frescas de chile jalapeño para un toque extra. Servido con arroz, frijoles y rebanadas frescas de aguacate.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with onions, peppers, and fresh sliced jalapeño for an added kick. Served with rice, beans, and fresh avocado slices.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-a-la-machaca-lunch",
+      "categoryId": "lunch-huevos",
+      "nameEs": "Huevos a la machaca (almuerzo)",
+      "nameEn": "Huevos a La Machaca (Lunch)",
+      "descriptionEs": "Un desayuno mexicano tradicional de huevos revueltos con carne deshebrada sazonada, servido con arroz, frijoles y rebanadas de aguacate.",
+      "descriptionEn": "A traditional Mexican breakfast of scrambled eggs with seasoned shredded beef, served with rice, beans, and avocado slices.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "deluxe-add-sour-cream-and-guacamole",
+      "categoryId": "add-ons",
+      "nameEs": "Deluxe: agregar crema agria y guacamole",
+      "nameEn": "Deluxe- Add Sour Cream and Guacamole",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "super-deluxe-add-sour-cream-guacamole-lettuce-tomatoes-and-onions",
+      "categoryId": "add-ons",
+      "nameEs": "Super Deluxe: agregar crema agria, guacamole, lechuga, tomates y cebolla",
+      "nameEn": "Super Deluxe- Add Sour Cream, Guacamole, Lettuce, Tomatoes, and Onions",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona",
+      "categoryId": "imported-beers",
+      "nameEs": "Corona",
+      "nameEn": "Corona",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona-light",
+      "categoryId": "imported-beers",
+      "nameEs": "Corona Light",
+      "nameEn": "Corona Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-equis-amber",
+      "categoryId": "imported-beers",
+      "nameEs": "Dos Equis Amber",
+      "nameEn": "Dos Equis Amber",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-equis-lager",
+      "categoryId": "imported-beers",
+      "nameEs": "Dos Equis Lager",
+      "nameEn": "Dos Equis Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tecate",
+      "categoryId": "imported-beers",
+      "nameEs": "Tecate",
+      "nameEn": "Tecate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pacifico",
+      "categoryId": "imported-beers",
+      "nameEs": "Pacífico",
+      "nameEn": "Pacífico",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sol",
+      "categoryId": "imported-beers",
+      "nameEs": "Sol",
+      "nameEn": "Sol",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo-especial",
+      "categoryId": "imported-beers",
+      "nameEs": "Modelo Especial",
+      "nameEn": "Modelo Especial",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo",
+      "categoryId": "imported-beers",
+      "nameEs": "Modelo",
+      "nameEn": "Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "negra",
+      "categoryId": "imported-beers",
+      "nameEs": "Negra",
+      "nameEn": "Negra",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "victoria",
+      "categoryId": "imported-beers",
+      "nameEs": "Victoria",
+      "nameEn": "Victoria",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pacifico-draft-beers",
+      "categoryId": "draft-beers",
+      "nameEs": "Pacífico (cerveza de barril)",
+      "nameEn": "Pacifico (Draft Beers)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "negra-modelo",
+      "categoryId": "draft-beers",
+      "nameEs": "Negra Modelo",
+      "nameEn": "Negra Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo-especial-draft-beers",
+      "categoryId": "draft-beers",
+      "nameEs": "Modelo Especial (cerveza de barril)",
+      "nameEn": "Modelo Especial (Draft Beers)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-xx-amber",
+      "categoryId": "draft-beers",
+      "nameEs": "Dos XX Amber",
+      "nameEn": "Dos XX Amber",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dos-xx-lager",
+      "categoryId": "draft-beers",
+      "nameEs": "Dos XX Lager",
+      "nameEn": "Dos XX Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "draft-beers",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "budweiser",
+      "categoryId": "domestic-beers",
+      "nameEs": "Budweiser",
+      "nameEn": "Budweiser",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light-domestic-beers",
+      "categoryId": "domestic-beers",
+      "nameEs": "Bud Light (cervezas nacionales)",
+      "nameEn": "Bud Light (Domestic Beers)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coors-light",
+      "categoryId": "domestic-beers",
+      "nameEs": "Coors Light",
+      "nameEn": "Coors Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "domestic-beers",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "samuel-adams",
+      "categoryId": "domestic-beers",
+      "nameEs": "Samuel Adams",
+      "nameEn": "Samuel Adams",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "o-doul-s",
+      "categoryId": "domestic-beers",
+      "nameEs": "O'Doul's",
+      "nameEn": "O'Doul's",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-moon",
+      "categoryId": "domestic-beers",
+      "nameEs": "Blue Moon",
+      "nameEn": "Blue Moon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "merlot",
+      "categoryId": "wines",
+      "nameEs": "Merlot",
+      "nameEn": "Merlot",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet",
+      "categoryId": "wines",
+      "nameEs": "Cabernet",
+      "nameEn": "Cabernet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir",
+      "categoryId": "wines",
+      "nameEs": "Pinot Noir",
+      "nameEn": "Pinot Noir",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio",
+      "categoryId": "wines",
+      "nameEs": "Pinot grigio",
+      "nameEn": "Pinot Grigio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay",
+      "categoryId": "wines",
+      "nameEs": "Chardonnay",
+      "nameEn": "Chardonnay",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-zinfandel",
+      "categoryId": "wines",
+      "nameEs": "White zinfandel",
+      "nameEn": "White Zinfandel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "categoryId": "wines",
+      "nameEs": "Sauvignon Blanc",
+      "nameEn": "Sauvignon Blanc",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "riesling-moscato",
+      "categoryId": "wines",
+      "nameEs": "Riesling Moscato",
+      "nameEn": "Riesling Moscato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malibu-sunset",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Malibu Sunset",
+      "nameEn": "Malibu Sunset",
+      "descriptionEs": "Malibu de coco, jugo de piña y fresas machacadas.",
+      "descriptionEn": "Malibu coconut, pineapple juice and muddled strawberries.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chambord-special",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Especial Chambord",
+      "nameEn": "Chambord Special",
+      "descriptionEs": "Una mezcla de ron de coco, jugo de piña y un chorrito de Chambord.",
+      "descriptionEn": "A mixture of coconut rum, pineapple juice and a splash of Chambord.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-mai-tai",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Mai Tai mexicano",
+      "nameEn": "Mexican Mai Tai",
+      "descriptionEs": "Bacardi Silver, Disaronno, jugo de naranja y de piña. Cubierto con ron oscuro Myers y granadina.",
+      "descriptionEn": "Bacardi Silver, Disaronno, orange and pineapple juice. Topped with Myers Dark Rum and grenadine.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mangoneada",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Mangoneada",
+      "nameEn": "Mangoneada",
+      "descriptionEs": "Néctar de mango, tequila y limón fresco. Servida congelada.",
+      "descriptionEn": "Mango nectar, tequila and fresh lime. Served frozen.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sex-en-la-playa",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Sexo en la playa",
+      "nameEn": "Sex en La Playa",
+      "descriptionEs": "Nuestra mezcla de jugos de la casa con vodka y licor de durazno.",
+      "descriptionEn": "Our house blend of juices with vodka and peach schnapps.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-michelada",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Michelada Torito",
       "nameEn": "Torito Michelada",
-      "descriptionEs": "Mezcla mexicana estilo Bloody Mary con su cerveza preferida, borde picante con camarón, pepino y lima fresca.",
-      "descriptionEn": "Mexican Bloody Mary mix with your choice of beer, topped with a spicy rim, shrimp, cucumber, and lime.",
-      "price": "$11.95",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Cerveza",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten"
-      ],
+      "descriptionEs": "Mezcla mexicana de Bloody Mary con cerveza a elegir. Con borde picante, camarón, pepino y limón.",
+      "descriptionEn": "Mexican Bloody Mary mix with your choice of beer. Topped with a spicy rim with shrimp, cucumber and lime.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangria",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "descriptionEs": "Vino tinto, vino blanco y una mezcla de licores con jugo de piña y manzana.",
+      "descriptionEn": "Red wine, white wine and a mix of liquors with pineapple and apple juice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bahama-mama",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Bahama Mama",
+      "nameEn": "Bahama Mama",
+      "descriptionEs": "Ron blanco, dorado y oscuro, jugo de piña, jugo de naranja y jarabe de granadina.",
+      "descriptionEn": "Silver, gold and dark rum, pineapple juice, orange juice and grenadine syrup.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tequila-sunrise",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Tequila Sunrise",
+      "nameEn": "Tequila Sunrise",
+      "descriptionEs": "Tequila, jugo de naranja y una capa de jarabe de granadina.",
+      "descriptionEn": "Tequila, orange juice and a floater of grenadine syrup.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-lemonade",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Limonada de mora azul",
+      "nameEn": "Blueberry Lemonade",
+      "descriptionEs": "Malibu de coco, jugo de piña y fresas machacadas.",
+      "descriptionEn": "Malibu coconut, pineapple juice, and muddled strawberries.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Mojito",
+      "nameEn": "Mojito",
+      "descriptionEs": "Triple sec, limón fresco, ron con un chorrito de club soda y Sprite. Sabores disponibles.",
+      "descriptionEn": "Triple sec, fresh lime, rum with a splash of club soda and Sprite. Flavors available.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "passion-punch",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Ponche de maracuyá",
+      "nameEn": "Passion Punch",
+      "descriptionEs": "Jugo de maracuyá agitado con ron de coco Malibu, vodka y licor de durazno.",
+      "descriptionEn": "Passion fruit juice shaken with Malibu Coconut Rum, vodka, and peach schnapps.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paloma",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Paloma",
+      "nameEn": "Paloma",
+      "descriptionEs": "Tequila y refresco de toronja.",
+      "descriptionEn": "Tequila and grapefruit soda.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropical-breeze",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Brisa tropical",
+      "nameEn": "Tropical Breeze",
+      "descriptionEs": "Jugo de piña, ron Malibu y un chorrito de curazao azul.",
+      "descriptionEn": "Pineapple juice, Malibu Rum and a splash of blue curaçao.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pina-colada",
+      "categoryId": "specialty-drinks",
+      "nameEs": "Piña colada",
+      "nameEn": "Pina Colada",
+      "descriptionEs": "Ron, coco y jugo de piña.",
+      "descriptionEn": "Rum, coconut, and pineapple juice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ultimate-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Ultimate",
+      "nameEn": "Ultimate Margarita",
+      "descriptionEs": "Limón fresco y triple sec con el tequila premium a elegir, agitada a mano.",
+      "descriptionEn": "Fresh lime and triple sec with your choice of one of our top-shelf tequilas, hand shaken.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torito-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Torito",
+      "nameEn": "Torito Margarita",
+      "descriptionEs": "Limón fresco, Cointreau, tequila Cuervo 1800, agitada a mano con una capa de licor de durazno.",
+      "descriptionEn": "Fresh lime, Cointreau, Cuervo 1800 tequila, hand shaken with a floater of peach schnapps.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cadillac-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Cadillac",
+      "nameEn": "Cadillac Margarita",
+      "descriptionEs": "Mezcla de agridulce, triple sec, tequila dorado y una capa de Grand Marnier.",
+      "descriptionEn": "Sweet and sour mix, triple sec, gold tequila, and a floater of Grand Marnier.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flavored-margaritas",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margaritas de sabores",
+      "nameEn": "Flavored Margaritas",
+      "descriptionEs": "Nuestra mezcla de la casa con un sabor a elegir: fresa, zarzamora, arándano, frambuesa, kiwi, durazno, mango o plátano.",
+      "descriptionEn": "Our house mix with a choice of 1 of our flavors: Strawberry, Blackberry, Blueberry, Raspberry, Kiwi, Peach, Mango, or Banana.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-moonlight",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Blue Moonlight",
+      "nameEn": "Blue Moonlight",
+      "descriptionEs": "Mezcla de agridulce, triple sec, tequila dorado y una capa de curazao azul.",
+      "descriptionEn": "Sweet and sour mix, triple sec, gold tequila, and a floater of blue curaçao.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "presidente-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Presidente",
+      "nameEn": "Presidente Margarita",
+      "descriptionEs": "Limón fresco, Cointreau, tequila Cuervo 1800, agitada a mano con una capa de brandy Presidente.",
+      "descriptionEn": "Fresh lime, Cointreau, Cuervo 1800 tequila, hand shaken with a floater of Presidente brandy.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita de la casa",
+      "nameEn": "House Margarita",
+      "descriptionEs": "Mezcla de agridulce, triple sec y tequila dorado.",
+      "descriptionEn": "Sweet and sour mix, triple sec, and gold tequila.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rosita-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Rosita",
+      "nameEn": "Rosita Margarita",
+      "descriptionEs": "Mezcla de agridulce, triple sec, tequila dorado y una capa de jugo de arándano.",
+      "descriptionEn": "Sweet and sour mix, triple sec, gold tequila, and a floater of cranberry juice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-jack-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Black Jack",
+      "nameEn": "Black Jack Margarita",
+      "descriptionEs": "Mezcla de agridulce, triple sec, tequila dorado y una capa de licor Chambord.",
+      "descriptionEn": "Sweet and sour mix, triple sec, gold tequila, and a floater of Chambord liquor.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grand-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Grand",
+      "nameEn": "Grand Margarita",
+      "descriptionEs": "Limón fresco y triple sec con el tequila premium a elegir, agitada a mano. Cubierta con un shot de Grand Marnier.",
+      "descriptionEn": "Fresh lime and triple sec with your choice of one of our top-shelf tequilas, hand shaken. Topped with a Grand Marnier shot.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "berrita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Berrita",
+      "nameEn": "Berrita",
+      "descriptionEs": "Nuestra margarita de la casa con una Coronita.",
+      "descriptionEn": "Our house Margarita with a Coronita.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sangriarita-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Sangriarita",
+      "nameEn": "Sangriarita Margarita",
+      "descriptionEs": "Nuestra mezcla de la casa combina margarita con nuestra sangría de la casa.",
+      "descriptionEn": "Our house mixes margarita with our house sangria.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tropirita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Tropirita",
+      "nameEn": "Tropirita",
+      "descriptionEs": "Mezcla agria, triple sec y tequila mezclados con jugo de piña y granadina. Terminada con una Coronita.",
+      "descriptionEn": "Sour mix, triple sec, and tequila mixed with pineapple juice and grenadine. Topped off with a Coronita.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapeno-margarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita de jalapeño",
+      "nameEn": "Jalapeno Margarita",
+      "descriptionEs": "Rebanadas de chile jalapeño con nuestra margarita de la casa.",
+      "descriptionEn": "Slices of jalapeños with our house margarita.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixberry-maragarita",
+      "categoryId": "margaritas-cocktails",
+      "nameEs": "Margarita Mixberry",
+      "nameEn": "Mixberry Maragarita",
+      "descriptionEs": "Bayas mixtas con nuestra margarita de la casa.",
+      "descriptionEn": "Mixed berries with our house mix margarita.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1800-silver",
+      "categoryId": "silver-tequillas",
+      "nameEs": "1800 Silver",
+      "nameEn": "1800 Silver",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avion",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Avion",
+      "nameEn": "Avion",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabo-wabo",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Cabo Wabo",
+      "nameEn": "Cabo Wabo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casa-amigos",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Casa Amigos",
+      "nameEn": "Casa Amigos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "el-jimador",
+      "categoryId": "silver-tequillas",
+      "nameEs": "El Jimador",
+      "nameEn": "El Jimador",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milagro",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Milagro",
+      "nameEn": "Milagro",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patron",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Patron",
+      "nameEn": "Patron",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espolon",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Espolon",
+      "nameEn": "Espolon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herradura",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Herradura",
+      "nameEn": "Herradura",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casa-noble",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Casa Noble",
+      "nameEn": "Casa Noble",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "centenario",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Centenario",
+      "nameEn": "Centenario",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corralejo",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Corralejo",
+      "nameEn": "Corralejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-julio",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Don Julio",
+      "nameEn": "Don Julio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauza-hornitos",
+      "categoryId": "silver-tequillas",
+      "nameEs": "Sauza Hornitos",
+      "nameEn": "Sauza Hornitos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1800",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "1800",
+      "nameEn": "1800",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avion-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Avion (tequila reposado)",
+      "nameEn": "Avion (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabo-wabo-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Cabo Wabo (tequila reposado)",
+      "nameEn": "Cabo Wabo (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casa-amigos-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Casa Amigos (tequila reposado)",
+      "nameEn": "Casa Amigos (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pueblo-viejo",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Pueblo Viejo",
+      "nameEn": "Pueblo Viejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milagro-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Milagro (tequila reposado)",
+      "nameEn": "Milagro (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patron-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Patrón (tequila reposado)",
+      "nameEn": "Patron (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-generaciones",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Tres Generaciones",
+      "nameEn": "Tres Generaciones",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herradura-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Herradura (tequila reposado)",
+      "nameEn": "Herradura (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cazadores",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Cazadores",
+      "nameEn": "Cazadores",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "centenario-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Centenario (tequila reposado)",
+      "nameEn": "Centenario (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corralejo-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Corralejo (tequila reposado)",
+      "nameEn": "Corralejo (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-julio-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Don Julio (tequila reposado)",
+      "nameEn": "Don Julio (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espolon-reposado-tequillas",
+      "categoryId": "reposado-tequillas",
+      "nameEs": "Espolón (tequila reposado)",
+      "nameEn": "Espolon (Reposado Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1800-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "1800 (tequila añejo)",
+      "nameEn": "1800 (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avion-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Avion (tequila añejo)",
+      "nameEn": "Avion (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabo-wabo-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Cabo Wabo (tequila añejo)",
+      "nameEn": "Cabo Wabo (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casa-amigos-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Casa Amigos (tequila añejo)",
+      "nameEn": "Casa Amigos (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "el-jimador-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "El Jimador (tequila añejo)",
+      "nameEn": "El Jimador (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milagro-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Milagro (tequila añejo)",
+      "nameEn": "Milagro (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-generaciones-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Tres Generaciones (tequila añejo)",
+      "nameEn": "Tres Generaciones (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patron-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Patrón (tequila añejo)",
+      "nameEn": "Patron (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herradura-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Herradura (tequila añejo)",
+      "nameEn": "Herradura (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "centenario-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Centenario (tequila añejo)",
+      "nameEn": "Centenario (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-julio-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Don Julio (tequila añejo)",
+      "nameEn": "Don Julio (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cazadores-anejo-tequillas",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Cazadores (tequila añejo)",
+      "nameEn": "Cazadores (Anejo Tequillas)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-eduardo",
+      "categoryId": "anejo-tequillas",
+      "nameEs": "Don Eduardo",
+      "nameEn": "Don Eduardo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-drinks",
+      "categoryId": "beverages",
+      "nameEs": "Refrescos",
+      "nameEn": "Soft Drinks",
+      "descriptionEs": "Coca-Cola, Diet Coke, Sprite, Ginger Ale, Fanta Naranja, Barq's Root Beer, limonada Minute Maid.",
+      "descriptionEn": "Coca-Cola, Diet Coke, Sprite, Ginger Ale, Fanta Orange, Barq's Root Beer, Minute Maid Lemonade.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "other-drinks",
+      "categoryId": "beverages",
+      "nameEs": "Otras bebidas",
+      "nameEn": "Other Drinks",
+      "descriptionEs": "Leche, leche con chocolate, té helado, Shirley Temple, Roy Rogers, jugo de naranja, jugo de piña, jugo de manzana.",
+      "descriptionEn": "Milk, Chocolate Milk, Iced Tea, Shirley Temple, Roy Rogers, Orange Juice, Pineapple Juice, Apple Juice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "agua-fresca",
+      "categoryId": "beverages",
+      "nameEs": "Agua Fresca",
+      "nameEn": "Agua Fresca",
+      "descriptionEs": "Refresco mexicano auténtico: horchata, agua de arroz, tamarindo y jamaica.",
+      "descriptionEn": "Authentic Mexican Refreshment: Horchata, Rice Water Punch, Tamarindo, and Jamaica.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "non-alcoholic-margaritas",
+      "categoryId": "beverages",
+      "nameEs": "Margaritas sin alcohol",
+      "nameEn": "Non - Alcoholic Margaritas",
+      "descriptionEs": "10 sabores diferentes para elegir.",
+      "descriptionEn": "10 different flavors to choose from.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-jarritos",
+      "categoryId": "beverages",
+      "nameEs": "Jarritos mexicanos",
+      "nameEn": "Mexican Jarritos",
+      "descriptionEs": "Variedad de sabores para elegir.",
+      "descriptionEn": "A variety of flavors to choose from.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-drinks",
+      "categoryId": "beverages",
+      "nameEs": "Bebidas calientes",
+      "nameEn": "Hot Drinks",
+      "descriptionEs": "Café, té.",
+      "descriptionEn": "Coffee, Tea.",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias opciones vegetarianas y platos que se pueden preparar sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we offer various vegetarian choices and dishes that can be prepared gluten-free. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o fiestas privadas?",
-      "qEn": "Do you accept reservations or private parties?",
-      "qEsAlt": "¿Aceptan reservaciones?",
-      "aEs": "¡Sí! Aceptamos reservaciones en línea y por teléfono, y ofrecemos paquetes de catering para eventos especiales.",
-      "aEn": "Yes! We accept online and phone reservations, and offer customized catering packages for your special events."
-    }
-  ]
+  "faqs": []
 }
