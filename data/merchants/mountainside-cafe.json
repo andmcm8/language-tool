@@ -1,27 +1,18 @@
 {
   "storeInfo": {
     "id": "mountainside-cafe",
-    "name": "Mountainside Café",
-    "tagline": "Fresh, locally-sourced comfort food nestled in the Litchfield Hills / Comida reconfortante y fresca en las colinas de Litchfield",
-    "address": "25 Main St, Salisbury, CT 06068",
-    "phone": "",
+    "name": "Mountainside",
+    "tagline": "American restaurant in Salisbury | Restaurante americano en Salisbury",
+    "address": "251 Route 7, Salisbury, CT 06031",
+    "phone": "(860) 824-7876",
     "hours": {
-      "monday_friday": "8:00 AM - 3:00 PM",
-      "saturday": "8:00 AM - 4:00 PM",
-      "sunday": "8:00 AM - 3:00 PM"
+      "monday_friday": "Mon-Tue Closed; Wed-Fri 7:00 AM - 3:00 PM",
+      "saturday": "7:00 AM - 3:00 PM",
+      "sunday": "7:00 AM - 3:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Dog Friendly Patio"
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,322 +24,484 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
+      "id": "breakfast-sandwiches",
+      "nameEs": "Sándwiches de desayuno",
+      "nameEn": "Breakfast Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "omelets-and-skillets",
+      "nameEs": "Omelets y sartenes",
+      "nameEn": "Omelets And Skillets",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
       "id": "appetizers",
-      "nameEs": "Entradas y Sopas",
-      "nameEn": "Appetizers & Soups",
+      "nameEs": "Entradas",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Paninis",
-      "nameEn": "Mains & Paninis",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
       "icon": "Utensils"
-    },
-    {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
     }
   ],
   "products": [
     {
-      "id": "mountainside-cafe-01",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Tomate Asado y Albahaca",
-      "nameEn": "Roasted Tomato Basil Soup",
-      "descriptionEs": "Sopa cremosa de tomates asados al horno con un toque de albahaca fresca y crutones de masa madre.",
-      "descriptionEn": "Creamy oven-roasted tomato soup infused with fresh basil and topped with sourdough croutons.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "egg-and-cheese",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Huevo y queso",
+      "nameEn": "Egg And Cheese",
+      "descriptionEs": "huevos bien cocidos y cheddar en muffin inglés. sustituye por: claras de huevo, pan sin gluten o bollo vegano sin gluten, croissant, brioche o bagel 2. agrega: tocino, salchicha, salchicha vegetariana o jamón 2 | salmón ahumado 5",
+      "descriptionEn": "over hard eggs and cheddar on an English muffin. substitute: egg whites, gluten-free bread, or gf vegan roll, croissant, brioche or bagel 2. add: bacon, sausage, veggie sausage or ham 2 | smoked salmon 5",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-02",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada Verde del Valle",
-      "nameEn": "Valley Green Salad",
-      "descriptionEs": "Mix de lechugas locales, manzanas crujientes, nueces tostadas y queso de cabra con aderezo de sidra de manzana.",
-      "descriptionEn": "Local field greens, crisp apples, toasted walnuts, and goat cheese tossed in a house apple cider vinaigrette.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Sin Gluten",
-        "Saludable"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Lácteos"
-      ],
+      "id": "vegan-wrap",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Wrap vegano",
+      "nameEn": "Vegan Wrap",
+      "descriptionEs": "papas caseras, salchicha vegana desmoronada, pimiento, cebolla, aguacate y mayonesa vegana con paprika ahumada. sustituye por: claras de huevo, pan sin gluten o bollo vegano sin gluten, croissant, brioche o bagel 2",
+      "descriptionEn": "home fries, vegan sausage crumble, bell pepper, onion, avocado and vegan smoked paprika mayo. substitute: egg whites, gluten-free bread, or gf vegan roll, croissant, brioche or bagel 2",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-03",
-      "categoryId": "appetizers",
-      "nameEs": "Bocaditos de Pollo Crujiente",
-      "nameEn": "Crispy Herb Chicken Tenders",
-      "descriptionEs": "Tiras de pollo empanizadas con hierbas finas de la región, servidas con miel mostaza artesanal.",
-      "descriptionEn": "Tender chicken strips coated in local herbs, served with house-made honey mustard dipping sauce.",
-      "price": "$11.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "egg-white-delight",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Delicia de claras de huevo",
+      "nameEn": "Egg White Delight",
+      "descriptionEs": "claras de huevo, provolone, pimiento rojo asado, champiñones y espinaca en croissant tostado. sustituye por: claras de huevo, pan sin gluten o bollo vegano sin gluten, croissant, brioche o bagel 2",
+      "descriptionEn": "egg whites, provolone, roasted red pepper, mushroom and spinach on a toasted croissant. substitute: egg whites, gluten-free bread, or gf vegan roll, croissant, brioche or bagel 2",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-04",
-      "categoryId": "mains",
-      "nameEs": "Panini de Pavo y Arándanos",
-      "nameEn": "Turkey & Cranberry Panini",
-      "descriptionEs": "Pavo rostizado en casa, queso brie fundido, compota de arándanos y espinacas en pan artesanal prensado.",
-      "descriptionEn": "House-roasted turkey, melted brie cheese, cranberry compote, and baby spinach on pressed artisanal bread.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Best Seller",
-      "tags": [
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mountainside-cafe-05",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Mountainside",
-      "nameEn": "Mountainside Burger",
-      "descriptionEs": "Carne de res de pastoreo, queso cheddar Vermont, tocino crujiente, cebolla caramelizada y salsa especial en brioche.",
-      "descriptionEn": "Grass-fed beef patty, Vermont cheddar, crispy bacon, caramelized onions, and house special sauce on a brioche bun.",
-      "price": "$16.75",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Carne Local"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mountainside-cafe-06",
-      "categoryId": "mains",
-      "nameEs": "Panini Vegetariano del Huerto",
-      "nameEn": "Garden Veggie Panini",
-      "descriptionEs": "Calabacitas, pimientos asados, queso provolone, tomates secos y pesto de albahaca en pan ciabatta tostado.",
-      "descriptionEn": "Grilled zucchini, roasted bell peppers, provolone cheese, sun-dried tomatoes, and basil pesto on toasted ciabatta.",
-      "price": "$13.50",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mountainside-cafe-07",
-      "categoryId": "mains",
-      "nameEs": "Sándwich BLT de Salmón Ahumado",
-      "nameEn": "Smoked Salmon BLT",
-      "descriptionEs": "Salmón ahumado en frío, tocino crujiente, lechuga, tomate y mayonesa de eneldo en pan de masa madre tostado.",
-      "descriptionEn": "Cold-smoked salmon, crispy bacon, lettuce, tomato, and dill mayonnaise on toasted sourdough bread.",
-      "price": "$15.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Huevo"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mountainside-cafe-08",
-      "categoryId": "specialties",
-      "nameEs": "Tazón de Quinoa y Aguacate",
-      "nameEn": "Quinoa & Avocado Power Bowl",
-      "descriptionEs": "Quinoa orgánico, aguacate fresco, garbanzos tostados, col rizada, pepino y aderezo de tahini y limón.",
-      "descriptionEn": "Organic quinoa, fresh avocado, roasted chickpeas, kale, cucumber, and a zesty lemon-tahini dressing.",
+      "id": "breakfast-burrito",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Burrito de desayuno",
+      "nameEn": "Breakfast Burrito",
+      "descriptionEs": "huevos revueltos, queso americano, chorizo a la parrilla, papas caseras en wrap integral. sustituye por: claras de huevo, pan sin gluten o bollo vegano sin gluten, croissant, brioche o bagel 2",
+      "descriptionEn": "scrambled eggs, American cheese, grilled chorizo, home fries in a whole wheat wrap. substitute: egg whites, gluten-free bread, or gf vegan roll, croissant, brioche or bagel 2",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Sésamo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-09",
-      "categoryId": "specialties",
-      "nameEs": "Macarrones con Queso Artesanal Trufados",
-      "nameEn": "Truffle Artisan Mac & Cheese",
-      "descriptionEs": "Pasta cavatappi en una rica crema de tres quesos de Nueva Inglaterra con un sutil toque de aceite de trufa blanca.",
-      "descriptionEn": "Cavatappi pasta in a rich three-cheese New England cream sauce finished with a hint of white truffle oil.",
+      "id": "garden-omelet",
+      "categoryId": "omelets-and-skillets",
+      "nameEs": "Omelet del huerto",
+      "nameEn": "Garden Omelet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest-omelet",
+      "categoryId": "omelets-and-skillets",
+      "nameEs": "Omelet estilo suroeste",
+      "nameEn": "Southwest Omelet",
+      "descriptionEs": "chorizo, cebolla salteada, pimientos, frijoles negros y queso cheddar. acompañado de: tres huevos, pan tostado wheatberry y papas caseras. sustituye por: fruta 2 | claras de huevo, pan sin gluten o bollo sin gluten 2 | croissant, brioche o bagel 2",
+      "descriptionEn": "chorizo, sautéed onion, peppers, black beans and cheddar cheese. served with: three eggs, wheatberry toast and home fries. substitute: fruit 2 | egg whites, gluten-free bread or gf roll 2 | croissant, brioche, or bagel 2",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "johnny-cash-omelet",
+      "categoryId": "omelets-and-skillets",
+      "nameEs": "Omelet Johnny Cash",
+      "nameEn": "Johnny Cash Omelet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caprese-omelet",
+      "categoryId": "omelets-and-skillets",
+      "nameEs": "Omelet caprese",
+      "nameEn": "Caprese Omelet",
+      "descriptionEs": "tomate fresco, queso mozzarella y pesto de albahaca sin nueces. acompañado de: tres huevos, pan tostado wheatberry y papas caseras. sustituye por: fruta 2 | claras de huevo, pan sin gluten o bollo sin gluten 2 | croissant, brioche o bagel 2",
+      "descriptionEn": "fresh tomato, mozzarella cheese and nut free basil pesto. served with: three eggs, wheatberry toast and home fries. substitute: fruit 2 | egg whites, gluten-free bread or gf roll 2 | croissant, brioche, or bagel 2",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-skillet",
+      "categoryId": "omelets-and-skillets",
+      "nameEs": "Sartén de corned beef",
+      "nameEn": "Corned Beef Skillet",
+      "descriptionEs": "huevos revueltos, papas caseras, corned beef y queso suizo. acompañado de: tres huevos, pan tostado wheatberry y papas caseras. sustituye por: fruta 2 | claras de huevo, pan sin gluten o bollo sin gluten 2 | croissant, brioche o bagel 2",
+      "descriptionEn": "scrambled eggs, home fries, corned beef and swiss cheese. served with: three eggs, wheatberry toast and home fries. substitute: fruit 2 | egg whites, gluten-free bread or gf roll 2 | croissant, brioche, or bagel 2",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "acai-bowl",
+      "categoryId": "entrees",
+      "nameEs": "Tazón de açaí",
+      "nameEn": "Acai Bowl",
+      "descriptionEs": "açaí licuado cubierto con frutos rojos frescos, granola de la casa, semillas de chía, hojuelas de coco y un chorrito de miel",
+      "descriptionEn": "blended acai topped with fresh berries, house granola, chia seeds, coconut flakes and honey drizzle",
       "price": "$15.00",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Vegetariano",
-        "Confort"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-10",
-      "categoryId": "specialties",
-      "nameEs": "Pastel de Pollo Estilo Casero",
-      "nameEn": "Homestyle Chicken Pot Pie",
-      "descriptionEs": "Trocitos de pollo tierno, verduras de temporada en salsa cremosa, cubiertos con una costra de hojaldre dorado.",
-      "descriptionEn": "Tender chunks of chicken and seasonal vegetables in a savory cream sauce, topped with a flaky golden pastry crust.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "avocado-toast",
+      "categoryId": "entrees",
+      "nameEs": "Pan tostado con aguacate",
+      "nameEn": "Avocado Toast",
+      "descriptionEs": "arúgula, cebolla encurtida, pepino y tomate en pan de masa madre con un chorrito de aceite de oliva. agrega: huevo 2 | tofu frito 5 | salmón ahumado 5",
+      "descriptionEn": "arugula, pickled onion, cucumber and tomato on sourdough with olive oil drizzle. add: egg 2 | fried tofu 5 | smoked salmon 5",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-11",
-      "categoryId": "beverages",
-      "nameEs": "Café de Grano Local (Taza)",
-      "nameEn": "Local Roast Drip Coffee",
-      "descriptionEs": "Café fresco de tueste medio de tostadores locales de Connecticut. Incluye una recarga gratis.",
-      "descriptionEn": "Fresh medium-roast drip coffee sourced from local Connecticut roasters. Includes one free refill.",
-      "price": "$3.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "streusel-french-toast",
+      "categoryId": "entrees",
+      "nameEs": "Pan francés con streusel",
+      "nameEn": "Streusel French Toast",
+      "descriptionEs": "compota de frutos rojos mixtos",
+      "descriptionEn": "mixed berry compote",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-12",
-      "categoryId": "beverages",
-      "nameEs": "Latte de Miel y Lavanda",
-      "nameEn": "Lavender Honey Latte",
-      "descriptionEs": "Espresso doble, leche vaporizada, infusión de lavanda natural y miel local de flores silvestres.",
-      "descriptionEn": "Double espresso, steamed milk, organic lavender infusion, and local wildflower honey.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "buttermilk-pancakes",
+      "categoryId": "entrees",
+      "nameEs": "Pancakes de suero de leche",
+      "nameEn": "Buttermilk Pancakes",
+      "descriptionEs": "compota de frutos rojos mixtos",
+      "descriptionEn": "mixed berry compote",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-13",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Fresca de Arándanos",
-      "nameEn": "Fresh Blueberry Lemonade",
-      "descriptionEs": "Limonada hecha en casa endulzada naturalmente con puré de arándanos silvestres.",
-      "descriptionEn": "House-made classic lemonade naturally sweetened with fresh wild blueberry puree.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "frittata-breakfast-bowl",
+      "categoryId": "entrees",
+      "nameEs": "Tazón de desayuno de frittata",
+      "nameEn": "Frittata Breakfast Bowl",
+      "descriptionEs": "queso de cabra, espinaca, tomate cherry, cebolla sobre ensalada de arúgula. agrega: huevo 2 | tofu frito 5 | salmón ahumado 5",
+      "descriptionEn": "goat cheese, spinach, cherry tomato, onions over an arugula salad. add: egg 2 | fried tofu 5 | smoked salmon 5",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "mountainside-cafe-14",
-      "categoryId": "beverages",
-      "nameEs": "Té Chai Helado Artesanal",
-      "nameEn": "Artisanal Iced Chai Tea",
-      "descriptionEs": "Concentrado de té chai especiado con leche fría y un toque de canela en polvo por encima.",
-      "descriptionEn": "Spiced chai tea concentrate blended with cold milk and finished with a dusting of cinnamon.",
-      "price": "$4.75",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "two-egg-breakfast",
+      "categoryId": "entrees",
+      "nameEs": "Desayuno de dos huevos",
+      "nameEn": "Two Egg Breakfast",
+      "descriptionEs": "tocino, papas caseras y pan tostado wheatberry",
+      "descriptionEn": "bacon, home fries and wheatberry toast",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel",
+      "categoryId": "sides",
+      "nameEs": "Bagel",
+      "nameEn": "Bagel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas caseras",
+      "nameEn": "Home Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham",
+      "categoryId": "sides",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon",
+      "categoryId": "sides",
+      "nameEs": "Tocino",
+      "nameEn": "Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "sides",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-salmon",
+      "categoryId": "sides",
+      "nameEs": "Salmón ahumado",
+      "nameEn": "Smoked Salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-cup",
+      "categoryId": "sides",
+      "nameEs": "Vaso de fruta",
+      "nameEn": "Fruit Cup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-sausage",
+      "categoryId": "sides",
+      "nameEs": "Salchicha vegana",
+      "nameEn": "Vegan Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-bowl",
+      "categoryId": "sides",
+      "nameEs": "Tazón de fruta",
+      "nameEn": "Fruit Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chips",
+      "categoryId": "sides",
+      "nameEs": "Papitas",
+      "nameEn": "Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "sides",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "sides",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-flat-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan plano mediterráneo",
+      "nameEn": "Mediterranean Flat Bread",
+      "descriptionEs": "cebolla morada, espinaca salteada, pimientos rojos asados, aceitunas kalamata, ajo asado y cubierto con queso feta",
+      "descriptionEn": "red onion, sautéed spinach, roasted red peppers, kalamata olives, roasted garlic and topped with feta cheese",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-artichoke-dip",
+      "categoryId": "appetizers",
+      "nameEs": "Dip de espinaca y alcachofa",
+      "nameEn": "Spinach & Artichoke Dip",
+      "descriptionEs": "servido con totopos",
+      "descriptionEn": "served with tortilla chips",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house",
+      "categoryId": "salads",
+      "nameEs": "De la casa",
+      "nameEn": "House",
+      "descriptionEs": "mezcla de hojas tiernas, cebolla morada encurtida, tomate cherry, pepino con vinagreta de limón. agrega: anchoas 3 | tofu 5 | salmón ahumado 5 | pollo a la parrilla 7 | torta vegetariana 7 | *torta de res 7",
+      "descriptionEn": "spring mix, pickled red onion, cherry tomato, cucumber with lemon vinaigrette. add: anchovies 3 | tofu 5 | smoked salmon 5 | grilled chicken 7 | veggie patty 7 | *beef patty 7",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "salads",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "crutones de ajo y hierbas y parmesano rallado con aderezo César. agrega: anchoas 3 | tofu 5 | salmón ahumado 5 | pollo a la parrilla 7 | torta vegetariana 7 | *torta de res 7",
+      "descriptionEn": "garlic herb croutons and shaved parmesan with caesar dressing. add: anchovies 3 | tofu 5 | smoked salmon 5 | grilled chicken 7 | veggie patty 7 | *beef patty 7",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruschetta-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada bruschetta",
+      "nameEn": "Bruschetta Salad",
+      "descriptionEs": "sobre hojas verdes mixtas con mozzarella rallada y aceitunas kalamata. agrega: anchoas 3 | tofu 5 | salmón ahumado 5 | pollo a la parrilla 7 | torta vegetariana 7 | *torta de res 7",
+      "descriptionEn": "over mixed greens with shredded mozzarella and kalamata olives. add: anchovies 3 | tofu 5 | smoked salmon 5 | grilled chicken 7 | veggie patty 7 | *beef patty 7",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la cosecha",
+      "nameEn": "Harvest Salad",
+      "descriptionEs": "arúgula, betabel asado, calabaza butternut, calabaza delicata con queso de cabra en vinagreta de trufa y limón. agrega: anchoas 3 | tofu 5 | salmón ahumado 5 | pollo a la parrilla 7 | torta vegetariana 7 | *torta de res 7",
+      "descriptionEn": "arugula, roasted beets, butternut squash, delicata squash with goat cheese in a truffle and lemon vinaigrette. add: anchovies 3 | tofu 5 | smoked salmon 5 | grilled chicken 7 | veggie patty 7 | *beef patty 7",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mountainside-bowl",
+      "categoryId": "salads",
+      "nameEs": "Tazón Mountainside",
+      "nameEn": "Mountainside Bowl",
+      "descriptionEs": "quinoa, pepino, aguacate, arúgula, tubérculos asados con aderezo green goddess. agrega: anchoas 3 | tofu 5 | salmón ahumado 5 | pollo a la parrilla 7 | torta vegetariana 7 | *torta de res 7",
+      "descriptionEn": "quinoa, cucumber, avocado, arugula, roasted root vegetables with green goddess dressing. add: anchovies 3 | tofu 5 | smoked salmon 5 | grilled chicken 7 | veggie patty 7 | *beef patty 7",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado",
+      "categoryId": "sandwiches",
+      "nameEs": "Aguacate",
+      "nameEn": "Avocado",
+      "descriptionEs": "provolone, tomate, cebolla morada, aguacate, alioli de chipotle y arúgula en pan wheatberry a la parrilla. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2. agrega: pollo a la parrilla 7 | tofu frito 5 | salmón ahumado 5",
+      "descriptionEn": "provolone, tomato, red onion, avocado, chipotle aioli and arugula on grilled wheatberry. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2. add: grilled chicken 7 | fried tofu 5 | smoked salmon 5",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "village-turkey",
+      "categoryId": "sandwiches",
+      "nameEs": "Pavo Village",
+      "nameEn": "Village Turkey",
+      "descriptionEs": "cheddar, tocino, alioli de chipotle, lechuga de hoja verde, cebolla morada, tomate en pan de masa madre tostado. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "cheddar, bacon, chipotle aioli, green leaf, red onion, tomato on toasted sourdough. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mountainside-reuben",
+      "categoryId": "sandwiches",
+      "nameEs": "Reuben Mountainside",
+      "nameEn": "Mountainside Reuben",
+      "descriptionEs": "corned beef caliente, queso suizo, chucrut, mayonesa de ajo en pan wheatberry tostado. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "hot corned beef, swiss, sauerkraut, garlic mayo on toasted wheatberry. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curried-chicken-cranberry-salad",
+      "categoryId": "sandwiches",
+      "nameEs": "Ensalada de pollo al curry con arándano rojo",
+      "nameEn": "Curried Chicken & Cranberry Salad",
+      "descriptionEs": "arúgula y tomate en croissant tostado. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "arugula and tomato on a toasted croissant. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "portabella-grilled-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Queso a la plancha con portobello",
+      "nameEn": "Portabella Grilled Cheese",
+      "descriptionEs": "con cheddar, provolone y pesto de albahaca en pan de masa madre. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "with cheddar, provolone and basil pesto on sourdough. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa vegetariana",
+      "nameEn": "Veggie Burger",
+      "descriptionEs": "lechuga romana, tomate, cebolla, kétchup de romero y pepinillos servidos en bollo everything vegano sin gluten. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "romaine, tomato, onion, rosemary ketchup and pickles served on a gf vegan everything roll. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "country-burger",
+      "categoryId": "sandwiches",
+      "nameEs": "Hamburguesa campestre",
+      "nameEn": "Country Burger",
+      "descriptionEs": "carne de res Hurlburt, cheddar, lechuga de hoja verde, tomate, cebolla morada y pepinillos de la casa en pan brioche. carne de res local Hurlburt: mezcla de res alimentada con pasto: costilla corta, pecho, top round y bottom round. a elegir: papas fritas, papas fritas de camote, papitas o ensalada de la casa pequeña. sustituye por: sopa 3 | ensalada César 2 | pan sin gluten o bollo sin gluten 2",
+      "descriptionEn": "hurlburt beef, cheddar, green leaf, tomato, red onion and house pickles on a brioche bun. local hurlburt beef: blend of grassfed: short rib, brisket, top and bottom round. choice of: french fries, sweet potato fries, potato chips or side house salad. substitute: soup 3 | caesar salad 2 | gluten-free bread or gf roll 2",
+      "price": "$17.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con múltiples opciones vegetarianas, veganas y libres de gluten claramente marcadas en nuestro menú.",
-      "aEn": "Yes, we offer multiple vegetarian, vegan, and gluten-free options clearly marked on our menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación (walk-ins) por orden de llegada y reservaciones para grupos grandes por teléfono.",
-      "aEn": "We welcome walk-ins on a first-come, first-served basis and accept phone reservations for larger parties."
-    },
-    {
-      "qEs": "¿El café y los ingredientes son locales?",
-      "qEn": "Is your coffee and produce locally sourced?",
-      "aEs": "Sí, nos enorgullece asociarnos con granjas locales de Connecticut y tostadores regionales para ofrecer la máxima frescura.",
-      "aEn": "Yes, we proudly partner with local Connecticut farms and regional roasters to ensure peak freshness."
-    }
-  ]
+  "faqs": []
 }

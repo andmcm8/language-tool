@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "misty-vale-deli",
     "name": "Misty Vale Deli",
-    "tagline": "Serving Sandy Hook with delicious sandwiches, breakfast, and catering since 2002.",
-    "address": "51 Berkshire Road, Sandy Hook, CT",
+    "tagline": "Deli in Sandy Hook | Deli en Sandy Hook",
+    "address": "51 Berkshire Road, Sandy Hook Connecticut 06482",
     "hours": {
-      "monday_friday": "6:00 AM - 5:00 PM",
-      "saturday": "6:00 AM - 5:00 PM",
-      "sunday": "Closed"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Takeout",
-      "Catering",
       "Bilingual Menu",
-      "Quick Bite"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,288 +25,786 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "breakfast",
-      "nameEs": "Desayunos",
+      "id": "breakfast-sandwiches",
+      "nameEs": "Sándwiches de desayuno",
       "nameEn": "Breakfast Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades",
-      "nameEn": "Specialty Sandwiches",
+      "id": "hot-sandwiches",
+      "nameEs": "Sándwiches calientes",
+      "nameEn": "Hot Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "cold-sandwiches",
+      "nameEs": "Sándwiches fríos",
+      "nameEn": "Cold Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-salads",
+      "nameEs": "Ensaladas de guarnición",
+      "nameEn": "Side Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-catering",
+      "nameEs": "Ensaladas (catering)",
+      "nameEn": "Salads (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "large-party-subs-and-platters",
+      "nameEs": "Subs y charolas para fiestas grandes",
+      "nameEn": "Large Party Subs and Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-entrees",
+      "nameEs": "Platos fuertes calientes",
+      "nameEn": "Hot Entrees",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "misty-vale-deli-01",
-      "categoryId": "breakfast",
-      "nameEs": "Tocino, Huevo y Queso",
+      "id": "bacon-egg-and-cheese",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Tocino, huevo y queso",
       "nameEn": "Bacon, Egg, and Cheese",
-      "descriptionEs": "Clásico sándwich de desayuno servido en panecillo crujiente (hard roll).",
-      "descriptionEn": "Classic breakfast sandwich served on a fresh hard roll.",
+      "descriptionEs": "Servido en pan duro",
+      "descriptionEn": "Served on a hard roll",
       "price": "$2.99",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Desayuno",
-        "Rápido"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-02",
-      "categoryId": "breakfast",
-      "nameEs": "Amantes de la Carne",
+      "id": "meat-lovers",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Para amantes de la carne",
       "nameEn": "Meat Lovers",
-      "descriptionEs": "2 huevos revueltos, jamón, tocino, salchicha y queso americano en panecillo crujiente.",
-      "descriptionEn": "2 scrambled eggs, ham, bacon, sausage, and American cheese on a hard roll.",
+      "descriptionEs": "2 huevos revueltos, jamón, tocino, salchicha, queso americano en pan duro",
+      "descriptionEn": "2 eggs scrambled, ham, bacon, sausage American cheese on a hard roll",
       "price": "$5.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Desayuno",
-        "Abundante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos",
-        "Cerdo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-03",
-      "categoryId": "breakfast",
-      "nameEs": "El Pozo de Lava",
+      "id": "ham-egg-and-cheese",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Jamón, huevo y queso",
+      "nameEn": "Ham, Egg, and Cheese",
+      "descriptionEs": "Servido en pan duro",
+      "descriptionEn": "Served on a hard roll",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-lava-pit",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "The Lava Pit",
       "nameEn": "The Lava Pit",
-      "descriptionEs": "2 huevos revueltos con salchicha, chiles jalapeños, queso pepper jack derretido y un toque de salsa Tabasco.",
-      "descriptionEn": "2 scrambled eggs with sausage, jalapeño peppers, melted pepper jack cheese, and a splash of Tabasco sauce.",
+      "descriptionEs": "2 huevos revueltos con salchicha, chiles jalapeños, queso pepper jack derretido y un chorrito de salsa Tabasco",
+      "descriptionEn": "2 eggs scrambled with sausage, jalapeño peppers, melted pepper jack cheese, and a splash of tabasco sauce",
       "price": "$4.75",
-      "popular": false,
-      "badge": "Picante",
-      "tags": [
-        "Desayuno",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-04",
-      "categoryId": "breakfast",
-      "nameEs": "Envoltura Vegetariana",
+      "id": "sausage-egg-and-cheese",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Salchicha, huevo y queso",
+      "nameEn": "Sausage, Egg, and Cheese",
+      "descriptionEs": "Servido en pan duro",
+      "descriptionEn": "Served on a hard roll",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-wrap",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Wrap vegetariano",
       "nameEn": "Veggie Wrap",
-      "descriptionEs": "Tortilla de harina con omelette de 2 huevos, brócoli, pimientos rojos dulces asados, champiñones, tomates y queso Monterey Jack.",
-      "descriptionEn": "2 egg omelet with broccoli, sweet red roasted peppers, mushrooms, tomatoes, and Monterey Jack cheese rolled in a flour wrap.",
+      "descriptionEs": "Omelette de 2 huevos con brócoli, pimientos rojos dulces asados, champiñones, tomates y queso Monterey Jack enrollado en wrap de harina",
+      "descriptionEn": "2 egg omelette with broccoli, sweet red roasted peppers, mushrooms, tomatoes. and Monterey Jack cheese rolled in a flour wrap",
       "price": "$4.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-05",
-      "categoryId": "specialties",
-      "nameEs": "El Pollo Bandera",
-      "nameEn": "The Flagpole",
-      "descriptionEs": "Pechuga de pollo empanizada con aderezo ranch, abundante tocino, cheddar derretido, lechuga y tomate en panecillo crujiente.",
-      "descriptionEn": "Chicken cutlet with ranch dressing, lots of bacon, melted cheddar, lettuce, and tomato on a hard roll.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Especialidad",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "western",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Western",
+      "nameEn": "Western",
+      "descriptionEs": "2 huevos revueltos con jamón, cebolla y pimientos en pan duro",
+      "descriptionEn": "2 eggs scrambled with ham, onions, and peppers on a hard roll",
+      "price": "$4.75",
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-06",
-      "categoryId": "specialties",
-      "nameEs": "El Municipio",
-      "nameEn": "The Borough",
-      "descriptionEs": "Roast beef caliente con cebollas y pimientos salteados, cheddar derretido y aderezo ranch en panecillo crujiente.",
-      "descriptionEn": "Hot roast beef with sautéed onions & peppers, melted cheddar, and ranch dressing on a hard roll.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Carne",
-        "Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "the-godfather",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "El Padrino (The Godfather)",
+      "nameEn": "The Godfather",
+      "descriptionEs": "Omelette de 2 huevos con salchicha italiana dulce molida, queso mozzarella derretido, pimientos rojos dulces asados, en wrap de pimiento asado",
+      "descriptionEn": "2 egg omelette with ground sweet Italian sausage, melted mozzarella cheese, sweet red roasted peppers, on a roasted pepper wrap",
+      "price": "$5.25",
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-07",
-      "categoryId": "specialties",
-      "nameEs": "El Sandy Hook",
-      "nameEn": "The Sandy Hook",
-      "descriptionEs": "Roast beef caliente con tocino, cheddar derretido y aderezo de queso azul en panecillo crujiente.",
-      "descriptionEn": "Hot roast beef with bacon, melted cheddar, and bleu cheese dressing on a hard roll.",
-      "price": "$7.50",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Carne",
-        "Queso Azul"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "steak-omelette",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Omelette de bistec",
+      "nameEn": "Steak Omelette",
+      "descriptionEs": "2 huevos revueltos con pimientos, cebolla, bistec y queso americano en pan duro",
+      "descriptionEn": "2 eggs scrambled, with peppers, onions, steak, and American cheese on a hard roll",
+      "price": "$5.25",
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-08",
-      "categoryId": "specialties",
-      "nameEs": "El Hawleyville",
-      "nameEn": "The Hawleyville",
-      "descriptionEs": "Pavo fresco cortado en rodajas calientes con queso suizo derretido, pimientos rojos asados y aderezo Thousand Island en pan de centeno a la parrilla.",
-      "descriptionEn": "Hot sliced fresh turkey with melted Swiss cheese, red roasted peppers, and Thousand Island dressing on grilled rye.",
-      "price": "$7.75",
-      "popular": false,
-      "badge": "Recomendado",
-      "tags": [
-        "Pavo",
-        "Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "grilled-chicken-breast-fillet",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Filete de pechuga de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Breast Fillet",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.75",
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-09",
-      "categoryId": "specialties",
-      "nameEs": "El Botafort",
-      "nameEn": "The Botsford",
-      "descriptionEs": "Filete de pechuga de pollo a la parrilla con aderezo ranch, pimientos rojos asados, queso Monterey Jack, lechuga y tomate en panecillo crujiente.",
-      "descriptionEn": "Grilled chicken breast filet with ranch dressing, red roasted peppers, Monterey Jack cheese, lettuce, and tomato on a hard roll.",
-      "price": "$7.25",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Pollo",
-        "Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "chicken-cutlet",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Milanesa de pollo",
+      "nameEn": "Chicken Cutlet",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.75",
       "ctaType": "in_store"
     },
     {
-      "id": "misty-vale-deli-10",
-      "categoryId": "specialties",
-      "nameEs": "La Abeja",
-      "nameEn": "The Bee",
-      "descriptionEs": "Milanesa de pollo con queso suizo derretido, mostaza con miel y lechuga en panecillo crujiente.",
-      "descriptionEn": "Chicken cutlet with melted Swiss cheese, honey mustard, and lettuce on a hard roll.",
-      "price": "$6.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Pollo",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "misty-vale-deli-11",
-      "categoryId": "specialties",
-      "nameEs": "El Mejor Sándwich de Pollo de Newtown",
-      "nameEn": "Newtown's Best Chicken Sandwich",
-      "descriptionEs": "Pechuga de pollo empanizada cubierta con jamón horneado y queso mozzarella derretido con aderezo cremoso de pimienta parmesana en panecillo crujiente.",
-      "descriptionEn": "Chicken cutlet topped with baked ham and melted mozzarella cheese with creamy parmesan peppercorn dressing on a hard roll.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Estelar",
-      "tags": [
-        "Pollo",
-        "Jamón"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "misty-vale-deli-12",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich de Solomillo Sizzling",
-      "nameEn": "Sizzling Sirloin Sandwich",
-      "descriptionEs": "Solomillo de corte superior asado a la parrilla, cortado a mano, con queso Monterey Jack derretido, lechuga, tomate y aderezo ranch en panecillo.",
-      "descriptionEn": "Hand sliced chargrilled top round sirloin with melted Monterey Jack cheese, lettuce, and tomato with ranch dressing on a hard roll.",
+      "id": "chicken-cutlet-parmesan",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Milanesa de pollo a la parmesana",
+      "nameEn": "Chicken Cutlet Parmesan",
+      "descriptionEs": "Servido en pan grinder",
+      "descriptionEn": "Served on a grinder roll",
       "price": "$8.50",
-      "popular": true,
-      "badge": "Gourmet",
-      "tags": [
-        "Carne de Res",
-        "A la Parrilla"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesesteak-grinder",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Grinder de cheesesteak",
+      "nameEn": "Cheesesteak Grinder",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Reuben",
+      "nameEn": "Reuben",
+      "descriptionEs": "Pastrami o corned beef",
+      "descriptionEn": "Pastrami or Corned Beef",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-pastrami",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Pastrami caliente",
+      "nameEn": "Hot Pastrami",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "5oz-hamburger",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Hamburguesa de 5 oz",
+      "nameEn": "5oz. Hamburger",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheeseburger",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Hamburguesa con tocino y queso",
+      "nameEn": "Bacon Cheeseburger",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-burger",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Hamburguesa vegetariana",
+      "nameEn": "Veggie Burger",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-hot-dog",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Hot dog jumbo",
+      "nameEn": "Jumbo Hot Dog",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Servido en pan blanco",
+      "descriptionEn": "Served on white bread",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-with-ham-or-bacon",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Queso a la plancha con jamón o tocino",
+      "nameEn": "Grilled cheese with ham or bacon",
+      "descriptionEs": "Servido en pan blanco",
+      "descriptionEn": "Served on white bread",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-melt",
+      "categoryId": "hot-sandwiches",
+      "nameEs": "Atún fundido",
+      "nameEn": "Tuna Melt",
+      "descriptionEs": "Servido en pan blanco",
+      "descriptionEn": "Served on white bread",
+      "price": "$7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Rosbif",
+      "nameEn": "Roast Beef",
+      "descriptionEs": "Top round de res alimentada con pasto, cocinado en nuestros propios hornos",
+      "descriptionEn": "Grass Fed Top Round cooked in our own ovens",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-breast",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Pechuga de pavo",
+      "nameEn": "Turkey Breast",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mesquite-smoked-turkey",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Pavo ahumado con mezquite",
+      "nameEn": "Mesquite Smoked Turkey",
+      "descriptionEs": "Servido en pan grinder",
+      "descriptionEn": "Served on a grinder roll",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cracked-peppercorn-turkey",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Pavo a la pimienta quebrada",
+      "nameEn": "Cracked Peppercorn Turkey",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-maple-turkey",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Pavo con miel y maple",
+      "nameEn": "Honey Maple Turkey",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boiled-ham",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Jamón cocido",
+      "nameEn": "Boiled Ham",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ham",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Jamón horneado",
+      "nameEn": "Baked Ham",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salami",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Salami",
+      "nameEn": "Salami",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-salad",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Ensalada de huevo",
+      "nameEn": "Egg Salad",
+      "descriptionEs": "Servido en pan blanco",
+      "descriptionEn": "Served on white bread",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-salad",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Ensalada de atún",
+      "nameEn": "Tuna Salad",
+      "descriptionEs": "Atún albacora 100% blanco sólido",
+      "descriptionEn": "100% Solid White Albacore Tuna",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-salad",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Ensalada de pollo",
+      "nameEn": "Chicken Salad",
+      "descriptionEs": "100% carne blanca de pechuga",
+      "descriptionEn": "100% White Breast Meat",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-combo",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Combo italiano",
+      "nameEn": "Italian Combo",
+      "descriptionEs": "Jamón capicola, salami genovés y pepperoni servidos con queso provolone",
+      "descriptionEn": "Cappicolla Ham, Genoa Salami, and Pepperoni served with Provolone Cheese",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "cold-sandwiches",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey Club",
+      "descriptionEs": "Salvo que se indique lo contrario, los sándwiches se sirven en pan duro. Se puede sustituir por pan blanco, integral o de centeno. Para wraps agrega 50¢, pan plano agrega 50¢ o pan grinder agrega 75¢",
+      "descriptionEn": "Unless otherwise stated, sandwiches are served on a hard roll. Can be substituted for white bread, wheat bread, rye bread.For selection of wraps add 50¢, flatbread add 50¢ or a grinder roll add 75¢",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "Servida con el aderezo de tu elección: italiano, vinagreta balsámica, César, queso azul, ranch, aceite y vinagre, parmesano con pimienta, mil islas o mostaza con miel",
+      "descriptionEn": "Served with your choice of Italian, Balsamic Vinaigrette, Caesar, Blue Cheese, Ranch, Oil and Vinegar, Parmesan Peppercorn, Thousand Island, or Honey Mustard dressing",
+      "price": "$6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Cobb",
+      "nameEn": "Cobb Salad",
+      "descriptionEs": "Ensalada mixta cubierta con pollo a la parrilla, tocino, queso cheddar y aguacate",
+      "descriptionEn": "Tossed Salad topped with with grilled chicken, bacon, cheddar cheese, and avocado",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef Salad",
+      "descriptionEs": "Ensalada mixta cubierta con jamón, pavo y queso suizo",
+      "descriptionEn": "Tossed salad topped with ham, turkey and Swiss cheese",
+      "price": "$8.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad-with-grilled-chicken",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta con pollo a la parrilla",
+      "nameEn": "Tossed Salad with Grilled Chicken",
+      "descriptionEs": "Servida con el aderezo de tu elección: italiano, vinagreta balsámica, César, queso azul, ranch, aceite y vinagre, parmesano con pimienta, mil islas o mostaza con miel",
+      "descriptionEn": "Served with your choice of Italian, Balsamic Vinaigrette, Caesar, Blue Cheese, Ranch, Oil and Vinegar, Parmesan Peppercorn, Thousand Island, or Honey Mustard dressing",
+      "price": "$8.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad-with-chicken-salad-or-tuna",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta con ensalada de pollo o atún",
+      "nameEn": "Tossed Salad with Chicken Salad or Tuna",
+      "descriptionEs": "Servida con el aderezo de tu elección: italiano, vinagreta balsámica, César, queso azul, ranch, aceite y vinagre, parmesano con pimienta, mil islas o mostaza con miel",
+      "descriptionEn": "Served with your choice of Italian, Balsamic Vinaigrette, Caesar, Blue Cheese, Ranch, Oil and Vinegar, Parmesan Peppercorn, Thousand Island, or Honey Mustard dressing",
+      "price": "$8.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hashbrown-patty",
+      "categoryId": "sides",
+      "nameEs": "Torta de hash brown",
+      "nameEn": "Hashbrown Patty",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas de camote",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "sides",
+      "nameEs": "Palitos de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "6 palitos de mozzarella servidos con salsa de tomate",
+      "descriptionEn": "6 mozzarella sticks served with tomato sauce",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-cooked-potato-chips",
+      "categoryId": "sides",
+      "nameEs": "Papitas recién hechas",
+      "nameEn": "Fresh Cooked Potato Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada de papa",
+      "nameEn": "Potato Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortellini-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada de tortellini",
+      "nameEn": "Tortellini Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-potato-egg-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada de papa roja y huevo",
+      "nameEn": "Red Potato & Egg Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-and-macaroni-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada de atún y macarrones",
+      "nameEn": "Tuna and Macaroni Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada BLT",
+      "nameEn": "BLT Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-salad",
+      "categoryId": "side-salads",
+      "nameEs": "Ensalada de macarrones",
+      "nameEn": "Macaroni Salad",
+      "descriptionEs": "Precio por 1/2 lb",
+      "descriptionEn": "Price per 1/2 lb",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-garden-salad",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada mixta del huerto",
+      "nameEn": "Tossed Garden Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortellini-salad-salads-catering",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada de tortellini (Ensaladas (catering))",
+      "nameEn": "Tortellini Salad (Salads (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt-salad-salads-catering",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada BLT (Ensaladas (catering))",
+      "nameEn": "BLT Salad (Salads (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-salad",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada de frutas",
+      "nameEn": "Fruit Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasta-salad",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada antipasto",
+      "nameEn": "Antipasta Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-and-fresh-mozzarella-salad",
+      "categoryId": "salads-catering",
+      "nameEs": "Ensalada de tomate y mozzarella fresca",
+      "nameEn": "Tomato and Fresh Mozzarella Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "straight-3-6-sub",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Sub recto de 3' a 6'",
+      "nameEn": "Straight 3' - 6' Sub",
+      "descriptionEs": "Los más comunes son: combo italiano - salami, pepperoni, capicola y queso provolone, con lechuga y tomate; y combo americano - rosbif, pavo, jamón y queso americano, con lechuga y tomate. Los subs para fiesta vienen en tamaños de 3, 4, 5 y 6 pies. Un sub de tres pies alimenta a 10-14 personas. Un sub de seis pies alimenta a 22-28 personas. Hechos con carnes frías marca Boar's Head.",
+      "descriptionEn": "Most common types are: Italian Combo - Salami, Pepperoni, Cappicola and Provolone cheese, with lettuce and tomato, and the American Combo – Roast Beef, Turkey, Ham and American cheese, with lettuce and tomato. Party Subs come in sizes 3, 4, 5 and 6 feet. Three foot sub will feed 10-14 people. Six foot sub will feed 22-28 people. Made with Boar's Head brand deli meats.",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-foot-round-sub",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Sub redondo de 3 pies",
+      "nameEn": "3 Foot Round Sub",
+      "descriptionEs": "Los subs para fiesta vienen en tamaños de 3, 4, 5 y 6 pies. Un sub de tres pies alimenta a 10-14 personas. Un sub de seis pies alimenta a 22-28 personas. Hechos con carnes frías marca Boar's Head.",
+      "descriptionEn": "Party Subs come in sizes 3, 4, 5 and 6 feet. Three foot sub will feed 10-14 people. Six foot sub will feed 22-28 people. Made with Boar's Head brand deli meats.",
+      "price": "$66.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "custom-made",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Hecho a la medida",
+      "nameEn": "Custom Made",
+      "descriptionEs": "Podemos personalizar cualquier grinder para fiesta con la selección que elijas",
+      "descriptionEn": "We can customize any party grinder to the selection of your choice",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandwich-platter",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Charola de sándwiches",
+      "nameEn": "Sandwich Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wrap-platter",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Charola de wraps",
+      "nameEn": "Wrap Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sliced-meat-platter",
+      "categoryId": "large-party-subs-and-platters",
+      "nameEs": "Charola de carnes frías rebanadas",
+      "nameEn": "Sliced Meat Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francese",
+      "categoryId": "hot-entrees",
+      "nameEs": "Pollo Francese",
+      "nameEn": "Chicken Francese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "hot-entrees",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-scampi",
+      "categoryId": "hot-entrees",
+      "nameEs": "Pollo scampi",
+      "nameEn": "Chicken Scampi",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti",
+      "categoryId": "hot-entrees",
+      "nameEs": "Ziti horneado",
+      "nameEn": "Baked Ziti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-and-peppers",
+      "categoryId": "hot-entrees",
+      "nameEs": "Salchicha con pimientos (catering)",
+      "nameEn": "Sausage and Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-french-fries",
+      "categoryId": "hot-entrees",
+      "nameEs": "Dedos de pollo con papas fritas",
+      "nameEn": "Chicken Fingers & French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$49.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "Sí, contamos con opciones de catering para todo tipo de reuniones y eventos locales. Contáctenos para más detalles.",
-      "qEn": "Do you offer catering services for events?",
-      "aEn": "Yes, we offer catering options for all types of local gatherings and events. Contact us for details."
-    },
-    {
-      "qEs": "¿Cuál es el horario de atención?",
-      "qEn": "What are your business hours?",
-      "aEs": "Abrimos de lunes a sábado de 6:00 AM a 5:00 PM.",
-      "aEn": "We are open Monday through Saturday from 6:00 AM to 5:00 PM."
-    }
-  ]
+  "faqs": []
 }
