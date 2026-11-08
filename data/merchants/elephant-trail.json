@@ -1,27 +1,19 @@
 {
   "storeInfo": {
     "id": "elephant-trail",
-    "name": "Elephant Trail",
-    "tagline": "Auténtica Cocina Tailandesa | Authentic Thai Cuisine in Avon, CT",
-    "address": "395 West Avon Road, Avon, CT 06001",
+    "name": "The Elephant Trail",
+    "tagline": "Thai restaurant in Avon | Restaurante tailandés en Avon",
+    "address": "85 E Main Street Avon, CT 06001",
     "phone": "(860) 677-0065",
     "hours": {
-      "monday_friday": "11:30 AM - 9:30 PM",
-      "saturday": "12:00 PM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "11:30 am-9:00 pm",
+      "saturday": "11:30 am-9:00 pm",
+      "sunday": "5:00 pm-9:00 pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Private Dining",
-      "Outdoor Seating",
-      "Bilingual Menu"
+      "Bilingual Menu",
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,286 +25,1426 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers",
+      "id": "appetizers-dinner",
+      "nameEs": "Entradas (cena)",
+      "nameEn": "Appetizers (Dinner)",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "thai-salads-dinner",
+      "nameEs": "Ensaladas tailandesas (cena)",
+      "nameEn": "Thai Salads (Dinner)",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades",
-      "nameEn": "Chef Specialties",
+      "id": "soups-dinner",
+      "nameEs": "Sopas (cena)",
+      "nameEn": "Soups (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classic-entrees-dinner",
+      "nameEs": "Platos clásicos (cena)",
+      "nameEn": "Classic Entrees (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "thai-curry-dinner",
+      "nameEs": "Curry tailandés (cena)",
+      "nameEn": "Thai Curry (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "noodles-fried-rice-dinner",
+      "nameEs": "Fideos y arroz frito (cena)",
+      "nameEn": "Noodles & Fried Rice (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "duck-dinner",
+      "nameEs": "Pato (cena)",
+      "nameEn": "Duck (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-dinner",
+      "nameEs": "Mariscos (cena)",
+      "nameEn": "Seafood (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegetarian-dinner",
+      "nameEs": "Vegetariano (cena)",
+      "nameEn": "Vegetarian (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert-dinner",
+      "nameEs": "Postres (cena)",
+      "nameEn": "Dessert (Dinner)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Platos clásicos (almuerzo, lun-sáb 11:30 am-3 pm)",
+      "nameEn": "Classic Entrees (Lunch, Mon-Sat 11:30 am-3 pm)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "noodles-fried-rice-lunch",
+      "nameEs": "Fideos y arroz frito (almuerzo)",
+      "nameEn": "Noodles & Fried Rice (Lunch)",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
       "nameEn": "Beverages",
-      "icon": "Coffee"
+      "icon": "Utensils"
+    },
+    {
+      "id": "bubble-tea",
+      "nameEs": "Té de burbujas (bubble tea)",
+      "nameEn": "Bubble Tea",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wines",
+      "nameEs": "Vinos blancos",
+      "nameEn": "White Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wines",
+      "nameEs": "Vinos tintos",
+      "nameEn": "Red Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rose-wines",
+      "nameEs": "Vinos rosados",
+      "nameEn": "Rosé Wines",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sake",
+      "nameEs": "Sake",
+      "nameEn": "Sake",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-selection",
+      "nameEs": "Selección de cervezas",
+      "nameEn": "Beer Selection",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "elephant-trail-01",
-      "categoryId": "appetizers",
-      "nameEs": "Rollitos de Primavera",
-      "nameEn": "Spring Rolls",
-      "descriptionEs": "Crujientes rollitos de primavera vegetarianos servidos con salsa de ciruela dulce.",
-      "descriptionEn": "Crispy vegetarian spring rolls served with plum sauce.",
-      "price": "$6.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "elephant-trail-02",
-      "categoryId": "appetizers",
-      "nameEs": "Rollitos de Verano",
-      "nameEn": "Summer Rolls",
-      "descriptionEs": "Envueltos en papel de arroz con camarones, fideos vermicelli, albahaca tailandesa, maní y vegetales frescos.",
-      "descriptionEn": "Rice paper wrapped with shrimp, vermicelli, Thai basil, peanuts, and fresh vegetables.",
-      "price": "$7.95",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Saludable"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Maní"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "elephant-trail-03",
-      "categoryId": "appetizers",
-      "nameEs": "Satay de Pollo o Res",
-      "nameEn": "Satay (Chicken or Beef)",
-      "descriptionEs": "Brochetas marinadas de pollo o res servidas con salsa de maní cremosa y ensalada de pepino.",
+      "id": "satay",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Satay",
+      "nameEn": "Satay",
+      "descriptionEs": "Pollo o res a elegir, marinados en brocheta y servidos con salsa de cacahuate y relish de pepino.",
       "descriptionEn": "Choice of chicken or beef marinated on a skewer and served with peanut sauce and cucumber relish.",
+      "price": "Chicken $10.95 / Beef $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spring-rolls",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Rollitos primavera",
+      "nameEn": "Spring Rolls",
+      "descriptionEs": "Rollitos primavera vegetarianos crujientes con salsa de ciruela.",
+      "descriptionEn": "Crispy vegetarian spring rolls with plum sauce.",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "summer-rolls",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Rollos de verano",
+      "nameEn": "Summer Rolls",
+      "descriptionEs": "Papel de arroz relleno de camarón, fideos de arroz, albahaca tailandesa, cacahuates y vegetales, con salsa de chile dulce y hoisin.",
+      "descriptionEn": "Rice paper wrapped with shrimp, vermicelli, Thai basil, peanuts, and vegetables with sweet chili and hoisin sauce.",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lettuce-wraps",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Wraps de lechuga",
+      "nameEn": "Lettuce Wraps",
+      "descriptionEs": "Pollo picado, shiitake, hongos, cacahuates y vegetales con hojas de lechuga crujientes.",
+      "descriptionEn": "Minced chicken, shiitake, mushrooms, peanuts, and vegetables with crispy leaves of lettuce.",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry-puffs",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Empanaditas de curry",
+      "nameEn": "Curry Puffs",
+      "descriptionEs": "Vegetales mixtos con un toque suave de curry en masa hojaldre.",
+      "descriptionEn": "Mixed vegetables with subtle curry spices in a puff pastry shell.",
       "price": "$10.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "A la Parilla",
-        "Favorito"
-      ],
-      "allergens": [
-        "Maní"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-04",
-      "categoryId": "appetizers",
-      "nameEs": "Cangrejo Rangoón",
+      "id": "crab-ragoons",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Crab rangoons",
       "nameEn": "Crab Ragoons",
-      "descriptionEs": "Carne de cangrejo con queso crema, cebolla picada, zanahoria y cebollines, servidos con salsa de mayonesa y chile.",
-      "descriptionEn": "Crab meat with cream cheese, chopped onion, carrot, and scallions served with chili mayo sauce.",
+      "descriptionEs": "Carne de cangrejo con queso crema, cebolla picada, zanahoria y cebollín, servida con salsa de mayonesa con chile.",
+      "descriptionEn": "Crab meat with cream cheese,chopped onion, carrot and scallions served with chili mayo sauce.",
       "price": "$8.95",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Mariscos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-05",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Tailandesas",
+      "id": "thai-wings",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Alitas tailandesas",
       "nameEn": "Thai Wings",
-      "descriptionEs": "Alitas de pollo crujientes servidas con nuestra salsa de chile dulce de la casa.",
+      "descriptionEs": "Alitas de pollo crujientes servidas con salsa de chile dulce.",
       "descriptionEn": "Crispy chicken wings served with sweet chili sauce.",
       "price": "$10.95",
-      "popular": true,
-      "badge": "Crujiente",
-      "tags": [
-        "Picante Suave",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-06",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones Tailandeses Picantes",
+      "id": "edamame",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Edamame",
+      "nameEn": "Edamame",
+      "descriptionEs": "Edamame al vapor con sal de mar.",
+      "descriptionEn": "Steamed edamame with sea salt.",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-tempura",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Tempura de verduras",
+      "nameEn": "Vegetable Tempura",
+      "descriptionEs": "Vegetales frescos rebozados y crujientes con salsa de chile dulce.",
+      "descriptionEn": "Crispy battered fresh vegetables with sweet chili sauce.",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-thai-mussels",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Mejillones tailandeses picantes",
       "nameEn": "Spicy Thai Mussels",
-      "descriptionEs": "Una versión moderna de un clásico tailandés. Mejillones al vapor en un sutil caldo de curry y coco.",
+      "descriptionEs": "Una versión moderna de un platillo tailandés clásico. Mejillones al vapor en un suave caldo de curry con coco.",
       "descriptionEn": "A modern update on a classic Thai dish. Steamed mussels in a subtle coconut curry broth.",
       "price": "$12.95",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Mariscos",
-        "Picante"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-07",
-      "categoryId": "specialties",
-      "nameEs": "Plato Surtido (Nibble Platter)",
-      "nameEn": "Nibble Platter",
-      "descriptionEs": "Muestrario de tus aperitivos favoritos: rollitos de primavera, satay de pollo, bocaditos de curry, camarones envueltos, alitas y wantones fritos.",
-      "descriptionEn": "Sampler of your favorite appetizers: spring rolls, chicken satay, curry puffs, koong ka bogs, wings, and fried wontons.",
-      "price": "$20.95",
-      "popular": true,
-      "badge": "Para Compartir",
-      "tags": [
-        "Surtido",
-        "Favorito"
-      ],
-      "allergens": [
-        "Gluten",
-        "Maní"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "elephant-trail-08",
-      "categoryId": "specialties",
-      "nameEs": "Ensalada de Papaya (Som Tum)",
-      "nameEn": "Papaya Salad (Som Tum)",
-      "descriptionEs": "Papaya verde rallada, tomates y zanahorias en un aderezo de lima y chile, coronado con maní molido.",
-      "descriptionEn": "Shredded green papaya, tomatoes, and carrots in a chili lime dressing topped with ground peanuts.",
+      "id": "tod-pla-muek",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Tod Pla Muek",
+      "nameEn": "Tod Pla Muek",
+      "descriptionEs": "Calamares crujientes con salsa de chile dulce.",
+      "descriptionEn": "Crispy calamari with sweet chili sauce.",
       "price": "$10.95",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Picante"
-      ],
-      "allergens": [
-        "Maní"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-09",
-      "categoryId": "mains",
-      "nameEs": "Alitas de Soden",
+      "id": "soden-s-wings",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Alitas Soden's",
       "nameEn": "Soden's Wings",
-      "descriptionEs": "Alitas de pollo salteadas en una reducción de chile y ajo, coronadas con hojas de albahaca crujientes.",
+      "descriptionEs": "Alitas de pollo salteadas en una reducción de ajo y chile, cubiertas con hojas de albahaca crujientes.",
       "descriptionEn": "Sautéed chicken wings in a garlic chili reduction topped with crispy basil leaves.",
       "price": "$11.95",
-      "popular": true,
-      "badge": "Chef Special",
-      "tags": [
-        "Ajo",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-10",
-      "categoryId": "mains",
-      "nameEs": "Pad Thai Tradicional",
-      "nameEn": "Traditional Pad Thai",
-      "descriptionEs": "Fideos de arroz salteados con huevo, brotes de soya, cebollines y maní en nuestra salsa de tamarindo exclusiva.",
-      "descriptionEn": "Stir-fried rice noodles with egg, bean sprouts, scallions, and crushed peanuts in our signature tamarind sauce.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "Fideos",
-        "Clásico"
-      ],
-      "allergens": [
-        "Huevo",
-        "Maní"
-      ],
+      "id": "koong-ka-bogs",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Koong Ka Bogs",
+      "nameEn": "Koong Ka Bogs",
+      "descriptionEs": "Camarón tailandés y cerdo marinado envueltos en wonton crujiente, servidos con salsa de chile dulce.",
+      "descriptionEn": "Crispy wonton-wrapped Thai shrimp and marinated pork served with sweet chili sauce.",
+      "price": "$9.95",
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-11",
-      "categoryId": "mains",
-      "nameEs": "Curry Verde Tailandés",
-      "nameEn": "Thai Green Curry",
-      "descriptionEs": "Curry verde aromático con leche de coco, brotes de bambú, berenjena, albahaca y su elección de proteína.",
-      "descriptionEn": "Aromatic green curry with coconut milk, bamboo shoots, eggplant, sweet basil, and your choice of protein.",
+      "id": "fried-wonton",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Wontons fritos",
+      "nameEn": "Fried Wonton",
+      "descriptionEs": "Wontons de cerdo crujientes con salsa de chile dulce",
+      "descriptionEn": "Crispy pork wontons with sweet chili sauce",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nibble-platter",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Platón para picar",
+      "nameEn": "Nibble Platter",
+      "descriptionEs": "Muestra de tus entradas favoritas: rollitos primavera, satay de pollo, empanaditas de curry, koong ka bogs, alitas y wontons fritos.",
+      "descriptionEn": "Sampler of your favorite appetizers: spring rolls, chicken satay, curry puffs, koong ka bogs, wings, and fried wontons.",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "panko-fried-oyster-6",
+      "categoryId": "appetizers-dinner",
+      "nameEs": "Ostiones fritos en panko (6)",
+      "nameEn": "Panko Fried Oyster (6)",
+      "descriptionEs": "Empanizados en panko y fritos, servidos con mayonesa picante.",
+      "descriptionEn": "Coated panko deep fried serve spicy mayo sauce.",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "papaya-salad-som-tum",
+      "categoryId": "thai-salads-dinner",
+      "nameEs": "Ensalada de papaya (som tum)",
+      "nameEn": "Papaya Salad (Som Tum)",
+      "descriptionEs": "Papaya verde rallada, tomates y zanahorias en aderezo de chile y limón, cubierta con cacahuate molido.",
+      "descriptionEn": "Shredded green papaya, tomatoes, and carrots in a chili lime dressing topped with ground peanuts.",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nam-sod",
+      "categoryId": "thai-salads-dinner",
+      "nameEs": "Nam Sod",
+      "nameEn": "Nam Sod",
+      "descriptionEs": "Cerdo molido con cebolla morada, jengibre, cacahuates, cebollín y aderezo picante de limón.",
+      "descriptionEn": "Ground pork with red onions, ginger, peanuts, scallions, and a spicy lime dressing.",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yum-larb",
+      "categoryId": "thai-salads-dinner",
+      "nameEs": "Yum Larb",
+      "nameEn": "Yum Larb",
+      "descriptionEs": "Pollo o cerdo a elegir con arroz tostado molido, cebollas, cebollín, chiles, hojas de menta y aderezo de limón.",
+      "descriptionEn": "Choice of chicken or pork with ground toasted rice, onions, scallions, chili peppers, mint leaves, and lime dressing.",
+      "price": "$12.95 (chicken or pork)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "thai-salads-dinner",
+      "nameEs": "Ensalada de la casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "Vegetales frescos servidos con salsa de cacahuate.",
+      "descriptionEn": "Fresh vegetables served with peanut sauce.",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tom-yum",
+      "categoryId": "soups-dinner",
+      "nameEs": "Tom Yum",
+      "nameEn": "Tom Yum",
+      "descriptionEs": "Famoso caldo tailandés agrio y picante con hierba limón fresca, jugo de limón y vegetales. (Chico | Grande)",
+      "descriptionEn": "Famous Thai sour and spicy broth with fresh lemongrass, lime juice, and vegetables. (Small | Large)",
+      "price": "Chicken or Vegetable: Small $5.95 / Large $9.95; Seafood or Shrimp: Small $7.95 / Large $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tom-kha",
+      "categoryId": "soups-dinner",
+      "nameEs": "Tom Kha",
+      "nameEn": "Tom Kha",
+      "descriptionEs": "Sopa de coco con hierba limón, hongos, jugo de limón y vegetales. (Chico | Grande)",
+      "descriptionEn": "Coconut soup with lemongrass, mushrooms, lime juice, and vegetables. (Small | Large)",
+      "price": "Chicken or Vegetable: Small $5.95 / Large $9.95; Seafood or Shrimp: Small $7.95 / Large $12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-soup",
+      "categoryId": "soups-dinner",
+      "nameEs": "Sopa de vegetales",
+      "nameEn": "Vegetable Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small $5.95 / Large $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "noodle-tofu-soup",
+      "categoryId": "soups-dinner",
+      "nameEs": "Sopa de fideos con tofu",
+      "nameEn": "Noodle Tofu Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small $5.95 / Large $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wonton-soup",
+      "categoryId": "soups-dinner",
+      "nameEs": "Sopa wonton",
+      "nameEn": "Wonton Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small $5.95 / Large $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miso-soup",
+      "categoryId": "soups-dinner",
+      "nameEs": "Sopa miso",
+      "nameEn": "Miso Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small $5.95 / Large $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kai-ka-pow",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Kai Ka-Pow",
+      "nameEn": "Kai Ka-Pow",
+      "descriptionEs": "Sin elección de carne. Pollo molido con hierbas tailandesas en nuestra salsa especial. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "No choice of meat. Ground chicken served with Thai herbs in our special sauce. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-belly",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Panceta de cerdo",
+      "nameEn": "Pork Belly",
+      "descriptionEs": "Sin elección de carne. Panceta de cerdo salteada en salsa prik king con ejotes, pimientos y zanahorias. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "No choice of meat. Stir fried pork belly in prik king sauce with green beans, bell peppers, and carrots. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
       "price": "$17.95",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Curry",
-        "Sin Gluten"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "elephant-trail-12",
+      "id": "eggplant-basil",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Berenjena con albahaca",
+      "nameEn": "Eggplant Basil",
+      "descriptionEs": "Berenjena, albahaca, pimientos, ejotes, cebollas. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Eggplant, basil, bell peppers, green beans, onions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cashew-nut",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Nuez de la India",
+      "nameEn": "Cashew Nut",
+      "descriptionEs": "Nueces de la India, piña, chícharos chinos, zanahorias, hongos, cebollas y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Cashew nuts, pineapple, snow peas, carrots, mushrooms, onions, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-sour",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Agridulce",
+      "nameEn": "Sweet & Sour",
+      "descriptionEs": "Piña, pimientos, zanahorias, pepinos, cebollas, tomates y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Pineapple, bell peppers, carrots, cucumbers, onions, tomatoes, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-stir-fry",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Salteado con jengibre",
+      "nameEn": "Ginger Stir Fry",
+      "descriptionEs": "Jengibre, elotitos, pimientos, zanahorias, hongos, cebollas y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Ginger, baby corn, bell peppers, carrots, mushrooms, onions, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-stir-fry",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Salteado con ajo",
+      "nameEn": "Garlic Stir Fry",
+      "descriptionEs": "Ajo, chícharos chinos, elotitos, pimientos, bok choy, brócoli, zanahorias, col y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Garlic, snow peas, baby corn, bell peppers, bok choy, broccoli, carrots, cabbage, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rama",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Rama",
+      "nameEn": "Rama",
+      "descriptionEs": "Piña, vegetales frescos variados y salsa tailandesa de cacahuate. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Pineapple, assorted fresh vegetables, and Thai peanut sauce. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-stir-fry",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Salteado con albahaca",
+      "nameEn": "Basil Stir Fry",
+      "descriptionEs": "Albahaca, pimientos, ejotes y cebollas. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Basil, bell peppers, green beans, and onions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-stir-fry",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Salteado con brócoli",
+      "nameEn": "Broccoli Stir Fry",
+      "descriptionEs": "Brócoli, chícharos chinos, pimientos, zanahorias, hongos, cebollas y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Broccoli, snow peas, bell peppers, carrots, mushrooms, onions, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-chicken",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Pollo a la naranja",
+      "nameEn": "Orange Chicken",
+      "descriptionEs": "Pollo rebozado crujiente bañado en una salsa agridulce. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy battered chicken tossed in a sweet and tangy sauce. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-kaprow",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Cerdo kaprow",
+      "nameEn": "Pork Kaprow",
+      "descriptionEs": "Platillo tailandés clásico de cerdo picado, albahaca tailandesa, salsa de chile ojo de pájaro y huevo frito. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Classic Thai dish minced pork, Thai basil, bird's eye chili sauce, fried egg. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "protein-rice-choices",
+      "categoryId": "classic-entrees-dinner",
+      "nameEs": "Opciones de proteína y arroz",
+      "nameEn": "Protein & Rice Choices",
+      "descriptionEs": "Proteína a elegir: pollo, res (+$2), cerdo, tofu, vegetales, mariscos (+$4), camarón o calamar (+$3), pollo crujiente (+$3). Se sirve con arroz jazmín o integral, o arroz glutinoso (+$3).",
+      "descriptionEn": "Choice of protein: chicken, beef (+$2), pork, tofu, vegetable, seafood (+$4), shrimp or squid (+$3), crispy chicken (+$3). Served with jasmine or brown rice, or sticky rice (+$3).",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry rojo",
+      "nameEn": "Red Curry",
+      "descriptionEs": "Con leche de coco, brotes de bambú, pimientos, ejotes y albahaca. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, bamboo shoots, bell peppers, green beans, and basil. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry verde",
+      "nameEn": "Green Curry",
+      "descriptionEs": "Con leche de coco, brotes de bambú, pimientos y ejotes. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, bamboo shoots, bell peppers, and green beans. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellow-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry amarillo",
+      "nameEn": "Yellow Curry",
+      "descriptionEs": "Con leche de coco, piña, pimientos, calabacín, cebollas y tomates. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, pineapple, bell peppers, zucchini, onions, and tomatoes. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penang-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry Penang",
+      "nameEn": "Penang Curry",
+      "descriptionEs": "Con leche de coco, pimientos, brócoli y zanahorias. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, bell peppers, broccoli, and carrots. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "massaman-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry massaman",
+      "nameEn": "Massaman Curry",
+      "descriptionEs": "Con leche de coco, pimientos, cebollas, camote y cacahuates. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, bell peppers, onions, sweet potato, and peanuts. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-curry",
+      "categoryId": "thai-curry-dinner",
+      "nameEs": "Curry de mango",
+      "nameEn": "Mango Curry",
+      "descriptionEs": "Con leche de coco, mangos, pimientos y albahaca dulce. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3). Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "With coconut milk, mangoes, bell peppers, and sweet basil. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3). Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-thai",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Pad thai",
+      "nameEn": "Pad Thai",
+      "descriptionEs": "Nuestros fideos tailandeses más famosos, con huevo, germen de soya, cebollín y cacahuates. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Our most famous Thai noodles with egg, bean sprouts, scallions, and peanuts. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-pad-thai",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Pad thai con pollo crujiente",
+      "nameEn": "Crispy Chicken Pad Thai",
+      "descriptionEs": "Sin elección de carne. Pad thai con pollo dorado y crujiente. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "No choice of meat. Pad Thai with crispy golden chicken. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-thai-duck",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Pad thai con pato",
+      "nameEn": "Pad Thai Duck",
+      "descriptionEs": "Sin elección de carne. Pad thai con medio pato deshuesado. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "No choice of meat. Pad Thai with half boneless duck. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "drunken-noodles",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Fideos borrachos (drunken noodles)",
+      "nameEn": "Drunken Noodles",
+      "descriptionEs": "Fideos de arroz en salsa de chile con pimientos, cebollas, hojas de albahaca y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Rice noodles in chili sauce with bell peppers, onions, basil leaves, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-woon-sen",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Pad Woon Sen",
+      "nameEn": "Pad Woon Sen",
+      "descriptionEs": "Fideos transparentes con huevo, zanahorias, apio, cebollas, pimientos rojos, tomates y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Clear noodles with egg, carrots, celery, onions, red peppers, tomatoes, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-si-eow",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Pad Si Eow",
+      "nameEn": "Pad Si Eow",
+      "descriptionEs": "Fideos de arroz con huevo, brócoli chino y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Rice noodles with egg, Chinese broccoli, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-fried-rice",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Arroz frito con albahaca",
+      "nameEn": "Basil Fried Rice",
+      "descriptionEs": "Huevo, pimientos, chícharos, cebollas, ejotes, tomates, hojas de albahaca y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Egg, bell peppers, green peas, onions, string beans, tomatoes, basil leaves, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-fried-rice",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Arroz frito tailandés",
+      "nameEn": "Thai Fried Rice",
+      "descriptionEs": "Huevo, piña, brócoli, zanahorias, chícharos, cebollas y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Egg, pineapple, broccoli, carrots, green peas, onions, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-fried-rice",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Arroz frito con jengibre",
+      "nameEn": "Ginger Fried Rice",
+      "descriptionEs": "Jengibre fresco, brotes de bambú, zanahorias, cebollas, chícharos y cebollín. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Fresh ginger, bamboo shoots, carrots, onions, peas, and scallions. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-fried-rice",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Arroz frito con piña",
+      "nameEn": "Pineapple Fried Rice",
+      "descriptionEs": "Con piña, huevos, zanahorias, cebollas y nueces de la India. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "With pineapple, eggs, carrots, onions, and cashew nuts. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pho-noodle-soup",
+      "categoryId": "noodles-fried-rice-dinner",
+      "nameEs": "Sopa de fideos pho",
+      "nameEn": "Pho Noodle Soup",
+      "descriptionEs": "Caldo de res caliente y sabroso servido sobre fideos de arroz, con limón, cilantro, albahaca y germen de soya al lado. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3), pollo crujiente ($3).",
+      "descriptionEn": "Hot and savory beef broth served over rice noodles with lime, cilantro, basil, and bean sprouts on the side. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3), Crispy Chicken ($3)",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-basil",
+      "categoryId": "duck-dinner",
+      "nameEs": "Pato con albahaca",
+      "nameEn": "Duck Basil",
+      "descriptionEs": "Medio pato deshuesado con pimientos, ejotes, cebollas y albahaca fresca en una reducción de chile. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Half boneless duck with bell peppers, green beans, onions, and fresh basil in a chili reduction. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-ginger",
+      "categoryId": "duck-dinner",
+      "nameEs": "Pato con jengibre",
+      "nameEn": "Duck Ginger",
+      "descriptionEs": "Medio pato deshuesado con jengibre, elotitos, pimientos, zanahorias, hongos, cebollas y cebollín. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Half boneless duck with ginger, baby corn, bell peppers, carrots, mushrooms, onions, and scallions. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-red-curry",
+      "categoryId": "duck-dinner",
+      "nameEs": "Pato al curry rojo",
+      "nameEn": "Duck Red Curry",
+      "descriptionEs": "Medio pato deshuesado con pimientos, brotes de bambú y ejotes en curry rojo. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Half boneless duck with bell peppers, bamboo shoots, and green beans in red curry. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-sweet-sour",
+      "categoryId": "duck-dinner",
+      "nameEs": "Pato agridulce",
+      "nameEn": "Duck Sweet & Sour",
+      "descriptionEs": "Medio pato deshuesado con piña, zanahorias, pimiento verde, cebollas, pepino, tomates y cebollín. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Half boneless duck with pineapple, carrots, green bell peppers, onions, cucumber, tomatoes, and scallions. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-mixed-vegetables",
+      "categoryId": "duck-dinner",
+      "nameEs": "Pato con vegetales mixtos",
+      "nameEn": "Duck Mixed Vegetables",
+      "descriptionEs": "Medio pato deshuesado con chícharos chinos, elotitos, brócoli, zanahorias, cebollín y hongos en salsa de ajo. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Half boneless duck with snow peas, baby corn, broccoli, carrots, scallions, and mushrooms in garlic sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-red-snapper",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Pargo rojo con albahaca",
+      "nameEn": "Basil Red Snapper",
+      "descriptionEs": "Pargo rojo entero crujiente cubierto con pimientos, ejotes, cebollas, hongos y albahaca fresca en salsa tailandesa de chile. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy whole red snapper topped with bell peppers, green beans, onions, mushrooms, and fresh basil in Thai chili sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-red-snapper",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Pargo rojo al ajo",
+      "nameEn": "Garlic Red Snapper",
+      "descriptionEs": "Pargo rojo entero crujiente cocinado con ajo crujiente y pimienta blanca. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy whole red snapper cooked with crunchy garlic and white pepper. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-sour-red-snapper",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Pargo rojo agridulce",
+      "nameEn": "Sweet & Sour Red Snapper",
+      "descriptionEs": "Pargo rojo entero crujiente cocinado con piña, zanahorias, pepino, cebollas, tomates y cebollín en salsa agridulce. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy whole red snapper cooked with pineapple, carrots, cucumber, onions, tomatoes, and scallions in sweet & sour sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-chili-red-snapper",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Pargo rojo con chile dulce",
+      "nameEn": "Sweet Chili Red Snapper",
+      "descriptionEs": "Pargo rojo entero crujiente cocinado con pimientos, ejotes y zanahorias en salsa picante. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy whole red snapper cooked with bell peppers, green beans, and carrots in a spicy sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-red-snapper",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Pargo rojo con jengibre",
+      "nameEn": "Ginger Red Snapper",
+      "descriptionEs": "Pargo rojo entero crujiente cocinado con pimientos, hongos, cebollas, cebollín y jengibre. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy whole red snapper cooked with bell peppers, mushrooms, onions, scallions, and ginger. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-salmon",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Salmón con jengibre",
+      "nameEn": "Ginger Salmon",
+      "descriptionEs": "Salmón fresco cocinado con jengibre, elotitos, pimientos, zanahorias, hongos, cebollas y cebollín. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Fresh salmon cooked with ginger, baby corn, bell peppers, carrots, mushrooms, onions, and scallions. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "choo-chee-salmon",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Salmón choo chee",
+      "nameEn": "Choo Chee Salmon",
+      "descriptionEs": "Salmón a la parrilla cubierto con brotes de bambú, chícharos chinos y piña en curry picante. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Grilled salmon topped with bamboo shoots, snow peas, and pineapple in spicy curry. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chili-salmon",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Salmón al chile",
+      "nameEn": "Chili Salmon",
+      "descriptionEs": "Salmón a la parrilla cubierto con pimientos y albahaca fresca en salsa tailandesa de chile. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Grilled salmon topped with bell peppers and fresh basil in Thai chili sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-loves-scallop",
+      "categoryId": "seafood-dinner",
+      "nameEs": "El camarón ama a la vieira",
+      "nameEn": "Shrimp Loves Scallop",
+      "descriptionEs": "Camarón y vieiras con zanahorias, cebollas, hongos, cebollín y jengibre en salsa de ajo. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Shrimp and scallops with carrots, onions, mushrooms, scallions, and ginger in garlic sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-soft-shell-crab",
+      "categoryId": "seafood-dinner",
+      "nameEs": "Cangrejo de caparazón blando con albahaca",
+      "nameEn": "Basil Soft Shell Crab",
+      "descriptionEs": "Cangrejo de caparazón blando crujiente, vieiras, camarón y calamar con hojas de albahaca, pimientos, cebollas y ejotes en salsa picante. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Crispy soft shell crab, scallops, shrimp, and squid with basil leaves, bell peppers, onions, and green beans in a spicy sauce. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-mix-vegetables",
+      "categoryId": "vegetarian-dinner",
+      "nameEs": "Verduras mixtas al vapor",
+      "nameEn": "Steamed Mix Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tofu-delight",
+      "categoryId": "vegetarian-dinner",
+      "nameEs": "Delicia de tofu",
+      "nameEn": "Tofu Delight",
+      "descriptionEs": "Tofu con chícharos chinos, germen de soya, hongos, calabaza y cebollín. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Tofu with snow peas, bean sprouts, mushrooms, squash, and scallions. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-delight",
+      "categoryId": "vegetarian-dinner",
+      "nameEs": "Delicia de berenjena",
+      "nameEn": "Eggplant Delight",
+      "descriptionEs": "Berenjena con pimientos, ejotes, cebollas y hojas de albahaca. Se sirve con arroz jazmín o integral a elegir, o arroz glutinoso (+$3)",
+      "descriptionEn": "Eggplant with bell peppers, green beans, onions, and basil leaves. Served with choice of Jasmine or Brown rice or Sticky Rice (+$3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-delight",
+      "categoryId": "vegetarian-dinner",
+      "nameEs": "Delicia de vegetales",
+      "nameEn": "Vegetable Delight",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-bananas",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Plátanos fritos",
+      "nameEn": "Fried Bananas",
+      "descriptionEs": "Se sirven con chocolate y ajonjolí.",
+      "descriptionEn": "Served with chocolate and sesame seeds.",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-bananas-with-ice-cream",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Plátanos fritos con helado",
+      "nameEn": "Fried Bananas with Ice Cream",
+      "descriptionEs": "¡Helado de vainilla, jengibre, coco o té verde a elegir, de J Foster, de Avon!",
+      "descriptionEn": "Choice of Vanilla, Ginger, Coconut, or Green Tea ice cream from Avon's own J Foster!",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "descriptionEs": "¡Helado de vainilla, jengibre, coco o té verde a elegir, de J Foster, de Avon!",
+      "descriptionEn": "Choice of Vanilla, Ginger, Coconut, or Green Tea ice cream from Avon's own J Foster!",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-rice-with-ice-cream",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Arroz dulce con helado",
+      "nameEn": "Sweet Rice with Ice Cream",
+      "descriptionEs": "¡Helado de vainilla, jengibre, coco o té verde a elegir, de J Foster, de Avon!",
+      "descriptionEn": "Choice of Vanilla, Ginger, Coconut, or Green Tea ice cream from Avon's own J Foster!",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-with-sweet-rice",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Mango con arroz dulce",
+      "nameEn": "Mango with Sweet Rice",
+      "descriptionEs": "Se sirve con coco.",
+      "descriptionEn": "Served with coconut.",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-ice-cream",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Helado frito",
+      "nameEn": "Fried Ice Cream",
+      "descriptionEs": "Se sirve con helado de vainilla.",
+      "descriptionEn": "Served with vanilla ice cream.",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-lava-cake",
+      "categoryId": "dessert-dinner",
+      "nameEs": "Pastel de chocolate fundido",
+      "nameEn": "Chocolate Lava Cake",
+      "descriptionEs": "¡Helado de vainilla, jengibre, coco o té verde a elegir, de J Foster, de Avon!",
+      "descriptionEn": "Choice of Vanilla, Ginger, Coconut, or Green Tea ice cream from Avon's own J Foster!",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-green-penang-curry",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Curry rojo/verde/Penang",
+      "nameEn": "Red/Green/Penang Curry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-basil",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Albahaca tailandesa",
+      "nameEn": "Thai Basil",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-duck",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Pato con albahaca (almuerzo)",
+      "nameEn": "Basil Duck",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kai-kra-pow",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Kai Kra-Pow",
+      "nameEn": "Kai Kra-Pow",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-stir-fry-lunch",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Salteado con ajo (almuerzo)",
+      "nameEn": "Garlic Stir Fry (Lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-stir-fry-lunch",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Salteado con jengibre (almuerzo)",
+      "nameEn": "Ginger Stir Fry (Lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cashew-nut-stir-fry",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Salteado con nueces de la India",
+      "nameEn": "Cashew Nut Stir Fry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-stir-fry-lunch",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Salteado con brócoli (almuerzo)",
+      "nameEn": "Broccoli Stir Fry (Lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-sour-lunch",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Agridulce (almuerzo)",
+      "nameEn": "Sweet & Sour (Lunch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lunch-combo-bento-box-protein-choices",
+      "categoryId": "classic-entrees-lunch-mon-sat-11-30-am-3-pm",
+      "nameEs": "Combo de almuerzo, caja bento y opciones de proteína",
+      "nameEn": "Lunch Combo, Bento Box & Protein Choices",
+      "descriptionEs": "Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res (+$2), cerdo, tofu, vegetales, mariscos (+$4), camarón o calamar (+$3). Se sirve con arroz jazmín o integral.",
+      "descriptionEn": "Lunch Combo (+$2 to any entree): served with spring rolls and your choice of Tom Yum soup or a house salad. Bento Box (+$3 to any entree): includes house salad, Tom Yum soup, shrimp shumai and spring rolls. Choice of protein: chicken, beef (+$2), pork, tofu, vegetable, seafood (+$4), shrimp or squid (+$3). Served with jasmine or brown rice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-thai-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Pad thai (almuerzo)",
+      "nameEn": "Pad Thai (Lunch)",
+      "descriptionEs": "Nuestros fideos tailandeses más famosos, con huevo, germen de soya, cebollín y cacahuates. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "Our most famous Thai noodles with egg, bean sprouts, scallions, and peanuts. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-pad-thai-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Pad thai con pollo crujiente (almuerzo)",
+      "nameEn": "Crispy Chicken Pad Thai (Lunch)",
+      "descriptionEs": "¡Sin elección de carne! Pad thai con pollo dorado y crujiente. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "No choice of meat! Pad Thai with crispy golden chicken. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "drunken-noodles-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Fideos borrachos (almuerzo)",
+      "nameEn": "Drunken Noodles (Lunch)",
+      "descriptionEs": "Fideos de arroz en salsa de chile con pimientos, cebollas, hojas de albahaca y cebollín. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "Rice noodles in chili sauce with bell peppers, onions, basil leaves, and scallions. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pad-si-eow-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Pad si eow (almuerzo)",
+      "nameEn": "Pad Si Eow (Lunch)",
+      "descriptionEs": "Fideos de arroz con huevo, brócoli chino y cebollín. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "Rice noodles with egg, Chinese broccoli, and scallions. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-fried-rice-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Arroz frito con albahaca (almuerzo)",
+      "nameEn": "Basil Fried Rice (Lunch)",
+      "descriptionEs": "Huevo, pimientos, chícharos, cebollas, ejotes, tomates, hojas de albahaca y cebollín. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "Egg, bell peppers, green peas, onions, string beans, tomatoes, basil leaves, and scallions. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-fried-rice-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Arroz frito tailandés (almuerzo)",
+      "nameEn": "Thai Fried Rice (Lunch)",
+      "descriptionEs": "Huevo, piña, brócoli, zanahorias, chícharos, cebollas y cebollín. Combo de almuerzo (+$2 a cualquier plato): se sirve con rollitos primavera y sopa tom yum o ensalada de la casa a elegir. Caja bento (+$3 a cualquier plato): incluye ensalada de la casa, sopa tom yum, shumai de camarón y rollitos primavera. Proteína a elegir: pollo, res ($2), cerdo, tofu, vegetales, mariscos ($4), camarón o calamar ($3)",
+      "descriptionEn": "Egg, pineapple, broccoli, carrots, green peas, onions, and scallions. Lunch Combo (+$2 to any entree) Served with Spring Rolls and your choice of Tom Yum soup or a House Salad. Bento Box (+$3 to any entree) Includes our House Salad, Tom Yum soup, Shrimp Shumai, and Spring Rolls. Choice of Protein: Chicken, Beef ($2), Pork, Tofu, Vegetable, Seafood ($4), Shrimp or Squid ($3)",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bo-bun-noodles-with-crispy-chicken",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Fideos bo bun con pollo crujiente",
+      "nameEn": "Bo Bun Noodles with Crispy Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.95 / With Shrimp $16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pho-noodle-soup-lunch",
+      "categoryId": "noodles-fried-rice-lunch",
+      "nameEs": "Sopa de fideos pho (almuerzo)",
+      "nameEn": "Pho Noodle Soup (Lunch)",
+      "descriptionEs": "Caldo de res caliente y sabroso servido sobre fideos de arroz, con limón, cilantro, albahaca y germen de soya al lado.",
+      "descriptionEn": "Hot and savory beef broth served over rice noodles with lime, cilantro, basil, and bean sprouts on the side.",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-drinks",
       "categoryId": "beverages",
-      "nameEs": "Té Helado Tailandés",
-      "nameEn": "Thai Iced Tea",
-      "descriptionEs": "Té negro tailandés elaborado tradicionalmente, especiado y coronado con leche cremosa.",
-      "descriptionEn": "Traditionally brewed Thai black tea, spiced and topped with creamy rich milk.",
+      "nameEs": "Refrescos",
+      "nameEn": "Soft Drinks",
+      "descriptionEs": "Coca-Cola, Coca-Cola de dieta, Sprite, ginger ale",
+      "descriptionEn": "Coke, Diet Coke, Sprite, Ginger Ale",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-juice",
+      "categoryId": "beverages",
+      "nameEs": "Jugo de mango",
+      "nameEn": "Mango Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "unsweetened-ice-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té helado sin azúcar",
+      "nameEn": "Unsweetened Ice Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-iced-coffee",
+      "categoryId": "beverages",
+      "nameEs": "Café helado tailandés",
+      "nameEn": "Thai Iced Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.50",
-      "popular": true,
-      "badge": "Bebida",
-      "tags": [
-        "Dulce",
-        "Refrescante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-iced-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té helado tailandés",
+      "nameEn": "Thai Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "beverages",
+      "nameEs": "Té caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "Té verde, té de jazmín, té de jengibre, té tailandés",
+      "descriptionEn": "Green Tea, Jasmine Tea, Ginger Tea, Thai Tea",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "perrier-sparkling-water",
+      "categoryId": "beverages",
+      "nameEs": "Agua mineral Perrier",
+      "nameEn": "Perrier Sparkling Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-water",
+      "categoryId": "beverages",
+      "nameEs": "Agua embotellada",
+      "nameEn": "Bottled Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-milk-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Té con leche y miel",
+      "nameEn": "Honey Milk Tea",
+      "descriptionEs": "¡Hecho sin lácteos!",
+      "descriptionEn": "Made without dairy!",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honeydew-milk-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Té con leche de melón verde",
+      "nameEn": "Honeydew Milk Tea",
+      "descriptionEs": "¡Hecho sin lácteos!",
+      "descriptionEn": "Made without dairy!",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taro-milk-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Té con leche de taro",
+      "nameEn": "Taro Milk Tea",
+      "descriptionEs": "¡Hecho sin lácteos!",
+      "descriptionEn": "Made without dairy!",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Té verde (Green Tea)",
+      "nameEn": "Green Tea",
+      "descriptionEs": "¡Hecho sin lácteos!",
+      "descriptionEn": "Made without dairy!",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Té tailandés",
+      "nameEn": "Thai Tea",
+      "descriptionEs": "Contiene leche",
+      "descriptionEn": "Contains Milk",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomegranate-yogurt",
+      "categoryId": "bubble-tea",
+      "nameEs": "Yogur de granada",
+      "nameEn": "Pomegranate Yogurt",
+      "descriptionEs": "sin té",
+      "descriptionEn": "without tea",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "about-our-bubble-tea",
+      "categoryId": "bubble-tea",
+      "nameEs": "Sobre nuestro bubble tea",
+      "nameEn": "About Our Bubble Tea",
+      "descriptionEs": "¡Hecho sin lácteos! El té tailandés contiene leche; el yogur de granada se hace sin té.",
+      "descriptionEn": "Made without dairy! Thai Tea contains milk; Pomegranate Yogurt is made without tea.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shannon-ridge-chardonnay",
+      "categoryId": "white-wines",
+      "nameEs": "Shannon Ridge Chardonnay",
+      "nameEn": "Shannon Ridge Chardonnay",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavazza-delle-venezie-doc-pinot-grigio",
+      "categoryId": "white-wines",
+      "nameEs": "Cavazza Delle Venezie Doc Pinot Grigio",
+      "nameEn": "Cavazza Delle Venezie Doc Pinot Grigio",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nobilo-sauvignon-blanc",
+      "categoryId": "white-wines",
+      "nameEs": "Nobilo Sauvignon Blanc",
+      "nameEn": "Nobilo Sauvignon Blanc",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $10.00 / Bottle $38.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clean-slate-riesling",
+      "categoryId": "white-wines",
+      "nameEs": "Clean Slate Riesling",
+      "nameEn": "Clean Slate Riesling",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $8.00 / Bottle $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "robert-mondavi-private-selection-pinot-noir",
+      "categoryId": "red-wines",
+      "nameEs": "Robert Mondavi Private Selection Pinot Noir",
+      "nameEn": "Robert Mondavi Private Selection Pinot Noir",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "noble-vines-181-merlot-california",
+      "categoryId": "red-wines",
+      "nameEs": "Noble Vines 181 Merlot California",
+      "nameEn": "Noble Vines 181 Merlot California",
+      "descriptionEs": "($ copa / $ botella)",
+      "descriptionEn": "($ Glass / $ Bottle)",
+      "price": "Glass $9.00 / Bottle $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1924-double-black-cabernet-sauvignon",
+      "categoryId": "red-wines",
+      "nameEs": "1924 Double Black Cabernet Sauvignon",
+      "nameEn": "1924 Double Black Cabernet Sauvignon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "septima-malbec",
+      "categoryId": "red-wines",
+      "nameEs": "Séptima Malbec",
+      "nameEn": "Séptima Malbec",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "le-crique-rose",
+      "categoryId": "rose-wines",
+      "nameEs": "Le Crique Rosé",
+      "nameEn": "Le Crique Rosé",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ozeki-hana-awaka-junmai-sparkling",
+      "categoryId": "sake",
+      "nameEs": "Ozeki Hana Awaka Junmai Sparkling",
+      "nameEn": "Ozeki Hana Awaka Junmai Sparkling",
+      "descriptionEs": "250 ml",
+      "descriptionEn": "250mL",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ozeki-karatamba-honjozo",
+      "categoryId": "sake",
+      "nameEs": "Ozeki Karatamba Honjozo",
+      "nameEn": "Ozeki Karatamba Honjozo",
+      "descriptionEs": "300 ml",
+      "descriptionEn": "300mL",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ozeki-dry-sake",
+      "categoryId": "sake",
+      "nameEs": "Sake seco Ozeki",
+      "nameEn": "Ozeki Dry Sake",
+      "descriptionEs": "180 ml",
+      "descriptionEn": "180mL",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "singha",
+      "categoryId": "beer-selection",
+      "nameEs": "Singha",
+      "nameEn": "Singha",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuengling",
+      "categoryId": "beer-selection",
+      "nameEs": "Yuengling",
+      "nameEn": "Yuengling",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sapporo-large",
+      "categoryId": "beer-selection",
+      "nameEs": "Sapporo (grande)",
+      "nameEn": "Sapporo (Large)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, la mayoría de nuestros platos se pueden preparar sin gluten, vegetarianos o veganos a petición. Por favor informe a su servidor sobre cualquier alergia.",
-      "aEn": "Yes, most of our dishes can be made gluten-free, vegetarian, or vegan upon request. Please inform your server of any food allergies."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos privados?",
-      "qEn": "Do you offer catering services for private events?",
-      "aEs": "Sí, ofrecemos paquetes de catering fuera del local para bodas, aniversarios, cumpleaños y eventos corporativos. Contamos también con un salón privado para hasta 20 personas.",
-      "aEn": "Yes, we offer off-site catering packages for weddings, anniversaries, birthdays, and corporate events. We also feature a private dining room seating up to 20."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones en línea o por teléfono para cenas familiares y ocasiones especiales.",
-      "aEn": "We welcome walk-ins and offer quick online or phone reservations for family dinners and special occasions."
-    }
-  ]
+  "faqs": []
 }
