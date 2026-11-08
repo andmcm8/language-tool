@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "chaplin",
     "name": "Chaplin",
-    "tagline": "Steak, Raw Bar & Classic Cocktails | Carne, Barra Cruda y Cócteles Clásicos",
-    "address": "427 Howe Avenue, Shelton, CT",
+    "tagline": "American restaurant in Shelton | Restaurante americano en Shelton",
+    "address": "427 Howe Ave, Shelton, CT 06484",
     "hours": {
-      "monday_friday": "11:30 AM - 10:00 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "11:30 AM - 9:00 PM",
-      "brunch": "Sunday 11:30 AM - 3:30 PM"
+      "monday_friday": "Mon 4:00 PM - 9:00 PM; Tue-Thu 4:00 PM - 10:00 PM; Fri 11:30 AM - 10:00 PM (lunch 11:30-4, dinner 4-10)",
+      "saturday": "11:30 AM - 10:00 PM (lunch 11:30-4, dinner 4-10)",
+      "sunday": "11:30 AM - 9:00 PM (brunch 11:30-3:30, dinner 4-9)"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#1f2937",
     "logoIcon": "utensils",
@@ -32,142 +24,822 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
+      "icon": "Utensils"
+    },
+    {
+      "id": "raw-bar",
+      "nameEs": "Barra cruda",
+      "nameEn": "Raw Bar",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrées",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "handheld",
+      "nameEs": "Para comer con la mano",
+      "nameEn": "Handheld",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "sides-and-sauces",
+      "nameEs": "Guarniciones y salsas",
+      "nameEn": "Sides and Sauces",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classic-cocktails",
+      "nameEs": "Cócteles clásicos",
+      "nameEn": "Classic Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "staff-creations",
+      "nameEs": "Creaciones del personal",
+      "nameEn": "Staff Creations",
+      "icon": "Utensils"
+    },
+    {
+      "id": "remixes",
+      "nameEs": "Remixes",
+      "nameEn": "Remixes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-list",
+      "nameEs": "Lista de cervezas",
+      "nameEn": "Beer List",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "chaplin-01",
-      "categoryId": "appetizers",
-      "nameEs": "Torre de Mariscos",
+      "id": "oysters",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostiones",
+      "nameEn": "Oysters",
+      "descriptionEs": "Wellfleet (MA), Copps Island (CT), Beau Soleil (NB). Servido con mignonette de limón Meyer, salsa coctelera de la casa y rábano picante recién rallado",
+      "descriptionEn": "Wellfleet (MA), Copps Island (CT), Beau Soleil (NB). Served with Meyer lemon mignonette, house cocktail sauce, fresh grated horseradish",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "little-neck-clams-6",
+      "categoryId": "raw-bar",
+      "nameEs": "Almejas little neck (6)",
+      "nameEn": "Little Neck Clams (6)",
+      "descriptionEs": "Servido con mignonette de limón Meyer, salsa coctelera de la casa y rábano picante recién rallado",
+      "descriptionEn": "Served with Meyer lemon mignonette, house cocktail sauce, fresh grated horseradish",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cocktail-3",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de camarón (3)",
+      "nameEn": "Shrimp Cocktail (3)",
+      "descriptionEs": "Servido con mignonette de limón Meyer, salsa coctelera de la casa y rábano picante recién rallado",
+      "descriptionEn": "Served with Meyer lemon mignonette, house cocktail sauce, fresh grated horseradish",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-tower",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos",
       "nameEn": "Seafood Tower",
-      "descriptionEs": "Ostras frescas, almejas, camarones y ensalada de mariscos servidos con mignonette de limón Meyer.",
-      "descriptionEn": "Fresh oysters, clams, shrimp, and seafood salad served with Meyer lemon mignonette.",
+      "descriptionEs": "Ostiones, almejas, camarones, ensalada de mariscos",
+      "descriptionEn": "Oysters, Clams, Shrimp, Seafood Salad",
       "price": "$55.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "chaplin-02",
+      "id": "grand-seafood-tower",
+      "categoryId": "raw-bar",
+      "nameEs": "Gran torre de mariscos",
+      "nameEn": "Grand Seafood Tower",
+      "descriptionEs": "Ostiones, almejas, camarones, ensalada de mariscos, salmón ahumado",
+      "descriptionEn": "Oysters, Clams, Shrimp, Seafood Salad, Smoked Salmon",
+      "price": "$100.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chilled-seafood-salad",
+      "categoryId": "raw-bar",
+      "nameEs": "Ensalada fría de mariscos",
+      "nameEn": "Chilled Seafood Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-sourdough",
       "categoryId": "appetizers",
-      "nameEs": "Calamar Crujiente",
+      "nameEs": "Pan de masa madre caliente",
+      "nameEn": "Warm Sourdough",
+      "descriptionEs": "Mantequilla de hierbas, aceite balsámico, cabeza de ajo confitada",
+      "descriptionEn": "Herb Butter, Balsamic Oil Confit Garlic Bulb",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares crujientes",
       "nameEn": "Crispy Calamari",
-      "descriptionEs": "Calamar perfectamente frito servido con alioli ahumado.",
-      "descriptionEn": "Perfectly fried calamari served with a house-made smoked aioli.",
+      "descriptionEs": "Alioli ahumado",
+      "descriptionEn": "Smoked Aioli",
       "price": "$15.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "chaplin-03",
-      "categoryId": "mains",
-      "nameEs": "Filete Petit de 8oz",
+      "id": "steak-tartare",
+      "categoryId": "appetizers",
+      "nameEs": "Tártara de res",
+      "nameEn": "Steak Tartare",
+      "descriptionEs": "Pepinillos, alcaparra, limón, crostini",
+      "descriptionEn": "Pickles, Caper, Lemon Crostini",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "appetizers",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, pan molido con ajo, parmesano",
+      "descriptionEn": "Romaine, Garlic Bread Crumbs Parmesan",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polenta-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de polenta",
+      "nameEn": "Polenta Sticks",
+      "descriptionEs": "Queso parmesano, alioli de trufa",
+      "descriptionEn": "parmesan cheese, truffle aioli",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-meatballs-3",
+      "categoryId": "appetizers",
+      "nameEs": "Albóndigas caseras (3)",
+      "nameEn": "Homemade Meatballs (3)",
+      "descriptionEs": "Salsa de tomate, ricotta de la casa",
+      "descriptionEn": "Tomato Sauce, House Ricotta",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-brussels-sprouts",
+      "categoryId": "appetizers",
+      "nameEs": "Coles de Bruselas crujientes",
+      "nameEn": "Crispy Brussels Sprouts",
+      "descriptionEs": "Glaseado de miel picante, semillas de girasol, queso de cabra batido",
+      "descriptionEn": "Spicy Honey Glaze, Sunflower Seeds, Whipped Goat Cheese",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boston-bibb-salad",
+      "categoryId": "appetizers",
+      "nameEs": "Ensalada de lechuga Boston Bibb",
+      "nameEn": "Boston Bibb Salad",
+      "descriptionEs": "Tomate, pepino, cebolla, aderezo de suero de leche",
+      "descriptionEn": "Tomato, Cucumber, Onion Buttermilk Dressing",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prince-edward-island-mussels",
+      "categoryId": "appetizers",
+      "nameEs": "Mejillones de la Isla del Príncipe Eduardo",
+      "nameEn": "Prince Edward Island Mussels",
+      "descriptionEs": "Chorizo, fregola, caldo de mariscos",
+      "descriptionEn": "Chorizo, Fregola, Seafood Broth",
+      "price": "$14.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "charred-octopus",
+      "categoryId": "appetizers",
+      "nameEs": "Pulpo asado al carbón",
+      "nameEn": "Charred Octopus",
+      "descriptionEs": "Papas cambray, mantequilla de pimentón, alioli de estragón",
+      "descriptionEn": "Fingerling Potatoes, Pimenton Butter Tarragon Aioli",
+      "price": "$17.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prime-beef-tips",
+      "categoryId": "appetizers",
+      "nameEs": "Puntas de res prime",
+      "nameEn": "Prime Beef Tips",
+      "descriptionEs": "Puré de papa, champiñones a la crema con brandy",
+      "descriptionEn": "Whip Potato, Brandy Cream Mushrooms",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-shrimp-4",
+      "categoryId": "appetizers",
+      "nameEs": "Camarones salteados (4)",
+      "nameEn": "Sauteed Shrimp (4)",
+      "descriptionEs": "Chile calabrés, ajo, limón, pan",
+      "descriptionEn": "Calabrian Chili, Garlic Lemon Bread",
+      "price": "$16.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-milanese",
+      "categoryId": "appetizers",
+      "nameEs": "Pollo a la milanesa",
+      "nameEn": "Chicken Milanese",
+      "descriptionEs": "Ensalada de arúgula, salsa de mantequilla y limón",
+      "descriptionEn": "Arugula Salad, Lemon Butter Sauce",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-belly-mac-and-cheese",
+      "categoryId": "appetizers",
+      "nameEs": "Mac and cheese con panceta de cerdo",
+      "nameEn": "Pork Belly Mac and Cheese",
+      "descriptionEs": "Cavatappi, gruyère y parmesano",
+      "descriptionEn": "Cavatappi, Gruyere and Parmesan",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-beets",
+      "categoryId": "appetizers",
+      "nameEs": "Betabel rostizado",
+      "nameEn": "Roasted Beets",
+      "descriptionEs": "Feta batido, arúgula, naranja",
+      "descriptionEn": "Whipped Feta, Arugula, Oranges",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8oz-petit-filet",
+      "categoryId": "entrees",
+      "nameEs": "Filete petit de 8 oz",
       "nameEn": "8oz Petit Filet",
-      "descriptionEs": "Filete tierno con puré de papas al ajo, cebolla caramelizada y mantequilla Dolce.",
-      "descriptionEn": "Tender filet with garlic whipped potatoes, caramelized onion, and Dolce butter.",
+      "descriptionEs": "Puré de papa con ajo, cebolla caramelizada, mantequilla dolce",
+      "descriptionEn": "Garlic Whip Potatoes Caramelized Onion, Dolce Butter",
       "price": "$55.00",
-      "popular": true,
-      "badge": "Premium",
-      "tags": [
-        "Carne",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "chaplin-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Chaplin Prime",
-      "nameEn": "Chaplin Prime Burger",
-      "descriptionEs": "Carne premium, cebolla caramelizada, queso Gruyere, berros y alioli de ajo negro.",
-      "descriptionEn": "Premium beef, caramelized onion, Gruyere, watercress, and black garlic aioli.",
+      "id": "14oz-new-york-strip",
+      "categoryId": "entrees",
+      "nameEs": "New York strip de 14 oz",
+      "nameEn": "14oz New York Strip",
+      "descriptionEs": "Champiñones salteados, ajo rostizado",
+      "descriptionEn": "Sauteed Mushrooms, Roasted Garlic",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-frites",
+      "categoryId": "entrees",
+      "nameEs": "Steak frites (bistec con papas)",
+      "nameEn": "Steak Frites",
+      "descriptionEs": "Salsa bearnesa, ensalada de berros, papas fritas",
+      "descriptionEn": "Bearnaise Sauce, Watercress Salad, French Fries",
+      "price": "$36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nduja-rigatoni",
+      "categoryId": "entrees",
+      "nameEs": "Rigatoni con nduja",
+      "nameEn": "Nduja Rigatoni",
+      "descriptionEs": "Chícharos frescos, queso stracciatella",
+      "descriptionEn": "Fresh Peas, Stracciatella Cheese",
       "price": "$24.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Hamburguesa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "chaplin-05",
-      "categoryId": "beverages",
-      "nameEs": "Martini de Espresso",
+      "id": "free-bird-half-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Medio pollo Free Bird",
+      "nameEn": "Free Bird Half Chicken",
+      "descriptionEs": "Polenta cremosa, jugo de alcaparras y chile calabrés",
+      "descriptionEn": "Creamy Polenta, Caper & Calabrian Chili jus",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-striped-bass",
+      "categoryId": "entrees",
+      "nameEs": "Lubina rayada sellada en sartén",
+      "nameEn": "Pan Seared Striped Bass",
+      "descriptionEs": "Puré de coliflor, velouté de hinojo, kale salteado",
+      "descriptionEn": "Cauliflower puree, Fennel Velouté, Sauteed Kale",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguini-little-neck-clams",
+      "categoryId": "entrees",
+      "nameEs": "Linguini con almejas little neck",
+      "nameEn": "Linguini & Little Neck Clams",
+      "descriptionEs": "Gremolata de perejil y ajo",
+      "descriptionEn": "Parsley & Garlic Gremolata",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butternut-squash-risotto",
+      "categoryId": "entrees",
+      "nameEs": "Risotto de calabaza butternut",
+      "nameEn": "Butternut Squash Risotto",
+      "descriptionEs": "Salvia, aceite de semilla de calabaza",
+      "descriptionEn": "Sage, Pumpkin Seed Oil",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "16oz-ribeye",
+      "categoryId": "entrees",
+      "nameEs": "Rib eye de 16 oz",
+      "nameEn": "16oz Ribeye",
+      "descriptionEs": "Espárragos a la parrilla, demi-glace",
+      "descriptionEn": "Grilled Asparagus, Demi Glace",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bucatini-bolognese",
+      "categoryId": "entrees",
+      "nameEs": "Bucatini a la boloñesa",
+      "nameEn": "Bucatini Bolognese",
+      "descriptionEs": "Ricotta fresca",
+      "descriptionEn": "Fresh Ricotta",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaplin-prime-burger",
+      "categoryId": "handheld",
+      "nameEs": "Hamburguesa prime Chaplin",
+      "nameEn": "Chaplin Prime Burger",
+      "descriptionEs": "Cebolla caramelizada, gruyère, berros, alioli de ajo negro, papas fritas",
+      "descriptionEn": "Caramelized Onion, Gruyere, Watercress, Black Garlic Aioli French Fries",
+      "price": "$24.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-mushrooms",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Hongos silvestres",
+      "nameEn": "Wild Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asparagus",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Espárragos",
+      "nameEn": "Asparagus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-fries",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Papas fritas con trufa",
+      "nameEn": "Truffle Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whipped-potato",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Puré de papa",
+      "nameEn": "Whipped Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-salad",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Ensalada pequeña",
+      "nameEn": "Side Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bearnaise",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Bearnesa",
+      "nameEn": "Bearnaise",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola-dolce-butter",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Mantequilla dolce de gorgonzola",
+      "nameEn": "Gorgonzola Dolce Butter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "demi-glace",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Demi-glace",
+      "nameEn": "Demi Glace",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaplin-steak-sauce",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Salsa para carne Chaplin",
+      "nameEn": "Chaplin Steak Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-chimichurri",
+      "categoryId": "sides-and-sauces",
+      "nameEs": "Chimichurri verde",
+      "nameEn": "Green Chimichurri",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de chocolate",
+      "nameEn": "Chocolate Cheesecake",
+      "descriptionEs": "Crumble de nibs de cacao, chantilly, avellanas",
+      "descriptionEn": "Cocoa Nib Streusel, Chantilly Hazelnuts",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches",
+      "categoryId": "desserts",
+      "nameEs": "Tres leches",
+      "nameEn": "Tres Leches",
+      "descriptionEs": "Chantilly, aceite de albahaca, fresas, zarzamoras",
+      "descriptionEn": "Chantilly, Basil oil, Strawberries Blackberries",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-semifreddo",
+      "categoryId": "desserts",
+      "nameEs": "Semifreddo de vainilla",
+      "nameEn": "Vanilla Semifreddo",
+      "descriptionEs": "Crumble de avena, compota de zarzamora, menta",
+      "descriptionEn": "Oat Crumble, Blackberry Compote, Mint",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Espresso martini",
       "nameEn": "Espresso Martini",
-      "descriptionEs": "Vodka infusionado con vainilla, espresso fresco y licor de café.",
-      "descriptionEn": "House-infused vanilla vodka, fresh espresso, and coffee liqueur.",
+      "descriptionEs": "Vodka infusionado con vainilla de la casa, espresso, licor de café",
+      "descriptionEn": "House infused vanilla Vodka,Espresso, Coffee Liquor",
       "price": "$13.50",
-      "popular": true,
-      "badge": "Cóctel",
-      "tags": [
-        "Bebida",
-        "Cafeína"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaplin-manhattan",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Manhattan Chaplin",
+      "nameEn": "Chaplin Manhattan",
+      "descriptionEs": "Whiskey de centeno Michter's, vermut Cocchi, amargo de Angostura",
+      "descriptionEn": "Michter’s rye, Cocchi vermouth Angostura bitters",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-fashioned",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Old Fashioned",
+      "nameEn": "Old Fashioned",
+      "descriptionEs": "Bourbon Four Roses, azúcar, amargo de Angostura",
+      "descriptionEn": "Four Roses bourbon, sugar Angostura bitters",
+      "price": "$13.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "negroni",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Negroni",
+      "nameEn": "Negroni",
+      "descriptionEs": "Ginebra Denver Dry, vermut Antica, Campari, Mondino",
+      "descriptionEn": "Denver dry gin, Antica vermouth Campari, Mondino",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sazerac",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Sazerac",
+      "nameEn": "Sazerac",
+      "descriptionEs": "Whiskey de centeno Redemption, coñac Gautier, absenta, amargo de Peychaud's",
+      "descriptionEn": "Redemption rye whiskey, Gautier cognac, absinthe Peychaud’s bitters",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bees-knees",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Bee’s Knees",
+      "nameEn": "Bee’s Knees",
+      "descriptionEs": "Ginebra, miel, jugo de limón, miel de lavanda, amargos",
+      "descriptionEn": "gin, honey, lemon juice, honey lavender, bitters",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-martini",
+      "categoryId": "classic-cocktails",
+      "nameEs": "El martini",
+      "nameEn": "The Martini",
+      "descriptionEs": "Vodka o ginebra, vermut seco de la casa, mezclado",
+      "descriptionEn": "vodka or gin, house blend dry vermouth, stirred",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "love-language",
+      "categoryId": "staff-creations",
+      "nameEs": "Love Language",
+      "nameEn": "Love Language",
+      "descriptionEs": "Vodka Nue, crème de cassis, frambuesa, jarabe de naranja, clara de huevo",
+      "descriptionEn": "Nue Vodka, Creme de Cassis, Raspberry, Orange Syrup, Egg white",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cristal-cosmopolitan",
+      "categoryId": "staff-creations",
+      "nameEs": "Cristal Cosmopolitan",
+      "nameEn": "Cristal Cosmopolitan",
+      "descriptionEs": "Vodka de huckleberry, jugo de arándano blanco, licor de naranja",
+      "descriptionEn": "Huckleberry Vodka, White Cranberry Juice, Orange Liquor",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "happy-pisco",
+      "categoryId": "remixes",
+      "nameEs": "Happy Pisco",
+      "nameEn": "Happy Pisco",
+      "descriptionEs": "Bourbon Four Roses, pisco, jugo de lima, clara de huevo, jarabe de piña",
+      "descriptionEn": "Four Roses bourbon, pisco, lime juice, egg white, pineapple simple",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-espanola",
+      "categoryId": "remixes",
+      "nameEs": "La Espanola",
+      "nameEn": "La Espanola",
+      "descriptionEs": "Drapo bianco, Chartreuse verde, lima, jarabe de piña, amargo de apio, cava",
+      "descriptionEn": "Drapo bianco, Green Chartreuse lime, pineapple syrup, celery bitters, cava",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guess-who",
+      "categoryId": "remixes",
+      "nameEs": "Guess Who",
+      "nameEn": "Guess Who",
+      "descriptionEs": "Vodka Nue, Mondino, jarabe de jamaica, limón",
+      "descriptionEn": "Nue vodka, Mondino, hibiscus syrup, lemon",
+      "price": "$10.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whiskey-tart",
+      "categoryId": "remixes",
+      "nameEs": "Whiskey Tart",
+      "nameEn": "Whiskey Tart",
+      "descriptionEs": "Bourbon Four Roses, licor de naranja sanguina St. Elder, licor de naranja sanguina, clara de huevo",
+      "descriptionEn": "Four Roses bourbon, St. Elder blood orange liqueur, blood orange Liqueur, egg white",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini-remix",
+      "categoryId": "remixes",
+      "nameEs": "Espresso martini (remix)",
+      "nameEn": "Espresso Martini (Remix)",
+      "descriptionEs": "Vodka infusionado con vainilla, espresso, licor de café, Baileys",
+      "descriptionEn": "vanilla infused vodka, espresso coffee liqueur Baileys",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "allagash-brewing-belgian-style",
+      "categoryId": "beer-list",
+      "nameEs": "Allagash Brewing Belgian Style",
+      "nameEn": "Allagash Brewing Belgian Style",
+      "descriptionEs": "De barril",
+      "descriptionEn": "Draft",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "narragansett-lager",
+      "categoryId": "beer-list",
+      "nameEs": "Narragansett Lager",
+      "nameEn": "Narragansett Lager",
+      "descriptionEs": "De barril",
+      "descriptionEn": "Draft",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tribus-beer-co-boom-shakalaka-dipa",
+      "categoryId": "beer-list",
+      "nameEs": "Tribus Beer Co Boom Shakalaka DIPA",
+      "nameEn": "Tribus Beer Co Boom Shakalaka DIPA",
+      "descriptionEs": "De barril",
+      "descriptionEn": "Draft",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tribus-beer-co-bier-pilsner",
+      "categoryId": "beer-list",
+      "nameEs": "Tribus Beer Co Bier Pilsner",
+      "nameEn": "Tribus Beer Co Bier Pilsner",
+      "descriptionEs": "De barril",
+      "descriptionEn": "Draft",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "troegs-sunshine-pilsner",
+      "categoryId": "beer-list",
+      "nameEs": "Troegs Sunshine Pilsner",
+      "nameEn": "Troegs Sunshine Pilsner",
+      "descriptionEs": "Lata de 16 oz",
+      "descriptionEn": "16 oz can",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "downeast-cider-winter-blend",
+      "categoryId": "beer-list",
+      "nameEs": "Downeast Cider Winter Blend",
+      "nameEn": "Downeast Cider Winter Blend",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jiant-the-original-hard-kombucha",
+      "categoryId": "beer-list",
+      "nameEs": "JIANT The Original Hard Kombucha",
+      "nameEn": "JIANT The Original Hard Kombucha",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-brewing-co-sea-hag-ipa",
+      "categoryId": "beer-list",
+      "nameEs": "New England Brewing Co. Sea Hag IPA",
+      "nameEn": "New England Brewing Co. Sea Hag IPA",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "abomination-brewing-wandering-into-the-fog-dipa",
+      "categoryId": "beer-list",
+      "nameEs": "Abomination Brewing Wandering Into the Fog DIPA",
+      "nameEn": "Abomination Brewing Wandering Into the Fog DIPA",
+      "descriptionEs": "Lata de 16 oz",
+      "descriptionEn": "16 oz can",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tox-brewing-poltergeist-tipa",
+      "categoryId": "beer-list",
+      "nameEs": "Tox Brewing Poltergeist TIPA",
+      "nameEn": "Tox Brewing Poltergeist TIPA",
+      "descriptionEs": "Lata de 16 oz",
+      "descriptionEn": "16 oz can",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-cruise-control-lager",
+      "categoryId": "beer-list",
+      "nameEs": "Two Roads Cruise Control Lager",
+      "nameEn": "Two Roads Cruise Control Lager",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "allagash-north-sky-stout",
+      "categoryId": "beer-list",
+      "nameEs": "Allagash North Sky Stout",
+      "nameEn": "Allagash North Sky Stout",
+      "descriptionEs": "Lata de 16 oz",
+      "descriptionEn": "16 oz can",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twelve-percent-snappy-lager",
+      "categoryId": "beer-list",
+      "nameEs": "Twelve Percent Snappy Lager",
+      "nameEn": "Twelve Percent Snappy Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twelve-percent-snappy-lite-lager",
+      "categoryId": "beer-list",
+      "nameEs": "Twelve Percent Snappy Lite Lager",
+      "nameEn": "Twelve Percent Snappy Lite Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-noon-peach-hard-seltzer",
+      "categoryId": "beer-list",
+      "nameEs": "High Noon Peach Hard Seltzer",
+      "nameEn": "High Noon Peach Hard Seltzer",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-noon-pineapple-hard-seltzer",
+      "categoryId": "beer-list",
+      "nameEs": "High Noon Pineapple Hard Seltzer",
+      "nameEn": "High Noon Pineapple Hard Seltzer",
+      "descriptionEs": "Lata",
+      "descriptionEn": "Can",
+      "price": "$7.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú.",
-      "aEn": "Yes, please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones a través de OpenTable.",
-      "aEn": "We welcome walk-ins and reservations via OpenTable."
-    }
-  ]
+  "faqs": []
 }
