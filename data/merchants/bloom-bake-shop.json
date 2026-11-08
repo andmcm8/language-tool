@@ -2,26 +2,17 @@
   "storeInfo": {
     "id": "bloom-bake-shop",
     "name": "Bloom Bake Shop",
-    "tagline": "Artisanal Breads, Sweet Treats & Café / Pan artesanal, dulces y café",
-    "address": "124 Park Street, Hartford, CT 06106",
-    "phone": "",
+    "tagline": "Bakery and cafe in Hartford | Panadería y cafetería en Hartford",
+    "address": "80 Pratt St, Hartford, CT 06103",
+    "phone": "(860) 216-5969",
     "hours": {
-      "monday_friday": "8:00 AM - 4:00 PM",
-      "saturday": "9:00 AM - 4:00 PM",
-      "sunday": "9:00 AM - 3:00 PM"
+      "monday_friday": "Mon closed; Tue-Fri 8 am-4 pm",
+      "saturday": "8 am-4 pm",
+      "sunday": "8 am-3 pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Free WiFi"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -33,330 +24,1074 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Panadería y Masas",
-      "nameEn": "Bakery & Pastries",
+      "id": "breakfast-pastries",
+      "nameEs": "Panes dulces para el desayuno",
+      "nameEn": "Breakfast Pastries",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Desayunos y Almuerzos",
-      "nameEn": "Breakfast & Lunch",
+      "id": "savory",
+      "nameEs": "Salados",
+      "nameEn": "Savory",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "grab-and-go",
+      "nameEs": "Para llevar",
+      "nameEn": "Grab and Go",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Café",
-      "nameEn": "Drinks & Coffee",
-      "icon": "Coffee"
+      "id": "catering-drinks",
+      "nameEs": "Catering: bebidas",
+      "nameEn": "Catering: Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-breakfast",
+      "nameEs": "Catering: desayuno",
+      "nameEn": "Catering: Breakfast",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-savory",
+      "nameEs": "Catering: salados",
+      "nameEn": "Catering: Savory",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-dessert",
+      "nameEs": "Catering: postres",
+      "nameEn": "Catering: Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cakes",
+      "nameEs": "Pasteles",
+      "nameEn": "Cakes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-drinks",
+      "nameEs": "Bebidas calientes",
+      "nameEn": "Hot Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "iced-drinks",
+      "nameEs": "Bebidas heladas",
+      "nameEn": "Iced Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "ice-cream",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "bloom-bake-shop-01",
-      "categoryId": "appetizers",
-      "nameEs": "Croissant de Mantequilla Artesanal",
-      "nameEn": "Artisanal Butter Croissant",
-      "descriptionEs": "Hojaldre crujiente por fuera y suave por dentro, horneado fresco cada mañana con mantequilla pura.",
-      "descriptionEn": "Flaky on the outside and tender on the inside, baked fresh every morning with pure European butter.",
-      "price": "$4.25",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Horneado Fresco",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "cinnamon-rolls",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Rollos de canela",
+      "nameEn": "Cinnamon Rolls",
+      "descriptionEs": "Con glaseado de naranja",
+      "descriptionEn": "With an orange glaze",
+      "price": "Half dozen $36.00 / Dozen $72.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-02",
-      "categoryId": "appetizers",
-      "nameEs": "Rollo de Canela Glaseado",
-      "nameEn": "Glazed Cinnamon Roll",
-      "descriptionEs": "Esponjosa masa brioche rellena de canela aromática y cubierta con nuestro glaseado casero de queso crema.",
-      "descriptionEn": "Fluffy brioche dough rolled with aromatic cinnamon and topped with our signature homemade cream cheese icing.",
-      "price": "$5.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Dulce",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "chocolate-brioche",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Brioche de chocolate",
+      "nameEn": "Chocolate Brioche",
+      "descriptionEs": "Chispas de chocolate horneadas en masa de brioche",
+      "descriptionEn": "Chocolate chips baked in brioche dough",
+      "price": "Dozen $72.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-03",
-      "categoryId": "appetizers",
-      "nameEs": "Scon de Arándanos y Limón",
-      "nameEn": "Blueberry Lemon Scone",
-      "descriptionEs": "Scon tierno y mantecoso repleto de arándanos frescos y un toque de ralladura de limón brillante.",
-      "descriptionEn": "Tender, buttery scone packed with fresh blueberries and a bright hint of lemon zest.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Fruta Fresca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "soft-pretzels",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Pretzels suaves",
+      "nameEn": "Soft Pretzels",
+      "descriptionEs": "Clásicos o con azúcar y canela",
+      "descriptionEn": "Classic or Cinnamon Sugar",
+      "price": "Dozen $48.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-04",
-      "categoryId": "appetizers",
-      "nameEs": "Pan de Masa Madre Rústico",
-      "nameEn": "Rustic Sourdough Loaf",
-      "descriptionEs": "Pan de masa madre de fermentación lenta con una corteza crujiente y una miga aireada y masticable.",
-      "descriptionEn": "Slow-fermented sourdough bread featuring a crackling crust and an airy, chewy crumb.",
-      "price": "$8.00",
-      "popular": true,
-      "badge": "Artesanal",
-      "tags": [
-        "Vegan",
-        "Fermentación Lenta"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "pecan-sticky-buns",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Rollos pegajosos de nuez pecana",
+      "nameEn": "Pecan Sticky Buns",
+      "descriptionEs": "Masa de brioche horneada en jarabe de maple y nueces pecanas",
+      "descriptionEn": "Brioche dough baked in maple syrup and pecans",
+      "price": "Half dozen $37.50 / Dozen $75.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-05",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Huevo y Aguacate en Brioche",
-      "nameEn": "Avocado & Egg Brioche Sandwich",
-      "descriptionEs": "Huevo revuelto suave, aguacate fresco en rodajas, queso cheddar y nuestra salsa especial en pan brioche tostado.",
-      "descriptionEn": "Soft scrambled egg, sliced fresh avocado, sharp cheddar cheese, and signature spread on toasted brioche.",
-      "price": "$9.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Desayuno",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "apple-cinnamon-knots",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Nudos de manzana y canela",
+      "nameEn": "Apple Cinnamon Knots",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half dozen $36.00 / Dozen $72.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-06",
-      "categoryId": "mains",
-      "nameEs": "Tostada de Salmón Ahumado",
-      "nameEn": "Smoked Salmon Toast",
-      "descriptionEs": "Pan de masa madre tostado untado con queso crema de hierbas, salmón ahumado, alcaparras y cebolla morada encurtida.",
-      "descriptionEn": "Toasted sourdough spread with herb cream cheese, smoked salmon, capers, and pickled red onion.",
-      "price": "$12.00",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Saludable",
-        "Pescado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Pescado"
-      ],
+      "id": "nutella-brioche",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Brioche de Nutella",
+      "nameEn": "Nutella Brioche",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half dozen $37.50 / Dozen $75.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-07",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pavo y Pesto Casero",
-      "nameEn": "Turkey & House Pesto Sandwich",
-      "descriptionEs": "Pavo horneado en rebanadas gruesas, provolone, tomate fresco y pesto de albahaca en pan ciabatta recién horneado.",
-      "descriptionEn": "Thick-sliced roasted turkey, provolone, fresh tomato, and basil pesto on freshly baked ciabatta.",
+      "id": "scones",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Scones",
+      "nameEn": "Scones",
+      "descriptionEs": "Mora azul con limón, chispas de chocolate, chocolate con cereza, arándano con naranja, frambuesa con limón, chispas de canela, relleno de mermelada o limón con amapola.",
+      "descriptionEn": "Blueberry lemon, chocolate chip, chocolate cherry, cranberry orange, raspberry lemon, cinnamon chip, jam filling or lemon poppy.",
+      "price": "Half dozen $25.50 / Dozen $51.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muffins",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Muffins",
+      "nameEn": "Muffins",
+      "descriptionEs": "Chispas de chocolate, pastel de café con mora azul, plátano con chispas de chocolate, manzana con canela y crumble, pastel de café con canela",
+      "descriptionEn": "Chocolate chip, blueberry coffee cake, banana chocolate chip, apple cinnamon crumble, cinnamon coffee cake",
+      "price": "Half dozen $25.50 / Dozen $51.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-pudding",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Pudín de pan",
+      "nameEn": "Bread Pudding",
+      "descriptionEs": "Manzana, chispas de chocolate",
+      "descriptionEn": "Apple, chocolate chip",
+      "price": "Small $7.25 / Large $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscuits",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Biscuits",
+      "nameEn": "Biscuits",
+      "descriptionEs": "Tocino con cheddar, romero, sazonador everything bagel o de suero de leche",
+      "descriptionEn": "Bacon Cheddar, Rosemary, everything bagel seasoning, or buttermilk",
+      "price": "Half dozen $25.50 / Dozen $51.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "savory-danish",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Danés salado",
+      "nameEn": "Savory Danish",
+      "descriptionEs": "Jamón y queso cheddar o huevo y queso pepper jack horneados en nuestro brioche hecho en casa",
+      "descriptionEn": "Ham and Cheddar Cheese or Egg and Pepper Jack Cheese Baked in Our House Made Brioche",
+      "price": "$8.00 each",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-breads",
+      "categoryId": "breakfast-pastries",
+      "nameEs": "Panes dulces",
+      "nameEn": "Sweet Breads",
+      "descriptionEs": "Pastel de café, especias de calabaza con glaseado de naranja (vegano), pan de plátano, pastel de zanahoria con glaseado de maple",
+      "descriptionEn": "Coffee cake, pumpkin spice with an orange glaze (vegan), banana bread, carrot cake with maple glaze",
+      "price": "Small $7.50 / Large $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-bagel-plain-everything-blueberry-cranberry",
+      "categoryId": "savory",
+      "nameEs": "Bagel hecho en casa (natural, everything, mora azul, arándano)",
+      "nameEn": "House Made Bagel (Plain, Everything, Blueberry, Cranberry)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00 each",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-cheddar-bagel",
+      "categoryId": "savory",
+      "nameEs": "Bagel de cheddar hecho en casa",
+      "nameEn": "House Made Cheddar Bagel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50 each",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-and-cheese-breakfast-sandwich",
+      "categoryId": "savory",
+      "nameEs": "Sándwich de desayuno de huevo y queso",
+      "nameEn": "Egg and Cheese Breakfast Sandwich",
+      "descriptionEs": "en pan de masa madre hecho en casa",
+      "descriptionEn": "on House Made Sourdough Bread",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-egg-and-cheese-breakfast-sandwich",
+      "categoryId": "savory",
+      "nameEs": "Sándwich de desayuno de tocino, huevo y queso",
+      "nameEn": "Bacon, Egg and Cheese Breakfast Sandwich",
+      "descriptionEs": "en pan de masa madre hecho en casa",
+      "descriptionEn": "on House Made Sourdough Bread",
       "price": "$11.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Almuerzo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-08",
-      "categoryId": "specialties",
-      "nameEs": "Tartaleta de Frutos Rojos de la Estación",
-      "nameEn": "Seasonal Berry Tart",
-      "descriptionEs": "Masa sablée crujiente rellena de crema pastelera de vainilla de Madagascar y coronada con bayas mixtas frescas.",
-      "descriptionEn": "Crisp sablée crust filled with Madagascar vanilla pastry cream and crowned with fresh mixed berries.",
-      "price": "$6.75",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Dulce",
-        "Fruta Fresca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "ham-egg-and-cheese-breakfast-sandwich",
+      "categoryId": "savory",
+      "nameEs": "Sándwich de desayuno de jamón, huevo y queso",
+      "nameEn": "Ham, Egg and Cheese Breakfast Sandwich",
+      "descriptionEs": "en pan de masa madre hecho en casa",
+      "descriptionEn": "on House Made Sourdough Bread",
+      "price": "$11.50",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-09",
-      "categoryId": "specialties",
-      "nameEs": "Galleta de Chocolate Chunky y Sal Marina",
-      "nameEn": "Sea Salt Chocolate Chunk Cookie",
-      "descriptionEs": "Galleta suave y chiclosa con trozos generosos de chocolate oscuro y una pizca de sal marina en escamas.",
-      "descriptionEn": "Soft and chewy cookie loaded with generous chunks of dark chocolate and a pinch of flaky sea salt.",
-      "price": "$3.75",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Dulce",
-        "Chocolate"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "quiche",
+      "categoryId": "savory",
+      "nameEs": "Quiche",
+      "nameEn": "Quiche",
+      "descriptionEs": "Quiche de jamón y cheddar o de verduras mixtas sobre una masa mantequillosa",
+      "descriptionEn": "Ham and Cheddar or Mixed Veggie Quiche on a buttery crust",
+      "price": "Small $8.00 / 9-inch $30.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-10",
-      "categoryId": "specialties",
-      "nameEs": "Brownie de Doble Chocolate Fudge",
-      "nameEn": "Double Chocolate Fudge Brownie",
-      "descriptionEs": "Brownie denso y fudgy hecho con cacao oscuro premium y trocitos de chocolate fundido en cada bocado.",
-      "descriptionEn": "Dense and fudgy brownie made with premium dark cocoa and pools of melted chocolate in every bite.",
-      "price": "$4.25",
-      "popular": false,
-      "badge": "Indulgente",
-      "tags": [
-        "Chocolate"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "blt",
+      "categoryId": "savory",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "Tocino en pan de masa madre de romero con lechuga, tomate y mayonesa de pesto",
+      "descriptionEn": "Bacon on Rosemary Sourdough Bread with Lettuce and Tomato and Pesto Mayonnaise",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-11",
-      "categoryId": "beverages",
-      "nameEs": "Café Latte Artesanal",
-      "nameEn": "Artisanal Café Latte",
-      "descriptionEs": "Espresso doble con leche vaporizada sedosa y una delicada capa de espuma cremosa.",
-      "descriptionEn": "Double shot of espresso with silky steamed milk and a delicate layer of creamy foam.",
-      "price": "$4.75",
-      "popular": true,
-      "badge": "Cafetería",
-      "tags": [
-        "Café",
-        "Bebida Caliente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "harvest-chicken-salad-sandwich",
+      "categoryId": "savory",
+      "nameEs": "Sándwich de ensalada de pollo Harvest",
+      "nameEn": "Harvest Chicken Salad Sandwich",
+      "descriptionEs": "En pan de masa madre hecho en casa, con hojas verdes mixtas, manzana, semillas de calabaza, arándanos, ensalada de pollo hecha en casa, tomate y queso cheddar",
+      "descriptionEn": "On house made Sourdough Bread, with Mixed Greens, Apples, Pumpkin Seeds, Cranberries, House Made Chicken Salad, Tomato and Cheddar Cheese",
+      "price": "$12.50",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-12",
-      "categoryId": "beverages",
-      "nameEs": "Café Cold Brew de la Casa",
-      "nameEn": "House Cold Brew Coffee",
-      "descriptionEs": "Café de origen único macerado en frío durante 18 horas para un sabor suave, audaz y naturalmente dulce.",
-      "descriptionEn": "Single-origin coffee steeped cold for 18 hours for a smooth, bold, and naturally sweet flavor profile.",
-      "price": "$4.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Café",
-        "Bebida Fría"
-      ],
-      "allergens": [],
+      "id": "tuna-salad-wrap",
+      "categoryId": "savory",
+      "nameEs": "Wrap de ensalada de atún",
+      "nameEn": "Tuna Salad Wrap",
+      "descriptionEs": "Hojas verdes mixtas, ensalada de atún hecha en casa, tomate y queso cheddar",
+      "descriptionEn": "Mixed Greens, House Made Tuna Salad, Tomato and Cheddar Cheese",
+      "price": "$12.50",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-13",
-      "categoryId": "beverages",
-      "nameEs": "Matcha Latte Ceremonial",
-      "nameEn": "Ceremonial Matcha Latte",
-      "descriptionEs": "Té verde matcha de grado ceremonial batido a la perfección y combinado con leche vaporizada.",
-      "descriptionEn": "Ceremonial-grade green tea matcha whisked to perfection and paired with steamed milk.",
-      "price": "$5.25",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Té",
-        "Sin Café"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "turkey-cranberry",
+      "categoryId": "savory",
+      "nameEs": "Pavo con arándano",
+      "nameEn": "Turkey Cranberry",
+      "descriptionEs": "En pan de masa madre hecho en casa, con hojas verdes mixtas, tomate, queso cheddar y mayonesa de arándano",
+      "descriptionEn": "On house made Sourdough Bread, with Mixed Greens, Tomato, Cheddar Cheese and Cranberry Mayo",
+      "price": "$12.50",
       "ctaType": "in_store"
     },
     {
-      "id": "bloom-bake-shop-14",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Casera de Lavanda",
-      "nameEn": "House Lavender Lemonade",
-      "descriptionEs": "Limonada recién exprimida infundida con un delicado jarabe de lavanda silvestre.",
-      "descriptionEn": "Freshly squeezed lemonade infused with a delicate wild lavender botanical syrup.",
-      "price": "$4.00",
-      "popular": false,
-      "badge": "Artesanal",
-      "tags": [
-        "Sin Gluten",
-        "Vegan"
-      ],
-      "allergens": [],
+      "id": "ham-and-cheese",
+      "categoryId": "savory",
+      "nameEs": "Jamón y queso",
+      "nameEn": "Ham and Cheese",
+      "descriptionEs": "En pan de masa madre hecho en casa, con hojas verdes mixtas, tomate, mostaza de grano entero, queso cheddar, pepinillos",
+      "descriptionEn": "On house made Sourdough Bread, with Mixed Greens, Tomato, Whole Grain Mustard, Cheddar Cheese, Pickles",
+      "price": "$12.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-wrap-v",
+      "categoryId": "savory",
+      "nameEs": "Wrap griego (v)",
+      "nameEn": "Greek Wrap (v)",
+      "descriptionEs": "Hojas verdes mixtas, tomate, hummus, tzatziki, cebolla, pimientos, aceitunas, pepino, queso feta",
+      "descriptionEn": "Mixed Greens, Tomato, Hummus, Tzatziki, Onion, Peppers, Olives, Cucumber, Feta Cheese",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-bagel-vg",
+      "categoryId": "savory",
+      "nameEs": "Bagel vegetariano (vg)",
+      "nameEn": "Veggie Bagel (vg)",
+      "descriptionEs": "Hojas verdes mixtas, tomate, hummus, cebolla, aceitunas, pepino",
+      "descriptionEn": "Mixed Greens, Tomato, Hummus, Onion, Olives, Cucumber",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "harvest-chicken-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada de pollo Harvest",
+      "nameEn": "Harvest Chicken Salad",
+      "descriptionEs": "Ensalada de pollo hecha en casa con manzana, arándanos y semillas de calabaza",
+      "descriptionEn": "House made Chicken Salad with apples, cranberries and pumpkin seeds",
+      "price": "$7.50 / 8 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada de atún",
+      "nameEn": "Tuna Salad",
+      "descriptionEs": "Atún hecho en casa con cebolla, eneldo, apio, pimientos",
+      "descriptionEn": "House made Tuna with onions, dill, celery, peppers",
+      "price": "$7.50 / 8 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada de papa",
+      "nameEn": "Potato Salad",
+      "descriptionEs": "Papa, eneldo, huevo cocido, cebollín, mostaza de grano entero y mayonesa",
+      "descriptionEn": "Potato, dill, boiled egg, scallions, whole grain mustard and mayo",
+      "price": "$7.50 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada de frutas",
+      "nameEn": "Fruit Salad",
+      "descriptionEs": "Variedad de fruta fresca de temporada. Envasado individualmente",
+      "descriptionEn": "An Assortment of Fresh Seasonal Fruit Individually Packaged",
+      "price": "$7.00 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-pasta-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada griega de pasta",
+      "nameEn": "Greek Pasta Salad",
+      "descriptionEs": "Orzo con feta, aceitunas, pepino, pimientos, cebolla morada y tomate. Envasado individualmente",
+      "descriptionEn": "Orzo With Feta, Olives, Cucumber, Peppers, Red Onion and Tomatoes Individually Packaged",
+      "price": "$5.50 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-mozzarella-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada de tomate y mozzarella",
+      "nameEn": "Tomato Mozzarella Salad",
+      "descriptionEs": "Tomates cherry, mozzarella fresca y pasta en salsa pesto. Envasado individualmente",
+      "descriptionEn": "Cherry Tomatoes and Fresh Mozzarella and Pasta in a Pesto Sauce Individually Packaged",
+      "price": "$5.75 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yogurt-parfait",
+      "categoryId": "grab-and-go",
+      "nameEs": "Parfait de yogur",
+      "nameEn": "Yogurt Parfait",
+      "descriptionEs": "Yogur griego y fruta fresca cubiertos con nuestra granola hecha en casa",
+      "descriptionEn": "Greek Yogurt and Fresh Fruit Topped With Our House Made Granola",
+      "price": "$7.00 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-salad",
+      "categoryId": "grab-and-go",
+      "nameEs": "Ensalada verde",
+      "nameEn": "Green Salad",
+      "descriptionEs": "Hojas verdes mixtas con nueces pecanas confitadas hechas en casa, queso de cabra, arándanos, semillas de calabaza y aderezo balsámico. Envasado individualmente",
+      "descriptionEn": "Mixed Greens Topped With House Made Candied Pecans, Goat Cheese, Cranberries, Pumpkin Seeds and Balsamic Dressing Individually Packaged",
+      "price": "$10.00 / 12 oz",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-and-tea-service",
+      "categoryId": "catering-drinks",
+      "nameEs": "Servicio de café y té",
+      "nameEn": "Coffee and Tea Service",
+      "descriptionEs": "Te damos todo lo necesario para tu barra de bebidas con nuestras jarras reutilizables, leches, azúcares surtidos, agitadores, vasos y fundas",
+      "descriptionEn": "We provide everything you will need for your beverage bar using our reusable carafes, milks, assorted sugars, stirrers, cups and sleeves",
+      "price": "$3.50 per person",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juices",
+      "categoryId": "catering-drinks",
+      "nameEs": "Jugos",
+      "nameEn": "Juices",
+      "descriptionEs": "Jugo de naranja, de manzana o de arándano embotellado",
+      "descriptionEn": "Bottled Orange Juice, Apple Juice or Cranberry Juice",
+      "price": "$2.75 per bottle / Bottled Water $2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-pastry-platters",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charolas de panes dulces surtidos",
+      "nameEn": "Assorted Pastry Platters",
+      "descriptionEs": "Biscuits: tocino con cheddar, romero, sazonador everything bagel o de suero de leche. Scones: mora azul con limón, chispas de chocolate, chocolate con cereza, arándano con naranja, relleno de mermelada",
+      "descriptionEn": "Biscuits: Cheddar Bacon, Rosemary, Everything Bagel Seasoning, or Buttermilk. Scones: Blueberry Lemon, Chocolate Chip, Chocolate Cherry, Cranberry Orange, Jam Filling",
+      "price": "Small (20 pieces, two flavors) $45.00 / Large (40 pieces) $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscotti-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de biscotti",
+      "nameEn": "Biscotti Platter",
+      "descriptionEs": "Chocolate con nuez, arándano con naranja, pistache, cereza con almendra",
+      "descriptionEn": "Chocolate Walnut, Cranberry Orange, Pistachio, Cherry Almond",
+      "price": "25 pieces (one flavor) $45.00 / 50 pieces (two flavors) $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-cinnamon-rolls-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de mini rollos de canela",
+      "nameEn": "Mini Cinnamon Rolls Platter",
+      "descriptionEs": "Cubiertos con glaseado de naranja",
+      "descriptionEn": "Topped with an Orange Glaze",
+      "price": "$80.00 / 22 mini rolls",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-lemon-rolls-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de mini rollos de limón",
+      "nameEn": "Mini Lemon Rolls Platter",
+      "descriptionEs": "Cubiertos con glaseado de limón",
+      "descriptionEn": "Topped with a Lemon Glaze",
+      "price": "$80.00 / 22 mini rolls",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-nutella-knots-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de mini nudos de Nutella",
+      "nameEn": "Mini Nutella Knots Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$80.00 / 22 mini rolls",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-pecan-sticky-buns-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de mini rollos pegajosos de nuez pecana",
+      "nameEn": "Mini Pecan Sticky Buns Platter",
+      "descriptionEs": "Cubiertos con nueces pecanas al maple",
+      "descriptionEn": "Topped with Maple Pecans",
+      "price": "$85.00 / 22 mini rolls",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muffins-sweet-breads-platter",
+      "categoryId": "catering-breakfast",
+      "nameEs": "Charola de muffins y panes dulces",
+      "nameEn": "Muffins & Sweet Breads Platter",
+      "descriptionEs": "Sabores de pan dulce: pastel de café con canela, especias de calabaza (vegano), pan de plátano. Sabores de muffin: chispas de chocolate, pastel de café con mora azul, plátano con chispas de chocolate, manzana con canela y crumble",
+      "descriptionEn": "Sweet Bread Flavors: Cinnamon Coffee Cake, Pumpkin Spice (vegan), Banana Bread. Muffin Flavors: Chocolate Chip, Blueberry Coffee Cake, Banana Chocolate Chip, Apple Cinnamon Crumble",
+      "price": "Small (20 pieces, two flavors) $45.00 / Large (40 pieces, three flavors) $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel-and-spreads",
+      "categoryId": "catering-savory",
+      "nameEs": "Bagels y untables",
+      "nameEn": "Bagel and Spreads",
+      "descriptionEs": "Doce bagels hechos en casa (a elegir: natural, mora azul, arándano o cheddar) tostados con queso crema, queso crema con cebollín, mermelada o mantequilla",
+      "descriptionEn": "Twelve House made Bagels (choose between plain, blueberry, cranberry or cheddar) toasted with cream cheese, scallion cream cheese, jam or Butter",
+      "price": "$65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-and-cheese-sandwich-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de sándwiches de huevo y queso",
+      "nameEn": "Egg and Cheese Sandwich Platter",
+      "descriptionEs": "en pan de masa madre de romero",
+      "descriptionEn": "on Rosemary Sourdough Bread",
+      "price": "$110.00 / 12 sandwiches cut in half",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-egg-and-cheese-sandwich-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de sándwiches de jamón, huevo y queso",
+      "nameEn": "Ham, Egg and Cheese Sandwich Platter",
+      "descriptionEs": "en pan de masa madre de romero",
+      "descriptionEn": "on Rosemary Sourdough Bread",
+      "price": "$140.00 / 12 sandwiches cut in half",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-egg-and-cheese-sandwich-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de sándwiches de tocino, huevo y queso",
+      "nameEn": "Bacon, Egg and Cheese Sandwich Platter",
+      "descriptionEs": "en pan de masa madre de romero",
+      "descriptionEn": "on Rosemary Sourdough Bread",
+      "price": "$140.00 / 12 sandwiches cut in half",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "charcuterie-board",
+      "categoryId": "catering-savory",
+      "nameEs": "Tabla de charcutería",
+      "nameEn": "Charcuterie Board",
+      "descriptionEs": "Variedad de quesos, fruta, mermelada, carnes curadas, flores comestibles y galletas saladas.",
+      "descriptionEn": "An assortment of Cheese, Fruit, Jam, Cured Meat, Edible Flowers and Crackers.",
+      "price": "Small (12-inch) $75.00 / Large (16-inch) $105.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lunch-sandwich-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de sándwiches para almuerzo",
+      "nameEn": "Lunch Sandwich Platter",
+      "descriptionEs": "Pavo con arándano, ensalada de pollo, jamón y queso, wrap de ensalada griega o BLT en pan de masa madre de romero o en wrap. Agrega una bolsa de papitas por $2.00 cada una",
+      "descriptionEn": "Turkey Cranberry, Chicken Salad, Ham and Cheese, Greek Salad Wrap or BLT on Rosemary Sourdough Bread or a Wrap. Add a bag of chips for $2.00 each",
+      "price": "$150.00 / 12 sandwiches cut in half",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "savory-danish-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de daneses salados",
+      "nameEn": "Savory Danish Platter",
+      "descriptionEs": "Tomate y mozzarella fresca con pesto de albahaca o tocino y queso cheddar horneados en nuestro brioche hecho en casa",
+      "descriptionEn": "Tomato and Fresh Mozzarella with Basil Pesto or Bacon and Cheddar Cheese Baked in Our House Made Brioche",
+      "price": "$68.00 / 25 mini danishes",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-salad-platter",
+      "categoryId": "catering-savory",
+      "nameEs": "Charola de ensalada de frutas",
+      "nameEn": "Fruit Salad Platter",
+      "descriptionEs": "Variedad de fruta fresca de temporada en una charola de doce pulgadas",
+      "descriptionEn": "An Assortment of Fresh Seasonal Fruit on a twelve inch platter",
+      "price": "$50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-platter",
+      "categoryId": "catering-dessert",
+      "nameEs": "Charola de galletas",
+      "nameEn": "Cookie Platter",
+      "descriptionEs": "Elige dos sabores: triple chispa de chocolate, M&M, chispas de chocolate, avena con butterscotch, snickerdoodle, crema de cacahuate, galletas de azúcar confeti, limón con almendra (sin gluten)",
+      "descriptionEn": "Choose two flavors: Triple Chocolate Chip, M&M, Chocolate Chip, Oatmeal Butterscotch, Snicker Doodle, Peanut Butter, Confetti Sugar Cookies, Lemon Almond (Gluten Free)",
+      "price": "Small (20 cookies) $40.00 / Large (40 cookies) $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frosted-brownies-and-bars",
+      "categoryId": "catering-dessert",
+      "nameEs": "Brownies glaseados y barras",
+      "nameEn": "Frosted Brownies and Bars",
+      "descriptionEs": "Elige dos sabores: brownies con betún de crema de cacahuate, brownies con betún de chocolate, brownies con betún de fresa, barras de frambuesa con crumble",
+      "descriptionEn": "Choose two flavors: Peanut Butter Buttercream Brownies, Chocolate Buttercream Brownies, Strawberry Buttercream Brownies, Raspberry Crumble Bars",
+      "price": "Small (18 pieces) $45.00 / Large (36 pieces) $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-tartlet-platter",
+      "categoryId": "catering-dessert",
+      "nameEs": "Charola de mini tartaletas",
+      "nameEn": "Mini Tartlet Platter",
+      "descriptionEs": "Elige dos sabores: pay de crema de coco, pay de manzana con crumble, tarta de limón verde, tarta de limón con frambuesa, tarta de chocolate silk",
+      "descriptionEn": "Choose two flavors: Coconut Cream Pie, Apple Crumble Pie, Key Lime Tart, Lemon Raspberry Tart, Chocolate Silk Tart",
+      "price": "Small (18 pieces) $45.00 / Large (36 pieces) $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pressed-edible-flower-shortbread-cookies",
+      "categoryId": "catering-dessert",
+      "nameEs": "Galletas de mantequilla con flores comestibles prensadas",
+      "nameEn": "Pressed Edible Flower Shortbread Cookies",
+      "descriptionEs": "Flores de temporada prensadas en galletas de mantequilla",
+      "descriptionEn": "Seasonal flowers pressed into shortbread cookies",
+      "price": "$55.00 / 20 cookies",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bloom-cakes",
+      "categoryId": "cakes",
+      "nameEs": "Pasteles Bloom",
+      "nameEn": "Bloom Cakes",
+      "descriptionEs": "Todos los pasteles pueden hacerse como pastel Bloom de dos capas, decorado al estilo naked con flores comestibles frescas de temporada encima.",
+      "descriptionEn": "All cakes may be made into a two layer Bloom Cake that is decorated naked style with seasonal fresh edible flowers on top.",
+      "price": "6-inch $42.00 / 8-inch $55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "three-layer-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de tres capas",
+      "nameEn": "Three Layer Cake",
+      "descriptionEs": "Agrega flores o decoraciones personalizadas por un precio adicional. Sabores de la casa: mora azul con limón, cookies & cream, pastel Reese's, pastel de cumpleaños, pastel de zanahoria",
+      "descriptionEn": "Add flowers or custom decorations for an additional price. Signature flavors: Blueberry Lemon, Cookies & Cream, Reese's Cake, Birthday Cake, Carrot Cake",
+      "price": "6-inch $60.00 / 8-inch $80.00 / 10-inch $100.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cupcakes-dozen",
+      "categoryId": "cakes",
+      "nameEs": "Cupcakes (docena)",
+      "nameEn": "Cupcakes (Dozen)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$48.00 / dozen",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-sheet-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de media plancha",
+      "nameEn": "Half Sheet Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "full-sheet-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de plancha completa",
+      "nameEn": "Full Sheet Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$165.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies",
+      "categoryId": "desserts",
+      "nameEs": "Galletas",
+      "nameEn": "Cookies",
+      "descriptionEs": "Limón con almendra (sin gluten), triple chispa de chocolate, crema de cacahuate con chispas de chocolate, chispas de chocolate, snickerdoodle, jengibre con melaza, galletas de M&M, avena con arándano y chocolate blanco, avena con butterscotch, galletas de azúcar funfetti",
+      "descriptionEn": "Lemon Almond (GF), Triple Chocolate Chip, Peanut Butter Chocolate Chip, Chocolate Chip, Snickerdoodle, Ginger Molasses, M&M Cookies, Oatmeal Cranberry White Chocolate, Oatmeal Butterscotch, Funfetti Sugar Cookies",
+      "price": "$36.00 / dozen (one flavor per dozen)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cupcakes",
+      "categoryId": "desserts",
+      "nameEs": "Cupcakes",
+      "nameEn": "Cupcakes",
+      "descriptionEs": "Pastel de vainilla con betún de chocolate, pastel de mora azul con betún de vainilla y relleno de crema de limón, pastel de chocolate con betún de chocolate, pastel marmoleado con betún de vainilla y hilos de ganache de chocolate.",
+      "descriptionEn": "Vanilla Cake with Chocolate Buttercream, Blueberry Cake with Vanilla Buttercream and Lemon Curd Filling, Chocolate Cake with Chocolate Buttercream, Marble Cake with Vanilla Buttercream and Chocolate Ganache Drizzle.",
+      "price": "$48.00 / dozen (one flavor per dozen)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscotti",
+      "categoryId": "desserts",
+      "nameEs": "Biscotti",
+      "nameEn": "Biscotti",
+      "descriptionEs": "Chocolate con nuez, arándano con naranja, cereza con almendra, pistache",
+      "descriptionEn": "Chocolate Walnut, Cranberry Orange, Cherry Almond, Pistachio",
+      "price": "$18.00 / dozen (one flavor per dozen)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "edible-flower-cookies",
+      "categoryId": "desserts",
+      "nameEs": "Galletas con flores comestibles",
+      "nameEn": "Edible Flower Cookies",
+      "descriptionEs": "Flores comestibles de temporada prensadas en nuestra masa de galleta de mantequilla",
+      "descriptionEn": "Seasonal edible flowers pressed into our shortbread cookie dough",
+      "price": "$42.00 / dozen",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-crumble-bars",
+      "categoryId": "desserts",
+      "nameEs": "Barras de frambuesa con crumble",
+      "nameEn": "Raspberry Crumble Bars",
+      "descriptionEs": "Mermelada de frambuesa sobre una base de galleta de mantequilla cubierta con crumble de canela.",
+      "descriptionEn": "Raspberry Jam on a Shortbread Crust topped with a Cinnamon Crumble.",
+      "price": "$54.00 / dozen",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies",
+      "categoryId": "desserts",
+      "nameEs": "Brownies",
+      "nameEn": "Brownies",
+      "descriptionEs": "Brownies de chocolate intenso sin harina",
+      "descriptionEn": "Rich flourless chocolate brownies",
+      "price": "$54.00 / dozen",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flourless-chocolate-torte",
+      "categoryId": "desserts",
+      "nameEs": "Torta de chocolate sin harina",
+      "nameEn": "Flourless Chocolate Torte",
+      "descriptionEs": "Pastel de chocolate intenso glaseado con ganache y cubierto con fruta fresca",
+      "descriptionEn": "Rich chocolate cake glazed with ganache topped with fresh fruit",
+      "price": "6-inch $36.00 / 8-inch $45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-upside-down-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel volteado de fruta",
+      "nameEn": "Fruit Upside Down Cake",
+      "descriptionEs": "Pastel de canela horneado con fruta de temporada en salsa de caramelo de azúcar morena",
+      "descriptionEn": "Cinnamon cake baked with seasonal fruit in a brown sugar caramel sauce",
+      "price": "6-inch $28.00 / 8-inch $35.00 / 10-inch $42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-drip-coffee",
+      "categoryId": "hot-drinks",
+      "nameEs": "Café de filtro caliente",
+      "nameEn": "Hot Drip Coffee",
+      "descriptionEs": "Café recién hecho de tueste medio o ligero",
+      "descriptionEn": "Fresh Brewed Medium or Light Roast Coffee",
+      "price": "12 oz $3.50 / 16 oz $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Latte caliente",
+      "nameEn": "Hot Latte",
+      "descriptionEs": "Espresso con leche al vapor a elegir",
+      "descriptionEn": "Espresso With Your Choice of Steamed Milk",
+      "price": "12 oz $4.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-americano",
+      "categoryId": "hot-drinks",
+      "nameEs": "Americano caliente",
+      "nameEn": "Hot Americano",
+      "descriptionEs": "Espresso con agua caliente",
+      "descriptionEn": "Espresso with Hot Water",
+      "price": "12 oz $3.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "hot-drinks",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8 oz $4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-espresso",
+      "categoryId": "hot-drinks",
+      "nameEs": "Espresso doble",
+      "nameEn": "Double Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3 oz $3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cortado",
+      "categoryId": "hot-drinks",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6 oz $4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chai-tea-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chai latte caliente",
+      "nameEn": "Hot Chai Tea Latte",
+      "descriptionEs": "Concentrado de té chai con leche al vapor a elegir y canela",
+      "descriptionEn": "Chai Tea Concentrate With Your Choice of Steamed Milk and Cinnamon",
+      "price": "12 oz $4.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha-latte",
+      "categoryId": "hot-drinks",
+      "nameEs": "Matcha latte",
+      "nameEn": "Matcha Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12 oz $4.75 / 16 oz $5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chocolate caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "Salsa de chocolate mezclada con leche al vapor",
+      "descriptionEn": "Chocolate Sauce Mixed with Steamed Milk",
+      "price": "12 oz $3.50 / 16 oz $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té caliente",
+      "nameEn": "Hot Tea",
+      "descriptionEs": "English Breakfast, verde con jazmín, cítricos, menta, manzanilla, Earl Grey o frambuesa negra",
+      "descriptionEn": "English Breakfast, Green Jasmine, Citrus, Peppermint, Chamomile, Earl Grey or Black Raspberry",
+      "price": "$3.00 (12 or 16 oz)",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-london-fog",
+      "categoryId": "hot-drinks",
+      "nameEs": "London Fog caliente",
+      "nameEn": "Hot London Fog",
+      "descriptionEs": "Té negro recién hecho con leche al vapor a elegir y jarabe de lavanda",
+      "descriptionEn": "Fresh Brewed Black Tea with Your Choice of Steamed Milk and Lavender Syrup",
+      "price": "12 oz $4.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-apple-cider",
+      "categoryId": "hot-drinks",
+      "nameEs": "Sidra de manzana caliente",
+      "nameEn": "Hot Apple Cider",
+      "descriptionEs": "Sidra de manzana local calentada al momento",
+      "descriptionEn": "Local Apple Cider Heated to Order",
+      "price": "12 oz $4.75 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alternative-milk-almond-or-oat",
+      "categoryId": "hot-drinks",
+      "nameEs": "Leche alternativa (almendra o avena)",
+      "nameEn": "Alternative Milk (Almond or Oat)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "added-flavor",
+      "categoryId": "hot-drinks",
+      "nameEs": "Sabor adicional",
+      "nameEn": "Added Flavor",
+      "descriptionEs": "Lavanda, caramelo, avellana, chocolate, chocolate blanco, plátano, crema de cacahuate, azúcar morena con canela, menta",
+      "descriptionEn": "Lavender, Caramel, Hazelnut, Chocolate, White Chocolate, Banana, Peanut Butter, Brown Sugar Cinnamon, Peppermint",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "iced-drinks",
+      "nameEs": "Limonada",
+      "nameEn": "Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16 oz $4.50 / 20 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arnold-palmer",
+      "categoryId": "iced-drinks",
+      "nameEs": "Arnold Palmer",
+      "nameEn": "Arnold Palmer",
+      "descriptionEs": "con té helado negro o de frutos rojos, a elegir",
+      "descriptionEn": "with your choice of black or berry iced tea",
+      "price": "16 oz $4.50 / 20 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-lemonade",
+      "categoryId": "iced-drinks",
+      "nameEs": "Limonada con espresso",
+      "nameEn": "Espresso Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16 oz $5.00 / 20 oz $5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha-lemonade",
+      "categoryId": "iced-drinks",
+      "nameEs": "Limonada de matcha",
+      "nameEn": "Matcha Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16 oz $5.50 / 20 oz $5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-soda",
+      "categoryId": "iced-drinks",
+      "nameEs": "Soda de espresso",
+      "nameEn": "Espresso Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "20 oz $6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-latte",
+      "categoryId": "iced-drinks",
+      "nameEs": "Latte helado",
+      "nameEn": "Iced Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12 oz $4.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-matcha-latte",
+      "categoryId": "iced-drinks",
+      "nameEs": "Matcha latte helado",
+      "nameEn": "Iced Matcha Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12 oz $4.75 / 16 oz $5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-chai-tea-latte",
+      "categoryId": "iced-drinks",
+      "nameEs": "Chai latte helado",
+      "nameEn": "Iced Chai Tea Latte",
+      "descriptionEs": "Concentrado de té chai con leche a elegir y canela",
+      "descriptionEn": "Chai Tea Concentrate With Your Choice of Milk and Cinnamon",
+      "price": "12 oz $4.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-coffee",
+      "categoryId": "iced-drinks",
+      "nameEs": "Café helado",
+      "nameEn": "Iced Coffee",
+      "descriptionEs": "Café de filtro enfriado",
+      "descriptionEn": "Brewed Drip Coffee Chilled",
+      "price": "16 oz $4.50 / 20 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-americano",
+      "categoryId": "iced-drinks",
+      "nameEs": "Americano helado",
+      "nameEn": "Iced Americano",
+      "descriptionEs": "Espresso con agua caliente",
+      "descriptionEn": "Espresso with Hot Water",
+      "price": "12 oz $3.50 / 16 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-americano",
+      "categoryId": "iced-drinks",
+      "nameEs": "Americano de coco",
+      "nameEn": "Coconut Americano",
+      "descriptionEs": "Espresso con agua caliente",
+      "descriptionEn": "Espresso with Hot Water",
+      "price": "12 oz $5.50 / 16 oz $7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "iced-drinks",
+      "nameEs": "Té helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "Té verde con jazmín, English Breakfast o de zarzamora y frambuesa, recién hecho y enfriado",
+      "descriptionEn": "Fresh Brewed Green Jasmine Tea, English Breakfast or Blackberry Raspberry Tea Chilled",
+      "price": "16 oz $4.50 / 20 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-london-fog",
+      "categoryId": "iced-drinks",
+      "nameEs": "London Fog helado",
+      "nameEn": "Iced London Fog",
+      "descriptionEs": "Té negro recién hecho con leche a elegir y jarabe de lavanda",
+      "descriptionEn": "Fresh Brewed Black Tea with Your Choice of Milk and Lavender Syrup",
+      "price": "16 oz $4.50 / 20 oz $5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-soft-serve",
+      "categoryId": "ice-cream",
+      "nameEs": "Helado suave de vainilla",
+      "nameEn": "Vanilla Soft Serve",
+      "descriptionEs": "En vaso o cono. Agrega los toppings que quieras: chispas de colores, chispas de chocolate, granola de Bloom, chispas de chocolate, frutos rojos frescos, Nutella, crema de cacahuate, gomitas, Oreo triturada, nueces pecanas confitadas",
+      "descriptionEn": "In a cup or cone. Add any toppings: rainbow sprinkles, chocolate sprinkles, Bloom’s granola, chocolate chips, fresh berries, Nutella, peanut butter, gummy bears, Oreo crumbles, candied pecans",
+      "price": "Small $6.00 / Large $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-sandwich",
+      "categoryId": "ice-cream",
+      "nameEs": "Sándwich de helado",
+      "nameEn": "Ice Cream Sandwich",
+      "descriptionEs": "Helado suave de vainilla entre dos galletas con chispas de chocolate y chispas de colores",
+      "descriptionEn": "Vanilla soft serve ice cream between two chocolate chip cookies and rainbow sprinkles",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "affogato",
+      "categoryId": "ice-cream",
+      "nameEs": "Affogato",
+      "nameEn": "Affogato",
+      "descriptionEs": "Helado suave de vainilla cubierto con dos shots de espresso",
+      "descriptionEn": "Vanilla soft serve topped with two shots of espresso",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-crisp-ice-cream-sundae",
+      "categoryId": "ice-cream",
+      "nameEs": "Sundae de helado con crujiente de manzana",
+      "nameEn": "Apple Crisp Ice Cream Sundae",
+      "descriptionEs": "Helado suave de vainilla cubierto con crujiente de manzana",
+      "descriptionEn": "Vanilla soft serve topped with apple crisp",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies-ice-cream-sundae",
+      "categoryId": "ice-cream",
+      "nameEs": "Sundae de helado con brownie",
+      "nameEn": "Brownies Ice Cream Sundae",
+      "descriptionEs": "Helado suave de vainilla, brownie tibio sin harina, crema batida, chispas de colores",
+      "descriptionEn": "Vanilla soft serve, warm flourless brownie, whip cream, rainbow sprinkles",
+      "price": "$10.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones vegetarianas y panadería especial. Pregunte a nuestro personal por los ingredientes detallados.",
-      "aEn": "Yes, we offer vegetarian selections and specialty baked goods. Please ask our staff for detailed ingredients."
-    },
-    {
-      "qEs": "¿Puedo hacer pedidos especiales de pasteles para eventos?",
-      "qEn": "Can I place custom cake orders for events?",
-      "aEs": "¡Claro que sí! Aceptamos pedidos especiales y por correo electrónico con anticipación.",
-      "aEn": "Absolutely! We accept custom and email orders in advance."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Atendemos por orden de llegada, pero puede comunicarse con nosotros para grupos grandes.",
-      "aEn": "We operate on a walk-in basis, but feel free to reach out for large group inquiries."
-    }
-  ]
+  "faqs": []
 }
