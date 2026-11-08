@@ -2,26 +2,17 @@
   "storeInfo": {
     "id": "claires-corner-copia",
     "name": "Claire's Corner Copia",
-    "tagline": "Real Food, using good ingredients for a better world and a better You! / ¡Comida real con buenos ingredientes para un mundo mejor y un mejor tú!",
+    "tagline": "Vegetarian restaurant in New Haven | Restaurante vegetariano en New Haven",
     "address": "1000 Chapel Street, New Haven, CT 06510",
-    "phone": "",
+    "phone": "(203) 562-3888",
     "hours": {
-      "monday_friday": "8:00 AM - 7:30 PM",
-      "saturday": "8:30 AM - 7:30 PM",
-      "sunday": "8:30 AM - 7:30 PM"
+      "monday_friday": "Mon 8:30 AM - 8:30 PM; Tue Closed; Wed-Fri 8:30 AM - 8:30 PM",
+      "saturday": "8:30 AM - 8:30 PM",
+      "sunday": "8:30 AM - 8:30 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Grubhub Delivery",
-      "Free WiFi",
-      "Private Events"
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,289 +24,2084 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "breakfast",
-      "nameEs": "Desayunos",
-      "nameEn": "Breakfast & Brunch",
-      "icon": "Coffee"
-    },
-    {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "breakfast-menu",
+      "nameEs": "Menú de Desayuno",
+      "nameEn": "Breakfast Menu",
       "icon": "Utensils"
     },
     {
-      "id": "bakery",
-      "nameEs": "Repostería y Pasteles",
-      "nameEn": "Bakery & Sweets",
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Coffee",
-      "icon": "Coffee"
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mexican-entrees",
+      "nameEs": "Platos Fuertes Mexicanos",
+      "nameEn": "Mexican Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "quesadillas",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burrito-or-bowl",
+      "nameEs": "Burrito o Bowl",
+      "nameEn": "Burrito or Bowl",
+      "icon": "Utensils"
+    },
+    {
+      "id": "flat-bread-pizzas",
+      "nameEs": "Pizzas de Pan Plano",
+      "nameEn": "Flat Bread Pizzas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "veggie-burgers",
+      "nameEs": "Hamburguesas Vegetarianas",
+      "nameEn": "Veggie Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees-side-dishes",
+      "nameEs": "Platos Fuertes y Guarniciones",
+      "nameEn": "Entrees & Side Dishes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert-menu",
+      "nameEs": "Menú de Postres",
+      "nameEn": "Dessert Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegan-desserts",
+      "nameEs": "Postres Veganos",
+      "nameEn": "Vegan Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "gluten-free-desserts",
+      "nameEs": "Postres Sin Gluten",
+      "nameEn": "Gluten Free Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hot-drinks",
+      "nameEs": "Bebidas Calientes",
+      "nameEn": "Hot Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-drinks",
+      "nameEs": "Bebidas Frías",
+      "nameEn": "Cold Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "smoothies",
+      "nameEs": "Batidos (Smoothies)",
+      "nameEn": "Smoothies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cakes",
+      "nameEs": "Pasteles",
+      "nameEn": "Cakes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cookies",
+      "nameEs": "Galletas",
+      "nameEn": "Cookies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pies",
+      "nameEs": "Pays",
+      "nameEn": "Pies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Platos Pequeños: Totopos y Salsas, Crostini, Aperitivos, Bruschetta",
+      "nameEn": "Small Plates: Chips + Dips, Crostini, Appetizers, Bruschetta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-vegetables-pasta",
+      "nameEs": "Ensaladas Verduras Pasta",
+      "nameEn": "Salads Vegetables Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwich-platters",
+      "nameEs": "Platos de Sándwiches",
+      "nameEn": "Sandwich Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos Fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "claires-01",
-      "categoryId": "breakfast",
-      "nameEs": "Pancakes Veganos Integrales",
+      "id": "vegan-whole-grain-pancakes",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Pancakes Veganos de Grano Entero",
       "nameEn": "Vegan Whole Grain Pancakes",
-      "descriptionEs": "Masa casera orgánica de semillas de lino, chía y leche de coco. Servidos con fruta caliente y jarabe de arce puro.",
-      "descriptionEn": "Our home-made vegan organic flax and chia seeds, and coconut milk batter. Served with warm fruit and pure maple syrup.",
-      "price": "$12.95",
-      "popular": true,
-      "badge": "Vegano",
-      "tags": [
-        "Vegano",
-        "Saludable",
-        "Orgánico"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "descriptionEs": "nuestra masa casera vegana y orgánica de semillas de lino y chía, y leche de coco. Se sirve con fruta tibia y jarabe de arce puro.",
+      "descriptionEn": "our home-made vegan organic flax and chia seeds, and coconut milk batter. Served with warm fruit and pure maple syrup.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-02",
-      "categoryId": "breakfast",
+      "id": "fancy-pants-pancakes",
+      "categoryId": "breakfast-menu",
       "nameEs": "Pancakes Fancy Pants",
       "nameEn": "Fancy Pants Pancakes",
-      "descriptionEs": "Nuestros pancakes veganos cubiertos con fresas orgánicas calientes, jarabe de chocolate casero, crema batida vegana fresca y chispas de chocolate vegano.",
-      "descriptionEn": "Our Vegan pancakes, topped with organic warm strawberries, homemade chocolate syrup, fresh, vegan whipped cream, and vegan chocolate chips.",
-      "price": "$14.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegano",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Soja"
-      ],
+      "descriptionEs": "Nuestros pancakes veganos, cubiertos con fresas orgánicas tibias, jarabe de chocolate casero, crema batida vegana fresca y chispas de chocolate veganas",
+      "descriptionEn": "Our Vegan pancakes, topped with organic warm strawberries, homemade chocolate syrup, fresh, vegan whipped cream, and vegan chocolate chips",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-03",
-      "categoryId": "breakfast",
-      "nameEs": "Omelette Clásico Orgánico",
-      "nameEn": "Organic Omelette",
-      "descriptionEs": "Omelette de tres huevos orgánicos con su elección de tres rellenos y un queso. Servido con su elección de pan integral.",
-      "descriptionEn": "Three organic egg omelette with your choice of three fillings and one cheese. Served with your choice of whole grain bread.",
-      "price": "$13.25",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Huevos"
-      ],
-      "allergens": [
-        "Huevo",
-        "Lácteos",
-        "Gluten"
-      ],
+      "id": "omelette",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Omelette",
+      "nameEn": "Omelette",
+      "descriptionEs": "omelette de tres huevos orgánicos con tu elección de tres rellenos y un queso. Se sirve con tu elección de pan de grano entero. +Rellenos: espinacas tiernas orgánicas salteadas, col rizada (kale) orgánica, tomates, cebolla morada, champiñones, aceitunas negras, aguacate +Quesos: Mozzarella, cheddar, feta, suizo o queso blanco casero",
+      "descriptionEn": "three organic egg omelette with your choice of three fillings and one cheese. Served with your choice of whole grain bread. +Fillings: sautéed organic baby spinach, organic kale, tomatoes, red onion, mushrooms, black olives, avocado +Cheeses: Mozzarella, cheddar, feta, Swiss or house-made queso blanco",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-04",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich The Good Egg",
+      "id": "the-good-egg-sandwich",
+      "categoryId": "breakfast-menu",
+      "nameEs": "El Sándwich The Good Egg",
       "nameEn": "The Good Egg Sandwich",
-      "descriptionEs": "Un huevo orgánico frito con dos tiras de tocino de tempeh de soya ahumado o queso cheddar, o ambos, en pan multigrano en rodajas.",
+      "descriptionEs": "Un huevo orgánico frito, con dos tiras de tocino de soya tempeh ahumado o queso cheddar o ambos en pan multicereales en rebanadas.",
       "descriptionEn": "A fried organic egg, with two strips of smoked tempeh soy bacon or cheddar cheese or both on sliced multigrain bread.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Huevo",
-        "Lácteos",
-        "Soja",
-        "Gluten"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-05",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich de Desayuno Vegano",
+      "id": "the-vegan-breakfast-sandwich",
+      "categoryId": "breakfast-menu",
+      "nameEs": "El Sándwich de Desayuno Vegano",
       "nameEn": "The Vegan Breakfast Sandwich",
-      "descriptionEs": "Salchicha o tocino de soya sin OGM, aguacate y arúgula orgánica, rociados con nuestra vinagreta de chile en pan tostado multigrano.",
-      "descriptionEn": "Gmo-free soy sausage or bacon, avocado, and organic arugula, drizzled with our chili vinaigrette on multigrain toast.",
-      "price": "$11.75",
-      "popular": false,
-      "badge": "Vegano",
-      "tags": [
-        "Vegano",
-        "Sin OGM"
-      ],
-      "allergens": [
-        "Soja",
-        "Gluten"
-      ],
+      "descriptionEs": "salchicha o tocino de soya libre de OGM, aguacate y arúgula orgánica, rociados con nuestra vinagreta de chile en pan tostado multicereales.",
+      "descriptionEn": "gmo-free soy sausage or bacon, avocado, and organic arugula, drizzled with our chili vinaigrette on multigrain toast.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-06",
-      "categoryId": "breakfast",
+      "id": "irish-breakfast",
+      "categoryId": "breakfast-menu",
       "nameEs": "Desayuno Irlandés",
       "nameEn": "Irish Breakfast",
-      "descriptionEs": "Dos huevos orgánicos fritos en aceite de oliva con tomates y champiñones salteados. Servido con papas orgánicas rostizadas.",
-      "descriptionEn": "Two organic eggs fried in olive oil with sautéed tomatoes and mushrooms. Served with roasted organic potatoes.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Huevo"
-      ],
+      "descriptionEs": "dos huevos orgánicos fritos en aceite de oliva con tomates y champiñones salteados. Se sirve con papas orgánicas asadas.",
+      "descriptionEn": "two organic eggs fried in olive oil with sauteed tomatoes and mushrooms. Served with roasted organic potatoes.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-07",
-      "categoryId": "breakfast",
-      "nameEs": "Sándwich Green Goodness",
-      "nameEn": "Green Goodness Sandwich",
-      "descriptionEs": "Un huevo orgánico pochado, nuestro queso blanco, vegetales orgánicos y un toque de mozzarella en pan multigrano en rodajas.",
+      "id": "scrambled-poached-or-fried-eggs",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Huevos Revueltos, Pochados o Fritos",
+      "nameEn": "Scrambled, Poached, or Fried Eggs",
+      "descriptionEs": "dos huevos orgánicos como los prefieras. Se sirve con tu elección de pan multicereales o de centeno.",
+      "descriptionEn": "two organic eggs as you please. Served with your choice of multigrain or Rye bread.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-goodness-aka-green-goddess-sandwich",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Green Goodness, también conocido como Sándwich Green Goddess",
+      "nameEn": "Green Goodness, AKA Green Goddess Sandwich",
+      "descriptionEs": "Un huevo orgánico pochado, nuestro queso blanco, vegetales de hoja verde orgánicos y un toque de mozzarella en pan multicereales en rebanadas.",
       "descriptionEn": "A poached organic egg, our queso blanco, organic greens and a touch of mozzarella on sliced multigrain bread.",
-      "price": "$11.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Huevo",
-        "Lácteos",
-        "Gluten"
-      ],
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-08",
-      "categoryId": "breakfast",
-      "nameEs": "Revoltillo de Tofu",
+      "id": "tofu-scramble",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Revuelto de Tofu",
       "nameEn": "Tofu Scramble",
-      "descriptionEs": "Tofu orgánico revuelto con aceite de oliva, hierbas, ajo, limón y su elección de tres ingredientes adicionales.",
-      "descriptionEn": "Organic tofu, scrambled with olive oil, herbs, garlic, lemon and your choice of three fillings.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Vegano",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Soja"
-      ],
+      "descriptionEs": "Tofu orgánico, revuelto con aceite de oliva, hierbas, ajo, limón y tu elección de tres de los siguientes ingredientes. Espinacas tiernas orgánicas salteadas, col rizada (kale) orgánica, tomates, cebolla morada, champiñones, aceitunas negras o aguacate.",
+      "descriptionEn": "Organic tofu, scrambled with olive oil, herbs, garlic, lemon and your choice of three of the following. Sautéed organic baby spinach, organic kale, tomatoes, red onion, mushrooms, black olives, or avocado.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-09",
-      "categoryId": "bakery",
+      "id": "oatmeal",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Avena",
+      "nameEn": "Oatmeal",
+      "descriptionEs": "Al estilo tradicional, sin gluten, cocinada al momento, ¡porque lo bueno se hace esperar! Se sirve con rodajas de plátano (banano), azúcar morena, canela, pasas, y tu elección de leche láctea, de soya, de avena o de coco.",
+      "descriptionEn": "Old School, gluten-free, cooked to order, because you are worth the wait!. Served with sliced bananas, brown sugar, cinnamon, raisins, your choice of dairy, soy, oat, or coconut milk.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "black-bean-hash-or-burrito",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Hash o Burrito de Frijoles Negros",
+      "nameEn": "Black Bean Hash or Burrito",
+      "descriptionEs": "frijoles negros revueltos, pimientos morrones, maíz, cebollas, papas y chiles cherry picantes opcionales. Conviértelo en un BURRITO, agrega tu elección de huevos orgánicos o tofu, queso cheddar o queso vegano.",
+      "descriptionEn": "scrambled black beans, bell peppers, corn, onions, potatoes, and optional hot cherry peppers. Make it a BURRITO, add your choice of organic eggs or tofu, cheddar or vegan cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-or-organic-tofu-rancheros",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Huevos o Tofu Orgánico Rancheros",
+      "nameEn": "Huevos or Organic Tofu Rancheros",
+      "descriptionEs": "dos huevos orgánicos pochados o revueltos, o tofu orgánico, en salsa casera, cubiertos con quesos mozzarella y cheddar. Se sirven sobre totopos de maíz orgánicos, frijoles refritos, guacamole casero y crema agria.",
+      "descriptionEn": "two organic eggs poached or scrambled, or organic tofu, in homemade salsa, topped with mozzarella and cheddar cheeses. Served over organic corn chips, refried beans, homemade guacamole and sour cream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dinner-omelette",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Omelette de Cena",
+      "nameEn": "Dinner Omelette",
+      "descriptionEs": "Mismos ingredientes que nuestro omelette de desayuno, pero incluye papas orgánicas asadas y una ensalada orgánica de acompañamiento, además de nuestro minipán casero.",
+      "descriptionEn": "Same ingredients as our breakfast omelette, but we include roasted organic potatoes and a side organic salad - and our homemade mini loaf.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quiche",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Quiche",
+      "nameEn": "Quiche",
+      "descriptionEs": "Nuestro premiado pastel salado relleno de natilla de vegetales y queso; elaboramos las masas de nuestros pays (pasteles) usando manteca sin grasas trans. Se sirve con tu elección de ensalada verde orgánica o fruta en rebanadas, y tu elección de pan; sugerimos nuestro minipán casero",
+      "descriptionEn": "Our award-winning savory custard- filled vegetable and cheese pie -we make our pie crusts using trans-fat free shortening. Served with your choice of organic green salad or sliced fruit, and your choice of bread- we suggest our homemade mini-loaf",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-baked-vegan-croissant",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Croissant Vegano Horneado Fresco",
+      "nameEn": "Fresh Baked Vegan Croissant",
+      "descriptionEs": "servido con nuestra mermelada casera",
+      "descriptionEn": "served with our homemade jam",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "granola",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Granola",
+      "nameEn": "Granola",
+      "descriptionEs": "Nuestra granola casera de frutas y frutos secos, servida con fruta, miel y tu elección de leche o yogur orgánico casero.",
+      "descriptionEn": "Our homemade fruit and nut granola, served with fruit, honey, and your choice of milk or homemade organic yogurt.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-confetti-tartine",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Tartine de Aguacate Confetti",
+      "nameEn": "Avocado Confetti Tartine",
+      "descriptionEs": "aguacate machacado, cebolla morada picada finamente, mitades de tomates uva heirloom orgánicos y nuestro aderezo de limón y ajo, sobre una mitad de baguette tostada, con una pequeña guarnición de arúgula orgánica",
+      "descriptionEn": "mashed avocado, minced red onion, organic heirloom grape tomato halves, and our lemon-garlic drizzle, over a toasted baguette half, with a little organic arugula garnish",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "farmers-frittata",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Frittata de Granjero",
+      "nameEn": "Farmers Frittata",
+      "descriptionEs": "Un omelette de huevo orgánico horneado con vegetales y queso. Se sirve con ensalada verde orgánica y un minipán de pan casero.",
+      "descriptionEn": "A baked organic egg omelet with vegetables and cheese. Served with organic green salad and a mini loaf of house-made bread.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "muffins-and-scones",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Muffins y Scones",
+      "nameEn": "Muffins and Scones",
+      "descriptionEs": "hechos desde cero. La selección varía, e incluye favoritos como: manzana/queso crema/caramelo/jalapeño cheddar/ricotta y fresa/arándano con limón y semillas de amapola",
+      "descriptionEn": "made from scratch. Selection varies, including favorites like: apple/cream cheese/caramel/jalapeño Cheddar/strawberry ricotta/blueberry-lemon-poppyseed",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-french-toast",
+      "categoryId": "breakfast-menu",
+      "nameEs": "Tostadas Francesas Veganas",
+      "nameEn": "Vegan French Toast",
+      "descriptionEs": "Pan de grano entero (casero) infusionado con canela y leche de avena, cubierto con plátanos (bananos) y auténtico jarabe de arce.",
+      "descriptionEn": "Our cinnamon and oat milk infused (homemade) whole grain bread topped with bananas and real maple syrup.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich Reuben",
+      "nameEn": "Reuben Sandwich",
+      "descriptionEs": "Tocino de soya tempeh ahumado y crujiente, chucrut casero, queso suizo derretido y nuestro propio aderezo ruso, en pan de centeno en rebanadas gruesas",
+      "descriptionEn": "Crispy smoked tempeh soy bacon, house made sauerkraut, melted Swiss cheese, and our own Russian dressing, on thick sliced Rye bread",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-florentine",
+      "categoryId": "sandwiches",
+      "nameEs": "Queso Fundido Florentino",
+      "nameEn": "Grilled Cheese Florentine",
+      "descriptionEs": "Baguette abierta con espinacas tiernas orgánicas, tomates picados, aceite de oliva y mozzarella.",
+      "descriptionEn": "Open faced baguette with organic baby spinach, chopped tomatoes, olive oil, and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arthur-avenue-sicilian-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich Siciliano de Arthur Avenue",
+      "nameEn": "Arthur Avenue Sicilian Sandwich",
+      "descriptionEs": "Broccoli rabe, salteado con tomates en aceite de oliva, ajo, hinojo y pimiento rojo triturado, cubierto con mozzarella derretida.",
+      "descriptionEn": "Broccoli rabe, sautéed with tomatoes in olive oil, garlic, fennel, and crushed red pepper topped with melted mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fire-island-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich Fire Island",
+      "nameEn": "Fire Island Sandwich",
+      "descriptionEs": "Tofu orgánico asado picante al estilo búfalo, con pimientos morrones orgánicos asados, nuestro queso blanco casero, cheddar y mozzarella derretidos.",
+      "descriptionEn": "Spicy buffalo roasted organic tofu, with roasted organic bell peppers, our house-made queso blanco, melted cheddar and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-grilled-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Queso Fundido Clásico",
+      "nameEn": "Classic Grilled Cheese",
+      "descriptionEs": "pan integral tostado en sartén y queso cheddar. Agrega aguacate, tomate, chiles cherry picantes, tocino de soya tempeh o queso blanco casero.",
+      "descriptionEn": "skillet grilled whole wheat bread and cheddar cheese. Add avocado, tomato, hot cherry peppers, tempeh soy bacon, or housemade queso-blanco.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soy-bacon-blt",
+      "categoryId": "sandwiches",
+      "nameEs": "BLT de Tocino de Soya",
+      "nameEn": "Soy Bacon BLT",
+      "descriptionEs": "tocino de soya tempeh ahumado, lechuga romana orgánica, tomate, cebolla morada y elección de mayonesa láctea o vegana. ¡Agrega aguacate en rebanadas!",
+      "descriptionEn": "smoked tempeh soy bacon, organic romaine, tomato, red onion, and choice of dairy or vegan mayonnaise. Add sliced avocado!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "c-l-t",
+      "categoryId": "sandwiches",
+      "nameEs": "C.L.T.",
+      "nameEn": "C.L.T.",
+      "descriptionEs": "Nuestro propio tofu orgánico asado al chipotle, lechuga romana orgánica, tomates, cebolla morada y elección de mayonesa vegana o láctea. ¡Agrega aguacate en rebanadas!",
+      "descriptionEn": "Our own Chipotle roasted organic tofu, organic romaine, tomatoes, red onion, and choice of vegan or dairy mayonnaise. Add sliced avocado!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "falafel-pita-pocket",
+      "categoryId": "sandwiches",
+      "nameEs": "Bolsillo de Pita con Falafel",
+      "nameEn": "Falafel Pita Pocket",
+      "descriptionEs": "Una ensalada de la casa en un pan pita, un sándwich grande, rebosante, para comer con tenedor, relleno de falafel, vegetales de hoja verde mixtos orgánicos, pepino, tomate y cebolla morada. Se sirve con nuestro aderezo casero de tahini con sésamo.",
+      "descriptionEn": "A house salad in a pita, a big, overstuffed, eat with a fork sandwich, filled with falafel, organic mixed greens, cucumber, tomato, and red onion. Served with our house-made Sesame Tahini dressing.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-half-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sopa y Medio Sándwich",
+      "nameEn": "Soup & Half Sandwich",
+      "descriptionEs": "Un tazón de sopa y un medio sándwich de baguette con vegetales de temporada asados y nuestro pesto del día; a veces pesto de tomate deshidratado e hinojo, pesto de col rizada (kale) y semillas de calabaza, tomate y albahaca, chimichurri u otro delicioso pesto casero.",
+      "descriptionEn": "A bowl of soup and a half baguette sandwich with roasted seasonal vegetables and our pesto of the day - sometimes sun-dried tomato-fennel, pesto, kale-pumpkin seed pesto, tomato-basil, chimichurri, or other yummy, house made pesto.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hippie-hummus-wrap",
+      "categoryId": "sandwiches",
+      "nameEs": "Wrap de Hummus Hippie",
+      "nameEn": "Hippie Hummus Wrap",
+      "descriptionEs": "Nuestro hummus del día casero con aguacate, pepino, tomate, cebolla morada y lechuga romana en un wrap de trigo.",
+      "descriptionEn": "Our house-made hummus of the day with avocado, cucumber, tomato, red onion and romaine in a wheat wrap.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-grinder",
+      "categoryId": "sandwiches",
+      "nameEs": "Grinder de Berenjena",
+      "nameEn": "Eggplant Grinder",
+      "descriptionEs": "nuestras clásicasmilanesas de berenjena italianas empanizadas y fritas en sartén, cubiertas con nuestra marinara y mozzarella, en un pan ciabatta.",
+      "descriptionEn": "our classic Italian, breaded and pan-fried eggplant cutlets, topped with our marinara and mozzarella, on a ciabatta.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-sausage-and-pepper-hero",
+      "categoryId": "sandwiches",
+      "nameEs": "Hero de Salchicha Italiana y Pimiento",
+      "nameEn": "Italian Sausage and Pepper Hero",
+      "descriptionEs": "Salchicha de soya libre de OGM, pimientos morrones orgánicos asados, cebollas salteadas, salsa marinara casera, en un pan ciabatta, con opción de queso mozzarella vegano o lácteo.",
+      "descriptionEn": "GMO-Free soy sausage, roasted organic bell peppers, sautéed onions, homemade marinara sauce, on a ciabatta, with optional vegan or dairy mozzarella cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bella-caprese-baguette",
+      "categoryId": "sandwiches",
+      "nameEs": "Baguette Bella Caprese",
+      "nameEn": "Bella Caprese Baguette",
+      "descriptionEs": "Mozzarella fresca, también conocida como Fiore di Latte, rodajas de tomates heirloom dulces y nuestro pesto de albahaca en un ciabatta crujiente. Se sirve con nuestra ensalada de pasta del día",
+      "descriptionEn": "Fresh mozzarella, AKA Fiore di Latte, sliced sweet heirloom tomatoes, and our basil pesto on a crispy ciabatta. Served with our pasta salad of the day",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de la Casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "Vegetales de hoja verde mixtos orgánicos, tomate, pepinos orgánicos, cebollas moradas, semillas de girasol y nuestros crotones caseros con ajo. + Adicionales: tabule de quinua, bolas de falafel, tofu orgánico asado al chipotle o picante al estilo búfalo, tocino de soya tempeh ahumado, hummus, aguacate en rebanadas, guacamole, garbanzos, huevo cocido duro, feta, suizo, cheddar o mozzarella",
+      "descriptionEn": "Organic mixed greens, tomato, organic cucumbers, red onions, sunflower seeds, and our housemade garlicky croutons. + Add Ons: quinoa tabouli, falafel balls, chipotle or spicy buffalo roasted organic tofu, smoked tempeh soy bacon, hummus, sliced avocado, guacamole, chic peas, hard boiled egg, feta, Swiss. cheddar, or mozzarella",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "s-s-b-soup-salad-bread",
+      "categoryId": "salads",
+      "nameEs": "S.S.B. (Sopa, Ensalada y Pan)",
+      "nameEn": "S.S.B. (Soup, Salad & Bread)",
+      "descriptionEs": "Un tazón de sopa, tu elección de ensalada y nuestro pan casero.",
+      "descriptionEn": "A bowl of soup, your choice of salad, and our homemade bread.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Temporada",
+      "nameEn": "Seasonal Salad",
+      "descriptionEs": "Vegetales de hoja verde mixtos orgánicos con fruta de temporada, arándanos deshidratados, racimos de quinua y semillas de calabaza asadas en casa, cebolla morada, tomates, pepino, semillas de girasol y queso feta opcional.",
+      "descriptionEn": "Organic mixed greens with seasonal fruit, dried cranberries, house-roasted pumpkin seed and quinoa clusters, red onion, tomatoes, cucumber, sunflower seeds and optional feta.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Mediterránea",
+      "nameEn": "Mediterranean Salad",
+      "descriptionEs": "Tabule de quinua, una bola de falafel, nuestro hummus del día, aceitunas negras, queso feta y pita de trigo, sobre una ensalada de la casa. Recomendamos el aderezo de tahini con sésamo",
+      "descriptionEn": "Quinoa tabouli, a falafel ball, our hummus of the day, black olives, feta cheese, and wheat pita, over a house salad. We recommend Sesame Tahini dressing",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-plus-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Avocado Plus",
+      "nameEn": "Avocado Plus Salad",
+      "descriptionEs": "Espinacas tiernas orgánicas con champiñones, aguacate, pepinos, tomate, cebolla morada, semillas de girasol y crotones caseros con tu elección de: huevo cocido duro, hummus, garbanzos, tofu orgánico natural, y tofu orgánico asado al chipotle o picante al estilo búfalo.",
+      "descriptionEn": "Organic baby spinach with mushrooms, avocado, cucumbers, tomato, red onion, sunflower seeds, and home-made croutons with your choice of: hard boiled egg, hummus, chic peas, plain organic tofu, and chipotle or spicy buffalo roasted organic tofu.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana orgánica, nuestro propio y delicioso aderezo de miso sin lácteos y nuestros croûtons caseros con sabor a ajo. Queso parmesano opcional o nuestro parmesano de cáñamo vegano hecho en casa. ¡Agrega tofu orgánico asado al chipotle o estilo búfalo!",
+      "descriptionEn": "Organic romaine, our own delicious dairy-free miso dressing, and our homemade garlicky croutons. Optional parmesan cheese or our housemade vegan hemp parm. Add chipotle or buffalo roasted organic tofu!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Cobb",
+      "nameEn": "Cobb Salad",
+      "descriptionEs": "Aguacate en rodajas, huevo orgánico cocido duro, tocino de soya de tempeh ahumado, queso suizo, tomates, pepinos, cebollas moradas, semillas de girasol y croûtons sobre hojas de lechuga romana orgánica.",
+      "descriptionEn": "Sliced avocado, hard boiled organic egg, smoked tempeh soy bacon, Swiss cheese, tomatoes, cucumbers, red onions, sunflower seeds, and croutons over organic romaine leaves.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "puebla-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Puebla",
+      "nameEn": "Puebla Salad",
+      "descriptionEs": "Mix de hojas verdes orgánicas con frijoles negros, granos de elote, pimientos morrones orgánicos, cebollas moradas, tomates y pepinos orgánicos. Servida con nuestra vinagreta de chile, totopos de maíz orgánicos y opcionalmente garbanzos, queso feta o tofu orgánico asado.",
+      "descriptionEn": "Organic mixed greens topped with black beans, corn kernels, organic bell peppers, red onions, tomatoes, and organic cucumbers. Served with our chili vinaigrette, organic corn chips, and optional chickpeas, feta cheese or roasted organic tofu.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-vegetable-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Verduras Asadas",
+      "nameEn": "Roasted Vegetable Salad",
+      "descriptionEs": "Una selección de temporada de verduras asadas con hierbas y ajo, sobre una cama de espinacas baby orgánicas, cubierta con semillas de girasol y croûtons con tu elección de queso feta, tofu orgánico natural, hummus, garbanzos, huevo cocido duro, o tofu orgánico asado estilo búfalo o al chipotle.",
+      "descriptionEn": "A seasonal assortment of herb and garlic roasted vegetables, over a bed of organic baby spinach, topped with sunflower seeds and croutons with your choice of feta cheese, plain organic tofu, hummus, chic peas, hard boiled egg, buffalo or chipotle roasted organic tofu.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "arugula-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Arúgula",
+      "nameEn": "Arugula Salad",
+      "descriptionEs": "Arúgula orgánica con queso feta, tomates, cebolla morada y nuestro aderezo de limón y ajo.",
+      "descriptionEn": "Organic arugula, with feta cheese, tomatoes, red onion, and our lemon garlic dressing.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kindness-bowl",
+      "categoryId": "salads",
+      "nameEs": "Kindness Bowl",
+      "nameEn": "Kindness Bowl",
+      "descriptionEs": "Arúgula orgánica, quinua roja y zanahorias heirloom, garbanzos, edamame, arándanos secos y aguacate, con nuestro aderezo ligero de limón y ajo",
+      "descriptionEn": "Organic arugula, red quinoa, and heirloom carrots, chic peas, edamame, dried cranberries, and avocado, with our lemony-garlic drizzle",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-nachos",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Nachos Clásicos",
+      "nameEn": "Classic Nachos",
+      "descriptionEs": "Totopos de maíz con queso cheddar y mozzarella derretidos, servidos con nuestra salsa y crema agria. Nuestros nachos clásicos con queso cheddar y mozzarella derretidos, además de nuestros frijoles refritos y guacamole.",
+      "descriptionEn": "Corn chips with melted cheddar and mozzarella cheese, served with our salsa and sour cream. Our classic Nachos with melted cheddar and mozzarella cheese, plus our refried beans & guacamole.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mike-s-nachos-yale-class-of-83",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Nachos de Mike, Clase de Yale del '83",
+      "nameEn": "Mike's Nachos, Yale Class of '83",
+      "descriptionEs": "Nuestros nachos clásicos con queso cheddar y mozzarella derretidos, además de nuestros frijoles refritos y guacamole.",
+      "descriptionEn": "Our classic Nachos with melted cheddar and mozzarella cheese, plus our refried beans & guacamole.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nachos-supreme",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Nachos Supremos",
+      "nameEn": "Nachos Supreme",
+      "descriptionEs": "nuestros populares nachos de Mike con aceitunas negras, chiles cherry picantes, cebollas moradas y tomates.",
+      "descriptionEn": "our most popular Mikes Nachos with black olives, hot cherry peppers, red onions, and tomatoes.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tostada-frijoles",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Tostada Frijoles",
+      "nameEn": "Tostada Frijoles",
+      "descriptionEs": "Una tortilla de maíz cubierta con frijoles refritos y queso cheddar derretido, salsa, crema agria y guacamole, servida sobre hojas verdes orgánicas con tomates picados, pepinos orgánicos y cebolla morada.",
+      "descriptionEn": "A corn tortilla topped with refried beans & melted cheddar cheese, salsa, sour cream, & guacamole, served over organic greens with chopped tomatoes, organic cucumbers, and red onion.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huevos-rancheros",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Huevos Rancheros",
+      "nameEn": "Huevos Rancheros",
+      "descriptionEs": "dos huevos orgánicos o tofu, pochados en nuestra salsa casera con queso cheddar y mozzarella derretidos. Servidos sobre totopos de maíz con frijoles refritos caseros, guacamole y crema agria.",
+      "descriptionEn": "two organic eggs or tofu, poached in our homemade salsa with melted cheddar and mozzarella cheese. Served over corn chips with homemade refried beans, guacamole, and sour cream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-veracruz",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Berenjena Veracruz",
+      "nameEn": "Eggplant Veracruz",
+      "descriptionEs": "milanesas de berenjena empanizadas y doradas en sartén al horno con nuestra salsa de tomate, aceitunas y queso cheddar. Los platos fuertes se sirven con hojas verdes orgánicas rociadas con nuestra vinagreta de hierbas.",
+      "descriptionEn": "house breaded and pan-fried eggplant cutlets baked with our tomato salsa, olives, and cheddar cheese. Entrees are Served with organic greens drizzled with our herbal vinaigrette.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-plate",
+      "categoryId": "mexican-entrees",
+      "nameEs": "Plato Baja",
+      "nameEn": "Baja Plate",
+      "descriptionEs": "Un huevo frito orgánico sobre nuestros frijoles pintos refritos de la casa sobre arroz, además de aguacate, tomate fresco y lechuga romana orgánica.",
+      "descriptionEn": "An organic fried egg on top of our housemade refried pinto beans over rice, plus avocado, fresh tomato, and organic romaine.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de Queso",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "Mozzarella y cheddar derretidos.",
+      "descriptionEn": "Melted mozzarella and cheddar.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "refries-and-cheese-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de Frijoles Refritos y Queso",
+      "nameEn": "Refries and Cheese Quesadilla",
+      "descriptionEs": "Frijoles pintos refritos, queso cheddar y mozzarella.",
+      "descriptionEn": "Refried pinto beans, cheddar, and mozzarella cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-tomato-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla de Espinaca y Tomate",
+      "nameEn": "Spinach Tomato Quesadilla",
+      "descriptionEs": "Espinacas baby orgánicas, tomates, queso mozzarella y nuestra pasta untable de queso blanco de la casa.",
+      "descriptionEn": "Organic baby spinach, tomatoes, mozzarella cheese, and our housemade queso blanco spread.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla California",
+      "nameEn": "California Quesadilla",
+      "descriptionEs": "Horneada con aguacate en rodajas, tomates picados, champiñones, tocino de tempeh ahumado y mozzarella.",
+      "descriptionEn": "Baked with sliced avocado, chopped tomatoes, mushrooms, smoked tempeh bacon, and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tia-juana-quesadilla",
+      "categoryId": "quesadillas",
+      "nameEs": "Quesadilla Tia Juana",
+      "nameEn": "Tia Juana Quesadilla",
+      "descriptionEs": "frijoles negros, pimientos morrones, elote, cebolla morada, salsa de tomate y queso mozzarella. Servida con guacamole.",
+      "descriptionEn": "black beans, bell peppers, corn, red onion, tomato salsa, and mozzarella cheese. Served with guacamole.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bean-cheese",
+      "categoryId": "burrito-or-bowl",
+      "nameEs": "Frijoles y Queso",
+      "nameEn": "Bean & Cheese",
+      "descriptionEs": "Frijoles pintos refritos con mozzarella y cheddar.",
+      "descriptionEn": "Refried pinto beans with mozzarella and cheddar.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-buffalo-burrito",
+      "categoryId": "burrito-or-bowl",
+      "nameEs": "Burrito Picante Búfalo",
+      "nameEn": "Spicy Buffalo Burrito",
+      "descriptionEs": "Nuestro tofu orgánico asado estilo búfalo, arroz, frijoles pintos refritos, chiles cherry picantes y mozzarella.",
+      "descriptionEn": "Our buffalo roasted organic tofu, rice, refried pinto beans, hot cherry peppers, and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cornercopia-grande",
+      "categoryId": "burrito-or-bowl",
+      "nameEs": "CornerCopia Grande",
+      "nameEn": "CornerCopia Grande",
+      "descriptionEs": "¡De todo! Frijoles pintos refritos de la casa, arroz basmati, verduras de temporada asadas, guacamole, queso mozzarella y cheddar, y tu elección de tofu asado picante estilo búfalo o al chipotle.",
+      "descriptionEn": "The Works! Our in house Refried pinto beans, basmati rice, roasted seasonal vegetables, guacamole, mozzarella and cheddar cheese, and your choice of spicy buffalo or chipotle roasted tofu.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tex-mex",
+      "categoryId": "burrito-or-bowl",
+      "nameEs": "TEX-MEX",
+      "nameEn": "TEX-MEX",
+      "descriptionEs": "Frijoles negros, elote, pimientos morrones, lechuga romana orgánica picada, cebollas moradas, tomates, chiles cherry picantes, queso cheddar y crema agria.",
+      "descriptionEn": "Black beans, corn, bell peppers, chopped organic romaine, red onions, tomatoes, hot cherry peppers, cheddar cheese and sour cream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margarita-pizza",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza Margarita",
+      "nameEn": "Margarita Pizza",
+      "descriptionEs": "Nuestra salsa marinara de la casa con mozzarella. ¡Es la favorita de los niños!",
+      "descriptionEn": "Our house-made marinara sauce with mozzarella. It's the kid's fave!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-tofu-pizza",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza de Tofu BBQ",
+      "nameEn": "BBQ Tofu Pizza",
+      "descriptionEs": "Tu elección de tofu orgánico asado estilo búfalo o al chipotle con salsa barbecue, cebolla morada y queso cheddar.",
+      "descriptionEn": "Your choice of roasted organic buffalo or chipotle roasted tofu with barbecue sauce, red onion, and cheddar cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-pizza",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza Mediterránea",
+      "nameEn": "Mediterranean Pizza",
+      "descriptionEs": "Espinacas baby orgánicas, cebolla morada, tomate, feta, aceitunas negras y mozzarella.",
+      "descriptionEn": "Organic baby spinach, red onion, tomato, feta, black olives and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-rabe-pizza",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza de Broccoli Rabe",
+      "nameEn": "Broccoli Rabe Pizza",
+      "descriptionEs": "Broccoli rabe al estilo siciliano, tomate y mozzarella.",
+      "descriptionEn": "Sicilian style broccoli rabe, tomato, and mozzarella.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pizza-rustica",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza Rustica",
+      "nameEn": "Pizza Rustica",
+      "descriptionEs": "Tomates frescos y mozzarella, horneados, luego cubiertos con arúgula baby orgánica, cebolla morada y feta, rociados con nuestro aderezo de limón y ajo.",
+      "descriptionEn": "Fresh tomatoes and mozzarella, baked, then topped with organic baby arugula, red onion, and feta, drizzled with our lemon garlic dressing.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-bronx-pizza",
+      "categoryId": "flat-bread-pizzas",
+      "nameEs": "Pizza The Bronx",
+      "nameEn": "The Bronx Pizza",
+      "descriptionEs": "Tiritas de nuestras milanesas de berenjena empanizadas (te encanta nuestra berenjena a la Parmigiana) con marinara y mozzarella",
+      "descriptionEn": "Strips of our breaded eggplant cutlets (you love our Eggplant Parm) with marinara and mozzarella",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa con Queso",
+      "nameEn": "Cheese Burger",
+      "descriptionEs": "Queso cheddar y mozzarella derretidos.",
+      "descriptionEn": "Melted cheddar and mozzarella cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truffle-mushroom-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa de Champiñones a la Trufa",
+      "nameEn": "Truffle Mushroom Burger",
+      "descriptionEs": "Nuestra hamburguesa vegetariana casera con champiñones finos salteados con trufa, cebollas moradas y chalotes caramelizados, queso suizo derretido y nuestra mayonesa de trufa casera. Servida con nuestras papas orgánicas asadas.",
+      "descriptionEn": "Our homemade veggie burger with sautéed and truffled fancy mushrooms, caramelized red onions and shallots, melted Swiss cheese, and our housemade truffle mayo. Served with our roasted organic potatoes.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa California",
+      "nameEn": "California Burger",
+      "descriptionEs": "Guacamole de la casa y cheddar derretido.",
+      "descriptionEn": "House-made guacamole and melted cheddar.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "b-b-q-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa B.B.Q.",
+      "nameEn": "B.B.Q Burger",
+      "descriptionEs": "Salsa bbq ahumada, cebollas moradas salteadas, cheddar y pepinillos.",
+      "descriptionEn": "Smokey bbq sauce, sautéed red onions, cheddar, and pickles.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bistro-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa Bistró",
+      "nameEn": "Bistro Burger",
+      "descriptionEs": "con tiritas crujientes de tocino de soya de tempeh ahumado y queso suizo derretido",
+      "descriptionEn": "with crispy smoked tempeh soy bacon strips, and melted Swiss cheese",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-burger",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa Picante",
+      "nameEn": "Spicy Burger",
+      "descriptionEs": "Pimientos morrones orgánicos asados, chiles cherry picantes, queso mozzarella y mayonesa picante.",
+      "descriptionEn": "Roasted organic bell peppers, hot cherry peppers, mozzarella cheese, and spicy mayo.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger-on-a-salad",
+      "categoryId": "veggie-burgers",
+      "nameEs": "Hamburguesa en Ensalada",
+      "nameEn": "Burger on a Salad",
+      "descriptionEs": "Cualquier hamburguesa con cualquier ensalada.",
+      "descriptionEn": "Any burger with any salad.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmigiana",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Eggplant Parmigiana",
+      "nameEn": "Eggplant Parmigiana",
+      "descriptionEs": "Milanesas de berenjena empanizadas y doradas en sartén, horneadas en nuestra marinara de la casa, con parmesano y mozzarella derretida. Servidas sobre nuestra pasta marinara.",
+      "descriptionEn": "Breaded and pan-fried eggplant cutlets, baked in our house-made marinara, with parmesan and melted mozzarella. Served over our pasta marinara.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sicilian-style-broccoli-rabe-gf",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Sicilian Style Broccoli Rabe (GF)",
+      "nameEn": "Sicilian Style Broccoli Rabe (GF)",
+      "descriptionEs": "Broccoli rabe salteado con tomate, ajo, hinojo y hojuelas de chile rojo. Agrega salchicha italiana vegana.",
+      "descriptionEn": "Sautéed broccoli rabe with tomato, garlic, fennel, and crushed red pepper. Add vegan Italian sausage.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-organic-potatoes-gf",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Roasted Organic Potatoes (GF)",
+      "nameEn": "Roasted Organic Potatoes (GF)",
+      "descriptionEs": "Opción diaria de papas orgánicas Yukon gold, papas peewee o camotes asados con aceite de oliva extra virgen, hierbas y especias.",
+      "descriptionEn": "Daily option of either organic Yukon gold, peewee potatoes or sweet potatoes roasted with extra virgin olive oil, herbs, and spices.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-vegetable-plate",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Plato de Verduras Asadas",
+      "nameEn": "Roasted Vegetable Plate",
+      "descriptionEs": "Selección de las verduras más frescas, asadas con aceite de oliva extra virgen, ajo, hierbas, sal y pimienta. Servido sobre su elección de arroz basmati, tabule de quinua o espinaca orgánica, con su elección de tofu orgánico asado al estilo búfalo o chipotle, garbanzos, huevo duro, tofu orgánico natural o queso feta.",
+      "descriptionEn": "Selection of the freshest vegetables, roasted with extra virgin olive oil, garlic, herbs, salt, and pepper. Served over your choice of basmati rice, quinoa tabulli, or organic spinach, with your choice of buffalo or chipotle roasted organic tofu, chic peas, hard boiled egg, plain organic tofu, or feta cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pastas-of-the-day",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Pastas del Día",
+      "nameEn": "Pastas of the Day",
+      "descriptionEs": "Nuevo: Trío de Pasta: elija una pasta y elija una salsa. Elija: Marinara con salchichas italianas veganas, o Ala Vodka, o Salsa Alfredo, o Broccoli Rabe con salchichas italianas veganas y nuestro toque de limón y ajo, o nuestra salsa del día.",
+      "descriptionEn": "New: Pasta Trio- choose a pasta, choose a sauce. Choose: Marinara with vegan Italian sausages, or, Ala Vodka, or Alfredo Sauce, or Broccoli Rabe with Vegan Italian Sausages and our lemon-garlic drizzle, or Our Sauce of the day.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Curry",
+      "nameEn": "Curry",
+      "descriptionEs": "Cambia diariamente, siempre repleto de verduras saludables y deliciosas, y garbanzos o tofu orgánico (o ambos :-), servido sobre arroz basmati, tabule de quinua o espinaca orgánica. Consulte nuestro pizarrón de especiales o simplemente pida nuestro curry del día.",
+      "descriptionEn": "Changes daily, always loaded with healthy and delish vegetables, and either chic peas or organic tofu - or both:-) served over Basmati rice, quinoa tabouli, or organic spinach. Check out our specials board of just ask for our daily Curry.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-lentils-and-kale",
+      "categoryId": "entrees-side-dishes",
+      "nameEs": "Lentejas Rojas y Kale",
+      "nameEn": "Red Lentils and Kale",
+      "descriptionEs": "Cebollas caramelizadas, chalotes y ajo, lentejas rojas y kale orgánico salteado, servido sobre su elección de arroz basmati, espinaca orgánica o tabule de quinua.",
+      "descriptionEn": "Caramelized onions, shallots and garlic, red lentils and sautéed organic kale, served over your choice of basmati rice, organic spinach, or quinoa tabouli.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lithuanian-coffee-cake",
+      "categoryId": "dessert-menu",
       "nameEs": "Pastel de Café Lituano",
       "nameEn": "Lithuanian Coffee Cake",
-      "descriptionEs": "Nuestro legendario pastel de café casero, recién horneado todos los días en nuestra panadería interna.",
-      "descriptionEn": "Our legendary homemade coffee cake, freshly baked daily in our in-house bakery.",
-      "price": "$5.25",
-      "popular": true,
-      "badge": "Famoso",
-      "tags": [
-        "Panadería",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "descriptionEs": "Nuestro pastel de libra distintivo a base de crema agria con relleno de streusel de canela, pasas, nueces, azúcar y café descafeinado molido. Servido con o sin nuestro glaseado de crema de mantequilla.",
+      "descriptionEn": "Our signature sour cream based pound cake with cinnamon, raisin, walnut, sugar, and ground decaf coffee streusel filling. Served with or without our buttercream frosting.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-10",
-      "categoryId": "bakery",
-      "nameEs": "Galletas y Magdalenas Artesanales",
-      "nameEn": "Artisan Cookies & Cupcakes",
-      "descriptionEs": "Selección de galletas caseras, cupcakes, pays de mano y scones recién horneados.",
-      "descriptionEn": "Selection of homemade cookies, cupcakes, hand-pies, and scones freshly baked.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Dulce",
-      "tags": [
-        "Repostería"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "carrot-cake",
+      "categoryId": "dessert-menu",
+      "nameEs": "Pastel de Zanahoria",
+      "nameEn": "Carrot Cake",
+      "descriptionEs": "Un cercano segundo lugar en popularidad, nuestro pastel de zanahoria con piña, pasas y nueces se sirve de tres maneras: con o sin glaseado de crema de mantequilla y en doble capa con glaseado de queso crema.",
+      "descriptionEn": "A close second in popularity, our pineapple, raisin, walnut, carrot cake is served three ways, with or without buttercream frosting and a double layer with cream cheese frosting.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-11",
-      "categoryId": "beverages",
-      "nameEs": "Café Orgánico de Comercio Justo",
-      "nameEn": "Fair Trade Organic Coffee",
-      "descriptionEs": "Café orgánico recién hecho de comercio justo, servido caliente o helado.",
-      "descriptionEn": "Freshly brewed organic fair trade coffee, served hot or iced.",
-      "price": "$3.50",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Orgánico",
-        "Café"
-      ],
-      "allergens": [],
+      "id": "chocolate-chip-ricotta-cake",
+      "categoryId": "dessert-menu",
+      "nameEs": "Pastel de Ricotta con Chispas de Chocolate",
+      "nameEn": "Chocolate Chip Ricotta Cake",
+      "descriptionEs": "Rico pastel de libra con una capa de ricotta local y chispas de chocolate horneadas en su interior.",
+      "descriptionEn": "Rich pound cake with a layer of local ricotta and chocolate chips baked in.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "claires-12",
-      "categoryId": "beverages",
-      "nameEs": "Té de Hierbas Orgánico y Chai",
-      "nameEn": "Organic Herbal Tea & Chai",
-      "descriptionEs": "Selección de tés de hierbas orgánicos de alta calidad o nuestro té chai especial.",
-      "descriptionEn": "Selection of premium organic herbal teas or our specialty house chai.",
-      "price": "$3.75",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Sin Cafeína",
-        "Orgánico"
-      ],
-      "allergens": [],
+      "id": "chocolate-cake",
+      "categoryId": "dessert-menu",
+      "nameEs": "Pastel de Chocolate",
+      "nameEn": "Chocolate Cake",
+      "descriptionEs": "Nunca es suficiente chocolate, por lo que horneamos una variedad de pasteles de chocolate todos los días. Desde nuestra decadente doble capa hasta minipasteles bundt de queso crema y frambuesa, estamos seguros de tener algo para satisfacer su gusto por lo dulce.",
+      "descriptionEn": "You can never have enough chocolate, so we bake a variety of chocolate cakes daily. From our decadent double layer, to raspberry cream cheese mini bundts, we’re sure to have something to satisfy your sweet tooth.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies",
+      "categoryId": "dessert-menu",
+      "nameEs": "Galletas",
+      "nameEn": "Cookies",
+      "descriptionEs": "Galletas con Chispas de Chocolate",
+      "descriptionEn": "Chocolate Chippers",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies",
+      "categoryId": "dessert-menu",
+      "nameEs": "Brownies",
+      "nameEn": "Brownies",
+      "descriptionEs": "ocasionalmente",
+      "descriptionEn": "on occasion",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pies-by-the-slice",
+      "categoryId": "dessert-menu",
+      "nameEs": "Tortas por Rebanada",
+      "nameEn": "Pies by the Slice",
+      "descriptionEs": "De calabaza, pacana, manzana orgánica vegana, pastel cremoso de chocolate vegano y más. (De temporada)",
+      "descriptionEn": "Pumpkin, Pecan, Vegan Organic Apple, Vegan Chocolate Cream Pie and more. (Seasonal)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-bundts",
+      "categoryId": "dessert-menu",
+      "nameEs": "Mini Bundts",
+      "nameEn": "Mini Bundts",
+      "descriptionEs": "Pasteles de tamaño personal en una variedad de sabores.",
+      "descriptionEn": "Personal sized cakes in an assortment of flavors.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cupcakes",
+      "categoryId": "dessert-menu",
+      "nameEs": "Cupcakes",
+      "nameEn": "Cupcakes",
+      "descriptionEs": "De chocolate y vainilla, que a menudo incluyen nuestros glaseados y decoraciones especiales de producción limitada. ¡Hacemos nuestros propios glaseados de colores, nunca con colorantes artificiales!",
+      "descriptionEn": "Chocolate and Vanilla, often featuring our small batch specialty frosting and toppings. We make our own colored frostings - never with artificial dyes!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-coconut-mini-loaves",
+      "categoryId": "vegan-desserts",
+      "nameEs": "Minipanes de Limón y Coco",
+      "nameEn": "Lemon Coconut Mini Loaves",
+      "descriptionEs": "Nunca adivinaría que no contienen lácteos ni huevo; nos gusta variar agregando arándanos, fresas y más.",
+      "descriptionEn": "You’d never know these were dairy and egg free, we like to switch it up by adding blueberries, strawberries and more.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-mini-loaves",
+      "categoryId": "vegan-desserts",
+      "nameEs": "Minipanes de Chocolate",
+      "nameEn": "Chocolate Mini Loaves",
+      "descriptionEs": "Pasteles veganos de chocolate de tamaño personal.",
+      "descriptionEn": "Personal vegan chocolate cakes.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-woopie-pies",
+      "categoryId": "vegan-desserts",
+      "nameEs": "Galletas y Whoopie Pies",
+      "nameEn": "Cookies & Woopie Pies",
+      "descriptionEs": "Ofrecemos una variedad de galletas veganas y whoopie pies, ¡delicias sabrosas, de chocolate, snickerdoodles y más!",
+      "descriptionEn": "We offer an assortment of vegan cookies and woopie pies, yummy goodness, chocolate, snickerdoodles and more!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hand-pies",
+      "categoryId": "vegan-desserts",
+      "nameEs": "Empanadas Dulces",
+      "nameEn": "Hand Pies",
+      "descriptionEs": "Hojaldres giratorios con relleno de fruta vegana.",
+      "descriptionEn": "Puff pastry turnovers with vegan fruit filling.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-buns",
+      "categoryId": "vegan-desserts",
+      "nameEs": "Rollos de Canela",
+      "nameEn": "Cinnamon Buns",
+      "descriptionEs": "¡Nunca los deje pasar cuando los preparamos!",
+      "descriptionEn": "Never pass on these when we make them!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lithuanian-coffee-cake-cupcakes",
+      "categoryId": "gluten-free-desserts",
+      "nameEs": "Cupcakes de Pastel de Café Lituano",
+      "nameEn": "Lithuanian Coffee Cake Cupcakes",
+      "descriptionEs": "Nuestra versión vegana y sin gluten de nuestro pastel más popular en formato de cupcake.",
+      "descriptionEn": "Our vegan and gluten free version of our most popular cake in cupcake form.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-and-woopie-pies",
+      "categoryId": "gluten-free-desserts",
+      "nameEs": "Galletas y Whoopie Pies",
+      "nameEn": "Cookies and Woopie Pies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "drip-coffee",
+      "categoryId": "hot-drinks",
+      "nameEs": "Café Goteado",
+      "nameEn": "Drip Coffee",
+      "descriptionEs": "nuestro café de la casa es un Admiral's Blend orgánico, de comercio justo y tueste medio; también ofrecemos un tueste fuerte de Kenia, canela infusionada (no endulzada), café especial de temporada, y el descafeinado es una excelente mezcla Casablanca. Además, pregunte por nuestro sabor infusionado del mes.",
+      "descriptionEn": "our house coffee is an organic, fairly traded, medium roast Admiral's Blend, we also offer a Kenyan Bold Roast, infused (not sweetened) Cinnamon, Seasonal Special Coffee, and Decaf is a really good blend Casablanca. And, ask about our infused flavor of the month.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tea",
+      "categoryId": "hot-drinks",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "descriptionEs": "ofrecemos una gran variedad de té. Por favor, revise el pizarrón o pida nuestra selección.",
+      "descriptionEn": "we offer a large variety of tea. Please check the board or ask for our selection.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-cider",
+      "categoryId": "hot-drinks",
+      "nameEs": "Sidra de Manzana",
+      "nameEn": "Apple Cider",
+      "descriptionEs": "sidra de manzana, calentada al vapor al momento.",
+      "descriptionEn": "apple cider, steamed hot to order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "russian-fruit-cider",
+      "categoryId": "hot-drinks",
+      "nameEs": "Sidra de Frutas Rusa",
+      "nameEn": "Russian Fruit Cider",
+      "descriptionEs": "té de hierbas, jugo de manzana, fruta orgánica picada y canela.",
+      "descriptionEn": "herbal tea, apple juice, chopped organic fruit, and cinnamon.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-chai",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chai Casero",
+      "nameEn": "House-made Chai",
+      "descriptionEs": "té negro, su elección de leche orgánica de vaca al 2%, de soya, de avena, de coco o de avena con chocolate, y nuestra mezcla picante de chai hecha en casa.",
+      "descriptionEn": "black tea, your choice of organic dairy 2% milk, Soy, Oat, Coconut or Chocolate Oat milk, and our house-made spicy Chai Mix.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-hot-chocolate",
+      "categoryId": "hot-drinks",
+      "nameEs": "Chocolate Caliente Casero",
+      "nameEn": "House-made Hot Chocolate",
+      "descriptionEs": "con su elección de leche de vaca al 2%, de soya, de avena, de coco o de avena con chocolate.",
+      "descriptionEn": "with your choice of dairy 2%, Soy, Oat, Coconut or Chocolate Oat milk.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "london-fog",
+      "categoryId": "hot-drinks",
+      "nameEs": "London Fog",
+      "nameEn": "London Fog",
+      "descriptionEs": "té earl grey orgánico, jarabe orgánico de lavanda y vainilla hecho en casa, y su elección de leche al vapor.",
+      "descriptionEn": "organic earl grey tea, house-made organic lavender vanilla syrup, and your choice of steamed milk.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "hot-drinks",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "Sencillo o Doble, Regular o Descafeinado.",
+      "descriptionEn": "Single or Double, Regular or Decaf.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "hot-drinks",
+      "nameEs": "Capuchino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "con su elección de espresso anterior y leche de vaca al 2% orgánica espumada, de soya, de avena, de coco o de avena con chocolate.",
+      "descriptionEn": "with your choice of espresso above and foamed organic dairy 2% milk, Soy, Oat, Coconut or Chocolate Oat milk.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lattes",
+      "categoryId": "hot-drinks",
+      "nameEs": "Lattes",
+      "nameEn": "Lattes",
+      "descriptionEs": "con su elección de espresso y leche de vaca al 2% al vapor, de soya, de avena, de coco o de avena con chocolate",
+      "descriptionEn": "with your choice of espresso & steamed 2% dairy milk, Soy, Oat, Coconut or Chocolate Oat milk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-brewed-unsweetened-iced-teas",
+      "categoryId": "cold-drinks",
+      "nameEs": "Tés Helados Sin Azúcar Preparados en Casa",
+      "nameEn": "House-brewed unsweetened Iced Teas",
+      "descriptionEs": "Té negro con gajos de limón orgánico opcionales, verde con menta y de hibisco con frambuesa.",
+      "descriptionEn": "Black Tea with optional organic lemon wedges, Green Mint and Raspberry Hibiscus.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-lemonade",
+      "categoryId": "cold-drinks",
+      "nameEs": "Limonada Casera",
+      "nameEn": "House-made Lemonade",
+      "descriptionEs": "Consulte los sabores de temporada.",
+      "descriptionEn": "Check in for seasonal flavors.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-brew",
+      "categoryId": "cold-drinks",
+      "nameEs": "Cold Brew",
+      "nameEn": "Cold Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-lattes",
+      "categoryId": "cold-drinks",
+      "nameEs": "Lattes Helados",
+      "nameEn": "Iced Lattes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "russian-fruit-lemonade",
+      "categoryId": "cold-drinks",
+      "nameEs": "Limonada de Frutas Rusa",
+      "nameEn": "Russian Fruit Lemonade",
+      "descriptionEs": "una deliciosa mezcla de nuestra limonada casera y sidra de frutas rusa.",
+      "descriptionEn": "a delightful mix of our house-made lemonade & Russian fruit cider.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-made-ginger-ale",
+      "categoryId": "cold-drinks",
+      "nameEs": "Ginger Ale Casera",
+      "nameEn": "Home-made Ginger Ale",
+      "descriptionEs": "jarabe orgánico de jengibre hecho en casa con Pellegrino sobre hielo.",
+      "descriptionEn": "home-made organic ginger syrup with Pellegrino over ice.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda",
+      "categoryId": "cold-drinks",
+      "nameEs": "Refresco",
+      "nameEn": "Soda",
+      "descriptionEs": "Coke, Dr. Browns Cream",
+      "descriptionEn": "Coke, Dr. Browns Cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-soda",
+      "categoryId": "cold-drinks",
+      "nameEs": "Soda Italiana",
+      "nameEn": "Italian Soda",
+      "descriptionEs": "su elección de toque de sabor con Pellegrino. Consulte la selección de temporada.",
+      "descriptionEn": "your choice of flavor shot with Pellegrino. Check in for seasonal selection.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-water",
+      "categoryId": "cold-drinks",
+      "nameEs": "Agua Embotellada",
+      "nameEn": "Bottled Water",
+      "descriptionEs": "Poland Spring y Pellegrino",
+      "descriptionEn": "Poland Spring and Pellegrino",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seltzers",
+      "categoryId": "cold-drinks",
+      "nameEs": "Aguas con gas",
+      "nameEn": "Seltzers",
+      "descriptionEs": "Sabores rotativos",
+      "descriptionEn": "Rotating Flavors",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juice",
+      "categoryId": "cold-drinks",
+      "nameEs": "Jugo",
+      "nameEn": "Juice",
+      "descriptionEs": "Sidra de manzana, naranja y piña",
+      "descriptionEn": "Apple Cider, Orange, and Pineapple",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk",
+      "categoryId": "cold-drinks",
+      "nameEs": "Leche",
+      "nameEn": "Milk",
+      "descriptionEs": "Lácteo orgánico 2%, soya, avena, coco o avena con chocolate.",
+      "descriptionEn": "Organic dairy 2%, Soy, Oat, Coconut or Chocolate Oat.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brown-sugar-shaken-espresso",
+      "categoryId": "cold-drinks",
+      "nameEs": "Espresso agitado con azúcar morena",
+      "nameEn": "Brown Sugar Shaken Espresso",
+      "descriptionEs": "preparamos nuestro propio jarabe de azúcar morena: prueba la diferencia:)",
+      "descriptionEn": "we make our own brown sugar syrup - taste the difference:)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thindulgences",
+      "categoryId": "cold-drinks",
+      "nameEs": "Thindulgences",
+      "nameEn": "Thindulgences",
+      "descriptionEs": "¡Bebidas de café indulgentes, todas por debajo de 150 calorías! ¡Café frío Cold Brew mezclado con leche baja en grasa en tu elección de sabor!",
+      "descriptionEn": "Indulgent coffee drinks all under 150 Calories! Cold Brew Iced Coffee Blended with low-fat milk in your choice of flavor!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frappe",
+      "categoryId": "cold-drinks",
+      "nameEs": "Frappé",
+      "nameEn": "Frappe",
+      "descriptionEs": "Café frío Cold Brew mezclado hasta quedar cremoso y suave con crema de leche (half & half) y jarabe de chocolate. Cubierto con crema batida hecha en casa.",
+      "descriptionEn": "Cold Brew Ice Coffee blended until creamy & smooth with half & half & chocolate syrup. Topped with house-made whipped cream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemonade-freeze-seasonal",
+      "categoryId": "cold-drinks",
+      "nameEs": "Granizado de limonada (de temporada)",
+      "nameEn": "Lemonade Freeze (seasonal)",
+      "descriptionEs": "Nuestra limonada hecha en casa mezclada con hielo y tu elección de fruta: mango, fresa, arándano, pepino, B.M.G (albahaca orgánica, menta y jengibre) o piña.",
+      "descriptionEn": "Our house-made lemonade blended with ice and your choice of fruit. Mango, Strawberry, Blueberry, Cucumber, B.M.G (organic basil, mint, and ginger) or Pineapple.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cake-shake",
+      "categoryId": "cold-drinks",
+      "nameEs": "Batido de pastel (Cake Shake)",
+      "nameEn": "Cake Shake",
+      "descriptionEs": "¡Nuestra bebida más decadente para el día de trampa, o simplemente para decir \"necesito un día de antojo\" en el menú! ¡Tu elección de cualquier porción de pastel de Claire's mezclada con leche! ¡Demasiado bueno para no probarlo!",
+      "descriptionEn": "our most decadent, cheat-day, or just, I need a treat day drink on the menu! Your choice of any Claire’s cake slice blended with milk! Too good to not try!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-a-bunga",
+      "categoryId": "smoothies",
+      "nameEs": "¡Kale-A-Bunga!",
+      "nameEn": "Kale-A-Bunga!",
+      "descriptionEs": "Jugo de piña, banano, arándanos y col rizada (kale) orgánica.",
+      "descriptionEn": "Pineapple juice, banana, blueberries and organic kale.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-top",
+      "categoryId": "smoothies",
+      "nameEs": "Carrot Top",
+      "nameEn": "Carrot Top",
+      "descriptionEs": "Jugo de naranja, mango y zanahoria. Añade jengibre orgánico:-)",
+      "descriptionEn": "Orange juice, mango, and carrot. Add organic ginger:-)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dickie-s-bulldog",
+      "categoryId": "smoothies",
+      "nameEs": "Dickie's Bulldog",
+      "nameEn": "Dickie's Bulldog",
+      "descriptionEs": "Leche de soya, yogur hecho en casa, proteína vegana orgánica en polvo y banano.",
+      "descriptionEn": "Soy milk, house-made yogurt, organic vegan protein powder, and banana.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-greener-the-cleaner",
+      "categoryId": "smoothies",
+      "nameEs": "The Greener the Cleaner",
+      "nameEn": "The Greener the Cleaner",
+      "descriptionEs": "Jugo de manzana, aguacate, espinaca, apio, piña y pepinos.",
+      "descriptionEn": "Apple juice, avocado, spinach, celery, pineapple, and cucumbers.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "power-surge",
+      "categoryId": "smoothies",
+      "nameEs": "Power Surge",
+      "nameEn": "Power Surge",
+      "descriptionEs": "Té verde, leche de coco, mango, arándano, limón, jengibre, canela, cúrcuma fresca y proteína de cáñamo orgánico en polvo.",
+      "descriptionEn": "Green tea, coconut milk, mango, blueberry, lemon, ginger, cinnamon, fresh turmeric, and organic hemp protein powder.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vita-mita",
+      "categoryId": "smoothies",
+      "nameEs": "Vita Mita",
+      "nameEn": "Vita Mita",
+      "descriptionEs": "Leche de soya orgánica, aguacate y banano.",
+      "descriptionEn": "Organic soy milk, avocado, and banana.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "zumo-verde",
+      "categoryId": "smoothies",
+      "nameEs": "Zumo Verde",
+      "nameEn": "Zumo Verde",
+      "descriptionEs": "Té helado de frutos rojos, piña, banano y espinaca orgánica.",
+      "descriptionEn": "Berry iced tea, pineapple, banana, and organic spinach.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "neapolitan-shake",
+      "categoryId": "smoothies",
+      "nameEs": "Batido Napolitano",
+      "nameEn": "Neapolitan Shake",
+      "descriptionEs": "Jarabe de chocolate, leche de coco, fresas y banano.",
+      "descriptionEn": "chocolate syrup coconut milk, strawberries, and banana.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-lassi",
+      "categoryId": "smoothies",
+      "nameEs": "Lassi de mango",
+      "nameEn": "Mango Lassi",
+      "descriptionEs": "Yogur orgánico hecho en casa, mango, cardamomo y miel.",
+      "descriptionEn": "house-made organic yogurt, mango, cardamom, and honey.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-lassi",
+      "categoryId": "smoothies",
+      "nameEs": "Lassi de calabaza",
+      "nameEn": "Pumpkin Lassi",
+      "descriptionEs": "Yogur hecho en casa, puré de calabaza, cardamomo y miel. (DE TEMPORADA)",
+      "descriptionEn": "house-made yogurt, pumpkin purée, cardamom, and honey.(SEASONAL)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinderella",
+      "categoryId": "smoothies",
+      "nameEs": "Cinderella",
+      "nameEn": "Cinderella",
+      "descriptionEs": "Jugo de manzana, leche de coco, puré de calabaza, banano, granola casera de frutos secos y fruta, y canela. (DE TEMPORADA)",
+      "descriptionEn": "Apple juice, coconut milk, pumpkin puree, banana, house-made fruit and nut granola, &, cinnamon. (SEASONAL)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberries-and-cream",
+      "categoryId": "smoothies",
+      "nameEs": "Fresas con crema",
+      "nameEn": "Strawberries and Cream",
+      "descriptionEs": "Leche de vaca (o leche vegana, tú eliges), fresas orgánicas y un poco de hielo, mezclado hasta que quede cremoso y suave",
+      "descriptionEn": "Dairy milk (or vegan milk - you choose) organic strawberries and a little ice, blended creamy smooth",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-cream",
+      "categoryId": "smoothies",
+      "nameEs": "Crema de huevo",
+      "nameEn": "Egg Cream",
+      "descriptionEs": "Nuestro propio jarabe de chocolate, Pellegrino y leche orgánica -",
+      "descriptionEn": "our own chocolate syrup, Pellegrino and organic milk -",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot",
+      "categoryId": "cakes",
+      "nameEs": "Zanahoria",
+      "nameEn": "Carrot",
+      "descriptionEs": "Nuestro pastel de zanahoria súper húmedo con piña, pasas y nueces. El de dos capas de nueve pulgadas con glaseado de queso crema es siempre una opción popular. Aunque algunos prefieren el glaseado de crema de mantequilla.",
+      "descriptionEn": "Our super moist carrot cake with pineapple, raisins, and walnuts. The nine inch double layer with cream cheese frosting is always a popular choice. Although some prefer the buttercream frosting.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate",
+      "categoryId": "cakes",
+      "nameEs": "Chocolate",
+      "nameEn": "Chocolate",
+      "descriptionEs": "Nuestro pastel de chocolate oscuro y rico. Las combinaciones populares son frambuesa con queso crema, chispas de chocolate y otras frutas. Compártelo con nuestro glaseado de crema de mantequilla, rico ganache de chocolate o nuestro glaseado de chocolate alemán.",
+      "descriptionEn": "Our rich dark chocolate cake. Popular combinations are raspberry with cream cheese, chocolate chip, and other fruits. Pair it with our buttercream frosting, rich chocolate ganache, or our German chocolate icing.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellow-pound-vanilla",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de libra amarillo (Vainilla)",
+      "nameEn": "Yellow Pound (Vanilla)",
+      "descriptionEs": "Sencillo y clásico tal cual, pero un gran punto de partida para adiciones. Prueba chispas de chocolate, fresas orgánicas o frambuesa con queso crema.",
+      "descriptionEn": "Simple and Classic as is, but a great starting point for additions. Try chocolate chips, organic strawberries, or raspberry with cream cheese.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marble",
+      "categoryId": "cakes",
+      "nameEs": "Marmolado",
+      "nameEn": "Marble",
+      "descriptionEs": "¡Lo mejor de ambos mundos, chocolate y vainilla!",
+      "descriptionEn": "The best of both worlds, chocolate and vanilla!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "banana",
+      "categoryId": "cakes",
+      "nameEs": "Banano",
+      "nameEn": "Banana",
+      "descriptionEs": "Vainilla con banano horneado por dentro.",
+      "descriptionEn": "Vanilla with banana baked throughout.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "persian-cardamom",
+      "categoryId": "cakes",
+      "nameEs": "Cardamomo persa",
+      "nameEn": "Persian Cardamom",
+      "descriptionEs": "Un pastel de especias único. Combina bien con nuestra crema de mantequilla y el glaseado Chai casero.",
+      "descriptionEn": "A unique spice cake. Pairs well with our buttercream and Homemade Chai frosting.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-poppy-seed",
+      "categoryId": "cakes",
+      "nameEs": "Limón y semilla de amapola",
+      "nameEn": "Lemon Poppy Seed",
+      "descriptionEs": "Con ralladura de limón orgánico fresco y semillas de amapola. Añade arándanos o mermelada de frambuesa para un toque delicioso",
+      "descriptionEn": "With fresh organic lemon zest and poppy seeds. Add blueberries or raspberry preserves for a lovely addition",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-spice-dairy-free-seasonal",
+      "categoryId": "cakes",
+      "nameEs": "Especias de calabaza (Sin lácteos) (De temporada)",
+      "nameEn": "Pumpkin Spice (Dairy Free) (Seasonal)",
+      "descriptionEs": "Húmedo y delicioso con la cantidad justa de especias. ¡A menudo los hacemos en forma de panqué con glaseado de queso crema en el local!",
+      "descriptionEn": "Moist and delicious with just the right amount of spice. We often make these as cake loaves with cream cheese frosting in house!",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-upside-down-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel volteado de piña",
+      "nameEn": "Pineapple Upside Down Cake",
+      "descriptionEs": "Delicioso tal cual, con nuestra cobertura dulce de piña y azúcar morena, horneada en la parte inferior.",
+      "descriptionEn": "Delicious as is, with a our sweet pineapple brown sugar topping, baked on the bottom.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-cream-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de crema de limón",
+      "nameEn": "Lemon Cream Cake",
+      "descriptionEs": "Solo de doble capa: pastel de vainilla en capas con nuestro relleno de crema de limón hecho en casa en el medio y glaseado con crema de mantequilla de limón.",
+      "descriptionEn": "Double layer only- layered vanilla cake with our house made lemon cream filling in between and frosted with lemon buttercream.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de cannoli",
+      "nameEn": "Cannoli Cake",
+      "descriptionEs": "Pastel de capas de chocolate, requesón endulzado, chispas de chocolate y un poco de ralladura de limón, cubierto con trocitos de concha de cannoli y cucharadas de requesón endulzado",
+      "descriptionEn": "chocolate layer cake, sweetened ricotta, chocolate chips and a little lemon zest, topped with crumbled cannoli shells and dollops of sweetened ricotta cheese",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "matcha-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de matcha",
+      "nameEn": "Matcha Cake",
+      "descriptionEs": "Pastel de capas de matcha con glaseado de lavanda o limón - tú eliges",
+      "descriptionEn": "Matcha layer cake with lavender or lemon frosting - you choose",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-chocolate",
+      "categoryId": "cakes",
+      "nameEs": "Chocolate vegano",
+      "nameEn": "Vegan Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-lemon-coconut",
+      "categoryId": "cakes",
+      "nameEs": "Limón y coco vegano",
+      "nameEn": "Vegan Lemon Coconut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-and-vegan-vanilla",
+      "categoryId": "cakes",
+      "nameEs": "Vainilla vegana y sin gluten",
+      "nameEn": "Gluten Free and Vegan Vanilla",
+      "descriptionEs": "(solo pastelitos / cupcakes)",
+      "descriptionEn": "(cupcakes only)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-and-vegan-chocolate",
+      "categoryId": "cakes",
+      "nameEs": "Chocolate vegano y sin gluten",
+      "nameEn": "Gluten Free and Vegan Chocolate",
+      "descriptionEs": "(solo pastelitos / cupcakes)",
+      "descriptionEn": "(cupcakes only)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-and-vegan-lithuanian-coffee-cake",
+      "categoryId": "cakes",
+      "nameEs": "Pastel de café lituano vegano y sin gluten",
+      "nameEn": "Gluten Free and Vegan Lithuanian Coffee Cake",
+      "descriptionEs": "(solo pastelitos / cupcakes)",
+      "descriptionEn": "(cupcakes only)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-and-vegan-marble",
+      "categoryId": "cakes",
+      "nameEs": "Marmolado vegano y sin gluten",
+      "nameEn": "Gluten Free and Vegan Marble",
+      "descriptionEs": "(solo pastelitos / cupcakes)",
+      "descriptionEn": "(cupcakes only)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip",
+      "categoryId": "cookies",
+      "nameEs": "Chocolate Chip",
+      "nameEn": "Chocolate Chip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yummy-goodness-cookies",
+      "categoryId": "cookies",
+      "nameEs": "Galletas Yummy Goodness",
+      "nameEn": "Yummy Goodness Cookies",
+      "descriptionEs": "(contiene nueces)",
+      "descriptionEn": "(contains walnuts)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-macaroons",
+      "categoryId": "cookies",
+      "nameEs": "Macaroons de Coco",
+      "nameEn": "Coconut Macaroons",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-chocolate-macaroons",
+      "categoryId": "cookies",
+      "nameEs": "Macaroons de Doble Chocolate",
+      "nameEn": "Double Chocolate Macaroons",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin",
+      "categoryId": "cookies",
+      "nameEs": "Calabaza",
+      "nameEn": "Pumpkin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sunbutter",
+      "categoryId": "cookies",
+      "nameEs": "Sunbutter",
+      "nameEn": "Sunbutter",
+      "descriptionEs": "nuestra versión de las galletas de mantequilla de maní, con mantequilla de girasol hecha en casa",
+      "descriptionEn": "our take on peanut butter cookies, with house-made sunflower butter",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-apple",
+      "categoryId": "pies",
+      "nameEs": "Manzana Orgánica",
+      "nameEn": "Organic Apple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-apple-berry",
+      "categoryId": "pies",
+      "nameEs": "Manzana con Frutos Rojos Orgánica",
+      "nameEn": "Organic Apple Berry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "north-carolina-pecan",
+      "categoryId": "pies",
+      "nameEs": "Pecana de Carolina del Norte",
+      "nameEn": "North Carolina Pecan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemony-deviled-eggs",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Huevos Rellenos con Toque de Limón",
+      "nameEn": "Lemony Deviled Eggs",
+      "descriptionEs": "Huevos orgánicos, rellenos con nuestro relleno de limón y estragón",
+      "descriptionEn": "Organic eggs, stuffed with our lemony-tarragon filling",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-and-tomato-salsa",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Salsa de Aguacate y Tomate",
+      "nameEn": "Avocado and Tomato Salsa",
+      "descriptionEs": "Trocitos de delicioso aguacate, tomates heirloom, cebolla morada y la cantidad justa de jalapeño para darle a esta maravillosa salsa con trozos un ligero toque picante. Se sirve con totopos de maíz orgánico para dipear.",
+      "descriptionEn": "Chunks of luscious avocado, heirloom tomatoes, red onion, and just enough jalapeño to give this wonderful, chunky salsa a little “kick.” Served with Organic corn chips for dipping.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-white-bean-spread-with-crostini",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Untable de Frijoles Blancos Orgánicos con Crostini",
+      "nameEn": "Organic White Bean Spread with Crostini",
+      "descriptionEs": "Preparamos nuestro untable de frijoles con ajo, un toque de aceite de oliva frutal y hierbas frescas. Tus invitados pueden untar esta opción rica en proteínas y llena de sabor para un aperitivo delicioso y saludable. 25 piezas por pedido.",
+      "descriptionEn": "We make our garlicky bean spread with a touch of fruity olive oil and fresh herbs. Your guests can spread on this protein-rich and flavorful spread for a lovely and healthy appetizer. 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-confetti-endive-boats",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Barquitos de Endibia con Confeti de Aguacate",
+      "nameEn": "Avocado Confetti Endive Boats",
+      "descriptionEs": "hojas crujientes de endibia, rellenas con nuestra mezcla en trozos de aguacate, tomate y cilantro: 25 por pedido",
+      "descriptionEn": "crispy endive leaves, filled with our chunky avocado, tomato, cilantro mash-up- 25 per order",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomato-bruschetta",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Bruschetta de Tomate",
+      "nameEn": "Tomato Bruschetta",
+      "descriptionEs": "Preparamos una mezcla aromática de tomates heirloom orgánicos, albahaca fresca, ajo y aceite de oliva virgen extra. Incluiremos crostini multigrano. 25 piezas por pedido.",
+      "descriptionEn": "We prepare an aromatic blend of organic heirloom tomatoes, fresh basil, garlic, and extra virgin olive oil. We’ll include multigrain crostini. 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-frittata-bites",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Bocaditos de Frittata Mini",
+      "nameEn": "Mini Frittata Bites",
+      "descriptionEs": "Utilizamos verduras orgánicas, huevos orgánicos, quesos Feta y Mozzarella, y finas hierbas para esta tortilla al horno tradicional italiana. Cada cuadrado del tamaño unui bocado vendrá acompañado de una guarnición de coulis de tomate. 25 piezas por pedido.",
+      "descriptionEn": "We use organic vegetables, organic eggs, Feta and Mozzarella cheeses, and lovely herbs for this traditional Italian baked omelet. Each bite-sized square will come with a tomato coulis garnish. 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheddar-and-jalapeno-bites",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Bocaditos de Cheddar y Jalapeño",
+      "nameEn": "Cheddar and Jalapeno Bites",
+      "descriptionEs": "¡Estos pequeños muffins miniatura, ligeramente dulces, de queso cheddar y jalapeño (para un toque picante), son todo un éxito! 25 piezas por pedido.",
+      "descriptionEn": "These little puffs of slightly sweet, cheddar, and jalapeno (for a little \"kick\") mini muffins are a big hit! 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polenta-parmesan-bites",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Bocaditos de Polenta y Parmesano",
+      "nameEn": "Polenta-Parmesan Bites",
+      "descriptionEs": "¡Estos ligeros y deliciosos bocaditos de polenta de maíz son todo un éxito! Los cubrimos con un pesto ligero de tomates deshidratados con aroma a albahaca. 25 piezas por pedido.",
+      "descriptionEn": "These light and delicious cornmeal polenta bites are a big hit! We top them with a light and basil-scented sun-dried tomato pesto. 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "five-layer-dip",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Dip de Cinco Capas",
+      "nameEn": "Five Layer Dip",
+      "descriptionEs": "Un solo tamaño. ¡Siempre un éxito en las fiestas! Capas de frijoles pintos refritos, salsa, guacamole casero, queso cheddar y crema agria. Se sirve con totopos de maíz orgánico.",
+      "descriptionEn": "One size- Always a party hit! Layered refried pinto beans, salsa, homemade guacamole, cheddar cheese, and sour cream. Served with organic corn chips.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bean-hummus-plate",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Plato de Hummus de Frijol",
+      "nameEn": "Bean Hummus Plate",
+      "descriptionEs": "Hummus de frijol hecho al momento, a veces de limón y ajo, a veces de remolacha, a veces de espinaca y limón, siempre delicioso. Se sirve con una selección de verduras crudas y nuestros chips de pita con za'atar hechos en casa. O bien, omite los chips de pita para una opción sin gluten.",
+      "descriptionEn": "Made to order bean hummus, sometimes lemon-garlic, sometimes beet, sometimes spinach-lemon, always delicious. Served with a selection of raw veggies and our house-made za'atar pita chips. Or skip the pita chips for a gluten free option.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable-plate",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Plato de Verduras",
+      "nameEn": "Vegetable Plate",
+      "descriptionEs": "Una colorida selección de las mejores verduras crujientes, servidas con dip de Parmesano y Eneldo.",
+      "descriptionEn": "A colorful selection of the best crispy vegetables, served with Parmesan-Dill Dip.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-organic-potato-wedges",
+      "categoryId": "small-plates-chips-dips-crostini-appetizers-bruschetta",
+      "nameEs": "Gajos de Papa Orgánica Crujientes",
+      "nameEn": "Crispy Organic Potato Wedges",
+      "descriptionEs": "Servidos con dip de alií amarillo. 25 piezas por pedido.",
+      "descriptionEn": "Served with Aji Amarillo Aioli Dip. 25 pieces per order.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-lentil-salad",
+      "categoryId": "salads-vegetables-pasta",
+      "nameEs": "Ensalada de Lentejas Francesas",
+      "nameEn": "French Lentil Salad",
+      "descriptionEs": "Lentejas francesas, mezcladas con col rizada (kale) orgánica o espinacas baby, arándanos secos y una vinagreta de sidra de manzana con mostaza.",
+      "descriptionEn": "French lentils, tossed with organic Kale or baby Spinach, dried cranberries, and a mustardy apple cider vinaigrette.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-kale-crunch-salad",
+      "categoryId": "salads-vegetables-pasta",
+      "nameEs": "Ensalada Crujiente de Col Rizada Orgánica",
+      "nameEn": "Organic Kale Crunch Salad",
+      "descriptionEs": "Con garbanzos, semillas de calabaza y arándanos secos, mezclados en nuestra vinagreta de mostaza, sidra de manzana y hierbas.",
+      "descriptionEn": "With chickpeas, pumpkin seeds, and dried cranberries, tossed in our mustardy, apple cider and herb vinaigrette.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-quinoa-salad",
+      "categoryId": "salads-vegetables-pasta",
+      "nameEs": "Ensalada de Quinua Orgánica",
+      "nameEn": "Organic Quinoa Salad",
+      "descriptionEs": "Quinua orgánica con frijoles negros, tomate, brócoli, cebollas moradas y zanahorias picadas, mezcladas en un aderezo cítrico de chimichurri con hierbas frescas.",
+      "descriptionEn": "Organic quinoa with black beans, tomato, broccoli, red onions, and chopped carrots tossed in a fresh herb chimichurri citrus dressing.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "asian-noodle-salad",
+      "categoryId": "salads-vegetables-pasta",
+      "nameEs": "Ensalada de Fideos Asiáticos",
+      "nameEn": "Asian Noodle Salad",
+      "descriptionEs": "Elaborada con fideos, brócoli, zanahorias y apio orgánico, en nuestro aderezo de tamari y jengibre, y tofu orgánico asado.",
+      "descriptionEn": "Made with noodles, broccoli, carrots, and organic celery, in our tamari-ginger dressing, and roasted organic tofu.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesto-pasta",
+      "categoryId": "salads-vegetables-pasta",
+      "nameEs": "Pesto Pasta",
+      "nameEn": "Pesto Pasta",
+      "descriptionEs": "Pesto de tomate deshidratado, col rizada con semillas de calabaza, albahaca o cilantro, mezclado con pasta.",
+      "descriptionEn": "Sun-dried tomato, Kale-Pumpkin Seed, Basil, or Cilantro pesto, tossed with pasta.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-seasonal-vegetables",
+      "categoryId": "sandwich-platters",
+      "nameEs": "Verduras de Temporada Asadas",
+      "nameEn": "Roasted Seasonal Vegetables",
+      "descriptionEs": "con espinaca orgánica y tu elección de mayonesa vegana o tradicional y pesto de tomates deshidratados (V&GF)",
+      "descriptionEn": "with organic spinach and your choice of vegan or traditional mayo and sun-dried tomato pesto (V&GF)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-egg-salad",
+      "categoryId": "sandwich-platters",
+      "nameEs": "Ensalada de Huevo Orgánica",
+      "nameEn": "Organic Egg Salad",
+      "descriptionEs": "con lechuga romana orgánica, tomates y cebolla morada",
+      "descriptionEn": "with organic Romaine, tomatoes and red onion",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hippie-hummus-wraps",
+      "categoryId": "sandwich-platters",
+      "nameEs": "Wraps Hippie Hummus",
+      "nameEn": "Hippie Hummus Wraps",
+      "descriptionEs": "Hummus del día, lechuga romana orgánica, tomate, cebolla morada y aguacate",
+      "descriptionEn": "Hummus of the day, organic Romaine, tomato, red onion and Avocado",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-caesar-wrap",
+      "categoryId": "sandwich-platters",
+      "nameEs": "Wrap Buffalo Caesar",
+      "nameEn": "Buffalo Caesar Wrap",
+      "descriptionEs": "Nuestro tofu estilo Buffalo, lechuga romana orgánica, aderezo César de miso y parmesano opcional (vegano o lácteo).",
+      "descriptionEn": "Our Buffalo tofu, organic romaine, Caesar miso dressing and optional vegan or dairy Parmesan.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-ala-vodka",
+      "categoryId": "entrees",
+      "nameEs": "Penne ala Vodka",
+      "nameEn": "Penne ala Vodka",
+      "descriptionEs": "Pasta penne, en nuestra salsa cremosa importada de tomate y vodka.",
+      "descriptionEn": "Penne pasta, in our creamy imported tomato and vodka sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "portobello-stacks",
+      "categoryId": "entrees",
+      "nameEs": "Torres de Portobello",
+      "nameEn": "Portobello Stacks",
+      "descriptionEs": "Hongos portobello grandes sellados a la sartén, cubiertos con espinaca baby orgánica salteada, pesto de tomates deshidratados y queso feta desmenuzado, sobre una cama de hojas verdes baby orgánicas mixtas, con un toque de vinagreta",
+      "descriptionEn": "Pan-seared, large, Portobello caps, topped with sauteed baby organic spinach, sun-dried tomato pesto, and crumbled Feta cheese, over mixed baby organic greens, with a little vinaigrette",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lasagne-rolls",
+      "categoryId": "entrees",
+      "nameEs": "Rollitos de Lasagne",
+      "nameEn": "Lasagne Rolls",
+      "descriptionEs": "Un favorito italiano tradicional y perdurable, elaborado con láminas de pasta, ricotta, parmesano, espinaca baby orgánica y mozzarella, horneados en nuestra salsa marinara casera. 12, 18 o 25 rollitos",
+      "descriptionEn": "A traditional, and perennial Italian favorite, made with pasta noodles, ricotta, Parmesan, organic baby spinach, and Mozzarella, baked in our homemade Marinara sauce.12,18, or 25 rolls",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini",
+      "categoryId": "entrees",
+      "nameEs": "Rollatini de Berenjena",
+      "nameEn": "Eggplant Rollatini",
+      "descriptionEs": "Milanesas de berenjena en finas rebanadas, empanizadas y fritas a la sartén, rellenas de ricotta de producción local, albahaca, mozzarella y queso parmesano, luego cubiertas con nuestra marinara casera y horneadas a la perfección. 12, 18 o 24 rollitos",
+      "descriptionEn": "Thin sliced breaded and pan fried eggplant cutlets, stuffed with locally produced ricotta, basil, mozzarella, and parmesan cheese then topped with our house made marinara and baked to perfection.12,18, or 24 rolls",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-sauce-with-couscous-or-pasta",
+      "categoryId": "entrees",
+      "nameEs": "Salsa de Berenjena con Cusús o Pasta",
+      "nameEn": "Eggplant Sauce with Couscous or Pasta",
+      "descriptionEs": "Trocitos de berenjena, escalfados en nuestra salsa marinara casera, sobre cusús o pasta orgánica.",
+      "descriptionEn": "Chunks of eggplant, poached in our house made marinara sauce, over organic couscous or pasta.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-almalfitana",
+      "categoryId": "entrees",
+      "nameEs": "Pasta Amalfitana",
+      "nameEn": "Pasta Almalfitana",
+      "descriptionEs": "Pasta italiana horneada con quesos ricotta, mozzarella y parmesano, espinaca baby orgánica y nuestra salsa marinara.",
+      "descriptionEn": "Italian pasta baked with ricotta, mozzarella, and Parmesan cheeses, organic baby spinach, and our marinara sauce.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chili",
+      "categoryId": "entrees",
+      "nameEs": "Chili",
+      "nameEn": "Chili",
+      "descriptionEs": "Nuestro guiso de frijoles pintos y rojos orgánicos, arroz, tomates, maíz y chiles. Con queso cheddar opcional. Se sirve con totopos de maíz orgánico",
+      "descriptionEn": "Our stew of organic pinto and red kidney beans, rice, tomatoes, corn, and chilies. With optional cheddar cheese. Served with organic corn chips",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curry-with-organic-tofu",
+      "categoryId": "entrees",
+      "nameEs": "Curry con Tofu Orgánico",
+      "nameEn": "Curry with Organic Tofu",
+      "descriptionEs": "Una combinación muy colorida de hermosas verduras orgánicas, estofadas en nuestra salsa de curry Madras con tofu orgánico, sobre arroz, espinaca orgánica o quinua orgánica",
+      "descriptionEn": "A most colorful combination of beautiful organic vegetables, braised in our Madras curry sauce with organic tofu, over rice, organic spinach, or organic quinoa",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "risotto",
+      "categoryId": "entrees",
+      "nameEs": "Risotto",
+      "nameEn": "Risotto",
+      "descriptionEs": "Arroz arborio cocinado a fuego lento con nuestro propio caldo de verduras, vino blanco y hierbas. Elige entre champiñones, tres tomates o calabaza butternut asada.",
+      "descriptionEn": "Arborio rice slow cooked with our own vegetable broth, white wine, and herbs. Choose from mushroom, three tomato, or roasted butternut squash.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-platter",
+      "categoryId": "entrees",
+      "nameEs": "Plato Mediterráneo",
+      "nameEn": "Mediterranean Platter",
+      "descriptionEs": "Un magnífico plato para armar tus propios sándwiches con nuestro hummus de frijol del día, tabule de quinua, falafel, pan pita integral, aceitunas negras, queso feta, pepinos, tomates y hojas verdes mixtas orgánicas. Se sirve con nuestra tahini de sésamo hecha en casa.",
+      "descriptionEn": "A gorgeous platter of build your own sandwiches with our bean hummus of the day, quinoa tabulli, falafel, whole wheat pita, black olives, feta cheese, cucumbers, tomatoes, and organic mixed greens. Served with our house-made sesame tahini.",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones veganas y sin gluten?",
-      "qEn": "Do you offer vegan and gluten-free options?",
-      "aEs": "¡Sí! Ofrecemos una gran variedad de opciones vegetarianas, veganas y libres de gluten para el desayuno, almuerzo y repostería.",
-      "aEn": "Yes! We offer a wide array of vegetarian, vegan, and gluten-free choices for breakfast, lunch, and bakery items."
-    },
-    {
-      "qEs": "¿Tienen servicio de pedidos en línea?",
-      "qEn": "Do you offer online ordering?",
-      "aEs": "No tenemos pedidos directos en línea porque nos encanta escuchar tu voz. Llámanos al (203) 562-3888 para ordenar para llevar, o haz tus pedidos a domicilio a través de Grubhub.",
-      "aEn": "We don't have direct online ordering because we love to hear your voice! Call us at (203) 562-3888 for takeout, or order delivery via Grubhub."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos privados?",
-      "qEs_alt": "¿Tienen espacio para eventos privados?",
-      "qEn": "Do you offer catering or private event spaces?",
-      "aEs": "Sí, ofrecemos catering para reuniones pequeñas y grandes, y ahora ofrecemos nuestro espacio privado para fiestas, despedidas de soltera, baby showers y reuniones.",
-      "aEn": "Yes, we offer catering for small and large gatherings, and now offer our private space for parties, bridal and baby showers, meetings, and celebrations."
-    }
-  ]
+  "faqs": []
 }

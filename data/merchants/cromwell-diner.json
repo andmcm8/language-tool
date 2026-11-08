@@ -2,25 +2,16 @@
   "storeInfo": {
     "id": "cromwell-diner",
     "name": "Cromwell Diner",
-    "tagline": "Classic American Diner Comfort Food & Fresh Specials / Comida Clásica Americana y Especialidades Frescas",
+    "tagline": "American restaurant in Cromwell | Restaurante americano en Cromwell",
     "address": "135 Berlin Road, Cromwell, CT 06416",
     "phone": "(860) 635-7112",
     "hours": {
-      "monday_friday": "8:00 AM - 8:00 PM",
-      "saturday": "8:00 AM - 8:00 PM",
-      "sunday": "8:00 AM - 8:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery by Uber Eats & Grubhub",
-      "Breakfast Anytime",
       "Bilingual Menu"
     ],
     "themeColor": "#b45309",
@@ -33,292 +24,1678 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Antojos",
-      "nameEn": "Appetizers & Starters",
+      "id": "brunch-favorites",
+      "nameEs": "Favoritos del Brunch",
+      "nameEn": "Brunch Favorites",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees & Burgers",
+      "id": "tex-mex-benedicts",
+      "nameEs": "Benedictinos Tex-Mex",
+      "nameEn": "Tex Mex Benedicts",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties & Breakfast",
+      "id": "omelets",
+      "nameEs": "Omelets",
+      "nameEn": "Omelets",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Postres",
-      "nameEn": "Drinks & Desserts",
-      "icon": "Coffee"
+      "id": "griddle",
+      "nameEs": "A la Plancha",
+      "nameEn": "Griddle",
+      "icon": "Utensils"
+    },
+    {
+      "id": "french-toast",
+      "nameEs": "Pan Francés",
+      "nameEn": "French Toast",
+      "icon": "Utensils"
+    },
+    {
+      "id": "2-egg-platters",
+      "nameEs": "Platos de 2 Huevos",
+      "nameEn": "2-Egg Platters",
+      "icon": "Utensils"
+    },
+    {
+      "id": "breakfast-sandwiches",
+      "nameEs": "Sándwiches de Desayuno",
+      "nameEn": "Breakfast Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pick-2-for-11-99",
+      "nameEs": "Elija 2 por $11.99",
+      "nameEn": "Pick 2 for $11.99",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soups-made-fresh-daily",
+      "nameEs": "Sopas Preparadas Frescas Todos los Días",
+      "nameEn": "Soups Made-Fresh-Daily",
+      "icon": "Utensils"
+    },
+    {
+      "id": "snacks",
+      "nameEs": "Antojitos",
+      "nameEn": "Snacks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entree-salads",
+      "nameEs": "Ensaladas Principales",
+      "nameEn": "Entrée Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-dishes",
+      "nameEs": "Guarniciones",
+      "nameEn": "Side Dishes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burger-bar",
+      "nameEs": "Barra de Hamburguesas",
+      "nameEn": "Burger Bar",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches-wraps",
+      "nameEs": "Sándwiches y Wraps",
+      "nameEn": "Sandwiches & Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dinner",
+      "nameEs": "Cena",
+      "nameEn": "Dinner",
+      "icon": "Utensils"
+    },
+    {
+      "id": "blue-plate-dinners",
+      "nameEs": "Cenas Blue Plate",
+      "nameEn": "Blue Plate Dinners",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-10-and-under",
+      "nameEs": "Niños... 10 años y menores",
+      "nameEn": "Kids ... 10 and under",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert-beverages",
+      "nameEs": "Postres y Bebidas",
+      "nameEn": "Dessert & Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch-cocktails",
+      "nameEs": "Cócteles de Brunch",
+      "nameEn": "Brunch Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "spiked-coffee",
+      "nameEs": "Café con Licor",
+      "nameEn": "Spiked Coffee",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "cromwell-diner-01",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich de Pollo Frito con Suero de Leche",
-      "nameEn": "Buttermilk Fried Chicken Sandwich",
-      "descriptionEs": "Pechuga de pollo 100% natural, sin antibióticos ni hormonas, empanizada y frita al momento con suero de leche, servida en pan brioche tostado con pepinillos y salsa especial.",
-      "descriptionEn": "100% all-natural chicken breast with no antibiotics or hormones, buttermilk battered and fried golden brown, served on a toasted brioche bun with pickles and special sauce.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "New / Nuevo",
-      "tags": [
-        "All-Natural",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "chicken-waffle",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Pollo y Waffle",
+      "nameEn": "Chicken & Waffle",
+      "descriptionEs": "Pechuga de pollo frita crujiente sobre un waffle belga, espolvoreada con azúcar glass. Se sirve con un frasco de jarabe de arce de Vermont.",
+      "descriptionEn": "Crispy fried chicken breast on a Belgian waffle, sprinkled with powdered sugar. Served with a Vermont maple syrup jar.",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-02",
-      "categoryId": "specialties",
-      "nameEs": "Pancakes de Bayas Frescas",
-      "nameEn": "Fresh Berry Pancakes",
-      "descriptionEs": "Flácidos y dorados panqueques caseros cargados con bayas frescas de temporada y servidos con sirope de arce puro.",
-      "descriptionEn": "Fluffy, golden-brown griddle pancakes loaded with fresh seasonal berries and served with pure maple syrup.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Breakfast Anytime",
-      "tags": [
-        "Vegetariano",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Eggs"
-      ],
+      "id": "country-fried-steak-eggs",
+      "categoryId": "brunch-favorites",
+      "nameEs": "Bistec empanizado estilo campestre y huevos",
+      "nameEn": "Country Fried Steak & Eggs",
+      "descriptionEs": "Panecillos de suero de leche cubiertos con bistec empanizado estilo campestre, salsa de salchicha de la casa, dos huevos estrellados. Se sirve con papas doradas Yukon Gold.",
+      "descriptionEn": "Buttermilk biscuits topped with country fried steak, house sausage gravy, two sunny-side eggs. Served with yukon gold home fries.",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-03",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Clásica de Media Libra",
-      "nameEn": "Half-Pound Beef Burger",
-      "descriptionEs": "Carne de res fresca, nunca congelada, sazonada a la perfección y cocinada a su gusto. Servida con lechuga, tomate y papas fritas crujientes.",
-      "descriptionEn": "Fresh, never frozen ground beef cooked to order. Served with crisp lettuce, ripe tomato, and a side of golden French fries.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Best Seller",
-      "tags": [
-        "Fresh Beef",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "sunrise-quesadilla",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Quesadilla Sunrise",
+      "nameEn": "Sunrise Quesadilla",
+      "descriptionEs": "Tortilla de harina a la plancha, huevos revueltos, tocino, queso americano, cheddar. Crema agria y aguacate fresco machacado a un lado. Se sirve con papas doradas Yukon Gold, huevos pochados, salsa holandesa, pan inglés, frijoles negros sazonados o fruta fresca con papas Yukon, grits o fruta fresca",
+      "descriptionEn": "Grilled flour tortilla, scrambled eggs, bacon, American, cheddar. Sour cream and fresh smashed avocado on the side. Served with Yukon Gold Home Fries, Poached Eggs, Hollandaise, English Muffin, Seasoned Black Beans or Fresh Fruit with Yukon Home Fries, Grits or Fresh Fruit",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-04",
-      "categoryId": "appetizers",
-      "nameEs": "Aros de Cebolla Dorados",
-      "nameEn": "Crispy Onion Rings",
-      "descriptionEs": "Aros de cebolla gruesos rebozados y fritos hasta obtener un acabado crujiente perfecto, servidos con salsa ranchera de la casa.",
-      "descriptionEn": "Thick-cut onion rings battered and fried to a golden crisp crunch, served with homemade house ranch dressing.",
-      "price": "$8.95",
-      "popular": false,
-      "badge": "Crispy",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "breakfast-burrito",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Burrito de Desayuno",
+      "nameEn": "Breakfast Burrito",
+      "descriptionEs": "Huevos revueltos, chorizo desmenuzado, cebolla a la plancha, aguacate, cheddar, tortilla de harina. Se sirve con papas doradas Yukon Gold, huevos pochados, salsa holandesa, pan inglés, frijoles negros sazonados o fruta fresca con papas Yukon, grits o fruta fresca",
+      "descriptionEn": "Scrambled eggs, crumbled chorizo, grilled onion, avocado, cheddar, flour tortilla. Served with Yukon Gold Home Fries, Poached Eggs, Hollandaise, English Muffin, Seasoned Black Beans or Fresh Fruit with Yukon Home Fries, Grits or Fresh Fruit",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-05",
-      "categoryId": "appetizers",
-      "nameEs": "Papas Fritas con Queso y Tocino",
-      "nameEn": "Bacon Cheese Fries",
-      "descriptionEs": "Nuestras clásicas papas fritas cubiertas con queso fundido derretido y trocitos de tocino ahumado crujiente.",
-      "descriptionEn": "Our classic golden french fries generously topped with melted melted cheese and crispy smoked bacon bits.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Comfort Food",
-      "tags": [
-        "Favorito"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "id": "breakfast-tacos-3",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Tacos de Desayuno (3)",
+      "nameEn": "Breakfast Tacos (3)",
+      "descriptionEs": "3 tortillas de harina a la plancha rellenas de huevos revueltos, cheddar, pico de gallo y tu elección de TOCINO, SALCHICHA, AGUACATE O CHORIZO DESMENUZADO. Se sirve con papas doradas Yukon Gold, huevos pochados, salsa holandesa, pan inglés, frijoles negros sazonados o fruta fresca con papas Yukon, grits o fruta fresca",
+      "descriptionEn": "3 grilled flour tortillas filled with scrambled eggs, cheddar, pico de gallo, and your choice of BACON, SAUSAGE, AVOCADO or CRUMBLED CHORIZO. Served with Yukon Gold Home Fries, Poached Eggs, Hollandaise, English Muffin, Seasoned Black Beans or Fresh Fruit with Yukon Home Fries, Grits or Fresh Fruit",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-06",
-      "categoryId": "mains",
-      "nameEs": "Bistec de Sirloin a la Parrilla",
-      "nameEn": "Grilled Sirloin Steak",
-      "descriptionEs": "Jugoso bistec de sirloin cortado a mano, asado a la parrilla exactamente como le gusta. Acompañado de verduras frescas y papas majadas.",
-      "descriptionEn": "Juicy hand-cut sirloin steak grilled to perfection just the way you like it. Served with fresh vegetables and creamy mashed potatoes.",
-      "price": "$22.95",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Sin Gluten",
-        "Carne"
-      ],
-      "allergens": [],
+      "id": "classic-benedict",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Benedictino Clásico",
+      "nameEn": "Classic Benedict",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-07",
-      "categoryId": "mains",
-      "nameEs": "Sándwich Club de Pavo Clásico",
-      "nameEn": "Classic Turkey Club Sandwich",
-      "descriptionEs": "Pavo asado en casa con tocino crujiente, lechuga, tomate y mayonesa en tres pisos de pan tostado de su elección.",
-      "descriptionEn": "Oven-roasted turkey breast stacked high with crisp bacon, lettuce, tomato, and mayo on three slices of toasted bread.",
-      "price": "$13.95",
-      "popular": false,
-      "badge": "Diner Staple",
-      "tags": [
-        "Tradicional"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs"
-      ],
+      "id": "irish-benedict",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Benedictino Irlandés",
+      "nameEn": "Irish Benedict",
+      "descriptionEs": "Nuestra famosa receta: carne de res en salmuera desmenuzada y dorada a la plancha. Se sirve con papas doradas Yukon Gold, huevos pochados, salsa holandesa, pan inglés, frijoles negros sazonados o fruta fresca con papas Yukon, grits o fruta fresca",
+      "descriptionEn": "Our famous recipe - griddled corned beef hash. Served with Yukon Gold Home Fries, Poached Eggs, Hollandaise, English Muffin, Seasoned Black Beans or Fresh Fruit with Yukon Home Fries, Grits or Fresh Fruit",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-08",
-      "categoryId": "specialties",
-      "nameEs": "Desayuno Americano Completo",
-      "nameEn": "All-American Breakfast Platter",
-      "descriptionEs": "Dos huevos al gusto, tocino o salchicha, papas hash browns doradas y tostadas frescas (opción sin gluten disponible).",
-      "descriptionEn": "Two eggs any style, your choice of bacon or sausage, golden hash browns, and fresh toast (gluten-free toast available).",
-      "price": "$11.50",
-      "popular": true,
-      "badge": "All Day",
-      "tags": [
-        "Desayuno",
-        "Clásico"
-      ],
-      "allergens": [
-        "Eggs",
-        "Gluten"
-      ],
+      "id": "california-benedict",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Benedictino California",
+      "nameEn": "California Benedict",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-09",
-      "categoryId": "specialties",
-      "nameEs": "Quesadilla Tex-Mex de Pollo",
-      "nameEn": "Tex-Mex Chicken Quesadilla",
-      "descriptionEs": "Pollo a la parrilla, mezcla de quesos fundidos, pimientos y cebollas en una tortilla de harina grande, dorada a la plancha. Servida con salsa y crema agria.",
-      "descriptionEn": "Grilled chicken, melted mixed cheeses, bell peppers, and onions folded in a large golden flour tortilla. Served with salsa and sour cream.",
-      "price": "$14.50",
-      "popular": false,
-      "badge": "Tex-Mex",
-      "tags": [
-        "Spicy",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
+      "id": "maryland-crab-cake-benedict",
+      "categoryId": "tex-mex-benedicts",
+      "nameEs": "Benedictino de Pastel de Jaiba de Maryland",
+      "nameEn": "Maryland Crab Cake Benedict",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-10",
-      "categoryId": "beverages",
-      "nameEs": "Café Lavazza Recién Preparado",
-      "nameEn": "Fresh Brewed Lavazza Coffee",
-      "descriptionEs": "Orgullosamente sirviendo auténtico café italiano Lavazza, recién molido y preparado para un aroma y sabor incomparables.",
-      "descriptionEn": "Proudly serving authentic Lavazza coffee, freshly ground and brewed for an unmatched bold aroma and smooth taste.",
-      "price": "$3.25",
-      "popular": true,
-      "badge": "Italian Roast",
-      "tags": [
-        "Bebida",
-        "Café"
-      ],
-      "allergens": [],
+      "id": "the-mom",
+      "categoryId": "omelets",
+      "nameEs": "La Mamá",
+      "nameEn": "The Mom",
+      "descriptionEs": "Espinacas, champiñones, cebolla, cheddar, cubierto con aguacate, pico de gallo, crema agria. Hecho con 3 huevos extra grandes abiertos a mano. Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits con mantequilla o fruta fresca de temporada",
+      "descriptionEn": "Spinach, mushroom, onion, cheddar, topped with avocado, pico de gallo, sour cream. Made with 3 Extra Large Hand-Cracked Eggs. Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Buttered Grits, or Fresh Seasonal Fruit",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-11",
-      "categoryId": "beverages",
-      "nameEs": "Cheesecake Casero Estilo Nueva York",
-      "nameEn": "Homemade NY Style Cheesecake",
-      "descriptionEs": "Cheesecake casero ultra cremoso con una base de galleta graham y un toque de coulis de frutos rojos frescos.",
-      "descriptionEn": "Ultra-creamy homemade New York style cheesecake with a buttery graham cracker crust and a drizzle of fresh berry coulis.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Homemade",
-      "tags": [
-        "Postre",
-        "Casero"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy",
-        "Eggs"
-      ],
+      "id": "california",
+      "categoryId": "omelets",
+      "nameEs": "California",
+      "nameEn": "California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cromwell-diner-12",
-      "categoryId": "beverages",
-      "nameEs": "Batido Artesanal de Vainilla o Chocolate",
-      "nameEn": "Hand-Spun Milkshake",
-      "descriptionEs": "Batido tradicional preparado con helado real, leche y cubierto con crema batida y una cereza al marrasquino.",
-      "descriptionEn": "Traditional hand-spun diner milkshake made with real ice cream, milk, topped with whipped cream and a maraschino cherry.",
-      "price": "$6.95",
-      "popular": false,
-      "badge": "Sweet Treat",
-      "tags": [
-        "Postre",
-        "Bebida"
-      ],
-      "allergens": [
-        "Dairy"
-      ],
+      "id": "supreme",
+      "categoryId": "omelets",
+      "nameEs": "Supremo",
+      "nameEn": "Supreme",
+      "descriptionEs": "Tocino, salchicha, jamón, cebollas, champiñones, tomates, queso cheddar. Hecho con 3 huevos extra grandes abiertos a mano. Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits con mantequilla o fruta fresca de temporada",
+      "descriptionEn": "Bacon, sausage, ham, onions, mushrooms, tomatoes, cheddar cheese. Made with 3 Extra Large Hand-Cracked Eggs. Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Buttered Grits, or Fresh Seasonal Fruit",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-veggie",
+      "categoryId": "omelets",
+      "nameEs": "Vegetariano Fresco",
+      "nameEn": "Fresh Veggie",
+      "descriptionEs": "Espinacas tiernas frescas, champiñones, cebollas, tomate, queso americano. Hecho con 3 huevos extra grandes abiertos a mano. Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits con mantequilla o fruta fresca de temporada",
+      "descriptionEn": "Fresh baby spinach, mushrooms, onions, tomato, American cheese. Made with 3 Extra Large Hand-Cracked Eggs. Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Buttered Grits, or Fresh Seasonal Fruit",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "denver",
+      "categoryId": "omelets",
+      "nameEs": "Denver",
+      "nameEn": "Denver",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttermilk-pancakes-3",
+      "categoryId": "griddle",
+      "nameEs": "Hot Cakes de Suero de Leche (3)",
+      "nameEn": "Buttermilk Pancakes (3)",
+      "descriptionEs": "Se sirven con mantequilla salada batida al momento y jarabe para hot cakes endulzado naturalmente. Agrega un frasco de jarabe de arce de Vermont +1.79",
+      "descriptionEn": "Served with Freshly Whipped Salted Butter and Naturally Sweetened Pancake Syrup. Add Vermont Maple Syrup Jar +1.79",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-pancakes-3",
+      "categoryId": "griddle",
+      "nameEs": "Hot Cakes con Chispas de Chocolate (3)",
+      "nameEn": "Chocolate Chip Pancakes (3)",
+      "descriptionEs": "Se sirven con mantequilla salada batida al momento y jarabe para hot cakes endulzado naturalmente. Agrega un frasco de jarabe de arce de Vermont +1.79",
+      "descriptionEn": "Served with Freshly Whipped Salted Butter and Naturally Sweetened Pancake Syrup. Add Vermont Maple Syrup Jar +1.79",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-blueberry-pancakes-3",
+      "categoryId": "griddle",
+      "nameEs": "Hot Cakes con Arándanos Frescos (3)",
+      "nameEn": "Fresh Blueberry Pancakes (3)",
+      "descriptionEs": "Se sirven con mantequilla salada batida al momento y jarabe para hot cakes endulzado naturalmente. Agrega un frasco de jarabe de arce de Vermont +1.79",
+      "descriptionEn": "Served with Freshly Whipped Salted Butter and Naturally Sweetened Pancake Syrup. Add Vermont Maple Syrup Jar +1.79",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "belgian-waffle",
+      "categoryId": "griddle",
+      "nameEs": "Waffle Belga",
+      "nameEn": "Belgian Waffle",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-belgian-waffle",
+      "categoryId": "griddle",
+      "nameEs": "Waffle Belga con Chispas de Chocolate",
+      "nameEn": "Chocolate Chip Belgian Waffle",
+      "descriptionEs": "Se sirve con mantequilla salada batida al momento y jarabe para hot cakes endulzado naturalmente. Agrega un frasco de jarabe de arce de Vermont +1.79",
+      "descriptionEn": "Served with Freshly Whipped Salted Butter and Naturally Sweetened Pancake Syrup. Add Vermont Maple Syrup Jar +1.79",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-blueberry-belgian-waffle",
+      "categoryId": "griddle",
+      "nameEs": "Waffle Belga con Arándanos Frescos",
+      "nameEn": "Fresh Blueberry Belgian Waffle",
+      "descriptionEs": "Se sirve con mantequilla salada batida al momento y jarabe para hot cakes endulzado naturalmente. Agrega un frasco de jarabe de arce de Vermont +1.79",
+      "descriptionEn": "Served with Freshly Whipped Salted Butter and Naturally Sweetened Pancake Syrup. Add Vermont Maple Syrup Jar +1.79",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "challah-texas-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan Francés Challah de Texas",
+      "nameEn": "Challah Texas French Toast",
+      "descriptionEs": "Tres rebanadas extra gruesas de pan challah sumergidas en mezcla de huevo, espolvoreadas con azúcar glass y canela",
+      "descriptionEn": "Three extra-thick challah slices dipped in custard, sprinkled with cinnamon powdered sugar",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-eggs-any-style",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Dos Huevos al Gusto",
+      "nameEn": "Two Eggs Any Style",
+      "descriptionEs": "Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits o fruta fresca de temporada",
+      "descriptionEn": "Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Grits or Fresh Seasonal Fruit",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "english-muffin-eggs",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Pan Inglés y Huevos",
+      "nameEn": "English Muffin & Eggs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-4-eggs",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Tocino (4) y Huevos",
+      "nameEn": "Bacon (4) & Eggs",
+      "descriptionEs": "Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits o fruta fresca de temporada",
+      "descriptionEn": "Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Grits or Fresh Seasonal Fruit",
+      "price": "$13.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "canadian-bacon-2-eggs",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Tocino Canadiense (2) y Huevos",
+      "nameEn": "Canadian Bacon (2) & Eggs",
+      "descriptionEs": "Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits o fruta fresca de temporada",
+      "descriptionEn": "Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Grits or Fresh Seasonal Fruit",
+      "price": "$13.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-sausage-2-eggs",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Salchicha de Cerdo (2) y Huevos",
+      "nameEn": "Pork Sausage (2) & Eggs",
+      "descriptionEs": "Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits o fruta fresca de temporada",
+      "descriptionEn": "Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Grits or Fresh Seasonal Fruit",
+      "price": "$13.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sausage-4-eggs",
+      "categoryId": "2-egg-platters",
+      "nameEs": "Salchicha de Pavo (4) y Huevos",
+      "nameEn": "Turkey Sausage (4) & Eggs",
+      "descriptionEs": "Se sirve con 2 hot cakes de suero de leche -O- pan inglés con opción de papas doradas Yukon Gold, grits o fruta fresca de temporada",
+      "descriptionEn": "Served with 2 Buttermilk Pancakes -OR- English Muffin with choice of Yukon Gold Home Fries, Grits or Fresh Seasonal Fruit",
+      "price": "$13.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bee-s-american",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Americano de Bee",
+      "nameEn": "Bee's American",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "isabel-s-power-wrap",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Wrap Energético de Isabel",
+      "nameEn": "Isabel's Power Wrap",
+      "descriptionEs": "Claras de huevo revueltas, pollo a la plancha, aguacate machacado, espinacas tiernas, tomates, tortilla natural. Hecho con 2 huevos extra grandes abiertos a mano",
+      "descriptionEn": "Scrambled egg whites, grilled chicken, smashed avocado, baby spinach, tomatoes, plain wrap. Made with 2 Extra Large Hand-Cracked Eggs",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "alex-s-famous-hash-wrap",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Famoso Wrap de Carne en Salmuera de Alex",
+      "nameEn": "Alex's Famous Hash Wrap",
+      "descriptionEs": "Carne en salmuera de la casa, queso cheddar, huevos revueltos, mayonesa de chipotle, tortilla de harina. Hecho con 2 huevos extra grandes abiertos a mano",
+      "descriptionEn": "House corned beef hash, cheddar cheese, scrambled eggs, chipotle mayo, flour wrap. Made with 2 Extra Large Hand-Cracked Eggs",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mom-s-breakfast-croissant",
+      "categoryId": "breakfast-sandwiches",
+      "nameEs": "Cruasán de Desayuno de Mamá",
+      "nameEn": "Mom's Breakfast Croissant",
+      "descriptionEs": "Cruasán hojaldrado con tocino, huevos fritos, queso suizo, aguacate machacado, espinacas tiernas, mayonesa de chipotle. Hecho con 2 huevos extra grandes abiertos a mano",
+      "descriptionEn": "Flaky croissant with bacon, fried eggs, Swiss, smashed avocado, baby spinach, chipotle mayo. Made with 2 Extra Large Hand-Cracked Eggs",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-egg-any-style",
+      "categoryId": "sides",
+      "nameEs": "1 Huevo al Gusto",
+      "nameEn": "1 Egg Any Style",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-4",
+      "categoryId": "sides",
+      "nameEs": "Tocino (4)",
+      "nameEn": "Bacon (4)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-2",
+      "categoryId": "sides",
+      "nameEs": "Tocino (2)",
+      "nameEn": "Bacon (2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "canadian-bacon-2",
+      "categoryId": "sides",
+      "nameEs": "Tocino Canadiense (2)",
+      "nameEn": "Canadian Bacon (2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pork-sausage-links-2",
+      "categoryId": "sides",
+      "nameEs": "Salchichas de Cerdo (2)",
+      "nameEn": "Pork Sausage Links (2)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sausage-links-4",
+      "categoryId": "sides",
+      "nameEs": "Salchichas de Pavo (4)",
+      "nameEn": "Turkey Sausage Links (4)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-hash",
+      "categoryId": "sides",
+      "nameEs": "Carne en Salmuera Desmenuzada",
+      "nameEn": "Corned Beef Hash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasoned-black-beans",
+      "categoryId": "sides",
+      "nameEs": "Frijoles Negros Sazonados",
+      "nameEn": "Seasoned Black Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscuit-sausage-gravy",
+      "categoryId": "sides",
+      "nameEs": "Panecillo con Salsa de Salchicha",
+      "nameEn": "Biscuit & Sausage Gravy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttered-grits",
+      "categoryId": "sides",
+      "nameEs": "Grits con Mantequilla",
+      "nameEn": "Buttered Grits",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheddar-grits",
+      "categoryId": "sides",
+      "nameEs": "Grits con Cheddar",
+      "nameEn": "Cheddar Grits",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-pico-de-gallo",
+      "categoryId": "sides",
+      "nameEs": "Pico de Gallo Fresco",
+      "nameEn": "Fresh Pico De Gallo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-seasonal-fruit",
+      "categoryId": "sides",
+      "nameEs": "Fruta Fresca de Temporada",
+      "nameEn": "Fresh Seasonal Fruit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yukon-home-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Yukon al Horno",
+      "nameEn": "Yukon Home Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas Fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tater-tots",
+      "categoryId": "sides",
+      "nameEs": "Croquetas de Papa (Tater Tots)",
+      "nameEn": "Tater Tots",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toast-2-slices",
+      "categoryId": "sides",
+      "nameEs": "Pan Tostado (2 rebanadas)",
+      "nameEn": "Toast (2 slices)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "english-muffin",
+      "categoryId": "sides",
+      "nameEs": "Pan Inglés",
+      "nameEn": "English Muffin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-bagel",
+      "categoryId": "sides",
+      "nameEs": "Bagel Simple",
+      "nameEn": "Plain Bagel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hard-roll",
+      "categoryId": "sides",
+      "nameEs": "Pan Duro",
+      "nameEn": "Hard Roll",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "biscuit",
+      "categoryId": "sides",
+      "nameEs": "Panecillo",
+      "nameEn": "Biscuit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-croissant",
+      "categoryId": "sides",
+      "nameEs": "Croissant Simple",
+      "nameEn": "Plain Croissant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-muffin",
+      "categoryId": "sides",
+      "nameEs": "Muffin Jumbo",
+      "nameEn": "Jumbo Muffin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-gravy",
+      "categoryId": "sides",
+      "nameEs": "Salsa de Salchicha",
+      "nameEn": "Sausage Gravy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hollandaise-sauce",
+      "categoryId": "sides",
+      "nameEs": "Salsa Holandesa",
+      "nameEn": "Hollandaise Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-turkey-blt",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 BLT de Pavo",
+      "nameEn": "1/2 Turkey BLT",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-chicken-waffle",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 Pollo con Waffle",
+      "nameEn": "1/2 Chicken & Waffle",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-grown-up-grilled-cheese",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 Sándwich de Queso Fundido Estilo Adulto",
+      "nameEn": "1/2 Grown-Up Grilled Cheese",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-crab-cake-benedict",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 Huevos Benedictinos con Pastel de Jaiba",
+      "nameEn": "1/2 Crab Cake Benedict",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-tuna-or-chicken-salad-melt",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 Sándwich Fundido de Ensalada de Atún o Pollo",
+      "nameEn": "1/2 Tuna or Chicken Salad Melt",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-2-avocado-toast-egg",
+      "categoryId": "pick-2-for-11-99",
+      "nameEs": "1/2 Tostada de Aguacate y Huevo",
+      "nameEn": "1/2 Avocado Toast & Egg",
+      "descriptionEs": "Elija 1/2 Plato Principal y combínelo con una Sopa o Ensalada. TAZA DE SOPA: Sopa de Pollo con Fideos o Sopa Cremosa de Tomate. New England Clam Chowder +1.50. ENSALADA ACOMPAÑANTE: Mixta o César",
+      "descriptionEn": "Choose 1/2 Entrée and pair with a Soup or Salad. SOUP MUG: Chicken Noodle or Creamy Tomato. New England Clam Chowder +1.50. SIDE SALAD: Garden or Caesar",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-noodle-soup",
+      "categoryId": "soups-made-fresh-daily",
+      "nameEs": "Sopa de Pollo con Fideos",
+      "nameEn": "Chicken Noodle Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamy-tomato-soup",
+      "categoryId": "soups-made-fresh-daily",
+      "nameEs": "Sopa Cremosa de Tomate",
+      "nameEn": "Creamy Tomato Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "soups-made-fresh-daily",
+      "nameEs": "Sopa de Cebolla a la Francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "n-e-clam-chowder",
+      "categoryId": "soups-made-fresh-daily",
+      "nameEs": "Sopa de Almejas Estilo Nueva Inglaterra",
+      "nameEn": "N.E. Clam Chowder",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tender-basket",
+      "categoryId": "snacks",
+      "nameEs": "Canasta de Tiras de Pollo",
+      "nameEn": "Chicken Tender Basket",
+      "descriptionEs": "con papas fritas y panecillo de suero de leche, miel con mostaza",
+      "descriptionEn": "with fries & buttermilk biscuit, honey mustard",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mozz-sticks-8",
+      "categoryId": "snacks",
+      "nameEs": "Bastones de Mozzarella Fritos (8)",
+      "nameEn": "Fried Mozz Sticks (8)",
+      "descriptionEs": "con salsa marinara",
+      "descriptionEn": "with marinara sauce",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maryland-crab-cakes-2",
+      "categoryId": "snacks",
+      "nameEs": "Pasteles de Jaiba de Maryland (2)",
+      "nameEn": "Maryland Crab Cakes (2)",
+      "descriptionEs": "con salsa chipotle o tártara",
+      "descriptionEn": "with chipotle or tartar sauce",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fish-tacos-3",
+      "categoryId": "snacks",
+      "nameEs": "Tacos de Pescado (3)",
+      "nameEn": "Fish Tacos (3)",
+      "descriptionEs": "Bacalao frito rebozado en cerveza, aguacate machacado, pico de gallo fresco, queso cheddar fundido",
+      "descriptionEn": "Fried beer-battered cod, smashed avocado, fresh pico de gallo, melted cheddar cheese",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-3",
+      "categoryId": "snacks",
+      "nameEs": "Tiras de Pollo (3)",
+      "nameEn": "Chicken Tenders (3)",
+      "descriptionEs": "con salsa de miel con mostaza",
+      "descriptionEn": "with honey mustard sauce",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-quesadilla",
+      "categoryId": "snacks",
+      "nameEs": "Quesadilla de Pollo",
+      "nameEn": "Chicken Quesadilla",
+      "descriptionEs": "Pollo a la parrilla, tocino, tomates, cebollinos, cheddar, americano, tortilla de harina, con crema agria. Pico de gallo fresco",
+      "descriptionEn": "Grilled chicken, bacon, tomatoes, scallions, cheddar, American, flour tortilla, with sour cream. fresh pico de gallo",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "snacks",
+      "nameEs": "Quesadilla de Queso",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "Queso cheddar, queso americano, tortilla de harina, crema agria como acompañante y pico de gallo fresco",
+      "descriptionEn": "Cheddar cheese, American cheese, flour tortilla, side sour cream and fresh pico de gallo",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-salad",
+      "categoryId": "entree-salads",
+      "nameEs": "Ensalada de la Casa",
+      "nameEn": "House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-salad",
+      "categoryId": "entree-salads",
+      "nameEs": "Ensalada César con Pollo",
+      "nameEn": "Chicken Caesar Salad",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana crujiente, picatostes de ajo, parmesano, aderezo césar. Servido con triángulos de pan pita a la parrilla",
+      "descriptionEn": "Grilled chicken, crisp romaine, garlic croutons, parmesan, caesar dressing. Served with Grilled Pita Wedges",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-greek-salad",
+      "categoryId": "entree-salads",
+      "nameEs": "Ensalada Griega con Pollo",
+      "nameEn": "Chicken Greek Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-cobb-salad",
+      "categoryId": "entree-salads",
+      "nameEs": "Ensalada California Cobb",
+      "nameEn": "California Cobb Salad",
+      "descriptionEs": "Pollo a la Parrilla -O- Tiras de Pollo Crujientes, aguacate, tocino, tomates uva, huevo duro, queso azul, lechuga romana. Servido con triángulos de pan pita a la parrilla",
+      "descriptionEn": "Grilled Chicken -OR- Crispy Chicken Tenders, avocado, bacon, grape tomatoes, hard-boiled egg, bleu cheese, romaine. Served with Grilled Pita Wedges",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mashed-potatoes",
+      "categoryId": "side-dishes",
+      "nameEs": "Puré de Papas",
+      "nameEn": "Mashed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "side-dishes",
+      "nameEs": "Papas Dulces Fritas",
+      "nameEn": "Sweet Potato Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "side-dishes",
+      "nameEs": "Aros de Cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-spinach",
+      "categoryId": "side-dishes",
+      "nameEs": "Espinacas Salteadas",
+      "nameEn": "Sauteed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-mushrooms",
+      "categoryId": "side-dishes",
+      "nameEs": "Champiñones Salteados",
+      "nameEn": "Sauteed Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "side-dishes",
+      "nameEs": "Ensalada de Col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "side-dishes",
+      "nameEs": "Macarrones con Queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "side-dishes",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "side-dishes",
+      "nameEs": "Ensalada Mixta",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttered-corn",
+      "categoryId": "side-dishes",
+      "nameEs": "Maíz con Mantequilla",
+      "nameEn": "Buttered Corn",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-vegetables",
+      "categoryId": "side-dishes",
+      "nameEs": "Verduras Frescas",
+      "nameEn": "Fresh Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-beans",
+      "categoryId": "side-dishes",
+      "nameEs": "Ejotes",
+      "nameEn": "Green Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "burger-bar",
+      "nameEs": "Hamburguesa con Queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheeseburger",
+      "categoryId": "burger-bar",
+      "nameEs": "Hamburguesa con Queso y Tocino",
+      "nameEn": "Bacon Cheeseburger",
+      "descriptionEs": "Tocino, queso americano, lechuga, tomate, mayonesa. Hamburguesas de carne de res frescas, nunca congeladas, de media libra servidas en pan brioche tostado. Servidas con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Bacon, American cheese, lettuce, tomato, mayo. Fresh, Never Frozen, Half Pound Beef Burgers served on a toasted Brioche Bun. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "original-patty-melt",
+      "categoryId": "burger-bar",
+      "nameEs": "Patty Melt Original",
+      "nameEn": "Original Patty Melt",
+      "descriptionEs": "En pan de centeno marmolado a la parrilla con queso americano fundido, cebollas caramelizadas, mayonesa de ajo. Hamburguesas de carne de res frescas, nunca congeladas, de media libra servidas en pan brioche tostado. Servidas con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "On grilled marble rye with melted American, caramelized onions, garlic mayo. Fresh, Never Frozen, Half Pound Beef Burgers served on a toasted Brioche Bun. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-burger",
+      "categoryId": "burger-bar",
+      "nameEs": "Hamburguesa de Cebolla a la Francesa",
+      "nameEn": "French Onion Burger",
+      "descriptionEs": "Champiñones frescos, cebollas caramelizadas, queso suizo fundido, mayonesa de ajo. Hamburguesas de carne de res frescas, nunca congeladas, de media libra servidas en pan brioche tostado. Servidas con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Fresh mushrooms, caramelized onions, melted Swiss cheese, garlic mayo. Fresh, Never Frozen, Half Pound Beef Burgers served on a toasted Brioche Bun. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-bacon-burger",
+      "categoryId": "burger-bar",
+      "nameEs": "Hamburguesa de Aguacate y Tocino",
+      "nameEn": "Avocado Bacon Burger",
+      "descriptionEs": "Queso americano, tocino, aguacate fresco machacado, mayonesa de chipotle. Hamburguesas de carne de res frescas, nunca congeladas, de media libra servidas en pan brioche tostado. Servidas con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "American cheese, bacon, fresh smashed avocado, chipotle mayo. Fresh, Never Frozen, Half Pound Beef Burgers served on a toasted Brioche Bun. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "triple-decker-turkey-club",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Club Sándwich de Pavo de Tres Pisos",
+      "nameEn": "Triple Decker Turkey Club",
+      "descriptionEs": "Pavo asado fresco, tocino, lechuga, tomate, mayonesa, pan blanco de molde tostado. Servido con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Fresh roast turkey, bacon, lettuce, tomato, mayo, country white toast. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken-sandwich",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de Pollo Frito",
+      "nameEn": "Fried Chicken Sandwich",
+      "descriptionEs": "Pechuga de pollo frita con suero de leche, mayonesa de chipotle, rodajas de pepinillo en vinagre, pan brioche tostado. Servido con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Buttermilk fried chicken breast, chipotle mayo, dill pickle chips, toasted brioche bun. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reuben-corned-beef-or-roast-turkey",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Reuben: Carne de Res en Salmuera o Pavo Asado",
+      "nameEn": "Reuben: Corned Beef or Roast Turkey",
+      "descriptionEs": "Chucrut, queso suizo fundido, aderezo ruso, pan de centeno marmolado a la parrilla. Servido con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Sauerkraut, melted Swiss cheese, Russian dressing, grilled marble rye. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-avocado-blt",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "BLT de Pollo y Aguacate",
+      "nameEn": "Chicken Avocado BLT",
+      "descriptionEs": "Pechuga de pollo a la parrilla, aguacate machacado, tocino, lechuga, tomate, mayonesa, pan tostado multigrano de corte grueso. Servido con opción de papas fritas, papas dulces fritas, croquetas de papa (tater tots), ensalada de col o fruta fresca",
+      "descriptionEn": "Grilled chicken breast, smashed avocado, bacon, lettuce, tomato, mayo, thick-cut 7-grain toast. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grown-up-grilled-cheese",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Sándwich de Queso Fundido Estilo Adulto",
+      "nameEn": "Grown-Up Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albacore-tuna-melt",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Albacore Tuna Melt",
+      "nameEn": "Albacore Tuna Melt",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheese-steak",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Philly Cheese Steak",
+      "nameEn": "Philly Cheese Steak",
+      "descriptionEs": "Finas rodajas de bistec ribeye, cebollas asadas, queso americano y suizo derretidos, pan grinder tostado. Agregue pimientos verdes o champiñones +1. Servido con opción de Papas Fritas, Papas Dulces Fritas, Tater Tots, Ensalada de Repollo o Fruta Fresca",
+      "descriptionEn": "Fresh, sliced ribeye steak, grilled onions, melted American and Swiss, toasted grinder roll. Add green peppers or mushrooms +1. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-crunch-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Chicken Caesar Crunch Wrap",
+      "nameEn": "Chicken Caesar Crunch Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-ranch-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "BBQ Ranch Wrap",
+      "nameEn": "BBQ Ranch Wrap",
+      "descriptionEs": "Tiras de pollo frito, salsa BBQ, tocino, tater tots, queso cheddar, pico de gallo, aderezo ranch. Servido con opción de Papas Fritas, Papas Dulces Fritas, Tater Tots, Ensalada de Repollo o Fruta Fresca",
+      "descriptionEn": "Fried chicken tenders, BBQ sauce, bacon, tater tots, cheddar, pico de gallo, ranch dressing. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thanksgiving-turkey-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Thanksgiving Turkey Wrap",
+      "nameEn": "Thanksgiving Turkey Wrap",
+      "descriptionEs": "Pavo asado cortado a mano, relleno de pan de la casa, salsa de arándanos, mayonesa, porción de salsa de pavo. Servido con opción de Papas Fritas, Papas Dulces Fritas, Tater Tots, Ensalada de Repollo o Fruta Fresca",
+      "descriptionEn": "Hand-carved roast turkey, house bread stuffing, cranberry sauce, mayo, side of turkey gravy. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-bleu-bacon-wrap",
+      "categoryId": "sandwiches-wraps",
+      "nameEs": "Buffalo Bleu & Bacon Wrap",
+      "nameEn": "Buffalo Bleu & Bacon Wrap",
+      "descriptionEs": "Pechuga de pollo a la parrilla bañada en salsa búfalo, tocino, tomate, lechuga romana, aderezo de queso azul. Servido con opción de Papas Fritas, Papas Dulces Fritas, Tater Tots, Ensalada de Repollo o Fruta Fresca",
+      "descriptionEn": "Grilled chicken breast tossed in buffalo sauce, bacon, tomato, romaine, bleu cheese dressing. Served with choice of French Fries, Sweet Potato Fries, Tater Tots, Cole Slaw, or Fresh Fruit",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-pot-pie",
+      "categoryId": "dinner",
+      "nameEs": "Chicken Pot Pie",
+      "nameEn": "Chicken Pot Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shepherd-s-pie",
+      "categoryId": "dinner",
+      "nameEs": "Shepherd's Pie",
+      "nameEn": "Shepherd's Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thanksgiving-turkey",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Pavo de Thanksgiving",
+      "nameEn": "Thanksgiving Turkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fork-tender-pot-roast",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Pot Roast Tierno",
+      "nameEn": "Fork Tender Pot Roast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer-battered-cod-fillet",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Filete de Bacalao Empanizado en Cerveza",
+      "nameEn": "Beer-Battered Cod Fillet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-steak",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Bistec Picado",
+      "nameEn": "Chopped Steak",
+      "descriptionEs": "Bistec picado a la parrilla con champiñones y cebollas salteados, salsa sabrosa. Servido con opción de 2 ACOMPAÑAMIENTOS DE DINER. Servido todos los días a partir de las 11 a.m.",
+      "descriptionEn": "Char-grilled chopped steak with sauteed mushrooms & onions, savory gravy. Served with Choice of 2 DINER SIDES. Served Daily Starting at 11am",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cake-platter",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Plato de Croquetas de Cangrejo",
+      "nameEn": "Crab Cake Platter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simply-grilled-chicken",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Pollo a la Parrilla Simple",
+      "nameEn": "Simply Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "country-fried-steak",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Country Fried Steak",
+      "nameEn": "Country Fried Steak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-chicken-tenders",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Tiras de Pollo Frito",
+      "nameEn": "Fried Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatloaf",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Meatloaf",
+      "nameEn": "Meatloaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-mac-cheese",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Buffalo Mac & Cheese",
+      "nameEn": "Buffalo Mac & Cheese",
+      "descriptionEs": "Tiras de pollo bañadas en salsa búfalo, servidas sobre nuestro cremoso mac & cheese. Servido con opción de 2 ACOMPAÑAMIENTOS DE DINER. Servido todos los días a partir de las 11 a.m.",
+      "descriptionEn": "Chicken tenders tossed in Buffalo sauce, served over our creamy mac & cheese. Served with Choice of 2 DINER SIDES. Served Daily Starting at 11am",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fried-chicken",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Chicken Fried Chicken",
+      "nameEn": "Chicken Fried Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rib-eye-steak-6oz",
+      "categoryId": "blue-plate-dinners",
+      "nameEs": "Rib Eye Steak 6oz.",
+      "nameEn": "Rib Eye Steak 6oz.",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-big-cromwell-breakfast",
+      "categoryId": "kids-10-and-under",
+      "nameEs": "Desayuno Big Cromwell para Niños",
+      "nameEn": "Kids Big Cromwell Breakfast",
+      "descriptionEs": "Huevo revuelto, panqueque de su suero de leche, fruta fresca, opción de tocino o salchicha. Jugo de Manzana, Jugo de Naranja, Leche o Refresco +1.50",
+      "descriptionEn": "Scrambled egg, buttermilk pancake, fresh fruit, choice of bacon or sausage. Apple Juice, Orange Juice, Milk or Soda +1.50",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-pancake",
+      "categoryId": "kids-10-and-under",
+      "nameEs": "Panqueque para Niños",
+      "nameEn": "Kids Pancake",
+      "descriptionEs": "Panqueque sencillo, con chispas de chocolate o arándanos, fruta fresca, opción de tocino o salchicha. Jugo de Manzana, Jugo de Naranja, Leche o Refresco +1.50",
+      "descriptionEn": "Plain, chocolate chip or blueberry pancake, fresh fruit, choice of bacon or sausage. Apple Juice, Orange Juice, Milk or Soda +1.50",
+      "price": "$6.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-half-waffle",
+      "categoryId": "kids-10-and-under",
+      "nameEs": "Medio Waffle para Niños",
+      "nameEn": "Kids Half Waffle",
+      "descriptionEs": "Medio waffle belga, fruta fresca, opción de tocino o salchicha. Jugo de Manzana, Jugo de Naranja, Leche o Refresco +1.50",
+      "descriptionEn": "Half Belgian waffle, fresh fruit, choice of bacon or sausage. Apple Juice, Orange Juice, Milk or Soda +1.50",
+      "price": "$6.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-layer-cake",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Pastel de Chocolate en Capas",
+      "nameEn": "Chocolate Layer Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-layer-cake",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Pastel de Zanahoria en Capas",
+      "nameEn": "Carrot Layer Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-meringue-pie",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Pay de Merengue de Limón",
+      "nameEn": "Lemon Meringue Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-cream-pie",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Pay de Crema de Chocolate",
+      "nameEn": "Chocolate Cream Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-cream-pie",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Pay de Crema de Coco",
+      "nameEn": "Coconut Cream Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-juice",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Jugo de Naranja",
+      "nameEn": "Orange Juice",
+      "descriptionEs": "GRANDE 16oz",
+      "descriptionEn": "LARGE 16oz",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-juice",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Jugo de Manzana",
+      "nameEn": "Apple Juice",
+      "descriptionEs": "GRANDE 16oz",
+      "descriptionEn": "LARGE 16oz",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cranberry-cocktail",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Cóctel de Arándanos",
+      "nameEn": "Cranberry Cocktail",
+      "descriptionEs": "GRANDE 16oz",
+      "descriptionEn": "LARGE 16oz",
+      "price": "$3.89",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "minutemaid-lemonade",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Minutemaid Lemonade",
+      "nameEn": "Minutemaid Lemonade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream-soda",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Helado con Refresco",
+      "nameEn": "Ice Cream Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "root-beer-float",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Root Beer Float",
+      "nameEn": "Root Beer Float",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diner-milk-shake",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Malteada de Diner",
+      "nameEn": "Diner Milk Shake",
+      "descriptionEs": "Vainilla, Chocolate, Fresa",
+      "descriptionEn": "Vanilla, Chocolate, Strawberry",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lavazza-coffee",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Café Lavazza",
+      "nameEn": "Lavazza Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tea",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "descriptionEs": "Tetley, Lipton, Verde",
+      "descriptionEn": "Tetley, Lipton, Green",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chocolate",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Chocolate Caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-lavazza-coffee",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Café Lavazza Helado",
+      "nameEn": "Iced Lavazza Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Té Helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fountain-soda-22oz",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Refresco de Máquina (22oz)",
+      "nameEn": "Fountain Soda (22oz)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seltzer",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Agua con Gas",
+      "nameEn": "Seltzer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shirley-temple",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Shirley Temple",
+      "nameEn": "Shirley Temple",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-milk-16oz",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Leche 2% (16oz)",
+      "nameEn": "2% Milk (16oz)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.89",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-chocolate-milk-16oz",
+      "categoryId": "dessert-beverages",
+      "nameEs": "Leche con Chocolate 2% (16oz)",
+      "nameEn": "2% Chocolate Milk (16oz)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.89",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa de Naranja",
+      "nameEn": "Orange Mimosa",
+      "descriptionEs": "Jugo de naranja, Barefoot Bubbly Brut Cuvee",
+      "descriptionEn": "OJ, Barefoot Bubbly Brut Cuvee",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cranberry-cocktail-mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa de Cóctel de Arándanos",
+      "nameEn": "Cranberry Cocktail Mimosa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-pie-mimosa",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Mimosa de Pay de Manzana",
+      "nameEn": "Apple Pie Mimosa",
+      "descriptionEs": "Jugo de Manzana, Barefoot Bubbly",
+      "descriptionEn": "Apple Juice, Barefoot Bubbly",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sparkling-dirty-shirley",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Sparkling Dirty Shirley",
+      "nameEn": "Sparkling Dirty Shirley",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tito-s-mary",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Tito's Mary",
+      "nameEn": "Tito's Mary",
+      "descriptionEs": "Mezcla para Bloody Mary, Tito's Handmade Vodka",
+      "descriptionEn": "Bloody Mary Mix, Tito's Handmade Vodka",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tito-s-screwdriver",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Tito's Screwdriver",
+      "nameEn": "Tito's Screwdriver",
+      "descriptionEs": "Jugo de naranja, Tito's Handmade Vodka",
+      "descriptionEn": "OJ, Tito's Handmade Vodka",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tito-s-lemonade",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Tito's Lemonade",
+      "nameEn": "Tito's Lemonade",
+      "descriptionEs": "Minutemaid Lemonade, Tito's Handmade Vodka",
+      "descriptionEn": "Minutemaid Lemonade, Tito's Handmade Vodka",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tito-s-sunrise",
+      "categoryId": "brunch-cocktails",
+      "nameEs": "Tito's Sunrise",
+      "nameEn": "Tito's Sunrise",
+      "descriptionEs": "Jugo de naranja, Granadina, Tito's Handmade Vodka",
+      "descriptionEn": "OJ, Grenadine, Tito's Handmade Vodka",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "irish-coffee",
+      "categoryId": "spiked-coffee",
+      "nameEs": "Café Irlandés",
+      "nameEn": "Irish Coffee",
+      "descriptionEs": "Baileys Original Irish Cream, café Lavazza caliente, crema batida",
+      "descriptionEn": "Baileys Original Irish Cream, Hot Lavazza Coffee, Whipped Cream",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spiked-iced-lavazza",
+      "categoryId": "spiked-coffee",
+      "nameEs": "Spiked Iced Lavazza",
+      "nameEn": "Spiked Iced Lavazza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Sirven el desayuno todo el día?",
-      "qEn": "Do you serve breakfast all day?",
-      "aEs": "¡Sí! El desayuno se sirve en cualquier momento durante nuestro horario de atención.",
-      "aEn": "Yes! Breakfast is served anytime during our daily operating hours."
-    },
-    {
-      "qEs": "¿Tienen opciones sin gluten o pan sin gluten?",
-      "qEn": "Do you offer gluten-free bread or options?",
-      "aEs": "Sí, ofrecemos pan tostado y rollos sin gluten para la comodidad de nuestros clientes.",
-      "aEn": "Yes, we offer gluten-free toast and rolls for our guests."
-    },
-    {
-      "qEs": "¿Ofrecen servicio a domicilio o para llevar?",
-      "qEn": "Do you offer delivery or takeout?",
-      "aEs": "Sí, ofrecemos servicio para llevar llamando al restaurante y entregas a través de Uber Eats y Grubhub.",
-      "aEn": "Yes, we offer takeout by calling the diner and delivery through Uber Eats and GrubHub."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o tienen catering en el lugar?",
-      "qEn": "Do you accept reservations or on-premise catering?",
-      "aEs": "Aceptamos clientes sin reservación y contamos con servicio de catering en el local para grupos de 25 a 50 personas.",
-      "aEn": "We welcome walk-ins and offer on-premise catering accommodations for parties of 25-50 guests."
-    }
-  ]
+  "faqs": []
 }

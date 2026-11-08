@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "cafe-luca-belle",
     "name": "Cafe Luca Belle",
-    "tagline": "Your Cozy Spot for Coffee & Conversations / Tu rincón acogedor para café y conversaciones",
-    "address": "123 Center Street, Wallingford, CT 06492",
+    "tagline": "Café and bakery in Wallingford | Cafetería y panadería en Wallingford",
+    "address": "167 Center Street, Wallingford, CT 06492",
     "phone": "(203) 269-2869",
     "hours": {
-      "monday_friday": "7:00 AM - 4:00 PM",
-      "saturday": "7:30 AM - 4:00 PM",
-      "sunday": "8:00 AM - 3:00 PM"
+      "monday_friday": "7:00 AM - 3:00 PM",
+      "saturday": "7:00 AM - 3:00 PM",
+      "sunday": "7:00 AM - 3:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Free Public WiFi"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,280 +24,404 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de Café",
-      "nameEn": "Espresso Specialties",
-      "icon": "Coffee"
+      "id": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Bebidas de Espresso y Selección de Café Goteado",
+      "nameEn": "Espresso Drinks and Drip Coffee Selection",
+      "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Tés",
-      "nameEn": "Beverages & Tea",
-      "icon": "Coffee"
-    },
-    {
-      "id": "mains",
-      "nameEs": "Bagels y Desayunos",
-      "nameEn": "Bagels & Breakfast",
+      "id": "light-bites",
+      "nameEs": "Bocadillos Ligeros",
+      "nameEn": "Light Bites",
       "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "cafe-luca-belle-01",
-      "categoryId": "specialties",
-      "nameEs": "Dulce de Leche Cold Brew",
-      "nameEn": "Dulce de Leche Cold Brew",
-      "nameEnEs": "Dulce de Leche Cold Brew",
-      "descriptionEs": "Café cold brew de la casa con jarabe de dulce de leche, cubierto con una suave espuma fría de caramelo.",
-      "descriptionEn": "House cold brew with dulce de leche syrup, topped with caramel cold foam.",
+      "id": "drip-coffee",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café Goteado",
+      "nameEn": "Drip Coffee",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pour-over",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café Filtrado (Pour Over)",
+      "nameEn": "Pour Over",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nitro-cold-brew",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Nitro / Café Cold Brew",
+      "nameEn": "Nitro/Cold Brew",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-eye",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Red Eye",
+      "nameEn": "Red Eye",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cafe-au-lait",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café con Leche (Café Au Lait)",
+      "nameEn": "Cafe Au Lait",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "americano",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Americano",
+      "nameEn": "Americano",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "latte",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Latte",
+      "nameEn": "Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Capuchino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cafe-mocha",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café Moca",
+      "nameEn": "Cafe Mocha",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$5.75",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Frío",
-        "Dulce"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-02",
-      "categoryId": "specialties",
-      "nameEs": "Espresso Honey Bee",
-      "nameEn": "Honey Bee Latte",
-      "descriptionEs": "Espresso de la casa con miel, sutiles notas de vainilla y canela; pruébalo helado con espuma fría de vainilla.",
-      "descriptionEn": "Signature espresso, honey, hints of vanilla, and cinnamon; iced with vanilla cold foam.",
-      "price": "$5.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Artesanal"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "cafe-macchiato",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café Macchiato",
+      "nameEn": "Cafe Macchiato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.35",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-03",
-      "categoryId": "specialties",
-      "nameEs": "Matcha de Flor de Cerezo",
-      "nameEn": "Cherry Blossom Matcha",
-      "descriptionEs": "Matcha ceremonial orgánico con jarabe de flor de cerezo 1883, coronado con una delicada espuma de cerezo.",
-      "descriptionEn": "Organic ceremonial matcha, 1883 cherry blossom syrup topped with cherry blossom foam.",
-      "price": "$6.25",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Té",
-        "Orgánico"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "cortado",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Cortado",
+      "nameEn": "Cortado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-04",
-      "categoryId": "specialties",
-      "nameEs": "Café Helado con Proteína Loaded",
-      "nameEn": "Loaded Protein Iced Coffee",
-      "descriptionEs": "Sabores rotativos de proteína Ryse Loaded, cold brew, un toque de leche de almendra sin azúcar y jarabe sin azúcar batido sobre hielo.",
-      "descriptionEn": "Rotating flavors of Ryse Loaded protein, cold brew, splash of unsweetened almond milk and sugar-free syrup blended over ice.",
-      "price": "$8.00",
-      "popular": true,
-      "badge": "Energético",
-      "tags": [
-        "Alto en Proteína",
-        "Bajo en Azúcar"
-      ],
-      "allergens": [
-        "Almendra"
-      ],
+      "id": "tea",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-05",
-      "categoryId": "beverages",
+      "id": "iced-tea",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Té Helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "london-fog",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
       "nameEs": "London Fog",
       "nameEn": "London Fog",
-      "descriptionEs": "Té Earl Grey humeante con vainilla y leche vaporizada cremosa.",
-      "descriptionEn": "Steeped Earl Grey tea infused with vanilla and creamy steamed milk.",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$4.25",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Té",
-        "Caliente"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-06",
-      "categoryId": "beverages",
+      "id": "oraganic-masala-chai-latte",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
       "nameEs": "Chai Latte Masala Orgánico",
-      "nameEn": "Organic Masala Chai Latte",
-      "descriptionEs": "Especias aromáticas de masala chai con té negro orgánico y leche vaporizada.",
-      "descriptionEn": "Warming organic masala chai spices blended with black tea and steamed milk.",
+      "nameEn": "Oraganic Masala Chai Latte",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$5.10",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Orgánico",
-        "Especiado"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-07",
-      "categoryId": "mains",
-      "nameEs": "Bagel Loaded Lox",
-      "nameEn": "Loaded Lox Bagel",
-      "descriptionEs": "Salmón ahumado, queso crema, eneldo, rodaja de tomate, cebolla encurtida y alcaparras sobre tu bagel favorito.",
-      "descriptionEn": "Smoked salmon, cream cheese, dill, slice of tomato, pickled onion, capers on your choice of bagel.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Delicia",
-      "tags": [
-        "Salmón",
-        "Desayuno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Lácteos"
-      ],
+      "id": "hot-chocolate",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Chocolate Caliente",
+      "nameEn": "Hot Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.45",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-08",
-      "categoryId": "mains",
-      "nameEs": "Bagel Dana",
+      "id": "whip",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Con Crema Batida+",
+      "nameEn": "Whip+",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "protein-iced-coffee",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Café Helado con Proteína",
+      "nameEn": "Protein Iced Coffee",
+      "descriptionEs": "Sabores rotativos de proteína Ryse Loaded, café cold brew, un toque de leche de almendras sin azúcar y jarabe sin azúcar batidos y servidos con hielo. Proteína vegana disponible.",
+      "descriptionEn": "Rotating flavors of Ryse Loaded protein, cold brew, splash of unsweetened almond milk and sugar free syrup blended and served over ice. Vegan protein available.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flavor-shots",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "Jarabe de Sabor",
+      "nameEn": "Flavor Shots",
+      "descriptionEs": "Vainilla, Caramelo, Avellana, toffee crunch, canela, coco, caramelo butterscotch, canela con azúcar morena (SF), maple, Vainilla SF, Caramelo SF, Canela con Azúcar Morena SF, Frambuesa, Menta, Avellana, Crema Irlandesa, Pistache, Fresa, Pay de Calabaza, Nuez de Macadamia",
+      "descriptionEn": "Vanilla, Caramel, Hazelnut, toffee crunch, cinnamon, coconut, butterscotch, brown sugar cinnamon (SF), maple, SF Vanilla, SF Caramel, SF Brown Sugar Cinnamon, Raspberry, Peppermint, Hazelnut, Irish Cream, Pistachio, Strawberry, Pumpkin Pie, Macadamia Nut",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oat-unsweetened-almond",
+      "categoryId": "espresso-drinks-and-drip-coffee-selection",
+      "nameEs": "De Avena, Almendra sin Azúcar",
+      "nameEn": "Oat, Unsweetened Almond",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-fresh-pastries",
+      "categoryId": "light-bites",
+      "nameEs": "Surtido de Repostería Fresca",
+      "nameEn": "Assorted Fresh Pastries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasonal-muffin-selection",
+      "categoryId": "light-bites",
+      "nameEs": "Selección de Muffin de la Temporada",
+      "nameEn": "Seasonal Muffin Selection",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter-croissant-chocolate-croissant",
+      "categoryId": "light-bites",
+      "nameEs": "Croissant de Mantequilla y Croissant de Chocolate",
+      "nameEn": "Butter Croissant & Chocolate Croissant",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creme-brule-donut",
+      "categoryId": "light-bites",
+      "nameEs": "Creme Brulé Donut",
+      "nameEn": "Creme Brulé Donut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-and-feta-feuillete",
+      "categoryId": "light-bites",
+      "nameEs": "Feuillete de Espinaca y Feta",
+      "nameEn": "Spinach and Feta Feuillete",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-cookie",
+      "categoryId": "light-bites",
+      "nameEs": "Galleta con Chispas de Chocolate",
+      "nameEn": "Chocolate Chip Cookie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crumb-cake",
+      "categoryId": "light-bites",
+      "nameEs": "Pastel de Migas (Crumb Cake)",
+      "nameEn": "Crumb Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel",
+      "categoryId": "light-bites",
+      "nameEs": "Bagel",
+      "nameEn": "Bagel",
+      "descriptionEs": "Simple, Everything, Asiago, arándano y sin gluten",
+      "descriptionEn": "Plain, Everything, Asiago, blueberry and gluten free",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bagel-lox-cream-cheese",
+      "categoryId": "light-bites",
+      "nameEs": "Bagel con Lox y Queso Crema",
+      "nameEn": "Bagel Lox Cream Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-lox",
+      "categoryId": "light-bites",
+      "nameEs": "Loaded Lox",
+      "nameEn": "Loaded Lox",
+      "descriptionEs": "Salmón ahumado, queso crema, eneldo, rodaja de tomate, cebolla encurtida, alcaparras",
+      "descriptionEn": "Smoked Salmon, Cream Cheese, Dill, slice of tomato, pickled onion, capers",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dana-bagel",
+      "categoryId": "light-bites",
+      "nameEs": "Dana Bagel",
       "nameEn": "Dana Bagel",
-      "descriptionEs": "Queso crema, aguacate, tomate, pimienta agrietada, sal marina y sazonador Everything sobre un bagel tostado.",
-      "descriptionEn": "Cream cheese, avocado, tomato, cracked pepper, sea salt, and everything bagel seasoning.",
-      "price": "$9.75",
-      "popular": true,
-      "badge": "Vegetariano",
-      "tags": [
-        "Aguacate",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Queso crema, aguacate, tomate, pimienta agrietada, sal marina y sazonador de bagel everything. Salsa picante opcional",
+      "descriptionEn": "Cream cheese, avocado, tomato, cracked pepper, sea salt and everything bagel seasoning. Hot Sauce optional",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-09",
-      "categoryId": "mains",
-      "nameEs": "Bagel Spicy Belle",
-      "nameEn": "Spicy Belle Bagel",
-      "descriptionEs": "Huevo, queso cheddar, tocino, queso crema con cebollino y un toque final de miel picante en un panecillo inglés extragrande.",
-      "descriptionEn": "Egg, cheddar, bacon, chive cream cheese finished with a drizzle of hot honey on an oversized English muffin.",
-      "price": "$10.50",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Tocino",
-        "Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
+      "id": "honey-nut",
+      "categoryId": "light-bites",
+      "nameEs": "Honey Nut",
+      "nameEn": "Honey Nut",
+      "descriptionEs": "Bagel con mantequilla de maní, miel, plátano y sal marina",
+      "descriptionEn": "Bagel with Peanut butter, honey, banana and sea salt",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-10",
-      "categoryId": "mains",
-      "nameEs": "Bagel Guac and All",
-      "nameEn": "Guac and All Bagel",
-      "descriptionEs": "Huevo, queso pepper jack, pico de gallo, guacamole, jalapeños y crema de lima y cilantro.",
-      "descriptionEn": "Egg, pepper jack, pico de gallo, guacamole, jalapeños topped with cilantro lime crema.",
-      "price": "$10.25",
-      "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Mexicano",
-        "Picante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo",
-        "Lácteos"
-      ],
+      "id": "cora-bagel",
+      "categoryId": "light-bites",
+      "nameEs": "Cora Bagel",
+      "nameEn": "Cora Bagel",
+      "descriptionEs": "Bagel \"cheese cake\" - bagel de arándano, queso crema y mermelada de frutas mixtas cubierto con galleta graham triturada",
+      "descriptionEn": "\"cheese cake\" bagel- blueberry bagel, cream cheese and mixed fruit preserve topped with crushed graham cracker",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-11",
-      "categoryId": "mains",
-      "nameEs": "Bagel Honey Nut",
-      "nameEn": "Honey Nut Bagel",
-      "descriptionEs": "Mantequilla de maní cremosa, miel, plátano fresco y sal marina sobre un bagel tostado.",
-      "descriptionEn": "Peanut butter, honey, banana, and sea salt served warm on a toasted bagel.",
-      "price": "$8.50",
-      "popular": false,
-      "badge": "Dulce",
-      "tags": [
-        "Vegetariano",
-        "Energía"
-      ],
-      "allergens": [
-        "Gluten",
-        "Cacahuetes"
-      ],
+      "id": "egg-and-cheese",
+      "categoryId": "light-bites",
+      "nameEs": "Huevo y Queso",
+      "nameEn": "Egg and Cheese",
+      "descriptionEs": "Agregar salchicha, tocino\nqueso- Americano, cheddar, pepper jack\nElección de- Bagel, pan inglés extragrande, croissant, rollo de croissant o\nEl famoso Sourdough Crujiente y Fundido de Melty",
+      "descriptionEn": "Add sausage, bacon \ncheese- American, cheddar, pepper jack\nChoice of- Bagel, Over sized English muffin, croissant, croissant roll or \nCrispy Melty's famous Sourdough",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "cafe-luca-belle-12",
-      "categoryId": "mains",
-      "nameEs": "Bagel Cora estilo Pay de Queso",
-      "nameEn": "Cora 'Cheesecake' Bagel",
-      "descriptionEs": "Bagel de arándanos untado con queso crema y confitura de frutas mixtas, coronado con migajas de galleta María o graham.",
-      "descriptionEn": "Blueberry bagel, cream cheese and mixed fruit preserve topped with crushed graham cracker.",
-      "price": "$8.95",
-      "popular": true,
-      "badge": "Único",
-      "tags": [
-        "Postre",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "spicy-belle",
+      "categoryId": "light-bites",
+      "nameEs": "Spicy Belle",
+      "nameEn": "Spicy Belle",
+      "descriptionEs": "huevo, cheddar, tocino, queso crema con cebollín terminado con un chorrito de miel picante en un pan inglés extragrande",
+      "descriptionEn": "egg, cheddar, bacon, chive cream cheese finished with drizzle hot honey on an oversized English muffin",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guac-and-all",
+      "categoryId": "light-bites",
+      "nameEs": "Guac and All",
+      "nameEn": "Guac and All",
+      "descriptionEs": "huevo, pepper jack, pico de gallo, guacamole, jalapeños cubiertos con crema de cilantro y lima",
+      "descriptionEn": "egg, pepper jack , pico, guacamole, jalapenos topped with cilantro lime crema",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-cream-cheese-and-butter-available",
+      "categoryId": "light-bites",
+      "nameEs": "Queso Crema Vegano y Mantequilla Disponibles",
+      "nameEn": "Vegan Cream Cheese and Butter Available",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones veganas o sin gluten disponibles?",
-      "qEn": "Do you offer vegan or gluten-free options?",
-      "aEs": "Sí, ofrecemos bagels sin gluten, crema de untar vegana, mantequilla y alternativas de leche vegetal como almendra y avena.",
-      "aEn": "Yes, we offer gluten-free bagels, vegan cream cheese, butter, and plant-based milk alternatives like almond and oat."
-    },
-    {
-      "qEs": "¿Tienen espacio para trabajar o realizar reuniones?",
-      "qEn": "Do you have space for working or meetings?",
-      "aEs": "¡Por supuesto! Contamos con Wi-Fi público gratuito y un ambiente acogedor ideal para trabajar, estudiar o socializar.",
-      "aEn": "Absolutely! We offer free public Wi-Fi and a cozy atmosphere ideal for working, studying, or socializing."
-    }
-  ]
+  "faqs": []
 }
