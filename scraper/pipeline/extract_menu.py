@@ -146,7 +146,7 @@ def gemini(prompt):
             except (urllib.error.URLError, KeyError, IndexError, json.JSONDecodeError, OSError) as e:
                 last = e
         if per_day == len(XMODELS):
-            open(B.QUOTA_FLAG, "w").write(time.strftime("%Y-%m-%d"))
+            open(B.QUOTA_FLAG, "w").write(B.quota_day())
             raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"Gemini failed: {last}")
 

@@ -32,11 +32,16 @@ def api_key():
     raise SystemExit("GEMINI_API_KEY not found")
 
 
+def quota_day():
+    """Gemini free-tier daily quotas reset at midnight US Pacific time."""
+    return time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
+
+
 QUOTA_FLAG = os.path.join(ROOT, "scraper", "pipeline", "data", "gemini_daily_quota_hit")
 
 
 def daily_quota_hit():
-    return os.path.exists(QUOTA_FLAG) and open(QUOTA_FLAG).read().strip() == time.strftime("%Y-%m-%d")
+    return os.path.exists(QUOTA_FLAG) and open(QUOTA_FLAG).read().strip() == quota_day()
 
 
 def note_429(err):
@@ -84,7 +89,7 @@ def gemini_json(prompt):
                 last = e
                 print(f"  {m} failed: {e}", file=sys.stderr)
         if per_day == len(MODELS):
-            open(QUOTA_FLAG, "w").write(time.strftime("%Y-%m-%d"))
+            open(QUOTA_FLAG, "w").write(quota_day())
             raise SystemExit("Gemini daily quota reached")
     raise SystemExit(f"All Gemini models failed: {last}")
 
