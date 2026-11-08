@@ -176,7 +176,11 @@ def build(path):
     dest = os.path.join(ROOT, "data", "merchants", f"{slug}.json")
     merchant = json.load(open(dest))
     print(f"{slug}: translating {sum(len(s['items']) for s in src['sections'])} items...")
-    es = translate(src)
+    es_path = path[:-5] + ".es.json"
+    if os.path.exists(es_path):  # Spanish written by Claude (scraper/pipeline/claude_tasks.py)
+        es = json.load(open(es_path))
+    else:
+        es = translate(src)
 
     categories = [{"id": "all", "nameEs": "Todo el Menú", "nameEn": "All Items", "icon": "Utensils"}]
     products, seen = [], set()
