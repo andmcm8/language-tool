@@ -1,26 +1,17 @@
 {
   "storeInfo": {
     "id": "maggie-mcflys",
-    "name": "Maggie McFlys",
-    "tagline": "Eat. Drink. Be Unique. | Come y Bebe. Sé Único.",
-    "address": "Main St, Greater Hartford, CT",
+    "name": "Maggie McFly's",
+    "tagline": "American restaurant in Manchester | Restaurante americano en Manchester",
+    "address": "194 Buckland Hills Dr, Manchester, CT 06042",
     "hours": {
-      "monday_friday": "11:00 AM - 10:00 PM",
-      "saturday": "11:00 AM - 11:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "monday_friday": "Mon-Thu 11:00 AM - 11:00 PM; Fri 11:00 AM - 12:00 AM",
+      "saturday": "11:00 AM - 12:00 AM",
+      "sunday": "10:00 AM - 11:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Full Bar",
-      "Outdoor Seating"
+      "Bilingual Menu"
     ],
     "themeColor": "#047857",
     "logoIcon": "utensils",
@@ -33,280 +24,4782 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "snacks",
+      "nameEs": "Botanas",
+      "nameEn": "Snacks",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "soup-salad",
+      "nameEs": "Sopa y ensalada",
+      "nameEn": "Soup & Salad",
+      "icon": "Utensils"
+    },
+    {
+      "id": "apps",
+      "nameEs": "Entradas",
+      "nameEn": "Apps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "simply-light",
+      "nameEs": "Ligero y sencillo",
+      "nameEn": "Simply Light",
+      "icon": "Utensils"
+    },
+    {
+      "id": "giant-salads",
+      "nameEs": "Ensaladas gigantes",
+      "nameEn": "Giant Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "protein-additions",
+      "nameEs": "Proteínas adicionales",
+      "nameEn": "Protein Additions",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pizza",
+      "nameEs": "Pizza",
+      "nameEn": "Pizza",
+      "icon": "Utensils"
+    },
+    {
+      "id": "street-eats",
+      "nameEs": "Comida callejera",
+      "nameEn": "Street Eats",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-substitutions",
+      "nameEs": "Sustitución de guarnición",
+      "nameEn": "Side Substitutions",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burger-substitutes",
+      "nameEs": "Sustituciones para hamburguesa",
+      "nameEn": "Burger Substitutes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
       "icon": "Utensils"
     },
     {
       "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "nameEs": "Especialidades",
+      "nameEn": "Specialties",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "steaks",
+      "nameEs": "Cortes",
+      "nameEn": "Steaks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides-substitute-any-side-1-95",
+      "nameEs": "Guarniciones (cambia cualquier guarnición por 1.95)",
+      "nameEn": "Sides (substitute any side 1.95)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch",
+      "nameEs": "Brunch",
+      "nameEn": "Brunch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-burgers",
+      "nameEs": "Niños (12 años y menores): hamburguesas",
+      "nameEn": "Kids (12 & Under): Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-chicken",
+      "nameEs": "Niños (12 años y menores): pollo",
+      "nameEn": "Kids (12 & Under): Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-pasta",
+      "nameEs": "Niños (12 años y menores): pasta",
+      "nameEn": "Kids (12 & Under): Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-fly-favs",
+      "nameEs": "Niños (12 años y menores): favoritos",
+      "nameEn": "Kids (12 & Under): Fly Favs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-12-under-shake-it",
+      "nameEs": "Niños (12 años y menores): malteadas",
+      "nameEn": "Kids (12 & Under): Shake It",
+      "icon": "Utensils"
+    },
+    {
+      "id": "electric-martinis",
+      "nameEs": "Martinis eléctricos",
+      "nameEn": "Electric Martinis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "artisan-cocktails",
+      "nameEs": "Cócteles artesanales",
+      "nameEn": "Artisan Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "artisan-martinis",
+      "nameEs": "Martinis artesanales",
+      "nameEn": "Artisan Martinis",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classic-cocktails",
+      "nameEs": "Cócteles clásicos",
+      "nameEn": "Classic Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "skinny-cocktails",
+      "nameEs": "Cócteles ligeros",
+      "nameEn": "Skinny Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "mules",
+      "nameEs": "Mules",
+      "nameEn": "Mules",
+      "icon": "Utensils"
+    },
+    {
+      "id": "margaritas",
+      "nameEs": "Margaritas",
+      "nameEn": "Margaritas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sangria",
+      "nameEs": "Sangría",
+      "nameEn": "Sangria",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-pilsner-lager",
+      "nameEs": "Cerveza: pilsner / lager",
+      "nameEn": "Beer: Pilsner / Lager",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-white-wheat-belgian",
+      "nameEs": "Cerveza: blanca / de trigo / belga",
+      "nameEn": "Beer: White / Wheat / Belgian",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-ipa",
+      "nameEs": "Cerveza: IPA",
+      "nameEn": "Beer: IPA",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-pale-ale",
+      "nameEs": "Cerveza: pale ale",
+      "nameEn": "Beer: Pale Ale",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-porter-stout-brown",
+      "nameEs": "Cerveza: porter / stout / oscura",
+      "nameEn": "Beer: Porter / Stout / Brown",
+      "icon": "Utensils"
+    },
+    {
+      "id": "beer-cider-seltzer-more",
+      "nameEs": "Cerveza: sidra, seltzer y más",
+      "nameEn": "Beer: Cider, Seltzer & More",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-single-malt-scotch",
+      "nameEs": "Whiskey: single malt escocés",
+      "nameEn": "Whiskey: Single Malt Scotch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-american",
+      "nameEs": "Whiskey: americano",
+      "nameEn": "Whiskey: American",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-straight-bourbon",
+      "nameEs": "Whiskey: bourbon puro",
+      "nameEn": "Whiskey: Straight Bourbon",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-rye",
+      "nameEs": "Whiskey: centeno",
+      "nameEn": "Whiskey: Rye",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-small-batch",
+      "nameEs": "Whiskey: pequeño lote",
+      "nameEn": "Whiskey: Small Batch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tequila",
+      "nameEs": "Tequila",
+      "nameEn": "Tequila",
+      "icon": "Utensils"
+    },
+    {
+      "id": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "Degustaciones de whiskey y tequila (1 oz cada una)",
+      "nameEn": "Whiskey & Tequila Flights (1oz pour each)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "champagne-sparkling",
+      "nameEs": "Champaña y espumosos",
+      "nameEn": "Champagne & Sparkling",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wine",
+      "nameEs": "Vino blanco",
+      "nameEn": "White Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wine",
+      "nameEs": "Vino tinto",
+      "nameEn": "Red Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-fitvine",
+      "nameEs": "Vino: FitVine",
+      "nameEn": "Wine: FitVine",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "maggie-mcflys-01",
-      "categoryId": "appetizers",
-      "nameEs": "Dip de Espinacas y Alcachofas",
-      "nameEn": "Spinach & Artichoke Dip",
-      "descriptionEs": "Mezcla cremosa de espinacas, alcachofas tiernas y quesos fundidos, servida con totopos de maíz crujientes.",
-      "descriptionEn": "A creamy blend of spinach, tender artichokes, and melted cheeses, served with warm, crispy corn tortilla chips.",
+      "id": "truffle-fries-gf",
+      "categoryId": "snacks",
+      "nameEs": "Papas fritas con trufa (GF)",
+      "nameEn": "Truffle Fries (GF)",
+      "descriptionEs": "Aceite de trufa blanca, queso parmesano, perejil, alioli de ajo al lado",
+      "descriptionEn": "WHITE TRUFFLE OIL, PARMESAN CHEESE, PARSLEY, GARLIC AIOLI SIDE",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread-pizza",
+      "categoryId": "snacks",
+      "nameEs": "Pizza de pan de ajo",
+      "nameEn": "Garlic Bread Pizza",
+      "descriptionEs": "Masa delgada hecha en casa, ajo, aceite de oliva extra virgen, parmesano, hierbas italianas",
+      "descriptionEn": "THIN CRUST HOUSE-MADE DOUGH, GARLIC, EVOO, PARMESAN, ITALIAN HERBS",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-onion-strings-gf",
+      "categoryId": "snacks",
+      "nameEs": "Tiras de cebolla fritas (GF)",
+      "nameEn": "Fried Onion Strings (GF)",
+      "descriptionEs": "Se sirven con salsa BBQ de maple y dijon al lado",
+      "descriptionEn": "SERVED WITH BBQ MAPLE DIJON SAUCE SIDE",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "local-deviled-eggs-gf",
+      "categoryId": "snacks",
+      "nameEs": "Huevos rellenos locales (GF)",
+      "nameEn": "Local Deviled Eggs (GF)",
+      "descriptionEs": "Huevos frescos locales, tocino ahumado con maple, alioli de mostaza picante",
+      "descriptionEn": "LOCAL FRESH EGGS, MAPLE SMOKED BACON, SPICY MUSTARD AIOLI",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steamed-edamame-gf",
+      "categoryId": "snacks",
+      "nameEs": "Edamame al vapor (GF)",
+      "nameEn": "Steamed Edamame (GF)",
+      "descriptionEs": "Al vapor, con sal negra de mar",
+      "descriptionEn": "STEAMED, TOPPED WITH BLACK SEA SALT",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-guacamole-gf",
+      "categoryId": "snacks",
+      "nameEs": "Guacamole fresco (GF)",
+      "nameEn": "Fresh Guacamole (GF)",
+      "descriptionEs": "Con salsa fresca, crema agria y totopos",
+      "descriptionEn": "WITH FRESH SALSA, SOUR CREAM, TORTILLA CHIPS",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-pickles",
+      "categoryId": "snacks",
+      "nameEs": "Pepinillos fritos",
+      "nameEn": "Fried Pickles",
+      "descriptionEs": "Rodajas de pepinillo fritas en masa de suero de leche, aderezo ranch de la casa al lado",
+      "descriptionEn": "FRIED BUTTERMILK BATTERED DILL PICKLE CHIPS, HOUSE-MADE RANCH SIDE",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-fries",
+      "categoryId": "snacks",
+      "nameEs": "Papas de berenjena",
+      "nameEn": "Eggplant Fries",
+      "descriptionEs": "Berenjena frita, queso parmesano, marinara de la casa al lado",
+      "descriptionEn": "FRIED EGGPLANT, PARMESAN CHEESE, HOUSE-MADE MARINARA SIDE",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts-gf",
+      "categoryId": "snacks",
+      "nameEs": "Coles de Bruselas (GF)",
+      "nameEn": "Brussels Sprouts (GF)",
+      "descriptionEs": "Asadas con tocino ahumado con maple, con alioli de ajo",
+      "descriptionEn": "ROASTED WITH MAPLE SMOKED BACON, GARLIC AIOLI GARNISH",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn-dip-gf",
+      "categoryId": "snacks",
+      "nameEs": "Dip de elote callejero (GF)",
+      "nameEn": "Street Corn Dip (GF)",
+      "descriptionEs": "Elote dulce, salsa Tajín, cebolla, queso feta, cilantro, totopos",
+      "descriptionEn": "SWEET CORN, TAJIN SAUCE, ONIONS, FETA, CILANTRO, TORTILLA CHIPS",
       "price": "$13.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-02",
-      "categoryId": "appetizers",
-      "nameEs": "Coliflor Roca Picante",
-      "nameEn": "Spicy Bang Bang Cauliflower",
-      "descriptionEs": "Floretes de coliflor crujientes ligeramente empanizados, bañados en nuestra salsa picante y cremosa estilo 'bang bang'.",
-      "descriptionEn": "Crispy lightly battered cauliflower florets tossed in our signature creamy, sweet and spicy bang bang sauce.",
-      "price": "$12.50",
-      "popular": false,
-      "badge": "Picante",
-      "tags": [
-        "Vegetariano",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "chicken-potstickers",
+      "categoryId": "snacks",
+      "nameEs": "Potstickers de pollo",
+      "nameEn": "Chicken Potstickers",
+      "descriptionEs": "Pollo, hongos shiitake, elote, col, cebollín, salsa de soya con ajo y jengibre y salsa de chile dulce al lado",
+      "descriptionEn": "CHICKEN, SHIITAKE MUSHROOMS, CORN, CABBAGE, CHIVES, GARLIC GINGER SOY, AND SWEET CHILI SAUCE SIDES",
+      "price": "$13.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-03",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Artesanales",
-      "nameEn": "Artisanal Chicken Wings",
-      "descriptionEs": "Alitas jugosas fritas a la perfección, servidas con su elección de salsa búfalo casera, BBQ ahumada o agridulce.",
-      "descriptionEn": "Juicy jumbo wings fried to perfection, served with your choice of house-made buffalo, smoky BBQ, or sweet chili sauce.",
+      "id": "black-angus-beef-skewers",
+      "categoryId": "snacks",
+      "nameEs": "Brochetas de res Black Angus*",
+      "nameEn": "Black Angus Beef Skewers*",
+      "descriptionEs": "Res black angus glaseada con ajonjolí. Alioli de ajonjolí y jengibre al lado, fideos de arroz como guarnición",
+      "descriptionEn": "SESAME-GLAZED BLACK ANGUS BEEF. SESAME GINGER AIOLI SIDE, RICE NOODLE GARNISH",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-soup-bread-bowl",
+      "categoryId": "soup-salad",
+      "nameEs": "Agregar sopa en pan",
+      "nameEn": "Add Soup Bread Bowl",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-butternut-squash-soup",
+      "categoryId": "soup-salad",
+      "nameEs": "Sopa orgánica de calabaza butternut",
+      "nameEn": "Organic Butternut Squash Soup",
+      "descriptionEs": "Calabaza butternut orgánica asada, zanahoria, apio, tomate, ajo, cúrcuma, comino, especias de curry",
+      "descriptionEn": "ORGANIC ROASTED BUTTERNUT SQUASH, CARROTS, CELERY, TOMATO, GARLIC, TURMERIC, CUMIN, CURRY SPICES",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "soup-salad",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Hecha con vino jerez. Cubierta con crostini con mantequilla, provolone y un aro de cebolla",
+      "descriptionEn": "MADE WITH SHERRY WINE. TOPPED WITH A BUTTERED CROSTINI, PROVOLONE AND ONION RING",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-rice-soup-gf",
+      "categoryId": "soup-salad",
+      "nameEs": "Sopa de pollo con arroz (GF)",
+      "nameEn": "Chicken & Rice Soup (GF)",
+      "descriptionEs": "Pollo, arroz integral, zanahoria, apio, espinaca",
+      "descriptionEn": "CHICKEN, WHOLE GRAIN BROWN RICE, CARROTS, CELERY, SPINACH",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder-gf",
+      "categoryId": "soup-salad",
+      "nameEs": "Crema de almejas New England (GF)",
+      "nameEn": "New England Clam Chowder (GF)",
+      "descriptionEs": "Almejas picadas, papas, cebolla, hierbas frescas, especias, caldo cremoso",
+      "descriptionEn": "CHOPPED CLAMS, POTATOES, ONIONS, FRESH HERBS, SPICES, CREAM BROTH",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque",
+      "categoryId": "soup-salad",
+      "nameEs": "Bisque de langosta",
+      "nameEn": "Lobster Bisque",
+      "descriptionEs": "Carne de langosta, crema, vino jerez, chalotes, especias",
+      "descriptionEn": "LOBSTER MEAT, CREAM, SHERRY WINE, SHALLOTS, SPICES",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-mixed-green-salad-gf",
+      "categoryId": "soup-salad",
+      "nameEs": "Ensalada pequeña de hojas verdes mixtas (GF)",
+      "nameEn": "Small Mixed Green Salad (GF)",
+      "descriptionEs": "Hojas verdes tiernas, tomate, pepino, cebolla, asiago, aderezo a elegir",
+      "descriptionEn": "MIXED BABY GREENS, TOMATO, CUCUMBER, ONION, ASIAGO, DRESSING CHOICE",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-caesar",
+      "categoryId": "soup-salad",
+      "nameEs": "César chica",
+      "nameEn": "Small Caesar",
+      "descriptionEs": "Lechuga romana, queso asiago, crutones, aderezo César de la casa",
+      "descriptionEn": "ROMAINE LETTUCE, ASIAGO CHEESE, CROUTONS, HOUSE-MADE CAESAR DRESSING",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-kale-quinoa",
+      "categoryId": "soup-salad",
+      "nameEs": "Col rizada y quinoa chica",
+      "nameEn": "Small Kale & Quinoa",
+      "descriptionEs": "Kale, quinoa, arándanos deshidratados, garbanzos crujientes, pistache, asiago, aderezo de cilantro y lima (nuevo)",
+      "descriptionEn": "KALE, QUINOA, DRIED CRANBERRIES, CRISPY CHICKPEAS, PISTACHIO, ASIAGO, CILANTRO LIME DRESSING (NEW)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggroll-sampler",
+      "categoryId": "apps",
+      "nameEs": "Muestra de egg rolls",
+      "nameEn": "Eggroll Sampler",
+      "descriptionEs": "Uno de cada uno",
+      "descriptionEn": "ONE OF EACH",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-philly-eggroll",
+      "categoryId": "apps",
+      "nameEs": "Egg roll de steak Philly",
+      "nameEn": "Steak Philly Eggroll",
+      "descriptionEs": "Bistec, pimientos, cebolla, queso cheddar jack, alioli de sriracha al lado",
+      "descriptionEn": "STEAK, PEPPERS, ONIONS, CHEDDAR JACK, SRIRACHA AIOLI SIDE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-eggroll",
+      "categoryId": "apps",
+      "nameEs": "Egg roll de pollo búfalo",
+      "nameEn": "Buffalo Chicken Eggroll",
+      "descriptionEs": "Pollo, queso azul, cheddar, salsa búfalo, alioli de sriracha al lado",
+      "descriptionEn": "CHICKEN, BLEU CHEESE, CHEDDAR, BUFFALO SAUCE, SRIRACHA AIOLI SIDE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "texmex-eggroll",
+      "categoryId": "apps",
+      "nameEs": "Egg roll Tex-Mex",
+      "nameEn": "Texmex Eggroll",
+      "descriptionEs": "POLLO ESPECIADO, ELOTE, PIMIENTOS, FRIJOLES NEGROS, CEBOLLA, QUESO, RANCH DE AGUACATE AL LADO",
+      "descriptionEn": "SPICED CHICKEN, CORN, PEPPERS, BLACK BEANS, ONIONS, CHEESE, AVOCADO-RANCH SIDE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bigg-magg-eggroll",
+      "categoryId": "apps",
+      "nameEs": "Egg roll Bigg Magg",
+      "nameEn": "Bigg Magg Eggroll",
+      "descriptionEs": "Carne molida, cheddar jack, queso americano, cebolla, pepinillos, aderezo Thousand Island de la casa al lado",
+      "descriptionEn": "GROUND BEEF, CHEDDAR JACK, AMERICAN, ONIONS, PICKLES, HOUSE-MADE THOUSAND ISLAND SIDE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-fresh-mozzarella",
+      "categoryId": "apps",
+      "nameEs": "Mozzarella fresca frita",
+      "nameEn": "Fried Fresh Mozzarella",
+      "descriptionEs": "Mozzarella frita, cubierta con queso parmesano, salsa marinara de la casa al lado",
+      "descriptionEn": "FRIED MOZZARELLA, TOPPED WITH PARMESAN CHEESE, HOUSE-MADE MARINARA SAUCE SIDE",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-potato-skins-gf",
+      "categoryId": "apps",
+      "nameEs": "Cáscaras de papa crujientes (GF)",
+      "nameEn": "Crispy Potato Skins (GF)",
+      "descriptionEs": "Cáscaras de papa, queso, tocino, cebollín, crema agria",
+      "descriptionEn": "POTATO SKINS, CHEESE, BACON, GREEN ONIONS, SOUR CREAM",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sky-high-onion-rings",
+      "categoryId": "apps",
+      "nameEs": "Aros de cebolla altísimos",
+      "nameEn": "Sky High Onion Rings",
+      "descriptionEs": "Queso con cerveza de la casa y salsa BBQ de maple y dijon al lado",
+      "descriptionEn": "HOUSE-MADE BEER CHEESE, AND BBQ MAPLE DIJON SIDE SAUCES",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "giant-pretzel",
+      "categoryId": "apps",
+      "nameEs": "Pretzel gigante",
+      "nameEn": "Giant Pretzel",
+      "descriptionEs": "Horneado y salado, con queso con cerveza de la casa y salsa BBQ de maple y dijon al lado",
+      "descriptionEn": "BAKED AND SALTED WITH HOUSE-MADE BEER CHEESE, AND BBQ MAPLE DIJON SIDE SAUCES",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-cauliflower",
+      "categoryId": "apps",
+      "nameEs": "Coliflor búfalo",
+      "nameEn": "Buffalo Cauliflower",
+      "descriptionEs": "Coliflor capeada en salsa búfalo. Cubierta con queso azul desmoronado, aderezo de queso azul de la casa al lado",
+      "descriptionEn": "BATTERED CAULIFLOWER IN BUFFALO SAUCE. TOPPED WITH BLEU CHEESE CRUMBLES, HOUSE-MADE BLEU CHEESE SIDE",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-dip",
+      "categoryId": "apps",
+      "nameEs": "Dip de pollo búfalo",
+      "nameEn": "Buffalo Chicken Dip",
+      "descriptionEs": "Pollo búfalo deshebrado, quesos, totopos fritos en casa y papas fritas de bolsa",
+      "descriptionEn": "SHREDDED BUFFALO CHICKEN, CHEESES, HOUSE-FRIED TORTILLA AND POTATO CHIPS",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-blasts",
+      "categoryId": "apps",
+      "nameEs": "Bocados de pollo búfalo",
+      "nameEn": "Buffalo Chicken Blasts",
+      "descriptionEs": "Pollo frito en salsa búfalo. Se sirve con apio y aderezo de queso azul de la casa al lado",
+      "descriptionEn": "FRIED CHICKEN IN BUFFALO SAUCE. SERVED WITH CELERY, HOUSE-MADE BLEU CHEESE SIDE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesadilla",
+      "categoryId": "apps",
+      "nameEs": "Quesadilla",
+      "nameEn": "Quesadilla",
+      "descriptionEs": "Tortilla a la parrilla, queso, tocino, cebollín, cebolla, tomate, salsa fresca",
+      "descriptionEn": "GRILLED TORTILLA, CHEESE, BACON, GREEN ONIONS, ONIONS, TOMATOES, FRESH SALSA",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mac-n-cheese",
+      "categoryId": "apps",
+      "nameEs": "Mac and cheese frito",
+      "nameEn": "Fried Mac 'n Cheese",
+      "descriptionEs": "Mac and cheese frito empanizado en panko, cubierto con parmesano sobre marinara cremosa de la casa",
+      "descriptionEn": "PANKO CRUSTED FRIED MAC 'N CHEESE, TOPPED WITH PARMESAN OVER HOUSE-MADE CREAMY MARINARA",
       "price": "$15.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sin Gluten",
-        "Clásico"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-04",
-      "categoryId": "mains",
-      "nameEs": "Hamburguesa Craft 'The Mac'",
-      "nameEn": "The Mac Craft Burger",
-      "descriptionEs": "Carne de res local jugosa, queso cheddar Vermont, tocino crujiente, cebollas caramelizadas y salsa especial en brioche tostado.",
-      "descriptionEn": "Juicy locally-sourced beef patty, Vermont cheddar, crispy bacon, caramelized onions, and signature sauce on a toasted brioche bun.",
+      "id": "nacho-platter-gf",
+      "categoryId": "apps",
+      "nameEs": "Plato de nachos (GF)",
+      "nameEn": "Nacho Platter (GF)",
+      "descriptionEs": "Totopos, queso derretido, frijoles pintos, tomate, aceitunas negras, cebollín, crema agria, salsa fresca",
+      "descriptionEn": "TORTILLA CHIPS, MELTED CHEESE, PINTO BEANS, TOMATOES, BLACK OLIVES, SCALLIONS, SOUR CREAM, FRESH SALSA",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-spinach-artichoke-dip",
+      "categoryId": "apps",
+      "nameEs": "Dip caliente de espinaca y alcachofa",
+      "nameEn": "Hot Spinach & Artichoke Dip",
+      "descriptionEs": "Espinaca, corazones de alcachofa, mezcla de quesos, ajo. Se sirve con mezcla de vegetales, pan de ajo tostado, totopos y papas fritas de la casa",
+      "descriptionEn": "SPINACH, ARTICHOKE HEARTS, MIXED CHEESES, GARLIC. SERVED WITH VEGETABLE MIX, TOASTED GARLIC BREAD, TORTILLA CHIPS, HOUSE-MADE POTATO CHIPS",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-coconut-shrimp",
+      "categoryId": "apps",
+      "nameEs": "Camarones crujientes al coco",
+      "nameEn": "Crispy Coconut Shrimp",
+      "descriptionEs": "Camarones jumbo ligeramente fritos en masa de coco, salsa piña colada de la casa al lado",
+      "descriptionEn": "LIGHTLY FRIED COCONUT-BATTERED JUMBO SHRIMP, HOUSE-MADE PIÑA COLADA SIDE",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popcorn-chicken",
+      "categoryId": "apps",
+      "nameEs": "Popcorn Chicken",
+      "nameEn": "Popcorn Chicken",
+      "descriptionEs": "Pollo frito capeado, salsa BBQ de maple y dijon al lado",
+      "descriptionEn": "BATTERED FRIED CHICKEN, BBQ MAPLE DIJON SIDE SAUCE",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popcorn-shrimp",
+      "categoryId": "apps",
+      "nameEs": "Camarones popcorn",
+      "nameEn": "Popcorn Shrimp",
+      "descriptionEs": "Camarones fritos capeados, salsa tártara de la casa al lado",
+      "descriptionEn": "BATTERED FRIED SHRIMP, HOUSE-MADE TARTAR SIDE",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheeseburger-sliders",
+      "categoryId": "apps",
+      "nameEs": "Sliders de hamburguesa con queso y tocino",
+      "nameEn": "Bacon Cheeseburger Sliders",
+      "descriptionEs": "Hamburguesas black angus, tocino crujiente, tomate, queso americano, lechuga bibb, pan de papa",
+      "descriptionEn": "BLACK ANGUS BURGERS, CRISPY BACON, TOMATO, AMERICAN CHEESE, BIBB LETTUCE, POTATO BUNS",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "firecracker-shrimp",
+      "categoryId": "apps",
+      "nameEs": "Camarones firecracker",
+      "nameEn": "Firecracker Shrimp",
+      "descriptionEs": "Camarones en tempura ligeramente fritos en salsa de chile dulce y sriracha, ranch de la casa al lado",
+      "descriptionEn": "LIGHTLY-FRIED TEMPURA SHRIMP IN SWEET CHILI SRIRACHA, HOUSE-MADE RANCH SIDE",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "apps",
+      "nameEs": "Calamares fritos",
+      "nameEn": "Fried Calamari",
+      "descriptionEs": "Calamares en masa de suero de leche de la casa, con marinara de la casa y alioli de sriracha al lado",
+      "descriptionEn": "CALAMARI IN HOUSE-MADE BUTTERMILK BATTER, SIDE OF HOUSE-MADE MARINARA AND SRIRACHA AIOLI",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-gf",
+      "categoryId": "apps",
+      "nameEs": "Alitas de pollo (GF)",
+      "nameEn": "Chicken Wings (GF)",
+      "descriptionEs": "Con aderezo de queso azul de la casa y apio al lado. Sriracha con miel | picante | suave | BBQ con miel | parmesano, trufa y romero | Nashville picante",
+      "descriptionEn": "WITH HOUSE-MADE BLEU CHEESE AND CELERY SIDE. SRIRACHA HONEY | HOT | MILD | HONEY BBQ I PARMESAN TRUFFLE ROSEMARY | NASHVILLE HOT",
+      "price": "6 pc $10.95 / 12 pc $19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-nachos",
+      "categoryId": "apps",
+      "nameEs": "Nachos de atún ahi",
+      "nameEn": "Ahi Tuna Nachos",
+      "descriptionEs": "Con atún ahi fresco marinado, jalapeños, cilantro, cebollín, aguacate, ajonjolí, alioli picante y alga nori sobre 12 wontons crujientes",
+      "descriptionEn": "WITH MARINATED FRESH AHI TUNA, JALAPEÑOS, CILANTRO, SCALLIONS, AVOCADO, SESAME SEEDS, SPICY AIOLI, NORI ON 12 CRISPY WONTONS",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-lettuce-wraps",
+      "categoryId": "apps",
+      "nameEs": "Wraps de lechuga tailandeses",
+      "nameEn": "Thai Lettuce Wraps",
+      "descriptionEs": "Pollo o aguacate frito en panko, zanahoria, ensalada de garbanzos tostados y quinoa, ajonjolí, fideos con ajonjolí, pepino, lechuga bibb, cacahuates triturados. Salsas de la casa: cacahuate tailandesa, asiática de jengibre y naranja con jengibre",
+      "descriptionEn": "CHICKEN OR PANKO FRIED AVOCADO, CARROTS, CHARRED CHICKPEA QUINOA SALAD, SESAME SEEDS, SESAME NOODLES, CUCUMBERS, BIBB LETTUCE, CRUSHED PEANUTS. HOUSE-MADE THAI PEANUT ASIAN GINGER AND ORANGE GINGER SAUCES",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waldorf-chicken-salad-over-mixed-greens-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Ensalada Waldorf de pollo sobre hojas verdes mixtas (GF)",
+      "nameEn": "Waldorf Chicken Salad Over Mixed Greens (GF)",
+      "descriptionEs": "Hojas verdes tiernas, aguacate, tomate, pepino, cebolla, asiago, aderezo balsámico. Cubierta con ensalada Waldorf",
+      "descriptionEn": "MIXED BABY GREENS, AVOCADO, TOMATO, CUCUMBER, ONION, ASIAGO, BALSAMIC DRESSING. TOPPED WITH WALDORF SALAD",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-burger-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Hamburguesa de pavo (GF)",
+      "nameEn": "Turkey Burger (GF)",
+      "descriptionEs": "Hamburguesa de pavo natural sin antibióticos, tomate en rodajas sobre una cama de arúgula. Se sirve con ensalada pequeña de hojas verdes tiernas",
+      "descriptionEn": "ALL-NATURAL ANTIBIOTIC-FREE TURKEY BURGER, SLICED TOMATO ON A BED OF ARUGULA. SERVED WITH SMALL MIXED BABY GREENS SALAD",
       "price": "$17.95",
-      "popular": true,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne Local",
-        "Favorito"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-05",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Pollo Crujiente Nashville",
-      "nameEn": "Nashville Hot Crispy Chicken Sandwich",
-      "descriptionEs": "Pechuga de pollo empanizada picante, pepinillos caseros, ensalada de repollo cremosa y salsa de miel picante en pan brioche.",
-      "descriptionEn": "Spicy hand-breaded fried chicken breast, house pickles, creamy coleslaw, and hot honey drizzle on a brioche bun.",
-      "price": "$16.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Picante",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "grass-fed-burger-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Hamburguesa de res de pastoreo* (GF)",
+      "nameEn": "Grass-Fed Burger* (GF)",
+      "descriptionEs": "Res de pastoreo sobre una cama de arúgula. Se sirve con ensalada pequeña de hojas verdes tiernas",
+      "descriptionEn": "GRASS-FED BEEF, ON A BED OF ARUGULA. SERVED WITH SMALL MIXED BABY GREENS SALAD",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-06",
-      "categoryId": "mains",
-      "nameEs": "Tacos de Pescado Baja",
-      "nameEn": "Baja Fish Tacos",
-      "descriptionEs": "Pescado fresco del día rebozado en cerveza local, col morada crujiente, cilantro fresco y salsa de chipotle y lima en tortillas de maíz.",
-      "descriptionEn": "Local craft beer-battered fresh fish, crunchy red cabbage, fresh cilantro, and chipotle lime crema in warm corn tortillas.",
-      "price": "$18.50",
-      "popular": true,
-      "badge": "Del Mar",
-      "tags": [
-        "Fresco",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado"
-      ],
+      "id": "simply-grilled-chicken-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Pollo simplemente a la parrilla (GF)",
+      "nameEn": "Simply Grilled Chicken (GF)",
+      "descriptionEs": "Pollo, servido con una mezcla de vegetales y arroz de coliflor",
+      "descriptionEn": "CHICKEN, SERVED WITH A VEGETABLE AND RICE CAULIFLOWER MEDLEY",
+      "price": "$18.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-07",
-      "categoryId": "specialties",
-      "nameEs": "Macarrones con Queso Trufados de Langosta",
-      "nameEn": "Lobster & Truffle Mac & Cheese",
-      "descriptionEs": "Pasta cavatappi en una rica salsa de cuatro quesos artesanales, trozos tiernos de langosta de Maine y un toque de aceite de trufa.",
-      "descriptionEn": "Cavatappi pasta tossed in a rich four-cheese artisan sauce, tender chunks of Maine lobster, and finished with a drizzle of truffle oil.",
-      "price": "$24.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Gourmet",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "chicken-buddha-bowl",
+      "categoryId": "simply-light",
+      "nameEs": "Bowl Buda de pollo",
+      "nameEn": "Chicken Buddha Bowl",
+      "descriptionEs": "Pollo a la parrilla, arroz integral, broccolini, cebolla, pimientos, zanahoria, champiñones, chícharos chinos, aceite de oliva extra virgen, salsa de soya",
+      "descriptionEn": "GRILLED CHICKEN, WHOLE GRAIN BROWN RICE, BROCCOLINI, ONIONS, PEPPERS, CARROTS, MUSHROOMS, SNOW PEAS, EVOO, SOY SAUCE",
+      "price": "$20.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-08",
-      "categoryId": "specialties",
-      "nameEs": "Salmón Glaseado con Bourbon de Arce",
-      "nameEn": "Maple Bourbon Glazed Salmon",
-      "descriptionEs": "Filete de salmón fresco a la parrilla con glaseado de arce y bourbon local, servido con puré de papas y vegetales de temporada.",
-      "descriptionEn": "Fresh grilled Atlantic salmon glazed with local maple syrup and bourbon, served with roasted garlic mashed potatoes and seasonal vegetables.",
-      "price": "$26.50",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Sin Gluten",
-        "Pescado"
-      ],
-      "allergens": [
-        "Pescado"
-      ],
+      "id": "simply-grilled-shrimp-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Camarones simplemente a la parrilla (GF)",
+      "nameEn": "Simply Grilled Shrimp (GF)",
+      "descriptionEs": "Camarones simplemente a la parrilla, servidos con vegetales de temporada y arroz de coliflor",
+      "descriptionEn": "SIMPLY GRILLED SHRIMP, SERVED WITH SEASONAL VEGETABLES AND RICE CAULIFLOWER RICE",
+      "price": "$23.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-09",
-      "categoryId": "specialties",
-      "nameEs": "Costillas BBQ Ahumadas a Lento",
-      "nameEn": "Slow-Smoked BBQ Baby Back Ribs",
-      "descriptionEs": "Costillas de cerdo tiernas que se desprenden del hueso, bañadas en salsa BBQ de la casa, servidas con papas fritas y ensalada de repollo.",
-      "descriptionEn": "Tender fall-off-the-bone pork ribs glazed in our signature house BBQ sauce, served with seasoned fries and coleslaw.",
+      "id": "cajun-salmon-gf",
+      "categoryId": "simply-light",
+      "nameEs": "Salmón cajún* (GF)",
+      "nameEn": "Cajun Salmon* (GF)",
+      "descriptionEs": "salmón de las Islas Feroe ennegrecido al estilo cajún, servido con vegetales de temporada y arroz de coliflor",
+      "descriptionEn": "CAJUN-BLACKENED FAROE ISLAND SALMON, SERVED WITH SEASONAL VEGETABLES AND RICE CAULIFLOWER RICE",
       "price": "$28.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Carne",
-        "Ahumado"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-10",
-      "categoryId": "beverages",
-      "nameEs": "Coctel Signature Blackberry Mule",
-      "nameEn": "Signature Blackberry Mule",
-      "descriptionEs": "Vodka artesanal, puré de moras frescas, jugo de limón sutil y cerveza de jengibre picante servidos en taza de cobre.",
-      "descriptionEn": "Artisanal vodka, fresh blackberry puree, fresh lime juice, and spicy craft ginger beer served in a chilled copper mug.",
-      "price": "$13.00",
-      "popular": true,
-      "badge": "Bestseller",
-      "tags": [
-        "Coctel",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "id": "signature-protein-grain-bowl",
+      "categoryId": "simply-light",
+      "nameEs": "Bowl de granos con proteína de la casa",
+      "nameEn": "Signature Protein Grain Bowl",
+      "descriptionEs": "CAMOTE ASADO CON MAPLE, COLES DE BRUSELAS CON MAPLE, QUINOA Y FARRO, EJOTES, CHAMPIÑONES, AJONJOLÍ, ADEREZO DE LIMÓN Y CILANTRO",
+      "descriptionEn": "MAPLE-ROASTED SWEET POTATOES, MAPLE BRUSSELS SPROUTS, QUINOA AND FARRO, GREEN BEANS, MUSHROOMS, SESAME SEEDS, LIME CILANTRO DRESSING",
+      "price": "$17.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-11",
-      "categoryId": "beverages",
-      "nameEs": "Limonada de Frambuesa y Menta",
-      "nameEn": "Raspberry Mint Lemonade",
-      "descriptionEs": "Limonada hecha en casa con puré de frambuesas frescas y hojas de menta orgánica. Refrescante y sin alcohol.",
-      "descriptionEn": "House-made lemonade blended with fresh raspberry puree and organic mint leaves. Refreshing and non-alcoholic.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Bebida",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "farmer-s-garden-grain-bowl",
+      "categoryId": "simply-light",
+      "nameEs": "Bowl de granos Farmer's Garden",
+      "nameEn": "Farmer's Garden Grain Bowl",
+      "descriptionEs": "POLLO A LA PARRILLA, QUINOA Y ARROZ INTEGRAL, ZANAHORIA, SEMILLAS DE GIRASOL, PISTACHE, PEPINO, MANZANA, FETA, CEBOLLÍN, CAMOTE ASADO CON MAPLE, ARÁNDANOS SECOS, ADEREZO DE LIMÓN Y CILANTRO",
+      "descriptionEn": "GRILLED CHICKEN, QUINOA AND BROWN RICE, CARROTS, SUNFLOWER SEEDS, PISTACHIO, CUCUMBERS, APPLES, FETA, SCALLIONS, MAPLE-ROASTED SWEET POTATOES, DRIED CRANBERRIES, LIME CILANTRO DRESSING",
+      "price": "$23.95",
       "ctaType": "in_store"
     },
     {
-      "id": "maggie-mcflys-12",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza IPA Artesanal Local de CT",
-      "nameEn": "Local CT Craft IPA on Draft",
-      "descriptionEs": "Cerveza IPA de barril elaborada por cervecerías artesanales independientes locales en Connecticut. Pregunte por la selección de temporada.",
-      "descriptionEn": "Draft IPA brewed by independent craft breweries right here in Connecticut. Ask your server for the current seasonal rotation.",
-      "price": "$8.00",
-      "popular": true,
-      "badge": "Local Draft",
-      "tags": [
-        "Cerveza",
-        "Local"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "texmex-grain-bowl",
+      "categoryId": "simply-light",
+      "nameEs": "Bowl de granos Tex-Mex",
+      "nameEn": "Texmex Grain Bowl",
+      "descriptionEs": "Pollo a la parrilla, arroz amarillo, elote dulce, frijoles negros, cheddar jack, aguacate, pico de gallo, crema agria, cilantro fresco, cebollín, salsa para enchiladas",
+      "descriptionEn": "GRILLED CHICKEN, YELLOW RICE, SWEET CORN, BLACK BEANS, CHEDDAR JACK, AVOCADO, PICO DE GALLO, SOUR CREAM, FRESH CILANTRO, SCALLIONS, ENCHILADA SAUCE",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teriyaki-quinoa-grain-bowl",
+      "categoryId": "simply-light",
+      "nameEs": "Bowl de granos de quinoa teriyaki",
+      "nameEn": "Teriyaki Quinoa Grain Bowl",
+      "descriptionEs": "POLLO DE ORIGEN VEGETAL, BROCCOLINI, CHAMPIÑONES, EJOTES, QUINOA Y FARRO, CHÍCHAROS DULCES, AGUACATE, VERDURAS EN JULIANA, SALSA TERIYAKI, AJONJOLÍ",
+      "descriptionEn": "PLANT-BASED CHICKEN, BROCCOLINI, MUSHROOMS, GREEN BEANS, QUINOA AND FARRO, SNAP PEAS, AVOCADO, JULIENNED VEGETABLES, TERIYAKI SAUCE, SESAME SEEDS",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "substitute-proteins-for-plant-based-chicken-or-impossible-burger",
+      "categoryId": "giant-salads",
+      "nameEs": "Cambia la proteína por pollo vegetal o hamburguesa Impossible",
+      "nameEn": "Substitute proteins for plant-based chicken or Impossible Burger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chinese-chicken",
+      "categoryId": "giant-salads",
+      "nameEs": "Pollo chino",
+      "nameEn": "Chinese Chicken",
+      "descriptionEs": "Pollo glaseado con ajonjolí, lechuga romana, col morada, wontons crujientes, cebollín, zanahoria rallada, edamame, fideos de arroz crujientes, mandarinas, aderezo asiático de jengibre",
+      "descriptionEn": "SESAME-GLAZED CHICKEN, ROMAINE, RED CABBAGE, CRISPY WONTONS, GREEN ONION, SHREDDED CARROT, EDAMAME, CRISPY RICE NOODLES, MANDARIN ORANGES, ASIAN-GINGER DRESSING",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-chicken",
+      "categoryId": "giant-salads",
+      "nameEs": "Pollo tailandés",
+      "nameEn": "Thai Chicken",
+      "descriptionEs": "Brochetas de pollo glaseadas con ajonjolí, coco tostado, pimientos peppadew dulces y picantes, tomate, pepino, hojas verdes tiernas orgánicas, edamame, aderezo de cacahuate",
+      "descriptionEn": "SESAME-GLAZED CHICKEN SKEWERS, TOASTED COCONUT, SPICY SWEET PEPPADEW PEPPERS, TOMATO, CUCUMBER, ORGANIC MIXED BABY GREENS, EDAMAME, PEANUT DRESSING",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-fried-chicken",
+      "categoryId": "giant-salads",
+      "nameEs": "Pollo frito BBQ",
+      "nameEn": "BBQ Fried Chicken",
+      "descriptionEs": "Pollo frito, salsa BBQ, lechuga romana, cebolla morada, pepino, ensalada de garbanzos tostados, quinoa y elote, nueces pecanas confitadas, tomate, aderezo ranch BBQ, tiras de cebolla crujientes",
+      "descriptionEn": "FRIED CHICKEN, BBQ SAUCE, ROMAINE, RED ONION, CUCUMBER, CHARRED CHICKPEA QUINOA CORN SALAD, CANDIED PECANS, TOMATO, BBQ RANCH DRESSING, CRISPY ONION STRINGS",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crunchy-buffalo-chicken",
+      "categoryId": "giant-salads",
+      "nameEs": "Pollo búfalo crujiente",
+      "nameEn": "Crunchy Buffalo Chicken",
+      "descriptionEs": "Pollo búfalo frito, lechuga romana, corazones de apio, pepino, zanahoria rallada, tomate, aderezo de queso azul, tiras de cebolla crujientes",
+      "descriptionEn": "FRIED BUFFALO CHICKEN, ROMAINE, CELERY HEARTS, CUCUMBER, SHREDDED CARROTS, TOMATO, BLEU CHEESE DRESSING, CRISPY ONION STRINGS",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "walnut-chicken",
+      "categoryId": "giant-salads",
+      "nameEs": "Pollo con nueces",
+      "nameEn": "Walnut Chicken",
+      "descriptionEs": "Pollo glaseado con ajonjolí, hojas verdes tiernas orgánicas, lechuga romana, nueces, manzana, mango, tomate, queso feta, vinagreta ligera de zinfandel",
+      "descriptionEn": "SESAME-GLAZED CHICKEN, ORGANIC MIXED BABY GREENS, ROMAINE, WALNUTS, APPLES, MANGO, TOMATO, FETA, LIGHT ZINFANDEL VINAIGRETTE",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-steakhouse",
+      "categoryId": "giant-salads",
+      "nameEs": "La Steakhouse*",
+      "nameEn": "The Steakhouse*",
+      "descriptionEs": "New York strip black angus de 7 oz en rebanadas, corazones de lechuga bibb, tocino picado, queso azul desmoronado, tomates uva, cebolla morada, crutones, huevos frescos, ranch de suero de leche",
+      "descriptionEn": "7OZ BLACK ANGUS SLICED NEW YORK STRIP, BIBB LETTUCE HEARTS, CHOPPED BACON, CRUMBLED BLEU CHEESE, GRAPE TOMATOES, RED ONION, CROUTONS, FRESH EGGS, BUTTERMILK RANCH",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger-gf",
+      "categoryId": "giant-salads",
+      "nameEs": "Hamburguesa* (GF)",
+      "nameEn": "Burger* (GF)",
+      "descriptionEs": "Hamburguesa de res black angus, lechuga romana, cheddar jack, cebolla morada, tocino, tomate picado, pepinillos, papas fritas, aderezo Thousand Island",
+      "descriptionEn": "BLACK ANGUS BEEF BURGER, ROMAINE, CHEDDAR JACK, RED ONION, BACON, DICED TOMATO, PICKLES, FRENCH FRIES, THOUSAND ISLAND",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna",
+      "categoryId": "giant-salads",
+      "nameEs": "Atún ahi*",
+      "nameEn": "Ahi Tuna*",
+      "descriptionEs": "Atún ahi silvestre pescado con anzuelo, empanizado con ajonjolí, canela y especias, hojas verdes tiernas orgánicas, tomate, aguacate, pepino, edamame, pimientos peppadew, aderezo cremoso de balsámico y wasabi, wonton crujiente",
+      "descriptionEn": "WILD HARVESTED AND LINE CAUGHT AHI TUNA ENCRUSTED WITH SESAME SEEDS, CINNAMON AND SPICES, ORGANIC MIXED BABY GREENS, TOMATO, AVOCADO, CUCUMBER, EDAMAME, PEPPADEW PEPPERS, CREAMY BALSAMIC WASABI DRESSING, CRISPY WONTON",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-shrimp-gf",
+      "categoryId": "giant-salads",
+      "nameEs": "Camarones crujientes (GF)",
+      "nameEn": "Crispy Shrimp (GF)",
+      "descriptionEs": "Camarones agridulces de naranja ligeramente fritos, aguacate, tomate, ensalada de garbanzos tostados, quinoa y elote, pepino, lechuga romana, tiras de cebolla crujientes, ranch de suero de leche con BBQ de maple y dijon",
+      "descriptionEn": "LIGHTLY FRIED SWEET & SOUR ORANGE SHRIMP, AVOCADO, TOMATO, CHARRED CHICKPEA QUINOA CORN SALAD, CUCUMBER, ROMAINE, CRISPY ONION STRINGS, MAPLE DIJON BBQ BUTTERMILK RANCH",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grille",
+      "categoryId": "giant-salads",
+      "nameEs": "Parrillada mixta",
+      "nameEn": "Mixed Grille",
+      "descriptionEs": "Brochetas de bistec glaseado con ajonjolí, camarones y pollo a la parrilla, hojas verdes orgánicas, queso azul desmoronado, asiago, tomate, cebolla morada, pepino, vinagreta cremosa",
+      "descriptionEn": "SKEWERED SESAME-GLAZED STEAK, GRILLED SHRIMP AND CHICKEN, ORGANIC MIXED GREENS, BLEU CHEESE CRUMBLES, ASIAGO, TOMATO, RED ONION, CUCUMBER, CREAMY VINAIGRETTE",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar",
+      "categoryId": "giant-salads",
+      "nameEs": "César",
+      "nameEn": "Caesar",
+      "descriptionEs": "Lechuga romana, crutones de la casa, asiago, aderezo César",
+      "descriptionEn": "ROMAINE, HOUSE-MADE CROUTONS, ASIAGO, CAESAR",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "farm-mixed-green-gf",
+      "categoryId": "giant-salads",
+      "nameEs": "Hojas verdes de granja (GF)",
+      "nameEn": "Farm Mixed Green (GF)",
+      "descriptionEs": "Hojas verdes mixtas, aguacate, tomate, pepino, cebolla, asiago, aderezo a elegir",
+      "descriptionEn": "MIXED GREENS, AVOCADO, TOMATO, CUCUMBER, ONION, ASIAGO, DRESSING CHOICE",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-quinoa",
+      "categoryId": "giant-salads",
+      "nameEs": "Col rizada y quinoa",
+      "nameEn": "Kale & Quinoa",
+      "descriptionEs": "Kale, quinoa, arándanos deshidratados, garbanzos crujientes, pistache, asiago, aderezo de cilantro y lima",
+      "descriptionEn": "KALE, QUINOA, DRIED CRANBERRIES, CRISPY CHICKPEAS, PISTACHIO, ASIAGO, CILANTRO LIME DRESSING",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-pear-brie-gf",
+      "categoryId": "giant-salads",
+      "nameEs": "Picada de pera y brie (GF)",
+      "nameEn": "Chopped Pear & Brie (GF)",
+      "descriptionEs": "Lechuga romana, tomate, pera, brie, nueces pecanas confitadas, arándanos deshidratados, vinagreta balsámica",
+      "descriptionEn": "ROMAINE, TOMATO, PEAR, BRIE, CANDIED PECANS, DRIED CRANBERRIES, BALSAMIC VINAIGRETTE",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-greek",
+      "categoryId": "giant-salads",
+      "nameEs": "Griega picada",
+      "nameEn": "Chopped Greek",
+      "descriptionEs": "Hojas verdes tiernas, lechuga romana, aceitunas kalamata, tomates uva, cebolla morada, garbanzos fritos, queso feta, vinagreta griega",
+      "descriptionEn": "MIXED BABY GREENS, ROMAINE, KALAMATA OLIVES, GRAPE TOMATOES, RED ONION, FRIED CHICKPEAS, FETA, GREEK VINAIGRETTE",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb",
+      "categoryId": "giant-salads",
+      "nameEs": "Cobb",
+      "nameEn": "Cobb",
+      "descriptionEs": "Lechuga romana, huevos frescos locales, tocino, ensalada de garbanzos tostados, quinoa y elote, tomate, cebolla morada, pepino, champiñones, aguacate, edamame, queso azul desmoronado, crutones de la casa, aderezo a elegir",
+      "descriptionEn": "ROMAINE, FRESH LOCAL EGGS, BACON, CHARRED CHICKPEA QUINOA CORN SALAD, TOMATO, RED ONION, CUCUMBERS, MUSHROOMS, AVOCADO, EDAMAME, CRUMBLED BLEU CHEESE, HOUSE-MADE CROUTONS, DRESSING CHOICE",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sesame-glazed-grilled-chicken",
+      "categoryId": "protein-additions",
+      "nameEs": "Pollo a la parrilla glaseado con ajonjolí",
+      "nameEn": "Sesame-Glazed Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-blackened-chicken",
+      "categoryId": "protein-additions",
+      "nameEs": "Pollo ennegrecido cajún",
+      "nameEn": "Cajun Blackened Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmesan-crusted-chicken",
+      "categoryId": "protein-additions",
+      "nameEs": "Pollo con costra de parmesano",
+      "nameEn": "Parmesan Crusted Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plant-based-chicken",
+      "categoryId": "protein-additions",
+      "nameEs": "Pollo de origen vegetal",
+      "nameEn": "Plant-Based Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sesame-glazed-grilled-shrimp",
+      "categoryId": "protein-additions",
+      "nameEs": "Camarones a la parrilla glaseados con ajonjolí",
+      "nameEn": "Sesame-Glazed Grilled Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-faroe-island-salmon",
+      "categoryId": "protein-additions",
+      "nameEs": "salmón de las Islas Feroe a la parrilla*",
+      "nameEn": "Grilled Faroe Island Salmon*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sesame-glazed-steak-skewers",
+      "categoryId": "protein-additions",
+      "nameEs": "Brochetas de bistec glaseado con ajonjolí*",
+      "nameEn": "Sesame-Glazed Steak Skewers*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "house-made-dressings-gf",
+      "categoryId": "protein-additions",
+      "nameEs": "Aderezos de la casa (GF)",
+      "nameEn": "House-Made Dressings (GF)",
+      "descriptionEs": "Vinagreta balsámica, vinagreta griega, queso azul, César cremoso, ranch cremoso, wasabi cremoso, zinfandel ligero, maple y dijon, Thousand Island (no libre de gluten), asiático de jengibre, cacahuate tailandés",
+      "descriptionEn": "BALSAMIC VINAIGRETTE, GREEK VINAIGRETTE, BLEU CHEESE, CREAMY CAESAR, CREAMY RANCH, CREAMY WASABI, LIGHT ZINFANDEL, MAPLE DIJON, THOUSAND ISLAND (NON GLUTEN-FREE), ASIAN GINGER, THAI PEANUT",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-cauliflower-crust-substitute",
+      "categoryId": "pizza",
+      "nameEs": "Masa de coliflor sin gluten (sustitución)",
+      "nameEn": "Gluten-free cauliflower crust substitute",
+      "descriptionEs": "No disponible con combinaciones de pizza y ensalada",
+      "descriptionEn": "NOT AVAILABLE WITH PIZZA & SALAD COMBINATIONS",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-pizza-salad",
+      "categoryId": "pizza",
+      "nameEs": "Media pizza y ensalada",
+      "nameEn": "Half Pizza & Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "specialty-half-pizza-salad",
+      "categoryId": "pizza",
+      "nameEs": "Media pizza especial y ensalada",
+      "nameEn": "Specialty Half Pizza & Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bee-sting",
+      "categoryId": "pizza",
+      "nameEs": "Picadura de abeja",
+      "nameEn": "Bee Sting",
+      "descriptionEs": "Pepperoni, salchicha italiana dulce, mozzarella, marinara de la casa, miel picante, jalapeño fresco, albahaca",
+      "descriptionEn": "PEPPERONI, SWEET ITALIAN SAUSAGE, MOZZARELLA, HOUSE-MADE MARINARA, HOT HONEY, FRESH JALAPEÑO, BASIL",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "margherita",
+      "categoryId": "pizza",
+      "nameEs": "Margherita",
+      "nameEn": "Margherita",
+      "descriptionEs": "Mozzarella fresca, tomate fresco y albahaca, salsa roja de la casa",
+      "descriptionEn": "FRESH MOZZARELLA, FRESH TOMATO AND BASIL, HOUSE-MADE RED SAUCE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hawaiian",
+      "categoryId": "pizza",
+      "nameEs": "Hawaiana",
+      "nameEn": "Hawaiian",
+      "descriptionEs": "Piña, jamón, cebolla morada, mozzarella, marinara de la casa",
+      "descriptionEn": "PINEAPPLE, HAM, RED ONION, MOZZARELLA, HOUSE-MADE MARINARA",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-chicken",
+      "categoryId": "pizza",
+      "nameEs": "Pollo BBQ",
+      "nameEn": "BBQ Chicken",
+      "descriptionEs": "Pollo, cebolla morada, cilantro, mozzarella, salsa BBQ de la casa",
+      "descriptionEn": "CHICKEN, RED ONIONS, CILANTRO, MOZZARELLA, HOUSE-MADE BBQ SAUCE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "pizza",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "Pollo ligeramente frito, mozzarella, salsa búfalo, apio, cebollín, queso azul desmoronado",
+      "descriptionEn": "LIGHTLY-FRIED CHICKEN, MOZZARELLA, BUFFALO SAUCE, CELERY, SCALLIONS, BLEU CHEESE CRUMBLES",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thai-chicken-pizza",
+      "categoryId": "pizza",
+      "nameEs": "Pollo tailandés (pizza)",
+      "nameEn": "Thai Chicken (Pizza)",
+      "descriptionEs": "Pollo, salsa tailandesa de cacahuate de la casa, mozzarella, zanahoria rallada, cebollín, cilantro. Cubierta con cacahuates",
+      "descriptionEn": "CHICKEN, HOUSE-MADE THAI PEANUT SAUCE, MOZZARELLA, SHREDDED CARROTS, GREEN ONION, CILANTRO. TOPPED WITH PEANUTS",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-craver-s",
+      "categoryId": "pizza",
+      "nameEs": "Para los amantes de la carne",
+      "nameEn": "Meat Craver's",
+      "descriptionEs": "Salchicha italiana dulce, tocino ahumado con maple, pepperoni, mozzarella, albóndigas y marinara de la casa",
+      "descriptionEn": "SWEET ITALIAN SAUSAGE, MAPLE SMOKED BACON, PEPPERONI, MOZZARELLA, HOUSE-MADE MEATBALLS AND MARINARA",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "it-starts-with-mozzarella",
+      "categoryId": "pizza",
+      "nameEs": "Empieza con mozzarella",
+      "nameEn": "It Starts with Mozzarella",
+      "descriptionEs": "Mozzarella, salsa roja de la casa, orégano; personaliza el resto",
+      "descriptionEn": "MOZZARELLA, HOUSE-MADE RED SAUCE, OREGANO, CUSTOMIZE THE REST",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toppings",
+      "categoryId": "pizza",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
+      "descriptionEs": "Pepperoni, salchicha italiana dulce, albóndigas de la casa, tocino ahumado con maple, pollo de libre pastoreo natural, champiñones, cebolla, pimiento, espinaca, aceitunas",
+      "descriptionEn": "PEPPERONI SWEET ITALIAN SAUSAGE HOUSE-MADE MEATBALLS MAPLE SMOKED BACON ALL-NATURAL FREE-RANGE CHICKEN MUSHROOM ONION PEPPER SPINACH OLIVES",
+      "price": "$1.95 each",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plant-based",
+      "categoryId": "pizza",
+      "nameEs": "A base de plantas",
+      "nameEn": "Plant-Based",
+      "descriptionEs": "Pollo, salchicha, albóndiga, res",
+      "descriptionEn": "CHICKEN SAUSAGE MEATBALL BEEF",
+      "price": "$6.95 each",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "three-taco-combination",
+      "categoryId": "street-eats",
+      "nameEs": "Combinación de tres tacos",
+      "nameEn": "Three Taco Combination",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-avocado-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de aguacate frito",
+      "nameEn": "Fried Avocado Taco",
+      "descriptionEs": "AGUACATE FRITO EN PANKO, COL RALLADA, PICO DE GALLO, ALIOLI DE SRIRACHA, SALSA VERDE",
+      "descriptionEn": "PANKO-FRIED AVOCADO, SHREDDED CABBAGE, PICO DE GALLO, SRIRACHA AIOLI, SALSA VERDE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-chicken-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de pollo Baja",
+      "nameEn": "Baja Chicken Taco",
+      "descriptionEs": "Pollo con especias estilo Baja, col rallada, pimientos peppadew, salsa verde, guacamole de la casa",
+      "descriptionEn": "BAJA-SPICED CHICKEN, SHREDDED CABBAGE, PADEW PEPPERS, SALSA VERDE, HOUSE-MADE GUACAMOLE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pescado-sabroso-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de pescado sabroso",
+      "nameEn": "Pescado Sabroso Taco",
+      "descriptionEs": "BACALAO CRUJIENTE, COL RALLADA, ALIOLI DE SRIRACHA, SALSA DE MANGO",
+      "descriptionEn": "CRISPY COD FISH, SHREDDED CABBAGE, SRIRACHA AIOLI, MANGO SALSA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbacoa-beef-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de barbacoa de res",
+      "nameEn": "Barbacoa Beef Taco",
+      "descriptionEs": "Barbacoa de res deshebrada, jalapeño frito, pico de gallo, col rallada, salsa verde, guacamole de la casa",
+      "descriptionEn": "BARBACOA SHREDDED BEEF, FRIED JALAPEÑO, PICO DE GALLO, SHREDDED CABBAGE, SALSA VERDE, HOUSE-MADE GUACAMOLE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-vera-cruz-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de langosta Vera Cruz",
+      "nameEn": "Lobster Vera Cruz Taco",
+      "descriptionEs": "Carne de langosta de Maine tibia con mantequilla, cilantro, pimientos peppadew, col rallada, alioli de chipotle, aceite de ajonjolí",
+      "descriptionEn": "WARM BUTTERED MAINE LOBSTER MEAT, CILANTRO, PEPPADEW PEPPERS, SHREDDED CABBAGE, CHIPOTLE AIOLI, SESAME OIL",
+      "price": "+$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boom-boom-shrimp-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de camarones Boom Boom",
+      "nameEn": "Boom Boom Shrimp Taco",
+      "descriptionEs": "Camarones fritos bañados en salsa Boom Boom de la casa, col rallada, salsa de mango",
+      "descriptionEn": "FRIED SHRIMP, TOSSED IN HOUSE-MADE BOOM BOOM SAUCE, SHREDDED CABBAGE, MANGO SALSA",
+      "price": "+$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de camarones",
+      "nameEn": "Camarones Taco",
+      "descriptionEs": "Camarones, col rallada, salsa verde. Guacamole de la casa, pico de gallo",
+      "descriptionEn": "SHRIMP, SHREDDED CABBAGE, SALSA VERDE. HOUSE-MADE GUACAMOLE, PICO DE GALLO",
+      "price": "+$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "braised-short-ribs-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de costilla de res estofada",
+      "nameEn": "Braised Short Ribs Taco",
+      "descriptionEs": "Costilla de res Black Angus® estofada, piña, col rallada, cilantro, guacamole de la casa, pico de gallo, salsa verde",
+      "descriptionEn": "BLACK ANGUS® BRAISED SHORT RIBS, PINEAPPLE, SHREDDED CABBAGE, CILANTRO, HOUSE-MADE GUACAMOLE, PICO DE GALLO, SALSA VERDE",
+      "price": "+$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ahi-tuna-taco",
+      "categoryId": "street-eats",
+      "nameEs": "Taco de atún ahi",
+      "nameEn": "Ahi Tuna Taco",
+      "descriptionEs": "Atún ahi empanizado con ajonjolí y especias, cilantro, salsa de chipotle, salsa verde, col rallada, pico de gallo, salsa cremosa de pepino y wasabi",
+      "descriptionEn": "SESAME AND SPICE ENCRUSTED AHI TUNA, CILANTRO, CHIPOTLE SAUCE, SALSA VERDE, SHREDDED CABBAGE, PICO DE GALLO, CREAMY CUCUMBER WASABI SAUCE",
+      "price": "+$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ramen-bowl",
+      "categoryId": "street-eats",
+      "nameEs": "Bowl de ramen",
+      "nameEn": "Ramen Bowl",
+      "descriptionEs": "Fideos ramen, huevo fresco de granja tibio, champiñones, espinaca, zanahoria rallada, cebollín, en caldo picante",
+      "descriptionEn": "RAMEN NOODLES, SOFT-BOILED FARM FRESH EGG, MUSHROOMS, SPINACH, SHREDDED CARROTS, SCALLIONS, IN A SPICY BROTH",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro-fries",
+      "categoryId": "street-eats",
+      "nameEs": "Gyro con papas fritas",
+      "nameEn": "Gyro & Fries",
+      "descriptionEs": "Lechuga, tomate, cebolla, queso feta, en pan pita tostado con salsa tzatziki",
+      "descriptionEn": "LETTUCE, TOMATO, ONION, FETA, ON A TOASTED PITA WITH TZATZIKI SAUCE",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nashville-hot",
+      "categoryId": "sandwiches",
+      "nameEs": "Picante estilo Nashville",
+      "nameEn": "Nashville Hot",
+      "descriptionEs": "Pollo frito estilo Nashville, alioli de dijon dulce, pepinillos, pan de papa",
+      "descriptionEn": "NASHVILLE FRIED CHICKEN, SWEET DIJON AIOLI, PICKLES, POTATO BUN",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-b-l-t",
+      "categoryId": "sandwiches",
+      "nameEs": "B.L.T. de aguacate",
+      "nameEn": "Avocado B.L.T.",
+      "descriptionEs": "Tocino ahumado con maple, aguacate, lechuga bibb, tomate, alioli de hierbas en pan blanco | integral | centeno",
+      "descriptionEn": "MAPLE SMOKED BACON, AVOCADO, BIBB LETTUCE, TOMATO, HERB AIOLI ON WHITE | WHEAT | RYE",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-chicken",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo ennegrecido",
+      "nameEn": "Blackened Chicken",
+      "descriptionEs": "Pollo ennegrecido, provolone, lechuga bibb, tomate, cebolla, alioli de sriracha, pan pretzel",
+      "descriptionEn": "BLACKENED CHICKEN, PROVOLONE, BIBB LETTUCE, TOMATO, ONIONS, SRIRACHA AIOLI, PRETZEL BUN",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-wrap",
+      "categoryId": "sandwiches",
+      "nameEs": "Wrap de pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "Pollo a la parrilla, lechuga romana, asiago, crutones de la casa y aderezo César",
+      "descriptionEn": "GRILLED CHICKEN, ROMAINE LETTUCE, ASIAGO, HOUSE-MADE CROUTONS AND CAESAR",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waldorf-chicken-salad",
+      "categoryId": "sandwiches",
+      "nameEs": "Ensalada de pollo Waldorf",
+      "nameEn": "Waldorf Chicken Salad",
+      "descriptionEs": "Pollo, manzana, arándanos, nueces tostadas, con lechuga bibb, tomate, alioli de hierbas, pan brioche",
+      "descriptionEn": "CHICKEN, APPLES, CRANBERRIES,TOASTED WALNUTS, WITH BIBB LETTUCE, TOMATO, HERB AIOLI, BRIOCHE",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-buffalo-chicken",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo búfalo crujiente",
+      "nameEn": "Crispy Buffalo Chicken",
+      "descriptionEs": "Pollo frito, salsa búfalo, queso suizo, tomate, lechuga bibb, aderezo de queso azul, pan de papa",
+      "descriptionEn": "FRIED CHICKEN, BUFFALO SAUCE, SWISS, TOMATO, BIBB LETTUCE, BLEU CHEESE DRESSING, POTATO BUN",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southern-fried-chicken",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo frito estilo sureño",
+      "nameEn": "Southern Fried Chicken",
+      "descriptionEs": "Pollo frito, pepinillos, lechuga bibb, ranch de la casa, pan de papa",
+      "descriptionEn": "FRIED CHICKEN, PICKLES, BIBB LETTUCE, HOUSE-MADE RANCH, POTATO BUN",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-avocado-wrap",
+      "categoryId": "sandwiches",
+      "nameEs": "Wrap de camarones y aguacate",
+      "nameEn": "Shrimp Avocado Wrap",
+      "descriptionEs": "Camarones a la parrilla, aguacate, tocino, lechuga bibb, tomate, salsa rémoulade, en wrap",
+      "descriptionEn": "GRILLED SHRIMP, AVOCADO, BACON, BIBB LETTUCE, TOMATO, ROUMELADE SAUCE, IN A WRAP",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pesto-chicken",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo al pesto",
+      "nameEn": "Pesto Chicken",
+      "descriptionEs": "Milanesa de pollo, mozzarella fresca, arúgula, tomate, glaseado balsámico, baguette de ajo tostada",
+      "descriptionEn": "CHICKEN CUTLET, FRESH MOZZARELLA, ARUGULA, TOMATO, BALSAMIC GLAZE, TOASTED GARLIC BAGUETTE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "sandwiches",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey Club",
+      "descriptionEs": "Pavo asado, tomate, lechuga bibb, tocino ahumado con maple, alioli de hierbas en pan blanco | integral | centeno",
+      "descriptionEn": "ROASTED TURKEY, TOMATO, BIBB LETTUCE MAPLE SMOKED BACON, HERB AIOLI ON WHITE | WHEAT | RYE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-avocado-club",
+      "categoryId": "sandwiches",
+      "nameEs": "Club de pollo y aguacate",
+      "nameEn": "Chicken & Avocado Club",
+      "descriptionEs": "Pollo a la parrilla, aguacate, tocino, tomate, lechuga bibb, queso suizo, alioli de hierbas, pan blanco tostado",
+      "descriptionEn": "GRILLED CHICKEN, AVOCADO, BACON, TOMATO, BIBB LETTUCE, SWISS, HERB AIOLI, WHITE TOAST",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-dip",
+      "categoryId": "sandwiches",
+      "nameEs": "French dip",
+      "nameEn": "French Dip",
+      "descriptionEs": "Rosbif black angus, champiñones, cebolla, queso americano, baguette de ajo tostada, au jus de la casa al lado",
+      "descriptionEn": "BLACK ANGUS ROAST BEEF, MUSHROOMS, ONIONS, AMERICAN, TOASTED GARLIC BAGUETTE, SIDE OF HOUSE-MADE AU JUS",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-reuben",
+      "categoryId": "sandwiches",
+      "nameEs": "Reuben clásico",
+      "nameEn": "Classic Reuben",
+      "descriptionEs": "Corned beef black angus, chucrut, queso suizo, aderezo Thousand Island de la casa, pan de centeno a la plancha",
+      "descriptionEn": "BLACK ANGUS CORNED BEEF, SAUERKRAUT, SWISS, HOUSE-MADE THOUSAND ISLAND DRESSING, GRILLED RYE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-steak",
+      "categoryId": "sandwiches",
+      "nameEs": "Philly steak",
+      "nameEn": "Philly Steak",
+      "descriptionEs": "Bistec*, pimientos, cebolla, queso americano, alioli de sriracha, baguette de ajo tostada",
+      "descriptionEn": "STEAK*, PEPPERS, ONIONS, AMERICAN, SRIRACHA AIOLI, TOASTED GARLIC BAGUETTE",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "short-rib-grilled-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de queso a la parrilla con costilla corta",
+      "nameEn": "Short Rib Grilled Cheese",
+      "descriptionEs": "Costilla de res black angus, queso americano, gouda, cheddar, cebolla caramelizada al borgoña, brioche en rebanadas gruesas",
+      "descriptionEn": "BLACK ANGUS BEEF SHORT RIB, AMERICAN, GOUDA, CHEDDAR, BURGUNDY CARAMELIZED ONIONS, THICK-SLICED BRIOCHE",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "served-with-fries",
+      "categoryId": "side-substitutions",
+      "nameEs": "Servido con papas fritas.",
+      "nameEn": "Served with Fries",
+      "descriptionEs": "Todas las papas fritas se cocinan en freidora exclusiva sin gluten",
+      "descriptionEn": "ALL FRIES COOKED IN DEDICATED GLUTEN-FREE FRYER",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fry-substitute",
+      "categoryId": "side-substitutions",
+      "nameEs": "Cambio de papas fritas",
+      "nameEn": "Fry Substitute",
+      "descriptionEs": "Camote | papitas tots | papas fritas con trufa",
+      "descriptionEn": "SWEET POTATO | TATER TOTS | TRUFFLE FRIES",
+      "price": "Add $1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-substitute",
+      "categoryId": "side-substitutions",
+      "nameEs": "Cambio a ensalada",
+      "nameEn": "Salad Substitute",
+      "descriptionEs": "Ensalada pequeña (hojas verdes mixtas | César)",
+      "descriptionEn": "SMALL SALAD (MIXED GREENS | CAESAR)",
+      "price": "Add $1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-substitute",
+      "categoryId": "side-substitutions",
+      "nameEs": "Cambio a sopa",
+      "nameEn": "Soup Substitute",
+      "descriptionEs": "Calabaza butternut orgánica | cebolla a la francesa | pollo con arroz (GF) | crema de almejas New England (GF) |",
+      "descriptionEn": "ORGANIC BUTTERNUT SQUASH | FRENCH ONION | CHICKEN & RICE (GF) | NEW ENGLAND CLAM CHOWDER (GF) |",
+      "price": "Add $3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burger-style",
+      "categoryId": "burgers",
+      "nameEs": "Estilo de hamburguesa",
+      "nameEn": "Burger style",
+      "descriptionEs": "1/2 lb de mezcla propia de res black angus, pecho y costilla. Elige el estilo de tu hamburguesa: clásica (carne de 8 oz) o smash (dos carnes de 4 oz)",
+      "descriptionEn": "1/2 LB PROPRIETARY-BLEND MADE WITH BLACK ANGUS BEEF, BRISKET & SHORT RIB. CHOOSE YOUR BURGER STYLE: CLASSIC (8oz PATTY) or SMASHED (TWO 4oz PATTIES)",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "farm-to-table",
+      "categoryId": "burgers",
+      "nameEs": "De la granja a la mesa",
+      "nameEn": "Farm to Table",
+      "descriptionEs": "Res de pastoreo, gouda, pepinillos, tocino ahumado con maple, lechuga bibb, cebolla morada, tomate, pan de papa",
+      "descriptionEn": "GRASS-FED BEEF, GOUDA, PICKLES, MAPLE SMOKED BACON, BIBB LETTUCE, RED ONION, TOMATO, POTATO BUN",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic",
+      "categoryId": "burgers",
+      "nameEs": "Clásico",
+      "nameEn": "Classic",
+      "descriptionEs": "Lechuga bibb, tomate, pepinillos, cebolla morada, pan de papa",
+      "descriptionEn": "BIBB LETTUCE, TOMATO, PICKLES, RED ONION, POTATO BUN",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sriracha",
+      "categoryId": "burgers",
+      "nameEs": "Sriracha",
+      "nameEn": "Sriracha",
+      "descriptionEs": "Tocino ahumado con maple, alioli de sriracha, tomate, queso azul desmoronado, jalapeños fritos, pepinillos, cebolla morada, lechuga bibb, pan de papa",
+      "descriptionEn": "MAPLE SMOKED BACON, SRIRACHA AIOLI, TOMATO, CRUMBLED BLEU CHEESE, FRIED JALAPENOS, PICKLES, RED ONION, BIBB LETTUCE, POTATO BUN",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bleu-cheese-b-l-t",
+      "categoryId": "burgers",
+      "nameEs": "B.L.T. con queso azul",
+      "nameEn": "Bleu Cheese B.L.T.",
+      "descriptionEs": "Tocino, lechuga bibb, tomate, pepinillos, queso azul desmoronado, alioli de hierbas, cebolla morada, pan de papa",
+      "descriptionEn": "BACON, BIBB LETTUCE, TOMATO, PICKLES, CRUMBLED BLEU CHEESE, HERB AIOLI, RED ONION, POTATO BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pretzel",
+      "categoryId": "burgers",
+      "nameEs": "Pretzel",
+      "nameEn": "Pretzel",
+      "descriptionEs": "Tocino, cheddar, lechuga bibb, pepinillos, tomate, cebolla morada, mostaza amarilla, pan pretzel",
+      "descriptionEn": "BACON, CHEDDAR, BIBB LETTUCE, PICKLES, TOMATO, RED ONION, YELLOW MUSTARD, PRETZEL BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garbage",
+      "categoryId": "burgers",
+      "nameEs": "Garbage",
+      "nameEn": "Garbage",
+      "descriptionEs": "Tocino ahumado con maple, champiñones salteados, cebolla caramelizada al borgoña, queso americano, lechuga bibb, tomate, pepinillos, cebolla morada, salsa de la casa. pan de papa",
+      "descriptionEn": "MAPLE SMOKED BACON, SAUTÉED MUSHROOMS, BURGUNDY CARAMELIZED ONIONS, AMERICAN, BIBB LETTUCE, TOMATO, PICKLES, RED ONION, SIGNATURE SAUCE. POTATO BUN",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mac-n-cheese-burgers",
+      "categoryId": "burgers",
+      "nameEs": "Mac and cheese frito (hamburguesas)",
+      "nameEn": "Fried Mac 'n Cheese (Burgers)",
+      "descriptionEs": "Tocino, mac and cheese frito, lechuga bibb, tomate, cebolla morada, pepinillos, alioli de sriracha, pan pretzel",
+      "descriptionEn": "BACON, FRIED MAC 'N CHEESE, BIBB LETTUCE, TOMATO, RED ONION, PICKLES, SRIRACHA AIOLI, PRETZEL BUN",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "big-magg",
+      "categoryId": "burgers",
+      "nameEs": "Big Magg",
+      "nameEn": "Big Magg",
+      "descriptionEs": "Pepinillos fritos, cheddar, tomate, lechuga rallada, aderezo Thousand Island de la casa, pan de papa con ajonjolí",
+      "descriptionEn": "FRIED PICKLES, CHEDDAR, TOMATO, SHREDDED LETTUCE, SIGNATURE THOUSAND ISLAND, SESAME SEED POTATO BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nodine-s-bacon-n-cheese",
+      "categoryId": "burgers",
+      "nameEs": "Tocino y queso Nodine's",
+      "nameEn": "Nodine's Bacon 'n Cheese",
+      "descriptionEs": "Tocino ahumado con maple, queso americano, lechuga bibb, tomate, cebolla morada, pepinillos, pan de papa",
+      "descriptionEn": "MAPLE SMOKED BACON, AMERICAN, BIBB LETTUCE, TOMATO, RED ONION, PICKLES, POTATO BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-bbq",
+      "categoryId": "burgers",
+      "nameEs": "Tocino BBQ",
+      "nameEn": "Bacon BBQ",
+      "descriptionEs": "Tocino, cheddar, salsa BBQ, aro de cebolla, cebolla morada, tomate, lechuga bibb, pepinillos, pan de papa",
+      "descriptionEn": "BACON, CHEDDAR, BBQ SAUCE, ONION RING, RED ONION,TOMATO, BIBB LETTUCE, PICKLES, POTATO BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-egg",
+      "categoryId": "burgers",
+      "nameEs": "Tocino y huevo",
+      "nameEn": "Bacon & Egg",
+      "descriptionEs": "Tocino, huevo frito fresco, cheddar, lechuga bibb, tomate, pepinillos, cebolla morada, alioli de sriracha, pan de papa",
+      "descriptionEn": "BACON, FRESH FRIED EGG, CHEDDAR, BIBB LETTUCE, TOMATO, PICKLES, RED ONION, SRIRACHA AIOLI, POTATO BUN",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wagyu",
+      "categoryId": "burgers",
+      "nameEs": "Wagyu",
+      "nameEn": "Wagyu",
+      "descriptionEs": "Res wagyu, gouda, cebolla caramelizada al borgoña, alioli de ajo, pan de papa",
+      "descriptionEn": "WAGYU BEEF, GOUDA, BURGUNDY CARAMELIZED ONIONS, GARLIC AIOLI, POTATO BUN",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-turkey-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de pavo clásica",
+      "nameEn": "Classic Turkey Burger",
+      "descriptionEs": "Hamburguesa de pavo natural sin antibióticos, lechuga bibb, tomate, pepinillos, cebolla morada, pan de papa",
+      "descriptionEn": "ALL-NATURAL ANTIBIOTIC-FREE TURKEY BURGER, BIBB LETTUCE, TOMATO, PICKLES, RED ONION, POTATO BUN",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-turkey",
+      "categoryId": "burgers",
+      "nameEs": "Pavo California",
+      "nameEn": "California Turkey",
+      "descriptionEs": "Hamburguesa de pavo natural sin antibióticos, aguacate, queso suizo, tocino ahumado con maple, lechuga bibb, tomate, alioli de hierbas, pan de masa madre",
+      "descriptionEn": "ALL-NATURAL ANTIBIOTIC-FREE TURKEY BURGER, AVOCADO, WISS, MAPLE SMOKED BACON, BIBB LETTUCE, TOMATO, HERB AIOLI, SOURDOUGH ROLL",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "impossibletm",
+      "categoryId": "burgers",
+      "nameEs": "Impossible™",
+      "nameEn": "Impossible™",
+      "descriptionEs": "Res a base de plantas, queso vegano, cebolla, tomate, pepinillos, lechuga, salsa vegana de la casa, pan pretzel",
+      "descriptionEn": "PLANT-BASED BEEF, VEGAN CHEESE, ONION, TOMATO, PICKLES, LETTUCE, SIGNATURE VEGAN SAUCE, PRETZEL BUN",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "all-natural-antibiotic-free-turkey-burger-gf",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Hamburguesa de pavo natural sin antibióticos (GF)",
+      "nameEn": "All-Natural Antibiotic-Free Turkey Burger (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wagyu-burger",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Hamburguesa wagyu*",
+      "nameEn": "Wagyu Burger*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grass-fed-beef-burger-gf",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Hamburguesa de res de pastoreo (GF)",
+      "nameEn": "Grass-Fed Beef Burger (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "impossibletm-burger-gf",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Hamburguesa Impossible™ (GF)",
+      "nameEn": "Impossible™ Burger (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pretzel-bun",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Pan pretzel",
+      "nameEn": "Pretzel Bun",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-bun-gf",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Pan de queso (GF)",
+      "nameEn": "Cheese Bun (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bibb-lettuce-gf",
+      "categoryId": "burger-substitutes",
+      "nameEs": "Lechuga bibb (GF)",
+      "nameEn": "Bibb Lettuce (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-vegan-pasta",
+      "categoryId": "pasta",
+      "nameEs": "Pasta vegana mediterránea",
+      "nameEn": "Mediterranean Vegan Pasta",
+      "descriptionEs": "Pasta penne, calabacín, calabaza, cebolla, espárragos, arúgula, corazones de alcachofa, tomates deshidratados, ajo asado",
+      "descriptionEn": "PENNE PASTA, ZUCCHINI, SQUASH, ONIONS, ASPARAGUS, ARUGULA, ARTICHOKE HEARTS, SUNDRIED TOMATOES, ROASTED GARLIC",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gourmet-mac-cheese",
+      "categoryId": "pasta",
+      "nameEs": "Macarrones con queso gourmet",
+      "nameEn": "Gourmet Mac & Cheese",
+      "descriptionEs": "Pasta cavatappi, gouda, cheddar, parmesano, tocino ahumado con maple",
+      "descriptionEn": "CAVATAPPI PASTA, GOUDA, CHEDDAR, PARMESAN, MAPLE SMOKED BACON",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "pasta",
+      "nameEs": "Fettuccine alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "Fettuccine, tocino ahumado con maple, broccolini, salsa de crema, cubierto con asiago",
+      "descriptionEn": "FETTUCCINE, MAPLE SMOKED BACON, BROCCOLINI, CREAM SAUCE, ASIAGO TOPPING",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-tortellini",
+      "categoryId": "pasta",
+      "nameEs": "Tortellini de queso",
+      "nameEn": "Cheese Tortellini",
+      "descriptionEs": "Tortellini, tocino ahumado con maple, broccolini, pesto de tomate deshidratado, cubierto con asiago",
+      "descriptionEn": "TORTELLINI, MAPLE SMOKED BACON, BROCCOLINI, SUNDRIED TOMATO PESTO, ASIAGO TOPPING",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "penne-with-meatballs",
+      "categoryId": "pasta",
+      "nameEs": "Penne con albóndigas",
+      "nameEn": "Penne with Meatballs",
+      "descriptionEs": "Penne, albóndigas y marinara de la casa, cubierto con parmesano",
+      "descriptionEn": "PENNE, HOUSE-MADE MEATBALLS AND MARINARA, PARMESAN TOPPING",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-roasted-garlic",
+      "categoryId": "pasta",
+      "nameEs": "Pollo con ajo asado",
+      "nameEn": "Chicken & Roasted Garlic",
+      "descriptionEs": "Penne, pollo salteado, tocino ahumado con maple, cebolla caramelizada, chícharos, champiñones, salsa de crema con ajo asado, tomate y asiago encima",
+      "descriptionEn": "PENNE, SAUTÉED CHICKEN, MAPLE SMOKED BACON, CARMELIZED ONIONS, PEAS, MUSHROOMS, ROASTED GARLIC CREAM SAUCE, TOMATOES AND ASIAGO TOPPING",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scallops-alla-vodka",
+      "categoryId": "pasta",
+      "nameEs": "Camarones y vieiras a la vodka",
+      "nameEn": "Shrimp & Scallops Alla Vodka",
+      "descriptionEs": "Penne, callos de hacha salteados, camarones, salsa de vodka, cubierto con asiago",
+      "descriptionEn": "PENNE, SAUTÉED SCALLOPS, SHRIMP, VODKA SAUCE, ASIAGO TOPPING",
+      "price": "$27.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-mac-cheese",
+      "categoryId": "pasta",
+      "nameEs": "Macarrones con queso y langosta",
+      "nameEn": "Lobster Mac & Cheese",
+      "descriptionEs": "Pasta cavatappi, carne de langosta fresca, champiñones, alfredo, cebolla, gouda, mozzarella, asiago, aceite de trufa, costra de panko encima",
+      "descriptionEn": "CAVATAPPI PASTA, FRESH LOBSTER MEAT, MUSHROOMS, ALFREDO, ONIONS, GOUDA, MOZZARELLA, ASIAGO, TRUFFLE OIL, PANKO CRUST TOPPING",
+      "price": "$32.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-battered-chicken-strips",
+      "categoryId": "chicken",
+      "nameEs": "Tiras de pollo rebozadas en cerveza lager",
+      "nameEn": "Lager-Battered Chicken Strips",
+      "descriptionEs": "Pollo fresco frito en masa de cerveza, papas fritas, salsa BBQ de maple y dijon al lado",
+      "descriptionEn": "FRESH CHICKEN FRIED IN BEER BATTER, FRIES, BBQ MAPLE DIJON SIDE SAUCE",
+      "price": "$22.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mason-s-chicken-waffles",
+      "categoryId": "chicken",
+      "nameEs": "Pollo con waffles de Mason",
+      "nameEn": "Mason's Chicken & Waffles",
+      "descriptionEs": "Pollo frito, waffles. Cubierto con gravy de maple y tocino y cebollín",
+      "descriptionEn": "FRIED CHICKEN, WAFFLES. TOPPED WITH MAPLE BACON GRAVY AND SCALLIONS",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "costoletta",
+      "categoryId": "chicken",
+      "nameEs": "Costoletta",
+      "nameEn": "Costoletta",
+      "descriptionEs": "Pollo empanizado con panko y parmesano, puré de papa con asiago, salsa cremosa de limón, espárragos como guarnición",
+      "descriptionEn": "PANKO PARMESAN CRUSTED CHICKEN, ASIAGO MASHED POTATOES, CREAMY LEMON SAUCE, ASPARAGUS GARNISH",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-chicken",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la naranja",
+      "nameEn": "Orange Chicken",
+      "descriptionEs": "Pollo frito, salsa agridulce de naranja, ajonjolí, arroz basmati, vegetales en juliana",
+      "descriptionEn": "FRIED CHICKEN, SWEET AND SOUR ORANGE SAUCE, SESAME SEEDS, BASMATI RICE, JULIENNED VEGETABLES",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marsala-mushrooms",
+      "categoryId": "chicken",
+      "nameEs": "Marsala con champiñones",
+      "nameEn": "Marsala & Mushrooms",
+      "descriptionEs": "Pollo salteado, salsa de vino marsala, champiñones, fettuccine. Coronado con asiago",
+      "descriptionEn": "SAUTÉED CHICKEN, MARSALA WINE SAUCE, MUSHROOMS, FETTUCCINE. TOPPED WITH ASIAGO",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "romano",
+      "categoryId": "chicken",
+      "nameEs": "Romano",
+      "nameEn": "Romano",
+      "descriptionEs": "Pollo empanizado con romano y asiago, fettuccine, salsa marinara cremosa. Coronado con asiago",
+      "descriptionEn": "ROMANO AND ASIAGO CRUSTED CHICKEN, FETTUCCINE, CREAMY MARINARA SAUCE. TOPPED WITH ASIAGO",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmigiano",
+      "categoryId": "chicken",
+      "nameEs": "Parmigiano",
+      "nameEn": "Parmigiano",
+      "descriptionEs": "Pollo empanizado con panko y parmesano, marinara, mozzarella, fettuccine. Coronado con asiago",
+      "descriptionEn": "PARMESAN PANKO BREADED CHICKEN, MARINARA, MOZZARELLA, FETTUCINE. TOPPED WITH ASIAGO",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "louisiana",
+      "categoryId": "chicken",
+      "nameEs": "Louisiana",
+      "nameEn": "Louisiana",
+      "descriptionEs": "Pollo empanizado, salsa picante estilo Nueva Orleans, pimientos, cebolla, tortellini de queso. Coronado con asiago",
+      "descriptionEn": "BREADED CHICKEN, SPICY NEW ORLEANS SAUCE, PEPPERS, ONIONS, CHEESE TORTELLINI. TOPPED WITH ASIAGO",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milanese",
+      "categoryId": "chicken",
+      "nameEs": "Milanesa",
+      "nameEn": "Milanese",
+      "descriptionEs": "Pollo empanizado, salsa cremosa de pesto y limón, fettuccine. Cubierto con arúgula, tomate y parmesano",
+      "descriptionEn": "BREADED CHICKEN, PESTO-LEMON CREAM SAUCE, FETTUCCINE. TOPPED WITH ARUGULA, TOMATO, PARMESAN",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sizzling-fajitas",
+      "categoryId": "specialties",
+      "nameEs": "Fajitas chisporroteantes",
+      "nameEn": "Sizzling Fajitas",
+      "descriptionEs": "Pollo, pimientos y cebolla salteados. Se sirve con lechuga, queso, salsa, crema agria y guacamole; a elegir: tortillas de harina | tortillas de maíz | lechuga bibb",
+      "descriptionEn": "CHICKEN, SAUTÉED PEPPERS AND ONIONS. SERVED WITH LETTUCE, CHEESE, SALSA, SOUR CREAM, GUACAMOLE CHOICE OF | FLOUR TORTILLAS | CORN TORTILLAS | BIBB LETTUCE",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teriyaki-bowl",
+      "categoryId": "specialties",
+      "nameEs": "Bowl teriyaki",
+      "nameEn": "Teriyaki Bowl",
+      "descriptionEs": "Pollo, broccolini, chícharos chinos, cebolla, calabaza, champiñones, pimientos, zanahoria, calabacín y salsa teriyaki; a elegir: arroz basmati | arroz integral | fideos lo mein | lechuga",
+      "descriptionEn": "CHICKEN, BROCCOLINI, SNOW PEAS, ONIONS, SQUASH, MUSHROOMS, PEPPERS, CARROTS, ZUCCHINI, AND TERIYAKI SAUCE CHOICE OF | BASMATI RICE | WHOLE GRAIN BROWN RICE | LO-MEIN NOODLES | LETTUCE",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shepherd-s-pie-gf",
+      "categoryId": "specialties",
+      "nameEs": "Pastel de carne Shepherd's (GF)",
+      "nameEn": "Shepherd's Pie (GF)",
+      "descriptionEs": "Carne molida, champiñones, chícharos, calabaza, zanahoria, cebolla, calabacín, gravy. Cubierto con puré de papa con asiago gratinado con parmesano",
+      "descriptionEn": "GROUND BEEF, MUSHROOMS, PEAS, SQUASH, CARROTS, ONIONS, ZUCCHINI, GRAVY. TOPPED WITH PARMESAN CRUSTED ASIAGO MASHED POTATOES",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southern-fried-chicken-specialties",
+      "categoryId": "specialties",
+      "nameEs": "Pollo frito sureño (especialidades)",
+      "nameEn": "Southern Fried Chicken (Specialties)",
+      "descriptionEs": "Pechuga de pollo capeada en suero de leche, mezcla de vegetales, puré de papa con asiago, salsa cremosa de maple y tocino",
+      "descriptionEn": "BUTTERMILK BATTERED CHICKEN BREAST, VEGETABLE MEDLEY, ASIAGO MASHED POTATOES, CREAMY MAPLE BACON SAUCE",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pot-roast-gf",
+      "categoryId": "specialties",
+      "nameEs": "Carne asada a la olla (GF)",
+      "nameEn": "Pot Roast (GF)",
+      "descriptionEs": "RES BLACK ANGUS, GRAVY, PURÉ DE PAPA CON ASIAGO, MEZCLA DE VERDURAS, TIRAS DE CEBOLLA FRITAS",
+      "descriptionEn": "BLACK ANGUS BEEF, GRAVY, ASIAGO MASHED POTATOES, VEGETABLE MEDLEY, FRIED ONION STRINGS",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cajun-jambalaya-gf",
+      "categoryId": "specialties",
+      "nameEs": "Jambalaya cajún (GF)",
+      "nameEn": "Cajun Jambalaya (GF)",
+      "descriptionEs": "Camarones salteados, pollo, salchicha picante, cebolla, pimientos, salsa cajún picante, arroz basmati",
+      "descriptionEn": "SAUTÉED SHRIMP, CHICKEN, HOT SAUSAGE, ONIONS, PEPPERS, SPICY CAJUN SAUCE, BASMATI RICE",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-brisket",
+      "categoryId": "specialties",
+      "nameEs": "Brisket BBQ",
+      "nameEn": "BBQ Brisket",
+      "descriptionEs": "Pecho de res black angus ahumado, mac and cheese con tocino ahumado con maple, camotes asados con maple, salsa BBQ",
+      "descriptionEn": "SMOKED BLACK ANGUS BEEF BRISKET, MAPLE SMOKED BACON MAC 'N CHEESE, MAPLE ROASTED SWEET POTATOES, BBQ SAUCE",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón sellado en sartén",
+      "nameEn": "Pan Seared Salmon",
+      "descriptionEs": "salmón de las Islas Feroe sellado a la sartén, champiñones, alcaparras. Se sirve con salsa de limón sobre pasta cabello de ángel con espinaca salteada",
+      "descriptionEn": "PAN SEARED FAROE ISLAND SALMON, MUSHROOMS, VAPERS. SERVED WITH LEMON SAUCE OVER ANGEL HAIR PASTA WITH SAUTEED SPINACH",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón al coco",
+      "nameEn": "Coconut Salmon",
+      "descriptionEs": "salmón de las Islas Feroe, coco rallado, arroz basmati, vegetales en juliana, salsa piña colada",
+      "descriptionEn": "FAROE ISLAND SALMON, SHREDDED COCONUT, BASMATI RICE, JULIENNED VEGETABLES, PIÑA COLADA SAUCE",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herb-glazed-filet-of-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Filete de salmón glaseado con hierbas",
+      "nameEn": "Herb-Glazed Filet of Salmon",
+      "descriptionEs": "salmón de las Islas Feroe glaseado con naranja, tomillo, mostaza, estragón, albahaca, perejil, salsa cremosa de limón, puré de papa con asiago, espárragos como guarnición",
+      "descriptionEn": "ORANGE GLAZED FAROE ISLAND SALMON, THYME, MUSTARD, TARRAGON, BASIL, PARSLEY, CREAMY LEMON SAUCE, ASIAGO MASHED POTATOES, ASPARAGUS GARNISH",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "miso-salmon",
+      "categoryId": "seafood",
+      "nameEs": "Salmón al miso",
+      "nameEn": "Miso Salmon",
+      "descriptionEs": "salmón de las Islas Feroe marinado en miso y horneado. Se sirve con salsa cremosa de miso sobre arroz basmati con chícharos chinos como guarnición.",
+      "descriptionEn": "FAROE ISLAND SALMON MARINATED IN MISO AND BAKED. SERVED WITH CREAMY MISO SAUSE OVER BASMATI RICE WITH SNOW PEA GARNISH.",
+      "price": "$29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-battered-fish-chips",
+      "categoryId": "seafood",
+      "nameEs": "Fish & chips rebozado en cerveza lager",
+      "nameEn": "Lager-Battered Fish & Chips",
+      "descriptionEs": "Bacalao fresco frito en masa de cerveza. Se sirve con papas fritas, ensalada de col de la casa y salsa tártara",
+      "descriptionEn": "FRESH COD FRIED IN BEER BATTER. SERVED WITH FRIES, HOUSE-MADE COLESLAW, AND TARTAR SAUCE",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Camarones al coco",
+      "nameEn": "Coconut Shrimp",
+      "descriptionEs": "Camarones jumbo ligeramente fritos en masa de coco, mezcla de vegetales, puré de papa con asiago, salsa piña colada",
+      "descriptionEn": "LIGHTLY FRIED COCONUT BATTERED JUMBO SHRIMP, VEGETABLE MEDLEY, ASIAGO MASHED POTATOES, PINA COLADA SAUCE",
+      "price": "$24.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-poke-bowl",
+      "categoryId": "seafood",
+      "nameEs": "Poke bowl de atún",
+      "nameEn": "Tuna Poke Bowl",
+      "descriptionEs": "Atún ahi aleta amarilla crudo, fresco, silvestre y pescado con anzuelo, salsa de soya, ajo, cebolla y jengibre. Mezclado con aguacate, edamame, champiñones, pepino y alioli de sriracha sobre arroz basmati. Cubierto con tiras de wonton crujientes",
+      "descriptionEn": "WILD-HARVESTED LINE-CAUGHT FRESH RAW YELLOWFIN AHI TUNA, SOY SAUCE, GARLIC, ONION AND GINGER. TOSSED WITH AVOCADO, EDAMAME, MUSHROOMS, CUCUMBER AND SRIRACHA AIOLI OVER BASMATI RICE. TOPPED WITH CRISPY WONTON STRIPS",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bang-bang-shrimp-chicken",
+      "categoryId": "seafood",
+      "nameEs": "Camarones y pollo Bang-Bang",
+      "nameEn": "Bang-Bang Shrimp & Chicken",
+      "descriptionEs": "Camarones salteados, pollo, vegetales en juliana, curry de coco, salsa tailandesa de cacahuate. Cubierto con coco tostado",
+      "descriptionEn": "SAUTÉED SHRIMP, CHICKEN, JULIENNED VEGETABLES, COCONUT CURRY, THAI PEANUT SAUCE. TOPPED WITH TOASTED COCONUT",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-shrimp-vegetable-risotto",
+      "categoryId": "seafood",
+      "nameEs": "Risotto de camarones al ajo y verduras",
+      "nameEn": "Garlic Shrimp & Vegetable Risotto",
+      "descriptionEs": "Camarones, tocino ahumado con maple, risotto cremoso de la casa con espárragos, elote y pimiento, parmesano, asiago, salsa de vino con ajo",
+      "descriptionEn": "SHRIMP, MAPLE SMOKED BACON, HOUSE-MADE CREAMY ASPARAGUS, CORN AND PEPPER RISOTTO, PARMESAN, ASIAGO, GARLIC WINE SAUCE",
+      "price": "$25.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-paella-gf",
+      "categoryId": "seafood",
+      "nameEs": "Paella de mariscos (GF)",
+      "nameEn": "Seafood Paella (GF)",
+      "descriptionEs": "Camarones, mejillones, calamares, almejas, pimientos, cebolla, cilantro, arroz amarillo, caldo de mariscos picante con tomate",
+      "descriptionEn": "SHRIMP, MUSSELS, CALAMARI, CLAMS, PEPPERS, ONIONS, CILANTRO, YELLOW RICE, SPICY TOMATO SEAFOOD BROTH",
+      "price": "$28.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-casserole",
+      "categoryId": "seafood",
+      "nameEs": "Cazuela de mariscos",
+      "nameEn": "Seafood Casserole",
+      "descriptionEs": "Callos de hacha, camarones, mejillones, langosta, salsa de crema de langosta con vino jerez, ajo, empanizado de panko",
+      "descriptionEn": "SCALLOPS, SHRIMP, MUSSELS, LOBSTER, SHERRY WINE LOBSTER CREAM SAUCE, GARLIC, PANKO BREADING",
+      "price": "$38.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip-gf",
+      "categoryId": "steaks",
+      "nameEs": "NY strip* (GF)",
+      "nameEn": "NY Strip* (GF)",
+      "descriptionEs": "NY strip 1855 black angus de 14 oz, deshuesado, corte central cortado a mano. Cubierto con mantequilla de hierbas. Se sirve con puré de papa con asiago",
+      "descriptionEn": "140Z 1855 BLACK ANGUS BONELESS CENTER AND HAND-CUT NY STRIP. TOPPED WITH HERB BUTTER. SERVED WITH ASIAGO MASHED POTATOES",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ribeye-gf",
+      "categoryId": "steaks",
+      "nameEs": "Ribeye* (GF)",
+      "nameEn": "Ribeye* (GF)",
+      "descriptionEs": "Ribeye 1855 black angus de 16 oz, bien marmoleado para el máximo sabor. Cubierto con mantequilla de hierbas. Se sirve con puré de papa con asiago",
+      "descriptionEn": "160z 1855 BLACK ANGUS RIBEYE, WELL-MARBLED FOR PEAK FLAVOR. TOPPED WITH HERB BUTTER. SERVED WITH ASIAGO MASHED POTATOES",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon-gf",
+      "categoryId": "steaks",
+      "nameEs": "Filete mignon* (GF)",
+      "nameEn": "Filet Mignon* (GF)",
+      "descriptionEs": "Filete de res 1855 black angus de 8 oz sobre demi-glace de la casa, champiñones y cebolla salteados. Cubierto con mantequilla de hierbas. Se sirve con puré de papa con asiago",
+      "descriptionEn": "80Z 1855 BLACK ANGUS BEEF FILET OVER HOUSE-MADE DEMI GLAZE, SAUTÉED MUSHROOMS AND ONIONS. TOPPED WITH HERB BUTTER. SERVED WITH ASIAGO MASHED POTATOES",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip-herb-glazed-salmon",
+      "categoryId": "steaks",
+      "nameEs": "NY strip y salmón glaseado con hierbas*",
+      "nameEn": "NY Strip & Herb-Glazed Salmon*",
+      "descriptionEs": "New York strip 1855 black angus de 7 oz, salmón de las Islas Feroe glaseado con hierbas, puré de papa con asiago",
+      "descriptionEn": "7Oz 1855 BLACK ANGUS BEEF NEW YORK STRIP, HERB-GLAZED FAROE ISLAND SALMON, ASIAGO MASHED POTATOES",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-strip-grilled-shrimp",
+      "categoryId": "steaks",
+      "nameEs": "NY strip y camarones a la parrilla*",
+      "nameEn": "NY Strip & Grilled Shrimp*",
+      "descriptionEs": "New York strip 1855 black angus de 7 oz, camarones a la parrilla marinados en ajo, puré de papa con asiago",
+      "descriptionEn": "7Oz 1855 BLACK ANGUS BEEF NEW YORK STRIP, MARINATED GARLIC GRILLED SHRIMP, ASIAGO MASHED POTATOES",
+      "price": "$49.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-or-steamed-broccolini-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Broccolini salteado o al vapor (GF)",
+      "nameEn": "Sautéed or Steamed Broccolini (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-or-steamed-spinach-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Espinaca salteada o al vapor (GF)",
+      "nameEn": "Sautéed or Steamed Spinach (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauteed-or-steamed-asparagus-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Espárragos salteados o al vapor (GF)",
+      "nameEn": "Sautéed or Steamed Asparagus (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brussels-sprouts-applewood-smoked-bacon-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Coles de Bruselas con tocino ahumado con madera de manzano (GF)",
+      "nameEn": "Brussels Sprouts & Applewood Smoked Bacon (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "applewood-smoked-bacon-mac-n-cheese",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Mac and cheese con tocino ahumado con madera de manzano",
+      "nameEn": "Applewood Smoked Bacon Mac 'n Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-baked-potato-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Papa al horno con todo (GF)",
+      "nameEn": "Loaded Baked Potato (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maple-roasted-sweet-potatoes-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Camotes asados con maple (GF)",
+      "nameEn": "Maple Roasted Sweet Potatoes (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tater-tots-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Papitas tots (GF)",
+      "nameEn": "Tater Tots (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-potato-fries-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Papas fritas de camote (GF)",
+      "nameEn": "Sweet Potato Fries (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basmati-rice-gf",
+      "categoryId": "sides-substitute-any-side-1-95",
+      "nameEs": "Arroz basmati (GF)",
+      "nameEn": "Basmati Rice (GF)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-bliss-cupcake",
+      "categoryId": "desserts",
+      "nameEs": "Cupcake de felicidad con chispas de chocolate",
+      "nameEn": "Chocolate Chip Bliss Cupcake",
+      "descriptionEs": "Pastel de vainilla con chispas de chocolate, relleno de crema de mantequilla de vainilla, cubierto de chispas de chocolate y una galleta hecha en casa encima",
+      "descriptionEn": "VANILLA CHOCOLATE CHIP CAKE, VANILLA BUTTERCREAM FILLING ROLLED IN CHOCOLATE CHIPS, SCRATCH-MADE COOKIE TOPPER",
+      "price": "$9.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "party-time-cupcake",
+      "categoryId": "desserts",
+      "nameEs": "Cupcake de fiesta",
+      "nameEn": "Party Time Cupcake",
+      "descriptionEs": "Pastel funfetti relleno de mousse de vainilla, crema de mantequilla de vainilla, chispas de colores, galleta wafer de fresa encima",
+      "descriptionEn": "FUNFETTI CAKE, VANILLA MOUSSE FILLED, VANILLA BUTTERCREAM, RAINBOW SPRINKLES, STRAWBERRY WAFER TOPPER",
+      "price": "$9.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-perseverance-cupcake",
+      "categoryId": "desserts",
+      "nameEs": "Cupcake de perseverancia de crema de cacahuate",
+      "nameEn": "PB Perseverance Cupcake",
+      "descriptionEs": "Pastel y mousse de chocolate, crema de mantequilla de cacahuate, brownie, chispas de crema de cacahuate",
+      "descriptionEn": "CHOCOLATE CAKE AND MOUSSE, PEANUT BUTTER BUTTERCREAM, BROWNIE, PEANUT BUTTER CHIPS",
+      "price": "$9.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red-velvet-cheesecake-cupcake",
+      "categoryId": "desserts",
+      "nameEs": "Cupcake de red velvet con pastel de queso",
+      "nameEn": "Red Velvet Cheesecake Cupcake",
+      "descriptionEs": "Pastel red velvet, chocolate blanco, crema de mantequilla cubierta de azúcar gruesa, relleno de pay de queso. Con bocaditos de pay de queso encima",
+      "descriptionEn": "RED VELVET CAKE, WHITE CHOCOLATE, BUTTERCREAM ROLLED IN SANDING SUGAR, CHEESECAKE FILLING. CHEESECAKE BITES TOPPED",
+      "price": "$9.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-dough-cupcake",
+      "categoryId": "desserts",
+      "nameEs": "Cupcake de masa de galleta",
+      "nameEn": "Cookie Dough Cupcake",
+      "descriptionEs": "Pastel de chocolate, relleno y betún de masa de galleta sin huevo, cubierto de chispas de chocolate",
+      "descriptionEn": "CHOCOLATE CAKE, EGGLESS COOKIE DOUGH FILLING AND FROSTING, ROLLED I N CHOCOLATE CHIPS",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de queso clásico",
+      "nameEn": "Classic Cheesecake",
+      "descriptionEs": "Base de galleta graham, relleno clásico de pay de queso",
+      "descriptionEn": "GRAHAM CRACKER CRUST, CLASSIC CHEESECAKE FILLING",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-roll-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de queso de rol de canela",
+      "nameEn": "Cinnamon Roll Cheesecake",
+      "descriptionEs": "Base de galleta Biscoff con canela, relleno de pay de queso con crema de galleta, mousse de canela y crumble encima, glaseado",
+      "descriptionEn": "CINNAMON BISCOFF CRUSTED, COOKIE-BUTTER CHEESECAKE FILLING, CINNAMON MOUSSE AND CRUMBLE TOPPING, ICING GLAZE",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-oreo-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de queso de chocolate Oreo®",
+      "nameEn": "Chocolate Oreo® Cheesecake",
+      "descriptionEs": "Base de chocolate OREO®, relleno de pay de queso de chocolate y ganache, rizos de chocolate oscuro, OREO® con chocolate blanco, mousse de chocolate encima",
+      "descriptionEn": "CHOCOLATE OREO® CRUST, CHOCOLATE CHEESECAKE AND GANACHE FILLING, DARK CHOCOLATE CURLS, WHITE CHOCOLATE DRIZZLED OREO®, CHOCOLATE MOUSSE TOPPING",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cake-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae de pastel",
+      "nameEn": "Cake Sundae",
+      "descriptionEs": "HELADO DE VAINILLA Y CHOCOLATE, CHISPAS DE CONFETI, CRUMBLE DE CHOCOLATE, CREMA BATIDA",
+      "descriptionEn": "VANILLA AND CHOCOLATE ICE CREAM, CONFETTI SPRINKLE, CHOCOLATE CRUMBLE, WHIPPED CREAM",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oreo-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae de Oreo®",
+      "nameEn": "Oreo® Sundae",
+      "descriptionEs": "HELADO DE VAINILLA, CRUMBLE DE OREO, CHISPAS DE CHOCOLATE, CREMA BATIDA, COBERTURA DE SALSA DE CHOCOLATE",
+      "descriptionEn": "VANILLA ICE CREAM, OREO CRUMBLE, CHOCOLATE CHIPS, WHIPPED CREAM, CHOCOLATE SAUCE TOPPING",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownie-sundae",
+      "categoryId": "desserts",
+      "nameEs": "Sundae de brownie",
+      "nameEn": "Brownie Sundae",
+      "descriptionEs": "BROWNIE DE FUDGE, HELADO DE VAINILLA, CREMA BATIDA, NUECES, SALSA DE CHOCOLATE",
+      "descriptionEn": "FUDGE BROWNIE, VANILLA ICE CREAM, WHIPPED CREAM, WALNUTS, CHOCOLATE SAUCE",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Helado",
+      "nameEn": "Ice Cream",
+      "descriptionEs": "Chocolate o vainilla",
+      "descriptionEn": "CHOCOLATE OR VANILLA",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-hand-crafted-apple-crisp",
+      "categoryId": "desserts",
+      "nameEs": "Crujiente de manzana tibio hecho a mano",
+      "nameEn": "Warm Hand-Crafted Apple Crisp",
+      "descriptionEs": "Manzanas frescas, costra crujiente de avena especiada, crema batida, helado de vainilla",
+      "descriptionEn": "FRESH APPLES, CRISPY SPICED OAT CRUST, WHIPPED CREAM, VANILLA ICE CREAM",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "warm-lava-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel volcán tibio",
+      "nameEn": "Warm Lava Cake",
+      "descriptionEs": "Pastel de chocolate con centro de chocolate líquido, helado de vainilla, crema batida",
+      "descriptionEn": "LIQUID CHOCOLATE CENTERED CHOCOLATE CAKE, VANILLA ICE CREAM, WHIPPED CREAM",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scoop-of-dirt",
+      "categoryId": "desserts",
+      "nameEs": "Una bola de tierra",
+      "nameEn": "Scoop of Dirt",
+      "descriptionEs": "Pudín de chocolate, crumble de OREO®, crema batida, gomitas de gusano",
+      "descriptionEn": "CHOCOLATE PUDDING, OREO® CRUMBLE, WHIPPED CREAM, GUMMY WORMS",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-titanic",
+      "categoryId": "desserts",
+      "nameEs": "El Titanic",
+      "nameEn": "The Titanic",
+      "descriptionEs": "Helado de vainilla y chocolate, 2 pasteles de lava tibios, nueces, crema batida, gomitas de gusano, salsas de chocolate | fresa | caramelo",
+      "descriptionEn": "VANILLA AND CHOCOLATE ICE CREAM, 2 WARM LAVA CAKES, WALNUTS, WHIPPED CREAM, GUMMY WORMS, CHOCOLATE | STRAWBERRY | CARAMEL SAUCES",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "campfire-s-mores",
+      "categoryId": "desserts",
+      "nameEs": "S'mores de fogata",
+      "nameEn": "Campfire S'mores",
+      "descriptionEs": "Arma y tuesta s'mores sobre una fogata en la mesa. Malvaviscos, galletas graham, chocolate",
+      "descriptionEn": "BUILD AND TOAST S'MORES OVER A TABLE CAMPFIRE. MARSHMALLOWS, GRAHAM CRACKERS, CHOCOLATE",
+      "price": "For 2 $10.95 / For 4 $16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "six-layer-blackout-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel blackout de seis capas",
+      "nameEn": "Six-Layer Blackout Cake",
+      "descriptionEs": "Pastel de chocolate, relleno de chocolate, chispas de chocolate",
+      "descriptionEn": "CHOCOLATE CAKE, CHOCOLATE FILLING, CHOCOLATE CHIPS",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "six-layer-carrot-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de zanahoria de seis capas",
+      "nameEn": "Six-Layer Carrot Cake",
+      "descriptionEs": "Pastel de zanahoria, betún de queso crema, nueces pecanas",
+      "descriptionEn": "CARROT CAKE, CREAM CHEESE ICING, PECANS",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisú",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "Crema de mascarpone, soletas remojadas en café y brandy, cacao dulce",
+      "descriptionEn": "MASCARPONE CREAM, COFFEE-BRANDY SOAKED LADY FINGERS, SWEET COCOA",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hand-spun-milkshake",
+      "categoryId": "desserts",
+      "nameEs": "Malteada batida a mano",
+      "nameEn": "Hand-Spun Milkshake",
+      "descriptionEs": "OREO® | SNICKERS® | REESE'S® PB CUPS | plátano | chocolate | vainilla",
+      "descriptionEn": "OREO® | SNICKERS® | REESE'S® PB CUPS | BANANA | CHOCOLATE | VANILLA",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "root-beer-float",
+      "categoryId": "desserts",
+      "nameEs": "Root beer float",
+      "nameEn": "Root Beer Float",
+      "descriptionEs": "Root beer de fuente MUG®, helado de vainilla",
+      "descriptionEn": "MUG® FOUNTAIN ROOT BEER, VANILLA ICE CREAM",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoothie",
+      "categoryId": "desserts",
+      "nameEs": "Smoothie",
+      "nameEn": "Smoothie",
+      "descriptionEs": "Puré de fresa | durazno, helado de vainilla, licuado con hielo",
+      "descriptionEn": "STRAWBERRY | PEACH PURÉE, VANILLA ICE CREAM, ICE BLENDED",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "petite-colada",
+      "categoryId": "desserts",
+      "nameEs": "Colada petite",
+      "nameEn": "Petite Colada",
+      "descriptionEs": "Coco, jugo de piña, licuado con hielo",
+      "descriptionEn": "COCONUT, PINEAPPLE JUICE, ICE BLENDED",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-eggs-any-style",
+      "categoryId": "brunch",
+      "nameEs": "2 huevos al gusto",
+      "nameEn": "2 Eggs Any Style",
+      "descriptionEs": "Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spanish",
+      "categoryId": "brunch",
+      "nameEs": "Español",
+      "nameEn": "Spanish",
+      "descriptionEs": "3 huevos, espinaca, cebolla, tocino, cheddar jack. Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "3 EGGS, SPINACH, ONIONS, BACON, CHEDDAR JACK. SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "western",
+      "categoryId": "brunch",
+      "nameEs": "Western",
+      "nameEn": "Western",
+      "descriptionEs": "3 huevos, jamón picado, pimientos, cebolla, queso americano. Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "3 EGGS, DICED HAM, PEPPERS, ONIONS, AMERICAN. SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-cheddar-jack",
+      "categoryId": "brunch",
+      "nameEs": "Verduras y cheddar jack",
+      "nameEn": "Veggie & Cheddar Jack",
+      "descriptionEs": "3 huevos, cebolla, broccolini, espinaca, pimientos, champiñones, cheddar jack. Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "3 EGGS, ONIONS, BROCCOLINI, SPINACH, PEPPERS, MUSHROOMS, CHEDDAR JACK. SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-eggs",
+      "categoryId": "brunch",
+      "nameEs": "Bistec y Huevos",
+      "nameEn": "Steak & Eggs",
+      "descriptionEs": "NY strip de 7 oz, 2 huevos al gusto. Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "7oz NY STRIP, 2 EGGS ANY STYLE. SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$26.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-egg-omelet",
+      "categoryId": "brunch",
+      "nameEs": "Omelet de 3 huevos",
+      "nameEn": "3 Egg Omelet",
+      "descriptionEs": "Se sirve con papas caseras y pan tostado a elegir: blanco | integral | centeno",
+      "descriptionEn": "SERVED WITH HOME FRIES AND CHOICE OF | WHITE | WHEAT | RYE TOAST",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggwich",
+      "categoryId": "brunch",
+      "nameEs": "Eggwich",
+      "nameEn": "Eggwich",
+      "descriptionEs": "Huevos revueltos, jamón, tocino ahumado con maple, gouda, queso americano, en brioche tostado. Se sirve con papas caseras",
+      "descriptionEn": "SCRAMBLED EGGS, HAM, MAPLE SMOKED BACON, GOUDA, AMERICAN, ON TOASTED BRIOCHE. SERVED WITH HOMEFRIES",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "quesadilla-brunch",
+      "categoryId": "brunch",
+      "nameEs": "Quesadilla (brunch)",
+      "nameEn": "Quesadilla (Brunch)",
+      "descriptionEs": "Huevos revueltos, cheddar jack, tocino, cebolla, pimientos en tortilla a la parrilla. Se sirve con salsa fresca, crema agria y papas caseras",
+      "descriptionEn": "SCRAMBLED EGGS, CHEDDAR JACK, BACON, ONIONS, PEPPERS IN A GRILLED TORTILLA. SERVED WITH FRESH SALSA, SOUR CREAM AND HOMEFRIES",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brunch-grain-bowl",
+      "categoryId": "brunch",
+      "nameEs": "Bowl de granos de brunch",
+      "nameEn": "Brunch Grain Bowl",
+      "descriptionEs": "Quinoa y farro, camote, aguacate, espinaca, 2 huevos al gusto. Cubierto con salsa holandesa",
+      "descriptionEn": "QUINOA AND FARRO, SWEET POTATOES, AVOCADO, SPINACH, 2 EGGS ANY STYLE. TOPPED WITH HOLLANDAISE SAUCE",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito",
+      "categoryId": "brunch",
+      "nameEs": "Burrito",
+      "nameEn": "Burrito",
+      "descriptionEs": "Huevos revueltos, cheddar jack, pimientos, cebolla, tocino, salchicha en tortilla. Cubierto con pico de gallo. Crema agria y papas caseras al lado",
+      "descriptionEn": "SCRAMBLED EGGS, CHEDDAR JACK, PEPPERS, ONIONS, BACON, SAUSAGE IN A TORTILLA. TOPPED WITH PICO DE GALLO. SIDE OF SOUR CREAM AND HOMEFRIES",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-pancakes",
+      "categoryId": "brunch",
+      "nameEs": "Hotcakes clásicos",
+      "nameEn": "Classic Pancakes",
+      "descriptionEs": "3 pancakes de suero de leche, mantequilla batida",
+      "descriptionEn": "3 BUTTERMILK PANCAKES, WHIPPED BUTTER",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-pancakes",
+      "categoryId": "brunch",
+      "nameEs": "Pancakes con chispas de chocolate",
+      "nameEn": "Chocolate Chip Pancakes",
+      "descriptionEs": "3 pancakes de suero de leche con chispas de chocolate, mantequilla batida",
+      "descriptionEn": "3 BUTTERMILK PANCAKES INFUSED WITH CHOCOLATE CHIPS, WHIPPED BUTTER",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brioche-french-toast",
+      "categoryId": "brunch",
+      "nameEs": "Pan francés de brioche",
+      "nameEn": "Brioche French Toast",
+      "descriptionEs": "Brioche en rebanadas gruesas sumergido en nuestra masa de la casa, mantequilla batida",
+      "descriptionEn": "THICK-SLICED BRIOCHE DIPPED IN OUR HOUSE-MADE BATTER, WHIPPED BUTTER",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-n-waffles",
+      "categoryId": "brunch",
+      "nameEs": "Waffles con fruta",
+      "nameEn": "Fruit 'n Waffles",
+      "descriptionEs": "Waffles de la casa con fresas, plátano y nueces pecanas confitadas. Cubiertos con crema batida.",
+      "descriptionEn": "HOUSE-MADE WAFFLES WITH STRAWBERRIES, BANANAS AND CANDIED PECANS. TOPPED WITH WHIPPED CREAM.",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-waffles",
+      "categoryId": "brunch",
+      "nameEs": "Pollo con waffles",
+      "nameEn": "Chicken & Waffles",
+      "descriptionEs": "Pollo frito, waffles de la casa. Cubierto con gravy de maple y tocino",
+      "descriptionEn": "FRIED CHICKEN, HOUSE-MADE WAFFLES. TOPPED WITH MAPLE BACON GRAVY",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-pancakes-or-brioche-french-toast",
+      "categoryId": "brunch",
+      "nameEs": "Pancakes o pan francés brioche infantil",
+      "nameEn": "Kids Pancakes or Brioche French Toast",
+      "descriptionEs": "A elegir: tocino | salchicha",
+      "descriptionEn": "CHOICE OF | BACON | SAUSAGE",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "proprietary-blend-burger-sliders-fries",
+      "categoryId": "kids-12-under-burgers",
+      "nameEs": "Mini hamburguesas de mezcla exclusiva con papas fritas*",
+      "nameEn": "Proprietary Blend Burger Sliders & Fries*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fingers-fries",
+      "categoryId": "kids-12-under-chicken",
+      "nameEs": "Dedos de pollo con papas fritas",
+      "nameEn": "Fingers & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popcorn-chicken-fries",
+      "categoryId": "kids-12-under-chicken",
+      "nameEs": "Pollo popcorn con papas fritas",
+      "nameEn": "Popcorn Chicken & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese",
+      "categoryId": "kids-12-under-pasta",
+      "nameEs": "Macarrones con queso",
+      "nameEn": "Mac & Cheese",
+      "descriptionEs": "Cavatappi, queso derretido",
+      "descriptionEn": "CAVATAPPI, MELTED CHEESE",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-sauce",
+      "categoryId": "kids-12-under-pasta",
+      "nameEs": "Pasta con salsa",
+      "nameEn": "Pasta & Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli-sauce",
+      "categoryId": "kids-12-under-pasta",
+      "nameEs": "Ravioles de queso con salsa",
+      "nameEn": "Cheese Ravioli & Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauce-choice",
+      "categoryId": "kids-12-under-pasta",
+      "nameEs": "Salsa a elegir",
+      "nameEn": "Sauce Choice",
+      "descriptionEs": "Mantequilla | marinara de la casa | queso",
+      "descriptionEn": "BUTTER | HOUSE MARINARA | CHEESE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "all-beef-hotdog-fries",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Hot dog de res con papas fritas",
+      "nameEn": "All-Beef Hotdog & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mac-cheese-bites-fries",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Bocados de macarrones con queso fritos con papas fritas",
+      "nameEn": "Fried Mac & Cheese Bites & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-fries",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Queso a la plancha y papas fritas",
+      "nameEn": "Grilled Cheese & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla-fries",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Quesadilla de queso con papas fritas",
+      "nameEn": "Cheese Quesadilla & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-pizza",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Pizza de queso",
+      "nameEn": "Cheese Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "popcorn-shrimp-fries",
+      "categoryId": "kids-12-under-fly-favs",
+      "nameEs": "Camarones popcorn con papas fritas",
+      "nameEn": "Popcorn Shrimp & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spongebob-shake",
+      "categoryId": "kids-12-under-shake-it",
+      "nameEs": "Malteada Bob Esponja",
+      "nameEn": "Spongebob Shake",
+      "descriptionEs": "Helado de vainilla, puré de plátano, OREO triturada, cobertura batida",
+      "descriptionEn": "VANILLA ICE CREAM, BANANA PURÉE, CRUSHED OREO, WHIPPED TOPPING",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-hand-spun",
+      "categoryId": "kids-12-under-shake-it",
+      "nameEs": "Clásica batida a mano",
+      "nameEn": "Classic Hand-Spun",
+      "descriptionEs": "OREO® | SNICKERS® | REESE’S® PB CUPS | plátano | chocolate | vainilla",
+      "descriptionEn": "OREO® | SNICKERS® | REESE’S® PB CUPS | BANANA | CHOCOLATE | VANILLA",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "root-beer-float-kids",
+      "categoryId": "kids-12-under-shake-it",
+      "nameEs": "Root beer float (niños)",
+      "nameEn": "Root Beer Float (Kids)",
+      "descriptionEs": "Root beer float MUG, helado de vainilla",
+      "descriptionEn": "MUG ROOT BEER FLOAT, VANILLA ICE CREAM",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scoop-of-dirt-kids",
+      "categoryId": "kids-12-under-shake-it",
+      "nameEs": "Una bola de tierra (niños)",
+      "nameEn": "Scoop of Dirt (Kids)",
+      "descriptionEs": "Pudín de chocolate, crumble de OREO®, crema batida, gomitas de gusano",
+      "descriptionEn": "CHOCOLATE PUDDING, OREO® CRUMBLE, WHIPPED CREAM, GUMMY WORMS",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbie-s-dreamhouse",
+      "categoryId": "electric-martinis",
+      "nameEs": "Barbie's Dreamhouse",
+      "nameEn": "Barbie's Dreamhouse",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, licor de granada PAMA, champaña, sour de limón de la casa, puré de fresa, borde de Pop Rocks",
+      "descriptionEn": "MM® NATURALLY INFUSED RASPBERRY DEEP EDDY VODKA, PAMA POMAGRANATE LIQUEUR, CHAMPAGNE, HOUSE LEMON SOUR, STRAWBERRY PUREE, POP ROCKS RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flirtini",
+      "categoryId": "electric-martinis",
+      "nameEs": "Flirtini",
+      "nameEn": "Flirtini",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, champaña, crème de violette, piña, arándano",
+      "descriptionEn": "MM® NATURALLY INFUSED RASPBERRY DEEP EDDY VODKA, CHAMPAGNE, CREME DE VIOLETTE, PINEAPPLE, CRANBERRY",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "berry-cosmo",
+      "categoryId": "electric-martinis",
+      "nameEs": "Cosmo de frutos rojos",
+      "nameEn": "Berry Cosmo",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, vodka de huckleberry 44° North, jugo de arándano, sour de limón de la casa, agua mineral",
+      "descriptionEn": "MM® NATURALLY INFUSED RASPBERRY DEEP EDDY VODKA, 44° NORTH HUCKLEBERRY VODKA, CRANBERRY JUICE, HOUSE LEMON SOUR, CLUB SODA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-lavender",
+      "categoryId": "electric-martinis",
+      "nameEs": "Lavanda azul",
+      "nameEn": "Blue Lavender",
+      "descriptionEs": "Vodka de mora azul Litchfield, licor de lavanda Wild Moon, sour de lima de la casa",
+      "descriptionEn": "LITCHFIELD BLUEBERRY VODKA, WILDMOON LAVENDER, HOUSE LIME SOUR",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry-e-tini",
+      "categoryId": "electric-martinis",
+      "nameEs": "E-Tini de frambuesa",
+      "nameEn": "Raspberry E-Tini",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, champaña, puré de frambuesa, borde azucarado",
+      "descriptionEn": "MM® NATURUALLY INFUSED RASPBERRY DEEP EDDY VODKA, CHAMPAGNE, RASPBERRY PUREE, SUGARED RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach-crush",
+      "categoryId": "electric-martinis",
+      "nameEs": "Peach Crush",
+      "nameEn": "Peach Crush",
+      "descriptionEs": "Vodka de durazno infusionado, puré de mango, agua mineral, sour de limón de la casa",
+      "descriptionEn": "INFUSE PEACH VODKA, MANGO PUREE, CLUB SODA, HOUSE LEMON SOUR",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-vojito",
+      "categoryId": "artisan-cocktails",
+      "nameEs": "Vojito de mora azul",
+      "nameEn": "Blueberry Vojito",
+      "descriptionEs": "Vodka de mora azul Litchfield, agua mineral, sour de lima de la casa, menta, lima",
+      "descriptionEn": "LITCHFIELD BLUEBERRY VODKA, CLUB SODA, HOUSE LIME SOUR, MINT, LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "painkiller",
+      "categoryId": "artisan-cocktails",
+      "nameEs": "Painkiller",
+      "nameEn": "Painkiller",
+      "descriptionEs": "Ron Bully Boy, jugo de piña, jugo de naranja, crema de coco, borde de coco",
+      "descriptionEn": "BULLY BOY RUM, PINEAPPLE JUICE, ORANGE JUICE, CREAM OF COCONUT, COCONUT RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "huckleberry-lemonade",
+      "categoryId": "artisan-cocktails",
+      "nameEs": "Limonada de huckleberry",
+      "nameEn": "Huckleberry Lemonade",
+      "descriptionEs": "Vodka de huckleberry 44° North, licor de lavanda Wild Moon, sour de limón de la casa, agua mineral",
+      "descriptionEn": "44° NORTH HUCKLEBERRY VODKA, WILD MOON LAVENDER, HOUSE LEMON SOUR, CLUB SODA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-basil",
+      "categoryId": "artisan-martinis",
+      "nameEs": "Pepino y albahaca",
+      "nameEn": "Cucumber Basil",
+      "descriptionEs": "Vodka orgánico de pepino Crop, licor de pepino Wild Moon, albahaca fresca, sour de lima de la casa, agua mineral",
+      "descriptionEn": "CROP ORGANIC CUCUMBER VODKA, WILD MOON CUCUMBER, FRESH BASIL, HOUSE LIME SOUR, CLUB SODA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-cosmo",
+      "categoryId": "artisan-martinis",
+      "nameEs": "Cosmo mexicano",
+      "nameEn": "Mexican Cosmo",
+      "descriptionEs": "Tequila Avión Silver, sour de lima de la casa, jugo de arándano",
+      "descriptionEn": "AVION SILV ER TEQUILA, HOUSE LIME SOUR, CRANBERRY JUICE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patron-island-punch",
+      "categoryId": "artisan-martinis",
+      "nameEs": "Patron Island Punch",
+      "nameEn": "Patron Island Punch",
+      "descriptionEs": "Tequila Patrón Silver, Malibu, sour de lima de la casa, jugo de piña y arándano",
+      "descriptionEn": "PATRON SILVER TEQUILA, MALIBU, HOUSE LIME SOUR, PINEAPPLE AND CRANBERRY JUICE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "honey-lavender-spritzer",
+      "categoryId": "artisan-martinis",
+      "nameEs": "Spritzer de miel y lavanda",
+      "nameEn": "Honey Lavender Spritzer",
+      "descriptionEs": "Vodka Rime, licor de lavanda Wild Moon, miel, prosecco",
+      "descriptionEn": "RIME VODKA, WILD MOON LAVENDER LIQUEUR, HONEY, PROSECCO",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aperol-spritz",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Aperol spritz",
+      "nameEn": "Aperol Spritz",
+      "descriptionEs": "Ginebra Farmer's Botanical, licor de lavanda Wild Moon, miel, sour de limón de la casa. Servido sin hielo",
+      "descriptionEn": "FARMER'S BOTANICAL GIN, WILD MOON LAVENDER, HONEY, HOUSE LEMON SOUR. SERVED UP",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bee-s-knees",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Bee's Knees",
+      "nameEn": "Bee's Knees",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mine-hill-manhattan",
+      "categoryId": "classic-cocktails",
+      "nameEs": "Mine Hill Manhattan",
+      "nameEn": "Mine Hill Manhattan",
+      "descriptionEs": "Bourbon Mine Hill, amaro Mine Hill, cereza, amargo de Angostura. Servido sin hielo",
+      "descriptionEn": "MINE HILL BOURBON, MINE HILL AMARO, CHERRY, ANGOSTURA BITTERS. SERVED UP",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "slim-mojito",
+      "categoryId": "skinny-cocktails",
+      "nameEs": "Mojito ligero",
+      "nameEn": "Slim Mojito",
+      "descriptionEs": "Ron Blue Chair Bay, menta fresca, agua mineral, sour de lima de la casa, lima",
+      "descriptionEn": "BLUE CHAIR BAY RUM, FRESH MINT, CLUB SODA, HOUSE LIME SOUR, LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "john-daly",
+      "categoryId": "skinny-cocktails",
+      "nameEs": "John Daly",
+      "nameEn": "John Daly",
+      "descriptionEs": "Vodka de limón y té dulce Deep Eddy, néctar de agave, jugo de limón fresco, agua",
+      "descriptionEn": "DEEP EDDY LEMON AND SWEET TEA VODKA, AGAVE NECTAR, FRESH LEMON JUICE, WATER",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-basil-gimlet",
+      "categoryId": "skinny-cocktails",
+      "nameEs": "Gimlet de limón y albahaca",
+      "nameEn": "Lemon Basil Gimlet",
+      "descriptionEs": "Vodka de limón Deep Eddy, sour de limón de la casa, albahaca",
+      "descriptionEn": "DEEP EDDY LEMON VODKA, HOUSE LEMON SOUR, BASIL",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-margarita",
+      "categoryId": "skinny-cocktails",
+      "nameEs": "Margarita clásica",
+      "nameEn": "Classic Margarita",
+      "descriptionEs": "Tequila Espolón Reposado, jugo de naranja, sour de limón y lima de la casa, lima",
+      "descriptionEn": "ESPOLON REPOSADO TEQUILA, ORANGE JUICE, HOUSE LEMON LIME SOUR, LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southern-belle",
+      "categoryId": "skinny-cocktails",
+      "nameEs": "Southern Belle",
+      "nameEn": "Southern Belle",
+      "descriptionEs": "Vodka de durazno Deep Eddy, bourbon Evan Williams 1783, néctar de agave, sour de limón de la casa, agua mineral",
+      "descriptionEn": "DEEP EDDY PEACH VODKA, EVAN WILLIANS 1783 BOURBON, AGAVE NECTAR, HOUSE LEMON SOUR, CLUB SODA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry",
+      "categoryId": "mules",
+      "nameEs": "Frambuesa",
+      "nameEn": "Raspberry",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, jugo de lima, ginger beer Goslings, lima",
+      "descriptionEn": "MM® NATURALLY INFUSED RASPBERRY DEEP EDDY VODKA, LIME JUICE, GOSLINGS GINGER BEER, LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moscow-mule",
+      "categoryId": "mules",
+      "nameEs": "Moscow mule",
+      "nameEn": "Moscow Mule",
+      "descriptionEs": "Vodka Deep Eddy, ginger beer, jugo de lima fresco, lima fresca",
+      "descriptionEn": "DEEP EDDY VODKA, GINGER BEER, FRESH LIME JUICE, FRESH LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-basil",
+      "categoryId": "mules",
+      "nameEs": "Fresa y albahaca",
+      "nameEn": "Strawberry Basil",
+      "descriptionEs": "Ron Blue Chair, ginger beer, jugo de lima fresco y albahaca machacada, puré de fresa, lima",
+      "descriptionEn": "BLUE CHAIR RUM, GINGER BEER, FRESH LIME JUICE AND MUDDLED BASIL, STRAWBERRY PUREE, LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "peach-mint-whiskey",
+      "categoryId": "mules",
+      "nameEs": "Whiskey de durazno y menta",
+      "nameEn": "Peach Mint Whiskey",
+      "descriptionEs": "Whiskey de durazno Ole Smoky, ginger beer, menta fresca y jugo de lima, néctar de agave, lima",
+      "descriptionEn": "OLE SMOKY PEACH WHISKEY, GINGER BEER, FRESH MINT AND LIME JUICE, AGAVE NECTAR LIME",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibiscus",
+      "categoryId": "margaritas",
+      "nameEs": "Jamaica",
+      "nameEn": "Hibiscus",
+      "descriptionEs": "Tequila Espolón Reposado, sour de lima de la casa, jarabe de jamaica, borde de azúcar",
+      "descriptionEn": "ESPOLON REPOSADO TEQUILA, HOUSE LIME SOUR, HIBISCUS SYRUP, SUGAR RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blood-orange",
+      "categoryId": "margaritas",
+      "nameEs": "Naranja sanguina",
+      "nameEn": "Blood Orange",
+      "descriptionEs": "Tequila Espolón Reposado, sour de lima de la casa, puré de naranja sanguina, borde de Tajín, naranja sanguina deshidratada",
+      "descriptionEn": "ESPOLON REPOSADO TEQUILA, HOUSE LIME SOUR, BLOOD ORANGE PUREE, TAJIN RIM, DRIED BLOOD ORANGE GARNISH",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-mango",
+      "categoryId": "margaritas",
+      "nameEs": "Mango picante",
+      "nameEn": "Spicy Mango",
+      "descriptionEs": "Tequila de jalapeño Tanteo, puré de mango, jugo de naranja, sour de lima de la casa, borde de Tajín",
+      "descriptionEn": "TANTEO JALAPENO TEQUILA, MANGO PUREE, ORANGE JUICE, HOUSE LIME SOUR, TAJIN RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut",
+      "categoryId": "margaritas",
+      "nameEs": "Coco",
+      "nameEn": "Coconut",
+      "descriptionEs": "Tequila 1800 Silver Coconut, crema de coco, sour de lima de la casa, jugo de piña, borde de coco",
+      "descriptionEn": "1800 SILVER COCONUT TEQUILA, CREAM OF COCONUT, HOUSE LIME SOUR, PINEAPPLE JUICE, COCONUT RIM",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "red",
+      "categoryId": "sangria",
+      "nameEs": "Vinos tintos",
+      "nameEn": "Red",
+      "descriptionEs": "Mezcla de vino tinto, ron oscuro, licor de granada PAMA, curazao seco Pierre Ferrand, puré de frambuesa, jugo de limón fresco, agua mineral",
+      "descriptionEn": "RED-BLEND, DARK RUM, PAMA POMEGRANATE LIQUEUR, PIERRE FERRAND DRY CURACAO, RASPBERRY PUREE, FRESH LEMON JUICE, CLUB SODA",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white",
+      "categoryId": "sangria",
+      "nameEs": "Vinos blancos",
+      "nameEn": "White",
+      "descriptionEs": "Sauvignon blanc, vodka de huckleberry 44° N, curazao seco Pierre Ferrand, néctar de agave, jugo de limón fresco, jugo de piña, puré, champaña",
+      "descriptionEn": "SAUVIGNON BLAC, 44° N HUCKLEBERRY VODKA, PIERRE FERRAND DRY CURACAO, AGAVE NECTAR, FRESH LEMON JUICE, PINEAPPLE JUICE, ANGRO PUREE, CHAMPAGNE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sparkling",
+      "categoryId": "sangria",
+      "nameEs": "Espumosos",
+      "nameEn": "Sparkling",
+      "descriptionEs": "Champaña, brandy, licor de durazno, flor de saúco, sour de limón de la casa, jugo de naranja",
+      "descriptionEn": "CHAMPAGNE, BRANDY, PEACH SCHNAPPS, ELDERFLOWER, HOUSE-MADE LEMON SOUR, ORANGE JUICE",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose",
+      "categoryId": "sangria",
+      "nameEs": "Rosado",
+      "nameEn": "Rose",
+      "descriptionEs": "vodka de frambuesa Deep Eddy infusionado naturalmente MM®, rosado Angeline, puré de fresa, néctar de agave, Truly Wild Berry, jugo de lima fresco y frutos rojos",
+      "descriptionEn": "MM® NATURALLY INFUSED RASPBERRY DEEP EDDY VODKA, ANGELINE ROSE, STRAWBERRY PUREE, AGAVE NECTAR, TRULY WILD BERRY, FRESH LIME JUICE AND BERRIES",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coors-light",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Coors Light",
+      "nameEn": "Coors Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $5.00 / 23oz $7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bud-light",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Bud Light",
+      "nameEn": "Bud Light",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $5.00 / 23oz $7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelob-ultra",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Michelob Ultra",
+      "nameEn": "Michelob Ultra",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $5.00 / 23oz $7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yuengling",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Yuengling",
+      "nameEn": "Yuengling",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "modelo",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Modelo",
+      "nameEn": "Modelo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.50 / 23oz $8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stella-artois",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Stella Artois",
+      "nameEn": "Stella Artois",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "von-trapp-vienna-lager",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Von Trapp Vienna Lager",
+      "nameEn": "Von Trapp Vienna Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.25 / 23oz $9.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corona",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Corona",
+      "nameEn": "Corona",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "narragansett-lager",
+      "categoryId": "beer-pilsner-lager",
+      "nameEs": "Narragansett Lager",
+      "nameEn": "Narragansett Lager",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shock-top",
+      "categoryId": "beer-white-wheat-belgian",
+      "nameEs": "Shock Top",
+      "nameEn": "Shock Top",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "allagash-white",
+      "categoryId": "beer-white-wheat-belgian",
+      "nameEs": "Allagash White",
+      "nameEn": "Allagash White",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "thomas-hooker-blonde",
+      "categoryId": "beer-white-wheat-belgian",
+      "nameEs": "Thomas Hooker Blonde",
+      "nameEn": "Thomas Hooker Blonde",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "victory-golden-monkey",
+      "categoryId": "beer-white-wheat-belgian",
+      "nameEs": "Victory Golden Monkey",
+      "nameEn": "Victory Golden Monkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "founders-all-day",
+      "categoryId": "beer-ipa",
+      "nameEs": "Founders All Day",
+      "nameEn": "Founders All Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-sea-hag",
+      "categoryId": "beer-ipa",
+      "nameEs": "New England Sea Hag",
+      "nameEn": "New England Sea Hag",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counter-weight-headway",
+      "categoryId": "beer-ipa",
+      "nameEs": "Counter Weight Headway",
+      "nameEn": "Counter Weight Headway",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-road-2-ruin",
+      "categoryId": "beer-ipa",
+      "nameEs": "Two Roads Road 2 Ruin",
+      "nameEn": "Two Roads Road 2 Ruin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fiddlehead-ipa",
+      "categoryId": "beer-ipa",
+      "nameEs": "Fiddlehead IPA",
+      "nameEn": "Fiddlehead IPA",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sloop-juice-bomb-13oz",
+      "categoryId": "beer-ipa",
+      "nameEs": "Sloop Juice Bomb 13oz",
+      "nameEn": "Sloop Juice Bomb 13oz",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $8.00 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "industrial-arts-wrench-13oz",
+      "categoryId": "beer-ipa",
+      "nameEs": "Industrial Arts Wrench 13oz",
+      "nameEn": "Industrial Arts Wrench 13oz",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $8.50 / 23oz $10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sam-adams-wicked-hazy",
+      "categoryId": "beer-ipa",
+      "nameEs": "Sam Adams Wicked Hazy",
+      "nameEn": "Sam Adams Wicked Hazy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-belgium-fat-tire",
+      "categoryId": "beer-pale-ale",
+      "nameEs": "New Belgium Fat Tire",
+      "nameEn": "New Belgium Fat Tire",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sierra-nevada-pale",
+      "categoryId": "beer-pale-ale",
+      "nameEs": "Sierra Nevada Pale",
+      "nameEn": "Sierra Nevada Pale",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "victory-sour-monkey",
+      "categoryId": "beer-pale-ale",
+      "nameEs": "Victory Sour Monkey",
+      "nameEn": "Victory Sour Monkey",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "founders-dirty-bastard-bottle",
+      "categoryId": "beer-pale-ale",
+      "nameEs": "Founders Dirty Bastard (Bottle)",
+      "nameEn": "Founders Dirty Bastard (Bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guinness-stout",
+      "categoryId": "beer-porter-stout-brown",
+      "nameEs": "Guinness Stout",
+      "nameEn": "Guinness Stout",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.50 / 23oz $9.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "charter-oak-brown",
+      "categoryId": "beer-porter-stout-brown",
+      "nameEs": "Charter Oak Brown",
+      "nameEn": "Charter Oak Brown",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "back-east-porter",
+      "categoryId": "beer-porter-stout-brown",
+      "nameEs": "Back East Porter",
+      "nameEn": "Back East Porter",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "founders-breakfast-stout-bottle",
+      "categoryId": "beer-porter-stout-brown",
+      "nameEs": "Founders Breakfast Stout (Bottle)",
+      "nameEn": "Founders Breakfast Stout (Bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "downeast-cider",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "Downeast Cider",
+      "nameEn": "Downeast Cider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sam-adams-cherry-wheat-bottle",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "Sam Adams Cherry Wheat (Bottle)",
+      "nameEn": "Sam Adams Cherry Wheat (Bottle)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $7.00 / 23oz $9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twisted-tea-can",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "Twisted Tea (lata)",
+      "nameEn": "Twisted Tea (Can)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truly-wildberry-spiked-seltzer-draft",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "Truly Wildberry Spiked Seltzer (barril)",
+      "nameEn": "Truly Wildberry Spiked Seltzer (Draft)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $6.00 / 23oz $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "truly-tequila-soda-can",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "Truly Tequila Soda (lata)",
+      "nameEn": "Truly Tequila Soda (Can)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $8.00 / 23oz $10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-noon-can",
+      "categoryId": "beer-cider-seltzer-more",
+      "nameEs": "High Noon (lata)",
+      "nameEn": "High Noon (Can)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "16oz $8.00 / 23oz $10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macallan-limited-15-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Macallan Limited - 15 Yrs",
+      "nameEn": "Macallan Limited - 15 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $36.00 / Up 2.5oz $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "glenlivet-limited-18-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Glenlivet Limited - 18 Yrs",
+      "nameEn": "Glenlivet Limited - 18 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $35.00 / Up 2.5oz $56.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yamazaki-limited-12-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Yamazaki Limited - 12 Yrs",
+      "nameEn": "Yamazaki Limited - 12 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $33.00 / Up 2.5oz $53.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lagavulin-16-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Lagavulin - 16 años",
+      "nameEn": "Lagavulin - 16 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $20.00 / Up 2.5oz $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macallan-12-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Macallan - 12 años",
+      "nameEn": "Macallan - 12 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $20.00 / Up 2.5oz $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hibiki-harmony",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Hibiki Harmony",
+      "nameEn": "Hibiki Harmony",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $20.00 / Up 2.5oz $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oban-14-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Oban - 14 años",
+      "nameEn": "Oban - 14 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $19.00 / Up 2.5oz $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dalwhinnie-15-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Dalwhinnie - 15 años",
+      "nameEn": "Dalwhinnie - 15 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $18.00 / Up 2.5oz $28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "balvenie-doublewood-12-yrs",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Balvenie Doublewood - 12 Yrs",
+      "nameEn": "Balvenie Doublewood - 12 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $16.00 / Up 2.5oz $28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "talisker-storm",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Talisker Storm",
+      "nameEn": "Talisker Storm",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $16.00 / Up 2.5oz $25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "auchentoshan-american-oak",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Auchentoshan American Oak",
+      "nameEn": "Auchentoshan American Oak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $14.00 / Up 2.5oz $20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "monkey-shoulder",
+      "categoryId": "whiskey-single-malt-scotch",
+      "nameEs": "Monkey Shoulder",
+      "nameEn": "Monkey Shoulder",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-west-campfire",
+      "categoryId": "whiskey-american",
+      "nameEs": "High West Campfire",
+      "nameEn": "High West Campfire",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $15.00 / Up 2.5oz $23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michters-american",
+      "categoryId": "whiskey-american",
+      "nameEs": "Michters American",
+      "nameEn": "Michters American",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-west-american-prairie",
+      "categoryId": "whiskey-american",
+      "nameEs": "High West American Prairie",
+      "nameEn": "High West American Prairie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "joseph-magnus",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Joseph Magnus",
+      "nameEn": "Joseph Magnus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $23.00 / Up 2.5oz $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rabbit-hole-dareinger",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Rabbit Hole Dareinger",
+      "nameEn": "Rabbit Hole Dareinger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $19.00 / Up 2.5oz $29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "doc-swinson-alter-ego",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Doc Swinson Alter Ego",
+      "nameEn": "Doc Swinson Alter Ego",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $17.00 / Up 2.5oz $27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-forester-1920",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Old Forester 1920",
+      "nameEn": "Old Forester 1920",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $17.00 / Up 2.5oz $23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blantons",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Blantons",
+      "nameEn": "Blantons",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $14.00 / Up 2.5oz $20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "henry-mckenna-bib-10-yrs",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Henry Mckenna BIB - 10 Yrs",
+      "nameEn": "Henry Mckenna BIB - 10 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $14.00 / Up 2.5oz $20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "doc-swinson-blenders-cut-5-yrs",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Doc Swinson Blender’s Cut - 5 Yrs",
+      "nameEn": "Doc Swinson Blender’s Cut - 5 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $13.00 / Up 2.5oz $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-forester-1870",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Old Forester 1870",
+      "nameEn": "Old Forester 1870",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bulleit-10-yrs",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Bulleit - 10 años",
+      "nameEn": "Bulleit - 10 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-bright-lights-ny",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Hudson Bright Lights NY",
+      "nameEn": "Hudson Bright Lights NY",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jeffersons-bourbon",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Jefferson’s Bourbon",
+      "nameEn": "Jefferson’s Bourbon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elijah-craig",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Elijah Craig",
+      "nameEn": "Elijah Craig",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "makers-mark",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Maker’s Mark",
+      "nameEn": "Maker’s Mark",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bulleit",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Bulleit",
+      "nameEn": "Bulleit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "george-dickel",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "George Dickel",
+      "nameEn": "George Dickel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eagle-rare-10-yrs",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Eagle Rare - 10 años",
+      "nameEn": "Eagle Rare - 10 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-forester-kentucky",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Old Forester Kentucky",
+      "nameEn": "Old Forester Kentucky",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "four-roses-yellow",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Four Roses Yellow",
+      "nameEn": "Four Roses Yellow",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $8.00 / Up 2.5oz $12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "redemption",
+      "categoryId": "whiskey-straight-bourbon",
+      "nameEs": "Redemption",
+      "nameEn": "Redemption",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $8.00 / Up 2.5oz $12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whistlepig-10-yrs-vt",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Whistlepig - 10 Yrs VT",
+      "nameEn": "Whistlepig - 10 Yrs VT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $19.00 / Up 2.5oz $29.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michters-barrel-strength",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Michters Barrel Strength",
+      "nameEn": "Michters Barrel Strength",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mine-hill-ct",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Mine Hill CT",
+      "nameEn": "Mine Hill CT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "knob-creek",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Knob Creek",
+      "nameEn": "Knob Creek",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-west-rendevous",
+      "categoryId": "whiskey-rye",
+      "nameEs": "High West Rendevous",
+      "nameEn": "High West Rendevous",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hudson-do-the-thing-ny",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Hudson Do the Thing NY",
+      "nameEn": "Hudson Do the Thing NY",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-west-double",
+      "categoryId": "whiskey-rye",
+      "nameEs": "High West Double",
+      "nameEn": "High West Double",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rittenhouse-bib",
+      "categoryId": "whiskey-rye",
+      "nameEs": "Rittenhouse BIB",
+      "nameEn": "Rittenhouse BIB",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garrisons-brothers",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Garrison’s Brothers",
+      "nameEn": "Garrison’s Brothers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $20.00 / Up 2.5oz $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jeffersons-ocean",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Jefferson’s Ocean",
+      "nameEn": "Jefferson’s Ocean",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $20.00 / Up 2.5oz $32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "widow-jane-10-yrs-ny",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Widow Jane - 10 Yrs NY",
+      "nameEn": "Widow Jane - 10 Yrs NY",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $17.00 / Up 2.5oz $27.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rabbit-hole-cavehill",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Rabbit Hole Cavehill",
+      "nameEn": "Rabbit Hole Cavehill",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $16.00 / Up 2.5oz $25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jeffersons-reserve",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Jefferson’s Reserve",
+      "nameEn": "Jefferson’s Reserve",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $16.00 / Up 2.5oz $25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "litchfield-double-5-yrs-ct",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Litchfield Double - 5 Yrs CT",
+      "nameEn": "Litchfield Double - 5 Yrs CT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $15.00 / Up 2.5oz $23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bakers-7-yrs",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Baker’s - 7 años",
+      "nameEn": "Baker’s - 7 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $15.00 / Up 2.5oz $23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basil-hayden",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Basil Hayden",
+      "nameEn": "Basil Hayden",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $14.00 / Up 2.5oz $20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angels-envy",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Angel’s Envy",
+      "nameEn": "Angel’s Envy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $13.00 / Up 2.5oz $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michters",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Michter’s",
+      "nameEn": "Michter’s",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $13.00 / Up 2.5oz $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "litchfield-ct",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Litchfield CT",
+      "nameEn": "Litchfield CT",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whistlepig-piggyback-6-yrs",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Whistlepig Piggyback - 6 Yrs",
+      "nameEn": "Whistlepig Piggyback - 6 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "e-h-taylor",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "E.H. Taylor",
+      "nameEn": "E.H. Taylor",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "woodford-reserve",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Woodford Reserve",
+      "nameEn": "Woodford Reserve",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bib-tucker-6-yrs",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "BIB & Tucker - 6 Yrs",
+      "nameEn": "BIB & Tucker - 6 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mine-hill-ct-small-batch",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Mine Hill CT (Small Batch)",
+      "nameEn": "Mine Hill CT (Small Batch)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "knob-creek-9-yrs",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Knob Creek - 9 años",
+      "nameEn": "Knob Creek - 9 Yrs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "four-roses-single",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Four Roses Single",
+      "nameEn": "Four Roses Single",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $11.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "amador-double-barrel",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Amador Double Barrel",
+      "nameEn": "Amador Double Barrel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "four-roses-small-batch",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Four Roses Small Batch",
+      "nameEn": "Four Roses Small Batch",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1792-ridgemont-reserve",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "1792 Ridgemont Reserve",
+      "nameEn": "1792 Ridgemont Reserve",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "larceny",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Larceny",
+      "nameEn": "Larceny",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-trace",
+      "categoryId": "whiskey-small-batch",
+      "nameEs": "Buffalo Trace",
+      "nameEn": "Buffalo Trace",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-julio-1942",
+      "categoryId": "tequila",
+      "nameEs": "Don Julio 1942",
+      "nameEn": "Don Julio 1942",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $41.00 / Up 2.5oz $67.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clase-azul-reposado",
+      "categoryId": "tequila",
+      "nameEs": "Clase Azul Reposado",
+      "nameEn": "Clase Azul Reposado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $34.00 / Up 2.5oz $55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cincoro-anejo",
+      "categoryId": "tequila",
+      "nameEs": "Cincoro Anejo",
+      "nameEn": "Cincoro Anejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $29.00 / Up 2.5oz $47.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clase-azul",
+      "categoryId": "tequila",
+      "nameEs": "Clase Azul",
+      "nameEn": "Clase Azul",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $28.00 / Up 2.5oz $45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cincoro-reposado",
+      "categoryId": "tequila",
+      "nameEs": "Cincoro Reposado",
+      "nameEn": "Cincoro Reposado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $21.00 / Up 2.5oz $33.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "123-organic-anejo",
+      "categoryId": "tequila",
+      "nameEs": "123 Organic Anejo",
+      "nameEn": "123 Organic Anejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $18.00 / Up 2.5oz $28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cincoro-blanco",
+      "categoryId": "tequila",
+      "nameEs": "Cincoro Blanco",
+      "nameEn": "Cincoro Blanco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $18.00 / Up 2.5oz $28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "123-organic-reposado",
+      "categoryId": "tequila",
+      "nameEs": "123 Organic Reposado",
+      "nameEn": "123 Organic Reposado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $15.00 / Up 2.5oz $23.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casamigos-reposado",
+      "categoryId": "tequila",
+      "nameEs": "Casamigos Reposado",
+      "nameEn": "Casamigos Reposado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $14.00 / Up 2.5oz $20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "123-organic-blanco",
+      "categoryId": "tequila",
+      "nameEs": "123 Organic Blanco",
+      "nameEn": "123 Organic Blanco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $13.00 / Up 2.5oz $19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "don-julio-blanco",
+      "categoryId": "tequila",
+      "nameEs": "Don Julio Blanco",
+      "nameEn": "Don Julio Blanco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avion-silver",
+      "categoryId": "tequila",
+      "nameEs": "Avion Silver",
+      "nameEn": "Avion Silver",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $12.00 / Up 2.5oz $18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teremana-reposado",
+      "categoryId": "tequila",
+      "nameEs": "Teremana Reposado",
+      "nameEn": "Teremana Reposado",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yaye-jalapeno",
+      "categoryId": "tequila",
+      "nameEs": "Yaye Jalapeno",
+      "nameEn": "Yaye Jalapeno",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yaye-coconu",
+      "categoryId": "tequila",
+      "nameEs": "Yaye Coconu",
+      "nameEn": "Yaye Coconu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $10.00 / Up 2.5oz $15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "teremana-blanco",
+      "categoryId": "tequila",
+      "nameEs": "Teremana Blanco",
+      "nameEn": "Teremana Blanco",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Standard 1.5oz $9.00 / Up 2.5oz $13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michters-american-bourbon-rye",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "Michter’s American / Bourbon / Rye",
+      "nameEn": "Michter’s American / Bourbon / Rye",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "high-west-campfire-rendevous-american",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "High West / Campfire / Rendevous / American",
+      "nameEn": "High West / Campfire / Rendevous / American",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "old-forester-kentucky-1870-1920",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "Old Forester Kentucky / 1870 / 1920",
+      "nameEn": "Old Forester Kentucky / 1870 / 1920",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "100-proof-rye-whistlepig-knob-creek-rittenhouse",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "100 Proof Rye Whistlepig / Knob Creek / Rittenhouse",
+      "nameEn": "100 Proof Rye Whistlepig / Knob Creek / Rittenhouse",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "highland-scotch-dalwhinnie-talisker-oban",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "Highland Scotch Dalwhinnie / Talisker / Oban",
+      "nameEn": "Highland Scotch Dalwhinnie / Talisker / Oban",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cincoro-tequila-blanco-reposado-anejo",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "Cincoro Tequila Blanco / Reposado / Anejo",
+      "nameEn": "Cincoro Tequila Blanco / Reposado / Anejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$46.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "123-tequila-blanco-reposado-anejo",
+      "categoryId": "whiskey-tequila-flights-1oz-pour-each",
+      "nameEs": "123 Tequila Blanco / Reposado / Anejo",
+      "nameEn": "123 Tequila Blanco / Reposado / Anejo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prima-perla-prosecco-italy",
+      "categoryId": "champagne-sparkling",
+      "nameEs": "Prima Perla Prosecco Italia",
+      "nameEn": "Prima Perla Prosecco Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $9.00 / Bottle $34.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wycliff-brut-champagne-california",
+      "categoryId": "champagne-sparkling",
+      "nameEs": "Wycliff Brut Champagne California",
+      "nameEn": "Wycliff Brut Champagne California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moet-chandon-champagne-france",
+      "categoryId": "champagne-sparkling",
+      "nameEs": "Moet & Chandon Champagne Francia",
+      "nameEn": "Moet & Chandon Champagne France",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Glass $22.00 / Bottle $90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jacobs-creek-moscato-australia",
+      "categoryId": "white-wine",
+      "nameEs": "Jacob’s Creek Moscato Australia",
+      "nameEn": "Jacob’s Creek Moscato Australia",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "estrella-white-zinfandel-california",
+      "categoryId": "white-wine",
+      "nameEs": "Estrella White Zinfandel California",
+      "nameEn": "Estrella White Zinfandel California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "relax-riesling-germany",
+      "categoryId": "white-wine",
+      "nameEs": "Relax Riesling Alemania",
+      "nameEn": "Relax Riesling Germany",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angeline-rose-california",
+      "categoryId": "white-wine",
+      "nameEs": "Angeline Rose California",
+      "nameEn": "Angeline Rose California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jean-luc-colombo-rose-france",
+      "categoryId": "white-wine",
+      "nameEs": "Jean-Luc Colombo Rose Francia",
+      "nameEn": "Jean-Luc Colombo Rose France",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bosco-pinot-grigio-italy",
+      "categoryId": "white-wine",
+      "nameEs": "Bosco Pinot Grigio Italia",
+      "nameEn": "Bosco Pinot Grigio Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "luna-de-luna-pinot-grigio-italy",
+      "categoryId": "white-wine",
+      "nameEs": "Luna de Luna Pinot Grigio Italy",
+      "nameEn": "Luna de Luna Pinot Grigio Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bortoluzzi-pinot-grigio-italy",
+      "categoryId": "white-wine",
+      "nameEs": "Bortoluzzi Pinot Grigio Italia",
+      "nameEn": "Bortoluzzi Pinot Grigio Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "proverb-sauvignon-blanc-california",
+      "categoryId": "white-wine",
+      "nameEs": "Proverb Sauvignon Blanc California",
+      "nameEn": "Proverb Sauvignon Blanc California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kim-crawford-sauvignon-blanc-new-zealand",
+      "categoryId": "white-wine",
+      "nameEs": "Kim Crawford Sauvignon Blanc Nueva Zelanda",
+      "nameEn": "Kim Crawford Sauvignon Blanc New Zealand",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $11.00 / 9oz $16.50 / Bottle $42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "montpellier-chardonnay-france",
+      "categoryId": "white-wine",
+      "nameEs": "Montpellier Chardonnay Francia",
+      "nameEn": "Montpellier Chardonnay France",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kendall-jackson-chardonnay-california",
+      "categoryId": "white-wine",
+      "nameEs": "Kendall Jackson Chardonnay California",
+      "nameEn": "Kendall Jackson Chardonnay California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $11.00 / 9oz $15.75 / Bottle $42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "montpellier-pinot-noir-california",
+      "categoryId": "red-wine",
+      "nameEs": "Montpellier Pinot Noir California",
+      "nameEn": "Montpellier Pinot Noir California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "angeline-pinot-noir-california-tap",
+      "categoryId": "red-wine",
+      "nameEs": "Angeline Pinot Noir California (de barril)",
+      "nameEn": "Angeline Pinot Noir California Tap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "acrobat-pinot-noir-oregon",
+      "categoryId": "red-wine",
+      "nameEs": "Acrobat Pinot Noir Oregon",
+      "nameEn": "Acrobat Pinot Noir Oregon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $12.00 / 9oz $18.00 / Bottle $45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "14-hands-merlot-california-tap",
+      "categoryId": "red-wine",
+      "nameEs": "14 Hands Merlot California (de barril)",
+      "nameEn": "14 Hands Merlot California Tap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oberon-merlot-california",
+      "categoryId": "red-wine",
+      "nameEs": "Oberon Merlot California",
+      "nameEn": "Oberon Merlot California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $13.00 / 9oz $19.50 / Bottle $49.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santa-julia-malbec-argentina",
+      "categoryId": "red-wine",
+      "nameEs": "Santa Julia Malbec Argentina",
+      "nameEn": "Santa Julia Malbec Argentina",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "troublemaker-red-blend-california",
+      "categoryId": "red-wine",
+      "nameEs": "Troublemaker mezcla de tintos California",
+      "nameEn": "Troublemaker Red Blend California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bogle-phantom-red-blend-california",
+      "categoryId": "red-wine",
+      "nameEs": "Bogle Phantom mezcla de tintos California",
+      "nameEn": "Bogle Phantom Red Blend California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $12.00 / 9oz $18.00 / Bottle $54.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paraduxx-proprietary-blend-red-blend-california",
+      "categoryId": "red-wine",
+      "nameEs": "Paraduxx mezcla exclusiva mezcla de tintos California",
+      "nameEn": "Paraduxx Proprietary Blend Red Blend California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $13.00 / 9oz $19.50 / Bottle $54.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dark-horse-cabernet-sauvignon-california-tap",
+      "categoryId": "red-wine",
+      "nameEs": "Dark Horse Cabernet Sauvignon California (de barril)",
+      "nameEn": "Dark Horse Cabernet Sauvignon California Tap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $9.00 / 9oz $13.50 / Bottle $35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "martin-ray-cabernet-sauvignon-california-tap",
+      "categoryId": "red-wine",
+      "nameEs": "Martin Ray Cabernet Sauvignon California (de barril)",
+      "nameEn": "Martin Ray Cabernet Sauvignon California Tap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $13.00 / 9oz $19.50 / Bottle $50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bonanza-by-caymus-cabernet-sauvignon-california",
+      "categoryId": "red-wine",
+      "nameEs": "Bonanza By Caymus Cabernet Sauvignon California",
+      "nameEn": "Bonanza By Caymus Cabernet Sauvignon California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "daou-cabernet-sauvignon-california",
+      "categoryId": "red-wine",
+      "nameEs": "Daou Cabernet Sauvignon California",
+      "nameEn": "Daou Cabernet Sauvignon California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "justin-cabernet-sauvignon-california",
+      "categoryId": "red-wine",
+      "nameEs": "Justin Cabernet Sauvignon California",
+      "nameEn": "Justin Cabernet Sauvignon California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spellbound-petit-sirah-california",
+      "categoryId": "red-wine",
+      "nameEs": "Spellbound Petit Sirah California",
+      "nameEn": "Spellbound Petit Sirah California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "renieri-inverto-super-tuscan-italy",
+      "categoryId": "red-wine",
+      "nameEs": "Renieri Inverto Super Tuscan Italy",
+      "nameEn": "Renieri Inverto Super Tuscan Italy",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marques-de-riscal-reserva-rioja-spain",
+      "categoryId": "red-wine",
+      "nameEs": "Marques de Riscal Reserva Rioja Spain",
+      "nameEn": "Marques de Riscal Reserva Rioja Spain",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $15.00 / 9oz $22.50 / Bottle $48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-grigio-california",
+      "categoryId": "wine-fitvine",
+      "nameEs": "Pinot Grigio California",
+      "nameEn": "Pinot Grigio California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-california",
+      "categoryId": "wine-fitvine",
+      "nameEs": "Chardonnay California",
+      "nameEn": "Chardonnay California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-california",
+      "categoryId": "wine-fitvine",
+      "nameEs": "Cabernet Sauvignon California",
+      "nameEn": "Cabernet Sauvignon California",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6oz $10.00 / 9oz $15.00 / Bottle $39.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con una amplia variedad de platos preparados con ingredientes locales aptos para diversos requerimientos dietéticos. Pregunte a su mesero.",
-      "aEn": "Yes, we offer a wide variety of dishes made with local ingredients suitable for various dietary needs. Please ask your server."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o es por orden de llegada?",
-      "qEn": "Do you accept reservations or are you walk-in only?",
-      "aEs": "Aceptamos clientes sin reservación (walk-ins) y también puede reservar mesa llamando directamente al restaurante.",
-      "aEn": "We welcome walk-ins and you can also reserve a table by calling the restaurant directly."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos?",
-      "qEn": "Do you offer catering services for events?",
-      "aEs": "Sí, ofrecemos menús especiales de catering para todo tipo de eventos privados y reuniones. Consulte nuestra sección de catering en línea.",
-      "aEn": "Yes, we offer special catering menus for all types of private events and gatherings. Check our online catering section."
-    }
-  ]
+  "faqs": []
 }
