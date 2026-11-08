@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "mission-bbq",
     "name": "Mission BBQ",
-    "tagline": "Authentic American BBQ & Proudly Serving Those Who Serve / Auténtico BBQ Americano y Orgullosos de Servir a Quienes Sirven",
-    "address": "785 Queen Street, Southington, CT",
+    "tagline": "Barbecue restaurant in Southington | Restaurante de barbacoa en Southington",
+    "address": "785 Queen Street, Southington, CT 06489",
     "hours": {
-      "monday_friday": "11:00 AM - 9:00 PM",
-      "saturday": "11:00 AM - 9:00 PM",
-      "sunday": "11:30 AM - 8:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Catering"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,292 +25,792 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "meat-market",
+      "nameEs": "Mercado de carnes",
+      "nameEn": "Meat Market",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Carnes Ahumadas (Platos Principales)",
-      "nameEn": "Smoked Meats & Mains",
+      "id": "smokehouse-signatures",
+      "nameEs": "Especialidades del ahumadero",
+      "nameEn": "Smokehouse Signatures",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Sandwiches y Especialidades",
-      "nameEn": "Sandwiches & Specialties",
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "make-it-a-combo",
+      "nameEs": "Hágalo combo",
+      "nameEn": "Make it a Combo",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "drinks",
+      "nameEs": "Bebidas",
+      "nameEn": "Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kids-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kids Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pick-up-packs",
+      "nameEs": "Paquetes para recoger",
+      "nameEn": "Pick Up Packs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "meat-market-catering",
+      "nameEs": "Mercado de carnes (catering)",
+      "nameEn": "Meat Market (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "smokehouse-signatures-catering",
+      "nameEs": "Especialidades del ahumadero (catering)",
+      "nameEn": "Smokehouse Signatures (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides-catering",
+      "nameEs": "Guarniciones (catering)",
+      "nameEn": "Sides (Catering)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bakery",
+      "nameEs": "Panadería",
+      "nameEn": "Bakery",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "party-packs",
+      "nameEs": "Paquetes para fiesta",
+      "nameEn": "Party Packs",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "mission-bbq-01",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas Ahumadas Estilo Casero",
-      "nameEn": "Smoked Buffalo Wings",
-      "descriptionEs": "Alitas de pollo ahumadas lentamente a la perfección, servidas con salsa picante casera y aderezo de queso azul.",
-      "descriptionEn": "Slow-smoked chicken wings tossed in our signature tangy hot sauce, served with homemade blue cheese dressing.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Ahumado",
-        "Picante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "brisket",
+      "categoryId": "meat-market",
+      "nameEs": "Brisket",
+      "nameEn": "Brisket",
+      "descriptionEs": "Inspirado en Texas, ahumado con roble",
+      "descriptionEn": "Texas Inspired, Oak Smoked",
+      "price": "$14.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-02",
-      "categoryId": "appetizers",
-      "nameEs": "Papas Fritas Cargadas con BBQ",
-      "nameEn": "Loaded BBQ French Fries",
-      "descriptionEs": "Papas fritas crujientes cubiertas con cerdo desmenuzado tierno, queso cheddar fundido, crema agria y cebollín.",
-      "descriptionEn": "Crispy seasoned french fries topped with tender pulled pork, melted cheddar cheese, sour cream, and scallions.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Favorito",
-      "tags": [
-        "Para Compartir",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "pulled-pork",
+      "categoryId": "meat-market",
+      "nameEs": "Cerdo deshebrado",
+      "nameEn": "Pulled Pork",
+      "descriptionEs": "Ahumado lentamente, deshebrado a mano",
+      "descriptionEn": "Slow Smoked, Hand Pulled",
+      "price": "$9.89",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-03",
-      "categoryId": "appetizers",
-      "nameEs": "Cornbread con Mantequilla de Miel",
-      "nameEn": "Jalapeño Cheddar Cornbread",
-      "descriptionEs": "Pan de maíz recién horneado con trocitos de jalapeño y queso cheddar, servido tibio con mantequilla de miel.",
-      "descriptionEn": "Freshly baked southern-style cornbread with bits of jalapeño and sharp cheddar, served warm with honey butter.",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Casero",
-      "tags": [
-        "Vegetariano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "turkey",
+      "categoryId": "meat-market",
+      "nameEs": "Pavo",
+      "nameEn": "Turkey",
+      "descriptionEs": "Rebanado, magro y sabroso",
+      "descriptionEn": "Sliced, Lean & Mean",
+      "price": "$10.04",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-04",
-      "categoryId": "mains",
-      "nameEs": "Brisket de Res Ahumado",
-      "nameEn": "Texas-Style Smoked Beef Brisket",
-      "descriptionEs": "Brisket de res tierno ahumado con roble durante 14 horas, sazonado con nuestra mezcla secreta de especias estilo Texas.",
-      "descriptionEn": "Tender oak-smoked beef brisket, slow-cooked for 14 hours and seasoned with our signature Texas dry rub.",
-      "price": "$19.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Sin Gluten",
-        "Ahumado Largo"
-      ],
-      "allergens": [],
+      "id": "pulled-chicken",
+      "categoryId": "meat-market",
+      "nameEs": "Pollo deshebrado",
+      "nameEn": "Pulled Chicken",
+      "descriptionEs": "Tierno y jugoso",
+      "descriptionEn": "Tender & Juicy",
+      "price": "$9.74",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-05",
-      "categoryId": "mains",
-      "nameEs": "Costillas de Cerdo St. Louis (Costillar Completo)",
-      "nameEn": "St. Louis Cut Spare Ribs (Full Rack)",
-      "descriptionEs": "Costillas de cerdo tiernas que se desprenden del hueso, glaseadas con nuestra salsa BBQ artesanal.",
-      "descriptionEn": "Tender, fall-off-the-bone pork spare ribs glazed with our signature handcrafted BBQ sauce.",
-      "price": "$26.95",
-      "popular": true,
-      "badge": "Estrellas",
-      "tags": [
-        "Ahumado",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "sausage",
+      "categoryId": "meat-market",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "Jalapeño con queso o clásica #41",
+      "descriptionEn": "Jalapeno & Chz or Classic #41",
+      "price": "$9.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-06",
-      "categoryId": "mains",
-      "nameEs": "Pollo Ahumado Estilo BBQ",
-      "nameEn": "Smoked Half Chicken",
-      "descriptionEs": "Medio pollo jugoso ahumado a fuego lento con madera de nogal, con una piel crujiente y dorada.",
-      "descriptionEn": "Juicy half chicken slow-smoked over hickory wood with a perfectly crisp, savory skin.",
-      "price": "$15.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Ahumado",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "meat-sampler",
+      "categoryId": "meat-market",
+      "nameEs": "Muestrario de carnes",
+      "nameEn": "Meat Sampler",
+      "descriptionEs": "2 carnes | 3 carnes",
+      "descriptionEn": "2 Meat | 3 Meat",
+      "price": "$14.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-07",
-      "categoryId": "mains",
-      "nameEs": "Plato Combinado de Carnes (Meat Sampler)",
-      "nameEn": "Ultimate BBQ Sampler Platter",
-      "descriptionEs": "Una selección de nuestras mejores carnes: brisket, cerdo desmenuzado y costillas, servido con dos guarniciones.",
-      "descriptionEn": "A hearty tasting of our finest brisket, pulled pork, and spare ribs, served with your choice of two classic sides.",
-      "price": "$28.50",
-      "popular": true,
-      "badge": "Especial",
-      "tags": [
-        "Abundante",
-        "Para Compartir"
-      ],
-      "allergens": [],
+      "id": "baby-back-ribs",
+      "categoryId": "smokehouse-signatures",
+      "nameEs": "Costillas baby back",
+      "nameEn": "Baby Back Ribs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.29",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-08",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich de Cerdo Desmenuzado (Pulled Pork)",
-      "nameEn": "Pulled Pork Sandwich",
-      "descriptionEs": "Cerdo desmenuzado ahumado durante horas, amontonado en un pan brioche tostado con ensalada de col (coleslaw) encima.",
-      "descriptionEn": "Slow-smoked pulled pork piled high on a toasted brioche bun, topped with our crisp homemade coleslaw.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sándwich",
-        "Favorito"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "chicken",
+      "categoryId": "smokehouse-signatures",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "descriptionEs": "Medio pollo",
+      "descriptionEn": "Half a Yard Bird",
+      "price": "$11.59",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-09",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich de Brisket Cortado",
-      "nameEn": "Sliced Brisket Sandwich",
-      "descriptionEs": "Brisket tierno cortado en rodajas gruesas, bañado en salsa BBQ ahumada y servido en pan artesanal.",
-      "descriptionEn": "Juicy sliced beef brisket smothered in smoky BBQ sauce and served on a fresh artisan roll.",
-      "price": "$14.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Sándwich"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "salmon",
+      "categoryId": "smokehouse-signatures",
+      "nameEs": "Salmón",
+      "nameEn": "Salmon",
+      "descriptionEs": "Del Atlántico Norte, húmedo y suave",
+      "descriptionEn": "North Atlantic, Moist & Mild",
+      "price": "$17.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-10",
-      "categoryId": "specialties",
-      "nameEs": "Sándwich de Salchicha Ahumada Artesanal",
-      "nameEn": "Smoked Sausage Link Sandwich",
-      "descriptionEs": "Salchicha ahumada de la casa con especias jalapeño-cheddar, servida en pan con cebollas y pimientos salteados.",
-      "descriptionEn": "House-smoked jalapeño cheddar sausage link served on a roll with grilled onions and peppers.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Picante",
-        "Sándwich"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "smoked-cheeseburger",
+      "categoryId": "smokehouse-signatures",
+      "nameEs": "Hamburguesa ahumada con queso",
+      "nameEn": "Smoked Cheeseburger",
+      "descriptionEs": "Media libra con cheddar",
+      "descriptionEn": "Half Pounder w/ Cheddar",
+      "price": "$9.74",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-11",
+      "id": "brisket-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Brisket (sándwiches)",
+      "nameEn": "Brisket (Sandwiches)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-brisket",
+      "categoryId": "sandwiches",
+      "nameEs": "Brisket picado",
+      "nameEn": "Chopped Brisket",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Cerdo deshebrado (sándwiches)",
+      "nameEn": "Pulled Pork (Sandwiches)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Pavo (sándwiches)",
+      "nameEn": "Turkey (Sandwiches)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.54",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-chicken-sandwiches",
+      "categoryId": "sandwiches",
+      "nameEs": "Pollo deshebrado (sándwiches)",
+      "nameEn": "Pulled Chicken (Sandwiches)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "xl-combo",
+      "categoryId": "make-it-a-combo",
+      "nameEs": "Combo XL",
+      "nameEn": "XL Combo",
+      "descriptionEs": "Para mercado de carnes, especialidades del ahumadero y sándwiches. Agregue una guarnición y una bebida de fuente",
+      "descriptionEn": "For Meat Market, Smokehouse Signatures & Sandwiches. Add One Side & a Fountain Drink",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "xxl-combo",
+      "categoryId": "make-it-a-combo",
+      "nameEs": "Combo XXL",
+      "nameEn": "XXL Combo",
+      "descriptionEs": "Para mercado de carnes, especialidades del ahumadero y sándwiches. Agregue dos guarniciones y una bebida de fuente",
+      "descriptionEn": "For Meat Market, Smokehouse Signatures & Sandwiches. Add Two Sides & a Fountain Drink",
+      "price": "$8.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-greens",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de hojas verdes",
+      "nameEn": "Garden Greens",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.54",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plus-meat",
+      "categoryId": "salads",
+      "nameEs": "Más carne",
+      "nameEn": "Plus Meat",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maggie-s-mac-n-cheese",
+      "categoryId": "sides",
+      "nameEs": "Macarrones con queso de Maggie",
+      "nameEn": "Maggie's Mac-N-Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-cut-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas recién cortadas",
+      "nameEn": "Fresh Cut Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-beans",
+      "categoryId": "sides",
+      "nameEs": "Frijoles horneados",
+      "nameEn": "Baked Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kickin-collard-greens",
+      "categoryId": "sides",
+      "nameEs": "Berza picante",
+      "nameEn": "Kickin' Collard Greens",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.44",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-beans",
+      "categoryId": "sides",
+      "nameEs": "Ejotes",
+      "nameEn": "Green Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.54",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-slaw",
+      "categoryId": "sides",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cold Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.34",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "super-seasonal",
+      "categoryId": "sides",
+      "nameEs": "Súper de temporada",
+      "nameEn": "Super Seasonal",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.64",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottle-classics",
+      "categoryId": "drinks",
+      "nameEs": "Clásicos embotellados",
+      "nameEn": "Bottle Classics",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.84",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fountain-soda",
+      "categoryId": "drinks",
+      "nameEs": "Refresco de máquina",
+      "nameEn": "Fountain Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kettle-brewed-iced-tea",
+      "categoryId": "drinks",
+      "nameEs": "Té helado preparado en olla",
+      "nameEn": "Kettle Brewed Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "summertime-lemonade",
+      "categoryId": "drinks",
+      "nameEs": "Limonada de verano",
+      "nameEn": "Summertime Lemonade",
+      "descriptionEs": "Bien frío",
+      "descriptionEn": "Iced Cold",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ice",
+      "categoryId": "drinks",
+      "nameEs": "Hielo",
+      "nameEn": "Ice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-american-heroes-cup",
+      "categoryId": "drinks",
+      "nameEs": "Vaso American Heroes",
+      "nameEn": "The American Heroes Cup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kid-mac",
+      "categoryId": "kids-menu",
+      "nameEs": "Macarrones para niños",
+      "nameEn": "Kid-Mac",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork-slider",
+      "categoryId": "kids-menu",
+      "nameEs": "Slider de cerdo deshebrado",
+      "nameEn": "Pulled Pork Slider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-chicken-slider",
+      "categoryId": "kids-menu",
+      "nameEs": "Slider de pollo deshebrado",
+      "nameEn": "Pulled Chicken Slider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-slider",
+      "categoryId": "kids-menu",
+      "nameEs": "Slider de pavo",
+      "nameEn": "Turkey Slider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brisket-slider",
+      "categoryId": "kids-menu",
+      "nameEs": "Slider de brisket",
+      "nameEn": "Brisket Slider",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jr-ribs",
+      "categoryId": "kids-menu",
+      "nameEs": "Costillas junior",
+      "nameEn": "Jr. Ribs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.74",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pick-up-pack",
+      "categoryId": "pick-up-packs",
+      "nameEs": "Paquete para recoger",
+      "nameEn": "Pick Up Pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.04",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-large-pick-up-pack",
+      "categoryId": "pick-up-packs",
+      "nameEs": "Paquete para recoger extra grande",
+      "nameEn": "Extra Large Pick Up Pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$23.54",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brisket-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Brisket (mercado de carnes, catering)",
+      "nameEn": "Brisket (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-brisket-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Brisket picado (mercado de carnes, catering)",
+      "nameEn": "Chopped Brisket (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Cerdo deshebrado (mercado de carnes, catering)",
+      "nameEn": "Pulled Pork (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Pavo (mercado de carnes, catering)",
+      "nameEn": "Turkey (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-chicken-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Pollo deshebrado (mercado de carnes, catering)",
+      "nameEn": "Pulled Chicken (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-meat-market-catering",
+      "categoryId": "meat-market-catering",
+      "nameEs": "Salchicha (mercado de carnes, catering)",
+      "nameEn": "Sausage (Meat Market (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$19.48",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-back-ribs-smokehouse-signatures-catering",
+      "categoryId": "smokehouse-signatures-catering",
+      "nameEs": "Costillas baby back (especialidades del ahumadero, catering)",
+      "nameEn": "Baby Back Ribs (Smokehouse Signatures (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$29.89",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-smokehouse-signatures-catering",
+      "categoryId": "smokehouse-signatures-catering",
+      "nameEs": "Pollo (especialidades del ahumadero, catering)",
+      "nameEn": "Chicken (Smokehouse Signatures (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salmon-smokehouse-signatures-catering",
+      "categoryId": "smokehouse-signatures-catering",
+      "nameEs": "Salmón (especialidades del ahumadero, catering)",
+      "nameEn": "Salmon (Smokehouse Signatures (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maggie-s-mac-n-cheese-sides-catering",
+      "categoryId": "sides-catering",
+      "nameEs": "Macarrones con queso de Maggie (guarniciones, catering)",
+      "nameEn": "Maggie's Mac-N-Cheese (Sides (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.09",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-beans-sides-catering",
+      "categoryId": "sides-catering",
+      "nameEs": "Frijoles horneados (guarniciones, catering)",
+      "nameEn": "Baked Beans (Sides (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.19",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kickin-collard-greens-sides-catering",
+      "categoryId": "sides-catering",
+      "nameEs": "Berza picante (guarniciones, catering)",
+      "nameEn": "Kickin' Collard Greens (Sides (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "green-beans-sides-catering",
+      "categoryId": "sides-catering",
+      "nameEs": "Ejotes (guarniciones, catering)",
+      "nameEn": "Green Beans (Sides (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.84",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cold-slaw-sides-catering",
+      "categoryId": "sides-catering",
+      "nameEs": "Ensalada de col (guarniciones, catering)",
+      "nameEn": "Cold Slaw (Sides (Catering))",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.94",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-half-pan",
+      "categoryId": "sides-catering",
+      "nameEs": "Ensalada (media charola)",
+      "nameEn": "Salad (Half Pan)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$17.69",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kettle-chips-half-pan",
+      "categoryId": "sides-catering",
+      "nameEs": "Papitas kettle (media charola)",
+      "nameEn": "Kettle Chips (Half Pan)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.72",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "super-seasonal-side",
+      "categoryId": "sides-catering",
+      "nameEs": "Guarnición súper de temporada",
+      "nameEn": "Super Seasonal Side",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-sandwich-buns",
+      "categoryId": "bakery",
+      "nameEs": "Panes frescos para sándwich",
+      "nameEn": "Fresh Sandwich Buns",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "slider-rolls",
+      "categoryId": "bakery",
+      "nameEs": "Panecillos para slider",
+      "nameEn": "Slider Rolls",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corn-bread",
+      "categoryId": "bakery",
+      "nameEs": "Pan de maíz",
+      "nameEn": "Corn Bread",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "small-brownie-cookie-tray",
+      "categoryId": "bakery",
+      "nameEs": "Charola chica de brownies y galletas",
+      "nameEn": "Small Brownie & Cookie Tray",
+      "descriptionEs": "Alcanza para hasta 25 personas",
+      "descriptionEn": "Feeds up to 25 people",
+      "price": "$35.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-brownie-cookie-tray",
+      "categoryId": "bakery",
+      "nameEs": "Charola grande de brownies y galletas",
+      "nameEn": "Large Brownie & Cookie Tray",
+      "descriptionEs": "Alcanza para hasta 50 personas",
+      "descriptionEn": "Feeds up to 50 people",
+      "price": "$68.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "summertime-lemonade-beverages",
       "categoryId": "beverages",
-      "nameEs": "Té Helado Estilo Sureño",
-      "nameEn": "Southern Sweet Iced Tea",
-      "descriptionEs": "Té negro recién hecho, endulzado a la perfección al estilo tradicional del sur de EE. UU.",
-      "descriptionEn": "Freshly brewed black tea sweetened to perfection in the traditional Southern style.",
-      "price": "$3.50",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Sin Alcohol",
-        "Bebida"
-      ],
-      "allergens": [],
+      "nameEs": "Limonada de verano (bebidas)",
+      "nameEn": "Summertime Lemonade (Beverages)",
+      "descriptionEs": "Helado y frío",
+      "descriptionEn": "Ice Cold",
+      "price": "$7.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-12",
+      "id": "kettle-brewed-iced-tea-beverages",
       "categoryId": "beverages",
-      "nameEs": "Limonada casera con Frutos Rojos",
-      "nameEn": "Homemade Berry Lemonade",
-      "descriptionEs": "Limonada 100% natural hecha en casa con un toque de puré de bayas silvestres.",
-      "descriptionEn": "Refreshing all-natural housemade lemonade infused with a splash of wild berry puree.",
-      "price": "$4.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Sin Alcohol",
-        "Artesanal"
-      ],
-      "allergens": [],
+      "nameEs": "Té helado preparado en olla (bebidas)",
+      "nameEn": "Kettle Brewed Iced Tea (Beverages)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
       "ctaType": "in_store"
     },
     {
-      "id": "mission-bbq-13",
+      "id": "bottled-classics",
       "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal Local (Connecticut IPA)",
-      "nameEn": "Local Craft IPA",
-      "descriptionEs": "Cerveza IPA de barril elaborada por cervecerías artesanales locales de Connecticut.",
-      "descriptionEn": "Crisp and hoppy craft IPA on tap from local Connecticut breweries.",
-      "price": "$7.00",
-      "popular": false,
-      "badge": "Alcohol",
-      "tags": [
-        "Cerveza",
-        "Local"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "nameEs": "Clásicos en botella",
+      "nameEn": "Bottled Classics",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.84",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "canned-sodas",
+      "categoryId": "beverages",
+      "nameEs": "Refrescos de lata",
+      "nameEn": "Canned Sodas",
+      "descriptionEs": "Helado y frío",
+      "descriptionEn": "Ice Cold",
+      "price": "$1.85",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-h2o",
+      "categoryId": "beverages",
+      "nameEs": "Agua embotellada",
+      "nameEn": "Bottled H2O",
+      "descriptionEs": "Helado y frío",
+      "descriptionEn": "Ice Cold",
+      "price": "$2.64",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "party-pack",
+      "categoryId": "party-packs",
+      "nameEs": "Paquete para fiesta",
+      "nameEn": "Party Pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$18.04",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "extra-large-party-pack",
+      "categoryId": "party-packs",
+      "nameEs": "Paquete para fiesta extra grande",
+      "nameEn": "Extra Large Party Pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$24.54",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones sin gluten en el menú?",
-      "qEn": "Do you offer gluten-free options?",
-      "aEs": "Sí, la mayoría de nuestras carnes ahumadas son naturalmente sin gluten. Consulte con su mesero sobre las salsas y guarniciones.",
-      "aEn": "Yes, most of our smoked meats are naturally gluten-free. Please consult your server regarding sauces and sides."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos en Southington?",
-      "qEn": "Do you offer catering for events in Southington?",
-      "aEs": "¡Sí! Ofrecemos paquetes de catering completos para eventos corporativos, fiestas y reuniones familiares. Llámenos para más detalles.",
-      "aEn": "Yes! We offer complete catering packages for corporate events, parties, and family gatherings. Call us for details."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o es por orden de llegada?",
-      "qEn": "Do you accept reservations or is it walk-in only?",
-      "aEs": "Funcionamos principalmente bajo el sistema de orden de llegada para brindar un servicio rápido y amigable, pero aceptamos pedidos anticipados para llevar.",
-      "aEn": "We operate primarily on a walk-in basis for fast and friendly service, but we gladly accept advance takeout orders."
-    }
-  ]
+  "faqs": []
 }
