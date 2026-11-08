@@ -91,13 +91,13 @@ AI-generated pages came from `generate_custom_merchants.py`, whose prompt told G
 | `famous-pizza-bethel` | Famous Pizza | 6 Greenwood Ave, Bethel, CT 06801 | 50 |
 | `ferris-acres-creamery` | Ferris Acres Creamery | 144 Sugar Street, Newtown, CT 06470 | 55 |
 | `frank-pepe-pizzeria-napoletana` | Frank Pepe Pizzeria Napoletana | 59 Federal Road, Danbury, CT 06810 | 57 |
-| `frank-pepes-west-hartford` | Frank Pepe Pizzeria Napoletana | 1148 New Britain Avenue, West Hartford, CT 06110 | 75 |
+| `frank-pepes-west-hartford` | Frank Pepe Pizzeria Napoletana | 1148 New Britain Avenue, West Hartford, CT 06110 | 88 |
 | `frankies-pizza` | Frankie's Pizza | 809 Maple Rd, Longmeadow, MA 01106 | 80 |
 | `fuego-mexican-grill` | Fuego Mexican Grill | 36 Shunpike Road, Cromwell, CT 06416 | 61 |
 | `geronimo` | Geronimo Tequila Bar & Southwest Grill | 2070 Post Rd, Fairfield, CT 06824 | 152 |
 | `gg-joe` | GG & Joe | 165 Main St, Westport, CT 06880 | 77 |
-| `ggs-wood-fired-pizza` | GG's Wood Fired Pizza | 591 Boston Post Rd, Milford CT, 06460 | 62 |
-| `glastonbury-pizza-house` | Glastonbury Pizza House | 30 Hebron Ave, Glastonbury, CT 06033 | 243 |
+| `ggs-wood-fired-pizza` | GG's Wood Fired Pizza | 591 Boston Post Rd, Milford CT, 06460 | 80 |
+| `glastonbury-pizza-house` | Glastonbury Pizza House | 30 Hebron Ave, Glastonbury, CT 06033 | 313 |
 | `golden-mango` | Golden Mango Restaurant | 2 Spring Lane, Farmington, CT 06032 | 237 |
 | `goodies-of-milford` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
 | `goodies` | Goodies of Milford | 170 Cherry St, Milford, CT 06460 | 28 |
