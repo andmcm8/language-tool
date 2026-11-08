@@ -2,25 +2,17 @@
   "storeInfo": {
     "id": "nardellis",
     "name": "Nardelli's",
-    "tagline": "Connecticut's Best Award-Winning Grinders Since 1920 / Los Mejores Sándwiches Galardonados de Connecticut Desde 1920",
-    "address": "1 Main Street, Wethersfield, CT 06109",
+    "tagline": "Italian sandwich shop in East Hartford | Tienda de sándwiches italianos en East Hartford",
+    "address": "1 Main Street, East Hartford, CT 06033",
     "phone": "(860) 568-2000",
     "hours": {
-      "monday_friday": "10:00 AM - 8:00 PM",
-      "saturday": "10:00 AM - 8:00 PM",
-      "sunday": "11:00 AM - 7:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Google Pay"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
-      "Online Ordering"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,324 +24,936 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
+      "id": "grinder-family-meal-deal",
+      "nameEs": "Comida familiar de grinders",
+      "nameEn": "Grinder Family Meal Deal",
+      "icon": "Utensils"
+    },
+    {
+      "id": "nardelli-s-favorites",
       "nameEs": "Favoritos de Nardelli's",
       "nameEn": "Nardelli's Favorites",
-      "icon": "Award"
+      "icon": "Utensils"
     },
     {
-      "id": "cold_grinders",
-      "nameEs": "Sándwiches Fríos (Grinders)",
+      "id": "cold-grinders",
+      "nameEs": "Grinders fríos",
       "nameEn": "Cold Grinders",
-      "icon": "Sandwich"
+      "icon": "Utensils"
     },
     {
-      "id": "hot_grinders",
-      "nameEs": "Sándwiches Calientes (Hot Grinders)",
-      "nameEn": "Hot Grinders",
-      "icon": "Flame"
+      "id": "grilled-hot-grinders",
+      "nameEs": "Grinders calientes a la parrilla",
+      "nameEn": "Grilled Hot Grinders",
+      "icon": "Utensils"
     },
     {
-      "id": "family_meals",
-      "nameEs": "Combos Familiares y Catering",
-      "nameEn": "Family Meals & Catering",
-      "icon": "Users"
+      "id": "additional-hot-servings",
+      "nameEs": "Porciones calientes adicionales",
+      "nameEn": "Additional Hot Servings",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads-other-favorites",
+      "nameEs": "Ensaladas y otros favoritos",
+      "nameEn": "Salads & Other Favorites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "fresh-green-salads",
+      "nameEs": "Ensaladas verdes frescas",
+      "nameEn": "Fresh Green Salads",
+      "icon": "Utensils"
     },
     {
       "id": "desserts",
-      "nameEs": "Postres y Dulces",
-      "nameEn": "Desserts & Sweets",
-      "icon": "Cake"
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "children-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Children's Menu",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "nardellis-01",
-      "categoryId": "specialties",
-      "nameEs": "Italian Combo Famoso Mundialmente",
-      "nameEn": "World Famous Italian Combo Grinder",
-      "descriptionEs": "Preparado con mayonesa, prosciutto, cotechino, capicola, salami, queso provolone, lechuga, tomate, vegetales clásicos picados, aceitunas y salsa picante en pan italiano fresco.",
-      "descriptionEn": "Mayo, prosciuttini, capicola, salami, provolone cheese, lettuce, tomato, classic mix (diced veggies), olives, and hot sauce on fresh Italian bread.",
-      "price": "$16.29",
-      "popular": true,
-      "badge": "Ganador / Award Winner",
-      "tags": [
-        "Clásico",
-        "Famoso",
-        "Cerdo"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-02",
-      "categoryId": "specialties",
-      "nameEs": "Pollo con Sabor a Fuego Balsámico",
-      "nameEn": "Balsamic All Natural Fire Braised Grilled Chicken",
-      "descriptionEs": "Tierno pollo a la parrilla marinado en nuestro aderezo balsámico exclusivo, servido en pan italiano fresco con aderezos al estilo 'todo'.",
-      "descriptionEn": "Grilled chicken in our very own balsamic dressing served on fresh Italian baked bread with 'everything' toppings.",
-      "price": "$16.49",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Saludable",
-        "Pollo"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-03",
-      "categoryId": "specialties",
-      "nameEs": "Club Melt de Pavo, Jamón y Tocino",
-      "nameEn": "Turkey Ham Cheese Club Melt",
-      "descriptionEs": "Pavo asado, jamón, tocino crujiente y queso fundidos juntos en nuestro pan italiano recién horneado con el estilo completo de la casa.",
-      "descriptionEn": "Roasted turkey, ham, bacon, and cheese baked together on fresh Italian baked bread, made with 'everything' including mayo, lettuce, tomato, classic mix, olives, and hot sauce.",
-      "price": "$16.79",
-      "popular": false,
-      "badge": "Caliente",
-      "tags": [
-        "Tocino",
-        "Queso Fundido"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-04",
-      "categoryId": "cold_grinders",
-      "nameEs": "Sándwich Combinación de Quesos",
-      "nameEn": "Cheese Combo Grinder",
-      "descriptionEs": "Una deliciosa selección de quesos Provolone, Americano, Cheddar y Suizo con todos los complementos frescos.",
-      "descriptionEn": "Provolone, American, Cheddar, and Swiss cheeses served with 'everything' on fresh baked bread.",
-      "price": "$14.29",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Queso"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-05",
-      "categoryId": "cold_grinders",
-      "nameEs": "Ensalada de Pollo (Carne Blanca)",
-      "nameEn": "Chicken Salad Grinder (White Meat)",
-      "descriptionEs": "Ensalada de pechuga de pollo tierna con mayonesa, queso, lechuga, tomate, vegetales clásicos, aceitunas y salsa picante.",
-      "descriptionEn": "Tender white meat chicken salad with mayo, cheese, lettuce, tomato, classic mix diced veggies, olives, and hot sauce.",
-      "price": "$16.49",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Pollo",
-        "Fresco"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs",
-        "Nuts"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-06",
-      "categoryId": "cold_grinders",
-      "nameEs": "Sándwich de Roast Beef 'Prime Choice'",
-      "nameEn": "Roast Beef 'Prime Choice' Grinder",
-      "descriptionEs": "Finos cortes de roast beef de primera calidad con mayonesa, queso, lechuga, tomate, mezcla clásica y toque picante.",
-      "descriptionEn": "Prime choice roast beef with mayo, lettuce, tomato, cheese, classic mix diced veggies, olives, and hot sauce.",
-      "price": "$16.49",
-      "popular": false,
-      "badge": "Popular",
-      "tags": [
-        "Carne de Res"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-07",
-      "categoryId": "hot_grinders",
-      "nameEs": "Pechuga de Pollo Picante Caliente",
-      "nameEn": "Prosciutto Hot Pepper Chicken",
-      "descriptionEs": "Pan italiano tostado a la parrilla con mayonesa, lechuga, tomate, queso, vegetales clásicos, aceitunas y salsa picante de la casa.",
-      "descriptionEn": "Grilled Italian bread with mayo, lettuce, tomato, cheese, classic mix, olives, and hot sauce topped with hot peppers.",
-      "price": "$16.49",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Pollo"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-08",
-      "categoryId": "hot_grinders",
-      "nameEs": "Milanesa de Pollo Caliente",
-      "nameEn": "Chicken Cutlet Hot Grinder",
-      "descriptionEs": "Crujiente milanesa de pollo servida en pan italiano tostado con queso fundido, mayonesa, lechuga, tomate y vegetales mixtos.",
-      "descriptionEn": "Crispy chicken cutlet on grilled Italian bread with mayo, lettuce, tomato, cheese, classic mix, olives, and hot sauce.",
-      "price": "$15.79",
-      "popular": false,
-      "badge": "Crujiente",
-      "tags": [
-        "Pollo",
-        "Caliente"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "nardellis-09",
-      "categoryId": "family_meals",
-      "nameEs": "Paquete Familiar de Sándwiches (Grinders)",
+      "id": "grinder-family-meal-deal",
+      "categoryId": "grinder-family-meal-deal",
+      "nameEs": "Comida familiar de grinders",
       "nameEn": "Grinder Family Meal Deal",
-      "descriptionEs": "Incluye 3 sándwiches enteros, pepinillos agrios en rodajas, tu elección de ensalada de col, macarrones o papa, y 1 libra de galletas italianas.",
-      "descriptionEn": "Includes 3 FULL grinders, speared 1/2 sour pickles, your choice of cole slaw, macaroni, or potato salads, and 1 lb of Italian cookies. Serves 3 to 5 people.",
+      "descriptionEs": "3 grinders COMPLETOS, 1/2 pepinillos agrios en lanza, ensalada de col, macarrones o papa a elegir y 1 lb de galletas italianas. Los grinders calientes se sirven con salsa y queso. Todos los grinders fríos se sirven en pan italiano recién horneado con queso provolone, mayonesa, lechuga, tomate, mezcla clásica, aceitunas y salsa picante. Para 3 a 5 personas",
+      "descriptionEn": "3 FULL Grinders, Speared 1/2 Sour Pickles, Your Choice Of Cole Slaw/Macaroni/Potato Salads And 1lb Of Italian Cookies Hot Grinders Served With Sauce And Cheese. All Cold Grinders Served On Fresh Baked Italian Bread With Provolone Cheese, Mayo, Lettuce, Tomato, Classic Mix, Olives And Hot Sauce. Services 3 To 5 People",
       "price": "$64.99",
-      "popular": true,
-      "badge": "Familiar",
-      "tags": [
-        "Para Compartir",
-        "Catering"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs",
-        "Nuts"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "nardellis-10",
-      "categoryId": "family_meals",
-      "nameEs": "Cena Estilo Familiar (Parmigiana)",
-      "nameEn": "Family Style Dinner Tray",
-      "descriptionEs": "Bandeja estilo familiar que incluye pollo a la Parmigiana y berenjena a la Parmigiana, guarnición de albóndigas, 2 ensaladas grandes, pan italiano y 1 lb de galletas italianas.",
-      "descriptionEn": "Family style tray including chicken parmigiana and eggplant parmigiana, side of meatballs, choice of 2 large salads, Italian bread, and 1 lb of Italian cookies. Serves 3-5 people.",
+      "id": "family-style-dinner",
+      "categoryId": "grinder-family-meal-deal",
+      "nameEs": "Cena estilo familiar",
+      "nameEn": "Family Style Dinner",
+      "descriptionEs": "Charola estilo familiar con pollo a la parmesana y berenjena a la parmesana, guarnición de albóndigas, 2 ensaladas grandes a elegir, pan italiano y 1 lb de galletas italianas. Para 3 a 5 personas **Cambie las galletas y agregue un cheesecake de cereza de 7″ por $7 más – ¡delicioso!",
+      "descriptionEn": "Family Style Tray Including Chicken Parmigiana And Eggplant Parmigiana, Side Of Meatballs, Choice Of 2 Large Salads, Italian Bread And 1lb Of Italian Cookies Services 3 To 5 People **Substitute cookies and add 7″ Cherry Cheesecake for $7 more – Delicious!",
       "price": "$76.99",
-      "popular": true,
-      "badge": "Especial del Chef",
-      "tags": [
-        "Italiano",
-        "Horneado"
-      ],
-      "allergens": [
-        "Wheat",
-        "Milk",
-        "Soy",
-        "Eggs"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "nardellis-11",
-      "categoryId": "desserts",
-      "nameEs": "Burrito de Cheesecake",
-      "nameEn": "Cheesecake Burrito",
-      "descriptionEs": "Un pedazo de cielo; rico y cremoso cheesecake envuelto en una tortilla ligeramente crujiente y dorada.",
-      "descriptionEn": "A little piece of heaven. Rich, creamy cheesecake wrapped in a lightly crisp, golden shell.",
+      "id": "italian-combo-world-famous",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Combo italiano (mundialmente famoso)",
+      "nameEn": "Italian Combo (World Famous)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto-hot-pepper-chicken",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Pollo con prosciutto y chile picante",
+      "nameEn": "Prosciutto Hot Pepper Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef-prime-choice",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Roast beef “Prime Choice”",
+      "nameEn": "Roast Beef “Prime Choice”",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cutlet",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Milanesa de pollo",
+      "nameEn": "Chicken Cutlet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-ham-cheese-club-melt",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Club gratinado de pavo, jamón y queso",
+      "nameEn": "Turkey Ham Cheese Club Melt",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "balsamic-all-natural-fire-braised-grilled-chicken",
+      "categoryId": "nardelli-s-favorites",
+      "nameEs": "Pollo a la parrilla balsámico ``braseado a fuego natural``",
+      "nameEn": "Balsamic ``All Natural Fire Braised`` Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-combo",
+      "categoryId": "cold-grinders",
+      "nameEs": "Combo de quesos",
+      "nameEn": "Cheese Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bologna",
+      "categoryId": "cold-grinders",
+      "nameEs": "Mortadela bologna",
+      "nameEn": "Bologna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-salad-white-meat",
+      "categoryId": "cold-grinders",
+      "nameEs": "Ensalada de pollo (carne blanca)",
+      "nameEn": "Chicken Salad (White Meat)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plant-based-italian-combo",
+      "categoryId": "cold-grinders",
+      "nameEs": "Combo italiano a base de plantas",
+      "nameEn": "Plant-Based Italian Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-italian-combo-grilled-wrap",
+      "categoryId": "cold-grinders",
+      "nameEs": "Wrap a la parrilla de combo italiano vegano",
+      "nameEn": "Vegan Italian Combo Grilled Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "american-combo",
+      "categoryId": "cold-grinders",
+      "nameEs": "Combo americano",
+      "nameEn": "American Combo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-salad",
+      "categoryId": "cold-grinders",
+      "nameEs": "Ensalada de Mariscos",
+      "nameEn": "Seafood Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham",
+      "categoryId": "cold-grinders",
+      "nameEs": "Jamón",
+      "nameEn": "Ham",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto",
+      "categoryId": "cold-grinders",
+      "nameEs": "Prosciutto",
+      "nameEn": "Prosciutto",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-turkey-breast",
+      "categoryId": "cold-grinders",
+      "nameEs": "Pechuga de pavo asada",
+      "nameEn": "Roasted Turkey Breast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellow-fin-tuna-salad",
+      "categoryId": "cold-grinders",
+      "nameEs": "Ensalada de atún aleta amarilla",
+      "nameEn": "Yellow Fin Tuna Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie",
+      "categoryId": "cold-grinders",
+      "nameEs": "Vegetariano",
+      "nameEn": "Veggie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.39",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-meat-add-on",
+      "categoryId": "cold-grinders",
+      "nameEs": "Carne doble adicional",
+      "nameEn": "Double Meat Add-On",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmigiana",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parmigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-parmigiana",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Albóndigas a la parmesana",
+      "nameEn": "Meatball Parmigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pulled-pork",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Cerdo deshebrado",
+      "nameEn": "Pulled Pork",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-stuffed-pastrami",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pastrami relleno al horno",
+      "nameEn": "Baked Stuffed Pastrami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shaved-steak-cheese-nardellis-style",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Bistec en láminas con queso “estilo Nardelli’s”",
+      "nameEn": "Shaved Steak & Cheese “Nardelli’s Style”",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbecue-rib",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Costilla a la barbacoa",
+      "nameEn": "Barbecue Rib",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soffritto-parmigiana",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Soffritto a la parmesana",
+      "nameEn": "Soffritto Parmigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "barbecue-bacon-cheddar-chicken",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo a la barbacoa con tocino y cheddar",
+      "nameEn": "Barbecue Bacon Cheddar Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-tomato-chicken-with-light-bacon",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo con mozzarella y tomate (con poco tocino)",
+      "nameEn": "Mozzarella Tomato Chicken (with light bacon)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "all-natural-fire-braised-grilled-chicken",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo a la parrilla ``braseado a fuego natural``",
+      "nameEn": "``All Natural Fire Braised`` Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chipotle-all-natural-fire-braised-grilled-chicken",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo a la parrilla al chipotle “braseado a fuego natural”",
+      "nameEn": "Chipotle “All Natural Fire Braised” Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "balsamic-all-natural-fire-braised-grilled-chicken-2",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Pollo a la parrilla balsámico “braseado a fuego natural”",
+      "nameEn": "Balsamic “All Natural Fire Braised” Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plant-based-chicken-cutlet",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Milanesa de pollo a base de plantas",
+      "nameEn": "Plant Based Chicken Cutlet",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegan-chicken-cutlet-grilled-wrap",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Wrap a la parrilla de milanesa de pollo vegana",
+      "nameEn": "Vegan Chicken Cutlet Grilled Wrap",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-meat-add-on-grilled-hot-grinders",
+      "categoryId": "grilled-hot-grinders",
+      "nameEs": "Carne doble adicional (grinders calientes a la parrilla)",
+      "nameEn": "Double Meat Add-On (Grilled Hot Grinders)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-en-corrozza",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Mozzarella in carrozza",
+      "nameEn": "Mozzarella-en-Corrozza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-n-white-cheddar-cheese",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Macarrones con queso cheddar blanco",
+      "nameEn": "Mac 'n White Cheddar Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "child-size-mac-cheese",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Macarrones con queso tamaño infantil",
+      "nameEn": "Child Size Mac & Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup of the Day",
+      "descriptionEs": "el precio varía según la variedad",
+      "descriptionEn": "price varies, due to variety",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-baked-stuffed-clams",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "2 almejas rellenas al horno",
+      "nameEn": "2 Baked Stuffed Clams",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spinach-broccoli-or-eggplant-bread-1-2-loaf",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Pan de espinaca, brócoli o berenjena (1/2 hogaza)",
+      "nameEn": "Spinach, Broccoli, or Eggplant Bread (1/2 Loaf)",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$5.49",
-      "popular": true,
-      "badge": "Postre Estrella",
-      "tags": [
-        "Dulce",
-        "Pastelería"
-      ],
-      "allergens": [
-        "Milk",
-        "Wheat",
-        "Eggs"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "nardellis-12",
+      "id": "soffritto",
+      "categoryId": "additional-hot-servings",
+      "nameEs": "Soffritto",
+      "nameEn": "Soffritto",
+      "descriptionEs": "Ternera tierna salteada y en cubos, en la salsa marinara de mamá.",
+      "descriptionEn": "Tender veal sautéed and diced, in Mamma’s Marinara Sauce.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tortellini-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de tortellini",
+      "nameEn": "Tortellini Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$9.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "macaroni-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de macarrones",
+      "nameEn": "Macaroni Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$6.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-mozzarella-tomato-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de mozzarella fresca y tomate",
+      "nameEn": "Fresh Mozzarella & Tomato Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$9.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de papa",
+      "nameEn": "Potato Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$6.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cavatelli-broccoli-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de cavatelli con brócoli",
+      "nameEn": "Cavatelli & Broccoli Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$8.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-salad",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada antipasto",
+      "nameEn": "Antipasto Salad",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$10.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-salad-salads-other-favorites",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de mariscos (ensaladas y otros favoritos)",
+      "nameEn": "Seafood Salad (Salads & Other Favorites)",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$11.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "yellow-fin-tuna-salad-salads-other-favorites",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de atún aleta amarilla (ensaladas y otros favoritos)",
+      "nameEn": "Yellow Fin Tuna Salad (Salads & Other Favorites)",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$11.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-salad-all-white-meat",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de pollo, toda carne blanca",
+      "nameEn": "Chicken Salad all white meat",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$11.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$6.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "long-hot-stuffed-banana-peppers",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Chiles banana largos picantes rellenos",
+      "nameEn": "Long Hot Stuffed Banana Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosciutto-stuffed-hot-cherry-peppers",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Chiles cereza picantes rellenos de prosciutto",
+      "nameEn": "Prosciutto Stuffed Hot Cherry Peppers",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$12.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olives-calamata-or-green",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Aceitunas kalamata o verdes",
+      "nameEn": "Olives Calamata or Green",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marinated-mushrooms",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Champiñones marinados",
+      "nameEn": "Marinated Mushrooms",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$9.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cous-cous-quinoa-grain",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Granos de cuscús y quinoa",
+      "nameEn": "Cous cous Quinoa Grain",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$9.98",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pickle-dill",
+      "categoryId": "salads-other-favorites",
+      "nameEs": "Pepinillo (eneldo)",
+      "nameEn": "Pickle (Dill)",
+      "descriptionEs": "También disponible en porciones de 1/2 lb.",
+      "descriptionEn": "Also Available in 1/2 lb. Servings.",
+      "price": "$2.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nardelli-s-signature-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada ``insignia`` de Nardelli's",
+      "nameEn": "Nardelli's ``Signature`` Salad",
+      "descriptionEs": "Lechuga romana, hojas verdes mixtas, aceitunas, tomates uva, champiñones, chiles pepperoncini, coliflor marinada, zanahoria, apio, pimientos, pepino, chiles rellenos de prosciutto, queso provolone, salami. Agregue pollo a la parrilla $4.99",
+      "descriptionEn": "Romaine lettuce, mixed greens, olives, grape tomatoes, mushrooms, pepperoncini peppers, marinated cauliflower, carrots, celery, peppers, cucumbers, stuffed prosciutto peppers, provolone cheese, salami. Add Grilled Chicken $4.99",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada pequeña",
+      "nameEn": "Side Salad",
+      "descriptionEs": "Lechuga romana, hojas verdes mixtas, pimiento morrón, zanahoria, apio, pepino, cebolla, tomates uva, aceitunas, champiñones, chiles pepperoncini, parmesano rallado. Agregue pollo a la parrilla $4.99",
+      "descriptionEn": "Romaine lettuce, mixed greens, bell peppers, carrots, celery, cucumbers, onions, grape tomatoes, olives, mushrooms, pepperoncini peppers, shredded parm. Add Grilled Chicken $4.99",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "craisin-walnut-salad-with-feta",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada de arándanos y nueces con feta",
+      "nameEn": "Craisin Walnut Salad with Feta",
+      "descriptionEs": "Hojas verdes mixtas, tomates uva, pepino, uvas, arándanos deshidratados, queso feta, nueces endulzadas. Agregue pollo a la parrilla $4.99",
+      "descriptionEn": "Mixed greens, grape tomatoes, cucumbers, grapes, craisins, feta cheese, sweetened walnuts. Add Grilled Chicken $4.99",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-caesar-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada César con pollo a la parrilla",
+      "nameEn": "Grilled Chicken Caesar Salad",
+      "descriptionEs": "Lechuga romana, parmesano rallado, pollo a la parrilla, crutones, aderezo César. Agregue pollo a la parrilla $4.99",
+      "descriptionEn": "Romaine lettuce, shredded parm, grilled chicken, croutons, caesar dressing. Add Grilled Chicken $4.99",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "Lechuga romana, hojas verdes mixtas, pimiento morrón, zanahoria, apio, pepino, cebolla, tomates uva, aceitunas, champiñones, chiles pepperoncini, parmesano rallado",
+      "descriptionEn": "Romaine lettuce, mixed greens, bell peppers, carrots, celery, cucumbers, onions, grape tomatoes, olives, mushrooms, pepperoncini peppers, shredded parm",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef Salad",
+      "descriptionEs": "Lechuga romana, hojas verdes mixtas, pimiento morrón, zanahoria, apio, pepino, cebolla, tomates uva, aceitunas, huevo cocido, pavo, jamón, roast beef, queso suizo, champiñones, chiles pepperoncini",
+      "descriptionEn": "Romaine lettuce, mixed greens, bell peppers, carrots, celery, cucumbers, onions, grape tomatoes, olives, boiled eggs, turkey, ham, roast beef, swiss cheese, mushrooms, pepperoncini peppers",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-salad",
+      "categoryId": "fresh-green-salads",
+      "nameEs": "Ensalada picada",
+      "nameEn": "Chopped Salad",
+      "descriptionEs": "Lechuga iceberg picada, pimientos asados, pepino, queso rallado, garbanzos, aceitunas, tomate",
+      "descriptionEn": "Chopped iceberg lettuce, roasted peppers, cucumbers, shredded cheese, chick peas, olives, tomatoes",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buckeyes-chocolate-with-peanut-butter-cup",
       "categoryId": "desserts",
-      "nameEs": "Galletas Italianas Artesanales (1 lb)",
-      "nameEn": "Authentic Italian Cookies (1 lb)",
-      "descriptionEs": "Surtido diario de galletas italianas tradicionales recién horneadas, crujientes por fuera y suaves por dentro.",
-      "descriptionEn": "Assorted traditional Italian bakery cookies baked fresh daily, sweet and melt-in-your-mouth delicious.",
-      "price": "$12.99",
-      "popular": false,
-      "badge": "Dulce",
-      "tags": [
-        "Horneado",
-        "Postre"
-      ],
-      "allergens": [
-        "Wheat",
-        "Eggs",
-        "Milk",
-        "Nuts"
-      ],
+      "nameEs": "Buckeyes de chocolate con taza de crema de cacahuate",
+      "nameEn": "Buckeyes Chocolate with Peanut Butter Cup",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mini-cheesecake-w-cherries",
+      "categoryId": "desserts",
+      "nameEs": "Mini cheesecake con cerezas",
+      "nameEn": "Mini Cheesecake w/ Cherries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "waffle-rolled-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake enrollado en waffle",
+      "nameEn": "Waffle Rolled Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-mousse-cups",
+      "categoryId": "desserts",
+      "nameEs": "Vasitos de mousse de chocolate",
+      "nameEn": "Chocolate Mousse Cups",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-cannoli-regular",
+      "categoryId": "desserts",
+      "nameEs": "Cannoli grande normal",
+      "nameEn": "Large Cannoli Regular",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "large-cannoli-chocolate",
+      "categoryId": "desserts",
+      "nameEs": "Cannoli grande de chocolate",
+      "nameEn": "Large Cannoli Chocolate",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mud-pie-parfait",
+      "categoryId": "desserts",
+      "nameEs": "Parfait mud pie",
+      "nameEn": "Mud Pie Parfait",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.49",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "7-1-5-lb-cheesecake-w-cherries-serves-6",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de 7``/1.5 lb con cerezas (para 6)",
+      "nameEn": "7``/1.5 lb Cheesecake w/Cherries (serves 6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheesecake-burritos",
+      "categoryId": "desserts",
+      "nameEs": "Burritos de cheesecake",
+      "nameEn": "Cheesecake Burritos",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-pack-chocolate-chip-cookies",
+      "categoryId": "desserts",
+      "nameEs": "Paquete de 2 galletas con chispas de chocolate",
+      "nameEn": "2-Pack Chocolate Chip Cookies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.69",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "single-pack-chocolate-chip-cookie",
+      "categoryId": "desserts",
+      "nameEs": "Paquete individual de galleta con chispas de chocolate",
+      "nameEn": "Single Pack Chocolate Chip Cookie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.89",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli-mini-mixed-4-pack",
+      "categoryId": "desserts",
+      "nameEs": "Paquete de 4 mini cannoli surtidos",
+      "nameEn": "Cannoli Mini Mixed 4 pack",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-brownie",
+      "categoryId": "desserts",
+      "nameEs": "Brownie con chispas de chocolate",
+      "nameEn": "Chocolate Chip Brownie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gluten-free-rice-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de arroz sin gluten",
+      "nameEn": "Gluten Free Rice Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-pudding",
+      "categoryId": "desserts",
+      "nameEs": "Arroz con leche",
+      "nameEn": "Rice Pudding",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-godiva-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake Godiva estilo Nueva York",
+      "nameEn": "New York Godiva Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chunky-cheesecake-cherry-parfait",
+      "categoryId": "desserts",
+      "nameEs": "Parfait de cheesecake con trozos de cereza",
+      "nameEn": "Chunky Cheesecake Cherry Parfait",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gourmet-sliced-cakes",
+      "categoryId": "desserts",
+      "nameEs": "Pasteles gourmet en rebanadas",
+      "nameEn": "Gourmet Sliced Cakes",
+      "descriptionEs": "Pastel de zanahoria, Chocolate Passion, limoncello, cheesecake Nueva York, Oreo, crema de cacahuate",
+      "descriptionEn": "Carrot Cake, Chocolate Passion, Limoncello, New York Cheesecake, Oreo, Peanut Butter",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "children-s-menu",
+      "categoryId": "children-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Children's Menu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.99",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con sándwiches de queso y ensaladas frescas. Pregunte a nuestro personal por alternativas sin gluten.",
-      "aEn": "Yes, we offer cheese combo sandwiches and fresh salads. Please ask our staff about gluten-conscious alternatives."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos y oficinas?",
-      "qEn": "Do you offer catering services for events and offices?",
-      "aEs": "¡Por supuesto! Preparamos pedidos de catering de cualquier tamaño para oficinas, fiestas y eventos en el área de Hartford.",
-      "aEn": "Absolutely! We provide catering orders of any size for workplaces, parties, and events throughout the Hartford area."
-    },
-    {
-      "qEs": "¿Necesito hacer reservación para comer en el restaurante?",
-      "qEn": "Do you take reservations for dining in?",
-      "aEs": "Funcionamos principalmente con el sistema de llegada sin cita previa y pedidos rápidos en el mostrador para llevar o cenar aquí.",
-      "aEn": "We operate primarily on a walk-in basis with quick counter service for both dine-in and takeout."
-    }
-  ]
+  "faqs": []
 }
