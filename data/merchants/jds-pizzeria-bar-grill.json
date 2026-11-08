@@ -2,25 +2,16 @@
   "storeInfo": {
     "id": "jds-pizzeria-bar-grill",
     "name": "JD's Pizzeria Bar & Grill",
-    "tagline": "Family Owned American & Italian Favorites Since 1971 / Favoritos Americanos e Italianos Desde 1971",
+    "tagline": "Pizzeria Bar & Grill in Southington | Pizzería, Bar y Grill en Southington",
     "address": "713 Queen Street, Southington, CT",
     "hours": {
-      "monday_friday": "11:00 AM - 1:00 AM",
-      "saturday": "11:00 AM - 2:00 AM",
-      "sunday": "11:00 AM - 1:00 AM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Full Bar",
-      "Outdoor Patio",
-      "TVs"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -33,252 +24,952 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
+      "id": "starters",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Starters",
       "icon": "Utensils"
     },
     {
-      "id": "pizzas",
-      "nameEs": "Pizzas Especiales",
-      "nameEn": "Specialty Pizzas",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Pastas",
-      "nameEn": "Mains & Pastas",
+      "id": "specialty-pizza",
+      "nameEs": "Pizzas especiales",
+      "nameEn": "Specialty Pizza",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "create-your-pizza",
+      "nameEs": "Arme su pizza",
+      "nameEn": "Create Your Pizza",
+      "icon": "Utensils"
+    },
+    {
+      "id": "calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
+    },
+    {
+      "id": "italian-entrees",
+      "nameEs": "Platos fuertes italianos",
+      "nameEn": "Italian Entrées",
+      "icon": "Utensils"
+    },
+    {
+      "id": "steaks",
+      "nameEs": "Cortes",
+      "nameEn": "Steaks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "classic-entrees",
+      "nameEs": "Platos fuertes clásicos",
+      "nameEn": "Classic Entrées",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "grinders",
+      "nameEs": "Grinders",
+      "nameEn": "Grinders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "triple-decker-clubs",
+      "nameEs": "Clubs de triple piso",
+      "nameEn": "Triple Decker Clubs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "for-the-kids",
+      "nameEs": "Para los niños",
+      "nameEn": "For the Kids",
+      "icon": "Utensils"
+    },
+    {
+      "id": "side-orders",
+      "nameEs": "Acompañamientos",
+      "nameEn": "Side Orders",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "jds-pizzeria-bar-grill-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamares Crujientes",
+      "id": "soup-of-the-day",
+      "categoryId": "starters",
+      "nameEs": "Sopa del Día",
+      "nameEn": "Soup Of The Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "starters",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Nuestra clásica sopa de cebolla con crutones, gratinada con queso mozzarella.",
+      "descriptionEn": "Our classic onion soup with croutons and baked with mozzarella cheese.",
+      "price": "$7.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-calamari",
+      "categoryId": "starters",
+      "nameEs": "Calamares crujientes",
       "nameEn": "Crispy Calamari",
-      "descriptionEs": "Ligeramente empanizados y fritos hasta dorar. Servidos con salsa marinara clásica.",
+      "descriptionEs": "Ligeramente rebozados y fritos hasta dorar. Servidos con salsa marinara.",
       "descriptionEn": "Lightly battered and fried golden brown. Served with marinara sauce.",
       "price": "$13.99",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-02",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas Famosas de JD's",
+      "id": "jds-famous-wings",
+      "categoryId": "starters",
+      "nameEs": "Famosas alitas de JD’s",
       "nameEn": "JD’s Famous Wings",
-      "descriptionEs": "Elige entre salsa Picante, Suave, BBQ, Teriyaki, Sweet Chili, Parmesano con Ajo o naturales. Servidas con apio y queso azul.",
+      "descriptionEs": "Salsa a elegir: picante, suave, BBQ, teriyaki, chile dulce, ajo y parmesano o natural. Servidas con apio y queso azul.",
       "descriptionEn": "Your choice of Hot, Mild, BBQ, Teriyaki, Sweet Chili, Garlic Parm or plain. Served with celery and bleu cheese.",
-      "price": "$15.99",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Alitas",
-        "Picante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "price": "6 pcs $11.59 / 10 pcs $15.99",
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-03",
-      "categoryId": "appetizers",
-      "nameEs": "Papas Fritas con Queso y Tocino",
+      "id": "chicken-tenders",
+      "categoryId": "starters",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "Salsa a elegir: picante, suave, BBQ, teriyaki, chile dulce, ajo y parmesano o natural. Servidas con queso azul.",
+      "descriptionEn": "Your choice of Hot, Mild, BBQ, Teriyaki, Sweet Chili, Garlic Parm or plain. Served with bleu cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries-bacon",
+      "categoryId": "starters",
+      "nameEs": "Papas fritas con queso y tocino",
       "nameEn": "Cheese Fries & Bacon",
-      "descriptionEs": "Papas fritas doradas cubiertas con abundante queso mozzarella derretido y trocitos de tocino crujiente.",
-      "descriptionEn": "Topped with melted mozzarella cheese and crispy bacon bits.",
+      "descriptionEs": "Cubiertas con queso mozzarella derretido.",
+      "descriptionEn": "Topped with melted mozzarella cheese.",
       "price": "$13.99",
-      "popular": false,
-      "badge": "Para Compartir",
-      "tags": [
-        "Papas",
-        "Tocino",
-        "Queso"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-04",
-      "categoryId": "appetizers",
-      "nameEs": "Mozzarella Frita",
-      "nameEn": "Fried Mozzarella",
-      "descriptionEs": "Bastones de mozzarella cocidos a la perfección dorada, servidos con salsa marinara casera.",
-      "descriptionEn": "Cooked golden brown topped with our signature marinara sauce.",
+      "id": "potato-skins-bacon",
+      "categoryId": "starters",
+      "nameEs": "Cáscaras de papa con tocino",
+      "nameEn": "Potato Skins & Bacon",
+      "descriptionEs": "Cubiertas con queso derretido.",
+      "descriptionEn": "Topped with melted cheese.",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mushrooms",
+      "categoryId": "starters",
+      "nameEs": "Champiñones fritos",
+      "nameEn": "Fried Mushrooms",
+      "descriptionEs": "Ligeramente empanizados y servidos con salsa marinara para remojar.",
+      "descriptionEn": "Lightly breaded and served with marinara sauce for dipping.",
       "price": "$12.99",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-05",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Especial de JD's (Mediana 14\")",
-      "nameEn": "JD's Special Pizza (Medium 14\")",
-      "descriptionEs": "Nuestra pizza insignia cargada de pimientos, cebollas, albóndigas, salchicha italiana, pepperoni y champiñones.",
-      "descriptionEn": "Peppers, Onions, Meatballs, Sausage, Pepperoni, Mushrooms on our homemade crust.",
-      "price": "$24.59",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Pizza",
-        "Especialidad de la Casa"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "zucchini-sticks",
+      "categoryId": "starters",
+      "nameEs": "Bastones de Zucchini",
+      "nameEn": "Zucchini Sticks",
+      "descriptionEs": "Ligeramente empanizados, fritos y servidos con salsa marinara.",
+      "descriptionEn": "Lightly breaded and fried and served with marinara sauce.",
+      "price": "$12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-06",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza de Pollo a la Bufala (Mediana 14\")",
-      "nameEn": "Buffalo Chicken Pizza (Medium 14\")",
-      "descriptionEs": "Pollo picante al estilo búfala cubierto con auténtico queso mozzarella fundido.",
-      "descriptionEn": "Spicy buffalo chicken and melted mozzarella cheese.",
-      "price": "$27.99",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Pizza",
-        "Picante",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "fried-mozzarella",
+      "categoryId": "starters",
+      "nameEs": "Mozzarella frita",
+      "nameEn": "Fried Mozzarella",
+      "descriptionEs": "Dorados y cubiertos con salsa marinara.",
+      "descriptionEn": "Cooked golden brown topped with marinara sauce.",
+      "price": "$12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-07",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Vegetariana (Mediana 14\")",
-      "nameEn": "Vegetarian Pizza (Medium 14\")",
-      "descriptionEs": "Cebollas, pimientos, berenjena, aceitunas negras, brócoli fresco y champiñones.",
-      "descriptionEn": "Onions, Peppers, Eggplant, Olives, Broccoli, and Mushrooms.",
-      "price": "$23.99",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Pizza"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "garlic-bread",
+      "categoryId": "starters",
+      "nameEs": "Pan de ajo",
+      "nameEn": "Garlic Bread",
+      "descriptionEs": "Sencillo o con mozzarella (+ $3)",
+      "descriptionEn": "Regular or with mozarella (+ $3)",
+      "price": "$6.99",
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-08",
-      "categoryId": "mains",
-      "nameEs": "Pasta Clásica Casera",
-      "nameEn": "Create Your Own Classic Pasta",
-      "descriptionEs": "Incluye sopa o ensalada de la casa, pan y mantequilla. Elija su pasta (Spaghetti, Ziti, Linguini, etc.) y salsa marinera o ajo y mantequilla.",
-      "descriptionEn": "Served with soup or side salad, bread & butter. Choose your preferred pasta and homemade sauce.",
-      "price": "$15.99",
-      "popular": true,
-      "badge": "Hecho en Casa",
-      "tags": [
-        "Pasta",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "jalapeno-poppers",
+      "categoryId": "starters",
+      "nameEs": "Jalapeños rellenos",
+      "nameEn": "Jalapeno Poppers",
+      "descriptionEs": "Rellenos de queso cheddar. Servidos con nuestra salsa marinara.",
+      "descriptionEn": "Stuffed with cheddar cheese. Served with our marinara sauce.",
+      "price": "$12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-09",
-      "categoryId": "mains",
-      "nameEs": "Calzone Relleno",
-      "nameEn": "Stuffed Calzone",
-      "descriptionEs": "Relleno de queso ricotta y mozzarella fresca. Incluye salsa marinara casera para acompañar.",
-      "descriptionEn": "Stuffed with Ricotta and Mozzarella cheese. Served with our homemade marinara sauce.",
+      "id": "tossed-garden",
+      "categoryId": "salads",
+      "nameEs": "Ensalada verde mixta",
+      "nameEn": "Tossed Garden",
+      "descriptionEs": "Lechuga iceberg, cebolla morada, tomate, pepino y aceitunas.",
+      "descriptionEn": "Iceberg lettuce, red onions, tomatoes, cucumbers and olives.",
+      "price": "Small $9.99 / Large $14.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar",
+      "categoryId": "salads",
+      "nameEs": "César clásica",
+      "nameEn": "Classic Caesar",
+      "descriptionEs": "Lechuga romana, crutones horneados crujientes y nuestro propio aderezo César.",
+      "descriptionEn": "Romaine lettuce, crunchy baked croutons and our own Caesar dressing.",
+      "price": "Small $10.99 / Large $15.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef",
+      "categoryId": "salads",
+      "nameEs": "Del chef",
+      "nameEn": "Chef",
+      "descriptionEs": "Ensalada mixta con jamón, pavo, rosbif, pepino, aceitunas negras y peperoncini.",
+      "descriptionEn": "Tossed salad with Ham, turkey, roast beef, cucumber, black olives & peperoncini.",
+      "price": "Small $13.99 / Large $16.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto",
+      "categoryId": "salads",
+      "nameEs": "Antipasto",
+      "nameEn": "Antipasto",
+      "descriptionEs": "Ensalada mixta cubierta con salami genovés, salami cocido, jamón y peperoncini.",
+      "descriptionEn": "Tossed salad topped with genoa salami, cooked salami, ham & peperoncini.",
+      "price": "Small $13.99 / Large $16.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-greek",
+      "categoryId": "salads",
+      "nameEs": "La griega",
+      "nameEn": "The Greek",
+      "descriptionEs": "Ensalada mixta con queso feta y peperoncini.",
+      "descriptionEn": "Tossed salad with feta cheese, pepperoncini.",
+      "price": "Small $12.99 / Large $15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-add-ons",
+      "categoryId": "salads",
+      "nameEs": "Extras para ensaladas",
+      "nameEn": "Salad Add-On’s",
+      "descriptionEs": "Pollo $5.29, atún $5.29.",
+      "descriptionEn": "Chicken $5.29, Tuna $5.29.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dressings",
+      "categoryId": "salads",
+      "nameEs": "Aderezos",
+      "nameEn": "Dressings",
+      "descriptionEs": "Italiano de la casa, italiano cremoso, vinagreta balsámica, mostaza con miel (queso azul, parmesano con pimienta, ranch: agregue $0.50). Cada aderezo adicional $1.00.",
+      "descriptionEn": "House Italian, Creamy Italian, Balsamic Vinaigrette, Honey Mustard, (Bleu Cheese, Parmesan Peppercorn, Ranch add $0.50). Each additional dressing $1.00.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jd-s-special",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Especial de JD's",
+      "nameEn": "JD's Special",
+      "descriptionEs": "Pimientos, cebolla, albóndigas, salchicha, pepperoni, champiñones.",
+      "descriptionEn": "Peppers, Onions, Meatballs, Sausage Pepperoni, Mushrooms.",
+      "price": "Small 10” $16.29 / Medium 14” $24.59 / X-Large 18” $29.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vegetable",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Vegetales",
+      "nameEn": "Vegetable",
+      "descriptionEs": "Cebolla, pimientos, berenjena, aceitunas, brócoli, champiñones.",
+      "descriptionEn": "Onions, Peppers, Eggplant, Olives, Broccoli, Mushrooms.",
+      "price": "Small 10” $16.29 / Medium 14” $23.99 / X-Large 18” $28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-lovers",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Para amantes de la carne",
+      "nameEn": "Meat Lovers",
+      "descriptionEs": "Pepperoni, salchicha, albóndiga, tocino.",
+      "descriptionEn": "Pepperoni, Sausage, Meatball, Bacon.",
+      "price": "Small 10” $16.29 / Medium 14” $23.99 / X-Large 18” $28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "Pollo búfalo picante y mozzarella.",
+      "descriptionEn": "Spicy buffalo chicken & Mozzarella.",
+      "price": "Small 10” $15.59 / Medium 14” $22.99 / X-Large 18” $27.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tuscano",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Pollo toscano",
+      "nameEn": "Chicken Tuscano",
+      "descriptionEs": "Rebanadas de tomate, pimientos, cebolla, pollo (roja o blanca)",
+      "descriptionEn": "Sliced Tomatoes, Peppers, Onions, Chicken (Red or White)",
+      "price": "Small 10” $15.59 / Medium 14” $23.99 / X-Large 18” $28.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grecian-special",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Especial griega",
+      "nameEn": "Grecian Special",
+      "descriptionEs": "Rebanadas de tomate, aceitunas negras, cebolla, orégano, un toque ligero de ajo, queso feta, mozzarella (roja o blanca)",
+      "descriptionEn": "Sliced Tomatoes, Black Olives, Onions, Oregano, Light garlic sprinkle, Feta Cheese, Mozzarella (Red or White)",
+      "price": "Small 10” $15.99 / Medium 14” $23.99 / X-Large 18” $28.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "casino",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Casino",
+      "nameEn": "Casino",
+      "descriptionEs": "Almejas, tocino y pimientos en salsa blanca, cubierta con mozzarella y queso cheddar.",
+      "descriptionEn": "Clams, Bacon, Peppers in a white sauce topped with Mozzarella & Cheddar cheese.",
+      "price": "Small 10” $16.29 / Medium 14” $24.99 / X-Large 18” $29.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hawaiian",
+      "categoryId": "specialty-pizza",
+      "nameEs": "Hawaiana",
+      "nameEn": "Hawaiian",
+      "descriptionEs": "Piña, jamón y mozzarella.",
+      "descriptionEn": "Pineapple, Ham & Mozzarella.",
+      "price": "Small 10” $15.29 / Medium 14” $22.99 / X-Large 18” $27.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-pizza",
+      "categoryId": "create-your-pizza",
+      "nameEs": "Arme su pizza",
+      "nameEn": "Create Your Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small 10” $11.29 / Medium 14” $16.59 / X-Large 18” $19.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toppings",
+      "categoryId": "create-your-pizza",
+      "nameEs": "Ingredientes",
+      "nameEn": "Toppings",
+      "descriptionEs": "Mozzarella, pimientos, cebolla, albóndigas, salchicha, pepperoni, tocino, champiñones, ajo fresco",
+      "descriptionEn": "Mozzarella, Peppers, Onions, Meatballs, Sausage, Pepperoni, Bacon, Mushrooms, Fresh Garlic",
+      "price": "Small $1.50 / Medium $1.75 / X-Large $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "specialty-toppings",
+      "categoryId": "create-your-pizza",
+      "nameEs": "Ingredientes especiales",
+      "nameEn": "Specialty Toppings",
+      "descriptionEs": "Pollo, piña, queso ricotta, anchoas, jamón",
+      "descriptionEn": "Chicken, Pineapple, Ricotta Cheese, Anchovies, Ham",
+      "price": "Small $2.50 / Medium $3.00 / X-Large $4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calzones",
+      "categoryId": "calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
+      "descriptionEs": "Servidos con nuestra salsa marinara casera. Rellenos de queso ricotta y mozzarella. Ingredientes disponibles: pimientos, cebolla, albóndigas, salchicha, pepperoni, brócoli, champiñón, aceitunas.",
+      "descriptionEn": "Served with our homemade marinara sauce. Stuffed with Ricotta and Mozzarella Cheese. Available Items: Peppers, Onions, Meatballs, Sausage, Pepperoni, Broccoli, Mushroom, Olives.",
       "price": "$13.99",
-      "popular": true,
-      "badge": "Horneado",
-      "tags": [
-        "Calzone",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "jds-pizzeria-bar-grill-10",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza de Barril Artesanal Local",
-      "nameEn": "Local Craft Draft Beer",
-      "descriptionEs": "Pregunte a su mesero por nuestra rotación de cervezas de barril locales y de importación.",
-      "descriptionEn": "Ask your server about our rotating selection of local craft and domestic draft beers.",
-      "price": "$6.50",
-      "popular": true,
-      "badge": "Bebida",
-      "tags": [
-        "Cerveza",
-        "Bar"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "each-additional-item",
+      "categoryId": "calzones",
+      "nameEs": "Cada ingrediente adicional",
+      "nameEn": "Each Additional Item",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.79",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-pasta",
+      "categoryId": "pasta",
+      "nameEs": "Arme su pasta",
+      "nameEn": "Create Your Pasta",
+      "descriptionEs": "Todos los platos fuertes se sirven con sopa o ensalada pequeña, pan y mantequilla. Elija su pasta: spaghetti, conchas, ziti, linguini, cabello de ángel. Elija su salsa: salsa marinara, salsa de ajo fresco y mantequilla (+ $2.00), aceite de oliva extra virgen y ajo fresco (+ $2.00), salsa de carne (+ $6.00), salsa de almejas (blanca o roja) (+ $9.00).",
+      "descriptionEn": "All entrées served with soup or side salad, bread & butter. Choose your pasta: Spaghetti, Shells, Ziti, Linguini, Angel Hair. Choose your sauce: Marinara Sauce, Fresh Garlic & Butter sauce (+ $2.00), Extra Virgin Olive Oil & Fresh Garlic (+ $2.00), Meat Sauce (+ $6.00), Clam Sauce (White or Red) (+ $9.00).",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-topping",
+      "categoryId": "pasta",
+      "nameEs": "Agregue un ingrediente",
+      "nameEn": "Add Topping",
+      "descriptionEs": "Salchicha, albóndiga, brócoli, champiñones",
+      "descriptionEn": "Sausage, Meatball, Broccoli, Mushrooms",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-lasagna",
+      "categoryId": "italian-entrees",
+      "nameEs": "Lasaña horneada",
+      "nameEn": "Baked Lasagna",
+      "descriptionEs": "Capas caseras de pasta, carne molida con quesos ricotta, mozzarella, parmesano y romano.",
+      "descriptionEn": "Homemade layers of pasta, ground meat with ricotta, mozzarella, parmesan and Romano cheeses.",
+      "price": "$19.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-favorites-your-choice",
+      "categoryId": "italian-entrees",
+      "nameEs": "Favoritos italianos (a su elección)",
+      "nameEn": "Italian Favorites (Your Choice)",
+      "descriptionEs": "Ravioles (de queso o carne) — manicotti relleno al horno — conchas rellenas al horno.",
+      "descriptionEn": "Ravioli (Cheese or Meat) — Baked stuffed manicotti — Baked stuffed shells.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-combo",
+      "categoryId": "italian-entrees",
+      "nameEs": "Combo italiano",
+      "nameEn": "Italian Combo",
+      "descriptionEs": "Combinación de clásicos: conchas rellenas, manicotti relleno y lasaña.",
+      "descriptionEn": "Combination of classics: stuffed shells, stuffed manicotti & lasagna.",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "italian-entrees",
+      "nameEs": "Fettuccine alfredo",
+      "nameEn": "Fettuccine Alfredo",
+      "descriptionEs": "Salsa cremosa de parmesano con un toque de ajo.",
+      "descriptionEn": "Parmesan cream sauce with a hint of garlic.",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccine-carbonara",
+      "categoryId": "italian-entrees",
+      "nameEs": "Fettuccine carbonara",
+      "nameEn": "Fettuccine Carbonara",
+      "descriptionEs": "Mezclado con jamón y chícharos en salsa cremosa de parmesano.",
+      "descriptionEn": "Tossed with ham and peas in a parmesan cream sauce.",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-ala-vodka",
+      "categoryId": "italian-entrees",
+      "nameEs": "Pasta a la vodka",
+      "nameEn": "Pasta Ala Vodka",
+      "descriptionEs": "Salsa cremosa casera con un toque de tomate y vodka.",
+      "descriptionEn": "Homemade cream sauce and a touch of tomato & vodka.",
+      "price": "$20.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ziti-ala-mondo",
+      "categoryId": "italian-entrees",
+      "nameEs": "Ziti a la Mondo",
+      "nameEn": "Ziti Ala Mondo",
+      "descriptionEs": "Ziti horneado con salchicha y salsa de carne, cubierto con queso mozzarella.",
+      "descriptionEn": "Ziti baked with sausage & meat sauce, topped with mozzarella cheese.",
+      "price": "$23.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jds-special-steak",
+      "categoryId": "steaks",
+      "nameEs": "Bistec especial de JD’s",
+      "nameEn": "JD’s Special Steak",
+      "descriptionEs": "Sirloin Angus de 12 oz cubierto con pimientos, cebolla y champiñones salteados y una ligera salsa roja. Servido con papa, arroz o pasta y verdura, sopa o ensalada.",
+      "descriptionEn": "12 oz. Angus sirloin topped with sautéed peppers, onions, mushrooms, and a light red sauce. Served with potato or rice or pasta & vegetable, soup or salad.",
+      "price": "$29.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-sirloin-steak",
+      "categoryId": "steaks",
+      "nameEs": "Bistec sirloin NY",
+      "nameEn": "NY Sirloin Steak",
+      "descriptionEs": "Corte Angus de 12 oz a la parrilla al término deseado. Servido con papa, arroz o pasta y verdura, sopa o ensalada.",
+      "descriptionEn": "12 oz. Angus cut and grilled to order. Served with potato or rice or pasta & vegetable, soup or salad.",
+      "price": "$27.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-beef-steak",
+      "categoryId": "steaks",
+      "nameEs": "Bistec de res picada",
+      "nameEn": "Chopped Beef Steak",
+      "descriptionEs": "Res Angus recién molida a la parrilla, cubierta con cebolla y salsa de champiñones. Servido con papa, arroz o pasta y verdura, sopa o ensalada.",
+      "descriptionEn": "Fresh ground Angus Beef grilled and topped with onions and mushroom sauce. Served with potato or rice or pasta & vegetable, soup or salad.",
+      "price": "$23.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-fra-diavolo",
+      "categoryId": "seafood",
+      "nameEs": "Mariscos fra diavolo",
+      "nameEn": "Seafood Fra Diavolo",
+      "descriptionEs": "Vieiras, camarones, bacalao joven, calamar y mejillones salteados en salsa marinara picante, servidos sobre pasta.",
+      "descriptionEn": "Scallops, shrimp, scrod, calamari and mussels sautéed in a spicy marinara sauce served over pasta.",
+      "price": "$30.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "captains-fried-platter",
+      "categoryId": "seafood",
+      "nameEs": "Plato frito del capitán",
+      "nameEn": "Captains Fried Platter",
+      "descriptionEs": "Bacalao joven, tiras de almeja, camarones y vieiras.",
+      "descriptionEn": "Scrod, clam strips, shrimp & scallops.",
+      "price": "$29.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-stuffed-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Camarones rellenos horneados",
+      "nameEn": "Baked Stuffed Shrimp",
+      "descriptionEs": "Camarones jumbo (4) con nuestro relleno de mariscos.",
+      "descriptionEn": "Jumbo shrimp (4) with our own seafood stuffing.",
+      "price": "$26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-fish-and-chips",
+      "categoryId": "seafood",
+      "nameEs": "Fish and chips estilo Nueva Inglaterra",
+      "nameEn": "New England Fish And Chips",
+      "descriptionEs": "Filete de bacalao del Atlántico rebozado y frito hasta dorar.",
+      "descriptionEn": "Atlantic Cod Filet, battered and fried golden brown.",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-stuffed-scrod",
+      "categoryId": "seafood",
+      "nameEs": "Bacalao joven relleno al horno",
+      "nameEn": "Baked Stuffed Scrod",
+      "descriptionEs": "Bacalao del Atlántico relleno de mariscos caseros y horneado hasta dorar.",
+      "descriptionEn": "Atlantic cod, stuffed with homemade seafood stuffing then baked golden brown.",
+      "price": "$24.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "scrod-francaise",
+      "categoryId": "seafood",
+      "nameEs": "Bacalao joven francese",
+      "nameEn": "Scrod Francaise",
+      "descriptionEs": "Bacalao del Atlántico salteado en salsa de mantequilla al limón y vino.",
+      "descriptionEn": "Atlantic cod sauteed in a lemon butter wine sauce.",
+      "price": "$24.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-shrimp",
+      "categoryId": "seafood",
+      "nameEs": "Camarones fritos",
+      "nameEn": "Fried Shrimp",
+      "descriptionEs": "Camarones empanizados a mano y fritos hasta dorar.",
+      "descriptionEn": "Hand-breaded shrimp fried a golden brown.",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clam-strips",
+      "categoryId": "seafood",
+      "nameEs": "Tiras de almeja",
+      "nameEn": "Clam Strips",
+      "descriptionEs": "Tiras de almeja tradicionales, dulces y pequeñas.",
+      "descriptionEn": "Traditional clam strips, sweet and petite.",
+      "price": "$21.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marsala",
+      "categoryId": "classic-entrees",
+      "nameEs": "Marsala",
+      "nameEn": "Marsala",
+      "descriptionEs": "Salteado con champiñones y salsa de vino marsala, servido sobre pasta.",
+      "descriptionEn": "Sauté with mushrooms and Marsala wine sauce and served over pasta.",
+      "price": "Chicken $23.99 / Veal $26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "francaise",
+      "categoryId": "classic-entrees",
+      "nameEs": "Francés",
+      "nameEn": "Francaise",
+      "descriptionEs": "Salteado en salsa de mantequilla al limón y vino, servido sobre pasta.",
+      "descriptionEn": "Sauté in a lemon butter wine sauce and served over pasta.",
+      "price": "Chicken $23.99 / Veal $26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cacciatore",
+      "categoryId": "classic-entrees",
+      "nameEs": "Cacciatore",
+      "nameEn": "Cacciatore",
+      "descriptionEs": "Champiñones, cebolla, pimientos y tomate salteados en salsa de vino sobre pasta.",
+      "descriptionEn": "Mushrooms, onions, peppers and tomatoes sauteed in wine sauce over pasta.",
+      "price": "Chicken $23.99 / Veal $26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "broccoli-saute",
+      "categoryId": "classic-entrees",
+      "nameEs": "Salteado de brócoli",
+      "nameEn": "Broccoli Saute",
+      "descriptionEs": "Ajo, aceite y vino blanco salteados con brócoli y cebolla.",
+      "descriptionEn": "Garlic, oil, & white wine sautéed with broccoli, onions.",
+      "price": "Chicken $23.99 / Veal $24.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmigiana",
+      "categoryId": "classic-entrees",
+      "nameEs": "A la parmesana",
+      "nameEn": "Parmigiana",
+      "descriptionEs": "Cubierto con salsa de tomate, mozzarella y queso parmesano.",
+      "descriptionEn": "Topped with tomato sauce, mozzarella and parmesan cheese.",
+      "price": "Eggplant $20.99 / Chicken $22.99 / Veal $26.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cordon-bleu",
+      "categoryId": "classic-entrees",
+      "nameEs": "Pollo cordon bleu",
+      "nameEn": "Chicken Cordon Bleu",
+      "descriptionEs": "Pechuga de pollo deshuesada rellena de jamón y mozzarella, cubierta con mozzarella y salsa de vino blanco.",
+      "descriptionEn": "Boneless chicken breast stuffed with ham and mozzarella, topped with mozzarella and a white wine sauce.",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-princess",
+      "categoryId": "classic-entrees",
+      "nameEs": "Pollo princesa",
+      "nameEn": "Chicken Princess",
+      "descriptionEs": "Pechuga de pollo deshuesada rellena de mariscos y brócoli, cubierta con mozzarella y salsa de vino blanco.",
+      "descriptionEn": "Boneless chicken breast stuffed with seafood stuffing and broccoli, topped with mozzarella and a white wine sauce.",
+      "price": "$25.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "classic-entrees",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "Pechuga de pollo deshuesada servida con brócoli y arroz.",
+      "descriptionEn": "Boneless chicken breast served with broccoli and rice.",
+      "price": "$19.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa clásica",
+      "nameEn": "Classic Burger",
+      "descriptionEs": "Queso americano, lechuga y tomate.",
+      "descriptionEn": "American cheese, lettuce and tomatoes.",
+      "price": "$14.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jds-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de JD’s",
+      "nameEn": "JD’s Burger",
+      "descriptionEs": "Cebolla caramelizada, champiñones y mozzarella.",
+      "descriptionEn": "Caramelized onions, mushrooms and mozzarella.",
+      "price": "$15.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa con tocino",
+      "nameEn": "Bacon Burger",
+      "descriptionEs": "Queso americano, lechuga y tomate.",
+      "descriptionEn": "American cheese, lettuce and tomatoes.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-sausage-eggplant-parm",
+      "categoryId": "grinders",
+      "nameEs": "Albóndiga * salchicha * berenjena a la parmesana",
+      "nameEn": "Meatball * Sausage * Eggplant Parm",
+      "descriptionEs": "A la parmesana, recién salido del horno, con mozzarella y salsa marinara.",
+      "descriptionEn": "Oven hot Parmigiana with Mozzarella and Marinara Sauce.",
+      "price": "Half 8” $9.99 / Whole 12” $14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parm",
+      "categoryId": "grinders",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parm",
+      "descriptionEs": "A la parmesana, recién salido del horno, con mozzarella y salsa marinara.",
+      "descriptionEn": "Oven hot Parmigiana with Mozzarella and Marinara Sauce.",
+      "price": "Half 8” $10.29 / Whole 12” $15.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-parm",
+      "categoryId": "grinders",
+      "nameEs": "Ternera a la parmesana",
+      "nameEn": "Veal Parm",
+      "descriptionEs": "A la parmesana, recién salido del horno, con mozzarella y salsa marinara.",
+      "descriptionEn": "Oven hot Parmigiana with Mozzarella and Marinara Sauce.",
+      "price": "Half 8” $12.99 / Whole 12” $16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-turkey-tuna-cooked-salami",
+      "categoryId": "grinders",
+      "nameEs": "Jamón * pavo * atún * salami cocido",
+      "nameEn": "Ham * Turkey * Tuna * Cooked Salami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half 8” $9.99 / Whole 12” $14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "genoa-salami-pepperoni-chicken-cutlet-grilled-chicken",
+      "categoryId": "grinders",
+      "nameEs": "Salami genovés * pepperoni * milanesa de pollo * pollo a la parrilla",
+      "nameEn": "Genoa Salami * Pepperoni * Chicken Cutlet * Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half 8” $10.29 / Whole 12” $15.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steak-cheese-roast-beef",
+      "categoryId": "grinders",
+      "nameEs": "Bistec con queso, rosbif",
+      "nameEn": "Steak & Cheese, Roast Beef",
+      "descriptionEs": "Queso provolone, cebolla y champiñones.",
+      "descriptionEn": "Provolone cheese, onions and mushrooms.",
+      "price": "Half 8” $10.99 / Whole 12” $16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-combo-grinders",
+      "categoryId": "grinders",
+      "nameEs": "Combinado italiano (grinders)",
+      "nameEn": "Italian Combo (Grinders)",
+      "descriptionEs": "Tostado al horno con mozzarella, lechuga, tomate, aceite, vinagre, sal y pimienta.",
+      "descriptionEn": "Oven toasted with mozarella, lettuce, tomatoes, oil, vinegar, salt and pepper.",
+      "price": "Half 8” $10.29 / Whole 12” $15.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-olives-hot-peppers-jalapenos-peppers-roasted-peppers-pickles-banana-peppers",
+      "categoryId": "grinders",
+      "nameEs": "Agregue aceitunas, chiles picantes, jalapeños, pimientos asados, pepinillos, chiles banana",
+      "nameEn": "Add Olives, Hot peppers, Jalapenos peppers, Roasted peppers, Pickles, Banana Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half 8” $0.39 / Whole 12” $0.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-bacon",
+      "categoryId": "grinders",
+      "nameEs": "Agrega tocino",
+      "nameEn": "Add Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half 8” $1.50 / Whole 12” $2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-extra-cheese",
+      "categoryId": "grinders",
+      "nameEs": "Agregue queso extra",
+      "nameEn": "Add extra cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half 8” $1.00 / Whole 12” $1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef-ham-tuna-blt-turkey",
+      "categoryId": "triple-decker-clubs",
+      "nameEs": "Rosbif * jamón * atún * BLT * pavo",
+      "nameEn": "Roast Beef * Ham * Tuna * Blt * Turkey",
+      "descriptionEs": "Pan blanco tostado con lechuga, tomate, mayonesa y papas fritas.",
+      "descriptionEn": "Toasted white bread with lettuce, tomato, mayo and fries.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-with-marinara-or-butter-sauce",
+      "categoryId": "for-the-kids",
+      "nameEs": "Pasta con marinara (o salsa de mantequilla)",
+      "nameEn": "Pasta with Marinara (or Butter Sauce)",
+      "descriptionEs": "Para niños menores de 12 años, solo para comer en el restaurante. Incluye refresco de fuente.",
+      "descriptionEn": "Children under 12 and dine-in only please. Includes fountain drink.",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-fries",
+      "categoryId": "for-the-kids",
+      "nameEs": "Tiras de pollo y papas fritas",
+      "nameEn": "Chicken Tenders & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-fries",
+      "categoryId": "for-the-kids",
+      "nameEs": "Queso a la plancha y papas fritas",
+      "nameEn": "Grilled Cheese & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger-fries",
+      "categoryId": "for-the-kids",
+      "nameEs": "Hamburguesa con papas fritas",
+      "nameEn": "Hamburger & Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "side-orders",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "side-orders",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs",
+      "categoryId": "side-orders",
+      "nameEs": "Albóndigas",
+      "nameEn": "Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage",
+      "categoryId": "side-orders",
+      "nameEs": "Salchicha",
+      "nameEn": "Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "anchovies",
+      "categoryId": "side-orders",
+      "nameEs": "Anchoas",
+      "nameEn": "Anchovies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "side-orders",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dressing",
+      "categoryId": "side-orders",
+      "nameEs": "Aderezo",
+      "nameEn": "Dressing",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con pizzas vegetarianas, ensaladas y diversas opciones sin carne. Pregunte a su mesero.",
-      "aEn": "Yes, we offer vegetarian pizzas, salads, and meatless options. Please ask your server for details."
-    },
-    {
-      "qEs": "¿Tienen patio exterior para comer al aire libre?",
-      "qEn": "Yes, when weather permits, enjoy our food and drinks on one of the nicest and largest patios in the area.",
-      "aitativeEs": "Sí, cuando el clima lo permite, contamos con uno de los patios más grandes y agradables de la zona."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o grandes grupos?",
-      "qEn": "Do you accept reservations or large groups?",
-      "aEs": "Aceptamos clientes sin reservación y tenemos un bar completo con múltiples televisores para ver los partidos.",
-      "aEn": "We welcome walk-ins and feature a full-service bar with 8 TVs to watch the game."
-    }
-  ]
+  "faqs": []
 }
