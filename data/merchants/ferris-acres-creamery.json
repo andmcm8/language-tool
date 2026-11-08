@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "ferris-acres-creamery",
     "name": "Ferris Acres Creamery",
-    "tagline": "Handmade premium ice cream in the heart of Newtown, CT",
+    "tagline": "Ice cream parlor in Newtown | Heladería en Newtown",
     "address": "144 Sugar Street, Newtown, CT 06470",
     "hours": {
-      "monday_friday": "1:00 PM - 8:00 PM",
-      "saturday": "11:00 AM - 8:00 PM",
-      "sunday": "11:00 AM - 5:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Outdoor Seating",
-      "Takeout",
       "Bilingual Menu",
-      "Family Friendly"
+      "Online Ordering"
     ],
     "themeColor": "#2e7d32",
     "logoIcon": "utensils",
@@ -32,282 +25,598 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Sabores",
-      "nameEn": "All Flavors",
+      "nameEs": "Todo el Menú",
+      "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "regular",
-      "nameEs": "Sabores Regulares",
-      "nameEn": "Regular Flavors",
+      "id": "our-regular-flavors",
+      "nameEs": "Nuestros sabores regulares",
+      "nameEn": "Our Regular Flavors",
       "icon": "Utensils"
     },
     {
-      "id": "special",
-      "nameEs": "Especialidades Rotativas",
-      "nameEn": "Special Flavors",
+      "id": "sorbet",
+      "nameEs": "Sorbete",
+      "nameEn": "Sorbet",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Más",
-      "nameEn": "Drinks & More",
-      "icon": "Coffee"
+      "id": "no-sugar-added",
+      "nameEs": "Sin azúcar añadida",
+      "nameEn": "No Sugar Added",
+      "icon": "Utensils"
+    },
+    {
+      "id": "vegan",
+      "nameEs": "Vegano",
+      "nameEn": "Vegan",
+      "icon": "Utensils"
+    },
+    {
+      "id": "our-fall-flavors",
+      "nameEs": "Nuestros sabores de otoño",
+      "nameEn": "Our Fall Flavors",
+      "icon": "Utensils"
+    },
+    {
+      "id": "our-winter-flavors",
+      "nameEs": "Nuestros sabores de invierno",
+      "nameEn": "Our Winter Flavors",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "ferris-acres-01",
-      "categoryId": "regular",
-      "nameEs": "Bada Bing",
-      "nameEn": "Bada Bing",
-      "descriptionEs": "Helado de almendras y chocolate con trozos de chocolate oscuro y cerezas Bing.",
-      "descriptionEn": "An almond and chocolate ice cream, with dark chocolate chunks and Bing Cherries.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Casero",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Frutos Secos",
-        "Lácteos"
-      ],
+      "id": "bada-bing",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Bada Bing *",
+      "nameEn": "Bada Bing *",
+      "descriptionEs": "Helado de almendra y chocolate, con trozos de chocolate oscuro y cerezas Bing",
+      "descriptionEn": "An almond and chocolate ice cream, with dark chocolate chunks and Bing Cherries",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-02",
-      "categoryId": "regular",
-      "nameEs": "Mala Conducta (Bad Habit)",
-      "nameEn": "Bad Habit",
-      "descriptionEs": "Un rico y decadente helado de chocolate oscuro.",
-      "descriptionEn": "A rich, dark chocolate ice cream.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Chocolate",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "bad-habit",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Bad Habit*",
+      "nameEn": "Bad Habit*",
+      "descriptionEs": "Un intenso helado de chocolate oscuro",
+      "descriptionEn": "A rich, dark chocolate ice cream",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-03",
-      "categoryId": "regular",
+      "id": "black-raspberry",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Frambuesa negra*",
+      "nameEn": "Black Raspberry*",
+      "descriptionEs": "Un helado dulce, cremoso y suave",
+      "descriptionEn": "A sweet, creamy and smooth ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cake-batter",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Masa de pastel",
+      "nameEn": "Cake Batter",
+      "descriptionEs": "Sabe a pastel de cumpleaños, con chispitas de colores mezcladas",
+      "descriptionEn": "Tastes like birthday cake, with rainbow sprinkles mixed in",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "campfire",
+      "categoryId": "our-regular-flavors",
       "nameEs": "Fogata (Campfire)",
       "nameEn": "Campfire",
-      "descriptionEs": "Helado de vainilla con remolinos de dulce de fudge, trozos de galleta graham y mini malvaviscos.",
-      "descriptionEn": "Vanilla ice cream with fudge swirls, graham cracker pieces, and mini marshmallows.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Dulce",
-        "Galleta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Helado de vainilla con remolinos de fudge, trozos de galleta graham y mini malvaviscos",
+      "descriptionEn": "Vanilla ice cream with fudge swirls, graham cracker pieces, and mini marshmallows",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-04",
-      "categoryId": "regular",
-      "nameEs": "Vaquero (Cow Trax)",
-      "nameEn": "Cow Trax",
-      "descriptionEs": "Helado de vainilla con remolinos de mantequilla de maní y caramelo, y mini chispas de chocolate semi-amargo.",
-      "descriptionEn": "Vanilla ice cream with swirls of peanut butter and caramel, and semi-sweet mini chocolate chips.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Top Seller",
-      "tags": [
-        "Mantequilla de Maní",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Maní",
-        "Lácteos"
-      ],
+      "id": "chocolate",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Chocolate*",
+      "nameEn": "Chocolate*",
+      "descriptionEs": "Un sabor clásico, hecho con el mejor cacao premium",
+      "descriptionEn": "A classic flavor, made with the finest premium cocoa",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-05",
-      "categoryId": "regular",
-      "nameEs": "Galleta y Tarro (Cookie Jar)",
+      "id": "chocolate-chip",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Chispas de chocolate*",
+      "nameEn": "Chocolate Chip*",
+      "descriptionEs": "Helado de vainilla mezclado con mini chispas de chocolate semiamargo",
+      "descriptionEn": "Vanilla ice cream, mixed with semi-sweet mini chocolate chips",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-chocolate-chunk",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Coco con trozos de chocolate*",
+      "nameEn": "Coconut Chocolate Chunk*",
+      "descriptionEs": "Helado de coco con hojuelas de coco y trozos de chocolate oscuro",
+      "descriptionEn": "Coconut ice cream with coconut flakes and dark chocolate chunks",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Café*",
+      "nameEn": "Coffee*",
+      "descriptionEs": "Un helado de café cremoso y suave",
+      "descriptionEn": "A creamy and smooth coffee ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-dough",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Masa de galleta",
+      "nameEn": "Cookie Dough",
+      "descriptionEs": "Helado de vainilla con trozos de masa de galleta y mini chispas de chocolate",
+      "descriptionEn": "Vanilla ice cream with cookie dough chunks and mini chocolate chips",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookie-jar",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Tarro de galletas (Cookie Jar)",
       "nameEn": "Cookie Jar",
-      "descriptionEs": "Helado de vainilla con remolinos de fudge, mini chispas de chocolate y trozos de galletas con chispas de chocolate trituradas.",
-      "descriptionEn": "Vanilla ice cream with fudge swirls, mini chocolate chips and chunks of crushed chocolate chip cookies.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Galletas",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Helado de vainilla con remolinos de fudge, mini chispas de chocolate y trozos de galletas con chispas de chocolate trituradas",
+      "descriptionEn": "Vanilla ice cream with fudge swirls, mini chocolate chips and chunks of crushed chocolate chip cookies",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-06",
-      "categoryId": "regular",
-      "nameEs": "Saltamontes (Grasshopper)",
+      "id": "cookies-and-cream",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Galletas con crema",
+      "nameEn": "Cookies and Cream",
+      "descriptionEs": "Vainilla con Oreos trituradas mezcladas",
+      "descriptionEn": "Vanilla with crushed Oreos mixed in",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cow-trax",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Cow Trax*",
+      "nameEn": "Cow Trax*",
+      "descriptionEs": "Helado de vainilla con remolinos de mantequilla de maní y caramelo, y mini chispas de chocolate semiamargo",
+      "descriptionEn": "Vanilla ice cream with swirls of peanut butter and caramel, and semi-sweet mini chocolate chips",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grasshopper",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Grasshopper",
       "nameEn": "Grasshopper",
-      "descriptionEs": "Refrescante helado de menta con galletas Oreo trituradas mezcladas.",
-      "descriptionEn": "Peppermint ice cream with crushed Oreos mixed in.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Menta",
-      "tags": [
-        "Menta",
-        "Galleta"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "descriptionEs": "Helado de menta con Oreos trituradas mezcladas",
+      "descriptionEn": "Peppermint ice cream with crushed Oreos mixed in",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-07",
-      "categoryId": "regular",
-      "nameEs": "Nuez con Arce (Maple Walnut)",
-      "nameEn": "Maple Walnut",
-      "descriptionEs": "Nuestro helado premium de arce con nueces rostizadas.",
-      "descriptionEn": "Our premium maple ice cream with roasted walnuts.",
-      "price": "$5.50",
-      "popular": false,
-      "badge": "Artesanal",
-      "tags": [
-        "Nueces",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Nueces",
-        "Lácteos"
-      ],
+      "id": "maple-walnut",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Maple con nuez*",
+      "nameEn": "Maple Walnut*",
+      "descriptionEs": "Nuestro helado premium de maple con nueces tostadas",
+      "descriptionEn": "Our premium maple ice cream with roasted walnuts",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-08",
-      "categoryId": "regular",
-      "nameEs": "Trampa para Padres (Parent Trap)",
+      "id": "mocha-mayhem",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Mocha Mayhem",
+      "nameEn": "Mocha Mayhem",
+      "descriptionEs": "Helado de café con remolinos de fudge y Oreos trituradas",
+      "descriptionEn": "Coffee ice cream with fudge swirls and crushed Oreos",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parent-trap",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Parent Trap",
       "nameEn": "Parent Trap",
-      "descriptionEs": "Helado de vainilla con remolinos de mantequilla de maní y Oreos de mantequilla de maní.",
-      "descriptionEn": "Vanilla ice cream with peanut butter swirls and peanut butter Oreos.",
-      "price": "$5.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mantequilla de Maní"
-      ],
-      "allergens": [
-        "Gluten",
-        "Maní",
-        "Lácteos"
-      ],
+      "descriptionEs": "Helado de vainilla con remolinos de mantequilla de maní y Oreos de mantequilla de maní",
+      "descriptionEn": "Vanilla ice cream with peanut butter swirls and peanut butter Oreos",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-09",
-      "categoryId": "special",
-      "nameEs": "Pico Andes (Andes Peak)",
-      "nameEn": "Andes Peak",
-      "descriptionEs": "Helado de menta con trocitos de chocolates Andes y virutas de chocolate.",
-      "descriptionEn": "Peppermint ice cream with pieces of Andes Candies and chocolate shavings.",
-      "price": "$5.75",
-      "popular": true,
-      "badge": "Especial del Día",
-      "tags": [
-        "Menta",
-        "Chocolate",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Soja"
-      ],
+      "id": "pbc2",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "PBC2*",
+      "nameEn": "PBC2*",
+      "descriptionEs": "Helado de chocolate con remolinos de fudge, remolinos de mantequilla de maní y trozos de copas de mantequilla de maní Reese's",
+      "descriptionEn": "Chocolate ice cream with fudge swirls, peanut butter swirls, and chunks of Reese's peanut butter cups",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-10",
-      "categoryId": "special",
-      "nameEs": "Cheesecake de Arándanos (Blueberry Cheesecake)",
-      "nameEn": "Blueberry Cheesecake",
-      "descriptionEs": "Cremosa vainilla con remolinos de arándanos y trozos de pastel de queso mezclados.",
-      "descriptionEn": "A creamy vanilla with blueberry swirls and pieces of cheesecake mixed in.",
-      "price": "$5.75",
-      "popular": true,
-      "badge": "Limitado",
-      "tags": [
-        "Fruta",
-        "Pastel de Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "peach",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Durazno*",
+      "nameEn": "Peach*",
+      "descriptionEs": "Un favorito del verano, con trozos de durazno",
+      "descriptionEn": "A summer favorite , with chunks of peaches",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-11",
-      "categoryId": "special",
-      "nameEs": "Sueño de Elvis (Elvis Dream)",
-      "nameEn": "Elvis Dream",
-      "descriptionEs": "Helado de vainilla con mantequilla de maní, plátano y trozos de chocolate oscuro.",
-      "descriptionEn": "Vanilla ice cream with peanut butter, banana, and dark chocolate chunks.",
-      "price": "$5.75",
-      "popular": false,
-      "badge": "Especial",
-      "tags": [
-        "Plátano",
-        "Mantequilla de Maní"
-      ],
-      "allergens": [
-        "Maní",
-        "Lácteos"
-      ],
+      "id": "raspberry-swirl-chunk",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Remolino de frambuesa con trozos*",
+      "nameEn": "Raspberry Swirl Chunk*",
+      "descriptionEs": "Helado de vainilla con remolinos de frambuesa y trozos de chocolate oscuro",
+      "descriptionEn": "Vanilla ice cream with raspberry swirls and dark chocolate chunks",
+      "price": "",
       "ctaType": "in_store"
     },
     {
-      "id": "ferris-acres-12",
-      "categoryId": "beverages",
-      "nameEs": "Café Helado Artesanal",
-      "nameEn": "Iced Coffee",
-      "descriptionEs": "Café frío recién preparado servido con hielo y un toque de crema dulce.",
-      "descriptionEn": "Freshly brewed iced coffee served over ice with a touch of sweet cream.",
-      "price": "$3.50",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Café",
-        "Refrescante"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "route-302-chocolate-moo",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Route 302 Chocolate Moo*",
+      "nameEn": "Route 302 Chocolate Moo*",
+      "descriptionEs": "Helado de chocolate con remolinos de fudge y trozos de chocolate oscuro",
+      "descriptionEn": "Chocolate ice cream with fudge swirls and dark chocolate chunks",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Fresa*",
+      "nameEn": "Strawberry*",
+      "descriptionEs": "Lleno de trozos de deliciosas fresas",
+      "descriptionEn": "Full of chunks of delicious strawberries",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-cream",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Crema dulce*",
+      "nameEn": "Sweet Cream*",
+      "descriptionEs": "Sabe a crema batida dulce",
+      "descriptionEn": "Tastes like a sweet whipped cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-mj-rell",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "The MJ Rell*",
+      "nameEn": "The MJ Rell*",
+      "descriptionEs": "Nuestro helado de menta con chispitas verdes y trozos de chocolate oscuro. Nuestra versión de menta con chispas de chocolate",
+      "descriptionEn": "Our peppermint ice cream with green sprinkles and dark chocolate chunks. Our version of mint chocolate chip",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toasted-almond",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Almendra tostada*",
+      "nameEn": "Toasted Almond*",
+      "descriptionEs": "Un helado a base de almendra con coco tostado mezclado",
+      "descriptionEn": "An almond based ice cream with toasted coconut mixed in",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla",
+      "categoryId": "our-regular-flavors",
+      "nameEs": "Vainilla*",
+      "nameEn": "Vanilla*",
+      "descriptionEs": "Hecho con la mejor vainilla de Madagascar",
+      "descriptionEn": "Made with the best Madagascar vanilla",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon",
+      "categoryId": "sorbet",
+      "nameEs": "Limón*",
+      "nameEn": "Lemon*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango",
+      "categoryId": "sorbet",
+      "nameEs": "Mango*",
+      "nameEn": "Mango*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple",
+      "categoryId": "sorbet",
+      "nameEs": "Piña*",
+      "nameEn": "Pineapple*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raspberry",
+      "categoryId": "sorbet",
+      "nameEs": "Frambuesa*",
+      "nameEn": "Raspberry*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-sorbet",
+      "categoryId": "sorbet",
+      "nameEs": "Fresa* (Sorbete)",
+      "nameEn": "Strawberry* (Sorbet)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-lemonade",
+      "categoryId": "sorbet",
+      "nameEs": "Limonada de fresa*",
+      "nameEn": "Strawberry Lemonade*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nsa-caramel-pecan",
+      "categoryId": "no-sugar-added",
+      "nameEs": "Caramelo con nuez pecana sin azúcar añadida*",
+      "nameEn": "NSA Caramel Pecan *",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nsa-chocolate",
+      "categoryId": "no-sugar-added",
+      "nameEs": "Chocolate sin azúcar añadida*",
+      "nameEn": "NSA Chocolate*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nsa-coffee",
+      "categoryId": "no-sugar-added",
+      "nameEs": "Café sin azúcar añadida*",
+      "nameEn": "NSA Coffee*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nsa-vanilla",
+      "categoryId": "no-sugar-added",
+      "nameEs": "Vainilla sin azúcar añadida*",
+      "nameEn": "NSA Vanilla*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nsa-vanilla-with-raspberry-swirls",
+      "categoryId": "no-sugar-added",
+      "nameEs": "Vainilla con remolinos de frambuesa sin azúcar añadida*",
+      "nameEn": "NSA Vanilla with Raspberry Swirls*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dark-chocolate",
+      "categoryId": "vegan",
+      "nameEs": "Chocolate oscuro*",
+      "nameEn": "Dark Chocolate*",
+      "descriptionEs": "hecho con leche de coco",
+      "descriptionEn": "made with coconut milk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-n-cream",
+      "categoryId": "vegan",
+      "nameEs": "Galletas con crema (vegano)",
+      "nameEn": "Cookies-n-Cream",
+      "descriptionEs": "hecho con leche de coco",
+      "descriptionEn": "made with coconut milk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vanilla-bean",
+      "categoryId": "vegan",
+      "nameEs": "Vainilla en vaina*",
+      "nameEn": "Vanilla Bean*",
+      "descriptionEs": "hecho con leche de coco",
+      "descriptionEn": "made with coconut milk",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caramel-apple-pie",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Pay de manzana con caramelo",
+      "nameEn": "Caramel Apple Pie",
+      "descriptionEs": "Helado de vainilla con pay de manzana mezclado, con todo y corteza, y remolinos de caramelo",
+      "descriptionEn": "Vanilla ice cream with apple pie mixed in, crust and all, and swirls of caramel",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Canela*",
+      "nameEn": "Cinnamon*",
+      "descriptionEs": "Hecho con canela de Madagascar",
+      "descriptionEn": "Made with Madagascar cinnamon",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-carrot-cake",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Pastel de zanahoria con canela*",
+      "nameEn": "Cinnamon Carrot Cake*",
+      "descriptionEs": "Helado de canela con pastel de zanahoria sin gluten añadido con betún de queso crema mezclado",
+      "descriptionEn": "Cinnamon ice cream with a no added gluten carrot cake with cream cheese frosting mixed in",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pralines-cream-our-fall-flavors",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Pralinés con crema* (Nuestros sabores de otoño)",
+      "nameEn": "Pralines & Cream* (Our Fall Flavors)",
+      "descriptionEs": "Helado de vainilla con caramelo salado y nueces pecanas garapiñadas",
+      "descriptionEn": "Vanilla ice cream with salted caramel & candied pecans",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Calabaza*",
+      "nameEn": "Pumpkin*",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oh-snap",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Oh Snap",
+      "nameEn": "Oh Snap",
+      "descriptionEs": "Calabaza con galletas de jengibre",
+      "descriptionEn": "Pumpkin with Gingersnaps",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-caramel-pecan",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Calabaza con caramelo y nuez pecana*",
+      "nameEn": "Pumpkin Caramel Pecan*",
+      "descriptionEs": "Calabaza con remolinos de caramelo y nueces pecanas tostadas",
+      "descriptionEn": "Pumpkin with caramel swirls and toasted pecans",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-cheesecake",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Cheesecake de calabaza",
+      "nameEn": "Pumpkin Cheesecake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-cookies-and-cream",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Calabaza con galletas y crema",
+      "nameEn": "Pumpkin Cookies and Cream",
+      "descriptionEs": "Calabaza con Oreos",
+      "descriptionEn": "Pumpkin with Oreos",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pumpkin-pie",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Pay de calabaza",
+      "nameEn": "Pumpkin Pie",
+      "descriptionEs": "Calabaza con trozos de galleta graham y remolinos de galleta graham",
+      "descriptionEn": "Pumpkin with graham cracker pieces and graham cracker swirls",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "trick-or-treat",
+      "categoryId": "our-fall-flavors",
+      "nameEs": "Dulce o truco (Trick or Treat)",
+      "nameEn": "Trick or Treat",
+      "descriptionEs": "Helado de chocolate con Kit-Kats de chocolate blanco, Kit-Kats, chispitas de Halloween y Oreos de Halloween",
+      "descriptionEn": "Chocolate ice cream with white chocolate Kit-Kats, Kit-Kats, Halloween Sprinkles, and Halloween Oreos",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elf-trax",
+      "categoryId": "our-winter-flavors",
+      "nameEs": "Elf Trax",
+      "nameEn": "Elf Trax",
+      "descriptionEs": "Helado de menta con remolinos de fudge y trocitos de brownie",
+      "descriptionEn": "Mint ice cream with fudge swirls and brownie bites",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frozen-hot-cocoa",
+      "categoryId": "our-winter-flavors",
+      "nameEs": "Chocolate caliente congelado*",
+      "nameEn": "Frozen Hot Cocoa*",
+      "descriptionEs": "Hecho con la mezcla de cacao premium de Ghirardelli y mini malvaviscos",
+      "descriptionEn": "Made with Ghirardelli's premium cocoa mix and tiny marshmallows",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mint-to-be",
+      "categoryId": "our-winter-flavors",
+      "nameEs": "Mint to Be*",
+      "nameEn": "Mint to Be*",
+      "descriptionEs": "Nuestro cremoso, suave e intenso helado de chocolate con menta",
+      "descriptionEn": "Our creamy, smooth, rich chocolate peppermint ice cream",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reindeer-food",
+      "categoryId": "our-winter-flavors",
+      "nameEs": "Comida de reno (Reindeer Food)*",
+      "nameEn": "Reindeer Food*",
+      "descriptionEs": "Helado de chocolate con mini M&M's rojos y verdes, trozos de chocolate blanco y trozos de chocolate oscuro",
+      "descriptionEn": "Chocolate ice cream, with red and green mini M&M's, white chocolate chunks and dark chocolate chunks",
+      "price": "",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones sin gluten?",
-      "qEn": "Do you offer gluten-free options?",
-      "aEs": "Sí, contamos con varios sabores marcados con un asterisco que no contienen gluten añadido.",
-      "aEn": "Yes, we feature several flavors marked with an asterisk with no added gluten."
-    },
-    {
-      "qEs": "¿Cuáles son sus métodos de pago aceptados?",
-      "qEn": "What payment methods do you accept?",
-      "aEs": "Aceptamos efectivo, tarjetas de crédito/débito, Apple Pay y pagos sin contacto.",
-      "aEn": "We accept cash, credit/debit cards, Apple Pay, and contactless payments."
-    }
-  ]
+  "faqs": []
 }
