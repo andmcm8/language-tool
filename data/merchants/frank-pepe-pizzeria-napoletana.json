@@ -2,24 +2,16 @@
   "storeInfo": {
     "id": "frank-pepe-pizzeria-napoletana",
     "name": "Frank Pepe Pizzeria Napoletana",
-    "tagline": "Legendary New Haven Coal-Fired Pizza | Auténtica Pizza al Carbón de New Haven",
+    "tagline": "Pizza restaurant in Danbury | Pizzería en Danbury",
     "address": "59 Federal Road, Danbury, CT 06810",
     "hours": {
       "monday_friday": "11:00 AM - 10:00 PM",
       "saturday": "11:00 AM - 10:00 PM",
-      "sunday": "11:00 AM - 9:00 PM"
+      "sunday": "11:00 AM - 10:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Coal-Fired Ovens"
+      "Bilingual Menu"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -32,276 +24,494 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Pizzas Especiales",
-      "nameEn": "Specialty Pies",
+      "id": "fan-favorites",
+      "nameEs": "Favoritos de los fanáticos",
+      "nameEn": "Fan Favorites",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Pizzas Clásicas",
-      "nameEn": "Classic Pies",
+      "id": "build-your-own",
+      "nameEs": "Arma tu propia pizza",
+      "nameEn": "Build Your Own",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Beverages",
-      "icon": "Coffee"
+      "id": "value-bundles",
+      "nameEs": "Paquetes de valor",
+      "nameEn": "Value Bundles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "foxon-park-sodas",
+      "nameEs": "Sodas Foxon Park",
+      "nameEn": "Foxon Park Sodas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "other-beverages",
+      "nameEs": "Otras bebidas",
+      "nameEn": "Other Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "frank-pepe-pizzeria-napoletana-01",
-      "categoryId": "specialties",
-      "nameEs": "Pizza de Almejas Blancas",
-      "nameEn": "White Clam Pizza",
-      "descriptionEs": "Almejas frescas, ajo, orégano, queso pecorino romano rallado y aceite de oliva (Solo para comer en el local y para llevar).",
-      "descriptionEn": "Fresh clam, garlic, oregano, grated Pecorino Romano & olive oil (Dine-In and Takeout Only - No Delivery).",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Legendary",
-      "tags": [
-        "Mariscos",
-        "Famoso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "original-tomato-pie-with-mozzarella",
+      "categoryId": "fan-favorites",
+      "nameEs": "Pizza de tomate original con mozzarella",
+      "nameEn": "Original Tomato Pie with Mozzarella",
+      "descriptionEs": "Tomates italianos triturados, mozzarella, queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Crushed Italian Tomatoes, Mozzarella, Grated Pecorino Romano & Olive Oil",
+      "price": "$14.75",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-02",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Calabrese",
-      "nameEn": "Calabrese Pizza",
-      "descriptionEs": "Tomates italianos triturados, mozzarella, salchicha, pepperoni, chiles calabreses picantes importados y queso pecorino romano rallado.",
-      "descriptionEn": "Crushed Italian tomatoes, mozzarella, sausage, pepperoni, imported hot Calabrian chilies & grated Pecorino Romano.",
+      "id": "mozzarella-pepperoni",
+      "categoryId": "fan-favorites",
+      "nameEs": "Mozzarella y pepperoni",
+      "nameEn": "Mozzarella & Pepperoni",
+      "descriptionEs": "Tomates italianos triturados, mozzarella, pepperoni, queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Crushed Italian Tomatoes, Mozzarella, Pepperoni, Grated Pecorino Romano & Olive Oil",
+      "price": "$17.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-white-pizza",
+      "categoryId": "fan-favorites",
+      "nameEs": "Camarones (Pizza blanca)",
+      "nameEn": "Shrimp (White Pizza)",
+      "descriptionEs": "Mozzarella, camarones, ajo, hojuelas de chile rojo, queso Pecorino Romano rallado y aceite de oliva (Pizza blanca)",
+      "descriptionEn": "Mozzarella, Shrimp, Garlic, Red Pepper Flakes, Grated Pecorino Romano & Olive Oil (White Pizza)",
+      "price": "$21.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-onion",
+      "categoryId": "fan-favorites",
+      "nameEs": "Tocino y cebolla",
+      "nameEn": "Bacon & Onion",
+      "descriptionEs": "Tomates italianos triturados, mozzarella, tocino, cebolla, queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Crushed Italian Tomatoes, Mozzarella, Bacon, Onion, Grated Pecorino Romano & Olive Oil",
       "price": "$18.75",
-      "popular": true,
-      "badge": "Limited Time",
-      "tags": [
-        "Picante",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-03",
-      "categoryId": "specialties",
-      "nameEs": "Pizza de Tomate Fresco",
-      "nameEn": "Fresh Tomato Pie",
-      "descriptionEs": "Tomates nativos frescos, mozzarella, albahaca, ajo, queso pecorino romano rallado y aceite de oliva.",
-      "descriptionEn": "Fresh native tomatoes, mozzarella, basil, garlic, grated Pecorino Romano & olive oil.",
-      "price": "$18.75",
-      "popular": false,
-      "badge": "Seasonal",
-      "tags": [
-        "Vegetariano",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "chicken-broccoli-white-pizza",
+      "categoryId": "fan-favorites",
+      "nameEs": "Pollo y brócoli (Pizza blanca)",
+      "nameEn": "Chicken & Broccoli (White Pizza)",
+      "descriptionEs": "Mozzarella, pollo asado al horno, brócoli, queso Pecorino Romano rallado y aceite de oliva (Pizza blanca)",
+      "descriptionEn": "Mozzarella, Oven Roasted Chicken, Broccoli, Grated Pecorino Romano & Olive Oil (White Pizza)",
+      "price": "$20.25",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-04",
-      "categoryId": "mains",
-      "nameEs": "Pizza Original de Tomate",
-      "nameEn": "Original Tomato Pie",
-      "descriptionEs": "Tomates italianos triturados, queso pecorino romano rallado y aceite de oliva (sin mozzarella de forma tradicional).",
-      "descriptionEn": "Crushed Italian tomatoes, grated Pecorino Romano & olive oil.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Classic",
-      "tags": [
-        "Tradicional",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "spinach-mushroom-gorgonzola",
+      "categoryId": "fan-favorites",
+      "nameEs": "Espinaca, champiñones y gorgonzola",
+      "nameEn": "Spinach, Mushroom & Gorgonzola",
+      "descriptionEs": "Mozzarella, espinaca, champiñones, gorgonzola, queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Mozzarella, Spinach, Mushroom, Gorgonzola, Grated Pecorino Romano & Olive Oil",
+      "price": "$16.75",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-05",
-      "categoryId": "mains",
-      "nameEs": "Pizza Margherita",
-      "nameEn": "Margherita",
-      "descriptionEs": "Tomates italianos triturados, mozzarella fresca, albahaca fresca, queso pecorino romano rallado y aceite de oliva.",
-      "descriptionEn": "Crushed Italian tomatoes, fresh mozzarella, fresh basil, grated Pecorino Romano & olive oil.",
-      "price": "$16.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "byo-original-tomato-pie-with-mozzarella",
+      "categoryId": "build-your-own",
+      "nameEs": "AYP - Pizza de tomate original con mozzarella",
+      "nameEn": "BYO - Original Tomato Pie with Mozzarella",
+      "descriptionEs": "Tomates italianos triturados, mozzarella, queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Crushed Italian Tomatoes, Mozzarella, Grated Pecorino Romano & Olive Oil",
+      "price": "$14.75",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-06",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Doppio Pepperoni",
-      "nameEn": "Doppio Pepperoni",
-      "descriptionEs": "Tomates italianos triturados, queso mozzarella, pepperoni extra, queso pecorino romano rallado y aceite de oliva.",
-      "descriptionEn": "Crushed Italian tomatoes, mozzarella cheese, extra pepperoni, grated Pecorino Romano & olive oil.",
-      "price": "$18.25",
-      "popular": false,
-      "badge": "Meat Lover",
-      "tags": [
-        "Carne",
-        "Popular"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "start-from-scratch",
+      "categoryId": "build-your-own",
+      "nameEs": "Empieza desde cero",
+      "nameEn": "Start from Scratch",
+      "descriptionEs": "Empieza con una masa de pizza en blanco: elige tu salsa, elige tu queso y elige tus ingredientes. Todas las pizzas incluyen: queso Pecorino Romano rallado y aceite de oliva",
+      "descriptionEn": "Start from a Blank Pizza Crust: Pick your Sauce, pick your cheese, and pick your Toppings. All Pies Include: Grated Pecorino Romano & Olive Oil",
+      "price": "$12.25",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-07",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Amanti Della Carne",
-      "nameEn": "Amanti Della Carne",
-      "descriptionEs": "Tomates italianos triturados, mozzarella, albóndigas, pepperoni, salchicha, tocino y queso pecorino romano rallado.",
-      "descriptionEn": "Crushed Italian tomatoes, mozzarella, meatball, pepperoni, sausage, bacon & grated Pecorino Romano.",
-      "price": "$19.25",
-      "popular": true,
-      "badge": "Hearty",
-      "tags": [
-        "Carnes Varias"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "family-meal-for-4",
+      "categoryId": "value-bundles",
+      "nameEs": "Comida familiar para 4",
+      "nameEn": "Family Meal for 4",
+      "descriptionEs": "1 pizza de queso grande estilo familiar y ensalada grande (Pepe's o César)",
+      "descriptionEn": "1 Large Family-Style Cheese Pizza and Large Salad (Pepe's or Caesar)",
+      "price": "$38.99",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-08",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Chicken Diavolo",
-      "nameEn": "Chicken Diavolo",
-      "descriptionEs": "Pizza blanca con mozzarella, pollo asado al horno mezclado con salsa picante, cebollas, queso gorgonzola, pecorino romano y aceite de oliva.",
-      "descriptionEn": "White Pizza with mozzarella, oven-roasted chicken mixed with hot-sauce, onions, Gorgonzola cheese, grated Pecorino Romano & olive oil.",
-      "price": "$19.50",
-      "popular": false,
-      "badge": "Spicy",
-      "tags": [
-        "Picante",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "family-meal-deal",
+      "categoryId": "value-bundles",
+      "nameEs": "Oferta de comida familiar",
+      "nameEn": "Family Meal Deal",
+      "descriptionEs": "1 pizza de pepperoni mediana, 1 pizza de queso pequeña y 1 ensalada grande (Pepe's o César)",
+      "descriptionEn": "1 Medium Pepperoni Pizza, 1 Small Cheese Pizza, and 1 Large Salad (Pepe's or Caesar)",
+      "price": "$52.99",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-09",
-      "categoryId": "specialties",
-      "nameEs": "Pizza The Veggie Special",
-      "nameEn": "The Veggie Special",
-      "descriptionEs": "Tomates italianos triturados, mozzarella, espinacas, brócoli, champiñones, pimientos, cebolla, queso pecorino romano y aceite de oliva.",
-      "descriptionEn": "Crushed Italian tomatoes, mozzarella, spinach, broccoli, mushrooms, peppers, onion, grated Pecorino Romano & olive oil.",
-      "price": "$19.00",
-      "popular": false,
-      "badge": "Vegetarian",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "perfect-pair",
+      "categoryId": "value-bundles",
+      "nameEs": "Dúo perfecto",
+      "nameEn": "Perfect Pair",
+      "descriptionEs": "1 pizza de queso mediana y 1 ensalada pequeña (Pepe's o César)",
+      "descriptionEn": "1 Medium Cheese Pizza and 1 Small Salad (Pepe's or Caesar)",
+      "price": "$28.49",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-10",
-      "categoryId": "specialties",
-      "nameEs": "Pizza Albóndigas y Ricotta",
-      "nameEn": "Meatball and Ricotta",
-      "descriptionEs": "Tomates italianos triturados, mozzarella, albóndigas, queso ricotta, queso pecorino romano rallado y aceite de oliva.",
-      "descriptionEn": "Crushed Italian tomatoes, mozzarella, meatball, ricotta cheese, grated Pecorino Romano and olive oil.",
-      "price": "$18.75",
-      "popular": false,
-      "badge": "Chef Choice",
-      "tags": [
-        "Carne",
-        "Queso"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "caprese-di-burrata",
+      "categoryId": "salads",
+      "nameEs": "Caprese Di Burrata",
+      "nameEn": "Caprese Di Burrata",
+      "descriptionEs": "Queso burrata • Tomates uva asados • Albahaca fresca • Glaseado balsámico.",
+      "descriptionEn": "Burrata Cheese • Roasted Grape Tomatoes • Fresh Basil • Balsamic Glaze.",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-11",
-      "categoryId": "beverages",
-      "nameEs": "Refrescos Foxon Park",
-      "nameEn": "Foxon Park Sodas",
-      "descriptionEs": "Refrescos artesanales tradicionales de Connecticut en varios sabores clásicos.",
-      "descriptionEn": "Traditional Connecticut craft sodas in various classic flavors.",
+      "id": "pepe-s-italian-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada italiana de Pepe's",
+      "nameEn": "Pepe's Italian Salad",
+      "descriptionEs": "• Hojas verdes mixtas • Lechuga romana crujiente • Tomates uva • Aceitunas Kalamata • Pepinos • Pepperoncini • Repollo rojo • Vinagreta balsámica • Queso italiano rallado en finas láminas",
+      "descriptionEn": "• Mixed Greens • Crispy Romaine • Grape Tomatoes • Kalamata Olives • Cucumbers • Pepperoncini • Red Cabbage • Balsamic Vinaigrette • Shaved Italian Cheese",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pepe-s-italian-salad-with-roasted-chicken",
+      "categoryId": "salads",
+      "nameEs": "Ensalada italiana de Pepe's con pollo asado",
+      "nameEn": "Pepe's Italian Salad with Roasted Chicken",
+      "descriptionEs": "• Hojas verdes mixtas • Lechuga romana crujiente • Tomates uva • Aceitunas Kalamata • Pepinos • Pepperoncini • Repollo rojo • Pechuga de pollo asada • Vinagreta balsámica • Queso italiano rallado en finas láminas",
+      "descriptionEn": "• Mixed Greens • Crispy Romaine • Grape Tomatoes • Kalamata Olives • Cucumbers • Pepperoncini • Red Cabbage • Roasted Chicken Breast • Balsamic Vinaigrette • Shaved Italian Cheese",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Corazones de lechuga romana picados • Crotones de la casa • Queso Pecorino Romano rallado • Servida con aderezo César savory",
+      "descriptionEn": "Chopped Romaine Hearts • House Croutons • Grated Pecorino Romano Cheese • Served with Savory Caesar Dressing",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad-with-roasted-chicken",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César con pollo asado",
+      "nameEn": "Caesar Salad with Roasted Chicken",
+      "descriptionEs": "Corazones de lechuga romana picados • Crotones de la casa • Queso Pecorino Romano • Pechuga de pollo asada • Servida con aderezo César savory",
+      "descriptionEn": "Chopped Romaine Hearts • House Croutons • Pecorino Romano Cheese • Roasted Chicken Breast • Served with Savory Caesar Dressing",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "side-of-anchovies",
+      "categoryId": "salads",
+      "nameEs": "Porción de anchoas",
+      "nameEn": "Side of Anchovies",
+      "descriptionEs": "Importadas de Italia",
+      "descriptionEn": "Imported From Italy",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salad-extras",
+      "categoryId": "salads",
+      "nameEs": "Extras para ensalada",
+      "nameEn": "Salad Extras",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kola",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Kola",
+      "nameEn": "Kola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diet-kola",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Kola de dieta",
+      "nameEn": "Diet Kola",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Naranja",
+      "nameEn": "Orange",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "white-birch-beer",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "White Birch Beer",
+      "nameEn": "White Birch Beer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "diet-white-birch-beer",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "White Birch Beer de dieta",
+      "nameEn": "Diet White Birch Beer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "root-beer",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Root Beer",
+      "nameEn": "Root Beer",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cream-soda",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Cream Soda",
+      "nameEn": "Cream Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ginger-ale",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Ginger Ale",
+      "nameEn": "Ginger Ale",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gassosa",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Gassosa",
+      "nameEn": "Gassosa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherry",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Cereza",
+      "nameEn": "Cherry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-lime",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Limón-lima",
+      "nameEn": "Lemon-Lime",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grape",
+      "categoryId": "foxon-park-sodas",
+      "nameEs": "Uva",
+      "nameEn": "Grape",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "poland-spring",
+      "categoryId": "other-beverages",
+      "nameEs": "Poland Spring",
+      "nameEn": "Poland Spring",
+      "descriptionEs": "Agua de manantial, 16.9 Oz",
+      "descriptionEn": "Spring Water, 16.9 Oz",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pellegrino",
+      "categoryId": "other-beverages",
+      "nameEs": "Pellegrino",
+      "nameEn": "Pellegrino",
+      "descriptionEs": "Agua mineral natural con gas, 16.9 Oz",
+      "descriptionEn": "Sparkling Natural Mineral Water, 16.9 Oz",
       "price": "$3.50",
-      "popular": true,
-      "badge": "Local",
-      "tags": [
-        "Bebida",
-        "Artesanal"
-      ],
-      "allergens": [],
       "ctaType": "in_store"
     },
     {
-      "id": "frank-pepe-pizzeria-napoletana-12",
-      "categoryId": "beverages",
-      "nameEs": "Bebidas y Cervezas Seleccionadas",
-      "nameEn": "Other Beverages & Beer",
-      "descriptionEs": "Selección de bebidas embotelladas y cervezas artesanales locales.",
-      "descriptionEn": "Selection of bottled beverages and local craft beers.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Refreshing",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [],
+      "id": "20oz-coke",
+      "categoryId": "other-beverages",
+      "nameEs": "Coke de 20oz",
+      "nameEn": "20oz Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "20oz-diet-coke",
+      "categoryId": "other-beverages",
+      "nameEs": "Diet Coke de 20oz",
+      "nameEn": "20oz Diet Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "20oz-sprite-coke",
+      "categoryId": "other-beverages",
+      "nameEs": "Sprite Coke de 20oz",
+      "nameEn": "20oz Sprite Coke",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk",
+      "categoryId": "other-beverages",
+      "nameEs": "Leche",
+      "nameEn": "Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-milk",
+      "categoryId": "other-beverages",
+      "nameEs": "Leche con chocolate",
+      "nameEn": "Chocolate Milk",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-juice",
+      "categoryId": "other-beverages",
+      "nameEs": "Jugo de manzana",
+      "nameEn": "Apple Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cannoli-pie-slice",
+      "categoryId": "desserts",
+      "nameEs": "Porción de tarta de cannoli",
+      "nameEn": "Cannoli Pie Slice",
+      "descriptionEs": "Una masa hojaldrada hecha con cáscara de cannoli rellena hasta el borde con crema de cannoli. Cada tarta se espolvorea con azúcar glass, cocoa en polvo y chips de minichocolate. Lo suficientemente dulce para satisfacer, pero sin abrumar la experiencia.",
+      "descriptionEn": "A flakey crust made of cannoli shell filled to the brim with cannoli cream. Each pie is topped with a dusting of powdered sugar, cocoa powder a sprinkle of mini-chocolate chips. Sweet enough to satisfy but not too much to overwhelm the experience.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiramisu",
+      "categoryId": "desserts",
+      "nameEs": "Tiramisu",
+      "nameEn": "Tiramisu",
+      "descriptionEs": "Bizcochos de soletilla importados sumergidos a mano en una mezcla especial de espresso, en capas con mascarpone importado de Italia, y luego terminados con una generosa capa de cocoa en polvo de primera calidad.",
+      "descriptionEn": "Imported ladyfingers hand-dipped in a custom espresso mixture, layered with mascarpone imported from Italy, then finished with a generous dusting of premium cocoa powder.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "limoncello-mascarpone",
+      "categoryId": "desserts",
+      "nameEs": "Limoncello Mascarpone",
+      "nameEn": "Limoncello Mascarpone",
+      "descriptionEs": "Bizcocho infundido con limón siciliano y mascarpone italiano cubierto con rizos de chocolate blanco europeo.",
+      "descriptionEn": "Sicilian lemon-infused sponge cake and Italian mascarpone topped with European white chocolate curls.",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flourless-chocolate-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de chocolate sin harina",
+      "nameEn": "Flourless Chocolate Cake",
+      "descriptionEs": "Un deleite decadente elaborado con el mejor chocolate semidulce belga, mantequilla, cocoa en polvo y vainilla. Rico, suave y irresistiblemente húmedo con una textura cremosa.",
+      "descriptionEn": "A decadent delight crafted with the finest Belgian semi-sweet chocolate, butter, cocoa powder, and vanilla. Rich, smooth, and irresistibly moist with a creamy texture.",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caramel-mascarpone-cheesecake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake de mascarpone y caramelo",
+      "nameEn": "Caramel Mascarpone Cheesecake",
+      "descriptionEs": "Una rica mezcla de caramelo, mascarpone italiano importado y queso crema de primera calidad con un toque de vainilla, horneado a la perfección sobre una base de galleta graham con mantequilla.",
+      "descriptionEn": "A rich blend of caramel, imported Italian mascarpone, and premium cream cheese with a hint of vanilla, baked to perfection on a buttery graham cracker crust.",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dessert-trio",
+      "categoryId": "desserts",
+      "nameEs": "Trío de postres",
+      "nameEn": "Dessert Trio",
+      "descriptionEs": "Nuestro trío de postres con tres irresistibles favoritos: tarta de cannoli, Tiramisu, pastel de chocolate sin harina",
+      "descriptionEn": "Our Dessert Trio featuring three irresistible favorites: Cannoli Pie, Tiramisu, Flourless Chocolate Cake",
+      "price": "$22.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos varias pizzas vegetarianas y opciones disponibles. Consulte con su mesero sobre los alérgenos.",
-      "aEn": "Yes, we have several vegetarian pizzas available. Please ask your server about specific dietary options."
-    },
-    {
-      "qEs": "¿Se aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Atendemos principalmente por orden de llegada (walk-ins) para mantener la experiencia tradicional de Pepe's.",
-      "aEn": "We primarily operate on a walk-in basis to maintain the traditional Pepe's experience."
-    }
-  ]
+  "faqs": []
 }

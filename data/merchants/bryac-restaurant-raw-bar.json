@@ -1,28 +1,19 @@
 {
   "storeInfo": {
     "id": "bryac-restaurant-raw-bar",
-    "name": "BRYAC Restaurant & Raw Bar",
-    "tagline": "Fresh Raw Bar, Live Nightlife & Classic Coastal Eats in Black Rock",
-    "address": "3074 Fairfield Avenue, Bridgeport, CT 06605",
-    "phone": "",
+    "name": "BRYAC",
+    "tagline": "Seafood restaurant in Bridgeport | Restaurante de mariscos en Bridgeport",
+    "address": "3074 Fairfield Avenue, Bridgeport, CT 06604",
+    "phone": "(203) 522-4777",
     "hours": {
-      "monday_friday": "11:30 AM - 11:00 PM",
-      "saturday": "11:00 AM - 12:00 AM",
-      "sunday": "11:00 AM - 10:00 PM"
+      "monday_friday": "Mon-Thu 3:00 PM - 1:00 AM; Fri 12:00 PM - 2:00 AM",
+      "saturday": "12:00 PM - 2:00 AM",
+      "sunday": "11:00 AM - 1:00 AM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "Raw Bar",
-      "Live Music"
+      "Online Ordering"
     ],
     "themeColor": "#0f172a",
     "logoIcon": "utensils",
@@ -34,359 +25,836 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
       "id": "raw-bar",
-      "nameEs": "Barra de Mariscos Crudos",
+      "nameEs": "Bar Crudo",
       "nameEn": "Raw Bar",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Antojos",
-      "nameEn": "Starters & Appetizers",
+      "id": "chowder-bisque",
+      "nameEs": "Sopa de Almejas - Bisque",
+      "nameEn": "Chowder - Bisque",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Sándwiches",
-      "nameEn": "Mains & Sandwiches",
+      "id": "starters",
+      "nameEs": "Entradas",
+      "nameEn": "Starters",
       "icon": "Utensils"
     },
     {
       "id": "salads",
-      "nameEs": "Ensaladas Frescas",
-      "nameEn": "Fresh Salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas y Cócteles",
-      "nameEn": "Beverages & Drinks",
-      "icon": "Coffee"
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos Principales",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kid-s-menu",
+      "nameEs": "Menú Infantil",
+      "nameEn": "Kid's Menu",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "bryac-raw-bar-01",
+      "id": "blue-point-oysters-6",
       "categoryId": "raw-bar",
-      "nameEs": "Ostras Blue Point (12 piezas)",
-      "nameEn": "Blue Point Oysters (12 count)",
-      "descriptionEs": "Ostras frescas servidas en su concha con hielo picado, salsa mignonette y limón.",
-      "descriptionEn": "Fresh oysters on the half shell served over crushed ice with mignonette sauce and lemon.",
+      "nameEs": "Ostras Blue Point - 6",
+      "nameEn": "Blue Point Oysters - 6",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blue-point-oysters-12",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostras Blue Point - 12",
+      "nameEn": "Blue Point Oysters - 12",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$25.00",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-raw-bar-02",
+      "id": "top-neck-clams-6",
       "categoryId": "raw-bar",
-      "nameEs": "Cóctel de Camarones Jumbo (6 piezas)",
-      "nameEn": "Jumbo Shrimp Cocktail (6 count)",
-      "descriptionEs": "Camarones jumbo cocidos a la perfección, servidos con salsa de rábano picante y limón.",
-      "descriptionEn": "Jumbo shrimp cooked to perfection, served with house-made cocktail sauce and fresh lemon.",
-      "price": "$11.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Mariscos",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "nameEs": "Almejas Top Neck - 6",
+      "nameEn": "Top Neck Clams - 6",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-app-01",
-      "categoryId": "appetizers",
-      "nameEs": "Puntas de Filete Mignon",
-      "nameEn": "Filet Tips",
-      "descriptionEs": "Trocitos de filet mignon sellados a la sartén, servidos sobre una cremosa salsa de trufa blanca y gorgonzola con espinacas al ajo.",
-      "descriptionEn": "Tips of filet mignon pan seared and served over a white truffle gorgonzola sauce with garlic spinach.",
-      "price": "$16.00",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Carne",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "bryac-app-02",
-      "categoryId": "appetizers",
-      "nameEs": "Alitas BRYAC (12 piezas)",
-      "nameEn": "BRYAC Wings (12 count)",
-      "descriptionEs": "Alitas crujientes con tu elección de salsa: Buffalo, BBQ, Dulce de Sésamo, Honey Mustard o Bourbon, servidas con apio y aderezo de queso azul.",
-      "descriptionEn": "Crispy wings with your choice of sauce: Buffalo, BBQ, Sweet Sesame, Honey Mustard, or Bourbon, served with celery and blue cheese dressing.",
+      "id": "top-neck-clams-12",
+      "categoryId": "raw-bar",
+      "nameEs": "Almejas Top Neck - 12",
+      "nameEn": "Top Neck Clams - 12",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$15.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Picante",
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-app-03",
-      "categoryId": "appetizers",
+      "id": "jumbo-shrimp-cocktail-4",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de Camarones Jumbo - 4",
+      "nameEn": "Jumbo Shrimp Cocktail - 4",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jumbo-shrimp-cocktail-6",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de Camarones Jumbo - 6",
+      "nameEn": "Jumbo Shrimp Cocktail - 6",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-tail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cola de Langosta",
+      "nameEn": "Lobster Tail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-claw",
+      "categoryId": "raw-bar",
+      "nameEs": "Pinza de Langosta",
+      "nameEn": "Lobster Claw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder",
+      "categoryId": "chowder-bisque",
+      "nameEs": "New England Clam Chowder",
+      "nameEn": "New England Clam Chowder",
+      "descriptionEs": "¡un tazón de nuestra famosa y galardonada sopa de almejas!",
+      "descriptionEn": "a bowl of our famous award winning chowder!",
+      "price": "$7.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-england-clam-chowder-quart",
+      "categoryId": "chowder-bisque",
+      "nameEs": "New England Clam Chowder - Cuarto de Galón",
+      "nameEn": "New England Clam Chowder - Quart",
+      "descriptionEs": "cuartos de galón de nuestra sopa para llevar (rinde 4-5 porciones)",
+      "descriptionEn": "quarts of our chowder to-go (serves 4-5)",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque",
+      "categoryId": "chowder-bisque",
+      "nameEs": "Bisque de Langosta",
+      "nameEn": "Lobster Bisque",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque-quart",
+      "categoryId": "chowder-bisque",
+      "nameEs": "Bisque de Langosta - Cuarto de Galón",
+      "nameEn": "Lobster Bisque - Quart",
+      "descriptionEs": "llévate nuestro bisque de langosta a casa (rinde 4-5 porciones)",
+      "descriptionEn": "bring our lobster bisque home (serves 4-5)",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-tips",
+      "categoryId": "starters",
+      "nameEs": "Trocitos de Filete",
+      "nameEn": "Filet Tips",
+      "descriptionEs": "trocitos de filet mignon sellados a la sartén y servidos sobre una salsa de trufa blanca y gorgonzola con espinacas al ajo",
+      "descriptionEn": "tips of filet mignon pan seared and served over a white truffle gorgonzola sauce w/ garlic spinach",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mozzarella-balls",
+      "categoryId": "starters",
+      "nameEs": "Bolitas de Mozzarella Fritas",
+      "nameEn": "Fried Mozzarella Balls",
+      "descriptionEs": "10 bolitas de bocconcini frescas fritas con una salsa marinara de pimiento rojo para dipear",
+      "descriptionEn": "10 fresh fried bocconcini balls w/ a red pepper marinara dipping sauce",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-bacon-mushroom-quesadilla",
+      "categoryId": "starters",
+      "nameEs": "Quesadilla de Pollo, Tocino y Champiñones",
+      "nameEn": "Chicken, Bacon, Mushroom Quesadilla",
+      "descriptionEs": "servida con crema agria y alioli de chipotle y miel",
+      "descriptionEn": "served w/ sour cream & honey chipotle aioli",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-frites",
+      "categoryId": "starters",
+      "nameEs": "Bastoncitos de Aguacate",
+      "nameEn": "Avocado Frites",
+      "descriptionEs": "tiras de aguacate empanizadas con panko y parmesano, fritas hasta que estén doradas, servidas con un alioli de ajo y cítricos",
+      "descriptionEn": "parmesan panko crusted avocado strips fried golden brown served w/ a garlic citrus aioli",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "starters",
+      "nameEs": "Tiras de Pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "Buffalo • BBQ • Sésamo Dulce • Mostaza y Miel • Buffalo con Ajo • BBQ Bourbon • Jerry Teri\nsin hueso, servidas con apio y aderezo de queso azul",
+      "descriptionEn": "Buffalo • BBQ • Sweet Sesame • Honey Mustard • Garlic Buffalo • BBQ Bourbon • Jerry Teri\nboneless, served w/ celery & blue cheese dressing",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-wings-6",
+      "categoryId": "starters",
+      "nameEs": "Alitas BRYAC - 6",
+      "nameEn": "BRYAC Wings - 6",
+      "descriptionEs": "Buffalo • BBQ • Sésamo Dulce • Mostaza y Miel • Buffalo con Ajo • BBQ Bourbon • Jerry Teri\nservidas con apio y aderezo de queso azul",
+      "descriptionEn": "Buffalo • BBQ • Sweet Sesame • Honey Mustard • Garlic Buffalo • BBQ Bourbon • Jerry Teri\nserved w/ celery & blue cheese dressing",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-wings-12",
+      "categoryId": "starters",
+      "nameEs": "Alitas BRYAC - 12",
+      "nameEn": "BRYAC Wings - 12",
+      "descriptionEs": "Buffalo • BBQ • Sésamo Dulce • Mostaza y Miel • Buffalo con Ajo • BBQ Bourbon • Jerry Teri, servidas con apio y aderezo de queso azul",
+      "descriptionEn": "Buffalo • BBQ • Sweet Sesame • Honey Mustard • Garlic Buffalo • BBQ Bourbon • Jerry Teri, served w/ celery & blue cheese dressing",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-nachos",
+      "categoryId": "starters",
       "nameEs": "Nachos BRYAC",
       "nameEn": "BRYAC Nachos",
-      "descriptionEs": "Tortillas de maíz crujientes cubiertas con queso pepper jack y cheddar, tomates, cebollinos y jalapeños, con crema agria y salsa.",
-      "descriptionEn": "Crispy corn tortillas topped with pepper jack and cheddar cheese, tomatoes, scallions, & jalapeños served with sour cream & salsa.",
+      "descriptionEs": "tortillas de maíz crujientes cubiertas con queso pepper jack y cheddar, tomates, cebollinas y jalapeños, servidas con crema agria y salsa",
+      "descriptionEn": "crispy corn tortillas topped w/ pepper jack and cheddar cheese, tomatoes, scallions, & jalapenos served w/ sour cream & salsa",
       "price": "$12.00",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Para Compartir",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-app-04",
-      "categoryId": "appetizers",
-      "nameEs": "Mejillones P.E.I.",
+      "id": "add-chili",
+      "categoryId": "starters",
+      "nameEs": "Agregar Chili",
+      "nameEn": "Add Chili",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-chicken",
+      "categoryId": "starters",
+      "nameEs": "Agregar Pollo",
+      "nameEn": "Add Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chips-guac",
+      "categoryId": "starters",
+      "nameEs": "Totopos y Guacamole",
+      "nameEn": "Chips & Guac",
+      "descriptionEs": "totopos de tortilla calientes hechos al momento servidos con guacamole fresco",
+      "descriptionEn": "hot tortilla chips made to order served w/ fresh guacamole",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "p-e-i-mussels",
+      "categoryId": "starters",
+      "nameEs": "Mejillones de la Isla del Príncipe Eduardo",
       "nameEn": "P.E.I. Mussels",
-      "descriptionEs": "Tazón grande de mejillones frescos salteados con opción de coco y cayena o vino blanco al ajo, servidos con pan de ajo.",
-      "descriptionEn": "Big bowl of fresh sautéed mussels served with garlic bread, choose between coconut cayenne or white wine garlic broth.",
+      "descriptionEs": "tazón grande de mejillones frescos salteados servidos con pan de ajo\nelije: coco con pimienta de cayena o vino blanco con ajo",
+      "descriptionEn": "big bowl of fresh sauteed mussels served w/ garlic bread\nchoose: coconut cayenne or white wine garlic",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-app-05",
-      "categoryId": "appetizers",
+      "id": "steamed-clams",
+      "categoryId": "starters",
+      "nameEs": "Almejas al Vapor",
+      "nameEn": "Steamed Clams",
+      "descriptionEs": "tocino, ajo, albahaca y cerveza servidas con pan de ajo",
+      "descriptionEn": "bacon, garlic, basil, & beer served w/ garlic bread",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-fried-calamari",
+      "categoryId": "starters",
+      "nameEs": "Calamares Fritos Frescos",
+      "nameEn": "Fresh Fried Calamari",
+      "descriptionEs": "elije: marinara picante o reducción de balsámico y chiles cherry",
+      "descriptionEn": "choose: spicy marinara or balsamic reduction & cherry peppers",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-sambuca",
+      "categoryId": "starters",
+      "nameEs": "Camarones al Sambuca",
+      "nameEn": "Shrimp Sambuca",
+      "descriptionEs": "5 camarones jumbo empanizados en batido de huevo, fritos en una salsa rica de sambuca con ajo, tomates cherry y albahaca fresca",
+      "descriptionEn": "5 egg batter fried jumbo shrimp in a rich sambuca sauce w/ garlic, cherry tomatoes, and fresh basil",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oyster-rockefeller",
+      "categoryId": "starters",
       "nameEs": "Ostras Rockefeller",
       "nameEn": "Oyster Rockefeller",
-      "descriptionEs": "Horneadas en su concha con espinacas cremosas, tocino crujiente y migas de pan con parmesano.",
-      "descriptionEn": "Baked on the half shell with creamy spinach, topped with crispy bacon & parmesan bread crumbs.",
+      "descriptionEs": "horneadas en su concha con espinacas cremosas, cubiertas con tocino crujiente y migas de pan parmesano",
+      "descriptionEn": "baked on the half shell w/ creamy spinach, topped w/ crispy bacon & parmesan bread crumbs",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Horneado"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Lácteos",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-app-06",
-      "categoryId": "appetizers",
-      "nameEs": "Pastelillos de Jaiba (Crab Cakes)",
-      "nameEn": "Crab Cakes",
-      "descriptionEs": "Jaiba lump sellada a la sartén, servida con ensalada verde mesclun, alioli de pimiento asado al rábano picante y limón.",
-      "descriptionEn": "Pan seared lump crab served with mesclun greens, horseradish roasted pepper aioli, and fresh lemon.",
+      "id": "lobster-rockefeller",
+      "categoryId": "starters",
+      "nameEs": "Langosta Rockefeller",
+      "nameEn": "Lobster Rockefeller",
+      "descriptionEs": "carne de langosta fresca agregada a cada ostra y luego horneada en nuestro rico relleno de espinacas a la crema con migas de pan",
+      "descriptionEn": "fresh lobster meat added to each oyster then baked in our rich creamed spinach bread crumb stuffing",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-casino",
+      "categoryId": "starters",
+      "nameEs": "Almejas Casino",
+      "nameEn": "Clams Casino",
+      "descriptionEs": "migas de pan, tocino, mantequilla clásica estilo casino, servidas con espinacas al ajo",
+      "descriptionEn": "bread crumbs, bacon, classic casino butter, served w/ garlic spinach",
       "price": "$14.00",
-      "popular": true,
-      "badge": "Chef",
-      "tags": [
-        "Mariscos",
-        "Gourmet"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Huevo",
-        "Gluten"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-main-01",
-      "categoryId": "mains",
-      "nameEs": "Rollo de Langosta (Lobster Roll)",
-      "nameEn": "Lobster Roll",
-      "descriptionEs": "Langosta salteada en un pan suave tostado, servida con papas fritas extra crujientes, ensalada de col (coleslaw), limón y mantequilla derretida.",
-      "descriptionEn": "Sautéed lobster on a toasted soft roll served with extra crispy french fries, coleslaw, lemon, and drawn butter.",
-      "price": "$19.00",
-      "popular": true,
-      "badge": "Estrella",
-      "tags": [
-        "Mariscos",
-        "Especialidad de CT"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "crab-cakes",
+      "categoryId": "starters",
+      "nameEs": "Pastelillos de Jaiba",
+      "nameEn": "Crab Cakes",
+      "descriptionEs": "carne de jaiba en trozos sellada a la sartén, servida con ensalada de hojas verdes (mesclun), alioli de pimientos asados con rábano picante y limón",
+      "descriptionEn": "pan seared lump crab served w/ mesclun greens, horseradish roasted pepper aioli, and lemon",
+      "price": "$14.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-main-02",
-      "categoryId": "mains",
-      "nameEs": "Pescado Rebozado con Cerveza (Beer Battered Cod)",
-      "nameEn": "Beer Battered Cod",
-      "descriptionEs": "Filete de bacalao fresco en rebozado de tempura y cerveza IPA frito hasta dorar, servido con papas fritas, coleslaw, limón y tártara.",
-      "descriptionEn": "Fresh cod filet dipped in a tempura flour, IPA batter, fried golden brown, served with french fries, coleslaw, lemon & tartar sauce.",
+      "id": "black-rock-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Black Rock",
+      "nameEn": "Black Rock Salad",
+      "descriptionEs": "hojas verdes (mesclun), tomates, pepino, aceitunas, zanahorias y picatostes",
+      "descriptionEn": "mesclun greens, tomatoes, cucumber, olives, carrots, & croutons",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "salads",
+      "nameEs": "Pollo a la Parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackened-chicken",
+      "categoryId": "salads",
+      "nameEs": "Pollo Ennegrecido",
+      "nameEn": "Blackened Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-shrimp",
+      "categoryId": "salads",
+      "nameEs": "Camarones a la Parrilla",
+      "nameEn": "Grilled Shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "southwest-cobb-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Cobb del Suroeste",
+      "nameEn": "Southwest Cobb Salad",
+      "descriptionEs": "hojas verdes (mesclun), tomates, aguacate, tocino, queso gorgonzola, huevos, maíz rostizado y tortillas crujientes • servida con vinagreta de champaña",
+      "descriptionEn": "mesclun greens, tomatoes, avocado, bacon, gorgonzola cheese, eggs, roasted corn, & crispy tortillas • served w/ champagne vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-chopped-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Picada BRYAC",
+      "nameEn": "BRYAC Chopped Salad",
+      "descriptionEs": "lechuga iceberg, tomates, cebollas moradas, pimientos asados, aceitunas, pepinos, pepperoncini y queso feta servidos con vinagreta de champaña",
+      "descriptionEn": "iceberg lettuce, tomatoes, red onions, roasted peppers, olives, cucumbers, pepperoncini, & feta cheese served w/ champagne vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goat-cheese-green-apple-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de Manzana Verde y Queso de Cabra",
+      "nameEn": "Goat Cheese Green Apple Salad",
+      "descriptionEs": "hojas verdes (mesclun) frescas con nueces, manzana verde en rodajas, queso de cabra, pepinos, cebollas y tomates cherry con vinagreta de champaña",
+      "descriptionEn": "fresh mesclun greens w/ walnuts, sliced green apple, goat cheese, cucumbers, onions, and cherry tomatoes w/ champagne vinaigrette",
       "price": "$15.00",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Pescado",
-        "Frito"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-main-03",
-      "categoryId": "mains",
+      "id": "classic-caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César Clásica",
+      "nameEn": "Classic Caesar Salad",
+      "descriptionEs": "corazones de lechuga romana, picatostes, queso parmesano rallado, mezclados con nuestro aderezo César casero",
+      "descriptionEn": "romaine hearts, croutons, shaved parmesan cheese, tossed w/ our homemade caesar dressing",
+      "price": "$13.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-roll",
+      "categoryId": "sandwiches",
+      "nameEs": "Rollito de Langosta",
+      "nameEn": "Lobster Roll",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col (coleslaw)\nlangosta salteada en un panecillo suave tostado servida con limón y mantequilla clarificada",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\nsauteed lobster on a toasted soft roll served w/ lemon & drawn butter",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer-battered-cod",
+      "categoryId": "sandwiches",
+      "nameEs": "Bacalao Rebozado en Cerveza",
+      "nameEn": "Beer Battered Cod",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col (coleslaw)\nfilete de bacalao fresco sumergido en harina de tempura, rebozado con cerveza IPA, frito hasta que esté dorado, servido con limón y salsa tártara",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\nfresh cod filet dipped in a tempura flour, ipa batter, fried golden brown, served w/ lemon & tartar",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cake-blt",
+      "categoryId": "sandwiches",
       "nameEs": "Sándwich BLT de Pastelillo de Jaiba",
       "nameEn": "Crab Cake BLT",
-      "descriptionEs": "Pastelillo de jaiba lump sellado con lechuga, tomate, tocino y mayonesa de limón y pimienta en un pan tostado con papas fritas.",
-      "descriptionEn": "Pan seared lump crab cake with lettuce, tomato, bacon, & lemon-pepper mayo on a toasted roll with extra crispy french fries.",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col (coleslaw)\npastelillo de jaiba en trozos sellado a la sartén con lechuga, tomate, tocino y mayonesa de limón y pimienta en un pan tostado",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\npan seared lump crab cake w/ lettuce, tomato, bacon, & lemon-pepper mayo on a toasted roll",
       "price": "$16.00",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Mariscos",
-        "Sándwich"
-      ],
-      "allergens": [
-        "Mariscos",
-        "Gluten",
-        "Huevo"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-salad-01",
-      "categoryId": "salads",
-      "nameEs": "Ensalada Suroeste Cobb",
-      "nameEn": "Southwest Cobb Salad",
-      "descriptionEs": "Verduras mesclun, tomates, aguacate, tocino, queso gorgonzola, huevos, maíz tostado y tortillas crujientes con vinagreta de champán.",
-      "descriptionEn": "Mesclun greens, tomatoes, avocado, bacon, gorgonzola cheese, eggs, roasted corn, & crispy tortillas served with champagne vinaigrette.",
-      "price": "$14.00",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "oyster-po-boy",
+      "categoryId": "sandwiches",
+      "nameEs": "Po Boy de Ostras",
+      "nameEn": "Oyster Po Boy",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col (coleslaw)\nostras crujientes del bar crudo con lechuga, tomate, cebolla morada en pan de ajo servidas con limón y salsa tártara",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\ncrispy oysters from the raw bar w/ lettuce, tomato, red onion on garlic bread served w/ lemon & tartar sauce",
+      "price": "$17.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-salad-02",
-      "categoryId": "salads",
-      "nameEs": "Ensalada de Queso de Cabra y Manzana Verde",
-      "nameEn": "Goat Cheese Green Apple Salad",
-      "descriptionEs": "Hojas verdes frescas con nueces, rodajas de manzana verde, queso de cabra, pepinos, cebollas y tomates cherry con vinagreta de champán.",
-      "descriptionEn": "Fresh mesclun greens with walnuts, sliced green apple, goat cheese, cucumbers, onions, and cherry tomatoes with champagne vinaigrette.",
+      "id": "shrimp-po-boy",
+      "categoryId": "sandwiches",
+      "nameEs": "Po Boy de Camarones",
+      "nameEn": "Shrimp Po Boy",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col (coleslaw)\ncamarones jumbo del bar crudo con lechuga, tomate, cebolla morada en pan de ajo servidos con limón y salsa tártara",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\njumbo shrimp from the raw bar w/ lettuce, tomato, red onion on garlic bread served w/ lemon & tartar sauce",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-cheesesteak",
+      "categoryId": "sandwiches",
+      "nameEs": "Filet Cheesesteak",
+      "nameEn": "Filet Cheesesteak",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col\nfilete mignon finamente cortado con champiñones, cebollas y queso cheddar en un pan tipo grinder tostado con mantequilla de ajo",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\nthinly shaved filet mignon w/ mushrooms, onions, and cheddar on a garlic buttered toasted grinder roll",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caprese",
+      "categoryId": "sandwiches",
+      "nameEs": "Chicken Caprese",
+      "nameEn": "Chicken Caprese",
+      "descriptionEs": "todos servidos con papas fritas extra crujientes y ensalada de col\nmilanesas de pollo cubiertas con tomate fresco, mozzarella, albahaca y balsámico",
+      "descriptionEn": "all served with extra crispy french fries and coleslaw\nchicken cutlets topped w/ fresh tomato, mozzarella, basil, and balsamic",
       "price": "$15.00",
-      "popular": true,
-      "badge": "Fresco",
-      "tags": [
-        "Vegetariano",
-        "Frutos Secos"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Frutos Secos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-bev-01",
-      "categoryId": "beverages",
-      "nameEs": "Cerveza Artesanal IPA Local de CT",
-      "nameEn": "Local CT Craft IPA",
-      "descriptionEs": "Cerveza IPA de barril elaborada en cervecerías locales de Connecticut. Pregunte por la selección rotativa de temporada.",
-      "descriptionEn": "Draft IPA brewed locally right here in Connecticut. Ask your server for our rotating seasonal tap list.",
-      "price": "$7.50",
-      "popular": true,
-      "badge": "Local",
-      "tags": [
-        "Alcohol",
-        "Cerveza"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "black-rock-burger",
+      "categoryId": "burgers",
+      "nameEs": "Black Rock Burger",
+      "nameEn": "Black Rock Burger",
+      "descriptionEs": "hamburguesa de angus fresco con lechuga, tomate, cebolla y papas fritas",
+      "descriptionEn": "fresh angus burger w/ lettuce, tomato, onion, french fries",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "bryac-bev-02",
-      "categoryId": "beverages",
-      "nameEs": "Limonada casera BRYAC con frutos rojos",
-      "nameEn": "BRYAC House Berry Lemonade",
-      "descriptionEs": "Refrescante limonada natural preparada en casa con puré de moras y arándanos frescos.",
-      "descriptionEn": "Refreshing house-made natural lemonade infused with fresh blackberry and blueberry puree.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Sin Alcohol",
-      "tags": [
-        "Bebida",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "american-cheese",
+      "categoryId": "burgers",
+      "nameEs": "Queso Americano",
+      "nameEn": "American Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "swiss-cheese",
+      "categoryId": "burgers",
+      "nameEs": "Queso Suizo",
+      "nameEn": "Swiss Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheddar-cheese",
+      "categoryId": "burgers",
+      "nameEs": "Queso Cheddar",
+      "nameEn": "Cheddar Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa Rellena",
+      "nameEn": "Stuffed Burger",
+      "descriptionEs": "rellena de tocino, champiñones y queso cheddar, cubierta con salsa BBQ, cebollas crujientes, ensalada de col y papas fritas",
+      "descriptionEn": "stuffed w/ bacon, mushrooms, cheddar cheese topped w/ bbq sauce, frizzled onions, slaw, and french fries",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-veggie-burger",
+      "categoryId": "burgers",
+      "nameEs": "BRYAC Veggie Burger",
+      "nameEn": "BRYAC Veggie Burger",
+      "descriptionEs": "servida con mayonesa de tomate deshidratado, ensalada de col y papas fritas",
+      "descriptionEn": "served w/ sundried tomato mayo, slaw, and french fries",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "filet-mignon",
+      "categoryId": "entrees",
+      "nameEs": "Filet Mignon",
+      "nameEn": "Filet Mignon",
+      "descriptionEs": "filete de 8oz. sellado a la sartén en mantequilla de ajo, servido con puré de papas y espinacas al ajo",
+      "descriptionEn": "8oz. filet pan seared in garlic butter, served w/ mashed potatoes and garlic spinach",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-fish-chips",
+      "categoryId": "entrees",
+      "nameEs": "BRYAC Fish & Chips",
+      "nameEn": "BRYAC Fish & Chips",
+      "descriptionEs": "filetes de bacalao fresco sumergidos en un rebozado de harina tempura con cerveza IPA,fritos hasta dorar, servidos con papas fritas y salsa tártara",
+      "descriptionEn": "fresh cod filets dipped in a tempura flour, ipa infused beer batter, fried golden brown, served w/ fries & tartar",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fried-steak",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Fried Steak",
+      "nameEn": "Chicken Fried Steak",
+      "descriptionEs": "filet mignon machacado fino y empanizado, frito y terminado en una salsa blanca cremosa con puré de papas y espinacas al ajo",
+      "descriptionEn": "filet mignon pounded thin and breaded, fried and finished in a white gravy w/ mashed potatoes & garlic spinach",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fried-chicken",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Fried Chicken",
+      "nameEn": "Chicken Fried Chicken",
+      "descriptionEs": "favorito local, preparado como el anterior, ¡solo que con pechugas de pollo!",
+      "descriptionEn": "local favorite, prepared as above, only w/ chicken breasts!",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata",
+      "categoryId": "entrees",
+      "nameEs": "Chicken Piccata",
+      "nameEn": "Chicken Piccata",
+      "descriptionEs": "pechuga de pollo salteada en una salsa de vino blanco, mantequilla y alcaparras, servida con risotto y espinacas al ajo",
+      "descriptionEn": "chicken breast sauteed in a white wine, butter, caper sauce served w/ risotto & garlic spinach",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-shrimp",
+      "categoryId": "entrees",
+      "nameEs": "Coconut Shrimp",
+      "nameEn": "Coconut Shrimp",
+      "descriptionEs": "6 camarones jumbo frescos del bar de mariscos cubiertos con una salsa cremosa de coco y cilantro, servidos con risotto y vegetales salteados",
+      "descriptionEn": "6 jumbo shrimp fresh from the raw bar topped w/ a creamy coconut cilantro sauce served w/ risotto & sauteed vegetables",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-with-clam-sauce",
+      "categoryId": "entrees",
+      "nameEs": "Linguine with Clam Sauce",
+      "nameEn": "Linguine with Clam Sauce",
+      "descriptionEs": "pasta fresca, servida con pan de ajo\nRoja - Marinara\nBlanca - Vino Blanco y Ajo",
+      "descriptionEn": "fresh pasta, served w/ garlic bread\nRed - Marinara\nWhite - White Wine Garlic",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spicy-seafood-linguine",
+      "categoryId": "entrees",
+      "nameEs": "Spicy Seafood Linguine",
+      "nameEn": "Spicy Seafood Linguine",
+      "descriptionEs": "mejillones y almejas frescas con salchicha, salteados en una salsa de tomate cremosa y picante, servidos sobre linguine y acompañados de pan de ajo",
+      "descriptionEn": "fresh mussels and clams w/ sausage sauteed in a spicy creamy tomato sauce served over linguine, served w/ garlic bread",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-lobster-monica",
+      "categoryId": "entrees",
+      "nameEs": "BRYAC Lobster Monica",
+      "nameEn": "BRYAC Lobster Monica",
+      "descriptionEs": "nuestra versión al estilo de Nueva Inglaterra de un clásico de Nueva Orleans: langosta fresca mezclada en pasta rotini con cebolla, ajo, sazón criollo, crema, vino y mantequilla",
+      "descriptionEn": "our new england take on a new orleans classic - fresh lobster tossed in rotini w/ onion, garlic, creole seasoning, cream, wine, & butter",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-lobsterdilla",
+      "categoryId": "entrees",
+      "nameEs": "BRYAC Lobsterdilla",
+      "nameEn": "BRYAC Lobsterdilla",
+      "descriptionEs": "trozos frescos de carne de langosta en una salsa de queso al jerez y langosta, dorados a la parrilla en una tortilla grande",
+      "descriptionEn": "fresh chunks of lobster meat in a lobster sherry cheese sauce grilled in a large tortilla",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-lobster-mac-cheese",
+      "categoryId": "entrees",
+      "nameEs": "BRYAC Lobster Mac & Cheese",
+      "nameEn": "BRYAC Lobster Mac & Cheese",
+      "descriptionEs": "nuestros macarrones con queso caseros con carne de langosta, cubiertos con pan rallado de cheddar y trufa blanca",
+      "descriptionEn": "our homemade macaroni & cheese w/ lobster meat topped w/ white truffle cheddar bread crumbs",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-dinner",
+      "categoryId": "entrees",
+      "nameEs": "Lobster Dinner",
+      "nameEn": "Lobster Dinner",
+      "descriptionEs": "langosta entera de 1lb-1.25lb servida con ensalada de col, limón, mantequilla derretida y pan de ajo",
+      "descriptionEn": "1lb-1.25lb whole lobster served w/ coleslaw, lemon, drawn butter, and garlic bread",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flaming-fried-ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Flaming Fried Ice Cream",
+      "nameEn": "Flaming Fried Ice Cream",
+      "descriptionEs": "vainilla, crema batida, fresas y jarabe de chocolate",
+      "descriptionEn": "vanilla, whipped cream, strawberries and chocolate syrup",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-nutella-crepes",
+      "categoryId": "desserts",
+      "nameEs": "Strawberry Nutella Crepes",
+      "nameEn": "Strawberry Nutella Crepes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "molten-lava-cake",
+      "categoryId": "desserts",
+      "nameEs": "Molten Lava Cake",
+      "nameEn": "Molten Lava Cake",
+      "descriptionEs": "con helado de vainilla y crema batida",
+      "descriptionEn": "with vanilla ice cream, whipped cream",
+      "price": "$9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sawyers-oreo-mousse-cake",
+      "categoryId": "desserts",
+      "nameEs": "Sawyer’s Oreo Mousse Cake",
+      "nameEn": "Sawyer’s Oreo Mousse Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "reeces-snickers-peanut-butter-pie",
+      "categoryId": "desserts",
+      "nameEs": "Reece’s Snicker’s Peanut Butter Pie",
+      "nameEn": "Reece’s Snicker’s Peanut Butter Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bryac-key-lime-pie",
+      "categoryId": "desserts",
+      "nameEs": "BRYAC Key Lime Pie",
+      "nameEn": "BRYAC Key Lime Pie",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-cheeseburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Cheeseburger",
+      "nameEn": "Kids Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Grilled Cheese",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-quesadilla",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Quesadilla",
+      "nameEn": "Kids Quesadilla",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-chicken-tenders",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Chicken Tenders",
+      "nameEn": "Kids Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-hot-dog",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Hot Dog",
+      "nameEn": "Kids Hot Dog",
+      "descriptionEs": "para nuestros invitados especiales de 12 años o menos, ¡gracias!\nde boar's head, servido con papas fritas",
+      "descriptionEn": "for our special guests 12 years old and under, thank you!\nboar's head, served w/ french fries",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-pasta-butter",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Pasta & Butter",
+      "nameEn": "Kids Pasta & Butter",
+      "descriptionEs": "para nuestros invitados especiales de 12 años o menos, ¡gracias!",
+      "descriptionEn": "for our special guests 12 years old and under, thank you!",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kids-mac-cheese",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Kids Mac & Cheese",
+      "nameEn": "Kids Mac & Cheese",
+      "descriptionEs": "para nuestros invitados especiales de 12 años o menos, ¡gracias!",
+      "descriptionEn": "for our special guests 12 years old and under, thank you!",
+      "price": "$8.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen opciones vegetarianas, veganas o sin gluten?",
-      "qEn": "Do you offer vegetarian, vegan, or gluten-free options?",
-      "aEs": "Sí, contamos con varias ensaladas, opciones de mariscos frescos y platos modificables. Por favor informe a su servidor sobre cualquier alergia.",
-      "aEn": "Yes, we offer various salads, fresh raw bar items, and adaptable dishes. Please inform your server of any dietary allergies."
-    },
-    {
-      "qEs": "¿Tienen música en vivo o eventos nocturnos?",
-      "qEn": "Do you feature live music or nightlife events?",
-      "aEs": "¡Así es! BRYAC es conocido por su animada vida nocturna y presentaciones musicales en vivo en el vecindario de Black Rock.",
-      "aEn": "That's right! BRYAC is well known for vibrant nightlife and live music performances in the Black Rock neighborhood."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o es por orden de llegada?",
-      "qEn": "Do you accept reservations or is it walk-in only?",
-      "aEs": "Aceptamos clientes sin reservación para el comedor principal y la barra de ostras, y tomamos reservaciones por teléfono.",
-      "aEn": "We gladly welcome walk-ins for our dining room and raw bar, and take phone reservations for parties."
-    }
-  ]
+  "faqs": []
 }
