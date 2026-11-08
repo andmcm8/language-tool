@@ -2,26 +2,17 @@
   "storeInfo": {
     "id": "the-cove-deli",
     "name": "The Cove Deli",
-    "tagline": "Voted Best Lunch 3 Years in a Row - Wethersfield's Favorite Deli & Catering",
-    "address": "282 Silas Deane Highway, Wethersfield, CT 06109",
+    "tagline": "Deli in Wethersfield | Deli en Wethersfield",
+    "address": "282 Silas Deane Hwy, Wethersfield, CT 06109, us",
     "phone": "(860) 721-1200",
     "hours": {
-      "monday_friday": "07:00 AM - 03:00 PM",
-      "saturday": "07:00 AM - 03:00 PM",
-      "sunday": "08:00 AM - 02:00 PM"
+      "monday_friday": "7:00 AM - 3:00 PM",
+      "saturday": "8:00 AM - 3:00 PM",
+      "sunday": "10:00 AM - 3:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
-      "Outdoor Seating",
-      "Bilingual Service"
+      "Bilingual Menu"
     ],
     "themeColor": "#0b4f6c",
     "logoIcon": "utensils",
@@ -33,327 +24,564 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas y Sopas",
-      "nameEn": "Appetizers & Soups",
+      "id": "breakfast",
+      "nameEs": "Desayuno",
+      "nameEn": "Breakfast",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Sándwiches Clásicos",
-      "nameEn": "Classic Sandwiches",
+      "id": "loaded-salads",
+      "nameEs": "Ensaladas cargadas",
+      "nameEn": "Loaded Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "extras-sides",
+      "nameEs": "Extras y guarniciones",
+      "nameEn": "Extras & Sides",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
+      "id": "hot-soup-chili",
+      "nameEs": "Sopa caliente y chili",
+      "nameEn": "Hot Soup & Chili",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
+      "icon": "Utensils"
+    },
+    {
+      "id": "drinks",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering",
+      "nameEs": "Banquetes",
+      "nameEn": "Catering",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "the-cove-deli-01",
-      "categoryId": "appetizers",
-      "nameEs": "Sopa de Pollo con Fideos Casera",
-      "nameEn": "Homemade Chicken Noodle Soup",
-      "descriptionEs": "Caldo de pollo reconfortante cocinado a fuego lento con jugosos trozos de pollo, verduras frescas de huerta y fideos de huevo.",
-      "descriptionEn": "Comforting slow-simmered chicken broth loaded with tender chunks of chicken, fresh garden vegetables, and egg noodles.",
-      "price": "$5.95",
-      "popular": true,
-      "badge": "Casero",
-      "tags": [
-        "Caliente",
-        "Confort"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "egg-and-cheese-sandwich",
+      "categoryId": "breakfast",
+      "nameEs": "Sándwich de huevo y queso",
+      "nameEn": "Egg and Cheese Sandwich",
+      "descriptionEs": "Pan, bagel o croissant a elección\nQueso a elección: americano, suizo, provolone o cheddar",
+      "descriptionEn": "Choice of bread, bagel or croissant \nChoice of cheese: american, swiss, provolone or cheddar",
+      "price": "$6.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-02",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada César Crujiente",
-      "nameEn": "Crispy Caesar Salad",
-      "descriptionEs": "Lechuga romana fresca y crujiente, queso parmesano recién rallado, picatostes de ajo tostados y aderezo César cremoso de la casa.",
-      "descriptionEn": "Crisp fresh romaine lettuce, freshly grated parmesan cheese, toasted garlic croutons, and house-made creamy Caesar dressing.",
-      "price": "$8.95",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Vegetariano",
-        "Saludable"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten",
-        "Pescado"
-      ],
+      "id": "meat-egg-and-cheese-sandwich",
+      "categoryId": "breakfast",
+      "nameEs": "Sándwich de carne, huevo y queso",
+      "nameEn": "Meat, Egg and Cheese Sandwich",
+      "descriptionEs": "A elegir:\nTocino, jamón, salchicha, pavo o bistec\nBagel o croissant\nAmericano, suizo, provolone o cheddar",
+      "descriptionEn": "Choice of : \nBacon, ham, sausage, turkey or steak \nBagel or croissant \nAmerican, swiss, provolone or cheddar",
+      "price": "$7.50",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ensalada de Papa Clásica del Cove",
-      "nameEn": "Classic Cove Potato Salad",
-      "descriptionEs": "Papas tiernas mezcladas con mayonesa cremosa, apio crujiente y un toque de especias finas.",
-      "descriptionEn": "Tender potatoes tossed with creamy mayonnaise, crunchy celery, and a blend of fine herbs and spices.",
-      "price": "$4.50",
-      "popular": false,
-      "badge": "Acompañamiento",
-      "tags": [
-        "Sin Gluten",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Huevo"
-      ],
+      "id": "kielbasa-egg-and-cheese-sandwich",
+      "categoryId": "breakfast",
+      "nameEs": "Sándwich de kielbasa, huevo y queso",
+      "nameEn": "Kielbasa, Egg and Cheese Sandwich",
+      "descriptionEs": "A elegir:\nPan, bagel o croissant\nAmericano, suizo, provolone o cheddar",
+      "descriptionEn": "Choice of: \nBread, bagel or croissant \nAmerican, swiss, provolone or cheddar",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-04",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Roast Beef Asado en Casa",
-      "nameEn": "House-Roasted Roast Beef Sandwich",
-      "descriptionEs": "Fino roast beef asado internamente, cubierto con queso cheddar fundido, lechuga, tomate y rábano picante cremoso en pan artesanal.",
-      "descriptionEn": "Thinly sliced house-roasted roast beef topped with melted cheddar cheese, lettuce, tomato, and creamy horseradish on artisan bread.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "Caliente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "the-big-daddy",
+      "categoryId": "breakfast",
+      "nameEs": "The Big Daddy",
+      "nameEn": "The Big Daddy",
+      "descriptionEs": "Tocino, salchicha, kielbasa, dos huevos, queso, papa hash brown y mayonesa cajún en pan tostado",
+      "descriptionEn": "Bacon, sausage, kielbasa, two eggs, cheese, hashbrown patty & cajun mayo on a toasted roll",
+      "price": "$13.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-05",
-      "categoryId": "mains",
-      "nameEs": "Pavo Club Tradicional",
-      "nameEn": "Traditional Turkey Club",
-      "descriptionEs": "Jugosa pechuga de pavo asada, tocino crujiente, lechuga fresca, rodajas de tomate jugoso y mayonesa en tres capas de pan tostado.",
-      "descriptionEn": "Juicy roasted turkey breast, crispy bacon, fresh lettuce, juicy tomato slices, and mayonnaise layered between three slices of toasted bread.",
-      "price": "$12.50",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Popular",
-        "Sándwich"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "blt",
+      "categoryId": "breakfast",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "Tocino, lechuga, tomate con mayonesa de ajo en pan grueso tostado",
+      "descriptionEn": "Bacon, lettuce, tomato with garlic mayo on thick toast",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-06",
-      "categoryId": "mains",
-      "nameEs": "Sándwich de Ensalada de Atún Fresco",
-      "nameEn": "Fresh Tuna Salad Sandwich",
-      "descriptionEs": "Atún blanco sólido mezclado con mayonesa ligera, apio crujiente y cebolla morada, servido con lechuga crujiente en pan de centeno.",
-      "descriptionEn": "Solid white albacore tuna mixed with light mayonnaise, crisp celery, and red onion, served with crisp lettuce on hearty rye bread.",
-      "price": "$10.50",
-      "popular": false,
-      "badge": "Frescura",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Pescado",
-        "Huevo"
-      ],
+      "id": "breakfast-burrito-or-quesadilla",
+      "categoryId": "breakfast",
+      "nameEs": "Burrito o quesadilla de desayuno",
+      "nameEn": "Breakfast Burrito or Quesadilla",
+      "descriptionEs": "2 huevos, carne y queso con salsa y crema agria\nAgrega un hash brown por $1.50",
+      "descriptionEn": "2 eggs, meat and cheese with salsa and sour cream \nAdd a hashbrown for $1.50",
+      "price": "$9.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-07",
-      "categoryId": "mains",
-      "nameEs": "Sándwich BLT Clásico con Tocino Extra",
-      "nameEn": "Classic BLT with Extra Bacon",
-      "descriptionEs": "Abundante tocino crujiente, hojas de lechuga fresca y jugosos tomates madurados en vid con mayonesa en pan blanco tostado.",
-      "descriptionEn": "Piles of crispy bacon, crisp lettuce leaves, and juicy vine-ripened tomatoes with mayonnaise on toasted white bread.",
-      "price": "$9.95",
-      "popular": false,
-      "badge": "Tradicional",
-      "tags": [
-        "Tocino"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevo"
-      ],
+      "id": "breakfast-plate",
+      "categoryId": "breakfast",
+      "nameEs": "Plato de desayuno",
+      "nameEn": "Breakfast Plate",
+      "descriptionEs": "2 huevos al gusto, tocino o salchicha, pan tostado y un hash brown",
+      "descriptionEn": "2 eggs any style, bacon or sausage, toast and a hashbrown",
+      "price": "$8.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-08",
-      "categoryId": "specialties",
-      "nameEs": "El Especialista del Cove (Italiano Caliente)",
-      "nameEn": "The Cove Specialist (Hot Italian Combo)",
-      "descriptionEs": "Salami genovés, pepperoni, jamón capicola y provolone derretido en un pan sub crujiente con lechuga, tomate, cebolla, aceite y vinagre.",
-      "descriptionEn": "Genoa salami, pepperoni, capicola, and melted provolone on a crusty sub roll with lettuce, tomato, onion, oil, and vinegar.",
-      "price": "$13.95",
-      "popular": true,
-      "badge": "Mejor Almuerzo",
-      "tags": [
-        "Especialidad",
-        "Italiano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "hashbrown-patty",
+      "categoryId": "breakfast",
+      "nameEs": "Torta de hash brown",
+      "nameEn": "Hashbrown Patty",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.50",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-09",
-      "categoryId": "specialties",
-      "nameEs": "Panini de Pollo a la Parrilla con Pesto",
-      "nameEn": "Grilled Chicken Pesto Panini",
-      "descriptionEs": "Pechuga de pollo a la parrilla, salsa pesto de albahaca fresca, tomates asados y queso mozzarella fresco prensado en pan ciabatta caliente.",
-      "descriptionEn": "Grilled chicken breast, fresh basil pesto sauce, roasted tomatoes, and fresh mozzarella cheese pressed warm in ciabatta bread.",
-      "price": "$12.95",
-      "popular": true,
-      "badge": "Favorito de la Casa",
-      "tags": [
-        "Panini",
-        "Pollo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Frutos Secos"
-      ],
+      "id": "french-toast",
+      "categoryId": "breakfast",
+      "nameEs": "Tostada francesa",
+      "nameEn": "French Toast",
+      "descriptionEs": "6 triángulos servidos con jarabe de maple",
+      "descriptionEn": "6 triangles served with maple syrup",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-10",
-      "categoryId": "specialties",
-      "nameEs": "Reuben Clásico de Corned Beef",
-      "nameEn": "Classic Corned Beef Reuben",
-      "descriptionEs": "Corned beef tierno cocinado a fuego lento, chucrut ácido, queso suizo fundido y aderezo ruso en pan de centeno marmolado tostado a la parrilla.",
-      "descriptionEn": "Slow-cooked tender corned beef, tangy sauerkraut, melted Swiss cheese, and Russian dressing on grilled marbled rye bread.",
-      "price": "$13.50",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Caliente",
-        "Clásico"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevo"
-      ],
+      "id": "pancakes",
+      "categoryId": "breakfast",
+      "nameEs": "Pancakes",
+      "nameEn": "Pancakes",
+      "descriptionEs": "(2) sencillos, de plátano, mora azul o chispas de chocolate\nServidos con jarabe de maple",
+      "descriptionEn": "(2) plain, banana, blueberry, or chocolate chip \nServed with maple syrup",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-11",
-      "categoryId": "specialties",
-      "nameEs": "Wraps de Ensalada de Pollo al Horno",
-      "nameEn": "Baked Chicken Salad Wrap",
-      "descriptionEs": "Ensalada de pollo cremosa de la casa con nueces pecanas tostadas, arándanos secos y lechuga crujiente envueltos en una tortilla de trigo suave.",
-      "descriptionEn": "House creamy chicken salad with toasted pecans, dried cranberries, and crisp lettuce wrapped in a soft flour tortilla.",
-      "price": "$11.50",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Wrap",
-        "Frutos Secos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Frutos Secos",
-        "Huevo"
-      ],
+      "id": "assorted-bagels",
+      "categoryId": "breakfast",
+      "nameEs": "Bagels surtidos",
+      "nameEn": "Assorted Bagels",
+      "descriptionEs": "Con mantequilla 3.00\nCon queso crema 4.00",
+      "descriptionEn": "With butter 3.00 \nWith cream cheese 4.00",
+      "price": "$3.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-12",
-      "categoryId": "beverages",
-      "nameEs": "Té Helado Estilo Sureño",
-      "nameEn": "Southern Style Iced Tea",
-      "descriptionEs": "Té negro recién infusionado, servido helado con un toque perfecto de dulzura y rodaja de limón fresco.",
-      "descriptionEn": "Freshly brewed black tea served iced with just the right touch of sweetness and a fresh lemon wheel.",
-      "price": "$2.95",
-      "popular": false,
-      "badge": "Refrescante",
-      "tags": [
-        "Bebida",
-        "Sin Alcohol"
-      ],
-      "allergens": [],
+      "id": "lox-bagel",
+      "categoryId": "breakfast",
+      "nameEs": "Bagel con lox",
+      "nameEn": "Lox Bagel",
+      "descriptionEs": "Salmón ahumado, queso crema, tomate, cebolla y alcaparras",
+      "descriptionEn": "Smoked salmon, cream cheese, tomatoes, onions, & capers",
+      "price": "$12.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-13",
-      "categoryId": "beverages",
-      "nameEs": "Limonada Casera de la Casa",
-      "nameEn": "House-Made Fresh Lemonade",
-      "descriptionEs": "Limonada 100% natural exprimida a diario con limones reales, agua purificada y caña de azúcar.",
-      "descriptionEn": "100% natural lemonade squeezed daily using real lemons, purified water, and pure cane sugar.",
-      "price": "$3.25",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Refrescante",
-        "Natural"
-      ],
-      "allergens": [],
+      "id": "assorted-muffins",
+      "categoryId": "breakfast",
+      "nameEs": "Muffins surtidos",
+      "nameEn": "Assorted Muffins",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
       "ctaType": "in_store"
     },
     {
-      "id": "the-cove-deli-14",
-      "categoryId": "beverages",
-      "nameEs": "Café Helado Artesanal",
-      "nameEn": "Artisanal Iced Coffee",
-      "descriptionEs": "Café de grano premium tostado localmente, infusionado en frío durante 12 horas para un sabor suave y con cuerpo.",
-      "descriptionEn": "Locally roasted premium coffee beans, cold-brewed for 12 hours for a smooth, full-bodied taste.",
-      "price": "$3.75",
-      "popular": false,
-      "badge": "Energía",
-      "tags": [
-        "Café",
-        "Helado"
-      ],
-      "allergens": [],
+      "id": "coffee-or-tea",
+      "categoryId": "breakfast",
+      "nameEs": "Café o té",
+      "nameEn": "Coffee or Tea",
+      "descriptionEs": "CH 2.50 GDE 3.50",
+      "descriptionEn": "SM 2.50 LG 3.50",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garden-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada del huerto",
+      "nameEn": "Garden Salad",
+      "descriptionEs": "Hojas verdes mixtas, pepino, zanahoria, aceitunas negras, tomates uva, cebolla morada y crutones cubiertos con queso parmesano. Aderezos: vinagreta balsámica, vinagreta de frambuesa, ranch, miel con mostaza, francés, Mil Islas, queso azul, César, italiano, vinagre balsámico y aceite de oliva",
+      "descriptionEn": "Mixed greens, cucumbers, carrots, black olives, grape tomatoes, red onions and croutons topped with parmesan cheese Dressings: Balsamic vinaigrette, raspberry vinaigrette, ranch, honey mustard, French, thousand island, blue cheese, Caesar, Italian, balsamic vinegar and olive oil",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "Lechuga romana, crutones y parmesano rallado, servida con aderezo César",
+      "descriptionEn": "Romaine lettuce, croutons and shaved parmesan cheese, served with Caesar dressing",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cove-house-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada de la casa Cove",
+      "nameEn": "Cove House Salad",
+      "descriptionEs": "Hojas verdes mixtas con arándanos, almendras, queso de cabra, pepino y crutones. Servida con vinagreta de frambuesa",
+      "descriptionEn": "Mixed greens with cranberries, almonds, goat cheese, cucumbers and croutons. Served with raspberry vinaigrette",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "Lechuga romana, aceitunas, cebolla morada, pepino, tomate, crutones y queso feta con vinagreta balsámica",
+      "descriptionEn": "Romaine lettuce, olives, red onions, cucumbers, tomatoes, croutons and feta cheese with balsamic vinaigrette",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cobb-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada Cobb",
+      "nameEn": "Cobb Salad",
+      "descriptionEs": "Lechuga romana, pepino, zanahoria, tomate, cebolla morada, tocino, pollo a la parrilla, aguacate, huevo cocido, queso rallado y crutones, servida con aderezo de queso azul",
+      "descriptionEn": "Romaine lettuce, cucumbers, carrots, tomatoes, red onions, bacon, grilled chicken, avocado, hard boiled egg, shredded cheese and croutons served with blue cheese dressing",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-salad",
+      "categoryId": "loaded-salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef Salad",
+      "descriptionEs": "Lechuga romana, pepino, zanahoria, tomate, cebolla morada, pavo, jamón, rosbif, queso suizo, cheddar y provolone",
+      "descriptionEn": "Romaine lettuce, cucumbers, carrots, tomatoes, red onions, turkey, ham, roast beef, swiss, cheddar and provolone cheese",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "extras-sides",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gravy-fries",
+      "categoryId": "extras-sides",
+      "nameEs": "Papas fritas con gravy",
+      "nameEn": "Gravy Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-fries",
+      "categoryId": "extras-sides",
+      "nameEs": "Papas fritas con queso",
+      "nameEn": "Cheese Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-cheese-fries",
+      "categoryId": "extras-sides",
+      "nameEs": "Papas fritas con tocino y queso",
+      "nameEn": "Bacon & Cheese Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chili-cheese-fries",
+      "categoryId": "extras-sides",
+      "nameEs": "Papas fritas con chili y queso",
+      "nameEn": "Chili Cheese Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-salad",
+      "categoryId": "extras-sides",
+      "nameEs": "Ensalada de papa",
+      "nameEn": "Potato Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coleslaw",
+      "categoryId": "extras-sides",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Coleslaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-macaroni-salad",
+      "categoryId": "extras-sides",
+      "nameEs": "Ensalada de macarrones con atún",
+      "nameEn": "Tuna Macaroni Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herb-pasta-salad",
+      "categoryId": "extras-sides",
+      "nameEs": "Ensalada de pasta con hierbas",
+      "nameEn": "Herb Pasta Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fruit-salad",
+      "categoryId": "extras-sides",
+      "nameEs": "Ensalada de frutas",
+      "nameEn": "Fruit Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "olive-medley",
+      "categoryId": "extras-sides",
+      "nameEs": "Mezcla de aceitunas",
+      "nameEn": "Olive Medley",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-cheese-sticks-6",
+      "categoryId": "extras-sides",
+      "nameEs": "Palitos de queso mozzarella (6)",
+      "nameEn": "Mozzarella Cheese Sticks (6)",
+      "descriptionEs": "Servidos con salsa marinara",
+      "descriptionEn": "Served with marinara sauce",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "extras-sides",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-quesadilla",
+      "categoryId": "extras-sides",
+      "nameEs": "Quesadilla de queso",
+      "nameEn": "Cheese Quesadilla",
+      "descriptionEs": "Servido con crema agria y salsa",
+      "descriptionEn": "Served with sour cream and salsa",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cheese-quesadilla",
+      "categoryId": "extras-sides",
+      "nameEs": "Quesadilla de pollo y queso",
+      "nameEn": "Chicken & Cheese Quesadilla",
+      "descriptionEs": "Servido con crema agria y salsa",
+      "descriptionEn": "Served with sour cream and salsa",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-soup-chili",
+      "categoryId": "hot-soup-chili",
+      "nameEs": "Sopa caliente y chili",
+      "nameEn": "Hot Soup & Chili",
+      "descriptionEs": "Las variedades cambian a diario",
+      "descriptionEn": "Varieties change daily",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "assorted-cookies",
+      "categoryId": "desserts",
+      "nameEs": "Galletas surtidas",
+      "nameEn": "Assorted Cookies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "brownies",
+      "categoryId": "desserts",
+      "nameEs": "Brownies",
+      "nameEn": "Brownies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "water",
+      "categoryId": "drinks",
+      "nameEs": "Agua",
+      "nameEn": "Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda",
+      "categoryId": "drinks",
+      "nameEs": "Refresco",
+      "nameEn": "Soda",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "snapple-powerade",
+      "categoryId": "drinks",
+      "nameEs": "Snapple/Powerade",
+      "nameEn": "Snapple/Powerade",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pellegrino",
+      "categoryId": "drinks",
+      "nameEs": "Pellegrino",
+      "nameEn": "Pellegrino",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-orange-juice",
+      "categoryId": "drinks",
+      "nameEs": "Jugo de manzana/naranja",
+      "nameEn": "Apple/Orange Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-tea",
+      "categoryId": "drinks",
+      "nameEs": "Café/té",
+      "nameEn": "Coffee/Tea",
+      "descriptionEs": "chico $2.50 grande $3.50",
+      "descriptionEn": "small $2.50 large $3.50",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "simple-breakfast-package",
+      "categoryId": "catering",
+      "nameEs": "Paquete de desayuno sencillo",
+      "nameEn": "Simple Breakfast Package",
+      "descriptionEs": "Panadería\nCafé",
+      "descriptionEn": "Pastries\nCoffee",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "continental-breakfast-package",
+      "categoryId": "catering",
+      "nameEs": "Paquete de desayuno continental",
+      "nameEn": "Continental Breakfast Package",
+      "descriptionEs": "Bagels con queso crema y/o mantequilla\nPanadería surtida\nEnsalada de fruta fresca\nJugo de naranja\nCafé y té recién hechos\nCrema, leche y azúcar\nPlatos, servilletas, cubiertos y vasos\nAgrega yogur +$2/persona",
+      "descriptionEn": "Bagels with cream cheese and/or butter\nAssorted pastries\nFresh fruit salad\nOrange juice\nFresh Coffee & Tea\nCreamer, milk and sugar\nPlates, napkins, utensils and cups\nAdd yogurt +$2/person",
+      "price": "$19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-breakfast-package-option-1",
+      "categoryId": "catering",
+      "nameEs": "Paquete de desayuno caliente opción 1",
+      "nameEn": "Hot Breakfast Package Option 1",
+      "descriptionEs": "Variedad de sándwiches de desayuno:\nTocino, huevo y queso\nHuevo, pimiento y queso provolone\nPavo, huevo y aguacate\nSalchicha, huevo y queso\nPanadería\nCafé/té, crema, leche y azúcar\nJugo de naranja\nVaso de ensalada de fruta\nPlatos, servilletas, cubiertos y vasos",
+      "descriptionEn": "Variety of breakfast sandwiches:\nBacon, Egg and Cheese\nEggs, peppers and provolone cheese\nTurkey, egg and avocado\nSausage, egg and cheese\nPastries\nCoffee/Tea, creamer, milk and sugar\nOrange Juice\nFruit Salad cup\nPlates, napkins, utensils, cups",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-breakfast-package-option-2",
+      "categoryId": "catering",
+      "nameEs": "Paquete de desayuno caliente opción 2",
+      "nameEn": "Hot Breakfast Package Option 2",
+      "descriptionEs": "Huevos revueltos con queso\nTocino ahumado con madera de manzano\nPapas caseras o hash browns\nPanadería\nVaso de ensalada de fruta\nCafé/té, crema, leche y azúcar\nJugo de naranja\nPlatos, servilletas, cubiertos y vasos\nAgrega una charola de pan francés $2.00/persona",
+      "descriptionEn": "Scrambled Eggs with Cheese\nApplewood Smoked Bacon\nHome Fries or Hash Brown Patties\nPastries\nFruit Salad Cup\nCoffee/Tea, creamer, milk and sugar\nOrange Juice\nPlates, napkins, utensils, cups\nAdd a tray of French Toast $2.00/person",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boxed-lunch-catering-package",
+      "categoryId": "catering",
+      "nameEs": "Paquete de banquete de almuerzo en caja",
+      "nameEn": "Boxed Lunch Catering Package",
+      "descriptionEs": "Sándwich gourmet entero o medio envuelto individualmente\nEnsalada de acompañamiento\nPepinillo\nPostre (galleta o brownie)\nPapitas\nBebida\nCubiertos",
+      "descriptionEn": "Individually wrapped full or half gourmet sandwich\nSide salad\nPickle\nDessert (cookie or brownie)\nChips\nBeverage\nUtensils",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "platter-lunch-catering-package",
+      "categoryId": "catering",
+      "nameEs": "Paquete de banquete de almuerzo en charola",
+      "nameEn": "Platter Lunch Catering Package",
+      "descriptionEs": "Sándwich gourmet entero\nEnsalada de la casa con aderezo\nPepinillo\nPostre (galleta o brownie)\nPapitas\nBebida\nPlatos y cubiertos",
+      "descriptionEn": "Full gourmet sandwich\nGarden salad with dressing\nPickle\nDessert (cookie or brownie)\nChips\nBeverage\nPlates and utensils",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baguette-bites-platter",
+      "categoryId": "catering",
+      "nameEs": "Charola de bocaditos de baguette",
+      "nameEn": "Baguette Bites Platter",
+      "descriptionEs": "Para 15-20 personas\n1 charola de 35-40 piezas",
+      "descriptionEn": "Serves 15-20\n1 platter 35-40 pieces",
+      "price": "$35.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones vegetarianas y podemos preparar varios sándwiches con pan sin gluten bajo pedido.",
-      "aEn": "Yes, we offer vegetarian options and can prepare several sandwiches with gluten-free bread upon request."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos y oficinas?",
-      "qEn": "Do you offer catering services for events and offices?",
-      "aEs": "¡Absolutamente! Ofrecemos charolas de sándwiches, ensaladas y almuerzos ejecutivos para todo tipo de reuniones en Wethersfield y alrededores.",
-      "aEn": "Absolutely! We offer sandwich platters, salads, and executive lunches for all types of meetings in Wethersfield and surrounding areas."
-    },
-    {
-      "qEs": "¿Aceptan pedidos por teléfono para recoger?",
-      "qEn": "Do you accept phone orders for pickup?",
-      "aEs": "Sí, puede llamarnos al 860-721-1200 para preparar su pedido con anticipación y evitar esperas.",
-      "aEn": "Yes, you can call us at 860-721-1200 to have your order ready in advance and skip the wait."
-    }
-  ]
+  "faqs": []
 }
