@@ -1,26 +1,17 @@
 {
   "storeInfo": {
     "id": "lennys-steakhouse",
-    "name": "Lenny's Steakhouse",
-    "tagline": "Award-winning Italian Steakhouse & Seafood | El mejor sabor italiano y cortes de carne",
-    "address": "1297 Long Ridge Road, Stamford, CT",
+    "name": "Lenny's Seafood & Steakhouse",
+    "tagline": "Seafood and Steakhouse in Stamford | Mariscos y restaurante de carnes en Stamford",
+    "address": "1297 Long Ridge Road, Stamford, CT 06903",
     "hours": {
-      "monday_friday": "12:00 PM - 10:00 PM",
-      "saturday": "1:00 PM - 11:00 PM",
-      "sunday": "2:00 PM - 9:00 PM"
+      "monday_friday": "12:00 PM - 9:30 PM",
+      "saturday": "12:00 PM - 10:30 PM",
+      "sunday": "12:00 PM - 10:00 PM"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Valet Parking"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -33,158 +24,824 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "raw-bar",
+      "nameEs": "Barra cruda",
+      "nameEn": "Raw Bar",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salad",
+      "nameEs": "Ensalada",
+      "nameEn": "Salad",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "hot-antipasti",
+      "nameEs": "Antipasti calientes",
+      "nameEn": "Hot Antipasti",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "soup",
+      "nameEs": "Sopa",
+      "nameEn": "Soup",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cold-antipasti",
+      "nameEs": "Antipasti fríos",
+      "nameEn": "Cold Antipasti",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "prime-21-day-dry-aged",
+      "nameEs": "Prime con 21 días de maduración en seco",
+      "nameEn": "Prime 21-Day Dry Aged",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entree",
+      "nameEs": "Plato fuerte",
+      "nameEn": "Entree",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood-fish",
+      "nameEs": "Mariscos / pescado",
+      "nameEn": "Seafood / Fish",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken",
+      "nameEs": "Pollo",
+      "nameEn": "Chicken",
+      "icon": "Utensils"
+    },
+    {
+      "id": "veal",
+      "nameEs": "Ternera",
+      "nameEn": "Veal",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pasta",
+      "nameEs": "Pasta",
+      "nameEn": "Pasta",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "lennys-01",
-      "categoryId": "appetizers",
-      "nameEs": "Calamari Fritti",
-      "nameEn": "Calamari Fritti",
-      "descriptionEs": "Calamar fresco ligeramente empanizado y frito, servido con nuestra salsa marinara casera.",
-      "descriptionEn": "Fresh calamari lightly breaded and fried, served with our signature house-made marinara sauce.",
+      "id": "seafood-tower",
+      "categoryId": "raw-bar",
+      "nameEs": "Torre de mariscos",
+      "nameEn": "Seafood Tower",
+      "descriptionEs": "Para 2 o más",
+      "descriptionEn": "For 2 or more",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-shrimp-cocktail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de camarón clásico",
+      "nameEn": "Classic Shrimp Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.00 per piece",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-cocktail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de langosta",
+      "nameEn": "Lobster Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cocktail",
+      "categoryId": "raw-bar",
+      "nameEs": "Cóctel de cangrejo",
+      "nameEn": "Crab Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "clams-on-the-half-shell",
+      "categoryId": "raw-bar",
+      "nameEs": "Almejas en media concha",
+      "nameEn": "Clams on the Half Shell",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50 per piece",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oysters-on-the-half-shell",
+      "categoryId": "raw-bar",
+      "nameEs": "Ostiones en media concha",
+      "nameEn": "Oysters on the Half Shell",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50 per piece",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chopped-house-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada picada de la casa",
+      "nameEn": "Chopped House Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-caesar",
+      "categoryId": "salad",
+      "nameEs": "César clásica",
+      "nameEn": "Classic Caesar",
+      "descriptionEs": "Corazones de lechuga romana, crutones de ajo, aderezo de la casa",
+      "descriptionEn": "Romaine hearts, garlic croutons, housemade dressing",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baby-arugula",
+      "categoryId": "salad",
+      "nameEs": "Arúgula baby",
+      "nameEn": "Baby Arugula",
+      "descriptionEs": "Gajos de naranja fresca, hinojo rallado, cebolla morada, almendras tostadas, queso de cabra, vinagreta de limón fresco",
+      "descriptionEn": "Fresh orange segments, shaved fennel, red onion, roasted almonds, goat cheese, fresh lemon vinaigrette",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iceberg-wedge-salad",
+      "categoryId": "salad",
+      "nameEs": "Ensalada wedge de lechuga iceberg",
+      "nameEn": "Iceberg Wedge Salad",
+      "descriptionEs": "Cebolla morada rebanada, tomates madurados en la planta, tocino ahumado con madera de manzano y aderezo de gorgonzola de la casa",
+      "descriptionEn": "Sliced red onion, vine-ripened tomatoes, applewood bacon, and housemade gorgonzola dressing",
+      "price": "$17.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-fried-calamari",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Calamares fritos crujientes",
+      "nameEn": "Crispy Fried Calamari",
+      "descriptionEs": "Servidos con salsa marinara",
+      "descriptionEn": "Served with marinara sauce",
       "price": "$18.00",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "lennys-02",
-      "categoryId": "appetizers",
-      "nameEs": "Carpaccio de Res",
-      "nameEn": "Beef Carpaccio",
-      "descriptionEs": "Finas láminas de solomillo crudo, alcaparras, queso parmesano y un toque de aceite de trufa.",
-      "descriptionEn": "Thinly sliced raw sirloin, capers, parmesan cheese, and a drizzle of truffle oil.",
+      "id": "seared-diver-scallops",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Callos de hacha sellados",
+      "nameEn": "Seared Diver Scallops",
+      "descriptionEs": "Servidos con hongos mixtos",
+      "descriptionEn": "Served with mixed mushrooms",
+      "price": "$24.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-jumbo-shrimp",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Camarones jumbo a la parrilla",
+      "nameEn": "Grilled Jumbo Shrimp",
+      "descriptionEs": "Con corazones de alcachofa, tomates deshidratados y ajo y aceite sobre ensalada de arúgula",
+      "descriptionEn": "With artichoke hearts, sundried tomatoes and garlic & oil over arugula salad",
+      "price": "$21.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cake",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Pastel de cangrejo",
+      "nameEn": "Crab Cake",
+      "descriptionEs": "Salsa de mostaza casera",
+      "descriptionEn": "Homemade mustard sauce",
       "price": "$22.00",
-      "popular": false,
-      "badge": "Premium",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "lennys-03",
-      "categoryId": "mains",
-      "nameEs": "Ribeye Añejado 21 Días",
-      "nameEn": "21-Day Dry-Aged Ribeye",
-      "descriptionEs": "Corte premium de 16oz añejado en seco para una terneza y sabor inigualables.",
-      "descriptionEn": "16oz premium cut, dry-aged for unmatched tenderness and depth of flavor.",
-      "price": "$58.00",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carne",
-        "Premium"
-      ],
-      "allergens": [],
+      "id": "baked-clams",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Almejas al horno",
+      "nameEn": "Baked Clams",
+      "descriptionEs": "Oreganata o casino",
+      "descriptionEn": "Oreganata or casino",
+      "price": "$18.00",
       "ctaType": "in_store"
     },
     {
-      "id": "lennys-04",
-      "categoryId": "mains",
-      "nameEs": "Filet Mignon",
-      "nameEn": "Filet Mignon",
-      "descriptionEs": "El corte más tierno, servido con una reducción de vino tinto y hierbas frescas.",
-      "descriptionEn": "The most tender cut, served with a red wine reduction and fresh herbs.",
-      "price": "$52.00",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Carne"
-      ],
-      "allergens": [],
+      "id": "mussels-fra-diavolo-or-marinara",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Mejillones 'Fra Diavolo' o 'Marinara'",
+      "nameEn": "Mussels 'Fra Diavolo' or 'Marinara'",
+      "descriptionEs": "Mejillones en salsa de tomate picante o de tomate no picante con ajo y chile",
+      "descriptionEn": "Mussels in a spicy tomato sauce or non-spicy tomato with garlic and chili",
+      "price": "$16.00",
       "ctaType": "in_store"
     },
     {
-      "id": "lennys-05",
-      "categoryId": "specialties",
-      "nameEs": "Linguine a la Pescatore",
-      "nameEn": "Linguine a la Pescatore",
-      "descriptionEs": "Pasta fresca con una mezcla de mariscos frescos en una salsa de tomate ligeramente picante.",
-      "descriptionEn": "Fresh pasta with a medley of fresh seafood in a light, spicy tomato sauce.",
-      "price": "$34.00",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Pasta",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
+      "id": "crispy-seared-applewood-bacon",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Tocino ahumado con madera de manzano, sellado y crujiente",
+      "nameEn": "Crispy Seared Applewood Bacon",
+      "descriptionEs": "Por pieza",
+      "descriptionEn": "Per piece",
+      "price": "$10.00",
       "ctaType": "in_store"
     },
     {
-      "id": "lennys-06",
-      "categoryId": "beverages",
-      "nameEs": "Vino Tinto Cabernet Sauvignon",
-      "nameEn": "Cabernet Sauvignon Red Wine",
-      "descriptionEs": "Selección de nuestra cava, maridaje perfecto para nuestros cortes de carne.",
-      "descriptionEn": "Selected from our cellar, the perfect pairing for our signature steaks.",
+      "id": "eggplant-rollatini",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Rollatini de berenjena",
+      "nameEn": "Eggplant Rollatini",
+      "descriptionEs": "Ricotta fresca, mozzarella fresca y salsa de tomate y albahaca",
+      "descriptionEn": "Fresh ricotta, fresh mozzarella, and tomato basil sauce",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "maccheroni-al-formaggio",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Maccheroni al Formaggio",
+      "nameEn": "Maccheroni al Formaggio",
+      "descriptionEs": "Pasta de conchitas, hongos silvestres, bechamel de gruyère, un toque de aceite de trufa con pan molido tostado",
+      "descriptionEn": "Pasta shells, wild mushrooms, gruyère béchamel, a touch of truffle oil with toasted bread crumbs",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sicilian-meatball-with-fresh-basil-marinara",
+      "categoryId": "hot-antipasti",
+      "nameEs": "Albóndiga siciliana con marinara de albahaca fresca",
+      "nameEn": "Sicilian Meatball with Fresh Basil Marinara",
+      "descriptionEs": "Cocida a fuego lento, rostizada lentamente y cubierta con parmesano",
+      "descriptionEn": "Simmered, slow roasted and topped with parmesan",
+      "price": "$18.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-bisque",
+      "categoryId": "soup",
+      "nameEs": "Bisque de langosta",
+      "nameEn": "Lobster Bisque",
+      "descriptionEs": "Jerez, crema y trozos de langosta fresca",
+      "descriptionEn": "Sherry, cream, and fresh lobster pieces",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-onion-soup",
+      "categoryId": "soup",
+      "nameEs": "Sopa de cebolla francesa",
+      "nameEn": "French Onion Soup",
+      "descriptionEs": "Cebolla caramelizada, caldo de res, gruyère fundido",
+      "descriptionEn": "Caramelized onions, beef broth, melted gruyère",
       "price": "$14.00",
-      "popular": false,
-      "badge": "Vino",
-      "tags": [
-        "Bebida"
-      ],
-      "allergens": [
-        "Sulfitos"
-      ],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-carpaccio",
+      "categoryId": "cold-antipasti",
+      "nameEs": "Carpaccio de res",
+      "nameEn": "Beef Carpaccio",
+      "descriptionEs": "Arúgula baby, alcaparras, pecorino romano, cebolla morada rallada, pimiento rojo en juliana, vinagreta de trufa negra",
+      "descriptionEn": "Baby arugula, capers, pecorino romano, shaved red onion, julienne red bell peppers, black truffle vinaigrette",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-prosciutto-de-parma-with-melon",
+      "categoryId": "cold-antipasti",
+      "nameEs": "Prosciutto de Parma clásico con melón",
+      "nameEn": "Classic Prosciutto de Parma with Melon",
+      "descriptionEs": "Mozzarella fresca, arúgula, melón fresco, reducción de balsámico, aceite de oliva y sal de mar",
+      "descriptionEn": "Fresh mozzarella, arugula, fresh melon, balsamic drizzle, olive oil and sea salt",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-tartare",
+      "categoryId": "cold-antipasti",
+      "nameEs": "Tartar de atún",
+      "nameEn": "Tuna Tartare",
+      "descriptionEs": "Cilantro, pepino, ajonjolí y aguacate fresco",
+      "descriptionEn": "Cilantro, cucumber, sesame seeds and fresh avocado",
+      "price": "$20.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-mozzarella",
+      "categoryId": "cold-antipasti",
+      "nameEs": "Mozzarella fresca",
+      "nameEn": "Fresh Mozzarella",
+      "descriptionEs": "Tomate bola rebanado, aceite de oliva, reducción de balsámico, albahaca fresca y pimiento rojo",
+      "descriptionEn": "Sliced beefsteak tomato, olive oil, balsamic drizzle, fresh basil and red bell peppers",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-mushroom",
+      "categoryId": "sides",
+      "nameEs": "Hongos silvestres",
+      "nameEn": "Wild Mushroom",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "duck-fat-home-fries-with-chives",
+      "categoryId": "sides",
+      "nameEs": "Papas caseras en grasa de pato con cebollín",
+      "nameEn": "Duck Fat Home Fries with Chives",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamed-spinach",
+      "categoryId": "sides",
+      "nameEs": "Espinaca a la crema",
+      "nameEn": "Creamed Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-escarole-with-white-tuscan-beans",
+      "categoryId": "sides",
+      "nameEs": "Escarola al ajo con frijoles blancos toscanos",
+      "nameEn": "Garlic Escarole with White Tuscan Beans",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "parmesan-whipped-potatoes",
+      "categoryId": "sides",
+      "nameEs": "Puré de papa con parmesano",
+      "nameEn": "Parmesan Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato",
+      "categoryId": "sides",
+      "nameEs": "Papa al horno",
+      "nameEn": "Baked Potato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "creamy-polenta",
+      "categoryId": "sides",
+      "nameEs": "Polenta cremosa",
+      "nameEn": "Creamy Polenta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-broccoli",
+      "categoryId": "sides",
+      "nameEs": "Brócoli al ajo",
+      "nameEn": "Garlic Broccoli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mixed-grilled-seasonal-vegetables",
+      "categoryId": "sides",
+      "nameEs": "Verduras de temporada mixtas a la parrilla",
+      "nameEn": "Mixed Grilled Seasonal Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasoned-asparagus",
+      "categoryId": "sides",
+      "nameEs": "Espárragos sazonados",
+      "nameEn": "Seasoned Asparagus",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lobster-home-fries-with-leeks-and-truffle-oil",
+      "categoryId": "sides",
+      "nameEs": "Papas caseras con langosta, poro y aceite de trufa",
+      "nameEn": "Lobster Home Fries with Leeks and Truffle Oil",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$22.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pomme-frites",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas (pommes frites)",
+      "nameEn": "Pomme Frites",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "sides",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$11.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "boneless-ribeye",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Rib eye sin hueso",
+      "nameEn": "Boneless Ribeye",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$58.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "petite-filet-mignon",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Filete mignon petite",
+      "nameEn": "Petite Filet Mignon",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "king-cut-filet-mignon",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Filete mignon corte king",
+      "nameEn": "King Cut Filet Mignon",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$60.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-strip",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "New York strip",
+      "nameEn": "New York Strip",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$62.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rack-of-colorado-lamb",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Costillar de cordero de Colorado",
+      "nameEn": "Rack of Colorado Lamb",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-berkshire-pork-chop",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Chuleta de cerdo Berkshire a la parrilla",
+      "nameEn": "Grilled Berkshire Pork Chop",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bone-in-grilled-veal-chop",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Chuleta de ternera con hueso a la parrilla",
+      "nameEn": "Bone-In Grilled Veal Chop",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tomahawk-long-bone-ribeye",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Rib eye tomahawk de hueso largo",
+      "nameEn": "Tomahawk Long Bone Ribeye",
+      "descriptionEs": "Para 2. Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "For 2. Served with Lenny's signature steak sauce",
+      "price": "$135.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porter-house",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Porterhouse",
+      "nameEn": "Porter House",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$66.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "porter-house-for-2",
+      "categoryId": "prime-21-day-dry-aged",
+      "nameEs": "Porterhouse para 2",
+      "nameEn": "Porter House for 2",
+      "descriptionEs": "Servido con la salsa para carne exclusiva de Lenny's",
+      "descriptionEn": "Served with Lenny's signature steak sauce",
+      "price": "$130.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lenny-s-classic-cheeseburger",
+      "categoryId": "entree",
+      "nameEs": "Hamburguesa clásica con queso de Lenny's",
+      "nameEn": "Lenny's Classic Cheeseburger",
+      "descriptionEs": "Con papas fritas o ensalada",
+      "descriptionEn": "With fries or salad",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "long-island-clams",
+      "categoryId": "seafood-fish",
+      "nameEs": "Almejas de Long Island",
+      "nameEn": "Long Island Clams",
+      "descriptionEs": "Servidas en salsa de ajo y aceite de oliva sobre linguini, cubiertas con hierbas frescas",
+      "descriptionEn": "Served in a garlic, olive oil sauce over linguini, topped with fresh herbs",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "frutti-di-mare",
+      "categoryId": "seafood-fish",
+      "nameEs": "Frutti di Mare",
+      "nameEn": "Frutti di Mare",
+      "descriptionEs": "Camarones jumbo, mejillones, almejas little neck y calamares servidos sobre linguini en salsa de vino blanco y ajo, fra diavolo o ajo y aceite",
+      "descriptionEn": "Jumbo shrimp, mussels, little neck clams & calamari served over linguini in a white wine garlic sauce, fra diavolo or garlic oil",
+      "price": "$45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "herb-crusted-tuna-steak",
+      "categoryId": "seafood-fish",
+      "nameEs": "Filete de atún con costra de hierbas",
+      "nameEn": "Herb Crusted Tuna Steak",
+      "descriptionEs": "Sellado en sartén con compota de hinojo y aceituna",
+      "descriptionEn": "Pan seared with fennel and olive compote",
+      "price": "$42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "live-maine-lobster",
+      "categoryId": "seafood-fish",
+      "nameEs": "Langosta viva de Maine",
+      "nameEn": "Live Maine Lobster",
+      "descriptionEs": "Al vapor, asada o fra diavolo",
+      "descriptionEn": "Steamed, broiled or fra diavolo",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-skin-wild-salmon",
+      "categoryId": "seafood-fish",
+      "nameEs": "Salmón salvaje con piel crujiente",
+      "nameEn": "Crispy Skin Wild Salmon",
+      "descriptionEs": "Salsa de mostaza Dijon",
+      "descriptionEn": "Dijon mustard sauce",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chilean-seabass-martini",
+      "categoryId": "seafood-fish",
+      "nameEs": "Robalo chileno martini",
+      "nameEn": "Chilean Seabass Martini",
+      "descriptionEs": "Con costra de parmesano, vino blanco, limones, corazones de alcachofa y chícharos",
+      "descriptionEn": "Parmesan crusted with white wine, lemons, artichoke hearts and green peas",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seared-jumbo-scallops",
+      "categoryId": "seafood-fish",
+      "nameEs": "Callos de hacha jumbo sellados",
+      "nameEn": "Seared Jumbo Scallops",
+      "descriptionEs": "Servidos sobre risotto de hongos",
+      "descriptionEn": "Served over mushroom risotto",
+      "price": "$48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-sole-francaise",
+      "categoryId": "seafood-fish",
+      "nameEs": "Lenguado al limón a la francesa",
+      "nameEn": "Lemon Sole Francaise",
+      "descriptionEs": "Vino blanco, limón, alcaparras",
+      "descriptionEn": "White wine, lemon, capers",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "twin-lobster-tails",
+      "categoryId": "seafood-fish",
+      "nameEs": "Dos colas de langosta",
+      "nameEn": "Twin Lobster Tails",
+      "descriptionEs": "Servidas con mantequilla clarificada y un gajo de limón",
+      "descriptionEn": "Served with drawn butter and a wedge of lemon",
+      "price": "$62.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-fra-diavolo",
+      "categoryId": "seafood-fish",
+      "nameEs": "Camarones fra diavolo",
+      "nameEn": "Shrimp Fra Diavolo",
+      "descriptionEs": "Sobre linguini en una salsa ligera de tomate",
+      "descriptionEn": "Over linguini in a light tomato sauce",
+      "price": "$39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "half-roasted-organic-lemon-chicken",
+      "categoryId": "chicken",
+      "nameEs": "Medio pollo orgánico rostizado al limón",
+      "nameEn": "Half Roasted Organic Lemon Chicken",
+      "descriptionEs": "Polenta suave y cremosa, espinacas braseadas y jugo natural",
+      "descriptionEn": "Creamy soft polenta, braised spinach, and natural au jus",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-chicken-martini",
+      "categoryId": "chicken",
+      "nameEs": "Pollo orgánico martini",
+      "nameEn": "Organic Chicken Martini",
+      "descriptionEs": "Vino blanco, limón y chícharos",
+      "descriptionEn": "White wine, lemon and green peas",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "organic-chicken-castello",
+      "categoryId": "chicken",
+      "nameEs": "Pollo orgánico Castello",
+      "nameEn": "Organic Chicken Castello",
+      "descriptionEs": "Pechuga de pollo salteada con corazones de alcachofa y tomates deshidratados, chiles cherry picantes en salsa blanca",
+      "descriptionEn": "Sautéed breast of chicken with artichoke hearts and sundried tomatoes, hot cherry peppers in a white sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-scarpariello",
+      "categoryId": "chicken",
+      "nameEs": "Pollo scarpariello",
+      "nameEn": "Chicken Scarpariello",
+      "descriptionEs": "Pollo con hueso con salchicha y chiles cherry en salsa de ajo y vinagre",
+      "descriptionEn": "Chicken on-bone with sausage, cherry peppers in a garlic and vinegar sauce",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "chicken",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "Sobre linguine",
+      "descriptionEn": "Over linguine",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-lenny-s",
+      "categoryId": "veal",
+      "nameEs": "Ternera Lenny's",
+      "nameEn": "Veal Lenny's",
+      "descriptionEs": "Espárragos, alcaparras, vino blanco y limón",
+      "descriptionEn": "Asparagus, capers, white wine and lemon",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-chop-parmigiana",
+      "categoryId": "veal",
+      "nameEs": "Chuleta de ternera a la parmesana",
+      "nameEn": "Veal Chop Parmigiana",
+      "descriptionEs": "Chuleta de ternera empanizada, salsa marinara y quesos fundidos",
+      "descriptionEn": "Breaded veal chop, marinara sauce and melted cheeses",
+      "price": "$52.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-castello",
+      "categoryId": "veal",
+      "nameEs": "Ternera Castello",
+      "nameEn": "Veal Castello",
+      "descriptionEs": "Escalopas de ternera salteadas con higos secos y hongos mixtos en salsa oscura de salvia",
+      "descriptionEn": "Scaloppine of veal sautéed with dried figs and mixed mushrooms in a brown sage sauce",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-sorrentino",
+      "categoryId": "veal",
+      "nameEs": "Ternera Sorrentino",
+      "nameEn": "Veal Sorrentino",
+      "descriptionEs": "Prosciutto rebanado y berenjena con mozzarella fundida",
+      "descriptionEn": "Sliced prosciutto and eggplant with melted mozzarella",
+      "price": "$35.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "housemade-pappardelle",
+      "categoryId": "pasta",
+      "nameEs": "Pappardelle de la casa",
+      "nameEn": "Housemade Pappardelle",
+      "descriptionEs": "Salteado con salsa boloñesa de carne",
+      "descriptionEn": "Sautéed with bolognese meat sauce",
+      "price": "$28.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "categoryId": "pasta",
+      "nameEs": "Espagueti a la carbonara",
+      "nameEn": "Spaghetti Carbonara",
+      "descriptionEs": "Espagueti, panceta crujiente, cebolla salteada cubierta con huevo fresco de granja, un toque de crema de pimienta negra y queso parmesano fresco",
+      "descriptionEn": "Spaghetti, crispy pancetta, sautéed onions coated with farm fresh egg, a touch of black pepper cream, and fresh parmigiana cheese",
+      "price": "$26.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-cheese-ravioli",
+      "categoryId": "pasta",
+      "nameEs": "Ravioles de queso caseros",
+      "nameEn": "Homemade Cheese Ravioli",
+      "descriptionEs": "Salsa de vodka o salsa de tomate y albahaca",
+      "descriptionEn": "Vodka sauce or tomato & basil sauce",
+      "price": "$25.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "homemade-cavatelli",
+      "categoryId": "pasta",
+      "nameEs": "Cavatelli caseros",
+      "nameEn": "Homemade Cavatelli",
+      "descriptionEs": "Salchicha italiana dulce, brócoli rabe y chiles cherry, ajo y aceite y queso parmesano fresco",
+      "descriptionEn": "Italian sweet sausage, broccoli rabe and cherry peppers, garlic and oil and fresh parmigiana cheese",
+      "price": "$32.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rigatoni-vodka",
+      "categoryId": "pasta",
+      "nameEs": "Rigatoni a la vodka",
+      "nameEn": "Rigatoni Vodka",
+      "descriptionEs": "Rigatoni clásico en salsa de vodka",
+      "descriptionEn": "Classic rigatoni in a vodka sauce",
+      "price": "$26.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, pregunte a nuestro personal por las opciones marcadas en el menú.",
-      "aEn": "Yes, please ask our staff for items marked on the menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono.",
-      "aEn": "We welcome walk-ins and phone reservations."
-    }
-  ]
+  "faqs": []
 }
