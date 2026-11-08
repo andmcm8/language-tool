@@ -2,27 +2,17 @@
   "storeInfo": {
     "id": "mizzas-pizza",
     "name": "Mizza's Pizza",
-    "tagline": "Family Owned, Handcrafted NY-Style Pizzas & Italian Specialties in Connecticut",
+    "tagline": "Restaurant in Lakeville | Restaurant en Lakeville",
     "address": "6 Ethan Allen Street, Lakeville, CT 06039",
-    "phone": "(860) 435-6266",
+    "phone": "(860) 435-6466",
     "hours": {
-      "monday_friday": "11:00 AM - 9:00 PM",
-      "saturday": "11:00 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Delivery",
-      "Bilingual Menu",
-      "Outdoor Seating",
-      "Bar"
+      "Bilingual Menu"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -34,8 +24,14 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pizzas",
+      "nameEs": "Pizzas",
+      "nameEn": "Pizzas",
       "icon": "Utensils"
     },
     {
@@ -45,337 +41,1469 @@
       "icon": "Utensils"
     },
     {
-      "id": "pizzas",
-      "nameEs": "Pizzas Estilo NY",
-      "nameEn": "New York Style Pizzas",
+      "id": "strombolis",
+      "nameEs": "Strombolis",
+      "nameEn": "Strombolis",
       "icon": "Utensils"
     },
     {
-      "id": "strombolis",
-      "nameEs": "Strombolis y Calzones",
-      "nameEn": "Strombolis & Calzones",
+      "id": "calzones",
+      "nameEs": "Calzones",
+      "nameEn": "Calzones",
+      "icon": "Utensils"
+    },
+    {
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hamburgers-sandwiches",
+      "nameEs": "Hamburguesas y sándwiches",
+      "nameEn": "Hamburgers & Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "subs-grinders",
+      "nameEs": "Subs/Grinders",
+      "nameEn": "Subs/Grinders",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wraps",
+      "nameEs": "Wraps",
+      "nameEn": "Wraps",
+      "icon": "Utensils"
+    },
+    {
+      "id": "pastas",
+      "nameEs": "Pastas",
+      "nameEn": "Pastas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "chicken-dinners",
+      "nameEs": "Cenas de pollo",
+      "nameEn": "Chicken Dinners",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seafood",
+      "nameEs": "Mariscos",
+      "nameEn": "Seafood",
+      "icon": "Utensils"
+    },
+    {
+      "id": "children-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Children's Menu",
+      "icon": "Utensils"
+    },
+    {
+      "id": "desserts",
+      "nameEs": "Postres",
+      "nameEn": "Desserts",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "mizzas-pizza-01",
+      "id": "create-your-own",
+      "categoryId": "pizzas",
+      "nameEs": "Crea tu propia pizza",
+      "nameEn": "Create Your Own",
+      "descriptionEs": "(12\" Chica, 16\" Grande, 18\" Extra grande)",
+      "descriptionEn": "(12\" Small, 16\" Large, 18\" X-Large)",
+      "price": "S $9.95 / L $12.95 / XL $13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "each-additional-item",
+      "categoryId": "pizzas",
+      "nameEs": "Cada ingrediente adicional",
+      "nameEn": "Each Additional Item",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "S $2.00 / L $2.50 / XL $3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ny-special",
+      "categoryId": "pizzas",
+      "nameEs": "Especial NY",
+      "nameEn": "NY Special",
+      "descriptionEs": "(con todo) Opciones: pepperoni, salchicha, albóndiga, aceitunas, tocino, champiñones, cebolla, pimientos, jamón, anchoas",
+      "descriptionEn": "(with everything) Choices: Pepperoni, sausage, meatball, olives, bacon, mushrooms, onions, peppers, ham, anchovies",
+      "price": "S $13.95 / L $17.95 / XL $20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "1-clam",
+      "categoryId": "pizzas",
+      "nameEs": "1. Almeja",
+      "nameEn": "1. Clam",
+      "descriptionEs": "(Blanca o roja)",
+      "descriptionEn": "(White or Red)",
+      "price": "S $11.95 / L $15.95 / XL $16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-clam-casino",
+      "categoryId": "pizzas",
+      "nameEs": "2. Clam Casino",
+      "nameEn": "2. Clam Casino",
+      "descriptionEs": "(Blanca o roja) Tocino, almejas pequeñas, ajo, mozzarella",
+      "descriptionEn": "(White or Red) Bacon, baby clams, garlic, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "3-shrimp-scampi",
+      "categoryId": "pizzas",
+      "nameEs": "3. Shrimp Scampi",
+      "nameEn": "3. Shrimp Scampi",
+      "descriptionEs": "Ajo, camarones, mozzarella",
+      "descriptionEn": "Garlic, shrimp, mozzarella",
+      "price": "S $13.95 / L $17.95 / XL $18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "4-florentine",
+      "categoryId": "pizzas",
+      "nameEs": "4. Florentina",
+      "nameEn": "4. Florentine",
+      "descriptionEs": "Ricotta, espinaca, ajo, tomate, mozzarella",
+      "descriptionEn": "Ricotta, spinach, garlic, tomato, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "5-pesto",
+      "categoryId": "pizzas",
+      "nameEs": "5. Pesto",
+      "nameEn": "5. Pesto",
+      "descriptionEs": "(Blanca) Tomate fresco, ajo, mozzarella",
+      "descriptionEn": "(White) Fresh tomato, garlic, mozzarella",
+      "price": "S $13.95 / L $17.95 / XL $18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "6-broccoli",
+      "categoryId": "pizzas",
+      "nameEs": "6. Brócoli",
+      "nameEn": "6. Broccoli",
+      "descriptionEs": "(Blanca) Ricotta, ajo, mozzarella",
+      "descriptionEn": "(White) Ricotta, garlic, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "7-arrabiata",
+      "categoryId": "pizzas",
+      "nameEs": "7. Arrabiata",
+      "nameEn": "7. Arrabiata",
+      "descriptionEs": "(Blanca o roja) Champiñones, chiles picantes, cebolla, aceitunas, berenjena, mozzarella",
+      "descriptionEn": "(White or Red) Mushrooms, Hot peppers, onions, olives, eggplant, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "8-vegetarian",
+      "categoryId": "pizzas",
+      "nameEs": "8. Vegetariana",
+      "nameEn": "8. Vegetarian",
+      "descriptionEs": "Brócoli, tomate, pimientos, cebolla, aceitunas, berenjena, mozzarella",
+      "descriptionEn": "Broccoli, tomato, peppers, onions, olives, eggplant, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "9-italiano",
+      "categoryId": "pizzas",
+      "nameEs": "9. Italiana",
+      "nameEn": "9. Italiano",
+      "descriptionEs": "Pimientos asados, salchicha, pepperoni, albahaca, mozzarella",
+      "descriptionEn": "Roasted peppers, sausage, pepperoni, basil, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "10-carchofi",
+      "categoryId": "pizzas",
+      "nameEs": "10. Carchofi",
+      "nameEn": "10. Carchofi",
+      "descriptionEs": "(Blanca) Alcachofas, aceitunas negras, brócoli, cebolla, tomate, mozzarella",
+      "descriptionEn": "(White) Artichokes, black olives, broccoli, onions, tomato, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "11-ortalano",
+      "categoryId": "pizzas",
+      "nameEs": "11. Ortalano",
+      "nameEn": "11. Ortalano",
+      "descriptionEs": "Berenjena, tomate, brócoli, espinaca, salsa, mozzarella",
+      "descriptionEn": "Eggplant, tomato, broccoli, spinach, sauce, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "12-mizza-s-favorite",
+      "categoryId": "pizzas",
+      "nameEs": "12. Favorita de Mizza",
+      "nameEn": "12. Mizza's Favorite",
+      "descriptionEs": "(Blanca) Tomates secados al sol, brócoli, aceitunas, alcachofas, ajo, aceite de oliva, mozzarella",
+      "descriptionEn": "(White) Sun dried tomatoes, broccoli, olives, artichokes, garlic, olive oil, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "13-seafood",
+      "categoryId": "pizzas",
+      "nameEs": "13. De mariscos",
+      "nameEn": "13. Seafood",
+      "descriptionEs": "(Blanca o roja) Camarones, almejas, ajo, aceite de oliva, mozzarella",
+      "descriptionEn": "(White or Red) Shrimp, clams, garlic, olive oil, mozzarella",
+      "price": "S $13.95 / L $17.95 / XL $18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "14-hawaiian",
+      "categoryId": "pizzas",
+      "nameEs": "14. Hawaiana",
+      "nameEn": "14. Hawaiian",
+      "descriptionEs": "Jamón, piña",
+      "descriptionEn": "Ham, pineapple",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "15-hot-wheel",
+      "categoryId": "pizzas",
+      "nameEs": "15. Hot Wheel",
+      "nameEn": "15. Hot Wheel",
+      "descriptionEs": "Chiles picantes, cebolla, tomate, ajo, aceite de oliva, aceitunas, mozzarella",
+      "descriptionEn": "Hot peppers, onions, tomato, garlic, olive oil, olives, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "16-chicken-cordon-blue",
+      "categoryId": "pizzas",
+      "nameEs": "16. Chicken Cordon Blue",
+      "nameEn": "16. Chicken Cordon Blue",
+      "descriptionEs": "Pollo, jamón, parmesano, mozzarella",
+      "descriptionEn": "Chicken, ham, parmesan, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "17-chicken-florentine",
+      "categoryId": "pizzas",
+      "nameEs": "17. Pollo florentina",
+      "nameEn": "17. Chicken Florentine",
+      "descriptionEs": "(Blanca) Pollo, espinaca, cebolla, tomate, ajo, ricotta, mozzarella",
+      "descriptionEn": "(White) Chicken, spinach, onions, tomato, garlic, ricotta, mozzarella",
+      "price": "S $13.95 / L $17.95 / XL $18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "18-mona-lisa",
+      "categoryId": "pizzas",
+      "nameEs": "18. Mona Lisa",
+      "nameEn": "18. Mona Lisa",
+      "descriptionEs": "(Sin queso, con salsa de tomate) Brócoli, berenjena, aceitunas, pimientos asados, ajo, con un toque de parmesano encima",
+      "descriptionEn": "(No cheese, with tomato sauce) Broccoli, eggplant, olives, roasted peppers, garlic, topped with a touch of parmesan",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "19-tropical-tease",
+      "categoryId": "pizzas",
+      "nameEs": "19. Tropical Tease",
+      "nameEn": "19. Tropical Tease",
+      "descriptionEs": "(Blanca) Tocino, tomate, espinaca, ajo",
+      "descriptionEn": "(White) Bacon, tomato, spinach, garlic",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "20-natural",
+      "categoryId": "pizzas",
+      "nameEs": "20. Natural",
+      "nameEn": "20. Natural",
+      "descriptionEs": "(Blanca) Tomate, ajo, champiñones, cebolla, espinaca, mozzarella",
+      "descriptionEn": "(White) Tomato, garlic, mushrooms, onions, spinach, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "21-mediterranean",
+      "categoryId": "pizzas",
+      "nameEs": "21. Mediterránea",
+      "nameEn": "21. Mediterranean",
+      "descriptionEs": "(Blanca) Espinaca, feta, ajo, aceitunas, mozzarella",
+      "descriptionEn": "(White) Spinach, feta, garlic, olives, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "22-genovese",
+      "categoryId": "pizzas",
+      "nameEs": "22. Genovese",
+      "nameEn": "22. Genovese",
+      "descriptionEs": "Pesto, salchicha, champiñones, ajo",
+      "descriptionEn": "Pesto, sausage, mushrooms, garlic",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "23-philly-cheese",
+      "categoryId": "pizzas",
+      "nameEs": "23. Philly Cheese",
+      "nameEn": "23. Philly Cheese",
+      "descriptionEs": "(Blanca) Cebolla, pimientos, champiñones, parmesano",
+      "descriptionEn": "(White) Onions, peppers, mushrooms parmesan",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "24-bbq-chicken",
+      "categoryId": "pizzas",
+      "nameEs": "24. Pollo BBQ",
+      "nameEn": "24. BBQ Chicken",
+      "descriptionEs": "Pollo, salsa BBQ, mozzarella",
+      "descriptionEn": "Chicken, BBQ sauce, mozzarella",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "25-mario-s",
+      "categoryId": "pizzas",
+      "nameEs": "25. De Mario",
+      "nameEn": "25. Mario's",
+      "descriptionEs": "(Blanca) Pesto, tomate, berenjena, brócoli, ajo, ricotta",
+      "descriptionEn": "(White) Pesto, tomato, eggplant, broccoli, garlic, ricotta",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "26-luigi-s",
+      "categoryId": "pizzas",
+      "nameEs": "26. De Luigi",
+      "nameEn": "26. Luigi's",
+      "descriptionEs": "Feta, tocino, pimientos asados, salsa, espinaca",
+      "descriptionEn": "Feta, bacon, roasted peppers, sauce, spinach",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "27-joe-s-favorite",
+      "categoryId": "pizzas",
+      "nameEs": "27. Favorita de Joe",
+      "nameEn": "27. Joe's Favorite",
+      "descriptionEs": "Champiñones, tomates secados al sol, espinaca, ajo, salsa",
+      "descriptionEn": "Mushrooms, sun dried tomatoes, spinach, garlic, sauce",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "28-five-meat-special",
+      "categoryId": "pizzas",
+      "nameEs": "28. Especial de cinco carnes",
+      "nameEn": "28. Five Meat Special",
+      "descriptionEs": "Salchicha, pepperoni, jamón, tocino, albóndiga",
+      "descriptionEn": "Sausage, pepperoni, ham, bacon, meatball",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "29-buffalo-chicken",
+      "categoryId": "pizzas",
+      "nameEs": "29. Pollo búfalo",
+      "nameEn": "29. Buffalo Chicken",
+      "descriptionEs": "Pollo, salsa búfalo, queso",
+      "descriptionEn": "Chicken, buffalo sauce, cheese",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "30-skip-barber-special",
+      "categoryId": "pizzas",
+      "nameEs": "30. Especial Skip Barber",
+      "nameEn": "30. Skip Barber Special",
+      "descriptionEs": "(Blanca) Pollo, tocino, tomate, albahaca, ajo",
+      "descriptionEn": "(White) Chicken, bacon, tomato, basil, garlic",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "31-margarita",
+      "categoryId": "pizzas",
+      "nameEs": "31. Margarita",
+      "nameEn": "31. Margarita",
+      "descriptionEs": "Tomates frescos, mozzarella fresca, ricotta, albahaca",
+      "descriptionEn": "Fresh tomatoes, fresh mozzarella, ricotta, basil",
+      "price": "S $12.95 / L $16.95 / XL $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day",
       "categoryId": "appetizers",
-      "nameEs": "Dedos de Mozzarella Crujientes",
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup of the Day",
+      "descriptionEs": "(no disponible en verano)",
+      "descriptionEn": "(not available in summer)",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de mozzarella",
       "nameEn": "Mozzarella Sticks",
-      "descriptionEs": "Bastones de queso mozzarella empanizados y fritos a la perfección, servidos con salsa marinara casera.",
-      "descriptionEn": "Battered and fried mozzarella cheese sticks served with housemade marinara sauce.",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$8.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Vegetariano",
-        "Crujiente"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-02",
+      "id": "chicken-fingers",
       "categoryId": "appetizers",
-      "nameEs": "Alitas de Pollo Buffalo",
-      "nameEn": "Buffalo Wings (12)",
-      "descriptionEs": "Alitas de pollo jugosas bañadas en nuestra salsa picante estilo Buffalo, acompañadas de aderezo ranch y apio.",
-      "descriptionEn": "Juicy chicken wings tossed in our signature spicy Buffalo sauce, served with ranch dressing and celery.",
-      "price": "$11.95",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Popular"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "nameEs": "Dedos de pollo",
+      "nameEn": "Chicken Fingers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-03",
+      "id": "jalapeno-poppers-5",
       "categoryId": "appetizers",
-      "nameEs": "Pan de Ajo con Queso Jennifer",
+      "nameEs": "Jalapeño Poppers (5)",
+      "nameEn": "Jalapeno Poppers (5)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "garlic-bread-no-cheese",
+      "categoryId": "appetizers",
+      "nameEs": "Pan de ajo (sin queso)",
+      "nameEn": "Garlic Bread (no cheese)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jennifer-bread",
+      "categoryId": "appetizers",
+      "nameEs": "Pan Jennifer",
       "nameEn": "Jennifer Bread",
-      "descriptionEs": "Pan crujiente al horno untado con mantequilla de ajo fresco y cubierto con abundante queso mozzarella derretido.",
-      "descriptionEn": "Freshly baked crusty bread brushed with garlic butter and topped with melted mozzarella cheese.",
+      "descriptionEs": "(ajo y queso)",
+      "descriptionEn": "(garlic & cheese)",
       "price": "$5.25",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Al Horno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-04",
+      "id": "clam-strips",
       "categoryId": "appetizers",
-      "nameEs": "Calamares Fritos",
+      "nameEs": "Tiras de almeja",
+      "nameEn": "Clam Strips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "appetizers",
+      "nameEs": "Papas fritas",
+      "nameEn": "French Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bruschetta",
+      "categoryId": "appetizers",
+      "nameEs": "Bruschetta",
+      "nameEn": "Bruschetta",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-calamari",
+      "categoryId": "appetizers",
+      "nameEs": "Calamares fritos",
       "nameEn": "Fried Calamari",
-      "descriptionEs": "Calamares tiernos empanizados ligeramente y fritos, servidos con limón y salsa marinara picante.",
-      "descriptionEn": "Tender calamari lightly breaded and fried, served with fresh lemon and spicy marinara sauce.",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$10.95",
-      "popular": true,
-      "badge": "Especialidad",
-      "tags": [
-        "Mariscos",
-        "Fresco"
-      ],
-      "allergens": [
-        "Gluten",
-        "Mariscos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-05",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza NY Especial (Con Todo)",
-      "nameEn": "NY Special Pizza (Large)",
-      "descriptionEs": "Nuestra emblemática pizza estilo Nueva York grande cubierta con pepperoni, salchicha, albóndigas, aceitunas, tocino, champiñones, cebolla y pimientos.",
-      "descriptionEn": "Our signature large New York style pizza topped with pepperoni, sausage, meatball, olives, bacon, mushrooms, onions, and peppers.",
-      "price": "$17.95",
-      "popular": true,
-      "badge": "Más Vendido",
-      "tags": [
-        "Estilo NY",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "buffalo-wings",
+      "categoryId": "appetizers",
+      "nameEs": "Alitas búfalo",
+      "nameEn": "Buffalo Wings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "(6) $8.95 / (12) $11.95 / (24) $22.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-06",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Clam Casino (Blanca o Roja)",
-      "nameEn": "Clam Casino Pizza (Large)",
-      "descriptionEs": "Almejas bebés frescas, tocino crujiente, ajo y queso mozzarella sobre una base crujiente.",
-      "descriptionEn": "Fresh baby clams, crispy bacon, garlic, and mozzarella cheese on a crispy crust.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Mariscos",
-        "Artesanal"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "potato-skins-4",
+      "categoryId": "appetizers",
+      "nameEs": "Cáscaras de papa (4)",
+      "nameEn": "Potato Skins (4)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-07",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza de Camarones al Ajillo",
-      "nameEn": "Shrimp Scampi Pizza (Large)",
-      "descriptionEs": "Camarones frescos salteados con ajo aromático, aceite de oliva y abundante queso mozzarella fundido.",
-      "descriptionEn": "Fresh shrimp sautéed with aromatic garlic, olive oil, and abundant melted mozzarella cheese.",
-      "price": "$17.95",
-      "popular": false,
-      "badge": "Gourmet",
-      "tags": [
-        "Mariscos",
-        "Ajo"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Mariscos"
-      ],
+      "id": "shrimp-cocktail-6",
+      "categoryId": "appetizers",
+      "nameEs": "Cóctel de camarones (6)",
+      "nameEn": "Shrimp Cocktail (6)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-08",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Florentina (Blanca)",
-      "nameEn": "Florentine Pizza (Large)",
-      "descriptionEs": "Deliciosa combinación de queso ricotta, espinacas frescas, ajo y tomate sobre base blanca con mozzarella.",
-      "descriptionEn": "Delightful combination of ricotta cheese, fresh spinach, garlic, and tomato on a white base with mozzarella.",
-      "price": "$16.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Blanca"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "fish-n-chips",
+      "categoryId": "appetizers",
+      "nameEs": "Fish ’n’ Chips",
+      "nameEn": "Fish ’n’ Chips",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-09",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza Hawaiana",
-      "nameEn": "Hawaiian Pizza (Large)",
-      "descriptionEs": "El clásico favorito con jamón tierno y trozos dulces de piña sobre nuestra salsa de tomate casera y mozzarella.",
-      "descriptionEn": "The classic favorite topped with tender ham and sweet pineapple chunks over our housemade tomato sauce and mozzarella.",
-      "price": "$16.95",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Dulce y Salado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
+      "id": "onion-rings",
+      "categoryId": "appetizers",
+      "nameEs": "Aros de cebolla",
+      "nameEn": "Onion Rings",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.95",
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-10",
-      "categoryId": "pizzas",
-      "nameEs": "Pizza de Pollo a la BBQ",
-      "nameEn": "BBQ Chicken Pizza (Large)",
-      "descriptionEs": "Trocitos de pollo tierno marinados en salsa barbacoa dulce y ahumada, cubiertos con queso mozzarella fundido.",
-      "descriptionEn": "Tender chicken pieces marinated in sweet and smoky barbecue sauce, topped with melted mozzarella cheese.",
-      "price": "$16.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Pollo",
-        "Ahumado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mizzas-pizza-11",
+      "id": "cheese",
       "categoryId": "strombolis",
-      "nameEs": "Stromboli de Queso Clásico",
-      "nameEn": "Cheese Stromboli",
-      "descriptionEs": "Masa de pizza fresca enrollada y horneada con una generosa mezcla de quesos italianos y salsa marinara.",
-      "descriptionEn": "Fresh pizza dough rolled and baked with a generous blend of Italian cheeses and marinara sauce.",
+      "nameEs": "Queso",
+      "nameEn": "Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
       "price": "$9.95",
-      "popular": false,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Al Horno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-12",
+      "id": "meat",
       "categoryId": "strombolis",
-      "nameEs": "Stromboli de Carnes (Pepperoni y Albóndiga)",
-      "nameEn": "Meat Stromboli (Pepperoni & Meatball)",
-      "descriptionEs": "Relleno abundante de pepperoni sazonado, albóndigas caseras y queso mozzarella envuelto en masa dorada.",
-      "descriptionEn": "Abundant filling of seasoned pepperoni, housemade meatballs, and mozzarella cheese wrapped in golden dough.",
+      "nameEs": "Carne",
+      "nameEn": "Meat",
+      "descriptionEs": "Pepperoni y albóndiga",
+      "descriptionEn": "Pepperoni and meatball",
       "price": "$9.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Carnívoro",
-        "Al Horno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-13",
+      "id": "veggie",
       "categoryId": "strombolis",
-      "nameEs": "Stromboli Vegetariano",
-      "nameEn": "Veggie Stromboli",
-      "descriptionEs": "Brocoli fresco, champiñones tiernos, aceitunas negras, cebollas y pimientos envueltos con queso.",
-      "descriptionEn": "Fresh broccoli, tender mushrooms, black olives, onions, and peppers wrapped with cheese.",
+      "nameEs": "Vegetariano",
+      "nameEn": "Veggie",
+      "descriptionEs": "Brócoli, champiñones, aceitunas, cebolla, pimientos",
+      "descriptionEn": "Broccoli, mushrooms, olives, onions, peppers",
       "price": "$9.95",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "mizzas-pizza-14",
+      "id": "buffalo-stromboli",
+      "categoryId": "strombolis",
+      "nameEs": "Stromboli búfalo",
+      "nameEn": "Buffalo Stromboli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-stromboli",
+      "categoryId": "strombolis",
+      "nameEs": "Stromboli BBQ",
+      "nameEn": "BBQ Stromboli",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "calzone",
+      "categoryId": "calzones",
+      "nameEs": "Calzone",
+      "nameEn": "Calzone",
+      "descriptionEs": "Ricotta, mozzarella, especias",
+      "descriptionEn": "Ricotta, mozzarella, spices",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-calzone",
+      "categoryId": "calzones",
+      "nameEs": "Calzone búfalo",
+      "nameEn": "Buffalo Calzone",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-calzone",
+      "categoryId": "calzones",
+      "nameEs": "Calzone BBQ",
+      "nameEn": "BBQ Calzone",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "each-additional-topping",
+      "categoryId": "calzones",
+      "nameEs": "Cada ingrediente adicional",
+      "nameEn": "Each Additional Topping",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "S $5.95 / L $7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "S $5.95 / L $7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chef-s-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada del chef",
+      "nameEn": "Chef's Salad",
+      "descriptionEs": "Pavo, rosbif, queso",
+      "descriptionEn": "Turkey, roast beef, cheese",
+      "price": "S $7.95 / L $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada antipasto",
+      "nameEn": "Antipasto Salad",
+      "descriptionEs": "Jamón, salami, queso",
+      "descriptionEn": "Ham, salami, cheese",
+      "price": "S $7.95 / L $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mizza-s-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Mizza",
+      "nameEn": "Mizza's Salad",
+      "descriptionEs": "(con feta)",
+      "descriptionEn": "(with Feta)",
+      "price": "S $7.95 / L $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "S $8.95 / L $10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albanian-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada albanesa",
+      "nameEn": "Albanian Salad",
+      "descriptionEs": "Tomates, pepino, cebolla, aceitunas y queso feta en cubos, mezclados con aceite de oliva y vinagre",
+      "descriptionEn": "Diced tomatoes, cucumbers, onions, olives, feta cheese mixed in olive oil & vinegar",
+      "price": "S $8.95 / L $11.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger-deluxe",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Hamburguesa deluxe",
+      "nameEn": "Hamburger Deluxe",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-deluxe",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Hamburguesa con queso deluxe",
+      "nameEn": "Cheeseburger Deluxe",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$9.45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-club",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Club de pavo",
+      "nameEn": "Turkey Club",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$7.95 / with fries $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gyro",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Gyro",
+      "nameEn": "Gyro",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken-rollup",
+      "categoryId": "hamburgers-sandwiches",
+      "nameEs": "Rollo de pollo a la parrilla",
+      "nameEn": "Grilled Chicken Rollup",
+      "descriptionEs": "(con papas fritas)",
+      "descriptionEn": "(with fries)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatball-parmesan",
+      "categoryId": "subs-grinders",
+      "nameEs": "Albóndigas a la parmesana",
+      "nameEn": "Meatball Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $5.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-parmesan",
+      "categoryId": "subs-grinders",
+      "nameEs": "Salchicha a la parmesana",
+      "nameEn": "Sausage Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $5.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmesan",
+      "categoryId": "subs-grinders",
+      "nameEs": "Berenjena a la parmesana",
+      "nameEn": "Eggplant Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $5.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan",
+      "categoryId": "subs-grinders",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ham-and-cheese",
+      "categoryId": "subs-grinders",
+      "nameEs": "Jamón y queso",
+      "nameEn": "Ham and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-and-cheese",
+      "categoryId": "subs-grinders",
+      "nameEs": "Pavo con queso",
+      "nameEn": "Turkey and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "salami-and-cheese",
+      "categoryId": "subs-grinders",
+      "nameEs": "Salami y queso",
+      "nameEn": "Salami and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheese-steak",
+      "categoryId": "subs-grinders",
+      "nameEs": "Philly cheesesteak",
+      "nameEn": "Philly Cheese Steak",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-subs-grinders",
+      "categoryId": "subs-grinders",
+      "nameEs": "Vegetariano (Subs/Grinders)",
+      "nameEn": "Veggie (Subs/Grinders)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $5.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-and-cheese",
+      "categoryId": "subs-grinders",
+      "nameEs": "Atún y queso",
+      "nameEn": "Tuna and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "combination-ham-salami",
+      "categoryId": "subs-grinders",
+      "nameEs": "Combinado de jamón y salami",
+      "nameEn": "Combination Ham & Salami",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roast-beef-and-cheese",
+      "categoryId": "subs-grinders",
+      "nameEs": "Rosbif con queso",
+      "nameEn": "Roast Beef and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $6.95 / Full $8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-parmesan",
+      "categoryId": "subs-grinders",
+      "nameEs": "Ternera a la parmesana",
+      "nameEn": "Veal Parmesan",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-chicken",
+      "categoryId": "subs-grinders",
+      "nameEs": "Pollo a la parrilla",
+      "nameEn": "Grilled Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken",
+      "categoryId": "subs-grinders",
+      "nameEs": "Pollo búfalo",
+      "nameEn": "Buffalo Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-chicken",
+      "categoryId": "subs-grinders",
+      "nameEs": "Pollo BBQ",
+      "nameEn": "BBQ Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "subs-grinders",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half $7.95 / Full $10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pavo",
+      "nameEn": "Turkey Wrap",
+      "descriptionEs": "(Servido con papas fritas o aros de cebolla)",
+      "descriptionEn": "(Served with French fries or onion rings)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo",
+      "nameEn": "Chicken Wrap",
+      "descriptionEs": "(Servido con papas fritas o aros de cebolla)",
+      "descriptionEn": "(Served with French fries or onion rings)",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap vegetariano",
+      "nameEn": "Veggie Wrap",
+      "descriptionEs": "(Servido con papas fritas o aros de cebolla)",
+      "descriptionEn": "(Served with French fries or onion rings)",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-caesar-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo César",
+      "nameEn": "Chicken Caesar Wrap",
+      "descriptionEs": "(Servido con papas fritas o aros de cebolla)",
+      "descriptionEn": "(Served with French fries or onion rings)",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-or-buffalo-chicken-wrap",
+      "categoryId": "wraps",
+      "nameEs": "Wrap de pollo BBQ o búfalo",
+      "nameEn": "BBQ or Buffalo Chicken Wrap",
+      "descriptionEs": "(Servido con papas fritas o aros de cebolla)",
+      "descriptionEn": "(Served with French fries or onion rings)",
+      "price": "$9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-ziti-linguine-cappelini",
+      "categoryId": "pastas",
+      "nameEs": "Espagueti, ziti, linguini, cappellini",
+      "nameEn": "Spaghetti, Ziti, Linguine, Cappelini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli-meat-spinach",
+      "categoryId": "pastas",
+      "nameEs": "Ravioles de queso/ carne/ espinaca",
+      "nameEn": "Cheese Ravioli/ Meat/ Spinach",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "manicotti",
+      "categoryId": "pastas",
+      "nameEs": "Manicotti",
+      "nameEn": "Manicotti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-shells",
+      "categoryId": "pastas",
+      "nameEs": "Conchas rellenas",
+      "nameEn": "Stuffed Shells",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meat-lasagna",
+      "categoryId": "pastas",
+      "nameEs": "Meat Lasagna",
+      "nameEn": "Meat Lasagna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti",
+      "categoryId": "pastas",
+      "nameEs": "Ziti horneado",
+      "nameEn": "Baked Ziti",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccini-alfredo",
+      "categoryId": "pastas",
+      "nameEs": "Fettuccini alfredo",
+      "nameEn": "Fettuccini Alfredo",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ziti-w-vodka-sauce",
+      "categoryId": "pastas",
+      "nameEs": "Ziti con salsa vodka",
+      "nameEn": "Ziti w/ Vodka Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-combo",
+      "categoryId": "pastas",
+      "nameEs": "Combinado de pasta",
+      "nameEn": "Pasta Combo",
+      "descriptionEs": "Lasaña, manicotti, conchas rellenas",
+      "descriptionEn": "Lasagna, Manicotti, Stuffed Shells",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-primavera",
+      "categoryId": "pastas",
+      "nameEs": "Pasta primavera",
+      "nameEn": "Pasta Primavera",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-dinner",
+      "categoryId": "pastas",
+      "nameEs": "Cena de berenjena",
+      "nameEn": "Eggplant Dinner",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-rollatini",
+      "categoryId": "pastas",
+      "nameEs": "Rollatini de berenjena",
+      "nameEn": "Eggplant Rollatini",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmigiana",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo a la parmesana",
+      "nameEn": "Chicken Parmigiana",
+      "descriptionEs": "Empanizada y cubierta con salsa de tomate y mozzarella",
+      "descriptionEn": "Breaded and topped with tomato sauce and mozzarella",
+      "price": "Chicken $14.95 / Veal $15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "Salteada con cebolla, champiñones y vino marsala",
+      "descriptionEn": "Sautéed with onions, mushrooms and Marsala wine",
+      "price": "Chicken $16.95 / Veal $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francese",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo Francese",
+      "nameEn": "Chicken Francese",
+      "descriptionEs": "Salteada en salsa de mantequilla, limón y vino blanco",
+      "descriptionEn": "Sautéed in a butter lemon, white wine sauce",
+      "price": "Chicken $16.95 / Veal $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-cacciatore",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo cacciatore",
+      "nameEn": "Chicken Cacciatore",
+      "descriptionEs": "Salteada en nuestra deliciosa salsa de tomate con pimientos y cebolla",
+      "descriptionEn": "Sautéed in our delicious tomato sauce with peppers & onions",
+      "price": "Chicken $16.95 / Veal $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-picatta",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo piccata",
+      "nameEn": "Chicken Picatta",
+      "descriptionEs": "Salteada en mantequilla, limón y vino blanco con champiñones y alcaparras",
+      "descriptionEn": "Sautéed in butter, lemon, & white wine with mushrooms & capers",
+      "price": "Chicken $16.95 / Veal $17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-florentine",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo a la florentina",
+      "nameEn": "Chicken Florentine",
+      "descriptionEs": "Salteada en mantequilla, limón y vino blanco, servida sobre espinaca fresca",
+      "descriptionEn": "Sautéed in butter, lemon, & white wine, served over fresh spinach",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-and-broccoli",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo y brócoli",
+      "nameEn": "Chicken and Broccoli",
+      "descriptionEs": "Brócoli con aceite de oliva, ajo y vino blanco",
+      "descriptionEn": "Broccoli with olive oil, garlic and white wine",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-pesto",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Pollo al pesto",
+      "nameEn": "Chicken Pesto",
+      "descriptionEs": "Salteada con espinaca y tomates en una salsa pesto sabrosa",
+      "descriptionEn": "Sautéed with spinach and tomatoes in a savory pesto sauce",
+      "price": "$16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veal-a-la-mizza",
+      "categoryId": "chicken-dinners",
+      "nameEs": "Ternera a la Mizza",
+      "nameEn": "Veal a la Mizza",
+      "descriptionEs": "Medallones de ternera salteados con mantequilla, vino blanco, champiñones, alcachofas y pimientos asados",
+      "descriptionEn": "Veal medallions sautéed with butter white wine, mushrooms, artichokes & roasted peppers",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "linguine-and-clams",
+      "categoryId": "seafood",
+      "nameEs": "Linguine con almejas",
+      "nameEn": "Linguine and Clams",
+      "descriptionEs": "(Blanca o roja) Salteada en ajo, aceite de oliva y especias del chef",
+      "descriptionEn": "(White or Red) Sautéed in garlic, olive oil, and chef’s spices",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-scampi",
+      "categoryId": "seafood",
+      "nameEs": "Camarones scampi al ajo",
+      "nameEn": "Shrimp Scampi",
+      "descriptionEs": "Salteada en aceite de oliva, ajo, alcaparras y pimientos dulces",
+      "descriptionEn": "Sautéed in olive oil, garlic, capers, and sweet peppers",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-and-broccoli",
+      "categoryId": "seafood",
+      "nameEs": "Camarones y brócoli",
+      "nameEn": "Shrimp and Broccoli",
+      "descriptionEs": "Brócoli con aceite de oliva, ajo y vino blanco",
+      "descriptionEn": "Broccoli w/ olive oil, garlic and white wine",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-and-broccoli-alfredo",
+      "categoryId": "seafood",
+      "nameEs": "Camarones y brócoli Alfredo",
+      "nameEn": "Shrimp and Broccoli Alfredo",
+      "descriptionEs": "Brócoli y salsa Alfredo",
+      "descriptionEn": "Broccoli and Alfredo sauce",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-florentine",
+      "categoryId": "seafood",
+      "nameEs": "Camarones florentinos",
+      "nameEn": "Shrimp Florentine",
+      "descriptionEs": "Salteados en mantequilla, limón y vino blanco, servidos con espinaca sobre linguini",
+      "descriptionEn": "Sautéed in butter, lemon, & white wine, served with spinach over linguini",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-fra-diavolo",
+      "categoryId": "seafood",
+      "nameEs": "Camarones fra diavolo",
+      "nameEn": "Shrimp Fra Diavolo",
+      "descriptionEs": "(Blanca o roja) Salteados en aceite de oliva y ajo",
+      "descriptionEn": "(White or Red) Sautéed in olive oil and garlic",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seafood-fra-diavolo",
+      "categoryId": "seafood",
+      "nameEs": "Mariscos fra diavolo",
+      "nameEn": "Seafood Fra Diavolo",
+      "descriptionEs": "(Blanca o roja) Camarones, almejas, mejillones, calamar y vieiras salteados con ajo en una salsa picante",
+      "descriptionEn": "(White or Red) Shrimp, clams, mussels, calamari & scallops sautéed with garlic in a spicy sauce",
+      "price": "$23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger-children-s-menu",
+      "categoryId": "children-s-menu",
+      "nameEs": "Hamburguesa con queso (Menú infantil)",
+      "nameEn": "Cheeseburger (Children's Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti",
+      "categoryId": "children-s-menu",
+      "nameEs": "Espagueti",
+      "nameEn": "Spaghetti",
+      "descriptionEs": "mantequilla o salsa",
+      "descriptionEn": "butter or sauce",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-dog",
+      "categoryId": "children-s-menu",
+      "nameEs": "Hot dog",
+      "nameEn": "Hot Dog",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-fingers-children-s-menu",
+      "categoryId": "children-s-menu",
+      "nameEs": "Tiras de pollo (Menú infantil)",
+      "nameEn": "Chicken Fingers (Children's Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-ravioli-3",
+      "categoryId": "children-s-menu",
+      "nameEs": "Ravioles de queso (3)",
+      "nameEn": "Cheese Ravioli (3)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fettuccini-alfredo-children-s-menu",
+      "categoryId": "children-s-menu",
+      "nameEs": "Fettuccini Alfredo (Menú infantil)",
+      "nameEn": "Fettuccini Alfredo (Children's Menu)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "children-s-menu",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spaghetti-and-meatball",
+      "categoryId": "children-s-menu",
+      "nameEs": "Espagueti y albóndiga",
+      "nameEn": "Spaghetti and Meatball",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-loving-spoon-cake",
+      "categoryId": "desserts",
+      "nameEs": "Chocolate Loving Spoon Cake",
+      "nameEn": "Chocolate Loving Spoon Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "torta-tiramisu",
+      "categoryId": "desserts",
+      "nameEs": "Torta tiramisú",
+      "nameEn": "Torta Tiramisu",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carrot-cake",
+      "categoryId": "desserts",
+      "nameEs": "Pastel de zanahoria",
+      "nameEn": "Carrot Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheese-cake",
+      "categoryId": "desserts",
+      "nameEs": "Cheesecake",
+      "nameEn": "Cheese Cake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soft-ice-cream",
+      "categoryId": "desserts",
+      "nameEs": "Helado suave",
+      "nameEn": "Soft Ice Cream",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "S $2.75 / M $3.00 / L $3.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk-shake",
+      "categoryId": "desserts",
+      "nameEs": "Malteada",
+      "nameEn": "Milk Shake",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda-ice-tea-bottled",
       "categoryId": "beverages",
-      "nameEs": "Refresco de Lata (Coca-Cola, Sprite, Ginger Ale)",
-      "nameEn": "Canned Soda (Coke, Sprite, Ginger Ale)",
-      "descriptionEs": "Bebida gaseosa fría en lata de 12 oz para acompañar su comida.",
-      "descriptionEn": "Cold 12 oz canned soft drink to accompany your meal.",
-      "price": "$2.25",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Sin Alcohol",
-        "Frío"
-      ],
-      "allergens": [],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "mizzas-pizza-15",
-      "categoryId": "beverages",
-      "nameEs": "Agua Purificada Embotellada",
-      "nameEn": "Bottled Spring Water",
-      "descriptionEs": "Agua de manantial natural purificada y refrescante.",
-      "descriptionEn": "Purified and refreshing natural spring water.",
+      "nameEs": "Refresco, té helado (embotellado)",
+      "nameEn": "Soda, Ice tea (bottled)",
+      "descriptionEs": "20 oz.",
+      "descriptionEn": "20 oz.",
       "price": "$2.00",
-      "popular": false,
-      "badge": "Bebida",
-      "tags": [
-        "Sin Alcohol",
-        "Hidratante"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda-bottled",
+      "categoryId": "beverages",
+      "nameEs": "Refresco (embotellado)",
+      "nameEn": "Soda (bottled)",
+      "descriptionEs": "2 litros",
+      "descriptionEn": "2 liter",
+      "price": "$2.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juice",
+      "categoryId": "beverages",
+      "nameEs": "Jugo",
+      "nameEn": "Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Ofrecen servicio de entrega a domicilio?",
-      "qEn": "Do you offer delivery service?",
-      "aEs": "Sí, ofrecemos entrega gratuita dentro de un radio de 7 millas y un cargo adicional para entregas más allá de las 7 millas.",
-      "aEn": "Yes, we offer free delivery within a 7-mile radius and an additional charge for deliveries beyond 7 miles."
-    },
-    {
-      "qEs": "¿Tienen opciones vegetarianas o personalizadas?",
-      "qEn": "Do you offer vegetarian or custom options?",
-      "aEs": "¡Por supuesto! Tenemos más de 30 variedades de pizzas y puede crear su propia pizza con una amplia selección de ingredientes frescos.",
-      "aEn": "Of course! We have over 30 pizza varieties and you can create your own pizza with a wide array of fresh toppings."
-    },
-    {
-      "qEs": "¿Tienen eventos especiales o música en vivo?",
-      "qEn": "Do you host special events or live music?",
-      "aEs": "Sí, únase a nosotros para nuestra Noche de Trivia todos los lunes a las 6 p.m. y música en vivo la segunda noche de miércoles de cada mes a las 7:30 p.m.",
-      "aEn": "Yes, join us for Trivia Night each Monday at 6 p.m. and live music on the 2nd Wednesday night of each month at 7:30 p.m."
-    }
-  ]
+  "faqs": []
 }
