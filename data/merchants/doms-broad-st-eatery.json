@@ -2,23 +2,15 @@
   "storeInfo": {
     "id": "doms-broad-st-eatery",
     "name": "Dom's Broad St Eatery",
-    "tagline": "Where old friends gather and new friends meet in Windsor, CT.",
-    "address": "Main St, Greater Hartford, CT",
+    "tagline": "American restaurant in Greater Hartford | Restaurante americano en Greater Hartford",
+    "address": "330 Broad Street, Windsor, CT 06095",
     "hours": {
-      "monday_friday": "6:00 AM - 3:00 PM",
-      "saturday": "7:00 AM - 3:00 PM",
-      "sunday": "7:00 AM - 2:00 PM"
+      "monday_friday": "7:00 am-2:00 pm",
+      "saturday": "7:00 am-1:00 pm",
+      "sunday": "7:00 am-1:00 pm"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
-      "Catering",
       "Bilingual Menu"
     ],
     "themeColor": "#b45309",
@@ -32,269 +24,2090 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
+      "icon": "Utensils"
+    },
+    {
+      "id": "eggs",
+      "nameEs": "Huevos",
+      "nameEn": "Eggs",
+      "icon": "Utensils"
+    },
+    {
+      "id": "eatin-healthy",
+      "nameEs": "Comer sano",
+      "nameEn": "Eatin' Healthy",
+      "icon": "Utensils"
+    },
+    {
+      "id": "french-toast",
+      "nameEs": "Tostada francesa",
+      "nameEn": "French Toast",
+      "icon": "Utensils"
+    },
+    {
+      "id": "buttermilk-pancakes",
+      "nameEs": "Pancakes de suero de leche",
+      "nameEn": "Buttermilk Pancakes",
+      "icon": "Utensils"
+    },
+    {
+      "id": "special",
+      "nameEs": "Especial",
+      "nameEn": "Special",
+      "icon": "Utensils"
+    },
+    {
+      "id": "broad-street-originals",
+      "nameEs": "Originales de Broad Street",
+      "nameEn": "Broad Street Originals",
+      "icon": "Utensils"
+    },
+    {
+      "id": "waffles",
+      "nameEs": "Waffles",
+      "nameEn": "Waffles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sandwiches",
+      "nameEs": "Sándwiches",
+      "nameEn": "Sandwiches",
+      "icon": "Utensils"
+    },
+    {
+      "id": "on-the-side",
+      "nameEs": "Acompañamientos...",
+      "nameEn": "On The Side...",
+      "icon": "Utensils"
+    },
+    {
+      "id": "omelets",
+      "nameEs": "Omelets",
+      "nameEn": "Omelets",
+      "icon": "Utensils"
+    },
+    {
+      "id": "benedicts",
+      "nameEs": "Benedictinos",
+      "nameEn": "Benedicts",
       "icon": "Utensils"
     },
     {
       "id": "appetizers",
       "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "nameEn": "Appetizers",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "homemade-soups",
+      "nameEs": "Sopas caseras",
+      "nameEn": "Homemade Soups",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "the-deli",
+      "nameEs": "La salchichonería",
+      "nameEn": "The Deli",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dom-s-originals",
+      "nameEs": "Originales de Dom's",
+      "nameEn": "Dom's Originals",
+      "icon": "Utensils"
+    },
+    {
+      "id": "burgers",
+      "nameEs": "Hamburguesas",
+      "nameEn": "Burgers",
+      "icon": "Utensils"
+    },
+    {
+      "id": "hoagies",
+      "nameEs": "Hoagies",
+      "nameEn": "Hoagies",
+      "icon": "Utensils"
+    },
+    {
+      "id": "kid-s-menu",
+      "nameEs": "Menú infantil",
+      "nameEn": "Kid's Menu",
       "icon": "Utensils"
     },
     {
       "id": "beverages",
       "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "nameEn": "Beverages",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-breakfast-buffets-per-person",
+      "nameEs": "Catering: bufés de desayuno (por persona)",
+      "nameEn": "Catering: Breakfast Buffets (per person)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-luncheon-buffets-per-person",
+      "nameEs": "Catering: bufés de almuerzo (por persona)",
+      "nameEn": "Catering: Luncheon Buffets (per person)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Catering: bufés calientes (por persona, mínimo 10)",
+      "nameEn": "Catering: Hot Buffets (per person, minimum 10)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Catering: bandejas a la carta (media bandeja 8-10 personas, bandeja completa 18-20 personas; solo para recoger)",
+      "nameEn": "Catering: Ala Carte Trays (half tray 8-10 people, full tray 18-20 people; pickup only)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-appetizers-per-person",
+      "nameEs": "Catering: entradas (por persona)",
+      "nameEn": "Catering: Appetizers (per person)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-savory-sides",
+      "nameEs": "Catering: acompañamientos",
+      "nameEn": "Catering: Savory Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-savory-salads",
+      "nameEs": "Catering: ensaladas",
+      "nameEn": "Catering: Savory Salads",
+      "icon": "Utensils"
+    },
+    {
+      "id": "catering-beverages-extras",
+      "nameEs": "Catering: bebidas y extras",
+      "nameEn": "Catering: Beverages & Extras",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "doms-broad-st-eatery-01",
-      "categoryId": "specialties",
-      "nameEs": "Pollo y Waffles Crujientes",
-      "nameEn": "Chicken & Waffles",
-      "descriptionEs": "Waffle casero coronado con dos pechugas de pollo fritas y bañado en salsa de campo estilo sureño.",
-      "descriptionEn": "Homemade waffle with two fried chicken breasts topped with country gravy.",
-      "price": "$14.99",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Casero",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "eggs-any-style",
+      "categoryId": "eggs",
+      "nameEs": "Huevos al gusto",
+      "nameEn": "Eggs Any Style",
+      "descriptionEs": "Se sirve con pan tostado y papas caseras (cambia por sémola de maíz +$0.99). Agrega queso +$0.50 | Cambia por claras de huevo o Egg Beaters +$0.99",
+      "descriptionEn": "Served with toast and home fries (sub grits +$0.99). Add cheese +$0.50 | Substitute egg whites or egg beaters +$0.99",
+      "price": "1 Egg $9.79 / 2 Eggs $10.79",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-02",
-      "categoryId": "specialties",
-      "nameEs": "Tostadas Francesas de Fritura de Manzana",
-      "nameEn": "Apple Fritter French Toast",
-      "descriptionEs": "Dos grandes frituras de manzana rebozadas y doradas al estilo de tostada francesa.",
-      "descriptionEn": "Two large apple fritters battered and grilled in a French toast style.",
-      "price": "$13.99",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Dulce",
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "eggs-with-ham-bacon-or-sausage",
+      "categoryId": "eggs",
+      "nameEs": "Huevos con jamón, tocino o salchicha",
+      "nameEn": "Eggs with Ham, Bacon or Sausage",
+      "descriptionEs": "Se sirve con pan tostado y papas caseras (cambia por sémola de maíz +$0.99). Agrega queso +$0.50 | Cambia por claras de huevo o Egg Beaters +$0.99",
+      "descriptionEn": "Served with toast and home fries (sub grits +$0.99). Add cheese +$0.50 | Substitute egg whites or egg beaters +$0.99",
+      "price": "1 Egg $11.99 / 2 Eggs $12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-03",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Desayuno",
-      "nameEn": "Breakfast Tacos",
-      "descriptionEs": "Dos tacos suaves rellenos de huevos revueltos, carne molida sazonada, queso cheddar y crema agria.",
-      "descriptionEn": "Two soft tacos filled with scrambled eggs, seasoned ground beef, cheddar cheese, and sour cream.",
-      "price": "$14.99",
-      "popular": false,
-      "badge": "Picante Leve",
-      "tags": [
-        "Mex-Americano"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "eggs-with-chorizo-or-kielbasa",
+      "categoryId": "eggs",
+      "nameEs": "Huevos con chorizo o kielbasa",
+      "nameEn": "Eggs with Chorizo or Kielbasa",
+      "descriptionEs": "Se sirve con pan tostado y papas caseras (cambia por sémola de maíz +$0.99). Agrega queso +$0.50 | Cambia por claras de huevo o Egg Beaters +$0.99",
+      "descriptionEn": "Served with toast and home fries (sub grits +$0.99). Add cheese +$0.50 | Substitute egg whites or egg beaters +$0.99",
+      "price": "1 Egg $12.99 / 2 Eggs $13.99",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-04",
-      "categoryId": "specialties",
-      "nameEs": "Monte Cristo de Desayuno",
-      "nameEn": "Breakfast Monte Cristo",
-      "descriptionEs": "Dos huevos estrellados con jamón y queso suizo entre dos rebanadas gruesas de tostada francesa con jarabe de arce. Servido con papas de la casa.",
-      "descriptionEn": "2 over-easy eggs topped with ham and swiss cheese tucked between two thick slices of french toast topped with maple syrup. Served with home fries.",
-      "price": "$14.99",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Dulce y Salado"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "eggs-with-hash",
+      "categoryId": "eggs",
+      "nameEs": "Huevos con picadillo de carne (hash)",
+      "nameEn": "Eggs with Hash",
+      "descriptionEs": "Se sirve con pan tostado y papas caseras (cambia por sémola de maíz +$0.99). Agrega queso +$0.50 | Cambia por claras de huevo o Egg Beaters +$0.99",
+      "descriptionEn": "Served with toast and home fries (sub grits +$0.99). Add cheese +$0.50 | Substitute egg whites or egg beaters +$0.99",
+      "price": "1 Egg $12.99 / 2 Eggs $13.99",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-05",
-      "categoryId": "appetizers",
-      "nameEs": "Pieles de Papa Famosas de Dom's",
-      "nameEn": "Dom's Famous Breakfast Skins",
-      "descriptionEs": "Tres pieles de papa fritas rellenas de huevos revueltos, elección de carnes y queso fundido. Servidas con crema agria y salsa.",
-      "descriptionEn": "3 deep-fried potato skins filled with scrambled eggs and choice of fillings and topped with cheese. Served with sour cream and salsa.",
-      "price": "$14.99",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Para Compartir"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Huevos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "doms-broad-st-eatery-06",
-      "categoryId": "mains",
-      "nameEs": "Desayuno Clásico de 2 Huevos",
-      "nameEn": "2 Eggs Any Style",
-      "descriptionEs": "Dos huevos preparados a su gusto, servidos con pan tostado, papas de la casa y su elección de tocino, jamón o salchicha.",
-      "descriptionEn": "2 eggs any style, served with toast, home fries, and your choice of ham, bacon, or sausage.",
-      "price": "$12.99",
-      "popular": false,
-      "badge": "Esencial",
-      "tags": [
-        "Desayuno"
-      ],
-      "allergens": [
-        "Gluten",
-        "Huevos"
-      ],
-      "ctaType": "in_store"
-    },
-    {
-      "id": "doms-broad-st-eatery-07",
-      "categoryId": "mains",
-      "nameEs": "Wrap Griego Saludable",
+      "id": "skinny-greek-wrap",
+      "categoryId": "eatin-healthy",
+      "nameEs": "Wrap griego ligero",
       "nameEn": "Skinny Greek Wrap",
-      "descriptionEs": "Claras de huevo, espinacas, queso feta y tomate envueltos en un pan plano multigrano.",
+      "descriptionEs": "Egg Beaters, espinaca, feta y tomate envueltos en pan plano multigrano.",
       "descriptionEn": "Egg beaters, spinach, feta, and tomato folded in a multigrain flatbread.",
       "price": "$12.99",
-      "popular": false,
-      "badge": "Saludable",
-      "tags": [
-        "Vegetariano",
-        "Fitness"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-08",
-      "categoryId": "mains",
-      "nameEs": "Panqueques de Buttermilk Completos",
-      "nameEn": "Full Stack Buttermilk Pancakes",
-      "descriptionEs": "Torre completa de panqueques dorados y esponjosos de suero de leche, servidos con mantequilla y jarabe.",
-      "descriptionEn": "Full stack of fluffy, golden buttermilk pancakes served with butter and syrup.",
-      "price": "$9.99",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Vegetariano",
-        "Dulce"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
+      "id": "3-gluten-free-pancakes-or-french-toast",
+      "categoryId": "eatin-healthy",
+      "nameEs": "3 panqueques o pan francés sin gluten",
+      "nameEn": "3 Gluten Free Pancakes or French Toast",
+      "descriptionEs": "Porción completa a elegir.",
+      "descriptionEn": "Full stack of your choice.",
+      "price": "$12.99",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-09",
-      "categoryId": "specialties",
-      "nameEs": "El Especial 'The Eatery'",
-      "nameEn": "The Eatery Special",
-      "descriptionEs": "2 panqueques o tostadas francesas, 2 huevos, 2 salchichas, 2 tiras de tocino, papas de la casa, tostada y café incluido.",
-      "descriptionEn": "2 Pancakes or French Toast, 2 Eggs, 2 Sausages, 2 Bacon, Home Fries, Toast, and Coffee.",
+      "id": "veggie-bake",
+      "categoryId": "eatin-healthy",
+      "nameEs": "Horneado de vegetales",
+      "nameEn": "Veggie Bake",
+      "descriptionEs": "5 huevos revueltos con tomate, cebolla y espinaca, cubiertos con queso parmesano rallado.",
+      "descriptionEn": "5 eggs scrambled with tomato, onion, spinach, and topped with grated parmesan cheese.",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés sencillo",
+      "nameEn": "Plain French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $3.29 / 2 Slices $6.29 / 3 Slices $8.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cinnamon-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés con canela",
+      "nameEn": "Cinnamon French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $3.59 / 2 Slices $6.59 / 3 Slices $8.59",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "challah-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de challah",
+      "nameEn": "Challah French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $3.99 / 2 Slices $7.99 / 3 Slices $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de coco",
+      "nameEn": "Coconut French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $3.99 / 2 Slices $7.99 / 3 Slices $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "our-famous-granola-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de nuestra famosa granola",
+      "nameEn": "Our Famous Granola French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $3.99 / 2 Slices $7.99 / 3 Slices $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberries-cream-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés con fresas y crema",
+      "nameEn": "Strawberries & Cream French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $4.99 / 2 Slices $8.99 / 3 Slices $11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-walnut-french-toast",
+      "categoryId": "french-toast",
+      "nameEs": "Pan francés de manzana y nuez",
+      "nameEn": "Apple Walnut French Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "1 Slice $4.99 / 2 Slices $8.99 / 3 Slices $11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Panqueques sencillos",
+      "nameEn": "Plain Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $3.99 / Short $6.99 / Full $9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Pancakes de arándanos",
+      "nameEn": "Blueberry Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $4.29 / Short $7.99 / Full $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Pancakes con chispas de chocolate",
+      "nameEn": "Chocolate Chip Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $4.29 / Short $7.99 / Full $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "m-m-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Hot cakes de M&M",
+      "nameEn": "M&M Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $4.29 / Short $7.99 / Full $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oreo-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Hot cakes de Oreo",
+      "nameEn": "Oreo Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $4.29 / Short $7.99 / Full $10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberries-cream-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Panqueques con fresas y crema",
+      "nameEn": "Strawberries & Cream Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $5.99 / Short $8.99 / Full $11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-walnut-pancakes",
+      "categoryId": "buttermilk-pancakes",
+      "nameEs": "Panqueques de manzana y nuez",
+      "nameEn": "Apple Walnut Pancakes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Single $5.99 / Short $8.99 / Full $11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-eatery",
+      "categoryId": "special",
+      "nameEs": "The Eatery",
+      "nameEn": "The Eatery",
+      "descriptionEs": "2 panqueques o pan francés, 2 huevos, 2 salchichas, 2 tocinos, papas caseras, pan tostado y café. Panqueques de arándanos, chispas de chocolate u Oreo o pan francés de granola +$2.00; panqueques o pan francés con fresas y crema +$2.50",
+      "descriptionEn": "2 Pancakes or French Toast, 2 Eggs, 2 Sausages, 2 Bacon, Home Fries, Toast, and Coffee. Blueberry, Chocolate Chip, or Oreo Pancakes or Granola French Toast +$2.00; Strawberries & Cream Pancakes or French Toast +$2.50",
       "price": "$17.99",
-      "popular": true,
-      "badge": "El Favorito",
-      "tags": [
-        "Abundante"
-      ],
-      "allergens": [
-        "Gluten",
-        "Lácteos",
-        "Huevos"
-      ],
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-10",
-      "categoryId": "beverages",
-      "nameEs": "Café Fresco de la Casa",
-      "nameEn": "Fresh House Coffee",
-      "descriptionEs": "Café recién colado de grano selecto, tostado medio.",
-      "descriptionEn": "Freshly brewed select-bean medium roast coffee.",
-      "price": "$2.99",
-      "popular": true,
-      "badge": "Básico",
-      "tags": [
-        "Bebida Caliente"
-      ],
-      "allergens": [],
+      "id": "dom-s-hearty-hash",
+      "categoryId": "special",
+      "nameEs": "Picadillo abundante de Dom's",
+      "nameEn": "Dom's Hearty Hash",
+      "descriptionEs": "Nuestras papas caseras, cebollas y pimientos asados, salteados con corned beef, pastrami, lomo de res, chorizo o kielbasa a elegir, cubiertos con queso y 2 huevos al gusto, servido con pan tostado.",
+      "descriptionEn": "Our home fried potatoes, onions, and roasted peppers, sautéed with your choice of corned beef, pastrami, beef tenderloin, chorizo, or kielbasa, topped with cheese and 2 eggs any style served with toast.",
+      "price": "$16.99",
       "ctaType": "in_store"
     },
     {
-      "id": "doms-broad-st-eatery-11",
-      "categoryId": "beverages",
-      "nameEs": "Jugo de Naranja Natural",
-      "nameEn": "Fresh Orange Juice",
-      "descriptionEs": "Jugo de naranja exprimido 100% natural y fresco.",
-      "descriptionEn": "Freshly squeezed 100% natural orange juice.",
+      "id": "chicken-waffles",
+      "categoryId": "broad-street-originals",
+      "nameEs": "Pollo con waffles",
+      "nameEn": "Chicken & Waffles",
+      "descriptionEs": "Waffle casero con dos pechugas de pollo fritas cubiertas con gravy campestre.",
+      "descriptionEn": "Homemade waffle with two fried chicken breasts topped with country gravy.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-famous-breakfast-skins",
+      "categoryId": "broad-street-originals",
+      "nameEs": "Famosas cáscaras de papa para desayuno de Dom's",
+      "nameEn": "Dom's Famous Breakfast Skins",
+      "descriptionEs": "3 cáscaras de papa fritas rellenas de huevos revueltos y rellenos a elegir, cubiertas con queso. Se sirven con crema agria y salsa.",
+      "descriptionEn": "3 deep-fried potato skins filled with scrambled eggs and choice of fillings and topped with cheese. Served with sour cream and salsa.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-monte-cristo",
+      "categoryId": "broad-street-originals",
+      "nameEs": "Monte Cristo de desayuno",
+      "nameEn": "Breakfast Monte Cristo",
+      "descriptionEs": "2 huevos volteados con jamón y queso suizo entre dos gruesas rebanadas de pan francés cubiertas con jarabe de maple. Se sirve con papas caseras.",
+      "descriptionEn": "2 over-easy eggs topped with ham and swiss cheese tucked between two thick slices of french toast topped with maple syrup. Served with home fries.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "apple-fritter-french-toast",
+      "categoryId": "broad-street-originals",
+      "nameEs": "Pan francés de buñuelo de manzana",
+      "nameEn": "Apple Fritter French Toast",
+      "descriptionEs": "2 grandes buñuelos de manzana rebozados y asados a la plancha al estilo pan francés.",
+      "descriptionEn": "2 large apple fritters battered and grilled in a French toast style.",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-tacos",
+      "categoryId": "broad-street-originals",
+      "nameEs": "Tacos de desayuno",
+      "nameEn": "Breakfast Tacos",
+      "descriptionEs": "2 tacos suaves rellenos de huevos revueltos, carne molida sazonada, queso cheddar y tomate picado. Se sirven con salsa, crema agria y papas caseras.",
+      "descriptionEn": "2 soft tacos filled with scrambled eggs, seasoned ground beef, cheddar cheese, and diced tomato. Served with salsa, sour cream, and home fries.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-waffle",
+      "categoryId": "waffles",
+      "nameEs": "Waffle sencillo",
+      "nameEn": "Plain Waffle",
+      "descriptionEs": "Nuestros waffles belgas recién hechos.",
+      "descriptionEn": "Our freshly-made Belgian waffles.",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chocolate-chip-waffle",
+      "categoryId": "waffles",
+      "nameEs": "Waffle con chispas de chocolate",
+      "nameEn": "Chocolate Chip Waffle",
+      "descriptionEs": "Nuestros waffles belgas recién hechos.",
+      "descriptionEn": "Our freshly-made Belgian waffles.",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberries-cream-waffle",
+      "categoryId": "waffles",
+      "nameEs": "Waffle con fresas y crema",
+      "nameEn": "Strawberries & Cream Waffle",
+      "descriptionEs": "Nuestros waffles belgas recién hechos.",
+      "descriptionEn": "Our freshly-made Belgian waffles.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lazy-man",
+      "categoryId": "waffles",
+      "nameEs": "Lazy Man",
+      "nameEn": "Lazy Man",
+      "descriptionEs": "Relleno de tocino picado, salchicha o ambos.",
+      "descriptionEn": "Filled with chopped bacon, sausage, or both.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-sandwich",
+      "categoryId": "sandwiches",
+      "nameEs": "Sándwich de huevo",
+      "nameEn": "Egg Sandwich",
+      "descriptionEs": "En bagel agrega $0.79",
+      "descriptionEn": "Bagel add $0.79",
       "price": "$3.99",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Sin Alcohol",
-        "Saludable"
-      ],
-      "allergens": [],
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Huevo y queso",
+      "nameEn": "Egg & Cheese",
+      "descriptionEs": "En bagel agrega $0.79",
+      "descriptionEn": "Bagel add $0.79",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "egg-cheese-with-meat",
+      "categoryId": "sandwiches",
+      "nameEs": "Huevo y queso con carne",
+      "nameEn": "Egg & Cheese with Meat",
+      "descriptionEs": "En bagel agrega $0.79",
+      "descriptionEn": "Bagel add $0.79",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "western-with-cheese",
+      "categoryId": "sandwiches",
+      "nameEs": "Western con queso",
+      "nameEn": "Western with Cheese",
+      "descriptionEs": "En bagel agrega $0.79",
+      "descriptionEn": "Bagel add $0.79",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blueberry-corn-muffin",
+      "categoryId": "on-the-side",
+      "nameEs": "Muffin de arándanos/maíz",
+      "nameEn": "Blueberry/Corn Muffin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "toast",
+      "categoryId": "on-the-side",
+      "nameEs": "Pan tostado",
+      "nameEn": "Toast",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "n-y-bagel",
+      "categoryId": "on-the-side",
+      "nameEs": "Bagel estilo Nueva York",
+      "nameEn": "N.Y. Bagel",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buttermilk-biscuit",
+      "categoryId": "on-the-side",
+      "nameEs": "Bisquet de suero de leche",
+      "nameEn": "Buttermilk Biscuit",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "english-muffin",
+      "categoryId": "on-the-side",
+      "nameEs": "Muffin inglés",
+      "nameEn": "English Muffin",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.29",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "home-fries",
+      "categoryId": "on-the-side",
+      "nameEs": "Papas caseras",
+      "nameEn": "Home Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "canadian-bacon",
+      "categoryId": "on-the-side",
+      "nameEs": "Tocino canadiense",
+      "nameEn": "Canadian Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bacon-or-sausage",
+      "categoryId": "on-the-side",
+      "nameEs": "Tocino o salchicha",
+      "nameEn": "Bacon or Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "corned-beef-hash",
+      "categoryId": "on-the-side",
+      "nameEs": "Hash de corned beef",
+      "nameEn": "Corned Beef Hash",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chorizo-sausage",
+      "categoryId": "on-the-side",
+      "nameEs": "Salchicha chorizo",
+      "nameEn": "Chorizo Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "2-sausage-patties",
+      "categoryId": "on-the-side",
+      "nameEs": "2 tortitas de salchicha",
+      "nameEn": "2 Sausage Patties",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kielbasa",
+      "categoryId": "on-the-side",
+      "nameEs": "Kielbasa",
+      "nameEn": "Kielbasa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hash-brown-patties",
+      "categoryId": "on-the-side",
+      "nameEs": "Tortitas de Papa Rallada",
+      "nameEn": "Hash Brown Patties",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oatmeal",
+      "categoryId": "on-the-side",
+      "nameEs": "Avena",
+      "nameEn": "Oatmeal",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grits",
+      "categoryId": "on-the-side",
+      "nameEs": "Sémola de maíz (grits)",
+      "nameEn": "Grits",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-bacon",
+      "categoryId": "on-the-side",
+      "nameEs": "Tocino de pavo",
+      "nameEn": "Turkey Bacon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "turkey-sausage",
+      "categoryId": "on-the-side",
+      "nameEs": "Salchicha de pavo",
+      "nameEn": "Turkey Sausage",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-veggies",
+      "categoryId": "on-the-side",
+      "nameEs": "Vegetales a la parrilla",
+      "nameEn": "Grilled Veggies",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "create-your-own-omelet",
+      "categoryId": "omelets",
+      "nameEs": "Arme su propio omelet",
+      "nameEn": "Create Your Own Omelet",
+      "descriptionEs": "Omelet de 3 huevos relleno con tus favoritos, servido con papas caseras y pan tostado. Omelet sencillo de queso $11.99 | Ingredientes $1.00 c/u • Cebollas salteadas, pimientos asados, tomates, espinaca, hongos, salsa, queso americano, suizo, provolone, feta, pepper jack, de cabra, cheddar, jamón, salchicha, tocino, salchicha de pavo, tocino de pavo, pastrami, kielbasa.",
+      "descriptionEn": "3 egg omelet filled with your favorites and served with home fries & toast. Plain cheese omelet $11.99 | Toppings $1.00 each • Sautéed onions, roasted peppers, tomatoes, spinach, mushrooms, salsa, American, Swiss, provolone, feta, pepper jack, goat cheese, cheddar, ham, sausage, bacon, turkey sausage, turkey bacon, pastrami, kielbasa.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-western",
+      "categoryId": "omelets",
+      "nameEs": "The Western",
+      "nameEn": "The Western",
+      "descriptionEs": "Pimientos, cebolla, jamón y queso a elegir.",
+      "descriptionEn": "Peppers, onions, ham, and a choice of cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-soprano",
+      "categoryId": "omelets",
+      "nameEs": "The Soprano",
+      "nameEn": "The Soprano",
+      "descriptionEs": "Gabagool (capicola), salchicha italiana, papas caseras en cubos, espinaca, ajo asado y queso provolone.",
+      "descriptionEn": "Gabagool (capicola), Italian sausage, diced home fries, spinach, roasted garlic, and provolone cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-meat-lovers",
+      "categoryId": "omelets",
+      "nameEs": "The Meat Lovers",
+      "nameEn": "The Meat Lovers",
+      "descriptionEs": "Tocino ahumado, salchicha de desayuno, jamón y queso a elegir.",
+      "descriptionEn": "Smoked bacon, breakfast sausage, ham, and a choice of cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "philly-cheesesteak-omelet",
+      "categoryId": "omelets",
+      "nameEs": "Omelet Philly cheesesteak",
+      "nameEn": "Philly Cheesesteak Omelet",
+      "descriptionEs": "Bistec en láminas, cebollas, hongos y pimientos salteados, cargado de queso cheddar.",
+      "descriptionEn": "Shaved steak, sautéed onions, mushrooms, and peppers, and loaded with cheddar cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-reuben",
+      "categoryId": "omelets",
+      "nameEs": "The Reuben",
+      "nameEn": "The Reuben",
+      "descriptionEs": "Nuestro corned beef casero, chucrut y queso suizo, bañados con aderezo mil islas.",
+      "descriptionEn": "Our house-made corned beef, sauerkraut, and Swiss cheese are drizzled with thousand island dressing.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-italian",
+      "categoryId": "omelets",
+      "nameEs": "The Italian",
+      "nameEn": "The Italian",
+      "descriptionEs": "Salchicha italiana picante, capicola, pimientos asados, cebollas caramelizadas y queso provolone.",
+      "descriptionEn": "Spicy Italian sausage, capicola, roasted peppers, caramelized onions, and provolone cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-mexican",
+      "categoryId": "omelets",
+      "nameEs": "The Mexican",
+      "nameEn": "The Mexican",
+      "descriptionEs": "Chili de res y frijoles galardonado de Dom's, queso cheddar, tomate, guacamole y aceitunas negras, cubierto con tiras de tortilla, salsa y crema agria.",
+      "descriptionEn": "Dom's award-winning beef & bean chili, cheddar cheese, tomato, guacamole, and black olives topped with tortilla strips, salsa, and sour cream.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chorizo-omelet",
+      "categoryId": "omelets",
+      "nameEs": "Omelet de chorizo",
+      "nameEn": "Chorizo Omelet",
+      "descriptionEs": "Chorizo a la parrilla, cebollas, pimientos y queso cheddar.",
+      "descriptionEn": "Grilled chorizo sausage, onions, peppers, and cheddar cheese.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-meatloaf",
+      "categoryId": "omelets",
+      "nameEs": "The Meatloaf",
+      "nameEn": "The Meatloaf",
+      "descriptionEs": "Famoso pastel de carne de Dom's, cebollas caramelizadas, hongos salteados y queso americano, cubierto con gravy.",
+      "descriptionEn": "Dom's famous meatloaf, caramelized onions, sautéed mushrooms, and American cheese, topped with gravy.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-veggie",
+      "categoryId": "omelets",
+      "nameEs": "The Veggie",
+      "nameEn": "The Veggie",
+      "descriptionEs": "Cebollas salteadas, espárragos, tomate, espinaca, pimientos asados y queso de cabra.",
+      "descriptionEn": "Sautéed onions, asparagus, tomato, spinach, roasted peppers, and goat cheese.",
+      "price": "$13.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict clásico",
+      "nameEn": "Classic Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con tocino canadiense, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with Canadian bacon, poached eggs, and hollandaise sauce.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "irish-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict irlandés",
+      "nameEn": "Irish Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con picadillo de corned beef, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with corned beef hash, poached eggs, and hollandaise sauce.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "country-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict campestre",
+      "nameEn": "Country Benedict",
+      "descriptionEs": "2 huevos pochados y tortitas de salchicha sobre un biscuit a la plancha cubierto con gravy campestre.",
+      "descriptionEn": "2 poached eggs, sausage patties, on a grilled biscuit topped with country gravy.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tenderloin-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict de lomo de res",
+      "nameEn": "Tenderloin Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con lomo de res, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with beef tenderloin, poached eggs, and hollandaise sauce.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "florentine-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedictino florentino",
+      "nameEn": "Florentine Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con espinaca salteada, tomate, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with sautéed spinach, tomato, poached eggs, and hollandaise sauce.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crab-cake-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Pastel de cangrejo benedictino",
+      "nameEn": "Crab Cake Benedict",
+      "descriptionEs": "Muffin inglés cubierto con 2 pasteles de jaiba en trozos, huevos pochados y salsa holandesa.",
+      "descriptionEn": "English muffin topped with 2 lump crab cakes, poached eggs, and hollandaise sauce.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blackstone-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Blackstone Benedict",
+      "nameEn": "Blackstone Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con queso crema, tocino, tomate, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with cream cheese, bacon, tomato, poached eggs, and hollandaise sauce.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mount-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Mount Benedict",
+      "nameEn": "Mount Benedict",
+      "descriptionEs": "Pan Texas toast cubierto con lomo de res, hongos y cebollas salteados, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Texas toast topped with beef tenderloin, sautéed mushrooms and onions, poached eggs, and hollandaise sauce.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "polish-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict polaco",
+      "nameEn": "Polish Benedict",
+      "descriptionEs": "Muffin inglés tostado cubierto con pierogis de papa y cheddar, kielbasa, cebollas caramelizadas, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Toasted English muffin topped with potato and cheddar pierogis, kielbasa, caramelized onions, poached eggs, and hollandaise.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-york-benedict",
+      "categoryId": "benedicts",
+      "nameEs": "Benedict Nueva York",
+      "nameEn": "New York Benedict",
+      "descriptionEs": "Pan de centeno cubierto con corned beef, pastrami, huevos pochados y salsa holandesa.",
+      "descriptionEn": "Hearty rye topped with corned beef, pastrami, poached eggs, and hollandaise sauce.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato-skins",
+      "categoryId": "appetizers",
+      "nameEs": "Cáscaras de papa al horno",
+      "nameEn": "Baked Potato Skins",
+      "descriptionEs": "Con queso cheddar y tocino, servidas con crema agria y salsa.",
+      "descriptionEn": "With cheddar cheese and bacon, served with sour cream and salsa.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mozzarella-sticks",
+      "categoryId": "appetizers",
+      "nameEs": "Palitos de mozzarella",
+      "nameEn": "Mozzarella Sticks",
+      "descriptionEs": "Servido con salsa marinara.",
+      "descriptionEn": "Served with marinara sauce.",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tender-trio",
+      "categoryId": "appetizers",
+      "nameEs": "Trío de tiras de pollo",
+      "nameEn": "Chicken Tender Trio",
+      "descriptionEs": "Tiras crujientes de pechuga de pollo servidas con un trío de salsas para mojar.",
+      "descriptionEn": "Crispy all-white meat chicken tenders served with a trio of dipping sauces.",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "loaded-tater-tots",
+      "categoryId": "appetizers",
+      "nameEs": "Tater tots cargados",
+      "nameEn": "Loaded Tater Tots",
+      "descriptionEs": "Papitas tater tots crujientes cubiertas con queso cheddar y tocino, servidas con crema agria.",
+      "descriptionEn": "Crispy tater tots topped with cheddar cheese and bacon, served with sour cream.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese-bites",
+      "categoryId": "appetizers",
+      "nameEs": "Bocaditos de macarrones con queso",
+      "nameEn": "Mac & Cheese Bites",
+      "descriptionEs": "Se sirven con aderezo ranch para mojar.",
+      "descriptionEn": "Served with ranch dipping sauce.",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soup-of-the-day",
+      "categoryId": "homemade-soups",
+      "nameEs": "Sopa del día",
+      "nameEn": "Soup of the Day",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Cup $3.99 / Bowl $4.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-award-winning-chili",
+      "categoryId": "homemade-soups",
+      "nameEs": "Chili galardonado de Dom's",
+      "nameEn": "Dom's Award Winning Chili",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Cup $4.99 / Bowl $5.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "california-cobb-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Cobb California",
+      "nameEn": "California Cobb Salad",
+      "descriptionEs": "Lechuga romana crujiente, pollo a la parrilla, tomates, aceitunas, pepinos, tocino crujiente, huevo, guacamole y queso azul.",
+      "descriptionEn": "Crisp romaine, grilled chicken, tomatoes, olives, cucumbers, crispy bacon, egg, guacamole, and bleu cheese.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gorgonzola-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de gorgonzola",
+      "nameEn": "Gorgonzola Salad",
+      "descriptionEs": "Lechuga romana crujiente, queso gorgonzola, mandarinas, nueces, manzanas y arándanos secos con vinagreta de frambuesa.",
+      "descriptionEn": "Crisp romaine, gorgonzola cheese, mandarin oranges, walnuts, apples, and dried cranberries with raspberry vinaigrette.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "steakhouse-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada steakhouse",
+      "nameEn": "Steakhouse Salad",
+      "descriptionEs": "Lechuga romana crujiente, lomo de res, cebollas salteadas, hongos, queso azul desmoronado, tomates y tiras de tortilla.",
+      "descriptionEn": "Crisp romaine, beef tenderloin, sautéed onions, mushrooms, crumbled bleu cheese, tomatoes, and tortilla strips.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-chicken-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada mediterránea de pollo",
+      "nameEn": "Mediterranean Chicken Salad",
+      "descriptionEs": "Lechuga romana crujiente, pollo a la parrilla, ajo asado, tomates, pepino, queso feta y crutones de polenta con ajo.",
+      "descriptionEn": "Crisp romaine, grilled chicken, roasted garlic, tomatoes, cucumber, feta cheese, and garlic polenta croutons.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-chicken-ranch-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada ranch de pollo crujiente",
+      "nameEn": "Crispy Chicken Ranch Salad",
+      "descriptionEs": "Lechuga romana crujiente, tocino desmoronado, queso cheddar, tomate, pepino y huevo duro, cubierta con pollo crujiente y bañada con aderezo ranch.",
+      "descriptionEn": "Crisp romaine, crumbled bacon, cheddar cheese, tomato, cucumber, and hard-boiled egg topped with crispy chicken and drizzled with ranch dressing.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "a-sandwich",
+      "categoryId": "the-deli",
+      "nameEs": "Un sándwich",
+      "nameEn": "A Sandwich",
+      "descriptionEs": "Roast beef, pavo, jamón, corned beef, pastrami, atún o ensalada de pollo a elegir, en el pan de tu elección con lechuga y tomate. Se sirve con papitas caseras y un pepinillo; cambia por papas fritas por $0.99.",
+      "descriptionEn": "Your choice of roast beef, turkey, ham, corned beef, pastrami, tuna, or chicken salad on your choice of bread with lettuce and tomato. Served with house-made chips and a pickle; substitute fries for $0.99.",
+      "price": "$12.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-rachel",
+      "categoryId": "the-deli",
+      "nameEs": "The Rachel",
+      "nameEn": "The Rachel",
+      "descriptionEs": "Corned beef casero cubierto con ensalada de col y queso suizo en pan de centeno a la plancha. Se sirve con papitas caseras y un pepinillo.",
+      "descriptionEn": "House-made corned beef topped with cole slaw and swiss on grilled hearty rye bread. Served with house-made chips and a pickle.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-deep-fried-dog",
+      "categoryId": "the-deli",
+      "nameEs": "Hot dog frito de Dom's",
+      "nameEn": "Dom's Deep Fried Dog",
+      "descriptionEs": "Hot dog 100% de res de 10\" frito, en pan a la plancha, servido con papas a la francesa.",
+      "descriptionEn": "A deep-fried 10\" all beef hot dog on a grilled roll served with French fries.",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "blt",
+      "categoryId": "the-deli",
+      "nameEs": "BLT",
+      "nameEn": "BLT",
+      "descriptionEs": "Tocino crujiente, lechuga fresca, tomate y mayonesa en el pan de tu elección. Se sirve con papitas caseras y un pepinillo.",
+      "descriptionEn": "Crisp bacon, fresh lettuce, tomato, and mayo served on your choice of bread. Served with house-made chips and a pickle.",
+      "price": "$11.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-club",
+      "categoryId": "the-deli",
+      "nameEs": "The Club",
+      "nameEn": "The Club",
+      "descriptionEs": "Un clásico de tres pisos con pavo, jamón, roast beef, atún o ensalada de pollo a elegir, cubierto con tocino crujiente, lechuga, tomate y mayonesa, servido con papas fritas.",
+      "descriptionEn": "A triple-decker classic with your choice of turkey, ham, roast beef, tuna, or chicken salad topped with crispy bacon, lettuce, tomato, and mayo served with fries.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cup-a-half",
+      "categoryId": "the-deli",
+      "nameEs": "Taza y medio",
+      "nameEn": "Cup & A Half",
+      "descriptionEs": "Disfruta medio sándwich con una taza de nuestra sopa casera o chili.",
+      "descriptionEn": "Enjoy a half sandwich with a cup of our homemade soup or chili.",
+      "price": "$9.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "windsor-melt",
+      "categoryId": "the-deli",
+      "nameEs": "Windsor Melt",
+      "nameEn": "Windsor Melt",
+      "descriptionEs": "Roast beef en rebanadas con queso suizo, cebollas a la plancha y mayonesa de rábano picante en pan de centeno a la plancha, servido con papas fritas.",
+      "descriptionEn": "Sliced roast beef with Swiss cheese, grilled onions, and horseradish mayo on grilled hearty rye served with fries.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-melt",
+      "categoryId": "the-deli",
+      "nameEs": "Melt clásico",
+      "nameEn": "Classic Melt",
+      "descriptionEs": "A elegir: patty melt con cebollas a la plancha o tuna melt con queso suizo en pan de centeno a la plancha, servido con papas fritas.",
+      "descriptionEn": "Your choice of patty melt with grilled onions or tuna melt with Swiss cheese on grilled rye bread served with fries.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese",
+      "categoryId": "the-deli",
+      "nameEs": "Queso a la plancha",
+      "nameEn": "Grilled Cheese",
+      "descriptionEs": "Un clásico sencillo con queso y pan a elegir • Agrega tomate $0.50 | Agrega tocino $1.00",
+      "descriptionEn": "A simple classic with your choice of cheese and bread • Add tomato $0.50 | Add bacon $1.00",
+      "price": "$8.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-famous-reuben",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Famoso Reuben de Dom's",
+      "nameEn": "Dom's Famous Reuben",
+      "descriptionEs": "Corned beef casero, pastrami o pavo con chucrut, queso suizo y aderezo mil islas en pan de centeno a la plancha.",
+      "descriptionEn": "House-made corned beef, pastrami, or turkey with sauerkraut, Swiss cheese, and thousand island dressing on grilled hearty rye bread.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-chicken-melt",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Melt de pollo BBQ",
+      "nameEn": "BBQ Chicken Melt",
+      "descriptionEs": "Pollo empanizado a mano, tocino crujiente, aros de cebolla, queso cheddar y salsa BBQ en pan Texas toast a la plancha.",
+      "descriptionEn": "Hand-breaded chicken, crispy bacon, onion rings, cheddar cheese, and BBQ sauce on grilled Texas toast.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-pesto-flatbread",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Pan plano de pollo al pesto",
+      "nameEn": "Chicken Pesto Flatbread",
+      "descriptionEs": "Pollo a la parrilla, tocino crujiente, tomate, cebolla salteada, queso provolone y mayonesa de pesto en pan plano multigrano a la plancha.",
+      "descriptionEn": "Grilled chicken, crispy bacon, tomato, sautéed onion, provolone cheese, and pesto mayo on grilled multigrain flatbread.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmesan-panini",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Panini de berenjena a la parmesana",
+      "nameEn": "Eggplant Parmesan Panini",
+      "descriptionEs": "Berenjena empanizada, queso provolone, espinaca salteada y marinara casera en pan para panini a la plancha.",
+      "descriptionEn": "Breaded eggplant, provolone cheese, sautéed spinach, and house-made marinara on grilled panini bread.",
+      "price": "$15.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mediterranean-wrap",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Wrap mediterráneo",
+      "nameEn": "Mediterranean Wrap",
+      "descriptionEs": "Lechuga romana crujiente, pepino, tomate, cebolla, pimientos banana, queso feta, aceitunas negras y guacamole.",
+      "descriptionEn": "Crisp romaine, cucumber, tomato, onion, banana peppers, feta cheese, black olives, and guacamole.",
+      "price": "$14.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bbq-meatloaf-melt",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Melt de pastel de carne BBQ",
+      "nameEn": "BBQ Meatloaf Melt",
+      "descriptionEs": "Pastel de carne casero a la plancha, queso cheddar, cebolla salteada y salsa BBQ en pan Texas toast a la plancha.",
+      "descriptionEn": "House made grilled meatloaf, cheddar cheese, sautéed onion, and BBQ sauce on grilled Texas toast.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "buffalo-chicken-wrap",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Wrap de pollo búfalo",
+      "nameEn": "Buffalo Chicken Wrap",
+      "descriptionEs": "Tiras de pollo crujiente deshuesado, lechuga, tomate, queso azul desmoronado, salsa picante y aderezo de queso azul.",
+      "descriptionEn": "Boneless crispy chicken strips, lettuce, tomato, crumbled bleu cheese, hot sauce, and bleu cheese dressing.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "originals-sides",
+      "categoryId": "dom-s-originals",
+      "nameEs": "Acompañamientos de los originales",
+      "nameEn": "Originals Sides",
+      "descriptionEs": "Los Originales de Dom's se sirven con papas a la francesa, papas fritas de camote o ensalada de papa a elegir • Cambia por aros de cebolla $1.00",
+      "descriptionEn": "Dom's Originals are served with your choice of French fries, sweet potato fries, or potato salad • Substitute onion rings $1.00",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-all-american",
+      "categoryId": "burgers",
+      "nameEs": "The All American",
+      "nameEn": "The All American",
+      "descriptionEs": "Lechuga, tomate, pepinillos, cebolla y queso americano.",
+      "descriptionEn": "Lettuce, tomato, pickles, onion, and American cheese.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de desayuno",
+      "nameEn": "Breakfast Burger",
+      "descriptionEs": "Cubierta con un huevo frito al gusto, tocino, queso americano, tomate, lechuga y guacamole.",
+      "descriptionEn": "Topped with a fried egg any style, bacon, American cheese, tomato, lettuce, and guacamole.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-texan",
+      "categoryId": "burgers",
+      "nameEs": "The Texan",
+      "nameEn": "The Texan",
+      "descriptionEs": "Queso cheddar, aros de cebolla, tocino crujiente y salsa BBQ en pan Texas toast a la plancha.",
+      "descriptionEn": "Cheddar cheese, onion rings, crispy bacon, and BBQ sauce on grilled Texas toast.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-firecracker-burger",
+      "categoryId": "burgers",
+      "nameEs": "The Firecracker Burger",
+      "nameEn": "The Firecracker Burger",
+      "descriptionEs": "Jalapeños, queso pepper jack, tocino, tomate y mayonesa de chipotle picante.",
+      "descriptionEn": "Jalapenos, pepper jack cheese, bacon, tomato, and spicy chipotle mayo.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shroom-swiss",
+      "categoryId": "burgers",
+      "nameEs": "Hongos y suizo",
+      "nameEn": "Shroom & Swiss",
+      "descriptionEs": "Hongos frescos salteados con ajo, queso suizo y mayonesa de ajo.",
+      "descriptionEn": "Fresh mushrooms sautéed with garlic, Swiss cheese, and garlic mayo.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-gouda-burger",
+      "categoryId": "burgers",
+      "nameEs": "Hamburguesa de gouda ahumado",
+      "nameEn": "Smoked Gouda Burger",
+      "descriptionEs": "Tocino, hongos, cebollas fritas crujientes y mayonesa de ajo.",
+      "descriptionEn": "Bacon, mushrooms, frazzled onions, and garlic mayo.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "about-our-burgers",
+      "categoryId": "burgers",
+      "nameEs": "Sobre nuestras hamburguesas",
+      "nameEn": "About Our Burgers",
+      "descriptionEs": "Nuestra hamburguesa fresca de media libra se sirve con ensalada de col y papas a la francesa, papas fritas de camote o ensalada de papa a elegir • Cambia por aros de cebolla $1.00. Hay hamburguesas vegetarianas.",
+      "descriptionEn": "Our fresh half-pound burger is served with cole slaw and choice of French fries, sweet potato fries, or potato salad • Substitute onion rings $1.00. Veggie burgers available.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-philly",
+      "categoryId": "hoagies",
+      "nameEs": "The Philly",
+      "nameEn": "The Philly",
+      "descriptionEs": "Bistec en láminas, cebollas caramelizadas, hongos, pimientos y queso provolone.",
+      "descriptionEn": "Shaved steak, caramelized onions, mushrooms, peppers, and provolone cheese.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "classic-meatball",
+      "categoryId": "hoagies",
+      "nameEs": "Albóndigas clásicas",
+      "nameEn": "Classic Meatball",
+      "descriptionEs": "Albóndigas caseras, pimientos asados, marinara y queso provolone.",
+      "descriptionEn": "House-made meatballs, roasted peppers, marinara, and provolone cheese.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan-hoagie",
+      "categoryId": "hoagies",
+      "nameEs": "Hoagie de pollo a la parmesana",
+      "nameEn": "Chicken Parmesan Hoagie",
+      "descriptionEs": "Milanesa de pollo empanizada a mano, pimientos asados, marinara y queso provolone.",
+      "descriptionEn": "Hand-breaded chicken cutlet, roasted peppers, marinara, and provolone cheese.",
+      "price": "$16.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-steak-bomb",
+      "categoryId": "hoagies",
+      "nameEs": "The Steak Bomb",
+      "nameEn": "The Steak Bomb",
+      "descriptionEs": "Bistec en láminas, cebolla y hongos salteados, queso suizo y mayonesa de rábano picante.",
+      "descriptionEn": "Shaved steak, sautéed onion and mushroom, Swiss cheese, and horseradish mayo.",
+      "price": "$17.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "about-our-hoagies",
+      "categoryId": "hoagies",
+      "nameEs": "Sobre nuestros hoagies",
+      "nameEn": "About Our Hoagies",
+      "descriptionEs": "Se sirven en baguette de 12 pulgadas con papas a la francesa, papas fritas de camote o ensalada de papa a elegir • Cambia por aros de cebolla $1.00.",
+      "descriptionEn": "Served on a 12-inch baguette with choice of French fries, sweet potato fries, or potato salad • Substitute onion rings $1.00.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "english-muffin-pizza",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Pizza de muffin inglés",
+      "nameEn": "English Muffin Pizza",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-cheese-bites-kids",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Bocaditos de mac & cheese (niños)",
+      "nameEn": "Mac & Cheese Bites (kids)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Tiras de pollo",
+      "nameEn": "Chicken Tenders",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "grilled-cheese-kids",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Sándwich de queso a la plancha (niños)",
+      "nameEn": "Grilled Cheese (kids)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cheeseburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa con queso",
+      "nameEn": "Cheeseburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hamburger",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hamburguesa",
+      "nameEn": "Hamburger",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-dog",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Hot dog",
+      "nameEn": "Hot Dog",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pb-j",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Sándwich de crema de cacahuate y mermelada",
+      "nameEn": "PB&J",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$10.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "about-the-kid-s-menu",
+      "categoryId": "kid-s-menu",
+      "nameEs": "Sobre el menú infantil",
+      "nameEn": "About the Kid's Menu",
+      "descriptionEs": "Se sirve con mandarinas o papas fritas a elegir, una bebida pequeña y una bola de helado. Para niños de hasta 12 años.",
+      "descriptionEn": "Served with a choice of mandarin oranges or French fries, a small beverage, and one scoop of ice cream. For children up to 12 years old.",
+      "price": "",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fountain-soda",
+      "categoryId": "beverages",
+      "nameEs": "Refresco de máquina",
+      "nameEn": "Fountain Soda",
+      "descriptionEs": "Rellenos gratis",
+      "descriptionEn": "Free refills",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-or-tea",
+      "categoryId": "beverages",
+      "nameEs": "Café o té",
+      "nameEn": "Coffee or Tea",
+      "descriptionEs": "Rellenos gratis",
+      "descriptionEn": "Free refills",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "milk-or-juice",
+      "categoryId": "beverages",
+      "nameEs": "Leche o jugo",
+      "nameEn": "Milk or Juice",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Small $1.99 / Medium $2.99 / Large $3.99",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-continental",
+      "categoryId": "catering-breakfast-buffets-per-person",
+      "nameEs": "The Continental",
+      "nameEn": "The Continental",
+      "descriptionEs": "Danés, bagels y muffins recién horneados, servidos con ensalada de fruta fresca y jugo. Agrega café $2.95 por persona.",
+      "descriptionEn": "Freshly baked Danish, bagels, and muffins served with fresh fruit salad and juice. Add coffee $2.95 per person.",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-traditional",
+      "categoryId": "catering-breakfast-buffets-per-person",
+      "nameEs": "The Traditional",
+      "nameEn": "The Traditional",
+      "descriptionEs": "Huevos revueltos, tocino, salchicha y papas caseras, servidos con danés fresco y jugo.",
+      "descriptionEn": "Scrambled eggs, bacon, sausage, and home fries served with fresh Danish and juice.",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "from-the-griddle",
+      "categoryId": "catering-breakfast-buffets-per-person",
+      "nameEs": "De la plancha",
+      "nameEn": "From The Griddle",
+      "descriptionEs": "Huevos revueltos, tocino, salchicha, papas caseras, pan francés, panqueques, jarabe de maple y mantequilla, servidos con danés recién horneado y jugo.",
+      "descriptionEn": "Scrambled eggs, bacon, sausage, home fries, French toast, pancakes, maple syrup, and butter served with freshly baked Danish and juice.",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-waffle-bar",
+      "categoryId": "catering-breakfast-buffets-per-person",
+      "nameEs": "Barra de waffles",
+      "nameEn": "The Waffle Bar",
+      "descriptionEs": "Waffles frescos servidos con ingredientes variados.",
+      "descriptionEn": "Fresh waffles served with assorted toppings.",
+      "price": "$14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sandwich-sampler",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Muestrario de sándwiches",
+      "nameEn": "Sandwich Sampler",
+      "descriptionEs": "Abundantes sándwiches de salchichonería en panes variados, bollos duros y wraps, con ensalada de pasta, ensalada de papa, ensalada de col o ensalada mixta a elegir, servido con nuestras papitas recién fritas y pepinillos.",
+      "descriptionEn": "Hearty deli sandwiches served on assorted breads, hard rolls, and wraps with a choice of pasta salad, potato salad, coleslaw, or tossed salad, served with our own freshly fried chips, pickles.",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "it-s-a-wrap-platter",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Bandeja de wraps",
+      "nameEn": "It's A Wrap Platter",
+      "descriptionEs": "Wraps variados que incluyen pollo César, roast beef y cheddar con mayonesa de rábano picante, club de pavo y tocino, jamón horneado y suizo con mostaza y miel, y atún con pepino y provolone, con ensalada de papa, ensalada de col o ensalada mixta a elegir, servido con nuestras papitas recién fritas y pepinillos.",
+      "descriptionEn": "Assorted wraps including chicken caesar, roast beef and cheddar with horseradish mayo, turkey bacon club, baked ham and swiss with honey mustard, and tuna cucumber with provolone, with choice of potato salad, coleslaw, or tossed salad, served with our own freshly fried chips, pickles.",
+      "price": "$18.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-uptowner-deli-buffet",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Bufé de salchichonería Uptowner",
+      "nameEn": "The Uptowner Deli Buffet",
+      "descriptionEs": "Carnes frías variadas que incluyen pavo, jamón horneado, roast beef, salami genoa y ensalada de atún, acompañadas de quesos variados, vegetales asados, lechuga y tomate, servidas con bollos duros y panes recién horneados, ensalada de pasta gourmet, nuestras papitas recién fritas y pepinillos.",
+      "descriptionEn": "Assorted deli meats including turkey, baked ham, roast beef, genoa salami, and tuna salad garnished with assorted cheeses, roasted vegetables, lettuce, and tomato served with freshly baked hard rolls and breads, gourmet pasta salad, our own freshly fried chips, pickles.",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-finger-sandwiches",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Mini sándwiches de Dom's",
+      "nameEn": "Dom's Finger Sandwiches",
+      "descriptionEs": "Panecillos recién horneados rellenos de un surtido de ensalada de jamón, de atún, de pollo, de mariscos y de huevo. Se sirven con ensalada de pasta gourmet, nuestras papitas recién fritas y pepinillos.",
+      "descriptionEn": "Freshly baked finger rolls stuffed with an assortment of ham salad, tuna salad, chicken salad, seafood salad, and egg salad. Served with gourmet pasta salad, our freshly fried chips, pickles.",
+      "price": "$17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "light-lunch",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Almuerzo ligero",
+      "nameEn": "Light Lunch",
+      "descriptionEs": "Surtido de medios sándwiches de baguette servidos con nuestras papitas recién fritas, ensalada de la huerta o Cobb a elegir, y una galleta.",
+      "descriptionEn": "An assortment of half baguette sandwiches served with our freshly fried chips, choice of garden or cobb salad, and a cookie.",
+      "price": "$13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cookies-catering",
+      "categoryId": "catering-luncheon-buffets-per-person",
+      "nameEs": "Galletas (catering)",
+      "nameEn": "Cookies (catering)",
+      "descriptionEs": "Por persona",
+      "descriptionEn": "Per person",
+      "price": "$1.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-italian-corner",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "El rincón italiano",
+      "nameEn": "The Italian Corner",
+      "descriptionEs": "Penne horneado con nuestra marinara casera, las famosas albóndigas de Dom's, salchicha con pimientos y pan italiano con mantequilla, ensalada mixta con vinagreta de la casa.",
+      "descriptionEn": "Baked penne with our homemade marinara, Dom's famous meatballs, sausage and peppers, and Italian bread with butter, tossed salad with a house vinaigrette.",
+      "price": "$19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-backyard-bbq",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "La parrillada del patio",
+      "nameEn": "The Backyard BBQ",
+      "descriptionEs": "Pollo BBQ Sweet Baby Ray's y cerdo desmechado BBQ asado lentamente con bollos recién horneados, mac and cheese, pan de maíz con jalapeño, salsa de maíz asado y ensalada de col. Mínimo 15 personas.",
+      "descriptionEn": "Sweet Baby Rays BBQ chicken and slow roasted BBQ pulled pork with fresh baked rolls, mac and cheese, jalapeno corn bread, roasted corn salsa, coleslaw. Minimum 15 people to order.",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-triple-roast",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "El triple asado",
+      "nameEn": "The Triple Roast",
+      "descriptionEs": "Lomo de cerdo untado con romero y ajo, papas rojas asadas y vegetales recién asados, pan y mantequilla.",
+      "descriptionEn": "Rosemary and garlic rubbed pork loin, roasted red potatoes, and freshly roasted vegetables, bread and butter.",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "build-your-own-burrito-and-taco-bar",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Barra de burritos y tacos para armar",
+      "nameEn": "Build Your Own Burrito and Taco Bar",
+      "descriptionEs": "Carne molida sazonada y pollo a la parrilla con ingredientes a elegir, incluidos tomates, lechuga, frijoles negros, crema agria, salsa, guacamole, frijoles refritos, aceitunas, queso cheddar y salsa para tacos, servidos con arroz mexicano. Pedido mínimo de 15 personas.",
+      "descriptionEn": "Seasoned ground beef and grilled chicken with toppings of your choice including tomatoes, lettuce, black beans, sour cream, salsa, guacamole, refried beans, olives, cheddar cheese, and taco sauce served with Mexican rice. Minimum 15 person order.",
+      "price": "$21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-with-a-choice",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Pollo a elegir",
+      "nameEn": "Chicken With A Choice",
+      "descriptionEs": "Pollo Marsala, pollo piccata o pollo a la parmesana a elegir, con ziti horneado, puré de papas o arroz pilaf, servido con un vegetal fresco, pan y mantequilla.",
+      "descriptionEn": "Your choice of Chicken Marsala, Chicken Piccata, or Chicken Parmesan with baked ziti, whipped potatoes, or rice pilaf served with a fresh vegetable, bread and butter.",
+      "price": "$20.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-potato-bar",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Barra de papas al horno",
+      "nameEn": "Baked Potato Bar",
+      "descriptionEs": "Papas Russet jumbo con ingredientes variados, incluidos el famoso chili de Dom's, queso cheddar, brócoli, tocino picado, cebollas, tomates picados, aceitunas, crema agria y salsa.",
+      "descriptionEn": "Jumbo Russet Potatoes with assorted toppings including Dom's famous chili, cheddar cheese, broccoli, chopped bacon, onions, diced tomatoes, olives, sour cream, and salsa.",
+      "price": "$15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chafing-dishes",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Calientaplatos (chafing dishes)",
+      "nameEn": "Chafing Dishes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "each-sterno",
+      "categoryId": "catering-hot-buffets-per-person-minimum-10",
+      "nameEs": "Cada lata de Sterno",
+      "nameEn": "Each Sterno",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-ziti-with-mozzarella",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Ziti horneado con mozzarella",
+      "nameEn": "Baked Ziti with Mozzarella",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $50.00 / Full Tray $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sausage-and-peppers",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Salchicha con pimientos (catering)",
+      "nameEn": "Sausage and Peppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "meatballs-and-sauce",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Albóndigas en salsa",
+      "nameEn": "Meatballs and Sauce",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-baked-chicken",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Pollo horneado a la italiana",
+      "nameEn": "Italian Baked Chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $55.00 / Full Tray $100.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggplant-parmesan-tray",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Berenjena a la parmesana (bandeja)",
+      "nameEn": "Eggplant Parmesan (tray)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-parmesan-tray",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Pollo a la parmesana (bandeja)",
+      "nameEn": "Chicken Parmesan (tray)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-francaise",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Pollo a la francesa",
+      "nameEn": "Chicken Francaise",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dom-s-award-winning-chili-tray",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Chili galardonado de Dom's (bandeja)",
+      "nameEn": "Dom's Award-Winning Chili (tray)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $50.00 / Full Tray $90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-piccata",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Pollo piccata",
+      "nameEn": "Chicken Piccata",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-marsala",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Pollo Marsala",
+      "nameEn": "Chicken Marsala",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mac-and-cheese-with-bacon-and-tomato",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Mac and cheese con tocino y tomate",
+      "nameEn": "Mac and Cheese with Bacon and Tomato",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-mac-and-cheese",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Mac and cheese sencillo",
+      "nameEn": "Plain Mac and Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $50.00 / Full Tray $90.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-meat-lasagna",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Lasaña de carne al horno",
+      "nameEn": "Baked Meat Lasagna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $70.00 / Full Tray $130.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baked-vegetable-lasagna",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Lasaña de vegetales horneada",
+      "nameEn": "Baked Vegetable Lasagna",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $65.00 / Full Tray $120.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kielbasa-and-kraut",
+      "categoryId": "catering-ala-carte-trays-half-tray-8-10-people-full-tray-18-20-people-pickup-only",
+      "nameEs": "Kielbasa con chucrut",
+      "nameEn": "Kielbasa and Kraut",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $60.00 / Full Tray $110.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-tray-with-dip",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Bandeja de vegetales con dip",
+      "nameEn": "Veggie Tray with Dip",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$3.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fresh-fruit-tray",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Bandeja de fruta fresca",
+      "nameEn": "Fresh Fruit Tray",
+      "descriptionEs": "Mínimo 15 personas.",
+      "descriptionEn": "Minimum of 15 people.",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "domestic-cheese-and-crackers",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Quesos nacionales con galletas saladas",
+      "nameEn": "Domestic Cheese and Crackers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-cocktail",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Cóctel de camarón",
+      "nameEn": "Shrimp Cocktail",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Market price",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sweet-and-sour-mini-meatballs",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Mini albóndigas agridulces",
+      "nameEn": "Sweet and Sour Mini Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "italian-mini-meatballs",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Mini albóndigas italianas",
+      "nameEn": "Italian Mini Meatballs",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings-bbq-or-buffalo-with-bleu-cheese",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Alitas de pollo (BBQ o búfalo) con queso azul",
+      "nameEn": "Chicken Wings (BBQ or Buffalo) with Bleu Cheese",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-with-dipping-sauces",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Tiras de pollo con salsas para mojar",
+      "nameEn": "Chicken Tenders with Dipping Sauces",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-quesadillas-with-sour-cream-and-salsa",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Quesadillas de pollo con crema agria y salsa",
+      "nameEn": "Chicken Quesadillas with Sour Cream and Salsa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jalapeno-and-cream-cheese-poppers",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Poppers de jalapeño y queso crema",
+      "nameEn": "Jalapeno and Cream Cheese Poppers",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-mozzarella-with-marinara",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Mozzarella frita con marinara",
+      "nameEn": "Fried Mozzarella with Marinara",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beer-battered-onion-rings-with-spicy-ranch",
+      "categoryId": "catering-appetizers-per-person",
+      "nameEs": "Aros de cebolla rebozados en cerveza con ranch picante",
+      "nameEn": "Beer-Battered Onion Rings with Spicy Ranch",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "potato-salad",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Ensalada de papa",
+      "nameEn": "Potato Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "german-potato-salad",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Ensalada de papa alemana",
+      "nameEn": "German Potato Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pasta-salad",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Ensalada de pasta",
+      "nameEn": "Pasta Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cole-slaw",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Ensalada de col",
+      "nameEn": "Cole Slaw",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "marinated-mushrooms",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Champiñones marinados",
+      "nameEn": "Marinated Mushrooms",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whipped-potatoes",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Puré de papa batido",
+      "nameEn": "Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-garlic-whipped-potatoes",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Puré de papas con ajo asado",
+      "nameEn": "Roasted Garlic Whipped Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oven-roasted-herbed-potatoes",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Papas al horno con hierbas",
+      "nameEn": "Oven Roasted Herbed Potatoes",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rice-pilaf",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Pilaf de arroz",
+      "nameEn": "Rice Pilaf",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $30.00 / Full Tray $55.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "roasted-vegetables",
+      "categoryId": "catering-savory-sides",
+      "nameEs": "Vegetales asados",
+      "nameEn": "Roasted Vegetables",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $45.00 / Full Tray $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tossed-salad",
+      "categoryId": "catering-savory-salads",
+      "nameEs": "Ensalada mixta",
+      "nameEn": "Tossed Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $35.00 / Full Tray $65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "catering-savory-salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $35.00 / Full Tray $65.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "greek-salad",
+      "categoryId": "catering-savory-salads",
+      "nameEs": "Ensalada griega",
+      "nameEn": "Greek Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $40.00 / Full Tray $75.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "antipasto-salad",
+      "categoryId": "catering-savory-salads",
+      "nameEs": "Ensalada antipasto",
+      "nameEn": "Antipasto Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $50.00 / Full Tray $95.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-goat-cheese-and-candied-walnut-salad",
+      "categoryId": "catering-savory-salads",
+      "nameEs": "Ensalada de fresa, queso de cabra y nueces confitadas",
+      "nameEn": "Strawberry, Goat Cheese, and Candied Walnut Salad",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "Half Tray $45.00 / Full Tray $85.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda-and-water",
+      "categoryId": "catering-beverages-extras",
+      "nameEs": "Refresco y agua",
+      "nameEn": "Soda and Water",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee-and-tea",
+      "categoryId": "catering-beverages-extras",
+      "nameEs": "Café y té",
+      "nameEn": "Coffee and Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paper-goods",
+      "categoryId": "catering-beverages-extras",
+      "nameEs": "Artículos desechables (platos y vasos)",
+      "nameEn": "Paper Goods",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$0.75",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, contamos con opciones como wraps saludables, platos vegetarianos y alternativas sin gluten. Pregunte a su mesero.",
-      "aEn": "Yes, we feature healthy wraps, vegetarian dishes, and gluten-free alternatives. Please ask your server."
-    },
-    {
-      "qEs": "¿Ofrecen servicio de catering para eventos?",
-      "qEn": "Do you offer catering services for events?",
-      "aEs": "¡Sí! Ofrecemos paquetes de catering para fiestas, reuniones corporativas y eventos familiares de todos los tamaños.",
-      "aEn": "Yes! We offer catering packages for parties, corporate gatherings, and family events of all sizes."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación por orden de llegada y también puede llamarnos para consultar disponibilidad para grupos.",
-      "aEn": "We warmly welcome walk-ins and you can also call us to inquire about group availability."
-    }
-  ]
+  "faqs": []
 }
