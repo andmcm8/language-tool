@@ -3,6 +3,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { MerchantConfig, Product } from "@/types/merchant";
 import { isValidPhone } from "@/lib/phone";
+import { labelFor } from "@/lib/labels";
 import { Search, X, Phone, LayoutGrid, List, ChevronRight, MapPin, Clock } from "lucide-react";
 
 interface CatalogTabProps {
@@ -102,10 +103,10 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
           {(item.badge || (item.tags && item.tags.length > 0)) && (
             <div className="mt-2 flex flex-wrap gap-1.5">
               {item.badge && (
-                <span className="px-2 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wide">{item.badge}</span>
+                <span className="px-2 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wide">{labelFor(item.badge, lang)}</span>
               )}
               {item.tags?.map((tag, i) => (
-                <span key={i} className="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-semibold">{tag}</span>
+                <span key={i} className="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-semibold">{labelFor(tag, lang)}</span>
               ))}
             </div>
           )}
@@ -215,7 +216,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               onClick={() => setSelectedCategory(cat.id)}
               className={`chip shrink-0 ${
                 isActive
-                  ? "bg-brand-gradient text-white shadow-brand"
+                  ? "bg-brand-gradient text-white shadow-brand lg:bg-none lg:bg-navy lg:shadow-soft"
                   : "bg-white text-on-surface-variant border border-white shadow-soft hover:text-on-surface"
               }`}
             >
@@ -281,7 +282,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
             <div className="px-6 pt-5">
               {selectedItem.badge && (
                 <span className="inline-block mb-2 px-2.5 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wide">
-                  {selectedItem.badge}
+                  {labelFor(selectedItem.badge, lang)}
                 </span>
               )}
               <h3 className="text-2xl font-extrabold leading-tight text-on-surface pr-10">{text(selectedItem).name}</h3>
@@ -308,7 +309,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               {selectedItem.tags && selectedItem.tags.length > 0 && (
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {selectedItem.tags.map((tag, i) => (
-                    <span key={i} className="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">{tag}</span>
+                    <span key={i} className="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">{labelFor(tag, lang)}</span>
                   ))}
                 </div>
               )}
@@ -316,7 +317,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               {selectedItem.allergens && selectedItem.allergens.length > 0 && (
                 <div className="mt-4 p-3 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 font-semibold">
                   {lang === "es" ? "Alérgenos: " : "Allergens: "}
-                  {selectedItem.allergens.join(", ")}
+                  {selectedItem.allergens.map((a) => labelFor(a, lang)).join(", ")}
                 </div>
               )}
 
