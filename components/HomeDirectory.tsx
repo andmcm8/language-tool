@@ -4,7 +4,7 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { isValidPhone } from "@/lib/phone";
 import { townFromAddress, taglineFor, swatchFor, initialsOf } from "@/lib/place";
-import { Search, X, MapPin, Phone, ChevronRight, Info, Languages, MessageSquareText, QrCode } from "lucide-react";
+import { Search, X, MapPin, Phone, ChevronRight, Info, Languages, MessageSquareText, QrCode, Utensils } from "lucide-react";
 
 const DICT = {
   en: {
@@ -131,7 +131,7 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         <div className="pointer-events-none absolute -top-24 -right-16 h-72 w-72 rounded-full bg-white/15 blur-3xl" />
         <div className="pointer-events-none absolute top-24 -left-24 h-64 w-64 rounded-full bg-sky-300/30 blur-3xl" />
 
-        <div className="relative mx-auto max-w-md md:max-w-4xl px-5 pt-5 pb-20">
+        <div className="relative mx-auto max-w-md md:max-w-4xl px-5 pt-5 pb-16">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full bg-white shadow-soft">
@@ -170,6 +170,16 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
             <span className="text-sky-200">{t.heroLine2}</span>
           </h1>
           <p className="mt-3 max-w-sm md:max-w-lg text-[15px] leading-relaxed text-blue-50/90">{t.subtitle}</p>
+
+          {/* Product glimpse: one dish, both languages */}
+          <div className="mt-7 flex max-w-xs items-center gap-3 rounded-[28px] border border-white/30 bg-white/15 p-3 pr-4 backdrop-blur-md shadow-soft">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-primary shadow-soft" aria-hidden><Utensils className="h-5 w-5" /></span>
+            <div className="min-w-0 flex-1 leading-tight">
+              <p className="truncate text-[15px] font-bold">Tacos al pastor</p>
+              <p className="truncate text-[13px] text-blue-50/80">Al pastor tacos</p>
+            </div>
+            <span className="rounded-full bg-white px-3 py-1 text-[11px] font-extrabold tracking-wide text-primary">ES · EN</span>
+          </div>
         </div>
       </header>
 
