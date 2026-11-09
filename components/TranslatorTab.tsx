@@ -513,7 +513,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
     : "";
 
   return (
-    <div className="w-full max-w-md mx-auto p-4 pb-32 flex flex-col gap-3">
+    <div className="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto p-4 lg:px-10 lg:pt-10 pb-32 lg:pb-10 flex flex-col gap-3">
       {/* LANGUAGE DIRECTION BAR */}
       <div className="bg-white rounded-full border border-white shadow-soft p-2 flex items-center justify-between">
         <div className="flex-1 text-center font-extrabold text-xs text-slate-800 uppercase tracking-wide">
@@ -689,7 +689,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
         </div>
 
         {/* Preset Phrase Cards - Full length of page without truncation */}
-        <div className="space-y-2 pb-6">
+        <div className="space-y-2 pb-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-3">
           {filteredPhrases.map((phrase, idx) => {
             const displayPhrase = sourceLang === "en" ? phrase.en : phrase.es;
             const targetPhrase = sourceLang === "en" ? phrase.es : phrase.en;
@@ -705,10 +705,10 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                 className="p-4 bg-white border border-white shadow-soft rounded-3xl flex items-center justify-between gap-2 hover:shadow-lift cursor-pointer transition-all shadow-2xs group"
               >
                 <div className="space-y-0.5 text-left">
-                  <div className="text-xs font-extrabold text-slate-900 group-hover:text-[#0A5CFF] transition-colors">
+                  <div className="text-[14px] font-bold text-on-surface group-hover:text-primary transition-colors">
                     {displayPhrase}
                   </div>
-                  <div className="text-[11px] font-medium text-slate-500 italic">
+                  <div className="text-[13px] font-medium text-on-surface-variant italic">
                     {targetPhrase}
                   </div>
                 </div>

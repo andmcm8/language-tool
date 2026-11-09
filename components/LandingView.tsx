@@ -27,7 +27,7 @@ export default function LandingView({ merchant, setActiveTab, lang }: LandingVie
   ];
 
   return (
-    <div className="w-full max-w-md mx-auto px-4 pt-5 space-y-4">
+    <div className="w-full max-w-md md:max-w-2xl lg:max-w-3xl mx-auto px-4 lg:px-10 pt-5 lg:pt-10 space-y-4">
       {/* Place card */}
       <section className="relative overflow-hidden rounded-[32px] bg-brand-gradient p-5 text-white shadow-lift">
         <div className="pointer-events-none absolute -right-10 -top-12 h-44 w-44 rounded-full bg-white/15 blur-2xl" />

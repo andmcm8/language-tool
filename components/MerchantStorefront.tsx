@@ -35,9 +35,9 @@ function MerchantStorefrontContent({ merchant }: StorefrontProps) {
 
   return (
     <div className="min-h-screen flex flex-col text-on-surface">
-      <Header merchant={merchant} lang={lang} setLang={setLang} />
+      <Header merchant={merchant} lang={lang} setLang={setLang} activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <main key={activeTab} className="flex-1 flex flex-col animate-rise pb-28">
+      <main key={activeTab} className={`flex-1 flex flex-col animate-rise lg:pl-[21rem] xl:pl-[22.75rem] ${activeTab === "assistant" ? "" : "pb-28 lg:pb-10"}`}>
         {activeTab === "home" && <LandingView merchant={merchant} setActiveTab={setActiveTab} lang={lang} />}
         {activeTab === "catalog" && <CatalogTab merchant={merchant} lang={lang} />}
         {activeTab === "camera" && <TranslatorTab lang={lang} />}
