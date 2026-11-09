@@ -16,6 +16,7 @@ import {
   CreditCard,
   Utensils,
   Clock,
+  Wheat,
 } from "lucide-react";
 
 interface TranslatorTabProps {
@@ -24,109 +25,124 @@ interface TranslatorTabProps {
 
 const PHRASE_CATEGORIES = [
   { id: "all", labelEs: "Todas", labelEn: "All", icon: Sparkles },
-  { id: "payments", labelEs: "Pagos y EBT", labelEn: "Payments & EBT", icon: CreditCard },
-  { id: "deli", labelEs: "Deli y Comida", labelEn: "Deli & Food", icon: Utensils },
-  { id: "hours", labelEs: "Horarios y Tienda", labelEn: "Store & Hours", icon: Clock },
+  { id: "order", labelEs: "Pedir", labelEn: "Ordering", icon: Utensils },
+  { id: "diet", labelEs: "Alergias y dieta", labelEn: "Allergies & diet", icon: Wheat },
+  { id: "pay", labelEs: "Pagar", labelEn: "Paying", icon: CreditCard },
+  { id: "table", labelEs: "Mesa y horarios", labelEn: "Table & hours", icon: Clock },
 ];
 
 const CATEGORIZED_PHRASES = [
   {
-    cat: "payments",
-    en: "Do you accept EBT / SNAP cards for groceries?",
-    es: "¿Aceptan tarjetas EBT / SNAP para abarrotes?",
-    phoneticEs: "Ah-SEHP-tahn tahr-HEH-tahs E-B-T para ah-bah-ROH-tehs?",
-    phoneticEn: "Du iu ak-sept I-BI-TI / SNAP kards for gro-se-ris?",
+    cat: "order",
+    en: "Could we see the menu, please?",
+    es: "¿Nos puede traer el menú, por favor?",
+    phoneticEs: "Nohs PWEH-deh trah-EHR ehl meh-NOO, pohr fah-VOHR?",
+    phoneticEn: "Kud ui si de me-niu, pliis?",
   },
   {
-    cat: "payments",
-    en: "Is there a minimum purchase for credit cards?",
-    es: "¿Hay una compra mínima para tarjeta de crédito?",
-    phoneticEs: "Eye OO-nah KOHM-prah MEE-nee-mah para tahr-HEH-tah?",
-    phoneticEn: "Is der e mi-ni-mum per-ches for kre-dit kards?",
+    cat: "order",
+    en: "I would like to order this one.",
+    es: "Quisiera pedir este platillo.",
+    phoneticEs: "Kee-SYEH-rah peh-DEER EHS-teh plah-TEE-yoh.",
+    phoneticEn: "Ai wud laik tu or-der dis uan.",
   },
   {
-    cat: "payments",
-    en: "Can I pay with cash or debit?",
-    es: "¿Puedo pagar con efectivo o tarjeta de débito?",
-    phoneticEs: "PWEH-doh pah-GAHR kohn eh-fehk-TEE-voh?",
-    phoneticEn: "Kan ai pei wid kash or de-bit?",
+    cat: "order",
+    en: "What do you recommend?",
+    es: "¿Qué nos recomienda?",
+    phoneticEs: "Keh nohs reh-koh-MYEHN-dah?",
+    phoneticEn: "Uat du iu re-ko-mend?",
   },
   {
-    cat: "payments",
-    en: "Could I please get a receipt?",
-    es: "¿Me puede dar un recibo, por favor?",
-    phoneticEs: "Meh PWEH-deh dahr oon reh-SEE-boh, pohr fah-VOHR?",
-    phoneticEn: "Kud ai pliis get e ri-siit?",
+    cat: "order",
+    en: "Is this dish spicy?",
+    es: "¿Este platillo es picante?",
+    phoneticEs: "EHS-teh plah-TEE-yoh ehs pee-KAHN-teh?",
+    phoneticEn: "Is dis dish spai-si?",
   },
   {
-    cat: "payments",
-    en: "Do you offer cash back with debit?",
-    es: "¿Tienen retiro de efectivo con débito?",
-    phoneticEs: "TYEH-nehn reh-TEE-roh deh eh-fehk-TEE-voh kohn DEH-bee-toh?",
-    phoneticEn: "Du iu o-fer kash bak wid de-bit?",
+    cat: "order",
+    en: "Could I have it to go?",
+    es: "¿Me lo puede preparar para llevar?",
+    phoneticEs: "Meh loh PWEH-deh preh-pah-RAHR PAH-rah yeh-VAHR?",
+    phoneticEn: "Kud ai jav it tu gou?",
   },
   {
-    cat: "deli",
-    en: "I would like 1 pound of ham, sliced thin.",
-    es: "Quisiera 1 libra de jamón, cortado fino.",
-    phoneticEs: "Kee-SYEH-rah OO-nah LEE-brah deh hah-MOHN, kohr-TAH-doh FEE-noh.",
-    phoneticEn: "Ai wud laik uan paund ov jam, slaisd dzin.",
+    cat: "diet",
+    en: "I have a food allergy.",
+    es: "Tengo una alergia alimentaria.",
+    phoneticEs: "TEHN-goh OO-nah ah-LEHR-hyah ah-lee-mehn-TAH-ryah.",
+    phoneticEn: "Ai jav e fud a-ler-yi.",
   },
   {
-    cat: "deli",
-    en: "Where is the deli counter?",
-    es: "¿Dónde está el mostrador del deli?",
-    phoneticEs: "DOHN-deh ehs-TAH ehl mohs-trah-DOHR dehl DEH-lee?",
-    phoneticEn: "Uer is de de-li kaun-ter?",
+    cat: "diet",
+    en: "Does this contain nuts, dairy or gluten?",
+    es: "¿Esto contiene nueces, lácteos o gluten?",
+    phoneticEs: "EHS-toh kohn-TYEH-neh NWEH-sehs, LAHK-teh-ohs oh GLOO-tehn?",
+    phoneticEn: "Das dis kon-tein nats, de-ri or glu-ten?",
   },
   {
-    cat: "deli",
-    en: "Is this food hot and fresh?",
-    es: "¿Esta comida está caliente y fresca?",
-    phoneticEs: "EHS-tah koh-MEE-dah ehs-TAH kah-LYEHN-teh ee FREHS-kah?",
-    phoneticEn: "Is dis fud jot and fresh?",
+    cat: "diet",
+    en: "Do you have vegetarian options?",
+    es: "¿Tienen opciones vegetarianas?",
+    phoneticEs: "TYEH-nehn ohp-SYOH-nehs beh-heh-tah-RYAH-nahs?",
+    phoneticEn: "Du iu jav ve-yi-te-ri-an op-shons?",
   },
   {
-    cat: "deli",
-    en: "Does this contain dairy, gluten, or nuts?",
-    es: "¿Esto contiene lácteos, gluten o nueces?",
-    phoneticEs: "EHS-toh kohn-TYEH-neh LAHK-teh-ohs, GLOO-tehn oh NWEH-sehs?",
-    phoneticEn: "Das dis kon-tein de-ri, glu-ten, or nats?",
+    cat: "diet",
+    en: "Can you make it without meat?",
+    es: "¿Lo pueden hacer sin carne?",
+    phoneticEs: "Loh PWEH-dehn ah-SEHR seen KAHR-neh?",
+    phoneticEn: "Kan iu meik it uid-aut miit?",
   },
   {
-    cat: "deli",
-    en: "What do you recommend that is popular here?",
-    es: "¿Qué me recomienda que sea popular aquí?",
-    phoneticEs: "Keh meh reh-koh-MYEHN-dah keh SEH-ah poh-poo-LAHR ah-KEE?",
-    phoneticEn: "Uat du iu re-ko-mend dat is pop-iu-lar jiir?",
+    cat: "pay",
+    en: "Could we have the check, please?",
+    es: "¿Nos trae la cuenta, por favor?",
+    phoneticEs: "Nohs TRAH-eh lah KWEHN-tah, pohr fah-VOHR?",
+    phoneticEn: "Kud ui jav de chek, pliis?",
   },
   {
-    cat: "hours",
-    en: "What are your store hours today?",
-    es: "¿Cuáles son sus horarios de atención hoy?",
-    phoneticEs: "KWAH-lehs sohn soos oh-RAH-ryohs deh ah-tehn-SYOHN oy?",
-    phoneticEn: "Uat ar iur stor au-ers tu-dei?",
+    cat: "pay",
+    en: "Can I pay with a card?",
+    es: "¿Puedo pagar con tarjeta?",
+    phoneticEs: "PWEH-doh pah-GAHR kohn tahr-HEH-tah?",
+    phoneticEn: "Kan ai pei uid e kard?",
   },
   {
-    cat: "hours",
-    en: "Are you open on Sundays and holidays?",
-    es: "¿Abren los domingos y días festivos?",
-    phoneticEs: "AH-brehn lohs doh-MEEN-gohs ee DEE-ahs fehs-TEE-vohs?",
-    phoneticEn: "Ar iu ou-pen on san-deis and jo-li-deis?",
+    cat: "pay",
+    en: "Can we split the bill?",
+    es: "¿Podemos dividir la cuenta?",
+    phoneticEs: "poh-DEH-mohs dee-bee-DEER lah KWEHN-tah?",
+    phoneticEn: "Kan ui split de bil?",
   },
   {
-    cat: "hours",
-    en: "When do you restock fresh bakery bread?",
-    es: "¿Cuándo reponen el pan fresco de panadería?",
-    phoneticEs: "KWAHN-doh reh-POH-nehn ehl pahn FREHS-koh?",
-    phoneticEn: "Uen du iu ri-stok fresh bei-ke-ri bred?",
+    cat: "pay",
+    en: "Is the tip included?",
+    es: "¿La propina está incluida?",
+    phoneticEs: "Lah proh-PEE-nah ehs-TAH een-kloo-EE-dah?",
+    phoneticEn: "Is de tip in-klu-did?",
   },
   {
-    cat: "hours",
-    en: "Where can I find customer parking or restrooms?",
-    es: "¿Dónde encuentro el estacionamiento o los baños?",
-    phoneticEs: "DOHN-deh ehn-KWEHN-troh ehl ehs-tah-syoh-nah-MYEHN-toh?",
-    phoneticEn: "Uer kan ai faind kas-to-mer par-king or rest-rums?",
+    cat: "table",
+    en: "A table for two, please.",
+    es: "Una mesa para dos, por favor.",
+    phoneticEs: "OO-nah MEH-sah PAH-rah dohs, pohr fah-VOHR.",
+    phoneticEn: "E tei-bol for tu, pliis.",
+  },
+  {
+    cat: "table",
+    en: "What are your hours today?",
+    es: "¿Cuál es su horario de hoy?",
+    phoneticEs: "Kwahl ehs soo oh-RAH-ryoh deh oy?",
+    phoneticEn: "Uat ar iur au-ers tu-dei?",
+  },
+  {
+    cat: "table",
+    en: "Where are the restrooms?",
+    es: "¿Dónde están los baños?",
+    phoneticEs: "DOHN-deh ehs-TAHN lohs BAH-nyohs?",
+    phoneticEn: "Uer ar de rest-rums?",
   },
 ];
 
@@ -499,7 +515,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
   return (
     <div className="w-full max-w-md mx-auto p-4 pb-32 flex flex-col gap-3">
       {/* LANGUAGE DIRECTION BAR */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-2 flex items-center justify-between">
+      <div className="bg-white rounded-full border border-white shadow-soft p-2 flex items-center justify-between">
         <div className="flex-1 text-center font-extrabold text-xs text-slate-800 uppercase tracking-wide">
           {sourceLang === "en" ? "English" : "Español"}
         </div>
@@ -584,7 +600,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
       </div>
 
       {/* INPUT CARD (Text Area + Voice Dictation + Clear) */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-3 space-y-2 relative">
+      <div className="bg-white rounded-[28px] border border-white shadow-soft p-4 space-y-2 relative">
         <div className="flex items-center justify-between text-xs font-bold text-slate-500">
           <span>{sourceLang === "en" ? "Source Text" : "Texto de Origen"}</span>
           {inputText && (
@@ -646,7 +662,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
       <div className="space-y-2 pt-1">
         <div className="flex items-center justify-between">
           <span className="text-xs font-black text-slate-800 uppercase tracking-wider">
-            {lang === "es" ? "Frases Útiles de Comercio" : "Useful Store Phrases"}
+            {lang === "es" ? "Frases útiles para el restaurante" : "Useful restaurant phrases"}
           </span>
         </div>
 
@@ -662,7 +678,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                 className={`px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shrink-0 transition-all ${
                   isSelected
                     ? "bg-[#0A5CFF] text-white shadow-2xs"
-                    : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
+                    : "bg-white text-on-surface-variant border border-white shadow-soft hover:text-on-surface"
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -686,7 +702,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                   setInputText(displayPhrase);
                   setTranslatedText(targetPhrase);
                 }}
-                className="p-3 bg-white border border-slate-200 rounded-2xl flex items-center justify-between gap-2 hover:border-[#0A5CFF] cursor-pointer transition-all shadow-2xs group"
+                className="p-4 bg-white border border-white shadow-soft rounded-3xl flex items-center justify-between gap-2 hover:shadow-lift cursor-pointer transition-all shadow-2xs group"
               >
                 <div className="space-y-0.5 text-left">
                   <div className="text-xs font-extrabold text-slate-900 group-hover:text-[#0A5CFF] transition-colors">

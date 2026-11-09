@@ -277,16 +277,16 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   const lastUserMessage = messages.filter((m) => m.sender === "user").slice(-1)[0]?.text;
 
   return (
-    <div className="w-full max-w-md mx-auto flex-1 flex flex-col h-[calc(100dvh-125px)] p-3 pb-20 space-y-2.5">
+    <div className="w-full max-w-md mx-auto flex-1 flex flex-col h-[calc(100dvh-76px)] px-4 pt-4 pb-24 gap-3">
       {/* Top Bar: Mode Switcher (Voice Mode vs Chat Mode) */}
-      <div className="flex items-center justify-between bg-white p-1.5 rounded-2xl border border-slate-200 shadow-xs">
-        <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl">
+      <div className="flex items-center justify-between bg-white p-1.5 rounded-full border border-white shadow-soft">
+        <div className="flex items-center gap-1">
           <button
             onClick={() => setActiveMode("chat")}
-            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
+            className={`px-4 h-10 rounded-full text-[13px] font-bold flex items-center gap-1.5 transition-all ${
               activeMode === "chat"
-                ? "bg-[#0A5CFF] text-white shadow-2xs"
-                : "text-slate-600 hover:text-slate-900"
+                ? "bg-brand-gradient text-white shadow-brand"
+                : "text-on-surface-variant hover:text-on-surface"
             }`}
           >
             <MessageSquare className="w-3.5 h-3.5" />
@@ -295,10 +295,10 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
           <button
             onClick={() => setActiveMode("voice")}
-            className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
+            className={`px-4 h-10 rounded-full text-[13px] font-bold flex items-center gap-1.5 transition-all ${
               activeMode === "voice"
-                ? "bg-[#0A5CFF] text-white shadow-2xs"
-                : "text-slate-600 hover:text-slate-900"
+                ? "bg-brand-gradient text-white shadow-brand"
+                : "text-on-surface-variant hover:text-on-surface"
             }`}
           >
             <Radio className="w-3.5 h-3.5" />
@@ -309,7 +309,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         <div className="flex items-center gap-1">
           <button
             onClick={clearChatHistory}
-            className="p-1.5 rounded-xl text-slate-400 hover:text-rose-500 hover:bg-slate-100 transition-colors"
+            className="w-10 h-10 grid place-items-center rounded-full text-on-surface-variant hover:text-rose-500 hover:bg-surface-container transition-colors"
             title="Clear Chat History"
           >
             <Trash2 className="w-4 h-4" />
@@ -317,8 +317,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
           <button
             onClick={toggleAutoSpeak}
-            className={`p-1.5 rounded-xl transition-all ${
-              autoSpeak ? "text-[#0A5CFF] bg-blue-50" : "text-slate-400 hover:bg-slate-100"
+            className={`w-10 h-10 grid place-items-center rounded-full transition-all ${
+              autoSpeak ? "text-primary bg-primary-fixed" : "text-on-surface-variant hover:bg-surface-container"
             }`}
             title={autoSpeak ? "Mute Voice Output" : "Enable Voice Output"}
           >
@@ -329,7 +329,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
       {/* VIEW MODE 1: VOICE-FIRST INTERACTIVE ASSISTANT (MICROPHONE SPHERE & SOUNDWAVES) */}
       {activeMode === "voice" ? (
-        <div className="flex-1 flex flex-col justify-between bg-white rounded-3xl p-5 border border-slate-200 shadow-sm relative overflow-hidden text-center space-y-4">
+        <div className="flex-1 flex flex-col justify-between bg-white rounded-[32px] p-6 border border-white shadow-soft relative overflow-hidden text-center space-y-4">
           {/* Header Status Badge */}
           <div className="flex items-center justify-center gap-2">
             <span className="flex items-center gap-1.5 text-xs font-black text-[#0A5CFF] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
@@ -446,86 +446,115 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         </div>
       ) : (
         /* VIEW MODE 2: TRADITIONAL CHAT THREAD WITH TEXT INPUT */
-        <div className="flex-1 flex flex-col justify-between space-y-2 overflow-hidden">
-          {/* Quick Suggestion Chips */}
-          <div className="flex items-center gap-1 overflow-x-auto pb-0.5 no-scrollbar">
-            {quickPrompts.map((prompt, i) => (
-              <button
-                key={i}
-                onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
-                className="px-2.5 py-1 bg-white border border-slate-200 hover:bg-blue-50 text-[#0A5CFF] text-[10px] font-extrabold rounded-full shrink-0 shadow-2xs"
-              >
-                {lang === "es" ? prompt.es : prompt.en}
-              </button>
-            ))}
-          </div>
-
-          {/* Chat Messages Thread */}
-          <div className="flex-1 overflow-y-auto space-y-2 pr-0.5">
-            {messages.map((msg) => {
-              const isAi = msg.sender === "ai";
-              return (
-                <div key={msg.id} className={`flex flex-col ${isAi ? "items-start" : "items-end"}`}>
-                  <div
-                    className={`max-w-[88%] p-3 rounded-2xl text-xs font-medium leading-relaxed ${
-                      isAi
-                        ? "bg-white border border-slate-200 text-slate-800 shadow-2xs"
-                        : "bg-[#0A5CFF] text-white shadow-xs"
-                    }`}
-                  >
-                    <span className="whitespace-pre-wrap">{msg.text}</span>
-                  </div>
+        <div className="flex-1 flex flex-col gap-3 min-h-0">
+          {/* Chat thread (welcome state until the guest asks something) */}
+          <div className="flex-1 overflow-y-auto space-y-3 pr-0.5">
+            {messages.length <= 1 && !loading ? (
+              <div className="pt-4 pb-2">
+                <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-gradient text-white shadow-brand">
+                  <Sparkles className="h-7 w-7" />
+                </span>
+                <h2 className="mt-4 text-[26px] font-extrabold leading-tight text-on-surface">
+                  {lang === "es" ? `Pregúntame sobre ${merchant.storeInfo.name}` : `Ask me about ${merchant.storeInfo.name}`}
+                </h2>
+                <p className="mt-1.5 text-sm leading-relaxed text-on-surface-variant">
+                  {lang === "es"
+                    ? "Platillos, ingredientes, horarios y más, en español o inglés."
+                    : "Dishes, ingredients, hours and more, in Spanish or English."}
+                </p>
+                <div className="mt-5 flex flex-col gap-2">
+                  {quickPrompts.slice(0, 4).map((prompt, i) => (
+                    <button
+                      key={i}
+                      onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
+                      className="flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3.5 text-left text-[14px] font-semibold text-on-surface shadow-soft border border-white hover:shadow-lift active:scale-[0.99] transition-all"
+                    >
+                      <span>{lang === "es" ? prompt.es : prompt.en}</span>
+                      <Send className="h-4 w-4 shrink-0 text-primary" />
+                    </button>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            ) : (
+              messages.map((msg) => {
+                const isAi = msg.sender === "ai";
+                return (
+                  <div key={msg.id} className={`flex flex-col ${isAi ? "items-start" : "items-end"}`}>
+                    <div
+                      className={`max-w-[86%] px-4 py-3 text-[14px] leading-relaxed ${
+                        isAi
+                          ? "bg-white text-on-surface shadow-soft border border-white rounded-[22px] rounded-bl-md"
+                          : "bg-brand-gradient text-white shadow-brand rounded-[22px] rounded-br-md"
+                      }`}
+                    >
+                      <span className="whitespace-pre-wrap">{msg.text}</span>
+                    </div>
+                  </div>
+                );
+              })
+            )}
             {loading && (
-              <div className="flex items-center gap-1.5 text-xs text-slate-500 p-2">
-                <RefreshCw className="w-3.5 h-3.5 text-[#0A5CFF] animate-spin" />
-                <span>{lang === "es" ? "Consultando información..." : "Searching store details..."}</span>
+              <div className="flex items-center gap-2 px-2 text-[13px] font-medium text-on-surface-variant">
+                <RefreshCw className="h-3.5 w-3.5 animate-spin text-primary" />
+                <span>{lang === "es" ? "Pensando..." : "Thinking..."}</span>
               </div>
             )}
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Row */}
-          <div className="bg-white p-2 rounded-2xl border border-slate-200 flex items-center gap-1.5 shadow-md">
+          {/* Quick prompts once a conversation has started */}
+          {messages.length > 1 && (
+            <div className="flex items-center gap-2 overflow-x-auto pb-0.5">
+              {quickPrompts.map((prompt, i) => (
+                <button
+                  key={i}
+                  onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
+                  className="chip shrink-0 bg-white text-primary border border-white shadow-soft"
+                >
+                  {lang === "es" ? prompt.es : prompt.en}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Input */}
+          <div className="flex items-center gap-2 rounded-full bg-white p-1.5 pl-1.5 shadow-lift border border-white">
             <button
               onClick={toggleListening}
-              className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
-                isListening ? "bg-rose-600 text-white animate-pulse" : "bg-blue-50 text-[#0A5CFF]"
+              aria-label="Voice input"
+              className={`grid h-11 w-11 shrink-0 place-items-center rounded-full transition-all ${
+                isListening ? "bg-rose-600 text-white animate-pulse" : "bg-primary-fixed text-primary"
               }`}
-              title="Voice Input / Hablar"
             >
-              {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
+              {isListening ? <MicOff className="h-[18px] w-[18px]" /> : <Mic className="h-[18px] w-[18px]" />}
             </button>
             <input
               type="text"
               value={inputQuery}
               onChange={(e) => setInputQuery(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              placeholder={lang === "es" ? "Pregunte sobre alérgenos, baño, WiFi..." : "Ask about allergens, WiFi, restroom..."}
-              className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-[#0A5CFF]"
+              placeholder={lang === "es" ? "Escribe tu pregunta..." : "Type your question..."}
+              className="min-w-0 flex-1 bg-transparent px-1 text-[15px] font-medium text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none"
             />
             <button
               onClick={() => sendMessage()}
               disabled={!inputQuery.trim() || loading}
-              className="w-9 h-9 rounded-xl bg-[#0A5CFF] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all"
+              aria-label="Send"
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-brand-gradient text-white shadow-brand transition active:scale-95 disabled:opacity-40 disabled:shadow-none"
             >
-              <Send className="w-3.5 h-3.5" />
+              <Send className="h-[18px] w-[18px]" />
             </button>
           </div>
         </div>
       )}
 
-      {/* Permanent Legal Disclaimer Bar */}
-      <div className="flex items-center justify-center gap-1 px-2 py-1 bg-amber-50 rounded-xl border border-amber-100 text-[9px] font-semibold text-amber-800 text-center shrink-0">
-        <ShieldAlert className="w-3 h-3 text-amber-600 shrink-0" />
-        <span>
-          {lang === "es"
-            ? "Respuestas informativas. Verifique alergias o salud con el personal de la tienda."
-            : "Informational only. Always verify allergies or health details with store staff."}
-        </span>
-      </div>
+      {/* Disclaimer */}
+      <p className="flex shrink-0 items-center justify-center gap-1.5 px-3 text-center text-[11.5px] font-medium leading-snug text-on-surface-variant/80">
+        <ShieldAlert className="h-3.5 w-3.5 shrink-0" />
+        {lang === "es"
+          ? "Respuestas informativas. Confirma alergias con el personal."
+          : "Informational only. Confirm allergies with staff."}
+      </p>
     </div>
   );
 }
