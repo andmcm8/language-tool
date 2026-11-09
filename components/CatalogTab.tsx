@@ -215,7 +215,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
               onClick={() => setSelectedCategory(cat.id)}
               className={`chip shrink-0 ${
                 isActive
-                  ? "bg-navy text-white shadow-soft"
+                  ? "bg-brand-gradient text-white shadow-brand"
                   : "bg-white text-on-surface-variant border border-white shadow-soft hover:text-on-surface"
               }`}
             >
