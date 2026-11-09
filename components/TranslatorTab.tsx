@@ -506,7 +506,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
 
         <button
           onClick={swapLanguages}
-          className="p-2 rounded-xl bg-slate-100 text-[#003ec7] hover:bg-blue-50 hover:scale-105 transition-all shadow-2xs"
+          className="p-2 rounded-xl bg-slate-100 text-[#0A5CFF] hover:bg-blue-50 hover:scale-105 transition-all shadow-2xs"
           title="Swap Languages / Cambiar Idioma"
         >
           <ArrowRightLeft className="w-4 h-4" />
@@ -624,7 +624,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4 text-[#003ec7]" />}
+              {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4 text-[#0A5CFF]" />}
               <span>{isListening ? (lang === "es" ? "Escuchando…" : "Listening…") : (lang === "es" ? "Hablar" : "Voice")}</span>
             </button>
 
@@ -632,7 +632,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
             {inputText && (
               <button
                 onClick={() => speakText(inputText, sourceLang)}
-                className="p-2 rounded-xl bg-slate-100 text-slate-600 hover:text-[#003ec7] transition-colors"
+                className="p-2 rounded-xl bg-slate-100 text-slate-600 hover:text-[#0A5CFF] transition-colors"
                 title="Listen / Escuchar"
               >
                 <Volume2 className="w-4 h-4" />
@@ -661,7 +661,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shrink-0 transition-all ${
                   isSelected
-                    ? "bg-[#003ec7] text-white shadow-2xs"
+                    ? "bg-[#0A5CFF] text-white shadow-2xs"
                     : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
                 }`}
               >
@@ -686,10 +686,10 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                   setInputText(displayPhrase);
                   setTranslatedText(targetPhrase);
                 }}
-                className="p-3 bg-white border border-slate-200 rounded-2xl flex items-center justify-between gap-2 hover:border-[#003ec7] cursor-pointer transition-all shadow-2xs group"
+                className="p-3 bg-white border border-slate-200 rounded-2xl flex items-center justify-between gap-2 hover:border-[#0A5CFF] cursor-pointer transition-all shadow-2xs group"
               >
                 <div className="space-y-0.5 text-left">
-                  <div className="text-xs font-extrabold text-slate-900 group-hover:text-[#003ec7] transition-colors">
+                  <div className="text-xs font-extrabold text-slate-900 group-hover:text-[#0A5CFF] transition-colors">
                     {displayPhrase}
                   </div>
                   <div className="text-[11px] font-medium text-slate-500 italic">
@@ -714,7 +714,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
                       e.stopPropagation();
                       speakText(targetPhrase, targetLang);
                     }}
-                    className="p-1.5 rounded-lg text-slate-400 hover:text-[#003ec7] hover:bg-blue-50 transition-colors"
+                    className="p-1.5 rounded-lg text-slate-400 hover:text-[#0A5CFF] hover:bg-blue-50 transition-colors"
                   >
                     <Volume2 className="w-4 h-4" />
                   </button>
@@ -766,7 +766,7 @@ export default function TranslatorTab({ lang }: TranslatorTabProps) {
           <div className="flex items-center justify-center gap-3 pt-4 border-t border-white/10">
             <button
               onClick={() => speakText(translatedText || inputText, targetLang)}
-              className="py-3 px-6 rounded-2xl bg-[#003ec7] text-white font-extrabold text-sm flex items-center gap-2 shadow-lg hover:brightness-110 transition-all"
+              className="py-3 px-6 rounded-2xl bg-[#0A5CFF] text-white font-extrabold text-sm flex items-center gap-2 shadow-lg hover:brightness-110 transition-all"
             >
               <Volume2 className="w-5 h-5" />
               <span>{lang === "es" ? "Escuchar en Voz Alta" : "Speak Out Loud"}</span>

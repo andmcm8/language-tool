@@ -285,7 +285,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             onClick={() => setActiveMode("chat")}
             className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
               activeMode === "chat"
-                ? "bg-[#003ec7] text-white shadow-2xs"
+                ? "bg-[#0A5CFF] text-white shadow-2xs"
                 : "text-slate-600 hover:text-slate-900"
             }`}
           >
@@ -297,7 +297,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             onClick={() => setActiveMode("voice")}
             className={`px-3 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all ${
               activeMode === "voice"
-                ? "bg-[#003ec7] text-white shadow-2xs"
+                ? "bg-[#0A5CFF] text-white shadow-2xs"
                 : "text-slate-600 hover:text-slate-900"
             }`}
           >
@@ -318,7 +318,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
           <button
             onClick={toggleAutoSpeak}
             className={`p-1.5 rounded-xl transition-all ${
-              autoSpeak ? "text-[#003ec7] bg-blue-50" : "text-slate-400 hover:bg-slate-100"
+              autoSpeak ? "text-[#0A5CFF] bg-blue-50" : "text-slate-400 hover:bg-slate-100"
             }`}
             title={autoSpeak ? "Mute Voice Output" : "Enable Voice Output"}
           >
@@ -332,8 +332,8 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         <div className="flex-1 flex flex-col justify-between bg-white rounded-3xl p-5 border border-slate-200 shadow-sm relative overflow-hidden text-center space-y-4">
           {/* Header Status Badge */}
           <div className="flex items-center justify-center gap-2">
-            <span className="flex items-center gap-1.5 text-xs font-black text-[#003ec7] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
-              <Sparkles className="w-3.5 h-3.5 text-[#003ec7]" />
+            <span className="flex items-center gap-1.5 text-xs font-black text-[#0A5CFF] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+              <Sparkles className="w-3.5 h-3.5 text-[#0A5CFF]" />
               {isListening
                 ? lang === "es" ? "Escuchando voz..." : "Listening to voice..."
                 : loading
@@ -377,7 +377,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
 
             {/* Glowing Ring when Thinking */}
             {loading && (
-              <div className="absolute w-36 h-36 rounded-full border-4 border-dashed border-[#003ec7] animate-spin pointer-events-none" />
+              <div className="absolute w-36 h-36 rounded-full border-4 border-dashed border-[#0A5CFF] animate-spin pointer-events-none" />
             )}
 
             {/* Main Central Microphone Button Sphere */}
@@ -390,7 +390,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
                   ? "bg-blue-600 text-white shadow-blue-200"
                   : isSpeaking
                   ? "bg-emerald-600 text-white shadow-emerald-200"
-                  : "bg-[#003ec7] text-white hover:bg-blue-700 shadow-blue-200 hover:scale-105"
+                  : "bg-[#0A5CFF] text-white hover:bg-blue-700 shadow-blue-200 hover:scale-105"
               }`}
             >
               {loading ? (
@@ -453,7 +453,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
               <button
                 key={i}
                 onClick={() => sendMessage(lang === "es" ? prompt.es : prompt.en)}
-                className="px-2.5 py-1 bg-white border border-slate-200 hover:bg-blue-50 text-[#003ec7] text-[10px] font-extrabold rounded-full shrink-0 shadow-2xs"
+                className="px-2.5 py-1 bg-white border border-slate-200 hover:bg-blue-50 text-[#0A5CFF] text-[10px] font-extrabold rounded-full shrink-0 shadow-2xs"
               >
                 {lang === "es" ? prompt.es : prompt.en}
               </button>
@@ -470,7 +470,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
                     className={`max-w-[88%] p-3 rounded-2xl text-xs font-medium leading-relaxed ${
                       isAi
                         ? "bg-white border border-slate-200 text-slate-800 shadow-2xs"
-                        : "bg-[#003ec7] text-white shadow-xs"
+                        : "bg-[#0A5CFF] text-white shadow-xs"
                     }`}
                   >
                     <span className="whitespace-pre-wrap">{msg.text}</span>
@@ -480,7 +480,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             })}
             {loading && (
               <div className="flex items-center gap-1.5 text-xs text-slate-500 p-2">
-                <RefreshCw className="w-3.5 h-3.5 text-[#003ec7] animate-spin" />
+                <RefreshCw className="w-3.5 h-3.5 text-[#0A5CFF] animate-spin" />
                 <span>{lang === "es" ? "Consultando información..." : "Searching store details..."}</span>
               </div>
             )}
@@ -492,7 +492,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
             <button
               onClick={toggleListening}
               className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
-                isListening ? "bg-rose-600 text-white animate-pulse" : "bg-blue-50 text-[#003ec7]"
+                isListening ? "bg-rose-600 text-white animate-pulse" : "bg-blue-50 text-[#0A5CFF]"
               }`}
               title="Voice Input / Hablar"
             >
@@ -504,12 +504,12 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
               onChange={(e) => setInputQuery(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder={lang === "es" ? "Pregunte sobre alérgenos, baño, WiFi..." : "Ask about allergens, WiFi, restroom..."}
-              className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-[#003ec7]"
+              className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-[#0A5CFF]"
             />
             <button
               onClick={() => sendMessage()}
               disabled={!inputQuery.trim() || loading}
-              className="w-9 h-9 rounded-xl bg-[#003ec7] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all"
+              className="w-9 h-9 rounded-xl bg-[#0A5CFF] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all"
             >
               <Send className="w-3.5 h-3.5" />
             </button>
