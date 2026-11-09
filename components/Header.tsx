@@ -4,59 +4,86 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { MerchantConfig } from "@/types/merchant";
 import { isValidPhone } from "@/lib/phone";
-import { townFromAddress } from "@/lib/place";
-import { useRouter } from "next/navigation";
-import {
-  Store,
-  MapPin,
-  Clock,
-  Phone,
-  X,
-  CreditCard,
-  Info,
-  ChevronDown,
-  Building2,
-  HeartPulse,
-  Smartphone,
-  Check,
-  Mail,
-  Copy,
-  Send,
-  ExternalLink,
-  Loader2,
-  ChevronLeft
-} from "lucide-react";
+import { townFromAddress, taglineFor, swatchFor, initialsOf } from "@/lib/place";
+import { ChevronLeft, Info, MapPin, Phone, Navigation, Clock, Loader2, Check, Copy, ArrowUpRight } from "lucide-react";
+import Sheet from "@/components/Sheet";
+import { NAV_TABS, TabType } from "@/components/BottomNav";
 
 interface HeaderProps {
   merchant: MerchantConfig;
   lang: "es" | "en";
   setLang: (lang: "es" | "en") => void;
+  activeTab: TabType;
+  setActiveTab: (tab: TabType) => void;
 }
 
-export default function Header({ merchant, lang, setLang }: HeaderProps) {
-  const router = useRouter();
-  const [showInfoModal, setShowInfoModal] = useState(false);
-  const [showClaimModal, setShowClaimModal] = useState(false);
-  const [showMerchantMenu, setShowMerchantMenu] = useState(false);
-  const [copiedEmail, setCopiedEmail] = useState(false);
-  const [contactInput, setContactInput] = useState("");
-  const [messageInput, setMessageInput] = useState("");
-  const [isSubmittingContact, setIsSubmittingContact] = useState(false);
-  const [contactSubmitted, setContactSubmitted] = useState(false);
-  const { storeInfo } = merchant;
-  const town = townFromAddress(storeInfo.address);
+const EMAIL = "contact@duotaps.com";
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText("contact@duotaps.com");
-    setCopiedEmail(true);
-    setTimeout(() => setCopiedEmail(false), 2500);
+function LangToggle({ lang, setLang }: { lang: "es" | "en"; setLang: (l: "es" | "en") => void }) {
+  return (
+    <div className="flex items-center rounded-full border border-white bg-white p-1 shadow-soft">
+      {(["es", "en"] as const).map((code) => (
+        <button
+          key={code}
+          onClick={() => setLang(code)}
+          aria-pressed={lang === code}
+          className={`h-8 rounded-full px-3 text-xs font-bold transition-all ${
+            lang === code ? "bg-brand-gradient text-white shadow-brand" : "text-on-surface-variant hover:text-on-surface"
+          }`}
+        >
+          {code.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export default function Header({ merchant, lang, setLang, activeTab, setActiveTab }: HeaderProps) {
+  const { storeInfo } = merchant;
+  const [showInfo, setShowInfo] = useState(false);
+  const [showClaim, setShowClaim] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [contact, setContact] = useState("");
+  const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  const town = townFromAddress(storeInfo.address);
+  const tagline = taglineFor(storeInfo.tagline, lang);
+  const phoneOk = isValidPhone(storeInfo.phone);
+  const hours = storeInfo.hours || ({} as MerchantConfig["storeInfo"]["hours"]);
+  const hoursKnown = hours.monday_friday && !/call/i.test(hours.monday_friday);
+  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${storeInfo.name} ${storeInfo.address}`)}`;
+
+  const t = {
+    back: lang === "es" ? "Todos los lugares" : "All places",
+    info: lang === "es" ? "Información del lugar" : "Place info",
+    directions: lang === "es" ? "Cómo llegar" : "Directions",
   };
 
-  const handleSendContact = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!contactInput.trim()) return;
+  const payment = (pm: string) => {
+    const l = pm.toLowerCase();
+    if (lang === "es") {
+      if (l.includes("cash")) return "Efectivo";
+      if (l.includes("credit")) return "Tarjetas de crédito / débito";
+      if (l.includes("contactless")) return "Sin contacto";
+    } else {
+      if (l.includes("efectivo")) return "Cash";
+      if (l.includes("tarjeta")) return "Credit / debit cards";
+    }
+    return pm;
+  };
 
-    setIsSubmittingContact(true);
+  const copyEmail = () => {
+    navigator.clipboard?.writeText(EMAIL);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2200);
+  };
+
+  const sendContact = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!contact.trim()) return;
+    setSending(true);
     try {
       await fetch("/api/contact", {
         method: "POST",
@@ -64,323 +91,265 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
         body: JSON.stringify({
           placeName: storeInfo.name,
           placeId: storeInfo.id,
-          contactInfo: contactInput.trim(),
-          message: messageInput.trim(),
+          contactInfo: contact.trim(),
+          message: message.trim(),
         }),
       });
-      setContactSubmitted(true);
-      setContactInput("");
-      setMessageInput("");
     } catch {
-      setContactSubmitted(true);
+      /* show the thank-you either way; the email address is also listed */
     } finally {
-      setIsSubmittingContact(false);
+      setSending(false);
+      setSent(true);
+      setContact("");
+      setMessage("");
     }
   };
 
-  const getLogoIcon = (iconName?: string) => {
-    switch (iconName) {
-      case "HeartPulse":
-        return <HeartPulse className="w-5 h-5 text-white" />;
-      case "Smartphone":
-        return <Smartphone className="w-5 h-5 text-white" />;
-      default:
-        return <Store className="w-5 h-5 text-white" />;
-    }
-  };
+  const row = "grid grid-cols-[88px_1fr] gap-4 py-3.5 border-b border-surface-container last:border-b-0";
+  const label = "text-[12px] font-semibold uppercase tracking-wider text-on-surface-variant pt-0.5";
 
   return (
     <>
-      <header className="sticky top-0 z-30 glass border-x-0 border-t-0 border-b border-white/60 shadow-[0_1px_0_rgba(11,27,51,0.04)]">
-        <div className="max-w-md mx-auto px-4 py-3 flex items-center justify-between gap-3">
-          {/* Left: back to directory + place identity */}
-          <div className="flex items-center gap-3 min-w-0">
+      {/* ---------- Phone / tablet top bar ---------- */}
+      <header className="sticky top-0 z-30 glass border-x-0 border-t-0 border-b border-white/60 lg:hidden">
+        <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-4 py-3 md:max-w-2xl">
+          <div className="flex min-w-0 items-center gap-3">
             <Link
               href="/"
-              aria-label={lang === "es" ? "Volver al directorio" : "Back to directory"}
-              className="w-10 h-10 shrink-0 rounded-full bg-white shadow-soft border border-white flex items-center justify-center text-on-surface hover:text-primary transition-colors"
+              aria-label={t.back}
+              className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white bg-white text-on-surface shadow-soft transition-colors hover:text-primary"
             >
-              <ChevronLeft className="w-5 h-5" strokeWidth={2.4} />
+              <ChevronLeft className="h-5 w-5" strokeWidth={2.4} />
             </Link>
             <div className="min-w-0">
-              <h1 className="font-extrabold text-[17px] text-on-surface tracking-tight leading-tight truncate">
-                {storeInfo.name}
-              </h1>
+              <h1 className="truncate text-[17px] font-extrabold leading-tight tracking-tight text-on-surface">{storeInfo.name}</h1>
               {town && (
-                <p className="mt-0.5 flex items-center gap-1 text-xs text-on-surface-variant font-medium truncate">
-                  <MapPin className="w-3 h-3 shrink-0" />
+                <p className="mt-0.5 flex items-center gap-1 truncate text-xs font-medium text-on-surface-variant">
+                  <MapPin className="h-3 w-3 shrink-0" />
                   <span className="truncate">{town}</span>
                 </p>
               )}
             </div>
           </div>
-
-          {/* Right: language + info */}
-          <div className="flex items-center gap-2 shrink-0">
-            <div className="flex items-center p-1 rounded-full bg-white shadow-soft border border-white">
-              {(["es", "en"] as const).map((code) => (
-                <button
-                  key={code}
-                  onClick={() => setLang(code)}
-                  aria-pressed={lang === code}
-                  className={`px-3 h-8 rounded-full text-xs font-bold transition-all ${
-                    lang === code ? "bg-brand-gradient text-white shadow-brand" : "text-on-surface-variant hover:text-on-surface"
-                  }`}
-                >
-                  {code.toUpperCase()}
-                </button>
-              ))}
-            </div>
+          <div className="flex shrink-0 items-center gap-2">
+            <LangToggle lang={lang} setLang={setLang} />
             <button
-              onClick={() => setShowInfoModal(true)}
-              aria-label={lang === "es" ? "Información del lugar" : "Place info"}
-              className="w-10 h-10 rounded-full bg-white shadow-soft border border-white flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"
+              onClick={() => setShowInfo(true)}
+              aria-label={t.info}
+              className="grid h-10 w-10 place-items-center rounded-full border border-white bg-white text-on-surface-variant shadow-soft transition-colors hover:text-primary"
             >
-              <Info className="w-[18px] h-[18px]" />
+              <Info className="h-[18px] w-[18px]" />
             </button>
           </div>
         </div>
       </header>
 
-      {/* Merchant Info Modal */}
-      {showInfoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-xs animate-in fade-in duration-200">
-          <div className="bg-white rounded-[28px] max-w-xs w-full p-6 shadow-float border border-white relative overflow-hidden animate-in zoom-in-95 duration-200">
-            <button
-              onClick={() => setShowInfoModal(false)}
-              className="absolute top-3.5 right-3.5 p-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface transition-all"
-            >
-              <X className="w-4 h-4" />
-            </button>
+      {/* ---------- Desktop sidebar ---------- */}
+      <aside className="fixed bottom-4 left-4 top-4 z-30 hidden w-[300px] flex-col rounded-[32px] border border-white bg-white/90 p-5 shadow-lift backdrop-blur-xl lg:flex xl:w-[324px]">
+        <Link href="/" className="inline-flex w-fit items-center gap-1.5 rounded-full py-1.5 pl-1 pr-3 text-[13px] font-semibold text-on-surface-variant transition-colors hover:text-primary">
+          <ChevronLeft className="h-4 w-4" strokeWidth={2.4} />
+          {t.back}
+        </Link>
 
-            <div className="flex items-center gap-2.5 mb-4">
-              <div
-                className="w-10 h-10 rounded-2xl text-white flex items-center justify-center font-bold"
-                style={{ backgroundColor: storeInfo.themeColor || "#0A5CFF" }}
-              >
-                {getLogoIcon(storeInfo.logoIcon)}
-              </div>
-              <div>
-                <h2 className="font-bold text-base text-on-surface leading-tight">{storeInfo.name}</h2>
-                <p className="text-xs text-primary font-medium">
-                  {lang === "es"
-                    ? "Menú bilingüe y asistente interactivo"
-                    : "Bilingual menu & interactive assistant"}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3 text-xs text-on-surface-variant">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                <span>{storeInfo.address}</span>
-              </div>
-
-              {isValidPhone(storeInfo.phone) && (
-                <div className="flex items-start gap-2">
-                  <Phone className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                  <span>{storeInfo.phone}</span>
-                </div>
-              )}
-
-              <div className="flex items-start gap-2">
-                <Clock className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                <div>
-                  <p>
-                    {lang === "es" ? "Lun-Vie: " : "Mon-Fri: "}
-                    {storeInfo.hours.monday_friday}
-                  </p>
-                  <p>
-                    {lang === "es" ? "Sáb: " : "Sat: "}
-                    {storeInfo.hours.saturday}
-                    {" | "}
-                    {lang === "es" ? "Dom: " : "Sun: "}
-                    {storeInfo.hours.sunday}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2">
-                <CreditCard className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                <div className="flex flex-wrap gap-1">
-                  {storeInfo.paymentMethods.map((pm, i) => {
-                    let translatedPm = pm;
-                    if (lang === "es") {
-                      if (pm.toLowerCase().includes("cash")) translatedPm = "Efectivo";
-                      else if (pm.toLowerCase().includes("credit")) translatedPm = "Tarjetas de Crédito / Débito";
-                    } else {
-                      if (pm.toLowerCase().includes("efectivo")) translatedPm = "Cash";
-                      else if (pm.toLowerCase().includes("tarjeta")) translatedPm = "Credit / Debit Cards";
-                    }
-
-                    return (
-                      <span key={i} className="px-2 py-0.5 bg-surface-container rounded-md text-[10px] font-semibold text-on-surface">
-                        {translatedPm}
-                      </span>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-
-            <button
-              onClick={() => { setShowInfoModal(false); setShowClaimModal(true); }}
-              className="mt-4 w-full py-2.5 bg-primary-fixed text-primary font-bold text-xs rounded-full hover:bg-secondary-fixed transition-all"
-            >
-              {lang === "es" ? "¿Es el dueño? Administrar menú" : "Own this place? Manage menu"}
-            </button>
-            <button
-              onClick={() => setShowInfoModal(false)}
-              className="mt-2 w-full py-3 btn-primary text-xs"
-            >
-              {lang === "es" ? "Entendido" : "Done"}
-            </button>
+        <div className="mt-5 flex items-center gap-3.5">
+          <span
+            className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-lg font-extrabold text-white shadow-soft"
+            style={{ background: swatchFor(storeInfo.name) }}
+          >
+            {initialsOf(storeInfo.name)}
+          </span>
+          <div className="min-w-0">
+            <h1 className="text-[19px] font-extrabold leading-tight text-on-surface">{storeInfo.name}</h1>
+            {town && <p className="mt-0.5 truncate text-[13px] font-medium text-on-surface-variant">{town}</p>}
           </div>
         </div>
-      )}
+        {tagline && <p className="mt-3 text-[13px] leading-relaxed text-on-surface-variant line-clamp-3">{tagline}</p>}
 
-      {/* Claim / Customize Modal */}
-      {showClaimModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-in fade-in duration-200">
-          <div className="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 relative overflow-hidden animate-in zoom-in-95 duration-200 text-slate-900">
-            <button
-              onClick={() => setShowClaimModal(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-full bg-slate-100 text-slate-500 hover:text-slate-800 transition-colors"
-            >
-              <X className="w-4 h-4" />
-            </button>
-
-            <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#0A5CFF] flex items-center justify-center font-bold">
-                <Store className="w-5 h-5 text-[#0A5CFF]" />
-              </div>
-              <div>
-                <h3 className="font-extrabold text-base leading-tight">
-                  {lang === "es" ? "¿Es el dueño o administrador?" : "Are you the owner or manager?"}
-                </h3>
-                <p className="text-xs text-[#0A5CFF] font-semibold">
-                  {storeInfo.name}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              <p>
-                {lang === "es"
-                  ? `DuoTaps proporciona este menú digital en español y asistente para ayudar a su establecimiento a atender cómodamente a clientes hispanohablantes.`
-                  : `DuoTaps provides this digital Spanish menu and guest assistant to help your establishment welcome Spanish-speaking diners.`}
-              </p>
-              <p>
-                {lang === "es"
-                  ? `Si desea verificar este perfil, actualizar platillos y precios con su menú oficial, o solicitar soportes físicos de código QR gratuitos para sus mesas, contáctenos directamente:`
-                  : `To verify this listing, update items and prices with your official menu, or request complimentary tabletop QR code stands for your restaurant, reach out directly:`}
-              </p>
-            </div>
-
-            {contactSubmitted ? (
-              <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-800 text-xs text-center font-bold space-y-1 my-3 animate-in fade-in">
-                <Check className="w-5 h-5 mx-auto text-emerald-600" />
-                <p>{lang === "es" ? "¡Mensaje recibido!" : "Message received!"}</p>
-                <p className="font-normal text-[11px] text-emerald-700">
-                  {lang === "es"
-                    ? "Nos pondremos en contacto a la brevedad."
-                    : "The DuoTaps team will follow up with you shortly."}
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSendContact} className="mt-3 space-y-2 border-t border-slate-100 pt-3">
-                <span className="text-[11px] font-bold text-slate-700 block">
-                  {lang === "es" ? "Enviar solicitud directa:" : "Send quick request:"}
-                </span>
-                <input
-                  type="text"
-                  placeholder={lang === "es" ? "Su correo o teléfono..." : "Your email or phone..."}
-                  value={contactInput}
-                  onChange={(e) => setContactInput(e.target.value)}
-                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#0A5CFF] bg-slate-50/50"
-                  required
-                />
-                <textarea
-                  placeholder={lang === "es" ? "Mensaje o cambios al menú..." : "Message or menu changes..."}
-                  value={messageInput}
-                  onChange={(e) => setMessageInput(e.target.value)}
-                  rows={2}
-                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#0A5CFF] bg-slate-50/50 resize-none"
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmittingContact}
-                  className="w-full py-2.5 bg-[#0A5CFF] text-white font-extrabold text-xs rounded-xl shadow-xs hover:brightness-110 transition-all flex items-center justify-center gap-1.5 disabled:opacity-50"
-                >
-                  {isSubmittingContact ? (
-                    <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                  ) : (
-                    <Send className="w-3.5 h-3.5" />
-                  )}
-                  <span>{lang === "es" ? "Enviar Solicitud" : "Send Request"}</span>
-                </button>
-              </form>
-            )}
-
-            <div className="pt-3 border-t border-slate-100 space-y-2">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
-                {lang === "es" ? "O contáctenos por:" : "Or contact us via:"}
+        <ul className="mt-5 space-y-2.5 text-[13px] font-medium text-on-surface">
+          {storeInfo.address && (
+            <li className="flex items-start gap-2.5">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <span>{storeInfo.address}</span>
+            </li>
+          )}
+          {hoursKnown && (
+            <li className="flex items-start gap-2.5">
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <span>
+                {lang === "es" ? "Lun–Vie " : "Mon–Fri "}
+                {hours.monday_friday}
               </span>
+            </li>
+          )}
+          {phoneOk && (
+            <li className="flex items-start gap-2.5">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <a href={`tel:${storeInfo.phone}`} className="hover:text-primary">{storeInfo.phone}</a>
+            </li>
+          )}
+        </ul>
 
-              <div className="grid grid-cols-2 gap-2">
-                {/* Open in Gmail */}
-                <a
-                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=contact@duotaps.com&su=${encodeURIComponent("Manage Menu for " + storeInfo.name)}&body=${encodeURIComponent("Hi DuoTaps,\n\nI am contacting you regarding: " + storeInfo.name + "\n\n")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-2.5 px-3 bg-red-50 text-red-700 border border-red-200/80 font-bold text-xs rounded-xl hover:bg-red-100 transition-all flex items-center justify-center gap-1.5 shadow-2xs"
-                >
-                  <Mail className="w-4 h-4 text-red-600" />
-                  <span>Open Gmail</span>
-                </a>
+        <a
+          href={mapsHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary mt-5 h-11 w-full text-[13px]"
+        >
+          <Navigation className="h-4 w-4" />
+          {t.directions}
+        </a>
 
-                {/* Default Mail app */}
-                <a
-                  href={`mailto:contact@duotaps.com?subject=Manage%20Menu%20for%20${encodeURIComponent(storeInfo.name)}`}
-                  className="py-2.5 px-3 bg-slate-100 text-slate-700 border border-slate-200 font-bold text-xs rounded-xl hover:bg-slate-200 transition-all flex items-center justify-center gap-1.5 shadow-2xs"
-                >
-                  <ExternalLink className="w-4 h-4 text-slate-500" />
-                  <span>Mail App</span>
-                </a>
-              </div>
-
-              {/* 1-Click Copy Email */}
+        <nav className="mt-6 flex flex-col gap-1.5" aria-label="Primary">
+          {NAV_TABS.map((tab) => {
+            const Icon = tab.icon;
+            const active = activeTab === tab.id;
+            return (
               <button
-                type="button"
-                onClick={handleCopyEmail}
-                className="w-full py-2 bg-slate-50 border border-slate-200 text-slate-700 font-semibold text-xs rounded-xl hover:bg-slate-100 transition-all flex items-center justify-center gap-1.5"
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                aria-current={active ? "page" : undefined}
+                className={`flex h-12 items-center gap-3 rounded-full px-4 text-[14px] font-semibold transition-all ${
+                  active ? "bg-navy text-white shadow-soft" : "text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                }`}
               >
-                {copiedEmail ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span className="text-emerald-700 font-bold">contact@duotaps.com copiado!</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-3.5 h-3.5 text-slate-400" />
-                    <span>{lang === "es" ? "Copiar correo: contact@duotaps.com" : "Copy: contact@duotaps.com"}</span>
-                  </>
-                )}
+                <Icon className="h-[19px] w-[19px]" strokeWidth={active ? 2.4 : 2} />
+                {lang === "es" ? tab.labelEs : tab.labelEn}
               </button>
+            );
+          })}
+        </nav>
 
-              {/* Instagram */}
-              <a
-                href="https://instagram.com/duotaps"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2 bg-slate-50 border border-slate-200 text-slate-700 font-bold text-xs rounded-xl hover:bg-slate-100 transition-all flex items-center justify-center gap-1.5"
-              >
-                <span>Instagram: @duotaps</span>
-              </a>
-            </div>
-          </div>
+        <div className="mt-auto flex items-center justify-between pt-5">
+          <LangToggle lang={lang} setLang={setLang} />
+          <button
+            onClick={() => setShowInfo(true)}
+            aria-label={t.info}
+            className="grid h-10 w-10 place-items-center rounded-full border border-white bg-white text-on-surface-variant shadow-soft transition-colors hover:text-primary"
+          >
+            <Info className="h-[18px] w-[18px]" />
+          </button>
         </div>
-      )}
+      </aside>
+
+      {/* ---------- Place info ---------- */}
+      <Sheet
+        open={showInfo}
+        onClose={() => setShowInfo(false)}
+        eyebrow={town || (lang === "es" ? "Información" : "Info")}
+        title={storeInfo.name}
+        footer={
+          <button
+            onClick={() => {
+              setShowInfo(false);
+              setShowClaim(true);
+            }}
+            className="text-[13px] font-semibold text-on-surface-variant underline decoration-outline-variant underline-offset-4 transition-colors hover:text-primary"
+          >
+            {lang === "es" ? "¿Es el dueño? Administrar este menú" : "Own this place? Manage this menu"}
+          </button>
+        }
+      >
+        <dl>
+          <div className={row}>
+            <dt className={label}>{lang === "es" ? "Dirección" : "Address"}</dt>
+            <dd className="text-[15px] font-medium text-on-surface">
+              {storeInfo.address}
+              <a href={mapsHref} target="_blank" rel="noopener noreferrer" className="mt-1 flex w-fit items-center gap-1 text-[13px] font-semibold text-primary">
+                {t.directions} <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            </dd>
+          </div>
+          {phoneOk && (
+            <div className={row}>
+              <dt className={label}>{lang === "es" ? "Teléfono" : "Phone"}</dt>
+              <dd className="text-[15px] font-medium">
+                <a href={`tel:${storeInfo.phone}`} className="text-on-surface hover:text-primary">{storeInfo.phone}</a>
+              </dd>
+            </div>
+          )}
+          <div className={row}>
+            <dt className={label}>{lang === "es" ? "Horario" : "Hours"}</dt>
+            <dd className="space-y-1 text-[15px] font-medium text-on-surface">
+              {([
+                [lang === "es" ? "Lun–Vie" : "Mon–Fri", hours.monday_friday],
+                [lang === "es" ? "Sáb" : "Sat", hours.saturday],
+                [lang === "es" ? "Dom" : "Sun", hours.sunday],
+              ] as const).map(([d, h]) => (
+                <div key={d} className="flex justify-between gap-4">
+                  <span className="text-on-surface-variant">{d}</span>
+                  <span className="text-right tabular-nums">{h || "—"}</span>
+                </div>
+              ))}
+            </dd>
+          </div>
+          {storeInfo.paymentMethods?.length > 0 && (
+            <div className={row}>
+              <dt className={label}>{lang === "es" ? "Pagos" : "Payment"}</dt>
+              <dd className="text-[15px] font-medium text-on-surface">{storeInfo.paymentMethods.map(payment).join(" · ")}</dd>
+            </div>
+          )}
+        </dl>
+      </Sheet>
+
+      {/* ---------- Owner contact ---------- */}
+      <Sheet
+        open={showClaim}
+        onClose={() => setShowClaim(false)}
+        eyebrow={lang === "es" ? "Para dueños" : "For owners"}
+        title={lang === "es" ? "Administrar este menú" : "Manage this menu"}
+      >
+        <p className="text-[15px] leading-relaxed text-on-surface-variant">
+          {lang === "es"
+            ? `Si ${storeInfo.name} es suyo, podemos verificar el menú con sus platillos y precios oficiales, y enviarle soportes con código QR gratis para las mesas.`
+            : `If ${storeInfo.name} is yours, we can match this menu to your official dishes and prices, and send you free QR stands for your tables.`}
+        </p>
+
+        {sent ? (
+          <div className="mt-5 rounded-2xl bg-surface-container-low p-4">
+            <p className="flex items-center gap-2 text-[15px] font-bold text-on-surface">
+              <Check className="h-4 w-4 text-emerald-600" />
+              {lang === "es" ? "Mensaje recibido" : "Message received"}
+            </p>
+            <p className="mt-1 text-sm text-on-surface-variant">
+              {lang === "es" ? "Nos pondremos en contacto pronto." : "We'll be in touch shortly."}
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={sendContact} className="mt-5 space-y-3">
+            <input
+              type="text"
+              required
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              placeholder={lang === "es" ? "Su correo o teléfono" : "Your email or phone"}
+              className="h-12 w-full rounded-2xl border border-outline-variant/70 bg-white px-4 text-[15px] font-medium text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            />
+            <textarea
+              rows={3}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder={lang === "es" ? "Cambios al menú (opcional)" : "Menu changes (optional)"}
+              className="w-full resize-none rounded-2xl border border-outline-variant/70 bg-white px-4 py-3 text-[15px] font-medium text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            />
+            <button type="submit" disabled={sending} className="btn-primary h-12 w-full text-sm disabled:opacity-60">
+              {sending && <Loader2 className="h-4 w-4 animate-spin" />}
+              {lang === "es" ? "Enviar" : "Send"}
+            </button>
+          </form>
+        )}
+
+        <div className="mt-5 flex items-center justify-between gap-3 border-t border-surface-container pt-4 text-[13px] font-medium text-on-surface-variant">
+          <span>
+            {lang === "es" ? "O escríbanos: " : "Or email "}
+            <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Manage menu for " + storeInfo.name)}`} className="font-semibold text-primary">
+              {EMAIL}
+            </a>
+          </span>
+          <button onClick={copyEmail} aria-label="Copy email" className="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-surface-container">
+            {copied ? <Check className="h-4 w-4 text-emerald-600" /> : <Copy className="h-4 w-4" />}
+          </button>
+        </div>
+      </Sheet>
     </>
   );
 }

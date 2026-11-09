@@ -88,7 +88,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
       <button
         key={item.id}
         onClick={() => setSelectedItem(item)}
-        className="group w-full text-left flex items-start gap-3 p-4 bg-white rounded-3xl border border-white shadow-soft hover:shadow-lift active:scale-[0.99] transition-all duration-200"
+        className="group w-full h-full text-left flex items-start gap-3 p-4 bg-white rounded-3xl border border-white shadow-soft hover:shadow-lift active:scale-[0.99] transition-all duration-200"
       >
         {item.image && (
           <img src={item.image} alt="" className="w-[72px] h-[72px] rounded-2xl object-cover shrink-0 bg-surface-container" />
@@ -133,16 +133,16 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
 
   const renderItems = (items: Product[]) =>
     viewMode === "list" ? (
-      <div className="flex flex-col gap-2.5">{items.map(renderRow)}</div>
+      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-3.5 lg:items-stretch">{items.map(renderRow)}</div>
     ) : (
-      <div className="grid grid-cols-2 gap-2.5">{items.map(renderTile)}</div>
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2.5 lg:gap-3.5">{items.map(renderTile)}</div>
     );
 
   return (
-    <div className="w-full max-w-md mx-auto px-4 pt-5 space-y-5">
+    <div className="w-full max-w-md md:max-w-2xl lg:max-w-5xl mx-auto px-4 lg:px-10 pt-5 lg:pt-10 space-y-5">
       {/* Intro */}
       <div>
-        <h2 className="text-[28px] leading-tight font-extrabold text-on-surface">
+        <h2 className="text-[28px] lg:text-[40px] leading-tight font-extrabold text-on-surface">
           {lang === "es" ? "Nuestro menú" : "Our menu"}
         </h2>
         <p className="mt-1 text-sm text-on-surface-variant font-medium">
@@ -255,17 +255,17 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
       {/* Item detail bottom sheet */}
       {selectedItem && (
         <div
-          className="fixed inset-0 z-50 flex items-end justify-center bg-navy/50 backdrop-blur-sm animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 flex items-end md:items-center justify-center bg-navy/40 backdrop-blur-[3px] md:p-6 animate-in fade-in duration-200"
           onClick={() => setSelectedItem(null)}
         >
           <div
             role="dialog"
             aria-modal="true"
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-md bg-white rounded-t-[32px] shadow-float animate-in slide-in-from-bottom duration-300 max-h-[86vh] overflow-y-auto"
+            className="relative w-full max-w-md md:max-w-lg bg-white rounded-t-[32px] md:rounded-[32px] shadow-float animate-in slide-in-from-bottom duration-300 max-h-[88vh] overflow-y-auto"
             style={{ paddingBottom: "max(24px, env(safe-area-inset-bottom))" }}
           >
-            <div className="mx-auto mt-2.5 h-1.5 w-10 rounded-full bg-surface-container-highest" />
+            <div className="mx-auto mt-2.5 h-1 w-9 rounded-full bg-surface-container-highest md:hidden" />
             <button
               onClick={() => setSelectedItem(null)}
               aria-label="Close"

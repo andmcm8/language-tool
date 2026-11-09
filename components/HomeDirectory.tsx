@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { isValidPhone } from "@/lib/phone";
 import { townFromAddress, taglineFor, swatchFor, initialsOf } from "@/lib/place";
+import Sheet from "@/components/Sheet";
 import { Search, X, MapPin, Phone, ChevronRight, Info, Languages, MessageSquareText, QrCode, Utensils } from "lucide-react";
 
 const DICT = {
@@ -27,10 +28,11 @@ const DICT = {
     f3: "AI assistant",
     f3d: "Ask about the menu in Spanish",
     footerText: "DuoTaps · Language Assistance Tool",
-    aboutTitle: "About DuoTaps",
-    aboutSub: "Bilingual menus & AI assistants",
+    aboutEyebrow: "About DuoTaps",
+    aboutHeadline: "Spanish menus for every Connecticut table.",
+    aboutCta: "Get in touch",
     aboutP1: "DuoTaps helps Connecticut restaurants, cafes and delis serve Spanish-speaking guests with instant bilingual menus and AI customer assistance.",
-    aboutP2: "Own a restaurant? Contact us to claim or customize your menu for free.",
+    aboutP2: "Own a restaurant? We'll verify your menu and set it up with your official dishes and prices, free.",
     done: "Done",
   },
   es: {
@@ -53,10 +55,11 @@ const DICT = {
     f3: "Asistente con IA",
     f3d: "Pregunta sobre el menú en español",
     footerText: "DuoTaps · Herramienta de Asistencia Lingüística",
-    aboutTitle: "Acerca de DuoTaps",
-    aboutSub: "Menús bilingües y asistentes con IA",
+    aboutEyebrow: "Acerca de DuoTaps",
+    aboutHeadline: "Menús en español para cada mesa de Connecticut.",
+    aboutCta: "Contáctenos",
     aboutP1: "DuoTaps ayuda a restaurantes, cafeterías y delis de Connecticut a atender a clientes hispanohablantes con menús bilingües y asistencia con IA.",
-    aboutP2: "¿Es dueño de un restaurante? Contáctenos para reclamar o personalizar su menú gratis.",
+    aboutP2: "¿Es dueño de un restaurante? Verificamos su menú con sus platillos y precios oficiales, gratis.",
     done: "Listo",
   },
 };
@@ -328,44 +331,21 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         © {new Date().getFullYear()} {t.footerText}
       </footer>
 
-      {/* INFO MODAL */}
-      {showInfoModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-end justify-center bg-navy/50 p-4 backdrop-blur-sm animate-in fade-in duration-200 sm:items-center"
-          onClick={() => setShowInfoModal(false)}
-        >
-          <div
-            role="dialog"
-            aria-modal="true"
-            onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-sm rounded-[28px] bg-white p-6 shadow-float animate-in slide-in-from-bottom duration-300"
-          >
-            <button
-              onClick={() => setShowInfoModal(false)}
-              aria-label="Close"
-              className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface"
-            >
-              <X className="h-4 w-4" />
-            </button>
-            <div className="flex items-center gap-3">
-              <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white shadow-soft border border-surface-container">
-                <img src="/logo.jpg" alt="" className="h-full w-full scale-110 object-cover" />
-              </span>
-              <div>
-                <h3 className="text-lg font-extrabold leading-tight text-on-surface">{t.aboutTitle}</h3>
-                <p className="text-xs font-semibold text-primary">{t.aboutSub}</p>
-              </div>
-            </div>
-            <div className="mt-4 space-y-3 text-sm leading-relaxed text-on-surface-variant">
-              <p>{t.aboutP1}</p>
-              <p className="font-semibold text-on-surface">{t.aboutP2}</p>
-            </div>
-            <button onClick={() => setShowInfoModal(false)} className="btn-primary mt-5 h-12 w-full text-sm">
-              {t.done}
-            </button>
-          </div>
-        </div>
-      )}
+      {/* ABOUT */}
+      <Sheet
+        open={showInfoModal}
+        onClose={() => setShowInfoModal(false)}
+        eyebrow={t.aboutEyebrow}
+        title={t.aboutHeadline}
+        footer={
+          <a href="mailto:contact@duotaps.com?subject=DuoTaps" className="btn-primary h-12 w-full text-sm">
+            {t.aboutCta}
+          </a>
+        }
+      >
+        <p className="text-[15px] leading-relaxed text-on-surface-variant">{t.aboutP1}</p>
+        <p className="mt-3 text-[15px] leading-relaxed text-on-surface-variant">{t.aboutP2}</p>
+      </Sheet>
     </main>
   );
 }

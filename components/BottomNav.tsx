@@ -11,18 +11,20 @@ interface BottomNavProps {
   lang: "es" | "en";
 }
 
+export const NAV_TABS = [
+  { id: "home" as TabType, labelEs: "Inicio", labelEn: "Home", icon: LayoutGrid },
+  { id: "catalog" as TabType, labelEs: "Menú", labelEn: "Menu", icon: BookOpen },
+  { id: "camera" as TabType, labelEs: "Traductor", labelEn: "Translate", icon: Languages },
+  { id: "assistant" as TabType, labelEs: "Asistente", labelEn: "Assistant", icon: MessageSquareText },
+];
+
 export default function BottomNav({ activeTab, setActiveTab, lang }: BottomNavProps) {
-  const tabs = [
-    { id: "home" as TabType, labelEs: "Inicio", labelEn: "Home", icon: LayoutGrid },
-    { id: "catalog" as TabType, labelEs: "Menú", labelEn: "Menu", icon: BookOpen },
-    { id: "camera" as TabType, labelEs: "Traductor", labelEn: "Translate", icon: Languages },
-    { id: "assistant" as TabType, labelEs: "Asistente", labelEn: "Assistant", icon: MessageSquareText },
-  ];
+  const tabs = NAV_TABS;
 
   return (
     <nav
       aria-label="Primary"
-      className="fixed inset-x-0 bottom-0 z-40 px-4 pointer-events-none"
+      className="fixed inset-x-0 bottom-0 z-40 px-4 pointer-events-none lg:hidden"
       style={{ paddingBottom: "max(14px, env(safe-area-inset-bottom))" }}
     >
       <div className="pointer-events-auto mx-auto max-w-md rounded-full bg-navy p-1.5 shadow-float">

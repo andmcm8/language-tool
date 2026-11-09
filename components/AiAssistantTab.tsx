@@ -40,14 +40,19 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   };
 
   const [activeMode, setActiveMode] = useState<"chat" | "voice">("chat");
-  const [messages, setMessages] = useState<Message[]>(() => {
-    if (typeof window !== "undefined") {
-      try {
-        const saved = localStorage.getItem(storageKey);
-        if (saved) {
-          const parsed = JSON.parse(saved);
-          if (Array.isArray(parsed) && parsed.length > 0) {
-            return parsed.map((m: Message) => ({
+  // Start from the welcome state on both server and client (reading localStorage during the
+  // first render caused a hydration mismatch); restore saved history right after mount.
+  const [messages, setMessages] = useState<Message[]>([defaultInitialMessage]);
+  const [historyLoaded, setHistoryLoaded] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setMessages(
+            parsed.map((m: Message) => ({
               ...m,
               text: m.text
                 ? m.text
@@ -56,15 +61,16 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
                     .replace(/El Sol/gi, merchant.storeInfo.name)
                     .replace(/Demo Store/gi, merchant.storeInfo.name)
                 : m.text,
-            }));
-          }
+            }))
+          );
         }
-      } catch (e) {
-        console.warn("Failed to load chat history:", e);
       }
+    } catch (e) {
+      console.warn("Failed to load chat history:", e);
     }
-    return [defaultInitialMessage];
-  });
+    setHistoryLoaded(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [storageKey]);
 
   const [inputQuery, setInputQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -73,20 +79,23 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   const [autoSpeak, setAutoSpeak] = useState(false);
   const recognitionRef = useRef<any>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  const threadRef = useRef<HTMLDivElement | null>(null);
 
   // Sync chat history to localStorage whenever messages change
   useEffect(() => {
-    if (typeof window !== "undefined" && messages.length > 0) {
+    if (historyLoaded && typeof window !== "undefined" && messages.length > 0) {
       try {
         localStorage.setItem(storageKey, JSON.stringify(messages));
       } catch (e) {
         console.warn("Failed to save chat history:", e);
       }
     }
-  }, [messages, storageKey]);
+  }, [messages, storageKey, historyLoaded]);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    // Scroll only the thread (never the page), and not on the initial welcome state.
+    const el = threadRef.current;
+    if (el && (messages.length > 1 || loading)) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
   }, [messages, loading, activeMode]);
 
   // Setup Web Speech Recognition API
@@ -277,7 +286,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
   const lastUserMessage = messages.filter((m) => m.sender === "user").slice(-1)[0]?.text;
 
   return (
-    <div className="w-full max-w-md mx-auto flex-1 flex flex-col h-[calc(100dvh-76px)] px-4 pt-4 pb-24 gap-3">
+    <div className="w-full max-w-md lg:max-w-3xl mx-auto shrink-0 flex flex-col h-[calc(100dvh-72px)] lg:h-screen px-4 lg:px-8 pt-4 lg:pt-8 pb-24 lg:pb-8 gap-3">
       {/* Top Bar: Mode Switcher (Voice Mode vs Chat Mode) */}
       <div className="flex items-center justify-between bg-white p-1.5 rounded-full border border-white shadow-soft">
         <div className="flex items-center gap-1">
@@ -330,32 +339,34 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       {/* VIEW MODE 1: VOICE-FIRST INTERACTIVE ASSISTANT (MICROPHONE SPHERE & SOUNDWAVES) */}
       {activeMode === "voice" ? (
         <div className="flex-1 flex flex-col justify-between bg-white rounded-[32px] p-6 border border-white shadow-soft relative overflow-hidden text-center space-y-4">
-          {/* Header Status Badge */}
-          <div className="flex items-center justify-center gap-2">
-            <span className="flex items-center gap-1.5 text-xs font-black text-[#0A5CFF] bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
-              <Sparkles className="w-3.5 h-3.5 text-[#0A5CFF]" />
-              {isListening
-                ? lang === "es" ? "Escuchando voz..." : "Listening to voice..."
-                : loading
-                ? lang === "es" ? "Procesando respuesta..." : "Generating answer..."
-                : isSpeaking
-                ? lang === "es" ? "Hablando respuesta..." : "Speaking response..."
-                : lang === "es" ? "Asistente de Voz Listo" : "Voice Assistant Ready"}
-            </span>
-          </div>
+          {/* Status */}
+          <p className="flex items-center justify-center gap-2 text-[13px] font-semibold text-on-surface-variant">
+            <span
+              className={`h-2 w-2 rounded-full ${
+                isListening ? "bg-rose-500 animate-pulse" : loading ? "bg-primary animate-pulse" : isSpeaking ? "bg-emerald-500 animate-pulse" : "bg-emerald-500"
+              }`}
+            />
+            {isListening
+              ? lang === "es" ? "Escuchando" : "Listening"
+              : loading
+              ? lang === "es" ? "Pensando" : "Thinking"
+              : isSpeaking
+              ? lang === "es" ? "Hablando" : "Speaking"
+              : lang === "es" ? "Listo para escuchar" : "Ready to listen"}
+          </p>
 
           {/* Dynamic Spoken Conversation Display (Streamlined & Compact) */}
           <div className="space-y-2 flex-1 flex flex-col justify-center max-w-xs mx-auto my-auto">
             {lastUserMessage && (
-              <div className="p-2 bg-slate-50 rounded-2xl border border-slate-100 text-xs font-medium text-slate-600 animate-in fade-in duration-200">
-                <span className="text-[9px] uppercase font-bold text-slate-400 block">
+              <div className="p-3 bg-surface-container-low rounded-2xl text-[13px] font-medium text-on-surface-variant line-clamp-3 animate-in fade-in duration-200">
+                <span className="text-[11px] uppercase tracking-wider font-bold text-on-surface-variant/70 block mb-0.5">
                   {lang === "es" ? "Usted dijo:" : "You said:"}
                 </span>
                 "{lastUserMessage}"
               </div>
             )}
 
-            <div className="p-3 bg-blue-50/70 rounded-2xl border border-blue-100 text-xs font-bold text-slate-800 leading-snug shadow-2xs">
+            <div className="p-4 bg-primary-fixed/60 rounded-2xl text-[14px] font-semibold text-on-surface leading-snug line-clamp-5">
               {lastAiMessage}
             </div>
           </div>
@@ -401,7 +412,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
                 <Mic className="w-10 h-10" />
               )}
 
-              <span className="text-[10px] font-black uppercase tracking-wider mt-1">
+              <span className="text-[11px] font-bold uppercase tracking-wider mt-1">
                 {isListening
                   ? lang === "es" ? "Detener" : "Stop"
                   : loading
@@ -448,7 +459,7 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
         /* VIEW MODE 2: TRADITIONAL CHAT THREAD WITH TEXT INPUT */
         <div className="flex-1 flex flex-col gap-3 min-h-0">
           {/* Chat thread (welcome state until the guest asks something) */}
-          <div className="flex-1 overflow-y-auto space-y-3 pr-0.5">
+          <div ref={threadRef} className="flex-1 min-h-0 overflow-y-auto space-y-3 pr-0.5">
             {messages.length <= 1 && !loading ? (
               <div className="pt-4 pb-2">
                 <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-gradient text-white shadow-brand">
