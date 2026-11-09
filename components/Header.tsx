@@ -209,7 +209,7 @@ export default function Header({ merchant, lang, setLang, activeTab, setActiveTa
                 onClick={() => setActiveTab(tab.id)}
                 aria-current={active ? "page" : undefined}
                 className={`flex h-12 items-center gap-3 rounded-full px-4 text-[14px] font-semibold transition-all ${
-                  active ? "bg-brand-gradient text-white shadow-brand" : "text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                  active ? "bg-navy text-white shadow-soft" : "text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
                 }`}
               >
                 <Icon className="h-[19px] w-[19px]" strokeWidth={active ? 2.4 : 2} />
