@@ -40,7 +40,7 @@ export default function BottomNav({ activeTab, setActiveTab, lang }: BottomNavPr
                 aria-label={lang === "es" ? tab.labelEs : tab.labelEn}
                 className={`flex h-12 items-center justify-center gap-1.5 rounded-full text-[13px] font-semibold transition-all duration-300 ${
                   isActive
-                    ? "flex-[2.2] bg-brand-gradient text-white shadow-brand"
+                    ? "flex-[2.2] bg-navy text-white shadow-soft"
                     : "flex-1 text-on-surface-variant hover:text-on-surface"
                 }`}
               >
