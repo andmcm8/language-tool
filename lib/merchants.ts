@@ -1,6 +1,7 @@
 import { MerchantConfig } from "@/types/merchant";
 import { MERCHANTS_REGISTRY } from "@/data/merchants/registry";
 import VERIFIED_MENUS from "@/data/verified-menus.json";
+import REMOVED_PLACES from "@/data/removed-places.json";
 
 /*
  * SERVER-ONLY: this module imports every merchant JSON (~27 MB). Import it
@@ -8,6 +9,15 @@ import VERIFIED_MENUS from "@/data/verified-menus.json";
  * receive a merchant as a prop, and use "@/lib/phone" for isValidPhone.
  */
 export { isValidPhone } from "./phone";
+
+/**
+ * Places we could not find any trace of online (or that have closed) are listed in
+ * data/removed-places.json with the reason. They are hidden from the directory and their
+ * pages return 404. Delete an entry from that file to restore a place.
+ */
+export function isRemovedPlace(id: string): boolean {
+  return Object.prototype.hasOwnProperty.call(REMOVED_PLACES, (id || "").toLowerCase().trim());
+}
 
 /** Returns the registry key for an ID/slug/name, or null if nothing matches. */
 function resolveMerchantKey(id: string): string | null {
@@ -19,6 +29,7 @@ function resolveMerchantKey(id: string): string | null {
     // malformed %-escape → use the raw id
   }
   const normalizedId = decoded.toLowerCase().trim();
+  if (isRemovedPlace(normalizedId)) return null;
 
   // Direct access for /demo or /demo-market
   if (normalizedId === "demo" || normalizedId === "demo-market" || normalizedId === "demomarket" || normalizedId === "elsol") {
@@ -31,7 +42,7 @@ function resolveMerchantKey(id: string): string | null {
 
   // 1. Match ignoring hyphens/underscores/spaces (e.g. "thefarmkitchenct" -> "the-farm-kitchen-ct")
   const strippedId = normalizedId.replace(/[-_\s]/g, "");
-  const keys = Object.keys(MERCHANTS_REGISTRY);
+  const keys = Object.keys(MERCHANTS_REGISTRY).filter((k) => !isRemovedPlace(k));
   const matchedKey = keys.find((k) => k.replace(/[-_\s]/g, "") === strippedId);
   if (matchedKey) return matchedKey;
 
@@ -81,6 +92,7 @@ export function getAllMerchants(): MerchantConfig[] {
     if (id === "demo" || id === "elsol" || name.includes("demo market")) {
       return false;
     }
+    if (isRemovedPlace(id)) return false;
     const placeKey = `${name.trim()}|${(m.storeInfo?.address || "").toLowerCase().trim()}`;
     if (seen.has(id) || seen.has(placeKey)) return false;
     seen.add(id);
