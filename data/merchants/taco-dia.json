@@ -2,26 +2,18 @@
   "storeInfo": {
     "id": "taco-dia",
     "name": "Taco Dia",
-    "tagline": "Modern Mexican Cuisine & 100% Gluten-Free Kitchen / Cocina Mexicana Moderna 100% Libre de Gluten",
-    "address": "15 Church Hill Rd, Newtown, CT 06470",
-    "phone": "",
+    "tagline": "Restaurant in Newtown | Restaurant en Newtown",
+    "address": "32 Church Hill Rd. Newtown, CT 06470",
+    "phone": "(203) 304-1865",
     "hours": {
-      "monday_friday": "11:00 AM - 9:30 PM",
-      "saturday": "11:30 AM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating",
-      "100% Gluten-Free"
+      "Online Ordering"
     ],
     "themeColor": "#be123c",
     "logoIcon": "utensils",
@@ -33,271 +25,1296 @@
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "to-share",
+      "nameEs": "Para compartir",
+      "nameEn": "To Share",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales y Antojitos",
-      "nameEn": "Mains & Handhelds",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades y Tacos",
-      "nameEn": "Specialties & Tacos",
+      "id": "quesadillas",
+      "nameEs": "Quesadillas",
+      "nameEn": "Quesadillas",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "handhelds",
+      "nameEs": "Para comer con las manos",
+      "nameEn": "Handhelds",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tacos-served-family-style",
+      "nameEs": "Tacos (servidos estilo familiar)",
+      "nameEn": "Tacos (served family style)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "bowls-served-with-seasoned-brown-rice-sub-cauliflower-rice-3",
+      "nameEs": "Bowls (servidos con arroz integral sazonado. sustituir por arroz de coliflor +3)",
+      "nameEn": "Bowls (served with seasoned brown rice. sub cauliflower rice +3)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "entrees",
+      "nameEs": "Platos fuertes",
+      "nameEn": "Entrees",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cocktails",
+      "nameEs": "Cócteles",
+      "nameEn": "Cocktails",
+      "icon": "Utensils"
+    },
+    {
+      "id": "margaritas",
+      "nameEs": "Margaritas",
+      "nameEn": "Margaritas",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cerveza-bottles-cans",
+      "nameEs": "Cerveza - Botellas y latas",
+      "nameEn": "Cerveza - Bottles & Cans",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cerveza-draught",
+      "nameEs": "Cerveza - De barril",
+      "nameEn": "Cerveza - Draught",
+      "icon": "Utensils"
+    },
+    {
+      "id": "seltzers-ciders-non-alcoholic",
+      "nameEs": "Seltzers, sidras y sin alcohol",
+      "nameEn": "Seltzers, Ciders & Non-Alcoholic",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-whites",
+      "nameEs": "Vinos - blancos",
+      "nameEn": "Wine - Whites",
+      "icon": "Utensils"
+    },
+    {
+      "id": "wine-reds",
+      "nameEs": "Vino - Tintos",
+      "nameEn": "Wine - Reds",
+      "icon": "Utensils"
+    },
+    {
+      "id": "free-spirit-non-alcoholic",
+      "nameEs": "Free-Spirit (sin alcohol)",
+      "nameEn": "Free-Spirit (Non-Alcoholic)",
+      "icon": "Utensils"
+    },
+    {
+      "id": "soft-drinks",
+      "nameEs": "Refrescos",
+      "nameEn": "Soft Drinks",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "brunch",
+      "nameEs": "Brunch",
+      "nameEn": "Brunch",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "taco-dia-01",
-      "categoryId": "appetizers",
-      "nameEs": "Chips y Guacamole Fresco",
-      "nameEn": "Chips & Guac",
-      "descriptionEs": "Aguacate fresco preparado al momento con jalapeño, cilantro, limón, cebolla y rábano. Servido con totopos hechos en casa.",
-      "descriptionEn": "Freshly prepared guacamole with jalapeño, cilantro, lime, onion, and radish. Served with house-made corn tortilla chips.",
-      "price": "$12.95",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten",
-        "Fresco"
-      ],
-      "allergens": [],
+      "id": "chips-guac-v",
+      "categoryId": "to-share",
+      "nameEs": "Chips y guacamole (V)",
+      "nameEn": "Chips & Guac (V)",
+      "descriptionEs": "jalapeño. cilantro. limón. cebolla. rábano. agrega - tocino. elote asado. o pepitas. +3 c/u.",
+      "descriptionEn": "jalapeño. cilantro. lime. onion. radish. add - bacon. roasted corn. or pepitas. +3 ea.",
+      "price": "12.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-02",
-      "categoryId": "appetizers",
-      "nameEs": "Elote Callejero Desgranado",
+      "id": "dia-nachos",
+      "categoryId": "to-share",
+      "nameEs": "Nachos Dia",
+      "nameEn": "Dia Nachos",
+      "descriptionEs": "totopos. salsa de queso. monterey. pico. jalapeño. aceitunas negras. lechuga. crema. salsa roja. agrega - guacamole +4. carnitas. tinga. res +5.50.",
+      "descriptionEn": "chips. queso sauce. monterey. pico. jalapeño. black olives. lettuce. crema. salsa roja. add - guac +4. carnitas. tinga. beef +5.50.",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caldo-de-res",
+      "categoryId": "to-share",
+      "nameEs": "Caldo de Res",
+      "nameEn": "Caldo de Res",
+      "descriptionEs": "res cocida a fuego lento. mirepoix. elote. col. jitomates. caldo de res. queso fresco. cilantro.",
+      "descriptionEn": "slow cooked beef. mirepoix. corn. cabbage. tomatoes. beef broth. queso fresco. cilantro.",
+      "price": "10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tenders-6pc",
+      "categoryId": "to-share",
+      "nameEs": "Tiras de pollo (6 pzas)",
+      "nameEn": "Chicken Tenders (6pc)",
+      "descriptionEs": "mango deshidratado. cebollín. a elegir - miel de chipotle. BBQ. o habanero picante.",
+      "descriptionEn": "dried mango. scallions. choice of - chipotle honey. bbq. or spicy habanero.",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dia-wings-8pc",
+      "categoryId": "to-share",
+      "nameEs": "Alitas Dia (8 pzas)",
+      "nameEn": "Dia Wings (8pc)",
+      "descriptionEs": "mango deshidratado. cebollín. aderezo ranch de ají. a elegir - miel de chipotle. BBQ. o habanero picante.",
+      "descriptionEn": "dried mango. scallions. aji ranch. choice of - chipotle honey. bbq. or spicy habanero.",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "elote-off-the-cob",
+      "categoryId": "to-share",
+      "nameEs": "Elote sin mazorca",
       "nameEn": "Elote off the Cob",
-      "descriptionEs": "Elote asado en sartén de hierro fundido con limón a la parrilla, tajín y queso cotija.",
-      "descriptionEn": "Cast iron street corn with grilled lime, tajin, and cotija cheese.",
-      "price": "$11.95",
-      "popular": false,
-      "badge": "Vegetariano",
-      "tags": [
-        "Vegetariano",
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "descriptionEs": "elote callejero en sartén de hierro. limón a la parrilla. Tajín. cotija.",
+      "descriptionEn": "cast iron street corn. grilled lime. tajin. cotija.",
+      "price": "11.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-03",
-      "categoryId": "appetizers",
-      "nameEs": "Ceviche de Camarón",
+      "id": "crispy-pork-belly",
+      "categoryId": "to-share",
+      "nameEs": "Panceta de cerdo crujiente",
+      "nameEn": "Crispy Pork Belly",
+      "descriptionEs": "vegetales encurtidos. microgreens. salsa teriyaki.",
+      "descriptionEn": "pickled vegetables. microgreens. salsa teriyaki.",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-ceviche",
+      "categoryId": "to-share",
+      "nameEs": "Ceviche de camarón",
       "nameEn": "Shrimp Ceviche",
-      "descriptionEs": "Camarones pochados en jugo de limón fresco con tomates, cebollas rojas, jalapeños y cilantro. Servido con chips de plátano crujientes.",
-      "descriptionEn": "Poached shrimp in lime juice with tomatoes, red onions, jalapeños, and cilantro. Served with plantain chips.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Recomendado",
-      "tags": [
-        "Sin Gluten",
-        "Mariscos"
-      ],
-      "allergens": [
-        "Mariscos"
-      ],
+      "descriptionEs": "camarón pochado. jugo de limón. jitomates. cebolla morada. jalapeños. cilantro. servido con chips de plátano macho.",
+      "descriptionEn": "poached shrimp. lime juice. tomatoes. red onions. jalapeños. cilantro. served with plantain chips.",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-04",
-      "categoryId": "mains",
+      "id": "brussels-sprouts-v",
+      "categoryId": "to-share",
+      "nameEs": "Coles de Bruselas (V)",
+      "nameEn": "Brussels Sprouts (V)",
+      "descriptionEs": "zanahoria en láminas. pepitas. rábano. vinagreta de chile y yuzu.",
+      "descriptionEn": "shaved carrots. pepitas. radish. chili yuzu vinaigrette.",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "patatas-bravas",
+      "categoryId": "to-share",
+      "nameEs": "Patatas Bravas",
+      "nameEn": "Patatas Bravas",
+      "descriptionEs": "papas fritas. carnitas. jitomate. crema. salsa de jitomate y chile.",
+      "descriptionEn": "fried potatoes. carnitas. tomato. crema. tomato chili sauce.",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada César",
+      "nameEn": "Caesar Salad",
+      "descriptionEs": "crutones de ajo. cotija. elote. zanahoria en láminas. aderezo César de aguacate.",
+      "descriptionEn": "garlic croutons. cotija. corn. shaved carrots. avocado caesar dressing.",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chili-lime-corn-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada de elote con chile y limón",
+      "nameEn": "Chili Lime Corn Salad",
+      "descriptionEs": "kale. jitomates cherry. habanero encurtido. cebolla morada. queso fresco. elote. aguacate. rábano. vinagreta de chipotle y limón.",
+      "descriptionEn": "kale. grape tomatoes. pickled habanero. red onions. queso fresco. corn. avocado. radish. chipotle lime vinaigrette.",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dia-salad",
+      "categoryId": "salads",
+      "nameEs": "Ensalada Dia",
+      "nameEn": "Dia Salad",
+      "descriptionEs": "kale y romana mixtos. aguacate. pepinos. jalapeño. mangos. jitomates cherry. vinagreta de la casa. agrega - pollo a la parrilla +6. pollo crujiente +7.50. camarón +8. salmón. carne +10.",
+      "descriptionEn": "mixed kale and romaine. avocado. cucumbers. jalapeño. mangoes. cherry tomatoes. house vinaigrette. add - grilled chicken +6. crispy chicken +7.50. shrimp +8. salmon. steak +10.",
+      "price": "16.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "queso-black-beans-peppers-onions",
+      "categoryId": "quesadillas",
+      "nameEs": "Queso, frijoles negros, pimientos y cebolla",
+      "nameEn": "Queso, Black Beans, Peppers & Onions",
+      "descriptionEs": "cotija. pico de gallo. jalapeños encurtidos. crema. lechuga en láminas. agrega - tinga. carnitas. res +5.50. birria +8.50. camarón +9. carne +10.",
+      "descriptionEn": "cotija. pico de gallo. pickled jalapeños. crema. shaved lettuce. add - tinga. carnitas. beef +5.50. birria +8.50. shrimp +9. steak +10.",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "burrito-grande",
+      "categoryId": "handhelds",
       "nameEs": "Burrito Grande",
       "nameEn": "Burrito Grande",
-      "descriptionEs": "Arroz, frijoles, pimientos y cebollas, maíz, pico de gallo, aguacate, crema agria y queso Monterey envuelto a la perfección.",
-      "descriptionEn": "Rice, beans, peppers & onions, corn, pico, avocado, crema, and monterey cheese wrapped in a flour tortilla.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Clásico",
-      "tags": [
-        "Abundante"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "descriptionEs": "arroz. frijoles. pimientos y cebolla. elote. pico. aguacate. crema. monterey. agrega - guacamole. aguacate +4. tinga +5. pollo a la parrilla. carnitas. res +6. birria. camarón +9. carne +10.",
+      "descriptionEn": "rice. beans. peppers & onions. corn. pico. avocado. crema. monterey. add - guac. avocado +4. tinga +5. grilled chicken. carnitas. beef +6. birria. shrimp +9. steak +10.",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-05",
-      "categoryId": "mains",
-      "nameEs": "Dia Crunch Wrap",
+      "id": "dia-crunch-wrap",
+      "categoryId": "handhelds",
+      "nameEs": "Crunch Wrap Dia",
       "nameEn": "Dia Crunch Wrap",
-      "descriptionEs": "Queso fundido, frijoles, pico de gallo, tostada crujiente y lechuga fresca en una tortilla dorada.",
-      "descriptionEn": "Melted cheese, beans, pico, crispy tostada shell, and lettuce wrapped and seared.",
-      "price": "$15.95",
-      "popular": false,
-      "badge": "Nuevo",
-      "tags": [
-        "Crujiente"
-      ],
-      "allergens": [
-        "Lácteos",
-        "Gluten"
-      ],
+      "descriptionEs": "queso. frijoles. pico. tostada crujiente. lechuga. agrega - guacamole. aguacate +4. tinga +5. pollo a la parrilla. carnitas. res +6. birria. camarón +9. carne +10.",
+      "descriptionEn": "cheese. beans. pico. crispy tostada. lettuce. add - guac. avocado +4. tinga +5. grilled chicken. carnitas. beef +6. birria. shrimp +9. steak +10.",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-06",
-      "categoryId": "mains",
-      "nameEs": "Torta de Pollo Mango Habanero",
+      "id": "mango-habanero-chicken-torta",
+      "categoryId": "handhelds",
+      "nameEs": "Torta de pollo con mango y habanero",
       "nameEn": "Mango Habanero Chicken Torta",
-      "descriptionEs": "Pollo crujiente o a la parrilla, salsa de mango habanero, ensalada de repollo con cilantro y limón, lechuga, cebolla morada encurtida y aguacate.",
-      "descriptionEn": "Crispy or grilled chicken, mango habanero sauce, cilantro-lime slaw, lettuce, pickled red onions, and avocado.",
-      "price": "$15.95",
-      "popular": true,
-      "badge": "Picante",
-      "tags": [
-        "Picante",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "descriptionEs": "pollo crujiente o a la parrilla. salsa de mango y habanero. ensalada de cilantro y limón. lechuga. cebolla morada encurtida. aguacate. a elegir - sándwich o wrap. agrega - arroz y frijoles. papas a la francesa. ensalada +3. disco fries +4.",
+      "descriptionEn": "crispy or grilled chicken. mango habanero sauce. cilantro-lime slaw. lettuce. pickled red onions. avocado. choice of - sandwich or wrap. add - rice & beans. fries. salad +3. disco fries +4.",
+      "price": "15.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-07",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Birria de Res",
-      "nameEn": "Beef Birria Tacos",
-      "descriptionEs": "Carne de res deshebrada y marinada, queso monterey, cilantro, cebolla, cotija y consomé caliente para sumergir.",
-      "descriptionEn": "Shredded and marinated beef, monterey cheese, cilantro, onion, cotija, served with rich consomme.",
-      "price": "$5.95",
-      "popular": true,
-      "badge": "Estrella",
-      "tags": [
-        "Sin Gluten",
-        "Especialidad"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "crispy-el-americano",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "El Americano crujiente",
+      "nameEn": "Crispy El Americano",
+      "descriptionEs": "carne molida. monterey. pico. crema. lechuga. tortilla crujiente",
+      "descriptionEn": "ground beef. monterey. pico. crema. lettuce. crispy tortilla shell",
+      "price": "4.75",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-08",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Pescado Baja",
-      "nameEn": "Baja Fish Tacos",
-      "descriptionEs": "Mahi-mahi frito en masa ligera, ensalada de repollo rallado, mango fresco y mayonesa cítrica.",
-      "descriptionEn": "Fried mahi-mahi, shaved cabbage slaw, fresh mango, and citrus mayo.",
-      "price": "$5.95",
-      "popular": false,
-      "badge": "Fresco",
-      "tags": [
-        "Mariscos"
-      ],
-      "allergens": [
-        "Pescado",
-        "Gluten"
-      ],
+      "id": "chicken-tinga",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Tinga de pollo",
+      "nameEn": "Chicken Tinga",
+      "descriptionEs": "pollo deshebrado y marinado. alioli de chile. cotija.",
+      "descriptionEn": "shredded & marinated chicken. chili aioli. cotija.",
+      "price": "4.75",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-09",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Carnitas de Puerco al Rojo",
-      "nameEn": "Red Pork Carnitas Tacos",
-      "descriptionEs": "Carnitas de cerdo tiernas con ensalada de jalapeño, tajin, limón y alioli de chipotle.",
-      "descriptionEn": "Tender pork carnitas with jalapeño salad, tajin, lime, and chipotle aioli.",
-      "price": "$4.95",
-      "popular": true,
-      "badge": "Tradicional",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "champinon-v",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Champiñón (V)",
+      "nameEn": "Champiñon (V)",
+      "descriptionEs": "portobellos asados. zanahoria en láminas. cebollas encurtidas. chimichurri.",
+      "descriptionEn": "roasted portobellos. shaved carrots. pickled onions. chimichurri.",
+      "price": "4.75",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-10",
-      "categoryId": "specialties",
-      "nameEs": "Tacos de Carne Asada",
-      "nameEn": "Carne Asada Tacos",
-      "descriptionEs": "Churrasco jugoso a la parrilla, cebollas, pimientos, queso fresco y chimichurri casero.",
-      "descriptionEn": "Churrasco steak, onions, peppers, queso fresco, and house chimichurri.",
-      "price": "$5.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "chipotle-honey-chicken",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Pollo con miel de chipotle",
+      "nameEn": "Chipotle-Honey Chicken",
+      "descriptionEs": "pollo crujiente. salsa de miel de chipotle. cotija. ensalada de habanero. cebolla morada.",
+      "descriptionEn": "crispy chicken. chipotle honey sauce. cotija. habanero slaw. red onion.",
+      "price": "4.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-11",
-      "categoryId": "specialties",
-      "nameEs": "Tazón de Atún Ahi",
+      "id": "red-pork-carnitas",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Carnitas de cerdo rojas",
+      "nameEn": "Red Pork Carnitas",
+      "descriptionEs": "ensalada de jalapeño. Tajín. limón. alioli de chipotle.",
+      "descriptionEn": "jalapeño salad. tajin. lime. chipotle aioli.",
+      "price": "4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baja-fish",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Pescado estilo Baja",
+      "nameEn": "Baja Fish",
+      "descriptionEs": "mahi-mahi frito. ensalada de col en láminas. mango. mayonesa cítrica.",
+      "descriptionEn": "fried mahi-mahi. shaved cabbage-slaw. mango. citrus mayo.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "camarones-lime",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Camarones y limón",
+      "nameEn": "Camarones & Lime",
+      "descriptionEs": "camarón marinado en cítricos. cilantro. pico. mayonesa de chile. salsa de elote.",
+      "descriptionEn": "citrus marinated shrimp. cilantro. pico. chili mayo. corn salsa.",
+      "price": "5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "beef-birria",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Birria de res",
+      "nameEn": "Beef Birria",
+      "descriptionEs": "res deshebrada y marinada. monterey. cilantro. cebolla. cotija. consomé.",
+      "descriptionEn": "shredded and marinated beef. monterey. cilantro. onion. cotija. consomme.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seared-ahi-tuna",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Atún ahi sellado",
+      "nameEn": "Seared Ahi Tuna",
+      "descriptionEs": "atún sellado. mango. ensalada de col. pico. alioli de ajonjolí tostado.",
+      "descriptionEn": "seared tuna. mango. cabbage slaw. pico. toasted sesame aioli.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "carne-asada",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Carne asada",
+      "nameEn": "Carne Asada",
+      "descriptionEs": "churrasco. cebollas. pimientos. queso fresco. chimichurri.",
+      "descriptionEn": "churrasco. onions. peppers. queso fresco. chimichurri.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "al-pastor",
+      "categoryId": "tacos-served-family-style",
+      "nameEs": "Al Pastor",
+      "nameEn": "Al Pastor",
+      "descriptionEs": "cebollas caramelizadas. piña. pimientos peppadew. salsa de jitomate chamuscado. sustituir por envoltura de lechuga en cualquier taco +.50.",
+      "descriptionEn": "caramelized onions. pineapple. peppadew peppers. charred tomato salsa. sub lettuce wraps on any taco +.50.",
+      "price": "5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tuna-bowl",
+      "categoryId": "bowls-served-with-seasoned-brown-rice-sub-cauliflower-rice-3",
+      "nameEs": "Bowl de atún",
       "nameEn": "Tuna Bowl",
-      "descriptionEs": "Atún Ahi grado sashimi en cubos, maíz, edamame, rábano, pepinos, mangos, salsa de sésamo y soja sin gluten, aguacate y aderezo de mango y chili.",
-      "descriptionEn": "Diced sashimi grade Ahi tuna, corn, edamame, shaved radish, cucumbers, mangoes, GF sesame soy, avocado, and mango chili dressing over seasoned rice.",
-      "price": "$22.95",
-      "popular": true,
-      "badge": "Saludable",
-      "tags": [
-        "Sin Gluten",
-        "Saludable"
-      ],
-      "allergens": [
-        "Pescado",
-        "Soja"
-      ],
+      "descriptionEs": "ATÚN AHI EN CUBOS CALIDAD SASHIMI. elote. edamame. rábano en láminas. pepinos. mangos. soya y ajonjolí SG. aguacate. aderezo de mango y chile.",
+      "descriptionEn": "DICED SASHIMI GRADE AHI TUNA. corn. edamame. shaved radish. cucumbers. mangoes. GF sesame soy. avocado. mango chili dressing.",
+      "price": "22.95",
       "ctaType": "in_store"
     },
     {
-      "id": "taco-dia-12",
-      "categoryId": "beverages",
-      "nameEs": "Margarita Clásica de la Casa",
-      "nameEn": "House Margarita",
-      "descriptionEs": "Tequila 100% de agave, licor de naranja triple sec, jugo de limón fresco recién exprimido y borde salado.",
-      "descriptionEn": "100% agave tequila, orange liqueur, freshly squeezed lime juice, and a salted rim.",
-      "price": "$12.00",
-      "popular": true,
-      "badge": "Cocktail",
-      "tags": [
-        "Bebida con Alcohol",
-        "Refrescante"
-      ],
-      "allergens": [],
+      "id": "crispy-chicken-bowl",
+      "categoryId": "bowls-served-with-seasoned-brown-rice-sub-cauliflower-rice-3",
+      "nameEs": "Bowl de pollo crujiente",
+      "nameEn": "Crispy Chicken Bowl",
+      "descriptionEs": "guacamole. queso fresco. pico de gallo. alioli de chipotle y limón. salsa dragón.",
+      "descriptionEn": "guacamole. queso fresco. pico de gallo. chipotle lime aioli. dragon salsa.",
+      "price": "19.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "shrimp-bowl",
+      "categoryId": "bowls-served-with-seasoned-brown-rice-sub-cauliflower-rice-3",
+      "nameEs": "Bowl de camarón",
+      "nameEn": "Shrimp Bowl",
+      "descriptionEs": "salsa de elote. salsa asada callejera. cebollas moradas encurtidas.",
+      "descriptionEn": "corn salsa. street asada sauce. pickled red onions.",
+      "price": "21.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-burrito-bowl-v",
+      "categoryId": "bowls-served-with-seasoned-brown-rice-sub-cauliflower-rice-3",
+      "nameEs": "Bowl de burrito vegetariano (V)",
+      "nameEn": "Veggie Burrito Bowl (V)",
+      "descriptionEs": "portobello asado. cebollas rojas asadas. elote. salsa de tofu y limón.",
+      "descriptionEn": "roasted portobello. roasted red onions. corn. tofu lime sauce.",
+      "price": "17.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pan-seared-churrasco",
+      "categoryId": "entrees",
+      "nameEs": "Churrasco dorado en sartén",
+      "nameEn": "Pan Seared Churrasco",
+      "descriptionEs": "arrachera sellada. arroz mexicano. espárragos a la parrilla. coulis de chimichurri. patatas bravas.",
+      "descriptionEn": "seared skirt steak. mexican rice. grilled asparagus. chimichurri couli. patatas bravas.",
+      "price": "29.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "street-corn-risotto",
+      "categoryId": "entrees",
+      "nameEs": "Risotto de elote callejero",
+      "nameEn": "Street Corn Risotto",
+      "descriptionEs": "cebollas. pimientos. cotija. Tajín. arroz arborio. agrega - pollo a la parrilla +6. camarón +8. salmón. carne +10.",
+      "descriptionEn": "onions. peppers. cotija. tajin. arborio rice. add - grilled chicken +6. shrimp +8. salmon. steak +10.",
+      "price": "23.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "curly-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas fritas rizadas",
+      "nameEn": "Curly Fries",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "6.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "disco-fries",
+      "categoryId": "sides",
+      "nameEs": "Papas disco",
+      "nameEn": "Disco Fries",
+      "descriptionEs": "salsa de queso. consomé de birria. cotija.",
+      "descriptionEn": "queso sauce. birria consomme. cotija.",
+      "price": "7.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cucumber-kim-chi-pickles-v",
+      "categoryId": "sides",
+      "nameEs": "Pepino y encurtidos de kimchi (V)",
+      "nameEn": "Cucumber & Kim-Chi Pickles (V)",
+      "descriptionEs": "togarashi de ancho ahumado. limón. cilantro.",
+      "descriptionEn": "smoked ancho togarashi. lime. cilantro.",
+      "price": "4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "crispy-plantains",
+      "categoryId": "sides",
+      "nameEs": "Plátanos crujientes",
+      "nameEn": "Crispy Plantains",
+      "descriptionEs": "queso fresco. Tajín. alioli de ajo.",
+      "descriptionEn": "queso fresco. tajin. garlic aioli.",
+      "price": "4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seasoned-rice-beans-v",
+      "categoryId": "sides",
+      "nameEs": "Arroz y frijoles sazonados (V)",
+      "nameEn": "Seasoned Rice & Beans (V)",
+      "descriptionEs": "salsa roja. pico de gallo.",
+      "descriptionEn": "roja. pico de gallo.",
+      "price": "4.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dia-colada",
+      "categoryId": "cocktails",
+      "nameEs": "Colada Dia",
+      "nameEn": "Dia Colada",
+      "descriptionEs": "ron oscuro. coco. piña. limón. jarabe simple.",
+      "descriptionEn": "dark rum. coconut. pineapple. lime. simple.",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-mule",
+      "categoryId": "cocktails",
+      "nameEs": "Mule mexicano",
+      "nameEn": "Mexican Mule",
+      "descriptionEs": "mi campo reposado. limón. cerveza de jengibre.",
+      "descriptionEn": "mi campo reposado. lime. ginger beer.",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "santeria",
+      "categoryId": "cocktails",
+      "nameEs": "Santeria",
+      "nameEn": "Santeria",
+      "descriptionEs": "ginebra botánica. lavanda. jamaica. pitahaya. refresco de toronja.",
+      "descriptionEn": "botanical gin. lavender. hibiscus. dragonfruit. grapefruit soda.",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherry-bomb",
+      "categoryId": "cocktails",
+      "nameEs": "Cherry Bomb",
+      "nameEn": "Cherry Bomb",
+      "descriptionEs": "vodka de vainilla. amaretto. cereza. limón.",
+      "descriptionEn": "vanilla vodka. amaretto. cherry. lime.",
+      "price": "12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-sangria",
+      "categoryId": "cocktails",
+      "nameEs": "Sangría de fresa",
+      "nameEn": "Strawberry Sangria",
+      "descriptionEs": "vino blanco. fresa. ron. limón.",
+      "descriptionEn": "white wine. strawberry. rum. lemon.",
+      "price": "12.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pineapple-haze",
+      "categoryId": "cocktails",
+      "nameEs": "Pineapple Haze",
+      "nameEn": "Pineapple Haze",
+      "descriptionEs": "mezcal. jalapeño. jugo de piña. limón. cereza.",
+      "descriptionEn": "mezcal. jalapeño. pineapple juice. lime. cherry.",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mezcal-negroni",
+      "categoryId": "cocktails",
+      "nameEs": "Negroni de mezcal",
+      "nameEn": "Mezcal Negroni",
+      "descriptionEs": "mezcal Ojo de Tigre. Campari. Cointreau. vermut dulce. cáscara de naranja.",
+      "descriptionEn": "ojo de tigre mezcal. campari. cointreau. sweet vermouth. orange peel.",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "orange-whip",
+      "categoryId": "cocktails",
+      "nameEs": "Orange Whip",
+      "nameEn": "Orange Whip",
+      "descriptionEs": "vodka de vainilla. mermelada de naranja. limón. jarabe simple. nuez moscada.",
+      "descriptionEn": "vanilla vodka. orange marmalade. lime. simple. nutmeg.",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wallflower",
+      "categoryId": "cocktails",
+      "nameEs": "Wallflower",
+      "nameEn": "Wallflower",
+      "descriptionEs": "tequila mi campo reposado. jarabe simple de jamaica. limón. jugo de toronja.",
+      "descriptionEn": "mi campo reposado tequila. hibiscus simple. lemon. grapefruit juice.",
+      "price": "15.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dia-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Dia",
+      "nameEn": "Dia Margarita",
+      "descriptionEs": "mi campo blanco. triple sec. limón y lima frescos. jarabe simple. borde de sal.",
+      "descriptionEn": "mi campo blanco. triple sec. fresh lime & lemon. simple. salt rim.",
+      "price": "12.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "skinny-dia-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Dia Skinny",
+      "nameEn": "Skinny Dia Margarita",
+      "descriptionEs": "mi campo reposado. triple sec. limón y lima frescos. sin jarabe simple. borde de sal.",
+      "descriptionEn": "mi campo reposado. triple sec. fresh lime & lemon. no simple. salt rim.",
+      "price": "13.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "smoked-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita ahumada",
+      "nameEn": "Smoked Margarita",
+      "descriptionEs": "mezcal Ojo de Tigre. triple sec. limón y lima frescos. jarabe simple. borde de sal ahumada.",
+      "descriptionEn": "ojo de tigre mezcal. triple sec. fresh lime & lemon. simple. smoked salt rim.",
+      "price": "14.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fire-breather",
+      "categoryId": "margaritas",
+      "nameEs": "Fire Breather",
+      "nameEn": "Fire Breather",
+      "descriptionEs": "jalapeño blanco de la casa. triple sec. limón y lima frescos. jarabe simple. borde de Tajín. rodaja de jalapeño.",
+      "descriptionEn": "house made jalapeño blanco. triple sec. fresh lime & lemon. simple. tajin rim. jalapeño slice.",
+      "price": "14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pina-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita de piña",
+      "nameEn": "Pina Margarita",
+      "descriptionEs": "mi campo reposado. triple sec. puré de piña. limón y lima frescos. jarabe simple. borde de azúcar morena y Tajín. piñas caramelizadas.",
+      "descriptionEn": "mi campo reposado. triple sec. pineapple puree. fresh lime & lemon. simple. brown sugar & tajin rim. caramelized pineapples.",
+      "price": "14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pink-cadillac-margarita",
+      "categoryId": "margaritas",
+      "nameEs": "Margarita Pink Cadillac",
+      "nameEn": "Pink Cadillac Margarita",
+      "descriptionEs": "tequila añejo. triple sec. puré de fresa. limón y lima frescos. jarabe simple. borde de sal.",
+      "descriptionEn": "añejo tequila. triple sec. strawberry puree. fresh lime & lemon. simple. salt rim.",
+      "price": "14.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mangorita",
+      "categoryId": "margaritas",
+      "nameEs": "Mangorita",
+      "nameEn": "Mangorita",
+      "descriptionEs": "mi campo reposado. triple sec. puré de mango. limón y lima frescos. jarabe simple. borde de Tajín. rodaja de jalapeño.",
+      "descriptionEn": "mi campo reposado. triple sec. mango puree. fresh lime & lemon. simple. tajin rim. jalapeño slice.",
+      "price": "14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "watermelon-sugar",
+      "categoryId": "margaritas",
+      "nameEs": "Azúcar de sandía",
+      "nameEn": "Watermelon Sugar",
+      "descriptionEs": "tequila mi campo blanco. triple sec. puré de sandía. lima. jarabe simple. borde de azúcar. menta.",
+      "descriptionEn": "mi campo blanco tequila. triple sec. watermelon puree. lime. simple. sugar rim. mint.",
+      "price": "14.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-miller-high-life-wi",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER. Miller High Life (WI)",
+      "nameEn": "LAGER. miller high life (WI)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-coors-light-co",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER. Coors Light (CO)",
+      "nameEn": "LAGER. coors light (CO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-dos-equis-especial-mexico",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER. Dos Equis Especial (MÉXICO)",
+      "nameEn": "LAGER. dos equis especial (MEXICO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-lager-pacifico-mexico",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER MEXICANA. Pacífico (MÉXICO)",
+      "nameEn": "MEXICAN LAGER. pacifico (MEXICO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "amber-lager-negra-modelo-mexico",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER ÁMBAR. Negra Modelo (MÉXICO)",
+      "nameEn": "AMBER LAGER. negra modelo (MEXICO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wheat-ipa-lagunitas-little-sumpin-sumpin-ca",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "IPA DE TRIGO. Lagunitas Little Sumpin Sumpin (CA)",
+      "nameEn": "WHEAT IPA. lagunitas little sumpin sumpin (CA)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ipa-tribus-benji-16oz-ct",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "IPA. Tribus Benji 16oz (CT)",
+      "nameEn": "IPA. tribus benji 16oz (CT)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "13.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-lager-estrella-damm-daura-spain",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "LAGER SG. Estrella Damm Daura (ESPAÑA)",
+      "nameEn": "GF LAGER. estrella damm daura (SPAIN)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gf-ipa-ghostfish-ny",
+      "categoryId": "cerveza-bottles-cans",
+      "nameEs": "IPA SG. Ghostfish (NY)",
+      "nameEn": "GF IPA. ghostfish (NY)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-modelo-especial-mexico",
+      "categoryId": "cerveza-draught",
+      "nameEs": "LAGER. Modelo Especial (MÉXICO)",
+      "nameEn": "LAGER. modelo especial (MEXICO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lager-corona-premier-mexico",
+      "categoryId": "cerveza-draught",
+      "nameEs": "LAGER. Corona Premier (MÉXICO)",
+      "nameEn": "LAGER. corona premier (MEXICO)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rotating-pilsner-tap",
+      "categoryId": "cerveza-draught",
+      "nameEs": "PILSNER DE TAP ROTATIVO",
+      "nameEn": "ROTATING PILSNER TAP",
+      "descriptionEs": "por favor pregunta a tu mesero",
+      "descriptionEn": "please ask your server",
+      "price": "MP",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rotating-ipa-tap",
+      "categoryId": "cerveza-draught",
+      "nameEs": "IPA DE TAP ROTATIVO",
+      "nameEn": "ROTATING IPA TAP",
+      "descriptionEs": "por favor pregunta a tu mesero",
+      "descriptionEn": "please ask your server",
+      "price": "MP",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "seltzer-high-noon-black-cherry",
+      "categoryId": "seltzers-ciders-non-alcoholic",
+      "nameEs": "SELTZER. High Noon Black Cherry",
+      "nameEn": "SELTZER. high noon black cherry",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "10.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tea-surfside-iced-tea-or-half-half",
+      "categoryId": "seltzers-ciders-non-alcoholic",
+      "nameEs": "TÉ. Surfside iced tea o half & half",
+      "nameEn": "TEA. surfside iced tea or half & half",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cider-downeast-seasonal",
+      "categoryId": "seltzers-ciders-non-alcoholic",
+      "nameEs": "SIDRA. Downeast de temporada",
+      "nameEn": "CIDER. downeast seasonal",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing-mexican-style-lager-ct",
+      "categoryId": "seltzers-ciders-non-alcoholic",
+      "nameEs": "Athletic Brewing lager estilo mexicano (CT)",
+      "nameEn": "athletic brewing mexican style lager (CT)",
+      "descriptionEs": "SIN ALCOHOL",
+      "descriptionEn": "NON-ALCOHOLIC",
+      "price": "8.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "prosecco-i-heart-veneto-it",
+      "categoryId": "wine-whites",
+      "nameEs": "Prosecco I Heart. Véneto (IT).",
+      "nameEn": "Prosecco I Heart. Veneto (IT).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "10.95 / btl 40.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sauvignon-blanc-the-crossings-marlborough-nz",
+      "categoryId": "wine-whites",
+      "nameEs": "Sauvignon Blanc The Crossings. Marlborough (NZ).",
+      "nameEn": "Sauvignon Blanc The Crossings. Marlborough (NZ).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "11.95 / btl 44.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chardonnay-kendall-jackson-ca",
+      "categoryId": "wine-whites",
+      "nameEs": "Chardonnay Kendall Jackson (CA).",
+      "nameEn": "Chardonnay Kendall Jackson (CA).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12.95 / btl 48.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "albarino-raimat-costers-del-segre-es",
+      "categoryId": "wine-whites",
+      "nameEs": "Albariño Raimat. Costers del Segre (ES).",
+      "nameEn": "Albarino Raimat. Costers del Segre (ES).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "13.75 / btl 50.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose-romance-berne-fr",
+      "categoryId": "wine-whites",
+      "nameEs": "Rosé Romance. Berne (FR)",
+      "nameEn": "Rose Romance. Berne (FR)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12.50 / btl 46.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rioja-reserva-hacidena-lopez-de-haro-rioja-es",
+      "categoryId": "wine-reds",
+      "nameEs": "Rioja Reserva Hacidena Lopez de Haro. Rioja (ES)",
+      "nameEn": "Rioja Reserva Hacidena Lopez de Haro. Rioja (ES)",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "11.95 / btl 42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "malbec-domaine-bousquet-arg",
+      "categoryId": "wine-reds",
+      "nameEs": "Malbec Domaine Bousquet (ARG).",
+      "nameEn": "Malbec Domaine Bousquet (ARG).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12.25 / btl 45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pinot-noir-boen-ca",
+      "categoryId": "wine-reds",
+      "nameEs": "Pinot Noir Boen (CA).",
+      "nameEn": "Pinot Noir Boen (CA).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "12.95 / btl 45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cabernet-sauvignon-j-lohr-ca",
+      "categoryId": "wine-reds",
+      "nameEs": "Cabernet Sauvignon J Lohr (CA).",
+      "nameEn": "Cabernet Sauvignon J Lohr (CA).",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "13.95 / btl 52.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "agua-fresca",
+      "categoryId": "free-spirit-non-alcoholic",
+      "nameEs": "Agua Fresca",
+      "nameEn": "Agua Fresca",
+      "descriptionEs": "a elegir sandía, fresa, mango o piña. puré de fruta. lima. agave.",
+      "descriptionEn": "choice of watermelon, strawberry, mango, or pineapple. fruit puree. lime. agave.",
+      "price": "5.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-mamasita",
+      "categoryId": "free-spirit-non-alcoholic",
+      "nameEs": "Mango Mamasita",
+      "nameEn": "Mango Mamasita",
+      "descriptionEs": "puré de mango. lima. jalapeño. jugo de naranja.",
+      "descriptionEn": "mango puree. lime. jalapeño. orange juice.",
+      "price": "6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cherry-ade",
+      "categoryId": "free-spirit-non-alcoholic",
+      "nameEs": "Cherry-Ade",
+      "nameEn": "Cherry-Ade",
+      "descriptionEs": "menta fresca. jugo de cereza. limón. jarabe simple.",
+      "descriptionEn": "fresh mint. cherry juice. lemon. simple.",
+      "price": "6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "virgin-margarita",
+      "categoryId": "free-spirit-non-alcoholic",
+      "nameEs": "Margarita virgen",
+      "nameEn": "Virgin Margarita",
+      "descriptionEs": "limón. lima. jarabe simple. naranja. toronja. sal.",
+      "descriptionEn": "lemon. lime. simple. orange. grapefruit. salt.",
+      "price": "5.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "whippersnapper",
+      "categoryId": "free-spirit-non-alcoholic",
+      "nameEs": "Whippersnapper",
+      "nameEn": "Whippersnapper",
+      "descriptionEs": "mermelada de naranja. club soda. lima. jarabe simple.",
+      "descriptionEn": "orange marmalade. club soda. lime. simple.",
+      "price": "6.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda-can",
+      "categoryId": "soft-drinks",
+      "nameEs": "Refresco (LATA)",
+      "nameEn": "Soda (CAN)",
+      "descriptionEs": "coke. diet coke.",
+      "descriptionEn": "coke. diet coke.",
+      "price": "3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-sodas-bottle",
+      "categoryId": "soft-drinks",
+      "nameEs": "Refrescos mexicanos (BOTELLA)",
+      "nameEn": "Mexican Sodas (BOTTLE)",
+      "descriptionEs": "coke. sprite.",
+      "descriptionEn": "coke. sprite.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jarritos-bottle",
+      "categoryId": "soft-drinks",
+      "nameEs": "Jarritos (BOTELLA)",
+      "nameEn": "Jarritos (BOTTLE)",
+      "descriptionEs": "mandarina. toronja. ponche de frutas. piña.",
+      "descriptionEn": "mandarin. grapefruit. fruit punch. pineapple.",
+      "price": "5.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bottled-water",
+      "categoryId": "soft-drinks",
+      "nameEs": "Agua embotellada",
+      "nameEn": "Bottled Water",
+      "descriptionEs": "750 ml Saratoga - con gas. sin gas.",
+      "descriptionEn": "750 ml saratoga - sparkling. still.",
+      "price": "8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "soft-drinks",
+      "nameEs": "Té helado",
+      "nameEn": "Iced Tea",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "juice",
+      "categoryId": "soft-drinks",
+      "nameEs": "Jugo",
+      "nameEn": "Juice",
+      "descriptionEs": "a elegir - manzana. naranja. arándano. o piña.",
+      "descriptionEn": "choice of - apple. orange. cranberry. or pineapple.",
+      "price": "2.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "churros",
+      "categoryId": "dessert",
+      "nameEs": "Churros",
+      "nameEn": "Churros",
+      "descriptionEs": "dulce de leche. azúcar y canela. gelato de caramelo de plátano.",
+      "descriptionEn": "dulce de Leche. cinnamon sugar. banana caramel gelato.",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tres-leches-bread-pudding",
+      "categoryId": "dessert",
+      "nameEs": "Pudín de pan tres leches",
+      "nameEn": "Tres Leches Bread Pudding",
+      "descriptionEs": "tres leches. dulce de leche.",
+      "descriptionEn": "three milks. dulce de leche.",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-chocolate-lava-cake",
+      "categoryId": "dessert",
+      "nameEs": "Pastel volcán de chocolate mexicano",
+      "nameEn": "Mexican Chocolate Lava Cake",
+      "descriptionEs": "malvavisco. helado de vainilla.",
+      "descriptionEn": "marshmallow. vanilla ice cream.",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "flan",
+      "categoryId": "dessert",
+      "nameEs": "Flan",
+      "nameEn": "Flan",
+      "descriptionEs": "flan mexicano. cerezas en amaro.",
+      "descriptionEn": "mexican caramel custard. amaro cherries.",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "fried-ice-cream",
+      "categoryId": "dessert",
+      "nameEs": "Helado frito",
+      "nameEn": "Fried Ice Cream",
+      "descriptionEs": "base crujiente de chips de maíz. helado de vainilla. crema inglesa de canela. salsa de chocolate.",
+      "descriptionEn": "crispy corn chip crust. vanilla ice cream. cinnamon crème anglaise. chocolate sauce.",
+      "price": "9.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "helado",
+      "categoryId": "dessert",
+      "nameEs": "HELADO",
+      "nameEn": "HELADO",
+      "descriptionEs": "Helados: vainilla. chocolate. caramelo de plátano. Sorbete: limón. frambuesa. mango.",
+      "descriptionEn": "Ice Creams: vanilla. chocolate. banana caramel. Sorbet: lemon. raspberry. mango.",
+      "price": "One scoop 3.95 / Two 5.95 / Three 8.95",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mexican-coffee",
+      "categoryId": "dessert",
+      "nameEs": "Café mexicano",
+      "nameEn": "Mexican Coffee",
+      "descriptionEs": "tequila. café. crema.",
+      "descriptionEn": "tequila. coffee. cream.",
+      "price": "7.50",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini",
+      "categoryId": "dessert",
+      "nameEs": "Espresso martini",
+      "nameEn": "Espresso Martini",
+      "descriptionEs": "vodka de vainilla. Kahlúa. espresso.",
+      "descriptionEn": "vanilla vodka. kahlua. espresso.",
+      "price": "15.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "horchata",
+      "categoryId": "dessert",
+      "nameEs": "Horchata",
+      "nameEn": "Horchata",
+      "descriptionEs": "vodka. Licor 43. Kahlúa. canela.",
+      "descriptionEn": "vodka. liquor 43. kahlua. cinnamon.",
+      "price": "14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "dessert",
+      "nameEs": "Café",
+      "nameEn": "Coffee",
+      "descriptionEs": "café illy, disponible descafeinado o regular",
+      "descriptionEn": "illy coffee, available in decaf or regular",
+      "price": "4.25",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cappuccino",
+      "categoryId": "dessert",
+      "nameEs": "Cappuccino",
+      "nameEn": "Cappuccino",
+      "descriptionEs": "café illy, disponible descafeinado o regular",
+      "descriptionEn": "illy coffee, available in decaf or regular",
+      "price": "5.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "dessert",
+      "nameEs": "Espresso",
+      "nameEn": "Espresso",
+      "descriptionEs": "café illy, disponible descafeinado o regular",
+      "descriptionEn": "illy coffee, available in decaf or regular",
+      "price": "4.75",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "eggs-benedict",
+      "categoryId": "brunch",
+      "nameEs": "Huevos Benedict",
+      "nameEn": "Eggs Benedict",
+      "descriptionEs": "dos huevos pochados. brioche tostado. jamón glaseado. salsa holandesa. papas de la casa con chile ancho.",
+      "descriptionEn": "two poached eggs. toasted brioche. glazed ham. hollandaise sauce. ancho chili home fries.",
+      "price": "16.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bread-pudding-french-toast",
+      "categoryId": "brunch",
+      "nameEs": "Pan francés de pudín de pan",
+      "nameEn": "Bread Pudding French Toast",
+      "descriptionEs": "tres leches. crema inglesa. canela. manzanas asadas. jarabe de maple. crema batida.",
+      "descriptionEn": "tres leches. creme anglaise. cinnamon. roasted apples. maple syrup. whipped cream.",
+      "price": "14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veggie-omelet-v",
+      "categoryId": "brunch",
+      "nameEs": "Omelet vegetariano (V)",
+      "nameEn": "Veggie Omelet (V)",
+      "descriptionEs": "queso cheddar y monterey jack. vegetales asados. papas de la casa con chile ancho.",
+      "descriptionEn": "cheddar & monterey jack cheese. roasted vegetables. ancho chili home fries.",
+      "price": "14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "birria-bacon-egg-cheese",
+      "categoryId": "brunch",
+      "nameEs": "Birria, tocino, huevo y queso",
+      "nameEn": "Birria, Bacon, Egg & Cheese",
+      "descriptionEs": "birria de res. tocino crujiente. huevo frito. queso cheddar-jack. pan brioche tostado. a elegir papas o ensalada.",
+      "descriptionEn": "beef birria. crispy bacon. fried egg. cheddar-jack cheese. toasted brioche bun. choice of fries or salad.",
+      "price": "14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chilaquiles",
+      "categoryId": "brunch",
+      "nameEs": "Chilaquiles",
+      "nameEn": "Chilaquiles",
+      "descriptionEs": "tortillas de maíz. frijoles negros. pico de gallo. salsa roja. dos huevos fritos. queso fresco. agrega - tinga de pollo. carnitas de cerdo +3.",
+      "descriptionEn": "corn tortillas. black beans. pico de gallo. salsa roja. two fried eggs. queso fresco. add - chicken tinga. pork carnitas +3.",
+      "price": "14.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "breakfast-burrito",
+      "categoryId": "brunch",
+      "nameEs": "Burrito de desayuno",
+      "nameEn": "Breakfast Burrito",
+      "descriptionEs": "huevos revueltos. pimientos y cebolla. papas asadas. cheddar-jack. crema agria. servido con arroz y frijoles. agrega - tocino. carnitas de cerdo. tinga de pollo +4.",
+      "descriptionEn": "scrambled eggs. peppers & onions. roasted potatoes. cheddar-jack. sour cream. served with rice & beans. add - bacon. pork carnitas. chicken tinga +4.",
+      "price": "12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rib-eye-steak-eggs-huevos-rancheros",
+      "categoryId": "brunch",
+      "nameEs": "Rib eye y huevos rancheros",
+      "nameEn": "Rib Eye Steak & Eggs Huevos Rancheros",
+      "descriptionEs": "rib eye en láminas. dos huevos fritos. salsa roja. pico de gallo. crema. queso cotija. frijoles negros. papas de la casa con chile ancho.",
+      "descriptionEn": "shaved rib eye. two fried eggs. salsa roja. pico de gallo. crema. cotija cheese. black beans. ancho chili home fries.",
+      "price": "19.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bloody-mary-or-maria",
+      "categoryId": "brunch",
+      "nameEs": "Bloody Mary o Maria",
+      "nameEn": "Bloody Mary or Maria",
+      "descriptionEs": "vodka o tequila de pimienta. chiles encurtidos. limón. aceituna.",
+      "descriptionEn": "peppercorn vodka or tequila. pickled peppers. lemon. olive.",
+      "price": "12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "michelada",
+      "categoryId": "brunch",
+      "nameEs": "Michelada",
+      "nameEn": "Michelada",
+      "descriptionEs": "Modelo. lima. jugo de tomate. salsa picante. Tajín.",
+      "descriptionEn": "modelo. lime. tomato juice. hot sauce. tajin.",
+      "price": "12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mimosa",
+      "categoryId": "brunch",
+      "nameEs": "Mimosa",
+      "nameEn": "Mimosa",
+      "descriptionEs": "prosecco. jugo de naranja. a elegir - naranja. fresa. piña. cereza negra.",
+      "descriptionEn": "prosecco. oj. choice of - orange. strawberry. pineapple. black cherry.",
+      "price": "9.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aperol-spritz",
+      "categoryId": "brunch",
+      "nameEs": "Aperol spritz",
+      "nameEn": "Aperol Spritz",
+      "descriptionEs": "Aperol. cava. club soda.",
+      "descriptionEn": "aperol. cava. club soda.",
+      "price": "12.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso-martini-brunch",
+      "categoryId": "brunch",
+      "nameEs": "Espresso Martini (brunch)",
+      "nameEn": "Espresso Martini (Brunch)",
+      "descriptionEs": "espresso. vodka de vainilla. licor de café. agrega - Baileys +1.",
+      "descriptionEn": "espresso. vanilla vodka. coffee liquer. add - baileys +1.",
+      "price": "12.00",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "¡Sí! Operamos una cocina 100% libre de gluten y sin maní, con numerosas opciones vegetarianas claramente marcadas en nuestro menú.",
-      "aEn": "Yes! We operate a 100% gluten-free and peanut-free kitchen with numerous vegetarian options clearly marked on our menu."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones o órdenes para llevar?",
-      "qEn": "Do you accept reservations or takeout orders?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones telefónicas. También puede ordenar en línea para recoger o mediante nuestras plataformas asociadas.",
-      "aEn": "We welcome walk-ins and phone reservations. You can also order online for pickup or through our delivery partners."
-    }
-  ]
+  "faqs": []
 }
