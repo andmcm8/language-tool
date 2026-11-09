@@ -13,59 +13,41 @@ interface BottomNavProps {
 
 export default function BottomNav({ activeTab, setActiveTab, lang }: BottomNavProps) {
   const tabs = [
-    {
-      id: "home" as TabType,
-      labelEs: "Inicio",
-      labelEn: "Home",
-      icon: LayoutGrid,
-    },
-    {
-      id: "catalog" as TabType,
-      labelEs: "Catálogo",
-      labelEn: "Catalog",
-      icon: BookOpen,
-    },
-    {
-      id: "camera" as TabType,
-      labelEs: "Traductor",
-      labelEn: "Translator",
-      icon: Languages,
-    },
-    {
-      id: "assistant" as TabType,
-      labelEs: "Asistente IA",
-      labelEn: "AI Assistant",
-      icon: MessageSquareText,
-    },
+    { id: "home" as TabType, labelEs: "Inicio", labelEn: "Home", icon: LayoutGrid },
+    { id: "catalog" as TabType, labelEs: "Menú", labelEn: "Menu", icon: BookOpen },
+    { id: "camera" as TabType, labelEs: "Traductor", labelEn: "Translate", icon: Languages },
+    { id: "assistant" as TabType, labelEs: "Asistente", labelEn: "Assistant", icon: MessageSquareText },
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-t border-surface-container-high px-2 py-2 shadow-lg">
-      <div className="max-w-md mx-auto grid grid-cols-4 gap-1">
-        {tabs.map((tab) => {
-          const Icon = tab.icon;
-          const isActive = activeTab === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`flex flex-col items-center justify-center py-1.5 px-1 rounded-2xl transition-all duration-200 ${
-                isActive
-                  ? "bg-secondary-fixed text-primary font-bold shadow-xs scale-102"
-                  : "text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50"
-              }`}
-            >
-              <Icon
-                className={`w-5 h-5 transition-transform duration-200 ${
-                  isActive ? "scale-110 text-primary" : "text-on-surface-variant"
+    <nav
+      aria-label="Primary"
+      className="fixed inset-x-0 bottom-0 z-40 px-4 pointer-events-none"
+      style={{ paddingBottom: "max(14px, env(safe-area-inset-bottom))" }}
+    >
+      <div className="pointer-events-auto mx-auto max-w-md rounded-full bg-navy p-1.5 shadow-float">
+        <div className="flex items-center gap-1">
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                aria-current={isActive ? "page" : undefined}
+                aria-label={lang === "es" ? tab.labelEs : tab.labelEn}
+                className={`flex h-12 items-center justify-center gap-1.5 rounded-full text-[13px] font-semibold transition-all duration-300 ${
+                  isActive
+                    ? "flex-[2.2] bg-white text-primary shadow-soft"
+                    : "flex-1 text-white/60 hover:text-white"
                 }`}
-              />
-              <span className="text-[11px] font-medium leading-none mt-1 truncate">
-                {lang === "es" ? tab.labelEs : tab.labelEn}
-              </span>
-            </button>
-          );
-        })}
+              >
+                <Icon className="h-[19px] w-[19px] shrink-0" strokeWidth={isActive ? 2.4 : 2} />
+                {isActive && <span className="truncate">{lang === "es" ? tab.labelEs : tab.labelEn}</span>}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );

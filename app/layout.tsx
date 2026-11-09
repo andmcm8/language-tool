@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
 
 export const metadata: Metadata = {
   title: "DuoTaps — Language Assistance Tool",
@@ -25,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className="bg-surface text-on-surface min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary font-sans antialiased">
+    <html lang="es" className={jakarta.variable}>
+      <body className="text-on-surface min-h-screen flex flex-col selection:bg-primary selection:text-white font-sans antialiased">
         {children}
         <Analytics />
       </body>

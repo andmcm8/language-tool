@@ -1189,7 +1189,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
         <div className="space-y-2 pt-1 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <div className="flex items-center justify-between px-1">
             <span className="text-xs font-black text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
-              <Scan className="w-3.5 h-3.5 text-[#003ec7]" />
+              <Scan className="w-3.5 h-3.5 text-[#0A5CFF]" />
               <span>{lang === "es" ? "Traducción Estructurada" : "Structured Translation"}</span>
             </span>
             <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
@@ -1201,7 +1201,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
             {detectedRegions.map((region, idx) => (
               <div
                 key={idx}
-                className="p-3 bg-white rounded-2xl border border-slate-200 shadow-2xs hover:border-[#003ec7]/40 transition-all space-y-1 text-left"
+                className="p-3 bg-white rounded-2xl border border-slate-200 shadow-2xs hover:border-[#0A5CFF]/40 transition-all space-y-1 text-left"
               >
                 <div className="flex items-start justify-between gap-2">
                   <div className="font-extrabold text-xs text-slate-900 leading-snug">
@@ -1216,7 +1216,7 @@ export default function CameraOcrTab({ lang }: CameraOcrTabProps) {
                         window.speechSynthesis.speak(utterance);
                       }
                     }}
-                    className="p-1 rounded-lg text-slate-400 hover:text-[#003ec7] hover:bg-blue-50 transition-colors shrink-0"
+                    className="p-1 rounded-lg text-slate-400 hover:text-[#0A5CFF] hover:bg-blue-50 transition-colors shrink-0"
                     title="Pronounce / Pronunciar"
                   >
                     <Volume2 className="w-3.5 h-3.5" />

@@ -3,71 +3,77 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { isValidPhone } from "@/lib/phone";
-import {
-  ShoppingBag,
-  Pill,
-  Wrench,
-  Search,
-  X,
-  MapPin,
-  Clock,
-  Phone,
-  ArrowRight,
-  Globe,
-  Store,
-  ChevronRight,
-  Info,
-} from "lucide-react";
-
-const PLACE_ICONS: Record<string, any> = {
-  demo: ShoppingBag,
-  elsol: ShoppingBag,
-};
-
-const PLACE_TAGLINES: Record<string, { en: string; es: string }> = {
-  demo: {
-    es: "Tu Tienda Hispana Local en Stamford — Asistente Demo",
-    en: "Your Local Hispanic Store in Stamford — Demo Assistant",
-  },
-  elsol: {
-    es: "Tu Tienda Hispana Local en Stamford — Asistente Demo",
-    en: "Your Local Hispanic Store in Stamford — Demo Assistant",
-  },
-};
+import { townFromAddress, taglineFor, swatchFor, initialsOf } from "@/lib/place";
+import { Search, X, MapPin, Phone, ChevronRight, Info, Languages, MessageSquareText, QrCode } from "lucide-react";
 
 const DICT = {
   en: {
-    portalBadge: "Language Assistance Tool",
     portalTitle: "DuoTaps",
-    subtitle:
-      "Explore Connecticut restaurants, delis, and cafes with interactive bilingual Spanish menus and customer assistance.",
-    searchPlaceholder: "Search places by name, city, cuisine...",
-    foundSuffix: "Places Found",
-    launchBtn: "View Bilingual Menu",
-    noResultsTitle: "No Places Match Your Search",
-    noResultsDesc:
-      'Try searching for "Pizza", "Tacos", "Stamford", or click "Clear Search" above.',
-    clearBtn: "Clear Search & Show All",
-    monFri: "Mon-Fri",
-    footerText: "DuoTaps • Language Assistance Tool",
+    heroLine1: "Every menu,",
+    heroLine2: "in Spanish.",
+    subtitle: "Bilingual menus and an AI assistant for Connecticut restaurants, cafes and delis.",
+    searchPlaceholder: "Search by name, town or cuisine",
+    places: "places",
+    viewMenu: "View menu",
+    all: "All",
+    more: "Show more places",
+    noResultsTitle: "No places match your search",
+    noResultsDesc: "Try a different name, town or cuisine.",
+    clearBtn: "Clear search",
+    f1: "Bilingual menus",
+    f1d: "Every dish in English and Spanish",
+    f2: "Live translator",
+    f2d: "Type, speak or scan a sign",
+    f3: "AI assistant",
+    f3d: "Ask about the menu in Spanish",
+    footerText: "DuoTaps · Language Assistance Tool",
+    aboutTitle: "About DuoTaps",
+    aboutSub: "Bilingual menus & AI assistants",
+    aboutP1: "DuoTaps helps Connecticut restaurants, cafes and delis serve Spanish-speaking guests with instant bilingual menus and AI customer assistance.",
+    aboutP2: "Own a restaurant? Contact us to claim or customize your menu for free.",
+    done: "Done",
   },
   es: {
-    portalBadge: "Herramienta de Asistencia Lingüística",
     portalTitle: "DuoTaps",
-    subtitle:
-      "Explore restaurantes, delis y cafeterías de Connecticut con menús interactivos en español y asistencia al cliente.",
-    searchPlaceholder: "Buscar lugares por nombre, ciudad, tipo de comida...",
-    foundSuffix: "Lugares Encontrados",
-    launchBtn: "Ver Menú Bilingüe",
-    noResultsTitle: "No se encontraron lugares para su búsqueda",
-    noResultsDesc:
-      'Intente buscar "Pizza", "Tacos", "Stamford", o presione "Borrar Búsqueda" arriba.',
-    clearBtn: "Borrar Búsqueda y Mostrar Todos",
-    monFri: "Lun-Vie",
-    footerText: "DuoTaps • Herramienta de Asistencia Lingüística",
+    heroLine1: "Cada menú,",
+    heroLine2: "en español.",
+    subtitle: "Menús bilingües y un asistente con IA para restaurantes, cafeterías y delis de Connecticut.",
+    searchPlaceholder: "Busca por nombre, ciudad o tipo de comida",
+    places: "lugares",
+    viewMenu: "Ver menú",
+    all: "Todos",
+    more: "Mostrar más lugares",
+    noResultsTitle: "No encontramos lugares",
+    noResultsDesc: "Prueba con otro nombre, ciudad o tipo de comida.",
+    clearBtn: "Borrar búsqueda",
+    f1: "Menús bilingües",
+    f1d: "Cada platillo en inglés y español",
+    f2: "Traductor en vivo",
+    f2d: "Escribe, habla o escanea un letrero",
+    f3: "Asistente con IA",
+    f3d: "Pregunta sobre el menú en español",
+    footerText: "DuoTaps · Herramienta de Asistencia Lingüística",
+    aboutTitle: "Acerca de DuoTaps",
+    aboutSub: "Menús bilingües y asistentes con IA",
+    aboutP1: "DuoTaps ayuda a restaurantes, cafeterías y delis de Connecticut a atender a clientes hispanohablantes con menús bilingües y asistencia con IA.",
+    aboutP2: "¿Es dueño de un restaurante? Contáctenos para reclamar o personalizar su menú gratis.",
+    done: "Listo",
   },
 };
 
+// Cuisine filters: label + keywords matched against name & tagline
+const CUISINES: { id: string; en: string; es: string; re: RegExp }[] = [
+  { id: "pizza", en: "Pizza", es: "Pizza", re: /pizz/i },
+  { id: "italian", en: "Italian", es: "Italiana", re: /ital|pasta|trattoria|ristorante/i },
+  { id: "mexican", en: "Mexican", es: "Mexicana", re: /mexic|taco|burrito|cantina/i },
+  { id: "asian", en: "Asian", es: "Asiática", re: /chinese|asian|thai|sushi|japan|ramen|pho|viet|korean|noodle|hibachi|chino/i },
+  { id: "indian", en: "Indian", es: "India", re: /indian|india/i },
+  { id: "seafood", en: "Seafood", es: "Mariscos", re: /seafood|lobster|oyster|fish|clam|marisc/i },
+  { id: "american", en: "American", es: "Americana", re: /american|burger|grill|bbq|barbecue|steak|tavern|pub|diner/i },
+  { id: "cafe", en: "Cafe & Bakery", es: "Café y panadería", re: /cafe|café|coffee|bakery|bake|donut|bagel|pastry|dessert|ice cream/i },
+];
+
+const PAGE = 30;
 
 /** Slim per-place data sent to the browser (not the full menus). */
 export interface PlaceSummary {
@@ -82,215 +88,225 @@ export interface PlaceSummary {
 }
 
 export default function HomeDirectory({ places: allPlaces }: { places: PlaceSummary[] }) {
-
   const [searchQuery, setSearchQuery] = useState("");
   const [lang, setLang] = useState<"en" | "es">("en");
+  const [cuisine, setCuisine] = useState("all");
+  const [visible, setVisible] = useState(PAGE);
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   const t = DICT[lang];
 
-  /* ---------- Real-Time Filtering Logic ---------- */
   const filteredPlaces = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();
-    if (!q) return allPlaces;
-
+    const c = CUISINES.find((x) => x.id === cuisine);
     return allPlaces.filter((m) => {
-      const name = (m.storeInfo?.name || "").toLowerCase();
-      const tagline = (m.storeInfo?.tagline || "").toLowerCase();
-      const address = (m.storeInfo?.address || "").toLowerCase();
-
-      return (
-        name.includes(q) ||
-        tagline.includes(q) ||
-        address.includes(q)
-      );
+      const s = m.storeInfo;
+      const hay = `${s.name} ${s.tagline} ${s.address}`;
+      if (c && !c.re.test(`${s.name} ${s.tagline}`)) return false;
+      return !q || hay.toLowerCase().includes(q);
     });
-  }, [allPlaces, searchQuery]);
+  }, [allPlaces, searchQuery, cuisine]);
+
+  const shown = filteredPlaces.slice(0, visible);
+
+  const onSearch = (v: string) => {
+    setSearchQuery(v);
+    setVisible(PAGE);
+  };
+  const onCuisine = (id: string) => {
+    setCuisine(id);
+    setVisible(PAGE);
+  };
+
+  const features = [
+    { icon: QrCode, title: t.f1, desc: t.f1d },
+    { icon: Languages, title: t.f2, desc: t.f2d },
+    { icon: MessageSquareText, title: t.f3, desc: t.f3d },
+  ];
 
   return (
-    <main className="min-h-screen bg-[#f7f9fb] text-slate-800 font-sans selection:bg-primary selection:text-white pb-20">
-      {/* ROYAL BLUE MOBILE-FIRST HEADER */}
-      <header className="bg-[#003ec7] text-white shadow-md">
-        <div className="max-w-md md:max-w-4xl mx-auto px-4 py-4 space-y-3">
-          {/* Top Title & WORKING Interactive EN / ES Language Swapper Toggle */}
+    <main className="min-h-screen pb-16 selection:bg-primary selection:text-white">
+      {/* HERO */}
+      <header className="relative overflow-hidden bg-brand-gradient text-white rounded-b-[40px] shadow-lift">
+        <div className="pointer-events-none absolute -top-24 -right-16 h-72 w-72 rounded-full bg-white/15 blur-3xl" />
+        <div className="pointer-events-none absolute top-24 -left-24 h-64 w-64 rounded-full bg-sky-300/30 blur-3xl" />
+
+        <div className="relative mx-auto max-w-md md:max-w-4xl px-5 pt-5 pb-20">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm overflow-hidden shrink-0">
-                <img
-                  src="/logo.jpg"
-                  alt="DuoTaps Logo"
-                  className="w-full h-full object-cover scale-110"
-                />
-              </div>
-              <div>
-                <h1 className="font-extrabold text-lg leading-tight text-white tracking-tight">
-                  {t.portalTitle}
-                </h1>
-                <p className="text-[10px] text-blue-100 font-semibold tracking-wide">
-                  {t.portalBadge}
-                </p>
-              </div>
+              <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full bg-white shadow-soft">
+                <img src="/logo.jpg" alt="DuoTaps" className="h-full w-full scale-110 object-cover" />
+              </span>
+              <span className="text-lg font-extrabold tracking-tight">{t.portalTitle}</span>
             </div>
-
-            {/* EXACT MATCH: Segmented Pill Toggle Switch (ES / EN | Info) */}
-            <div className="flex items-center gap-0.5 bg-white text-slate-800 p-1 rounded-full border border-white/30 shadow-md">
-              <button
-                onClick={() => setLang("es")}
-                className={`px-3 py-1 rounded-full text-xs font-black transition-all ${
-                  lang === "es"
-                    ? "bg-[#003ec7] text-white shadow-xs"
-                    : "text-slate-700 hover:text-slate-900"
-                }`}
-              >
-                ES
-              </button>
-              <button
-                onClick={() => setLang("en")}
-                className={`px-3 py-1 rounded-full text-xs font-black transition-all ${
-                  lang === "en"
-                    ? "bg-[#003ec7] text-white shadow-xs"
-                    : "text-slate-700 hover:text-slate-900"
-                }`}
-              >
-                EN
-              </button>
-
-              <div className="w-px h-3.5 bg-slate-300 mx-0.5" />
-
+            <div className="flex items-center gap-2">
+              <div className="flex items-center rounded-full bg-white/15 p-1 backdrop-blur-md border border-white/25">
+                {(["es", "en"] as const).map((code) => (
+                  <button
+                    key={code}
+                    onClick={() => setLang(code)}
+                    aria-pressed={lang === code}
+                    className={`h-8 rounded-full px-3 text-xs font-bold transition-all ${
+                      lang === code ? "bg-white text-primary shadow-soft" : "text-white/80 hover:text-white"
+                    }`}
+                  >
+                    {code.toUpperCase()}
+                  </button>
+                ))}
+              </div>
               <button
                 onClick={() => setShowInfoModal(true)}
-                className="p-1 rounded-full text-slate-600 hover:text-[#003ec7] transition-colors"
-                title="Portal Info / Información"
-                aria-label="Portal Info"
+                aria-label="Info"
+                className="grid h-10 w-10 place-items-center rounded-full bg-white/15 backdrop-blur-md border border-white/25 hover:bg-white/25 transition-colors"
               >
-                <Info className="w-4 h-4" />
+                <Info className="h-[18px] w-[18px]" />
               </button>
             </div>
           </div>
 
-          {/* Subtitle Message */}
-          <p className="text-xs text-blue-100 font-medium leading-relaxed">
-            {t.subtitle}
-          </p>
-
-          {/* FUNCTIONAL SEARCH INPUT BAR */}
-          <div className="relative pt-1">
-            <div className="relative flex items-center">
-              <Search className="absolute left-3.5 w-4 h-4 text-slate-400 pointer-events-none" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={t.searchPlaceholder}
-                className="w-full pl-10 pr-9 py-2.5 bg-white text-slate-900 rounded-xl text-xs font-medium placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 shadow-md"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3 p-1 rounded-full text-slate-400 hover:text-slate-600"
-                >
-                  <X className="w-3.5 h-3.5" />
-                </button>
-              )}
-            </div>
-          </div>
+          <h1 className="mt-9 text-[40px] md:text-6xl font-extrabold leading-[1.05] tracking-tight">
+            {t.heroLine1}
+            <br />
+            <span className="text-sky-200">{t.heroLine2}</span>
+          </h1>
+          <p className="mt-3 max-w-sm md:max-w-lg text-[15px] leading-relaxed text-blue-50/90">{t.subtitle}</p>
         </div>
       </header>
 
-      {/* RESULTS COUNT & GRID */}
-      <section className="max-w-md md:max-w-4xl mx-auto px-4 pt-4">
-        <div className="flex items-center justify-between text-xs font-bold text-slate-500 mb-3 px-1">
-          <div className="flex items-center gap-1.5">
-            <Store className="w-3.5 h-3.5 text-[#003ec7]" />
-            <span>
-              {filteredPlaces.length} {t.foundSuffix}
-            </span>
-          </div>
+      {/* SEARCH — overlaps hero */}
+      <div className="relative z-10 mx-auto -mt-7 max-w-md md:max-w-4xl px-5">
+        <div className="relative">
+          <Search className="pointer-events-none absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-primary" />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => onSearch(e.target.value)}
+            placeholder={t.searchPlaceholder}
+            className="h-14 w-full rounded-full border border-white bg-white pl-13 pr-12 text-[15px] font-medium text-on-surface shadow-lift placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary/40"
+            style={{ paddingLeft: "3.25rem" }}
+          />
           {searchQuery && (
-            <span className="text-slate-400 font-medium truncate max-w-[140px]">
-              "{searchQuery}"
-            </span>
+            <button
+              onClick={() => onSearch("")}
+              aria-label="Clear"
+              className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-on-surface-variant hover:bg-surface-container"
+            >
+              <X className="h-4 w-4" />
+            </button>
           )}
         </div>
+      </div>
 
-        {/* NEAT MOBILE-FIRST GRID */}
+      <section className="mx-auto max-w-md md:max-w-4xl px-5">
+        {/* Feature strip */}
+        <div className="mt-6 grid grid-cols-3 gap-2.5">
+          {features.map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="rounded-3xl bg-white/80 backdrop-blur border border-white p-3.5 shadow-soft">
+              <span className="grid h-9 w-9 place-items-center rounded-2xl bg-primary-fixed text-primary">
+                <Icon className="h-[18px] w-[18px]" />
+              </span>
+              <p className="mt-2.5 text-[13px] font-bold leading-tight text-on-surface">{title}</p>
+              <p className="mt-0.5 hidden text-[11px] leading-snug text-on-surface-variant sm:block">{desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Cuisine chips */}
+        <div className="-mx-5 mt-6 flex items-center gap-2 overflow-x-auto px-5 pb-1">
+          {[{ id: "all", en: t.all, es: t.all }, ...CUISINES].map((c) => {
+            const active = cuisine === c.id;
+            return (
+              <button
+                key={c.id}
+                onClick={() => onCuisine(c.id)}
+                className={`chip shrink-0 ${
+                  active ? "bg-navy text-white shadow-soft" : "bg-white text-on-surface-variant border border-white shadow-soft hover:text-on-surface"
+                }`}
+              >
+                {lang === "es" ? c.es : c.en}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Count */}
+        <div className="mt-6 mb-3 flex items-baseline justify-between px-1">
+          <h2 className="text-xl font-extrabold text-on-surface">{lang === "es" ? "Lugares" : "Places"}</h2>
+          <span className="text-sm font-semibold text-on-surface-variant tabular-nums">
+            {filteredPlaces.length.toLocaleString()} {t.places}
+          </span>
+        </div>
+
+        {/* LIST */}
         {filteredPlaces.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            {filteredPlaces.map((place) => {
-              const id = place.storeInfo.id;
-              const Icon = PLACE_ICONS[id] || ShoppingBag;
+          <>
+            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2">
+              {shown.map((place) => {
+                const s = place.storeInfo;
+                const town = townFromAddress(s.address);
+                const tag = taglineFor(s.tagline, lang);
+                return (
+                  <Link
+                    key={s.id}
+                    href={`/${s.id}`}
+                    className="group flex items-center gap-3.5 rounded-3xl border border-white bg-white p-3.5 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lift active:scale-[0.99]"
+                  >
+                    <span
+                      className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-lg font-extrabold text-white shadow-soft"
+                      style={{ background: swatchFor(s.name) }}
+                    >
+                      {initialsOf(s.name)}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="truncate text-[15px] font-bold leading-snug text-on-surface">{s.name}</h3>
+                      {tag && <p className="truncate text-[13px] text-on-surface-variant">{tag}</p>}
+                      <div className="mt-1 flex items-center gap-3 text-xs font-medium text-on-surface-variant">
+                        {town && (
+                          <span className="flex min-w-0 items-center gap-1">
+                            <MapPin className="h-3 w-3 shrink-0 text-primary" />
+                            <span className="truncate">{town}</span>
+                          </span>
+                        )}
+                        {isValidPhone(s.phone) && (
+                          <span className="hidden items-center gap-1 sm:flex">
+                            <Phone className="h-3 w-3 shrink-0 text-primary" />
+                            {s.phone}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-surface-container text-on-surface-variant transition-colors group-hover:bg-primary group-hover:text-white">
+                      <ChevronRight className="h-[18px] w-[18px]" />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
 
-              return (
-                <Link
-                  key={id}
-                  href={`/${id}`}
-                  className="group bg-white rounded-2xl p-4 border border-slate-200 hover:border-[#003ec7]/40 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-3 relative overflow-hidden"
+            {visible < filteredPlaces.length && (
+              <div className="mt-6 text-center">
+                <button
+                  onClick={() => setVisible((v) => v + PAGE * 2)}
+                  className="rounded-full border border-white bg-white px-6 py-3 text-sm font-bold text-primary shadow-soft transition-all hover:shadow-lift active:scale-[0.98]"
                 >
-                  {/* Left Accent Stripe */}
-                  <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#003ec7]" />
-
-                  <div className="space-y-2.5 pl-1.5">
-                    {/* Header: Icon */}
-                    <div className="flex items-center justify-between">
-                      <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#003ec7] flex items-center justify-center shadow-2xs group-hover:bg-[#003ec7] group-hover:text-white transition-colors">
-                        <Icon className="w-5 h-5" />
-                      </div>
-                    </div>
-
-                    {/* Place Name & Tagline */}
-                    <div>
-                      <h2 className="text-base font-extrabold text-slate-900 group-hover:text-[#003ec7] transition-colors leading-tight">
-                        {place.storeInfo.name}
-                      </h2>
-                      <p className="text-xs text-slate-500 mt-0.5 line-clamp-2 leading-relaxed">
-                        {PLACE_TAGLINES[id]?.[lang] || place.storeInfo.tagline}
-                      </p>
-                    </div>
-
-                    {/* Address & Phone Details */}
-                    <div className="space-y-1 text-xs text-slate-600 pt-1 border-t border-slate-100">
-                      <div className="flex items-center gap-1.5 truncate">
-                        <MapPin className="w-3.5 h-3.5 text-[#003ec7] shrink-0" />
-                        <span className="truncate">{place.storeInfo.address}</span>
-                      </div>
-
-                      {isValidPhone(place.storeInfo.phone) ? (
-                        <div className="flex items-center gap-1.5">
-                          <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                          <span>{place.storeInfo.phone}</span>
-                        </div>
-                      ) : place.storeInfo.hours?.monday_friday ? (
-                        <div className="flex items-center gap-1.5">
-                          <Clock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                          <span>{place.storeInfo.hours.monday_friday}</span>
-                        </div>
-                      ) : null}
-                    </div>
-                  </div>
-
-                  {/* Action Bar */}
-                  <div className="pt-2 pl-1.5 flex items-center justify-between text-xs font-extrabold text-[#003ec7] group-hover:translate-x-0.5 transition-transform">
-                    <span>{t.launchBtn}</span>
-                    <ChevronRight className="w-4 h-4 text-[#003ec7]" />
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+                  {t.more}
+                </button>
+              </div>
+            )}
+          </>
         ) : (
-          <div className="bg-white rounded-2xl p-8 text-center space-y-3 border border-slate-200 my-4 shadow-xs">
-            <Store className="w-10 h-10 text-slate-300 mx-auto" />
-            <h3 className="font-extrabold text-slate-800 text-sm">
-              {t.noResultsTitle}
-            </h3>
-            <p className="text-xs text-slate-500 max-w-xs mx-auto">
-              {t.noResultsDesc}
-            </p>
+          <div className="rounded-3xl bg-white p-10 text-center shadow-soft">
+            <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-surface-container text-on-surface-variant">
+              <Search className="h-6 w-6" />
+            </span>
+            <h3 className="mt-4 text-base font-extrabold text-on-surface">{t.noResultsTitle}</h3>
+            <p className="mx-auto mt-1 max-w-xs text-sm text-on-surface-variant">{t.noResultsDesc}</p>
             <button
               onClick={() => {
-                setSearchQuery("");
+                onSearch("");
+                onCuisine("all");
               }}
-              className="px-4 py-2 rounded-xl bg-[#003ec7] text-white font-extrabold text-xs shadow-sm hover:brightness-110 transition-all"
+              className="btn-primary mt-5 h-11 px-6 text-sm"
             >
               {t.clearBtn}
             </button>
@@ -298,54 +314,44 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         )}
       </section>
 
-      {/* FOOTER */}
-      <footer className="max-w-md md:max-w-4xl mx-auto px-4 pt-10 text-center text-xs text-slate-400">
-        <p>© {new Date().getFullYear()} {t.footerText}</p>
+      <footer className="mx-auto max-w-md md:max-w-4xl px-5 pt-12 text-center text-xs font-medium text-on-surface-variant/70">
+        © {new Date().getFullYear()} {t.footerText}
       </footer>
 
-      {/* PORTAL INFO MODAL DIALOG */}
+      {/* INFO MODAL */}
       {showInfoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
-          <div className="bg-white rounded-3xl p-6 max-w-sm w-full space-y-4 shadow-2xl border border-slate-100 relative">
+        <div
+          className="fixed inset-0 z-50 flex items-end justify-center bg-navy/50 p-4 backdrop-blur-sm animate-in fade-in duration-200 sm:items-center"
+          onClick={() => setShowInfoModal(false)}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-sm rounded-[28px] bg-white p-6 shadow-float animate-in slide-in-from-bottom duration-300"
+          >
             <button
               onClick={() => setShowInfoModal(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+              aria-label="Close"
+              className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface"
             >
-              <X className="w-4 h-4" />
+              <X className="h-4 w-4" />
             </button>
-
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#003ec7] flex items-center justify-center font-black text-xl shadow-2xs">
-                D
-              </div>
+              <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white shadow-soft border border-surface-container">
+                <img src="/logo.jpg" alt="" className="h-full w-full scale-110 object-cover" />
+              </span>
               <div>
-                <h3 className="font-extrabold text-base text-slate-900 leading-tight">
-                  {lang === "es" ? "Acerca de DuoTaps" : "About DuoTaps"}
-                </h3>
-                <p className="text-xs text-[#003ec7] font-bold">
-                  {lang === "es" ? "Menús Bilingües y Asistentes IA" : "Bilingual Menus & AI Assistants"}
-                </p>
+                <h3 className="text-lg font-extrabold leading-tight text-on-surface">{t.aboutTitle}</h3>
+                <p className="text-xs font-semibold text-primary">{t.aboutSub}</p>
               </div>
             </div>
-
-            <div className="space-y-2.5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              <p>
-                {lang === "es"
-                  ? "DuoTaps ayuda a restaurantes, cafeterías y delis de Connecticut a comunicarse con clientes hispanohablantes mediante menús traducidos al español y asistencia al comensal."
-                  : "DuoTaps helps Connecticut restaurants, cafes, and delis serve Spanish-speaking guests with instant bilingual translated menus and AI customer assistance."}
-              </p>
-              <p className="font-semibold text-slate-800">
-                {lang === "es"
-                  ? "¿Es dueño de un restaurante? Contáctenos para reclamar o personalizar su menú oficial de forma gratuita."
-                  : "Are you a restaurant owner? Contact us to claim or customize your official menu for free."}
-              </p>
+            <div className="mt-4 space-y-3 text-sm leading-relaxed text-on-surface-variant">
+              <p>{t.aboutP1}</p>
+              <p className="font-semibold text-on-surface">{t.aboutP2}</p>
             </div>
-
-            <button
-              onClick={() => setShowInfoModal(false)}
-              className="w-full py-2.5 bg-[#003ec7] text-white font-extrabold text-xs rounded-xl shadow-sm hover:brightness-110 transition-all"
-            >
-              {lang === "es" ? "Entendido" : "Got It"}
+            <button onClick={() => setShowInfoModal(false)} className="btn-primary mt-5 h-12 w-full text-sm">
+              {t.done}
             </button>
           </div>
         </div>

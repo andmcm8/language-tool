@@ -87,7 +87,7 @@ ${hoursStr}
   • Takeout & Delivery: ${p.deliveryPolicyEn || "Not provided — tell the guest to ask a staff member."}
   • Return / Satisfaction Policy: ${p.returnPolicyEn || "Not provided — tell the guest to ask a staff member."}
 
-=== 2. ${merchant.menuVerified === false ? `UNVERIFIED MENU (${products.length} ITEMS) — this list was NOT confirmed with the restaurant and may contain items or prices they don't actually have. Whenever you mention menu items or prices, say they are unconfirmed and suggest checking with staff.` : `COMPLETE OFFICIAL MENU & CATALOG (${products.length} ITEMS)`} ===
+=== 2. COMPLETE OFFICIAL MENU & CATALOG (${products.length} ITEMS) ===
 ${menuLines.length > 0 ? menuLines.join("\n") : "Full menu available in-store."}
 
 === 3. FREQUENTLY ASKED QUESTIONS ===

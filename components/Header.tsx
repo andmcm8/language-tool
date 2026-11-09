@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { MerchantConfig } from "@/types/merchant";
 import { isValidPhone } from "@/lib/phone";
+import { townFromAddress } from "@/lib/place";
 import { useRouter } from "next/navigation";
 import {
   Store,
@@ -22,7 +23,8 @@ import {
   Copy,
   Send,
   ExternalLink,
-  Loader2
+  Loader2,
+  ChevronLeft
 } from "lucide-react";
 
 interface HeaderProps {
@@ -42,6 +44,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
   const [isSubmittingContact, setIsSubmittingContact] = useState(false);
   const [contactSubmitted, setContactSubmitted] = useState(false);
   const { storeInfo } = merchant;
+  const town = townFromAddress(storeInfo.address);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("contact@duotaps.com");
@@ -88,82 +91,52 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur-xl border-b border-surface-container-high shadow-2xs transition-all">
-        {/* Bilingual Menu & Listing Service Bar */}
-        <div className="bg-blue-50/90 border-b border-blue-100/80 px-3.5 py-1.5 text-xs flex items-center justify-between">
-          <div className="flex items-center gap-2 min-w-0 mr-2">
-            <span className="bg-[#003ec7]/10 text-[#003ec7] font-extrabold text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-blue-200/60 shrink-0">
-              {lang === "es" ? "Menú Bilingüe" : "Bilingual Menu"}
-            </span>
-            <p className="text-[11px] leading-tight truncate text-slate-600 font-medium">
-              {lang === "es"
-                ? `Menú digital en español para ${storeInfo.name}`
-                : `Digital Spanish menu & assistant for ${storeInfo.name}`}
-            </p>
-          </div>
-          <button
-            onClick={() => setShowClaimModal(true)}
-            className="shrink-0 text-[11px] font-bold text-[#003ec7] hover:text-blue-800 hover:underline whitespace-nowrap cursor-pointer flex items-center gap-1"
-          >
-            {lang === "es" ? "Administrar menú →" : "Manage menu →"}
-          </button>
-        </div>
-
-        <div className="max-w-md mx-auto px-4 py-2.5 flex items-center justify-between">
-          {/* Left: Dynamic Brand Identity (Clean & Focused on Current Merchant) */}
-          <div className="flex items-center gap-2.5 text-left">
+      <header className="sticky top-0 z-30 glass border-x-0 border-t-0 border-b border-white/60 shadow-[0_1px_0_rgba(11,27,51,0.04)]">
+        <div className="max-w-md mx-auto px-4 py-3 flex items-center justify-between gap-3">
+          {/* Left: back to directory + place identity */}
+          <div className="flex items-center gap-3 min-w-0">
             <Link
               href="/"
-              className="w-9 h-9 rounded-2xl text-white flex items-center justify-center shadow-xs hover:scale-105 transition-transform"
-              style={{ backgroundColor: storeInfo.themeColor || "#003ec7" }}
-              title="Back to All Places / Volver al Inicio"
+              aria-label={lang === "es" ? "Volver al directorio" : "Back to directory"}
+              className="w-10 h-10 shrink-0 rounded-full bg-white shadow-soft border border-white flex items-center justify-center text-on-surface hover:text-primary transition-colors"
             >
-              {getLogoIcon(storeInfo.logoIcon)}
+              <ChevronLeft className="w-5 h-5" strokeWidth={2.4} />
             </Link>
-            <div>
-              <h1 className="font-bold text-on-surface text-sm tracking-tight leading-none truncate max-w-[170px]">
+            <div className="min-w-0">
+              <h1 className="font-extrabold text-[17px] text-on-surface tracking-tight leading-tight truncate">
                 {storeInfo.name}
               </h1>
-              <div className="flex items-center gap-1 mt-0.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                <p className="text-[11px] text-on-surface-variant font-medium truncate max-w-[150px]">
-                  {storeInfo.address.split(",")[1] || "Stamford, CT"}
+              {town && (
+                <p className="mt-0.5 flex items-center gap-1 text-xs text-on-surface-variant font-medium truncate">
+                  <MapPin className="w-3 h-3 shrink-0" />
+                  <span className="truncate">{town}</span>
                 </p>
-              </div>
+              )}
             </div>
           </div>
 
-          {/* Right: Condensed Unified Controls (ES/EN + Info) */}
-          <div className="flex items-center gap-1 bg-surface-container/70 p-1 rounded-full border border-outline-variant/30">
-            <button
-              onClick={() => setLang("es")}
-              className={`px-2.5 py-1 rounded-full text-xs font-bold transition-all ${
-                lang === "es"
-                  ? "bg-primary text-white shadow-2xs"
-                  : "text-on-surface-variant hover:text-on-surface"
-              }`}
-            >
-              ES
-            </button>
-            <button
-              onClick={() => setLang("en")}
-              className={`px-2.5 py-1 rounded-full text-xs font-bold transition-all ${
-                lang === "en"
-                  ? "bg-primary text-white shadow-2xs"
-                  : "text-on-surface-variant hover:text-on-surface"
-              }`}
-            >
-              EN
-            </button>
-
-            <div className="w-px h-3.5 bg-outline-variant/40 mx-0.5" />
-
+          {/* Right: language + info */}
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center p-1 rounded-full bg-white shadow-soft border border-white">
+              {(["es", "en"] as const).map((code) => (
+                <button
+                  key={code}
+                  onClick={() => setLang(code)}
+                  aria-pressed={lang === code}
+                  className={`px-3 h-8 rounded-full text-xs font-bold transition-all ${
+                    lang === code ? "bg-brand-gradient text-white shadow-brand" : "text-on-surface-variant hover:text-on-surface"
+                  }`}
+                >
+                  {code.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <button
               onClick={() => setShowInfoModal(true)}
-              className="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors"
-              aria-label="Store Info"
+              aria-label={lang === "es" ? "Información del lugar" : "Place info"}
+              className="w-10 h-10 rounded-full bg-white shadow-soft border border-white flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"
             >
-              <Info className="w-4 h-4" />
+              <Info className="w-[18px] h-[18px]" />
             </button>
           </div>
         </div>
@@ -172,7 +145,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
       {/* Merchant Info Modal */}
       {showInfoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-xs animate-in fade-in duration-200">
-          <div className="bg-surface-container-lowest rounded-3xl max-w-xs w-full p-5 shadow-2xl border border-secondary-fixed/60 relative overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="bg-white rounded-[28px] max-w-xs w-full p-6 shadow-float border border-white relative overflow-hidden animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setShowInfoModal(false)}
               className="absolute top-3.5 right-3.5 p-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface transition-all"
@@ -183,7 +156,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
             <div className="flex items-center gap-2.5 mb-4">
               <div
                 className="w-10 h-10 rounded-2xl text-white flex items-center justify-center font-bold"
-                style={{ backgroundColor: storeInfo.themeColor || "#003ec7" }}
+                style={{ backgroundColor: storeInfo.themeColor || "#0A5CFF" }}
               >
                 {getLogoIcon(storeInfo.logoIcon)}
               </div>
@@ -251,10 +224,16 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
             </div>
 
             <button
-              onClick={() => setShowInfoModal(false)}
-              className="mt-5 w-full py-2 bg-primary text-white font-bold text-xs rounded-xl shadow-xs hover:bg-primary-container transition-all"
+              onClick={() => { setShowInfoModal(false); setShowClaimModal(true); }}
+              className="mt-4 w-full py-2.5 bg-primary-fixed text-primary font-bold text-xs rounded-full hover:bg-secondary-fixed transition-all"
             >
-              {lang === "es" ? "Entendido" : "OK"}
+              {lang === "es" ? "¿Es el dueño? Administrar menú" : "Own this place? Manage menu"}
+            </button>
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="mt-2 w-full py-3 btn-primary text-xs"
+            >
+              {lang === "es" ? "Entendido" : "Done"}
             </button>
           </div>
         </div>
@@ -272,14 +251,14 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
             </button>
 
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#003ec7] flex items-center justify-center font-bold">
-                <Store className="w-5 h-5 text-[#003ec7]" />
+              <div className="w-10 h-10 rounded-2xl bg-blue-50 text-[#0A5CFF] flex items-center justify-center font-bold">
+                <Store className="w-5 h-5 text-[#0A5CFF]" />
               </div>
               <div>
                 <h3 className="font-extrabold text-base leading-tight">
                   {lang === "es" ? "¿Es el dueño o administrador?" : "Are you the owner or manager?"}
                 </h3>
-                <p className="text-xs text-[#003ec7] font-semibold">
+                <p className="text-xs text-[#0A5CFF] font-semibold">
                   {storeInfo.name}
                 </p>
               </div>
@@ -318,7 +297,7 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
                   placeholder={lang === "es" ? "Su correo o teléfono..." : "Your email or phone..."}
                   value={contactInput}
                   onChange={(e) => setContactInput(e.target.value)}
-                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#003ec7] bg-slate-50/50"
+                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#0A5CFF] bg-slate-50/50"
                   required
                 />
                 <textarea
@@ -326,12 +305,12 @@ export default function Header({ merchant, lang, setLang }: HeaderProps) {
                   value={messageInput}
                   onChange={(e) => setMessageInput(e.target.value)}
                   rows={2}
-                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#003ec7] bg-slate-50/50 resize-none"
+                  className="w-full text-xs px-3 py-2 rounded-xl border border-slate-200 focus:outline-none focus:border-[#0A5CFF] bg-slate-50/50 resize-none"
                 />
                 <button
                   type="submit"
                   disabled={isSubmittingContact}
-                  className="w-full py-2.5 bg-[#003ec7] text-white font-extrabold text-xs rounded-xl shadow-xs hover:brightness-110 transition-all flex items-center justify-center gap-1.5 disabled:opacity-50"
+                  className="w-full py-2.5 bg-[#0A5CFF] text-white font-extrabold text-xs rounded-xl shadow-xs hover:brightness-110 transition-all flex items-center justify-center gap-1.5 disabled:opacity-50"
                 >
                   {isSubmittingContact ? (
                     <Loader2 className="w-3.5 h-3.5 animate-spin" />

@@ -17,15 +17,14 @@ interface StorefrontProps {
 function MerchantStorefrontContent({ merchant }: StorefrontProps) {
   const searchParams = useSearchParams();
 
-  // Allow URL to specify tab (e.g. ?tab=catalog or ?view=catalog)
-  // Default directly to "catalog" so sending /demo sends users straight to the menu!
+  // Allow URL to specify tab (e.g. ?tab=catalog or ?view=catalog).
+  // Default to the menu so a shared link lands straight on it.
   const requestedTab = searchParams.get("tab") || searchParams.get("view");
-  const initialTab: TabType = (
+  const initialTab: TabType =
     requestedTab === "home" ? "home" :
     requestedTab === "camera" || requestedTab === "translator" ? "camera" :
     requestedTab === "assistant" ? "assistant" :
-    "catalog"
-  );
+    "catalog";
 
   const [activeTab, setActiveTab] = useState<TabType>(initialTab);
 
@@ -34,38 +33,26 @@ function MerchantStorefrontContent({ merchant }: StorefrontProps) {
   const initialLang: "es" | "en" = requestedLang === "es" ? "es" : "en";
   const [lang, setLang] = useState<"es" | "en">(initialLang);
 
-  const handleTabChange = (newTab: TabType) => {
-    setActiveTab(newTab);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col bg-surface text-on-surface">
-      {/* Header with dynamic merchant info and manual ES/EN toggle */}
+    <div className="min-h-screen flex flex-col text-on-surface">
       <Header merchant={merchant} lang={lang} setLang={setLang} />
 
-      {/* Main Content Body */}
-      <main className="flex-1 flex flex-col">
-        {activeTab === "home" && (
-          <LandingView merchant={merchant} setActiveTab={handleTabChange} lang={lang} />
-        )}
-        {activeTab === "catalog" && (
-          <CatalogTab merchant={merchant} lang={lang} />
-        )}
+      <main key={activeTab} className="flex-1 flex flex-col animate-rise pb-28">
+        {activeTab === "home" && <LandingView merchant={merchant} setActiveTab={setActiveTab} lang={lang} />}
+        {activeTab === "catalog" && <CatalogTab merchant={merchant} lang={lang} />}
         {activeTab === "camera" && <TranslatorTab lang={lang} />}
         {activeTab === "assistant" && <AiAssistantTab merchant={merchant} lang={lang} />}
       </main>
 
-      {/* Fixed Mobile Navigation Tab Bar */}
-      <BottomNav activeTab={activeTab} setActiveTab={handleTabChange} lang={lang} />
+      <BottomNav activeTab={activeTab} setActiveTab={setActiveTab} lang={lang} />
     </div>
   );
 }
 
 export default function MerchantStorefront({ merchant }: StorefrontProps) {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-surface" />}>
+    <Suspense fallback={<div className="min-h-screen" />}>
       <MerchantStorefrontContent merchant={merchant} />
     </Suspense>
   );
 }
-
