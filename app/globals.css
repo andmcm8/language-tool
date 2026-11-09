@@ -75,10 +75,11 @@
   font-variation-settings: 'FILL' 1;
 }
 
+/* Opacity-only on purpose: a transform on a wrapper would trap position:fixed sheets/nav inside it. */
 @keyframes rise {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .animate-rise {
-  animation: rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rise 0.35s ease-out backwards;
 }
