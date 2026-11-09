@@ -2,24 +2,17 @@
   "storeInfo": {
     "id": "sherkaan-indian-street-food",
     "name": "Sherkaan Indian Street Food",
-    "tagline": "Authentic Indian Street Flavors in the Heart of New Haven | Sabores callejeros auténticos de la India en el corazón de New Haven",
+    "tagline": "Restaurant in New Haven | Restaurant en New Haven",
     "address": "65 Broadway, New Haven, CT 06511",
     "hours": {
-      "monday_friday": "11:30 AM - 9:30 PM",
-      "saturday": "12:00 PM - 10:00 PM",
-      "sunday": "12:00 PM - 9:00 PM"
+      "monday_friday": "Call for hours",
+      "saturday": "Call for hours",
+      "sunday": "Call for hours"
     },
-    "paymentMethods": [
-      "Cash",
-      "Credit/Debit Cards",
-      "Apple Pay",
-      "Contactless"
-    ],
+    "paymentMethods": [],
     "amenities": [
-      "Dine-In",
-      "Takeout",
       "Bilingual Menu",
-      "Outdoor Seating"
+      "Online Ordering"
     ],
     "themeColor": "#b45309",
     "logoIcon": "utensils",
@@ -27,162 +20,1479 @@
       "returnPolicyEs": "Nos esforzamos por la satisfacción total; por favor notifique a su mesero de inmediato.",
       "returnPolicyEn": "We strive for complete guest satisfaction; please notify your server immediately."
     },
-    "phone": "(203) 498-2722"
+    "phone": "(203) 405-5808"
   },
   "categories": [
     {
       "id": "all",
-      "nameEs": "Todos los Platos",
+      "nameEs": "Todo el Menú",
       "nameEn": "All Items",
       "icon": "Utensils"
     },
     {
-      "id": "appetizers",
-      "nameEs": "Entradas",
-      "nameEn": "Appetizers & Starters",
+      "id": "chaats",
+      "nameEs": "Chaats",
+      "nameEn": "Chaats",
       "icon": "Utensils"
     },
     {
-      "id": "mains",
-      "nameEs": "Platos Principales",
-      "nameEn": "Main Entrees",
+      "id": "salads",
+      "nameEs": "Ensaladas",
+      "nameEn": "Salads",
       "icon": "Utensils"
     },
     {
-      "id": "specialties",
-      "nameEs": "Especialidades de la Casa",
-      "nameEn": "Chef Specialties",
+      "id": "street-eats",
+      "nameEs": "Comida callejera",
+      "nameEn": "Street Eats",
       "icon": "Utensils"
     },
     {
-      "id": "beverages",
-      "nameEs": "Bebidas",
-      "nameEn": "Drinks & Beverages",
-      "icon": "Coffee"
+      "id": "share-plates",
+      "nameEs": "Platos para compartir",
+      "nameEn": "Share Plates",
+      "icon": "Utensils"
+    },
+    {
+      "id": "from-the-tandoor",
+      "nameEs": "Del tandoor",
+      "nameEn": "From the Tandoor",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sides",
+      "nameEs": "Guarniciones",
+      "nameEn": "Sides",
+      "icon": "Utensils"
+    },
+    {
+      "id": "dessert",
+      "nameEs": "Postre",
+      "nameEn": "Dessert",
+      "icon": "Utensils"
+    },
+    {
+      "id": "family-style-takeout",
+      "nameEs": "Para llevar estilo familiar",
+      "nameEn": "Family-Style Takeout",
+      "icon": "Utensils"
+    },
+    {
+      "id": "shook-ones",
+      "nameEs": "Shook Ones",
+      "nameEn": "Shook Ones",
+      "icon": "Utensils"
+    },
+    {
+      "id": "spirit-forward",
+      "nameEs": "Spirit Forward",
+      "nameEn": "Spirit Forward",
+      "icon": "Utensils"
+    },
+    {
+      "id": "punch",
+      "nameEs": "Ponche",
+      "nameEn": "Punch",
+      "icon": "Utensils"
+    },
+    {
+      "id": "free-spirited",
+      "nameEs": "Espíritu libre",
+      "nameEn": "Free Spirited",
+      "icon": "Utensils"
+    },
+    {
+      "id": "add-ons",
+      "nameEs": "Extras",
+      "nameEn": "Add-ons",
+      "icon": "Utensils"
+    },
+    {
+      "id": "draft",
+      "nameEs": "De barril",
+      "nameEn": "Draft",
+      "icon": "Utensils"
+    },
+    {
+      "id": "cans-bottles",
+      "nameEs": "Latas / Botellas",
+      "nameEn": "Cans / Bottles",
+      "icon": "Utensils"
+    },
+    {
+      "id": "red-wine",
+      "nameEs": "Vino tinto",
+      "nameEn": "Red Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "white-wine",
+      "nameEs": "Vino blanco",
+      "nameEn": "White Wine",
+      "icon": "Utensils"
+    },
+    {
+      "id": "rose",
+      "nameEs": "Rosado",
+      "nameEn": "Rose",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sparkling",
+      "nameEs": "Espumosos",
+      "nameEn": "Sparkling",
+      "icon": "Utensils"
+    },
+    {
+      "id": "coffee-espresso",
+      "nameEs": "Café y espresso",
+      "nameEn": "Coffee & Espresso",
+      "icon": "Utensils"
+    },
+    {
+      "id": "tea",
+      "nameEs": "Té",
+      "nameEn": "Tea",
+      "icon": "Utensils"
+    },
+    {
+      "id": "sunday-brunch",
+      "nameEs": "Brunch dominical",
+      "nameEn": "Sunday Brunch",
+      "icon": "Utensils"
     }
   ],
   "products": [
     {
-      "id": "sherkaan-01",
-      "categoryId": "appetizers",
-      "nameEs": "Samosas de Vegetales",
-      "nameEn": "Vegetable Samosas",
-      "descriptionEs": "Empanadas crujientes rellenas de papas especiadas y guisantes, servidas con chutney de tamarindo.",
-      "descriptionEn": "Crispy pastry pockets filled with spiced potatoes and peas, served with tangy tamarind chutney.",
-      "price": "$8.50",
-      "popular": true,
-      "badge": "Popular",
-      "tags": [
-        "Vegetariano",
-        "Vegano"
-      ],
-      "allergens": [
-        "Gluten"
-      ],
+      "id": "bhel-puri",
+      "categoryId": "chaats",
+      "nameEs": "BHEL PURI",
+      "nameEn": "BHEL PURI",
+      "descriptionEs": "arroz inflado, almendra, garbanzos, papa especiada, tomate, cebolla, chutneys verde y de tamarindo, sev (V)",
+      "descriptionEn": "puffed rice, almond, chickpeas, spiced potato, tomato, onion, green & tamarind chutneys, sev(V)",
+      "price": "11",
       "ctaType": "in_store"
     },
     {
-      "id": "sherkaan-02",
-      "categoryId": "appetizers",
-      "nameEs": "Bhel Puri",
-      "nameEn": "Bhel Puri",
-      "descriptionEs": "Un clásico de la comida callejera: arroz inflado, verduras frescas y salsas picantes.",
-      "descriptionEn": "A street food classic: puffed rice, fresh vegetables, and zesty chutneys.",
-      "price": "$9.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Vegano",
-        "Sin Gluten"
-      ],
-      "allergens": [],
+      "id": "gobi-pakora",
+      "categoryId": "chaats",
+      "nameEs": "GOBI PAKORA",
+      "nameEn": "GOBI PAKORA",
+      "descriptionEs": "coliflor frita en harina de garbanzo, yogur dulce, bañada en chutney de arándano y habanero (V, SG)",
+      "descriptionEn": "chickpea fried cauliflower, sweet yogurt, tossed in cranberry habanero chutney (V, GF)",
+      "price": "10",
       "ctaType": "in_store"
     },
     {
-      "id": "sherkaan-03",
-      "categoryId": "mains",
-      "nameEs": "Pollo Tikka Masala",
-      "nameEn": "Chicken Tikka Masala",
-      "descriptionEs": "Trozos de pollo a la parrilla en una salsa cremosa de tomate y especias aromáticas.",
-      "descriptionEn": "Grilled chicken chunks simmered in a creamy tomato-based sauce with aromatic spices.",
-      "price": "$18.95",
-      "popular": true,
-      "badge": "Favorito",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "dahi-puri",
+      "categoryId": "chaats",
+      "nameEs": "DAHI PURI",
+      "nameEn": "DAHI PURI",
+      "descriptionEs": "conchas de puri, garbanzos, papa especiada, cebolla, sev, yogur dulce, chutneys verde y de tamarindo (V)",
+      "descriptionEn": "puri shells, chickpeas, spiced potato, onion, sev, sweet yogurt, green & tamarind chutneys (V)",
+      "price": "10",
       "ctaType": "in_store"
     },
     {
-      "id": "sherkaan-04",
-      "categoryId": "mains",
-      "nameEs": "Cordero Rogan Josh",
-      "nameEn": "Lamb Rogan Josh",
-      "descriptionEs": "Cordero tierno cocinado a fuego lento en una salsa rica de yogur y especias de Cachemira.",
-      "descriptionEn": "Tender lamb slow-cooked in a rich yogurt-based sauce with Kashmiri spices.",
-      "price": "$21.00",
-      "popular": false,
-      "badge": "",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "chili-chicken",
+      "categoryId": "chaats",
+      "nameEs": "CHILI CHICKEN",
+      "nameEn": "CHILI CHICKEN",
+      "descriptionEs": "muslo de pollo marinado, cebolla, salsa de soya y chile dulce, pimiento rojo; sustituir por gobi (v+) / sustituir por paneer (V) (SG)",
+      "descriptionEn": "marinated chicken thigh, onion, sweet chili soy sauce, red bell pepper-sub gobi (v+) / sub paneer (V) (GF)",
+      "price": "14",
       "ctaType": "in_store"
     },
     {
-      "id": "sherkaan-05",
-      "categoryId": "specialties",
-      "nameEs": "Biryani de Pollo",
-      "nameEn": "Chicken Biryani",
-      "descriptionEs": "Arroz basmati aromático cocinado con pollo marinado, azafrán y especias enteras.",
-      "descriptionEn": "Aromatic basmati rice cooked with marinated chicken, saffron, and whole spices.",
-      "price": "$19.50",
-      "popular": true,
-      "badge": "Chef's Choice",
-      "tags": [
-        "Sin Gluten"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "pani-puri",
+      "categoryId": "chaats",
+      "nameEs": "PANI PURI",
+      "nameEn": "PANI PURI",
+      "descriptionEs": "conchas de puri, garbanzos, papa especiada, cebolla, cilantro, sev, servido con agua de chile y menta o agua de tamarindo (V+)",
+      "descriptionEn": "puri shells, chickpeas, spiced potato, onion, cilantro, sev, served with chili mint water or tamarind water (V+)",
+      "price": "9",
       "ctaType": "in_store"
     },
     {
-      "id": "sherkaan-06",
-      "categoryId": "beverages",
-      "nameEs": "Lassi de Mango",
-      "nameEn": "Mango Lassi",
-      "descriptionEs": "Bebida refrescante de yogur batido con pulpa de mango fresco.",
-      "descriptionEn": "Refreshing yogurt drink blended with fresh mango pulp.",
-      "price": "$6.00",
-      "popular": true,
-      "badge": "Refrescante",
-      "tags": [
-        "Vegetariano"
-      ],
-      "allergens": [
-        "Lácteos"
-      ],
+      "id": "punjabi-samosa",
+      "categoryId": "chaats",
+      "nameEs": "PUNJABI SAMOSA",
+      "nameEn": "PUNJABI SAMOSA",
+      "descriptionEs": "empanaditas rellenas de aloo masala, chícharos, chutneys verde y de tamarindo (V)",
+      "descriptionEn": "dumplings filled with aloo masala, peas, green & tamarind chutneys (V)",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "okra-fries",
+      "categoryId": "chaats",
+      "nameEs": "PAPAS DE OKRA",
+      "nameEn": "OKRA FRIES",
+      "descriptionEs": "okra frita en tiras finas, chaat masala, limón, servida con kétchup Maggi (V+, SG)",
+      "descriptionEn": "fried matchstick okra, chaat masala, lemon, served with maggi ketchup (V+, GF)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "samosa-chaat",
+      "categoryId": "chaats",
+      "nameEs": "CHAAT DE SAMOSA",
+      "nameEn": "SAMOSA CHAAT",
+      "descriptionEs": "samosas punjabi, curry salado de garbanzo y vegetales, chutneys verde y de tamarindo, yogur dulce (V)",
+      "descriptionEn": "punjabi samosas, savory chickpea & vegetable curry, green & tamarind chutneys, sweet yogurt (V)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala-fries",
+      "categoryId": "chaats",
+      "nameEs": "PAPAS MASALA",
+      "nameEn": "MASALA FRIES",
+      "descriptionEs": "papas a la francesa, chaat masala, chile en polvo de Cachemira, cilantro, servidas con kétchup Maggi",
+      "descriptionEn": "potato french fries, chaat masala, kashmiri chili powder, cilantro, served with maggi ketchup",
+      "price": "8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kachumbar-salad",
+      "categoryId": "salads",
+      "nameEs": "ENSALADA KACHUMBAR",
+      "nameEn": "KACHUMBAR SALAD",
+      "descriptionEs": "pepino, tomate, cebolla, chile verde, rábano, vinagreta de comino y limón (V+, SG)",
+      "descriptionEn": "cucumber, tomato, onion, green chili, breakfast radish, cumin lime vinaigrette (V+, GF)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chinese-cabbage-salad",
+      "categoryId": "salads",
+      "nameEs": "ENSALADA DE COL CHINA",
+      "nameEn": "CHINESE CABBAGE SALAD",
+      "descriptionEs": "chile verde, marañón, pimiento morrón, coco, vinagreta de naranja sanguina y jengibre (V+, SG)",
+      "descriptionEn": "green chili, cashew, bell pepper, coconut, blood orange ginger vinaigrette (V+, GF)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kale-caesar-salad",
+      "categoryId": "salads",
+      "nameEs": "ENSALADA CÉSAR DE KALE",
+      "nameEn": "KALE CAESAR SALAD",
+      "descriptionEs": "kale baby tierno, parmesano en lascas, garbanzos crujientes, chaat masala, Cachemira, aderezo César (SG)",
+      "descriptionEn": "tender baby kale, shaved parmesan, crispy chickpeas, chaat masala, kashmiri, caesar dressing (GF)",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-frankie-roll",
+      "categoryId": "street-eats",
+      "nameEs": "CHICKEN FRANKIE ROLL",
+      "nameEn": "CHICKEN FRANKIE ROLL",
+      "descriptionEs": "paratha hojaldrado, jalapeño en escabeche, ensalada de col estilo desi, chutney verde, raita",
+      "descriptionEn": "flaky paratha, pickled jalapeño, desi slaw, green chutney, raita",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "szechuan-gobi-frankie-roll",
+      "categoryId": "street-eats",
+      "nameEs": "SZECHUAN GOBI FRANKIE ROLL",
+      "nameEn": "SZECHUAN GOBI FRANKIE ROLL",
+      "descriptionEs": "coliflor frita, aloo masala, chutney Szechuan, cebolla, pimiento, col, cilantro (V+)",
+      "descriptionEn": "fried cauliflower, aloo masala, Szechuan chutney, onion, pepper, cabbage, cilantro (V+)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala-dosa",
+      "categoryId": "street-eats",
+      "nameEs": "MASALA DOSA",
+      "nameEn": "MASALA DOSA",
+      "descriptionEs": "aloo masala, chutneys de ajo y chile y de coco, sambar (V+, SG)",
+      "descriptionEn": "aloo masala, garlic chili & coconut chutneys, sambar (V+, GF)",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "keema-dosa",
+      "categoryId": "street-eats",
+      "nameEs": "KEEMA DOSA",
+      "nameEn": "KEEMA DOSA",
+      "descriptionEs": "pollo molido especiado, queso Amul, cebollas encurtidas, raita de pepino (SG)",
+      "descriptionEn": "spiced ground chicken, amul cheese, pickled onions, cucumber raita (GF)",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vada-pav-sliders",
+      "categoryId": "street-eats",
+      "nameEs": "VADA PAV SLIDERS",
+      "nameEn": "VADA PAV SLIDERS",
+      "descriptionEs": "panecillos pav tostados, hamburguesa de aloo especiada, cebolla, chutneys verde, de tamarindo y de ajo (V)",
+      "descriptionEn": "toasted pav buns, spiced aloo patty, onion, green, tamarind, & garlic chutneys (V)",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bengali-fish-fry-sliders",
+      "categoryId": "street-eats",
+      "nameEs": "BENGALI FISH FRY SLIDERS",
+      "nameEn": "BENGALI FISH FRY SLIDERS",
+      "descriptionEs": "bagre empanizado y frito, pav a la plancha, ensalada de col, alioli de chile y limón",
+      "descriptionEn": "battered & fried catfish, griddled pav, slaw, chili lime aioli",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hot-chicken-sandwich",
+      "categoryId": "street-eats",
+      "nameEs": "SÁNDWICH DE POLLO PICANTE",
+      "nameEn": "HOT CHICKEN SANDWICH",
+      "descriptionEs": "muslos de pollo especiados y empanizados, pan brioche a la plancha, chutney de mango, encurtidos rápidos, cebolla",
+      "descriptionEn": "spiced & battered chicken thighs, griddled brioche bun, mango chutney, quick pickles, onion",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-burger",
+      "categoryId": "street-eats",
+      "nameEs": "HAMBURGUESA DE CORDERO",
+      "nameEn": "LAMB BURGER",
+      "descriptionEs": "carne de cordero molida especiada, pan brioche a la plancha, raita de pepino, arúgula, cebolla",
+      "descriptionEn": "spiced ground lamb patty, griddled brioche bun, cucumber raita, arugula, onion",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chaat-dog",
+      "categoryId": "street-eats",
+      "nameEs": "CHAAT DOG",
+      "nameEn": "CHAAT DOG",
+      "descriptionEs": "seekh kebab de vegetales, raita de pepino, granada, chutney seco de ajo y chile, sev, cilantro, pan estilo Nueva Inglaterra -- sustituir por seekh kebab de cordero (+5) o seekh kebab de pollo (+4)",
+      "descriptionEn": "vegetable seekh kebab, cucumber raita, pomegranate, dry garlic chili chutney, sev, cilantro, New England style bun -- sub lamb seekh kebab (+5) or chicken seekh kebab (+4)",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "makhani-naan",
+      "categoryId": "street-eats",
+      "nameEs": "MAKHANI NAAN",
+      "nameEn": "MAKHANI NAAN",
+      "descriptionEs": "naan relleno de pollo o paneer (V), servido con salsa makhani **contiene marañón, no se puede omitir**",
+      "descriptionEn": "naan filled with chicken or paneer (V), served with makhani sauce **contains cashews, cannot omit**",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "hakka-noodles",
+      "categoryId": "street-eats",
+      "nameEs": "HAKKA NOODLES",
+      "nameEn": "HAKKA NOODLES",
+      "descriptionEs": "fideos chinos de trigo, salsa de soya y chile, cebollas, pimiento, col (V+) -- agregar pollo (+4)",
+      "descriptionEn": "Chinese wheat noodles, soy chili, onions, pepper, cabbage (V+) -- add chicken (+4)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pav-bhaji",
+      "categoryId": "street-eats",
+      "nameEs": "PAV BHAJI",
+      "nameEn": "PAV BHAJI",
+      "descriptionEs": "panecillos pav tostados, curry de vegetales, cebolla, limón (V)",
+      "descriptionEn": "toasted pav buns, vegetable curry, onion, lime (V)",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "street-eats",
+      "nameEs": "ALITAS DE POLLO",
+      "nameEn": "CHICKEN WINGS",
+      "descriptionEs": "marinadas en yogur y especias (SG) -- elige entre alitas asadas en tandoor y salteadas con ghee, cilantro, cebolla y limón, O alitas crujientes con chile y tamari (6 por orden)",
+      "descriptionEn": "marinated in yogurt & spices (GF) -- choose between tandoor-roasted wings tossed with ghee, cilantro, onion, & lime OR crispy chili tamari wings (6 per order)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spring-rolls",
+      "categoryId": "street-eats",
+      "nameEs": "ROLLITOS DE PRIMAVERA",
+      "nameEn": "SPRING ROLLS",
+      "descriptionEs": "masa crujiente, col braseada, zanahoria, pimiento morrón, chile, soya, servidos con salsa de chile dulce (V+, 5 por orden)",
+      "descriptionEn": "crispy pastry, braised cabbage, carrot, bell pepper, chili, soy, served with sweet chili sauce (V+, 5 per order)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dum-biryani",
+      "categoryId": "share-plates",
+      "nameEs": "DUM BIRYANI",
+      "nameEn": "DUM BIRYANI",
+      "descriptionEs": "pollo asado marinado en yogur especiado, en capas con arroz basmati aromático, azafrán, kewra, sellado con masa de naan en una olla de hierro fundido ---sustituir por cordero con hueso +5---",
+      "descriptionEn": "spiced yogurt marinated & roasted chicken, layered with aromatic basmati rice, saffron, kewra, sealed with naan dough in a cast iron pot---sub bone in lamb +5---",
+      "price": "21",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "veg-biryani",
+      "categoryId": "share-plates",
+      "nameEs": "VEG BIRYANI",
+      "nameEn": "VEG BIRYANI",
+      "descriptionEs": "papa roja, zanahoria, coliflor, chícharo, pimiento morrón, champiñón, azafrán, arroz basmati (V+, SG) ---préparalo estilo dum +1---",
+      "descriptionEn": "red potato, carrot, cauliflower, pea, bell pepper, mushroom, saffron, basmati rice (V+, GF) ---make it dum style +1---",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "indo-chinese-pork-ribs",
+      "categoryId": "share-plates",
+      "nameEs": "COSTILLAS DE CERDO INDO-CHINAS",
+      "nameEn": "INDO-CHINESE PORK RIBS",
+      "descriptionEs": "1/2 charola de costillas estilo St. Louis, okra crujiente, glaseado de melaza de tamarindo",
+      "descriptionEn": "1/2 rack St. Louis style spare ribs, crispy okra, tamarind treacle glaze",
+      "price": "21",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chole-bhature",
+      "categoryId": "share-plates",
+      "nameEs": "CHOLE BHATURE",
+      "nameEn": "CHOLE BHATURE",
+      "descriptionEs": "curry salado de garbanzo y vegetales, pan frito ligero y esponjoso (V)",
+      "descriptionEn": "savory chickpea & vegetable curry, light & fluffy fried bread (V)",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter-chicken",
+      "categoryId": "share-plates",
+      "nameEs": "BUTTER CHICKEN",
+      "nameEn": "BUTTER CHICKEN",
+      "descriptionEs": "pollo tandoori, tomate, marañón, cebolla caramelizada, crema, cilantro, arroz basmati (SG) -- sustituir por aloo o paneer **la salsa contiene frutos secos, no se puede omitir**",
+      "descriptionEn": "tandoori chicken, tomato, cashew, caramelized onion, cream, cilantro, basmati rice (GF) -- sub aloo or paneer **sauce contains tree nuts, cannot omit**",
+      "price": "20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "palak-paneer",
+      "categoryId": "share-plates",
+      "nameEs": "PALAK PANEER",
+      "nameEn": "PALAK PANEER",
+      "descriptionEs": "salsa cremosa de espinaca, paneer de la casa, arroz basmati (V, SG)",
+      "descriptionEn": "creamy spinach gravy, housemade paneer, basmati rice (V, GF)",
+      "price": "18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-curry",
+      "categoryId": "share-plates",
+      "nameEs": "CURRY DE POLLO",
+      "nameEn": "CHICKEN CURRY",
+      "descriptionEs": "muslo de pollo marinado y braseado, salsa de cebolla caramelizada, tomate, arroz basmati (SG)",
+      "descriptionEn": "marinated & braised chicken thigh, caramelized onion gravy, tomato, basmati rice (GF)",
+      "price": "18",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dal-makhani",
+      "categoryId": "share-plates",
+      "nameEs": "DAL MAKHANI",
+      "nameEn": "DAL MAKHANI",
+      "descriptionEs": "lentejas negras y frijoles rojos cocidos a fuego lento en una rica salsa de tomate, servidos con arroz basmati (V, SG)",
+      "descriptionEn": "black lentils and kidney beans simmered in a rich tomato gravy served with basmati rice (V, GF)",
+      "price": "17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "moong-masoor-dal",
+      "categoryId": "share-plates",
+      "nameEs": "MOONG MASOOR DAL",
+      "nameEn": "MOONG MASOOR DAL",
+      "descriptionEs": "un guiso ligero de lentejas rojas y amarillas, servido con arroz basmati (V+, SG)",
+      "descriptionEn": "a light stew made with red and yellow lentils, served with basmati rice (V+, GF)",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rogan-josh",
+      "categoryId": "share-plates",
+      "nameEs": "ROGAN JOSH",
+      "nameEn": "ROGAN JOSH",
+      "descriptionEs": "cordero braseado a fuego lento, salsa aromática de chile de Cachemira y yogur, servido con arroz basmati (SG)",
+      "descriptionEn": "slow braised lamb, aromatic kashmiri chili and yogurt gravy, served with basmati rice (GF)",
+      "price": "24",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baingan-bharta",
+      "categoryId": "share-plates",
+      "nameEs": "BAINGAN BHARTA",
+      "nameEn": "BAINGAN BHARTA",
+      "descriptionEs": "berenjena ahumada, tomate asado, coliflor, garbanzos crujientes, arroz basmati (V+, SG)",
+      "descriptionEn": "smoked eggplant, roasted tomato, cauliflower, crispy chickpeas, basmati rice (V+, GF)",
+      "price": "17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bhindi-masala",
+      "categoryId": "share-plates",
+      "nameEs": "BHINDI MASALA",
+      "nameEn": "BHINDI MASALA",
+      "descriptionEs": "okra ampollada, cebolla, tomate, polvo de mango, servida con arroz basmati (V+, SG)",
+      "descriptionEn": "blistered okra, onion, tomato, mango powder, served with basmati rice (V+,GF)",
+      "price": "17",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coconut-salmon-curry",
+      "categoryId": "share-plates",
+      "nameEs": "CURRY DE SALMÓN CON COCO",
+      "nameEn": "COCONUT SALMON CURRY",
+      "descriptionEs": "salmón tandoori chamuscado, curry cremoso de leche de coco y tomate, servido con arroz basmati (SG)",
+      "descriptionEn": "charred tandoori salmon, creamy coconut milk and tomato-based curry, served with basmati rice (GF)",
+      "price": "20",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gunpowder-shrimp",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "CAMARONES GUNPOWDER",
+      "nameEn": "GUNPOWDER SHRIMP",
+      "descriptionEs": "cubiertos con sabores de chana dal, ajonjolí, hojas de curry y chiles de Cachemira, cebolla, limón (SG)",
+      "descriptionEn": "crusted with flavors of chana dal, sesame, curry leaves, and kashmir chilis, onion, lime (GF)",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-salmon",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "SALMÓN TANDOORI",
+      "nameEn": "TANDOORI SALMON",
+      "descriptionEs": "salmón de las Islas Feroe marinado en yogur especiado, limón, cebolla (SG)",
+      "descriptionEn": "faroe island salmon marinated in spiced yogurt, lime, onion (GF)",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-tikka",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "POLLO TIKKA",
+      "nameEn": "CHICKEN TIKKA",
+      "descriptionEs": "muslos marinados en yogur, limón, cebolla (SG)",
+      "descriptionEn": "yogurt marinated thighs, lime, onion (GF)",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "paneer-tikka",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "PANEER TIKKA",
+      "nameEn": "PANEER TIKKA",
+      "descriptionEs": "paneer en rebanadas gruesas marinado en yogur especiado y asado en tandoor, pimiento rojo, cebolla, limón, chutney verde (V, SG)",
+      "descriptionEn": "thick-sliced paneer marinated in spiced yogurt and tandoor roasted, red bell pepper, onion, lime, green chutney (V, GF)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-seekh-kebab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "SEEKH KEBAB DE POLLO",
+      "nameEn": "CHICKEN SEEKH KEBAB",
+      "descriptionEs": "brochetas de pollo molido especiado (SG)",
+      "descriptionEn": "skewers of spiced ground chicken (GF)",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lamb-seekh-kebab",
+      "categoryId": "from-the-tandoor",
+      "nameEs": "SEEKH KEBAB DE CORDERO",
+      "nameEn": "LAMB SEEKH KEBAB",
+      "descriptionEs": "brochetas de cordero molido especiado (SG)",
+      "descriptionEn": "skewers of spiced ground lamb (GF)",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chole",
+      "categoryId": "sides",
+      "nameEs": "CHOLE",
+      "nameEn": "CHOLE",
+      "descriptionEs": "curry salado de garbanzo y vegetales (V+, SG)",
+      "descriptionEn": "savory chickpea & vegetable curry (V+, GF)",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sambar",
+      "categoryId": "sides",
+      "nameEs": "SAMBAR",
+      "nameEn": "SAMBAR",
+      "descriptionEs": "guiso de lentejas, okra, papa, zanahoria (V+, SG)",
+      "descriptionEn": "stew of lentils, okra, potato, carrot (V+, GF)",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "basmati-rice",
+      "categoryId": "sides",
+      "nameEs": "ARROZ BASMATI",
+      "nameEn": "BASMATI RICE",
+      "descriptionEs": "arroz aromático con comino, cardamomo y canela (V+, SG)",
+      "descriptionEn": "aromatic rice with cumin, cardamom & cinnamon (V+, GF)",
+      "price": "3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "bhatura",
+      "categoryId": "sides",
+      "nameEs": "BHATURA",
+      "nameEn": "BHATURA",
+      "descriptionEs": "pan frito ligero y esponjoso (V)",
+      "descriptionEn": "light & fluffy fried bread (V)",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tandoori-roti",
+      "categoryId": "sides",
+      "nameEs": "ROTI TANDOORI",
+      "nameEn": "TANDOORI ROTI",
+      "descriptionEs": "pan plano crujiente de trigo integral sin levadura, untado con ghee (V)",
+      "descriptionEn": "whole wheat unleavened crispy flatbread, brushed with ghee (V)",
+      "price": "4",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "plain-naan",
+      "categoryId": "sides",
+      "nameEs": "NAAN NATURAL",
+      "nameEn": "PLAIN NAAN",
+      "descriptionEs": "pan plano suave con levadura, untado con ghee (V)",
+      "descriptionEn": "soft leavened flatbread, brushed with ghee (V)",
+      "price": "4",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "stuffed-naan",
+      "categoryId": "sides",
+      "nameEs": "NAAN RELLENO",
+      "nameEn": "STUFFED NAAN",
+      "descriptionEs": "a elegir: ajonjolí, ajo, chile verde, queso, chile y queso, ajo y queso, romero y albaricoque -- pollo (+1) o paneer (+1)",
+      "descriptionEn": "choice of: sesame, garlic, green chili, cheese, chili cheese, garlic & cheese, rosemary apricot -- chicken (+1) or paneer (+1)",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chutneys",
+      "categoryId": "sides",
+      "nameEs": "CHUTNEYS",
+      "nameEn": "CHUTNEYS",
+      "descriptionEs": "a elegir: ajo y chile, tamarindo, coco, arándano y habanero, verde (menta, cilantro, chile verde), mango verde (V+, SG) -- 1 por 3 O 3 por 8",
+      "descriptionEn": "choice of: garlic chili, tamarind, coconut, cranberry habanero, green (mint, cilantro, green chili), green mango (V+, GF) -- 1 for 3 OR 3 for 8",
+      "price": "3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "raitas",
+      "categoryId": "sides",
+      "nameEs": "RAITAS",
+      "nameEn": "RAITAS",
+      "descriptionEs": "a elegir: betabel, vegetales, pepino (V, SG) -- 1 por 3 O 3 por 8",
+      "descriptionEn": "choice of: beetroot, vegetable, cucumber (V, GF) -- 1 for 3 OR 3 for 8",
+      "price": "3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gulab-jamun",
+      "categoryId": "dessert",
+      "nameEs": "GULAB JAMUN",
+      "nameEn": "GULAB JAMUN",
+      "descriptionEs": "toronja, jarabe de rosa, pistaches triturados (V)",
+      "descriptionEn": "grapefruit, rose syrup, crushed pistachios (V)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mango-kulfi",
+      "categoryId": "dessert",
+      "nameEs": "MANGO KULFI",
+      "nameEn": "MANGO KULFI",
+      "descriptionEs": "helado de mango, azafrán, pistache (V, SG) **no disponible para llevar**",
+      "descriptionEn": "mango ice cream, saffron, pistachio (V, GF) **not available for take out**",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "pista-burfi",
+      "categoryId": "dessert",
+      "nameEs": "PISTA BURFI",
+      "nameEn": "PISTA BURFI",
+      "descriptionEs": "barras de pistache tipo brownie, crema de betabel y limón, cardamomo, pétalos de rosa (V, SG)",
+      "descriptionEn": "fudgy pistachio bars, beet-lemon curd, cardamom, rose petals (V, GF)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "oreo-pakora",
+      "categoryId": "dessert",
+      "nameEs": "PAKORA DE OREO",
+      "nameEn": "OREO PAKORA",
+      "descriptionEs": "Oreos empanizados con harina de garbanzo y fritos, hilos de chocolate, frambuesas deshidratadas",
+      "descriptionEn": "chickpea battered & fried oreos, chocolate drizzle, dried raspberries",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "butter-chicken-family-style-takeout",
+      "categoryId": "family-style-takeout",
+      "nameEs": "BUTTER CHICKEN (para llevar estilo familiar)",
+      "nameEn": "BUTTER CHICKEN (Family-Style Takeout)",
+      "descriptionEs": "pollo tandoori, tomate, cebolla caramelizada, crema, cilantro, arroz basmati. Se puede sustituir por paneer o aloo (SG) **la salsa contiene frutos secos, no se puede omitir**",
+      "descriptionEn": "tandoori chicken, tomato, caramelized onion, cream, cilantro, basmati rice. May sub paneer or aloo (GF) **sauce contains treenuts, cannot ommit**",
+      "price": "45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chicken-biryani",
+      "categoryId": "family-style-takeout",
+      "nameEs": "CHICKEN BIRYANI",
+      "nameEn": "CHICKEN BIRYANI",
+      "descriptionEs": "pollo marinado, azafrán, chícharo dulce, pimiento morrón, cebolla, raita de vegetales (SG)",
+      "descriptionEn": "marinated chicken, saffron, sweet pea, bell pepper, onion, vegetable raita (GF)",
+      "price": "45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "baingan-bharta-family-style-takeout",
+      "categoryId": "family-style-takeout",
+      "nameEs": "BAINGAN BHARTA (para llevar estilo familiar)",
+      "nameEn": "BAINGAN BHARTA (Family-Style Takeout)",
+      "descriptionEs": "berenjena ahumada, tomate asado, coliflor, garbanzos crujientes, arroz basmati (V+, SG)",
+      "descriptionEn": "smoked eggplant, roasted tomato, cauliflower, crispy chickpeas, basmati rice (V+, GF)",
+      "price": "45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "palak-paneer-family-style-takeout",
+      "categoryId": "family-style-takeout",
+      "nameEs": "PALAK PANEER (para llevar estilo familiar)",
+      "nameEn": "PALAK PANEER (Family-Style Takeout)",
+      "descriptionEs": "salsa cremosa de espinaca, paneer, arroz basmati (SG)",
+      "descriptionEn": "creamy spinach gravy, paneer, basmati rice (GF)",
+      "price": "45",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "law-of-the-jungle",
+      "categoryId": "shook-ones",
+      "nameEs": "Law of the Jungle",
+      "nameEn": "Law of the Jungle",
+      "descriptionEs": "ron blanco, ron oscuro, shrub de piña y curry, bíter de cardamomo, jengibre y piloncillo, limón, clara de huevo",
+      "descriptionEn": "white rum, dark rum, pineapple curry shrub, cardamom bitters, ginger jaggery, lime, egg white",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wing-commander-sharma",
+      "categoryId": "shook-ones",
+      "nameEs": "Wing Commander Sharma",
+      "nameEn": "Wing Commander Sharma",
+      "descriptionEs": "ginebra seca infusionada con piña, licor de maracuyá, orgeat de pistache, falernum aterciopelado, limón, bíter de falernum",
+      "descriptionEn": "pineapple infused dry gin, passionfruit liqueur, pistachio orgeat, velvet falernum, lemon, falernum bitters",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "masala-mule",
+      "categoryId": "shook-ones",
+      "nameEs": "Masala Mule",
+      "nameEn": "Masala Mule",
+      "descriptionEs": "vodka, especias cálidas, limón, cerveza de jengibre",
+      "descriptionEn": "vodka, warm spices, lime, ginger beer",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mother-wolf-g-t",
+      "categoryId": "shook-ones",
+      "nameEs": "Mother Wolf G&T",
+      "nameEn": "Mother Wolf G&T",
+      "descriptionEs": "ginebra, licor de pomelo, bíter de toronja, tónica de flor de saúco",
+      "descriptionEn": "gin, pamplemousse liqueur, grapefruit bitters, elderflower tonic",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "royal-ruby-g-t",
+      "categoryId": "shook-ones",
+      "nameEs": "Royal Ruby G&T",
+      "nameEn": "Royal Ruby G&T",
+      "descriptionEs": "ginebra de ruibarbo y jengibre Madame Backlash, fresa, tónica de flor de saúco",
+      "descriptionEn": "madame backlash rhubarb ginger gin, strawberry, elderflower tonic",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "abohar-region-g-t",
+      "categoryId": "shook-ones",
+      "nameEs": "Abohar Region G&T",
+      "nameEn": "Abohar Region G&T",
+      "descriptionEs": "ginebra de naranja sanguina y azahar Madame Backlash, tamarelo, tónica de flor de saúco",
+      "descriptionEn": "madame backlash blood orange and orange blossom gin, tamarelo, elderflower tonic",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "goan-sunset-g-t",
+      "categoryId": "shook-ones",
+      "nameEs": "Goan Sunset G&T",
+      "nameEn": "Goan Sunset G&T",
+      "descriptionEs": "ginebra de piña Gunpowder, piña, coco, tónica de flor de saúco",
+      "descriptionEn": "gunpowder pineapple gin, pineapple, coconut, elderflower tonic",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jammu-harvest",
+      "categoryId": "shook-ones",
+      "nameEs": "Jammu Harvest",
+      "nameEn": "Jammu Harvest",
+      "descriptionEs": "pera Breckenridge, pera especiada St. George, jugo de limón, falernum de jengibre",
+      "descriptionEn": "breckenridge pear, st. george spiced pear, lemon juice, ginger falernum",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "the-bare-necessities",
+      "categoryId": "shook-ones",
+      "nameEs": "The Bare Necessities",
+      "nameEn": "The Bare Necessities",
+      "descriptionEs": "tequila blanco, curazao de yuzu, limón, mango, salsa de soya tamari",
+      "descriptionEn": "blanco tequila, yuzu Curacao, lime, mango, tamari soy sauce",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "wild-vines",
+      "categoryId": "shook-ones",
+      "nameEs": "Wild Vines",
+      "nameEn": "Wild Vines",
+      "descriptionEs": "ginebra de limón Malfy, shrub de uva verde e hinojo, limón, Ca'sisa Prosecco",
+      "descriptionEn": "malfy lemon gin, green grape and fennel shrub, lemon, ca'sisa Prosecco",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nightshade-martini",
+      "categoryId": "spirit-forward",
+      "nameEs": "Nightshade Martini",
+      "nameEn": "Nightshade Martini",
+      "descriptionEs": "ginebra Mare, tomate, pimienta negra, brandy de albahaca St. George, sal",
+      "descriptionEn": "gin mare, tomato, black pepper, st george basil brandy, salt",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ancient-ruins",
+      "categoryId": "spirit-forward",
+      "nameEs": "Ancient Ruins",
+      "nameEn": "Ancient Ruins",
+      "descriptionEs": "mezcal Pechuga Mole Xicaru, garam masala, Bitter Bianca, bíteres tiki",
+      "descriptionEn": "pechuga mole xicaru mezcal, garam masala, bitter bianca, tiki bitters",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mumbai-manhattan",
+      "categoryId": "spirit-forward",
+      "nameEs": "Mumbai Manhattan",
+      "nameEn": "Mumbai Manhattan",
+      "descriptionEs": "bourbon, vermut infusionado con dátil, jerez, bíter Angostura, bíter de naranja",
+      "descriptionEn": "bourbon, Date infused vermut, sherry, angostura bitters, orange bitters",
+      "price": "15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "gully-juice",
+      "categoryId": "punch",
+      "nameEs": "Gully Juice",
+      "nameEn": "Gully Juice",
+      "descriptionEs": "ginebra, licor de pera, té orgánico de jazmín azul intenso, oleo saccharum de bayas y limón, jugo de limón",
+      "descriptionEn": "gin, pear liqueur, rich blue jasmine organic tea, berry and lime oleo saccharum, lime juice",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "estebans-sangria",
+      "categoryId": "punch",
+      "nameEs": "Sangría de Esteban",
+      "nameEn": "Esteban’s Sangria",
+      "descriptionEs": "rosado, licor de pomelo, tequila blanco, bíter de toronja, jugo de toronja, toronja, oleo saccharum de limón",
+      "descriptionEn": "rose, pamplemousse liqueur, blanco tequila, grapefruit bitters, grapefruit juice, grapefruit, lemon oleo saccharum",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "strawberry-shortcake-milk-punch",
+      "categoryId": "punch",
+      "nameEs": "STRAWBERRY SHORTCAKE MILK PUNCH",
+      "nameEn": "STRAWBERRY SHORTCAKE MILK PUNCH",
+      "descriptionEs": "jarabe de fresa de la casa, vaina de vainilla, amaretto, diplomatic plants, oleo de limón, leche de almendra, galletas Parle-G",
+      "descriptionEn": "house made strawberry syrup, vanilla bean, amaretto, diplomatic plants, lemon oleo, almond milk, parle-g biscuits",
+      "price": "16",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tiger-s-milk",
+      "categoryId": "free-spirited",
+      "nameEs": "LECHE DE TIGRE",
+      "nameEn": "TIGER'S MILK",
+      "descriptionEs": "nuestra versión sin lácteos de la clásica leche badam: leche de almendra con azafrán, cardamomo y almendra, cremosa y refrescante con trocitos crujientes de almendra",
+      "descriptionEn": "our dairy free take on a classic badam milk -- almond milk with saffron, cardamom and almond, creamy and refreshing with crunchy bits of almond",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nimbu-pani-aka-indian-gatorade",
+      "categoryId": "free-spirited",
+      "nameEs": "NIMBU PANI, CONOCIDO COMO GATORADE INDIO",
+      "nameEn": "NIMBU PANI, AKA INDIAN GATORADE",
+      "descriptionEs": "cordial de limón, sal negra, jugo de limón, soda masala, menta",
+      "descriptionEn": "lime cordial, black salt, lime juice, masala soda, mint",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lemon-grass-mojito",
+      "categoryId": "free-spirited",
+      "nameEs": "MOJITO DE LEMON GRASS",
+      "nameEn": "LEMON GRASS MOJITO",
+      "descriptionEs": "jugo de caña, lemongrass, menta, limón, burbujas",
+      "descriptionEn": "cane juice, lemongrass, mint, lime, bubbles",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rose-lemonade",
+      "categoryId": "free-spirited",
+      "nameEs": "LIMONADA DE ROSA",
+      "nameEn": "ROSE LEMONADE",
+      "descriptionEs": "sherkaan rooh afza, té de rosa mosqueta, limón, burbujas",
+      "descriptionEn": "sherkaan rooh afza, rose hip tea, lemon, bubbles",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jal-jeera-collins",
+      "categoryId": "free-spirited",
+      "nameEs": "JAL-JEERA COLLINS",
+      "nameEn": "JAL-JEERA COLLINS",
+      "descriptionEs": "menta, jengibre, cordial infusionado con especias masala, limón, burbujas",
+      "descriptionEn": "mint, ginger, masala spice-infused cordial, lemon, bubbles",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "lassi",
+      "categoryId": "free-spirited",
+      "nameEs": "LASSI",
+      "nameEn": "LASSI",
+      "descriptionEs": "mango -- pruébalo con un shot de ron (+6)",
+      "descriptionEn": "mango -- try with a shot of rum (+6)",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mohabbat-ka-sharbat",
+      "categoryId": "free-spirited",
+      "nameEs": "MOHABBAT KA SHARBAT",
+      "nameEn": "MOHABBAT KA SHARBAT",
+      "descriptionEs": "sherkaan rooh afza, sandía, cardamomo, agua de rosas, leche de almendra",
+      "descriptionEn": "sherkaan rooh afza, watermelon, cardamom, rose water, almond milk",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "soda-pop",
+      "categoryId": "free-spirited",
+      "nameEs": "REFRESCOS",
+      "nameEn": "SODA POP",
+      "descriptionEs": "thumbs up, limca, fanta",
+      "descriptionEn": "thumbs up, limca, fanta",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kombucha",
+      "categoryId": "free-spirited",
+      "nameEs": "KOMBUCHA",
+      "nameEn": "KOMBUCHA",
+      "descriptionEs": "limonada de lavanda, guayaba, jengibre con arándano, manzana especiada",
+      "descriptionEn": "lavender lemonade, guava, blueberry ginger, apple spice",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "spike-it",
+      "categoryId": "add-ons",
+      "nameEs": "AGRÉGALE ALCOHOL",
+      "nameEn": "SPIKE IT",
+      "descriptionEs": "elige un destilado",
+      "descriptionEn": "choose one spirit",
+      "price": "+6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-tandoori-chicken",
+      "categoryId": "add-ons",
+      "nameEs": "Agrega pollo tandoori",
+      "nameEn": "Add tandoori chicken",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-gunpowder-shrimp",
+      "categoryId": "add-ons",
+      "nameEs": "Agrega camarones gunpowder",
+      "nameEn": "Add gunpowder shrimp",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "add-tandoori-salmon",
+      "categoryId": "add-ons",
+      "nameEs": "Agrega salmón tandoori",
+      "nameEn": "Add tandoori salmon",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "+15",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "guinness",
+      "categoryId": "draft",
+      "nameEs": "GUINNESS",
+      "nameEn": "GUINNESS",
+      "descriptionEs": "Irish Stout / 4.2% ABV / Dublín, Irlanda / 20oz",
+      "descriptionEn": "Irish Stout / 4.2% ABV / Dublin, Ireland / 20oz",
+      "price": "8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "new-holland-dragon-milk",
+      "categoryId": "draft",
+      "nameEs": "NEW HOLLAND- DRAGON MILK",
+      "nameEn": "NEW HOLLAND- DRAGON MILK",
+      "descriptionEs": "Stout / 11% ABV / Holland, MI / 12oz",
+      "descriptionEn": "STOUT/ 11% ABV / Holland, MI / 12oz",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "two-roads-road-2-ruin",
+      "categoryId": "draft",
+      "nameEs": "TWO ROADS-ROAD 2 RUIN",
+      "nameEn": "TWO ROADS-ROAD 2 RUIN",
+      "descriptionEs": "IPA / 8% ABV / Stratford, CT / 12 oz",
+      "descriptionEn": "IPA/ 8% ABV / Stratford, CT / 12 oz",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dudleytown-brewing-co-soothsayer",
+      "categoryId": "draft",
+      "nameEs": "DUDLEYTOWN BREWING CO-SOOTHSAYER",
+      "nameEn": "DUDLEYTOWN BREWING CO-SOOTHSAYER",
+      "descriptionEs": "Lager de arroz japonés / 4.8% ABV / Windsor, CT / 16oz",
+      "descriptionEn": "Japanese Rice Lager / 4.8% ABV / Windsor, CT / 16oz",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dudleytown-brewing-berried-bones",
+      "categoryId": "draft",
+      "nameEs": "DUDLEYTOWN BREWING-BERRIED BONES",
+      "nameEn": "DUDLEYTOWN BREWING-BERRIED BONES",
+      "descriptionEs": "Berliner Weisse / 5% ABV / Windsor, CT / 16oz",
+      "descriptionEn": "Berliner Weisse/ 5% ABV / Windsor, CT / 16oz",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "nebco-fuzzy-baby-ducks",
+      "categoryId": "draft",
+      "nameEs": "NEBCO-FUZZY BABY DUCKS",
+      "nameEn": "NEBCO-FUZZY BABY DUCKS",
+      "descriptionEs": "IPA - / 5.8% ABV / Woodbridge, CT / 12oz",
+      "descriptionEn": "IPA - / 5.8% ABV / Woodbridge, CT / 12oz",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "dudleytown-brewing-co-ghost",
+      "categoryId": "draft",
+      "nameEs": "DUDLEYTOWN BREWING CO-GHOST",
+      "nameEn": "DUDLEYTOWN BREWING CO-GHOST",
+      "descriptionEs": "NEIPA / 6.8% ABV / Windsor, CT / 12oz",
+      "descriptionEn": "NEIPA / 6.8% ABV / Windsor, CT / 12oz",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "counterweight-workhorse",
+      "categoryId": "draft",
+      "nameEs": "COUNTERWEIGHT- WORKHORSE",
+      "nameEn": "COUNTERWEIGHT- WORKHORSE",
+      "descriptionEs": "Pilsner alemán / 5% ABV / Cheshire, CT / 16oz",
+      "descriptionEn": "German Pilsner / 5% ABV / Cheshire, CT / 16oz",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tribus-benji",
+      "categoryId": "draft",
+      "nameEs": "TRIBUS-BENJI",
+      "nameEn": "TRIBUS-BENJI",
+      "descriptionEs": "IPA - New England / Turbia / 6.8% ABV / Milford, CT / 12oz",
+      "descriptionEn": "IPA - New England / Hazy / 6.8% ABV / Milford, CT / 12oz",
+      "price": "10",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "east-rock-pilsner",
+      "categoryId": "draft",
+      "nameEs": "EAST ROCK-PILSNER",
+      "nameEn": "EAST ROCK-PILSNER",
+      "descriptionEs": "Pilsner - New England / 5.2% ABV / New Haven, CT / 16oz",
+      "descriptionEn": "Pilsner - New England / 5.2% ABV / New Haven, CT / 16oz",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "rupee-beer",
+      "categoryId": "cans-bottles",
+      "nameEs": "RUPEE BEER",
+      "nameEn": "RUPEE BEER",
+      "descriptionEs": "Pale Lager / 4.75% ABV / Boston, MA / 16oz",
+      "descriptionEn": "Pale Lager / 4.75% ABV / Boston, MA / 16oz",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "taj-mahal",
+      "categoryId": "cans-bottles",
+      "nameEs": "TAJ MAHAL",
+      "nameEn": "TAJ MAHAL",
+      "descriptionEs": "Pale Lager / 4.5% ABV / Dharuhera, Haryana / 22oz",
+      "descriptionEn": "Pale Lager / 4.5% ABV / Dharuhera, Haryana / 22oz",
+      "price": "14",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "kingfisher",
+      "categoryId": "cans-bottles",
+      "nameEs": "KINGFISHER",
+      "nameEn": "KINGFISHER",
+      "descriptionEs": "Pale Lager / 5% ABV / Dharuhera, Haryana / 12oz",
+      "descriptionEn": "Pale Lager / 5% ABV / Dharuhera, Haryana / 12oz",
+      "price": "8",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "allagash-white",
+      "categoryId": "cans-bottles",
+      "nameEs": "ALLAGASH WHITE",
+      "nameEn": "ALLAGASH WHITE",
+      "descriptionEs": "Cerveza de trigo - Witbier / 5.2% ABV / Portland, ME / 16oz",
+      "descriptionEn": "Wheat Beer - Witbier / 5.2% ABV / Portland, ME / 16oz",
+      "price": "11",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "downeast-cider",
+      "categoryId": "cans-bottles",
+      "nameEs": "DOWNEAST CIDER",
+      "nameEn": "DOWNEAST CIDER",
+      "descriptionEs": "Sidra original / 5.1% ABV / Boston, MA / 12oz",
+      "descriptionEn": "Original-Cider / 5.1% ABV / Boston, MA / 12oz",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "athletic-brewing",
+      "categoryId": "cans-bottles",
+      "nameEs": "ATHLETIC BREWING",
+      "nameEn": "ATHLETIC BREWING",
+      "descriptionEs": "Upside Dawn Golden Ale - cerveza sin alcohol /",
+      "descriptionEn": "Upside Dawn Golden Ale-Non-Alcoholic Beer /",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "piattelli-cabernet-sauvignon",
+      "categoryId": "red-wine",
+      "nameEs": "Piattelli Cabernet Sauvignon",
+      "nameEn": "Piattelli Cabernet Sauvignon",
+      "descriptionEs": "Argentina",
+      "descriptionEn": "Argentina",
+      "price": "$13.00 / $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "vietti-dolcetto-d-alba-tre-vigne",
+      "categoryId": "red-wine",
+      "nameEs": "Vietti Dolcetto d'Alba Tre Vigne",
+      "nameEn": "Vietti Dolcetto d'Alba Tre Vigne",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$15.00 / $45.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "sonoma-cutrer-chardonnay",
+      "categoryId": "white-wine",
+      "nameEs": "Sonoma Cutrer Chardonnay",
+      "nameEn": "Sonoma Cutrer Chardonnay",
+      "descriptionEs": "EE. UU.",
+      "descriptionEn": "USA",
+      "price": "$13.00 / $39.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "joseph-mellot-sauvignon-blanc",
+      "categoryId": "white-wine",
+      "nameEs": "Joseph Mellot Sauvignon blanc",
+      "nameEn": "Joseph Mellot Sauvignon blanc",
+      "descriptionEs": "Francia",
+      "descriptionEn": "France",
+      "price": "$14.00 / $42.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "famiglia-carafoli-la-divina",
+      "categoryId": "rose",
+      "nameEs": "Famiglia Carafoli La Divina",
+      "nameEn": "Famiglia Carafoli La Divina",
+      "descriptionEs": "Italia",
+      "descriptionEn": "Italy",
+      "price": "$12.00 / $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "la-fete-du-rose",
+      "categoryId": "rose",
+      "nameEs": "La Fete du Rose",
+      "nameEn": "La Fete du Rose",
+      "descriptionEs": "Côtes de Provence",
+      "descriptionEn": "Cotes de Provence",
+      "price": "$10.00 / $30.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "ca-sisa",
+      "categoryId": "sparkling",
+      "nameEs": "Ca'sisa",
+      "nameEn": "Ca'sisa",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "$12.00 / $36.00",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "coffee",
+      "categoryId": "coffee-espresso",
+      "nameEs": "CAFÉ",
+      "nameEn": "COFFEE",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "3",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "espresso",
+      "categoryId": "coffee-espresso",
+      "nameEs": "ESPRESSO",
+      "nameEn": "ESPRESSO",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "4",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "double-espresso",
+      "categoryId": "coffee-espresso",
+      "nameEs": "DOBLE ESPRESSO",
+      "nameEn": "DOUBLE ESPRESSO",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "latte-or-cappuccino",
+      "categoryId": "coffee-espresso",
+      "nameEs": "LATTE o CAPUCHINO",
+      "nameEn": "LATTE or CAPPUCCINO",
+      "descriptionEs": "",
+      "descriptionEn": "",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "desi-chai",
+      "categoryId": "tea",
+      "nameEs": "DESI CHAI",
+      "nameEn": "DESI CHAI",
+      "descriptionEs": "té negro assam, mezcla de especias de la casa, disponible helado o caliente -- leche entera o leche de avena (+1), con alcohol (+13)",
+      "descriptionEn": "black assam tea, house made spice blend, available iced or hot -- whole milk or oat milk (+1), spiked (+13)",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "om-tea",
+      "categoryId": "tea",
+      "nameEs": "OM TEA",
+      "nameEn": "OM TEA",
+      "descriptionEs": "una mezcla ligera y floral de manzanilla, lavanda y rosa, elaborada a mano para recrear la quietud de la meditación -- ingredientes: manzanilla, lemongrass, pétalos de rosa, lavanda, hierba luisa",
+      "descriptionEn": "a light, floral blend of chamomile, lavender, and rose is handcrafted to recreate the quietude of meditation -- ingredients: chamomile, lemongrass, rose petals, lavender, lemon verbena",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "palace-breakfast-tea",
+      "categoryId": "tea",
+      "nameEs": "PALACE BREAKFAST TEA",
+      "nameEn": "PALACE BREAKFAST TEA",
+      "descriptionEs": "nuestra versión del clásico té English breakfast: assam rico y robusto suavizado por el delicado y floral darjeeling, un matrimonio inesperado de las dos regiones de té más grandes de la India -- ingredientes: té negro darjeeling y assam",
+      "descriptionEn": "our twist on the conventional english breakfast tea, rich and robust assam softened by the delicate and floral darjeeling, an unexpected marriage of the two largest tea regions of india -- ingredients: darjeeling and assam black tea",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "jasmine-blossoms-tea",
+      "categoryId": "tea",
+      "nameEs": "JASMINE BLOSSOMS TEA",
+      "nameEn": "JASMINE BLOSSOMS TEA",
+      "descriptionEs": "las flores de jazmín son parte inseparable de la devoción antigua y de la cultura contemporánea; esta mezcla captura la inocencia de la flor de jazmín a través de nueve etapas de aromatización, para crear una infusión artesanal de fragancia dulce y té verde delicado -- ingredientes: té verde de jazmín con aroma natural",
+      "descriptionEn": "jasmine blossoms are an inseparable part of both ancient devotion and contemporary culture, this blend captures the innocence of the jasmine flower through nine stages of scenting to create an artful infusion of sweet fragrance and delicate green tea -- ingredients: naturally scented jasmine green tea",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "tulsi-rose-tea",
+      "categoryId": "tea",
+      "nameEs": "TULSI ROSE TEA",
+      "nameEn": "TULSI ROSE TEA",
+      "descriptionEs": "esta mezcla herbal de tulsi del Himalaya, finamente equilibrada con la suave fragancia de pétalos de rosa roja, te ayudará a encontrar calma, paz interior y equilibrio -- ingredientes: tulsi del Himalaya, pétalos de rosa roja",
+      "descriptionEn": "this herbal tea blend of himalayan tulsi is finely balanced with the soft fragrance of red rose petals will help you find calm, inner peace, and balance -- ingredients: himalayan tulsi, red rose petals",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "golden-city-tea",
+      "categoryId": "tea",
+      "nameEs": "GOLDEN CITY TEA",
+      "nameEn": "GOLDEN CITY TEA",
+      "descriptionEs": "una mezcla herbal 100% natural, vibrante y que fortalece las defensas, de cúrcuma india, jengibre y mandarina. El sabor picante y terroso de la cúrcuma y el jengibre se suaviza deliciosamente con las notas florales del lemongrass -- ingredientes: raíz de cúrcuma, jengibre en polvo, raíz de regaliz, lemongrass, cáscara de naranja",
+      "descriptionEn": "an all-natural, vibrant, immunity boosting herbal tea blend of indian turmeric, ginger and tangerine. the combined pungent, earthy taste of turmeric and ginger is delightfully undercut by the floral notes of lemongrass -- ingredients: turmeric root, ginger powder, licorice root, lemongrass, orange peel",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "cream-of-earl-grey-tea",
+      "categoryId": "tea",
+      "nameEs": "CREAM OF EARL GREY TEA",
+      "nameEn": "CREAM OF EARL GREY TEA",
+      "descriptionEs": "nuestro té negro assam tiene aroma natural y se madura con bergamota italiana y vaina de vainilla; el resultado es una versión fragante, cremosa y sedosa del clásico earl grey -- ingredientes: té negro, aciano azul, vaina de vainilla, bergamota italiana",
+      "descriptionEn": "our assam black tea is naturally scented and aged with italian bergamot and vanilla bean, the end result is a fragrant, creamy, silky take on the classic earl grey -- ingredients: black tea, blue cornflowers, vanilla bean, italian bergamot",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mojito-tea",
+      "categoryId": "tea",
+      "nameEs": "TÉ MOJITO",
+      "nameEn": "MOJITO TEA",
+      "descriptionEs": "ponte alegre con esta mezcla fresca de té verde, hojas de limón y menta machacada; agitado o revuelto, es nuestro té contra el calor sofocante del verano -- ingredientes: té verde, trozos de limón, hojas de limón, menta piperita, lemongrass",
+      "descriptionEn": "get tipsy with this crisp blend of green tea, lime leaves, and muddled mint, shaken or stirred, it’s our tea against the stifling summer heat -- ingredients: green tea, lime pieces, lime leaves, peppermint, lemongrass",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "mimosas",
+      "categoryId": "sunday-brunch",
+      "nameEs": "MIMOSAS",
+      "nameEn": "MIMOSAS",
+      "descriptionEs": "elige toronja, mango o naranja",
+      "descriptionEn": "choose grapefruit, mango or orange",
+      "price": "6",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "medu-vada",
+      "categoryId": "sunday-brunch",
+      "nameEs": "MEDU VADA",
+      "nameEn": "MEDU VADA",
+      "descriptionEs": "buñuelos salados de lentejas del sur de la India, sambar, chutney de coco (V+, SG)",
+      "descriptionEn": "savory South Indian lentil fritters, sambar, coconut chutney (V+, GF)",
+      "price": "12",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "avocado-toast",
+      "categoryId": "sunday-brunch",
+      "nameEs": "TOSTADA DE AGUACATE",
+      "nameEn": "AVOCADO TOAST",
+      "descriptionEs": "pan blanco robusto, aguacate machacado, granada, ajonjolí, huevo frito, chutney seco de ajo (V)",
+      "descriptionEn": "hearty white loaf, smashed avocado, pomegranate, sesame, fried egg, dry garlic chutney (V)",
+      "price": "9",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "everything-naan",
+      "categoryId": "sunday-brunch",
+      "nameEs": "NAAN EVERYTHING",
+      "nameEn": "EVERYTHING NAAN",
+      "descriptionEs": "pan plano suave con levadura, untado con ghee, sazón \"everything\" (V)",
+      "descriptionEn": "soft leavened flatbread, brushed with ghee, “everything” seasoning (V)",
+      "price": "5",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "chai-french-toast",
+      "categoryId": "sunday-brunch",
+      "nameEs": "PAN FRANCÉS CHAI",
+      "nameEn": "CHAI FRENCH TOAST",
+      "descriptionEs": "chantilly de vaina de vainilla, jarabe de piloncillo, crumble especiado de galleta Parle-G (V)",
+      "descriptionEn": "vanilla bean chantilly, jaggery syrup, spiced Parle G crumble (V)",
+      "price": "13",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "aloo-paratha",
+      "categoryId": "sunday-brunch",
+      "nameEs": "PARATHA DE ALOO",
+      "nameEn": "ALOO PARATHA",
+      "descriptionEs": "pan crujiente relleno, aloo masala, yogur (V)",
+      "descriptionEn": "crispy stuffed bread, aloo masala, yogurt (V)",
+      "price": "7",
+      "ctaType": "in_store"
+    },
+    {
+      "id": "desi-home-fries",
+      "categoryId": "sunday-brunch",
+      "nameEs": "PAPAS DESI ESTILO CASERO",
+      "nameEn": "DESI HOME FRIES",
+      "descriptionEs": "papa frita, hoja de curry, chile verde, Maggi (V, SG)",
+      "descriptionEn": "fried potato, curry leaf, green chili, maggi (V, GF)",
+      "price": "7",
       "ctaType": "in_store"
     }
   ],
-  "faqs": [
-    {
-      "qEs": "¿Tienen opciones vegetarianas o sin gluten?",
-      "qEn": "Do you offer vegetarian or gluten-free options?",
-      "aEs": "Sí, tenemos una amplia variedad de platos vegetarianos y opciones sin gluten claramente marcadas.",
-      "aEn": "Yes, we have a wide variety of vegetarian dishes and clearly marked gluten-free options."
-    },
-    {
-      "qEs": "¿Aceptan reservaciones?",
-      "qEn": "Do you accept reservations?",
-      "aEs": "Aceptamos clientes sin reservación y reservaciones por teléfono para grupos grandes.",
-      "aEn": "We welcome walk-ins and phone reservations for larger groups."
-    }
-  ]
+  "faqs": []
 }
