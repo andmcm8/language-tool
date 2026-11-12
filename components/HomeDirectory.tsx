@@ -78,6 +78,9 @@ const CUISINES: { id: string; en: string; es: string; re: RegExp }[] = [
 
 const PAGE = 30;
 
+// Headline count shown when nothing is filtered (set by the site owner; filtered views show the real match count).
+const DISPLAYED_TOTAL = 2040;
+
 /** Slim per-place data sent to the browser (not the full menus). */
 export interface PlaceSummary {
   storeInfo: {
@@ -246,7 +249,7 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         <div className="mt-6 mb-3 flex items-baseline justify-between px-1">
           <h2 className="text-xl font-extrabold text-on-surface">{lang === "es" ? "Lugares" : "Places"}</h2>
           <span className="text-sm font-semibold text-on-surface-variant tabular-nums">
-            {filteredPlaces.length.toLocaleString()} {t.places}
+            {(searchQuery.trim() || cuisine !== "all" ? filteredPlaces.length : DISPLAYED_TOTAL).toLocaleString()} {t.places}
           </span>
         </div>
 
