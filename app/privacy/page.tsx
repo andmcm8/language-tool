@@ -44,6 +44,7 @@ export default function PrivacyPage() {
           <li><strong>Legal reasons</strong>, if we&rsquo;re required to by law or legal process, or need to protect the rights, safety or property of our users, the public or DuoTaps.</li>
           <li><strong>Business changes</strong>, such as a merger or transfer of the Service, in which case this policy will continue to apply to information collected before the change.</li>
         </ul>
+        <p>Access to our analytics, server logs and messages is limited to the people who run DuoTaps. We don&rsquo;t give anyone else access to them, and we never share visit-level or device-level data that could be used to identify individual visitors.</p>
       </Section>
 
       <Section title="Emails to businesses">
