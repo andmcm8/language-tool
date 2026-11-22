@@ -36,13 +36,19 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
   const [selectedItem, setSelectedItem] = useState<Product | null>(null);
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
 
-  // Lock page scroll while the item sheet is open
+  // Dietary tags, badges and allergens are only shown where the menu came from the place itself.
+  const showDiet = merchant.menuVerified === true;
+
+  // Lock page scroll and close on Escape while the item sheet is open
   useEffect(() => {
     if (!selectedItem) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelectedItem(null);
+    window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
     };
   }, [selectedItem]);
 
@@ -92,7 +98,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
         className="group w-full h-full text-left flex items-start gap-3 p-4 bg-white rounded-3xl border border-white shadow-soft hover:shadow-lift active:scale-[0.99] transition-all duration-200"
       >
         {item.image && (
-          <img src={item.image} alt="" className="w-[72px] h-[72px] rounded-2xl object-cover shrink-0 bg-surface-container" />
+          <img src={item.image} alt={name} className="w-[72px] h-[72px] rounded-2xl object-cover shrink-0 bg-surface-container" />
         )}
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-3">
@@ -100,7 +106,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
             <PricePill price={item.price} lang={lang} />
           </div>
           {desc && <p className="mt-1 text-[13px] leading-relaxed text-on-surface-variant line-clamp-2">{desc}</p>}
-          {(item.badge || (item.tags && item.tags.length > 0)) && (
+          {showDiet && (item.badge || (item.tags && item.tags.length > 0)) && (
             <div className="mt-2 flex flex-wrap gap-1.5">
               {item.badge && (
                 <span className="px-2 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wide">{labelFor(item.badge, lang)}</span>
@@ -253,6 +259,12 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
         renderItems(filteredProducts)
       )}
 
+      <p className="px-1 pt-2 text-xs leading-relaxed text-on-surface-variant">
+        {lang === "es"
+          ? "Los menús, precios y horarios pueden cambiar. Confirme con el restaurante antes de ordenar, sobre todo si tiene alergias o restricciones alimentarias. DuoTaps es independiente y no está afiliado a este negocio."
+          : "Menus, prices and hours can change. Please confirm with the restaurant before ordering, especially if you have allergies or dietary restrictions. DuoTaps is independent and not affiliated with this business."}
+      </p>
+
       {/* Item detail bottom sheet */}
       {selectedItem && (
         <div
@@ -262,6 +274,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
           <div
             role="dialog"
             aria-modal="true"
+            aria-label={text(selectedItem).name}
             onClick={(e) => e.stopPropagation()}
             className="relative w-full max-w-md md:max-w-lg bg-white rounded-t-[32px] md:rounded-[32px] shadow-float animate-in slide-in-from-bottom duration-300 max-h-[88vh] overflow-y-auto"
             style={{ paddingBottom: "max(24px, env(safe-area-inset-bottom))" }}
@@ -276,11 +289,11 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
             </button>
 
             {selectedItem.image && (
-              <img src={selectedItem.image} alt="" className="mt-4 w-full h-48 object-cover" />
+              <img src={selectedItem.image} alt={text(selectedItem).name} className="mt-4 w-full h-48 object-cover" />
             )}
 
             <div className="px-6 pt-5">
-              {selectedItem.badge && (
+              {showDiet && selectedItem.badge && (
                 <span className="inline-block mb-2 px-2.5 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wide">
                   {labelFor(selectedItem.badge, lang)}
                 </span>
@@ -306,7 +319,7 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                 </div>
               </div>
 
-              {selectedItem.tags && selectedItem.tags.length > 0 && (
+              {showDiet && selectedItem.tags && selectedItem.tags.length > 0 && (
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {selectedItem.tags.map((tag, i) => (
                     <span key={i} className="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">{labelFor(tag, lang)}</span>
@@ -314,12 +327,18 @@ export default function CatalogTab({ merchant, lang }: CatalogTabProps) {
                 </div>
               )}
 
-              {selectedItem.allergens && selectedItem.allergens.length > 0 && (
+              {showDiet && selectedItem.allergens && selectedItem.allergens.length > 0 && (
                 <div className="mt-4 p-3 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 font-semibold">
                   {lang === "es" ? "Alérgenos: " : "Allergens: "}
                   {selectedItem.allergens.map((a) => labelFor(a, lang)).join(", ")}
                 </div>
               )}
+
+              <p className="mt-4 text-xs leading-relaxed text-on-surface-variant">
+                {lang === "es"
+                  ? "Precio e ingredientes pueden variar. Si tiene alergias, confirme con el personal."
+                  : "Price and ingredients may vary. If you have allergies, check with staff."}
+              </p>
 
               <div className="mt-6">
                 {selectedItem.ctaType === "phone" && isValidPhone(storeInfo.phone) ? (

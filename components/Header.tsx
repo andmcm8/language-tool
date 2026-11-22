@@ -238,15 +238,22 @@ export default function Header({ merchant, lang, setLang, activeTab, setActiveTa
         eyebrow={town || (lang === "es" ? "Información" : "Info")}
         title={storeInfo.name}
         footer={
-          <button
-            onClick={() => {
-              setShowInfo(false);
-              setShowClaim(true);
-            }}
-            className="text-[13px] font-semibold text-on-surface-variant underline decoration-outline-variant underline-offset-4 transition-colors hover:text-primary"
-          >
-            {lang === "es" ? "¿Es el dueño? Administrar este menú" : "Own this place? Manage this menu"}
-          </button>
+          <div className="space-y-2">
+            <p className="text-xs leading-relaxed text-on-surface-variant">
+              {lang === "es"
+                ? "DuoTaps es una guía independiente y no está afiliada a este negocio. La información puede no estar al día."
+                : "DuoTaps is an independent guide and isn't affiliated with this business. Details may be out of date."}
+            </p>
+            <button
+              onClick={() => {
+                setShowInfo(false);
+                setShowClaim(true);
+              }}
+              className="text-[13px] font-semibold text-on-surface-variant underline decoration-outline-variant underline-offset-4 transition-colors hover:text-primary"
+            >
+              {lang === "es" ? "¿Es el dueño? Pida una corrección o que se retire" : "Own this place? Request a correction or removal"}
+            </button>
+          </div>
         }
       >
         <dl>
@@ -296,12 +303,12 @@ export default function Header({ merchant, lang, setLang, activeTab, setActiveTa
         open={showClaim}
         onClose={() => setShowClaim(false)}
         eyebrow={lang === "es" ? "Para dueños" : "For owners"}
-        title={lang === "es" ? "Administrar este menú" : "Manage this menu"}
+        title={lang === "es" ? "Correcciones o retiro" : "Corrections or removal"}
       >
         <p className="text-[15px] leading-relaxed text-on-surface-variant">
           {lang === "es"
-            ? `Si ${storeInfo.name} es suyo, podemos verificar el menú con sus platillos y precios oficiales, y enviarle soportes con código QR gratis para las mesas.`
-            : `If ${storeInfo.name} is yours, we can match this menu to your official dishes and prices, and send you free QR stands for your tables.`}
+            ? `DuoTaps es independiente y no está afiliado a ${storeInfo.name}. Si el negocio es suyo, corregimos el menú con sus platillos y precios, o retiramos la página si lo prefiere, sin costo. También podemos enviarle soportes con código QR gratis para las mesas.`
+            : `DuoTaps is independent and isn't affiliated with ${storeInfo.name}. If this is your business, we'll correct the menu to match your dishes and prices, or take the page down if you'd rather, at no cost. We can also send free QR stands for your tables.`}
         </p>
 
         {sent ? (
@@ -335,13 +342,19 @@ export default function Header({ merchant, lang, setLang, activeTab, setActiveTa
               {sending && <Loader2 className="h-4 w-4 animate-spin" />}
               {lang === "es" ? "Enviar" : "Send"}
             </button>
+            <p className="text-xs text-on-surface-variant">
+              {lang === "es" ? "Usamos sus datos solo para responderle. " : "We only use your details to reply to you. "}
+              <a href="/privacy" className="font-semibold underline underline-offset-2 hover:text-primary">
+                {lang === "es" ? "Política de privacidad" : "Privacy Policy"}
+              </a>
+            </p>
           </form>
         )}
 
         <div className="mt-5 flex items-center justify-between gap-3 border-t border-surface-container pt-4 text-[13px] font-medium text-on-surface-variant">
           <span>
             {lang === "es" ? "O escríbanos: " : "Or email "}
-            <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Manage menu for " + storeInfo.name)}`} className="font-semibold text-primary">
+            <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Menu correction for " + storeInfo.name)}`} className="font-semibold text-primary">
               {EMAIL}
             </a>
           </span>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 
 interface SheetProps {
@@ -14,17 +14,26 @@ interface SheetProps {
 
 /** Bottom sheet on phones, centered panel on larger screens. */
 export default function Sheet({ open, onClose, eyebrow, title, children, footer }: SheetProps) {
+  const panelRef = useRef<HTMLDivElement>(null);
+  // Callers pass inline handlers; read the latest one from a ref so the effect only runs on open/close.
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
+
   useEffect(() => {
     if (!open) return;
+    // Move focus into the dialog, and give it back to whatever opened it on close.
+    const opener = document.activeElement as HTMLElement | null;
+    panelRef.current?.focus();
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onCloseRef.current();
     window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKey);
+      opener?.focus?.();
     };
-  }, [open, onClose]);
+  }, [open]);
 
   if (!open) return null;
 
@@ -34,11 +43,13 @@ export default function Sheet({ open, onClose, eyebrow, title, children, footer 
       onClick={onClose}
     >
       <div
+        ref={panelRef}
+        tabIndex={-1}
         role="dialog"
         aria-modal="true"
         aria-label={title}
         onClick={(e) => e.stopPropagation()}
-        className="relative flex max-h-[88vh] w-full max-w-md flex-col rounded-t-[28px] bg-white shadow-float animate-in slide-in-from-bottom duration-300 md:rounded-[28px]"
+        className="relative flex max-h-[88vh] w-full max-w-md flex-col rounded-t-[28px] bg-white shadow-float animate-in slide-in-from-bottom duration-300 outline-none md:rounded-[28px]"
         style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <div className="mx-auto mt-2.5 h-1 w-9 shrink-0 rounded-full bg-surface-container-highest md:hidden" />

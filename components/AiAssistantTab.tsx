@@ -560,11 +560,16 @@ export default function AiAssistantTab({ merchant, lang }: AiAssistantTabProps) 
       )}
 
       {/* Disclaimer */}
-      <p className="flex shrink-0 items-center justify-center gap-1.5 px-3 text-center text-[11.5px] font-medium leading-snug text-on-surface-variant/80">
+      <p className="flex shrink-0 items-center justify-center gap-1.5 px-3 text-center text-xs font-medium leading-snug text-on-surface-variant">
         <ShieldAlert className="h-3.5 w-3.5 shrink-0" />
-        {lang === "es"
-          ? "Respuestas informativas. Confirma alergias con el personal."
-          : "Informational only. Confirm allergies with staff."}
+        <span>
+          {lang === "es"
+            ? "Respuestas con IA; pueden tener errores. Confirme alergias con el personal. "
+            : "AI answers can be wrong. Confirm allergies with staff. "}
+          <a href="/privacy" className="underline underline-offset-2 hover:text-primary">
+            {lang === "es" ? "Privacidad" : "Privacy"}
+          </a>
+        </span>
       </p>
     </div>
   );

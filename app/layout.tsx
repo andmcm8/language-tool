@@ -18,8 +18,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({
@@ -28,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={jakarta.variable}>
+    <html lang="en" className={jakarta.variable}>
       <body className="text-on-surface min-h-screen flex flex-col selection:bg-primary selection:text-white font-sans antialiased">
         {children}
         <Analytics />

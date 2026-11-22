@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, Suspense } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { MerchantConfig } from "@/types/merchant";
 import Header from "@/components/Header";
@@ -32,6 +32,10 @@ function MerchantStorefrontContent({ merchant }: StorefrontProps) {
   const requestedLang = searchParams.get("lang");
   const initialLang: "es" | "en" = requestedLang === "es" ? "es" : "en";
   const [lang, setLang] = useState<"es" | "en">(initialLang);
+  // Keep the page language in sync with the toggle so screen readers use the right voice.
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   return (
     <div className="min-h-screen flex flex-col text-on-surface">

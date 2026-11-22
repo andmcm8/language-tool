@@ -14,6 +14,8 @@ const DISCLAIMER_EN =
    ================================================================ */
 function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
   const { storeInfo, categories = [], products = [], faqs = [] } = merchant;
+  // Dietary tags/allergens on unverified (AI-generated) menus are not reliable, so never pass them on.
+  const verified = merchant.menuVerified === true;
   const p = storeInfo.policies || {};
 
   // Build categorized menu items
@@ -23,17 +25,17 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
     if (catProducts.length > 0) {
       menuLines.push(`\n[CATEGORY: ${cat.nameEn || cat.nameEs} / ${cat.nameEs}]`);
       catProducts.forEach((prod) => {
-        let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed on the official menu (tell the guest to ask staff)"}`;
+        let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed (tell the guest to ask staff)"}`;
         if (prod.descriptionEn || prod.descriptionEs) {
           line += `\n  Description: ${prod.descriptionEn || prod.descriptionEs}`;
           if (prod.descriptionEs && prod.descriptionEs !== prod.descriptionEn) {
             line += ` | ${prod.descriptionEs}`;
           }
         }
-        if (prod.tags && prod.tags.length > 0) {
+        if (verified && prod.tags && prod.tags.length > 0) {
           line += `\n  Dietary / Tags: ${prod.tags.join(", ")}`;
         }
-        if (prod.allergens && prod.allergens.length > 0) {
+        if (verified && prod.allergens && prod.allergens.length > 0) {
           line += `\n  Allergens: ${prod.allergens.join(", ")}`;
         }
         if (prod.popular || prod.badge) {
@@ -50,9 +52,9 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
   if (uncategorized.length > 0) {
     menuLines.push(`\n[OTHER MENU ITEMS]`);
     uncategorized.forEach((prod) => {
-      let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed on the official menu (tell the guest to ask staff)"}`;
+      let line = `• ${prod.nameEn || prod.nameEs} / ${prod.nameEs} — Price: ${prod.price?.trim() || "not listed (tell the guest to ask staff)"}`;
       if (prod.descriptionEn) line += ` - ${prod.descriptionEn}`;
-      if (prod.tags && prod.tags.length > 0) line += ` [${prod.tags.join(", ")}]`;
+      if (verified && prod.tags && prod.tags.length > 0) line += ` [${prod.tags.join(", ")}]`;
       menuLines.push(line);
     });
   }
@@ -68,10 +70,11 @@ function buildStoreKnowledgePrompt(merchant: MerchantConfig): string {
 
   const hoursStr = `Monday – Friday: ${storeInfo.hours?.monday_friday || "not listed (please call)"}\nSaturday: ${storeInfo.hours?.saturday || "not listed (please call)"}\nSunday: ${storeInfo.hours?.sunday || "not listed (please call)"}`;
 
-  return `You are the official, intelligent bilingual AI Concierge & Assistant for "${storeInfo.name}".
-Your role is to assist guests and answer questions using EXCLUSIVELY the verified knowledge base and official menu of ${storeInfo.name} provided below.
+  return `You are the DuoTaps bilingual assistant, helping guests with questions about "${storeInfo.name}".
+DuoTaps is an independent service. It is NOT run by, endorsed by, or affiliated with ${storeInfo.name}; never claim to speak for the business or its staff, and if asked, say so plainly.
+Answer using EXCLUSIVELY the information about ${storeInfo.name} provided below. It may be out of date, so for anything important (prices, hours, ingredients) suggest the guest confirm with the restaurant.
 
-=== 1. VERIFIED BUSINESS DETAILS ===
+=== 1. BUSINESS DETAILS ===
 - Business Name: ${storeInfo.name}
 - Concept / Tagline: ${storeInfo.tagline || "Local dining & marketplace"}
 - Location & Address: ${storeInfo.address}
@@ -87,7 +90,7 @@ ${hoursStr}
   • Takeout & Delivery: ${p.deliveryPolicyEn || "Not provided — tell the guest to ask a staff member."}
   • Return / Satisfaction Policy: ${p.returnPolicyEn || "Not provided — tell the guest to ask a staff member."}
 
-=== 2. COMPLETE OFFICIAL MENU & CATALOG (${products.length} ITEMS) ===
+=== 2. MENU (${products.length} ITEMS${verified ? ", taken from the restaurant's published menu" : ", may not match the restaurant's current menu"}) ===
 ${menuLines.length > 0 ? menuLines.join("\n") : "Full menu available in-store."}
 
 === 3. FREQUENTLY ASKED QUESTIONS ===
@@ -98,7 +101,7 @@ ${faqLines.length > 0 ? faqLines.join("\n") : "None specified."}
    - When asked what is on the menu, what dishes/items are sold, or what categories exist, answer using SPECIFIC items and exact prices from the catalog above!
    - When asked for recommendations, recommend top or popular dishes from THIS menu with their prices and descriptions.
    - When asked for the price of any item, provide the exact price listed in the catalog.
-   - When asked about dietary restrictions (vegetarian, vegan, gluten-free, dairy, nuts), check the item descriptions, tags, and allergens listed in the catalog above.
+   - When asked about allergies or dietary restrictions (vegetarian, vegan, gluten-free, dairy, nuts, etc.): you may mention what the menu above lists, but NEVER say or imply that any item is safe for an allergy or restriction. Always tell the guest to confirm ingredients and cross-contact with the restaurant staff before ordering.
 2. BUSINESS QUESTIONS (HOURS, LOCATION, PHONE):
    - When asked where the place is located or for the address: state "${storeInfo.address}".
    - When asked for the phone number: state "${storeInfo.phone ? storeInfo.phone : "We do not have a public phone number listed; please visit us in person at " + storeInfo.address}".
@@ -213,28 +216,10 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
     lowerMsg.includes("alergia") ||
     lowerMsg.includes("allergy")
   ) {
-    const isGlutenQuery = lowerMsg.includes("gluten");
-    const isVeganQuery = lowerMsg.includes("vegan") || lowerMsg.includes("vegano");
-
-    let matched = products.filter((prod) => {
-      const tags = (prod.tags || []).map((t) => t.toLowerCase());
-      const desc = `${prod.descriptionEn} ${prod.descriptionEs}`.toLowerCase();
-
-      if (isGlutenQuery && (tags.includes("sin gluten") || tags.includes("gluten-free") || desc.includes("gluten-free") || desc.includes("sin gluten"))) {
-        return true;
-      }
-      if (isVeganQuery && (tags.includes("vegano") || tags.includes("vegan") || desc.includes("vegano") || desc.includes("vegan"))) {
-        return true;
-      }
-      return tags.some((t) => t.includes("vegetariano") || t.includes("saludable"));
-    });
-
-    if (matched.length === 0) matched = products.slice(0, 3);
-    const itemsList = matched.slice(0, 4).map((i) => `${isEnglish ? i.nameEn : i.nameEs}${i.price?.trim() ? ` (${i.price})` : ""}`).join(", ");
-
+    const phoneHint = info.phone ? (isEnglish ? ` You can reach them at ${info.phone}.` : ` Puede llamarles al ${info.phone}.`) : "";
     return isEnglish
-      ? `We offer options to accommodate dietary needs at ${info.name}! Recommended items: ${itemsList}. Please inform our team of any specific allergies when ordering.`
-      : `¡En ${info.name} contamos con opciones para necesidades dietéticas! Recomendaciones: ${itemsList}. Por favor avise a nuestro personal sobre cualquier alergia al ordenar.`;
+      ? `I can't confirm which dishes at ${info.name} are safe for allergies or dietary needs. Please ask the staff about ingredients before ordering.${phoneHint}`
+      : `No puedo confirmar qué platillos de ${info.name} son seguros para alergias o dietas especiales. Por favor pregunte al personal sobre los ingredientes antes de ordenar.${phoneHint}`;
   }
 
   // 5. RECOMMENDATIONS & POPULAR DISHES
@@ -251,8 +236,8 @@ function generateLocalStoreReply(merchant: MerchantConfig, message: string, lang
     const listStr = list.map((i) => `${isEnglish ? i.nameEn : i.nameEs}${i.price?.trim() ? ` (${i.price})` : ""}`).join(", ");
 
     return isEnglish
-      ? `Guest favorites at ${info.name} include: ${listStr}. Would you like more details on any of these dishes?`
-      : `Los platos favoritos en ${info.name} incluyen: ${listStr}. ¿Desea más información sobre alguno de ellos?`;
+      ? `A few dishes on the menu at ${info.name}: ${listStr}. Would you like more details on any of these dishes?`
+      : `Algunos platillos del menú de ${info.name}: ${listStr}. ¿Desea más información sobre alguno de ellos?`;
   }
 
   // 6. SPECIFIC PRODUCT SEARCH

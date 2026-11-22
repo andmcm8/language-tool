@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import { isValidPhone } from "@/lib/phone";
 import { townFromAddress, taglineFor, swatchFor, initialsOf } from "@/lib/place";
@@ -32,7 +32,7 @@ const DICT = {
     aboutHeadline: "Spanish menus for every Connecticut table.",
     aboutCta: "Get in touch",
     aboutP1: "DuoTaps helps Connecticut restaurants, cafes and delis serve Spanish-speaking guests with instant bilingual menus and AI customer assistance.",
-    aboutP2: "Own a restaurant? We'll verify your menu and set it up with your official dishes and prices, free.",
+    aboutP2: "DuoTaps is independent and isn't affiliated with the places listed. Menus may not be current, so please confirm with the restaurant, especially about allergies. Own a place listed here? Email us and we'll correct your menu or remove the listing, free.",
     done: "Done",
   },
   es: {
@@ -59,7 +59,7 @@ const DICT = {
     aboutHeadline: "Menús en español para cada mesa de Connecticut.",
     aboutCta: "Contáctenos",
     aboutP1: "DuoTaps ayuda a restaurantes, cafeterías y delis de Connecticut a atender a clientes hispanohablantes con menús bilingües y asistencia con IA.",
-    aboutP2: "¿Es dueño de un restaurante? Verificamos su menú con sus platillos y precios oficiales, gratis.",
+    aboutP2: "DuoTaps es independiente y no está afiliado a los lugares de la lista. Los menús pueden no estar al día, así que confirme con el restaurante, sobre todo si tiene alergias. ¿Es dueño de un lugar de la lista? Escríbanos y corregimos su menú o retiramos la página, gratis.",
     done: "Listo",
   },
 };
@@ -79,7 +79,6 @@ const CUISINES: { id: string; en: string; es: string; re: RegExp }[] = [
 const PAGE = 30;
 
 // Headline count shown when nothing is filtered (set by the site owner; filtered views show the real match count).
-const DISPLAYED_TOTAL = 2040;
 
 /** Slim per-place data sent to the browser (not the full menus). */
 export interface PlaceSummary {
@@ -96,6 +95,10 @@ export interface PlaceSummary {
 export default function HomeDirectory({ places: allPlaces }: { places: PlaceSummary[] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [lang, setLang] = useState<"en" | "es">("en");
+  // Keep the page language in sync with the toggle so screen readers use the right voice.
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
   const [cuisine, setCuisine] = useState("all");
   const [visible, setVisible] = useState(PAGE);
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -249,7 +252,7 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         <div className="mt-6 mb-3 flex items-baseline justify-between px-1">
           <h2 className="text-xl font-extrabold text-on-surface">{lang === "es" ? "Lugares" : "Places"}</h2>
           <span className="text-sm font-semibold text-on-surface-variant tabular-nums">
-            {(searchQuery.trim() || cuisine !== "all" ? filteredPlaces.length : DISPLAYED_TOTAL).toLocaleString()} {t.places}
+            {filteredPlaces.length.toLocaleString()} {t.places}
           </span>
         </div>
 
@@ -330,8 +333,18 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         )}
       </section>
 
-      <footer className="mx-auto max-w-md md:max-w-4xl px-5 pt-12 text-center text-xs font-medium text-on-surface-variant/70">
-        © {new Date().getFullYear()} {t.footerText}
+      <footer className="mx-auto max-w-md md:max-w-4xl px-5 pt-12 text-center text-xs font-medium text-on-surface-variant">
+        <p>© {new Date().getFullYear()} {t.footerText}</p>
+        <p className="mt-2 leading-relaxed">
+          {lang === "es"
+            ? "No afiliado a los negocios de la lista. Los menús pueden no estar al día."
+            : "Not affiliated with the businesses listed. Menus may not be current."}
+        </p>
+        <nav className="mt-3 flex items-center justify-center gap-4 font-semibold">
+          <a href="/privacy" className="hover:text-primary">{lang === "es" ? "Privacidad" : "Privacy"}</a>
+          <a href="/terms" className="hover:text-primary">{lang === "es" ? "Términos" : "Terms"}</a>
+          <a href="mailto:contact@duotaps.com" className="hover:text-primary">{lang === "es" ? "Contacto" : "Contact"}</a>
+        </nav>
       </footer>
 
       {/* ABOUT */}
