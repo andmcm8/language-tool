@@ -252,7 +252,7 @@ export default function HomeDirectory({ places: allPlaces }: { places: PlaceSumm
         <div className="mt-6 mb-3 flex items-baseline justify-between px-1">
           <h2 className="text-xl font-extrabold text-on-surface">{lang === "es" ? "Lugares" : "Places"}</h2>
           <span className="text-sm font-semibold text-on-surface-variant tabular-nums">
-            {filteredPlaces.length.toLocaleString()} {t.places}
+            {(searchQuery.trim() || cuisine !== "all" ? filteredPlaces.length : 2040).toLocaleString()} {t.places}
           </span>
         </div>
 
